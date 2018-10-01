@@ -13,6 +13,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+					<striple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Bean wurde am 15. März 1932 geboren und erhielt 1955 einen Bachelor of Science an der University of Texas in Austin. </text>
 				<template>AGENT-1 wurde auf PATIENT-1 geboren und erhielt PATIENT-2. </template>
@@ -28,17 +29,22 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+					<striple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Bean wurde am 15. März 1932 geboren und seine Alma Mater ist UT Austin, B.S. 1955. </text>
 				<template>AGENT-1 entstand auf PATIENT-1 und AGENT-1 Alma Mater ist PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+					<striple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;</striple>
+				</sortedtripleset>
 				<text>Alan Bean (geboren 1932-03-15) 's alma mater war UT Austin B.S. 1955. </text>
 				<template>AGENT-1 (geboren PATIENT-1) alma mater war PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
 				<sortedtripleset>
+					<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
 					<striple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Bean (geboren am 1932-03-15) absolvierte 1955 den Abschluss von UT Austin. </text>
@@ -47,6 +53,7 @@
 			<lex comment="good" lid="Id6">
 				<sortedtripleset>
 					<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+					<striple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Bean wurde am 15. März 1932 geboren und seine alma mater war UT Austin BS, 1955. </text>
 				<template>AGENT-1 wurde auf PATIENT-1 geboren und AGENT-1 alma mater war PATIENT-2. </template>
@@ -115,6 +122,7 @@
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Alan_Bean | nationality | United_States</striple>
 					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
 				</sortedtripleset>
 				<text>Alan Bean war ein Amerikaner, der in Wheeler, Texas, geboren wurde. </text>
@@ -122,6 +130,7 @@
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Alan_Bean | nationality | United_States</striple>
 					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
 				</sortedtripleset>
 				<text>Alan Bean ist ein Amerikaner, der in Wheeler, Texas, geboren wurde. </text>
@@ -129,6 +138,7 @@
 			</lex>
 			<lex comment="good" lid="Id4">
 				<sortedtripleset>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
 					<striple>Alan_Bean | nationality | United_States</striple>
 				</sortedtripleset>
 				<text>Alan Bean wurde in Wheeler, Texas, USA geboren. </text>
@@ -137,12 +147,16 @@
 			<lex comment="good" lid="Id5">
 				<sortedtripleset>
 					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | nationality | United_States</striple>
 				</sortedtripleset>
 				<text>Alan Bean wurde in Wheeler, Texas, geboren und ist Bürger der Vereinigten Staaten. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren und ist ein Bürger von PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id6">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | nationality | United_States</striple>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+				</sortedtripleset>
 				<text>Alan Bean ist ein Amerikaner, geboren in Wheeler, Texas. </text>
 				<template>AGENT-1 ist PATIENT-1, geboren in PATIENT-2. </template>
 			</lex>
@@ -162,17 +176,24 @@
 				<mtriple>Alan_Bean | birthPlace | Wheeler,_Texas</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
+				</sortedtripleset>
 				<text>Alan Bean, der in Wheeler Texas geboren wurde, trat als Testpilot auf. </text>
 				<template>AGENT-1, der in PATIENT-2 geboren wurde, trat als PATIENT-1 auf. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
+				</sortedtripleset>
 				<text>Alan Bean, geboren in Wheeler, Texas, tritt als Testpilot auf. </text>
 				<template>AGENT-1, geboren in PATIENT-2, führt als PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
 					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
 				</sortedtripleset>
 				<text>Alan Bean war ein Testpilot, der in Wheeler, Texas, geboren wurde. </text>
@@ -181,22 +202,32 @@
 			<lex comment="good" lid="Id4">
 				<sortedtripleset>
 					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
 				</sortedtripleset>
 				<text>Alan Bean wurde in Wheeler, Texas geboren und verfolgte eine Karriere als Testpilot. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren und verfolgte eine Karriere als PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
+				</sortedtripleset>
 				<text>Alan Bean (geboren in Wheeler Texas) diente als Testpilot. </text>
 				<template>AGENT-1 (geboren in PATIENT-2) diente als PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id6">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
+				</sortedtripleset>
 				<text>Alan Bean (geboren in Wheeler Texas) diente als Testpilot. </text>
 				<template>AGENT-1 (geboren in PATIENT-2) diente als PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id7">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+				</sortedtripleset>
 				<text>Alan Bean, ein Testpilot, wurde in Wheeler, Texas, geboren. </text>
 				<template>AGENT-1, PATIENT-1, wurde in PATIENT-2 geboren. </template>
 			</lex>
@@ -216,7 +247,10 @@
 				<mtriple>Alan_Bean | was selected by NASA | 1963</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was selected by NASA | 1963</striple>
+					<striple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</striple>
+				</sortedtripleset>
 				<text>Alan Bean, der 1963 von der NASA angeheuert wurde, verbrachte über 69 Tage im All. </text>
 				<template>AGENT-1, angeheuert von der NASA in PATIENT-2, über PATIENT-1 im All. </template>
 			</lex>
@@ -229,7 +263,10 @@
 				<template>Nachdem er von der NASA in PATIENT-2 rekrutiert wurde, verbrachte AGENT-1 PATIENT-1 im All. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was selected by NASA | 1963</striple>
+					<striple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</striple>
+				</sortedtripleset>
 				<text>Alan Bean, der 1963 von der NASA für das Weltraumprogramm ausgesucht wurde, war für insgesamt 100.305 Minuten im All. </text>
 				<template>AGENT-1, der von der NASA in PATIENT-2 für das Weltraumprogramm ausgewählt wurde, war im Raum für insgesamt PATIENT-1. </template>
 			</lex>
@@ -249,34 +286,50 @@
 				<mtriple>Alan_Bean | dateOfRetirement | &quot;June 1981&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Alan_Bean | dateOfRetirement | &quot;June 1981&quot;</striple>
+				</sortedtripleset>
 				<text>Astronaut Alan Bean, der Teil der Apollo-12-Crew war, ging im Juni 1981 in den Ruhestand. </text>
 				<template>AGENT-1, der Teil der PATIENT-1-Crew war, ging in PATIENT-2 in den Ruhestand. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Alan_Bean | dateOfRetirement | &quot;June 1981&quot;</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
 				</sortedtripleset>
 				<text>Bevor er im Juni 1981 in den Ruhestand ging, war Alan Bean Mitglied von Apollo 12. </text>
 				<template>Bevor AGENT-1 in PATIENT-2 ausgeschieden war, war AGENT-1 Mitglied von PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Alan_Bean | dateOfRetirement | &quot;June 1981&quot;</striple>
+				</sortedtripleset>
 				<text>Alan Bean, der einer der Astronauten auf Apollo 12 war, ging im Juni 1981 in den Ruhestand. </text>
 				<template>AGENT-1, der einer der Astronauten auf PATIENT-1 war, ging in PATIENT-2 in den Ruhestand. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | dateOfRetirement | &quot;June 1981&quot;</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+				</sortedtripleset>
 				<text>Alan Bean (im Juni 1981 im Ruhestand) war ein Besatzungsmitglied von Apollo 12. </text>
 				<template>AGENT-1 (pensionierte PATIENT-2) war ein Besatzungsmitglied von PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Alan_Bean | dateOfRetirement | &quot;June 1981&quot;</striple>
+				</sortedtripleset>
 				<text>Alan Bean, ein Besatzungsmitglied von Apollo 12, ging im Juni 1981 in den Ruhestand. </text>
 				<template>AGENT-1, ein Besatzungsmitglied von PATIENT-1, ging in PATIENT-2 in den Ruhestand. </template>
 			</lex>
 			<lex comment="good" lid="Id6">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Alan_Bean | dateOfRetirement | &quot;June 1981&quot;</striple>
+				</sortedtripleset>
 				<text>Alan Bean, ehemals Besatzungsmitglied von Apollo 12, ging im Juni 1981 in den Ruhestand. </text>
 				<template>AGENT-1, früher ein Besatzungsmitglied von PATIENT-1 in PATIENT-2 zurückgezogen. </template>
 			</lex>
@@ -298,32 +351,48 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Apollo_12 | operator | NASA</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
 				</sortedtripleset>
 				<text>Die Apollo-12-Crew der NASA enthielt Alan Bean. </text>
 				<template>PATIENT-1 's BRIDGE-1 Crew inklusive AGENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+				</sortedtripleset>
 				<text>Alan Bean war Teil von Apollo 12, der von der NASA betrieben wurde. </text>
 				<template>AGENT-1 war Teil der BRIDGE-1, die von PATIENT-1 betrieben wurde. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+				</sortedtripleset>
 				<text>Alan Bean war ein Besatzungsmitglied der NASA betrieben Apollo 12. </text>
 				<template>AGENT-1 war ein Besatzungsmitglied von PATIENT-1 betrieben BRIDGE-1. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+				</sortedtripleset>
 				<text>Alan Bean war ein Besatzungsmitglied des Apollo 12 der NASA. </text>
 				<template>AGENT-1 war ein Besatzungsmitglied von PATIENT-1 's BRIDGE-1. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+				</sortedtripleset>
 				<text>Alan Bean diente als Besatzungsmitglied von Apollo 12, das von der NASA betrieben wird. </text>
 				<template>AGENT-1 diente als Besatzungsmitglied von BRIDGE-1, das von PATIENT-1 betrieben wird. </template>
 			</lex>
 			<lex comment="good" lid="Id6">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+				</sortedtripleset>
 				<text>Alan Bean war ein Besatzungsmitglied von Apollo 12, das von der Nasa betrieben wurde. </text>
 				<template>AGENT-1 war ein Besatzungsmitglied von BRIDGE-1, das von PATIENT-1 betrieben wurde. </template>
 			</lex>
@@ -343,13 +412,17 @@
 				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, der von der United States Navy mit der Distinguished Service Medal ausgezeichnet wurde, ging auf NWC in die Schule und schloss 1957 mit einer MA ab. </text>
 				<template>AGENT-1, der mit PATIENT-2 ausgezeichnet wurde, ging bei PATIENT-1 zur Schule. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
 				</sortedtripleset>
 				<text>1957 NWC M.A. Absolvent Alan Shepard ist Preisträger der Distinguished Service Medal der United States Navy. </text>
 				<template>PATIENT-1 AGENT-1 ist ein Empfänger von PATIENT-2. </template>
@@ -378,27 +451,39 @@
 				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+				</sortedtripleset>
 				<text>Alan Shepard wurde in New Hampshire geboren und bekam von der US Navy eine hervorragende Service-Medaille. </text>
 				<template>Geboren in PATIENT-1, AGENT-1 hat PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, der in New Hampshire geboren wurde, wurde mit der United States Navy Distinguished Service Medal ausgezeichnet. </text>
 				<template>AGENT-1, der in PATIENT-1 geboren wurde, wurde mit PATIENT-2 ausgezeichnet. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, der in New Hampshire geboren wurde, wurde von der US-Marine mit der Distinguished Service Medal ausgezeichnet. </text>
 				<template>AGENT-1, der in PATIENT-1 geboren wurde, wurde mit PATIENT-2 ausgezeichnet. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, geboren in New Hampshire, wurde mit der &quot;Distinguished Service Medal&quot; ausgezeichnet. </text>
 				<template>AGENT-1, geboren in PATIENT-1, wurde mit dem &quot;PATIENT-2&quot; ausgezeichnet. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
 				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
 					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
 				</sortedtripleset>
 				<text>Alan Shepard (geboren in New Hampshire) wurde mit der Distinguished Service Medal of United States Navy ausgezeichnet. </text>
@@ -421,6 +506,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Alan_Shepard | nationality | United_States</striple>
 					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
 				</sortedtripleset>
 				<text>Alan Shepard ist ein amerikanischer Staatsbürger, der in New Hampshire geboren wurde. </text>
@@ -436,6 +522,7 @@
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Alan_Shepard | nationality | United_States</striple>
 					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
 				</sortedtripleset>
 				<text>Alan Shepard ist ein Amerikaner, der in New Hampshire geboren wurde. </text>
@@ -482,6 +569,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
 				</sortedtripleset>
 				<text>Alan Shepard wurde in New Hampshire geboren, starb aber in Kalifornien. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren, starb aber in PATIENT-1. </template>
@@ -489,17 +577,24 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
 				</sortedtripleset>
 				<text>Alan Shepard wurde in New Hampshire geboren und starb in Kalifornien. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren und starb in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
 				<text>Alan Shepard (geboren in New Hampshire) starb in Kalifornien. </text>
 				<template>AGENT-1 (geboren in PATIENT-2) starb in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
 				<text>Alan Shepard (geboren in New Hampshire) starb in Kalifornien. </text>
 				<template>AGENT-1 (geboren in PATIENT-2) starb in PATIENT-1. </template>
 			</lex>
@@ -521,6 +616,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Shepard starb am 21. Juli 1998 in Kalifornien. </text>
 				<template>AGENT-1 starb in PATIENT-1 auf PATIENT-2. </template>
@@ -528,6 +624,7 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Shepard starb am 21. Juli 1998 in Kalifornien. </text>
 				<template>AGENT-1 starb in PATIENT-1 om PATIENT-2. </template>
@@ -535,6 +632,7 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Shepard starb am 21. Juli 1998 in Kalifornien. </text>
 				<template>AGENT-1 starb in PATIENT-1 auf PATIENT-2. </template>
@@ -542,6 +640,7 @@
 			<lex comment="good" lid="Id4">
 				<sortedtripleset>
 					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Shepard starb 1998-07-21 in Kalifornien. </text>
 				<template>AGENT-1 starb in PATIENT-1 auf PATIENT-2. </template>
@@ -549,6 +648,7 @@
 			<lex comment="toFix" lid="Id5">
 				<sortedtripleset>
 					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
 				</sortedtripleset>
 				<text>Alan Shephard verstarb am 1998-07-21 in Kalifornien. </text>
 				<template>AGENT-1 verabschiedete sich auf PATIENT-2 in PATIENT-1. </template>
@@ -569,7 +669,10 @@
 				<mtriple>California | senators | Dianne_Feinstein</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>California | senators | Dianne_Feinstein</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
 				<text>Dianne Feinstein gehört zu den Senatoren von Kalifornien, wo Alan Shepard starb. </text>
 				<template>PATIENT-1 ist einer der Senatoren von BRIDGE-1, wo AGENT-1 starb. </template>
 			</lex>
@@ -582,7 +685,10 @@
 				<template>AGENT-1 starb in BRIDGE-1, wo PATIENT-1 der Senator von BRIDGE-1 war. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>California | senators | Dianne_Feinstein</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
 				<text>Senator Dianne Feinstein und Alan Shepard sind beide Kalifornier. </text>
 				<template>PATIENT-1 und AGENT-1 sind BRIDGE-1. </template>
 			</lex>
@@ -619,6 +725,7 @@
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Alan_Shepard | nationality | United_States</striple>
 					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
 				</sortedtripleset>
 				<text>Alan Shepard war ein Amerikaner, der am 18. November 1923 geboren wurde. </text>
@@ -640,13 +747,17 @@
 				<mtriple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | served as Chief of the Astronaut Office in | 1963</striple>
+					<striple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</striple>
+				</sortedtripleset>
 				<text>Im Jahr 1963 war Alan Shepard der Leiter des Astronautenbüros. </text>
 				<template>In PATIENT-1 PATIENT-2 war AGENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Alan_Shepard | served as Chief of the Astronaut Office in | 1963</striple>
+					<striple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</striple>
 				</sortedtripleset>
 				<text>1963 war Alan Shepard Chef des Astronautenbüros. </text>
 				<template>In PATIENT-1 AGENT-1 war PATIENT-2. </template>
@@ -654,6 +765,7 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</striple>
+					<striple>Alan_Shepard | served as Chief of the Astronaut Office in | 1963</striple>
 				</sortedtripleset>
 				<text>Alan Shepard hatte 1963 die Position der Chefin des Astronautenbüros inne. </text>
 				<template>AGENT-1 hielt die Position von PATIENT-2 in PATIENT-1. </template>
@@ -674,12 +786,18 @@
 				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | timeInSpace | &quot;13017.0&quot;(minutes)</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, geboren in New Hampshire, verbrachte 13017 Minuten im All. </text>
 				<template>AGENT-1, geboren in PATIENT-2, verbrachte PATIENT-1 im All. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | timeInSpace | &quot;13017.0&quot;(minutes)</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, der in New Hampshire geboren wurde, hat 13017,0 Minuten im All verbracht. </text>
 				<template>AGENT-1, der in PATIENT-2 geboren wurde, hat PATIENT-1 im All verbracht. </template>
 			</lex>
@@ -717,17 +835,24 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</striple>
 				</sortedtripleset>
 				<text>Alan Shepard wurde in New Hampshire geboren und diente als Chef des Astronautenbüros. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren und AGENT-1 diente als PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, der in New Hampshire geboren wurde, wurde später Chef des Astronautenbüros. </text>
 				<template>AGENT-1, der in PATIENT-2 geboren wurde, wurde später PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, der in New Hampshire geboren wurde, vertrat die Position der Chefin des Astronautenamtes. </text>
 				<template>AGENT-1, der in PATIENT-2 geboren wurde, hielt die Position von PATIENT-1. </template>
 			</lex>
@@ -740,12 +865,18 @@
 				<template>AGENT-1 ist PATIENT-1 und wurde in PATIENT-2 geboren. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, der in New Hampshire geboren wurde, hielt den Titel Chef des Astronautenbüros. </text>
 				<template>AGENT-1, der in PATIENT-2 geboren wurde, hielt den Titel PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id6">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | title | Chief_of_the_Astronaut_Office</striple>
+				</sortedtripleset>
 				<text>Alan Shepard, der in New Hampshire geboren wurde, ist der Chef des Astronautenbüros. </text>
 				<template>AGENT-1, der in PATIENT-2 geboren wurde, ist PATIENT-1. </template>
 			</lex>
@@ -765,13 +896,17 @@
 				<mtriple>Apollo_14 | operator | NASA</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+					<striple>Apollo_14 | operator | NASA</striple>
+				</sortedtripleset>
 				<text>Alan Shepard war Mitglied der Besatzung von Apollo 14, die von der NASA betrieben wurde. </text>
 				<template>AGENT-1 war ein Mitglied der Crew von BRIDGE-1, die von PATIENT-1 betrieben wurde. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Apollo_14 | operator | NASA</striple>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
 				</sortedtripleset>
 				<text>Die Apollo-14-Mission der NASA umfasste Alan Shepard. </text>
 				<template>PATIENT-1 @ BRIDGE-1 Mission Crew inklusive AGENT-1. </template>
@@ -785,7 +920,10 @@
 				<template>PATIENT-1 @ BRIDGE-1 sah AGENT-1 als eines der BRIDGE-1-Besatzungsmitglieder. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+					<striple>Apollo_14 | operator | NASA</striple>
+				</sortedtripleset>
 				<text>Alan Shepard war ein Besatzungsmitglied des Apollo 14 der NASA. </text>
 				<template>AGENT-1 war ein Besatzungsmitglied von PATIENT-1 @ BRIDGE-1. </template>
 			</lex>
@@ -813,7 +951,10 @@
 				<template>AGENT-1 wurde in BRIDGE-1 von PATIENT-1 geboren. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>British_Hong_Kong | representative | Chris_Patten</striple>
+					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+				</sortedtripleset>
 				<text>Chris Patten ist ein Vertreter des britischen Hongkong, der zufällig der Geburtsort von William Anders ist. </text>
 				<template>PATIENT-1 ist ein Vertreter von BRIDGE-1, der zufällig der Geburtsort von AGENT-1 ist. </template>
 			</lex>
@@ -834,6 +975,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
 					<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
 				</sortedtripleset>
 				<text>Edwin E. Aldrin, der am 20. Januar 1930 geboren wurde, war bekannt als Buzz Aldrin. </text>
@@ -849,6 +991,7 @@
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
 					<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
 				</sortedtripleset>
 				<text>Der Spitzname von Edwin E. Aldrin Junior war Buzz Aldrin und er wurde am 20. Januar 1930 geboren. </text>
@@ -870,17 +1013,26 @@
 				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | awards | 20</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, der am Massachusetts Institute of Technology, Sc.D. Im Jahr 1963, hat 20 Auszeichnungen erhalten. </text>
 				<template>AGENT-1, der den Abschluss von PATIENT-2 absolviert hat, hat PATIENT-1 Auszeichnungen erhalten. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | awards | 20</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, der am Massachusetts Institute of Technology 1963 mit einem Doktortitel in Science promoviert hat, hat 20 Auszeichnungen erhalten. </text>
 				<template>AGENT-1, der den Abschluss von PATIENT-2 absolviert hat, hat PATIENT-1 Auszeichnungen erhalten. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | awards | 20</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, der 1963 das Massachusetts Institute of Technology mit einem Sc.D absolvierte, hat 20 Auszeichnungen gewonnen. </text>
 				<template>AGENT-1, der den Abschluss von PATIENT-2 absolviert hat, hat PATIENT-1 Auszeichnungen gewonnen. </template>
 			</lex>
@@ -916,7 +1068,10 @@
 				<mtriple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | dateOfRetirement | &quot;1971-07-01&quot;</striple>
+					<striple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, der am 1. Juli 1971 in den Ruhestand ging, verbrachte 52,0 Minuten im All. </text>
 				<template>AGENT-1, der sich auf PATIENT-1 zurückgezogen hat, verbrachte PATIENT-2 im All. </template>
 			</lex>
@@ -929,7 +1084,10 @@
 				<template>AGENT-1 verbrachte PATIENT-2 im Weltraum, bevor AGENT-1 auf PATIENT-1 ausgeschieden ist. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | dateOfRetirement | &quot;1971-07-01&quot;</striple>
+					<striple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, der am 1. Juli 1971 in den Ruhestand ging, verbrachte einmal 52 Minuten im Weltraum. </text>
 				<template>AGENT-1, der sich auf PATIENT-1 zurückgezogen hat, hat einmal PATIENT-2 im Weltraum verbracht. </template>
 			</lex>
@@ -951,12 +1109,16 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Buzz_Aldrin | nationality | United_States</striple>
+					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
 				</sortedtripleset>
 				<text>Der Amerikaner Buzz Aldrin ist jetzt im Ruhestand. </text>
 				<template>PATIENT-1 AGENT-1 ist jetzt PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					<striple>Buzz_Aldrin | nationality | United_States</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, jetzt im Ruhestand, wurde in den USA geboren. </text>
 				<template>AGENT-1, jetzt PATIENT-2, wurde in PATIENT-1 geboren. </template>
 			</lex>
@@ -976,19 +1138,26 @@
 				<mtriple>United_States | leaderName | Joe_Biden</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>United_States | leaderName | Joe_Biden</striple>
+					<striple>Buzz_Aldrin | nationality | United_States</striple>
+				</sortedtripleset>
 				<text>Parteichef Joe Biden und Buzz Aldrin sind beide Amerikaner. </text>
 				<template>LEADER, PATIENT-1 und AGENT-1 sind beide BRIDGE-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Buzz_Aldrin | nationality | United_States</striple>
+					<striple>United_States | leaderName | Joe_Biden</striple>
 				</sortedtripleset>
 				<text>Buzz Aldrin ist ein US-Nationalspieler unter der Leitung von Joe Biden. </text>
 				<template>AGENT-1 ist BRIDGE-1 national geführt von PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | nationality | United_States</striple>
+					<striple>United_States | leaderName | Joe_Biden</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin ist vereinter Staatsbürgermeister, dessen Anführer Joe Biden ist. </text>
 				<template>AGENT-1 ist BRIDGE-1, dessen Leiter PATIENT-1 ist. </template>
 			</lex>
@@ -1008,18 +1177,25 @@
 				<mtriple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;</striple>
+					<striple>Buzz_Aldrin | was awarded | &quot;Legion of Merit ribbon.svg&quot;</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, echter Name Edwin Eugene Aldrin Jr., wurde mit der Legion of Merit Band ausgezeichnet. </text>
 				<template>AGENT-1, echter Name PATIENT-2, wurde mit PATIENT-1 ausgezeichnet. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;</striple>
+					<striple>Buzz_Aldrin | was awarded | &quot;Legion of Merit ribbon.svg&quot;</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, geboren Edwin Eugene Aldrin, wurde mit der Legion of Merit Band ausgezeichnet. </text>
 				<template>AGENT-1, geboren PATIENT-2, wurde mit PATIENT-1 ausgezeichnet. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;</striple>
+					<striple>Buzz_Aldrin | was awarded | &quot;Legion of Merit ribbon.svg&quot;</striple>
 				</sortedtripleset>
 				<text>Der wahre Name von Buzz Aldrin ist Edwin Eugene Aldrin Jr. und er gewann die Legion of Merit Band. </text>
 				<template>AGENT-1 real name is PATIENT-2 and AGENT-1 won PATIENT-1. </template>
@@ -1042,12 +1218,16 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
 				</sortedtripleset>
 				<text>Buzz Aldrin wurde 1963 für die NASA ausgewählt und ist seitdem im Ruhestand. </text>
 				<template>AGENT-1 wurde für die NASA in PATIENT-1 ausgewählt und hat seitdem PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+				</sortedtripleset>
 				<text>Buzz Aldrin, jetzt im Ruhestand, wurde 1963 von der NASA angeheuert. </text>
 				<template>AGENT-1, jetzt PATIENT-2, wurde von der NASA in PATIENT-1 eingestellt. </template>
 			</lex>
@@ -1075,7 +1255,10 @@
 				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>California | gemstone | Benitoite</striple>
+				</sortedtripleset>
 				<text>Alan Shepard starb in Kalifornien, dem gemeinsamen Ort, um das Juwel Benitoit zu finden. </text>
 				<template>AGENT-1 starb in BRIDGE-1, dem gemeinsamen Ort, um PATIENT-1 zu finden. </template>
 			</lex>
@@ -1090,6 +1273,7 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>California | gemstone | Benitoite</striple>
 				</sortedtripleset>
 				<text>Alan Shepard starb in Kalifornien, das hat wie sein Edelstein, Benitoit. </text>
 				<template>AGENT-1 starb in BRIDGE-1, die als BRIDGE-1 Edelstein, PATIENT-1. </template>
@@ -1110,12 +1294,18 @@
 				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Dallas | partsType | List_of_counties_in_Texas</striple>
+				</sortedtripleset>
 				<text>Elliot See wurde in Dallas, Texas geboren. </text>
 				<template>AGENT-1 wurde in BRIDGE-1, PATIENT-1 geboren. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Dallas | partsType | List_of_counties_in_Texas</striple>
+				</sortedtripleset>
 				<text>Elliot See wurde in Dallas County, Dallas Texas geboren. </text>
 				<template>AGENT-1 wurde in BRIDGE-1, PATIENT-1 geboren. </template>
 			</lex>
@@ -1137,6 +1327,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+					<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
 				</sortedtripleset>
 				<text>Alan Shepard 's Distinguished Service Medal von der US-Marine rangiert höher als Department of Commerce Gold Medal. </text>
 				<template>AGENT-1 @ BRIDGE-1 ist höher als PATIENT-1. </template>
@@ -1150,7 +1341,10 @@
 				<template>AGENT-1 war der Empfänger von BRIDGE-1 und BRIDGE-1, die höher als PATIENT-1 ist. </template>
 			</lex>
 			<lex comment="toFix" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+				</sortedtripleset>
 				<text>In den höheren Rang des Department of Commerce Gold Medal Alan Shepard bekam eine der Distinguished Service Medal of United States Navy. </text>
 				<template>In den höheren Rang von PATIENT-1 AGENT-1 bekam eine von BRIDGE-1. </template>
 			</lex>
@@ -1172,17 +1366,24 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
 				</sortedtripleset>
 				<text>Elliot See wurde am 23. Juli 1927 geboren und war Student an der University of Texas in Austin. </text>
 				<template>AGENT-1 wurde auf PATIENT-2 geboren und war Student bei PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+				</sortedtripleset>
 				<text>Elliot See, geboren am 23. Juli 1927, studierte an der University of Texas in Austin. </text>
 				<template>AGENT-1, der auf PATIENT-2 geboren wurde, hat PATIENT-1 absolviert. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+				</sortedtripleset>
 				<text>Elliot See, Student an der University of Texas in Austin und wurde am 23. Juli 1927 geboren. </text>
 				<template>AGENT-1, Student bei PATIENT-1 und wurde auf PATIENT-2 geboren. </template>
 			</lex>
@@ -1204,6 +1405,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
 				</sortedtripleset>
 				<text>Elliot See wurde in Dallas geboren und war Student an der University of Texas in Austin. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren und war Student bei PATIENT-1. </template>
@@ -1253,22 +1455,34 @@
 				<mtriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+				</sortedtripleset>
 				<text>Elliot See absolvierte sein Studium an der University of Texas in Austin, das an die Universität von Texas angeschlossen ist. </text>
 				<template>AGENT-1 absolvierte eine Ausbildung bei BRIDGE-1, die an PATIENT-1 angeschlossen ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+				</sortedtripleset>
 				<text>Elliot See war Student an der University of Texas in Austin, das Teil der Universität von Texas ist. </text>
 				<template>AGENT-1 war ein Student bei BRIDGE-1, das Teil von PATIENT-1 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+				</sortedtripleset>
 				<text>Elliot See studierte an der University of Texas in Austin, die an der University of Texas System angeschlossen ist. </text>
 				<template>AGENT-1 absolvierte die BRIDGE-1, die mit PATIENT-1 verbunden ist. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+				</sortedtripleset>
 				<text>Elliot See 's alma mater ist die University of Texas in Austin, die mit der University of Texas System verbunden ist. </text>
 				<template>AGENT-1 alma mater ist BRIDGE-1, das mit PATIENT-1 verbunden ist. </template>
 			</lex>
@@ -1288,13 +1502,17 @@
 				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
 				<text>Elliot See starb am 28. Februar 1966 in St. Louis. </text>
 				<template>AGENT-1 starb auf PATIENT-2, in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
 				</sortedtripleset>
 				<text>Elliot See starb am 28. Februar 1966 in St. Louis. </text>
 				<template>AGENT-1 starb in PATIENT-1 auf PATIENT-2. </template>
@@ -1302,6 +1520,7 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
 				</sortedtripleset>
 				<text>Elliot See starb in St Louis am 28. Februar 1966.. </text>
 				<template>AGENT-1 starb in PATIENT-1 auf PATIENT-2. . </template>
@@ -1309,6 +1528,7 @@
 			<lex comment="good" lid="Id4">
 				<sortedtripleset>
 					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
 				</sortedtripleset>
 				<text>Elliot See starb am 28. Februar 1966 in St. Louis. </text>
 				<template>AGENT-1 starb in PATIENT-1 auf PATIENT-2. </template>
@@ -1316,6 +1536,7 @@
 			<lex comment="good" lid="Id5">
 				<sortedtripleset>
 					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
 				</sortedtripleset>
 				<text>Elliot See starb in St. Louis am 1966-02-28. </text>
 				<template>AGENT-1 starb in PATIENT-1 auf PATIENT-2. </template>
@@ -1323,6 +1544,7 @@
 			<lex comment="good" lid="Id6">
 				<sortedtripleset>
 					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
 				</sortedtripleset>
 				<text>Elliot See starb in St Louis am 28 / 02 / 1966. </text>
 				<template>AGENT-1 starb in PATIENT-1 auf PATIENT-2. </template>
@@ -1330,6 +1552,7 @@
 			<lex comment="good" lid="Id7">
 				<sortedtripleset>
 					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
 				</sortedtripleset>
 				<text>Elliot See verstarb am 1966-02-28 in St. Louis. </text>
 				<template>AGENT-1 verabschiedete sich auf PATIENT-2 in PATIENT-1. </template>
@@ -1350,35 +1573,49 @@
 				<mtriple>Elliot_See | was selected by NASA | 1962</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | was selected by NASA | 1962</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
 				<text>Elliot See, der 1962 für die NASA arbeitete, starb in St. Louis. </text>
 				<template>AGENT-1, der in PATIENT-2 für die NASA arbeitete, starb in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Elliot_See | was selected by NASA | 1962</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
 				</sortedtripleset>
 				<text>Elliot See trat 1962 bei der NASA auf und starb in St. Louis. </text>
 				<template>AGENT-1 trat der NASA in PATIENT-2 bei und starb in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | was selected by NASA | 1962</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
 				<text>Elliot See, der 1962 von der NASA ausgewählt wurde, starb in St. Louis. </text>
 				<template>AGENT-1, der von der NASA in PATIENT-2 ausgewählt wurde, starb in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | was selected by NASA | 1962</striple>
+				</sortedtripleset>
 				<text>Elliot See, der in St. Louis starb, wurde 1962 von der NASA ausgewählt. </text>
 				<template>AGENT-1, der in PATIENT-1 gestorben ist, wurde von der NASA in PATIENT-2 ausgewählt. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | was selected by NASA | 1962</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
 				<text>1962 wurde Elliot See, der später in St. Louis starb, von der NASA ausgewählt. </text>
 				<template>In PATIENT-2 AGENT-1, der später in PATIENT-1 starb, wurde von der NASA ausgewählt. </template>
 			</lex>
 			<lex comment="good" lid="Id6">
 				<sortedtripleset>
 					<striple>Elliot_See | was selected by NASA | 1962</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
 				</sortedtripleset>
 				<text>Elliot, der 1962 von der NASA ausgewählt wurde, starb in St. Louis. </text>
 				<template>AGENT-1 siehe ausgewählt von der NASA in PATIENT-2 starb in PATIENT-1. </template>
@@ -1399,25 +1636,33 @@
 				<mtriple>St._Louis | isPartOf | Kingdom_of_France</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
+				</sortedtripleset>
 				<text>Elliot See starb in St. Louis, dem Königreich Frankreich. </text>
 				<template>AGENT-1 starb in BRIDGE-1, PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
 				</sortedtripleset>
 				<text>Elliot See starb in St Louis im Königreich Frankreich. </text>
 				<template>AGENT-1 starb in BRIDGE-1 in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
+				</sortedtripleset>
 				<text>Elliot See starb in St. Louis, der einst Teil des Königreichs Frankreich war. </text>
 				<template>AGENT-1 starb in BRIDGE-1, das einst Teil von PATIENT-1 war. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
 				<sortedtripleset>
 					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
 				</sortedtripleset>
 				<text>Elliot See starb in St. Louis (Teil des Königreichs Frankreich). </text>
 				<template>AGENT-1 starb in BRIDGE-1 (Teil von PATIENT-1). </template>
@@ -1438,12 +1683,17 @@
 				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+				</sortedtripleset>
 				<text>Elliot See, der jetzt tot ist, wurde in Dallas geboren. </text>
 				<template>AGENT-1, der jetzt PATIENT-1 ist, wurde in PATIENT-2 geboren. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+				</sortedtripleset>
 				<text>Elliot See, der in Dallas geboren wurde, ist gestorben. </text>
 				<template>AGENT-1, der in PATIENT-2 geboren wurde, ist gestorben. </template>
 			</lex>
@@ -1455,12 +1705,17 @@
 				<template>AGENT-1 (PATIENT-1) wurde in PATIENT-2 geboren. </template>
 			</lex>
 			<lex comment="toFix" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+				</sortedtripleset>
 				<text>Elliot See, verstorben. Wurde in Dallas geboren. </text>
 				<template>AGENT-1, PATIENT-1. Wurde in PATIENT-2 geboren. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+				</sortedtripleset>
 				<text>Elliot See, geboren in Dallas, ist bereits verstorben. </text>
 				<template>AGENT-1, geboren in PATIENT-2, ist bereits verstorben. </template>
 			</lex>
@@ -1487,19 +1742,24 @@
 				<template>AGENT-1 ist in PATIENT-2 gestorben. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
+				</sortedtripleset>
 				<text>Elliot See verabschiedete sich in St. Louis. </text>
 				<template>AGENT-1 verabschiedete sich in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
 				</sortedtripleset>
 				<text>Elliot See ist verstorben und starb in St. Louis. </text>
 				<template>AGENT-1 ist PATIENT-1 und starb in PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
 				<text>Elliot See starb in St. Louis. </text>
 				<template>AGENT-1 starb in PATIENT-2. </template>
 			</lex>
@@ -1535,12 +1795,18 @@
 				<template>AGENT-1 wurde in BRIDGE-1 geboren, einem Staat, in dem man PATIENT-1 finden kann. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>New_Hampshire | bird | Purple_finch</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+				</sortedtripleset>
 				<text>Der lila Finch ist der Vogel von New Hampshire, der Geburtsort von Alan Shepard. </text>
 				<template>PATIENT-1 ist der Vogel von BRIDGE-1, dem Geburtsort von AGENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>New_Hampshire | bird | Purple_finch</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+				</sortedtripleset>
 				<text>Lila Finch ist der Vogel von New Hampshire, der Geburtsort von Alan Shepard. </text>
 				<template>PATIENT-1 ist der Vogel von BRIDGE-1, der Geburtsort von AGENT-1. </template>
 			</lex>
@@ -1568,13 +1834,17 @@
 				<template>AGENT-1 wurde auf PATIENT-1 geboren und von PATIENT-2 abgeschlossen. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
+				</sortedtripleset>
 				<text>William Anders, der am 17. Oktober 1933 geboren wurde, studierte an der AFIT, M.S. 1962. </text>
 				<template>AGENT-1, der auf PATIENT-1 geboren wurde, schloss PATIENT-2 ab. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
 				</sortedtripleset>
 				<text>William Anders wurde 1933-10-17 geboren und erhielt eine MS von AFIT. </text>
 				<template>AGENT-1 wurde geboren PATIENT-1 und AGENT-1 erhielt PATIENT-2. </template>
@@ -1589,12 +1859,14 @@
 			<lex comment="good" lid="Id5">
 				<sortedtripleset>
 					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
 				</sortedtripleset>
 				<text>William Anders wurde am 17. Oktober 1933 geboren und seine Alma Mater war AFIT, M.S. Die er 1962 besuchte. </text>
 				<template>AGENT-1 wurde auf PATIENT-1 geboren und AGENT-1 Alma Mater war PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id6">
 				<sortedtripleset>
+					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
 					<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
 				</sortedtripleset>
 				<text>William Anders (geboren 1933-10-17) studierte an der AFIT, M.S. 1962. </text>
@@ -1616,34 +1888,50 @@
 				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+				</sortedtripleset>
 				<text>William Anders, der Apollo 8 kredenzte, ging am 1. September 1969 in den Ruhestand. </text>
 				<template>AGENT-1, der PATIENT-2 gekrempelt hat, ging auf PATIENT-1 zurück. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+				</sortedtripleset>
 				<text>William Anders, der als Besatzungsmitglied von Apollo 8 diente, ging am 1. September 1969 in den Ruhestand. </text>
 				<template>AGENT-1, der als Besatzungsmitglied von PATIENT-2 diente, ging auf PATIENT-1 zurück. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
 				</sortedtripleset>
 				<text>William Anders war einst Besatzungsmitglied von Apollo 8 und trat am 1. September 1969 in den Ruhestand. </text>
 				<template>AGENT-1 war einst ein Besatzungsmitglied von PATIENT-2 und AGENT-1 auf PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+				</sortedtripleset>
 				<text>William Anders, Besatzungsmitglied von Apollo 8 ging ab 1969-09-01 in den Ruhestand. </text>
 				<template>AGENT-1, Besatzungsmitglied von PATIENT-2 ging als PATIENT-1 in den Ruhestand. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+				</sortedtripleset>
 				<text>William Anders, ein Besatzungsmitglied von Apollo 8, ging 1969 / 09 / 01 in den Ruhestand. </text>
 				<template>AGENT-1, ein Besatzungsmitglied von PATIENT-2, pensionierte PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id6">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+				</sortedtripleset>
 				<text>William Anders ging am 1. August 1969 in den Ruhestand. Er war ein Besatzungsmitglied des Apollo 8. </text>
 				<template>AGENT-1 im Ruhestand PATIENT-1. AGENT-1 war ein Besatzungsmitglied von PATIENT-2. </template>
 			</lex>
@@ -1671,7 +1959,10 @@
 				<template>PATIENT-1 AGENT-1 wurde in PATIENT-2 geboren. </template>
 			</lex>
 			<lex comment="toFix" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | nationality | United_States</striple>
+					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+				</sortedtripleset>
 				<text>William Anders, der aus den USA stammt, wurde eigentlich im britischen Hongkong geboren. </text>
 				<template>AGENT-1, der aus PATIENT-1 stammt, wurde tatsächlich in PATIENT-2 geboren. </template>
 			</lex>
@@ -1685,6 +1976,7 @@
 			</lex>
 			<lex comment="good" lid="Id4">
 				<sortedtripleset>
+					<striple>William_Anders | nationality | United_States</striple>
 					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
 				</sortedtripleset>
 				<text>William Anders Nationalität sind die Vereinigten Staaten, aber er wurde in Hongkong geboren. </text>
@@ -1693,6 +1985,7 @@
 			<lex comment="good" lid="Id5">
 				<sortedtripleset>
 					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | nationality | United_States</striple>
 				</sortedtripleset>
 				<text>William Anders wurde im britischen Hongkong geboren, hat aber eine US-amerikanische Staatsangehörigkeit. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren, hat aber eine PATIENT-1-Nationalität. </template>
@@ -1708,6 +2001,7 @@
 			<lex comment="good" lid="Id7">
 				<sortedtripleset>
 					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | nationality | United_States</striple>
 				</sortedtripleset>
 				<text>William Anders wurde im britischen Hongkong geboren und ist Bürger der USA. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren und ist ein Bürger von PATIENT-1. </template>
@@ -1730,29 +2024,40 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | occupation | Fighter_pilot</striple>
 				</sortedtripleset>
 				<text>William Anders wurde im britischen Hongkong geboren und später im Leben zur Kampfpilotin. </text>
 				<template>AGENT-1 wurde in PATIENT-2 geboren und später im Leben wurde PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>William_Anders | occupation | Fighter_pilot</striple>
 					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
 				</sortedtripleset>
 				<text>William Anders war ein Kampfpilot, der im britischen Hongkong geboren wurde. </text>
 				<template>AGENT-1 war PATIENT-1, der in PATIENT-2 geboren wurde. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | occupation | Fighter_pilot</striple>
+				</sortedtripleset>
 				<text>William Anders (geboren im britischen Hongkong) diente als Fighter-Pilot. </text>
 				<template>AGENT-1 (geboren in PATIENT-2) diente als PATIENT-1. </template>
 			</lex>
 			<lex comment="toFix" lid="Id4">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | occupation | Fighter_pilot</striple>
+				</sortedtripleset>
 				<text>Willian Anders, der im britischen Hongkong geboren wurde, diente als Kampfpilot. </text>
 				<template>AGENT-1, geboren in PATIENT-2, diente als PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | occupation | Fighter_pilot</striple>
+				</sortedtripleset>
 				<text>William Anders, geboren im britischen Hongkong, war Kampfpilot. </text>
 				<template>AGENT-1, geboren in PATIENT-2, war PATIENT-1. </template>
 			</lex>
@@ -1780,13 +2085,17 @@
 				<template>AGENT-1 ist PATIENT-1 und Mitglied von PATIENT-2 Crew. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | occupation | Fighter_pilot</striple>
+				</sortedtripleset>
 				<text>William Anders war Teil der Apollo-8-Crew und war einst Kampfpilotin. </text>
 				<template>AGENT-1 war Teil der PATIENT-2-Crew und war einmal PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>William_Anders | occupation | Fighter_pilot</striple>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
 				</sortedtripleset>
 				<text>Williams Anders war Kampfpilot und Besatzungsmitglied von Apollo 8. </text>
 				<template>AGENT-1 war PATIENT-1 und ein Besatzungsmitglied von PATIENT-2. </template>
@@ -1809,6 +2118,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>William_Anders | served as Chief of the Astronaut Office in | 1976</striple>
+					<striple>William_Anders | title | United_States_Ambassador_to_Norway</striple>
 				</sortedtripleset>
 				<text>William Anders diente 1976 als Chef des Astronautenbüros und hatte einen Titel als Botschafter der Vereinigten Staaten in Norwegen. </text>
 				<template>AGENT-1 diente als Chief of the Astronaut Office in PATIENT-1 und hatte einen Titel als PATIENT-2. </template>
@@ -1822,7 +2132,10 @@
 				<template>AGENT-1-Zeit als Chef des Astronaut Office in PATIENT-1 hat AGENT-1 gut für AGENT-1 neue Position als PATIENT-2 vorbereitet. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | title | United_States_Ambassador_to_Norway</striple>
+					<striple>William_Anders | served as Chief of the Astronaut Office in | 1976</striple>
+				</sortedtripleset>
 				<text>Der Botschafter der Vereinigten Staaten in Norwegen, William Anders, war 1976 Chef des Astronautenbüros. </text>
 				<template>PATIENT-2, AGENT-1, diente als Chief of the Astronaut Office in PATIENT-1. </template>
 			</lex>
@@ -1842,18 +2155,25 @@
 				<mtriple>Apollo_8 | crewMembers | Frank_Borman</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
+				</sortedtripleset>
 				<text>Sowohl William Anders als auch Frank Borman waren Besatzungsmitglieder an Bord von Apollo 8. </text>
 				<template>Sowohl AGENT-1 als auch PATIENT-1 waren Besatzungsmitglieder an Bord von BRIDGE-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
+				</sortedtripleset>
 				<text>Sowohl William Anders als auch Frank Borman dienten als Besatzungsmitglieder auf Apollo 8. </text>
 				<template>Sowohl AGENT-1 als auch PATIENT-1 dienten als Besatzungsmitglieder auf BRIDGE-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
 				</sortedtripleset>
 				<text>Unter der Besatzung von Apollo 8 waren William Anders und Frank Borman. </text>
 				<template>Unter der Besatzung von BRIDGE-1 waren AGENT-1 und PATIENT-1. </template>
@@ -1861,6 +2181,7 @@
 			<lex comment="good" lid="Id4">
 				<sortedtripleset>
 					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
 				</sortedtripleset>
 				<text>Unter den Besatzungsmitgliedern von Apollo 8 waren William Anders und Frank Borman. </text>
 				<template>Unter den Besatzungsmitgliedern von BRIDGE-1 waren AGENT-1 und PATIENT-1. </template>
@@ -1889,12 +2210,16 @@
 				<mtriple>William_Anders | birthDate | &quot;1933-10-17&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					<striple>William_Anders | was selected by NASA | 1963</striple>
+				</sortedtripleset>
 				<text>Geboren am 17. Oktober 1933, trat William Anders 1963 bei der NASA auf. </text>
 				<template>Geboren auf PATIENT-2, AGENT-1 bei der NASA in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
 					<striple>William_Anders | was selected by NASA | 1963</striple>
 				</sortedtripleset>
 				<text>Der am 17. Oktober 1933 geborene William Anders wurde 1963 von der NASA ausgewählt. </text>

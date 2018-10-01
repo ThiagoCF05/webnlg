@@ -18,16 +18,20 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | city | Mendrisio</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</striple>
 				</sortedtripleset>
 				<text>Die Accademia di Architettura di Mendrisio in Mendrisio hatte 100 akademische Mitarbeiter und 600 Studenten. Sein Dekan ist Mario Botta. </text>
 				<template>AGENT-1 in PATIENT-3, PATIENT-1 hatte PATIENT-5 akademische Mitarbeiter und PATIENT-4 Studenten. AGENT-1 Dekan ist PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | city | Mendrisio</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</striple>
 				</sortedtripleset>
@@ -38,6 +42,8 @@
 				<sortedtripleset>
 					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</striple>
 				</sortedtripleset>
 				<text>Die Accademia di Architettura di Mendrisio in der Schweiz hat 100 Mitarbeiter und eine studentische Bevölkerung von 600. Der Dekan ist Mario Botta. </text>
 				<template>AGENT-1 in PATIENT-1 hat einen Mitarbeiter von PATIENT-5 und eine studentische Bevölkerung von PATIENT-4. Der Dekan ist PATIENT-2. </template>
@@ -68,9 +74,11 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | location | Ticino</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | established | 1996</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
-					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
 				</sortedtripleset>
 				<text>Die Accademia di Architettura di Mendrisio befindet sich in Tessin, Schweiz. Es wurde 1996 gegründet und hat 600 Studenten. Spitzenkandidat der Schweiz ist Johann Schneider-Ammann. </text>
 				<template>AGENT-1 befindet sich in PATIENT-4, BRIDGE-1. AGENT-1 wurde in PATIENT-2 gegründet und AGENT-1 hat PATIENT-1 Studenten. Der Führer von BRIDGE-1 ist PATIENT-3. </template>
@@ -79,6 +87,7 @@
 				<sortedtripleset>
 					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | location | Ticino</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | established | 1996</striple>
 					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
 				</sortedtripleset>
@@ -86,7 +95,13 @@
 				<template>PATIENT-3 von BRIDGE-1 ist PATIENT-3. BRIDGE-1 ist der Standort von AGENT-1 in PATIENT-4, das in PATIENT-2 gegründet wurde und PATIENT-1 Studenten hat. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | established | 1996</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | location | Ticino</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
+				</sortedtripleset>
 				<text>Die Accademia di Architettura di Mendrisio, die 600 Studenten hat, wurde 1996 im Tessin gegründet. Der Führer der Schweiz ist Johann Schneider - Amman. </text>
 				<template>AGENT-1, das PATIENT-1-Studenten hat, wurde in PATIENT-2 in PATIENT-4, BRIDGE-1 gegründet. Der Führer von BRIDGE-1 ist PATIENT-3. </template>
 			</lex>
@@ -117,8 +132,10 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
 					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
 					<striple>Karnataka | has to its northeast | Telangana</striple>
+					<striple>Karnataka | has to its west | Arabian_Sea</striple>
 				</sortedtripleset>
 				<text>Das Acharya Institute of Technology ist mit der Visvesvaraya Technological University verbunden und befindet sich in Bangalore, Karnataka. Im Nordosten ist Telangana und im Westen das Arabische Meer. </text>
 				<template>AGENT-1 ist mit PATIENT-1 verbunden und befindet sich in PATIENT-3, BRIDGE-1. Zu BRIDGE-1 Nordosten ist PATIENT-2 und BRIDGE-1 West ist PATIENT-4. </template>
@@ -127,6 +144,7 @@
 				<sortedtripleset>
 					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
 					<striple>Karnataka | has to its west | Arabian_Sea</striple>
+					<striple>Karnataka | has to its northeast | Telangana</striple>
 					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
 				</sortedtripleset>
 				<text>Das Acharya Institute of Technology in Balgalore, Karnataka liegt östlich des Arabischen Meeres und südwestlich von Telangana. Es ist verbunden mit der Visvesvaraya Technological University. </text>
@@ -169,6 +187,8 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
 					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
 					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
 				</sortedtripleset>
@@ -179,7 +199,9 @@
 				<sortedtripleset>
 					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
 					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
 					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
 				</sortedtripleset>
 				<text>Das Acharya Institute of Technology wurde im Jahr 2000 gegründet und hat seinen Sitz in Bangalore in Indien. Es hat derzeit 700 Postgraduierten Studenten und es ist genaue Lage ist 'In Soldevanahalli, Acharya Dr. Sardampalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore - 560090. </text>
 				<template>AGENT-1 wurde in PATIENT-2 gegründet und hat seinen Sitz in der Stadt PATIENT-1 in PATIENT-3. AGENT-1 hat derzeit PATIENT-4 Postgraduate-Studenten und AGENT-1 genaue Lage ist PATIENT-5. </template>
@@ -221,8 +243,10 @@
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
 					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
+					<striple>Karnataka | has to its west | Arabian_Sea</striple>
+					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
 					<striple>Bangalore | founder | Kempe_Gowda_I</striple>
 				</sortedtripleset>
 				<text>Das Acharya Institute of Technology befindet sich in Bangalore, Karnataka, östlich vom Arabischen Meer. Das Institut ist mit der Visvesvaraya Technological University verbunden. Bangalore wurde von KEMPE Gowda gegründet. </text>
@@ -254,15 +278,21 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | city | Alba_Iulia</striple>
+					<striple>Alba_Iulia | country | Romania</striple>
 					<striple>Romania | capital | Bucharest</striple>
+					<striple>Romania | leaderName | Klaus_Iohannis</striple>
 				</sortedtripleset>
 				<text>Die 1 Decembrie 1918 Universität ist in Alba Iulia, Rumänien. Die Hauptstadt des Landes ist Bukarest und der Ministerpräsident ist Klaus Iohannis. </text>
 				<template>AGENT-1 ist in BRIDGE-2, BRIDGE-1. BRIDGE-1 Kapital ist PATIENT-3 und der Premierminister ist PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | city | Alba_Iulia</striple>
+					<striple>Alba_Iulia | country | Romania</striple>
 					<striple>Romania | capital | Bucharest</striple>
 					<striple>Romania | leaderName | Klaus_Iohannis</striple>
+					<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
 				</sortedtripleset>
 				<text>1 Decembrie 1918 Universität ist in Alba Iulia, Rumänien. Bukarest ist die Hauptstadt von Rumänien und Klaus Iohannis ist der Ministerpräsident des Landes. </text>
 				<template>AGENT-1 ist in BRIDGE-2, BRIDGE-1. PATIENT-3 ist die Hauptstadt von BRIDGE-1 und PATIENT-2 ist BRIDGE-1 PATIENT-1. </template>
@@ -273,6 +303,7 @@
 					<striple>Alba_Iulia | country | Romania</striple>
 					<striple>Romania | capital | Bucharest</striple>
 					<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
+					<striple>Romania | leaderName | Klaus_Iohannis</striple>
 				</sortedtripleset>
 				<text>1 Decembrie 1918 Universität befindet sich in der Stadt Alba lulia in Rumänien. Die Hauptstadt Rumäniens ist Bukarest und der Ministerpräsident ist Klaus Lohannis. </text>
 				<template>AGENT-1 befindet sich in der Stadt BRIDGE-2 in BRIDGE-1. Die Hauptstadt von BRIDGE-1 ist PATIENT-3 und PATIENT-1 ist PATIENT-2. </template>
@@ -317,6 +348,8 @@
 					<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
 					<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
 					<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+					<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
+					<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
 				</sortedtripleset>
 				<text>Die School of Business and Social Sciences an der Universität Aarhus in Dänemark wurde 1928 gegründet. Sie ist mit dem Europäischen Hochschulverband verbunden und hat ein Personal-Kompliment von 737. 16000 Schüler besuchen derzeit die Hochschule. </text>
 				<template>AGENT-1 in PATIENT-4 wurde in PATIENT-5 gegründet. AGENT-1 ist mit PATIENT-1 verbunden und hat ein Kompliment von PATIENT-3. PATIENT-2-Studenten besuchen AGENT-1 derzeit. </template>

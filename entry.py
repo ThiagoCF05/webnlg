@@ -42,8 +42,9 @@ class TagEntity():
         return (self.tag, self.entity)
 
 class Reference():
-    def __init__(self, tag, entity, refex, number):
+    def __init__(self, tag, entity, refex, number, reftype):
         self.tag = tag
         self.entity = entity
         self.refex = refex
         self.number = number
+        self.reftype = reftype

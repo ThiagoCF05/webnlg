@@ -10,8 +10,12 @@ Description:
 """
 
 import copy
+import re
 
 def order(tripleset, template, entitymap):
+    template = re.sub(r'([.,;:?!\'\(\)])', r' \1', template)
+    template = re.sub(r'(.+)-([1-9]+)-(.+)', r'\1-\2 -\3', template, flags=re.U)
+
     entitytag = dict(map(lambda item: (item[1], item[0]), entitymap.items()))
     tags = entitymap.keys()
     orderedtripleset = []

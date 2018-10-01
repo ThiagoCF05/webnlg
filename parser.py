@@ -148,6 +148,7 @@ def generate(entryset, in_file, out_file, lng):
                     reference_xml.attrib['tag'] = reference.tag
                     reference_xml.attrib['entity'] = reference.entity
                     reference_xml.attrib['number'] = str(reference.number)
+                    reference_xml.attrib['type'] = str(reference.reftype)
                     reference_xml.text = reference.refex
 
             if lng == 'en':

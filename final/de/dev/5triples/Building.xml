@@ -18,9 +18,11 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
-					<striple>London | leaderName | Boris_Johnson</striple>
 					<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
 					<striple>United_Kingdom | capital | London</striple>
+					<striple>United_Kingdom | currency | Pound_sterling</striple>
+					<striple>London | leaderName | Boris_Johnson</striple>
+					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
 				</sortedtripleset>
 				<text>20 Fenchurch Street befindet sich im Vereinigten Königreich, wo London die Hauptstadt ist, und die Währung ist Pfund Sterling. Boris Johnson ist der Führer in London, und einer der Führer des Vereinigten Königreichs ist Elizabeth II. </text>
 				<template>AGENT-1 befindet sich in BRIDGE-1, wo BRIDGE-2 die Hauptstadt ist, und die Währung ist PATIENT-3. PATIENT-1 ist Marktführer in BRIDGE-2, und einer der Anführer von BRIDGE-1 ist PATIENT-2. </template>
@@ -31,6 +33,7 @@
 					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
 					<striple>United_Kingdom | capital | London</striple>
 					<striple>London | leaderName | Boris_Johnson</striple>
+					<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
 				</sortedtripleset>
 				<text>Das Vereinigte Königreich verwendet die Währung des Pfund Sterling und wird von Elizabeth II. zusammen mit Boris Johnson geführt. Die Hauptstadt ist London und das Land ist auch der Standort von 20 Fenchurch Street. </text>
 				<template>BRIDGE-1 verwendet die Währung von PATIENT-3 und wird von PATIENT-2 zusammen mit PATIENT-1 geführt. Die Hauptstadt ist BRIDGE-2 und BRIDGE-1 ist auch der Standort von AGENT-1. </template>
@@ -65,6 +68,7 @@
 					<striple>250_Delaware_Avenue | cost | &quot;110 million (dollars)&quot;</striple>
 					<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
 					<striple>250_Delaware_Avenue | floorCount | 12</striple>
+					<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
 				</sortedtripleset>
 				<text>250 Delaware Avenue wurde in Buffalo New York zu einem Preis von 110 Millionen Dollar gebaut. Der Bau begann im Januar 2014 und das Gebäude hat zwölf Stockwerke mit einer Fläche von 30843,8 Quadratmetern. </text>
 				<template>AGENT-1 wurde in PATIENT-1 auf Kosten von PATIENT-3 gebaut. Baubeginn in PATIENT-2 und AGENT-1 hat PATIENT-5 Etagen mit einem Bereich von PATIENT-4. </template>
@@ -72,8 +76,10 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>250_Delaware_Avenue | floorCount | 12</striple>
+					<striple>250_Delaware_Avenue | location | Buffalo,_New_York</striple>
 					<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
 					<striple>250_Delaware_Avenue | cost | &quot;110 million (dollars)&quot;</striple>
+					<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
 				</sortedtripleset>
 				<text>Es gibt 12 Etagen an der 250 Delaware Avenue in Buffalo, New York. Der Bau, der im Januar 2014 begann, kostete 110 Millionen Dollar für eine Bodenfläche von 30843,8 Quadratmetern. </text>
 				<template>Es gibt PATIENT-5 Etagen bei AGENT-1 in PATIENT-1. Bau, die in PATIENT-2 kostete PATIENT-3 für eine Bodenfläche von PATIENT-4. </template>
@@ -104,6 +110,10 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Chicago | leaderName | Rahm_Emanuel</striple>
+					<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+					<striple>Chicago | country | United_States</striple>
+					<striple>300_North_LaSalle | location | Chicago</striple>
 					<striple>300_North_LaSalle | floorCount | 60</striple>
 				</sortedtripleset>
 				<text>Rahm Emanuel ist der Führer von Chicago, DuPage County, Illinois, Vereinigte Staaten, die die Lage des Gebäudes auf 300 North LaSalle, die 60 Etagen hat. </text>
@@ -113,14 +123,20 @@
 				<sortedtripleset>
 					<striple>300_North_LaSalle | floorCount | 60</striple>
 					<striple>300_North_LaSalle | location | Chicago</striple>
+					<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+					<striple>Chicago | country | United_States</striple>
+					<striple>Chicago | leaderName | Rahm_Emanuel</striple>
 				</sortedtripleset>
 				<text>300 North LaSalle hat 60 Etagen und befindet sich in Chicago, DuPage County, Illinois, USA. Der Anführer von Chicago ist Rahm Emanuel. </text>
 				<template>AGENT-1 hat PATIENT-3 Etagen und befindet sich in BRIDGE-1, PATIENT-2, PATIENT-4. Der Führer von BRIDGE-1 ist PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>300_North_LaSalle | floorCount | 60</striple>
+					<striple>300_North_LaSalle | location | Chicago</striple>
 					<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
 					<striple>Chicago | country | United_States</striple>
+					<striple>Chicago | leaderName | Rahm_Emanuel</striple>
 				</sortedtripleset>
 				<text>300 North LaSalle, mit 60 Etagen, befindet sich in Chicago, ein Teil des DuPage County in Illinois, USA. Der Anführer von Chicago ist Rahm Emanuel. </text>
 				<template>AGENT-1, das PATIENT-3 Etagen hat, befindet sich in BRIDGE-1, das Teil von PATIENT-2 in PATIENT-4 ist. Der Führer von BRIDGE-1 ist PATIENT-1. </template>
@@ -150,18 +166,32 @@
 				<mtriple>Dublin | isPartOf | Leinster</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					<striple>3Arena | location | Dublin</striple>
+					<striple>Dublin | country | Republic_of_Ireland</striple>
+					<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
+					<striple>Dublin | isPartOf | Leinster</striple>
+				</sortedtripleset>
 				<text>3Arena (im Besitz von Live Nation Entertainment) befindet sich in Dublin, Republik Irland. Dáil Éireann ist ein Führer in Dublin, das Teil von Leinster ist. </text>
 				<template>AGENT-1 (im Besitz von PATIENT-1) befindet sich in BRIDGE-1, PATIENT-3. PATIENT-2 ist führend in BRIDGE-1, das Teil von PATIENT-4 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					<striple>3Arena | location | Dublin</striple>
+					<striple>Dublin | isPartOf | Leinster</striple>
+					<striple>Dublin | country | Republic_of_Ireland</striple>
+					<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
+				</sortedtripleset>
 				<text>3Arena, im Besitz von Live Nation Entertainment, befindet sich in Dublin, das Teil von Leinster in der Republik Irland ist. Dáil Éireann ist führend in Dublin. </text>
 				<template>AGENT-1, im Besitz von PATIENT-1, befindet sich in BRIDGE-1, das Teil von PATIENT-4 in PATIENT-3 ist. PATIENT-2 ist führend in BRIDGE-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Dublin | isPartOf | Leinster</striple>
 					<striple>3Arena | location | Dublin</striple>
+					<striple>3Arena | owner | Live_Nation_Entertainment</striple>
 					<striple>Dublin | country | Republic_of_Ireland</striple>
 					<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
 				</sortedtripleset>
@@ -198,6 +228,7 @@
 					<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
 					<striple>Adisham_Hall | completionDate | 1931</striple>
 					<striple>Adisham_Hall | address | &quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;</striple>
+					<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
 				</sortedtripleset>
 				<text>Adisham Hall in Sri Lanka wurde zwischen 1927 und 1931 in St. Benedicts Kloster, Adisham, Haputhale, Sri Lanka im Tudor und Jacobean Stil der Architektur errichtet. </text>
 				<template>AGENT-1 in PATIENT-2 wurde zwischen PATIENT-4 und PATIENT-3 in PATIENT-5 in PATIENT-1-Architektur konstruiert. </template>
@@ -207,6 +238,7 @@
 					<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
 					<striple>Adisham_Hall | completionDate | 1931</striple>
 					<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
+					<striple>Adisham_Hall | address | &quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;</striple>
 				</sortedtripleset>
 				<text>Der Bau der Adisham Hall fand zwischen 1927 und 1931 im architektonischen Stil von Tudor und Jacobean statt. Es befindet sich im Kloster St. Benedikt, Adisham, Haputhale, Sri Lanka. </text>
 				<template>Der Bau von AGENT-1 fand zwischen PATIENT-4 und PATIENT-3 im Architekturstil von PATIENT-1 statt. AGENT-1 befindet sich bei PATIENT-5. </template>
@@ -237,22 +269,34 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
 					<striple>Adisham_Hall | country | Sri_Lanka</striple>
+					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
 					<striple>Sri_Lanka | language | Tamil_language</striple>
+					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
 				</sortedtripleset>
 				<text>Adisham Hall befindet sich in Haputale, Sri Lanka. Die Hauptstadt Sri Lankas ist Sri Jayawardenepura Kotte, die Sprache, die im Land verwendet wird, ist tamilisch und die Währung ist die hessische Rupie. </text>
 				<template>AGENT-1 befindet sich in PATIENT-1. Die Hauptstadt von BRIDGE-1 ist PATIENT-2, die Sprache in BRIDGE-1 ist PATIENT-3 und die Währung ist PATIENT-4. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
 					<striple>Adisham_Hall | country | Sri_Lanka</striple>
+					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
 					<striple>Sri_Lanka | language | Tamil_language</striple>
+					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
 				</sortedtripleset>
 				<text>Adisham Hall ist in Haputale, Sri Lanka. Die Hauptstadt Sri Lankas ist Sri Jayawardenepura Kotte, die Sprache, die dort gesprochen wird, ist Tamil und die Währung ist die hessische Rupie. </text>
 				<template>AGENT-1 ist in PATIENT-1. Die Hauptstadt von BRIDGE-1 ist PATIENT-2, die Sprache, die dort gesprochen wird, ist PATIENT-3 und die Währung ist PATIENT-4. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+					<striple>Adisham_Hall | country | Sri_Lanka</striple>
+					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+					<striple>Sri_Lanka | language | Tamil_language</striple>
+				</sortedtripleset>
 				<text>Admisham Hall befindet sich in Haputale, Sri Lanka. Sri Jayawardenepura Kotte ist die Hauptstadt von Sri Lanka, wo die Währung die hessische Rupie ist und die verwendete Sprache tamilisch ist. </text>
 				<template>AGENT-1 befindet sich bei PATIENT-1. PATIENT-2 ist die Hauptstadt von BRIDGE-1, wo die Währung PATIENT-4 und die verwendete Sprache PATIENT-3 ist. </template>
 			</lex>
@@ -286,12 +330,14 @@
 					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
 					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
 					<striple>Adisham_Hall | country | Sri_Lanka</striple>
+					<striple>Adisham_Hall | location | Haputale</striple>
 				</sortedtripleset>
 				<text>Ranil Wickremesinghe ist der Führer von Sri Lanka, wo die Hauptstadt Sri Jayawardenepura Kotte und die Währung ist die hessische Rupie. Adisham Hall befindet sich im Land bei Haputale. </text>
 				<template>PATIENT-2 ist der Anführer von BRIDGE-1, wo die Hauptstadt PATIENT-3 und die Währung PATIENT-4 ist. AGENT-1 befindet sich in BRIDGE-1 bei PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Adisham_Hall | location | Haputale</striple>
 					<striple>Adisham_Hall | country | Sri_Lanka</striple>
 					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
 					<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
@@ -301,7 +347,13 @@
 				<template>AGENT-1 befindet sich in PATIENT-1, BRIDGE-1. Die Hauptstadt von BRIDGE-1 ist PATIENT-3 mit PATIENT-2 als BRIDGE-1-Führer und PATIENT-4 als BRIDGE-1 Währung. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Adisham_Hall | location | Haputale</striple>
+					<striple>Adisham_Hall | country | Sri_Lanka</striple>
+					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+					<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+				</sortedtripleset>
 				<text>Adisham Hall befindet sich in Haputale, Sri Lanka, wo die Hauptstadt Sri Jayawardenepura Kotte genannt wird. Ranil Wickremesinghe ist ein Führer Sri Lankas, und die Währung ist die hessische Rupie. </text>
 				<template>AGENT-1 befindet sich in PATIENT-1, BRIDGE-1, wo die Hauptstadt PATIENT-3 genannt wird. PATIENT-2 ist ein Führer von BRIDGE-1, und die Währung ist PATIENT-4. </template>
 			</lex>
@@ -332,7 +384,10 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Japan | ethnicGroup | Japanese_people</striple>
+					<striple>Japan | leaderName | Tarō_Asō</striple>
 					<striple>Akita_Museum_of_Art | country | Japan</striple>
+					<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+					<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
 				</sortedtripleset>
 				<text>Die wichtigste ethnische Gruppe in Japan sind die Japaner und der Führer ist tarō Asō. Akita Museum of Art ist in Akita, Akita, die Teil von Japan und der Präfektur Akita ist. </text>
 				<template>Die wichtigste ethnische Gruppe in BRIDGE-1 ist PATIENT-3 und der Führer ist PATIENT-2. AGENT-1 ist in BRIDGE-2, das Teil von BRIDGE-1 und PATIENT-1 ist. </template>
@@ -340,6 +395,7 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Japan | leaderName | Tarō_Asō</striple>
+					<striple>Japan | ethnicGroup | Japanese_people</striple>
 					<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
 				</sortedtripleset>
 				<text>&quot;Das Akita Museum für Kunst befindet sich in Akita, Akita, die sich in Japan befindet. Der Führer von Japan ist Taro Aso und die wichtigste ethnische Gruppe in Japan ist der Japaner. Akita, Akita ist Teil der Präfektur Akita. &quot;. </text>
@@ -347,9 +403,11 @@
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
-					<striple>Akita_Museum_of_Art | country | Japan</striple>
-					<striple>Japan | leaderName | Tarō_Asō</striple>
 					<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+					<striple>Akita_Museum_of_Art | country | Japan</striple>
+					<striple>Japan | ethnicGroup | Japanese_people</striple>
+					<striple>Japan | leaderName | Tarō_Asō</striple>
+					<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
 				</sortedtripleset>
 				<text>Akita Museum of Art ist in der Stadt Akita, Japan. Die wichtigste ethnische Gruppe in Japan sind die Japaner, der Führer ist Taro Aso und Akita, Akita ist Teil der Präfektur Akita. </text>
 				<template>AGENT-1 ist in BRIDGE-2, BRIDGE-1. Die wichtigste ethnische Gruppe in BRIDGE-1 ist PATIENT-3, der Führer ist PATIENT-2 und BRIDGE-2 ist Teil von PATIENT-1. </template>
@@ -381,23 +439,31 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+					<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
 					<striple>Amdavad_ni_Gufa | country | India</striple>
+					<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+					<striple>India | leaderName | Narendra_Modi</striple>
 				</sortedtripleset>
 				<text>Amdavad ni Gufa befindet sich in Gujarat, Ahmedabad, Indien. Der Führer von Gujarat ist bekannt als die Nationalversammlung von Gujarat, und der Führer Indiens ist Narendra Modi. </text>
 				<template>AGENT-1 befindet sich in BRIDGE-2, PATIENT-1, BRIDGE-1. BRIDGE-2 ist bekannt als PATIENT-3, und der Anführer von BRIDGE-1 ist PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
 					<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
 					<striple>Amdavad_ni_Gufa | country | India</striple>
-					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+					<striple>India | leaderName | Narendra_Modi</striple>
+					<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
 				</sortedtripleset>
 				<text>Amdavad ni Gufa befindet sich in Gujarat, Ahmedabad in Indien. Der Führer von Indien ist Narendra Modi, aber der Führer von Gujarat ist die Nationalversammlung von Gujarat. </text>
 				<template>AGENT-1 befindet sich in BRIDGE-2, PATIENT-1 in BRIDGE-1. Der Führer von BRIDGE-1 ist PATIENT-2, aber der Anführer von BRIDGE-2 ist PATIENT-3. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+					<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
 					<striple>Amdavad_ni_Gufa | country | India</striple>
+					<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
 					<striple>India | leaderName | Narendra_Modi</striple>
 				</sortedtripleset>
 				<text>Amdavad ni Gufa ist in Gujarat, Ahmedabad, die in Indien ist. Der Führer von Gujarat ist die Nationalversammlung von Gujarat, und Narendra Modi ist der Premierminister Indiens. </text>
@@ -428,7 +494,13 @@
 				<mtriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+					<striple>Ahmedabad | country | India</striple>
+					<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+					<striple>India | leaderName | T._S._Thakur</striple>
+				</sortedtripleset>
 				<text>Amdavad ni Gufa befindet sich in Ahmedabad, Gujarat, Indien; angeführt von der gesetzgebenden Versammlung von Gujarat, einschließlich des Führers T S Thakur. </text>
 				<template>AGENT-1 befindet sich in BRIDGE-2, BRIDGE-3, BRIDGE-1; angeführt von PATIENT-2, einschließlich PATIENT-1. </template>
 			</lex>
@@ -457,12 +529,21 @@
 				<mtriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+					<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+				</sortedtripleset>
 				<text>Das 476 bed ampara Hospital befindet sich im Osten der Provinz Sri Lanka, wo Austin Fernando der Führer ist. Der Landesvorsitzende ist Ranil Wickremesinghe. </text>
 				<template>PATIENT-2-Bett AGENT-1 befindet sich in BRIDGE-2, wo PATIENT-3 der Führer ist. BRIDGE-1-Führer ist PATIENT-3. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Ampara_Hospital | bedCount | 476</striple>
+					<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+					<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+				</sortedtripleset>
 				<text>Das Ampara Hospital, das 476 Betten hat, befindet sich in der östlichen Provinz Sri Lanka unter der Leitung von Austin Fernando. Der Führer Sri Lankas ist Ranil Wickremesinghe. </text>
 				<template>AGENT-1, das PATIENT-2 Betten hat, befindet sich in BRIDGE-2 unter der Leitung von PATIENT-3. Der Führer von BRIDGE-1 ist PATIENT-3. </template>
 			</lex>
@@ -501,14 +582,23 @@
 				<mtriple>Julia_Morgan | birthPlace | California</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Julia_Morgan | birthPlace | California</striple>
+					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+					<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+				</sortedtripleset>
 				<text>Julia Morgan, die in Kalifornien geboren wurde, entwarf die Asilomar Conference Grounds, das Los Angeles Herald Prüfer-Gebäude, The Riverside Art Musuem und Hearst Castle. </text>
 				<template>BRIDGE-1, geboren in PATIENT-4, entwarf AGENT-1, PATIENT-1, PATIENT-2 und PATIENT-3. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Julia_Morgan | birthPlace | California</striple>
+					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
 					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+					<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
 				</sortedtripleset>
 				<text>Julia Morgan war eine in Kalifornien geborene Architektin. Sie entwarf Asilomar Conference Grounds, The Riverside Art Museum, Hearst Castle und das Los Angeles Herald Examiner Gebäude. </text>
 				<template>BRIDGE-1 war ein in PATIENT-4 geborener Architekt. BRIDGE-1 entwarf AGENT-1, PATIENT-2, PATIENT-3 und PATIENT-1. </template>
@@ -540,7 +630,9 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+					<striple>Julia_Morgan | birthPlace | California</striple>
 					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
 					<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
 				</sortedtripleset>
 				<text>Asilomar Conference Grounds wurde von Julia Morgan (geboren in Kalifornien) entworfen, die für eine Reihe von Gebäuden, darunter Hearst Castle und The Riverside Art Museum, und ihre Arbeit in San Franciscos Chinatown bekannt ist. </text>
@@ -549,13 +641,22 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Julia_Morgan | birthPlace | California</striple>
+					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
 					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+					<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
 				</sortedtripleset>
 				<text>Julia Morgan, der Architekt, wurde in Kalifornien geboren und einige ihrer bedeutenden Projekte sind: Die Asilomar Conference Grounds, The Riverside Art Museum, Hearst Castle und einige Gebäude in Chinatown, San Francisco. </text>
 				<template>BRIDGE-1, der Architekt, wurde in PATIENT-4 geboren und einige von BRIDGE-1 bedeutenden Projekten sind: AGENT-1, PATIENT-1, PATIENT-2 und einige Gebäude in PATIENT-3. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Julia_Morgan | birthPlace | California</striple>
+					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+					<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
+				</sortedtripleset>
 				<text>Julia Morgan, geboren in Kalifornien, war der Architekt hinter dem Gelände der Asilomar Konferenz, dem Riverside Art Museum, Hearst Castle und Chinatown in San Francisco. </text>
 				<template>BRIDGE-1, geboren in PATIENT-4, war der Architekt hinter dem Gelände von AGENT-1, PATIENT-1, PATIENT-2 und PATIENT-3. </template>
 			</lex>
@@ -588,12 +689,15 @@
 					<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
 					<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
 					<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
+					<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
+					<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
 				</sortedtripleset>
 				<text>Die Konferenz von Asilomar wurde 1913 errichtet. Sie befinden sich in Pacific Grove, Kalifornien und wurden am 27. Februar 1987 in das National Register of Historic Places (mit der Referenznummer 87000823) aufgenommen. The grounds are in the architectural style of the Arts and Crafts Movement. </text>
 				<template>AGENT-1 wurde in PATIENT-5 konstruiert. AGENT-1 befinden sich in PATIENT-1 und AGENT-1 wurden dem nationalen Register der historischen Orte am 27. PATIENT-2 (mit PATIENT-4) hinzugefügt. Das Gelände befindet sich im architektonischen Stil von PATIENT-3. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
 					<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
 					<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
 					<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
@@ -604,6 +708,8 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
+					<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
+					<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
 					<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
 					<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
 				</sortedtripleset>
@@ -637,7 +743,10 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+					<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
+					<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
 					<striple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</striple>
+					<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
 				</sortedtripleset>
 				<text>Asser Levy Public Baths, erbaut 1904 in einem romanischen Revival-Stil, befindet sich an der 23. Straße (Manhattan). The site was added to the National Register of Historic Places on 1980-04-23, with Reference Number 80002709. </text>
 				<template>AGENT-1, gebaut in PATIENT-4 in einem PATIENT-2-Stil, befindet sich bei PATIENT-1. AGENT-1 wurde zum National Register of Historic Places on PATIENT-5 hinzugefügt, mit PATIENT-3. </template>
@@ -645,6 +754,7 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
+					<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
 					<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
 					<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
 					<striple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</striple>
@@ -656,6 +766,8 @@
 				<sortedtripleset>
 					<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
 					<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
+					<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
+					<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
 				</sortedtripleset>
 				<text>The Asser Levy Public Baths was built in 1904 in the architectural style of romanischen Revival, and is located on 23. Street, Manhattan. The site was added to the National Register of Historic Places on &quot;1980-04-23&quot;, with reference number 80002709. </text>
 				<template>AGENT-1 wurde in PATIENT-4 im Architekturstil von PATIENT-2 gebaut und befindet sich auf PATIENT-1. AGENT-1 wurde dem National Register of Historic Places auf &quot;PATIENT-5&quot; hinzugefügt, mit PATIENT-3. </template>
@@ -687,13 +799,19 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+					<striple>New_York_City | country | United_States</striple>
+					<striple>New_York_City | isPartOf | Manhattan</striple>
+					<striple>Manhattan | leaderName | Gale_Brewer</striple>
 				</sortedtripleset>
 				<text>Die Asser Levy Public Bäder finden Sie in New York City, New York, USA. Ein weiterer Teil von New York City ist Manhattan, wo Gale Brewer der Anführer ist. </text>
 				<template>AGENT-1 finden Sie in BRIDGE-1, PATIENT-1. Ein weiterer Teil von BRIDGE-1 ist BRIDGE-2, wo PATIENT-2 führend ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Manhattan | leaderName | Gale_Brewer</striple>
+					<striple>New_York_City | isPartOf | Manhattan</striple>
 					<striple>New_York_City | country | United_States</striple>
+					<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
 				</sortedtripleset>
 				<text>Gale Brewer ist der Führer von Manhattan, ein Teil von New York City, New York, USA. New York City ist der Standort der Asser Levy Public Bäder. </text>
 				<template>PATIENT-2 ist der Anführer von BRIDGE-2, das Teil von BRIDGE-1, PATIENT-1 ist. BRIDGE-1 ist der Standort von AGENT-1. </template>
@@ -701,7 +819,10 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+					<striple>New_York_City | country | United_States</striple>
 					<striple>New_York_City | isPartOf | Manhattan</striple>
+					<striple>New_York_City | isPartOf | New_York</striple>
+					<striple>Manhattan | leaderName | Gale_Brewer</striple>
 				</sortedtripleset>
 				<text>Der Standort der Asser Levy Public Bäder ist New York City, USA. New York City und Manhattan gehören zu New York. Der Anführer von Manhattan ist Gale Brewer. </text>
 				<template>Der Standort von AGENT-1 ist BRIDGE-1, PATIENT-1. BRIDGE-1 und BRIDGE-2 sind Teil von PATIENT-3. Der Führer von BRIDGE-2 ist PATIENT-2. </template>
@@ -745,6 +866,8 @@
 					<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
 					<striple>Birmingham | leaderName | Andrew_Mitchell</striple>
 					<striple>Birmingham | postalCode | B_postcode_area</striple>
+					<striple>John_Madin | birthPlace | Birmingham</striple>
+					<striple>103_Colmore_Row | architect | John_Madin</striple>
 				</sortedtripleset>
 				<text>Die Stadtverwaltung ist das Führungsgremium für Birmingham, wo Andrew Mitchell führend ist. Die Stadt hat die B-Postleitzahl und ist der Geburtsort des Architekten John Madin, der 103 Colmore Row entworfen hat. </text>
 				<template>PATIENT-2 ist das Führungsgremium für BRIDGE-2, wo PATIENT-3 führend ist. BRIDGE-2 hat PATIENT-1 und ist der Geburtsort von BRIDGE-1, der AGENT-1 entworfen hat. </template>
@@ -753,6 +876,9 @@
 				<sortedtripleset>
 					<striple>Birmingham | leaderName | Andrew_Mitchell</striple>
 					<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
+					<striple>Birmingham | postalCode | B_postcode_area</striple>
+					<striple>John_Madin | birthPlace | Birmingham</striple>
+					<striple>103_Colmore_Row | architect | John_Madin</striple>
 				</sortedtripleset>
 				<text>Birmingham wird von Andrew Mitchell und dem Birmingham City Council geführt. Die Stadt, die die B-Postleitzahl hat, ist der Geburtsort des Architekten John Madin, der 103 Colmore Row entworfen hat. </text>
 				<template>BRIDGE-2 wird von PATIENT-3 und PATIENT-2 geführt. BRIDGE-2, das PATIENT-1, ist der Geburtsort von BRIDGE-1, der AGENT-1 entworfen hat. </template>
@@ -785,12 +911,18 @@
 				<sortedtripleset>
 					<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
 					<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
+					<striple>Addis_Ababa | country | Ethiopia</striple>
+					<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+					<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
 				</sortedtripleset>
 				<text>Hailemariam Desalegn und Mulatu Teshome sind führend in Äthiopien. Das Stadion von Addis Abeba und das Rathaus von Addis Abeba befinden sich beide innerhalb des Landes in Addis Abeba. </text>
 				<template>PATIENT-2 und PATIENT-1 sind führend in BRIDGE-2. PATIENT-3 und AGENT-1 befinden sich in BRIDGE-2 in BRIDGE-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+					<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+					<striple>Addis_Ababa | country | Ethiopia</striple>
 					<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
 					<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
 				</sortedtripleset>
@@ -798,7 +930,13 @@
 				<template>PATIENT-3 und AGENT-1 befinden sich in BRIDGE-1, BRIDGE-2. BRIDGE-2 wird von PATIENT-1 und PATIENT-2 geführt. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+					<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+					<striple>Addis_Ababa | country | Ethiopia</striple>
+					<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
+					<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
+				</sortedtripleset>
 				<text>Das Stadion von Addis Abeba und das Rathaus von Addis Abeba befinden sich beide in Addis Abeba, Äthiopien. Malatu Teshome und Hailemariam Desalegn sind führend im Land. </text>
 				<template>PATIENT-3 und AGENT-1 befinden sich in BRIDGE-1, BRIDGE-2. PATIENT-1 und PATIENT-2 sind führend in BRIDGE-2. </template>
 			</lex>
@@ -827,7 +965,13 @@
 				<mtriple>250_Delaware_Avenue | location | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					<striple>United_States | language | English_language</striple>
+					<striple>United_States | leaderName | John_Roberts</striple>
+					<striple>United_States | ethnicGroup | African_Americans</striple>
+					<striple>250_Delaware_Avenue | location | United_States</striple>
+				</sortedtripleset>
 				<text>The President is the primary leader of German language speaking United States, (includes leader John Roberts), has the ethnic African American group and is home to 250 Delaware Avenue. </text>
 				<template>PATIENT-3 ist der Hauptführer von PATIENT-2 sprechen BRIDGE-1, (einschließlich Führer PATIENT-4), hat die ethnische PATIENT-1-Gruppe und ist zu Hause AGENT-1. </template>
 			</lex>
@@ -835,6 +979,9 @@
 				<sortedtripleset>
 					<striple>250_Delaware_Avenue | location | United_States</striple>
 					<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					<striple>United_States | leaderName | John_Roberts</striple>
+					<striple>United_States | language | English_language</striple>
+					<striple>United_States | ethnicGroup | African_Americans</striple>
 				</sortedtripleset>
 				<text>250 Delaware Avenue befindet sich in den Vereinigten Staaten, wo der Führer ist bekannt als der Präsident der Vereinigten Staaten, unterstützt von den Vereinigten Staaten von Amerikas Chief Justice, John Roberts. Die Hauptsprache ist Englisch, und eine der ethnischen Gruppen sind die afrikanischen Amerikaner. </text>
 				<template>AGENT-1 befindet sich in BRIDGE-1, wo der Führer als PATIENT-3 bekannt ist, unterstützt von BRIDGE-1 Chief Justice, PATIENT-4. Die Hauptsprache ist PATIENT-2, und eine der ethnischen Gruppen ist PATIENT-1. </template>
@@ -864,7 +1011,13 @@
 				<mtriple>United_States | ethnicGroup | White_Americans</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>United_States | leaderName | Joe_Biden</striple>
+					<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					<striple>United_States | ethnicGroup | White_Americans</striple>
+					<striple>United_States | language | English_language</striple>
+					<striple>250_Delaware_Avenue | location | United_States</striple>
+				</sortedtripleset>
 				<text>Joe Biden ist ein Führer der Vereinigten Staaten, der von einem Präsidenten geleitet wird. Die Weißen Amerikaner sind eine der ethnischen Gruppen des Landes, das die englische Sprache benutzt und wo sich 250 Delaware Avenue befindet. </text>
 				<template>PATIENT-3 ist ein Führer von BRIDGE-1, die von PATIENT-2 geleitet wird. PATIENT-4 ist eine der ethnischen Gruppen von BRIDGE-1, die PATIENT-1 verwendet und wo sich AGENT-1 befindet. </template>
 			</lex>
@@ -873,6 +1026,8 @@
 					<striple>250_Delaware_Avenue | location | United_States</striple>
 					<striple>United_States | language | English_language</striple>
 					<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					<striple>United_States | leaderName | Joe_Biden</striple>
+					<striple>United_States | ethnicGroup | White_Americans</striple>
 				</sortedtripleset>
 				<text>250 Delaware Avenue befindet sich in den USA, wo Englisch gesprochen wird. Der Präsident der Vereinigten Staaten ist der wichtigste Führer, neben Joe Biden, und eine Volksgruppe im Land sind weiße Amerikaner. </text>
 				<template>AGENT-1 befindet sich in BRIDGE-1, wo PATIENT-1 gesprochen wird. PATIENT-2 ist der wichtigste Führer, neben PATIENT-3, und eine ethnische Gruppe in BRIDGE-1 ist PATIENT-4. </template>

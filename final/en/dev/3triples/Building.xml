@@ -19,9 +19,9 @@
 					<striple>South_Africa | capital | Cape_Town</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1">11 Diagonal Street</reference>
-					<reference entity="South_Africa" number="2" tag="BRIDGE-1">South Africa</reference>
-					<reference entity="Cape_Town" number="4" tag="PATIENT-1">Cape Town</reference>
+					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1" type="name">11 Diagonal Street</reference>
+					<reference entity="South_Africa" number="2" tag="BRIDGE-1" type="name">South Africa </reference>
+					<reference entity="Cape_Town" number="4" tag="PATIENT-1" type="name">Cape Town</reference>
 				</references>
 				<text>11 Diagonal Street is located in South Africa (Cyril Ramaphosa is one of the leaders), the capital of which is Cape Town.</text>
 				<template>AGENT-1 is located in BRIDGE-1 ( PATIENT-2 is one of the leaders ) , the capital of which is PATIENT-1 .</template>
@@ -33,10 +33,10 @@
 					<striple>South_Africa | leaderName | Cyril_Ramaphosa</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="South_Africa" number="1" tag="BRIDGE-1">South Africa</reference>
-					<reference entity="11_Diagonal_Street" number="2" tag="AGENT-1">11 Diagonal Street</reference>
-					<reference entity="Cape_Town" number="3" tag="PATIENT-1">Cape Town</reference>
-					<reference entity="Cyril_Ramaphosa" number="4" tag="PATIENT-2">Cyril Ramaphosa</reference>
+					<reference entity="South_Africa" number="1" tag="BRIDGE-1" type="name">South Africa</reference>
+					<reference entity="11_Diagonal_Street" number="2" tag="AGENT-1" type="name">11 Diagonal Street</reference>
+					<reference entity="Cape_Town" number="3" tag="PATIENT-1" type="name">Cape Town</reference>
+					<reference entity="Cyril_Ramaphosa" number="4" tag="PATIENT-2" type="name">Cyril Ramaphosa</reference>
 				</references>
 				<text>South Africa is the location of 11 Diagonal Street. The capital is Cape Town and the leader is Cyril Ramaphosa.</text>
 				<template>BRIDGE-1 is the location of AGENT-1 . The capital is PATIENT-1 and the leader is PATIENT-2 .</template>
@@ -48,10 +48,10 @@
 					<striple>11_Diagonal_Street | location | South_Africa</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Cyril_Ramaphosa" number="1" tag="PATIENT-2">Cyril Ramaphosa</reference>
-					<reference entity="South_Africa" number="2" tag="BRIDGE-1">South Africa</reference>
-					<reference entity="Cape_Town" number="3" tag="PATIENT-1">Cape Town</reference>
-					<reference entity="11_Diagonal_Street" number="4" tag="AGENT-1">11 Diagonal Street</reference>
+					<reference entity="Cyril_Ramaphosa" number="1" tag="PATIENT-2" type="name">Cyril Ramaphosa</reference>
+					<reference entity="South_Africa" number="2" tag="BRIDGE-1" type="name">South Africa</reference>
+					<reference entity="Cape_Town" number="3" tag="PATIENT-1" type="name">Cape Town</reference>
+					<reference entity="11_Diagonal_Street" number="4" tag="AGENT-1" type="name">11 Diagonal Street</reference>
 				</references>
 				<text>Cyril Ramaphosa leads South Africa, whose capital, Cape Town, houses 11 Diagonal Street.</text>
 				<template>PATIENT-2 leads BRIDGE-1 , whose capital , PATIENT-1 , houses AGENT-1 .</template>
@@ -77,11 +77,11 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset/>
 				<references>
-					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1">11 Diagonal Street</reference>
-					<reference entity="South_Africa" number="2" tag="BRIDGE-1">South Africa</reference>
-					<reference entity="" number="3" tag="BRIDGE-">a country</reference>
-					<reference entity="Coloured" number="4" tag="PATIENT-2">coloureds</reference>
-					<reference entity="Jacob_Zuma" number="5" tag="PATIENT-1">Jacob Zuma</reference>
+					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1" type="name">11 Diagonal Street</reference>
+					<reference entity="South_Africa" number="2" tag="BRIDGE-1" type="name">South Africa</reference>
+					<reference entity="" number="3" tag="BRIDGE-" type="description">a country</reference>
+					<reference entity="Coloured" number="4" tag="PATIENT-2" type="name">coloureds</reference>
+					<reference entity="Jacob_Zuma" number="5" tag="PATIENT-1" type="name">Jacob Zuma</reference>
 				</references>
 				<text>11 Diagonal Street is located in South Africa, a country in which coloureds are one of the ethnic groups and Jacob Zuma is the leader.</text>
 				<template>AGENT-1 is located in BRIDGE-1, BRIDGE- in which PATIENT-2 are one of the ethnic groups and PATIENT-1 is the leader .</template>
@@ -93,10 +93,10 @@
 					<striple>South_Africa | leaderName | Jacob_Zuma</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1">11 Diagonal Street</reference>
-					<reference entity="South_Africa" number="2" tag="BRIDGE-1">South Africa</reference>
-					<reference entity="Coloured" number="3" tag="PATIENT-2">Coloured people</reference>
-					<reference entity="Jacob_Zuma" number="4" tag="PATIENT-1">Jacob Zuma</reference>
+					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1" type="name">11 Diagonal Street</reference>
+					<reference entity="South_Africa" number="2" tag="BRIDGE-1" type="name">South Africa</reference>
+					<reference entity="Coloured" number="3" tag="PATIENT-2" type="name">Coloured people</reference>
+					<reference entity="Jacob_Zuma" number="4" tag="PATIENT-1" type="name">Jacob Zuma</reference>
 				</references>
 				<text>11 Diagonal Street is located in South Africa, populated by Coloured people and led by Jacob Zuma.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , populated by PATIENT-2 and led by PATIENT-1 .</template>
@@ -108,10 +108,10 @@
 					<striple>South_Africa | ethnicGroup | Coloured</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1">The address , 11 Diagonal Street</reference>
-					<reference entity="South_Africa" number="2" tag="BRIDGE-1">South Africa</reference>
-					<reference entity="Jacob_Zuma" number="3" tag="PATIENT-1">Jacob Zuma</reference>
-					<reference entity="Coloured" number="4" tag="PATIENT-2">some coloured</reference>
+					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1" type="description">The address , 11 Diagonal Street</reference>
+					<reference entity="South_Africa" number="2" tag="BRIDGE-1" type="name">South Africa</reference>
+					<reference entity="Jacob_Zuma" number="3" tag="PATIENT-1" type="name">Jacob Zuma</reference>
+					<reference entity="Coloured" number="4" tag="PATIENT-2" type="name">some coloured</reference>
 				</references>
 				<text>The address, 11 Diagonal Street is located in South Africa where Jacob Zuma is a leader and some coloured people live.</text>
 				<template>AGENT-1 is located in BRIDGE-1 where PATIENT-1 is a leader and PATIENT-2 people live</template>
@@ -141,10 +141,10 @@
 					<striple>South_Africa | ethnicGroup | White_South_African</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1">11 Diagonal Street</reference>
-					<reference entity="South_Africa" number="2" tag="BRIDGE-1">South Africa</reference>
-					<reference entity="Jacob_Zuma" number="3" tag="PATIENT-1">Jacob Zuma</reference>
-					<reference entity="White_South_African" number="4" tag="PATIENT-2">white South Africans</reference>
+					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1" type="name">11 Diagonal Street</reference>
+					<reference entity="South_Africa" number="2" tag="BRIDGE-1" type="name">South Africa</reference>
+					<reference entity="Jacob_Zuma" number="3" tag="PATIENT-1" type="name">Jacob Zuma</reference>
+					<reference entity="White_South_African" number="4" tag="PATIENT-2" type="name">white South Africans</reference>
 				</references>
 				<text>11 Diagonal Street is in South Africa where the leader is Jacob Zuma. An ethnic group found there are white South Africans.</text>
 				<template>AGENT-1 is in BRIDGE-1 where the leader is PATIENT-1 . An ethnic group found there are PATIENT-2 .</template>
@@ -156,10 +156,10 @@
 					<striple>11_Diagonal_Street | location | South_Africa</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="White_South_African" number="1" tag="PATIENT-2">The white South Africans</reference>
-					<reference entity="South_Africa" number="2" tag="BRIDGE-1">the country</reference>
-					<reference entity="Jacob_Zuma" number="3" tag="PATIENT-1">Jacob Zuma</reference>
-					<reference entity="11_Diagonal_Street" number="4" tag="AGENT-1">11 Diagonal Street</reference>
+					<reference entity="White_South_African" number="1" tag="PATIENT-2" type="description">The white South Africans</reference>
+					<reference entity="South_Africa" number="2" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="Jacob_Zuma" number="3" tag="PATIENT-1" type="name">Jacob Zuma</reference>
+					<reference entity="11_Diagonal_Street" number="4" tag="AGENT-1" type="name">11 Diagonal Street</reference>
 				</references>
 				<text>The white South Africans are an ethnic group of the country where Jacob Zuma is leader and where 11 Diagonal Street is located.</text>
 				<template>PATIENT-2 are an ethnic group of BRIDGE-1 where PATIENT-1 is leader and where AGENT-1 is located .</template>
@@ -189,10 +189,10 @@
 					<striple>200_Public_Square | location | Cleveland</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Frank_G._Jackson" number="1" tag="PATIENT-1">Frank G Jackson</reference>
-					<reference entity="Cleveland" number="2" tag="BRIDGE-1">Cleveland</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-2">United States</reference>
-					<reference entity="200_Public_Square" number="4" tag="AGENT-1">200 Public Square</reference>
+					<reference entity="Frank_G._Jackson" number="1" tag="PATIENT-1" type="name">Frank G Jackson</reference>
+					<reference entity="Cleveland" number="2" tag="BRIDGE-1" type="name">Cleveland</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">United States</reference>
+					<reference entity="200_Public_Square" number="4" tag="AGENT-1" type="name">200 Public Square</reference>
 				</references>
 				<text>Frank G Jackson is the leader of Cleveland, United States where 200 Public Square is located.</text>
 				<template>PATIENT-1 is the leader of BRIDGE-1 , PATIENT-2 where AGENT-1 is located .</template>
@@ -204,10 +204,10 @@
 					<striple>Cleveland | leaderName | Frank_G._Jackson</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="200_Public_Square" number="1" tag="AGENT-1">200 Public Square</reference>
-					<reference entity="Cleveland" number="2" tag="BRIDGE-1">Cleveland</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-2">United States</reference>
-					<reference entity="Frank_G._Jackson" number="4" tag="PATIENT-1">Frank G Jackson</reference>
+					<reference entity="200_Public_Square" number="1" tag="AGENT-1" type="name">200 Public Square</reference>
+					<reference entity="Cleveland" number="2" tag="BRIDGE-1" type="name">Cleveland</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">United States</reference>
+					<reference entity="Frank_G._Jackson" number="4" tag="PATIENT-1" type="name">Frank G Jackson</reference>
 				</references>
 				<text>200 Public Square is located in Cleveland, United States, where one of the leaders is Frank G Jackson.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , PATIENT-2 , where one of the leaders is PATIENT-1 .</template>
@@ -236,9 +236,9 @@
 					<striple>Buffalo,_New_York | isPartOf | Erie_County,_New_York</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1">250 Delaware Avenue</reference>
-					<reference entity="Buffalo,_New_York" number="2" tag="BRIDGE-1">Buffalo</reference>
-					<reference entity="Erie_County,_New_York" number="3" tag="PATIENT-1">Erie County , New York</reference>
+					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
+					<reference entity="Buffalo,_New_York" number="2" tag="BRIDGE-1" type="name">Buffalo</reference>
+					<reference entity="Erie_County,_New_York" number="3" tag="PATIENT-1" type="name">Erie County , New York</reference>
 				</references>
 				<text>250 Delaware Avenue is located in Buffalo, Erie County, New York.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , PATIENT-1 .</template>
@@ -249,9 +249,9 @@
 					<striple>Buffalo,_New_York | isPartOf | Erie_County,_New_York</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1">250 Delaware avenue</reference>
-					<reference entity="Buffalo,_New_York" number="2" tag="BRIDGE-1">Buffalo</reference>
-					<reference entity="Erie_County,_New_York" number="3" tag="PATIENT-1">Erie County , New York</reference>
+					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1" type="name">250 Delaware avenue</reference>
+					<reference entity="Buffalo,_New_York" number="2" tag="BRIDGE-1" type="name">Buffalo</reference>
+					<reference entity="Erie_County,_New_York" number="3" tag="PATIENT-1" type="name">Erie County , New York</reference>
 				</references>
 				<text>250 Delaware avenue is in Buffalo, Erie County, New York.</text>
 				<template>AGENT-1 is in BRIDGE-1 , PATIENT-1 .</template>
@@ -281,9 +281,9 @@
 					<striple>Chicago | country | United_States</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1">300 North LaSalle</reference>
-					<reference entity="Rahm_Emanuel" number="3" tag="PATIENT-1">Rahm Emanuel</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-2">United States</reference>
+					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
+					<reference entity="Rahm_Emanuel" number="3" tag="PATIENT-1" type="name">Rahm Emanuel</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-2" type="name">United States</reference>
 				</references>
 				<text>300 North LaSalle is located in Chicago (the leader of which is Rahm Emanuel), United States.</text>
 				<template>AGENT-1 is located in BRIDGE-1 ( the leader of which is PATIENT-1 ) , PATIENT-2 .</template>
@@ -295,10 +295,10 @@
 					<striple>300_North_LaSalle | location | Chicago</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Rahm_Emanuel" number="1" tag="PATIENT-1">Rahm Emanuel</reference>
-					<reference entity="Chicago" number="2" tag="BRIDGE-1">Chicago</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-2">US</reference>
-					<reference entity="300_North_LaSalle" number="4" tag="AGENT-1">300 North LaSalle</reference>
+					<reference entity="Rahm_Emanuel" number="1" tag="PATIENT-1" type="name">Rahm Emanuel</reference>
+					<reference entity="Chicago" number="2" tag="BRIDGE-1" type="name">Chicago</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">US</reference>
+					<reference entity="300_North_LaSalle" number="4" tag="AGENT-1" type="name">300 North LaSalle</reference>
 				</references>
 				<text>Rahm Emanuel is a leader in Chicago, US where 300 North LaSalle is located.</text>
 				<template>PATIENT-1 is a leader in BRIDGE-1 , PATIENT-2 where AGENT-1 is located .</template>
@@ -309,9 +309,9 @@
 					<striple>Chicago | leaderName | Rahm_Emanuel</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1">300 North Lasalle</reference>
-					<reference entity="Chicago" number="2" tag="BRIDGE-1">Chicago</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-2">U</reference>
+					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North Lasalle</reference>
+					<reference entity="Chicago" number="2" tag="BRIDGE-1" type="name">Chicago</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">U</reference>
 				</references>
 				<text>300 North Lasalle is in Chicago, U.S. Rahm Emanuel leads Chicago.</text>
 				<template>AGENT-1 is in BRIDGE-1 , PATIENT-2. PATIENT-1 leads BRIDGE-1 .</template>
@@ -341,10 +341,10 @@
 					<striple>3Arena | completionDate | &quot;December 2008&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Dublin" number="1" tag="PATIENT-1">Dublin</reference>
-					<reference entity="3Arena" number="2" tag="AGENT-1">the 3Arena</reference>
-					<reference entity="&quot;HOK SVE&quot;" number="3" tag="PATIENT-2">HOK SVE</reference>
-					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3">December 2008</reference>
+					<reference entity="Dublin" number="1" tag="PATIENT-1" type="name">Dublin</reference>
+					<reference entity="3Arena" number="2" tag="AGENT-1" type="description">the 3Arena</reference>
+					<reference entity="&quot;HOK SVE&quot;" number="3" tag="PATIENT-2" type="name">HOK SVE</reference>
+					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3" type="name">December 2008</reference>
 				</references>
 				<text>Located in Dublin, the 3Arena whose architect was HOK SVE) was completed in December 2008.</text>
 				<template>Located in PATIENT-1 , AGENT-1 whose architect was PATIENT-2 ) was completed in PATIENT-3 .</template>
@@ -356,11 +356,11 @@
 					<striple>3Arena | completionDate | &quot;December 2008&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="3Arena" number="1" tag="AGENT-1">the 3Arena</reference>
-					<reference entity="Dublin" number="2" tag="PATIENT-1">Dublin</reference>
-					<reference entity="&quot;HOK SVE&quot;" number="3" tag="PATIENT-2">HOK SVE</reference>
-					<reference entity="3Arena" number="4" tag="AGENT-1">it</reference>
-					<reference entity="&quot;December 2008&quot;" number="5" tag="PATIENT-3">December 2008</reference>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">the 3Arena</reference>
+					<reference entity="Dublin" number="2" tag="PATIENT-1" type="name">Dublin</reference>
+					<reference entity="&quot;HOK SVE&quot;" number="3" tag="PATIENT-2" type="name">HOK SVE</reference>
+					<reference entity="3Arena" number="4" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="&quot;December 2008&quot;" number="5" tag="PATIENT-3" type="name">December 2008</reference>
 				</references>
 				<text>The architects of the 3Arena in Dublin was HOK SVE and it was completed in December 2008.</text>
 				<template>The architects of AGENT-1 in PATIENT-1 was PATIENT-2 and AGENT-1 was completed in PATIENT-3 .</template>
@@ -372,10 +372,10 @@
 					<striple>3Arena | completionDate | &quot;December 2008&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="3Arena" number="1" tag="AGENT-1">3Arena</reference>
-					<reference entity="Dublin" number="2" tag="PATIENT-1">Dublin</reference>
-					<reference entity="&quot;HOK SVE&quot;" number="3" tag="PATIENT-2">HOK SVE</reference>
-					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3">December 2008</reference>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="name">3Arena</reference>
+					<reference entity="Dublin" number="2" tag="PATIENT-1" type="name">Dublin</reference>
+					<reference entity="&quot;HOK SVE&quot;" number="3" tag="PATIENT-2" type="name">HOK SVE</reference>
+					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3" type="name">December 2008</reference>
 				</references>
 				<text>3Arena, located in Dublin, was designed by HOK SVE and completed December 2008.</text>
 				<template>AGENT-1 , located in PATIENT-1 , was designed by PATIENT-2 and completed PATIENT-3 .</template>
@@ -405,10 +405,10 @@
 					<striple>3Arena | completionDate | &quot;December 2008&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Populous_(company)" number="1" tag="PATIENT-2">Populous</reference>
-					<reference entity="3Arena" number="2" tag="AGENT-1">3Arena</reference>
-					<reference entity="Dublin" number="3" tag="PATIENT-1">Dublin</reference>
-					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3">December 2008</reference>
+					<reference entity="Populous_(company)" number="1" tag="PATIENT-2" type="name">Populous</reference>
+					<reference entity="3Arena" number="2" tag="AGENT-1" type="name">3Arena</reference>
+					<reference entity="Dublin" number="3" tag="PATIENT-1" type="name">Dublin</reference>
+					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3" type="name">December 2008</reference>
 				</references>
 				<text>Populous was the architect of 3Arena in Dublin which was completed in December 2008.</text>
 				<template>PATIENT-2 was the architect of AGENT-1 in PATIENT-1 which was completed in PATIENT-3 .</template>
@@ -420,10 +420,10 @@
 					<striple>3Arena | completionDate | &quot;December 2008&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Populous_(company)" number="1" tag="PATIENT-2">The company Populous</reference>
-					<reference entity="3Arena" number="2" tag="AGENT-1">the 3Arena</reference>
-					<reference entity="Dublin" number="3" tag="PATIENT-1">Dublin</reference>
-					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3">December 2008</reference>
+					<reference entity="Populous_(company)" number="1" tag="PATIENT-2" type="description">The company Populous</reference>
+					<reference entity="3Arena" number="2" tag="AGENT-1" type="description">the 3Arena</reference>
+					<reference entity="Dublin" number="3" tag="PATIENT-1" type="name">Dublin</reference>
+					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3" type="name">December 2008</reference>
 				</references>
 				<text>The company Populous were the architects who designed the 3Arena in Dublin which was completed in December 2008.</text>
 				<template>PATIENT-2 were the architects who designed AGENT-1 in PATIENT-1 which was completed in PATIENT-3 .</template>
@@ -435,10 +435,10 @@
 					<striple>3Arena | completionDate | &quot;December 2008&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="3Arena" number="1" tag="AGENT-1">The 3Arena</reference>
-					<reference entity="Dublin" number="2" tag="PATIENT-1">Dublin</reference>
-					<reference entity="Populous_(company)" number="3" tag="PATIENT-2">the Populous company</reference>
-					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3">December 2008</reference>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="Dublin" number="2" tag="PATIENT-1" type="name">Dublin</reference>
+					<reference entity="Populous_(company)" number="3" tag="PATIENT-2" type="description">the Populous company</reference>
+					<reference entity="&quot;December 2008&quot;" number="4" tag="PATIENT-3" type="name">December 2008</reference>
 				</references>
 				<text>The 3Arena in Dublin was designed by architects from the Populous company and completed in December 2008.</text>
 				<template>AGENT-1 in PATIENT-1 was designed by architects from PATIENT-2 and completed in PATIENT-3 .</template>
@@ -468,10 +468,10 @@
 					<striple>Dublin | country | Republic_of_Ireland</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="3Arena" number="1" tag="AGENT-1">3Arena</reference>
-					<reference entity="Live_Nation_Entertainment" number="2" tag="PATIENT-1">Live Nation Entertainment</reference>
-					<reference entity="Dublin" number="3" tag="BRIDGE-1">Dublin</reference>
-					<reference entity="Republic_of_Ireland" number="4" tag="PATIENT-2">Ireland</reference>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="name">3Arena</reference>
+					<reference entity="Live_Nation_Entertainment" number="2" tag="PATIENT-1" type="name">Live Nation Entertainment</reference>
+					<reference entity="Dublin" number="3" tag="BRIDGE-1" type="name">Dublin</reference>
+					<reference entity="Republic_of_Ireland" number="4" tag="PATIENT-2" type="name">Ireland</reference>
 				</references>
 				<text>The owner of 3Arena is Live Nation Entertainment which is located in Dublin, Ireland.</text>
 				<template>The owner of AGENT-1 is PATIENT-1 which is located in BRIDGE-1 , PATIENT-2 .</template>
@@ -483,10 +483,10 @@
 					<striple>Dublin | country | Republic_of_Ireland</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="3Arena" number="1" tag="AGENT-1">3Arena</reference>
-					<reference entity="Live_Nation_Entertainment" number="2" tag="PATIENT-1">Live Nation Entertainment</reference>
-					<reference entity="Dublin" number="3" tag="BRIDGE-1">Dublin</reference>
-					<reference entity="Republic_of_Ireland" number="4" tag="PATIENT-2">Republic of Ireland</reference>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="name">3Arena</reference>
+					<reference entity="Live_Nation_Entertainment" number="2" tag="PATIENT-1" type="name">Live Nation Entertainment</reference>
+					<reference entity="Dublin" number="3" tag="BRIDGE-1" type="name">Dublin</reference>
+					<reference entity="Republic_of_Ireland" number="4" tag="PATIENT-2" type="name">Republic of Ireland</reference>
 				</references>
 				<text>3Arena is owned by Live Nation Entertainment, and is located in Dublin, Republic of Ireland.</text>
 				<template>AGENT-1 is owned by PATIENT-1 , and is located in BRIDGE-1 , PATIENT-2 .</template>
@@ -498,10 +498,10 @@
 					<striple>3Arena | owner | Live_Nation_Entertainment</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="3Arena" number="1" tag="AGENT-1">3Arena</reference>
-					<reference entity="Dublin" number="2" tag="BRIDGE-1">Dublin</reference>
-					<reference entity="Republic_of_Ireland" number="3" tag="PATIENT-2">Republic of Ireland</reference>
-					<reference entity="Live_Nation_Entertainment" number="4" tag="PATIENT-1">Live Nation Entertainment</reference>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="name">3Arena</reference>
+					<reference entity="Dublin" number="2" tag="BRIDGE-1" type="name">Dublin</reference>
+					<reference entity="Republic_of_Ireland" number="3" tag="PATIENT-2" type="name">Republic of Ireland</reference>
+					<reference entity="Live_Nation_Entertainment" number="4" tag="PATIENT-1" type="name">Live Nation Entertainment</reference>
 				</references>
 				<text>3Arena in Dublin, Republic of Ireland is owned by Live Nation Entertainment.</text>
 				<template>AGENT-1 in BRIDGE-1 , PATIENT-2 is owned by PATIENT-1 .</template>
@@ -531,10 +531,10 @@
 					<striple>AC_Hotel_Bella_Sky_Copenhagen | architect | 3XN</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Marriott_International" number="1" tag="PATIENT-2">Marriott International</reference>
-					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="2" tag="AGENT-1">the AC Hotel Bella Sky Copenhagen</reference>
-					<reference entity="Denmark" number="3" tag="PATIENT-1">Denmark</reference>
-					<reference entity="3XN" number="4" tag="PATIENT-3">the 3XN firm</reference>
+					<reference entity="Marriott_International" number="1" tag="PATIENT-2" type="name">Marriott International</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="2" tag="AGENT-1" type="description">the AC Hotel Bella Sky Copenhagen</reference>
+					<reference entity="Denmark" number="3" tag="PATIENT-1" type="name">Denmark</reference>
+					<reference entity="3XN" number="4" tag="PATIENT-3" type="description">the 3XN firm</reference>
 				</references>
 				<text>Marriott International is the tenant of the AC Hotel Bella Sky Copenhagen, Denmark, which was designed by the architects of the 3XN firm.</text>
 				<template>PATIENT-2 is the tenant of AGENT-1 , PATIENT-1 , which was designed by the architects of PATIENT-3 .</template>
@@ -546,10 +546,10 @@
 					<striple>AC_Hotel_Bella_Sky_Copenhagen | architect | 3XN</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="1" tag="AGENT-1">AC Hotel Bella Sky</reference>
-					<reference entity="Denmark" number="2" tag="PATIENT-1">Copenhagen</reference>
-					<reference entity="Marriott_International" number="3" tag="PATIENT-2">Denmark , Marriott International Hotel</reference>
-					<reference entity="3XN" number="4" tag="PATIENT-3">3XN</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="1" tag="AGENT-1" type="name">AC Hotel Bella Sky</reference>
+					<reference entity="Denmark" number="2" tag="PATIENT-1" type="name">Copenhagen</reference>
+					<reference entity="Marriott_International" number="3" tag="PATIENT-2" type="name">Denmark , Marriott International Hotel</reference>
+					<reference entity="3XN" number="4" tag="PATIENT-3" type="name">3XN</reference>
 				</references>
 				<text>AC Hotel Bella Sky is in Copenhagen, Denmark, Marriott International Hotel because 3XN was the architect.</text>
 				<template>AGENT-1 is in PATIENT-1 , PATIENT-2 because PATIENT-3 was the architect .</template>
@@ -579,10 +579,10 @@
 					<striple>Adare_Manor | owner | J._P._McManus</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="James_Pain" number="1" tag="PATIENT-2">James Pain</reference>
-					<reference entity="Adare_Manor" number="2" tag="AGENT-1">Adare Manor</reference>
-					<reference entity="1862" number="3" tag="PATIENT-1">1862</reference>
-					<reference entity="J._P._McManus" number="4" tag="PATIENT-3">J P McManus</reference>
+					<reference entity="James_Pain" number="1" tag="PATIENT-2" type="name">James Pain</reference>
+					<reference entity="Adare_Manor" number="2" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="1862" number="3" tag="PATIENT-1" type="name">1862</reference>
+					<reference entity="J._P._McManus" number="4" tag="PATIENT-3" type="name">J P McManus</reference>
 				</references>
 				<text>James Pain was the architect of Adare Manor which was completed in 1862 and is owned by J P McManus.</text>
 				<template>PATIENT-2 was the architect of AGENT-1 which was completed in PATIENT-1 and is owned by PATIENT-3 .</template>
@@ -594,10 +594,10 @@
 					<striple>Adare_Manor | owner | J._P._McManus</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="James_Pain" number="1" tag="PATIENT-2">James Pain</reference>
-					<reference entity="Adare_Manor" number="2" tag="AGENT-1">Adare Manor</reference>
-					<reference entity="1862" number="3" tag="PATIENT-1">1862</reference>
-					<reference entity="J._P._McManus" number="4" tag="PATIENT-3">J P McManus</reference>
+					<reference entity="James_Pain" number="1" tag="PATIENT-2" type="name">James Pain</reference>
+					<reference entity="Adare_Manor" number="2" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="1862" number="3" tag="PATIENT-1" type="name">1862</reference>
+					<reference entity="J._P._McManus" number="4" tag="PATIENT-3" type="name">J P McManus</reference>
 				</references>
 				<text>James Pain was the architect of Adare Manor which was completed in 1862 and owed by J P McManus.</text>
 				<template>PATIENT-2 was the architect of AGENT-1 which was completed in PATIENT-1 and owed by PATIENT-3 .</template>
@@ -609,10 +609,10 @@
 					<striple>Adare_Manor | owner | J._P._McManus</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="James_Pain" number="1" tag="PATIENT-2">James Pain</reference>
-					<reference entity="Adare_Manor" number="2" tag="AGENT-1">Adare Manor</reference>
-					<reference entity="1862" number="3" tag="PATIENT-1">1862</reference>
-					<reference entity="J._P._McManus" number="4" tag="PATIENT-3">J</reference>
+					<reference entity="James_Pain" number="1" tag="PATIENT-2" type="name">James Pain</reference>
+					<reference entity="Adare_Manor" number="2" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="1862" number="3" tag="PATIENT-1" type="name">1862</reference>
+					<reference entity="J._P._McManus" number="4" tag="PATIENT-3" type="name">J</reference>
 				</references>
 				<text>James Pain designed Adare Manor that was completed in 1862. The owner is J.P. McManus.</text>
 				<template>PATIENT-2 designed AGENT-1 that was completed in PATIENT-1 . The owner is PATIENT-3 .</template>
@@ -642,10 +642,10 @@
 					<striple>Addis_Ababa_City_Hall | floorArea | 140000.0 (square metres)</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="&quot;Government of Addis Ababa&quot;" number="1" tag="PATIENT-1">The Government of Addis Ababa</reference>
-					<reference entity="Addis_Ababa_City_Hall" number="2" tag="AGENT-1">the Addis Ababa City Hall</reference>
-					<reference entity="&quot;42 m&quot;" number="3" tag="PATIENT-3">42 metres</reference>
-					<reference entity="140000.0 (square metres)" number="4" tag="PATIENT-2">140000</reference>
+					<reference entity="&quot;Government of Addis Ababa&quot;" number="1" tag="PATIENT-1" type="description">The Government of Addis Ababa</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="2" tag="AGENT-1" type="description">the Addis Ababa City Hall</reference>
+					<reference entity="&quot;42 m&quot;" number="3" tag="PATIENT-3" type="name">42 metres</reference>
+					<reference entity="140000.0 (square metres)" number="4" tag="PATIENT-2" type="name">140000</reference>
 				</references>
 				<text>The Government of Addis Ababa is the current tenant of the Addis Ababa City Hall which is 42 metres high and has a floor area of 140000.0 (square metres).</text>
 				<template>PATIENT-1 is the current tenant of AGENT-1 which is PATIENT-3 high and has a floor area of PATIENT-2 .</template>
@@ -657,9 +657,9 @@
 					<striple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="&quot;Government of Addis Ababa&quot;" number="1" tag="PATIENT-1">The Government of Addis Ababa</reference>
-					<reference entity="Addis_Ababa_City_Hall" number="2" tag="AGENT-1">the Addis Ababa city hall .</reference>
-					<reference entity="140000.0 (square metres)" number="3" tag="PATIENT-2">140000</reference>
+					<reference entity="&quot;Government of Addis Ababa&quot;" number="1" tag="PATIENT-1" type="description">The Government of Addis Ababa</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="2" tag="AGENT-1" type="description">the Addis Ababa city hall .</reference>
+					<reference entity="140000.0 (square metres)" number="3" tag="PATIENT-2" type="name">140000</reference>
 				</references>
 				<text>The Government of Addis Ababa is the current tenants of the Addis Ababa city hall. which has a floor area of 140000.0 square metres. It is 42 m high.</text>
 				<template>PATIENT-1 is the current tenants of AGENT-1 which has a floor area of PATIENT-2 .  AGENT-1 is PATIENT-3 high .</template>
@@ -671,9 +671,9 @@
 					<striple>Addis_Ababa_City_Hall | floorArea | 140000.0 (square metres)</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Addis_Ababa_City_Hall" number="1" tag="AGENT-1">Addis Ababa City Hall</reference>
-					<reference entity="&quot;Government of Addis Ababa&quot;" number="2" tag="PATIENT-1">the Government of Addis Ababa</reference>
-					<reference entity="&quot;42 m&quot;" number="3" tag="PATIENT-3">42 m</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="1" tag="AGENT-1" type="name">Addis Ababa City Hall</reference>
+					<reference entity="&quot;Government of Addis Ababa&quot;" number="2" tag="PATIENT-1" type="description">the Government of Addis Ababa</reference>
+					<reference entity="&quot;42 m&quot;" number="3" tag="PATIENT-3" type="name">42 m</reference>
 				</references>
 				<text>Addis Ababa City Hall, which houses the Government of Addis Ababa, is 42 m high and has a floor area of140000.0 square metres.</text>
 				<template>AGENT-1 , which houses PATIENT-1 , is PATIENT-3 high and has a floor area of PATIENT-2 .</template>
@@ -703,10 +703,10 @@
 					<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1">The Adisham hall</reference>
-					<reference entity="Sri_Lanka" number="2" tag="PATIENT-1">Sri Lanka</reference>
-					<reference entity="1931" number="3" tag="PATIENT-3">1931</reference>
-					<reference entity="Tudor_Revival_architecture" number="4" tag="PATIENT-2">Tudor Revival</reference>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="description">The Adisham hall</reference>
+					<reference entity="Sri_Lanka" number="2" tag="PATIENT-1" type="name">Sri Lanka</reference>
+					<reference entity="1931" number="3" tag="PATIENT-3" type="name">1931</reference>
+					<reference entity="Tudor_Revival_architecture" number="4" tag="PATIENT-2" type="name">Tudor Revival</reference>
 				</references>
 				<text>The Adisham hall, which is located in Sri Lanka, was completed in 1931 and architectural style is Tudor Revival.</text>
 				<template>AGENT-1 , which is located in PATIENT-1 , was completed in PATIENT-3 and architectural style is PATIENT-2 .</template>
@@ -718,10 +718,10 @@
 					<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1">Aidsham Hall</reference>
-					<reference entity="1931" number="2" tag="PATIENT-3">1931</reference>
-					<reference entity="Sri_Lanka" number="3" tag="PATIENT-1">Sri Lanka</reference>
-					<reference entity="Tudor_Revival_architecture" number="4" tag="PATIENT-2">the Tudor Revival architecture</reference>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Aidsham Hall</reference>
+					<reference entity="1931" number="2" tag="PATIENT-3" type="name">1931</reference>
+					<reference entity="Sri_Lanka" number="3" tag="PATIENT-1" type="name">Sri Lanka</reference>
+					<reference entity="Tudor_Revival_architecture" number="4" tag="PATIENT-2" type="description">the Tudor Revival architecture</reference>
 				</references>
 				<text>Aidsham Hall, completed in 1931 and located in Sri Lanka, is in the Tudor Revival architecture style.</text>
 				<template>AGENT-1 , completed in PATIENT-3 and located in PATIENT-1 , is in PATIENT-2 style .</template>
@@ -733,11 +733,11 @@
 					<striple>Adisham_Hall | location | Sri_Lanka</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1">Adisham Hall</reference>
-					<reference entity="Adisham_Hall" number="2" tag="AGENT-1">its</reference>
-					<reference entity="Tudor_Revival_architecture" number="3" tag="PATIENT-2">Tudor Revival style of architecture</reference>
-					<reference entity="1931" number="4" tag="PATIENT-3">1931</reference>
-					<reference entity="Sri_Lanka" number="5" tag="PATIENT-1">Sri Lanka</reference>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
+					<reference entity="Adisham_Hall" number="2" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Tudor_Revival_architecture" number="3" tag="PATIENT-2" type="name">Tudor Revival style of architecture</reference>
+					<reference entity="1931" number="4" tag="PATIENT-3" type="name">1931</reference>
+					<reference entity="Sri_Lanka" number="5" tag="PATIENT-1" type="name">Sri Lanka</reference>
 				</references>
 				<text>Adisham Hall, with its Tudor Revival style of architecture, was built in 1931 in Sri Lanka.</text>
 				<template>AGENT-1 , with AGENT-1 PATIENT-2 , was built in PATIENT-3 in PATIENT-1 .</template>
@@ -767,10 +767,10 @@
 					<striple>Akita_Museum_of_Art | inaugurationDate | &quot;2013-09-28&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1">The Akita Museum of Art</reference>
-					<reference entity="3746.66 (square metres)" number="2" tag="PATIENT-3">3746 .66 square metres</reference>
-					<reference entity="3" number="3" tag="PATIENT-1">3</reference>
-					<reference entity="&quot;2013-09-28&quot;" number="4" tag="PATIENT-2">28 September 2013</reference>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="description">The Akita Museum of Art</reference>
+					<reference entity="3746.66 (square metres)" number="2" tag="PATIENT-3" type="name">3746 .66 square metres</reference>
+					<reference entity="3" number="3" tag="PATIENT-1" type="name">3</reference>
+					<reference entity="&quot;2013-09-28&quot;" number="4" tag="PATIENT-2" type="name">28 September 2013</reference>
 				</references>
 				<text>The Akita Museum of Art has a floor area of 3746.66 square metres over 3 floors and was inaugurated on 28 September 2013.</text>
 				<template>AGENT-1 has a floor area of PATIENT-3 over PATIENT-1 floors and was inaugurated on PATIENT-2 .</template>
@@ -782,10 +782,10 @@
 					<striple>Akita_Museum_of_Art | floorArea | 3746.66 (square metres)</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1">The Akita Museum of Art</reference>
-					<reference entity="&quot;2013-09-28&quot;" number="2" tag="PATIENT-2">September 28 , 2013</reference>
-					<reference entity="3" number="3" tag="PATIENT-1">3</reference>
-					<reference entity="3746.66 (square metres)" number="4" tag="PATIENT-3">3746</reference>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="description">The Akita Museum of Art</reference>
+					<reference entity="&quot;2013-09-28&quot;" number="2" tag="PATIENT-2" type="name">September 28 , 2013</reference>
+					<reference entity="3" number="3" tag="PATIENT-1" type="name">3</reference>
+					<reference entity="3746.66 (square metres)" number="4" tag="PATIENT-3" type="name">3746</reference>
 				</references>
 				<text>The Akita Museum of Art, inaugurated September 28, 2013 has 3 floors and a floor area of 3746.66 square metres.</text>
 				<template>AGENT-1 , inaugurated PATIENT-2 has PATIENT-1 floors and a floor area of PATIENT-3 .</template>
@@ -813,9 +813,9 @@
 					<striple>Akita_Museum_of_Art | location | Akita_Prefecture</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1">The Akita Museum or art</reference>
-					<reference entity="Akita_Prefecture" number="2" tag="PATIENT-1">Akita</reference>
-					<reference entity="Japan" number="3" tag="PATIENT-2">the Akita Prefecture , Japan</reference>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="description">The Akita Museum or art</reference>
+					<reference entity="Akita_Prefecture" number="2" tag="PATIENT-1" type="name">Akita</reference>
+					<reference entity="Japan" number="3" tag="PATIENT-2" type="description">the Akita Prefecture , Japan</reference>
 				</references>
 				<text>The Akita Museum or art is located in Akita, within the Akita Prefecture, Japan.</text>
 				<template>AGENT-1 is located in PATIENT-1 , within PATIENT-2 .</template>
@@ -845,10 +845,10 @@
 					<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="College_of_William_&amp;_Mary" number="1" tag="PATIENT-2">The College of William and Mary</reference>
-					<reference entity="Alan_B._Miller_Hall" number="2" tag="AGENT-1">the Alan B . Miller Hall</reference>
-					<reference entity="Virginia" number="3" tag="PATIENT-1">Virginia</reference>
-					<reference entity="&quot;30 March 2007&quot;" number="4" tag="PATIENT-3">30 March 2007</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="1" tag="PATIENT-2" type="description">The College of William and Mary</reference>
+					<reference entity="Alan_B._Miller_Hall" number="2" tag="AGENT-1" type="description">the Alan B . Miller Hall</reference>
+					<reference entity="Virginia" number="3" tag="PATIENT-1" type="name">Virginia</reference>
+					<reference entity="&quot;30 March 2007&quot;" number="4" tag="PATIENT-3" type="name">30 March 2007</reference>
 				</references>
 				<text>The College of William and Mary is the owner of the Alan B. Miller Hall in Virginia. The building was begun on 30 March 2007.</text>
 				<template>PATIENT-2 is the owner of AGENT-1 in PATIENT-1 . The building was begun on PATIENT-3 .</template>
@@ -860,10 +860,10 @@
 					<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="College_of_William_&amp;_Mary" number="1" tag="PATIENT-2">The College of William and Mary</reference>
-					<reference entity="Alan_B._Miller_Hall" number="2" tag="AGENT-1">the Alan B . Miller Hall</reference>
-					<reference entity="Virginia" number="3" tag="PATIENT-1">Virginia</reference>
-					<reference entity="&quot;30 March 2007&quot;" number="4" tag="PATIENT-3">30 March , 2007</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="1" tag="PATIENT-2" type="description">The College of William and Mary</reference>
+					<reference entity="Alan_B._Miller_Hall" number="2" tag="AGENT-1" type="description">the Alan B . Miller Hall</reference>
+					<reference entity="Virginia" number="3" tag="PATIENT-1" type="name">Virginia</reference>
+					<reference entity="&quot;30 March 2007&quot;" number="4" tag="PATIENT-3" type="name">30 March , 2007</reference>
 				</references>
 				<text>The College of William and Mary is the owner of the Alan B. Miller Hall in Virginia which began construction on 30 March, 2007.</text>
 				<template>PATIENT-2 is the owner of AGENT-1 in PATIENT-1 which began construction on PATIENT-3 .</template>
@@ -875,10 +875,10 @@
 					<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="College_of_William_&amp;_Mary" number="1" tag="PATIENT-2">The College of William and Mary</reference>
-					<reference entity="Alan_B._Miller_Hall" number="2" tag="AGENT-1">the Alan B . Miller Hall</reference>
-					<reference entity="Virginia" number="3" tag="PATIENT-1">Virginia</reference>
-					<reference entity="&quot;30 March 2007&quot;" number="4" tag="PATIENT-3">30th March 2007</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="1" tag="PATIENT-2" type="description">The College of William and Mary</reference>
+					<reference entity="Alan_B._Miller_Hall" number="2" tag="AGENT-1" type="description">the Alan B . Miller Hall</reference>
+					<reference entity="Virginia" number="3" tag="PATIENT-1" type="name">Virginia</reference>
+					<reference entity="&quot;30 March 2007&quot;" number="4" tag="PATIENT-3" type="name">30th March 2007</reference>
 				</references>
 				<text>The College of William and Mary is the owner of the Alan B. Miller Hall, located in Virginia, and the start date of building was in 30th March 2007.</text>
 				<template>PATIENT-2 is the owner of AGENT-1 , located in PATIENT-1 , and the start date of building was in PATIENT-3 .</template>
@@ -908,10 +908,10 @@
 					<striple>Alan_B._Miller_Hall | location | Virginia</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Robert_Gates" number="1" tag="PATIENT-2">Robert Gates</reference>
-					<reference entity="College_of_William_&amp;_Mary" number="2" tag="BRIDGE-1">The College of William and Mary</reference>
-					<reference entity="Alan_B._Miller_Hall" number="3" tag="AGENT-1">Alan B Miller Hall</reference>
-					<reference entity="Virginia" number="4" tag="PATIENT-1">Virginia</reference>
+					<reference entity="Robert_Gates" number="1" tag="PATIENT-2" type="name">Robert Gates</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="2" tag="BRIDGE-1" type="description">The College of William and Mary</reference>
+					<reference entity="Alan_B._Miller_Hall" number="3" tag="AGENT-1" type="name">Alan B Miller Hall</reference>
+					<reference entity="Virginia" number="4" tag="PATIENT-1" type="name">Virginia</reference>
 				</references>
 				<text>Robert Gates is the chancellor of The College of William and Mary which is owned by Alan B Miller Hall and is located in Virginia.</text>
 				<template>PATIENT-2 is the chancellor of BRIDGE-1 which is owned by AGENT-1 and is located in PATIENT-1 .</template>
@@ -923,10 +923,10 @@
 					<striple>College_of_William_&amp;_Mary | chancellor | Robert_Gates</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1">Alan B . Miller Hall</reference>
-					<reference entity="Virginia" number="2" tag="PATIENT-1">Virginia</reference>
-					<reference entity="College_of_William_&amp;_Mary" number="3" tag="BRIDGE-1">The College of William and Mary</reference>
-					<reference entity="Robert_Gates" number="4" tag="PATIENT-2">Robert Gates</reference>
+					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1" type="name">Alan B . Miller Hall</reference>
+					<reference entity="Virginia" number="2" tag="PATIENT-1" type="name">Virginia</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="3" tag="BRIDGE-1" type="description">The College of William and Mary</reference>
+					<reference entity="Robert_Gates" number="4" tag="PATIENT-2" type="name">Robert Gates</reference>
 				</references>
 				<text>Alan B. Miller Hall, located in Virginia, is owned by The College of William and Mary; whose chancellor is Robert Gates.</text>
 				<template>AGENT-1 , located in PATIENT-1 , is owned by BRIDGE-1 ; whose chancellor is PATIENT-2 .</template>
@@ -956,10 +956,10 @@
 					<striple>Alan_B._Miller_Hall | location | Virginia</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Mason_School_of_Business" number="1" tag="BRIDGE-1">The Mason School of Business</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-2">the US</reference>
-					<reference entity="Alan_B._Miller_Hall" number="3" tag="AGENT-1">Alan B Miller Hall</reference>
-					<reference entity="Virginia" number="4" tag="PATIENT-1">Virginia</reference>
+					<reference entity="Mason_School_of_Business" number="1" tag="BRIDGE-1" type="description">The Mason School of Business</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">the US</reference>
+					<reference entity="Alan_B._Miller_Hall" number="3" tag="AGENT-1" type="name">Alan B Miller Hall</reference>
+					<reference entity="Virginia" number="4" tag="PATIENT-1" type="name">Virginia</reference>
 				</references>
 				<text>The Mason School of Business in the US are the current tenants of Alan B Miller Hall in Virginia.</text>
 				<template>BRIDGE-1 in PATIENT-2 are the current tenants of AGENT-1 in PATIENT-1 .</template>
@@ -971,10 +971,10 @@
 					<striple>Mason_School_of_Business | country | United_States</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1">Alan B Miller Hall</reference>
-					<reference entity="Virginia" number="2" tag="PATIENT-1">Virginia</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-2">U .S .</reference>
-					<reference entity="Mason_School_of_Business" number="4" tag="BRIDGE-1">The Mason School of Business</reference>
+					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1" type="name">Alan B Miller Hall</reference>
+					<reference entity="Virginia" number="2" tag="PATIENT-1" type="name">Virginia</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">U .S .</reference>
+					<reference entity="Mason_School_of_Business" number="4" tag="BRIDGE-1" type="description">The Mason School of Business </reference>
 				</references>
 				<text>Alan B Miller Hall is in Virginia, U.S. and houses The Mason School of Business .</text>
 				<template>AGENT-1 is in PATIENT-1 , PATIENT-2 and houses BRIDGE-1 .</template>
@@ -1004,10 +1004,10 @@
 					<striple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1">Alan B . Miller Hall</reference>
-					<reference entity="&quot;30 March 2007&quot;" number="2" tag="PATIENT-3">30 March , 2007</reference>
-					<reference entity="Williamsburg,_Virginia" number="3" tag="PATIENT-2">Williamsburg , Virginia</reference>
-					<reference entity="College_of_William_&amp;_Mary" number="4" tag="PATIENT-1">the College of William and Mary</reference>
+					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1" type="name">Alan B . Miller Hall</reference>
+					<reference entity="&quot;30 March 2007&quot;" number="2" tag="PATIENT-3" type="name">30 March , 2007</reference>
+					<reference entity="Williamsburg,_Virginia" number="3" tag="PATIENT-2" type="name">Williamsburg , Virginia</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="4" tag="PATIENT-1" type="description">the College of William and Mary</reference>
 				</references>
 				<text>Alan B. Miller Hall, the building of which began 30 March, 2007, is located in Williamsburg, Virginia and owned by the College of William and Mary.</text>
 				<template>AGENT-1 , the building of which began PATIENT-3 , is located in PATIENT-2 and owned by PATIENT-1 .</template>
@@ -1019,10 +1019,10 @@
 					<striple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1">Alan B . Miller Hall 's</reference>
-					<reference entity="&quot;30 March 2007&quot;" number="2" tag="PATIENT-3">30th March 2007</reference>
-					<reference entity="Williamsburg,_Virginia" number="3" tag="PATIENT-2">Williamsburg , Virginia</reference>
-					<reference entity="College_of_William_&amp;_Mary" number="4" tag="PATIENT-1">the College of William and Mary</reference>
+					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1" type="name">Alan B . Miller Hall 's</reference>
+					<reference entity="&quot;30 March 2007&quot;" number="2" tag="PATIENT-3" type="name">30th March 2007</reference>
+					<reference entity="Williamsburg,_Virginia" number="3" tag="PATIENT-2" type="name">Williamsburg , Virginia</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="4" tag="PATIENT-1" type="description">the College of William and Mary</reference>
 				</references>
 				<text>Alan B. Miller Hall's building, started on 30th March 2007, is located in Williamsburg, Virginia, and owned by the College of William and Mary.</text>
 				<template>AGENT-1 building , started on PATIENT-3 , is located in PATIENT-2 , and owned by PATIENT-1 .</template>
@@ -1034,10 +1034,10 @@
 					<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1">The Alan B . Miller Hall</reference>
-					<reference entity="College_of_William_&amp;_Mary" number="2" tag="PATIENT-1">The College of William and Mary</reference>
-					<reference entity="Williamsburg,_Virginia" number="3" tag="PATIENT-2">Williamsburg , Virginia</reference>
-					<reference entity="&quot;30 March 2007&quot;" number="4" tag="PATIENT-3">the 30th March 2007</reference>
+					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1" type="description">The Alan B . Miller Hall</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="2" tag="PATIENT-1" type="description">The College of William and Mary</reference>
+					<reference entity="Williamsburg,_Virginia" number="3" tag="PATIENT-2" type="name">Williamsburg , Virginia</reference>
+					<reference entity="&quot;30 March 2007&quot;" number="4" tag="PATIENT-3" type="description">the 30th March 2007</reference>
 				</references>
 				<text>The Alan B. Miller Hall, owned by The College of William and Mary, is in Williamsburg, Virginia and was opened on the 30th March 2007.</text>
 				<template>AGENT-1 , owned by PATIENT-1 , is in PATIENT-2 and was opened on PATIENT-3 .</template>
@@ -1067,10 +1067,10 @@
 					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="476" number="1" tag="PATIENT-3">The</reference>
-					<reference entity="Ampara_Hospital" number="2" tag="AGENT-1">476 bed Ampara Hospital</reference>
-					<reference entity="Ampara_District" number="3" tag="PATIENT-2">Ampara District</reference>
-					<reference entity="Sri_Lanka" number="4" tag="PATIENT-1">Sri Lanka</reference>
+					<reference entity="476" number="1" tag="PATIENT-3" type="description">The</reference>
+					<reference entity="Ampara_Hospital" number="2" tag="AGENT-1" type="name">476 bed Ampara Hospital</reference>
+					<reference entity="Ampara_District" number="3" tag="PATIENT-2" type="name">Ampara District</reference>
+					<reference entity="Sri_Lanka" number="4" tag="PATIENT-1" type="name">Sri Lanka</reference>
 				</references>
 				<text>The 476 bed Ampara Hospital is located in Ampara District, Sri Lanka.</text>
 				<template>PATIENT-3 AGENT-1 is located in PATIENT-2 , PATIENT-1 .</template>
@@ -1082,10 +1082,10 @@
 					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1">Ampara Hospital</reference>
-					<reference entity="476" number="2" tag="PATIENT-3">476</reference>
-					<reference entity="Ampara_District" number="3" tag="PATIENT-2">the Ampara District</reference>
-					<reference entity="Sri_Lanka" number="4" tag="PATIENT-1">Sri Lanka</reference>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="476" number="2" tag="PATIENT-3" type="name">476</reference>
+					<reference entity="Ampara_District" number="3" tag="PATIENT-2" type="description">the Ampara District</reference>
+					<reference entity="Sri_Lanka" number="4" tag="PATIENT-1" type="name">Sri Lanka</reference>
 				</references>
 				<text>Ampara Hospital, which has 476 beds, is located in the Ampara District of Sri Lanka.</text>
 				<template>AGENT-1 , which has PATIENT-3 beds , is located in PATIENT-2 of PATIENT-1 .</template>
@@ -1115,10 +1115,10 @@
 					<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1">Ampara Hospital</reference>
-					<reference entity="Eastern_Province,_Sri_Lanka" number="2" tag="PATIENT-2">Eastern Province , Sri Lanka</reference>
-					<reference entity="Ranil_Wickremesinghe" number="3" tag="PATIENT-1">Ranil Wickremesinghe</reference>
-					<reference entity="Sri_Lanka" number="4" tag="BRIDGE-1">there</reference>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="2" tag="PATIENT-2" type="name">Eastern Province , Sri Lanka</reference>
+					<reference entity="Ranil_Wickremesinghe" number="3" tag="PATIENT-1" type="name">Ranil Wickremesinghe</reference>
+					<reference entity="Sri_Lanka" number="4" tag="BRIDGE-1" type="name">there</reference>
 				</references>
 				<text>Ampara Hospital is in Eastern Province, Sri Lanka. Ranil Wickremesinghe is a leader there.</text>
 				<template>AGENT-1 is in PATIENT-2 . PATIENT-1 is a leader BRIDGE-1 .</template>
@@ -1128,10 +1128,10 @@
 					<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Eastern_Province,_Sri_Lanka" number="1" tag="PATIENT-2">Sri Lanka</reference>
-					<reference entity="Ranil_Wickremesinghe" number="2" tag="PATIENT-1">Ranil Wickremesinghe</reference>
-					<reference entity="Ampara_Hospital" number="3" tag="AGENT-1">Ampara Hospital</reference>
-					<reference entity="Eastern_Province,_Sri_Lanka" number="4" tag="PATIENT-2">the Eastern Province state</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="1" tag="PATIENT-2" type="name">Sri Lanka</reference>
+					<reference entity="Ranil_Wickremesinghe" number="2" tag="PATIENT-1" type="name">Ranil Wickremesinghe</reference>
+					<reference entity="Ampara_Hospital" number="3" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="4" tag="PATIENT-2" type="description">the Eastern Province state</reference>
 				</references>
 				<text>Sri Lanka, led by Ranil Wickremesinghe, is home to Ampara Hospital in the Eastern Province state.</text>
 				<template>PATIENT-2 , led by PATIENT-1 , is home to AGENT-1 in PATIENT-2 .</template>
@@ -1161,10 +1161,10 @@
 					<striple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asher_and_Mary_Isabelle_Richardson_House" number="1" tag="AGENT-1">The Asher and Mary Isabelle Richardson House</reference>
-					<reference entity="U.S._Route_83" number="2" tag="PATIENT-1">US Route 83</reference>
-					<reference entity="1911" number="3" tag="PATIENT-3">1911</reference>
-					<reference entity="&quot;1988-11-22&quot;" number="4" tag="PATIENT-2">22nd November 1988</reference>
+					<reference entity="Asher_and_Mary_Isabelle_Richardson_House" number="1" tag="AGENT-1" type="description">The Asher and Mary Isabelle Richardson House</reference>
+					<reference entity="U.S._Route_83" number="2" tag="PATIENT-1" type="name">US Route 83</reference>
+					<reference entity="1911" number="3" tag="PATIENT-3" type="name">1911</reference>
+					<reference entity="&quot;1988-11-22&quot;" number="4" tag="PATIENT-2" type="name">22nd November 1988</reference>
 				</references>
 				<text>The Asher and Mary Isabelle Richardson House located on US Route 83 and built in 1911 was added to the National Register of Historic Places, on 22nd November 1988.</text>
 				<template>AGENT-1 located on PATIENT-1 and built in PATIENT-3 was added to the National Register of Historic Places , on PATIENT-2 .</template>
@@ -1176,10 +1176,10 @@
 					<striple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asher_and_Mary_Isabelle_Richardson_House" number="1" tag="AGENT-1">The Asher and Mary Isabelle Robinson House</reference>
-					<reference entity="U.S._Route_83" number="2" tag="PATIENT-1">U .S . Route 83</reference>
-					<reference entity="1911" number="3" tag="PATIENT-3">1911</reference>
-					<reference entity="&quot;1988-11-22&quot;" number="4" tag="PATIENT-2">22 November 1988</reference>
+					<reference entity="Asher_and_Mary_Isabelle_Richardson_House" number="1" tag="AGENT-1" type="description">The Asher and Mary Isabelle Robinson House</reference>
+					<reference entity="U.S._Route_83" number="2" tag="PATIENT-1" type="name">U .S . Route 83</reference>
+					<reference entity="1911" number="3" tag="PATIENT-3" type="name">1911</reference>
+					<reference entity="&quot;1988-11-22&quot;" number="4" tag="PATIENT-2" type="name">22 November 1988</reference>
 				</references>
 				<text>The Asher and Mary Isabelle Robinson House on U.S. Route 83 was constructed in 1911 and added to the National Register of Historic Places on 22 November 1988.</text>
 				<template>AGENT-1 on PATIENT-1 was constructed in PATIENT-3 and added to the National Register of Historic Places on PATIENT-2 .</template>
@@ -1191,10 +1191,10 @@
 					<striple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asher_and_Mary_Isabelle_Richardson_House" number="1" tag="AGENT-1">The Asher and Mary Isabelle Richardson House</reference>
-					<reference entity="U.S._Route_83" number="2" tag="PATIENT-1">U .S . Route 83</reference>
-					<reference entity="1911" number="3" tag="PATIENT-3">1911</reference>
-					<reference entity="&quot;1988-11-22&quot;" number="4" tag="PATIENT-2">22 November 1988</reference>
+					<reference entity="Asher_and_Mary_Isabelle_Richardson_House" number="1" tag="AGENT-1" type="description">The Asher and Mary Isabelle Richardson House</reference>
+					<reference entity="U.S._Route_83" number="2" tag="PATIENT-1" type="name">U .S . Route 83</reference>
+					<reference entity="1911" number="3" tag="PATIENT-3" type="name">1911</reference>
+					<reference entity="&quot;1988-11-22&quot;" number="4" tag="PATIENT-2" type="name">22 November 1988</reference>
 				</references>
 				<text>The Asher and Mary Isabelle Richardson House on U.S. Route 83 was constructed in 1911 and added to the National Register of Historic Places on 22 November 1988.</text>
 				<template>AGENT-1 on PATIENT-1 was constructed in PATIENT-3 and added to the National Register of Historic Places on PATIENT-2 .</template>
@@ -1224,11 +1224,11 @@
 					<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1">Asilomar Conference Grounds</reference>
-					<reference entity="Pacific_Grove,_California" number="2" tag="PATIENT-1">Pacific Grove , California</reference>
-					<reference entity="&quot;1987-02-27&quot;" number="3" tag="PATIENT-2">February the 27nd 1987</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="4" tag="AGENT-1">Its</reference>
-					<reference entity="&quot;87000823&quot;" number="5" tag="PATIENT-3">87000823 ,</reference>
+					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1" type="name">Asilomar Conference Grounds</reference>
+					<reference entity="Pacific_Grove,_California" number="2" tag="PATIENT-1" type="name">Pacific Grove , California</reference>
+					<reference entity="&quot;1987-02-27&quot;" number="3" tag="PATIENT-2" type="name">February the 27nd 1987</reference>
+					<reference entity="Asilomar_Conference_Grounds" number="4" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="&quot;87000823&quot;" number="5" tag="PATIENT-3" type="name">87000823 ,</reference>
 				</references>
 				<text>Asilomar Conference Grounds are located in Pacific Grove, California and was added to the National Register of Historic Places on February the 27nd 1987. Its reference number in the National Register of Historic Places is 87000823,.</text>
 				<template>AGENT-1 are located in PATIENT-1 and was added to the National Register of Historic Places on PATIENT-2 . AGENT-1 reference number in the National Register of Historic Places is PATIENT-3 .</template>
@@ -1240,10 +1240,10 @@
 					<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1">The Asilomar Conference Grounds</reference>
-					<reference entity="Pacific_Grove,_California" number="2" tag="PATIENT-1">Pacific Grove</reference>
-					<reference entity="&quot;1987-02-27&quot;" number="3" tag="PATIENT-2">1987</reference>
-					<reference entity="&quot;87000823&quot;" number="4" tag="PATIENT-3">87000823</reference>
+					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1" type="description">The Asilomar Conference Grounds</reference>
+					<reference entity="Pacific_Grove,_California" number="2" tag="PATIENT-1" type="name">Pacific Grove</reference>
+					<reference entity="&quot;1987-02-27&quot;" number="3" tag="PATIENT-2" type="name">1987</reference>
+					<reference entity="&quot;87000823&quot;" number="4" tag="PATIENT-3" type="name">87000823</reference>
 				</references>
 				<text>The Asilomar Conference Grounds of Pacific Grove in California was added to the National Register of Historic Places on 27th of February in 1987, where the reference number for the National register was 87000823.</text>
 				<template>AGENT-1 of PATIENT-1 in California was added to the National Register of Historic Places on 27th of February in PATIENT-2 , where the reference number for the National register was PATIENT-3 .</template>
@@ -1255,10 +1255,10 @@
 					<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1">Asilomar Conference Grounds</reference>
-					<reference entity="Pacific_Grove,_California" number="2" tag="PATIENT-1">Pacific Grove , California</reference>
-					<reference entity="&quot;1987-02-27&quot;" number="3" tag="PATIENT-2">February the 27nd 1987</reference>
-					<reference entity="&quot;87000823&quot;" number="4" tag="PATIENT-3">87000823</reference>
+					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1" type="name">Asilomar Conference Grounds</reference>
+					<reference entity="Pacific_Grove,_California" number="2" tag="PATIENT-1" type="name">Pacific Grove , California</reference>
+					<reference entity="&quot;1987-02-27&quot;" number="3" tag="PATIENT-2" type="name">February the 27nd 1987</reference>
+					<reference entity="&quot;87000823&quot;" number="4" tag="PATIENT-3" type="name">87000823</reference>
 				</references>
 				<text>Asilomar Conference Grounds, Pacific Grove, California, was added to the National Register of Historic Places on February the 27nd 1987 with a reference number of 87000823.</text>
 				<template>AGENT-1 , PATIENT-1 , was added to the National Register of Historic Places on PATIENT-2 with a reference number of PATIENT-3 .</template>
@@ -1288,10 +1288,10 @@
 					<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1">The Asser Levy Public Baths</reference>
-					<reference entity="&quot;Asser Levy Place and East 23rd Street&quot;" number="2" tag="PATIENT-1">Asser Levy Place , East 23rd Street</reference>
-					<reference entity="&quot;1980-04-23&quot;" number="3" tag="PATIENT-3">1980-04-23</reference>
-					<reference entity="&quot;80002709&quot;" number="4" tag="PATIENT-2">the number 80002709</reference>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
+					<reference entity="&quot;Asser Levy Place and East 23rd Street&quot;" number="2" tag="PATIENT-1" type="name">Asser Levy Place  , East 23rd Street</reference>
+					<reference entity="&quot;1980-04-23&quot;" number="3" tag="PATIENT-3" type="name">1980-04-23</reference>
+					<reference entity="&quot;80002709&quot;" number="4" tag="PATIENT-2" type="description">the number 80002709</reference>
 				</references>
 				<text>The Asser Levy Public Baths are located in Asser Levy Place , East 23rd Street and were added to the National Register of Historic Places on 1980-04-23, with the number 80002709.</text>
 				<template>AGENT-1 are located in PATIENT-1 and were added to the National Register of Historic Places on PATIENT-3 , with PATIENT-2 .</template>
@@ -1303,10 +1303,10 @@
 					<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1">The Asser Levy Public Baths</reference>
-					<reference entity="&quot;Asser Levy Place and East 23rd Street&quot;" number="2" tag="PATIENT-1">Asser Levy Place , East 23rd Street</reference>
-					<reference entity="&quot;1980-04-23&quot;" number="3" tag="PATIENT-3">23rd April 1980</reference>
-					<reference entity="&quot;80002709&quot;" number="4" tag="PATIENT-2">the reference number 80002709</reference>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
+					<reference entity="&quot;Asser Levy Place and East 23rd Street&quot;" number="2" tag="PATIENT-1" type="name">Asser Levy Place  , East 23rd Street</reference>
+					<reference entity="&quot;1980-04-23&quot;" number="3" tag="PATIENT-3" type="name">23rd April 1980</reference>
+					<reference entity="&quot;80002709&quot;" number="4" tag="PATIENT-2" type="description">the reference number 80002709 </reference>
 				</references>
 				<text>The Asser Levy Public Baths are located in Asser Levy Place , East 23rd Street and were added to the National Register of Historic Places on 23rd April 1980 with the reference number 80002709 .</text>
 				<template>AGENT-1 are located in PATIENT-1 and were added to the National Register of Historic Places on PATIENT-3 with PATIENT-2 .</template>
@@ -1336,11 +1336,11 @@
 					<striple>New_York_City | isPartOf | Manhattan</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1">The Asser Levy Public Baths</reference>
-					<reference entity="New_York_City" number="2" tag="BRIDGE-1">New York City</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-1">U</reference>
-					<reference entity="Manhattan" number="4" tag="PATIENT-2">.S . Manhattan</reference>
-					<reference entity="New_York_City" number="5" tag="BRIDGE-1">New York City</reference>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="name">U</reference>
+					<reference entity="Manhattan" number="4" tag="PATIENT-2" type="name">.S . Manhattan</reference>
+					<reference entity="New_York_City" number="5" tag="BRIDGE-1" type="name">New York City</reference>
 				</references>
 				<text>The Asser Levy Public Baths are located in New York City, U.S. Manhattan is a borough in New York City.</text>
 				<template>AGENT-1 are located in BRIDGE-1 , PATIENT-1 PATIENT-2 is a borough in BRIDGE-1 .</template>
@@ -1352,10 +1352,10 @@
 					<striple>New_York_City | country | United_States</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1">Asser Levy Public Baths</reference>
-					<reference entity="Manhattan" number="2" tag="PATIENT-2">Manhattan</reference>
-					<reference entity="New_York_City" number="3" tag="BRIDGE-1">New York City</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-1">United States</reference>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
+					<reference entity="Manhattan" number="2" tag="PATIENT-2" type="name">Manhattan</reference>
+					<reference entity="New_York_City" number="3" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">United States</reference>
 				</references>
 				<text>Asser Levy Public Baths are located in Manhattan, New York City, United States.</text>
 				<template>AGENT-1 are located in PATIENT-2 , BRIDGE-1 , PATIENT-1 .</template>
@@ -1367,11 +1367,11 @@
 					<striple>New_York_City | isPartOf | Manhattan</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="United_States" number="1" tag="PATIENT-1">The</reference>
-					<reference entity="Asser_Levy_Public_Baths" number="2" tag="AGENT-1">Asser Levy Public Baths</reference>
-					<reference entity="New_York_City" number="3" tag="BRIDGE-1">New York City</reference>
-					<reference entity="Manhattan" number="4" tag="PATIENT-2">Manhattan</reference>
-					<reference entity="United_States" number="5" tag="PATIENT-1">the</reference>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="description">The</reference>
+					<reference entity="Asser_Levy_Public_Baths" number="2" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="3" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="Manhattan" number="4" tag="PATIENT-2" type="name">Manhattan</reference>
+					<reference entity="United_States" number="5" tag="PATIENT-1" type="description">the</reference>
 				</references>
 				<text>The location of Asser Levy Public Baths is New York City, Manhattan in the U.S.</text>
 				<template>PATIENT-1 location of AGENT-1 is BRIDGE-1 , PATIENT-2 in PATIENT-1 U.S.</template>
@@ -1401,10 +1401,10 @@
 					<striple>Amdavad_ni_Gufa | country | India</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="T._S._Thakur" number="1" tag="PATIENT-1">T S Thakur</reference>
-					<reference entity="Sumitra_Mahajan" number="2" tag="PATIENT-2">Sumitra Mahajan</reference>
-					<reference entity="India" number="3" tag="BRIDGE-1">India</reference>
-					<reference entity="Amdavad_ni_Gufa" number="4" tag="AGENT-1">Amdavad ni Gufa</reference>
+					<reference entity="T._S._Thakur" number="1" tag="PATIENT-1" type="name">T S Thakur</reference>
+					<reference entity="Sumitra_Mahajan" number="2" tag="PATIENT-2" type="name">Sumitra Mahajan</reference>
+					<reference entity="India" number="3" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Amdavad_ni_Gufa" number="4" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
 				</references>
 				<text>T S Thakur and Sumitra Mahajan are leaders in India where Amdavad ni Gufa is located.</text>
 				<template>PATIENT-1 and PATIENT-2 are leaders in BRIDGE-1 where AGENT-1 is located .</template>
@@ -1416,10 +1416,10 @@
 					<striple>India | leaderName | Sumitra_Mahajan</striple>
 				</sortedtripleset>
 				<references>
-					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1">Amdavad ni Gufa</reference>
-					<reference entity="India" number="2" tag="BRIDGE-1">India</reference>
-					<reference entity="T._S._Thakur" number="3" tag="PATIENT-1">T S Thakur</reference>
-					<reference entity="Sumitra_Mahajan" number="4" tag="PATIENT-2">Sumitra Mahajan</reference>
+					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
+					<reference entity="India" number="2" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="T._S._Thakur" number="3" tag="PATIENT-1" type="name">T S Thakur</reference>
+					<reference entity="Sumitra_Mahajan" number="4" tag="PATIENT-2" type="name">Sumitra Mahajan</reference>
 				</references>
 				<text>Amdavad ni Gufa is located in India where T S Thakur and Sumitra Mahajan are leaders.</text>
 				<template>AGENT-1 is located in BRIDGE-1 where PATIENT-1 and PATIENT-2 are leaders .</template>

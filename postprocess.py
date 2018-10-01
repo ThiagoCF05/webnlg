@@ -15,6 +15,7 @@ import order
 import os
 import parser
 import reg
+import stats
 from nmt import NMT
 
 def run(entry_path, set_path, en_path, de_path, _set):
@@ -25,7 +26,8 @@ def run(entry_path, set_path, en_path, de_path, _set):
 
     # referring expressions
     entryset = reg.run(entryset, 'en')
-    # entryset = reg.run(entryset, 'de')
+
+    stats.run(entryset)
 
     # run xml generator
     parser.run_generator(entryset=entryset, input_dir=set_path, output_dir=en_path, lng='en')

@@ -10,7 +10,6 @@ Description:
     PYTHON VERSION: 2.7
 """
 
-import nltk
 import re
 
 from entry import Reference
@@ -38,6 +37,19 @@ def process_template(template):
         else:
             pre_tag.append(token)
     return pre_tag, tag, pos_tag
+
+def classify_reference(refex):
+    refex = refex.lower().strip()
+    if refex in ['he', 'his', 'him', 'she', 'hers', 'her', 'it', 'its', 'we', 'our', 'ours', 'they', 'theirs', 'them']:
+        return 'pronoun'
+
+    token = refex.split()[0]
+    if token in ['the', 'a', 'an']:
+        return 'description'
+    elif token in ['this', 'these', 'that', 'those']:
+        return 'demonstrative'
+    else:
+        return 'name'
 
 def extract_references(text, template, entitymap):
     text = re.sub(r'([.,;:?!\'\(\)])', r' \1', text)
@@ -87,8 +99,8 @@ def extract_references(text, template, entitymap):
                     entity = ''
                     print('entity map exception...', tag)
 
-                refex = refex.split()
-                refexes.append(Reference(tag=tag, entity=entity, refex=' '.join(refex), number=number))
+                reftype = classify_reference(refex)
+                refexes.append(Reference(tag=tag, entity=entity, refex=refex, number=number, reftype=reftype))
             else:
                 template = template.replace(tag, ' ', 1)
     return refexes

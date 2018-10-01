@@ -19,7 +19,10 @@
 				<template>AGENT-1 wird von PATIENT-2 geschrieben und wurde von PATIENT-1 geleitet. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>1634:_The_Bavarian_Crisis | author | &quot;Virginia DeMarce and Eric Flint&quot;</striple>
+					<striple>1634:_The_Bavarian_Crisis | precededBy | Grantville_Gazette_III</striple>
+				</sortedtripleset>
 				<text>1634: Die bayerische Krise, verfasst von Virginia DeMarce und Eric Flint, wurde von Grantville Gazette III. </text>
 				<template>AGENT-1, verfasst von PATIENT-2, wurde von PATIENT-1 geleitet. </template>
 			</lex>
@@ -77,12 +80,16 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>1634:_The_Ram_Rebellion | mediaType | Hardcover</striple>
+					<striple>1634:_The_Ram_Rebellion | author | Eric_Flint</striple>
 				</sortedtripleset>
 				<text>Das Buch mit dem Titel 1634: The Ram Rebellion ist ein Hardcover-Buch von Eric Flint. </text>
 				<template>AGENT-1 ist PATIENT-2 von PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>1634:_The_Ram_Rebellion | mediaType | Hardcover</striple>
+					<striple>1634:_The_Ram_Rebellion | author | Eric_Flint</striple>
+				</sortedtripleset>
 				<text>1634: Die Ram Rebellion, die in Hardcover erhältlich ist, wurde von Eric Flint geschrieben. </text>
 				<template>AGENT-1, verfügbar in PATIENT-2 wurde von PATIENT-1 geschrieben. </template>
 			</lex>
@@ -104,12 +111,15 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>ACM_Transactions_on_Information_Systems | CODEN_code | &quot;ATISET&quot;</striple>
+					<striple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</striple>
 				</sortedtripleset>
 				<text>ACM Transactions on Information Systems mit dem CODEN ATISET ist abgekürzt als ACM Trans. INF. Syst. </text>
 				<template>AGENT-1 mit PATIENT-2 ist abgekürzt als PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</striple>
+				</sortedtripleset>
 				<text>ACM Transactions on Information Systems (abgekürzt zu ACM Trans. INF. Syst.) Hat den CODEN-Code &quot;ATISET&quot;. </text>
 				<template>AGENT-1 (abgekürzt zu PATIENT-1) hat den CODEN-Code &quot;PATIENT-2&quot;. </template>
 			</lex>
@@ -129,7 +139,10 @@
 				<mtriple>United_Kingdom | leaderName | Elizabeth_II</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>AIDS_(journal) | country | United_Kingdom</striple>
+					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+				</sortedtripleset>
 				<text>Die AIDS-Zeitschrift stammt aus dem Vereinigten Königreich, deren Leiterin Elizabeth II. ist. </text>
 				<template>AGENT-1 stammt von BRIDGE-1, dessen Leiter PATIENT-1 ist. </template>
 			</lex>
@@ -167,12 +180,16 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>A_Fortress_of_Grey_Ice | author | J._V._Jones</striple>
+					<striple>A_Fortress_of_Grey_Ice | ISBN_number | &quot;0-7653-0633-6&quot;</striple>
 				</sortedtripleset>
 				<text>Eine Festung von Grey Ice wurde von J. V. Jones geschrieben und hat die ISBN Nummer 0-7653-0633-6. </text>
 				<template>AGENT-1 wurde von PATIENT-1 geschrieben und hat die ISBN Nummer PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>A_Fortress_of_Grey_Ice | author | J._V._Jones</striple>
+					<striple>A_Fortress_of_Grey_Ice | ISBN_number | &quot;0-7653-0633-6&quot;</striple>
+				</sortedtripleset>
 				<text>J.V. Jones verfasste eine Festung von Grey Ice, die die ISBN Nummer 0-7653-0633-6 hat. </text>
 				<template>PATIENT-1 verfasst AGENT-1, die die ISBN Nummer PATIENT-2 hat. </template>
 			</lex>
@@ -199,6 +216,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>A_Glastonbury_Romance | ISBN_number | &quot;0-7156-3648-0&quot;</striple>
+					<striple>A_Glastonbury_Romance | mediaType | &quot;Print&quot;</striple>
 				</sortedtripleset>
 				<text>A Glastonbury Romance hat die ISBN Nummer 0-7156-3648-0 und ist im Druck. </text>
 				<template>AGENT-1 hat die ISBN Nummer PATIENT-2 und ist in PATIENT-1. </template>
@@ -246,6 +264,7 @@
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>A_Glastonbury_Romance | mediaType | Hardcover</striple>
 					<striple>A_Glastonbury_Romance | ISBN_number | &quot;0-7156-3648-0&quot;</striple>
 				</sortedtripleset>
 				<text>Eine Hardcover-Kopie von A Glastonbury Romance ist mit der ISBN Nummer 0-7156-3648-0 erhältlich. </text>
@@ -275,12 +294,18 @@
 				<template>AGENT-1 hat PATIENT-1 Seiten und ist in PATIENT-2 verfügbar. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>A_Glastonbury_Romance | mediaType | &quot;Print&quot;</striple>
+					<striple>A_Glastonbury_Romance | numberOfPages | &quot;1174&quot;</striple>
+				</sortedtripleset>
 				<text>Ein Glastonbury Romance, derzeit im Druck, hat 1174 Seiten. </text>
 				<template>AGENT-1, derzeit in PATIENT-2, hat PATIENT-1 Seiten. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>A_Glastonbury_Romance | numberOfPages | &quot;1174&quot;</striple>
+					<striple>A_Glastonbury_Romance | mediaType | &quot;Print&quot;</striple>
+				</sortedtripleset>
 				<text>Ein Glastonbury Romance, 1174 Seiten, ist in Print erhältlich. </text>
 				<template>AGENT-1, PATIENT-1 Seiten, ist in PATIENT-2 verfügbar. </template>
 			</lex>
@@ -300,19 +325,26 @@
 				<mtriple>A_Long_Long_Way | ISBN_number | &quot;0-670-03380-4&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>A_Long_Long_Way | ISBN_number | &quot;0-670-03380-4&quot;</striple>
+					<striple>A_Long_Long_Way | OCLC_number | 57392246</striple>
+				</sortedtripleset>
 				<text>Die ISBN Nummer von A Long Long Way ist 0-670-03380-4, und seine OCLC-Nummer ist 57392246. </text>
 				<template>Die ISBN Nummer von AGENT-1 ist PATIENT-2, und AGENT-1 OCLC Nummer ist PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>A_Long_Long_Way | OCLC_number | 57392246</striple>
+					<striple>A_Long_Long_Way | ISBN_number | &quot;0-670-03380-4&quot;</striple>
 				</sortedtripleset>
 				<text>Die OCLC Nummer von A Long Long Way ist 57392246 und die ISBN Nummer ist 0-670-03380-4. </text>
 				<template>Die OCLC Nummer von AGENT-1 ist PATIENT-1 und die ISBN Nummer ist PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>A_Long_Long_Way | ISBN_number | &quot;0-670-03380-4&quot;</striple>
+					<striple>A_Long_Long_Way | OCLC_number | 57392246</striple>
+				</sortedtripleset>
 				<text>Die ISBN Nummer von A Long Long Way ist 0-670-03380-4; die OCLC-Nummer ist 57392246. </text>
 				<template>Die ISBN Nummer von AGENT-1 ist PATIENT-2; die OCLC-Nummer ist PATIENT-1. </template>
 			</lex>
@@ -418,7 +450,10 @@
 				<template>AGENT-1 wurde von PATIENT-1 mit der OCLC-Nummer PATIENT-2 geschrieben. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
+					<striple>A_Wizard_of_Mars | OCLC_number | 318875313</striple>
+				</sortedtripleset>
 				<text>Diane Duane schrieb einen Zauberer von Mars, der die OCLC-Nummer von 318875313 hat. </text>
 				<template>PATIENT-1 schrieb AGENT-1, die die OCLC-Nummer von PATIENT-2 hat. </template>
 			</lex>
@@ -440,6 +475,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
+					<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
 				</sortedtripleset>
 				<text>Ein Zauberer von Mars wird in Hardcover veröffentlicht und hat die ISBN Nummer 978-0-15-204770-2. </text>
 				<template>AGENT-1 wird in PATIENT-1 veröffentlicht und hat die ISBN Nummer PATIENT-2. </template>
@@ -447,6 +483,7 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
+					<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
 				</sortedtripleset>
 				<text>Ein Zauberer von Mars wurde in Hardback veröffentlicht und hat die ISBN Nummer 978-0-15-204770-2. </text>
 				<template>AGENT-1 wurde in PATIENT-1 veröffentlicht und hat die ISBN Nummer PATIENT-2. </template>
@@ -477,6 +514,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>A_Wizard_of_Mars | numberOfPages | &quot;560&quot;</striple>
+					<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
 				</sortedtripleset>
 				<text>Ein Zauberer von Mars ist 560 Seiten lang und hat die ISBN Nummer 978-0-15-204770-2. </text>
 				<template>AGENT-1 ist PATIENT-1 Seiten lang und hat die ISBN Nummer PATIENT-2. </template>
@@ -484,6 +522,7 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>A_Wizard_of_Mars | numberOfPages | &quot;560&quot;</striple>
+					<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
 				</sortedtripleset>
 				<text>Ein Zauberer von Mars hat 560 Seiten und die ISBN Nummer 978-0-15-204770-2. </text>
 				<template>AGENT-1 hat PATIENT-1 Seiten und die ISBN Nummer PATIENT-2. </template>
@@ -513,12 +552,16 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Above_the_Veil | precededBy | Aenir</striple>
+					<striple>Above_the_Veil | country | Australians</striple>
 				</sortedtripleset>
 				<text>Aenir und es ist Nachfolger Above the Veil sind Beispiele für Austrlianische Literatur. </text>
 				<template>PATIENT-2 und PATIENT-2 Nachfolger AGENT-1 sind Beispiele für PATIENT-1-Literatur. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Above_the_Veil | precededBy | Aenir</striple>
+					<striple>Above_the_Veil | country | Australians</striple>
+				</sortedtripleset>
 				<text>Oberhalb der Veilchen, vor Aenir, stammt aus dem Land Australien. </text>
 				<template>AGENT-1, vorausgegangen von PATIENT-2, stammt aus dem Land PATIENT-1. </template>
 			</lex>
@@ -546,13 +589,17 @@
 				<template>BRIDGE-1 folgte AGENT-1 und ist in PATIENT-1 geschrieben. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Aenir | followedBy | Above_the_Veil</striple>
+					<striple>Above_the_Veil | language | English_language</striple>
+				</sortedtripleset>
 				<text>Dem Buch Aenir folgte Above the Veil, das auf Englisch geschrieben ist. </text>
 				<template>AGENT-1 wurde gefolgt von BRIDGE-1, die in PATIENT-1 geschrieben ist. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Aenir | followedBy | Above_the_Veil</striple>
+					<striple>Above_the_Veil | language | English_language</striple>
 				</sortedtripleset>
 				<text>Dem Roman Aenir folgte Above den Veilchen, die auf Englisch geschrieben wurden. </text>
 				<template>AGENT-1 folgte BRIDGE-1 in PATIENT-1. </template>
@@ -573,12 +620,18 @@
 				<mtriple>Aenir | precededBy | Castle_(novel)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Above_the_Veil | precededBy | Aenir</striple>
+					<striple>Aenir | precededBy | Castle_(novel)</striple>
+				</sortedtripleset>
 				<text>Über den Veilchen steht das Hinspiel gegen Aenir, das nach Burg geschrieben wurde. </text>
 				<template>AGENT-1 ist die Fortsetzung von BRIDGE-1, die nach PATIENT-1 geschrieben wurde. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Above_the_Veil | precededBy | Aenir</striple>
+					<striple>Aenir | precededBy | Castle_(novel)</striple>
+				</sortedtripleset>
 				<text>Über den Veilchen steht das Hinspiel gegen Aenir, das dem Roman Schloss vorausgegangen war. </text>
 				<template>AGENT-1 ist die Fortsetzung von BRIDGE-1, der PATIENT-1 vorausgegangen war. </template>
 			</lex>
@@ -606,18 +659,25 @@
 				<mtriple>Springer_Science+Business_Media | founder | Julius_Springer</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Acta_Mathematica_Hungarica | publisher | Springer_Science+Business_Media</striple>
+					<striple>Springer_Science+Business_Media | founder | Julius_Springer</striple>
+				</sortedtripleset>
 				<text>ACTA Mathematica Hungarica ist der Verlag von Springer Science + Business Media, gegründet von Julius Springer. </text>
 				<template>AGENT-1 ist der Herausgeber von BRIDGE-1, gegründet von PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Springer_Science+Business_Media | founder | Julius_Springer</striple>
+					<striple>Acta_Mathematica_Hungarica | publisher | Springer_Science+Business_Media</striple>
+				</sortedtripleset>
 				<text>Springer Science and Business Media, gegründet von Julius Springer, veröffentlicht Acta Mathematica Hungarica. </text>
 				<template>BRIDGE-1, gegründet von PATIENT-1, veröffentlicht AGENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Springer_Science+Business_Media | founder | Julius_Springer</striple>
+					<striple>Acta_Mathematica_Hungarica | publisher | Springer_Science+Business_Media</striple>
 				</sortedtripleset>
 				<text>Springer Science + Business Media gegründet von Julius Springer ist der Verlag von Acta Mathematica Hungarica. </text>
 				<template>BRIDGE-1 von PATIENT-1 ist der Herausgeber von AGENT-1. </template>
@@ -638,17 +698,24 @@
 				<mtriple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</striple>
+				</sortedtripleset>
 				<text>Das administrative Science Quarterly hat einen Coden-Code der &quot;ASCQAG&quot; und die Abkürzung von Admin.Sci.Q. </text>
 				<template>AGENT-1 hat einen Coden-Code von &quot;PATIENT-1&quot; und die Abkürzung von PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</striple>
+				</sortedtripleset>
 				<text>Administrative Science Quarterly, abgekürzt Admin. Sci. Q, hat einen Coden-Code von &quot;ASCQAG&quot;. </text>
 				<template>AGENT-1, abgekürzt PATIENT-2, hat einen Coden-Code von &quot;PATIENT-1&quot;. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</striple>
+					<striple>Administrative_Science_Quarterly | CODEN_code | &quot;ASCQAG&quot;</striple>
+				</sortedtripleset>
 				<text>Der Code für administrative Science Quarterly (abgekürzt als Admin. Sci. Q) ist die ASCQAG. </text>
 				<template>Der Code für AGENT-1 (abgekürzt als PATIENT-2) ist PATIENT-1. </template>
 			</lex>
@@ -670,17 +737,24 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Cornell_University | affiliation | Association_of_Public_and_Land-grant_Universities</striple>
+					<striple>Administrative_Science_Quarterly | publisher | Cornell_University</striple>
 				</sortedtripleset>
 				<text>Die Cornell University ist Mitglied der Association of Public and Land Grant Universities und veröffentlichte Verwaltungswissenschaft Quarterly. </text>
 				<template>BRIDGE-1 ist mit PATIENT-1 verbunden und veröffentlicht AGENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Cornell_University | affiliation | Association_of_Public_and_Land-grant_Universities</striple>
+					<striple>Administrative_Science_Quarterly | publisher | Cornell_University</striple>
+				</sortedtripleset>
 				<text>Die Cornell University, verbunden mit der Association of Public and Land Grant Universities, ist Herausgeber der Verwaltungswissenschaft Quarterly. </text>
 				<template>BRIDGE-1, verbunden mit PATIENT-1, ist Herausgeber von AGENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Cornell_University | affiliation | Association_of_Public_and_Land-grant_Universities</striple>
+					<striple>Administrative_Science_Quarterly | publisher | Cornell_University</striple>
+				</sortedtripleset>
 				<text>Die Cornell University, die mit der Association of Public and Land Grant Universities verbunden ist, ist der Verlag der Verwaltungswissenschaft Quarterly. </text>
 				<template>BRIDGE-1, verbunden mit PATIENT-1, ist der Herausgeber von AGENT-1. </template>
 			</lex>
@@ -700,13 +774,16 @@
 				<mtriple>Aenir | ISBN_number | &quot;0-439-17684-0&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Aenir | author | Garth_Nix</striple>
+				</sortedtripleset>
 				<text>Geschrieben von Garth Nix, Aenir, hat die ISBN Nummer von &quot;0-439-17684-0. </text>
 				<template>Geschrieben von PATIENT-1, AGENT-1, hat die ISBN Nummer von &quot;PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Aenir | author | Garth_Nix</striple>
+					<striple>Aenir | ISBN_number | &quot;0-439-17684-0&quot;</striple>
 				</sortedtripleset>
 				<text>Aenir wurde von Garth Nix geschrieben und hat die ISBN Nummer 0-439-17684-0. </text>
 				<template>AGENT-1 wurde von PATIENT-1 geschrieben und hat die ISBN Nummer von PATIENT-2. </template>
@@ -714,6 +791,7 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Aenir | author | Garth_Nix</striple>
+					<striple>Aenir | ISBN_number | &quot;0-439-17684-0&quot;</striple>
 				</sortedtripleset>
 				<text>Aenir wurde von Garth Nix geschrieben und hat die ISBN Nummer 0-439-17684-0. </text>
 				<template>AGENT-1 wurde von PATIENT-1 geschrieben und hat die ISBN Nummer PATIENT-2. </template>
@@ -736,6 +814,7 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Alcatraz_Versus_the_Evil_Librarians | mediaType | Hardcover</striple>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | ISBN_number | &quot;0-439-92550-9&quot;</striple>
 				</sortedtripleset>
 				<text>Alcatraz Versus the Evil Librarians ist in Hardcover veröffentlicht und hat die ISBN Nummer 0-439-92550-9. </text>
 				<template>AGENT-1 wird in PATIENT-1 veröffentlicht und hat die ISBN Nummer PATIENT-2. </template>
@@ -761,7 +840,10 @@
 				<mtriple>Alcatraz_Versus_the_Evil_Librarians | ISBN_number | &quot;0-439-92550-9&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | ISBN_number | &quot;0-439-92550-9&quot;</striple>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | numberOfPages | &quot;320&quot;</striple>
+				</sortedtripleset>
 				<text>Alcatraz Versus the Evil Librarian, die durch ISBN 0-439-92550-9 identifiziert wird, hat 320 Seiten. </text>
 				<template>AGENT-1, das von ISBN PATIENT-2 identifiziert wird, hat PATIENT-1 Seiten. </template>
 			</lex>
@@ -776,6 +858,7 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Alcatraz_Versus_the_Evil_Librarians | numberOfPages | &quot;320&quot;</striple>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | ISBN_number | &quot;0-439-92550-9&quot;</striple>
 				</sortedtripleset>
 				<text>The ISBN number of the 320 -page long Alcatraz Versus the Evil Librarians is 0-439-92550-9. </text>
 				<template>Die ISBN Nummer von PATIENT-1 -page long AGENT-1 ist PATIENT-2. </template>
@@ -796,17 +879,26 @@
 				<mtriple>AIDS_(journal) | academicDiscipline | HIV</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>AIDS_(journal) | academicDiscipline | HIV</striple>
+					<striple>HIV | family | Orthoretrovirinae</striple>
+				</sortedtripleset>
 				<text>AIDS (Zeitschrift) fällt unter die akademische Disziplin HIV, die zur Familie Orthoretrovirinae gehört. </text>
 				<template>AGENT-1 steht unter der akademischen Disziplin BRIDGE-1, die zur Familie PATIENT-1 gehört. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>AIDS_(journal) | academicDiscipline | HIV</striple>
+					<striple>HIV | family | Orthoretrovirinae</striple>
+				</sortedtripleset>
 				<text>Die AIDS (Zeitschrift) ist die akademische Disziplin von HIV, eine Krankheit Teil der Orthoretrovirinae Familie. </text>
 				<template>AGENT-1 ist die akademische Disziplin von BRIDGE-1, einem Krankheitsteil der PATIENT-1-Familie. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>AIDS_(journal) | academicDiscipline | HIV</striple>
+					<striple>HIV | family | Orthoretrovirinae</striple>
+				</sortedtripleset>
 				<text>AIDS (Zeitschrift) fällt unter die akademische Disziplin HIV, die Teil der Familie von orthoretrovirinae ist. </text>
 				<template>AGENT-1 steht unter der akademischen Disziplin BRIDGE-1, die Teil der Familie von PATIENT-1 ist. </template>
 			</lex>
@@ -826,12 +918,18 @@
 				<mtriple>A_Fortress_of_Grey_Ice | country | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
+					<striple>United_States | language | English_language</striple>
+				</sortedtripleset>
 				<text>Eine Festung von Grey Ice stammt aus den USA, wo die Sprache Englisch ist. </text>
 				<template>AGENT-1 ist von BRIDGE-1, wo die Sprache PATIENT-1 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
+					<striple>United_States | language | English_language</striple>
+				</sortedtripleset>
 				<text>Eine Festung von Grey Ice stammt aus den USA, die Englisch als eine seiner Sprachen hat. </text>
 				<template>AGENT-1 ist von BRIDGE-1, das PATIENT-1 als eine der BRIDGE-1-Sprachen hat. </template>
 			</lex>

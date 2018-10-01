@@ -14,18 +14,27 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</striple>
 					<striple>Ajoblanco | ingredient | Bread</striple>
 				</sortedtripleset>
 				<text>Aus Spanien hat Ajoblanco (alternativ bekannt als Ajo blanco) Brot als Zutat. </text>
 				<template>Von PATIENT-1, AGENT-1 (alternativ bekannt als PATIENT-2) hat PATIENT-3 als Zutat. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Ajoblanco | ingredient | Bread</striple>
+				</sortedtripleset>
 				<text>Ajoblanco, auch bekannt als &quot;Ajo blanco&quot;, kommt aus Spanien. Brot ist eine der Zutaten. </text>
 				<template>AGENT-1, auch &quot;PATIENT-2&quot; genannt, stammt von PATIENT-1. PATIENT-3 ist eine der Zutaten. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Ajoblanco | ingredient | Bread</striple>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</striple>
+				</sortedtripleset>
 				<text>Brot ist eine Zutat von Ajoblanco, das aus Spanien stammt und ein alternativer Name zu Ajo blanco. </text>
 				<template>PATIENT-3 ist eine Zutat von AGENT-1, die von PATIENT-1 und ein alternativer Name zu PATIENT-2 ist. </template>
 			</lex>
@@ -48,12 +57,20 @@
 				<mtriple>Ajoblanco | ingredient | Water</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Ajoblanco | region | Andalusia</striple>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Ajoblanco | ingredient | Water</striple>
+				</sortedtripleset>
 				<text>Ajoblanco stammt aus Andalusien, in Spanien. Ajoblanco enthält Wasser. </text>
 				<template>AGENT-1 ist von PATIENT-2, in PATIENT-1. AGENT-1 enthält PATIENT-3. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Ajoblanco | ingredient | Water</striple>
+					<striple>Ajoblanco | region | Andalusia</striple>
+					<striple>Ajoblanco | country | Spain</striple>
+				</sortedtripleset>
 				<text>Wasser ist eine Zutat in Ajoblanco, das ist ein Lebensmittel in Andalusien, in Spanien. </text>
 				<template>PATIENT-3 ist eine Zutat in AGENT-1, ein Lebensmittel in PATIENT-2, in PATIENT-1. </template>
 			</lex>
@@ -76,12 +93,20 @@
 				<mtriple>Indonesia | leaderName | Jusuf_Kalla</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arem-arem | country | Indonesia</striple>
+					<striple>Indonesia | leaderName | Joko_Widodo</striple>
+					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+				</sortedtripleset>
 				<text>Arem arem stammt aus dem Land Indonesien, wo zwei der Führer sind, Joko Widodo und Jusuf Kalla. </text>
 				<template>AGENT-1 stammt von BRIDGE-1, wo zwei der Führer sind, PATIENT-1 und PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arem-arem | country | Indonesia</striple>
+					<striple>Indonesia | leaderName | Joko_Widodo</striple>
+					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+				</sortedtripleset>
 				<text>Arem arem stammt aus Indonesien, wo zwei der Führer Joko Widodo und Jusef Kalla sind. </text>
 				<template>AGENT-1 stammt von BRIDGE-1, wo zwei der Führer PATIENT-1 und PATIENT-2 sind. </template>
 			</lex>
@@ -105,6 +130,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Arem-arem | region | &quot;Nationwide in Indonesia, but more specific to Java&quot;</striple>
 					<striple>Arem-arem | country | Indonesia</striple>
 					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
 				</sortedtripleset>
@@ -120,7 +146,10 @@
 				<template>PATIENT-1 ist der Leiter von BRIDGE-1, BRIDGE-1, das AGENT-1 dient. Während AGENT-1 bundesweit in BRIDGE-1 ist, ist AGENT-1 spezifisch für PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+					<striple>Arem-arem | country | Indonesia</striple>
+				</sortedtripleset>
 				<text>Jusuf Kalla ist ein Führer in Indonesien, wo das Gericht arem-arem landesweit gefunden wird, obwohl es spezifisch für Java ist. </text>
 				<template>PATIENT-1 ist führend in BRIDGE-1, wo das Gericht AGENT-1 bundesweit gefunden wird, obwohl AGENT-1 spezifisch für PATIENT-1 ist. </template>
 			</lex>
@@ -144,6 +173,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Italy | leaderName | Sergio_Mattarella</striple>
 					<striple>Italy | language | Italian_language</striple>
 					<striple>Arrabbiata_sauce | country | Italy</striple>
 				</sortedtripleset>
@@ -151,12 +181,20 @@
 				<template>Der Führer von BRIDGE-1 ist PATIENT-2, BRIDGE-1 ist auch dort, wo PATIENT-1 gesprochen wird und AGENT-1 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Italy | leaderName | Sergio_Mattarella</striple>
+					<striple>Italy | language | Italian_language</striple>
+					<striple>Arrabbiata_sauce | country | Italy</striple>
+				</sortedtripleset>
 				<text>Sergio Mattarella ist ein Führer von Italien, wo die italienische Sprache gesprochen wird und arrabbiata Sauce gefunden werden kann. </text>
 				<template>PATIENT-2 ist ein Führer von BRIDGE-1, wo PATIENT-1 gesprochen wird und AGENT-1 gefunden werden kann. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arrabbiata_sauce | country | Italy</striple>
+					<striple>Italy | language | Italian_language</striple>
+					<striple>Italy | leaderName | Sergio_Mattarella</striple>
+				</sortedtripleset>
 				<text>Arrabbiata Sauce stammt aus Italien, wo die gesprochene Sprache Italienisch ist und ein Führer ist Sergio Mattarella. </text>
 				<template>AGENT-1 ist von BRIDGE-1, wo die gesprochene Sprache ist PATIENT-1 und ein Führer ist PATIENT-2. </template>
 			</lex>
@@ -179,7 +217,11 @@
 				<mtriple>Arrabbiata_sauce | region | Rome</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arrabbiata_sauce | region | Rome</striple>
+					<striple>Arrabbiata_sauce | country | Italy</striple>
+					<striple>Arrabbiata_sauce | ingredient | Chili_pepper</striple>
+				</sortedtripleset>
 				<text>Arrabbiata Sauce, ein traditionelles Gericht aus Rom in Italien, hat Chili Pfeffer als eine seiner wichtigen Zutaten. </text>
 				<template>AGENT-1, ein traditionelles Gericht aus PATIENT-3 in PATIENT-2, hat PATIENT-1 als eine seiner wichtigen Zutaten. </template>
 			</lex>
@@ -187,6 +229,7 @@
 				<sortedtripleset>
 					<striple>Arrabbiata_sauce | region | Rome</striple>
 					<striple>Arrabbiata_sauce | country | Italy</striple>
+					<striple>Arrabbiata_sauce | ingredient | Chili_pepper</striple>
 				</sortedtripleset>
 				<text>Arrabbiata-Sauce aus Rom in Italien enthält Chili-Pfeffer. </text>
 				<template>AGENT-1 von PATIENT-3 in PATIENT-2 enthält PATIENT-1. </template>
@@ -195,6 +238,7 @@
 				<sortedtripleset>
 					<striple>Arrabbiata_sauce | region | Rome</striple>
 					<striple>Arrabbiata_sauce | country | Italy</striple>
+					<striple>Arrabbiata_sauce | ingredient | Chili_pepper</striple>
 				</sortedtripleset>
 				<text>Arrabbiata Sauce stammt aus der Region Rom in Italien und eine der wichtigsten Zutaten ist Chili Pfeffer. </text>
 				<template>AGENT-1 stammt aus der Region PATIENT-3 in PATIENT-2 und eine der wichtigsten Zutaten ist PATIENT-1. </template>
@@ -218,19 +262,28 @@
 				<mtriple>Arrabbiata_sauce | region | Rome</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arrabbiata_sauce | ingredient | Garlic</striple>
+					<striple>Arrabbiata_sauce | region | Rome</striple>
+					<striple>Arrabbiata_sauce | country | Italy</striple>
+				</sortedtripleset>
 				<text>Knoblauch ist eine Zutat in arrabbiata Soße, die aus der Region von Rom stammt, in Italien. </text>
 				<template>PATIENT-1 ist eine Zutat in AGENT-1, die aus der Region PATIENT-3 in PATIENT-2 stammt. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Arrabbiata_sauce | ingredient | Garlic</striple>
+					<striple>Arrabbiata_sauce | country | Italy</striple>
 				</sortedtripleset>
 				<text>Arrabbiata Sauce enthält Knoblauch und kommt aus der Region Rom von italy. </text>
 				<template>AGENT-1 enthält PATIENT-1 und kommt aus der PATIENT-1-Region PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arrabbiata_sauce | ingredient | Garlic</striple>
+					<striple>Arrabbiata_sauce | region | Rome</striple>
+					<striple>Arrabbiata_sauce | country | Italy</striple>
+				</sortedtripleset>
 				<text>Knoblauch ist eine Zutat in arrabbiata Sauce, die ein traditionelles Gericht aus Rom, Italien ist. </text>
 				<template>PATIENT-1 ist eine Zutat in AGENT-1, die ein traditionelles Gericht aus PATIENT-3, PATIENT-2 ist. </template>
 			</lex>
@@ -256,6 +309,7 @@
 				<sortedtripleset>
 					<striple>Arròs_negre | ingredient | Squid</striple>
 					<striple>Arròs_negre | region | Catalonia</striple>
+					<striple>Arròs_negre | country | Spain</striple>
 				</sortedtripleset>
 				<text>Arros Negre enthält Squid und kommt aus der Region Katalonien in Spanien. </text>
 				<template>AGENT-1 enthält PATIENT-3 und kommt von PATIENT-2 AGENT-1 von PATIENT-1. </template>
@@ -264,12 +318,17 @@
 				<sortedtripleset>
 					<striple>Arròs_negre | ingredient | Squid</striple>
 					<striple>Arròs_negre | region | Catalonia</striple>
+					<striple>Arròs_negre | country | Spain</striple>
 				</sortedtripleset>
 				<text>Squid ist eine Zutat von arros negre, die aus der Region Katalonien in Spanien. </text>
 				<template>PATIENT-3 ist eine Zutat von AGENT-1 aus der Region PATIENT-2 in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arròs_negre | region | Catalonia</striple>
+					<striple>Arròs_negre | country | Spain</striple>
+					<striple>Arròs_negre | ingredient | Squid</striple>
+				</sortedtripleset>
 				<text>Arros negre stammt aus der Region Katalonien, Spanien, und eine seiner Zutaten ist Squid. </text>
 				<template>AGENT-1 stammt aus der Region PATIENT-2, PATIENT-1, und eine seiner Zutaten ist PATIENT-3. </template>
 			</lex>
@@ -292,17 +351,29 @@
 				<mtriple>Arròs_negre | ingredient | Cuttlefish</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arròs_negre | ingredient | Cuttlefish</striple>
+					<striple>Arròs_negre | region | Valencian_Community</striple>
+					<striple>Arròs_negre | country | Spain</striple>
+				</sortedtripleset>
 				<text>Tintenfische ist eine Zutat in Arròs Negre, die aus der Region der valencianischen Gemeinschaft kommt, in Spanien. </text>
 				<template>PATIENT-3 ist eine Zutat in AGENT-1, die aus der Region PATIENT-1 in PATIENT-2 stammt. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arròs_negre | ingredient | Cuttlefish</striple>
+					<striple>Arròs_negre | region | Valencian_Community</striple>
+					<striple>Arròs_negre | country | Spain</striple>
+				</sortedtripleset>
 				<text>Tintenfische ist eine Zutat des Gerichts Arròs negre, ein Gericht, das von der Gemeinde Valencia in Spanien stammt. </text>
 				<template>PATIENT-3 ist ein Bestandteil von AGENT-1, ein Gericht, das von PATIENT-1 in PATIENT-2 stammt. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arròs_negre | ingredient | Cuttlefish</striple>
+					<striple>Arròs_negre | region | Valencian_Community</striple>
+					<striple>Arròs_negre | country | Spain</striple>
+				</sortedtripleset>
 				<text>Tintenfische ist eine Zutat in Arròs Negre, ein traditionelles Gericht aus der valencianischen Gemeinde in Spanien. </text>
 				<template>PATIENT-3 ist eine Zutat in AGENT-1, die ein traditionelles Gericht von PATIENT-1 in PATIENT-2 ist. </template>
 			</lex>
@@ -325,20 +396,28 @@
 				<mtriple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Asam_pedas | region | &quot;Sumatra and Malay Peninsula&quot;</striple>
+					<striple>Asam_pedas | country | Malaysia</striple>
+					<striple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</striple>
+				</sortedtripleset>
 				<text>Die Hauptzutaten von asam pedas, ein Essen aus den Regionen Sumatra und Malay-Halbinsel in Malaysia, bestehen aus Fisch, der in einer sauer und heißen Soße gekocht wird. </text>
 				<template>Die wichtigsten Bestandteile von AGENT-1, ein Lebensmittel aus PATIENT-2-Regionen von PATIENT-1, bestehen aus PATIENT-3. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</striple>
+					<striple>Asam_pedas | region | &quot;Sumatra and Malay Peninsula&quot;</striple>
+					<striple>Asam_pedas | country | Malaysia</striple>
 				</sortedtripleset>
 				<text>ASAM pedas ist aus Fisch gekocht in einer sauer und heißen Sauce und kommt aus den Regionen Sumatra und Malay Halbinsel in Malaysia. </text>
 				<template>AGENT-1 wird aus PATIENT-3 hergestellt und kommt aus PATIENT-2-Regionen in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Asam_pedas | region | &quot;Sumatra and Malay Peninsula&quot;</striple>
 					<striple>Asam_pedas | country | Malaysia</striple>
+					<striple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</striple>
 				</sortedtripleset>
 				<text>Das Gericht Asam pedas kommt aus der Region Sumatra und der malaiischen Halbinsel. Malaysia und die Hauptzutaten sind Fische, die in sauer und heißer Soße gekocht werden. </text>
 				<template>AGENT-1 kommt aus der Region PATIENT-2. PATIENT-1 und die wichtigsten Zutaten sind PATIENT-3. </template>
@@ -364,12 +443,15 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Ayam_penyet | mainIngredients | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</striple>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Ayam_penyet | region | Malaysia</striple>
 				</sortedtripleset>
 				<text>Ayam Penyet ist aus gequetschten oder gequetschten Hühnern, die mit sambla serviert werden und ist ein beliebtes Gericht in Java, Malaysia. </text>
 				<template>AGENT-1 wird aus PATIENT-3 hergestellt und ist ein beliebtes Gericht in PATIENT-2, PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Ayam_penyet | mainIngredients | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</striple>
 					<striple>Ayam_penyet | region | Malaysia</striple>
 					<striple>Ayam_penyet | country | Java</striple>
 				</sortedtripleset>
@@ -379,6 +461,8 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Ayam_penyet | region | Malaysia</striple>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Ayam_penyet | mainIngredients | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</striple>
 				</sortedtripleset>
 				<text>Ayam Penyet stammt aus Malaysia und Java. Die wichtigsten Zutaten sind gequetscht oder zertrümmert gebratenes Huhn, das mit sambal serviert wird. </text>
 				<template>AGENT-1 stammt aus PATIENT-1 und PATIENT-2. Die wichtigsten Zutaten sind PATIENT-3. </template>
@@ -402,12 +486,20 @@
 				<mtriple>Bacon_Explosion | mainIngredients | Sausage</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bacon_Explosion | ingredient | Bacon</striple>
+					<striple>Bacon_Explosion | mainIngredients | Sausage</striple>
+					<striple>Bacon_Explosion | country | United_States</striple>
+				</sortedtripleset>
 				<text>Speck und Wurst sind die Hauptzutaten in einer Bacon-Explosion, die aus den USA kommt. </text>
 				<template>PATIENT-2 und PATIENT-3 sind die wichtigsten Bestandteile von AGENT-1, die von PATIENT-1 stammen. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>Bacon_Explosion | ingredient | Bacon</striple>
+					<striple>Bacon_Explosion | mainIngredients | Sausage</striple>
+				</sortedtripleset>
 				<text>Speck Explosion, dessen Name aus den USA kommt, hat Speck und Wurst. </text>
 				<template>AGENT-1, dessen Name von PATIENT-1 stammt, hat PATIENT-2 und PATIENT-3. </template>
 			</lex>
@@ -437,12 +529,20 @@
 				<template>Eine der ethnischen Gruppen in BRIDGE-1 sind native BRIDGE-1, BRIDGE-1 ist auch die Heimat des Gerichts AGENT-1 und hat PATIENTI-2 als BRIDGE-1 Kapitol Stadt. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>United_States | capital | Washington,_D.C.</striple>
+					<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+				</sortedtripleset>
 				<text>Bacon Explosion hat seinen Ursprung in den Vereinigten Staaten, wo die Hauptstadt Washington DC und Native Americans eine ethnische Gruppe sind. </text>
 				<template>AGENT-1 hat seinen Ursprung in BRIDGE-1, wo die Hauptstadt PATIENT-2 und PATIENT-1 eine ethnische Gruppe sind. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>United_States | capital | Washington,_D.C.</striple>
+					<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+				</sortedtripleset>
 				<text>Bacon Explosion kommt aus den Vereinigten Staaten, wo Washington D.C. die Hauptstadt ist und die Indianer eine ethnische Gruppe sind. </text>
 				<template>AGENT-1 kommt von BRIDGE-1, wo PATIENT-2 das Kapital ist und PATIENT-1 eine ethnische Gruppe ist. </template>
 			</lex>
@@ -466,6 +566,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
 					<striple>United_States | leaderName | Barack_Obama</striple>
 					<striple>United_States | capital | Washington,_D.C.</striple>
 				</sortedtripleset>
@@ -473,12 +574,20 @@
 				<template>BRIDGE-1 ist das Land von AGENT-1. PATIENT-1 ist der Führer und PATIENT-2 ist BRIDGE-1 Kapital. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>United_States | leaderName | Barack_Obama</striple>
+					<striple>United_States | capital | Washington,_D.C.</striple>
+				</sortedtripleset>
 				<text>Die Bacon Explosion kommt aus den USA, wo Barack Obama ein Führer ist und die Hauptstadt Washington DC ist. </text>
 				<template>AGENT-1 kommt von BRIDGE-1, wo PATIENT-1 führend ist und die Hauptstadt PATIENT-2 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>United_States | leaderName | Barack_Obama</striple>
+					<striple>United_States | capital | Washington,_D.C.</striple>
+				</sortedtripleset>
 				<text>Die Bacon Explosion stammt aus den Vereinigten Staaten, wo der Führer Barack Obama und die Hauptstadt Washington DC ist. </text>
 				<template>AGENT-1 stammt von BRIDGE-1, wo der Führer PATIENT-1 und die Hauptstadt PATIENT-2 ist. </template>
 			</lex>
@@ -501,7 +610,11 @@
 				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>United_States | ethnicGroup | African_Americans</striple>
+					<striple>United_States | leaderName | John_Roberts</striple>
+				</sortedtripleset>
 				<text>Die Bacon-Explosion hat ihren Ursprung in den Vereinigten Staaten, wo afrikanische Amerikaner eine ethnische Gruppe sind und John Roberts ein Führer ist. </text>
 				<template>AGENT-1 hat seinen Ursprung in BRIDGE-1, wo PATIENT-2 eine ethnische Gruppe ist und PATIENT-1 führend ist. </template>
 			</lex>
@@ -550,7 +663,11 @@
 				<template>PATIENT-2 Gericht, AGENT-1 verwendet PATIENT-3 als Zutat und hat die Variante PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bacon_sandwich | dishVariation | BLT</striple>
+					<striple>Bacon_sandwich | country | United_Kingdom</striple>
+					<striple>Bacon_sandwich | ingredient | Condiment</striple>
+				</sortedtripleset>
 				<text>Das Speck-Sandwich, eine Variante des BLT, kommt aus dem Vereinigten Königreich und enthält Klimaanlagen. </text>
 				<template>AGENT-1, eine Variante von PATIENT-1, stammt von PATIENT-2 und enthält PATIENT-3. </template>
 			</lex>
@@ -573,17 +690,26 @@
 				<mtriple>Baked_Alaska | ingredient | Meringue</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Baked_Alaska | ingredient | Meringue</striple>
+					<striple>Baked_Alaska | region | New_York</striple>
+					<striple>Baked_Alaska | country | France</striple>
+				</sortedtripleset>
 				<text>Meringue ist eine Zutat eines Baked Alaskas, der aus der Region New York und Frankreich stammt. </text>
 				<template>PATIENT-3 ist eine Zutat von AGENT-1, die aus der Region PATIENT-2 und PATIENT-1 stammt. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Baked_Alaska | ingredient | Meringue</striple>
+					<striple>Baked_Alaska | country | France</striple>
+					<striple>Baked_Alaska | region | New_York</striple>
+				</sortedtripleset>
 				<text>Meringue ist eine Zutat eines Baked Alaskas, der aus Frankreich und New York kommt. </text>
 				<template>PATIENT-3 ist eine Zutat von AGENT-1, die von PATIENT-1 und PATIENT-2 stammt. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Baked_Alaska | ingredient | Meringue</striple>
 					<striple>Baked_Alaska | country | France</striple>
 					<striple>Baked_Alaska | region | New_York</striple>
 				</sortedtripleset>
@@ -609,17 +735,29 @@
 				<mtriple>Baked_Alaska | ingredient | Sponge_cake</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Baked_Alaska | ingredient | Sponge_cake</striple>
+					<striple>Baked_Alaska | region | New_York</striple>
+					<striple>Baked_Alaska | country | United_States</striple>
+				</sortedtripleset>
 				<text>Schwamm-Kuchen ist eine der Zutaten in Baked Alaska, einem Gericht aus der New Yorker Region und in den USA gefunden. </text>
 				<template>PATIENT-3 ist eine der Zutaten in AGENT-1, einem Gericht aus der Region PATIENT-2 und in PATIENT-1 gefunden. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Baked_Alaska | ingredient | Sponge_cake</striple>
+					<striple>Baked_Alaska | region | New_York</striple>
+					<striple>Baked_Alaska | country | United_States</striple>
+				</sortedtripleset>
 				<text>Schwamm-Kuchen ist eine Zutat von Baked Alaska, der aus der Region New York stammt und in den USA zu finden ist. </text>
 				<template>PATIENT-3 ist eine Zutat von AGENT-1, die aus der Region PATIENT-2 stammt und in PATIENT-1 zu finden ist. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Baked_Alaska | ingredient | Sponge_cake</striple>
+					<striple>Baked_Alaska | region | New_York</striple>
+					<striple>Baked_Alaska | country | United_States</striple>
+				</sortedtripleset>
 				<text>Eine Zutat aus gebackenem Alaska ist Schwamm-Kuchen, das Gericht stammt aus New York, USA. </text>
 				<template>Ein Bestandteil von AGENT-1 ist PATIENT-3, AGENT-1 stammt aus PATIENT-2, PATIENT-1. </template>
 			</lex>
@@ -643,6 +781,8 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Baked_Alaska | ingredient | Christmas_pudding</striple>
+					<striple>Baked_Alaska | course | Dessert</striple>
 					<striple>Dessert | dishVariation | Cookie</striple>
 				</sortedtripleset>
 				<text>Weihnachtspudding ist eine Zutat im Dessert Baked Alaska. Cookie ist auch ein Dessert. </text>
@@ -651,6 +791,8 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Dessert | dishVariation | Cookie</striple>
+					<striple>Baked_Alaska | course | Dessert</striple>
+					<striple>Baked_Alaska | ingredient | Christmas_pudding</striple>
 				</sortedtripleset>
 				<text>Ein Cookie kann ein Dessert sein, wie auch gebackene Alaska, die weihnachtlichen Pudding als Zutat hat. </text>
 				<template>PATIENT-1 kann BRIDGE-1 sein, wie auch AGENT-1, das PATIENT-2 als Zutat hat. </template>
@@ -658,6 +800,8 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Dessert | dishVariation | Cookie</striple>
+					<striple>Baked_Alaska | course | Dessert</striple>
+					<striple>Baked_Alaska | ingredient | Christmas_pudding</striple>
 				</sortedtripleset>
 				<text>Cookies sind ein Dessert, wie auch Baked Alaska, der Weihnachtspudding als eine seiner Zutaten hat. </text>
 				<template>PATIENT-1 sind BRIDGE-1 Artikel, wie AGENT-1, das PATIENT-2 als eine der AGENT-1-Zutaten hat. </template>
@@ -683,19 +827,27 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Dessert | dishVariation | Sandesh_(confectionery)</striple>
+					<striple>Baked_Alaska | course | Dessert</striple>
+					<striple>Baked_Alaska | ingredient | Christmas_pudding</striple>
 				</sortedtripleset>
 				<text>Sandesh (Süßwaren) ist ein Gericht, das als Dessert serviert werden kann. Ein anderes Gericht, das ein Dessert ist, ist Baked Alaska, der Weihnachtspudding als Zutat hat. </text>
 				<template>PATIENT-1 ist ein Gericht, das als BRIDGE-1 serviert werden kann. Ein anderes Gericht, das BRIDGE-1 ist, ist AGENT-1, das PATIENT-2 als Zutat hat. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Dessert | dishVariation | Sandesh_(confectionery)</striple>
+					<striple>Baked_Alaska | course | Dessert</striple>
 					<striple>Baked_Alaska | ingredient | Christmas_pudding</striple>
 				</sortedtripleset>
 				<text>Sandesh und Baked Alaska sind Desserts. Gebackene Alaska verwendet Weihnachtspudding als Zutat. </text>
 				<template>PATIENT-1 und AGENT-1 sind BRIDGE-1. AGENT-1 verwendet PATIENT-2 als Zutat. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Baked_Alaska | ingredient | Christmas_pudding</striple>
+					<striple>Baked_Alaska | course | Dessert</striple>
+					<striple>Dessert | dishVariation | Sandesh_(confectionery)</striple>
+				</sortedtripleset>
 				<text>Weihnachtspudding ist eine Zutat in Baked Alaska, das ist ein Dessert, ähnlich wie Sandesh. </text>
 				<template>PATIENT-2 ist eine Zutat in AGENT-1, die BRIDGE-1 ist, wie PATIENT-1. </template>
 			</lex>
@@ -719,6 +871,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
 					<striple>Bandeja_paisa | ingredient | Kidney_bean</striple>
 					<striple>Bandeja_paisa | region | Antioquia_Department</striple>
 				</sortedtripleset>
@@ -726,12 +879,20 @@
 				<template>Ein Teil von PATIENT-1, AGENT-1 (das PATIENT-2 als eine der Zutaten hat), kommt aus PATIENT-3 Bereich. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bandeja_paisa | ingredient | Kidney_bean</striple>
+					<striple>Bandeja_paisa | region | Antioquia_Department</striple>
+					<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+				</sortedtripleset>
 				<text>Bandeja paisa, die Nierenbohnen enthält, ist ein traditionelles Gericht, das in der Antioquia-Abteilung von Kolumbien gefunden wird. </text>
 				<template>AGENT-1, das PATIENT-2 enthält, ist ein traditionelles Gericht, das in PATIENT-3 von PATIENT-1 gefunden wurde. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bandeja_paisa | ingredient | Kidney_bean</striple>
+					<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+					<striple>Bandeja_paisa | region | Antioquia_Department</striple>
+				</sortedtripleset>
 				<text>Nierenbohnen sind eine Zutat von Bandeja paisa, die ein kolumbianisches Gericht aus der Antioquia-Abteilung ist. </text>
 				<template>PATIENT-2 ist ein Bestandteil von AGENT-1, das PATIENT-1 von PATIENT-3 ist. </template>
 			</lex>
@@ -754,17 +915,29 @@
 				<mtriple>France | leaderName | Claude_Bartolone</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Barny_Cakes | country | France</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+					<striple>France | leaderName | Claude_Bartolone</striple>
+				</sortedtripleset>
 				<text>Barny Cakes kommt aus Frankreich, wo Gerard Larcher und Claude Bartolone führend sind. </text>
 				<template>AGENT-1 kommt von BRIDGE-1, wo PATIENT-1 und PATIENT-2 führend sind. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Barny_Cakes | country | France</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+					<striple>France | leaderName | Claude_Bartolone</striple>
+				</sortedtripleset>
 				<text>Barny Kuchen gibt es in Frankreich, wo Gerard Larcher und Claude Bartolone führend sind. </text>
 				<template>AGENT-1 finden sich in BRIDGE-1, wo PATIENT-1 und PATIENT-2 führend sind. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Barny_Cakes | country | France</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+					<striple>France | leaderName | Claude_Bartolone</striple>
+				</sortedtripleset>
 				<text>Barny Kuchen findet man in Frankreich, wo sowohl Gerard Larcher als auch Claude Bartolone führend sind. </text>
 				<template>AGENT-1 finden sich in BRIDGE-1, wo sowohl PATIENT-1 als auch PATIENT-2 führend sind. </template>
 			</lex>
@@ -832,12 +1005,20 @@
 				<mtriple>Singapore | leaderName | Halimah_Yacob</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Beef_kway_teow | country | Singapore</striple>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					<striple>Singapore | currency | Singapore_dollar</striple>
+				</sortedtripleset>
 				<text>Rindfleisch Kway Teow ist ein Gericht aus dem Land Singapur, wo der Führer ist Halimah Yacob und die Währung ist der Singapur-Dollar. </text>
 				<template>AGENT-1 ist ein Gericht aus dem Land der BRIDGE-1, wo der Führer PATIENT-2 und die Währung PATIENT-1 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Beef_kway_teow | country | Singapore</striple>
+					<striple>Singapore | currency | Singapore_dollar</striple>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+				</sortedtripleset>
 				<text>Rindfleisch Kway Teow ist ein beliebtes Gericht in Singapur, wo der Singapur-Dollar ist die Währung und der Führer ist Halimah Yacob. </text>
 				<template>AGENT-1 ist ein beliebtes Gericht in BRIDGE-1, wo PATIENT-1 die Währung ist und der Führer PATIENT-2 ist. </template>
 			</lex>
@@ -894,12 +1075,20 @@
 				<mtriple>Singapore | leaderName | Tony_Tan</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Beef_kway_teow | country | Indonesia</striple>
+					<striple>Beef_kway_teow | region | Singapore</striple>
+					<striple>Singapore | leaderName | Tony_Tan</striple>
+				</sortedtripleset>
 				<text>Ein beliebtes Essen in Indonesien, Beef Kway Teow stammt aus Singapur. Das Land, in dem Tony Tan der Führer ist. </text>
 				<template>Ein beliebtes Lebensmittel in PATIENT-1, AGENT-1 stammt von BRIDGE-1. PATIENT-1, wo PATIENT-2 der Führer ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Singapore | leaderName | Tony_Tan</striple>
+					<striple>Beef_kway_teow | region | Singapore</striple>
+					<striple>Beef_kway_teow | country | Indonesia</striple>
+				</sortedtripleset>
 				<text>Tony Tan ist ein Führer in Singapur, wo das Gericht Beef Kway Teow stammt. Sie findet sich auch in Indonesien. </text>
 				<template>PATIENT-2 ist führend in BRIDGE-1, wo AGENT-1 seinen Ursprung hat. AGENT-1 findet sich auch in PATIENT-1. </template>
 			</lex>
@@ -922,19 +1111,26 @@
 				<mtriple>Bhajji | ingredient | Gram_flour</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | country | India</striple>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
+				</sortedtripleset>
 				<text>Bhajji stammt aus Indien, die wichtigsten Zutaten sind Gramm Mehl und Gemüse. </text>
 				<template>AGENT-1 stammt aus PATIENT-1, AGENT-1 Hauptzutaten sind PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Bhajji | country | India</striple>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
 				</sortedtripleset>
 				<text>Die wichtigsten Zutaten eines Bhajji aus Indien sind Gramm Mehl und Gemüse. </text>
 				<template>Die wichtigsten Bestandteile von AGENT-1 von PATIENT-1 sind PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | ingredient | Gram_flour</striple>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
+				</sortedtripleset>
 				<text>Die wichtigsten Zutaten in Bhajji, die aus Indiam stammen, sind Gramm Mehl und Gemüse. </text>
 				<template>Die wichtigsten Bestandteile von AGENT-1, die aus PATIENT-3 stammen, sind PATIENT-2. </template>
 			</lex>
@@ -957,17 +1153,29 @@
 				<mtriple>India | leaderName | T._S._Thakur</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | country | India</striple>
+					<striple>India | demonym | Indian_people</striple>
+					<striple>India | leaderName | T._S._Thakur</striple>
+				</sortedtripleset>
 				<text>Bhajji stammt aus Indien, dem Land der Indianer, wo der Führer T. S. Thakur ist. </text>
 				<template>AGENT-1 stammt aus BRIDGE-1, Land von PATIENT-1, wo der Führer PATIENT-2 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | country | India</striple>
+					<striple>India | leaderName | T._S._Thakur</striple>
+					<striple>India | demonym | Indian_people</striple>
+				</sortedtripleset>
 				<text>Bhajji stammt aus Indien, wo der Führer T S Thakur genannt wird, und die Menschen, die dort leben, werden Indianer genannt. </text>
 				<template>AGENT-1 stammt von BRIDGE-1, wo der Führer PATIENT-2 und PATIENT-1, die dort leben, PATIENT-1 genannt werden. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | country | India</striple>
+					<striple>India | leaderName | T._S._Thakur</striple>
+					<striple>India | demonym | Indian_people</striple>
+				</sortedtripleset>
 				<text>Bhajji stammt aus Indien, wo T S Thakur das indische Volk führt. </text>
 				<template>AGENT-1 stammt aus BRIDGE-1, wo PATIENT-2 PATIENT-1 führt. </template>
 			</lex>
@@ -990,17 +1198,29 @@
 				<mtriple>India | leaderName | Narendra_Modi</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | country | India</striple>
+					<striple>India | leaderName | T._S._Thakur</striple>
+					<striple>India | leaderName | Narendra_Modi</striple>
+				</sortedtripleset>
 				<text>Bhajji kommt aus dem Land Indien, wo zwei der Führer sind, T. S. Thakur und Narendra Modi. </text>
 				<template>AGENT-1 kommt aus dem Land BRIDGE-1, wo zwei der Führer sind, PATIENT-1 und PATIENT-2 </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | country | India</striple>
+					<striple>India | leaderName | Narendra_Modi</striple>
+					<striple>India | leaderName | T._S._Thakur</striple>
+				</sortedtripleset>
 				<text>Bhajji stammt aus Indien, wo zwei der Führer Narendra Modi und T.S. Thakur. </text>
 				<template>AGENT-1 stammt von BRIDGE-1, wo zwei der Führer PATIENT-2 und PATIENT-1 sind. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | country | India</striple>
+					<striple>India | leaderName | T._S._Thakur</striple>
+					<striple>India | leaderName | Narendra_Modi</striple>
+				</sortedtripleset>
 				<text>Das Gericht bhajji stammt aus Indien, wo T.S. Thakur und Narendra Modi sind führend. </text>
 				<template>AGENT-1 hat seinen Ursprung in BRIDGE-1, wo PATIENT-1 und PATIENT-2 führend sind. </template>
 			</lex>
@@ -1025,19 +1245,24 @@
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
 					<striple>Bhajji | region | Karnataka</striple>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
 				</sortedtripleset>
 				<text>Bhajji stammt aus der Region Karnataka und die wichtigsten Zutaten sind Gemüse und Gramm Mehl. </text>
 				<template>AGENT-1 stammt aus der Region PATIENT-1 und die wichtigsten Zutaten sind PATIENT-2. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
 					<striple>Bhajji | region | Karnataka</striple>
 				</sortedtripleset>
 				<text>Die wichtigsten Zutaten in Bhajji sind Gramm Mehl und Gemüse, das kommt aus der Region Karnataka. </text>
 				<template>Die wichtigsten Zutaten in AGENT-1 sind PATIENT-2, AGENT-1 kommt aus PATIENT-1 Region. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bhajji | region | Karnataka</striple>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
+				</sortedtripleset>
 				<text>Bhajji finden sich in der Region Karnataka, seine wichtigsten Zutaten sind Gramm Mehl und Gemüse. </text>
 				<template>AGENT-1 finden sich in der Region PATIENT-1, AGENT-1 Hauptzutaten sind PATIENT-2. </template>
 			</lex>
@@ -1063,6 +1288,7 @@
 				<sortedtripleset>
 					<striple>Binignit | country | Philippines</striple>
 					<striple>Binignit | mainIngredients | Banana</striple>
+					<striple>Binignit | ingredient | Sweet_potato</striple>
 				</sortedtripleset>
 				<text>Das binignit Gericht ist auf den Philippinen zu finden. Zwei der Hauptzutaten darin sind Banane und süße Kartoffel. </text>
 				<template>AGENT-1 ist in PATIENT-3 zu finden. Zwei der wichtigsten Bestandteile von AGENT-1 sind PATIENT-2 und PATIENT-1. </template>
@@ -1070,6 +1296,8 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Binignit | mainIngredients | Banana</striple>
+					<striple>Binignit | ingredient | Sweet_potato</striple>
+					<striple>Binignit | country | Philippines</striple>
 				</sortedtripleset>
 				<text>Die Hauptzutaten von Binignit sind Banane und Süßkartoffeln, und es ist auf den Philippinen zu finden. </text>
 				<template>Die wichtigsten Bestandteile von AGENT-1 sind PATIENT-2 und PATIENT-1, und AGENT-1 finden Sie in PATIENT-3. </template>
@@ -1078,6 +1306,7 @@
 				<sortedtripleset>
 					<striple>Binignit | country | Philippines</striple>
 					<striple>Binignit | mainIngredients | Banana</striple>
+					<striple>Binignit | ingredient | Sweet_potato</striple>
 				</sortedtripleset>
 				<text>Binignit ist ein Gericht aus den Philippinen aus Banane und süßer Kartoffel. </text>
 				<template>AGENT-1 ist ein Gericht aus PATIENT-3 aus PATIENT-2 und PATIENT-1. </template>
@@ -1102,6 +1331,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Bionico | course | Dessert</striple>
 					<striple>Bionico | ingredient | Sour_cream</striple>
 					<striple>Bionico | country | Mexico</striple>
 				</sortedtripleset>
@@ -1112,12 +1342,17 @@
 				<sortedtripleset>
 					<striple>Bionico | ingredient | Sour_cream</striple>
 					<striple>Bionico | course | Dessert</striple>
+					<striple>Bionico | country | Mexico</striple>
 				</sortedtripleset>
 				<text>Sauerrahm ist eine Zutat von Bionico, das ist ein Dessert-Kurs, der in Mexiko gefunden wird. </text>
 				<template>PATIENT-3 ist ein Bestandteil von AGENT-1, AGENT-1 ist PATIENT-2 in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bionico | ingredient | Sour_cream</striple>
+					<striple>Bionico | course | Dessert</striple>
+					<striple>Bionico | country | Mexico</striple>
+				</sortedtripleset>
 				<text>Sauerrahm dient dazu, Bionico zu servieren, ein Dessert-Essen, das in Mexiko gefunden wird. </text>
 				<template>PATIENT-3 dient zur Bedienung von AGENT-1, PATIENT-2 Lebensmitteln, die in PATIENT-1 gefunden werden. </template>
 			</lex>
@@ -1140,18 +1375,28 @@
 				<mtriple>Bionico | ingredient | Raisin</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bionico | ingredient | Raisin</striple>
+					<striple>Bionico | region | Jalisco</striple>
+					<striple>Bionico | country | Mexico</striple>
+				</sortedtripleset>
 				<text>Mit Rosinen wird Bionico in der Region Jalisco in Mexiko gefunden. </text>
 				<template>Enthält PATIENT-3, AGENT-1 in der Region PATIENT-2, in PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bionico | ingredient | Raisin</striple>
+					<striple>Bionico | region | Jalisco</striple>
+					<striple>Bionico | country | Mexico</striple>
+				</sortedtripleset>
 				<text>Rosinen werden in Bionico gefunden, die aus der Region Jalisco in Mexiko stammen. </text>
 				<template>PATIENT-3 finden sich in AGENT-1, die aus der Region PATIENT-2 in PATIENT-1 kommt. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Bionico | ingredient | Raisin</striple>
+					<striple>Bionico | region | Jalisco</striple>
+					<striple>Bionico | country | Mexico</striple>
 				</sortedtripleset>
 				<text>Rosinen sind eine Zutat von Bionico aus der Region Jalisco, Mexiko. </text>
 				<template>PATIENT-3 ist eine Zutat von AGENT-1 aus der Region PATIENT-2, PATIENT-1. </template>
@@ -1175,20 +1420,28 @@
 				<mtriple>Celery | family | Apiaceae</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bakso | ingredient | Celery</striple>
+					<striple>Celery | genus | Apium</striple>
+					<striple>Celery | family | Apiaceae</striple>
+				</sortedtripleset>
 				<text>Eine Zutat in Bakso ist Sellerie, die Mitglied der Gattung Apium in der Familie Apiaceae ist. </text>
 				<template>Eine Zutat in AGENT-1 ist BRIDGE-1, das Mitglied von PATIENT-1 in PATIENT-2 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Celery | genus | Apium</striple>
+					<striple>Celery | family | Apiaceae</striple>
+					<striple>Bakso | ingredient | Celery</striple>
 				</sortedtripleset>
 				<text>Sellerie stammt aus der Gattung apium und der Familie Apiaceae. Es ist eine Zutat von Bakso. </text>
 				<template>BRIDGE-1 ist von PATIENT-1 und PATIENT-2. BRIDGE-1 ist eine Zutat von AGENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
+					<striple>Celery | family | Apiaceae</striple>
 					<striple>Celery | genus | Apium</striple>
+					<striple>Bakso | ingredient | Celery</striple>
 				</sortedtripleset>
 				<text>Sellerie ist Mitglied der Familie Apiaceae, sie stammt aus der Gattung apium und ist eine Zutat von Bakso. </text>
 				<template>BRIDGE-1 ist ein Mitglied von PATIENT-2, BRIDGE-1 ist von PATIENT-1 und ist eine Zutat von AGENT-1. </template>
@@ -1213,7 +1466,9 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Bionico | course | Dessert</striple>
 					<striple>Bionico | ingredient | Granola</striple>
+					<striple>Dessert | dishVariation | Cake</striple>
 				</sortedtripleset>
 				<text>Bionico ist ein Dessert, das Granola als eine seiner Zutaten benötigt; es kann als Alternative zum Kuchen gegessen werden. </text>
 				<template>AGENT-1 ist BRIDGE-1, das PATIENT-2 als eine der AGENT-1-Zutaten benötigt; PATIENT-2 kann als Alternative zu PATIENT-1 gegessen werden. </template>
@@ -1221,6 +1476,8 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Bionico | ingredient | Granola</striple>
+					<striple>Bionico | course | Dessert</striple>
+					<striple>Dessert | dishVariation | Cake</striple>
 				</sortedtripleset>
 				<text>Bionico benötigt Granola als eine seiner Zutaten, es wird beim Dessert-Kurs serviert, wie Kuchen. </text>
 				<template>AGENT-1 benötigt PATIENT-2 als eine von AGENT-1 Zutaten, PATIENT-2 wird bei BRIDGE-1, wie PATIENT-1, verwendet. </template>
@@ -1244,7 +1501,11 @@
 				<mtriple>Bakso | country | Indonesia</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bakso | country | Indonesia</striple>
+					<striple>Indonesia | capital | Jakarta</striple>
+					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+				</sortedtripleset>
 				<text>Bakso ist ein Gericht aus dem Land Indonesien, wo die Hauptstadt Jakarta ist und einer der Führer ist Jusuf Kalla. </text>
 				<template>AGENT-1 ist ein Gericht aus dem Land der BRIDGE-1, wo die Hauptstadt ist PATIENT-1 und einer der Führer ist PATIENT-2. </template>
 			</lex>
@@ -1258,7 +1519,11 @@
 				<template>AGENT-1 comes from BRIDGE-1 where PATIENT-2 is the leader and PATIENT-1 is the capitol city. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Bakso | country | Indonesia</striple>
+					<striple>Indonesia | capital | Jakarta</striple>
+					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+				</sortedtripleset>
 				<text>Bakso ist ein Gericht aus dem Land Indonesien, wo die Hauptstadt Jakarta und der Führer Jusuf Kalla ist. </text>
 				<template>AGENT-1 ist ein Gericht aus dem Land der BRIDGE-1, wo die Hauptstadt PATIENT-1 und der Führer PATIENT-2 ist. </template>
 			</lex>
@@ -1281,13 +1546,19 @@
 				<mtriple>Ayam_penyet | country | Java</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Ayam_penyet | region | Singapore</striple>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Java | ethnicGroup | Baduy</striple>
+				</sortedtripleset>
 				<text>Aus der Region Singapur, Ayam Penyet, ist ein Lebensmittel, das in Java gefunden wird, wo eine ethische Gruppe die Baduy ist. </text>
 				<template>From PATIENT-2, AGENT-1, is a food found in BRIDGE-1 where an ethic group is PATIENT-1. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<striple>Ayam_penyet | region | Singapore</striple>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Java | ethnicGroup | Baduy</striple>
 				</sortedtripleset>
 				<text>Ayam Penyet ist ein Gericht aus der Region Singapur und findet sich auch in Java, wo die Baduy eine ethnische Gruppe sind. </text>
 				<template>AGENT-1 ist ein Gericht aus der Region PATIENT-2 und findet sich auch in BRIDGE-1, wo PATIENT-1 eine ethnische Gruppe ist. </template>
@@ -1295,6 +1566,8 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<striple>Ayam_penyet | region | Singapore</striple>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Java | ethnicGroup | Baduy</striple>
 				</sortedtripleset>
 				<text>Ayam Penyet stammt aus Singapur und auch Java, wo die Baduy eine ethnische Gruppe sind. </text>
 				<template>AGENT-1 ist von PATIENT-2 und auch BRIDGE-1, wo PATIENT-1 eine ethnische Gruppe ist. </template>
@@ -1319,6 +1592,8 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<sortedtripleset>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Java | ethnicGroup | Banyumasan_people</striple>
 					<striple>Ayam_penyet | region | &quot;Nationwide, also can be found in Malaysia and Singapore&quot;</striple>
 				</sortedtripleset>
 				<text>Ayam Penyet stammt aus Java, wo die Banyumasan eine ethnische Gruppe sind. Sie ist bundesweit und auch in Singapur und Malaysia zu finden. </text>
@@ -1326,6 +1601,8 @@
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Java | ethnicGroup | Banyumasan_people</striple>
 					<striple>Ayam_penyet | region | &quot;Nationwide, also can be found in Malaysia and Singapore&quot;</striple>
 				</sortedtripleset>
 				<text>Das Gericht Ayam Penyet stammt aus Java, wo die Banyumasan Menschen eine ethnische Gruppe sind. Das Gericht ist auch in Malaysia und Singapur zu finden. </text>
@@ -1359,12 +1636,20 @@
 				<template>Der Führer von BRIDGE-1 ist PATIENT-2 und BRIDGE-1 ist auch dort, wo PATIENT-1 gesprochen wird und AGENT-1 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arròs_negre | country | Spain</striple>
+					<striple>Spain | language | Spanish_language</striple>
+					<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+				</sortedtripleset>
 				<text>Arros Negre ist ein traditionelles Gericht aus Spanien, wo sie Spanisch sprechen und der Führer ist Felipe VI. </text>
 				<template>AGENT-1 ist ein traditionelles Gericht aus BRIDGE-1, wo sie PATIENT-1 sprechen und der Führer PATIENT-2 ist. </template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
+				<sortedtripleset>
+					<striple>Arròs_negre | country | Spain</striple>
+					<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+					<striple>Spain | language | Spanish_language</striple>
+				</sortedtripleset>
 				<text>Arros Negre kommt aus Spanien, wo Felipe VI. der Führer ist und die spanische Sprache gesprochen wird. </text>
 				<template>AGENT-1 kommt von BRIDGE-1, wo PATIENT-2 der Anführer ist und PATIENT-1 gesprochen wird. </template>
 			</lex>
