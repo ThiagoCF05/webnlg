@@ -29,17 +29,4 @@ def run(entryset):
 
             entities.extend(list(map(lambda reference: reference.entity, lex.references)))
 
-    print('Number of texts: ', lexsize)
-    print('English Templates: ', len(set(templates)))
-    print('German Templates:', len(set(templates_de)))
-
-    print('Number of Entities: ', len(set(entities)))
-    print('References:', len(references))
-    names = len(filter(lambda reference: reference.reftype == 'name', references))
-    print('Names: ', names)
-    pronouns = len(filter(lambda reference: reference.reftype == 'pronoun', references))
-    print('Pronouns: ', pronouns)
-    descriptions = len(filter(lambda reference: reference.reftype == 'description', references))
-    print('Descriptions: ', descriptions)
-    demonstratives = len(filter(lambda reference: reference.reftype == 'demonstrative', references))
-    print('Demonstratives: ', demonstratives)
+    return lexsize, templates, templates_de, entities, references
