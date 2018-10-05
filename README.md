@@ -1,5 +1,5 @@
 # Webnlg
-The enriched version of the WebNLG dataset described at the INLG 2018 paper.
+The enriched version of the WebNLG dataset, described at the INLG 2018 paper.
 
 The final version of the corpus is available at [``final``](https://github.com/ThiagoCF05/webnlg/tree/master/final), 
 split in the English (``en``) and German (``de``) versions.
