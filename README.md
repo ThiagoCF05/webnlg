@@ -12,4 +12,4 @@ After the settings, update the path variable ``MT_PATH`` in the ``main.sh`` scri
 sh main.sh
 ``
 
-**Creator:** Thiago Castro Ferreira
+The WebNLG data is licensed under the following license: [CC Attribution-Noncommercial-Share Alike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). The original version of the dataset may be found at [the official website of the WebNLG challenge](http://webnlg.loria.fr/pages/challenge.html).
