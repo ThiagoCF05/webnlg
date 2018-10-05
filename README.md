@@ -16,7 +16,7 @@ The WebNLG data is licensed under the following license: [CC Attribution-Noncomm
 
 Citations:
 
-``
+```Tex
 @InProceedings{ferreiraetal2018,
   author = 	"Castro Ferreira, Thiago
 		and Moussallem, Diego
@@ -29,9 +29,9 @@ Citations:
   publisher = 	"Association for Computational Linguistics",
   address = 	"Tilburg, The Netherlands",
 }
-``
+```
 
-``
+```Tex
 @InProceedings{gardentetal017,
   author = 	"Gardent, Claire
 		and Shimorina, Anastasia
@@ -47,9 +47,9 @@ Citations:
   doi = 	"10.18653/v1/P17-1017",
   url = 	"http://www.aclweb.org/anthology/P17-1017"
 }
-``
+```
 
-``
+```Tex
 @InProceedings{ferreiraetal2018b,
   author = 	"Castro Ferreira, Thiago
 		and Moussallem, Diego
@@ -64,4 +64,4 @@ Citations:
   location = 	"Melbourne, Australia",
   url = 	"http://aclweb.org/anthology/P18-1182"
 }
-``
+```
