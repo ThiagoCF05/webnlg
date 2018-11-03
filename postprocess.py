@@ -11,11 +11,13 @@ Description:
 """
 
 import cPickle as p
+import json
 import order
 import os
 import parser
 import reg
 import stats
+import template
 from nmt import NMT
 
 def run(entry_path, set_path, en_path, de_path, _set):
@@ -32,6 +34,13 @@ def run(entry_path, set_path, en_path, de_path, _set):
     # run xml generator
     parser.run_generator(entryset=entryset, input_dir=set_path, output_dir=en_path, lng='en')
     parser.run_generator(entryset=entryset, input_dir=set_path, output_dir=de_path, lng='de')
+
+    # extract and generate templates based on sentence segmentation
+    en_temp = template.run(entryset)
+    json.dump(en_temp, open(os.path.join(en_path, 'templates.json'), 'w'), indent=4, separators=(',', ': '))
+
+    de_temp = template.run(entryset, 'de')
+    json.dump(de_temp, open(os.path.join(de_path, 'templates.json'), 'w'), indent=4, separators=(',', ': '))
     return lexsize, templates, templates_de, entities, references
 
 if __name__ == '__main__':
