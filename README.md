@@ -2,7 +2,7 @@
 The enriched version of the WebNLG dataset, described at the INLG 2018 paper.
 
 The final version of the corpus is available at [``final``](https://github.com/ThiagoCF05/webnlg/tree/master/final), 
-split in the English (``en``) and German (``de``) versions.
+split in the English (``en``) and German (``de``) versions. Templates automatically extracted are also available on the folders with the name ``templates.json``
 
 To obtain the enriched version of the dataset as available in the mentioned directory, 
 make sure to proper set up *the University of Edinburgh's Neural MT System for WMT17*, publicly available [here](http://data.statmt.org/wmt17_systems).  
