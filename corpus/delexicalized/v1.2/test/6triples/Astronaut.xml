@@ -1,0 +1,402 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id932" size="6">
+			<originaltripleset>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Alan_Bean | occupation | Test_pilot</otriple>
+				<otriple>Alan_Bean | birthDate | &quot;1932-03-15&quot;^^xsd:date</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+				<otriple>Alan_Bean | timeInSpace | &quot;100305.0&quot;^^&lt;http://dbpedia.org/datatype/minute&gt;</otriple>
+				<otriple>Alan_Bean | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Alan_Bean | occupation | Test_pilot</otriple>
+				<otriple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+				<otriple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</otriple>
+				<otriple>Alan_Bean | status | &quot;Retired&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Test_pilot</entity>
+				<entity>PATIENT-3 | &quot;1932-03-15&quot;</entity>
+				<entity>PATIENT-4 | Wheeler,_Texas</entity>
+				<entity>PATIENT-5 | &quot;100305.0&quot;(minutes)</entity>
+				<entity>PATIENT-6 | &quot;Retired&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alan Bean is an American born on March 15, 1932 in Wheeler, Texas. He was a test pilot and spent a total of 100305 minutes in space. He is now retired.</text>
+				<template>AGENT-1 is an American born on March 15 ,  1932 in Wheeler ,  Texas .  He was a test pilot and spent a total of 100305 minutes in space .  He is now retired . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alan Bean (born 15th of March 1932 in Wheeler, Texas) served as a test pilot. He was in space for 70 days and is now retired.</text>
+				<template>AGENT-1 (born 15th of March 1932 in Wheeler ,  Texas) served as a test pilot .  He was in space for 70 days and is now retired . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alan Bean was an American test pilot who was born in Wheeler, Texas on Mar 15, 1932. He spent 100305.0 minutes in space. He is retired.</text>
+				<template>AGENT-1 was an American test pilot who was born in Wheeler ,  Texas on Mar 15 ,  1932 .  He spent 100305 . 0 minutes in space .  He is retired . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id933" size="6">
+			<originaltripleset>
+				<otriple>Alan_Shepard | mission | Apollo_14</otriple>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Apollo_14 | operator | NASA</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alan_Shepard | was a crew member of | Apollo_14</otriple>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Apollo_14 | operator | NASA</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Apollo_14</entity>
+				<entity>BRIDGE-2 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-2 | California</entity>
+				<entity>PATIENT-3 | New_Hampshire</entity>
+				<entity>PATIENT-4 | NASA</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alan Shepard was born in New Hampshire and died in California. He was a crew member of Apollo 14 which is operated by NASA. He was awarded the Distinguished Service Medal in the US Navy, which is higher than the Dept of Commerce Gold Medal.</text>
+				<template>AGENT-1 was born in PATIENT-3 and died in PATIENT-2 .  He was a crew member of BRIDGE-1 which is operated by PATIENT-4 .  He was awarded the Distinguished Service Medal in the US Navy ,  which is higher than the Dept of Commerce Gold Medal . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alan Shepard was born in New Hampshire and died in California. He was a crew member of the Apollo 14, which was operated by NASA. The United States Navy awarded the Distinguished Service Medal to Alan Shepard, which ranks higher than Department of Commerce Gold Medal.</text>
+				<template>AGENT-1 was born in PATIENT-3 and died in PATIENT-2 .  He was a crew member of the BRIDGE-1 ,  which was operated by PATIENT-4 .  The United States Navy awarded the Distinguished Service Medal to AGENT-1 ,  which ranks higher than PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alan Shepard, who was born in New Hampshire, died in California and was a crewmember of Apollo 14 operated by NASA, was awarded the United States Navy Distinguished Service Medal. The Distinguished Service Medal is higher than the Department Of Commerce Gold Medal.</text>
+				<template>AGENT-1 ,  who was born in PATIENT-3 ,  died in PATIENT-2 and was a crewmember of BRIDGE-1 operated by PATIENT-4 ,  was awarded the United States Navy Distinguished Service Medal .  The Distinguished Service Medal is higher than the Department Of Commerce Gold Medal . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id934" size="6">
+			<originaltripleset>
+				<otriple>Apollo_12 | crew2Up | Alfred_Worden</otriple>
+				<otriple>Alan_Bean | mission | Apollo_12</otriple>
+				<otriple>Apollo_12 | operator | NASA</otriple>
+				<otriple>Alan_Bean | dateOfRet | &quot;June 1981&quot;@en</otriple>
+				<otriple>Apollo_12 | crew1Up | David_Scott</otriple>
+				<otriple>Alan_Bean | birthName | &quot;Alan LaVern Bean&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Apollo_12 | backup pilot | Alfred_Worden</otriple>
+				<otriple>Alan_Bean | was a crew member of | Apollo_12</otriple>
+				<otriple>Apollo_12 | operator | NASA</otriple>
+				<otriple>Alan_Bean | dateOfRetirement | &quot;June 1981&quot;</otriple>
+				<otriple>Apollo_12 | commander | David_Scott</otriple>
+				<otriple>Alan_Bean | birthName | &quot;Alan LaVern Bean&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>PATIENT-1 | Alfred_Worden</entity>
+				<entity>PATIENT-2 | NASA</entity>
+				<entity>PATIENT-3 | &quot;June 1981&quot;</entity>
+				<entity>PATIENT-4 | David_Scott</entity>
+				<entity>PATIENT-5 | &quot;Alan LaVern Bean&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Apollo 12 was operated by NASA. It had many crew members, including: its backup pilot, Alfred Worden; its crew member Alan Bean (Alan LaVern Bean, retired June 1981) and David Scott, who was the commander.</text>
+				<template>BRIDGE-1 was operated by PATIENT-2 .  It had many crew members ,  including :  its backup pilot ,  PATIENT-1 ;  its crew member AGENT-1 (Alan LaVern Bean ,  retired June 1981) and PATIENT-4 ,  who was the commander . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alan Bean, born Alan LaVern Bean was a crew member aboard NASA's Apollo 12. He retired in 1981. David Scott commanded Apollo 12 and Alfred Worden was the backup pilot.</text>
+				<template>AGENT-1 ,  born Alan LaVern Bean was a crew member aboard PATIENT-2's BRIDGE-1 .  He retired in 1981 .  PATIENT-4 commanded BRIDGE-1 and PATIENT-1 was the backup pilot . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id935" size="6">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | was selected by NASA | 1963</otriple>
+				<otriple>Buzz_Aldrin | was a crew member of | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | 1963</entity>
+				<entity>PATIENT-4 | Apollo_11</entity>
+				<entity>PATIENT-5 | Fighter_pilot</entity>
+				<entity>PATIENT-6 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Buzz Aldrin was an American fighter pilot who was born in Glen Ridge, New Jersey. In 1963, he graduated from Massachusetts Institute of Technology, Sc.D. 1963 and was selected by NASA to be part of the Apollo 11 crew.</text>
+				<template>AGENT-1 was an American fighter pilot who was born in Glen Ridge ,  New Jersey .  In PATIENT-3 ,  he graduated from Massachusetts Institute of Technology ,  Sc . D .  PATIENT-3 and was selected by NASA to be part of the PATIENT-4 crew . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>US national Buzz Aldrin, a fighter pilot born in Glen Ridge, NJ, graduated from Massachusetts Institute of Technology, Sc.D. 1963 and went on to become a crew member on Apollo 11 after being recruited by NASA in 1963.</text>
+				<template>US national AGENT-1 ,  a fighter pilot born in Glen Ridge ,  NJ ,  graduated from Massachusetts Institute of Technology ,  Sc . D .  PATIENT-3 and went on to become a crew member on PATIENT-4 after being recruited by NASA in PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The crew on Apollo 11 included American Buzz Aldrin. He was born in Glen Ridge, New Jersey, and went on to serve as a fighter pilot before graduating from MIT with a Sc. D in 1963. In that same year he was selected to work for NASA.</text>
+				<template>The crew on PATIENT-4 included American AGENT-1 .  He was born in Glen Ridge ,  New Jersey ,  and went on to serve as a fighter pilot before graduating from MIT with a Sc .  D in PATIENT-3 .  In that same year he was selected to work for NASA . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id936" size="6">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;^^xsd:date</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Apollo_11 | crew2Up | William_Anders</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | was a crew member of | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</otriple>
+				<otriple>Apollo_11 | backup pilot | William_Anders</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | &quot;1930-01-20&quot;</entity>
+				<entity>PATIENT-3 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-4 | William_Anders</entity>
+				<entity>PATIENT-5 | NASA</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Buzz Aldrin was born on 20th January 1930 in Glen Ridge New Jersey. He graduated from MIT in 1963 and was a member of the Apollo 11 crew, operated by NASA. The back up pilot was William Anders.</text>
+				<template>AGENT-1 was born on 20th January 1930 in Glen Ridge New Jersey .  He graduated from MIT in 1963 and was a member of the BRIDGE-1 crew ,  operated by PATIENT-5 .  The back up pilot was PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Buzz Aldrin was born January 20, 1930 in Glen Ridge, New Jersey. He graduated from M.I.T. with a Sc.D in 1963, and served as a crew member aboard NASA's Apollo 11, William Anders was a backup pilot on the same mission.</text>
+				<template>AGENT-1 was born January 20 ,  1930 in Glen Ridge ,  New Jersey .  He graduated from M . I . T .  with a Sc . D in 1963 ,  and served as a crew member aboard PATIENT-5's BRIDGE-1 ,  PATIENT-4 was a backup pilot on the same mission . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id937" size="6">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Apollo_11 | crew2Up | William_Anders</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | was a crew member of | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Apollo_11 | backup pilot | William_Anders</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Fighter_pilot</entity>
+				<entity>PATIENT-4 | William_Anders</entity>
+				<entity>PATIENT-5 | NASA</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Buzz Aldrin was an American born in Glen Ridge New Jersey. He was a fighter pilot and a member of the Apollo 11 crew. William Anders was the backup pilot and the mission was operated by NASA.</text>
+				<template>AGENT-1 was an American born in Glen Ridge New Jersey .  He was a fighter pilot and a member of the BRIDGE-1 crew .  PATIENT-4 was the backup pilot and the mission was operated by PATIENT-5 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Buzz Aldrin was originally from Glen Ridge, New Jersey. He worked as a fighter pilot for NASA and became a member of the Apollo 11 mission along with William Anders as backup pilot.</text>
+				<template>AGENT-1 was originally from Glen Ridge ,  New Jersey .  He worked as a fighter pilot for PATIENT-5 and became a member of the BRIDGE-1 mission along with PATIENT-4 as backup pilot . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id938" size="6">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | was selected by NASA | 1963</otriple>
+				<otriple>Buzz_Aldrin | was a crew member of | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | 1963</entity>
+				<entity>PATIENT-3 | Apollo_11</entity>
+				<entity>PATIENT-4 | Fighter_pilot</entity>
+				<entity>PATIENT-5 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-6 | &quot;1930-01-20&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Buzz Aldrin was born on January 20, 1930 in Glen Ridge, New Jersey.He graduated from MIT with a Sc. D in 1963, in the same year when he was selected by NASA.Buzz was a member of the Apollo 11 crew as a fighter pilot.</text>
+				<template>AGENT-1 was born on January 20 ,  1930 in Glen Ridge ,  New Jersey . He graduated from MIT with a Sc .  D in PATIENT-2 ,  in the same year when he was selected by NASA . Buzz was a member of the PATIENT-3 crew as a fighter pilot . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id939" size="6">
+			<originaltripleset>
+				<otriple>California | gemstone | Benitoite</otriple>
+				<otriple>California | fossil | Smilodon</otriple>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>California | senators | Dianne_Feinstein</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>California | gemstone | Benitoite</otriple>
+				<otriple>California | fossil | Smilodon</otriple>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>California | senators | Dianne_Feinstein</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | California</entity>
+				<entity>BRIDGE-2 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Benitoite</entity>
+				<entity>PATIENT-2 | Smilodon</entity>
+				<entity>PATIENT-3 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-4 | Dianne_Feinstein</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Many interesting facts can be found about California: Alan Shepard -recipient of the United States Navy Distinguished Service Medal (ranked higher than the Department of Commerce Gold Medal) - passed away in this state. It is also the finding place of the Smilodon fossil and home to the gemstone Benitoite. One of California's senators is Dianne Feinstein.</text>
+				<template>Many interesting facts can be found about BRIDGE-1 :  AGENT-1 -recipient of the United States Navy Distinguished Service Medal (ranked higher than the PATIENT-3) - passed away in this state .  It is also the finding place of the PATIENT-2 fossil and home to the gemstone PATIENT-1 .  One of BRIDGE-1's senators is PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alan Shepard died in California where Dianne Feinstein is a Senator and one can find the gemstone Benitoite and fossils of the Smilodon. He once received the Distinguished Service Medal from the U.S. Navy which ranks higher than Department of Commerce Gold Medal.</text>
+				<template>AGENT-1 died in BRIDGE-1 where PATIENT-4 is a Senator and one can find the gemstone PATIENT-1 and fossils of the PATIENT-2 .  He once received the Distinguished Service Medal from the U . S .  Navy which ranks higher than PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id940" size="6">
+			<originaltripleset>
+				<otriple>William_Anders | dateOfRet | &quot;1969-09-01&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | nationality | United_States</otriple>
+				<otriple>William_Anders | occupation | Fighter_pilot</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</otriple>
+				<otriple>William_Anders | nationality | United_States</otriple>
+				<otriple>William_Anders | occupation | Fighter_pilot</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>William_Anders | was a crew member of | Apollo_8</otriple>
+				<otriple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Fighter_pilot</entity>
+				<entity>PATIENT-4 | British_Hong_Kong</entity>
+				<entity>PATIENT-5 | Apollo_8</entity>
+				<entity>PATIENT-6 | &quot;AFIT, M.S. 1962&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>William Anders is a US citizen, who was born in British Hong Kong and graduated from AFIT, M.S. in 1962. He is a retired test pilot, retiring on 1.09.1969. He was a crew member on Apollo 8.</text>
+				<template>AGENT-1 is a US citizen ,  who was born in PATIENT-4 and graduated from AFIT ,  M . S .  in 1962 .  He is a retired test pilot ,  retiring on 1 . 09 . 1969 .  He was a crew member on PATIENT-5 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>American William Anders was born in in British Hong Kong, was a test pilot, graduated from AFIT, M.S. in 1962, was a member of Apollo 8's crew and retired on 1st September 1969.</text>
+				<template>American AGENT-1 was born in in PATIENT-4 ,  was a test pilot ,  graduated from AFIT ,  M . S .  in 1962 ,  was a member of PATIENT-5's crew and retired on 1st September 1969 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>William Anders is an American fighter pilot who was born in British Hong Kong. He graduated, with an M.S., from AFIT in 1962. He served as a crew member on Apollo 8. He retired on 1969-09-01.</text>
+				<template>AGENT-1 is an American fighter pilot who was born in PATIENT-4 .  He graduated ,  with an M . S .  ,  from AFIT in 1962 .  He served as a crew member on PATIENT-5 .  He retired on 1969-09-01 . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id941" size="6">
+			<originaltripleset>
+				<otriple>William_Anders | dateOfRet | &quot;1969-09-01&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>Apollo_8 | crew2Up | Buzz_Aldrin</otriple>
+				<otriple>Apollo_8 | crewMembers | Frank_Borman</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</otriple>
+				<otriple>William_Anders | was a crew member of | Apollo_8</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>Apollo_8 | backup pilot | Buzz_Aldrin</otriple>
+				<otriple>Apollo_8 | crewMembers | Frank_Borman</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | Apollo_8</entity>
+				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
+				<entity>PATIENT-2 | British_Hong_Kong</entity>
+				<entity>PATIENT-3 | Buzz_Aldrin</entity>
+				<entity>PATIENT-4 | Frank_Borman</entity>
+				<entity>PATIENT-5 | NASA</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>William Anders was born in British Hong Kong and served as a crew member on Apollo 8 along with Frank Borman. NASA operated Apollo 8, where Buzz Aldrin was a back up pilot. Anders retired on Sept 1, 1969.</text>
+				<template>AGENT-1 was born in PATIENT-2 and served as a crew member on BRIDGE-1 along with PATIENT-4 .  PATIENT-5 operated BRIDGE-1 ,  where PATIENT-3 was a back up pilot .  Anders retired on Sept 1 ,  1969 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>William Anders who is originally from Hong Kong worked for NASA and became a crew member for Apollo 8 along with Buzz Aldrin and Frank Borman. He retired on September 1st 1969.</text>
+				<template>AGENT-1 who is originally from Hong Kong worked for PATIENT-5 and became a crew member for BRIDGE-1 along with PATIENT-3 and PATIENT-4 .  He retired on September 1st 1969 . </template>
+			</lex>
+		</entry>
+		<entry category="Astronaut" eid="Id942" size="6">
+			<originaltripleset>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;@en</otriple>
+				<otriple>Apollo_8 | crew2Up | Buzz_Aldrin</otriple>
+				<otriple>Apollo_8 | crewMembers | Frank_Borman</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+				<otriple>William_Anders | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>William_Anders | was a crew member of | Apollo_8</otriple>
+				<otriple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</otriple>
+				<otriple>Apollo_8 | backup pilot | Buzz_Aldrin</otriple>
+				<otriple>Apollo_8 | crewMembers | Frank_Borman</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+				<otriple>William_Anders | status | &quot;Retired&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | Apollo_8</entity>
+				<entity>PATIENT-1 | &quot;AFIT, M.S. 1962&quot;</entity>
+				<entity>PATIENT-2 | Buzz_Aldrin</entity>
+				<entity>PATIENT-3 | Frank_Borman</entity>
+				<entity>PATIENT-4 | NASA</entity>
+				<entity>PATIENT-5 | &quot;Retired&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>William Anders, retired, was a member of NASA's Apollo 8 after graduating from AFIT in 1962 with an MS. Buzz Aldrin was a back up pilot and Frank Borman a crew member.</text>
+				<template>AGENT-1 ,  retired ,  was a member of PATIENT-4's BRIDGE-1 after graduating from AFIT in 1962 with an MS .  PATIENT-2 was a back up pilot and PATIENT-3 a crew member . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>William Anders who graduated from AFIT in 1962 worked for NASA and became a crew member of the Apollo 8 crew along with Frank Borman and Buzz Aldrin as backup pilot. Mr Anders is now retired.</text>
+				<template>AGENT-1 who graduated from AFIT in 1962 worked for PATIENT-4 and became a crew member of the BRIDGE-1 crew along with PATIENT-3 and PATIENT-2 as backup pilot .  Mr Anders is now retired . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

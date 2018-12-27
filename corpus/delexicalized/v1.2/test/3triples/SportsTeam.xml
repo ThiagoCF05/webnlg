@@ -1,0 +1,611 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="SportsTeam" eid="Id436" size="3">
+			<originaltripleset>
+				<otriple>1._FC_Magdeburg | manager | Jens_Härtel</otriple>
+				<otriple>Jens_Härtel | team | 1._FC_Lokomotive_Leipzig</otriple>
+				<otriple>Jens_Härtel | managerClub | SV_Germania_Schöneiche</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>1._FC_Magdeburg | manager | Jens_Härtel</otriple>
+				<otriple>Jens_Härtel | club | 1._FC_Lokomotive_Leipzig</otriple>
+				<otriple>Jens_Härtel | club | SV_Germania_Schöneiche</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 1._FC_Magdeburg</entity>
+				<entity>BRIDGE-1 | Jens_Härtel</entity>
+				<entity>PATIENT-1 | 1._FC_Lokomotive_Leipzig</entity>
+				<entity>PATIENT-2 | SV_Germania_Schöneiche</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Jens Hartel currently plays for SV Germania Schoneiche, his first club was FC Lokomotive Leipzig and he has managed 1 FC Magdeburg.</text>
+				<template>Jens Hartel currently plays for SV Germania Schoneiche ,  his first club was FC Lokomotive Leipzig and he has managed 1 FC Magdeburg . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Jens Härtel has been the manager of 1 FC Magdeburg and plays for both 1. FC Lokomotive Leipzig and SV Germania Schoneiche.</text>
+				<template>BRIDGE-1 has been the manager of 1 FC Magdeburg and plays for both 1 .  FC Lokomotive Leipzig and SV Germania Schoneiche . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Jens Hartel plays for 1.FC Lokomotive Leipzig and SV Germania Schoneiche while also managing FC Magdeburg.</text>
+				<template>Jens Hartel plays for 1 . FC Lokomotive Leipzig and SV Germania Schoneiche while also managing FC Magdeburg . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id437" size="3">
+			<originaltripleset>
+				<otriple>A.C._Cesena | manager | Massimo_Drago</otriple>
+				<otriple>Massimo_Drago | clubs | A.S.D._Licata_1931</otriple>
+				<otriple>Massimo_Drago | team | A.S.D._S.S._Nola_1925</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.C._Cesena | manager | Massimo_Drago</otriple>
+				<otriple>Massimo_Drago | club | A.S.D._Licata_1931</otriple>
+				<otriple>Massimo_Drago | club | A.S.D._S.S._Nola_1925</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Cesena</entity>
+				<entity>BRIDGE-1 | Massimo_Drago</entity>
+				<entity>PATIENT-1 | A.S.D._Licata_1931</entity>
+				<entity>PATIENT-2 | A.S.D._S.S._Nola_1925</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Massimo Drago has been the manager of A C Cesena, plays for ASD SS Nola 1925 and was also at the club ASD Licita 1931.</text>
+				<template>BRIDGE-1 has been the manager of A C Cesena ,  plays for ASD SS Nola 1925 and was also at the club ASD Licita 1931 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Massimo Drago played for A.S.D. S.S. Nola 1925, managed A C Cesena and now plays for A.S.D. Licata 1931.</text>
+				<template>BRIDGE-1 played for A . S . D .  S . S .  Nola 1925 ,  managed A C Cesena and now plays for A . S . D .  Licata 1931 . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id438" size="3">
+			<originaltripleset>
+				<otriple>A.C._Lumezzane | fullname | &quot;Associazione Calcio Lumezzane SpA&quot;@en</otriple>
+				<otriple>A.C._Lumezzane | league | &quot;Lega Pro/A&quot;@en</otriple>
+				<otriple>A.C._Lumezzane | capacity | &quot;4150&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.C._Lumezzane | fullname | &quot;Associazione Calcio Lumezzane SpA&quot;</otriple>
+				<otriple>A.C._Lumezzane | league | &quot;Lega Pro/A&quot;</otriple>
+				<otriple>A.C._Lumezzane | numberOfMembers | 4150</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Lumezzane</entity>
+				<entity>PATIENT-1 | &quot;Associazione Calcio Lumezzane SpA&quot;</entity>
+				<entity>PATIENT-2 | &quot;Lega Pro/A&quot;</entity>
+				<entity>PATIENT-3 | 4150</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The &quot;Associazione Calcio Lumezzane SpA&quot; is the full name of A.C. Lumezzane who play in Lega Pro/A and have 4150 members.</text>
+				<template>The PATIENT-1 is the full name of A . C .  Lumezzane who play in Lega Pro/A and have PATIENT-3 members . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Associazione Calcio Lumezzane SpA (abbreviated to A.C. Lumezzane) play in the Lega Pro/A and has 4150 members.</text>
+				<template>Associazione Calcio Lumezzane SpA (abbreviated to A . C .  Lumezzane) play in the Lega Pro/A and has PATIENT-3 members . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The fullname of A.C. Lumezzane is Associazione Calcio Lumezzane SpA. It is in the Lega Pro/A league and has 4150 members.</text>
+				<template>The fullname of A . C .  Lumezzane is Associazione Calcio Lumezzane SpA .  It is in the Lega Pro/A league and has PATIENT-3 members . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id439" size="3">
+			<originaltripleset>
+				<otriple>A.D._Isidro_Metapán | manager | Jorge_Humberto_Rodríguez</otriple>
+				<otriple>Jorge_Humberto_Rodríguez | team | Alianza_F.C.</otriple>
+				<otriple>Jorge_Humberto_Rodríguez | managerClub | El_Salvador_national_football_team</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.D._Isidro_Metapán | manager | Jorge_Humberto_Rodríguez</otriple>
+				<otriple>Jorge_Humberto_Rodríguez | club | Alianza_F.C.</otriple>
+				<otriple>Jorge_Humberto_Rodríguez | club | El_Salvador_national_football_team</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.D._Isidro_Metapán</entity>
+				<entity>BRIDGE-1 | Jorge_Humberto_Rodríguez</entity>
+				<entity>PATIENT-1 | Alianza_F.C.</entity>
+				<entity>PATIENT-2 | El_Salvador_national_football_team</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Jorge Humberto Rodriguez is not only the manager of A. D. Isidro Metapan, but also plays for Alianza F.C. as well as the El Salvador national football team.</text>
+				<template>Jorge Humberto Rodriguez is not only the manager of A .  D .  Isidro Metapan ,  but also plays for Alianza F . C .  as well as the PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Jorge Humberto Rodriguez is the manager of A.D. Isidro Metapan and his club is Alianza F.C. but he plays for the El Salvador national football team.</text>
+				<template>Jorge Humberto Rodriguez is the manager of A . D .  Isidro Metapan and his club is Alianza F . C .  but he plays for the PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id440" size="3">
+			<originaltripleset>
+				<otriple>A.E_Dimitra_Efxeinoupolis | capacity | 1500</otriple>
+				<otriple>A.E_Dimitra_Efxeinoupolis | chairman | Antonis_Milionis</otriple>
+				<otriple>A.E_Dimitra_Efxeinoupolis | ground | Efxeinoupoli</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.E_Dimitra_Efxeinoupolis | numberOfMembers | 1500</otriple>
+				<otriple>A.E_Dimitra_Efxeinoupolis | chairman | Antonis_Milionis</otriple>
+				<otriple>A.E_Dimitra_Efxeinoupolis | ground | Efxeinoupoli</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.E_Dimitra_Efxeinoupolis</entity>
+				<entity>PATIENT-1 | 1500</entity>
+				<entity>PATIENT-2 | Antonis_Milionis</entity>
+				<entity>PATIENT-3 | Efxeinoupoli</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>A.E. Dimitra Efxeinoupolis has 1500 members, is chaired by Antonis Milionis, and is located in the town of Efxeinoupoli.</text>
+				<template>A . E .  Dimitra PATIENT-3s has PATIENT-1 members ,  is chaired by PATIENT-2 ,  and is located in the town of PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Antonis Milionis is chairman of A.E Dimitra Efxeinoupolis. they have 1500 members and their ground is located in the town of Efxeinoupoli.</text>
+				<template>PATIENT-2 is chairman of A . E Dimitra PATIENT-3s .  they have PATIENT-1 members and their ground is located in the town of PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The ground of A.E. Dimitra Efxeinoupolis is located in Efeinoupoli, has 1500 members and its chairman is Antonis Milionis.</text>
+				<template>The ground of A . E .  Dimitra PATIENT-3s is located in Efeinoupoli ,  has PATIENT-1 members and its chairman is PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id441" size="3">
+			<originaltripleset>
+				<otriple>A.F.C._Blackpool | ground | &quot;Blackpool&quot;@en</otriple>
+				<otriple>A.F.C._Blackpool | capacity | &quot;1500&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>A.F.C._Blackpool | fullname | &quot;Association Football Club Blackpool&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.F.C._Blackpool | ground | Blackpool</otriple>
+				<otriple>A.F.C._Blackpool | numberOfMembers | 1500</otriple>
+				<otriple>A.F.C._Blackpool | fullname | &quot;Association Football Club Blackpool&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
+				<entity>PATIENT-1 | Blackpool</entity>
+				<entity>PATIENT-2 | 1500</entity>
+				<entity>PATIENT-3 | &quot;Association Football Club Blackpool&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The full name of AFC Blackpool is Association Football Club Blackpool. Their ground is located in Blackpool and they have 1500 members.</text>
+				<template>The full name of AFC PATIENT-1 is Association Football Club PATIENT-1 .  Their ground is located in PATIENT-1 and they have PATIENT-2 members . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A.F.C. Blackpool fullname is &quot;Association Football Club Blackpool&quot;, they have 1500 members and their ground is located in Blackpool.</text>
+				<template>A . F . C .  PATIENT-1 fullname is &quot;Association Football Club PATIENT-1&quot; ,  they have PATIENT-2 members and their ground is located in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Association Football Club Blackpool (abbreviated to A.F.C. Blackpool) has 1500 members and is located in Blackpool.</text>
+				<template>Association Football Club PATIENT-1 (abbreviated to A . F . C .  PATIENT-1) has PATIENT-2 members and is located in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id442" size="3">
+			<originaltripleset>
+				<otriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</otriple>
+				<otriple>Stuart_Parker_(footballer) | team | Chesterfield_F.C.</otriple>
+				<otriple>Stuart_Parker_(footballer) | clubs | Runcorn_F.C._Halton</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</otriple>
+				<otriple>Stuart_Parker_(footballer) | club | Chesterfield_F.C.</otriple>
+				<otriple>Stuart_Parker_(footballer) | club | Runcorn_F.C._Halton</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
+				<entity>BRIDGE-1 | Stuart_Parker_(footballer)</entity>
+				<entity>PATIENT-1 | Chesterfield_F.C.</entity>
+				<entity>PATIENT-2 | Runcorn_F.C._Halton</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>AFC Blackpool have had Stuart Parker as their manager. He is a member of the Chesterfield F.C. and was previously a player for Runcorn FC Halton.</text>
+				<template>AFC Blackpool have had Stuart Parker as their manager .  He is a member of the Chesterfield F . C .  and was previously a player for Runcorn FC Halton . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The manager of A.F.C. Blackpool is Stuart Parker (footballer) who is attached to Chesterfield football club and used to play for Runcorn FC Halton.</text>
+				<template>The manager of A . F . C .  Blackpool is BRIDGE-1 who is attached to Chesterfield football club and used to play for Runcorn FC Halton . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>AFC Blackpool have had Stuart Parker as their manager, he was also a footballer for Chesterfield FC and Runcorn FC Halton.</text>
+				<template>AFC Blackpool have had Stuart Parker as their manager ,  he was also a footballer for Chesterfield FC and Runcorn FC Halton . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id443" size="3">
+			<originaltripleset>
+				<otriple>A.F.C._Fylde | manager | Dave_Challinor</otriple>
+				<otriple>Dave_Challinor | team | Stockport_County_F.C.</otriple>
+				<otriple>Dave_Challinor | managerClub | Colwyn_Bay_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.F.C._Fylde | manager | Dave_Challinor</otriple>
+				<otriple>Dave_Challinor | club | Stockport_County_F.C.</otriple>
+				<otriple>Dave_Challinor | club | Colwyn_Bay_F.C.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Fylde</entity>
+				<entity>BRIDGE-1 | Dave_Challinor</entity>
+				<entity>PATIENT-1 | Stockport_County_F.C.</entity>
+				<entity>PATIENT-2 | Colwyn_Bay_F.C.</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Dave Challinor manages A.F.C. Fylde and plays at the Stockport County F.C. He is also at Colwyn Bay FC.</text>
+				<template>BRIDGE-1 manages A . F . C .  Fylde and plays at the Stockport County F . C .  He is also at Colwyn Bay FC . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Dave Challinor played for Stockport County F.C., is at Colwyn Bay FC and is the manager of AFC Fylde.</text>
+				<template>BRIDGE-1 played for Stockport County F . C .  ,  is at Colwyn Bay FC and is the manager of AFC Fylde . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Dave Challinor played for Stockport County F.C., is at Colwyn Bay FC and manages A.F.C Fylde.</text>
+				<template>BRIDGE-1 played for Stockport County F . C .  ,  is at Colwyn Bay FC and manages A . F . C Fylde . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id444" size="3">
+			<originaltripleset>
+				<otriple>A.S._Livorno_Calcio | ground | &quot;Livorno, Italy&quot;@en</otriple>
+				<otriple>A.S._Livorno_Calcio | capacity | &quot;19238&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>A.S._Livorno_Calcio | fullname | &quot;Livorno Calcio S.p.A.&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.S._Livorno_Calcio | ground | &quot;Livorno, Italy&quot;</otriple>
+				<otriple>A.S._Livorno_Calcio | numberOfMembers | 19238</otriple>
+				<otriple>A.S._Livorno_Calcio | fullname | &quot;Livorno Calcio S.p.A.&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Livorno_Calcio</entity>
+				<entity>PATIENT-1 | &quot;Livorno, Italy&quot;</entity>
+				<entity>PATIENT-2 | 19238</entity>
+				<entity>PATIENT-3 | &quot;Livorno Calcio S.p.A.&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The full name of A.S. Livorno Calcio is Livorno Calcio S.p.A., their ground is in Livorno, Italy and they have 19238 members.</text>
+				<template>The full name of A . S .  Livorno Calcio is Livorno Calcio S . p . A .  ,  their ground is in Livorno ,  Italy and they have PATIENT-2 members . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>AS Livorno Calcio's home ground is in Livorno, Italy. It has the full name of &quot;Livorno Calcio S.p.A&quot; and has 19238 members.</text>
+				<template>AS Livorno Calcio's home ground is in Livorno ,  Italy .  It has the full name of &quot;Livorno Calcio S . p . A&quot; and has PATIENT-2 members . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The full name of A.S. Livorno Calcio is Livorno Calcio S.p.A, they have 19238 members and their ground is in Livorno, Italy.</text>
+				<template>The full name of A . S .  Livorno Calcio is Livorno Calcio S . p . A ,  they have PATIENT-2 members and their ground is in Livorno ,  Italy . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id445" size="3">
+			<originaltripleset>
+				<otriple>A.S._Livorno_Calcio | manager | Christian_Panucci</otriple>
+				<otriple>A.S._Livorno_Calcio | league | Serie_B</otriple>
+				<otriple>Serie_B | champions | Carpi_F.C._1909</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.S._Livorno_Calcio | manager | Christian_Panucci</otriple>
+				<otriple>A.S._Livorno_Calcio | league | Serie_B</otriple>
+				<otriple>Serie_B | champions | Carpi_F.C._1909</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Livorno_Calcio</entity>
+				<entity>BRIDGE-1 | Serie_B</entity>
+				<entity>PATIENT-1 | Christian_Panucci</entity>
+				<entity>PATIENT-2 | Carpi_F.C._1909</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>AS Livorno Calcio play in Serie B (previous champions: Carpi FC 1909) and are managed by Christian Panucci.</text>
+				<template>AS Livorno Calcio play in BRIDGE-1 (previous champions :  Carpi FC 1909) and are managed by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A.S. Livorno Calcio are managed by Christian Panucci. They play in Serie B where Carpi FC 1909 are the champions.</text>
+				<template>A . S .  Livorno Calcio are managed by PATIENT-1 .  They play in BRIDGE-1 where Carpi FC 1909 are the champions . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A.S. Livorno Calcio is in Serie B and is managed by Christian Panucci. Carpi F.C. 1909 won the Serie B championship previously.</text>
+				<template>A . S .  Livorno Calcio is in BRIDGE-1 and is managed by PATIENT-1 .  Carpi F . C .  1909 won the BRIDGE-1 championship previously . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id446" size="3">
+			<originaltripleset>
+				<otriple>A.S._Livorno_Calcio | manager | Christian_Panucci</otriple>
+				<otriple>Christian_Panucci | team | Chelsea_F.C.</otriple>
+				<otriple>Christian_Panucci | clubs | Real_Madrid_C.F.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A.S._Livorno_Calcio | manager | Christian_Panucci</otriple>
+				<otriple>Christian_Panucci | club | Chelsea_F.C.</otriple>
+				<otriple>Christian_Panucci | club | Real_Madrid_C.F.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Livorno_Calcio</entity>
+				<entity>BRIDGE-1 | Christian_Panucci</entity>
+				<entity>PATIENT-1 | Chelsea_F.C.</entity>
+				<entity>PATIENT-2 | Real_Madrid_C.F.</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Christian Panucci has played for Chelsea FC and was attached to the Real Madrid CF club. He now manages AS Livorno Calcio,.</text>
+				<template>BRIDGE-1 has played for Chelsea FC and was attached to the Real Madrid CF club .  He now manages AS Livorno Calcio ,  . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A.S. Livorno Calcio is managed by Christian Panucci who has played for Chelsea FC and was attached to the Real Madrid CF club.</text>
+				<template>A . S .  Livorno Calcio is managed by BRIDGE-1 who has played for Chelsea FC and was attached to the Real Madrid CF club . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A.S. Livorno Calcio are managed by Christian Panucci, who also played for Chelsea F.C., and was attached to the Real Madrid CF club.</text>
+				<template>A . S .  Livorno Calcio are managed by BRIDGE-1 ,  who also played for Chelsea F . C .  ,  and was attached to the Real Madrid CF club . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id447" size="3">
+			<originaltripleset>
+				<otriple>AEK_Athens_F.C. | league | Superleague_Greece</otriple>
+				<otriple>Superleague_Greece | champions | Olympiacos_F.C.</otriple>
+				<otriple>AEK_Athens_F.C. | ground | Greece</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AEK_Athens_F.C. | league | Superleague_Greece</otriple>
+				<otriple>Superleague_Greece | champions | Olympiacos_F.C.</otriple>
+				<otriple>AEK_Athens_F.C. | ground | Greece</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AEK_Athens_F.C.</entity>
+				<entity>BRIDGE-1 | Superleague_Greece</entity>
+				<entity>PATIENT-1 | Olympiacos_F.C.</entity>
+				<entity>PATIENT-2 | Greece</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>AEK Athens F.C. (who's grounds are in Athens) is in the Superleague of Greece. Olympiacos FC are previous champions of the Superleague Greece.</text>
+				<template>AEK Athens F . C .  (who's grounds are in Athens) is in the Superleague of PATIENT-2 .  Olympiacos FC are previous champions of the BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>AEK Athens's ground is in Greece and it competes in the Superleague Greece, the past champions were Olympiacos F.C.</text>
+				<template>AEK Athens's ground is in PATIENT-2 and it competes in the BRIDGE-1 ,  the past champions were Olympiacos F . C . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id448" size="3">
+			<originaltripleset>
+				<otriple>AEK_Athens_F.C. | manager | Gus_Poyet</otriple>
+				<otriple>Gus_Poyet | clubs | Real_Zaragoza</otriple>
+				<otriple>Gus_Poyet | team | Chelsea_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AEK_Athens_F.C. | manager | Gus_Poyet</otriple>
+				<otriple>Gus_Poyet | club | Real_Zaragoza</otriple>
+				<otriple>Gus_Poyet | club | Chelsea_F.C.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AEK_Athens_F.C.</entity>
+				<entity>BRIDGE-1 | Gus_Poyet</entity>
+				<entity>PATIENT-1 | Real_Zaragoza</entity>
+				<entity>PATIENT-2 | Chelsea_F.C.</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Gus Poyet played for Chelsea F.C. and was the manager for AEK Athens FC but he is now in the Real Zaragoza club.</text>
+				<template>BRIDGE-1 played for Chelsea F . C .  and was the manager for AEK Athens FC but he is now in the PATIENT-1 club . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>AEK Athens F.C. manager is Gus Poyet who's club is Real Zaragoza, having previously played for Chelsea F.C.</text>
+				<template>AEK Athens F . C .  manager is BRIDGE-1 who's club is PATIENT-1 ,  having previously played for Chelsea F . C . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>AEK Athens are managed by Gus Poyet who is associated with the Real Zaragoza,a football club and played for Chelsea F.C.</text>
+				<template>AEK Athens are managed by BRIDGE-1 who is associated with the PATIENT-1 , a football club and played for Chelsea F . C . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id449" size="3">
+			<originaltripleset>
+				<otriple>AFC_Ajax_(amateurs) | ground | Amsterdam</otriple>
+				<otriple>Amsterdam | leaderName | Eberhard_van_der_Laan</otriple>
+				<otriple>Amsterdam | part | Amsterdam-Centrum</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AFC_Ajax_(amateurs) | ground | Amsterdam</otriple>
+				<otriple>Amsterdam | leader | Eberhard_van_der_Laan</otriple>
+				<otriple>Amsterdam | part | Amsterdam-Centrum</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AFC_Ajax_(amateurs)</entity>
+				<entity>BRIDGE-1 | Amsterdam</entity>
+				<entity>PATIENT-1 | Eberhard_van_der_Laan</entity>
+				<entity>PATIENT-2 | Amsterdam-Centrum</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The ground of AFC Ajax (amateurs) can be found in Amsterdam. Amsterdam-Centrum is part of the city and its leader is Eberhard van der Laan.</text>
+				<template>The ground of AGENT-1 can be found in BRIDGE-1 .  BRIDGE-1-Centrum is part of the city and its leader is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id450" size="3">
+			<originaltripleset>
+				<otriple>AFC_Ajax_(amateurs) | ground | Amsterdam</otriple>
+				<otriple>Amsterdam | leaderName | Eberhard_van_der_Laan</otriple>
+				<otriple>Amsterdam | p | Amsterdam-Noord</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AFC_Ajax_(amateurs) | ground | Amsterdam</otriple>
+				<otriple>Amsterdam | leader | Eberhard_van_der_Laan</otriple>
+				<otriple>Amsterdam | part | Amsterdam-Noord</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AFC_Ajax_(amateurs)</entity>
+				<entity>BRIDGE-1 | Amsterdam</entity>
+				<entity>PATIENT-1 | Eberhard_van_der_Laan</entity>
+				<entity>PATIENT-2 | Amsterdam-Noord</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Amsterdam Noord is part of Amsterdam whose leader is Eberhard van der Laan. The city is the location of the homeground of AFC Ajax (amateurs).</text>
+				<template>BRIDGE-1 Noord is part of BRIDGE-1 whose leader is PATIENT-1 .  The city is the location of the homeground of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The ground of AFC Ajax (amateurs) can be found in Amsterdam, which has Eberhard van der Laan as leader, and a region called Amsterdam-Noord.</text>
+				<template>The ground of AGENT-1 can be found in BRIDGE-1 ,  which has PATIENT-1 as leader ,  and a region called BRIDGE-1-Noord . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id451" size="3">
+			<originaltripleset>
+				<otriple>AZ_Alkmaar | manager | John_van_den_Brom</otriple>
+				<otriple>John_van_den_Brom | managerClub | Jong_Ajax</otriple>
+				<otriple>John_van_den_Brom | team | İstanbulspor_A.Ş.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AZ_Alkmaar | manager | John_van_den_Brom</otriple>
+				<otriple>John_van_den_Brom | club | Jong_Ajax</otriple>
+				<otriple>John_van_den_Brom | club | İstanbulspor_A.Ş.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AZ_Alkmaar</entity>
+				<entity>BRIDGE-1 | John_van_den_Brom</entity>
+				<entity>PATIENT-1 | Jong_Ajax</entity>
+				<entity>PATIENT-2 | İstanbulspor_A.Ş.</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>John van den Brom manages the AZ Alkmaar and is in the Jong Ajax club. He currently plays for Istanbulspor A.S.</text>
+				<template>BRIDGE-1 manages the AGENT-1 and is in the PATIENT-1 club .  He currently plays for Istanbulspor A . S . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>John van den Brom, who manages AZ Alkmaar, plays for Jong Ajax and Istanbulspor AS.</text>
+				<template>BRIDGE-1 ,  who manages AGENT-1 ,  plays for PATIENT-1 and Istanbulspor AS . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The manager of AZ Alkmaar is john van den Brom who is in the Jong Ajax club and plays for Istanbulspor A.S.</text>
+				<template>The manager of AGENT-1 is john van den Brom who is in the PATIENT-1 club and plays for Istanbulspor A . S . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id452" size="3">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | country | Brazil</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | country | Brazil</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>BRIDGE-1 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>PATIENT-1 | Brazil</entity>
+				<entity>PATIENT-2 | Estádio_Municipal_Coaracy_da_Mata_Fonseca</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league based in Brazil. Their ground is known as Estádio Municipal Coaracy da Mata Fonseca.</text>
+				<template>AGENT-1 play in the BRIDGE-1 league based in PATIENT-1 .  Their ground is known as PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league in Brazil. Their ground is the Estadio Municipal Coaracy da Mata Fonseca.</text>
+				<template>AGENT-1 play in the BRIDGE-1 league in PATIENT-1 .  Their ground is the Estadio Municipal Coaracy da Mata Fonseca . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league in Brazil. Their ground is known as the Estadio Municipal Coaracy da Mata Fonseca.</text>
+				<template>AGENT-1 play in the BRIDGE-1 league in PATIENT-1 .  Their ground is known as the Estadio Municipal Coaracy da Mata Fonseca . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id453" size="3">
+			<originaltripleset>
+				<otriple>Luciano_Spalletti | managerClub | Udinese_Calcio</otriple>
+				<otriple>Luciano_Spalletti | team | Empoli_F.C.</otriple>
+				<otriple>A.S._Roma | manager | Luciano_Spalletti</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Luciano_Spalletti | club | Udinese_Calcio</otriple>
+				<otriple>Luciano_Spalletti | club | Empoli_F.C.</otriple>
+				<otriple>A.S._Roma | manager | Luciano_Spalletti</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Roma</entity>
+				<entity>BRIDGE-1 | Luciano_Spalletti</entity>
+				<entity>PATIENT-1 | Udinese_Calcio</entity>
+				<entity>PATIENT-2 | Empoli_F.C.</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The manager of A.S. Roma is Luciano Spalletti who used to play for Udinese Calcio but now plays for Empoli FC.</text>
+				<template>The manager of A . S .  Roma is BRIDGE-1 who used to play for PATIENT-1 but now plays for Empoli FC . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Luciano Spalletti played for Udinese Calcio and now manages A.S. Roma and plays for Empoli F.C..</text>
+				<template>BRIDGE-1 played for PATIENT-1 and now manages A . S .  Roma and plays for Empoli F . C .  . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Luciano Spalletti plays for Udinese Calcio and Empoli F.C. as well as managing A.S. Roma.</text>
+				<template>BRIDGE-1 plays for PATIENT-1 and Empoli F . C .  as well as managing A . S .  Roma . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id454" size="3">
+			<originaltripleset>
+				<otriple>Massimo_Drago | team | S.S._Chieti_Calcio</otriple>
+				<otriple>A.C._Cesena | manager | Massimo_Drago</otriple>
+				<otriple>Massimo_Drago | clubs | A.S.D._Licata_1931</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Massimo_Drago | club | S.S._Chieti_Calcio</otriple>
+				<otriple>A.C._Cesena | manager | Massimo_Drago</otriple>
+				<otriple>Massimo_Drago | club | A.S.D._Licata_1931</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Cesena</entity>
+				<entity>BRIDGE-1 | Massimo_Drago</entity>
+				<entity>PATIENT-1 | S.S._Chieti_Calcio</entity>
+				<entity>PATIENT-2 | A.S.D._Licata_1931</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Massimo Drago was at the club ASD Licita 1931 but currently manages A.C. Cesena and plays for S.S. Chieti Calcio.</text>
+				<template>BRIDGE-1 was at the club ASD Licita 1931 but currently manages A . C .  Cesena and plays for S . S .  Chieti Calcio . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Massimo Drago has been the manager of A C Cesena and was at the club ASD Licita 1931. He now plays for S.S. Chieti Calcio.</text>
+				<template>BRIDGE-1 has been the manager of A C Cesena and was at the club ASD Licita 1931 .  He now plays for S . S .  Chieti Calcio . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Massimo Drago plays for both A.S.D. Licata 1931 and S.S. Chieti Calcio as well as managing A.C. Cesena.</text>
+				<template>BRIDGE-1 plays for both A . S . D .  Licata 1931 and S . S .  Chieti Calcio as well as managing A . C .  Cesena . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id455" size="3">
+			<originaltripleset>
+				<otriple>Massimo_Drago | clubs | U.S._Castrovillari_Calcio</otriple>
+				<otriple>A.C._Cesena | manager | Massimo_Drago</otriple>
+				<otriple>Massimo_Drago | team | A.S.D._S.S._Nola_1925</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Massimo_Drago | club | U.S._Castrovillari_Calcio</otriple>
+				<otriple>A.C._Cesena | manager | Massimo_Drago</otriple>
+				<otriple>Massimo_Drago | club | A.S.D._S.S._Nola_1925</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Cesena</entity>
+				<entity>BRIDGE-1 | Massimo_Drago</entity>
+				<entity>PATIENT-1 | U.S._Castrovillari_Calcio</entity>
+				<entity>PATIENT-2 | A.S.D._S.S._Nola_1925</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Massimo Drago has been the manager of A C Cesena and played for A.S.D. S.S. Nola 1925. He currently plays for U.S Castrovillari Calcio.</text>
+				<template>BRIDGE-1 has been the manager of A C Cesena and played for A . S . D .  S . S .  Nola 1925 .  He currently plays for U . S Castrovillari Calcio . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Massimo Drago plays for U.S Castrovillari Calcio and A.S.D. S.S. Nola 1925. He also manages AC Cesena.</text>
+				<template>BRIDGE-1 plays for U . S Castrovillari Calcio and A . S . D .  S . S .  Nola 1925 .  He also manages AC Cesena . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Massimo Drago played for A.S.D. S.S. Nola 1925, now he manages A.C. Cesena and plays for U.S Castrovillari Calcio.</text>
+				<template>BRIDGE-1 played for A . S . D .  S . S .  Nola 1925 ,  now he manages A . C .  Cesena and plays for U . S Castrovillari Calcio . </template>
+			</lex>
+		</entry>
+		<entry category="SportsTeam" eid="Id456" size="3">
+			<originaltripleset>
+				<otriple>Massimo_Drago | clubs | U.S._Castrovillari_Calcio</otriple>
+				<otriple>Massimo_Drago | team | S.S._Chieti_Calcio</otriple>
+				<otriple>A.C._Cesena | manager | Massimo_Drago</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Massimo_Drago | club | U.S._Castrovillari_Calcio</otriple>
+				<otriple>Massimo_Drago | club | S.S._Chieti_Calcio</otriple>
+				<otriple>A.C._Cesena | manager | Massimo_Drago</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Cesena</entity>
+				<entity>BRIDGE-1 | Massimo_Drago</entity>
+				<entity>PATIENT-1 | U.S._Castrovillari_Calcio</entity>
+				<entity>PATIENT-2 | S.S._Chieti_Calcio</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Massimo Drago has been the manager of A C Cesena but currently plays for US Castrovillari Calcio and SS Chieti Calcio.</text>
+				<template>BRIDGE-1 has been the manager of A C Cesena but currently plays for US Castrovillari Calcio and SS Chieti Calcio . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Massimo Drago's club is the S.S. Chieti Calcio, he also manages A.C. Cesena and was once a player for US Castrovillari Calcio.</text>
+				<template>BRIDGE-1's club is the S . S .  Chieti Calcio ,  he also manages A . C .  Cesena and was once a player for US Castrovillari Calcio . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Massimo Drago plays for S.S.Chieti Calcio and manages A.C. Cesena, he once also was a player for US Castrovillari Calcio.</text>
+				<template>BRIDGE-1 plays for S . S . Chieti Calcio and manages A . C .  Cesena ,  he once also was a player for US Castrovillari Calcio . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

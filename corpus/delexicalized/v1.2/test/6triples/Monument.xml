@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Monument" eid="Id927" size="6">
+			<originaltripleset>
+				<otriple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;@en</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | range | Seminary_Ridge</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | region | Adams_County,_Pennsylvania</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | state | &quot;Pennsylvania&quot;@en</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | established | 2000</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | location | Seminary_Ridge</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | state | &quot;Pennsylvania&quot;</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | established | 2000</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
+				<entity>PATIENT-1 | &quot;United States&quot;</entity>
+				<entity>PATIENT-2 | Seminary_Ridge</entity>
+				<entity>PATIENT-3 | Adams_County,_Pennsylvania</entity>
+				<entity>PATIENT-4 | &quot;Pennsylvania&quot;</entity>
+				<entity>PATIENT-5 | 2000</entity>
+				<entity>PATIENT-6 | Contributing_property</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The 11th Mississippi Infantry Monument is located at Seminary Ridge, in Adams County, Pennsylvania, USA. The monument was completed in 2000. It is classified as a Contributing property.</text>
+				<template>The AGENT-1 is located at PATIENT-2 ,  in Adams County ,  Pennsylvania ,  USA .  The monument was completed in PATIENT-5 .  It is classified as a PATIENT-6 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>In 2000 the 11th Mississippi Infantry Monument which is categorised as a contributing property, was established. It is located at Seminary Ridge, Adams County, Pennsylvania, in the US.</text>
+				<template>In PATIENT-5 the AGENT-1 which is categorised as a contributing property ,  was established .  It is located at PATIENT-2 ,  Adams County ,  Pennsylvania ,  in the US . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The 11th Mississippi Infantry Monument is located at Seminary Ridge, in Adams County, Pennsylvania, USA. It was established in 2000, and is categorized as a Contributing Property.</text>
+				<template>The AGENT-1 is located at PATIENT-2 ,  in Adams County ,  Pennsylvania ,  USA .  It was established in PATIENT-5 ,  and is categorized as a Contributing Property . </template>
+			</lex>
+		</entry>
+		<entry category="Monument" eid="Id928" size="6">
+			<originaltripleset>
+				<otriple>Adams_County,_Pennsylvania | west | Franklin_County,_Pennsylvania</otriple>
+				<otriple>Adams_County,_Pennsylvania | southeast | Carroll_County,_Maryland</otriple>
+				<otriple>Adams_County,_Pennsylvania | north | Cumberland_County,_Pennsylvania</otriple>
+				<otriple>Adams_County,_Pennsylvania | southwest | Frederick_County,_Maryland</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | region | Adams_County,_Pennsylvania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Adams_County,_Pennsylvania | has to its west | Franklin_County,_Pennsylvania</otriple>
+				<otriple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</otriple>
+				<otriple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</otriple>
+				<otriple>Adams_County,_Pennsylvania | has to its southwest | Frederick_County,_Maryland</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
+				<entity>BRIDGE-1 | Adams_County,_Pennsylvania</entity>
+				<entity>PATIENT-1 | Franklin_County,_Pennsylvania</entity>
+				<entity>PATIENT-2 | Carroll_County,_Maryland</entity>
+				<entity>PATIENT-3 | Cumberland_County,_Pennsylvania</entity>
+				<entity>PATIENT-4 | Frederick_County,_Maryland</entity>
+				<entity>PATIENT-5 | Contributing_property</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The location of the 11th Mississippi Infantry Monument is in Adams County, Pennsylvania. which has Franklin County to the west and Carroll County Maryland to the southeast. Cumberland County lies to the north with Frederick County, Maryland to the southwest. The 11th Mississippi Infantry Monument is a contributing property.</text>
+				<template>The location of the AGENT-1 is in Adams County ,  Pennsylvania .  which has Franklin County to the west and Carroll County Maryland to the southeast .  Cumberland County lies to the north with Frederick County ,  Maryland to the southwest .  The AGENT-1 is a contributing property . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Adams County, Pennsylvania is located to the south of Cumberland County, Pennsylvania, to the east of Franklin County, Pennsylvania, to the northeast of Frederick County, Maryland, and to the northwest of Carroll County, Maryland. The 11th Mississippi Infantry Monument, which is classified as a Contributing property, is located in Adams County.</text>
+				<template>Adams County ,  Pennsylvania is located to the south of Cumberland County ,  Pennsylvania ,  to the east of Franklin County ,  Pennsylvania ,  to the northeast of Frederick County ,  Maryland ,  and to the northwest of Carroll County ,  Maryland .  The AGENT-1 ,  which is classified as a PATIENT-5 ,  is located in Adams County . </template>
+			</lex>
+		</entry>
+		<entry category="Monument" eid="Id929" size="6">
+			<originaltripleset>
+				<otriple>Azerbaijan | leader | Artur_Rasizade</otriple>
+				<otriple>Azerbaijan | capital | Baku</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Azerbaijan | leader | Artur_Rasizade</otriple>
+				<otriple>Azerbaijan | capital | Baku</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>BRIDGE-1 | Azerbaijan</entity>
+				<entity>PATIENT-1 | Artur_Rasizade</entity>
+				<entity>PATIENT-2 | Baku</entity>
+				<entity>PATIENT-3 | &quot;Red granite and white marble&quot;</entity>
+				<entity>PATIENT-4 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-5 | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Baku is the capital of Azerbaijan which has Artur Rasizade as its leader. The country is the location of the Baku Turkish Martyrs Memorial, designed in red granite and white marble by Huseyin Butuner and Hilmi Guner. The memorial is dedicated to the Ottoman army soldiers killed in the Battle of Baku.</text>
+				<template>PATIENT-2 is the capital of BRIDGE-1 which has PATIENT-1 as its leader .  The country is the location of the AGENT-1 ,  designed in red granite and white marble by Huseyin Butuner and Hilmi Guner .  The memorial is dedicated to the Ottoman army soldiers killed in the Battle of PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baku Turkish Martyrs' Memorial (designed by Huseyin Butuner and Hilmi Guner) is dedicated to the Ottoman Army soldiers killed in the Battle of Baku and is made of red granite and white marble. The memorial is located in Baku, the capital of Azerbaijan. Artur Rasizade was an Azerbaijan leader.</text>
+				<template>PATIENT-2 Turkish Martyrs' Memorial (designed by Huseyin Butuner and Hilmi Guner) is dedicated to the Ottoman Army soldiers killed in the Battle of PATIENT-2 and is made of red granite and white marble .  The memorial is located in PATIENT-2 ,  the capital of BRIDGE-1 .  PATIENT-1 was an BRIDGE-1 leader . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Baku Turkish Martyrs Memorial in Azerbaijan is dedicated to Ottoman Army soldiers killed in the Battle of Baku. It was designed by Hüseyin Bütüner and Hilmi Güner, and constructed from red granite and white marble. Baku is the capital of Azerbaijan, a country whose leaders include Artur Rasizade.</text>
+				<template>The AGENT-1 in BRIDGE-1 is dedicated to Ottoman Army soldiers killed in the Battle of PATIENT-2 .  It was designed by Hüseyin Bütüner and Hilmi Güner ,  and constructed from red granite and white marble .  PATIENT-2 is the capital of BRIDGE-1 ,  a country whose leaders include PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Monument" eid="Id930" size="6">
+			<originaltripleset>
+				<otriple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;@en</otriple>
+				<otriple>Azerbaijan | leaderName | Artur_Rasizade</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</otriple>
+				<otriple>Azerbaijan | leaderName | Artur_Rasizade</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>BRIDGE-1 | Azerbaijan</entity>
+				<entity>PATIENT-1 | &quot;Red granite and white marble&quot;</entity>
+				<entity>PATIENT-2 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-3 | &quot;Türk Şehitleri Anıtı&quot;</entity>
+				<entity>PATIENT-4 | Artur_Rasizade</entity>
+				<entity>PATIENT-5 | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Baku Turkish Martyrs' Memorial (designed by Huseyin Butuner and Hilmi Guner) is located in Baku, Azerbaijan. It is made from red granite and white marble. It is dedicated to the Ottoman Army Soldiers killed in the Battle of Baku. The native name for the memorial is Türk Şehitleri Anıtı. The leader of Azerbaijan is Artur Rasizade.</text>
+				<template>The Baku Turkish Martyrs' Memorial (designed by Huseyin Butuner and Hilmi Guner) is located in Baku ,  BRIDGE-1 .  It is made from red granite and white marble .  It is dedicated to the Ottoman Army Soldiers killed in the Battle of Baku .  The native name for the memorial is Türk Şehitleri Anıtı .  The leader of BRIDGE-1 is PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Turkish leader is Artur Rasizade. Huseyin Butuner and Hilmi Guner designed the red granite and white marble Baku Turkish Martyrs Memorial, also known as Turk Sehitleri Aniti, in Azerbaijan. The memorial is dedicated to the soldiers who fell in the Battle of Baku.</text>
+				<template>The Turkish leader is PATIENT-4 .  Huseyin Butuner and Hilmi Guner designed the red granite and white marble AGENT-1 ,  also known as Turk Sehitleri Aniti ,  in BRIDGE-1 .  The memorial is dedicated to the soldiers who fell in the Battle of Baku . </template>
+			</lex>
+		</entry>
+		<entry category="Monument" eid="Id931" size="6">
+			<originaltripleset>
+				<otriple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;^^xsd:date</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | country | &quot;United States&quot;@en</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | state | &quot;Maryland&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | country | &quot;United States&quot;</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | state | &quot;Maryland&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 14th_New_Jersey_Volunteer_Infantry_Monument</entity>
+				<entity>BRIDGE-1 | Monocacy_National_Battlefield</entity>
+				<entity>PATIENT-1 | Frederick_County,_Maryland</entity>
+				<entity>PATIENT-2 | &quot;1907-07-11&quot;</entity>
+				<entity>PATIENT-3 | &quot;United States&quot;</entity>
+				<entity>PATIENT-4 | Historic_districts_in_the_United_States</entity>
+				<entity>PATIENT-5 | &quot;Maryland&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The U.S.A.'s 14th New Jersey Volunteer Infantry Monument in Frederick County, Maryland is in the Monocacy National Battlefield. It's in a historic district and was established om July 11th, 1907.</text>
+				<template>The U . S . A . 's AGENT-1 in Frederick County ,  Maryland is in the BRIDGE-1 .  It's in a historic district and was established om July 11th ,  1907 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The 14th New Jersey Volunteer Infantry Monument is located on the Monocacy National Battlefield, Frederick, Maryland. The monument was established in 1907-07-11 and is categorised as a historic district in the United States.</text>
+				<template>The AGENT-1 is located on the BRIDGE-1 ,  Frederick ,  Maryland .  The monument was established in 1907-07-11 and is categorised as a historic district in the United States . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The 14th New Jersey Volunteer Infantry Monument is located in Frederick County, Maryland, USA. Established on July 11, 1907, and situated on the Monocacy National Battlefield, the monument is categorized as a Historic district in the United States.</text>
+				<template>The AGENT-1 is located in Frederick County ,  Maryland ,  USA .  Established on July 11 ,  1907 ,  and situated on the BRIDGE-1 ,  the monument is categorized as a Historic district in the United States . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

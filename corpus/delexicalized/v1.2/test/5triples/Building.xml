@@ -1,0 +1,653 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Building" eid="Id908" size="5">
+			<originaltripleset>
+				<otriple>200_Public_Square | location | Cleveland</otriple>
+				<otriple>200_Public_Square | buildingEndDate | &quot;1985&quot;</otriple>
+				<otriple>Cleveland | subdivisionName | Cuyahoga_County,_Ohio</otriple>
+				<otriple>Cleveland | isPartOf | Ohio</otriple>
+				<otriple>Cleveland | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>200_Public_Square | location | Cleveland</otriple>
+				<otriple>200_Public_Square | completionDate | 1985</otriple>
+				<otriple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</otriple>
+				<otriple>Cleveland | isPartOf | Ohio</otriple>
+				<otriple>Cleveland | country | United_States</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 200_Public_Square</entity>
+				<entity>BRIDGE-1 | Cleveland</entity>
+				<entity>PATIENT-1 | 1985</entity>
+				<entity>PATIENT-2 | Cuyahoga_County,_Ohio</entity>
+				<entity>PATIENT-3 | Ohio</entity>
+				<entity>PATIENT-4 | United_States</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The 200 Public Square was completed in 1985 in Cuyahoga County, Cleveland, Ohio, United States.</text>
+				<template>The AGENT-1 was completed in PATIENT-1 in Cuyahoga County ,  BRIDGE-1 ,  PATIENT-3 ,  PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>200 Public Square completed in 1985 is in Cleveland (part of Cuyahoga County) in Ohio, U.S.</text>
+				<template>AGENT-1 completed in PATIENT-1 is in BRIDGE-1 (part of Cuyahoga County) in PATIENT-3 ,  U . S . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>200 Public Square was completed in 1985, and is located in Cleveland, Cuyahoga County, Ohio, United States.</text>
+				<template>AGENT-1 was completed in PATIENT-1 ,  and is located in BRIDGE-1 ,  Cuyahoga County ,  PATIENT-3 ,  PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id909" size="5">
+			<originaltripleset>
+				<otriple>250_Delaware_Avenue | location | Buffalo,_New_York</otriple>
+				<otriple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</otriple>
+				<otriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</otriple>
+				<otriple>250_Delaware_Avenue | floorArea | &quot;30843.8&quot;^^xsd:double</otriple>
+				<otriple>250_Delaware_Avenue | floorCount | &quot;12&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>250_Delaware_Avenue | location | Buffalo,_New_York</otriple>
+				<otriple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</otriple>
+				<otriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</otriple>
+				<otriple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</otriple>
+				<otriple>250_Delaware_Avenue | floorCount | 12</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>PATIENT-1 | Buffalo,_New_York</entity>
+				<entity>PATIENT-2 | Postmodern_architecture</entity>
+				<entity>PATIENT-3 | &quot;January, 2014&quot;</entity>
+				<entity>PATIENT-4 | 30843.8 (square metres)</entity>
+				<entity>PATIENT-5 | 12</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Construction of 250 Delaware Avenue, Buffalo, New York, began in January 2014 in the postmodernist style of architecture. The building has 12 floors with a total area of 30843.8 square metres.</text>
+				<template>Construction of AGENT-1 ,  Buffalo ,  New York ,  began in January 2014 in the postmodernist style of architecture .  The building has PATIENT-5 floors with a total area of 30843 . 8 square metres . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id910" size="5">
+			<originaltripleset>
+				<otriple>300_North_LaSalle | location | Chicago</otriple>
+				<otriple>Chicago | leaderName | Rahm_Emanuel</otriple>
+				<otriple>Chicago | country | United_States</otriple>
+				<otriple>Illinois | capital | Springfield,_Illinois</otriple>
+				<otriple>Chicago | isPartOf | Illinois</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>300_North_LaSalle | location | Chicago</otriple>
+				<otriple>Chicago | leaderName | Rahm_Emanuel</otriple>
+				<otriple>Chicago | country | United_States</otriple>
+				<otriple>Illinois | capital | Springfield,_Illinois</otriple>
+				<otriple>Chicago | isPartOf | Illinois</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 300_North_LaSalle</entity>
+				<entity>BRIDGE-1 | Chicago</entity>
+				<entity>BRIDGE-2 | Illinois</entity>
+				<entity>PATIENT-1 | Rahm_Emanuel</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Springfield,_Illinois</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>300 North LaSalle is located in Chicago, Illinois, United States. The leader of Chicago is Rahm Emanuel and the capital of the state of Illinois is Springfield.</text>
+				<template>AGENT-1 is located in BRIDGE-1 ,  BRIDGE-2 ,  PATIENT-2 .  The leader of BRIDGE-1 is PATIENT-1 and the capital of the state of BRIDGE-2 is Springfield . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>300 North LaSalle is located in Chicago (leader: Rahm Emanuel), which is part of Illinois, United States. The capital of Illinois is Springfield.</text>
+				<template>AGENT-1 is located in BRIDGE-1 (leader :  PATIENT-1) ,  which is part of BRIDGE-2 ,  PATIENT-2 .  The capital of BRIDGE-2 is Springfield . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>300 North LaSalle is located in Chicago, Illinois, in the US. Rahm Emanuel is the leader of Chicago but the capital of the state of Illinois is Springfield.</text>
+				<template>AGENT-1 is located in BRIDGE-1 ,  BRIDGE-2 ,  in the US .  PATIENT-1 is the leader of BRIDGE-1 but the capital of the state of BRIDGE-2 is Springfield . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id911" size="5">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Denmark | language | Faroese_language</otriple>
+				<otriple>Denmark | leaderName | Margrethe_II_of_Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | operator | Marriott_International</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Denmark | language | Faroese_language</otriple>
+				<otriple>Denmark | leaderName | Margrethe_II_of_Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>BRIDGE-1 | Denmark</entity>
+				<entity>BRIDGE-2 | Marriott_International</entity>
+				<entity>PATIENT-1 | Faroese_language</entity>
+				<entity>PATIENT-2 | Margrethe_II_of_Denmark</entity>
+				<entity>PATIENT-3 | Washington,_D.C.</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>AC Hotel Bella Sky Copenhagen is located in Denmark, where Faroese is spoken, and the leader is Margrethe II of Denmark. The hotel's current tenant is the Marriott International Hotel, which was founded in Washington, D.C.</text>
+				<template>AGENT-1 is located in BRIDGE-1 ,  where Faroese is spoken ,  and the leader is Margrethe II of BRIDGE-1 .  The hotel's current tenant is the BRIDGE-2 Hotel ,  which was founded in Washington ,  D . C . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Margrethe II of Denmark leads the country where the Faroese language is spoken. The Marriott International, founded in Washington DC, are the current tenants of the AC Hotel Bella Sky in Copenhagen.</text>
+				<template>Margrethe II of BRIDGE-1 leads the country where the PATIENT-1 is spoken .  The BRIDGE-2 ,  founded in Washington DC ,  are the current tenants of the AC Hotel Bella Sky in Copenhagen . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id912" size="5">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | operator | Marriott_International</otriple>
+				<otriple>Marriott_International | keyPerson | Bill_Marriott</otriple>
+				<otriple>Denmark | language | Greenlandic_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</otriple>
+				<otriple>Marriott_International | keyPerson | Bill_Marriott</otriple>
+				<otriple>Denmark | language | Greenlandic_language</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>BRIDGE-1 | Marriott_International</entity>
+				<entity>BRIDGE-2 | Denmark</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | Bill_Marriott</entity>
+				<entity>PATIENT-3 | Greenlandic_language</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Marriott International was founded in Washington, D.C. and is the tenant of AC Hotel Bella Sky Copenhagen which is in Denmark where Greenlandic is one of the languages spoken there. Bill Marriott is one of the key employees of Marriott International.</text>
+				<template>BRIDGE-1 was founded in Washington ,  D . C .  and is the tenant of AGENT-1 which is in BRIDGE-2 where Greenlandic is one of the languages spoken there .  PATIENT-2 is one of the key employees of BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bill Marriott is the key person of Marriott International which was founded in Washington DC and is the tenant of the AC Hotel Bella Sky in Copenhagen, Denmark. One of the languages spoken in the country is Greenlandic.</text>
+				<template>PATIENT-2 is the key person of BRIDGE-1 which was founded in Washington DC and is the tenant of the AC Hotel Bella Sky in Copenhagen ,  BRIDGE-2 .  One of the languages spoken in the country is Greenlandic . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id913" size="5">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>Denmark | leaderName | Lars_Løkke_Rasmussen</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | operator | Marriott_International</otriple>
+				<otriple>Denmark | language | Greenlandic_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>Denmark | leaderName | Lars_Løkke_Rasmussen</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</otriple>
+				<otriple>Denmark | language | Greenlandic_language</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>BRIDGE-1 | Denmark</entity>
+				<entity>BRIDGE-2 | Marriott_International</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | Lars_Løkke_Rasmussen</entity>
+				<entity>PATIENT-3 | Greenlandic_language</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>AC Hotel Bella Sky Copenhagen is in Denmark where the leader is Lars Løkke Rasmussen and Greenlandic is one of the languages spoken there. The tenant of the AC Hotel Bella Sky Copenhagen is the Marriott International Hotel which was founded in Washington, D.C.</text>
+				<template>AGENT-1 is in BRIDGE-1 where the leader is PATIENT-2 and Greenlandic is one of the languages spoken there .  The tenant of the AGENT-1 is the BRIDGE-2 Hotel which was founded in Washington ,  D . C . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Marriott International, founded in Washington DC, is a tenant of AC Hotel Bella Sky located in Copenhagen, Denmark (which is led by Lars Lokke Rasmussen and has Greenlandic as a spoken language).</text>
+				<template>BRIDGE-2 ,  founded in Washington DC ,  is a tenant of AC Hotel Bella Sky located in Copenhagen ,  BRIDGE-1 (which is led by Lars Lokke Rasmussen and has Greenlandic as a spoken language) . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id914" size="5">
+			<originaltripleset>
+				<otriple>Adare_Manor | architect | Augustus_Pugin</otriple>
+				<otriple>Augustus_Pugin | significantBuilding | Palace_of_Westminster</otriple>
+				<otriple>Augustus_Pugin | birthPlace | Bloomsbury</otriple>
+				<otriple>Republic_of_Ireland | leader | Enda_Kenny</otriple>
+				<otriple>Adare_Manor | country | Republic_of_Ireland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Adare_Manor | country | Republic_of_Ireland</otriple>
+				<otriple>Adare_Manor | architect | Augustus_Pugin</otriple>
+				<otriple>Augustus_Pugin | significantBuilding | Palace_of_Westminster</otriple>
+				<otriple>Augustus_Pugin | birthPlace | Bloomsbury</otriple>
+				<otriple>Republic_of_Ireland | leaderName | Enda_Kenny</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>BRIDGE-1 | Augustus_Pugin</entity>
+				<entity>BRIDGE-2 | Republic_of_Ireland</entity>
+				<entity>PATIENT-1 | Palace_of_Westminster</entity>
+				<entity>PATIENT-2 | Bloomsbury</entity>
+				<entity>PATIENT-3 | Enda_Kenny</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Adare Manor is in the Republic of Ireland, which leader is Enda Kenny. The architect is Augustus Pugin, who was born in Bloomsbury. One of the significant buildings designed by Augustus Pugin is the Palace Of Westminster.</text>
+				<template>The AGENT-1 is in the BRIDGE-2 ,  which leader is PATIENT-3 .  The architect is BRIDGE-1 ,  who was born in PATIENT-2 .  One of the significant buildings designed by BRIDGE-1 is the Palace Of Westminster . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Adare Manor is located in the Republic of Ireland, whose leader is Enda Kenny. Its architect was Augustus Pugin, who was born in Bloomsbury. Another significant building designed by Pugin is the Palace of Westminster.</text>
+				<template>AGENT-1 is located in the BRIDGE-2 ,  whose leader is PATIENT-3 .  Its architect was BRIDGE-1 ,  who was born in PATIENT-2 .  Another significant building designed by Pugin is the PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Augustus Pugin was born in Bloomsbury and was the architect of Adare Manor in the Republic of Ireland, where the leader is Enda Kenny. He also designed the significant building of the Palace of Westminster.</text>
+				<template>BRIDGE-1 was born in PATIENT-2 and was the architect of AGENT-1 in the BRIDGE-2 ,  where the leader is PATIENT-3 .  He also designed the significant building of the PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id915" size="5">
+			<originaltripleset>
+				<otriple>Addis_Ababa_City_Hall | completionDate | 1964</otriple>
+				<otriple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;@en</otriple>
+				<otriple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;@en</otriple>
+				<otriple>Addis_Ababa_City_Hall | startDate | 1961</otriple>
+				<otriple>Addis_Ababa_City_Hall | floorArea | &quot;140000.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Addis_Ababa_City_Hall | completionDate | 1964</otriple>
+				<otriple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</otriple>
+				<otriple>Addis_Ababa_City_Hall | buildingStartDate | 1961</otriple>
+				<otriple>Addis_Ababa_City_Hall | floorArea | 140000.0 (square metres)</otriple>
+				<otriple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Addis_Ababa_City_Hall</entity>
+				<entity>PATIENT-1 | 1964</entity>
+				<entity>PATIENT-2 | &quot;Government of Addis Ababa&quot;</entity>
+				<entity>PATIENT-3 | 1961</entity>
+				<entity>PATIENT-4 | 140000.0 (square metres)</entity>
+				<entity>PATIENT-5 | &quot;42 m&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Addis Ababa City Hall is 42m high and has a 140000.0 (square metres) floor area. Construction began in 1961 and it was completed in 1964. The current tenants are the Government of Addis Ababa.</text>
+				<template>AGENT-1 is 42m high and has a 140000 . 0 (square metres) floor area .  Construction began in PATIENT-3 and it was completed in PATIENT-1 .  The current tenants are the Government of Addis Ababa . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The &quot; Government of Addis Ababa&quot; are the current tenants of Addis Ababa City Hall. The building started in 1961 and was completed in 1964. It has a floor area of 140000.0 square metres and is 42 m high.</text>
+				<template>The &quot; Government of Addis Ababa&quot; are the current tenants of AGENT-1 .  The building started in PATIENT-3 and was completed in PATIENT-1 .  It has a floor area of 140000 . 0 square metres and is 42 m high . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Addis Ababa City Hall's was started in 1961 and completed in 1964. It is 42 metres high and has 140000 square metres of floor area. The &quot; Government of Addis Ababa&quot; are the current tenants of that hall.</text>
+				<template>AGENT-1's was started in PATIENT-3 and completed in PATIENT-1 .  It is 42 metres high and has 140000 square metres of floor area .  The &quot; Government of Addis Ababa&quot; are the current tenants of that hall . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id916" size="5">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | locationCountry | Japan</otriple>
+				<otriple>Akita_Museum_of_Art | floorCount | 3</otriple>
+				<otriple>Akita_Museum_of_Art | locationTown | Akita,_Akita</otriple>
+				<otriple>Akita_Museum_of_Art | location | Akita_Prefecture</otriple>
+				<otriple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Akita_Museum_of_Art | country | Japan</otriple>
+				<otriple>Akita_Museum_of_Art | floorCount | 3</otriple>
+				<otriple>Akita_Museum_of_Art | location | Akita,_Akita</otriple>
+				<otriple>Akita_Museum_of_Art | location | Akita_Prefecture</otriple>
+				<otriple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>PATIENT-1 | Japan</entity>
+				<entity>PATIENT-2 | 3</entity>
+				<entity>PATIENT-3 | Akita,_Akita</entity>
+				<entity>PATIENT-4 | Akita_Prefecture</entity>
+				<entity>PATIENT-5 | &quot;1-4-2 Nakadori&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Akita Museum of Art is an art museum at 1-4-2 Nakadori, Akita, Akita Prefecture, Japan. It was constructed with 3 floors.</text>
+				<template>AGENT-1 is an art museum at 1-4-2 Nakadori ,  Akita ,  PATIENT-4 ,  PATIENT-1 .  It was constructed with PATIENT-2 floors . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Akita Museum of Art is located in Akita, Akita, which is part of Akita Prefecture, Japan. The museum has 3 floors and its address is 1-4-2 Nakadori.</text>
+				<template>The AGENT-1 is located in Akita ,  Akita ,  which is part of PATIENT-4 ,  PATIENT-1 .  The museum has PATIENT-2 floors and its address is 1-4-2 Nakadori . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Akita Museum of Art, which has 3 floors, is an art museum in the city of Akita, Japan. It's address is 142 Nakadori, which is the Akita Prefecture.</text>
+				<template>The AGENT-1 ,  which has PATIENT-2 floors ,  is an art museum in the city of Akita ,  PATIENT-1 .  It's address is 142 Nakadori ,  which is the PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id917" size="5">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | country | Japan</otriple>
+				<otriple>Akita_Museum_of_Art | locationTown | Akita,_Akita</otriple>
+				<otriple>Akita,_Akita | subdivisionName | Akita_Prefecture</otriple>
+				<otriple>Japan | leader | Tarō_Asō</otriple>
+				<otriple>Japan | ethnicGroup | Chinese_people_in_Japan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Akita_Museum_of_Art | country | Japan</otriple>
+				<otriple>Akita_Museum_of_Art | location | Akita,_Akita</otriple>
+				<otriple>Akita,_Akita | isPartOf | Akita_Prefecture</otriple>
+				<otriple>Japan | leaderName | Tarō_Asō</otriple>
+				<otriple>Japan | ethnicGroup | Chinese_people_in_Japan</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>BRIDGE-1 | Akita,_Akita</entity>
+				<entity>BRIDGE-2 | Japan</entity>
+				<entity>PATIENT-1 | Akita_Prefecture</entity>
+				<entity>PATIENT-2 | Tarō_Asō</entity>
+				<entity>PATIENT-3 | Chinese_people_in_Japan</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Chinese are one of the ethnic groups in Japan which is led by Taro Aso. The country is the location of the Akita Museum of Art found in Akita, Akita Prefecture.</text>
+				<template>The Chinese are one of the ethnic groups in BRIDGE-2 which is led by Taro Aso .  The country is the location of the AGENT-1 found in Akita ,  PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Tarō Asō is one of the leaders in Japan, A country where there is an ethnic group of Chinese people. Also where the Akita Museum of Art is located, in Akita which is part of Akita Prefecture.</text>
+				<template>PATIENT-2 is one of the leaders in BRIDGE-2 ,  A country where there is an ethnic group of Chinese people .  Also where the AGENT-1 is located ,  in Akita which is part of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Chinese people are an ethnic group of Japan which is led by Taro Aso. The country is the location of the Akita Museum of Art in Akita, Akita Prefecture.</text>
+				<template>The Chinese people are an ethnic group of BRIDGE-2 which is led by Taro Aso .  The country is the location of the AGENT-1 in Akita ,  PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id918" size="5">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | location | Virginia</otriple>
+				<otriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</otriple>
+				<otriple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</otriple>
+				<otriple>Mason_School_of_Business | country | United_States</otriple>
+				<otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alan_B._Miller_Hall | location | Virginia</otriple>
+				<otriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</otriple>
+				<otriple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</otriple>
+				<otriple>Mason_School_of_Business | country | United_States</otriple>
+				<otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>BRIDGE-1 | Mason_School_of_Business</entity>
+				<entity>PATIENT-1 | Virginia</entity>
+				<entity>PATIENT-2 | Robert_A._M._Stern</entity>
+				<entity>PATIENT-3 | College_of_William_&amp;_Mary</entity>
+				<entity>PATIENT-4 | United_States</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alan B. Miller Hall was designed by Robert A.M. Stern; it is located in Virginia and it is owned by the College of William and Mary. Its current tenants are the Mason School of Business in the US.</text>
+				<template>Alan B .  Miller Hall was designed by Robert A . M .  Stern ;  it is located in PATIENT-1 and it is owned by the College of William and Mary .  Its current tenants are the BRIDGE-1 in the US . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The College of William and Mary is the owner of the Alan B. Miller Hall. which was designed by Robert A.M. Stern. Situated in Virginia, it has as its tenants United States based Mason School of Business.</text>
+				<template>The College of William and Mary is the owner of the Alan B .  Miller Hall .  which was designed by Robert A . M .  Stern .  Situated in PATIENT-1 ,  it has as its tenants PATIENT-4 based BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id919" size="5">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | location | Ahmedabad</otriple>
+				<otriple>Ahmedabad | country | India</otriple>
+				<otriple>Amdavad_ni_Gufa | locationTown | Gujarat</otriple>
+				<otriple>India | leaderName | Sumitra_Mahajan</otriple>
+				<otriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Amdavad_ni_Gufa | location | Ahmedabad</otriple>
+				<otriple>Ahmedabad | country | India</otriple>
+				<otriple>Amdavad_ni_Gufa | location | Gujarat</otriple>
+				<otriple>India | leaderName | Sumitra_Mahajan</otriple>
+				<otriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>BRIDGE-1 | Ahmedabad</entity>
+				<entity>BRIDGE-2 | India</entity>
+				<entity>BRIDGE-3 | Gujarat</entity>
+				<entity>PATIENT-1 | Sumitra_Mahajan</entity>
+				<entity>PATIENT-2 | Gujarat_Legislative_Assembly</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Gujarat in India is led by the Gujarat Legislative Assembly and is the location of Amdavad ni Gufa in Ahmedabad. Sumitra Mahajan is known as an Indian leader.</text>
+				<template>BRIDGE-3 in BRIDGE-2 is led by the BRIDGE-3 Legislative Assembly and is the location of AGENT-1 in BRIDGE-1 .  PATIENT-1 is known as an BRIDGE-2n leader . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Amdavad ni Gufa is located in Ahmedabad, Gujarat, India. Sumitra Mahajan is an Indian leader and Gujarat is led by the Legislative Assembly.</text>
+				<template>AGENT-1 is located in BRIDGE-1 ,  BRIDGE-3 ,  BRIDGE-2 .  PATIENT-1 is an BRIDGE-2n leader and BRIDGE-3 is led by the Legislative Assembly . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The location of Amdavad ni Gufa is Ahmedabad, Gujarat, India. Gujarat's leader is known as the Gujarat Legislative Assembly, and the name of the leader in India is Sumitra Mahajan.</text>
+				<template>The location of AGENT-1 is BRIDGE-1 ,  BRIDGE-3 ,  BRIDGE-2 .  BRIDGE-3's leader is known as the BRIDGE-3 Legislative Assembly ,  and the name of the leader in BRIDGE-2 is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id920" size="5">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leader | Ranil_Wickremesinghe</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Ampara_Hospital | region | Ampara_District</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Ampara_Hospital | region | Ampara_District</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>BRIDGE-2 | Eastern_Province,_Sri_Lanka</entity>
+				<entity>PATIENT-1 | Ranil_Wickremesinghe</entity>
+				<entity>PATIENT-2 | Ampara_District</entity>
+				<entity>PATIENT-3 | Austin_Fernando</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The leader of Sri Lanka is Ranil Wickremesinghe, but in the Eastern Province it is Austin Fernando. This is where the Ampara Hospital is located in Ampara District.</text>
+				<template>The leader of BRIDGE-1 is PATIENT-1 ,  but in the Eastern Province it is PATIENT-3 .  This is where the AGENT-1 is located in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Ampara Hospital is in the Ampara district of Eastern Province, Sri Lanka. The leader of Eastern Province is Austin Fernando and the leader of Sri Lanka is Ranil Wickremesinghe.</text>
+				<template>AGENT-1 is in the Ampara district of Eastern Province ,  BRIDGE-1 .  The leader of Eastern Province is PATIENT-3 and the leader of BRIDGE-1 is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Ampara Hospital is located in Ampara District, Eastern Province, Sri Lanka which is led by Austin Fernando. Ranil Wickremesinghe is a leader of the country.</text>
+				<template>AGENT-1 is located in PATIENT-2 ,  Eastern Province ,  BRIDGE-1 which is led by PATIENT-3 .  PATIENT-1 is a leader of the country . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id921" size="5">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | governingBody | Eastern_Provincial_Council</otriple>
+				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | governingBody | Eastern_Provincial_Council</otriple>
+				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>BRIDGE-2 | Eastern_Province,_Sri_Lanka</entity>
+				<entity>PATIENT-1 | Ranil_Wickremesinghe</entity>
+				<entity>PATIENT-2 | Eastern_Provincial_Council</entity>
+				<entity>PATIENT-3 | Sri_Jayawardenepura_Kotte</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Ranil Wickremesinghe is the leader of Sri Lanka whose capital is Sri Jayawardenepura Kotte. Ampara Hospital is in the Eastern Province which is governed by the Eastern Provincial Council.</text>
+				<template>PATIENT-1 is the leader of BRIDGE-1 whose capital is PATIENT-3 .  AGENT-1 is in the Eastern Province which is governed by the PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Ampara Hospital is in the Eastern Province, Sri Lanka. The Eastern Provincial Council is the governing body of Eastern Province. The capital of Sri Lanka is Sri Jayawardenepura Kotte and the leader of the country is Ranil Wickremesinghe.</text>
+				<template>AGENT-1 is in the Eastern Province ,  BRIDGE-1 .  The PATIENT-2 is the governing body of Eastern Province .  The capital of BRIDGE-1 is PATIENT-3 and the leader of the country is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Ampara Hospital is in the Eastern Province, Sri Lanka and is governed by Eastern Provincial Council. Ranil Wickremesinghe is a leader of Sri Lanka with the capital being Sri Jayawardenepura Kotte.</text>
+				<template>AGENT-1 is in the Eastern Province ,  BRIDGE-1 and is governed by PATIENT-2 .  PATIENT-1 is a leader of BRIDGE-1 with the capital being PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id922" size="5">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | birthPlace | San_Francisco</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</otriple>
+				<otriple>Julia_Morgan | significantProject | Hearst_Castle</otriple>
+				<otriple>Julia_Morgan | significantBuildings | Asilomar_State_Beach</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | birthPlace | San_Francisco</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</otriple>
+				<otriple>Julia_Morgan | significantProject | Hearst_Castle</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>BRIDGE-1 | Julia_Morgan</entity>
+				<entity>PATIENT-1 | San_Francisco</entity>
+				<entity>PATIENT-2 | Los_Angeles_Herald-Examiner</entity>
+				<entity>PATIENT-3 | Hearst_Castle</entity>
+				<entity>PATIENT-4 | Asilomar_State_Beach</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Julia Morgan, who was born in San Francisco, was the architect of Asilomar Conference Grounds, the Los Angeles Herald examiner building (a landmark in California), Hearst Castle and the Asilomar State Beach.</text>
+				<template>BRIDGE-1 ,  who was born in PATIENT-1 ,  was the architect of AGENT-1 ,  the Los Angeles Herald examiner building (a landmark in California) ,  PATIENT-3 and the PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id923" size="5">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | birthPlace | San_Francisco</otriple>
+				<otriple>Julia_Morgan | significantBuildings | Riverside_Art_Museum</otriple>
+				<otriple>Julia_Morgan | significantProject | Hearst_Castle</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | birthPlace | San_Francisco</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</otriple>
+				<otriple>Julia_Morgan | significantProject | Hearst_Castle</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>BRIDGE-1 | Julia_Morgan</entity>
+				<entity>PATIENT-1 | San_Francisco</entity>
+				<entity>PATIENT-2 | Riverside_Art_Museum</entity>
+				<entity>PATIENT-3 | Hearst_Castle</entity>
+				<entity>PATIENT-4 | Asilomar_State_Beach</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Julia Morgan, the architect, was born in San Francisco and some of her significant projects include Asilomar Conference Grounds, The Riverside Art Museum, Hearst Castle and Asilomar State Beach.</text>
+				<template>BRIDGE-1 ,  the architect ,  was born in PATIENT-1 and some of her significant projects include AGENT-1 ,  The PATIENT-2 ,  PATIENT-3 and PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The architect Julia Morgan was born in San Francisco and designed several significant buildings. These included the grounds of Asilomar Conference, the Riverside Art Museum, Hearst Castle and Asilomar State Beach.</text>
+				<template>The architect BRIDGE-1 was born in PATIENT-1 and designed several significant buildings .  These included the grounds of Asilomar Conference ,  the PATIENT-2 ,  PATIENT-3 and PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Born in San Francisco, Julia Morgan was an architect mostly known for designing significant buildings such as Asilomar State Beach and the Riverside Art Museum. Other buildings she designed included Asilomar Conference Grounds and Hearst Castle.</text>
+				<template>Born in PATIENT-1 ,  BRIDGE-1 was an architect mostly known for designing significant buildings such as PATIENT-4 and the PATIENT-2 .  Other buildings she designed included AGENT-1 and PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id924" size="5">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | location | New_York_City</otriple>
+				<otriple>New_York_City | country | United_States</otriple>
+				<otriple>Manhattan | leaderName | Cyrus_Vance,_Jr.</otriple>
+				<otriple>New_York_City | subdivisionName | Manhattan</otriple>
+				<otriple>New_York_City | isPartOf | New_Netherland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Asser_Levy_Public_Baths | location | New_York_City</otriple>
+				<otriple>New_York_City | country | United_States</otriple>
+				<otriple>Manhattan | leaderName | Cyrus_Vance,_Jr.</otriple>
+				<otriple>New_York_City | isPartOf | Manhattan</otriple>
+				<otriple>New_York_City | isPartOf | New_Netherland</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
+				<entity>BRIDGE-1 | New_York_City</entity>
+				<entity>BRIDGE-2 | Manhattan</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Cyrus_Vance,_Jr.</entity>
+				<entity>PATIENT-3 | New_Netherland</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Asser Levy Public Baths are in New York City in the U.S. New York City has a leader called Cyrus Vance Jr. and it is part of Manhattan and New Netherland.</text>
+				<template>The AGENT-1 are in BRIDGE-1 in the U . S .  BRIDGE-1 has a leader called Cyrus Vance Jr .  and it is part of BRIDGE-2 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Asser Levy Public Baths are in New York City (part of Manhattan) in the U.S. New York City is part of New Netherland and a leader there is Cyrus Vance Jr.</text>
+				<template>The AGENT-1 are in BRIDGE-1 (part of BRIDGE-2) in the U . S .  BRIDGE-1 is part of PATIENT-3 and a leader there is Cyrus Vance Jr . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>New York City (former part of New Netherland), is located in the United States, is a part of Manhattan (led by Cyrus Vance Jr.), is the loction of Asser Levy Public Baths.</text>
+				<template>BRIDGE-1 (former part of PATIENT-3) ,  is located in the PATIENT-1 ,  is a part of BRIDGE-2 (led by Cyrus Vance Jr . ) ,  is the loction of AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id925" size="5">
+			<originaltripleset>
+				<otriple>Birmingham | postalCode | B_postcode_area</otriple>
+				<otriple>103_Colmore_Row | architect | John_Madin</otriple>
+				<otriple>John_Madin | birthPlace | Birmingham</otriple>
+				<otriple>Birmingham | leaderName | John_Clancy_(Labour_politician)</otriple>
+				<otriple>Birmingham | governingBody | Birmingham_City_Council</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Birmingham | postalCode | B_postcode_area</otriple>
+				<otriple>103_Colmore_Row | architect | John_Madin</otriple>
+				<otriple>John_Madin | birthPlace | Birmingham</otriple>
+				<otriple>Birmingham | leaderName | John_Clancy_(Labour_politician)</otriple>
+				<otriple>Birmingham | governingBody | Birmingham_City_Council</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 103_Colmore_Row</entity>
+				<entity>BRIDGE-1 | John_Madin</entity>
+				<entity>BRIDGE-2 | Birmingham</entity>
+				<entity>PATIENT-1 | B_postcode_area</entity>
+				<entity>PATIENT-2 | John_Clancy_(Labour_politician)</entity>
+				<entity>PATIENT-3 | Birmingham_City_Council</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>John Madin, the architect who designed 103 Colmore Row, was born in Birmingham. The postal code of that area is B. and the governing body is the Birmingham City Council. Labour politician, John Clancy is the leader the area.</text>
+				<template>BRIDGE-1 ,  the architect who designed AGENT-1 ,  was born in BRIDGE-2 .  The postal code of that area is B .  and the governing body is the BRIDGE-2 City Council .  Labour politician ,  John Clancy is the leader the area . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>103 Colmore Row was designed by the architect John Madin, who was born in Birmingham, with the postcode area 'B'. Labour politician, John Clancy is the city's leader, and the local governing body is Birmingham City Council.</text>
+				<template>AGENT-1 was designed by the architect BRIDGE-1 ,  who was born in BRIDGE-2 ,  with the postcode area 'B' .  Labour politician ,  John Clancy is the city's leader ,  and the local governing body is BRIDGE-2 City Council . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The City Council, led by labour politician John Clancy, is the governing body for Birmingham. The city (which uses the B Postcode) is the birthplace of the architect John Madin who designed 103 Colmore Row.</text>
+				<template>The City Council ,  led by labour politician John Clancy ,  is the governing body for BRIDGE-2 .  The city (which uses the B Postcode) is the birthplace of the architect BRIDGE-1 who designed AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id926" size="5">
+			<originaltripleset>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>United_States | leaderTitle | President_of_the_United_States</otriple>
+				<otriple>United_States | leader | John_Roberts</otriple>
+				<otriple>250_Delaware_Avenue | location | United_States</otriple>
+				<otriple>United_States | leaderName | Barack_Obama</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>United_States | leaderTitle | President_of_the_United_States</otriple>
+				<otriple>United_States | leaderName | John_Roberts</otriple>
+				<otriple>250_Delaware_Avenue | location | United_States</otriple>
+				<otriple>United_States | leaderName | Barack_Obama</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | President_of_the_United_States</entity>
+				<entity>PATIENT-3 | John_Roberts</entity>
+				<entity>PATIENT-4 | Barack_Obama</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>250 Delaware Avenue can be found in the United States, where the leader is Barack Obama and he has the title President of the United States. John Roberts is a leader in the US and the capital of the country is Washington DC.</text>
+				<template>AGENT-1 can be found in the BRIDGE-1 ,  where the leader is PATIENT-4 and he has the title President of the BRIDGE-1 .  PATIENT-3 is a leader in the US and the capital of the country is Washington DC . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The title of the leader of the United States is the President of the United States, and the leader was Barack Obama. John Roberts is a leader in the US. The capital of the US is Washington DC, and 250 Delaware Avenue is located in the US.</text>
+				<template>The title of the leader of the BRIDGE-1 is the President of the BRIDGE-1 ,  and the leader was PATIENT-4 .  PATIENT-3 is a leader in the US .  The capital of the US is Washington DC ,  and AGENT-1 is located in the US . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

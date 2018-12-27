@@ -1,0 +1,1275 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Food" eid="Id743" size="4">
+			<originaltripleset>
+				<otriple>Amatriciana_sauce | region | Lazio</otriple>
+				<otriple>Amatriciana_sauce | country | Italy</otriple>
+				<otriple>Amatriciana_sauce | ingredient | Tomato</otriple>
+				<otriple>Amatriciana_sauce | mainIngredient | &quot;Tomatoes, guanciale, cheese , olive oil&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Amatriciana_sauce | region | Lazio</otriple>
+				<otriple>Amatriciana_sauce | country | Italy</otriple>
+				<otriple>Amatriciana_sauce | ingredient | Tomato</otriple>
+				<otriple>Amatriciana_sauce | mainIngredients | &quot;Tomatoes, guanciale, cheese, olive oil&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Amatriciana_sauce</entity>
+				<entity>PATIENT-1 | Lazio</entity>
+				<entity>PATIENT-2 | Italy</entity>
+				<entity>PATIENT-3 | Tomato</entity>
+				<entity>PATIENT-4 | &quot;Tomatoes, guanciale, cheese, olive oil&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Amatriciana sauce is a traditional Italian sauce from the region of Lazio. Its ingredients include tomatoes, guanciale, cheese and olive oil.</text>
+				<template>AGENT-1 is a traditional Italian sauce from the region of PATIENT-1 .  Its ingredients include tomatoes ,  guanciale ,  cheese and olive oil . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Amatriciana sauce is from the Lazio region of Italy. The main ingredients are Tomatoes, guanciale, cheese, and olive oil.</text>
+				<template>AGENT-1 is from the PATIENT-1 region of PATIENT-2 .  The main ingredients are PATIENT-3es ,  guanciale ,  cheese ,  and olive oil . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Amatriciana is a traditional Italian sauce from Lazio. The main ingredients are tomatoes, guanciale, cheese and olive oil.</text>
+				<template>Amatriciana is a traditional Italian sauce from PATIENT-1 .  The main ingredients are tomatoes ,  guanciale ,  cheese and olive oil . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id744" size="4">
+			<originaltripleset>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+				<otriple>Italy | leader | Pietro_Grasso</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Italy | leaderName | Sergio_Mattarella</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Italy | leaderName | Pietro_Grasso</otriple>
+				<otriple>Italy | leaderName | Sergio_Mattarella</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arrabbiata_sauce</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Rome</entity>
+				<entity>PATIENT-2 | Pietro_Grasso</entity>
+				<entity>PATIENT-3 | Sergio_Mattarella</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Pietro Grasso and Sergio Mattarella are leaders of Italy, where the capital is Rome. Arrabbiata is a sauce found in Italy.</text>
+				<template>PATIENT-2 and PATIENT-3 are leaders of BRIDGE-1 ,  where the capital is PATIENT-1 .  Arrabbiata is a sauce found in BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arrabbiata sauce can be found in Italy, the capital of which is Rome. Pietro Grasso and Sergio Mattarella are leaders of the country.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 ,  the capital of which is PATIENT-1 .  PATIENT-2 and PATIENT-3 are leaders of the country . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Pietro Grasso and Sergio Mattarella are both leaders in Italy, the capital city of which is Rome. Arrabbiata sauce comes from Italy.</text>
+				<template>PATIENT-2 and PATIENT-3 are both leaders in BRIDGE-1 ,  the capital city of which is PATIENT-1 .  AGENT-1 comes from BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id745" size="4">
+			<originaltripleset>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Arròs_negre | mainIngredient | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;@en</otriple>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+				<otriple>Arròs_negre | ingredient | Cuttlefish</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</otriple>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+				<otriple>Arròs_negre | ingredient | Cuttlefish</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | Spain</entity>
+				<entity>PATIENT-2 | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</entity>
+				<entity>PATIENT-3 | Catalonia</entity>
+				<entity>PATIENT-4 | Cuttlefish</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Arròs negre is from Catalonia Spain and its ingredients are white rice, cuttlefish or squid, cephalopod ink and cubanelle peppers.</text>
+				<template>AGENT-1 is from PATIENT-3 PATIENT-1 and its ingredients are white rice ,  cuttlefish or squid ,  cephalopod ink and cubanelle peppers . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arròs negre is a traditional dish from Catalonia, Spain. The main ingredients are white rice, cuttlefish or squid, cephalopod ink and cubanelle peppers.</text>
+				<template>AGENT-1 is a traditional dish from PATIENT-3 ,  PATIENT-1 .  The main ingredients are white rice ,  cuttlefish or squid ,  cephalopod ink and cubanelle peppers . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Arros negre is from the region of Catalonia in Spain. The main ingredients are white rice, cuttlefish or squid, cephalopod ink, cubanelle peppers.</text>
+				<template>Arros negre is from the region of PATIENT-3 in PATIENT-1 .  The main ingredients are white rice ,  cuttlefish or squid ,  cephalopod ink ,  cubanelle peppers . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id746" size="4">
+			<originaltripleset>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Arròs_negre | mainIngredient | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;@en</otriple>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+				<otriple>Arròs_negre | ingredient | White_rice</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</otriple>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+				<otriple>Arròs_negre | ingredient | White_rice</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | Spain</entity>
+				<entity>PATIENT-2 | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</entity>
+				<entity>PATIENT-3 | Catalonia</entity>
+				<entity>PATIENT-4 | White_rice</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>A traditional dish from the Catalonia region in Spain is Arròs negre . The main ingredients in it are, white rice, cuttlefish or squid, cephalopod ink, cubanelle peppers.</text>
+				<template>A traditional dish from the PATIENT-3 region in PATIENT-1 is AGENT-1  .  The main ingredients in it are ,  white rice ,  cuttlefish or squid ,  cephalopod ink ,  cubanelle peppers . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arròs negre is a traditional dish from Catalonia, Spain. The main ingredients in arròs negre are white rice, cuttlefish or squid, cephalopod ink and cubanelle peppers.</text>
+				<template>AGENT-1 is a traditional dish from PATIENT-3 ,  PATIENT-1 .  The main ingredients in arròs negre are white rice ,  cuttlefish or squid ,  cephalopod ink and cubanelle peppers . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Arròs negre is from Catalonia, Spain. The main ingredients of Arròs negre are white rice, cuttlefish or squid, cephalopod ink, cubanelle peppers.</text>
+				<template>AGENT-1 is from PATIENT-3 ,  PATIENT-1 .  The main ingredients of AGENT-1 are white rice ,  cuttlefish or squid ,  cephalopod ink ,  cubanelle peppers . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id747" size="4">
+			<originaltripleset>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Spain | ethnicGroup | Spaniards</otriple>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+				<otriple>Catalonia | leaderName | Parliament_of_Catalonia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Spain | ethnicGroup | Spaniards</otriple>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+				<otriple>Catalonia | leaderName | Parliament_of_Catalonia</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>BRIDGE-1 | Spain</entity>
+				<entity>BRIDGE-2 | Catalonia</entity>
+				<entity>PATIENT-1 | Spaniards</entity>
+				<entity>PATIENT-2 | Parliament_of_Catalonia</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Spaniards are the ethnic group in Spain, where a traditional dish is Arròs negre. It comes from the region of Catalonia, which is led by the Parliament of Catalonia.</text>
+				<template>PATIENT-1 are the ethnic group in BRIDGE-1 ,  where a traditional dish is AGENT-1 .  It comes from the region of BRIDGE-2 ,  which is led by the Parliament of BRIDGE-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arros negre is a traditional dish from Spain, where the ethnic group is the Spaniards. Arros negre is from the region of Catalonia, whose leaders are the Parliament of Catalonia.</text>
+				<template>Arros negre is a traditional dish from BRIDGE-1 ,  where the ethnic group is the PATIENT-1 .  Arros negre is from the region of BRIDGE-2 ,  whose leaders are the Parliament of BRIDGE-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Arros negre is from the Catalonia region (led by Parliament) of Spain and enjoyed by Spaniards.</text>
+				<template>Arros negre is from the BRIDGE-2 region (led by Parliament) of BRIDGE-1 and enjoyed by PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id748" size="4">
+			<originaltripleset>
+				<otriple>Asam_pedas | country | Malaysia</otriple>
+				<otriple>Malaysia | ethnicGroups | Malaysian_Malay</otriple>
+				<otriple>Sumatra | ethnicGroup | Batak</otriple>
+				<otriple>Asam_pedas | region | Sumatra</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Asam_pedas | country | Malaysia</otriple>
+				<otriple>Malaysia | ethnicGroup | Malaysian_Malay</otriple>
+				<otriple>Sumatra | ethnicGroup | Batak</otriple>
+				<otriple>Asam_pedas | region | Sumatra</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Asam_pedas</entity>
+				<entity>BRIDGE-1 | Malaysia</entity>
+				<entity>BRIDGE-2 | Sumatra</entity>
+				<entity>PATIENT-1 | Malaysian_Malay</entity>
+				<entity>PATIENT-2 | Batak</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Asam pedas is a food found in Malaysia, where the Malay live, but comes from Sumatra where the Batak live.</text>
+				<template>AGENT-1 is a food found in BRIDGE-1 ,  where the Malay live ,  but comes from BRIDGE-2 where the PATIENT-2 live . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Asam pedas is a dish from Sumatra and Malaysia. Malaysian Malay is an ethnic group in Malaysia and Batak of Sumatra.</text>
+				<template>AGENT-1 is a dish from BRIDGE-2 and BRIDGE-1 .  BRIDGE-1n Malay is an ethnic group in BRIDGE-1 and PATIENT-2 of BRIDGE-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Asam pedas is a food found in Malaysia and Sumatra. Malay is an ethnic group in Malaysia and Batak the same on Sumatra.</text>
+				<template>AGENT-1 is a food found in BRIDGE-1 and BRIDGE-2 .  Malay is an ethnic group in BRIDGE-1 and PATIENT-2 the same on BRIDGE-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id749" size="4">
+			<originaltripleset>
+				<otriple>Asam_pedas | country | Malaysia</otriple>
+				<otriple>Sumatra | ethnicGroups | Minangkabau_people</otriple>
+				<otriple>Asam_pedas | region | Sumatra</otriple>
+				<otriple>Sumatra | ethnicGroup | Malays_(ethnic_group)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Asam_pedas | country | Malaysia</otriple>
+				<otriple>Sumatra | ethnicGroup | Minangkabau_people</otriple>
+				<otriple>Asam_pedas | region | Sumatra</otriple>
+				<otriple>Sumatra | ethnicGroup | Malays_(ethnic_group)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Asam_pedas</entity>
+				<entity>BRIDGE-1 | Sumatra</entity>
+				<entity>PATIENT-1 | Malaysia</entity>
+				<entity>PATIENT-2 | Minangkabau_people</entity>
+				<entity>PATIENT-3 | Malays_(ethnic_group)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Asam pedas is a dish from Sumatra, Malaysia where there are ethnic groups like the Malays and the Minangkabau people.</text>
+				<template>AGENT-1 is a dish from BRIDGE-1 ,  PATIENT-1 where there are ethnic groups like the Malays and the PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Asam pedas is a food found in Malaysia and Sumatra. Malays are the Minangkabau people are ethnic groups in Sumatra.</text>
+				<template>AGENT-1 is a food found in PATIENT-1 and BRIDGE-1 .  Malays are the PATIENT-2 are ethnic groups in BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Asam pedas is a dish found in Malaysia and Sumatra. The Malays and Minangkabau people are ethnic groups of Sumatra.</text>
+				<template>AGENT-1 is a dish found in PATIENT-1 and BRIDGE-1 .  The Malays and PATIENT-2 are ethnic groups of BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id750" size="4">
+			<originaltripleset>
+				<otriple>Bacon_Explosion | country | United_States</otriple>
+				<otriple>United_States | leader | Barack_Obama</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bacon_Explosion | country | United_States</otriple>
+				<otriple>United_States | leaderName | Barack_Obama</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_Explosion</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Barack_Obama</entity>
+				<entity>PATIENT-2 | Asian_Americans</entity>
+				<entity>PATIENT-3 | Washington,_D.C.</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bacon Explosion originated in the United States, where Barack Obama is leader, Washing DC is the capital and where Asian Americans are an ethnic group.</text>
+				<template>AGENT-1 originated in the BRIDGE-1 ,  where PATIENT-1 is leader ,  Washing DC is the capital and where PATIENT-2 are an ethnic group . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The United States, capital city Washington, D.C. , is led by Barack Obama. Asian Americans are one of the ethnic groups in the U.S. The country is also the origin of Bacon Explosion.</text>
+				<template>The BRIDGE-1 ,  capital city Washington ,  D . C .   ,  is led by PATIENT-1 .  PATIENT-2 are one of the ethnic groups in the U . S .  The country is also the origin of AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id751" size="4">
+			<originaltripleset>
+				<otriple>Bacon_Explosion | country | United_States</otriple>
+				<otriple>United_States | leader | John_Roberts</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bacon_Explosion | country | United_States</otriple>
+				<otriple>United_States | leaderName | John_Roberts</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_Explosion</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | John_Roberts</entity>
+				<entity>PATIENT-2 | Asian_Americans</entity>
+				<entity>PATIENT-3 | Washington,_D.C.</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The United States is the country of the Bacon Explosion and Asian Americans are one of the ethnic groups found there. John Roberts is the leader and the capital is Washington, D.C.</text>
+				<template>The BRIDGE-1 is the country of the AGENT-1 and PATIENT-2 are one of the ethnic groups found there .  PATIENT-1 is the leader and the capital is Washington ,  D . C . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bacon Explosion comes from the United States where John Roberts is a leader.The country's capital city is Washington D.C. and Asian Americans are one of the ethnic groups of the USA.</text>
+				<template>AGENT-1 comes from the BRIDGE-1 where PATIENT-1 is a leader . The country's capital city is Washington D . C .  and PATIENT-2 are one of the ethnic groups of the USA . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>John Roberts is a leader in the US where the Bacon Explosion comes from. The capital of the country is Washington DC and one of the ethnic groups are the Asian Americans.</text>
+				<template>PATIENT-1 is a leader in the US where the AGENT-1 comes from .  The capital of the country is Washington DC and one of the ethnic groups are the PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id752" size="4">
+			<originaltripleset>
+				<otriple>Bacon_sandwich | ingredient | Ketchup</otriple>
+				<otriple>BLT | variations | Club_sandwich</otriple>
+				<otriple>Bacon_sandwich | hasVariant | BLT</otriple>
+				<otriple>Bacon_sandwich | country | United_Kingdom</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bacon_sandwich | ingredient | Ketchup</otriple>
+				<otriple>BLT | dishVariation | Club_sandwich</otriple>
+				<otriple>Bacon_sandwich | dishVariation | BLT</otriple>
+				<otriple>Bacon_sandwich | country | United_Kingdom</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_sandwich</entity>
+				<entity>BRIDGE-1 | BLT</entity>
+				<entity>PATIENT-1 | Ketchup</entity>
+				<entity>PATIENT-2 | Club_sandwich</entity>
+				<entity>PATIENT-3 | United_Kingdom</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bacon sandwiches are popular in the UK. Ketchup can be added to them and a variation is the BLT which is similar to a club sandwich.</text>
+				<template>AGENT-1es are popular in the UK .  PATIENT-1 can be added to them and a variation is the BRIDGE-1 which is similar to a club sandwich . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bacon sandwich is a dish from the UK that ketchup is often added to. A variant of this sandwich is a BLT, which itself is a variation of the club sandwich.</text>
+				<template>AGENT-1 is a dish from the UK that ketchup is often added to .  A variant of this sandwich is a BRIDGE-1 ,  which itself is a variation of the club sandwich . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The BLT is a variation of both the bacon sandwich and the club sandwich. Bacon sandwiches are popular in the UK and can have the added ingredient of ketchup.</text>
+				<template>The BRIDGE-1 is a variation of both the bacon sandwich and the club sandwich .  AGENT-1es are popular in the UK and can have the added ingredient of ketchup . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id753" size="4">
+			<originaltripleset>
+				<otriple>Bacon_sandwich | mainIngredient | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;@en</otriple>
+				<otriple>Bacon_sandwich | country | United_Kingdom</otriple>
+				<otriple>Bacon_sandwich | alias | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;@en</otriple>
+				<otriple>Bacon_sandwich | ingredient | Condiment</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bacon_sandwich | mainIngredients | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;</otriple>
+				<otriple>Bacon_sandwich | country | United_Kingdom</otriple>
+				<otriple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</otriple>
+				<otriple>Bacon_sandwich | ingredient | Condiment</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_sandwich</entity>
+				<entity>PATIENT-1 | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;</entity>
+				<entity>PATIENT-2 | United_Kingdom</entity>
+				<entity>PATIENT-3 | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</entity>
+				<entity>PATIENT-4 | Condiment</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The country that bacon sandwich comes from is the United Kingdom. Its main ingredients are bread and bacon and a condiment, often ketchup or brown sauce. A bacon sandwich can also be known as a bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, or bacon muffin.</text>
+				<template>The country that bacon sandwich comes from is the PATIENT-2 .  Its main ingredients are bread and bacon and a condiment ,  often ketchup or brown sauce .  A bacon sandwich can also be known as a bacon butty ,  bacon sarnie ,  rasher sandwich ,  bacon sanger ,  piece 'n bacon ,  bacon cob ,  bacon barm ,  or bacon muffin . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bacon sandwich is a dish from the United Kingdom. It is also known as a bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, or bacon muffin. The main ingredients in a Bacon sandwich are bread and bacon and it can be served with ketchup or brown sauce as a condiment.</text>
+				<template>AGENT-1 is a dish from the PATIENT-2 .  It is also known as a bacon butty ,  bacon sarnie ,  rasher sandwich ,  bacon sanger ,  piece 'n bacon ,  bacon cob ,  bacon barm ,  or bacon muffin .  The main ingredients in a AGENT-1 are bread and bacon and it can be served with ketchup or brown sauce as a condiment . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id754" size="4">
+			<originaltripleset>
+				<otriple>Baked_Alaska | course | Dessert</otriple>
+				<otriple>Dessert | hasVariant | Cookie</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baked_Alaska | course | Dessert</otriple>
+				<otriple>Dessert | dishVariation | Cookie</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>BRIDGE-1 | Dessert</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Cookie</entity>
+				<entity>PATIENT-2 | African_Americans</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Baked Alaska and cookies are desserts. Baked Alaska comes from the U.S. which has African Americans as an ethnic group.</text>
+				<template>AGENT-1 and cookies are desserts .  AGENT-1 comes from the U . S .  which has PATIENT-2 as an ethnic group . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baked Alaska and cookie is a type of dessert and comes from the United States.African Americans are one of the country's ethnic group.</text>
+				<template>AGENT-1 and cookie is a type of dessert and comes from the BRIDGE-2 . PATIENT-2 are one of the country's ethnic group . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id755" size="4">
+			<originaltripleset>
+				<otriple>Baked_Alaska | ingredientName | &quot;Meringue, ice cream,sponge cakeorChristmas pudding&quot;</otriple>
+				<otriple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;@en</otriple>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+				<otriple>Baked_Alaska | ingredient | Sponge_cake</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</otriple>
+				<otriple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;</otriple>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+				<otriple>Baked_Alaska | ingredient | Sponge_cake</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>PATIENT-1 | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</entity>
+				<entity>PATIENT-2 | &quot;Paris, New York or Hong Kong&quot;</entity>
+				<entity>PATIENT-3 | United_States</entity>
+				<entity>PATIENT-4 | Sponge_cake</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Meringue, ice cream, sponge cake or Christmas pudding are the main ingredients of Baked Alaska which is popular in Paris, New York and Hong Kong and originated in the United States.</text>
+				<template>Meringue ,  ice cream ,  sponge cake or Christmas pudding are the main ingredients of AGENT-1 which is popular in Paris ,  New York and Hong Kong and originated in the PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baked Alaska comes from the US and is popular in Paris, New York and Hong Kong. The main ingredients are meringue, ice cream and sponge cake (or Christmas pudding).</text>
+				<template>AGENT-1 comes from the US and is popular in Paris ,  New York and Hong Kong .  The main ingredients are meringue ,  ice cream and sponge cake (or Christmas pudding) . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The dish of Baked Alaska is found in the US, Hong Kong, New York and Paris. The main ingredients are Meringue, ice cream, sponge cake or Christmas pudding.</text>
+				<template>The dish of AGENT-1 is found in the US ,  Hong Kong ,  New York and Paris .  The main ingredients are Meringue ,  ice cream ,  sponge cake or Christmas pudding . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id756" size="4">
+			<originaltripleset>
+				<otriple>Baked_Alaska | region | Hong_Kong</otriple>
+				<otriple>Baked_Alaska | ingredientName | &quot;Meringue, ice cream,sponge cakeorChristmas pudding&quot;</otriple>
+				<otriple>Baked_Alaska | country | &quot;France, United States or China&quot;@en</otriple>
+				<otriple>Baked_Alaska | ingredient | Meringue</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baked_Alaska | region | Hong_Kong</otriple>
+				<otriple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</otriple>
+				<otriple>Baked_Alaska | country | &quot;France, United States or China&quot;</otriple>
+				<otriple>Baked_Alaska | ingredient | Meringue</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>PATIENT-1 | Hong_Kong</entity>
+				<entity>PATIENT-2 | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</entity>
+				<entity>PATIENT-3 | &quot;France, United States or China&quot;</entity>
+				<entity>PATIENT-4 | Meringue</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Baked Alaska comes from Hong Kong, France, the United States or China and contains Meringue, ice cream, sponge cake or Christmas pudding .</text>
+				<template>AGENT-1 comes from PATIENT-1 ,  France ,  the United States or China and contains PATIENT-4 ,  ice cream ,  sponge cake or Christmas pudding  . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baked Alaska hails from Hong Kong but France, the US and China all claim to have invented the dish. The main ingredients are Meringue, ice cream, sponge cake or Christmas pudding.</text>
+				<template>AGENT-1 hails from PATIENT-1 but France ,  the US and China all claim to have invented the dish .  The main ingredients are PATIENT-4 ,  ice cream ,  sponge cake or Christmas pudding . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id757" size="4">
+			<originaltripleset>
+				<otriple>Baked_Alaska | region | Hong_Kong</otriple>
+				<otriple>Baked_Alaska | ingredientName | &quot;Meringue, ice cream,sponge cakeorChristmas pudding&quot;</otriple>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+				<otriple>Baked_Alaska | ingredient | Ice_cream</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baked_Alaska | region | Hong_Kong</otriple>
+				<otriple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</otriple>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+				<otriple>Baked_Alaska | ingredient | Ice_cream</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>PATIENT-1 | Hong_Kong</entity>
+				<entity>PATIENT-2 | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</entity>
+				<entity>PATIENT-3 | United_States</entity>
+				<entity>PATIENT-4 | Ice_cream</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Baked Alaska is served in the region of Hong Kong and known to be from the USA. The main ingredients are meringue, ice cream and sponge cake (or Christmas pudding).</text>
+				<template>AGENT-1 is served in the region of PATIENT-1 and known to be from the USA .  The main ingredients are meringue ,  ice cream and sponge cake (or Christmas pudding) . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baked Alaska comes from both Hong Kong and the United States. The main ingredients are Meringue, ice cream, sponge cake or Christmas pudding.</text>
+				<template>AGENT-1 comes from both PATIENT-1 and the PATIENT-3 .  The main ingredients are Meringue ,  ice cream ,  sponge cake or Christmas pudding . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Meringue, ice cream, sponge cake or Christmas pudding are main ingredients in baked Alaska which is served in the region of Hong Kong and comes from the United States.</text>
+				<template>Meringue ,  ice cream ,  sponge cake or Christmas pudding are main ingredients in baked Alaska which is served in the region of PATIENT-1 and comes from the PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id758" size="4">
+			<originaltripleset>
+				<otriple>Bakewell_pudding | region | Derbyshire_Dales</otriple>
+				<otriple>Bakewell_pudding | hasVariant | Bakewell_tart</otriple>
+				<otriple>Derbyshire_Dales | isPartOf | Derbyshire</otriple>
+				<otriple>Bakewell_tart | ingredient | Fruit_preserves</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bakewell_pudding | region | Derbyshire_Dales</otriple>
+				<otriple>Bakewell_pudding | dishVariation | Bakewell_tart</otriple>
+				<otriple>Derbyshire_Dales | isPartOf | Derbyshire</otriple>
+				<otriple>Bakewell_tart | ingredient | Fruit_preserves</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>BRIDGE-1 | Derbyshire_Dales</entity>
+				<entity>BRIDGE-2 | Bakewell_tart</entity>
+				<entity>PATIENT-1 | Derbyshire</entity>
+				<entity>PATIENT-2 | Fruit_preserves</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bakewell pudding is from the Derbyshire Dales region in Derbyshire. It's a variant of a bakewell tart and fruit preserves are one of the ingredients used in it.</text>
+				<template>AGENT-1 is from the BRIDGE-1 region in PATIENT-1 .  It's a variant of a bakewell tart and fruit preserves are one of the ingredients used in it . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A variant of bakewell pudding is bakewell tart. Bakewell pudding is from the Derbyshire Dales region which is part of Derbyshire. Fruit preserves are found in the Bakewell tart.</text>
+				<template>A variant of bakewell pudding is bakewell tart .  AGENT-1 is from the BRIDGE-1 region which is part of PATIENT-1 .  PATIENT-2 are found in the BRIDGE-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id759" size="4">
+			<originaltripleset>
+				<otriple>Bakso | ingredient | Tapioca</otriple>
+				<otriple>Bakso | country | &quot;Indonesia, derived from Chinese meat ball&quot;@en</otriple>
+				<otriple>Bakso | mainIngredient | &quot;Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, fried shallots&quot;@en</otriple>
+				<otriple>Bakso | region | &quot;Nationwide in Indonesia, also popular in neighboring Southeast Asian countries&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bakso | ingredient | Tapioca</otriple>
+				<otriple>Bakso | country | Indonesia</otriple>
+				<otriple>Bakso | mainIngredients | &quot;Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, fried shallots&quot;</otriple>
+				<otriple>Bakso | region | &quot;Nationwide in Indonesia, also popular in neighboring Southeast Asian countries&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>PATIENT-1 | Tapioca</entity>
+				<entity>PATIENT-2 | Indonesia</entity>
+				<entity>PATIENT-3 | &quot;Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, fried shallots&quot;</entity>
+				<entity>PATIENT-4 | &quot;Nationwide in Indonesia, also popular in neighboring Southeast Asian countries&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bakso is a traditional dish throughout Indonesia and is popular in neighbouring Southeast Asian countries too. Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, and fried shallots are main ingredients in Bakso.</text>
+				<template>AGENT-1 is a traditional dish throughout PATIENT-2 and is popular in neighbouring Southeast Asian countries too .  Ground beef ,  tapioca ,  noodle ,  rice vermicelli ,  beef broth ,  kailan ,  celery ,  salted vegetables ,  and fried shallots are main ingredients in AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bakso is an Indonesian dish which is also popular in neighbouring Southeast Asian countries. The main ingredients of the dish are ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables and fried shallots.</text>
+				<template>AGENT-1 is an PATIENT-2n dish which is also popular in neighbouring Southeast Asian countries .  The main ingredients of the dish are ground beef ,  tapioca ,  noodle ,  rice vermicelli ,  beef broth ,  kailan ,  celery ,  salted vegetables and fried shallots . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bakso is an Indonesian dish also popular in neighbouring Southeast Asian countries and includes the ingredients ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables and fried shallots.</text>
+				<template>AGENT-1 is an PATIENT-2n dish also popular in neighbouring Southeast Asian countries and includes the ingredients ground beef ,  tapioca ,  noodle ,  rice vermicelli ,  beef broth ,  kailan ,  celery ,  salted vegetables and fried shallots . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id760" size="4">
+			<originaltripleset>
+				<otriple>Bakso | region | Indonesia</otriple>
+				<otriple>Bakso | ingredient | Noodle</otriple>
+				<otriple>Bakso | country | &quot;Indonesia, derived from Chinese meat ball&quot;@en</otriple>
+				<otriple>Bakso | mainIngredient | &quot;Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, fried shallots&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bakso | region | Indonesia</otriple>
+				<otriple>Bakso | ingredient | Noodle</otriple>
+				<otriple>Bakso | country | Indonesia</otriple>
+				<otriple>Bakso | mainIngredients | &quot;Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, fried shallots&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+				<entity>PATIENT-2 | Noodle</entity>
+				<entity>PATIENT-3 | &quot;Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, fried shallots&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bakso is a food from the Country of Indonesia. Ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, and fried shallots are main ingredients in Bakso.</text>
+				<template>AGENT-1 is a food from the Country of PATIENT-1 .  Ground beef ,  tapioca ,  noodle ,  rice vermicelli ,  beef broth ,  kailan ,  celery ,  salted vegetables ,  and fried shallots are main ingredients in AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bakso is a food found in Indonesia. The main ingredients of the dish are ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables and fried shallots.</text>
+				<template>AGENT-1 is a food found in PATIENT-1 .  The main ingredients of the dish are ground beef ,  tapioca ,  noodle ,  rice vermicelli ,  beef broth ,  kailan ,  celery ,  salted vegetables and fried shallots . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bakso is a food found in Indonesia it contains ground beef, tapioca, noodle, rice vermicelli, beef broth, kailan, celery, salted vegetables, and fried shallots.</text>
+				<template>AGENT-1 is a food found in PATIENT-1 it contains ground beef ,  tapioca ,  noodle ,  rice vermicelli ,  beef broth ,  kailan ,  celery ,  salted vegetables ,  and fried shallots . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id761" size="4">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | ingredient | Kidney_bean</otriple>
+				<otriple>Bandeja_paisa | ingredientName | &quot;red beans,pork belly, whiterice,ground meat,chicharon,fried egg,plantain(patacones),chorizo, arepa, hogao sauce,black pudding(morcilla),avocadoandlemon&quot;</otriple>
+				<otriple>Bandeja_paisa | region | Paisa_Region</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bandeja_paisa | ingredient | Kidney_bean</otriple>
+				<otriple>Bandeja_paisa | mainIngredients | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</otriple>
+				<otriple>Bandeja_paisa | region | Paisa_Region</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>PATIENT-1 | Kidney_bean</entity>
+				<entity>PATIENT-2 | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</entity>
+				<entity>PATIENT-3 | Paisa_Region</entity>
+				<entity>PATIENT-4 | Colombian_cuisine</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bandeja paisa is part of Colombian cuisine that originates from the Paisa region. Main ingredients are kidney beans, red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon.</text>
+				<template>AGENT-1 is part of PATIENT-4 that originates from the Paisa region .  Main ingredients are kidney beans ,  red beans ,  pork belly ,  white rice ,  ground meat ,  chicharon ,  fried egg ,  plantain (patacones) ,  chorizo ,  arepa ,  hogao sauce ,  black pudding (morcilla) ,  avocado and lemon . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bandeja paisa is a traditional dish from the Paisa and Colombian regions. The main ingredients in bandeja paisa are red kidney beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon.</text>
+				<template>AGENT-1 is a traditional dish from the Paisa and Colombian regions .  The main ingredients in bandeja paisa are red kidney beans ,  pork belly ,  white rice ,  ground meat ,  chicharon ,  fried egg ,  plantain (patacones) ,  chorizo ,  arepa ,  hogao sauce ,  black pudding (morcilla) ,  avocado and lemon . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bandeja paisa originates from the Paisa region and is part of Colombian cuisine. It includes red and kidney beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon.</text>
+				<template>AGENT-1 originates from the Paisa region and is part of PATIENT-4 .  It includes red and kidney beans ,  pork belly ,  white rice ,  ground meat ,  chicharon ,  fried egg ,  plantain (patacones) ,  chorizo ,  arepa ,  hogao sauce ,  black pudding (morcilla) ,  avocado and lemon . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id762" size="4">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | ingredientName | &quot;red beans,pork belly, whiterice,ground meat,chicharon,fried egg,plantain(patacones),chorizo, arepa, hogao sauce,black pudding(morcilla),avocadoandlemon&quot;</otriple>
+				<otriple>Bandeja_paisa | region | Paisa_Region</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+				<otriple>Bandeja_paisa | ingredient | Hogao</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bandeja_paisa | mainIngredients | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</otriple>
+				<otriple>Bandeja_paisa | region | Paisa_Region</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+				<otriple>Bandeja_paisa | ingredient | Hogao</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>PATIENT-1 | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</entity>
+				<entity>PATIENT-2 | Paisa_Region</entity>
+				<entity>PATIENT-3 | Colombian_cuisine</entity>
+				<entity>PATIENT-4 | Hogao</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bandeja paisa is a Colombian cuisine from the Paisa region. The main ingredients of Bandeja paisa are: red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;.</text>
+				<template>AGENT-1 is a PATIENT-3 from the Paisa region .  The main ingredients of AGENT-1 are :  red beans ,  pork belly ,  white rice ,  ground meat ,  chicharon ,  fried egg ,  plantain (patacones) ,  chorizo ,  arepa ,  hogao sauce ,  black pudding (morcilla) ,  avocado and lemon&quot; . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The main ingredients of Bandeja paisa are red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon. The dish is from Colombian cuisine and originates in the Paisa region.</text>
+				<template>The main ingredients of AGENT-1 are red beans ,  pork belly ,  white rice ,  ground meat ,  chicharon ,  fried egg ,  plantain (patacones) ,  chorizo ,  arepa ,  hogao sauce ,  black pudding (morcilla) ,  avocado and lemon .  The dish is from PATIENT-3 and originates in the Paisa region . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bandeja paisa is a colombian cuisine from the Paisa region. The main ingredients are red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon.</text>
+				<template>AGENT-1 is a colombian cuisine from the Paisa region .  The main ingredients are red beans ,  pork belly ,  white rice ,  ground meat ,  chicharon ,  fried egg ,  plantain (patacones) ,  chorizo ,  arepa ,  hogao sauce ,  black pudding (morcilla) ,  avocado and lemon . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id763" size="4">
+			<originaltripleset>
+				<otriple>Barny_Cakes | country | France</otriple>
+				<otriple>France | language | French_language</otriple>
+				<otriple>France | leaderName | Gérard_Larcher</otriple>
+				<otriple>France | leader | François_Hollande</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Barny_Cakes | country | France</otriple>
+				<otriple>France | language | French_language</otriple>
+				<otriple>France | leaderName | Gérard_Larcher</otriple>
+				<otriple>France | leaderName | François_Hollande</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Barny_Cakes</entity>
+				<entity>BRIDGE-1 | France</entity>
+				<entity>PATIENT-1 | French_language</entity>
+				<entity>PATIENT-2 | Gérard_Larcher</entity>
+				<entity>PATIENT-3 | François_Hollande</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Barny Cakes comes from France where French is spoken and leaders include Gerard Larcher and Francois Hollande.</text>
+				<template>AGENT-1 comes from BRIDGE-1 where French is spoken and leaders include Gerard Larcher and Francois Hollande . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Barny Cakes come from is France where they speak French. The leader is either François Hollande and/or Gerard Larcher.</text>
+				<template>AGENT-1 come from is BRIDGE-1 where they speak French .  The leader is either PATIENT-3 and/or Gerard Larcher . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>France, where French is spoken and which has the leaders Francois Hollande and Gérard Larcher is also home to the Barny cake.</text>
+				<template>BRIDGE-1 ,  where French is spoken and which has the leaders Francois Hollande and PATIENT-2 is also home to the Barny cake . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id764" size="4">
+			<originaltripleset>
+				<otriple>Batagor | hasVariant | Siomay</otriple>
+				<otriple>Siomay | variations | Shumai</otriple>
+				<otriple>Shumai | ingredient | Shiitake</otriple>
+				<otriple>Batagor | country | &quot;Indonesia&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Batagor | country | Indonesia</otriple>
+				<otriple>Batagor | dishVariation | Siomay</otriple>
+				<otriple>Siomay | dishVariation | Shumai</otriple>
+				<otriple>Shumai | ingredient | Shiitake</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Batagor</entity>
+				<entity>BRIDGE-1 | Siomay</entity>
+				<entity>BRIDGE-2 | Shumai</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+				<entity>PATIENT-2 | Shiitake</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Batagor, which is found in Indonesia and Siomay are both variations of the same dish. Shumai is a variation of the dish Siomay while Shiitake is an ingredient of Shumai.</text>
+				<template>AGENT-1 ,  which is found in PATIENT-1 and BRIDGE-1 are both variations of the same dish .  BRIDGE-2 is a variation of the dish BRIDGE-1 while PATIENT-2 is an ingredient of BRIDGE-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Batagor originates from the country of Indonesia, Shumai is a variation of the dish Siomay and contains Shiitake.</text>
+				<template>AGENT-1 originates from the country of PATIENT-1 ,  BRIDGE-2 is a variation of the dish BRIDGE-1 and contains PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Batagor, found in Indonesia, is a variation of the dish Siomay. Another variation of that dish is Shumai, which is made using shiitake mushrooms.</text>
+				<template>AGENT-1 ,  found in PATIENT-1 ,  is a variation of the dish BRIDGE-1 .  Another variation of that dish is BRIDGE-2 ,  which is made using shiitake mushrooms . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id765" size="4">
+			<originaltripleset>
+				<otriple>Batchoy | country | Philippines</otriple>
+				<otriple>Batchoy | mainIngredient | &quot;noodles, pork organs, vegetables, chicken, shrimp, beef&quot;@en</otriple>
+				<otriple>Batchoy | ingredient | Pork</otriple>
+				<otriple>Batchoy | region | La_Paz,_Iloilo_City</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Batchoy | country | Philippines</otriple>
+				<otriple>Batchoy | mainIngredients | &quot;noodles, pork organs, vegetables, chicken, shrimp, beef&quot;</otriple>
+				<otriple>Batchoy | ingredient | Pork</otriple>
+				<otriple>Batchoy | region | La_Paz,_Iloilo_City</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Batchoy</entity>
+				<entity>PATIENT-1 | Philippines</entity>
+				<entity>PATIENT-2 | &quot;noodles, pork organs, vegetables, chicken, shrimp, beef&quot;</entity>
+				<entity>PATIENT-3 | Pork</entity>
+				<entity>PATIENT-4 | La_Paz,_Iloilo_City</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>La Paz, Iloilo City, Philippines is the home of Batchoy. The main ingredients of batchoy are noodles, pork organs, vegetables, chicken, shrimp, and beef.</text>
+				<template>La Paz ,  Iloilo City ,  PATIENT-1 is the home of AGENT-1 .  The main ingredients of batchoy are noodles ,  pork organs ,  vegetables ,  chicken ,  shrimp ,  and beef . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Batchoy is a food found in La Paz, Iloilo City, Philippines. The main ingredients of Batchoy are noodles, pork organs, vegetables, chicken, shrimp, beef.</text>
+				<template>AGENT-1 is a food found in La Paz ,  Iloilo City ,  PATIENT-1 .  The main ingredients of AGENT-1 are noodles ,  pork organs ,  vegetables ,  chicken ,  shrimp ,  beef . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id766" size="4">
+			<originaltripleset>
+				<otriple>Batchoy | ingredient | Chicken</otriple>
+				<otriple>Batchoy | country | Philippines</otriple>
+				<otriple>Batchoy | course | Soup</otriple>
+				<otriple>Batchoy | mainIngredient | &quot;noodles, pork organs, vegetables, chicken, shrimp, beef&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Batchoy | ingredient | Chicken</otriple>
+				<otriple>Batchoy | country | Philippines</otriple>
+				<otriple>Batchoy | course | Soup</otriple>
+				<otriple>Batchoy | mainIngredients | &quot;noodles, pork organs, vegetables, chicken, shrimp, beef&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Batchoy</entity>
+				<entity>PATIENT-1 | Chicken</entity>
+				<entity>PATIENT-2 | Philippines</entity>
+				<entity>PATIENT-3 | Soup</entity>
+				<entity>PATIENT-4 | &quot;noodles, pork organs, vegetables, chicken, shrimp, beef&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Philippines is the home of the soup dish Batchoy. The main ingredients are noodles, pork organs, vegetables, chicken, shrimp and beef.</text>
+				<template>PATIENT-2 is the home of the soup dish AGENT-1 .  The main ingredients are noodles ,  pork organs ,  vegetables ,  chicken ,  shrimp and beef . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Batchoy is a soup from the Philippines. The main ingredients of batchoy are noodles, pork organs, vegetables, chicken, shrimp, and beef.</text>
+				<template>AGENT-1 is a soup from the PATIENT-2 .  The main ingredients of batchoy are noodles ,  pork organs ,  vegetables ,  chicken ,  shrimp ,  and beef . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Batchoy is a soup dish from the Philippines and is made with noodles, pork organs, vegetables, chicken, shrimp and beef.</text>
+				<template>AGENT-1 is a soup dish from the PATIENT-2 and is made with noodles ,  pork organs ,  vegetables ,  chicken ,  shrimp and beef . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id767" size="4">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | country | Singapore</otriple>
+				<otriple>Beef_kway_teow | mainIngredient | &quot;Kway teow , beef tenderloin, gula Melaka ,sliced, dried black beans, garlic, dark soy sauce, lengkuas , oyster sauce, soya sauce, chilli and sesame oil&quot;@en</otriple>
+				<otriple>Beef_kway_teow | region | &quot;Nationwide in Singapore and Indonesia&quot;@en</otriple>
+				<otriple>Beef_kway_teow | ingredient | Sesame_oil</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Beef_kway_teow | country | Singapore</otriple>
+				<otriple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</otriple>
+				<otriple>Beef_kway_teow | region | &quot;Nationwide in Singapore and Indonesia&quot;</otriple>
+				<otriple>Beef_kway_teow | ingredient | Sesame_oil</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>PATIENT-1 | Singapore</entity>
+				<entity>PATIENT-2 | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</entity>
+				<entity>PATIENT-3 | &quot;Nationwide in Singapore and Indonesia&quot;</entity>
+				<entity>PATIENT-4 | Sesame_oil</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Beef kway teow is available nationwide in Singapore (where its from) and Indonesia. The main ingredients in it are; Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil.</text>
+				<template>AGENT-1 is available nationwide in PATIENT-1 (where its from) and Indonesia .  The main ingredients in it are ;  Kway teow ,  beef tender loin ,  gula Melaka ,  sliced ,  dried black beans ,  garlic ,  dark soy sauce ,  lengkuas ,  oyster sauce ,  soya sauce ,  chilli and sesame oil . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Beef kway teow is a popular dish in Singapore and Indonesia. The main ingredients for Beef Kway Teow are: Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil.</text>
+				<template>AGENT-1 is a popular dish in PATIENT-1 and Indonesia .  The main ingredients for Beef Kway Teow are :  Kway teow ,  beef tender loin ,  gula Melaka ,  sliced ,  dried black beans ,  garlic ,  dark soy sauce ,  lengkuas ,  oyster sauce ,  soya sauce ,  chilli and sesame oil . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Beef kway teow is a dish popular in Singapore and Indonesia. Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil are the main ingredients.</text>
+				<template>AGENT-1 is a dish popular in PATIENT-1 and Indonesia .  Kway teow ,  beef tender loin ,  gula Melaka ,  sliced ,  dried black beans ,  garlic ,  dark soy sauce ,  lengkuas ,  oyster sauce ,  soya sauce ,  chilli and sesame oil are the main ingredients . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id768" size="4">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | region | Singapore</otriple>
+				<otriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;@en</otriple>
+				<otriple>Singapore | language | Standard_Chinese</otriple>
+				<otriple>Singapore | leaderName | Halimah_Yacob</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Beef_kway_teow | region | Singapore</otriple>
+				<otriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</otriple>
+				<otriple>Singapore | language | Standard_Chinese</otriple>
+				<otriple>Singapore | leaderName | Halimah_Yacob</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>PATIENT-1 | &quot;Singapore and Indonesia&quot;</entity>
+				<entity>PATIENT-2 | Standard_Chinese</entity>
+				<entity>PATIENT-3 | Halimah_Yacob</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Beef kway teow is a dish commonly found in Indonesia. The same dish is found in Singapore, where Halimah Yacob is a leader and Standard Chinese is the language spoken.</text>
+				<template>AGENT-1 is a dish commonly found in Indonesia .  The same dish is found in BRIDGE-1 ,  where PATIENT-3 is a leader and PATIENT-2 is the language spoken . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Beef kway teow is found in Indonesia and Singapore. Halimah Yacob is a leader of Standard Chinese speaking Singapore.</text>
+				<template>AGENT-1 is found in Indonesia and BRIDGE-1 .  PATIENT-3 is a leader of PATIENT-2 speaking BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id769" size="4">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | region | Singapore</otriple>
+				<otriple>Beef_kway_teow | mainIngredient | &quot;Kway teow , beef tenderloin, gula Melaka ,sliced, dried black beans, garlic, dark soy sauce, lengkuas , oyster sauce, soya sauce, chilli and sesame oil&quot;@en</otriple>
+				<otriple>Beef_kway_teow | country | Indonesia</otriple>
+				<otriple>Beef_kway_teow | ingredient | Sesame_oil</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Beef_kway_teow | region | Singapore</otriple>
+				<otriple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</otriple>
+				<otriple>Beef_kway_teow | country | Indonesia</otriple>
+				<otriple>Beef_kway_teow | ingredient | Sesame_oil</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>PATIENT-1 | Singapore</entity>
+				<entity>PATIENT-2 | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</entity>
+				<entity>PATIENT-3 | Indonesia</entity>
+				<entity>PATIENT-4 | Sesame_oil</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Beef kway teow is a popular food of Indonesia that comes from the Singapore region. Its ingredients include kway teow, beef tender loin, gula Melaka, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, chilli and sesame oil.</text>
+				<template>AGENT-1 is a popular food of PATIENT-3 that comes from the PATIENT-1 region .  Its ingredients include kway teow ,  beef tender loin ,  gula Melaka ,  dried black beans ,  garlic ,  dark soy sauce ,  lengkuas ,  oyster sauce ,  chilli and sesame oil . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Beef kway teow originates from Singapore and Indonesia. Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil are the main ingredients of the dish.</text>
+				<template>AGENT-1 originates from PATIENT-1 and PATIENT-3 .  Kway teow ,  beef tender loin ,  gula Melaka ,  sliced ,  dried black beans ,  garlic ,  dark soy sauce ,  lengkuas ,  oyster sauce ,  soya sauce ,  chilli and sesame oil are the main ingredients of the dish . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Beef kway teow originates from Singapore and Indonesia.The main ingredients of the dish are: Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil.</text>
+				<template>AGENT-1 originates from PATIENT-1 and PATIENT-3 . The main ingredients of the dish are :  Kway teow ,  beef tender loin ,  gula Melaka ,  sliced ,  dried black beans ,  garlic ,  dark soy sauce ,  lengkuas ,  oyster sauce ,  soya sauce ,  chilli and sesame oil . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id770" size="4">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>Bhajji | region | Karnataka</otriple>
+				<otriple>Bhajji | alias | &quot;Bhaji, bajji&quot;@en</otriple>
+				<otriple>Bhajji | ingredient | Vegetable</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>Bhajji | region | Karnataka</otriple>
+				<otriple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</otriple>
+				<otriple>Bhajji | ingredient | Vegetable</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>PATIENT-1 | India</entity>
+				<entity>PATIENT-2 | Karnataka</entity>
+				<entity>PATIENT-3 | &quot;Bhaji, bajji&quot;</entity>
+				<entity>PATIENT-4 | Vegetable</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Originating from the Karnataka region in India, Bhajji (also known as Bhali or bajji), has vegetables as a main ingredient.</text>
+				<template>Originating from the PATIENT-2 region in PATIENT-1 ,  AGENT-1 (also known as Bhali or bajji) ,  has vegetables as a main ingredient . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bhajji comes from the Karnataka region of India.The dish contains vegetables and also known as Bhaji or bajji.</text>
+				<template>AGENT-1 comes from the PATIENT-2 region of PATIENT-1 . The dish contains vegetables and also known as Bhaji or bajji . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id771" size="4">
+			<originaltripleset>
+				<otriple>Bhajji | region | Karnataka</otriple>
+				<otriple>Bhajji | mainIngredient | &quot;Gram flour, vegetables&quot;@en</otriple>
+				<otriple>Bhajji | alias | &quot;Bhaji, bajji&quot;@en</otriple>
+				<otriple>Bhajji | ingredient | Vegetable</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bhajji | region | Karnataka</otriple>
+				<otriple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</otriple>
+				<otriple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</otriple>
+				<otriple>Bhajji | ingredient | Vegetable</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>PATIENT-1 | Karnataka</entity>
+				<entity>PATIENT-2 | &quot;Gram flour, vegetables&quot;</entity>
+				<entity>PATIENT-3 | &quot;Bhaji, bajji&quot;</entity>
+				<entity>PATIENT-4 | Vegetable</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Gram flour and vegetables are main ingredients in bhajji (also known as Bhaji and bajji) which comes from the Karnataka region.</text>
+				<template>Gram flour and vegetables are main ingredients in bhajji (also known as Bhaji and bajji) which comes from the PATIENT-1 region . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bhajji, also known as Bhaji or bajji, are found in the region of Karnataka and its ingredients are gram flour and vegetables.</text>
+				<template>AGENT-1 ,  also known as Bhaji or bajji ,  are found in the region of PATIENT-1 and its ingredients are gram flour and vegetables . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bhajji (aka Bhaji or bajji) is from the Karnataka region. It includes gram flour and vegetables.</text>
+				<template>AGENT-1 (aka Bhaji or bajji) is from the PATIENT-1 region .  It includes gram flour and vegetables . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id772" size="4">
+			<originaltripleset>
+				<otriple>Binignit | ingredient | Sweet_potato</otriple>
+				<otriple>Sweet_potato | division | Flowering_plant</otriple>
+				<otriple>Binignit | mainIngredient | Sago</otriple>
+				<otriple>Sweet_potato | order | Solanales</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Binignit | ingredient | Sweet_potato</otriple>
+				<otriple>Sweet_potato | division | Flowering_plant</otriple>
+				<otriple>Binignit | mainIngredients | Sago</otriple>
+				<otriple>Sweet_potato | order | Solanales</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>BRIDGE-1 | Sweet_potato</entity>
+				<entity>PATIENT-1 | Flowering_plant</entity>
+				<entity>PATIENT-2 | Sago</entity>
+				<entity>PATIENT-3 | Solanales</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The binignit recipe calls for sweet potatoes and sago. The sweet potato belongs to the flowering plant and falls under the order of Solanales.</text>
+				<template>The binignit recipe calls for sweet potatoes and sago .  The sweet potato belongs to the flowering plant and falls under the order of PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Sago and Sweet potato are ingredients in Binignit. Sweet potato belongs to the Solanales order of flowering plants.</text>
+				<template>PATIENT-2 and BRIDGE-1 are ingredients in AGENT-1 .  BRIDGE-1 belongs to the PATIENT-3 order of flowering plants . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id773" size="4">
+			<originaltripleset>
+				<otriple>Binignit | region | Visayas</otriple>
+				<otriple>Binignit | mainIngredient | Coconut_milk</otriple>
+				<otriple>Binignit | country | Philippines</otriple>
+				<otriple>Binignit | ingredient | Sago</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Binignit | region | Visayas</otriple>
+				<otriple>Binignit | mainIngredients | Coconut_milk</otriple>
+				<otriple>Binignit | country | Philippines</otriple>
+				<otriple>Binignit | ingredient | Sago</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>PATIENT-1 | Visayas</entity>
+				<entity>PATIENT-2 | Coconut_milk</entity>
+				<entity>PATIENT-3 | Philippines</entity>
+				<entity>PATIENT-4 | Sago</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Binignit is a dish from the region of Visayas in the Philippines. One of the main ingredients of binignit is coconut milk and another ingredient is sago.</text>
+				<template>AGENT-1 is a dish from the region of PATIENT-1 in the PATIENT-3 .  One of the main ingredients of binignit is coconut milk and another ingredient is sago . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The main ingredient of binignit is coconut milk and it also contains sago. The dish comes from the Visayas region of the Philippines.</text>
+				<template>The main ingredient of binignit is coconut milk and it also contains sago .  The dish comes from the PATIENT-1 region of the PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id774" size="4">
+			<originaltripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Bionico | course | Dessert</otriple>
+				<otriple>Bionico | region | Jalisco</otriple>
+				<otriple>Bionico | ingredient | Granola</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Bionico | course | Dessert</otriple>
+				<otriple>Bionico | region | Jalisco</otriple>
+				<otriple>Bionico | ingredient | Granola</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>PATIENT-1 | Mexico</entity>
+				<entity>PATIENT-2 | Dessert</entity>
+				<entity>PATIENT-3 | Jalisco</entity>
+				<entity>PATIENT-4 | Granola</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Using one of the required ingredients, granola, Bionico is a dish served for dessert and is found in the region of Jalisco, in Mexico.</text>
+				<template>Using one of the required ingredients ,  granola ,  AGENT-1 is a dish served for dessert and is found in the region of PATIENT-3 ,  in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bionico, a dessert found in the Jalisco region of Mexico, has granola in it.</text>
+				<template>AGENT-1 ,  a dessert found in the PATIENT-3 region of PATIENT-1 ,  has granola in it . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The granola-based dessert Bionico is a food found in Jalisco, Mexico.</text>
+				<template>The granola-based dessert AGENT-1 is a food found in PATIENT-3 ,  PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id775" size="4">
+			<originaltripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Bionico | mainIngredient | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;@en</otriple>
+				<otriple>Bionico | region | Guadalajara</otriple>
+				<otriple>Bionico | ingredient | Sour_cream</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</otriple>
+				<otriple>Bionico | region | Guadalajara</otriple>
+				<otriple>Bionico | ingredient | Sour_cream</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>PATIENT-1 | Mexico</entity>
+				<entity>PATIENT-2 | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</entity>
+				<entity>PATIENT-3 | Guadalajara</entity>
+				<entity>PATIENT-4 | Sour_cream</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bionico is a food found in Guadalajara, Mexico. Sour cream, chopped fruits, condensed milk. granola, raisins and shredded coconut are the main ingredients in Bionico.</text>
+				<template>AGENT-1 is a food found in PATIENT-3 ,  PATIENT-1 .  PATIENT-4 ,  chopped fruits ,  condensed milk .  granola ,  raisins and shredded coconut are the main ingredients in AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bionico is a food originates from the Guadalajara region of Mexico.The main ingredients of the dish are chopped fruits,sour cream,condensed milk,granola,shredded coconut and raisins.</text>
+				<template>AGENT-1 is a food originates from the PATIENT-3 region of PATIENT-1 . The main ingredients of the dish are chopped fruits , sour cream , condensed milk , granola , shredded coconut and raisins . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The main ingredients of Bionico are chopped fruits, sour cream, condensed milk, granola, shredded coconut and raisins. It is a Mexican food from the Guadalajara region.</text>
+				<template>The main ingredients of AGENT-1 are chopped fruits ,  sour cream ,  condensed milk ,  granola ,  shredded coconut and raisins .  It is a Mexican food from the PATIENT-3 region . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id776" size="4">
+			<originaltripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Mexico | leader | Silvano_Aureoles_Conejo</otriple>
+				<otriple>Bionico | course | Dessert</otriple>
+				<otriple>Dessert | hasVariant | Cookie</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Mexico | leaderName | Silvano_Aureoles_Conejo</otriple>
+				<otriple>Bionico | course | Dessert</otriple>
+				<otriple>Dessert | dishVariation | Cookie</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>BRIDGE-1 | Mexico</entity>
+				<entity>BRIDGE-2 | Dessert</entity>
+				<entity>PATIENT-1 | Silvano_Aureoles_Conejo</entity>
+				<entity>PATIENT-2 | Cookie</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bionico and cookies are desserts. Bionico originates from Mexico, where the leader is Silvano Aureoles Conejo.</text>
+				<template>AGENT-1 and cookies are desserts .  AGENT-1 originates from BRIDGE-1 ,  where the leader is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bionico is a dessert found in Mexico, the leader is Silvano Aureoles Conejo and cookies are also a dessert.</text>
+				<template>AGENT-1 is a dessert found in BRIDGE-1 ,  the leader is PATIENT-1 and cookies are also a dessert . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Cookies and bionico are both types of dessert. The latter dish is found in Mexico where Silvano Aureoles Conejo is the leader.</text>
+				<template>PATIENT-2s and bionico are both types of dessert .  The latter dish is found in BRIDGE-1 where PATIENT-1 is the leader . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id777" size="4">
+			<originaltripleset>
+				<otriple>Indonesia | leaderName | Jusuf_Kalla</otriple>
+				<otriple>Bakso | region | Indonesia</otriple>
+				<otriple>Bakso | ingredient | Tapioca</otriple>
+				<otriple>Bakso | country | &quot;Indonesia, derived from Chinese meat ball&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Indonesia | leaderName | Jusuf_Kalla</otriple>
+				<otriple>Bakso | region | Indonesia</otriple>
+				<otriple>Bakso | ingredient | Tapioca</otriple>
+				<otriple>Bakso | country | Indonesia</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>BRIDGE-1 | Indonesia</entity>
+				<entity>PATIENT-1 | Jusuf_Kalla</entity>
+				<entity>PATIENT-2 | Tapioca</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bakso is a dish from the country of Indonesia (where the leader is Jusuf Kalla), it includes Tapioca.</text>
+				<template>AGENT-1 is a dish from the country of BRIDGE-1 (where the leader is PATIENT-1) ,  it includes PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bakso is a food originates from Indonesia and contains tapioca.The country's leader is Jusuf Kalla.</text>
+				<template>AGENT-1 is a food originates from BRIDGE-1 and contains tapioca . The country's leader is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bakso has tapioca as an ingredient and is a food found in Indonesia where it originated. The leader of the country is Jusuf Kalla.</text>
+				<template>AGENT-1 has tapioca as an ingredient and is a food found in BRIDGE-1 where it originated .  The leader of the country is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id778" size="4">
+			<originaltripleset>
+				<otriple>Java | ethnicGroup | Baduy</otriple>
+				<otriple>Ayam_penyet | region | Singapore</otriple>
+				<otriple>Singapore | leaderName | Tony_Tan</otriple>
+				<otriple>Ayam_penyet | country | Java</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Java | ethnicGroup | Baduy</otriple>
+				<otriple>Ayam_penyet | region | Singapore</otriple>
+				<otriple>Singapore | leaderName | Tony_Tan</otriple>
+				<otriple>Ayam_penyet | country | Java</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ayam_penyet</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>BRIDGE-2 | Java</entity>
+				<entity>PATIENT-1 | Baduy</entity>
+				<entity>PATIENT-2 | Tony_Tan</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Ayam penyet is originates from Singapore and Tony Tan is the country's leader.It can also be found in Java where Baduy people are one of the ethnic groups.</text>
+				<template>AGENT-1 is originates from BRIDGE-1 and PATIENT-2 is the country's leader . It can also be found in BRIDGE-2 where PATIENT-1 people are one of the ethnic groups . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baduy is an ethnic group of Java, where the dish ayam penyet can be found. This dish is from the Singapore region, where Tony Tan is a leader.</text>
+				<template>PATIENT-1 is an ethnic group of BRIDGE-2 ,  where the dish ayam penyet can be found .  This dish is from the BRIDGE-1 region ,  where PATIENT-2 is a leader . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Ayam penyet is a dish from Java, where the Baduy are an ethnic group. The dish comes from Singapore where Tony Tan is the leader.</text>
+				<template>AGENT-1 is a dish from BRIDGE-2 ,  where the PATIENT-1 are an ethnic group .  The dish comes from BRIDGE-1 where PATIENT-2 is the leader . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id779" size="4">
+			<originaltripleset>
+				<otriple>Philippines | ethnicGroups | Ilocano_people</otriple>
+				<otriple>Philippines | ethnicGroup | Zamboangans</otriple>
+				<otriple>Philippines | language | Philippine_Spanish</otriple>
+				<otriple>Batchoy | country | Philippines</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Philippines | ethnicGroup | Ilocano_people</otriple>
+				<otriple>Philippines | ethnicGroup | Zamboangans</otriple>
+				<otriple>Philippines | language | Philippine_Spanish</otriple>
+				<otriple>Batchoy | country | Philippines</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Batchoy</entity>
+				<entity>BRIDGE-1 | Philippines</entity>
+				<entity>PATIENT-1 | Ilocano_people</entity>
+				<entity>PATIENT-2 | Zamboangans</entity>
+				<entity>PATIENT-3 | Philippine_Spanish</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Batchoy is a dish eaten in the Philippines. The language used there is Philippines Spanish and two of its ethnic groups are Ilocano people and Zamboangans.</text>
+				<template>AGENT-1 is a dish eaten in the BRIDGE-1 .  The language used there is BRIDGE-1 Spanish and two of its ethnic groups are PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Batchoy is eaten in the Philippines where the spoken language is Philippine Spanish. The Zamboangans and Ilocano people are both ethnic groups in the country.</text>
+				<template>AGENT-1 is eaten in the BRIDGE-1 where the spoken language is PATIENT-3 .  The PATIENT-2 and PATIENT-1 are both ethnic groups in the country . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id780" size="4">
+			<originaltripleset>
+				<otriple>Philippines | language | Arabic</otriple>
+				<otriple>Philippines | ethnicGroup | Zamboangans</otriple>
+				<otriple>Batchoy | country | Philippines</otriple>
+				<otriple>Philippines | ethnicGroups | Igorot_people</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Philippines | language | Arabic</otriple>
+				<otriple>Philippines | ethnicGroup | Zamboangans</otriple>
+				<otriple>Batchoy | country | Philippines</otriple>
+				<otriple>Philippines | ethnicGroup | Igorot_people</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Batchoy</entity>
+				<entity>BRIDGE-1 | Philippines</entity>
+				<entity>PATIENT-1 | Arabic</entity>
+				<entity>PATIENT-2 | Zamboangans</entity>
+				<entity>PATIENT-3 | Igorot_people</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Batchoy comes from the Philippines where one of the languages is Arabic. It is also where there are several ethnic groups, two of which are Zamboangans and Igorot people.</text>
+				<template>AGENT-1 comes from the BRIDGE-1 where one of the languages is PATIENT-1 .  It is also where there are several ethnic groups ,  two of which are PATIENT-2 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Batchoy is a dish that is found in the Philippines, where the Igorot people and the Zamboangans are ethnic groups and where Arabic is one of the languages spoken.</text>
+				<template>AGENT-1 is a dish that is found in the BRIDGE-1 ,  where the PATIENT-3 and the PATIENT-2 are ethnic groups and where PATIENT-1 is one of the languages spoken . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Zamboangans and Igorot people are ethnic groups in the Philippines where the Arabic language is spoken and batchoy is eaten.</text>
+				<template>The PATIENT-2 and PATIENT-3 are ethnic groups in the BRIDGE-1 where the PATIENT-1 language is spoken and batchoy is eaten . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id781" size="4">
+			<originaltripleset>
+				<otriple>Philippines | language | Philippine_English</otriple>
+				<otriple>Binignit | course | Dessert</otriple>
+				<otriple>Dessert | hasVariant | Cookie</otriple>
+				<otriple>Binignit | country | Philippines</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Philippines | language | Philippine_English</otriple>
+				<otriple>Binignit | course | Dessert</otriple>
+				<otriple>Dessert | dishVariation | Cookie</otriple>
+				<otriple>Binignit | country | Philippines</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>BRIDGE-1 | Dessert</entity>
+				<entity>BRIDGE-2 | Philippines</entity>
+				<entity>PATIENT-1 | Philippine_English</entity>
+				<entity>PATIENT-2 | Cookie</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Cookie is a type of dessert, as too is Binignit which comes from the Philippines. Philippine English is the language of the Philippines.</text>
+				<template>PATIENT-2 is a type of dessert ,  as too is AGENT-1 which comes from the BRIDGE-2 .  PATIENT-1 is the language of the BRIDGE-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Philippine English is the language spoken in the Philippines, where the dish binignit can be found. It should be served as the dessert course. Other type of dessert is a cookie.</text>
+				<template>PATIENT-1 is the language spoken in the BRIDGE-2 ,  where the dish binignit can be found .  It should be served as the dessert course .  Other type of dessert is a cookie . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Cookies and binignit are types of dessert. The latter dish can be found in the Philippines where the spoken language is known as Philippine English.</text>
+				<template>PATIENT-2s and binignit are types of dessert .  The latter dish can be found in the BRIDGE-2 where the spoken language is known as PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id782" size="4">
+			<originaltripleset>
+				<otriple>Philippines | language | Philippine_English</otriple>
+				<otriple>Binignit | course | Dessert</otriple>
+				<otriple>Dessert | hasVariant | Sandesh_(confectionery)</otriple>
+				<otriple>Binignit | country | Philippines</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Philippines | language | Philippine_English</otriple>
+				<otriple>Binignit | course | Dessert</otriple>
+				<otriple>Dessert | dishVariation | Sandesh_(confectionery)</otriple>
+				<otriple>Binignit | country | Philippines</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>BRIDGE-1 | Dessert</entity>
+				<entity>BRIDGE-2 | Philippines</entity>
+				<entity>PATIENT-1 | Philippine_English</entity>
+				<entity>PATIENT-2 | Sandesh_(confectionery)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Sandesh and Binignit are desserts. Binignit comes from the Philippines, where the language is Philippine English.</text>
+				<template>Sandesh and AGENT-1 are desserts .  AGENT-1 comes from the BRIDGE-2 ,  where the language is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Sandesh (confectionery) and Binignit are both dishes served as dessert. The latter dish originates from the Philippines where Philippine English is spoken.</text>
+				<template>PATIENT-2 and AGENT-1 are both dishes served as dessert .  The latter dish originates from the BRIDGE-2 where PATIENT-1 is spoken . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

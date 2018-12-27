@@ -1,0 +1,433 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Athlete" eid="Id1769" size="5">
+			<originaltripleset>
+				<otriple>Abel_Hernández | youthclubs | Peñarol</otriple>
+				<otriple>Central_Español | league | Uruguayan_Segunda_División</otriple>
+				<otriple>Abel_Hernández | team | Central_Español</otriple>
+				<otriple>Peñarol | manager | Jorge_Orosmán_da_Silva</otriple>
+				<otriple>Abel_Hernández | clubs | U.S._Città_di_Palermo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Abel_Hernández | youthclub | Peñarol</otriple>
+				<otriple>Central_Español | league | Uruguayan_Segunda_División</otriple>
+				<otriple>Abel_Hernández | club | Central_Español</otriple>
+				<otriple>Peñarol | manager | Jorge_Orosmán_da_Silva</otriple>
+				<otriple>Abel_Hernández | club | U.S._Città_di_Palermo</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Central_Español</entity>
+				<entity>BRIDGE-2 | Peñarol</entity>
+				<entity>PATIENT-1 | Uruguayan_Segunda_División</entity>
+				<entity>PATIENT-2 | Jorge_Orosmán_da_Silva</entity>
+				<entity>PATIENT-3 | U.S._Città_di_Palermo</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Penarol, where Abel Hernandez played youth football, is managed by Jorge Orosmán da Silva. Hernandez later played for Uruguayan Segunda División side Central Español and then moved to U.S. Città di Palermo.</text>
+				<template>Penarol ,  where Abel Hernandez played youth football ,  is managed by PATIENT-2 .  Hernandez later played for PATIENT-1 side BRIDGE-1 and then moved to U . S .  Città di Palermo . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Abel Hernandez is a member of Penarol's youth club and the club is managed by Jorge Orosmán da Silva. US Citta di Palermo and the Central Espanol are also Mr. Hernandez's clubs. The latter club is part of the Uruguayan Segunda División league.</text>
+				<template>Abel Hernandez is a member of Penarol's youth club and the club is managed by PATIENT-2 .  US Citta di Palermo and the Central Espanol are also Mr .  Hernandez's clubs .  The latter club is part of the PATIENT-1 league . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>In his youth, Abel Hernández played for Peñarol where Jorge Orosman da Silva is the manager. He currently plays for US Citta di Palermo and also in the Uruguayan Segunda Division league with Central Espanol.</text>
+				<template>In his youth ,  AGENT-1 played for BRIDGE-2 where Jorge Orosman da Silva is the manager .  He currently plays for US Citta di Palermo and also in the Uruguayan Segunda Division league with Central Espanol . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1770" size="5">
+			<originaltripleset>
+				<otriple>Aleksandr_Chumakov | deathPlace | Russia</otriple>
+				<otriple>Russia | leaderName | Valentina_Matviyenko</otriple>
+				<otriple>Aleksandr_Chumakov | clubs | FC_Torpedo_Moscow</otriple>
+				<otriple>Aleksandr_Chumakov | team | Soviet_Union_national_football_team</otriple>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aleksandr_Chumakov | deathPlace | Russia</otriple>
+				<otriple>Russia | leaderName | Valentina_Matviyenko</otriple>
+				<otriple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</otriple>
+				<otriple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</otriple>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | Russia</entity>
+				<entity>BRIDGE-2 | FC_Torpedo_Moscow</entity>
+				<entity>PATIENT-1 | Valentina_Matviyenko</entity>
+				<entity>PATIENT-2 | Soviet_Union_national_football_team</entity>
+				<entity>PATIENT-3 | Valery_Petrakov</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aleksandr Chumakov, who died in Russia, belonged to FC Torpedo Moscow and the Soviet Union national football team. FC Torpedo is managed by FC Torpedo, a Russian leader.</text>
+				<template>AGENT-1 ,  who died in BRIDGE-1 ,  belonged to BRIDGE-2 and the PATIENT-2 .  FC Torpedo is managed by FC Torpedo ,  a BRIDGE-1n leader . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Former Soviet Union international footballer Aleksandr Chumakov died in Russia, where the leader is Valentina Matviyenko. FC Torpedo Moscow, managed by Valery Petrakov, once signed Aleksandr Chumakov.</text>
+				<template>Former Soviet Union international footballer AGENT-1 died in BRIDGE-1 ,  where the leader is PATIENT-1 .  BRIDGE-2 ,  managed by PATIENT-3 ,  once signed AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aleksandr Chumakov died in Russia where Valentina Matviyenko is a leader. He belongs to the Soviet Union national football team and has played for FC Torpedo Moscow under the manager Valery Petrakov.</text>
+				<template>AGENT-1 died in BRIDGE-1 where PATIENT-1 is a leader .  He belongs to the PATIENT-2 and has played for BRIDGE-2 under the manager PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1771" size="5">
+			<originaltripleset>
+				<otriple>Aleksandre_Guruli | team | FC_Karpaty_Lviv</otriple>
+				<otriple>FC_Karpaty_Lviv | manager | Oleh_Luzhny</otriple>
+				<otriple>Olympique_Lyonnais | chairman | Jean-Michel_Aulas</otriple>
+				<otriple>Aleksandre_Guruli | clubs | Olympique_Lyonnais</otriple>
+				<otriple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</otriple>
+				<otriple>FC_Karpaty_Lviv | manager | Oleh_Luzhny</otriple>
+				<otriple>Olympique_Lyonnais | chairman | Jean-Michel_Aulas</otriple>
+				<otriple>Aleksandre_Guruli | club | Olympique_Lyonnais</otriple>
+				<otriple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandre_Guruli</entity>
+				<entity>BRIDGE-1 | FC_Karpaty_Lviv</entity>
+				<entity>BRIDGE-2 | Olympique_Lyonnais</entity>
+				<entity>PATIENT-1 | Oleh_Luzhny</entity>
+				<entity>PATIENT-2 | Jean-Michel_Aulas</entity>
+				<entity>PATIENT-3 | Parc_Olympique_Lyonnais</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aleksandre Guruli's club is Olympique Lyonnais who are chaired by Jean-Michel Aulas and have their home ground at the Parc Olympique Lyonnais stadium. He also plays for FC Karpaty Lviv who are managed by Oleh Luzhny.</text>
+				<template>AGENT-1's club is BRIDGE-2 who are chaired by PATIENT-2 and have their home ground at the Parc BRIDGE-2 stadium .  He also plays for BRIDGE-1 who are managed by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aleksandre Guruli played for the Olympique Lyonnais club who play their home games at the Parc Olympique Lyonnais and have the chairman, Jean-Michel Aulas. His current club is FC Karpaty Lviv managed by Oleh Luzhny.</text>
+				<template>AGENT-1 played for the BRIDGE-2 club who play their home games at the Parc BRIDGE-2 and have the chairman ,  PATIENT-2 .  His current club is BRIDGE-1 managed by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aleksandre Guruli played for FC Karpaty Lviv who are managed by Oleh Luzhny. Guruli has also played for Olympique Lyonnais whose home ground is the Parc Olympique Lyonnais and whose chairman is Jean-Michel Aulas.</text>
+				<template>AGENT-1 played for BRIDGE-1 who are managed by PATIENT-1 .  Guruli has also played for BRIDGE-2 whose home ground is the Parc BRIDGE-2 and whose chairman is PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1772" size="5">
+			<originaltripleset>
+				<otriple>Alessio_Romagnoli | team | A.C._Milan</otriple>
+				<otriple>A.C._Milan | league | Serie_A</otriple>
+				<otriple>A.C._Milan | manager | Siniša_Mihajlović</otriple>
+				<otriple>Alessio_Romagnoli | position | Defender_(association_football)</otriple>
+				<otriple>Alessio_Romagnoli | clubs | &quot;→ Sampdoria&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alessio_Romagnoli | club | A.C._Milan</otriple>
+				<otriple>A.C._Milan | league | Serie_A</otriple>
+				<otriple>A.C._Milan | manager | Siniša_Mihajlović</otriple>
+				<otriple>Alessio_Romagnoli | position | Defender_(football)</otriple>
+				<otriple>Alessio_Romagnoli | club | U.C._Sampdoria</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alessio_Romagnoli</entity>
+				<entity>BRIDGE-1 | A.C._Milan</entity>
+				<entity>PATIENT-1 | Serie_A</entity>
+				<entity>PATIENT-2 | Siniša_Mihajlović</entity>
+				<entity>PATIENT-3 | Defender_(football)</entity>
+				<entity>PATIENT-4 | U.C._Sampdoria</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The defender, Alessio Romagnoli is a member of the Serie A league club A.C. Milan who are managed by Sinisa Mihajlovic. He is also connected to UC Sampdoria.</text>
+				<template>The defender ,  AGENT-1 is a member of the PATIENT-1 league club A . C .  Milan who are managed by Sinisa Mihajlovic .  He is also connected to UC Sampdoria . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Defender Alessio Romagnoli, whose former clubs include UC Sampdoria, has played for the Serie A side AC Milan, which is managed by Siniša Mihajlović.</text>
+				<template>Defender AGENT-1 ,  whose former clubs include UC Sampdoria ,  has played for the PATIENT-1 side AC Milan ,  which is managed by PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alessio Romagnoli is a defender who plays for UC Sampdoria. He also plays in Serie A for AC Milan who are managed by Sinisa Mihajlovic.</text>
+				<template>AGENT-1 is a defender who plays for UC Sampdoria .  He also plays in PATIENT-1 for AC Milan who are managed by Sinisa Mihajlovic . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1773" size="5">
+			<originaltripleset>
+				<otriple>Alessio_Romagnoli | currentclub | A.C._Milan</otriple>
+				<otriple>A.C._Milan | manager | Siniša_Mihajlović</otriple>
+				<otriple>A.C._Milan | chairman | Silvio_Berlusconi</otriple>
+				<otriple>Alessio_Romagnoli | team | Italy_national_under-17_football_team</otriple>
+				<otriple>Alessio_Romagnoli | clubs | &quot;→ Sampdoria&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alessio_Romagnoli | currentclub | A.C._Milan</otriple>
+				<otriple>A.C._Milan | manager | Siniša_Mihajlović</otriple>
+				<otriple>A.C._Milan | chairman | Silvio_Berlusconi</otriple>
+				<otriple>Alessio_Romagnoli | club | Italy_national_under-17_football_team</otriple>
+				<otriple>Alessio_Romagnoli | club | U.C._Sampdoria</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alessio_Romagnoli</entity>
+				<entity>BRIDGE-1 | A.C._Milan</entity>
+				<entity>PATIENT-1 | Siniša_Mihajlović</entity>
+				<entity>PATIENT-2 | Silvio_Berlusconi</entity>
+				<entity>PATIENT-3 | Italy_national_under-17_football_team</entity>
+				<entity>PATIENT-4 | U.C._Sampdoria</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alessio Romagnoli belongs to A.C. Milan and plays for U.C. Sampdoria and Italy's national under-17 football tea,. A C Milan is managed by Siniša Mihajlović and includes chairman Silvio Berlusconi.</text>
+				<template>AGENT-1 belongs to A . C .  Milan and plays for U . C .  Sampdoria and Italy's national under-17 football tea ,  .  A C Milan is managed by PATIENT-1 and includes chairman PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alessio Romagnoli is a member of the Italian national under 17 football team and has represented the club U.C. Sampdoria. He is presently with the AC Milan that is managed by Siniša Mihajlović and whose chairman is Silvio Berlusconi.</text>
+				<template>AGENT-1 is a member of the Italian national under 17 football team and has represented the club U . C .  Sampdoria .  He is presently with the AC Milan that is managed by PATIENT-1 and whose chairman is PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1774" size="5">
+			<originaltripleset>
+				<otriple>Central_Español | league | Uruguayan_Segunda_División</otriple>
+				<otriple>Abel_Hernández | youthclubs | Central_Español</otriple>
+				<otriple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</otriple>
+				<otriple>Abel_Hernández | team | Uruguay_national_football_team</otriple>
+				<otriple>Abel_Hernández | clubs | U.S._Città_di_Palermo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Central_Español | league | Uruguayan_Segunda_División</otriple>
+				<otriple>Abel_Hernández | youthclub | Central_Español</otriple>
+				<otriple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</otriple>
+				<otriple>Abel_Hernández | club | Uruguay_national_football_team</otriple>
+				<otriple>Abel_Hernández | club | U.S._Città_di_Palermo</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Central_Español</entity>
+				<entity>BRIDGE-2 | U.S._Città_di_Palermo</entity>
+				<entity>PATIENT-1 | Uruguayan_Segunda_División</entity>
+				<entity>PATIENT-2 | Giuseppe_Iachini</entity>
+				<entity>PATIENT-3 | Uruguay_national_football_team</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Abel Hernández played youth football for Central Español part of the Uruguayan Segunda División league. Mr. Hernandez plays for the US Citta di Palermo and the Uruguay National football team. Giuseppe Iachini manages the U.S. Città di Palermo team.</text>
+				<template>AGENT-1 played youth football for BRIDGE-1 part of the PATIENT-1 league .  Mr .  Hernandez plays for the US Citta di Palermo and the Uruguay National football team .  PATIENT-2 manages the U . S .  Città di Palermo team . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Central Español, where Abel Hernandez played youth football, are part of the Uruguayan Segunda División league. Hernández has represented Uruguay at international level and also played for the club U.S. Città di Palermo, where the manager is Giuseppe Iachini.</text>
+				<template>BRIDGE-1 ,  where Abel Hernandez played youth football ,  are part of the PATIENT-1 league .  Hernández has represented Uruguay at international level and also played for the club U . S .  Città di Palermo ,  where the manager is PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Abel Hernandez played youth football for Central Espanol, part of the Uruguayan Segunda División league. He plays for the US Citta di Palermo, managed by Giuseppe Iachini, and the Uruguay National football team.</text>
+				<template>Abel Hernandez played youth football for Central Espanol ,  part of the PATIENT-1 league .  He plays for the US Citta di Palermo ,  managed by PATIENT-2 ,  and the Uruguay National football team . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1775" size="5">
+			<originaltripleset>
+				<otriple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</otriple>
+				<otriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Amkar_Perm</otriple>
+				<otriple>FC_Amkar_Perm | manager | Gadzhi_Gadzhiyev</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</otriple>
+				<otriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</otriple>
+				<otriple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | club | FC_Amkar_Perm</otriple>
+				<otriple>FC_Amkar_Perm | manager | Gadzhi_Gadzhiyev</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Spartak_Moscow</entity>
+				<entity>BRIDGE-2 | FC_Amkar_Perm</entity>
+				<entity>PATIENT-1 | Sergey_Rodionov</entity>
+				<entity>PATIENT-2 | Otkrytiye_Arena</entity>
+				<entity>PATIENT-3 | Gadzhi_Gadzhiyev</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aleksandr Prudnikov's club is FC Spartak Moscow who have Sergey Rodionov as their chairman and play at the Otkrytiye arena. He also plays for FC Amkar Perm who are managed by Gadzhi Gadzhiyev.</text>
+				<template>AGENT-1's club is BRIDGE-1 who have PATIENT-1 as their chairman and play at the Otkrytiye arena .  He also plays for BRIDGE-2 who are managed by PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aleksandr Prudnikov plays for FC Spartak Moscow who have their home ground at Otkrytiye Arena and are chaired by Sergey Rodionov. He also plays for FC Amkar Perm under the management of Gadzhi Gadzhiyev.</text>
+				<template>AGENT-1 plays for BRIDGE-1 who have their home ground at PATIENT-2 and are chaired by PATIENT-1 .  He also plays for BRIDGE-2 under the management of PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Sergey Rodionov is the chairman of FC Spartak Moscow, who play at the Otkrytiye Arena and count Aleksandr Prudnikov as one of their former players. Prudnikov has also played for FC Amkar Perm, where the manager was Gadzhi Gadzhiyev.</text>
+				<template>PATIENT-1 is the chairman of BRIDGE-1 ,  who play at the PATIENT-2 and count AGENT-1 as one of their former players .  Prudnikov has also played for BRIDGE-2 ,  where the manager was PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1776" size="5">
+			<originaltripleset>
+				<otriple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</otriple>
+				<otriple>FC_Terek_Grozny | ground | Grozny</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Terek_Grozny</otriple>
+				<otriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</otriple>
+				<otriple>FC_Terek_Grozny | ground | Grozny</otriple>
+				<otriple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</otriple>
+				<otriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Spartak_Moscow</entity>
+				<entity>BRIDGE-2 | FC_Terek_Grozny</entity>
+				<entity>PATIENT-1 | Sergey_Rodionov</entity>
+				<entity>PATIENT-2 | Grozny</entity>
+				<entity>PATIENT-3 | Rashid_Rakhimov</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aleksandr Prudnikov has played for the clubs FC Terek Grozny (based in Grozny), where the manager was Rashid Rakhimov and FC Spartak Moscow, whose chairman is Sergey Rodionov.</text>
+				<template>AGENT-1 has played for the clubs BRIDGE-2 (based in PATIENT-2) ,  where the manager was PATIENT-3 and BRIDGE-1 ,  whose chairman is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aleksandr Prydnikov belongs to FC Terek Grozny, which is managed by Rashid Rakhimov, and has its grounds at Grozny. Prudnikov plays for FC Spartak Moscow, which includes chairman Sergey Rodionov.</text>
+				<template>Aleksandr Prydnikov belongs to BRIDGE-2 ,  which is managed by PATIENT-3 ,  and has its grounds at PATIENT-2 .  Prudnikov plays for BRIDGE-1 ,  which includes chairman PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aleksandr Prudnikov belongs to FC Terek Grozny, which is managed by Rashid Rakhimov and has it grounds at Grozny. He played for FC Spartak Moscow, which includes Sergey Rodionov.</text>
+				<template>AGENT-1 belongs to BRIDGE-2 ,  which is managed by PATIENT-3 and has it grounds at PATIENT-2 .  He played for BRIDGE-1 ,  which includes PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1777" size="5">
+			<originaltripleset>
+				<otriple>FC_Terek_Grozny | ground | Grozny</otriple>
+				<otriple>Aleksandr_Prudnikov | youthclubs | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Terek_Grozny</otriple>
+				<otriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Dynamo_Moscow</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>FC_Terek_Grozny | ground | Grozny</otriple>
+				<otriple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</otriple>
+				<otriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</otriple>
+				<otriple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Terek_Grozny</entity>
+				<entity>PATIENT-1 | Grozny</entity>
+				<entity>PATIENT-2 | FC_Spartak_Moscow</entity>
+				<entity>PATIENT-3 | Rashid_Rakhimov</entity>
+				<entity>PATIENT-4 | FC_Dynamo_Moscow</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aleksandr Prudnikov played for FC Spartak Moscow's youth team and later for FC Dynamo Moscow. He has also been signed to Grozy based FC Terek Grozny, who are managed by Rashid Rakhimov.</text>
+				<template>AGENT-1 played for PATIENT-2's youth team and later for PATIENT-4 .  He has also been signed to Grozy based BRIDGE-1 ,  who are managed by PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aleksandr Prudnikov once played for FC Spartak Moscow's youth team but now plays for the FC Dynamo Moscow and the FC Terek Grozny out of Grozny. The FC Terek Grozny sees a manager in Rashid Rakhimov.</text>
+				<template>AGENT-1 once played for PATIENT-2's youth team but now plays for the PATIENT-4 and the BRIDGE-1 out of PATIENT-1 .  The BRIDGE-1 sees a manager in PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aleksandr Prudnikov's club is FC Dynamo Moscow although he previously played for FC Spartak Moscow's youth team. He is currently in the Grozny based FC Terek Grozny club under their manager, Rashid Rakhimov.</text>
+				<template>AGENT-1's club is PATIENT-4 although he previously played for PATIENT-2's youth team .  He is currently in the PATIENT-1 based BRIDGE-1 club under their manager ,  PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1778" size="5">
+			<originaltripleset>
+				<otriple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</otriple>
+				<otriple>Aleksandr_Chumakov | placeOfBirth | Soviet_Union</otriple>
+				<otriple>Aleksandr_Chumakov | clubs | FC_Torpedo_Moscow</otriple>
+				<otriple>Aleksandr_Chumakov | team | Soviet_Union_national_football_team</otriple>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</otriple>
+				<otriple>Aleksandr_Chumakov | birthPlace | Soviet_Union</otriple>
+				<otriple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</otriple>
+				<otriple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</otriple>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | FC_Torpedo_Moscow</entity>
+				<entity>PATIENT-1 | 2014–15_Russian_Premier_League</entity>
+				<entity>PATIENT-2 | Soviet_Union</entity>
+				<entity>PATIENT-3 | Soviet_Union_national_football_team</entity>
+				<entity>PATIENT-4 | Valery_Petrakov</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aleksandr Chumakov, born in the soviet Union, belongs to the Soviet Union national football team and plays for FC Torpedo Moscow, which plays in the Russian Premier League's 2014-15 season and is managed by Valery Petrakov.</text>
+				<template>AGENT-1 ,  born in the soviet Union ,  belongs to the PATIENT-3 and plays for BRIDGE-1 ,  which plays in the Russian Premier League's 2014-15 season and is managed by PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aleksandr Chumakov was born in the Soviet Union and was a member of the Soviet Union national football team. He has also played for FC Torpedo Moscow who are managed by Valery Petrakov and participated in the 2014-15 Russian Premier League.</text>
+				<template>AGENT-1 was born in the PATIENT-2 and was a member of the PATIENT-3 .  He has also played for BRIDGE-1 who are managed by PATIENT-4 and participated in the 2014-15 Russian Premier League . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Born in the Soviet Union and representing his country at international football, Aleksandr Chumakov played for FC Torpedo Moscow, who competed in the 2014-15 Russian Premier League and whose manager is Valery Petrakov.</text>
+				<template>Born in the PATIENT-2 and representing his country at international football ,  AGENT-1 played for BRIDGE-1 ,  who competed in the 2014-15 Russian Premier League and whose manager is PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1779" size="5">
+			<originaltripleset>
+				<otriple>Ferencvárosi_TC | manager | Thomas_Doll</otriple>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco</otriple>
+				<otriple>Akeem_Adams | team | Ferencvárosi_TC</otriple>
+				<otriple>Ferencvárosi_TC | chairman | Gábor_Kubatov</otriple>
+				<otriple>Akeem_Adams | clubs | United_Petrotrin_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ferencvárosi_TC | manager | Thomas_Doll</otriple>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco</otriple>
+				<otriple>Akeem_Adams | club | Ferencvárosi_TC</otriple>
+				<otriple>Ferencvárosi_TC | chairman | Gábor_Kubatov</otriple>
+				<otriple>Akeem_Adams | club | United_Petrotrin_F.C.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>BRIDGE-1 | Ferencvárosi_TC</entity>
+				<entity>BRIDGE-2 | United_Petrotrin_F.C.</entity>
+				<entity>PATIENT-1 | Thomas_Doll</entity>
+				<entity>PATIENT-2 | Palo_Seco</entity>
+				<entity>PATIENT-3 | Gábor_Kubatov</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Akeem Adams' former clubs include United Petrotrin FC, who play at Palo Seco, and Ferencvarosi TC, where Thomas Doll is the manager and Gabor Kubatov is the chairman.</text>
+				<template>AGENT-1' former clubs include United Petrotrin FC ,  who play at PATIENT-2 ,  and Ferencvarosi TC ,  where PATIENT-1 is the manager and Gabor Kubatov is the chairman . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Akeem Adams is a member of the United Petrotrin F.C. club and also Ferencvarosi TC. The latter club, whose ground is Palo Seco, is chaired by Gabor Kubatov and managed by Thomas Doll.</text>
+				<template>AGENT-1 is a member of the United Petrotrin F . C .  club and also Ferencvarosi TC .  The latter club ,  whose ground is PATIENT-2 ,  is chaired by Gabor Kubatov and managed by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Akeem Adams is a member of the United Petrotrin F.C. club who have their ground at Palo Seco. He plays for Ferencvarosi TC which is managed by Thomas Doll and chaired by Gabor Kubatov.</text>
+				<template>AGENT-1 is a member of the United Petrotrin F . C .  club who have their ground at PATIENT-2 .  He plays for Ferencvarosi TC which is managed by PATIENT-1 and chaired by Gabor Kubatov . </template>
+			</lex>
+		</entry>
+		<entry category="Athlete" eid="Id1780" size="5">
+			<originaltripleset>
+				<otriple>Ferencvárosi_TC | manager | Thomas_Doll</otriple>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</otriple>
+				<otriple>Akeem_Adams | team | Ferencvárosi_TC</otriple>
+				<otriple>Ferencvárosi_TC | chairman | Gábor_Kubatov</otriple>
+				<otriple>Akeem_Adams | clubs | United_Petrotrin_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ferencvárosi_TC | manager | Thomas_Doll</otriple>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</otriple>
+				<otriple>Akeem_Adams | club | Ferencvárosi_TC</otriple>
+				<otriple>Ferencvárosi_TC | chairman | Gábor_Kubatov</otriple>
+				<otriple>Akeem_Adams | club | United_Petrotrin_F.C.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>BRIDGE-1 | Ferencvárosi_TC</entity>
+				<entity>BRIDGE-2 | United_Petrotrin_F.C.</entity>
+				<entity>PATIENT-1 | Thomas_Doll</entity>
+				<entity>PATIENT-2 | Palo_Seco_Velodrome</entity>
+				<entity>PATIENT-3 | Gábor_Kubatov</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Akeem Adams' club is Ferencvarosi TC who are managed by Thomas Doll and chaired by Gabor Kubatov. He has previously played for United Petrotrin FC who are based at the Palo Seco Velodrome.</text>
+				<template>AGENT-1' club is Ferencvarosi TC who are managed by PATIENT-1 and chaired by Gabor Kubatov .  He has previously played for United Petrotrin FC who are based at the PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Akeem Adams belongs to Ferencvárosi TC, which is managed by Thomas Doll and includes chairman Gábor Kubatov. He has played for United Petrotrin F.C., who play in Palo Seco Velodrome.</text>
+				<template>AGENT-1 belongs to BRIDGE-1 ,  which is managed by PATIENT-1 and includes chairman PATIENT-3 .  He has played for United Petrotrin F . C .  ,  who play in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Akeem Adams was part of the team Ferencvarosi TC, which is managed by Thomas Doll and where the chairman is Gabor Kubatov. Adams' former clubs also include United Petrotrin FC, whose home ground is the Palo Seco Velodrome.</text>
+				<template>AGENT-1 was part of the team Ferencvarosi TC ,  which is managed by PATIENT-1 and where the chairman is Gabor Kubatov .  Adams' former clubs also include United Petrotrin FC ,  whose home ground is the PATIENT-2 . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>
