@@ -109,7 +109,7 @@ def run(entryset, lng='en'):
     for entry in entryset:
         for lex in entry.lexEntries:
             if lng == 'en':
-                lex.references = extract_references(lex.substring, lex.template, entry.entitymap_to_dict())
+                lex.references = extract_references(lex.text, lex.template, entry.entitymap_to_dict())
             else:
                 lex.references_de = extract_references(lex.text_de, lex.template_de, entry.entitymap_to_dict())
 

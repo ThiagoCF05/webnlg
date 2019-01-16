@@ -17,14 +17,15 @@ import os
 import parser
 import reg
 import stats
-import template
+# import template
 from nmt import NMT
 
 def run(entry_path, set_path, en_path, de_path, _set):
     entryset = p.load(open(entry_path))
-    nmt = NMT(entryset, _set) # translate to german
-    entryset = nmt.postprocess()
-    entryset = order.run(entryset, 'de') # order german
+    if de_path != '':
+        nmt = NMT(entryset, _set) # translate to german
+        entryset = nmt.postprocess()
+        entryset = order.run(entryset, 'de') # order german
 
     # referring expressions
     entryset = reg.run(entryset, 'en')
@@ -33,7 +34,8 @@ def run(entry_path, set_path, en_path, de_path, _set):
 
     # run xml generator
     parser.run_generator(entryset=entryset, input_dir=set_path, output_dir=en_path, lng='en')
-    parser.run_generator(entryset=entryset, input_dir=set_path, output_dir=de_path, lng='de')
+    if de_path != '':
+        parser.run_generator(entryset=entryset, input_dir=set_path, output_dir=de_path, lng='de')
 
     # extract and generate templates based on sentence segmentation
     # en_temp = template.run(entryset)
@@ -44,8 +46,6 @@ def run(entry_path, set_path, en_path, de_path, _set):
     return lexsize, templates, templates_de, entities, references
 
 if __name__ == '__main__':
-    DEV_PATH = 'corpus/delexicalized/dev'
-
     FINAL_PATH = 'final/v1.2'
     if not os.path.exists(FINAL_PATH):
         os.mkdir(FINAL_PATH)
@@ -100,12 +100,10 @@ if __name__ == '__main__':
     _set = 'test'
 
     EN_TEST_PATH = 'final/v1.2/en/test'
-    if not os.path.exists(EN_DEV_PATH):
-        os.mkdir(EN_DEV_PATH)
+    if not os.path.exists(EN_TEST_PATH):
+        os.mkdir(EN_TEST_PATH)
 
-    DE_TEST_PATH = 'final/v1.2/de/test'
-    if not os.path.exists(DE_DEV_PATH):
-        os.mkdir(DE_DEV_PATH)
+    DE_TEST_PATH = ''
     lexsize3, templates3, templates_de3, entities3, references3 = run(entry_path=ENTRY_PATH, set_path=TEST_PATH, en_path=EN_TEST_PATH, de_path=DE_TEST_PATH, _set=_set)
     lexsize += lexsize3
     templates.extend(templates3)
