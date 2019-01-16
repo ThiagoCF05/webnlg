@@ -30,20 +30,20 @@ def parse(in_file):
         originaltripleset = []
         otripleset = entry.find('originaltripleset')
         for otriple in otripleset:
-            e1, pred, e2 = otriple.text.split(' | ')
+            e1, pred, e2 = otriple.substring.split(' | ')
             originaltripleset.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
 
         modifiedtripleset = []
         mtripleset = entry.find('modifiedtripleset')
         for mtriple in mtripleset:
-            e1, pred, e2 = mtriple.text.split(' | ')
+            e1, pred, e2 = mtriple.substring.split(' | ')
 
             modifiedtripleset.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
 
         entitymap = []
         mapping= entry.find('entitymap')
         for entitytag in mapping:
-            tag, entity = entitytag.text.split(' | ')
+            tag, entity = entitytag.substring.split(' | ')
             entitymap.append(TagEntity(tag=tag, entity=entity))
 
         lexList = []
@@ -53,7 +53,7 @@ def parse(in_file):
             lid = lex.attrib['lid']
 
             try:
-                text = lex.find('text').text
+                text = lex.find('text').substring
                 if not text:
                     print 'error text'
                     text = ''
@@ -62,7 +62,7 @@ def parse(in_file):
                 text = ''
 
             try:
-                template = lex.find('template').text
+                template = lex.find('template').substring
                 if not template:
                     print 'error template'
                     template = ''
@@ -116,12 +116,12 @@ def generate(entryset, in_file, out_file, lng):
         for tag in sorted(tagentity.keys()):
             entity = tagentity[tag]
             entity_xml = ET.SubElement(entitymap, 'entity')
-            entity_xml.text = tag + ' | ' + entity
+            entity_xml.substring = tag + ' | ' + entity
 
         # process lexical entries
         lexEntries = entry_xml.findall('lex')
         for i, lexEntry_xml in enumerate(lexEntries):
-            lexEntry_xml.text = ''
+            lexEntry_xml.substring = ''
             text_xml = lexEntry_xml.find('text')
             if text_xml is not None:
                 lexEntry_xml.remove(text_xml)
@@ -138,7 +138,7 @@ def generate(entryset, in_file, out_file, lng):
             orderedtripleset_xml = ET.SubElement(lexEntry_xml, 'sortedtripleset')
             for triple in orderedtripleset:
                 striple = ET.SubElement(orderedtripleset_xml, 'striple')
-                striple.text = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
+                striple.substring = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
 
             if lng == 'en':
                 references_xml = ET.SubElement(lexEntry_xml, 'references')
@@ -149,20 +149,20 @@ def generate(entryset, in_file, out_file, lng):
                     reference_xml.attrib['entity'] = reference.entity
                     reference_xml.attrib['number'] = str(reference.number)
                     reference_xml.attrib['type'] = str(reference.reftype)
-                    reference_xml.text = reference.refex
+                    reference_xml.substring = reference.refex
 
             if lng == 'en':
-                text = entry.lexEntries[i].text
+                text = entry.lexEntries[i].substring
                 template = entry.lexEntries[i].template
             else:
                 text = entry.lexEntries[i].text_de
                 template = entry.lexEntries[i].template_de
 
             text_xml = ET.SubElement(lexEntry_xml, 'text')
-            text_xml.text = text
+            text_xml.substring = text
 
             template_xml = ET.SubElement(lexEntry_xml, 'template')
-            template_xml.text = template
+            template_xml.substring = template
 
     rough_string = ET.tostring(tree.getroot(), encoding='utf-8', method='xml')
     rough_string = re.sub(">\n[\t]+<", '><', rough_string)

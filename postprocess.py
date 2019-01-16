@@ -36,54 +36,54 @@ def run(entry_path, set_path, en_path, de_path, _set):
     parser.run_generator(entryset=entryset, input_dir=set_path, output_dir=de_path, lng='de')
 
     # extract and generate templates based on sentence segmentation
-    en_temp = template.run(entryset)
-    json.dump(en_temp, open(os.path.join(en_path, 'templates.json'), 'w'), indent=4, separators=(',', ': '))
-
-    de_temp = template.run(entryset, 'de')
-    json.dump(de_temp, open(os.path.join(de_path, 'templates.json'), 'w'), indent=4, separators=(',', ': '))
+    # en_temp = template.run(entryset)
+    # json.dump(en_temp, open(os.path.join(en_path, 'templates.json'), 'w'), indent=4, separators=(',', ': '))
+    #
+    # de_temp = template.run(entryset, 'de')
+    # json.dump(de_temp, open(os.path.join(de_path, 'templates.json'), 'w'), indent=4, separators=(',', ': '))
     return lexsize, templates, templates_de, entities, references
 
 if __name__ == '__main__':
     DEV_PATH = 'corpus/delexicalized/dev'
 
-    FINAL_PATH = 'final'
+    FINAL_PATH = 'final/v1.2'
     if not os.path.exists(FINAL_PATH):
         os.mkdir(FINAL_PATH)
 
-    EN_PATH = 'final/en'
+    EN_PATH = 'final/v1.2/en'
     if not os.path.exists(EN_PATH):
         os.mkdir(EN_PATH)
 
-    DE_PATH = 'final/de'
+    DE_PATH = 'final/v1.2/de'
     if not os.path.exists(DE_PATH):
         os.mkdir(DE_PATH)
 
     # TRAINSET
     print 'Preparing trainset...'
-    TRAIN_PATH = 'corpus/delexicalized/train'
+    TRAIN_PATH = 'corpus/delexicalized/v1.2/train'
     ENTRY_PATH = 'corpus/train.cPickle'
     _set = 'train'
 
-    EN_TRAIN_PATH = 'final/en/train'
+    EN_TRAIN_PATH = 'final/v1.2/en/train'
     if not os.path.exists(EN_TRAIN_PATH):
         os.mkdir(EN_TRAIN_PATH)
 
-    DE_TRAIN_PATH = 'final/de/train'
+    DE_TRAIN_PATH = 'final/v1.2/de/train'
     if not os.path.exists(DE_TRAIN_PATH):
         os.mkdir(DE_TRAIN_PATH)
     lexsize, templates, templates_de, entities, references = run(entry_path=ENTRY_PATH, set_path=TRAIN_PATH, en_path=EN_TRAIN_PATH, de_path=DE_TRAIN_PATH, _set=_set)
 
     # DEVSET
     print 'Preparing devset...'
-    DEV_PATH = 'corpus/delexicalized/dev'
+    DEV_PATH = 'corpus/delexicalized/v1.2/dev'
     ENTRY_PATH = 'corpus/dev.cPickle'
     _set = 'dev'
 
-    EN_DEV_PATH = 'final/en/dev'
+    EN_DEV_PATH = 'final/v1.2/en/dev'
     if not os.path.exists(EN_DEV_PATH):
         os.mkdir(EN_DEV_PATH)
 
-    DE_DEV_PATH = 'final/de/dev'
+    DE_DEV_PATH = 'final/v1.2/de/dev'
     if not os.path.exists(DE_DEV_PATH):
         os.mkdir(DE_DEV_PATH)
     lexsize2, templates2, templates_de2, entities2, references2 = run(entry_path=ENTRY_PATH, set_path=DEV_PATH, en_path=EN_DEV_PATH, de_path=DE_DEV_PATH, _set=_set)
@@ -92,6 +92,26 @@ if __name__ == '__main__':
     templates_de.extend(templates_de2)
     entities.extend(entities2)
     references.extend(references2)
+
+    # TESTSET
+    print 'Preparing testset...'
+    TEST_PATH = 'corpus/delexicalized/v1.2/test'
+    ENTRY_PATH = 'corpus/test.cPickle'
+    _set = 'test'
+
+    EN_TEST_PATH = 'final/v1.2/en/test'
+    if not os.path.exists(EN_DEV_PATH):
+        os.mkdir(EN_DEV_PATH)
+
+    DE_TEST_PATH = 'final/v1.2/de/test'
+    if not os.path.exists(DE_DEV_PATH):
+        os.mkdir(DE_DEV_PATH)
+    lexsize3, templates3, templates_de3, entities3, references3 = run(entry_path=ENTRY_PATH, set_path=TEST_PATH, en_path=EN_TEST_PATH, de_path=DE_TEST_PATH, _set=_set)
+    lexsize += lexsize3
+    templates.extend(templates3)
+    templates_de.extend(templates_de3)
+    entities.extend(entities3)
+    references.extend(references3)
 
     print('Number of texts: ', lexsize)
     print('English Templates: ', len(set(templates)))

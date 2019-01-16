@@ -52,7 +52,7 @@ class NMT():
 
         for entry in self.entryset:
             for lex in entry.lexEntries:
-                for sent_id, sent in enumerate(sent_tokenize(lex.text)):
+                for sent_id, sent in enumerate(sent_tokenize(lex.substring)):
                     ftextinfo.write(','.join([entry.eid, entry.category, entry.size, lex.lid, self._set, str(sent_id+1), '\n']))
                     ftext.write(sent.strip().encode('utf-8'))
                     ftext.write('\n'.encode('utf-8'))
