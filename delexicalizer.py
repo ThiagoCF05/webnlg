@@ -1,9 +1,9 @@
 __author__='thiagocastroferreira'
 
 import copy
+import nltk
 import os
 import parser_original as parser
-import re
 
 from entry import *
 
@@ -46,7 +46,7 @@ def get_entitymap(triples):
 def delexicalize(entry):
     for lexEntry in entry.lexEntries:
         template = copy.copy(lexEntry.substring)
-        template = re.sub(r'([,;.?!:])', r' \1 ', template)
+        template = ' '.join(nltk.word_tokenize(template))
 
         entitymap = entry.entitymap_to_dict()
         for tag in entitymap:

@@ -10,6 +10,7 @@ Description:
     PYTHON VERSION: 2.7
 """
 
+import nltk
 import re
 
 from entry import Reference
@@ -52,11 +53,11 @@ def classify_reference(refex):
         return 'name'
 
 def extract_references(text, template, entitymap):
-    text = re.sub(r'([.,;:?!\'\(\)])', r' \1', text)
     text = re.sub(r'(.+)-([1-9]+)-(.+)', r'\1-\2 -\3', text, flags=re.U)
+    text = ' '.join(nltk.word_tokenize(text))
 
-    template = re.sub(r'([.,;:?!\'\(\)])', r' \1', template)
     template = re.sub(r'(.+)-([1-9]+)-(.+)', r'\1-\2 -\3', template, flags=re.U)
+    template = ' '.join(nltk.word_tokenize(template))
 
     refexes = []
 

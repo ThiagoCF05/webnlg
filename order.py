@@ -10,10 +10,10 @@ Description:
 """
 
 import copy
+import nltk
 import re
 
 def order(tripleset, template, entitymap):
-    template = re.sub(r'([.,;:?!\'\(\)])', r' \1 ', template)
     template = re.sub(r'(.+)-([1-9]+)-(.+)', r'\1-\2 -\3', template, flags=re.U)
 
     entitytag = dict(map(lambda item: (item[1], item[0]), entitymap.items()))
@@ -21,7 +21,7 @@ def order(tripleset, template, entitymap):
     orderedtripleset = []
 
     antecedents = []
-    for token in template.split():
+    for token in nltk.word_tokenize(template):
         if token in tags:
             for antecedent in antecedents:
                 try:
