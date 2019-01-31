@@ -22,7 +22,8 @@ def run(entryset):
 
         for lex in entry.lexEntries:
             templates.append(lex.template)
-            templates_de.append(lex.template_de)
+            if lex.template_de:
+                templates_de.append(lex.template_de)
 
             references.extend(lex.references)
             # references_de.extend(lex.references_de)

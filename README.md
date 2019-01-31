@@ -1,8 +1,20 @@
 # Webnlg
-The enriched version of the WebNLG dataset, described at the INLG 2018 paper.
+The enriched version of the WebNLG dataset, described at [the INLG 2018 paper](https://aclweb.org/anthology/W18-6521).
 
-The final version of the corpus is available at [``final``](https://github.com/ThiagoCF05/webnlg/tree/master/final), 
-split in the English (``en``) and German (``de``) versions. Templates automatically extracted are also available on the folders with the name ``templates.json``
+### Description
+
+WebNLG is a valueable resource and benchmark for the Natural Language Generation (NLG) community. However, as other NLG benchmarks, it only consists of a collection of parallel raw representations and their
+corresponding textual realizations. This work aimed to provide intermediate representations of the data for the development and evaluation of popular tasks in the NLG pipeline architecture (Reiter and Dale, 2000), such as Discourse Ordering, Lexicalization, Aggregation and Referring Expression Generation.
+
+### Last Version
+
+The last version of the corpus (v1.2), available [here](https://github.com/ThiagoCF05/webnlg/tree/master/final), counts now with the annotation of the test part of the data. 
+
+### German translation
+
+Besides the official English version of the data (``en``), we also provide a silver-standard version of the corpus in German (``de``). The details on how to obtain the translation is presented on the following section and on the INLG 2018 paper.
+
+### Scripts
 
 To obtain the enriched version of the dataset as available in the mentioned directory, 
 make sure to proper set up *the University of Edinburgh's Neural MT System for WMT17*, publicly available [here](http://data.statmt.org/wmt17_systems).  
@@ -12,9 +24,11 @@ After the settings, update the path variable ``MT_PATH`` in the ``main.sh`` scri
 sh main.sh
 ``
 
+### License
+
 The WebNLG data is licensed under the following license: [CC Attribution-Noncommercial-Share Alike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). The original version of the dataset may be found at [the official website of the WebNLG challenge](http://webnlg.loria.fr/pages/challenge.html).
 
-Citations:
+### Citations:
 
 ```Tex
 @InProceedings{ferreiraetal2018,
