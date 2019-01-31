@@ -52,6 +52,13 @@ def parse(in_file):
             comment = lex.attrib['comment']
             lid = lex.attrib['lid']
 
+            orderedtripleset = []
+            otripleset = lex.find('sortedtripleset')
+            for otriple in otripleset:
+                e1, pred, e2 = otriple.text.split(' | ')
+
+                orderedtripleset.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
+
             try:
                 text = lex.find('text').text
                 if not text:
@@ -70,7 +77,7 @@ def parse(in_file):
                 print 'exception template'
                 template = ''
 
-            lexList.append(Lex(comment=comment, lid=lid, text=text, template=template))
+            lexList.append(Lex(comment=comment, lid=lid, text=text, template=template, orderedtripleset=orderedtripleset))
 
         yield Entry(eid=eid, size=size, category=category, originaltripleset=originaltripleset, \
                     modifiedtripleset=modifiedtripleset, entitymap=entitymap, lexEntries=lexList)

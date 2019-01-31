@@ -25,19 +25,19 @@ def run(set_path, entry_path, _set):
 
 if __name__ == '__main__':
     print 'Preparing testset....'
-    TRAIN_PATH = 'corpus/delexicalized/v1.2/test'
-    ENTRY_PATH = 'corpus/test.cPickle'
+    TRAIN_PATH = 'data/delexicalized/v1.2/test'
+    ENTRY_PATH = 'data/test.cPickle'
     _set = 'test'
     run(TRAIN_PATH, ENTRY_PATH, _set)
 
     print 'Preparing devset...'
-    DEV_PATH = 'corpus/delexicalized/v1.2/dev'
-    ENTRY_PATH = 'corpus/dev.cPickle'
+    DEV_PATH = 'data/delexicalized/v1.2/dev'
+    ENTRY_PATH = 'data/dev.cPickle'
     _set = 'dev'
     run(DEV_PATH, ENTRY_PATH, _set)
 
     print 'Preparing trainset....'
-    TRAIN_PATH = 'corpus/delexicalized/v1.2/train'
-    ENTRY_PATH = 'corpus/train.cPickle'
+    TRAIN_PATH = 'data/delexicalized/v1.2/train'
+    ENTRY_PATH = 'data/train.cPickle'
     _set = 'train'
     run(TRAIN_PATH, ENTRY_PATH, _set)

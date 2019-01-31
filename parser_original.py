@@ -32,13 +32,13 @@ def parse(xml_file):
         originaltripleset = []
         otripleset = entry.find('originaltripleset')
         for otriple in otripleset:
-            e1, pred, e2 = otriple.substring.split(' | ')
+            e1, pred, e2 = otriple.text.split(' | ')
             originaltripleset.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
 
         modifiedtripleset = []
         mtripleset = entry.find('modifiedtripleset')
         for mtriple in mtripleset:
-            e1, pred, e2 = mtriple.substring.split(' | ')
+            e1, pred, e2 = mtriple.text.split(' | ')
 
             modifiedtripleset.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
 
@@ -47,7 +47,7 @@ def parse(xml_file):
         for lex in lexEntries:
             comment = lex.attrib['comment']
             lid = lex.attrib['lid']
-            text = lex.substring
+            text = lex.text
             template = ''
 
             lexList.append(Lex(comment=comment, lid=lid, text=text, template=template))
@@ -112,17 +112,17 @@ def generate(entries, fname):
         xml_original = ET.SubElement(xml_entry, 'originaltripleset')
         for triple in entry.originaltripleset:
             xml_triple = ET.SubElement(xml_original, 'otriple')
-            xml_triple.substring = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
+            xml_triple.text = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
 
         xml_modified = ET.SubElement(xml_entry, 'modifiedtripleset')
         for triple in entry.modifiedtripleset:
             xml_triple = ET.SubElement(xml_modified, 'otriple')
-            xml_triple.substring = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
+            xml_triple.text = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
 
         xml_entitymap = ET.SubElement(xml_entry, 'entitymap')
         for tagentity in entry.entitymap:
             xml_tagentity = ET.SubElement(xml_entitymap, 'entity')
-            xml_tagentity.substring = tagentity.tag + ' | ' + tagentity.entity
+            xml_tagentity.text = tagentity.tag + ' | ' + tagentity.entity
 
 
         for lexEntry in entry.lexEntries:
@@ -130,10 +130,10 @@ def generate(entries, fname):
             xml_lex = ET.SubElement(xml_entry, 'lex', attrib)
 
             xml_text = ET.SubElement(xml_lex, 'text')
-            xml_text.substring = lexEntry.substring
+            xml_text.text = lexEntry.text
 
             xml_template = ET.SubElement(xml_lex, 'template')
-            xml_template.substring = lexEntry.template
+            xml_template.text = lexEntry.template
 
     rough_string = ET.tostring(root, encoding='utf-8', method='xml')
     xml = minidom.parseString(rough_string).toprettyxml(indent="\t")

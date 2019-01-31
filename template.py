@@ -9,7 +9,7 @@ Description:
     PYTHON VERSION: 2.7
 """
 
-import _pickle as p
+import pickle as p
 import collections
 import copy
 import json
@@ -160,7 +160,7 @@ class Tree:
 
         for reference in self.references:
             refex = ' '.join(reference.refex.split())
-            
+
             for i, substring in enumerate(substrings):
                 root, text = substring
 

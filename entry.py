@@ -19,13 +19,13 @@ class Triple():
         self.object = object
 
 class Lex():
-    def __init__(self, comment, lid, text, template):
+    def __init__(self, comment, lid, text, template, orderedtripleset=[], references=[]):
         self.comment = comment
         self.lid = lid
         self.text = text
         self.template = template
-        self.orderedtripleset = []
-        self.references = []
+        self.orderedtripleset = orderedtripleset
+        self.references = references
 
         # german entry
         self.text_de = ''
