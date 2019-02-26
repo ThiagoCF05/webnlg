@@ -46,44 +46,44 @@ def run(entry_path, set_path, en_path, de_path, _set):
     return lexsize, templates, templates_de, entities, references
 
 if __name__ == '__main__':
-    FINAL_PATH = 'versions/v1.3'
+    FINAL_PATH = 'versions/v1.4'
     if not os.path.exists(FINAL_PATH):
         os.mkdir(FINAL_PATH)
 
-    EN_PATH = 'versions/v1.3/en'
+    EN_PATH = 'versions/v1.4/en'
     if not os.path.exists(EN_PATH):
         os.mkdir(EN_PATH)
 
-    DE_PATH = 'versions/v1.3/de'
+    DE_PATH = 'versions/v1.4/de'
     if not os.path.exists(DE_PATH):
         os.mkdir(DE_PATH)
 
     # TRAINSET
     print 'Preparing trainset...'
-    TRAIN_PATH = 'data/delexicalized/v1.3/train'
+    TRAIN_PATH = 'data/delexicalized/v1.4/train'
     ENTRY_PATH = 'data/train.cPickle'
     _set = 'train'
 
-    EN_TRAIN_PATH = 'versions/v1.3/en/train'
+    EN_TRAIN_PATH = 'versions/v1.4/en/train'
     if not os.path.exists(EN_TRAIN_PATH):
         os.mkdir(EN_TRAIN_PATH)
 
-    DE_TRAIN_PATH = 'versions/v1.3/de/train'
+    DE_TRAIN_PATH = 'versions/v1.4/de/train'
     if not os.path.exists(DE_TRAIN_PATH):
         os.mkdir(DE_TRAIN_PATH)
     lexsize, templates, templates_de, entities, references = run(entry_path=ENTRY_PATH, set_path=TRAIN_PATH, en_path=EN_TRAIN_PATH, de_path=DE_TRAIN_PATH, _set=_set)
 
     # DEVSET
     print 'Preparing devset...'
-    DEV_PATH = 'data/delexicalized/v1.3/dev'
+    DEV_PATH = 'data/delexicalized/v1.4/dev'
     ENTRY_PATH = 'data/dev.cPickle'
     _set = 'dev'
 
-    EN_DEV_PATH = 'versions/v1.3/en/dev'
+    EN_DEV_PATH = 'versions/v1.4/en/dev'
     if not os.path.exists(EN_DEV_PATH):
         os.mkdir(EN_DEV_PATH)
 
-    DE_DEV_PATH = 'versions/v1.3/de/dev'
+    DE_DEV_PATH = 'versions/v1.4/de/dev'
     if not os.path.exists(DE_DEV_PATH):
         os.mkdir(DE_DEV_PATH)
     lexsize2, templates2, templates_de2, entities2, references2 = run(entry_path=ENTRY_PATH, set_path=DEV_PATH, en_path=EN_DEV_PATH, de_path=DE_DEV_PATH, _set=_set)
@@ -95,11 +95,11 @@ if __name__ == '__main__':
 
     # TESTSET
     print 'Preparing testset...'
-    TEST_PATH = 'data/delexicalized/v1.3/test'
+    TEST_PATH = 'data/delexicalized/v1.4/test'
     ENTRY_PATH = 'data/test.cPickle'
     _set = 'test'
 
-    EN_TEST_PATH = 'versions/v1.3/en/test'
+    EN_TEST_PATH = 'versions/v1.4/en/test'
     if not os.path.exists(EN_TEST_PATH):
         os.mkdir(EN_TEST_PATH)
 

@@ -52,12 +52,18 @@ def parse(in_file):
             comment = lex.attrib['comment']
             lid = lex.attrib['lid']
 
-            orderedtripleset = []
-            otripleset = lex.find('sortedtripleset')
-            for otriple in otripleset:
-                e1, pred, e2 = otriple.text.split(' | ')
+            try:
+                orderedtripleset = []
+                otripleset = lex.find('sortedtripleset')
+                for snt in otripleset:
+                    orderedtripleset_snt = []
+                    for otriple in snt:
+                        e1, pred, e2 = otriple.text.split(' | ')
 
-                orderedtripleset.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
+                        orderedtripleset_snt.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
+                    orderedtripleset.append(orderedtripleset_snt)
+            except:
+                orderedtripleset = []
 
             try:
                 text = lex.find('text').text
@@ -143,9 +149,13 @@ def generate(entryset, in_file, out_file, lng):
                 orderedtripleset = entry.lexEntries[i].orderedtripleset_de
 
             orderedtripleset_xml = ET.SubElement(lexEntry_xml, 'sortedtripleset')
-            for triple in orderedtripleset:
-                striple = ET.SubElement(orderedtripleset_xml, 'striple')
-                striple.text = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
+            for j, orderedtripleset_snt in enumerate(orderedtripleset):
+                orderedtripleset_snt_xml = ET.SubElement(orderedtripleset_xml, 'sentence')
+                orderedtripleset_snt_xml.attrib = { 'ID': str(j+1) }
+
+                for triple in orderedtripleset_snt:
+                    striple = ET.SubElement(orderedtripleset_snt_xml, 'striple')
+                    striple.text = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
 
             if lng == 'en':
                 references_xml = ET.SubElement(lexEntry_xml, 'references')

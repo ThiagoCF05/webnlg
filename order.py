@@ -21,24 +21,28 @@ def order(tripleset, template, entitymap):
     orderedtripleset = []
 
     antecedents = []
-    for token in nltk.word_tokenize(template):
-        if token in tags:
-            for antecedent in antecedents:
-                try:
-                    candidates = filter(lambda triple: (entitytag[triple.subject].strip() == token.strip()
-                                                        and entitytag[triple.object].strip() == antecedent.strip())
-                                                        or (entitytag[triple.subject].strip() == antecedent.strip()
-                                                        and entitytag[triple.object].strip() == token.strip()), tripleset)
-                except Exception as e:
-                    print e.message
-                    print entitytag
-                    print 10 * '-'
-                    candidates = []
-                if len(candidates) > 0:
-                    candidate = candidates[0]
-                    orderedtripleset.append(candidate)
-                    tripleset.remove(candidate)
-            antecedents.append(token)
+    for snt in nltk.sent_tokenize(template):
+        orderedtripleset_snt = []
+        for token in nltk.word_tokenize(snt):
+            if token in tags:
+                for antecedent in antecedents:
+                    try:
+                        candidates = filter(lambda triple: (entitytag[triple.subject].strip() == token.strip()
+                                                            and entitytag[triple.object].strip() == antecedent.strip())
+                                                            or (entitytag[triple.subject].strip() == antecedent.strip()
+                                                            and entitytag[triple.object].strip() == token.strip()), tripleset)
+                    except Exception as e:
+                        print e.message
+                        print entitytag
+                        print 10 * '-'
+                        candidates = []
+                    if len(candidates) > 0:
+                        candidate = candidates[0]
+                        orderedtripleset_snt.append(candidate)
+                        tripleset.remove(candidate)
+                antecedents.append(token)
+        orderedtripleset.append(orderedtripleset_snt)
+
     return orderedtripleset
 
 def run(entryset, lng='en'):

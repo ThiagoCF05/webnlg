@@ -1,0 +1,179 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="University" eid="Id1" size="1">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | facultySize | &quot;100&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | faculty | 100</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The academic staff size of Accademia di Architettura di Mendrisio is 100.</text>
+				<template>The academic staff size of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The academic staff number 100 at the Accademia di Architettura di Mendrisio.</text>
+				<template>The academic staff number PATIENT-1 at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Accademia di Architettura di Mendrisio has an academic staff of 100.</text>
+				<template>AGENT-1 has an academic staff of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | 100</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id2" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | campus | &quot;Urban, ,\nIn Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The campus address for the Acharya Institue of Technology is: Soldenvanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore - 560090.</text>
+				<template>The campus address for AGENT-1 is : PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Acharya Institute of Technology campus is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.</text>
+				<template>AGENT-1 campus is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The campus of the Acharya Institute of Technology is located at Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.</text>
+				<template>The campus of AGENT-1 is located at PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id3" size="1">
+			<originaltripleset>
+				<otriple>Alba_Iulia | country | Romania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alba_Iulia | country | Romania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Alba Iulia is located in Romania.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alba Iulia is in the country of Romania.</text>
+				<template>AGENT-1 is in the country of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alba Iulia is in Romania.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alba_Iulia</entity>
+				<entity>PATIENT-1 | Romania</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id4" size="1">
+			<originaltripleset>
+				<otriple>Alba_Iulia | isPartOf | Alba_County</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alba_Iulia | isPartOf | Alba_County</mtriple>
+			</modifiedtripleset>
+			<lex comment="toFix" lid="Id1">
+				<text>Alba Iulia os part of the county of Alba.</text>
+				<template>AGENT-1 os part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alba lulia is part of Alba County.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alba Iulia is part of Alba County.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alba_Iulia</entity>
+				<entity>PATIENT-1 | Alba_County</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id5" size="1">
+			<originaltripleset>
+				<otriple>Romania | patronSaint | Andrew_the_Apostle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | patronSaint | Andrew_the_Apostle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The patron Saint of Romania is Andrew the Apostle.</text>
+				<template>The patron Saint of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Andrew the Apostle is the patron saint of Romania.</text>
+				<template>PATIENT-1 is the patron saint of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Romania</entity>
+				<entity>PATIENT-1 | Andrew_the_Apostle</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id6" size="1">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | facultySize | &quot;737&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | faculty | 737</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The academic staff of the School of Business and Social Sciences at the Aarhus University number 737.</text>
+				<template>The academic staff of AGENT-1 number PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The School of Business and Social Sciences at the Aarhus University has academic staff size of 737.</text>
+				<template>AGENT-1 has academic staff size of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The School of Business and Social Sciences at the Aarhus University has an academic staff of 737.</text>
+				<template>AGENT-1 has an academic staff of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | 737</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id7" size="1">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | country | Denmark</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | country | Denmark</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The Aarhus University School of Business and Social Sciences is in the country of Denmark.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The School of Business and Social Sciences at the Aarhus University is situated in Denmark.</text>
+				<template>AGENT-1 is situated in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The School of Business and Social Sciences at the Aarhus University is located in Denmark.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<text>The School of Business and Social Sciences at the Aarhus University is in Denmark.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | Denmark</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>
