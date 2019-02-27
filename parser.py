@@ -171,15 +171,20 @@ def generate(entryset, in_file, out_file, lng):
             if lng == 'en':
                 text = entry.lexEntries[i].text
                 template = entry.lexEntries[i].template
+                tree = entry.lexEntries[i].tree
             else:
                 text = entry.lexEntries[i].text_de
                 template = entry.lexEntries[i].template_de
+                tree = entry.lexEntries[i].tree_de
 
             text_xml = ET.SubElement(lexEntry_xml, 'text')
             text_xml.text = text
 
             template_xml = ET.SubElement(lexEntry_xml, 'template')
             template_xml.text = template
+
+            tree_xml = ET.SubElement(lexEntry_xml, 'tree')
+            tree_xml.text = tree
 
     rough_string = ET.tostring(tree.getroot(), encoding='utf-8', method='xml')
     rough_string = re.sub(">\n[\t]+<", '><', rough_string)

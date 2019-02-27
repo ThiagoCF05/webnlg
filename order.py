@@ -32,9 +32,9 @@ def order(tripleset, template, entitymap):
                                                             or (entitytag[triple.subject].strip() == antecedent.strip()
                                                             and entitytag[triple.object].strip() == token.strip()), tripleset)
                     except Exception as e:
-                        print e.message
-                        print entitytag
-                        print 10 * '-'
+                        print(e.message)
+                        print(entitytag)
+                        print(10 * '-')
                         candidates = []
                     if len(candidates) > 0:
                         candidate = candidates[0]

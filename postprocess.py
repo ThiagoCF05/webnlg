@@ -17,10 +17,12 @@ import os
 import parser
 import reg
 import stats
-# import template
+from tree import TreeExtraction
 from nmt import NMT
 
 def run(entry_path, set_path, en_path, de_path, _set):
+    template = TreeExtraction()
+
     entryset = p.load(open(entry_path))
     if de_path != '':
         nmt = NMT(entryset, _set) # translate to german
@@ -29,6 +31,10 @@ def run(entry_path, set_path, en_path, de_path, _set):
 
     # referring expressions
     entryset = reg.run(entryset, 'en')
+
+    # tree extraction
+    entryset = template(entryset, 'en')
+    template.close()
 
     lexsize, templates, templates_de, entities, references = stats.run(entryset)
 

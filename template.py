@@ -22,9 +22,11 @@ STANFORD_PATH=r'/home/tcastrof/workspace/stanford/stanford-corenlp-full-2018-02-
 
 class Tree:
     def __init__(self, tree, tokens, lemmas, references=[], dependencies=[]):
+        self.tokens = tokens
+        self.lemmas = lemmas
         self.token2lemma = dict(zip(tokens, lemmas))
         self.nodes, self.edges, self.root = self.parse(tree)
-        self.references= references
+        self.references = references
         self.dependencies = dependencies
 
 
@@ -92,6 +94,31 @@ class Tree:
                 sub.append((node, ' '.join(self.substring(node, []))))
 
         return sub
+
+
+    def span(self):
+        terminals = []
+        for node in self.nodes:
+            type_ = self.nodes[node]['type']
+            if type_ == 'terminal':
+                terminals.append(node)
+
+        terminals = sorted(terminals)
+        spans = []
+        for i in range(len(terminals)):
+            for j, terminal in enumerate(terminals):
+                idxs = terminals[j:j+i+1]
+
+                string, subtree = [], []
+                for node in idxs:
+                    string.append(self.nodes[node]['name'])
+                    parent = self.nodes[node]['parent']
+                    subtree.append('({0} {1})'.format(self.nodes[parent]['name'], self.nodes[node]['name']))
+
+                string = ' '.join(string)
+                subtree = ' '.join(subtree)
+                spans.append((string, subtree))
+        return spans
 
 
     def classify_syntax(self):
@@ -189,6 +216,34 @@ class Tree:
                     self.edges[node_id2] = []
                     self.edges[node_id1] = [node_id2]
                     break
+
+
+    def delexicalize(self, str_tree):
+        # delexicalize subtrees
+        substrings = self.substrings()
+        for reference in self.references:
+            refex = ' '.join(reference.refex.split())
+
+            for substring in substrings:
+                root, text = substring
+
+                if refex == text.strip():
+                    subtree = self.__print__(root).strip()
+                    str_tree = str_tree.replace(subtree, '({0} (TAG {1}))'.format(self.nodes[root]['name'], reference.tag))
+                    break
+
+
+        # delexicalize spans
+        spans = self.span()
+        for reference in self.references:
+            refex = ' '.join(reference.refex.split())
+
+            for span in spans:
+                if refex == span[0].strip():
+                    str_tree.replace(span[1].strip(), '(TAG {0}) '.format(reference.tag))
+                    break
+
+        return str_tree
 
 
     # TO DO: treat modals would, should, might to, must, etc.
@@ -377,10 +432,12 @@ class Tree:
         self.dependencies = dependencies
 
         self.classify_syntax()
-        self.classify_verbs()
-        self.delexicalize_references()
+        # self.classify_verbs()
 
-        return self.__print__(self.root, '')
+        str_tree = self.__print__(self.root)
+        str_tree = self.delexicalize(str_tree)
+
+        return str_tree
 
 
     def __print__(self, root, tree=''):
@@ -416,7 +473,7 @@ class Template:
                 print('Progress: ', round((float(i) / len(entryset)) * 100, 2))
             for lex in entry.lexEntries:
                 if lng == 'en':
-                    t = self.extract(copy.deepcopy(entry.modifiedtripleset), lex.substring, lex.template, entry.entitymap_to_dict())
+                    t = self.extract(copy.deepcopy(entry.modifiedtripleset), lex.text, lex.template, entry.entitymap_to_dict())
                 else:
                     t = self.extract(copy.deepcopy(entry.modifiedtripleset), lex.text_de, lex.template_de, entry.entitymap_to_dict())
 
@@ -467,8 +524,19 @@ class Template:
         return sentences
 
 
+    def extract_trees(self, entryset, lng='en'):
+        for entry in entryset:
+            for lex in entry.lexEntries:
+                if lng == 'en':
+                    lex.tree = self.extract_tree(text=lex.text, template=lex.template, entitymap=entry.entitymap_to_dict())
+                else:
+                    lex.tree_de = self.extract_tree(text=lex.text_de, template=lex.template_de, entitymap=entry.entitymap_to_dict())
+
+
     def extract_tree(self, text, template, entitymap):
         references = reg.extract_references(text, template, entitymap)
+
+        text = text.replace('@', '')
 
         text = self.tokenize(text)
         props = {'annotators': 'tokenize,ssplit,pos,lemma,parse','pipelineLanguage':'en','outputFormat':'json'}
@@ -492,8 +560,8 @@ class Template:
             template = tree(tree.root, tree.nodes, tree.edges, references, dep)
             delex += template + ' '
 
-        trees = trees.strip()
-        delex = delex.strip()
+        trees = trees.strip() + ')'
+        delex = delex.strip() + ')'
         return trees, delex, deps
 
 

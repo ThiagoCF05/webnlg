@@ -24,12 +24,14 @@ class Lex():
         self.lid = lid
         self.text = text
         self.template = template
+        self.tree = ''
         self.orderedtripleset = orderedtripleset
         self.references = references
 
         # german entry
         self.text_de = ''
         self.template_de = ''
+        self.tree_de = ''
         self.orderedtripleset_de = []
         self.references_de = []
 
