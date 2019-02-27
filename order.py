@@ -27,10 +27,10 @@ def order(tripleset, template, entitymap):
             if token in tags:
                 for antecedent in antecedents:
                     try:
-                        candidates = filter(lambda triple: (entitytag[triple.subject].strip() == token.strip()
+                        candidates = list(filter(lambda triple: (entitytag[triple.subject].strip() == token.strip()
                                                             and entitytag[triple.object].strip() == antecedent.strip())
                                                             or (entitytag[triple.subject].strip() == antecedent.strip()
-                                                            and entitytag[triple.object].strip() == token.strip()), tripleset)
+                                                            and entitytag[triple.object].strip() == token.strip()), tripleset))
                     except Exception as e:
                         print(e.message)
                         print(entitytag)

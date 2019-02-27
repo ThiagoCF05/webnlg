@@ -7,7 +7,7 @@ Description:
     Postprocessing script: for train and dev sets, postprocess after translation, create xml final file
     and extract referring expressions
 
-    PYTHON VERSION: 2.7
+    PYTHON VERSION: 3
 """
 
 import cPickle as p
@@ -17,13 +17,10 @@ import os
 import parser
 import reg
 import stats
-from tree import TreeExtraction
 from nmt import NMT
 
 def run(entry_path, set_path, en_path, de_path, _set):
-    template = TreeExtraction()
-
-    entryset = p.load(open(entry_path))
+    entryset = p.load(open(entry_path, 'rb'))
     if de_path != '':
         nmt = NMT(entryset, _set) # translate to german
         entryset = nmt.postprocess()
@@ -31,10 +28,6 @@ def run(entry_path, set_path, en_path, de_path, _set):
 
     # referring expressions
     entryset = reg.run(entryset, 'en')
-
-    # tree extraction
-    entryset = template(entryset, 'en')
-    template.close()
 
     lexsize, templates, templates_de, entities, references = stats.run(entryset)
 
@@ -65,7 +58,7 @@ if __name__ == '__main__':
         os.mkdir(DE_PATH)
 
     # TRAINSET
-    print 'Preparing trainset...'
+    print('Preparing trainset...')
     TRAIN_PATH = 'data/delexicalized/v1.4/train'
     ENTRY_PATH = 'data/train.cPickle'
     _set = 'train'
@@ -80,7 +73,7 @@ if __name__ == '__main__':
     lexsize, templates, templates_de, entities, references = run(entry_path=ENTRY_PATH, set_path=TRAIN_PATH, en_path=EN_TRAIN_PATH, de_path=DE_TRAIN_PATH, _set=_set)
 
     # DEVSET
-    print 'Preparing devset...'
+    print('Preparing devset...')
     DEV_PATH = 'data/delexicalized/v1.4/dev'
     ENTRY_PATH = 'data/dev.cPickle'
     _set = 'dev'
@@ -100,7 +93,7 @@ if __name__ == '__main__':
     references.extend(references2)
 
     # TESTSET
-    print 'Preparing testset...'
+    print('Preparing testset...')
     TEST_PATH = 'data/delexicalized/v1.4/test'
     ENTRY_PATH = 'data/test.cPickle'
     _set = 'test'

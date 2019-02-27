@@ -24,19 +24,19 @@ def run(set_path, entry_path, _set):
     p.dump(entryset, open(entry_path, 'w'))
 
 if __name__ == '__main__':
-    print 'Preparing testset....'
+    print('Preparing testset....')
     TRAIN_PATH = 'data/delexicalized/v1.4/test'
     ENTRY_PATH = 'data/test.cPickle'
     _set = 'test'
     run(TRAIN_PATH, ENTRY_PATH, _set)
 
-    print 'Preparing devset...'
+    print('Preparing devset...')
     DEV_PATH = 'data/delexicalized/v1.4/dev'
     ENTRY_PATH = 'data/dev.cPickle'
     _set = 'dev'
     run(DEV_PATH, ENTRY_PATH, _set)
 
-    print 'Preparing trainset....'
+    print('Preparing trainset....')
     TRAIN_PATH = 'data/delexicalized/v1.4/train'
     ENTRY_PATH = 'data/train.cPickle'
     _set = 'train'

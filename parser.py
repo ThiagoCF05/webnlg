@@ -68,19 +68,19 @@ def parse(in_file):
             try:
                 text = lex.find('text').text
                 if not text:
-                    print 'error text'
+                    print('error text')
                     text = ''
             except:
-                print 'exception text'
+                print('exception text')
                 text = ''
 
             try:
                 template = lex.find('template').text
                 if not template:
-                    print 'error template'
+                    print('error template')
                     template = ''
             except:
-                print 'exception template'
+                print('exception template')
                 template = ''
 
             lexList.append(Lex(comment=comment, lid=lid, text=text, template=template, orderedtripleset=orderedtripleset))
@@ -123,7 +123,7 @@ def generate(entryset, in_file, out_file, lng):
         for modifiedtripleset in modifiedtriplesets[1:]:
             entry_xml.remove(modifiedtripleset)
 
-        entry = filter(lambda entry: entry.eid==eid and entry.size==str(size) and entry.category==category, entryset)[0]
+        entry = list(filter(lambda entry: entry.eid==eid and entry.size==str(size) and entry.category==category, entryset))[0]
 
         tagentity = entry.entitymap_to_dict()
         for tag in sorted(tagentity.keys()):
@@ -141,6 +141,14 @@ def generate(entryset, in_file, out_file, lng):
             template_xml = lexEntry_xml.find('template')
             if template_xml is not None:
                 lexEntry_xml.remove(template_xml)
+            # remove sortedtripleset
+            orderedtripleset_xml = lexEntry_xml.find('sortedtripleset')
+            if orderedtripleset_xml is not None:
+                lexEntry_xml.remove(orderedtripleset_xml)
+            # remove references
+            references_xml = lexEntry_xml.find('references')
+            if references_xml is not None:
+                lexEntry_xml.remove(references_xml)
 
             # ordered triple set
             if lng == 'en':
@@ -171,11 +179,11 @@ def generate(entryset, in_file, out_file, lng):
             if lng == 'en':
                 text = entry.lexEntries[i].text
                 template = entry.lexEntries[i].template
-                tree = entry.lexEntries[i].tree
+                tree_ = entry.lexEntries[i].tree
             else:
                 text = entry.lexEntries[i].text_de
                 template = entry.lexEntries[i].template_de
-                tree = entry.lexEntries[i].tree_de
+                tree_ = entry.lexEntries[i].tree_de
 
             text_xml = ET.SubElement(lexEntry_xml, 'text')
             text_xml.text = text
@@ -184,7 +192,7 @@ def generate(entryset, in_file, out_file, lng):
             template_xml.text = template
 
             tree_xml = ET.SubElement(lexEntry_xml, 'tree')
-            tree_xml.text = tree
+            tree_xml.text = tree_
 
     rough_string = ET.tostring(tree.getroot(), encoding='utf-8', method='xml')
     rough_string = re.sub(">\n[\t]+<", '><', rough_string)
