@@ -1,0 +1,517 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="University" eid="Id828" size="5">
+			<originaltripleset>
+				<otriple>AWH_Engineering_College | established | 2001</otriple>
+				<otriple>AWH_Engineering_College | faculty | 250</otriple>
+				<otriple>AWH_Engineering_College | state | Kerala</otriple>
+				<otriple>Kerala | northwest | Mahé,_India</otriple>
+				<otriple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AWH_Engineering_College | established | 2001</otriple>
+				<otriple>AWH_Engineering_College | academicStaffSize | 250</otriple>
+				<otriple>AWH_Engineering_College | state | Kerala</otriple>
+				<otriple>Kerala | has to its northwest | Mahé,_India</otriple>
+				<otriple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
+						<striple>AWH_Engineering_College | state | Kerala</striple>
+						<striple>Kerala | has to its northwest | Mahé,_India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AWH_Engineering_College | established | 2001</striple>
+						<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>AWH Engineering College is located southeast of Mahe in Kuttikkattoor, Kerala, India. The College was established in 2001 and has 250 academic staff.</text>
+				<template>AGENT-1 is located southeast of PATIENT-3 in PATIENT-4 ,  BRIDGE-1 .  AGENT-1 was established in PATIENT-1 and has PATIENT-2 academic staff . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (JJ located) (NN southeast)) (PP (IN of) (NP (NP (TAG PATIENT-3)) (PP (IN in) (NP (NP (TAG PATIENT-4)) (, ,) (NP (TAG BRIDGE-1)))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-2)) (JJ academic) (NN staff)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Kerala | has to its northwest | Mahé,_India</striple>
+						<striple>AWH_Engineering_College | state | Kerala</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AWH_Engineering_College | established | 2001</striple>
+						<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
+						<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Kerala state which has Mahe, India to it's northwest is also the home of the AWH Engineering College. The College was established in 2001 in the city of Kuttikkattoor and currently has 250 members of staff.</text>
+				<template>BRIDGE-1 state which has PATIENT-3 to BRIDGE-1 northwest is also the home of AGENT-1 .  AGENT-1 was established in PATIENT-1 in the city of PATIENT-4 and currently has PATIENT-2 members of staff . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (JJ (TAG BRIDGE-1)) (NN state)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (TAG PATIENT-3)) (PP (TO to) (NP (PRP it)))))))) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADVP (RB northwest) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (ADVP (RB also)) (NP (NP (DT the) (NN home)) (PP (IN of) (NP (TAG AGENT-1)))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP (TAG PATIENT-1))) (PP (IN in) (NP (NP (DT the) (NN city)) (PP (IN of) (NP (TAG PATIENT-4)))))) (CC and) (VP[aspect=simple, tense=present, voice=active] (ADVP (RB currently)) (VB have) (NP (NP (CD (TAG PATIENT-2)) (NNS members)) (PP (IN of) (NP (NN staff)))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>BRIDGE-1 | Kerala</entity>
+				<entity>PATIENT-1 | 2001</entity>
+				<entity>PATIENT-2 | 250</entity>
+				<entity>PATIENT-3 | Mahé,_India</entity>
+				<entity>PATIENT-4 | &quot;Kuttikkattoor&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id829" size="5">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | postgrad | &quot;~700&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | campus | &quot;Urban, ,\nIn Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | affiliations | Visvesvaraya_Technological_University</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</otriple>
+				<otriple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</otriple>
+				<otriple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</otriple>
+				<otriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
+						<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The Acharya Institute of Technology is located in Soldevanahalli, Acharya Dr. Sarvapalli on Radhakrishnan Road, Hessarghatta Main road, Bangalore 560090, and is affiliated with Visvesvaraya Technological University. Dr. G. P. Prabhukumar is the Director. There have been 700 Post Graduate students.</text>
+				<template>AGENT-1 is located PATIENT-4 ,  and is affiliated with PATIENT-5 .  PATIENT-2 is the Director .  There have been PATIENT-3 Post Graduate students . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (NNP Soldevanahalli) (, ,) (NNP Acharya) (NNP Dr.) (NNP Sarvapalli)) (PP (IN on) (NP (NP (NNP Radhakrishnan) (NNP Road)) (, ,) (NP (NP (NNP Hessarghatta) (NNP Main) (NN road)) (, ,) (NP (NNP Bangalore) (CD 560090))) (, ,))))))) (CC and) (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (IN with) (NP-SUBJ (TAG PATIENT-5))))) (. .))  (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (DT the) (NN Director))) (. .))  (S (NP (EX There)) (VP[aspect=perfect, tense=present, voice=active] (VB be) (NP (CD (TAG PATIENT-3)) (NNP Post) (NNP Graduate) (NNS students))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+						<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The Acharya Institute of Technology is located at In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090. The School is affiliated with Visvesvaraya Technological University and has 700 Postgraduate Students. Dr. G. P. Prabhukumar is director of the School.</text>
+				<template>AGENT-1 is located at PATIENT-4 .  AGENT-1 is affiliated with PATIENT-5 and has PATIENT-3 Postgraduate Students .  PATIENT-2 is director of AGENT-1 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN at) (PP (IN In) (NP (NP (NNP Soldevanahalli)) (, ,) (NP (NNP Acharya) (NNP Dr.) (NNP Sarvapalli) (NNP Radhakrishnan) (NNP Road)) (, ,) (NP (NP (NNP Hessarghatta) (NNP Main) (NNP Road)) (, ,) (NP (NNP Bangalore))) (: --) (NP (CD 560090))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (IN with) (NP (TAG PATIENT-5)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-3)) (NNP Postgraduate) (NNS Students)))) (. .))  (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (NN director)) (PP (IN of) (NP (TAG AGENT-1))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Bangalore</entity>
+				<entity>PATIENT-2 | &quot;Dr. G. P. Prabhukumar&quot;</entity>
+				<entity>PATIENT-3 | 700</entity>
+				<entity>PATIENT-4 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-5 | Visvesvaraya_Technological_University</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id830" size="5">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Acharya_Institute_of_Technology | country | &quot;India&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | &quot;700&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>Acharya_Institute_of_Technology | affiliations | Visvesvaraya_Technological_University</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</otriple>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Acharya_Institute_of_Technology | country | &quot;India&quot;</otriple>
+				<otriple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</otriple>
+				<otriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+						<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+						<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+						<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The Acharya Institute of Technology in Bangalore, India has 700 postgraduate students. It is affiliated to the Visvesvaraya Technological University and its president is B.M.Reddy.</text>
+				<template>AGENT-1 in PATIENT-2 ,  PATIENT-3 has PATIENT-4 postgraduate students .  AGENT-1 is affiliated to PATIENT-5 and AGENT-1 president is PATIENT-1 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT The) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NP (NNP Technology)) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG PATIENT-3))))))) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (CD (TAG PATIENT-4)) (NN postgraduate) (NNS students))) (. .))  (S-COORDINATION (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-5))))) (CC and) (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (NN president)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+						<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+						<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>B M Reddy is the President of the Acharya Institute of Technology in Bangalore, India. The Institute is affiliated with the Visvesvaraya Technological University and has 700 postgraduate students.</text>
+				<template>PATIENT-1 is the President of AGENT-1 in PATIENT-2 ,  PATIENT-3 .  AEGNT-1 is affiliated with PATIENT-5 and has PATIENT-4 postgraduate students . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NNP President)) (PP (IN of) (NP (NP (DT the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NP (NNP Technology)) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP India))))))))) (. .))  (S (NP-SUBJ (DT The) (NNP Institute)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (IN with) (NP (TAG PATIENT-5)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-4)) (NN postgraduate) (NNS students)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+						<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+						<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+						<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The president of the Acharya Institute of Technology in Bangalore, India is B. M. Reddy. The Acharya Institute of Technology, which has 700 postgraduate students , is affiliated to Visvesvaraya Technological University.</text>
+				<template>The president of AGENT-1 in PATIENT-2 ,  PATIENT-3 is PATIENT-1 . AGENT-1 ,  which has PATIENT-4 postgraduate students  ,  is affiliated to PATIENT-5 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT The) (NN president)) (PP (IN of) (NP (NP (DT the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NP (NNP Technology)) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG PATIENT-3))))))))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .))  (S (NP-SUBJ (NP-OBJ (DT The) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NNP Technology))) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-4)) (NN postgraduate) (NNS students))))) (, ,)) (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-5)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;B.M. Reddy&quot;</entity>
+				<entity>PATIENT-2 | Bangalore</entity>
+				<entity>PATIENT-3 | &quot;India&quot;</entity>
+				<entity>PATIENT-4 | 700</entity>
+				<entity>PATIENT-5 | Visvesvaraya_Technological_University</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id831" size="5">
+			<originaltripleset>
+				<otriple>European_University_Association | headquarters | Brussels</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | country | Denmark</otriple>
+				<otriple>Denmark | leaderTitle | Monarchy_of_Denmark</otriple>
+				<otriple>Denmark | leader | Lars_Løkke_Rasmussen</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliations | European_University_Association</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>European_University_Association | headquarters | Brussels</otriple>
+				<otriple>School of Business and Social Sciences at the Aarhus University | country | Denmark</otriple>
+				<otriple>Denmark | leaderTitle | Monarchy_of_Denmark</otriple>
+				<otriple>Denmark | leaderName | Lars_Løkke_Rasmussen</otriple>
+				<otriple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+						<striple>European_University_Association | headquarters | Brussels</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Denmark | leaderTitle | Monarchy_of_Denmark</striple>
+						<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The School of Business and Social Sciences at the Aarhus University in Denmark is affiliated to the European University Association in Brussels. Denmark has a monarchy and its leader is Lars Lokke Rasmussen.</text>
+				<template>AGENT-1 in BRIDGE-1 is affiliated to BRIDGE-2 in PATIENT-1 .  BRIDGE-1 has PATIENT-2 and BRIDGE-1 leader is PATIENT-3 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT The) (NNP School)) (PP (IN of) (NP-COORDINATION (NNP Business) (CC and) (NNP Social) (NNPS Sciences))) (PP (IN at) (NP (NP (DT the) (NNP Aarhus) (NNP University)) (PP (IN in) (NP (TAG BRIDGE-1)))))) (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (TO to) (NP-SUBJ (NP (TAG BRIDGE-2)) (PP (IN in) (NP (TAG PATIENT-1)))))) (. .))  (S-COORDINATION (S (NP (TAG BRIDGE-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (TAG PATIENT-2)))) (CC and) (S (NP-SUBJ (PRP$ (TAG BRIDGE-1)) (NN leader)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-3)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>European_University_Association | headquarters | Brussels</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Denmark | leaderTitle | Monarchy_of_Denmark</striple>
+						<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The European University Association has its headquarters in Brussels. The School of Business and Social Sciences at the Aarhus University is affiliate d with the European University Association and is located in Denmark. Denmark has a Monarchy with its leader being Lars Løkke Rasmussen.</text>
+				<template>BRIDGE-2 has BRIDGE-2 headquarters in PATIENT-1 . AGENT-1 is affiliate d with BRIDGE-2 and is located in BRIDGE-1 .  BRIDGE-1 has PATIENT-2 with BRIDGE-1 leader being PATIENT-3 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG BRIDGE-2)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (PRP$ (TAG BRIDGE-2)) (NN headquarters)) (PP (IN in) (NP (TAG PATIENT-1))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (NN affiliate) (NN d)) (PP (IN with) (NP (TAG BRIDGE-2))))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1)))))) (. .))  (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (TAG PATIENT-2)) (PP (IN with) (NP (PRP$ (TAG BRIDGE-2)) (NN leader) (S (VP[aspect=progressive, tense=present, voice=active] (VB be) (NP (TAG PATIENT-3)))))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>BRIDGE-1 | Denmark</entity>
+				<entity>BRIDGE-2 | European_University_Association</entity>
+				<entity>PATIENT-1 | Brussels</entity>
+				<entity>PATIENT-2 | Monarchy_of_Denmark</entity>
+				<entity>PATIENT-3 | Lars_Løkke_Rasmussen</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id832" size="5">
+			<originaltripleset>
+				<otriple>India | largestCity | Mumbai</otriple>
+				<otriple>AWH_Engineering_College | country | India</otriple>
+				<otriple>AWH_Engineering_College | established | 2001</otriple>
+				<otriple>AWH_Engineering_College | facultySize | &quot;250&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>India | largestCity | Mumbai</otriple>
+				<otriple>AWH_Engineering_College | country | India</otriple>
+				<otriple>AWH_Engineering_College | established | 2001</otriple>
+				<otriple>AWH_Engineering_College | academicStaffSize | 250</otriple>
+				<otriple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
+						<striple>AWH_Engineering_College | country | India</striple>
+						<striple>AWH_Engineering_College | established | 2001</striple>
+						<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | largestCity | Mumbai</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The AWH Engineering College in Kuttikkattoor, India was established in 2001 and has a staff of 250. The country's largest city is Mumbai.</text>
+				<template>AGENT-1 in PATIENT-4 ,  BRIDGE-1 was established in PATIENT-2 and has a staff of PATIENT-3 .  BRIDGE-1 largest city is PATIENT-1 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP-OBJ (TAG AGENT-1)) (PP (IN in) (NP (NNP (TAG PATIENT-4)) (, ,) (NNP (TAG BRIDGE-1))))) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (NP (DT a) (NN staff)) (PP (IN of) (NP (TAG PATIENT-3)))))) (. .))  (S (NP-SUBJ (NP (TAG BRIDGE-1)) (JJS largest) (NN city)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AWH_Engineering_College | established | 2001</striple>
+						<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
+						<striple>AWH_Engineering_College | country | India</striple>
+						<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | largestCity | Mumbai</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>AWH Engineering College established in 2001 in Kuttikkattoor, India has 250 academic staff. Mumbai is the largest city in India.</text>
+				<template>AGENT-1 established in PATIENT-2 in PATIENT-4 ,  BRIDGE-1 has PATIENT-3 academic staff .  PATIENT-1 is the largest city in BRIDGE-1 . </template>
+				<tree>(SENTENCES (S (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB establish) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN in) (NP (TAG PATIENT-4))))) (, ,) (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (CD (TAG PATIENT-3)) (JJ academic) (NN staff))) (. .))  (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (JJS largest) (NN city)) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | largestCity | Mumbai</striple>
+						<striple>AWH_Engineering_College | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
+						<striple>AWH_Engineering_College | established | 2001</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>India with it's largest city Mumbai is also the home of the AWH Engineering College. The college is based in the city of Kuttikkattoor and was founded in 2001. It currently has 250 members of staff.</text>
+				<template>BRIDGE-1 with BRIDGE-1 largest city PATIENT-1 is also the home of AGENT-1 .  AGENT-1 is based in the city of PATIENT-4 and was founded in PATIENT-2 .  AGENT-1 currently has PATIENT-3 members of staff . </template>
+				<tree>(SENTENCES (S (NP (NP (TAG BRIDGE-1)) (PP (IN with) (NP (PRP it)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (JJS largest) (NN city)) (SBAR (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADVP (RB also)) (NP (NP (DT the) (NN home)) (PP (IN of) (NP (TAG AGENT-1))))))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=passive] (VB base) (PP (IN in) (NP (NP (DT the) (NN city)) (PP (IN of) (NP (TAG PATIENT-4)))))) (CC and) (VP[aspect=simple, tense=past, voice=passive] (VB found) (PP (IN in) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB currently)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (CD (TAG PATIENT-3)) (NNS members)) (PP (IN of) (NP (NN staff))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | Mumbai</entity>
+				<entity>PATIENT-2 | 2001</entity>
+				<entity>PATIENT-3 | 250</entity>
+				<entity>PATIENT-4 | &quot;Kuttikkattoor&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id833" size="5">
+			<originaltripleset>
+				<otriple>India | largestCity | Mumbai</otriple>
+				<otriple>AWH_Engineering_College | country | India</otriple>
+				<otriple>Kerala | leaderName | Kochi</otriple>
+				<otriple>AWH_Engineering_College | state | Kerala</otriple>
+				<otriple>India | river | Ganges</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>India | largestCity | Mumbai</otriple>
+				<otriple>AWH_Engineering_College | country | India</otriple>
+				<otriple>Kerala | leaderName | Kochi</otriple>
+				<otriple>AWH_Engineering_College | state | Kerala</otriple>
+				<otriple>India | river | Ganges</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AWH_Engineering_College | state | Kerala</striple>
+						<striple>AWH_Engineering_College | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Kerala | leaderName | Kochi</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>India | river | Ganges</striple>
+						<striple>India | largestCity | Mumbai</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>AWH Engineering College is located in Kerala @ India. Kochi is the leader of Kerala. Ganges is the main river in India and Mumbai is the largest city.</text>
+				<template>AGENT-1 is located in BRIDGE-2 @ BRIDGE-1 .  PATIENT-2 is the leader of BRIDGE-2 .  PATIENT-3 is the main river in BRIDGE-1 and PATIENT-1 is the largest city . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NNP (TAG BRIDGE-2)) (NNP (TAG BRIDGE-1)))))) (. .))  (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-2))))) (. .))  (S-COORDINATION (S (NP (TAG PATIENT-3)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (JJ main) (NN river)) (PP (IN in) (NP (TAG BRIDGE-1)))))) (CC and) (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (DT the) (JJS largest) (NN city)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>BRIDGE-2 | Kerala</entity>
+				<entity>PATIENT-1 | Mumbai</entity>
+				<entity>PATIENT-2 | Kochi</entity>
+				<entity>PATIENT-3 | Ganges</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id834" size="5">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | faculty | 737</otriple>
+				<otriple>Denmark | leaderName | Lars_Løkke_Rasmussen</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | city | Aarhus</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | country | Denmark</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | established | 1928</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</otriple>
+				<otriple>Denmark | leaderName | Lars_Løkke_Rasmussen</otriple>
+				<otriple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</otriple>
+				<otriple>School of Business and Social Sciences at the Aarhus University | country | Denmark</otriple>
+				<otriple>School of Business and Social Sciences at the Aarhus University | established | 1928</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The School of Business and Social Sciences at the Aarhus University in Aarhus, Denmark was established in 1928 and it has 737 academic staff. The leader of Denmark is Lars Lokke Rasmussen.</text>
+				<template>AGENT-1 in PATIENT-3 ,  BRIDGE-1 was established in PATIENT-4 and AGENT-1 has PATIENT-1 academic staff .  The leader of BRIDGE-1 is PATIENT-2 . </template>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-OBJ (NP (DT The) (NNP School)) (PP (IN of) (NP-COORDINATION (NNP Business) (CC and) (NNP Social) (NNPS Sciences))) (PP (IN at) (NP (NP (DT the) (NNP (TAG PATIENT-3)) (NNP University)) (PP (IN in) (NP (NNP (TAG PATIENT-3)) (, ,) (NNP (TAG BRIDGE-1))))))) (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP (TAG PATIENT-4))))) (CC and) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-1)) (JJ academic) (NN staff)))) (. .))  (S (NP-SUBJ (NP (DT The) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Lars Lokke Rasmussen is the leader of Denmark where the School of Business and Social Sciences at the Aarhus University in the city of Aarhus is located. The School was established in 1928 and has 737 academic staff members.</text>
+				<template>PATIENT-2 is the leader of BRIDGE-1 where AGENT-1 in the city of PATIENT-3 is located .  AGENT-1 was established in PATIENT-4 and has PATIENT-1 academic staff members . </template>
+				<tree>(SENTENCES (S (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-1))) (SBAR (WHADVP (WRB where)) (S (NP (NP (DT the) (NNP School)) (PP (IN of) (NP-COORDINATION (NNP Business) (CC and) (NNP Social) (NNPS Sciences))) (PP (IN at) (NP (NP (DT the) (NNP (TAG PATIENT-3)) (NNP University)) (PP (IN in) (NP (NP (DT the) (NN city)) (PP (IN of) (NP (NNP (TAG PATIENT-3))))))))) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP (TAG PATIENT-4)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-1)) (JJ academic) (NN staff) (NNS members)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>BRIDGE-1 | Denmark</entity>
+				<entity>PATIENT-1 | 737</entity>
+				<entity>PATIENT-2 | Lars_Løkke_Rasmussen</entity>
+				<entity>PATIENT-3 | Aarhus</entity>
+				<entity>PATIENT-4 | 1928</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id835" size="5">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | city | Aarhus</otriple>
+				<otriple>European_University_Association | headquarters | Brussels</otriple>
+				<otriple>Aarhus | northeast | Mols</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliations | European_University_Association</otriple>
+				<otriple>Aarhus | governmentType | Magistrate</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</otriple>
+				<otriple>European_University_Association | headquarters | Brussels</otriple>
+				<otriple>Aarhus | has to its northeast | Mols</otriple>
+				<otriple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</otriple>
+				<otriple>Aarhus | governmentType | Magistrate</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+						<striple>European_University_Association | headquarters | Brussels</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aarhus | governmentType | Magistrate</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Aarhus | has to its northeast | Mols</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The School of Business and Social Sciences at the Aarhus University in Aarhus is affiliated to the European University Association (headquarters in Brussels). Aarhus has a magistrate government. Aarhus has Mols to its northeast.</text>
+				<template>AGENT-1 in BRIDGE-1 is affiliated to BRIDGE-2 (headquarters in PATIENT-1) .  BRIDGE-1 has a PATIENT-3 government .  BRIDGE-1 has PATIENT-2 to BRIDGE-1 northeast . </template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT The) (NNP School)) (PP (IN of) (NP-COORDINATION (NNP Business) (CC and) (NNP Social) (NNPS Sciences))) (PP (IN at) (NP (NP (DT the) (NNP (TAG BRIDGE-1)) (NNP University)) (PP (IN in) (NP (NNP (TAG BRIDGE-1))))))) (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (TO to) (NP-SUBJ (NP (TAG BRIDGE-2)) (PRN (-LRB- -LRB-) (NP (NP (NN headquarters)) (PP (IN in) (NP (TAG PATIENT-1)))) (-RRB- -RRB-))))) (. .))  (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (DT a) (NN (TAG PATIENT-3)) (NN government))) (. .))  (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (TAG PATIENT-2)) (PP (TO to) (NP (PRP$ (TAG BRIDGE-1)) (NN northeast))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aarhus | has to its northeast | Mols</striple>
+						<striple>Aarhus | governmentType | Magistrate</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</striple>
+						<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+						<striple>European_University_Association | headquarters | Brussels</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Mols is situated to the northeast of Aarhus which has the magistrate type of government. The city of Aarhus is the location of the School of Business and Social Sciences at the Aarhus University which is affiliated with the European University Association headquartered in Brussels.</text>
+				<template>PATIENT-2 is situated to the northeast of BRIDGE-1 which has the PATIENT-3 type of government .  The city of BRIDGE-1 is the location of AGENT-1 which is affiliated with BRIDGE-2 headquartered in PATIENT-1 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (VBN situated) (PP (TO to) (NP-SUBJ (NP (DT the) (NN northeast)) (PP (IN of) (NP (TAG BRIDGE-1))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (NP (DT the) (NN (TAG PATIENT-3)) (NN type)) (PP (IN of) (NP (NN government))))))))))) (. .))  (S (NP (NP (DT The) (NN city)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP-OBJ (DT the) (NN location)) (PP (IN of) (NP (TAG AGENT-1))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (SBAR (IN with) (S (NP (TAG BRIDGE-2)) (VP[aspect=simple, tense=past, voice=active] (VB headquarter) (PP (IN in) (NP (TAG PATIENT-1))))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+						<striple>European_University_Association | headquarters | Brussels</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</striple>
+						<striple>Aarhus | has to its northeast | Mols</striple>
+						<striple>Aarhus | governmentType | Magistrate</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The School of Business and Social Sciences at the Aarhus University located southwest of Mols is affiliated with the European University Association in Brussels. Aarhus is governed by a magistrate.</text>
+				<template>AGENT-1 located southwest of PATIENT-2 is affiliated with BRIDGE-2 in PATIENT-1 .  BRIDGE-1 is governed by PATIENT-3 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT The) (NNP School)) (PP (IN of) (NP (NP-COORDINATION (NNP Business) (CC and) (NNP Social) (NNPS Sciences)) (PP (IN at) (NP (DT the) (NNP (TAG BRIDGE-1)) (NNP University) (JJ located) (NN southwest))) (PP (IN of) (NP (TAG PATIENT-2)))))) (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (IN with) (NP-SUBJ (NP (TAG BRIDGE-2)) (PP (IN in) (NP (TAG PATIENT-1)))))) (. .))  (S (NP-OBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=present, voice=passive] (VB govern) (PP (IN by) (NP-SUBJ (TAG PATIENT-3)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>BRIDGE-1 | Aarhus</entity>
+				<entity>BRIDGE-2 | European_University_Association</entity>
+				<entity>PATIENT-1 | Brussels</entity>
+				<entity>PATIENT-2 | Mols</entity>
+				<entity>PATIENT-3 | Magistrate</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+	
+
+
+</benchmark>

@@ -1,0 +1,749 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id1" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | John_Geering</otriple>
+				<otriple>Bananaman | starring | Graeme_Garden</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | John_Geering</mtriple>
+				<mtriple>Bananaman | starring | Graeme_Garden</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset/>
+				<references/>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. Bananaman last aired on 15th April 1986. Graeme Garden is one of the stars of the series which was created by John Geering.</text>
+				<template/>
+				<tree>(SENTENCES (S (NP-SUBJ (NNP Bananaman)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (DT the) (NNP BBC)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (NNP April) (CD 15th) (, ,) (CD 1986))))) (. .))  (S (NP-SUBJ (NNP Bananaman) (JJ last)) (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (JJ 15th))) (NP-TMP (NNP April) (CD 1986))) (. .))  (S (NP (NNP Graeme) (NNP Garden)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (CD one)) (PP (IN of) (NP-OBJ (NP (DT the) (NNS stars)) (PP (IN of) (NP (NP (DT the) (NN series)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (NNP John) (NNP Geering)))))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | John_Geering</striple>
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. The fictional comic superhero Bananaman was created by John Geering and stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-1 on PATIENT-4 and AGENT-1 last episode on PATIENT-5 . AGENT-1 was created by PATIENT-2 and PATIENT-3 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (TAG PATIENT-1)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (TAG PATIENT-5))))) (. .))  (S (NP-OBJ (NP (DT The) (JJ fictional) (JJ comic) (NN superhero)) (NP (TAG AGENT-1))) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP-COORDINATION (NP (TAG PATIENT-2)) (CC and) (NP-SUBJ (TAG PATIENT-3))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+						<striple>Bananaman | creator | John_Geering</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. Graeme Garden was one of the stars on the series which was created by John Geering.</text>
+				<template>AGENT-1 first aired on PATIENT-1 on PATIENT-4 and AGENT-1 last episode on PATIENT-5 . PATIENT-3 was one of the stars on the series which was created by PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (TAG PATIENT-1)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (TAG PATIENT-5))))) (. .))  (S (NP (TAG PATIENT-3)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP-SUBJ (NP (CD one)) (PP (IN of) (NP-OBJ (NP (DT the) (NNS stars)) (PP (IN on) (NP (NP (DT the) (NN series)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (TAG PATIENT-2)))))))))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | John_Geering</entity>
+				<entity>PATIENT-3 | Graeme_Garden</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id2" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | starring | Bill_Oddie</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | starring | Bill_Oddie</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset/>
+				<references/>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. Steve Bright created the series which starred Bill Oddie.</text>
+				<template/>
+				<tree>(SENTENCES (S (NP-SUBJ (NNP Bananaman)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (DT the) (NNP BBC)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (NNP April) (CD 15th) (, ,) (CD 1986))))) (. .))  (S (NP (NNP Steve) (NNP Bright)) (VP[aspect=simple, tense=past, voice=active] (VB create) (NP-SUBJ (NP (DT the) (NN series)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=past, voice=active] (VB star) (NP-OBJ (NNP Bill) (NNP Oddie))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Bill_Oddie</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman was shown by the BBC and aired between 3 October 1985 and 15 April 1986. It was created by Steve Bright and starred Bill Oddie.</text>
+				<template>AGENT-1 was shown by PATIENT-1 and aired between PATIENT-4 and PATIENT-5 . AGENT-1 was created by PATIENT-2 and starred PATIENT-3 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB show) (PP (IN by) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN between) (NP-COORDINATION (NP (TAG PATIENT-4)) (CC and) (NP (CD 15)))) (NP-TMP (NNP April) (CD 1986)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB star) (NP (TAG PATIENT-3)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Bill_Oddie</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman was the TV series shown by the BBC between 3 October 1983 and 15 April 1986. It was created by Steve Bright and starred Bill Oddie.</text>
+				<template>AGENT-1 was AGENT-1 shown by PATIENT-1 between PATIENT-4 and PATIENT-5 . AGENT-1 was created by PATIENT-2 and starred PATIENT-3 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP-COORDINATION (NP (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB show) (PP (IN by) (NP (NP (TAG PATIENT-1)) (PP (IN between) (NP (CD 3))))) (NP-TMP (NNP October) (CD 1983)))) (CC and) (NP (TAG PATIENT-5)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB star) (NP (TAG PATIENT-3)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | Bill_Oddie</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id3" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | starring | Graeme_Garden</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | starring | Graeme_Garden</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman first aired on the BBC 10/03/1983 and its last broadcast was 15th April 1986. The creator of Bananaman is Steve Bright and the show stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-1 PATIENT-4 and AGENT-1 last broadcast was PATIENT-5 . PATIENT-2 is PATIENT-2 and AGENT-1 stars PATIENT-3 .</template>
+				<tree>(SENTENCES (S-COORDINATION (S (NP (TAG AGENT-1)) (ADVP (RB first)) (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (DT (TAG PATIENT-1)) (NNP BBC) (CD 10/03/1983))))) (CC and) (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (JJ last) (NN broadcast)) (VP[aspect=simple, tense=past, voice=active] (VB be) (ADJP (JJ 15th)) (NP-TMP (NNP April) (CD 1986)))) (. .))  (SINV (S (NP (NP (DT The) (NN creator)) (PP (IN of) (NP (TAG AGENT-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-COORDINATION (NP (TAG PATIENT-2)) (CC and) (NP (DT (TAG PATIENT-1)) (NN show))))) (VP[aspect=simple, tense=present, voice=active] (VB star)) (NP-SUBJ (TAG PATIENT-3)) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. It was created by Steve Bright and stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-1 on PATIENT-4 and AGENT-1 last episode on PATIENT-5 . AGENT-1 was created by PATIENT-2 and stars PATIENT-3 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (TAG PATIENT-1)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (TAG PATIENT-5))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP-COORDINATION (NP (TAG PATIENT-2)) (CC and) (NP-SUBJ (NP (NNS stars)) (NP (TAG PATIENT-3)))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | Graeme_Garden</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id4" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | starring | Jill_Shilling</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | starring | Jill_Shilling</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The BBC aired the TV series of Bananaman between 3 October 1983 and 15 April 1986. It was created by Steve Bright and starred Jill Shilling.</text>
+				<template>PATIENT-1 aired AGENT-1 of AGENT-1 between PATIENT-4 and PATIENT-5 . AGENT-1 was created by PATIENT-3 and starred PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB air) (NP-COORDINATION (NP (NP (TAG AGENT-1)) (PP (IN of) (NP (NP (TAG AGENT-1)) (PP (IN between) (NP (CD 3))) (NP-TMP (NNP October) (CD 1983))))) (CC and) (NP-OBJ (CD 15))) (NP-TMP (NNP April) (CD 1986))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB star) (NP (TAG PATIENT-2)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman began airing on the BBC on 10/03/1983 and its last broadcast was April 15th, 1986. The creator of Bananaman is Steve Bright and among its stars are Jill Shilling.</text>
+				<template>AGENT-1 began airing on PATIENT-1 on PATIENT-4 and AGENT-1 last broadcast was PATIENT-5 . PATIENT-3 of AGENT-1 is PATIENT-3 and among AGENT-1 stars are PATIENT-2 .</template>
+				<tree>(SENTENCES (S-COORDINATION (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB begin) (S (VP[aspect=progressive, tense=present, voice=active] (VB air) (PP (IN on) (NP (TAG PATIENT-1))) (PP (IN on) (NP (TAG PATIENT-4))))))) (CC and) (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (JJ last) (NN broadcast)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP-TMP (TAG PATIENT-5)))) (. .))  (S (NP-SUBJ (NP (TAG PATIENT-3)) (PP (IN of) (NP (TAG AGENT-1)))) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-3))) (CC and) (VP[aspect=simple, tense=present, voice=active] (PP (IN among) (NP (PRP$ (TAG AGENT-1)) (NNS stars))) (VB be) (NP (TAG PATIENT-2)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman was broadcast by the BBC, airing between 3 October 1983 and 15 April 1986. It was created by Steve Bright and starred Jill Shilling.</text>
+				<template>AGENT-1 was broadcast by PATIENT-1 , airing between PATIENT-4 and PATIENT-5 . AGENT-1 was created by PATIENT-3 and starred PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VBN broadcast) (PP (IN by) (NP-SUBJ (TAG PATIENT-1))) (VB ,) (S (VP[aspect=progressive, tense=present, voice=active] (VB air) (PP (IN between) (NP-COORDINATION (NP (TAG PATIENT-4)) (CC and) (NP (CD 15)))) (NP-TMP (NNP April) (CD 1986))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB star) (NP (TAG PATIENT-2)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | Jill_Shilling</entity>
+				<entity>PATIENT-3 | Steve_Bright</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id5" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | creator | John_Geering</otriple>
+				<otriple>Bananaman | starring | Graeme_Garden</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | network | &quot;STV&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | creator | John_Geering</mtriple>
+				<mtriple>Bananaman | starring | Graeme_Garden</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | John_Geering</striple>
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman first aired on STV on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. The series, which was created by John Geering, stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-5 on PATIENT-3 and AGENT-1 last episode on PATIENT-4 . AGENT-1 , which was created by PATIENT-1 , PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (TAG PATIENT-5)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (TAG PATIENT-4))))) (. .))  (S (NP-SUBJ (NP-OBJ (TAG AGENT-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (TAG PATIENT-1)))))) (, ,)) (VP[aspect=simple, tense=present, voice=active] (VB star) (NP (NNP Graeme) (NNP Garden))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | creator | John_Geering</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The TV character Bananaman was created by John Geering. The programme was broadcast by STV and starred Graeme Garden. Bananaman was first shown on 10th March 1983 and last aired on 15th April 1986.</text>
+				<template>AGENT-1 was created by PATIENT-1 . AGENT-1 was broadcast by PATIENT-5 and starred PATIENT-2 . AGENT-1 was first shown on PATIENT-3 and last aired on PATIENT-4 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB broadcast) (PP (IN by) (NP (TAG PATIENT-5)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB star) (NP (TAG PATIENT-2)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (ADVP (JJ first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB show) (PP (IN on) (ADJP (JJ 10th))) (NP-TMP (NNP March) (CD 1983))) (CC and) (ADVP (JJ last)) (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (JJ 15th))) (NP-TMP (NNP April) (CD 1986))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | John_Geering</striple>
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman first aired on STV on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. John Geering created the series which stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-5 on PATIENT-3 and AGENT-1 last episode on PATIENT-4 . PATIENT-1 created AGENT-1 which stars PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (TAG PATIENT-5)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (TAG PATIENT-4))))) (. .))  (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB create) (NP-SUBJ (NP (TAG AGENT-1)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB star) (NP-OBJ (TAG PATIENT-2))))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | John_Geering</entity>
+				<entity>PATIENT-2 | Graeme_Garden</entity>
+				<entity>PATIENT-3 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-4 | &quot;1986-04-15&quot;</entity>
+				<entity>PATIENT-5 | &quot;STV&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id6" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Jill_Shilling</otriple>
+				<otriple>Bananaman | creator | Steve_Bright</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | network | &quot;STV&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Jill_Shilling</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman was broadcast by STV between 3 October 1983 and 15 April 1986. It was created by Steve Bright and starred Jill Shilling.</text>
+				<template>AGENT-1 was broadcast by PATIENT-5 between PATIENT-3 and PATIENT-4 . AGENT-1 was created by PATIENT-2 and starred PATIENT-1 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB broadcast) (PP (IN by) (NP (NP (TAG PATIENT-5)) (PP (IN between) (NP-COORDINATION (NP (TAG PATIENT-3)) (CC and) (NP (CD 15)))))) (NP-TMP (NNP April) (CD 1986))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB star) (NP (TAG PATIENT-1)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman first aired on STV on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. The series was created by Steve Bright and starred Jill Shilling.</text>
+				<template>AGENT-1 first aired on PATIENT-5 on PATIENT-3 and AGENT-1 last episode on PATIENT-4 . AGENT-1 was created by PATIENT-2 and starred PATIENT-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (TAG PATIENT-5)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (TAG PATIENT-4))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB star) (NP (TAG PATIENT-1)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset/>
+				<references/>
+				<text>Bananaman was broadcast by STV from 3 October 1983 until 15 April 1986. It was created by Steve Bright and starred Jill Shilling.</text>
+				<template/>
+				<tree>(SENTENCES (S (NP-OBJ (NNP Bananaman)) (VP[aspect=simple, tense=past, voice=passive] (VB broadcast) (PP (IN by) (NP (NP (NNP STV)) (PP (IN from) (NP (CD 3))) (NP-TMP (NNP October) (CD 1983)))) (PP (IN until) (NP (CD 15))) (NP-TMP (NNP April) (CD 1986))) (. .))  (S (NP-OBJ (PRP It)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (NNP Steve) (NNP Bright)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB star) (NP (NNP Jill) (NNP Shilling)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Jill_Shilling</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-4 | &quot;1986-04-15&quot;</entity>
+				<entity>PATIENT-5 | &quot;STV&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id7" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Tim_Brooke-Taylor</mtriple>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The BBC began broadcasting Bananaman on 10/03/1983 and its last episode went to air on April 15th, 1986. Steve Bright is one of the creators of Bananaman which has Tim Brooke-Taylor as one of its stars.</text>
+				<template>PATIENT-2 began broadcasting AGENT-1 on PATIENT-4 and AGENT-1 last episode went to air on PATIENT-5 . PATIENT-3 is one of the creators of AGENT-1 which has PATIENT-1 as one of AGENT-1 stars .</template>
+				<tree>(SENTENCES (S-COORDINATION (S (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=past, voice=active] (VB begin) (S (VP[aspect=progressive, tense=present, voice=active] (VB broadcast) (NP-OBJ (NP (TAG AGENT-1)) (PP (IN on) (NP (TAG PATIENT-4)))))))) (CC and) (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (JJ last) (NN episode)) (VP[aspect=simple, tense=past, voice=active] (VB go) (PP (TO to) (NP (NN air))) (PP (IN on) (NP (TAG PATIENT-5))))) (. .))  (S (NP (TAG PATIENT-3)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (CD one)) (PP (IN of) (NP (NP (DT the) (NNS creators)) (PP (IN of) (NP (TAG AGENT-1))))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (TAG PATIENT-1)) (PP (IN as) (NP (CD one))) (PP (IN of) (NP (PRP$ (TAG AGENT-1)) (NNS stars))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. Its creator was Steve Bright and the series starred Tim Brooke-Taylor.</text>
+				<template>AGENT-1 first aired on PATIENT-2 on PATIENT-4 and AGENT-1 last episode on PATIENT-5 . AGENT-1 creator was PATIENT-3 and the series starred PATIENT-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB first)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB air) (PP (IN on) (NP (NP (TAG PATIENT-2)) (PP (IN on) (NP (NNP October))))) (NP-TMP (NP (JJ 3rd)) (, ,) (NP (CD 1983)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB broadcast) (NP-OBJ (PRP$ its) (JJ last) (NN episode)) (PP (IN on) (NP (TAG PATIENT-5))))) (. .))  (SINV (S (NP (PRP$ (TAG AGENT-1)) (NN creator)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP-COORDINATION (NP (TAG PATIENT-3)) (CC and) (NP (DT the) (NN series))))) (VP[aspect=simple, tense=past, voice=active] (VB star)) (NP-SUBJ (TAG PATIENT-1)) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-2 | BBC</entity>
+				<entity>PATIENT-3 | Steve_Bright</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id8" size="5">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Ryan_Potter</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Ryan_Potter</mtriple>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax was created by the American, Duncan Rouleau and Steven T Seagle. The character appeared in Big Hero 6 which stars Ryan Potter.</text>
+				<template>AGENT-1 was created by PATIENT-2 , BRIDGE-1 and PATIENT-3 . AGENT-1 appeared in BRIDGE-2 6 which stars PATIENT-1 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP-COORDINATION (NP (TAG PATIENT-2)) (, ,) (NP (TAG BRIDGE-1)) (CC and) (NP-SUBJ (TAG PATIENT-3))))) (. .))  (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB appear) (PP (IN in) (NP (TAG BRIDGE-2))) (NP-SUBJ (NP (CD 6)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB star) (NP-OBJ (TAG PATIENT-1))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The character of Baymax appeared in Big Hero 6 which stars Ryan Potter. He was created by Steven T Seagle and the American, Duncan Rouleau.</text>
+				<template>AGENT-1 appeared in BRIDGE-2 which stars PATIENT-1 . AGENT-1 was created by PATIENT-3 and , BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB appear) (PP (IN in) (NP (JJ Big) (NN Hero))) (NP-SUBJ (NP (CD 6)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB star) (NP-OBJ (TAG PATIENT-1))))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP-COORDINATION (NP (NNP Steven) (NN T) (NNP Seagle)) (CC and) (NP-SUBJ (NP (DT the) (NNP American)) (, ,) (NP (NNP Duncan) (NNP Rouleau)))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Ryan_Potter</entity>
+				<entity>PATIENT-2 | Americans</entity>
+				<entity>PATIENT-3 | Steven_T._Seagle</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id9" size="5">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax, a character in Big Hero 6, was created by the american Duncan Rouleau and by Steven T. Seagle. Damon Wayans, Jr. starred in the film Big Hero 6.</text>
+				<template>AGENT-1 , AGENT-1 in BRIDGE-2 , was created by PATIENT-1 BRIDGE-1 and by PATIENT-2 . PATIENT-3 starred in BRIDGE-2.</template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (NP (NP (NP (TAG AGENT-1)) (PP (IN in) (NP (JJ Big) (NN Hero)))) (NP (CD 6))) (, ,)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP-COORDINATION (PP (IN by) (NP (DT (TAG PATIENT-1)) (NNP american) (NNP Duncan) (NNP Rouleau))) (CC and) (PP (IN by) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (NP-SUBJ (TAG PATIENT-3)) (VP[aspect=simple, tense=past, voice=active] (VB star) (PP (IN in) (NP (DT (TAG PATIENT-1)) (NN film) (JJ Big) (NN Hero))) (NP-TMP (CD 6))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax, a character in Big Hero 6, was created by the american Duncan Rouleau and by Steven T. Seagle. Damon Wayans, Jr. starred in the film version of Big Hero 6.</text>
+				<template>AGENT-1 , AGENT-1 in BRIDGE-2, was created by PATIENT-1 BRIDGE-1 and by PATIENT-2 . PATIENT-3 starred in AGENT-1 version of BRIDGE-2.</template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (NP (NP (NP (TAG AGENT-1)) (PP (IN in) (NP (JJ Big) (NN Hero)))) (NP (CD 6))) (, ,)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP-COORDINATION (PP (IN by) (NP (DT (TAG PATIENT-1)) (NNP american) (NNP Duncan) (NNP Rouleau))) (CC and) (PP (IN by) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (NP-SUBJ (TAG PATIENT-3)) (VP[aspect=simple, tense=past, voice=active] (VB star) (PP (IN in) (NP (NP (DT (TAG PATIENT-1)) (NN film) (NN version)) (PP (IN of) (NP (JJ Big) (NN Hero))))) (NP-TMP (CD 6))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax is a character in the film Big Hero 6 which stars Damon Wayans Jr. He was created by Steven t Seagle and the American, Duncan Rouleau.</text>
+				<template>AGENT-1 is AGENT-1 in BRIDGE-2 BRIDGE-2 which stars PATIENT-3 . AGENT-1 was created by PATIENT-2  and , BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (TAG AGENT-1)) (PP (IN in) (NP (NP (DT (TAG BRIDGE-2)) (NN film) (JJ Big) (NN Hero)) (NP (CD 6)))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB star) (NP-OBJ (TAG PATIENT-3))))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP-COORDINATION (NP (NNP Steven) (NN t) (NNP Seagle)) (CC and) (NP-SUBJ (NP (DT (TAG BRIDGE-2)) (NNP American)) (, ,) (NP (NNP Duncan) (NNP Rouleau)))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
+				<entity>PATIENT-3 | Damon_Wayans,_Jr.</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id10" size="5">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Jamie_Chung</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Jamie_Chung</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax is a character in Big Hero 6 which stars Jamie Chung and was created by Steve T. Seagle and Duncan Rouleau, an American.</text>
+				<template>AGENT-1 is AGENT-1 in BRIDGE-2 which stars PATIENT-3 and was created by PATIENT-2 and BRIDGE-1 , PATIENT-1 .</template>
+				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (TAG AGENT-1)) (PP (IN in) (NP-OBJ (NP (TAG BRIDGE-2)) (SBAR (WHNP (WDT which)) (S (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB star) (NP (TAG PATIENT-3))) (CC and) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP (NP-COORDINATION (NNP Steve) (NNP T.) (NNP Seagle) (CC and) (NNP Duncan) (NNP Rouleau)) (, ,) (NP (TAG PATIENT-1)))))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax is a character created by Steven T Seagle and the American, Duncan Rouleau. He appears in Big Hero 6 that stars Jamie Chung.</text>
+				<template>AGENT-1 is AGENT-1 created by PATIENT-2 and , PATIENT-1 BRIDGE-1 . AGENT-1 appears in BRIDGE-2 that stars PATIENT-3 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB create) (PP (IN by) (NP-COORDINATION (NP (NNP Steven) (NN T) (NNP Seagle)) (CC and) (NP (NP (DT the) (NNP American)) (, ,) (NP (NNP Duncan) (NNP Rouleau)))))))) (. .))  (S (NP (PRP He)) (VP[aspect=simple, tense=present, voice=active] (VB appear) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-2)) (SBAR (WHNP (WDT that)) (S (VP[aspect=simple, tense=present, voice=active] (VB star) (NP-OBJ (TAG PATIENT-3)))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax is a character in Big Hero 6 which stars Jamie Chung. Baymax was created by American Duncan Rouleau and Steven T. Seagle.</text>
+				<template>AGENT-1 is AGENT-1 in BRIDGE-2 which stars PATIENT-3 . AGENT-1 was created by PATIENT-1 BRIDGE-1 and PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (TAG AGENT-1)) (PP (IN in) (NP-OBJ (NP (TAG BRIDGE-2)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB star) (NP (TAG PATIENT-3))))))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP-COORDINATION (JJ (TAG PATIENT-1)) (NNP Duncan) (NNP Rouleau) (CC and) (NNP Steven) (NNP T.) (NNP Seagle)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
+				<entity>PATIENT-3 | Jamie_Chung</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id11" size="5">
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Maya_Rudolph</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Maya_Rudolph</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax a character in Big Hero 6 was created by the american Duncan Rouleau and by Steve T. Seagle. Maya Rudolph was one of the stars in the film version of Big Hero 6.</text>
+				<template>AGENT-1 in BRIDGE-2 was created by PATIENT-1 BRIDGE-1 and by PATIENT-2 . PATIENT-3 was one of the stars in the film version of BRIDGE-2 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (NNP Baymax)) (ADVP (ADVP (NP (DT a) (NN character)) (PP (IN in) (NP (JJ Big) (NN Hero)))) (NP (CD 6))) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP-COORDINATION (PP (IN by) (NP (DT (TAG PATIENT-1)) (NNP american) (NNP Duncan) (NNP Rouleau))) (CC and) (PP (IN by) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (NP-SUBJ (TAG PATIENT-3)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (CD one)) (PP (IN of) (NP (DT (TAG PATIENT-1)) (NNS stars)))) (PP (IN in) (NP (NP (DT (TAG PATIENT-1)) (NN film) (NN version)) (PP (IN of) (NP (JJ Big) (NN Hero))))) (NP-TMP (CD 6))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax, is a character in Big Hero 6 whose creators are Steve T. Seagle and Duncan Rouleau, an American and it stars Maya Rudolph.</text>
+				<template>AGENT-1 , is AGENT-1 in BRIDGE-2 whose creators are PATIENT-2 and BRIDGE-1 , PATIENT-1 and AGENT-1 stars PATIENT-3 .</template>
+				<tree>(SENTENCES (S-COORDINATION (S (NP (NNP (TAG AGENT-1)) (, ,)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (TAG AGENT-1)) (PP (IN in) (NP (NP (TAG BRIDGE-2)) (SBAR (WHNP (WP$ whose) (NNS creators)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP-COORDINATION (NNP Steve) (NNP T.) (NNP Seagle) (CC and) (NNP Duncan) (NNP Rouleau)) (, ,) (NP (TAG PATIENT-1))))))))))) (CC and) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB star) (NP-OBJ (TAG PATIENT-3)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax was created by American Duncan Rouleau and Steven T. Seagle. Baymax is a character in Big Hero 6 which stars Maya Rudolph.</text>
+				<template>AGENT-1 was created by PATIENT-1 BRIDGE-1 and PATIENT-2 . AGENT-1 is AGENT-1 in BRIDGE-2 which stars PATIENT-3 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB create) (PP (IN by) (NP-COORDINATION (JJ (TAG PATIENT-1)) (NNP Duncan) (NNP Rouleau) (CC and) (NNP Steven) (NNP T.) (NNP Seagle)))) (. .))  (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (TAG AGENT-1)) (PP (IN in) (NP-OBJ (NP (TAG BRIDGE-2)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB star) (NP (TAG PATIENT-3))))))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
+				<entity>PATIENT-3 | Maya_Rudolph</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+	
+
+
+</benchmark>
