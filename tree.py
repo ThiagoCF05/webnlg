@@ -54,13 +54,18 @@ class Tree:
                 terminal = child.replace(')', '')
                 nodes[prev_id]['type'] = 'preterminal'
 
+                try:
+                    lemma = self.token2lemma[terminal]
+                except:
+                    lemma = ''
+
                 nodes[node_id] = {
                     'id': node_id,
                     'name': terminal,
                     'parent': prev_id,
                     'type': 'terminal',
                     'idx': terminalidx,
-                    'lemma': self.token2lemma[terminal],
+                    'lemma': lemma
                 }
 
                 terminalidx += 1
@@ -195,7 +200,6 @@ class Tree:
                     str_tree = str_tree.replace(subtree, '({0} (TAG {1}))'.format(self.nodes[root]['name'], reference.tag))
                     break
 
-
         # delexicalize spans
         spans = self.span()
         for reference in self.references:
@@ -203,7 +207,7 @@ class Tree:
 
             for span in spans:
                 if refex == span[0].strip():
-                    str_tree.replace(span[1].strip(), '(TAG {0}) '.format(reference.tag))
+                    str_tree.replace(span[1].strip(), '{0} '.format(reference.tag))
                     break
 
         return str_tree
@@ -327,7 +331,6 @@ class Tree:
     def classify_verbs(self):
         def get_info(root, lemmas, pos, head, vps):
             type_ = self.nodes[root]['type']
-
             if type_ == 'preterminal':
                 pos.append(self.nodes[root]['name'])
                 for edge in self.edges[root]:
@@ -337,51 +340,49 @@ class Tree:
                 lemmas.append(self.nodes[root]['lemma'])
             else:
                 tag = self.nodes[root]['name']
-
                 if tag == 'VP':
+                    vps.append(root)
                     for edge in self.edges[root]:
-                        lemmas, pos, head, vps = get_info(edge, lemmas, pos, head, vps + [root])
+                        lemmas, pos, head, vps = get_info(edge, lemmas, pos, head, vps)
 
             return lemmas, pos, head, vps
 
+        def delete(root, end, children=[]):
+            if root == end:
+                children = copy.copy(self.edges[root])
+            else:
+                edges = self.edges[root]
+                for edge in edges:
+                    children = delete(edge, end, children)
+                    del self.nodes[edge]
+                    del self.edges[edge]
 
-        def delete(root, end):
-            children = []
-            edges = self.edges[root]
-            for edge in edges:
-                if edge != end:
-                    delete(edge, end)
-                else:
-                    children = self.edges[edge]
-
-                del self.nodes[edge]
-                del self.edges[edge]
             return children
-
 
         continue_ = True
         while continue_:
             i = 0
             for i, node in enumerate(self.nodes):
-                if self.nodes[node]['parent'] > 0:
-                    parent_tag = self.nodes[self.nodes[node]['parent']]['name']
+                parent = self.nodes[node]['parent']
+                if parent > 0:
+                    parent_tag = self.nodes[parent]['name']
                 else:
                     parent_tag = 'X'
                 tag = self.nodes[node]['name']
 
                 if tag == 'VP' and parent_tag != 'VP':
-                    lemmas, pos, head, vps = get_info(node, [], [], 0, [node])
+                    lemmas, pos, head, vps = get_info(node, [], [], 0, [])
                     tense, aspect, voice = self.verb_info(lemmas, pos)
 
+                    head_parent = self.nodes[head]['parent']
                     self.nodes[node]['name'] = 'VP[aspect={0}, tense={1}, voice={2}]'.format(aspect, tense, voice)
-
-                    self.nodes[head]['tag'] = 'VB'
+                    self.nodes[head_parent]['name'] = 'VB'
                     self.nodes[head]['name'] = self.nodes[head]['lemma']
-                    self.nodes[head]['parent'] = node
-                    self.edges[node] = delete(node, vps[-1])
 
-                    for edge in self.edges[node]:
-                        self.nodes[edge]['parent'] = node
+                    if node != vps[-1]:
+                        self.edges[node] = delete(node, vps[-1])
+                        for edge in self.edges[node]:
+                            self.nodes[edge]['parent'] = node
                     break
 
             continue_ = False if i == len(self.nodes)-1 else True
@@ -394,8 +395,15 @@ class Tree:
         self.references = references
         self.dependencies = dependencies
 
+        # point coordinations
+        for node in self.nodes:
+            for edge in self.edges[node]:
+                if self.nodes[edge]['name'] == 'CC':
+                    self.nodes[node]['name'] += '-COORDINATION'
+                    break
+
         self.classify_syntax()
-        # self.classify_verbs()
+        self.classify_verbs()
 
         str_tree = self.__print__(self.root)
         str_tree = self.delexicalize(str_tree)
@@ -427,6 +435,7 @@ class Tree:
             tree = tree.strip() + ') '
         return tree
 
+
 class TreeExtraction:
     def __init__(self):
         self.corenlp = StanfordCoreNLP(STANFORD_PATH)
@@ -454,12 +463,19 @@ class TreeExtraction:
 
 
     def __call__(self, entryset, lng='en'):
+        num, errors = 0, 0
         for entry in entryset:
             for lex in entry.lexEntries:
-                if lng == 'en':
-                    _, lex.tree, _ = self.extract(text=lex.text, template=lex.template, entitymap=entry.entitymap_to_dict())
-                else:
-                    _, lex.tree_de, _ = self.extract(text=lex.text_de, template=lex.template_de, entitymap=entry.entitymap_to_dict())
+                num += 1
+                print('Entry ID:', entry.eid, 'Lex ID: ', lex.lid, 'Errors: ', round(float(errors) / num, 2))
+                try:
+                    if lng == 'en':
+                        _, lex.tree, _ = self.extract(text=lex.text, template=lex.template, entitymap=entry.entitymap_to_dict())
+                    else:
+                        _, lex.tree_de, _ = self.extract(text=lex.text_de, template=lex.template_de, entitymap=entry.entitymap_to_dict())
+                except:
+                    errors += 1
+
         return entryset
 
 
@@ -468,10 +484,12 @@ class TreeExtraction:
 
         text = text.replace('@', '')
 
+        # sentence tokenization
         text = self.tokenize(text)
+
         props = {'annotators': 'tokenize,ssplit,pos,lemma,parse','pipelineLanguage':'en','outputFormat':'json'}
 
-        deps, trees, delex = [], '(SENTENCES', '(SENTENCES'
+        deps, trees, delex = [], '(SENTENCES ', '(SENTENCES '
         for i, snt in enumerate(text):
             out = self.corenlp.annotate(snt, properties=props)
             out = json.loads(out)
@@ -493,11 +511,6 @@ class TreeExtraction:
         trees = trees.strip() + ')'
         delex = delex.strip() + ')'
 
-        tree = Tree(tree=trees, tokens=[], lemmas=[])
-        trees = tree.prettify(trees)
-
-        tree = Tree(tree=delex, tokens=[], lemmas=[])
-        delex = tree.prettify(delex)
         return trees, delex, deps
 
 
@@ -525,7 +538,7 @@ if __name__ == '__main__':
     # tree extraction
     entryset = template(entryset, 'en')
     # generate
-    parser.generate(entryset=entryset, in_file=TRAIN_PATH, out_file=EN_TRAIN_PATH, lng='en')
+    parser.run_generator(entryset=entryset, input_dir=TRAIN_PATH, output_dir=EN_TRAIN_PATH, lng='en')
 
     # DEVSET
     print('Preparing devset...')
@@ -540,7 +553,7 @@ if __name__ == '__main__':
     # tree extraction
     entryset = template(entryset, 'en')
     # generate
-    parser.generate(entryset=entryset, in_file=DEV_PATH, out_file=EN_DEV_PATH, lng='en')
+    parser.run_generator(entryset=entryset, input_dir=DEV_PATH, output_dir=EN_DEV_PATH, lng='en')
 
     # TESTSET
     print('Preparing test...')
@@ -555,4 +568,6 @@ if __name__ == '__main__':
     # tree extraction
     entryset = template(entryset, 'en')
     # generate
-    parser.generate(entryset=entryset, in_file=TEST_PATH, out_file=EN_TEST_PATH, lng='en')
+    parser.run_generator(entryset=entryset, input_dir=TEST_PATH, output_dir=EN_TEST_PATH, lng='en')
+
+    template.close()
