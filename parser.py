@@ -195,10 +195,10 @@ def generate(entryset, in_file, out_file, lng):
             tree_xml.text = tree_
 
     rough_string = ET.tostring(tree.getroot(), encoding='utf-8', method='xml')
-    rough_string = re.sub(">\n[\t]+<", '><', rough_string)
+    rough_string = re.sub(">\n[\t]+<", '><', rough_string.decode('utf-8'))
     xml = minidom.parseString(rough_string).toprettyxml(indent="\t")
 
-    with open(out_file, 'w') as f:
+    with open(out_file, 'wb') as f:
         f.write(xml.encode('utf-8'))
 
 def run_generator(entryset, input_dir, output_dir, lng):
