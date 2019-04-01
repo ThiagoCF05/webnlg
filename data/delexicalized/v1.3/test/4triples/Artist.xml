@@ -1,0 +1,1387 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Artist" eid="Id1657" size="4">
+			<originaltripleset>
+				<otriple>Aaron_Bertram | associatedMusicalArtist | Kids_Imagine_Nation</otriple>
+				<otriple>Aaron_Bertram | associatedActs | Suburban_Legends</otriple>
+				<otriple>Suburban_Legends | bandMember | Brian_Robertson_(trombonist)</otriple>
+				<otriple>Aaron_Bertram | genre | Ska_punk</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aaron_Bertram | associatedBand/associatedMusicalArtist | Kids_Imagine_Nation</otriple>
+				<otriple>Aaron_Bertram | associatedBand/associatedMusicalArtist | Suburban_Legends</otriple>
+				<otriple>Suburban_Legends | bandMember | Brian_Robertson_(trombonist)</otriple>
+				<otriple>Aaron_Bertram | genre | Ska_punk</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Bertram</entity>
+				<entity>BRIDGE-1 | Suburban_Legends</entity>
+				<entity>PATIENT-1 | Kids_Imagine_Nation</entity>
+				<entity>PATIENT-2 | Brian_Robertson_(trombonist)</entity>
+				<entity>PATIENT-3 | Ska_punk</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aaron Bertram performs ska punk music and is an artist with the band Kids Imagine Nation and also the Suburban Legends band where Brian Robertson is the trombonist.</text>
+				<template>AGENT-1 performs PATIENT-3 and is an artist with PATIENT-1 and also BRIDGE-1 where PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aaron Bertram plays for the Kids Imagine Nation band and his musical genre is Ska punk. He also plays for the Suburban Legends band in which Brian Robertson plays the trombone.</text>
+				<template>AGENT-1 plays for PATIENT-1 and AGENT-1 musical genre is PATIENT-3 .  AGENT-1 also plays for BRIDGE-1 in which PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aaron Bertram plays for the Kids Imagine Nation band, as well as the Ska @ Suburban Legends band where trombonist Brian Robertson plays.</text>
+				<template>AGENT-1 plays for PATIENT-1 ,  as well as PATIENT-3 @ BRIDGE-1 where PATIENT-2 plays . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1658" size="4">
+			<originaltripleset>
+				<otriple>Aaron_Deer | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Aaron_Deer | genre | Psychedelia</otriple>
+				<otriple>Aaron_Deer | hometown | Indianapolis</otriple>
+				<otriple>Aaron_Deer | origin | Indiana</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aaron_Deer | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Aaron_Deer | genre | Psychedelia</otriple>
+				<otriple>Aaron_Deer | origin | Indianapolis</otriple>
+				<otriple>Aaron_Deer | origin | Indiana</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Deer</entity>
+				<entity>PATIENT-1 | &quot;solo_singer&quot;</entity>
+				<entity>PATIENT-2 | Psychedelia</entity>
+				<entity>PATIENT-3 | Indianapolis</entity>
+				<entity>PATIENT-4 | Indiana</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Psychedelia @ solo singer @ Aaron Deer is from Indianapolis, Indiana.</text>
+				<template>PATIENT-2 @ PATIENT-1 @ AGENT-1 is from PATIENT-3 ,  PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Coming from Indianapolis, Indiana, Aaron Deer, has a background as a solo singer and performs Psychedelia music.</text>
+				<template>Coming from PATIENT-3 ,  PATIENT-4 ,  AGENT-1 ,  has a background as PATIENT-1 and performs PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Solo singer @ Aaron Deer, performs Psychedelia music and is from Indianapolis, Indiana.</text>
+				<template>PATIENT-1 @ AGENT-1 ,  performs PATIENT-2 and is from PATIENT-3 ,  PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1659" size="4">
+			<originaltripleset>
+				<otriple>Aaron_Turner | associatedBand | Isis_(band)</otriple>
+				<otriple>Aaron_Turner | associatedMusicalArtist | Sumac_(band)</otriple>
+				<otriple>Aaron_Turner | genre | Electroacoustic_music</otriple>
+				<otriple>Aaron_Turner | instrument | Singing</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aaron_Turner | associatedBand/associatedMusicalArtist | Isis_(band)</otriple>
+				<otriple>Aaron_Turner | associatedBand/associatedMusicalArtist | Sumac_(band)</otriple>
+				<otriple>Aaron_Turner | genre | Electroacoustic_music</otriple>
+				<otriple>Aaron_Turner | instrument | Singing</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Turner</entity>
+				<entity>PATIENT-1 | Isis_(band)</entity>
+				<entity>PATIENT-2 | Sumac_(band)</entity>
+				<entity>PATIENT-3 | Electroacoustic_music</entity>
+				<entity>PATIENT-4 | Singing</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Electroacoustic @ singer @ Aaron Turner is associated with the bands Sumac and Isis.</text>
+				<template>PATIENT-3 @ PATIENT-4 @ AGENT-1 is associated with PATIENT-2 and PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aaron Turner, a singer who performs electroacoustic music, is with the band Isis and has performed with the group Sumac.</text>
+				<template>AGENT-1 ,  PATIENT-4 who performs PATIENT-3 ,  is with PATIENT-1 and has performed with PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Singer @ Aaron Turner plays electro-acoustic music and has played with the bands Isis and Sumac.</text>
+				<template>PATIENT-4 @ AGENT-1 plays PATIENT-3 and has played with PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1660" size="4">
+			<originaltripleset>
+				<otriple>Aaron_Turner | associatedMusicalArtist | Twilight_(band)</otriple>
+				<otriple>Aaron_Turner | associatedBand | Old_Man_Gloom</otriple>
+				<otriple>Aaron_Turner | genre | Post-metal</otriple>
+				<otriple>Aaron_Turner | activeYearsStartYear | &quot;1995&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aaron_Turner | associatedBand/associatedMusicalArtist | Twilight_(band)</otriple>
+				<otriple>Aaron_Turner | associatedBand/associatedMusicalArtist | Old_Man_Gloom</otriple>
+				<otriple>Aaron_Turner | genre | Post-metal</otriple>
+				<otriple>Aaron_Turner | activeYearsStartYear | 1995</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Turner</entity>
+				<entity>PATIENT-1 | Twilight_(band)</entity>
+				<entity>PATIENT-2 | Old_Man_Gloom</entity>
+				<entity>PATIENT-3 | Post-metal</entity>
+				<entity>PATIENT-4 | 1995</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aaron Turner started performing post-metal music in 1995. He played with Twilight and Old Man Gloom bands.</text>
+				<template>AGENT-1 started performing PATIENT-3 in PATIENT-4 .  AGENT-1 played with PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aaron Turner played with Twilight and Old Man Gloom bands.He started performing Post metal in 1995.</text>
+				<template>AGENT-1 played with PATIENT-1 and PATIENT-2 . AGENT-1 started performing PATIENT-3 in PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aaron Turner is post-metal musician who started performing in 1995. He has played with the bands Twilight and Old Man Gloom.</text>
+				<template>AGENT-1 is PATIENT-3 who started performing in PATIENT-4 .  AGENT-1 has played with PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1661" size="4">
+			<originaltripleset>
+				<otriple>Aaron_Turner | genre | Black_metal</otriple>
+				<otriple>Aaron_Turner | associatedMusicalArtist | Sumac_(band)</otriple>
+				<otriple>Aaron_Turner | instrument | Electric_guitar</otriple>
+				<otriple>Black_metal | musicFusionGenre | Death_metal</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aaron_Turner | genre | Black_metal</otriple>
+				<otriple>Aaron_Turner | associatedBand/associatedMusicalArtist | Sumac_(band)</otriple>
+				<otriple>Aaron_Turner | instrument | Electric_guitar</otriple>
+				<otriple>Black_metal | musicFusionGenre | Death_metal</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Turner</entity>
+				<entity>BRIDGE-1 | Black_metal</entity>
+				<entity>PATIENT-1 | Sumac_(band)</entity>
+				<entity>PATIENT-2 | Electric_guitar</entity>
+				<entity>PATIENT-3 | Death_metal</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Black metal musician Aaron Turner is a member of Sumac and plays Electric guitar. Death metal is a black metal fusion.</text>
+				<template>BRIDGE-1 musician AGENT-1 is a member of PATIENT-1 and plays PATIENT-2 .  PATIENT-3 is a BRIDGE-1 fusion . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aaron Turner plays electric guitar and his genre is Black Metal music in which Death metal is a fusion. He performed with the band Sumac.</text>
+				<template>AGENT-1 plays PATIENT-2 and AGENT-1 genre is BRIDGE-1 in which PATIENT-3 is a fusion .  AGENT-1 performed with PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Electric guitar player Aaron Turner is a Black metal musician who performed with the band Sumac. Death metal is a fusion of black metal music.</text>
+				<template>PATIENT-2 player AGENT-1 is a BRIDGE-1 musician who performed with PATIENT-1 .  PATIENT-3 is a fusion of BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1662" size="4">
+			<originaltripleset>
+				<otriple>Ace_Wilder | birthYear | &quot;1982&quot;^^xsd:gYear</otriple>
+				<otriple>Ace_Wilder | birthPlace | Stockholm</otriple>
+				<otriple>Ace_Wilder | birthDate | &quot;1982-07-23&quot;^^xsd:date</otriple>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Ace_Wilder | birthYear | 1982</otriple>
+				<otriple>Ace_Wilder | birthPlace | Stockholm</otriple>
+				<otriple>Ace_Wilder | birthDate | 1982-07-23</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ace_Wilder</entity>
+				<entity>PATIENT-1 | &quot;solo_singer&quot;</entity>
+				<entity>PATIENT-2 | 1982</entity>
+				<entity>PATIENT-3 | Stockholm</entity>
+				<entity>PATIENT-4 | 1982-07-23</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Ace Wilder was born July 23, 1982 in Stockholm and is a solo singer.</text>
+				<template>AGENT-1 was born PATIENT-4 ,  PATIENT-2 in PATIENT-3 and is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Ace Wilder was born on July 23, 1982 in Stockholm. He is a solo singer.</text>
+				<template>AGENT-1 was born on PATIENT-4 ,  PATIENT-2 in PATIENT-3 .  AGENT-1 is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Singer @ Ace Wilder was born July 23, 1982 in Stockholm.</text>
+				<template>PATIENT-1 @ AGENT-1 was born PATIENT-4 ,  PATIENT-2 in PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1663" size="4">
+			<originaltripleset>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Ace_Wilder | birthYear | &quot;1982&quot;^^xsd:gYear</otriple>
+				<otriple>Ace_Wilder | birthPlace | Sweden</otriple>
+				<otriple>Ace_Wilder | birthDate | &quot;1982-07-23&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Ace_Wilder | birthYear | 1982</otriple>
+				<otriple>Ace_Wilder | birthPlace | Sweden</otriple>
+				<otriple>Ace_Wilder | birthDate | 1982-07-23</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ace_Wilder</entity>
+				<entity>PATIENT-1 | &quot;solo_singer&quot;</entity>
+				<entity>PATIENT-2 | 1982</entity>
+				<entity>PATIENT-3 | Sweden</entity>
+				<entity>PATIENT-4 | 1982-07-23</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Ace Wilder, born in Sweden on July 23, 1982 is a solo singer.</text>
+				<template>AGENT-1 ,  born in PATIENT-3 on PATIENT-4 ,  PATIENT-2 is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Singer @ Ace Wilder was born July 23, 1982 in Sweden.</text>
+				<template>PATIENT-1 @ AGENT-1 was born PATIENT-4 ,  PATIENT-2 in PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Solo singer @ Ace Wilder was born in Sweden on 1982. His birthday is the 23rd July.</text>
+				<template>PATIENT-1 @ AGENT-1 was born in PATIENT-3 on PATIENT-2 .  AGENT-1 birthday is PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1664" size="4">
+			<originaltripleset>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Ace_Wilder | birthYear | &quot;1982&quot;^^xsd:gYear</otriple>
+				<otriple>Ace_Wilder | occupation | Songwriter</otriple>
+				<otriple>Ace_Wilder | birthPlace | Stockholm</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Ace_Wilder | birthYear | 1982</otriple>
+				<otriple>Ace_Wilder | occupation | Songwriter</otriple>
+				<otriple>Ace_Wilder | birthPlace | Stockholm</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ace_Wilder</entity>
+				<entity>PATIENT-1 | &quot;solo_singer&quot;</entity>
+				<entity>PATIENT-2 | 1982</entity>
+				<entity>PATIENT-3 | Songwriter</entity>
+				<entity>PATIENT-4 | Stockholm</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Songwriter and solo singer @ Ace Wilder was born in Stockholm in 1982.</text>
+				<template>PATIENT-3 and PATIENT-1 @ AGENT-1 was born in PATIENT-4 in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Solo singer Ace Wilder was born in Stockholm in 1982. He is also a songwriter.</text>
+				<template>PATIENT-1 @ AGENT-1 was born in PATIENT-4 in PATIENT-2 .  AGENT-1 is also PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Songwriter, Ace Wilder, who has a background as a solo singer, was born in Stockholm, in 1982.</text>
+				<template>PATIENT-3 ,  AGENT-1 ,  who has a background as PATIENT-1 ,  was born in PATIENT-4 ,  in PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1665" size="4">
+			<originaltripleset>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Ace_Wilder | birthYear | &quot;1982&quot;^^xsd:gYear</otriple>
+				<otriple>Ace_Wilder | occupation | Songwriter</otriple>
+				<otriple>Ace_Wilder | birthPlace | Sweden</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Ace_Wilder | birthYear | 1982</otriple>
+				<otriple>Ace_Wilder | occupation | Songwriter</otriple>
+				<otriple>Ace_Wilder | birthPlace | Sweden</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ace_Wilder</entity>
+				<entity>PATIENT-1 | &quot;solo_singer&quot;</entity>
+				<entity>PATIENT-2 | 1982</entity>
+				<entity>PATIENT-3 | Songwriter</entity>
+				<entity>PATIENT-4 | Sweden</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The songwriter @ Ace Wilder was born in Sweden in 1982. He has a background as a solo singer.</text>
+				<template>PATIENT-3 @ AGENT-1 was born in PATIENT-4 in PATIENT-2 .  AGENT-1 has a background as PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Born in 1982 in Sweden, Ace Wilder is a solo singer and songwriter.</text>
+				<template>Born in PATIENT-2 in PATIENT-4 ,  AGENT-1 is PATIENT-1 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Ace Wilder was born in Sweden in 1982. He is a solo singer and songwriter.</text>
+				<template>AGENT-1 was born in PATIENT-4 in PATIENT-2 .  AGENT-1 is PATIENT-1 and PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1666" size="4">
+			<originaltripleset>
+				<otriple>Ahmet_Ertegun | genre | Rhythm_and_blues</otriple>
+				<otriple>Ahmet_Ertegun | hometown | United_States</otriple>
+				<otriple>Ahmet_Ertegun | background | &quot;non_performing_personnel&quot;@en</otriple>
+				<otriple>Ahmet_Ertegun | origin | Washington,_D.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ahmet_Ertegun | genre | Rhythm_and_blues</otriple>
+				<otriple>Ahmet_Ertegun | origin | Washington,_D.C.</otriple>
+				<otriple>Ahmet_Ertegun | background | &quot;non_performing_personnel&quot;</otriple>
+				<otriple>Ahmet_Ertegun | origin | United_States</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ahmet_Ertegun</entity>
+				<entity>PATIENT-1 | Rhythm_and_blues</entity>
+				<entity>PATIENT-2 | Washington,_D.C.</entity>
+				<entity>PATIENT-3 | &quot;non_performing_personnel&quot;</entity>
+				<entity>PATIENT-4 | United_States</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Rhythm and blues performer Ahmet Ertegun was born in Washington D.C. He is considered non-performing personnel.</text>
+				<template>PATIENT-1 performer AGENT-1 was born in PATIENT-2 .  AGENT-1 is considered PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Ahmet Ertegun originates from Washington D.C,United States.He started out as a non performing personnel in the rhythm and blues.</text>
+				<template>AGENT-1 originates from PATIENT-2 , PATIENT-4 . AGENT-1 started out as PATIENT-3 in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Ahmet Ertegun from Washington, D.C., U.S. plays rhythm and blues music. His background is as a non-performing person.</text>
+				<template>AGENT-1 from PATIENT-2  ,  PATIENT-4  plays PATIENT-1 .  AGENT-1 background is as PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1667" size="4">
+			<originaltripleset>
+				<otriple>Ahmet_Ertegun | genre | Rock_and_roll</otriple>
+				<otriple>Ahmet_Ertegun | origin | United_States</otriple>
+				<otriple>Rock_and_roll | stylisticOrigin | Blues</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ahmet_Ertegun | genre | Rock_and_roll</otriple>
+				<otriple>Ahmet_Ertegun | origin | United_States</otriple>
+				<otriple>Rock_and_roll | stylisticOrigin | Blues</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ahmet_Ertegun</entity>
+				<entity>BRIDGE-1 | Rock_and_roll</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Blues</entity>
+				<entity>PATIENT-2 | African_Americans</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>African Americans are an ethnic group in the U.S., the country Ahmet Ertegun was from. He played rock and roll music which stylistic origins come from Blues.</text>
+				<template>PATIENT-2 are an ethnic group in BRIDGE-2  ,  the country AGENT-1 was from .  AGENT-1 played BRIDGE-1 which stylistic origins come from PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Ahmet Ertegun is from the United States, where African Americans are an ethnic group. His genre is Rock and roll, which has its stylistic origin in the Blues.</text>
+				<template>AGENT-1 is from BRIDGE-2 ,  where PATIENT-2 are an ethnic group .  AGENT-1 genre is BRIDGE-1 ,  which has BRIDGE-1 stylistic origin in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>African Americans are an ethnic group in the United States, the country Ahmet Ertegun is from. He plays rock and roll music which has its stylistic origin in the Blues.</text>
+				<template>PATIENT-2 are an ethnic group in BRIDGE-2 ,  the country AGENT-1 is from .  AGENT-1 plays BRIDGE-1 which has BRIDGE-1 stylistic origin in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1668" size="4">
+			<originaltripleset>
+				<otriple>Albennie_Jones | activeYearsEndYear | &quot;1950&quot;^^xsd:gYear</otriple>
+				<otriple>Albennie_Jones | genre | Rhythm_and_blues</otriple>
+				<otriple>Rhythm_and_blues | stylisticOrigin | Blues</otriple>
+				<otriple>Rhythm_and_blues | derivative | Disco</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Albennie_Jones | activeYearsEndYear | 1950</otriple>
+				<otriple>Albennie_Jones | genre | Rhythm_and_blues</otriple>
+				<otriple>Rhythm_and_blues | stylisticOrigin | Blues</otriple>
+				<otriple>Rhythm_and_blues | derivative | Disco</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Albennie_Jones</entity>
+				<entity>BRIDGE-1 | Rhythm_and_blues</entity>
+				<entity>PATIENT-1 | 1950</entity>
+				<entity>PATIENT-2 | Blues</entity>
+				<entity>PATIENT-3 | Disco</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Albennie Jones, performed in the rhythm and blues genre and ended his career in 1950. Rhythm and blues originated from blues music and has disco as a derivative.</text>
+				<template>AGENT-1 ,  performed in the BRIDGE-1 genre and ended AGENT-1 career in PATIENT-1 .  BRIDGE-1 originated from PATIENT-2 and has PATIENT-3 as a derivative . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Ending his career in 1950, Albennie Jones was a performer of rhythm and blues. This genre originated from the blues and has disco as a derivative.</text>
+				<template>Ending AGENT-1 career in PATIENT-1 ,  AGENT-1 was a performer of BRIDGE-1 .  BRIDGE-1 originated from PATIENT-2 and has PATIENT-3 as a derivative . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The musical genre of Albennie Jones is rhythm and blues and he started his career in 1950.Rhythm and blues music originated from the blues and disco is its derivative.</text>
+				<template>The musical genre of AGENT-1 is BRIDGE-1 and AGENT-1 started AGENT-1 career in PATIENT-1 . BRIDGE-1 music originated from PATIENT-2 and PATIENT-3 is BRIDGE-1 derivative . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1669" size="4">
+			<originaltripleset>
+				<otriple>Albennie_Jones | genre | Jazz</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>Jazz | stylisticOrigins | Blues</otriple>
+				<otriple>Albennie_Jones | birthPlace | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Albennie_Jones | genre | Jazz</otriple>
+				<otriple>Jazz | stylisticOrigin | Blues</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>Albennie_Jones | birthPlace | United_States</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Albennie_Jones</entity>
+				<entity>BRIDGE-1 | Jazz</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Blues</entity>
+				<entity>PATIENT-2 | African_Americans</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>African Americans are one of the ethnic groups in the United States, the country where Albennie Jones was born. Musician, Albennie Jones is a performer of Jazz, the genre which originated its style from Blues music.</text>
+				<template>PATIENT-2 are one of the ethnic groups in BRIDGE-2 ,  the country where AGENT-1 was born .  AGENT-1 is a performer of BRIDGE-1 ,  the genre which originated BRIDGE-1 style from PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Albennie Jones performs jazz music which originated its style from Blues music. Albennie Jones was born in the U.S.A, where on of the ethnic groups, is African Americans.</text>
+				<template>AGENT-1 performs BRIDGE-1 which originated BRIDGE-1 style from PATIENT-1 .  AGENT-1 was born in BRIDGE-2 ,  where on of the ethnic groups ,  is PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>African Americans are an ethnic group in the U.S., the country where Albennie Jones was born. Albennie Jones is a Jazz musician, a music style that originates from the Blues.</text>
+				<template>PATIENT-2 are an ethnic group in BRIDGE-2  ,  the country where AGENT-1 was born .  AGENT-1 is a BRIDGE-1 musician ,  a music style that originates from PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1670" size="4">
+			<originaltripleset>
+				<otriple>Aleksandra_Kovač | birthYear | &quot;1972&quot;^^xsd:gYear</otriple>
+				<otriple>Aleksandra_Kovač | genre | Pop_music</otriple>
+				<otriple>Aleksandra_Kovač | birthPlace | Belgrade</otriple>
+				<otriple>Aleksandra_Kovač | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aleksandra_Kovač | birthYear | 1972</otriple>
+				<otriple>Aleksandra_Kovač | genre | Pop_music</otriple>
+				<otriple>Aleksandra_Kovač | birthPlace | Belgrade</otriple>
+				<otriple>Aleksandra_Kovač | background | &quot;solo_singer&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandra_Kovač</entity>
+				<entity>PATIENT-1 | 1972</entity>
+				<entity>PATIENT-2 | Pop_music</entity>
+				<entity>PATIENT-3 | Belgrade</entity>
+				<entity>PATIENT-4 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Singer and pop musician Aleksandra Kovac was born 1972, in Belgrade.</text>
+				<template>PATIENT-4 and PATIENT-2 musician AGENT-1 was born PATIENT-1 ,  in PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Pop musician and solo singer @ Aleksandra Kovač was born 1972, in Belgrade.</text>
+				<template>PATIENT-2 musician and PATIENT-4 @ AGENT-1 was born PATIENT-1 ,  in PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aleksandra Kovac was born in Belgrade in 1972 and is a solo singer of pop music.</text>
+				<template>AGENT-1 was born in PATIENT-3 in PATIENT-1 and is PATIENT-4 of PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1671" size="4">
+			<originaltripleset>
+				<otriple>Aleksandra_Kovač | genre | Rhythm_and_blues</otriple>
+				<otriple>Aleksandra_Kovač | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Aleksandra_Kovač | birthYear | &quot;1972&quot;^^xsd:gYear</otriple>
+				<otriple>Aleksandra_Kovač | birthPlace | Socialist_Republic_of_Serbia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aleksandra_Kovač | genre | Rhythm_and_blues</otriple>
+				<otriple>Aleksandra_Kovač | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Aleksandra_Kovač | birthYear | 1972</otriple>
+				<otriple>Aleksandra_Kovač | birthPlace | Socialist_Republic_of_Serbia</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandra_Kovač</entity>
+				<entity>PATIENT-1 | Rhythm_and_blues</entity>
+				<entity>PATIENT-2 | &quot;solo_singer&quot;</entity>
+				<entity>PATIENT-3 | 1972</entity>
+				<entity>PATIENT-4 | Socialist_Republic_of_Serbia</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Rhythm and blues @ singer @ Aleksandra Kovac was born 1972 in the Socialist Republic of Serbia.</text>
+				<template>PATIENT-1 @ PATIENT-2 @ AGENT-1 was born PATIENT-3 in PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Born in the Socialist Republic of Serbia (1972), Aleksandra Kovac, a solo singer, is an exponent of Rhythm and blues.</text>
+				<template>Born in PATIENT-4 (PATIENT-3) ,  AGENT-1 ,  PATIENT-2 ,  is an exponent of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aleksandra Kovac, who sang rhythm and blues, was born in the Socialist Republic of Serbia in 1972.</text>
+				<template>AGENT-1 ,  who sang PATIENT-1 ,  was born in PATIENT-4 in PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1672" size="4">
+			<originaltripleset>
+				<otriple>Alex_Day | associatedBand | Chameleon_Circuit_(band)</otriple>
+				<otriple>Alex_Day | genre | Acoustic_music</otriple>
+				<otriple>Alex_Day | associatedMusicalArtist | Charlie_McDonnell</otriple>
+				<otriple>Alex_Day | activeYearsStartYear | &quot;2006&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alex_Day | associatedBand/associatedMusicalArtist | Chameleon_Circuit_(band)</otriple>
+				<otriple>Alex_Day | genre | Acoustic_music</otriple>
+				<otriple>Alex_Day | associatedBand/associatedMusicalArtist | Charlie_McDonnell</otriple>
+				<otriple>Alex_Day | activeYearsStartYear | 2006</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Day</entity>
+				<entity>PATIENT-1 | Chameleon_Circuit_(band)</entity>
+				<entity>PATIENT-2 | Acoustic_music</entity>
+				<entity>PATIENT-3 | Charlie_McDonnell</entity>
+				<entity>PATIENT-4 | 2006</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alex Day plays acoustic music with the Chameleon Circuit band. He started actively in music in 2006 and is associated with Charlie McDonnell.</text>
+				<template>AGENT-1 plays PATIENT-2 with PATIENT-1 .  AGENT-1 started actively in music in PATIENT-4 and is associated with PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Acoustic musician Alex Day began in 2006 and is associated with the Chameleon Circuit and Charlie McDonnell.</text>
+				<template>PATIENT-2 musician AGENT-1 began in PATIENT-4 and is associated with PATIENT-1 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Acoustic musician Alex Day plays with the bands Chameleon Circuit and the musician Charlie McDonnell. His active years in music began in 2006.</text>
+				<template>PATIENT-2 musician AGENT-1 plays with PATIENT-1 and PATIENT-3 .  AGENT-1 active years in music began in PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1673" size="4">
+			<originaltripleset>
+				<otriple>Alex_Day | associatedBand | Chameleon_Circuit_(band)</otriple>
+				<otriple>Alex_Day | genre | Electronic_music</otriple>
+				<otriple>Alex_Day | associatedMusicalArtist | Charlie_McDonnell</otriple>
+				<otriple>Alex_Day | activeYearsStartYear | &quot;2006&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alex_Day | associatedBand/associatedMusicalArtist | Chameleon_Circuit_(band)</otriple>
+				<otriple>Alex_Day | genre | Electronic_music</otriple>
+				<otriple>Alex_Day | associatedBand/associatedMusicalArtist | Charlie_McDonnell</otriple>
+				<otriple>Alex_Day | activeYearsStartYear | 2006</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Day</entity>
+				<entity>PATIENT-1 | Chameleon_Circuit_(band)</entity>
+				<entity>PATIENT-2 | Electronic_music</entity>
+				<entity>PATIENT-3 | Charlie_McDonnell</entity>
+				<entity>PATIENT-4 | 2006</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alex Day, who is associated with performer Charlie McDonnell, plays with the band Chameleon Circuit. He became active in 2006 and his speciality is electronic music.</text>
+				<template>AGENT-1 ,  who is associated with PATIENT-3 ,  plays with PATIENT-1 .  AGENT-1 became active in PATIENT-4 and AGENT-1 speciality is PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alex Day performs electronic music and plays with the band Chameleon Circuit. His active musical years started in 2006 and he is associated with the musical artist, Charlie McDonnell.</text>
+				<template>AGENT-1 performs PATIENT-2 and plays with PATIENT-1 .  AGENT-1 active musical years started in PATIENT-4 and AGENT-1 is associated with PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Chameleon Circuit member and Electronic musician Alex Day began in 2006 and is associated with artist Charlie McDonnell.</text>
+				<template>PATIENT-1 member and PATIENT-2 musician AGENT-1 began in PATIENT-4 and is associated with PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1674" size="4">
+			<originaltripleset>
+				<otriple>Alfred_Garth_Jones | deathPlace | London</otriple>
+				<otriple>Alfred_Garth_Jones | birthPlace | Manchester</otriple>
+				<otriple>Alfred_Garth_Jones | placeOfBirth | England</otriple>
+				<otriple>Alfred_Garth_Jones | birthYear | &quot;1872&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alfred_Garth_Jones | deathPlace | London</otriple>
+				<otriple>Alfred_Garth_Jones | birthPlace | England</otriple>
+				<otriple>Alfred_Garth_Jones | birthPlace | Manchester</otriple>
+				<otriple>Alfred_Garth_Jones | birthYear | 1872</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alfred_Garth_Jones</entity>
+				<entity>PATIENT-1 | London</entity>
+				<entity>PATIENT-2 | England</entity>
+				<entity>PATIENT-3 | Manchester</entity>
+				<entity>PATIENT-4 | 1872</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alfred Garth Jones was born in Manchester, England in 1872 and died in London.</text>
+				<template>AGENT-1 was born in PATIENT-3 ,  PATIENT-2 in PATIENT-4 and died in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alfred Garth Jones was born in 1872 in Manchester, England and died in London.</text>
+				<template>AGENT-1 was born in PATIENT-4 in PATIENT-3 ,  PATIENT-2 and died in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alfred Garth Jones was born in 1872, in Manchester (England) and died in London.</text>
+				<template>AGENT-1 was born in PATIENT-4 ,  in PATIENT-3 (PATIENT-2) and died in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1675" size="4">
+			<originaltripleset>
+				<otriple>Alfredo_Zitarrosa | deathPlace | Montevideo</otriple>
+				<otriple>Montevideo | country | Uruguay</otriple>
+				<otriple>Uruguay | demonym | Uruguayans</otriple>
+				<otriple>Montevideo | leaderName | Daniel_Martínez_(politician)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alfredo_Zitarrosa | deathPlace | Montevideo</otriple>
+				<otriple>Montevideo | country | Uruguay</otriple>
+				<otriple>Uruguay | demonym | Uruguayans</otriple>
+				<otriple>Montevideo | leaderName | Daniel_Martínez_(politician)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alfredo_Zitarrosa</entity>
+				<entity>BRIDGE-1 | Montevideo</entity>
+				<entity>BRIDGE-2 | Uruguay</entity>
+				<entity>PATIENT-1 | Uruguayans</entity>
+				<entity>PATIENT-2 | Daniel_Martínez_(politician)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alfredo Zitarrosa died in Montevideo, Uruguay where the natives are known as Uruguayans. The city's leader is Daniel Martinez.</text>
+				<template>AGENT-1 died in BRIDGE-1 ,  BRIDGE-2 where the natives are known as PATIENT-1 .  BRIDGE-1 leader is PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alfredo Zitarrosa died in Montevideo, Uruguay. The city's leader is Daniel Martinez and the country's inhabitants are known as Uruguayans.</text>
+				<template>AGENT-1 died in BRIDGE-1 ,  BRIDGE-2 .  BRIDGE-1 leader is PATIENT-2 and BRIDGE-2 inhabitants are known as PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alfredo Zitarrosa died in Montevideo, Uruguay, where Daniel Martinez is a political leader. Uruguayans is a demonym for Uruguay.</text>
+				<template>AGENT-1 died in BRIDGE-1 ,  BRIDGE-2 ,  where PATIENT-2 is a political leader .  PATIENT-1 is a demonym for BRIDGE-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1676" size="4">
+			<originaltripleset>
+				<otriple>Alfredo_Zitarrosa | recordLabel | RCA_Records</otriple>
+				<otriple>Alfredo_Zitarrosa | birthPlace | Uruguay</otriple>
+				<otriple>Alfredo_Zitarrosa | genre | Candombe</otriple>
+				<otriple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alfredo_Zitarrosa | recordLabel | RCA_Records</otriple>
+				<otriple>Alfredo_Zitarrosa | birthPlace | Uruguay</otriple>
+				<otriple>Alfredo_Zitarrosa | genre | Candombe</otriple>
+				<otriple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alfredo_Zitarrosa</entity>
+				<entity>PATIENT-1 | RCA_Records</entity>
+				<entity>PATIENT-2 | Uruguay</entity>
+				<entity>PATIENT-3 | Candombe</entity>
+				<entity>PATIENT-4 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alfredo Zitarrosa was born in Uruguay and has a background as a solo singer. His musical genre is Candombe and his record label is RCA Records.</text>
+				<template>AGENT-1 was born in PATIENT-2 and has a background as PATIENT-4 .  AGENT-1 musical genre is PATIENT-3 and AGENT-1 record label is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>With a background as a solo singer, Uruguay born Alfredo Zitarrosa was signed to the RCA Records label and performed in the musical genre of Candombe.</text>
+				<template>With a background as PATIENT-4 ,  PATIENT-2 born AGENT-1 was signed to the PATIENT-1 label and performed in the musical genre of PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alfredo Zitarrosa's birth place was Uruguay and has a recording label in RCA Records.He started out as a solo singer and plays Candombe musical genre.</text>
+				<template>AGENT-1 birth place was PATIENT-2 and has a recording label in PATIENT-1 . AGENT-1 started out as PATIENT-4 and plays PATIENT-3 musical genre . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1677" size="4">
+			<originaltripleset>
+				<otriple>Alison_ODonnell | associatedBand | Flibbertigibbet</otriple>
+				<otriple>Alison_ODonnell | associatedMusicalArtist | Bajik</otriple>
+				<otriple>Alison_ODonnell | genre | Folk_music</otriple>
+				<otriple>Alison_ODonnell | activeYearsStartYear | &quot;1963&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Bajik</otriple>
+				<otriple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Flibbertigibbet</otriple>
+				<otriple>Alison_ODonnell | genre | Folk_music</otriple>
+				<otriple>Alison_ODonnell | activeYearsStartYear | 1963</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alison_ODonnell</entity>
+				<entity>PATIENT-1 | Bajik</entity>
+				<entity>PATIENT-2 | Flibbertigibbet</entity>
+				<entity>PATIENT-3 | Folk_music</entity>
+				<entity>PATIENT-4 | 1963</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alison O'Donnell's career began 1963 and she performs folk music. She was a member of the Flibbertigibbet band and she is associated with Bajik.</text>
+				<template>AGENT-1 career began PATIENT-4 and AGENT-1 performs PATIENT-3 .  AGENT-1 was a member of PATIENT-2 and AGENT-1 is associated with PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Folk musician, Alison O'Donnell; started performing in 1963, was with the band Bajik and was a member of the Flibbertigibbet band.</text>
+				<template>PATIENT-3 musician ,  AGENT-1 ;  started performing in PATIENT-4 ,  was with the band PATIENT-1 and was a member of the PATIENT-2 band . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Flibbertigibbet band member, Bajik associate and folk artist, Alison O'Donnell, became active in 1963.</text>
+				<template>PATIENT-2 band member ,  PATIENT-1 associate and PATIENT-3 artist ,  AGENT-1 ,  became active in PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1678" size="4">
+			<originaltripleset>
+				<otriple>Alison_ODonnell | associatedBand | Mellow_Candle</otriple>
+				<otriple>Alison_ODonnell | associatedMusicalArtist | Head_South_By_Weaving</otriple>
+				<otriple>Alison_ODonnell | genre | Folk_music</otriple>
+				<otriple>Alison_ODonnell | activeYearsStartYear | &quot;1963&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Mellow_Candle</otriple>
+				<otriple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Head_South_By_Weaving</otriple>
+				<otriple>Alison_ODonnell | genre | Folk_music</otriple>
+				<otriple>Alison_ODonnell | activeYearsStartYear | 1963</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alison_ODonnell</entity>
+				<entity>PATIENT-1 | Mellow_Candle</entity>
+				<entity>PATIENT-2 | Head_South_By_Weaving</entity>
+				<entity>PATIENT-3 | Folk_music</entity>
+				<entity>PATIENT-4 | 1963</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Folk musician Alison O'Donnell began in 1963 and is associated with Head South By Weaving and Mellow Candle.</text>
+				<template>PATIENT-3 musician AGENT-1 began in PATIENT-4 and is associated with PATIENT-2 and PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alison O'Donnell began performing folk music in 1963. She 's been associated with the bands Head South By Weaving and Mellow Candle.</text>
+				<template>AGENT-1 began performing PATIENT-3 in PATIENT-4 .  AGENT-1 's been associated with the bands PATIENT-2 and PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Folk musician Alison O'Donnell, who began her career in 1963, has played with the bands Mellow Candle and Head South By Weaving.</text>
+				<template>PATIENT-3 musician AGENT-1 ,  who began AGENT-1 career in PATIENT-4 ,  has played with the bands PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1679" size="4">
+			<originaltripleset>
+				<otriple>Alison_ODonnell | genre | Jazz</otriple>
+				<otriple>Alison_ODonnell | recordLabel | Deram_Records</otriple>
+				<otriple>Deram_Records | location | London</otriple>
+				<otriple>Alison_ODonnell | label | Floating_World_Records</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alison_ODonnell | genre | Jazz</otriple>
+				<otriple>Alison_ODonnell | recordLabel | Deram_Records</otriple>
+				<otriple>Deram_Records | location | London</otriple>
+				<otriple>Alison_ODonnell | recordLabel | Floating_World_Records</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alison_ODonnell</entity>
+				<entity>BRIDGE-1 | Deram_Records</entity>
+				<entity>PATIENT-1 | Jazz</entity>
+				<entity>PATIENT-2 | London</entity>
+				<entity>PATIENT-3 | Floating_World_Records</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>London @ Jazz musician Alison O'Donnell records with the Floating World Records label. She is signed to Deram Records.</text>
+				<template>PATIENT-2 @ PATIENT-1 musician AGENT-1 records with the PATIENT-3 label .  AGENT-1 is signed to BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alison O'Donnell is a jazz musician whose record label is the London -based Deram Records. She is signed to the record label &quot;Floating World Records.&quot;.</text>
+				<template>AGENT-1 is a PATIENT-1 musician whose record label is the PATIENT-2 -based BRIDGE-1 .  AGENT-1 is signed to the record label PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alison O'Donnell was once signed to London based, Deram Records. A jazz musician, Alison O'Donnell is signed with the label, Floating World Records.</text>
+				<template>AGENT-1 was once signed to PATIENT-2 based ,  BRIDGE-1 .  A PATIENT-1 musician ,  AGENT-1 is signed with the label ,  PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1680" size="4">
+			<originaltripleset>
+				<otriple>Alison_ODonnell | genre | Jazz</otriple>
+				<otriple>Alison_ODonnell | recordLabel | Deram_Records</otriple>
+				<otriple>Deram_Records | location | London</otriple>
+				<otriple>Alison_ODonnell | label | Fruits_de_Mer_Records</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alison_ODonnell | genre | Jazz</otriple>
+				<otriple>Alison_ODonnell | recordLabel | Deram_Records</otriple>
+				<otriple>Deram_Records | location | London</otriple>
+				<otriple>Alison_ODonnell | recordLabel | Fruits_de_Mer_Records</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alison_ODonnell</entity>
+				<entity>BRIDGE-1 | Deram_Records</entity>
+				<entity>PATIENT-1 | Jazz</entity>
+				<entity>PATIENT-2 | London</entity>
+				<entity>PATIENT-3 | Fruits_de_Mer_Records</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alison O'Donnell, who performs jazz, once was signed to Deram Records and another time to Fruits de Mer Records. London is the home to Deram Records.</text>
+				<template>AGENT-1 ,  who performs PATIENT-1 ,  once was signed to BRIDGE-1 and another time to PATIENT-3 .  PATIENT-2 is the home to BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Previously signed to the record label Fruits de Mer Records, jazz musician, Alison O'Donnell is signed with the London based, record label, Deram Records.</text>
+				<template>Previously signed to the record label PATIENT-3 ,  PATIENT-1 musician ,  AGENT-1 is signed with the PATIENT-2 based ,  record label ,  BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alison O'Donnell, who performs jazz music, was once signed to Fruit de Mer Records and is now signed to London based Deram Records.</text>
+				<template>AGENT-1 ,  who performs PATIENT-1 ,  was once signed to PATIENT-3 and is now signed to PATIENT-2 based BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1681" size="4">
+			<originaltripleset>
+				<otriple>Allen_Forrest | birthYear | &quot;1981&quot;^^xsd:gYear</otriple>
+				<otriple>Allen_Forrest | genre | Acoustic_music</otriple>
+				<otriple>Allen_Forrest | birthPlace | Fort_Campbell</otriple>
+				<otriple>Allen_Forrest | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Allen_Forrest | birthYear | 1981</otriple>
+				<otriple>Allen_Forrest | genre | Acoustic_music</otriple>
+				<otriple>Allen_Forrest | birthPlace | Fort_Campbell</otriple>
+				<otriple>Allen_Forrest | background | &quot;solo_singer&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Allen_Forrest</entity>
+				<entity>PATIENT-1 | 1981</entity>
+				<entity>PATIENT-2 | Acoustic_music</entity>
+				<entity>PATIENT-3 | Fort_Campbell</entity>
+				<entity>PATIENT-4 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Allen Forrest was born in Fort Campbell. in 1981. He is an acoustic @ solo singer.</text>
+				<template>AGENT-1 was born in PATIENT-3 .  in PATIENT-1 .  AGENT-1 is PATIENT-2 @ PATIENT-4 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Fort Campbell is the birth place of Allen Forrest, who was born in the year 1981. He is a solo singer who plays acoustic music.</text>
+				<template>PATIENT-3 is the birth place of AGENT-1 ,  who was born in PATIENT-1 .  AGENT-1 is PATIENT-4 who plays PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Allen Forrest was born in Fort Campbell, in 1981. Allen Forrest is a solo singer who plays acoustic music.</text>
+				<template>AGENT-1 was born in PATIENT-3 ,  in PATIENT-1 .  AGENT-1 is PATIENT-4 who plays PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1682" size="4">
+			<originaltripleset>
+				<otriple>Allen_Forrest | genre | Hip_hop_music</otriple>
+				<otriple>Allen_Forrest | birthYear | &quot;1981&quot;^^xsd:gYear</otriple>
+				<otriple>Allen_Forrest | birthPlace | &quot;Fort Campbell, KY, raised in Dothan, AL&quot;@en</otriple>
+				<otriple>Allen_Forrest | background | &quot;solo_singer&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Allen_Forrest | genre | Hip_hop_music</otriple>
+				<otriple>Allen_Forrest | birthYear | 1981</otriple>
+				<otriple>Allen_Forrest | birthPlace | &quot;Fort Campbell, KY, raised in Dothan, AL&quot;</otriple>
+				<otriple>Allen_Forrest | background | &quot;solo_singer&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Allen_Forrest</entity>
+				<entity>PATIENT-1 | Hip_hop_music</entity>
+				<entity>PATIENT-2 | 1981</entity>
+				<entity>PATIENT-3 | &quot;Fort Campbell, KY, raised in Dothan, AL&quot;</entity>
+				<entity>PATIENT-4 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Solo @ hip hop performer Allen Forrest was born in Fort Campbell, Kentucky in 1981 and raised in Dothan, Alabama.</text>
+				<template>PATIENT-4 @ PATIENT-1 performer AGENT-1 was born in PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Allen Forrest was born in 1981 in Fort Campbell, KY and raised in Dothan, AL.He was originally a solo singer and performs hip hop music.</text>
+				<template>AGENT-1 was born in PATIENT-2 in PATIENT-3 . AGENT-1 was originally PATIENT-4 and performs PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1683" size="4">
+			<originaltripleset>
+				<otriple>Alternative_rock | musicFusionGenre | Nu_metal</otriple>
+				<otriple>Alternative_rock | stylisticOrigin | Punk_rock</otriple>
+				<otriple>Andrew_White_(musician) | associatedBand | Marry_Banilow</otriple>
+				<otriple>Andrew_White_(musician) | genre | Alternative_rock</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alternative_rock | musicFusionGenre | Nu_metal</otriple>
+				<otriple>Alternative_rock | stylisticOrigin | Punk_rock</otriple>
+				<otriple>Andrew_White_(musician) | associatedBand/associatedMusicalArtist | Marry_Banilow</otriple>
+				<otriple>Andrew_White_(musician) | genre | Alternative_rock</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_White_(musician)</entity>
+				<entity>BRIDGE-1 | Alternative_rock</entity>
+				<entity>PATIENT-1 | Nu_metal</entity>
+				<entity>PATIENT-2 | Punk_rock</entity>
+				<entity>PATIENT-3 | Marry_Banilow</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alternative rock musician Andrew White is associated with Marry Banilow. Alternative rock originates from punk rock and is fused into Nu metal.</text>
+				<template>BRIDGE-1 musician AGENT-1 is associated with PATIENT-3 .  BRIDGE-1 originates from PATIENT-2 and is fused into PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Andrew White is associated with the musical artist Marry Banilow and he plays alternative rock. That type of music originated from punk rock. Nu metal music is a fusion of alternative rock music.</text>
+				<template>AGENT-1 is associated with the musical artist PATIENT-3 and AGENT-1 plays BRIDGE-1 .  That type of music originated from PATIENT-2 .  PATIENT-1 is a fusion of BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The musician Andrew White, who has worked with Marry Banilow, performs alternative rock. Nu metal is a fusion genre of alternative rock, which has its stylistic origins in punk.</text>
+				<template>AGENT-1 ,  who has worked with PATIENT-3 ,  performs BRIDGE-1 .  PATIENT-1 is a fusion genre of BRIDGE-1 ,  which has BRIDGE-1 stylistic origins in PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1684" size="4">
+			<originaltripleset>
+				<otriple>Anders_Osborne | associatedBand | Billy_Iuso</otriple>
+				<otriple>Anders_Osborne | associatedMusicalArtist | Tab_Benoit</otriple>
+				<otriple>Anders_Osborne | genre | Rock_music</otriple>
+				<otriple>Anders_Osborne | associatedActs | Galactic</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Anders_Osborne | associatedBand/associatedMusicalArtist | Billy_Iuso</otriple>
+				<otriple>Anders_Osborne | associatedBand/associatedMusicalArtist | Tab_Benoit</otriple>
+				<otriple>Anders_Osborne | genre | Rock_music</otriple>
+				<otriple>Anders_Osborne | associatedBand/associatedMusicalArtist | Galactic</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Anders_Osborne</entity>
+				<entity>PATIENT-1 | Billy_Iuso</entity>
+				<entity>PATIENT-2 | Tab_Benoit</entity>
+				<entity>PATIENT-3 | Rock_music</entity>
+				<entity>PATIENT-4 | Galactic</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Rock musician Anders Osborne has worked with the band Galactic and also with the musical artists Tab Benoit and Billy Iuso.</text>
+				<template>PATIENT-3 musician AGENT-1 has worked with the band PATIENT-4 and also with the musical artists PATIENT-2 and PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Anders Osborne is associated with the musical artists Billy Iuso and Tab Benoit. He is an exponent of rock music and worked with the Galactic band.</text>
+				<template>AGENT-1 is associated with the musical artists PATIENT-1 and PATIENT-2 .  AGENT-1 is an exponent of PATIENT-3 and worked with the PATIENT-4 band . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>An exponent of Rock music, Anders Osborne is associated with musical artist Billy Iuso. He is also associated with Tab Benoit and the band, Galactic.</text>
+				<template>An exponent of PATIENT-3 ,  AGENT-1 is associated with musical artist PATIENT-1 .  AGENT-1 is also associated with PATIENT-2 and the band ,  PATIENT-4 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1685" size="4">
+			<originaltripleset>
+				<otriple>Alligator_Records | genre | Blues</otriple>
+				<otriple>Alligator_Records | location | Chicago</otriple>
+				<otriple>Anders_Osborne | label | Alligator_Records</otriple>
+				<otriple>Anders_Osborne | recordLabel | Shanachie_Records</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Anders_Osborne | recordLabel | Alligator_Records</otriple>
+				<otriple>Alligator_Records | genre | Blues</otriple>
+				<otriple>Alligator_Records | location | Chicago</otriple>
+				<otriple>Anders_Osborne | recordLabel | Shanachie_Records</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Anders_Osborne</entity>
+				<entity>BRIDGE-1 | Alligator_Records</entity>
+				<entity>PATIENT-1 | Blues</entity>
+				<entity>PATIENT-2 | Chicago</entity>
+				<entity>PATIENT-3 | Shanachie_Records</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Anders Osborne was signed to the Shanachie Records label. Anders Osborne was signed to Chicago based,record label,Alligator Records which is associated with the Blues.</text>
+				<template>AGENT-1 was signed to the PATIENT-3 label .  AGENT-1 was signed to PATIENT-2 based , record label , BRIDGE-1 which is associated with PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alligator records is based in Chicago and the main genre they deal with is blues. Anders Osborne's record labels are Alligator Records and Shanachie Records.</text>
+				<template>BRIDGE-1 is based in PATIENT-2 and the main genre BRIDGE-1 deal with is PATIENT-1 .  AGENT-1 record labels are BRIDGE-1 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Anders Osborne was signed to the Shanachie Records label as well as Chicago -based blues label Alligator Records.</text>
+				<template>AGENT-1 was signed to the PATIENT-3 label as well as PATIENT-2 -based PATIENT-1 label BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1686" size="4">
+			<originaltripleset>
+				<otriple>Andra_(singer) | genre | Dance-pop</otriple>
+				<otriple>Andra_(singer) | occupation | Singing</otriple>
+				<otriple>Andra_(singer) | birthPlace | Romania</otriple>
+				<otriple>Andra_(singer) | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Andra_(singer) | genre | Dance-pop</otriple>
+				<otriple>Andra_(singer) | occupation | Singing</otriple>
+				<otriple>Andra_(singer) | birthPlace | Romania</otriple>
+				<otriple>Andra_(singer) | background | &quot;solo_singer&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Andra_(singer)</entity>
+				<entity>PATIENT-1 | Dance-pop</entity>
+				<entity>PATIENT-2 | Singing</entity>
+				<entity>PATIENT-3 | Romania</entity>
+				<entity>PATIENT-4 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Solo singer @ Andra was born in Romania and her genre is Dance-pop music.</text>
+				<template>PATIENT-4 @ AGENT-1 was born in PATIENT-3 and AGENT-1 genre is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Anders is a professional Dance-pop music singer.She is a solo singer and was born in Romania.</text>
+				<template>AGENT-1 is a professional PATIENT-1 music PATIENT-4 . AGENT-1 is PATIENT-4 and was born in PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Andra was born in Romania. She is a solo singer whose music genre is Dance-pop.</text>
+				<template>AGENT-1 was born in PATIENT-3 .  AGENT-1 is PATIENT-4 whose music genre is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1687" size="4">
+			<originaltripleset>
+				<otriple>Andra_(singer) | genre | Rhythm_and_blues</otriple>
+				<otriple>Rhythm_and_blues | derivatives | Funk</otriple>
+				<otriple>Rhythm_and_blues | stylisticOrigins | Blues</otriple>
+				<otriple>Rhythm_and_blues | derivative | Disco</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Andra_(singer) | genre | Rhythm_and_blues</otriple>
+				<otriple>Rhythm_and_blues | derivative | Funk</otriple>
+				<otriple>Rhythm_and_blues | stylisticOrigin | Blues</otriple>
+				<otriple>Rhythm_and_blues | derivative | Disco</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Andra_(singer)</entity>
+				<entity>BRIDGE-1 | Rhythm_and_blues</entity>
+				<entity>PATIENT-1 | Funk</entity>
+				<entity>PATIENT-2 | Blues</entity>
+				<entity>PATIENT-3 | Disco</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The singer Andra's genre is Rhythm and blue which originated from the blues. Both Funk and Disco are derivatives of rhythm and blues.</text>
+				<template>AGENT-1 genre is BRIDGE-1 which originated from PATIENT-2 .  Both PATIENT-1 and PATIENT-3 are derivatives of BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Andra is a rhythm and blues singer. Originating from blues music, rhythm and blues has funk and disco as derivatives.</text>
+				<template>AGENT-1 is a BRIDGE-1 singer .  Originating from PATIENT-2 ,  BRIDGE-1 has PATIENT-1 and PATIENT-3 as derivatives . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Rhythm and blues originates from the blues and lends itself to disco and funk. Andra is an R &amp; B singer.</text>
+				<template>BRIDGE-1 originates from PATIENT-2 and lends BRIDGE-1 to PATIENT-3 and PATIENT-1 .  AGENT-1 is an BRIDGE-1 singer . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1688" size="4">
+			<originaltripleset>
+				<otriple>Andrew_Rayel | associatedMusicalArtist | Christian_Burns</otriple>
+				<otriple>Andrew_Rayel | associatedBand | Jonathan_Mendelsohn</otriple>
+				<otriple>Andrew_Rayel | genre | Trance_music</otriple>
+				<otriple>Andrew_Rayel | activeYearsStartYear | &quot;2009&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Christian_Burns</otriple>
+				<otriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</otriple>
+				<otriple>Andrew_Rayel | genre | Trance_music</otriple>
+				<otriple>Andrew_Rayel | activeYearsStartYear | 2009</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_Rayel</entity>
+				<entity>PATIENT-1 | Christian_Burns</entity>
+				<entity>PATIENT-2 | Jonathan_Mendelsohn</entity>
+				<entity>PATIENT-3 | Trance_music</entity>
+				<entity>PATIENT-4 | 2009</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Andrew Rayel, who began his musical career in 2009, plays trance music. He has worked with Christian Burns and the musical artist Jonathan Mendelsohn.</text>
+				<template>AGENT-1 ,  who began AGENT-1 musical career in PATIENT-4 ,  plays PATIENT-3 .  AGENT-1 has worked with PATIENT-1 and the musical artist PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>In 2009 @ Andrew Rayel started his music career. He played Trance music. Mr. Rayel is associated with Christian Burns and Jonathan Mendelsohn.</text>
+				<template>In PATIENT-4 @ AGENT-1 started AGENT-1 music career .  AGENT-1 played PATIENT-3 .  AGENT-1 is associated with PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Trance musician Andrew Rayel began his career in 2009 and is associated with artists Jonathan Mendelsohn and Christian Burns.</text>
+				<template>PATIENT-3 musician AGENT-1 began AGENT-1 career in PATIENT-4 and is associated with artists PATIENT-2 and PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1689" size="4">
+			<originaltripleset>
+				<otriple>Andrew_Rayel | associatedMusicalArtist | Jwaydan_Moyine</otriple>
+				<otriple>Trance_music | stylisticOrigin | House_music</otriple>
+				<otriple>Andrew_Rayel | associatedBand | Christian_Burns</otriple>
+				<otriple>Andrew_Rayel | genre | Trance_music</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jwaydan_Moyine</otriple>
+				<otriple>Trance_music | stylisticOrigin | House_music</otriple>
+				<otriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Christian_Burns</otriple>
+				<otriple>Andrew_Rayel | genre | Trance_music</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_Rayel</entity>
+				<entity>BRIDGE-1 | Trance_music</entity>
+				<entity>PATIENT-1 | Jwaydan_Moyine</entity>
+				<entity>PATIENT-2 | House_music</entity>
+				<entity>PATIENT-3 | Christian_Burns</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Trance musician Andrew Rayel is associated with artists Christian Burns and Jwaydan Moyine. Trance comes from house music.</text>
+				<template>BRIDGE-1 musician AGENT-1 is associated with artists PATIENT-3 and PATIENT-1 .  BRIDGE-1 comes from PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Musicians Jwaydan Moyine and Christian Burns are associated with Andrew Rayel, whose musical genre is trance music, which has its origins in House music.</text>
+				<template>Musicians PATIENT-1 and PATIENT-3 are associated with AGENT-1 ,  whose musical genre is BRIDGE-1 ,  which has BRIDGE-1 origins in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Andrew Rayel performs trance music, a style that originated from house music. He is associates with Christian Burns and is associated with Jwaydan Moyine.</text>
+				<template>AGENT-1 performs BRIDGE-1 ,  a style that originated from PATIENT-2 .  AGENT-1 is associates with PATIENT-3 and is associated with PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1690" size="4">
+			<originaltripleset>
+				<otriple>Andrew_White_(musician) | associatedBand | Kaiser_Chiefs</otriple>
+				<otriple>Andrew_White_(musician) | associatedMusicalArtist | Marry_Banilow</otriple>
+				<otriple>Andrew_White_(musician) | genre | Alternative_rock</otriple>
+				<otriple>Andrew_White_(musician) | activeYearsStartYear | &quot;2003&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Andrew_White_(musician) | associatedBand/associatedMusicalArtist | Kaiser_Chiefs</otriple>
+				<otriple>Andrew_White_(musician) | associatedBand/associatedMusicalArtist | Marry_Banilow</otriple>
+				<otriple>Andrew_White_(musician) | genre | Alternative_rock</otriple>
+				<otriple>Andrew_White_(musician) | activeYearsStartYear | 2003</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_White_(musician)</entity>
+				<entity>PATIENT-1 | Kaiser_Chiefs</entity>
+				<entity>PATIENT-2 | Marry_Banilow</entity>
+				<entity>PATIENT-3 | Alternative_rock</entity>
+				<entity>PATIENT-4 | 2003</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Andrew White started his musical career in 2003 and his genre is alternative rock. He is a member of the band Kaiser Chiefs and he is associated with the musical artist Marry Banilow.</text>
+				<template>AGENT-1 started AGENT-1 musical career in PATIENT-4 and AGENT-1 genre is PATIENT-3 .  AGENT-1 is a member of the band PATIENT-1 and AGENT-1 is associated with the musical artist PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Andrew White started his musical career in 2003 and is associated with the musical artist, Marry Banilow. He plays for the band Kaiser Chiefs and his genre is alternative rock.</text>
+				<template>AGENT-1 started AGENT-1 musical career in PATIENT-4 and is associated with the musical artist ,  PATIENT-2 .  AGENT-1 plays for the band PATIENT-1 and AGENT-1 genre is PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alternative rock performer Andrew White started his musical career in 2003. He plays for the band Kaiser Chiefs and is associated with musical artist Marry Banilow.</text>
+				<template>PATIENT-3 performer AGENT-1 started AGENT-1 musical career in PATIENT-4 .  AGENT-1 plays for the band PATIENT-1 and is associated with musical artist PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1691" size="4">
+			<originaltripleset>
+				<otriple>Andrew_White_(musician) | associatedBand | Kaiser_Chiefs</otriple>
+				<otriple>Andrew_White_(musician) | associatedMusicalArtist | Marry_Banilow</otriple>
+				<otriple>Andrew_White_(musician) | recordLabel | Universal_Records_(defunct_record_label)</otriple>
+				<otriple>Andrew_White_(musician) | activeYearsStartYear | &quot;2003&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Andrew_White_(musician) | associatedBand/associatedMusicalArtist | Kaiser_Chiefs</otriple>
+				<otriple>Andrew_White_(musician) | associatedBand/associatedMusicalArtist | Marry_Banilow</otriple>
+				<otriple>Andrew_White_(musician) | recordLabel | Universal_Records_(defunct_record_label)</otriple>
+				<otriple>Andrew_White_(musician) | activeYearsStartYear | 2003</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_White_(musician)</entity>
+				<entity>PATIENT-1 | Kaiser_Chiefs</entity>
+				<entity>PATIENT-2 | Marry_Banilow</entity>
+				<entity>PATIENT-3 | Universal_Records_(defunct_record_label)</entity>
+				<entity>PATIENT-4 | 2003</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Kaiser Chiefs band member, Andrew White, started his musical career in 2003. Andrew White, who is associated with the musical artist Marry Banilow, used to be with the record label Universal records which is now a defunct label.</text>
+				<template>PATIENT-1 band member ,  AGENT-1 ,  started AGENT-1 musical career in PATIENT-4 .  AGENT-1 ,  who is associated with the musical artist PATIENT-2 ,  used to be with the record label PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Andrew White, who began his musical career in 2003 and was associated with Marry Banilow, was signed to the now defunct record label Universal Records. He was a member of the band The Kaiser Chiefs.</text>
+				<template>AGENT-1 ,  who began AGENT-1 musical career in PATIENT-4 and was associated with PATIENT-2 ,  was signed to PATIENT-3 .  AGENT-1 was a member of the band PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Musician Andrew White began in 2003 and is associated with artists Marry Banilow and the Kaiser Chiefs. He was signed to the defunct Universal records.</text>
+				<template>AGENT-1 began in PATIENT-4 and is associated with artists PATIENT-2 and PATIENT-1 .  AGENT-1 was signed to PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1692" size="4">
+			<originaltripleset>
+				<otriple>Agustín_Barboza | deathPlace | Asunción</otriple>
+				<otriple>Paraguay | leaderName | Juan_Afara</otriple>
+				<otriple>Asunción | subdivisionName | Gran_Asunción</otriple>
+				<otriple>Agustín_Barboza | placeOfDeath | Paraguay</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Asunción | isPartOf | Gran_Asunción</otriple>
+				<otriple>Agustín_Barboza | deathPlace | Asunción</otriple>
+				<otriple>Paraguay | leaderName | Juan_Afara</otriple>
+				<otriple>Agustín_Barboza | deathPlace | Paraguay</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Agustín_Barboza</entity>
+				<entity>BRIDGE-1 | Asunción</entity>
+				<entity>BRIDGE-2 | Paraguay</entity>
+				<entity>PATIENT-1 | Gran_Asunción</entity>
+				<entity>PATIENT-2 | Juan_Afara</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Agustin Barboza died in Asuncion, part of Gran Asunción, in Paraguay, the country led by Juan Afara.</text>
+				<template>AGENT-1 died in BRIDGE-1 ,  part of PATIENT-1 ,  in BRIDGE-2 ,  the country led by PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Agustin Barboza was born in Paraguay which is led by Juan Afra. He died in Asuncion which is part of Gran Asuncion.</text>
+				<template>AGENT-1 was born in BRIDGE-2 which is led by PATIENT-2 .  AGENT-1 died in BRIDGE-1 which is part of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Agustin Barboza was born in Paraguay and died in Asuncion, part of Gran Asunción, The leader of Paraguay is Juan Afara.</text>
+				<template>AGENT-1 was born in BRIDGE-2 and died in BRIDGE-1 ,  part of PATIENT-1 ,  The leader of BRIDGE-2 is PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1693" size="4">
+			<originaltripleset>
+				<otriple>Country_music | instrument | Banjo</otriple>
+				<otriple>Al_Anderson_(NRBQ) | associatedBand | NRBQ</otriple>
+				<otriple>Al_Anderson_(NRBQ) | associatedMusicalArtist | The_Wildweeds</otriple>
+				<otriple>Al_Anderson_(NRBQ) | genre | Country_music</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Country_music | instrument | Banjo</otriple>
+				<otriple>Al_Anderson_(NRBQ band) | associatedBand/associatedMusicalArtist | NRBQ</otriple>
+				<otriple>Al_Anderson_(NRBQ band) | associatedBand/associatedMusicalArtist | The_Wildweeds</otriple>
+				<otriple>Al_Anderson_(NRBQ band) | genre | Country_music</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Al_Anderson_(NRBQ band)</entity>
+				<entity>BRIDGE-1 | Country_music</entity>
+				<entity>PATIENT-1 | Banjo</entity>
+				<entity>PATIENT-2 | NRBQ</entity>
+				<entity>PATIENT-3 | The_Wildweeds</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Al Anderson is a member of the NRBQ band and his musical genre is country music, in which banjo is an instrument. He also played once with The Wildweeds.</text>
+				<template>AGENT-1 is a member of the PATIENT-2 band and AGENT-1 musical genre is BRIDGE-1 ,  in which PATIENT-1 is an instrument .  AGENT-1 also played once with PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Al Anderson (NRBQ band) performs country music and also was a member of the Wildweeds. Banjo is used for Country Music.</text>
+				<template>AGENT-1 performs BRIDGE-1 and also was a member of PATIENT-3 .  PATIENT-1 is used for BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Country musician Al Anderson, twho plays with the band NRBQ, played once with The Wildweeds. The Banjo instrument is closely associated with country music.</text>
+				<template>BRIDGE-1 musician AGENT-1 ,  twho plays with the band PATIENT-2 ,  played once with PATIENT-3 . PATIENT-1 is closely associated with BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1694" size="4">
+			<originaltripleset>
+				<otriple>Hip_hop_music | stylisticOrigins | Disco</otriple>
+				<otriple>Allen_Forrest | genre | Hip_hop_music</otriple>
+				<otriple>Hip_hop_music | stylisticOrigin | Funk</otriple>
+				<otriple>Hip_hop_music | derivatives | Drum_and_bass</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Hip_hop_music | stylisticOrigin | Disco</otriple>
+				<otriple>Allen_Forrest | genre | Hip_hop_music</otriple>
+				<otriple>Hip_hop_music | stylisticOrigin | Funk</otriple>
+				<otriple>Hip_hop_music | derivative | Drum_and_bass</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Allen_Forrest</entity>
+				<entity>BRIDGE-1 | Hip_hop_music</entity>
+				<entity>PATIENT-1 | Disco</entity>
+				<entity>PATIENT-2 | Funk</entity>
+				<entity>PATIENT-3 | Drum_and_bass</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Allen Forrest performs hip hop music which comes from disco and funk. Drums and bass get their sounds from hip hop music.</text>
+				<template>AGENT-1 performs BRIDGE-1 which comes from PATIENT-1 and PATIENT-2 .  PATIENT-3 get their sounds from BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Allen Forrest performs hip hop music, which has its stylistic origins in disco and funk. Drum and bass is a derivative of hip hop.</text>
+				<template>AGENT-1 performs BRIDGE-1 ,  which has BRIDGE-1 stylistic origins in PATIENT-1 and PATIENT-2 .  PATIENT-3 is a derivative of BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The musical genre of Allen Forrest is hip hop music which has its origins in Disco and its stylistic origins in funk. Drum and bass is a derivative of Hip hop music.</text>
+				<template>The musical genre of AGENT-1 is BRIDGE-1 which has BRIDGE-1 origins in PATIENT-1 and BRIDGE-1 stylistic origins in PATIENT-2 .  PATIENT-3 is a derivative of BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1695" size="4">
+			<originaltripleset>
+				<otriple>Manchester | isPartOf | Greater_Manchester</otriple>
+				<otriple>Alfred_Garth_Jones | birthPlace | England</otriple>
+				<otriple>Manchester | leaderName | Labour_Party_(UK)</otriple>
+				<otriple>Alfred_Garth_Jones | placeOfBirth | Manchester</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Manchester | isPartOf | Greater_Manchester</otriple>
+				<otriple>Alfred_Garth_Jones | birthPlace | England</otriple>
+				<otriple>Alfred_Garth_Jones | birthPlace | Manchester</otriple>
+				<otriple>Manchester | leaderName | Labour_Party_(UK)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alfred_Garth_Jones</entity>
+				<entity>BRIDGE-1 | Manchester</entity>
+				<entity>PATIENT-1 | Greater_Manchester</entity>
+				<entity>PATIENT-2 | England</entity>
+				<entity>PATIENT-3 | Labour_Party_(UK)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alfred Garth Jones was born in Manchester, Greater Manchester, England. The Labour Party is in the majority in Manchester.</text>
+				<template>AGENT-1 was born in BRIDGE-1 ,  PATIENT-1 ,  PATIENT-2 .  PATIENT-3 is in the majority in BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The birthplace of Alfred Garth Jones is Manchester, (part of Greater Manchester), England. In Manchester @ the Labour Party is in the majority.</text>
+				<template>The birthplace of AGENT-1 is BRIDGE-1 ,  (part of PATIENT-1) ,  PATIENT-2 .  In BRIDGE-1 @ PATIENT-3 is in the majority . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alfred Garth Jones was born in Manchester, Great Manchester, England, where the majority is the Labour Party.</text>
+				<template>AGENT-1 was born in BRIDGE-1 ,  PATIENT-1 ,  PATIENT-2 ,  where the majority is PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1696" size="4">
+			<originaltripleset>
+				<otriple>Post-metal | instrument | Cello</otriple>
+				<otriple>Aaron_Turner | associatedMusicalArtist | Twilight_(band)</otriple>
+				<otriple>Aaron_Turner | associatedBand | House_of_Low_Culture</otriple>
+				<otriple>Aaron_Turner | genre | Post-metal</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Post-metal | instrument | Cello</otriple>
+				<otriple>Aaron_Turner | associatedBand/associatedMusicalArtist | Twilight_(band)</otriple>
+				<otriple>Aaron_Turner | associatedBand/associatedMusicalArtist | House_of_Low_Culture</otriple>
+				<otriple>Aaron_Turner | genre | Post-metal</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Turner</entity>
+				<entity>BRIDGE-1 | Post-metal</entity>
+				<entity>PATIENT-1 | Cello</entity>
+				<entity>PATIENT-2 | Twilight_(band)</entity>
+				<entity>PATIENT-3 | House_of_Low_Culture</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Post-metal @ cellist, Aaron Turner, played with both Twilight and House of Low Culture.</text>
+				<template>BRIDGE-1 @ PATIENT-1 ,  AGENT-1 ,  played with both PATIENT-2 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aaron Turner played post-metal music with the Twilight band. He also played with the House of Low Culture. Cello is a post-metal instrument.</text>
+				<template>AGENT-1 played BRIDGE-1 with the PATIENT-2 band .  AGENT-1 also played with PATIENT-3 .  PATIENT-1 is a BRIDGE-1 instrument . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aaron Turner is a performer of the musical genre Post metal,which uses cello as a musical instrument.He played with Twilight and House of Low Culture bands.</text>
+				<template>AGENT-1 is a performer of the musical genre BRIDGE-1 , which uses PATIENT-1 as a musical instrument . AGENT-1 played with PATIENT-2 and PATIENT-3 bands . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1697" size="4">
+			<originaltripleset>
+				<otriple>Twilight_(band) | genre | Black_metal</otriple>
+				<otriple>Aaron_Turner | associatedMusicalArtist | Twilight_(band)</otriple>
+				<otriple>Aaron_Turner | instrument | Electric_guitar</otriple>
+				<otriple>Black_metal | musicFusionGenre | Death_metal</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Twilight_(band) | genre | Black_metal</otriple>
+				<otriple>Aaron_Turner | associatedBand/associatedMusicalArtist | Twilight_(band)</otriple>
+				<otriple>Aaron_Turner | instrument | Electric_guitar</otriple>
+				<otriple>Black_metal | musicFusionGenre | Death_metal</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Turner</entity>
+				<entity>BRIDGE-1 | Twilight_(band)</entity>
+				<entity>BRIDGE-2 | Black_metal</entity>
+				<entity>PATIENT-1 | Electric_guitar</entity>
+				<entity>PATIENT-2 | Death_metal</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Electric guitarist @ Aaron Turner was a member of black metal band Twilight. Death metal is a black metal fusion.</text>
+				<template>PATIENT-1 @ AGENT-1 was a member of BRIDGE-2 band BRIDGE-1 .  PATIENT-2 is a BRIDGE-2 fusion . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aaron Turner plays electric guitar and played with the band Twilight. Twilight performs black metal music which when part of a musical fusion is called death metal.</text>
+				<template>AGENT-1 plays PATIENT-1 and played with the band BRIDGE-1 .  BRIDGE-1 performs BRIDGE-2 which when part of a musical fusion is called PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Black metal @ electric guitarist @ Aaron Turner was a member of Twilight. Black metal is the basis for death metal fusion.</text>
+				<template>BRIDGE-2 @ PATIENT-1 @ AGENT-1 was a member of BRIDGE-1 .  BRIDGE-2 is the basis for PATIENT-2 fusion . </template>
+			</lex>
+		</entry>
+		<entry category="Artist" eid="Id1698" size="4">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>Albennie_Jones | genre | Rhythm_and_blues</otriple>
+				<otriple>Rhythm_and_blues | stylisticOrigin | Blues</otriple>
+				<otriple>Albennie_Jones | birthPlace | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>Albennie_Jones | genre | Rhythm_and_blues</otriple>
+				<otriple>Rhythm_and_blues | stylisticOrigin | Blues</otriple>
+				<otriple>Albennie_Jones | birthPlace | United_States</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Albennie_Jones</entity>
+				<entity>BRIDGE-1 | Rhythm_and_blues</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | African_Americans</entity>
+				<entity>PATIENT-2 | Blues</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Rhythm and blues artist Albennie Jones was born in the U.S., home to African Americans. R &amp; B has its roots in blues.</text>
+				<template>BRIDGE-1 artist AGENT-1 was born in BRIDGE-2  ,  home to PATIENT-1 .  BRIDGE-1 has BRIDGE-1 roots in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Rhythm and blues artist Albennie Jones was born in the United States. R and B originated from the blues and among the ethnic groups in the U.S. are African Americans.</text>
+				<template>BRIDGE-1 artist AGENT-1 was born in BRIDGE-2 .  BRIDGE-1 originated from PATIENT-2 and among the ethnic groups in BRIDGE-2  are PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>African Americans are an ethnic group in the United States, where Albennie Jones was born. Albennie Jones performs in the rhythm and blues genre which originated from blues music.</text>
+				<template>PATIENT-1 are an ethnic group in BRIDGE-2 ,  where AGENT-1 was born .  AGENT-1 performs in the BRIDGE-1 genre which originated from PATIENT-2 . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

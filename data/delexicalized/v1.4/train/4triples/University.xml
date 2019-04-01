@@ -607,8 +607,8 @@
 				<template>AGENT-1 in BRIDGE-1 has a student population of PATIENT-1 . BRIDGE-1 is led by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<text>With 600 students, the Accademia di Architettura di Mendrisio is located in Switzerland, a country led by Federal Chancellor Johann Schneider-Ammann.</text>
-				<template>With PATIENT-1 students , AGENT-1 is located in BRIDGE-1 , a country led by PATIENT-3 PATIENT-2 .</template>
+				<text>With 600 students, the Accademia di Architettura di Mendrisio is located in Switzerland, a country led by Federal Chancellor @ Johann Schneider-Ammann.</text>
+				<template>With PATIENT-1 students , AGENT-1 is located in BRIDGE-1 , a country led by PATIENT-3 @ PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>BRIDGE-1 | Switzerland</entity>
@@ -672,7 +672,7 @@
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>The Accademia di Architettura di Mendrisio is located in Mendrisio, Switzerland and its neighbouring municipality is Meride. Switzerland's leader is called Johann Schneider-Ammann.</text>
-				<template>AGENT-1 is located in BRIDGE-1 , BRIDGE-2 and AGENT-1 neighbouring municipality is PATIENT-1 . BRIDGE-2 's leader is called PATIENT-2 .</template>
+				<template>AGENT-1 is located in BRIDGE-1 , BRIDGE-2 and AGENT-1 neighbouring municipality is PATIENT-1 . BRIDGE-2 leader is called PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<text>The Accademia di Architettura di Mendrisio is in the country of Switzerland in the city of Mendrisio with a neighboring municipality of Meride. The leader of Switzerland is Johann Schneider-Ammann.</text>
@@ -1012,7 +1012,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<text>Acharya Institute of Technology (Director Dr. G. P. Prabhukumar) is located at Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090 and is affiliated with Visvesvaraya Technological University.</text>
-				<template>AGENT-1 (PATIENT-2) is located at PATIENT-3 and is affiliated with PATIENT-4 .</template>
+				<template>AGENT-1 (Director PATIENT-2) is located at PATIENT-3 and is affiliated with PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>The Acharya Institute of Technology is in Bangalore and its director is Dr. G. P. Prabhukumar. The school is affiliated with Visvesvaraya Technological University and its exact address is In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.</text>
@@ -1239,7 +1239,7 @@
 				<text>Acharya Institute of Technology was established in 2000 and is located in the state of Karnataka. The complete address is In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore India 560090.</text>
 				<template>AGENT-1 was established in PATIENT-1 and is located in the state of PATIENT-3 . The complete address is PATIENT-4 .</template>
 			</lex>
-			<lex comment="good" lid="Id2">
+			<lex comment="bad" lid="Id2">
 				<text>The Acharya Institute of Technology was founded in the year 2000. The campus address is Radhakrishnan Road, Hessarghatta Main Road, Bangalore 560090. The city of Bangalore is in the state of Karnataka in India.</text>
 				<template/>
 			</lex>
@@ -1607,7 +1607,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<text>The 1 Decembrie 1918 University is located in Romania. The country's leader is Klaus Johannis and the national anthem is Deșteaptă-te, române!. It's ethnic group is German.</text>
-				<template>AGENT-1 is located in BRIDGE-1 . BRIDGE-1 leader is PATIENT-2 and the national anthem is PATIENT-3 . BRIDGE-1 ethnic group is German .</template>
+				<template>AGENT-1 is located in BRIDGE-1 . BRIDGE-1 leader is PATIENT-2 and the national anthem is PATIENT-3 . BRIDGE-1 ethnic group is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>The 1 Decembrie 1918 University is located in Romania. Romania's ethic group is the Germans of Romania; its leader is Klaus Iohannis and its anthem is Desteapta-te, romane!</text>
@@ -1670,16 +1670,16 @@
 				<mtriple>Romania | anthem | Deșteaptă-te,_române!</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<text>Prime Minister Klaus Iohannis leads the country of Romania which has &quot;Desteapta-te, romane!&quot; as its national anthem and is the location of the 1 Decembrie 1918 University.</text>
-				<template>PATIENT-2 PATIENT-1 leads the country of BRIDGE-1 which has PATIENT-2 as BRIDGE-1 national anthem and is the location of AGENT-1 .</template>
+				<text>Prime Minister @ Klaus Iohannis leads the country of Romania which has &quot;Desteapta-te, romane!&quot; as its national anthem and is the location of the 1 Decembrie 1918 University.</text>
+				<template>PATIENT-2 @ PATIENT-1 leads the country of BRIDGE-1 which has PATIENT-3 as BRIDGE-1 national anthem and is the location of AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>The 1 Decembrie 1918 University is located in Romania. The Prime Minister is named Klaus Johannis and the national anthem is Deșteaptă-te, române!.</text>
 				<template>AGENT-1 is located in BRIDGE-1 . PATIENT-2 is named PATIENT-1 and the national anthem is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<text>The Romania Prime Minister is Klaus lohannis and he attended 1 Decembrie 1918 University in Romania. It's anthem is called Deșteaptă-te române.</text>
-				<template>The BRIDGE-1 PATIENT-2 is PATIENT-1 and PATIENT-1 attended AGENT-1 in BRIDGE-1 . BRIDGE-1 anthem is called PATIENT-2 .</template>
+				<text>The Romania @ Prime Minister is Klaus lohannis and he attended 1 Decembrie 1918 University in Romania. It's anthem is called Deșteaptă-te române.</text>
+				<template>BRIDGE-1 @ PATIENT-2 is PATIENT-1 and PATIENT-1 attended AGENT-1 in BRIDGE-1 . BRIDGE-1 anthem is called PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>BRIDGE-1 | Romania</entity>
@@ -1790,8 +1790,8 @@
 				<mtriple>1_Decembrie_1918_University | country | Romania</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<text>The leader of Romania is Prime Minister Klaus Iohannis . The capital city is Bucharest and the 1 Decembrie 1918 University is located in the country.</text>
-				<template>The leader of BRIDGE-1 is PATIENT-2 . The capital city is PATIENT-3 and AGENT-1 is located in BRIDGE-1 .</template>
+				<text>The leader of Romania is Prime Minister @ Klaus Iohannis . The capital city is Bucharest and the 1 Decembrie 1918 University is located in the country.</text>
+				<template>The leader of BRIDGE-1 is PATIENT-1 @ PATIENT-2 . The capital city is PATIENT-3 and AGENT-1 is located in BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>The 1 Decembrie 1918 University is located in Romania. The capital of the country is Bucharest, it's Prime Minister is Klaus Johannis.</text>

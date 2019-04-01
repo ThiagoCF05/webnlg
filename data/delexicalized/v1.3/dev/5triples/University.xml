@@ -1,0 +1,277 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="University" eid="Id1" size="5">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | city | Mendrisio</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | &quot;600&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | facultySize | &quot;100&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | city | Mendrisio</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The Accademia di Architettura di Mendrisio in Mendrisio, Switzerland had 100 academic staff and 600 students. Its dean is Mario Botta.</text>
+				<template>AGENT-1 in PATIENT-3 , PATIENT-1 had PATIENT-5 academic staff and PATIENT-4 students . AGENT-1 dean is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Dean of the Accademia di Architettura di Mendrisio in the city of Mendrisio, Switzerland is Mario Botta. There are 600 students and 100 academic staff at the Accademia.</text>
+				<template>The Dean of AGENT-1 in the city of PATIENT-3 , PATIENT-1 is PATIENT-2 . There are PATIENT-4 students and PATIENT-5 academic staff at the Accademia .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Accademia di Architettura di Mendrisio in Switzerland has a staff of 100 and a student population of 600. The dean is Mario Botta.</text>
+				<template>AGENT-1 in PATIENT-1 has a staff of PATIENT-5 and a student population of PATIENT-4 . The dean is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>PATIENT-5 | 100</entity>
+				<entity>PATIENT-4 | 600</entity>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | Switzerland</entity>
+				<entity>PATIENT-3 | Mendrisio</entity>
+				<entity>PATIENT-2 | Mario_Botta</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id2" size="5">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | students | 600</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | established | 1996</otriple>
+				<otriple>Switzerland | leaderName | Johann_Schneider-Ammann</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | canton | Ticino</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | students | 600</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | established | 1996</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | canton | Ticino</otriple>
+				<otriple>Switzerland | leader | Johann_Schneider-Ammann</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | established | 1996</mtriple>
+				<mtriple>Switzerland | leaderName | Johann_Schneider-Ammann</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | location | Ticino</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The Accademia di Architettura di Mendrisio is located in Ticino, Switzerland. It was established in 1996 and it has 600 students. The leader of Switzerland is Johann Schneider-Ammann.</text>
+				<template>AGENT-1 is located in PATIENT-4 , BRIDGE-1 . AGENT-1 was established in PATIENT-2 and AGENT-1 has PATIENT-1 students . The leader of BRIDGE-1 is PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The leader of Switzerland is Johann Schneider-Ammann. The country is the location of the Accademia di Architettura di Mendrisio in Ticino which was established in 1996 and has 600 students.</text>
+				<template>PATIENT-3 of BRIDGE-1 is PATIENT-3 . BRIDGE-1 is the location of AGENT-1 in PATIENT-4 which was established in PATIENT-2 and has PATIENT-1 students .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Accademia di Architettura di Mendrisio , which has 600 students, was founded in 1996 in Ticino, Switzerland. The leader of Switzerland is Johann Schneider - Amman.</text>
+				<template>AGENT-1 , which has PATIENT-1 students , was founded in PATIENT-2 in PATIENT-4 , BRIDGE-1 . The leader of BRIDGE-1 is PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | Switzerland</entity>
+				<entity>PATIENT-4 | Ticino</entity>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | 600</entity>
+				<entity>PATIENT-3 | Johann_Schneider-Ammann</entity>
+				<entity>PATIENT-2 | 1996</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id3" size="5">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</otriple>
+				<otriple>Karnataka | northeast | Telangana</otriple>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Karnataka | west | Arabian_Sea</otriple>
+				<otriple>Acharya_Institute_of_Technology | state | Karnataka</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</mtriple>
+				<mtriple>Karnataka | has to its northeast | Telangana</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | city | Bangalore</mtriple>
+				<mtriple>Karnataka | has to its west | Arabian_Sea</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The Acharya Institute of Technology is affiliated with the Visvesvaraya Technological University and is located in Bangalore, Karnataka. To its northeast is Telangana and to its west is the Arabian Sea.</text>
+				<template>AGENT-1 is affiliated with PATIENT-1 and is located in PATIENT-3 , BRIDGE-1 . To BRIDGE-1 northeast is PATIENT-2 and to BRIDGE-1 west is PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Acharya Institute of Technology in Balgalore, Karnataka is east of the Arabian Sea and southwest of Telangana. It is affiliated with the Visvesvaraya Technological University.</text>
+				<template>AGENT-1 in Balgalore , BRIDGE-1 is east of PATIENT-4 and southwest of PATIENT-2 . AGENT-1 is affiliated with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Karnataka state which has the Arabian Sea to it's west and Telangana to it' s northwest is also home to the Acharya Institute of Technology. The Institute is located in the city of Bangalore and is affiliated with the Visvesvaraya Technological University.</text>
+				<template>BRIDGE-1 state which has PATIENT-4 to BRIDGE-1 west and PATIENT-2 to BRIDGE-1 northwest is also home to AGENT-1 . AGENT-1 is located in the city of PATIENT-3 and is affiliated with PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | Karnataka</entity>
+				<entity>PATIENT-4 | Arabian_Sea</entity>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Visvesvaraya_Technological_University</entity>
+				<entity>PATIENT-3 | Bangalore</entity>
+				<entity>PATIENT-2 | Telangana</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id4" size="5">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Acharya_Institute_of_Technology | established | 2000</otriple>
+				<otriple>Acharya_Institute_of_Technology | country | &quot;India&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | &quot;700&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>Acharya_Institute_of_Technology | campus | &quot;Urban, ,\nIn Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | established | 2000</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | country | &quot;India&quot;</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The Acharya Institute of Technology is located at In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090, India. The School was established in 2000 and has 700 Postgraduate Students.</text>
+				<template>AGENT-1 is located at PATIENT-5 , PATIENT-3 . AGENT-1 was established in PATIENT-2 and has PATIENT-4 Postgraduate Students .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Acharya Institute of Technology was established in 2000 and is based in the city of Bangalore in India. It currently has 700 Postgraduate Students and it's exact location is ' In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore - 560090.</text>
+				<template>AGENT-1 was established in PATIENT-2 and is based in the city of PATIENT-1 in PATIENT-3 . AGENT-1 currently has PATIENT-4 Postgraduate Students and AGENT-1 exact location is PATIENT-5 .</template>
+			</lex>
+			<entitymap>
+				<entity>PATIENT-5 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-4 | 700</entity>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Bangalore</entity>
+				<entity>PATIENT-3 | &quot;India&quot;</entity>
+				<entity>PATIENT-2 | 2000</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id5" size="5">
+			<originaltripleset>
+				<otriple>Bangalore | founder | Kempe_Gowda_I</otriple>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Karnataka | west | Arabian_Sea</otriple>
+				<otriple>Acharya_Institute_of_Technology | state | Karnataka</otriple>
+				<otriple>Acharya_Institute_of_Technology | affiliations | Visvesvaraya_Technological_University</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bangalore | founder | Kempe_Gowda_I</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | city | Bangalore</mtriple>
+				<mtriple>Karnataka | has to its west | Arabian_Sea</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | state | Karnataka</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Acharya Institute of Technology was founded by Kempe Gowda I in Bangalore in the state of Karnataka. It has the Arabian Sea to its west and is affiliated with Visvesvaraya Technological University.</text>
+				<template>AGENT-1 was founded by PATIENT-1 in BRIDGE-1 in the state of BRIDGE-2 . AGENT-1 has PATIENT-2 to AGENT-1 west and is affiliated with PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Acharya Institute of Technology is located in Bangalore, Karnataka, east of the Arabian Sea. The Institute is affiliated with Visvesvaraya Technological University. Bangalore was founded by Kempe Gowda.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , BRIDGE-2 , east of PATIENT-2 . AGENT-1 is affiliated with PATIENT-3 . BRIDGE-1 was founded by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-2 | Karnataka</entity>
+				<entity>BRIDGE-1 | Bangalore</entity>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Kempe_Gowda_I</entity>
+				<entity>PATIENT-3 | Visvesvaraya_Technological_University</entity>
+				<entity>PATIENT-2 | Arabian_Sea</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id6" size="5">
+			<originaltripleset>
+				<otriple>Romania | leaderTitle | Prime_Minister_of_Romania</otriple>
+				<otriple>Alba_Iulia | country | Romania</otriple>
+				<otriple>Romania | leaderName | Klaus_Iohannis</otriple>
+				<otriple>Romania | capital | Bucharest</otriple>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | city | Alba_Iulia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | leaderTitle | Prime_Minister_of_Romania</mtriple>
+				<mtriple>Alba_Iulia | country | Romania</mtriple>
+				<mtriple>Romania | leaderName | Klaus_Iohannis</mtriple>
+				<mtriple>Romania | capital | Bucharest</mtriple>
+				<mtriple>1_Decembrie_1918_University | city | Alba_Iulia</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The 1 Decembrie 1918 University is in Alba Iulia, Romania. The country's capital is Bucharest and the prime minister is Klaus Iohannis.</text>
+				<template>AGENT-1 is in BRIDGE-2 , BRIDGE-1 . BRIDGE-1 capital is PATIENT-3 and the prime minister is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>1 Decembrie 1918 University is in Alba Iulia, Romania. Bucharest is the capital of Romania and Klaus Iohannis is the country's Prime Minister.</text>
+				<template>AGENT-1 is in BRIDGE-2 , BRIDGE-1 . PATIENT-3 is the capital of BRIDGE-1 and PATIENT-2 is BRIDGE-1 PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>1 Decembrie 1918 University is located in the city of Alba lulia in Romania. The capital of Romania is Bucharest and the Prime Minister is Klaus lohannis.</text>
+				<template>AGENT-1 is located in the city of BRIDGE-2 in BRIDGE-1 . The capital of BRIDGE-1 is PATIENT-3 and PATIENT-1 is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-2 | Alba_Iulia</entity>
+				<entity>BRIDGE-1 | Romania</entity>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>PATIENT-1 | Prime_Minister_of_Romania</entity>
+				<entity>PATIENT-3 | Bucharest</entity>
+				<entity>PATIENT-2 | Klaus_Iohannis</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id7" size="5">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliation | European_University_Association</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | students | 16000</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | facultySize | &quot;737&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | country | Denmark</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | established | 1928</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | faculty | 737</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliation | European_University_Association</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | numberOfStudents | &quot;16000&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | country | Denmark</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | established | 1928</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | faculty | 737</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliation | European_University_Association</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | students | 16000</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | country | Denmark</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | established | 1928</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | faculty | 737</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | students | 16000</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | country | Denmark</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliations | European_University_Association</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | established | 1928</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</mtriple>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</mtriple>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</mtriple>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | country | Denmark</mtriple>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | established | 1928</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The School of Business and Social Sciences at Aarhus University in Denmark is affiliated with the European University Association. It has 16,000 students, 737 employees. and was established in 1928.</text>
+				<template>AGENT-1 in PATIENT-4 is affiliated with PATIENT-1 . AGENT-1 has PATIENT-2 students , PATIENT-3 employees and was established in PATIENT-5 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The School of Business and Social Sciences at the Aarhus University in Denmark was established in 1928. It is affiliated with the European University Association and has a staff compliment of 737. 16000 students attend the university currently.</text>
+				<template>AGENT-1 in PATIENT-4 was established in PATIENT-5 . AGENT-1 is affiliated with PATIENT-1 and has a staff compliment of PATIENT-3 . PATIENT-2 students attend AGENT-1 currently .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The School of Business and Social Sciences at the Aarhus University was established in Denmark in 1928. The School is affiliated with the European University Association and has 16,000 students and 737 academic staff.</text>
+				<template>AGENT-1 was established in PATIENT-4 in PATIENT-5 . AGENT-1 is affiliated with PATIENT-1 and has PATIENT-2 students and PATIENT-3 academic staff .</template>
+			</lex>
+			<entitymap>
+				<entity>PATIENT-5 | 1928</entity>
+				<entity>PATIENT-4 | Denmark</entity>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | European_University_Association</entity>
+				<entity>PATIENT-3 | 737</entity>
+				<entity>PATIENT-2 | 16000</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

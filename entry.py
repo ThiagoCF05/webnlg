@@ -25,6 +25,7 @@ class Lex():
         self.text = text
         self.template = template
         self.tree = ''
+        self.lex_template = ''
         self.orderedtripleset = orderedtripleset
         self.references = references
 

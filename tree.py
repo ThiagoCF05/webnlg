@@ -140,13 +140,17 @@ class Tree:
                             break
             return result
 
+        # point coordinations
+        for node in self.nodes:
+            for edge in self.edges[node]:
+                if self.nodes[edge]['name'] == 'CC':
+                    self.nodes[node]['name'] += '-COORDINATION'
+                    break
+
         governor, subj, obj, subjpass = -1, -1, -1, -1
         for edge in self.dependencies:
             if 'subjpass' in edge['dep']:
                 subjpass = edge['dependent']
-                governor = edge['governor']
-            elif 'subj' in edge['dep']:
-                subj = edge['dependent']
                 governor = edge['governor']
             elif 'obj' in edge['dep']:
                 obj = edge['dependent']
@@ -159,6 +163,7 @@ class Tree:
                 if 'nmod' in edge['dep'] and edge['governor'] == governor:
                     subj = edge['dependent']
 
+        # mark active and passive subjects
         if subj > -1:
             for node in self.nodes:
                 if self.nodes[node]['parent'] > 0:
@@ -184,6 +189,15 @@ class Tree:
                 if tag == 'NP' and parent_tag != 'NP' and found:
                     self.nodes[node]['name'] = 'NP-OBJ'
                     break
+
+        for node in self.nodes:
+            name = self.nodes[node]['name']
+            if name == 'S':
+                for edge in self.edges[node]:
+                    name = self.nodes[edge]['name']
+                    if name == 'NP':
+                        self.nodes[edge]['name'] = 'NP-SUBJ'
+                        break
 
 
     def delexicalize(self, str_tree):
@@ -214,8 +228,21 @@ class Tree:
 
 
     # TO DO: treat modals would, should, might to, must, etc.
-    def verb_info(self, lemmas, pos):
-        voice, aspect, tense = 'active', 'simple', 'present'
+    def verb_info(self, tokens, lemmas, pos):
+        voice, aspect, tense, person, number = 'active', 'simple', 'present', 'null', 'null'
+        # person
+        if pos[0] == 'VBZ':
+            person = '3rd'
+        elif pos[0] == 'VBP':
+            person = 'non-3rd'
+
+        # number
+        if lemmas[0] == 'be':
+            if tokens[0] in ['am', 'is', 'was']:
+                number = 'singular'
+            elif tokens[0] in ['are', 'were']:
+                number = 'plural'
+
         if len(pos) == 1:
             if pos[0] == 'VB':
                 aspect = 'simple'
@@ -325,27 +352,28 @@ class Tree:
                 tense = 'future'
                 voice = 'passive'
 
-        return tense, aspect, voice
+        return tense, aspect, voice, person, number
 
 
     def classify_verbs(self):
-        def get_info(root, lemmas, pos, head, vps):
+        def get_info(root, tokens, lemmas, pos, head, vps):
             type_ = self.nodes[root]['type']
             if type_ == 'preterminal':
                 pos.append(self.nodes[root]['name'])
                 for edge in self.edges[root]:
-                    lemmas, pos, head, vps = get_info(edge, lemmas, pos, head, vps)
+                    lemmas, tokens, pos, head, vps = get_info(edge, tokens, lemmas, pos, head, vps)
             elif type_ == 'terminal':
                 head = root
+                tokens.append(self.nodes[root]['name'])
                 lemmas.append(self.nodes[root]['lemma'])
             else:
                 tag = self.nodes[root]['name']
                 if tag == 'VP':
                     vps.append(root)
                     for edge in self.edges[root]:
-                        lemmas, pos, head, vps = get_info(edge, lemmas, pos, head, vps)
+                        lemmas, tokens, pos, head, vps = get_info(edge, tokens, lemmas, pos, head, vps)
 
-            return lemmas, pos, head, vps
+            return lemmas, tokens, pos, head, vps
 
         def delete(root, end, children=[]):
             if root == end:
@@ -371,11 +399,11 @@ class Tree:
                 tag = self.nodes[node]['name']
 
                 if tag == 'VP' and parent_tag != 'VP':
-                    lemmas, pos, head, vps = get_info(node, [], [], 0, [])
-                    tense, aspect, voice = self.verb_info(lemmas, pos)
+                    lemmas, tokens, pos, head, vps = get_info(node, [], [], [], 0, [])
+                    tense, aspect, voice, person, number = self.verb_info(tokens, lemmas, pos)
 
                     head_parent = self.nodes[head]['parent']
-                    self.nodes[node]['name'] = 'VP[aspect={0}, tense={1}, voice={2}]'.format(aspect, tense, voice)
+                    self.nodes[node]['name'] = 'VP[aspect={0},tense={1},voice={2},person={3},number={4}]'.format(aspect, tense, voice, person, number)
                     self.nodes[head_parent]['name'] = 'VB'
                     self.nodes[head]['name'] = self.nodes[head]['lemma']
 
@@ -388,6 +416,32 @@ class Tree:
             continue_ = False if i == len(self.nodes)-1 else True
 
 
+    def classify_determiners(self):
+        continue_ = True
+        while continue_:
+            i = 0
+            for i, node in enumerate(self.nodes):
+                tag = self.nodes[node]['name']
+
+                if tag == 'DT':
+                    terminal = self.edges[node][0]
+                    token, lemma = terminal['name'], terminal['lemma']
+
+                    form = 'defined'
+                    if token.lower() in ['a', 'an']:
+                        form = 'undefined'
+                    elif token.lower() == 'the':
+                        form = 'defined'
+                    elif token.lower() in ['this', 'that', 'these', 'those']:
+                        form = 'demonstrative'
+
+                    self.nodes[node]['name'] = 'DT[form={0}]'.format(form)
+                    self.nodes[terminal]['name'] = self.nodes[terminal]['lemma']
+                    break
+
+            continue_ = False if i == len(self.nodes)-1 else True
+
+
     def __call__(self, root, nodes, edges, references, dependencies):
         self.root = root
         self.nodes = nodes
@@ -395,15 +449,9 @@ class Tree:
         self.references = references
         self.dependencies = dependencies
 
-        # point coordinations
-        for node in self.nodes:
-            for edge in self.edges[node]:
-                if self.nodes[edge]['name'] == 'CC':
-                    self.nodes[node]['name'] += '-COORDINATION'
-                    break
-
         self.classify_syntax()
         self.classify_verbs()
+        self.classify_determiners()
 
         str_tree = self.__print__(self.root)
         str_tree = self.delexicalize(str_tree)
@@ -415,6 +463,7 @@ class Tree:
         nodes, edges, root = self.parse(str_tree)
 
         return self.__print__(root, indent=True)
+
 
     def __print__(self, root, tree='', depth=0, indent=False):
         type_ = self.nodes[root]['type']
@@ -434,6 +483,21 @@ class Tree:
 
             tree = tree.strip() + ') '
         return tree
+
+
+    def flat(self, root, text):
+        type_ = self.nodes[root]['type']
+        name = self.nodes[root]['name']
+
+        if type_ == 'terminal':
+            text.append(name)
+        else:
+            if name[:2] == 'VP':
+                text.append(name)
+
+            for edge in self.edges[root]:
+                text = self.flat(edge, text)
+        return text
 
 
 class TreeExtraction:
@@ -476,6 +540,12 @@ class TreeExtraction:
                 except:
                     errors += 1
 
+                try:
+                    if lng == 'en':
+                        lex.lex_template = self.extract_lexicalization_template(template=lex.template)
+                except:
+                    errors += 1
+
         return entryset
 
 
@@ -512,6 +582,32 @@ class TreeExtraction:
         delex = delex.strip() + ')'
 
         return trees, delex, deps
+
+
+    def extract_lexicalization_template(self, template):
+        template = template.replace('@', '')
+
+        # sentence tokenization
+        template = self.tokenize(template)
+
+        props = {'annotators': 'tokenize,ssplit,pos,lemma,parse','pipelineLanguage':'en','outputFormat':'json'}
+
+        sentences = []
+        for i, snt in enumerate(template):
+            out = self.corenlp.annotate(snt, properties=props)
+            out = json.loads(out)
+
+            snt = out['sentences'][0]
+            strtree = snt['parse']
+            tokens = [w['originalText'] for w in snt['tokens']]
+            lemmas = [w['lemma'] for w in snt['tokens']]
+
+            tree = Tree(tree=strtree, tokens=tokens, lemmas=lemmas)
+            tree.classify_verbs()
+
+            sentences.append(' '.join(tree.flat(tree.root, [])))
+
+        return ' '.join(sentences)
 
 
 if __name__ == '__main__':

@@ -573,7 +573,7 @@
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>Alan Shepard (American nationality) was born on the 18th November 1923 in New Hampshire. He graduated from NWC in 1957 with a MA. He was a test pilot and died in California.</text>
-				<template>AGENT-1 (PATIENT-5 nationality) was born on PATIENT-6 in PATIENT-4 . AGENT-1 graduated from PATIENT-1 . AGENT-1 was PATIENT-5 and died in PATIENT-2 .</template>
+				<template>AGENT-1 (PATIENT-5 nationality) was born on PATIENT-6 in PATIENT-4 . AGENT-1 graduated from PATIENT-1 . AGENT-1 was PATIENT-3 and died in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<text>Alan Shepard was born in New Hampshire on 18th November 1923. He graduated with a M.A. in 1957 from NWC and went on to become a test pilot. Alan Shepard died in California.</text>
@@ -641,7 +641,7 @@
 				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
 				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
 			</modifiedtripleset>
-			<lex comment="toFix" lid="Id1">
+			<lex comment="good" lid="Id1">
 				<text>Alan Shepard (born in New Hampshire) graduated from NWC, M.A. in 1957 was awarded the Distinguished service Medal from the Navy which is higher than the department of commerce gold medal has died and deceased.</text>
 				<template>AGENT-1 (born in PATIENT-5) graduated from PATIENT-1 was awarded BRIDGE-1 which is higher than PATIENT-3 has died and PATIENT-2 .</template>
 			</lex>
@@ -674,13 +674,13 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<text>Alan Shepherd born in New Hampshire, United States, graduated from NWC in 1957 with a M.A. He served as a crew member on Apollo 12 and retired in 1974.</text>
-				<template>AGENT-1 born in PATIENT-4 , PATIENT-6 , graduated from PATIENT-1 . AGENT-1 served as a crew member on PATIENT-3 and retired in PATIENT-5 .</template>
+				<template>AGENT-1 born in PATIENT-4 , PATIENT-6 , graduated from PATIENT-1 . AGENT-1 served as a crew member on PATIENT-2 and retired in PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>American @ Alan Shepard was born in New Hampshire and died in California. He graduated from NWC with a M.A. in 1957, was on the crew for Apollo 14 and retired on 1974-08-01.</text>
 				<template>PATIENT-6 @ AGENT-1 was born in PATIENT-4 and died in PATIENT-3 . AGENT-1 graduated from PATIENT-1 , was on the crew for PATIENT-2 and retired on PATIENT-5 .</template>
 			</lex>
-			<lex comment="toFix" lid="Id3">
+			<lex comment="good" lid="Id3">
 				<text>Alan Shepard who is originally from New Hampshire graduated with an MA from NWC in 1957. He then went on to become a member of Apollo 14's crew before retiring in 1974. Alan Shepard died in California.</text>
 				<template>AGENT-1 who is originally from PATIENT-4 graduated with PATIENT-1 . AGENT-1 then went on to become a member of PATIENT-2 crew before retiring in PATIENT-5 . AGENT-1 died in PATIENT-3 .</template>
 			</lex>
@@ -995,7 +995,7 @@
 				<text>Alan Shepard was born in New Hampshire and died in California. He was selected by NASA in 1959. The United States Navy awarded the Distinguished Service Medal to Alan Shepard, which ranks higher than Department of Commerce Gold Medal.</text>
 				<template>AGENT-1 was born in PATIENT-5 and died in PATIENT-4 . AGENT-1 was selected by NASA in PATIENT-2 . BRIDGE-1 to AGENT-1 , which ranks higher than PATIENT-3 .</template>
 			</lex>
-			<lex comment="good" lid="Id2">
+			<lex comment="bad" lid="Id2">
 				<text>Alan Shepard, who was hired by NASA in 1959, was born in New Hampshire and died in California. The U.S. Navy awarded him the Distinguished Service Medal, a medal that is ranked higher than the Department of Commerce Gold Medal.</text>
 				<template/>
 			</lex>
@@ -1030,7 +1030,7 @@
 				<text>Alan Shepard was a member of Apollo 14, which is operated by NASA. He was awarded the distinguished service medal in the US Navy, which ranks higher than the Dept of Commerce Gold Medal. He died in California, where Dianne Feinstein is a senator.</text>
 				<template>AGENT-1 was a member of BRIDGE-2 , which is operated by PATIENT-3 . AGENT-1 was awarded BRIDGE-3 , which ranks higher than PATIENT-1 . AGENT-1 died in BRIDGE-1 , where PATIENT-2 is a senator .</template>
 			</lex>
-			<lex comment="good" lid="Id2">
+			<lex comment="bad" lid="Id2">
 				<text>Alan Shepard was a crew member of the NASA operated Apollo 14. The United States Navy awarded him their Distinguished Service Medal, which is considered higher than the Department of Commerce Gold Medal. Alan Shepard passed away in California, which was represented by Senator Dianne Feinstein.</text>
 				<template/>
 			</lex>
@@ -1061,7 +1061,7 @@
 				<mtriple>Apollo_14 | operator | NASA</mtriple>
 				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
 			</modifiedtripleset>
-			<lex comment="good" lid="Id1">
+			<lex comment="bad" lid="Id1">
 				<text>Alan Shepard was born in New Hampshire, home of the purple finch. He served as a crew member of the Apollo 14, a NASA operated mission. The US Navy awarded Alan Shepard the Distinguished Service Medal, which ranks higher than Department of Commerce Gold Medal.</text>
 				<template/>
 			</lex>
@@ -1362,8 +1362,8 @@
 				<template>AGENT-1 is a PATIENT-2 national who was born in PATIENT-1 . AGENT-1 was PATIENT-5 and member of the PATIENT-4 crew . AGENT-1 spent PATIENT-3 in space and is now PATIENT-6 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<text>Retired @ American fighter pilot Buzz Aldrin, born in Glen Ridge, NJ, spent 52 minutes in space as a crew member on Apollo 11.</text>
-				<template>PATIENT-6 @ AGENT-1 , born in PATIENT-1 , spent PATIENT-3 in space as a crew member on PATIENT-4 .</template>
+				<text>Retired @ American @ fighter pilot @ Buzz Aldrin, born in Glen Ridge, NJ, spent 52 minutes in space as a crew member on Apollo 11.</text>
+				<template>PATIENT-6 @ PATIENT-2 @ PATIENT-5 @ AGENT-1 , born in PATIENT-1 , spent PATIENT-3 in space as a crew member on PATIENT-4 .</template>
 			</lex>
 			<entitymap>
 				<entity>PATIENT-5 | Fighter_pilot</entity>
@@ -1433,7 +1433,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<text>Buzz Aldrin (born January 20th, 1930 in Glen Ridge, New Jersey), was hired by NASA in 1963. He was a crew member of Apollo 11 and is now retired.</text>
-				<template>AGENT-1 (born PATIENT-5 in PATIENT-1) , was hired by NASA in PATIENT-3 . AGENT-1 was PATIENT-2 of a crew member and is now PATIENT-6 .</template>
+				<template>AGENT-1 (born PATIENT-5 in PATIENT-1) , was hired by NASA in PATIENT-3 . AGENT-1 was a crew member of PATIENT-4 and is now PATIENT-6 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>Buzz Aldrin is an American who was born in Glen Ridge, New Jersey on January 20,1930. He was selected by NASA to be part of the Apollo 11 crew in 1963. He is now retired.</text>
@@ -2231,7 +2231,7 @@
 			</lex>
 			<lex comment="good" lid="Id3">
 				<text>Elliot See was born in Dallas, Texas. He was a student at the University of Texas at Austin, where Gregory L. Fenvas was appointed as the president. They will be competing in the Big 12 Conference.</text>
-				<template>AGENT-1 was born in BRIDGE-2 , PATIENT-2 . AGENT-1 was a student at BRIDGE-1 , where PATIENT-1 was appointed as the president . BRIDGE-1 will be competing in PATIENT-3 .</template>
+				<template>AGENT-1 was born in BRIDGE-2 , PATIENT-2 . AGENT-1 was a student at BRIDGE-1 , where PATIENT-4 was appointed as the president . BRIDGE-1 will be competing in PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>BRIDGE-1 | University_of_Texas_at_Austin</entity>
@@ -2338,7 +2338,7 @@
 				<text>American @ Elliot See attended the University of Texas in Austin, the school that is part of the University of Texas system and competes in the Big 12 Conference. He was born in Dallas on July 23rd, 1927.</text>
 				<template>PATIENT-2 @ AGENT-1 attended BRIDGE-1 , the school that is part of PATIENT-1 and competes in PATIENT-5 . AGENT-1 was born in PATIENT-4 on PATIENT-3 .</template>
 			</lex>
-			<lex comment="toFix" lid="Id2">
+			<lex comment="good" lid="Id2">
 				<text>Elliot See was born in Dallas on the 23rd of July 1927. He attended the University of Texas at Austin who are competing in the Big 12 Conference.</text>
 				<template>AGENT-1 was born in PATIENT-4 on PATIENT-3 . AGENT-1 attended BRIDGE-1 who are competing in PATIENT-5 .</template>
 			</lex>
@@ -2371,7 +2371,7 @@
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
 				<text>Elliot See was an American who graduated from the University of Texas in Austin. The university is affiliated to the university of Texas system and is competing in the Big 12 conference. Elliot worked for NASA from 1962 and he died in St Louis.</text>
-				<template>AGENT-1 was an American who graduated from BRIDGE-1 . BRIDGE-1 is affiliated to PATIENT-1 and is competing in PATIENT-3 . AGENT-1 worked for NASA from PATIENT-4 and AGENT-1 died in PATIENT-2 .</template>
+				<template>AGENT-1 was PATIENT-2 who graduated from BRIDGE-1 . BRIDGE-1 is affiliated to PATIENT-1 and is competing in PATIENT-3 . AGENT-1 worked for NASA from PATIENT-4 and AGENT-1 died in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>American @ Elliot See joined NASA in 1962 and died in St. Louis. He graduated from the University of Texas at Austin, which is is affiliated to the University Of Texas system and is competing in the Big 12 Conference.</text>
@@ -2635,8 +2635,8 @@
 				<template>BRIDGE-1 is affiliated to PATIENT-1 . BRIDGE-1 will compete in PATIENT-4 . PATIENT-2 is BRIDGE-1 mascot . PATIENT-5 is the President and AGENT-1 , born in PATIENT-3 , is a notable student .</template>
 			</lex>
 			<lex comment="toFix" lid="Id2">
-				<text>Gregory L.Fenves is appointed president on the University of Texas at Austin who Elliot See (born in Dallas) attended as a student.On that time, University of Texas is affiliated to the system and compete in the Big 12 Conference. The Hook`em is the mascot of University of Texas as Austin.</text>
-				<template>PATIENT-4 is appointed president on BRIDGE-1 who AGENT-1 (born in PATIENT-3) attended as a student.On that time , BRIDGE-1 is affiliated to PATIENT-1 and compete in PATIENT-4 . PATIENT-2 is the mascot of BRIDGE-1 .</template>
+				<text>Gregory L.Fenves is appointed president on the University of Texas at Austin who Elliot See (born in Dallas) attended as a student. On that time, University of Texas is affiliated to the system and compete in the Big 12 Conference. The Hook`em is the mascot of University of Texas as Austin.</text>
+				<template>PATIENT-4 is appointed president on BRIDGE-1 who AGENT-1 (born in PATIENT-3) attended as a student. On that time , BRIDGE-1 is affiliated to PATIENT-1 and compete in PATIENT-5 . PATIENT-2 is the mascot of BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>BRIDGE-1 | University_of_Texas_at_Austin</entity>
@@ -2665,7 +2665,7 @@
 				<mtriple>Elliot_See | occupation | Test_pilot</mtriple>
 				<mtriple>Elliot_See | was selected by NASA | 1962</mtriple>
 			</modifiedtripleset>
-			<lex comment="toFix" lid="Id1">
+			<lex comment="good" lid="Id1">
 				<text>Elliot see was born July 23, 1927. He joined NASA in 1862 and was a test pilot. He died in St Louis on 28 February, 1966.</text>
 				<template>AGENT-1 see was born PATIENT-3 . AGENT-1 joined NASA in PATIENT-6 and was PATIENT-5 . AGENT-1 died in PATIENT-2 on PATIENT-4 .</template>
 			</lex>
@@ -2710,7 +2710,7 @@
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>Elliot See is originally from Dallas and joined NASA in 1962 where he flew as a test pilot. Elliot See died in St.Louis.</text>
-				<template>AGENT-1 is originally from PATIENT-3 and joined NASA in PATIENT-6 where AGENT-1 flew as PATIENT-5 . AGENT-1 died in PATIENT-2 .</template>
+				<template>AGENT-1 is originally from PATIENT-3 and joined NASA in PATIENT-6 where AGENT-1 flew as PATIENT-4 . AGENT-1 died in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>PATIENT-5 | United_States</entity>
@@ -2782,9 +2782,9 @@
 				<text>The Apollo 8 is operated by Nasa, its commander was Frank Borman, its backup pilot was Buzz Aldrin and it was crewed by William Anders. William Anders graduated from AFIT in 1962 with an M.S. and retired Sept 1st 1969.</text>
 				<template>BRIDGE-1 is operated by PATIENT-5 , BRIDGE-1 commander was PATIENT-2 , BRIDGE-1 backup pilot was PATIENT-4 and BRIDGE-1 was crewed by AGENT-1 . AGENT-1 graduated from PATIENT-3 and retired PATIENT-1 .</template>
 			</lex>
-			<lex comment="good" lid="Id2">
+			<lex comment="bad" lid="Id2">
 				<text>In 1962, William Anders graduated with a M.S. from his alma Mater, AFIT. He became a crew member on Apollo 8, a NASA operated mission. His commander on Apollo 8 was Frank Borman, and the mission's backup pilot was Buzz Aldrin. William Anders retired on the 1st of September, 1969.</text>
-				<template>In 1962 , AGENT-1 graduated with PATIENT-3 . AGENT-1 became a crew member on BRIDGE-1 , a NASA operated mission . AGENT-1 commander on BRIDGE-1 was PATIENT-2 , and BRIDGE-1 backup pilot was PATIENT-4 . AGENT-1 retired on PATIENT-1 .</template>
+				<template/>
 			</lex>
 			<lex comment="good" lid="Id3">
 				<text>William Anders graduated with a M.S. from AFIT in 1962. He then went on to work for NASA and became a crew member on Apollo 8 along with Buzz Aldrin as backup pilot and Frank Borman as the commander. William Anders then retired in 1969.</text>
@@ -2897,7 +2897,7 @@
 			</lex>
 			<lex comment="good" lid="Id2">
 				<text>William Anders was born in Hong Kong on October 17th 1933. He served as a fighter pilot and became a crew member on Apollo 8 before he retired in 1969.</text>
-				<template>AGENT-1 was born in PATIENT-5 on PATIENT-1 . AGENT-1 served as PATIENT-4 and became a crew member on PATIENT-6 before AGENT-1 retired in PATIENT-1 .</template>
+				<template>AGENT-1 was born in PATIENT-5 on PATIENT-3 . AGENT-1 served as PATIENT-4 and became a crew member on PATIENT-6 before AGENT-1 retired in PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>PATIENT-5 | British_Hong_Kong</entity>
