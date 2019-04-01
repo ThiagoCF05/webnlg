@@ -1,0 +1,453 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id724" size="4">
+			<originaltripleset>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+				<otriple>Alan_Bean | timeInSpace | &quot;100305.0&quot;^^&lt;http://dbpedia.org/datatype/minute&gt;</otriple>
+				<otriple>Alan_Bean | selection | 1963</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+				<otriple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</otriple>
+				<otriple>Alan_Bean | was selected by NASA | 1963</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Bean | was selected by NASA | 1963</striple>
+						<striple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Alan Bean was born in Wheeler, Texas in the United States. He was selected by NASA in 1963, and spent 100305.0 minutes in space.</text>
+				<template>AGENT-1 was born in PATIENT-2 in PATIENT-1 .  AGENT-1 was selected by NASA in PATIENT-4 ,  and spent PATIENT-3 in space . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (NP (TAG PATIENT-2)) (PP (IN in) (NP (TAG PATIENT-1)))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB select) (PP (IN by) (NP (NNP NASA))) (PP (IN in) (NP (TAG PATIENT-4)))) (, ,) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB spend) (NP (TAG PATIENT-3)) (PP (IN in) (NP-SUBJ (NN space))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Wheeler,_Texas</entity>
+				<entity>PATIENT-3 | &quot;100305.0&quot;(minutes)</entity>
+				<entity>PATIENT-4 | 1963</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id725" size="4">
+			<originaltripleset>
+				<otriple>Alan_Shepard | mission | Apollo_14</otriple>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Apollo_14 | operator | NASA</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alan_Shepard | was a crew member of | Apollo_14</otriple>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Apollo_14 | operator | NASA</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+						<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+						<striple>Apollo_14 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Alan Shepard was awarded the Distinguished Service Medal (United States Navy and the Department of Commerce Gold Medal. He was a crew member of the NASA operated Apollo 14 mission.</text>
+				<template>AGENT-1 was awarded BRIDGE-2 and PATIENT-1 .  AGENT-1 was a crew member of PATIENT-2 operated BRIDGE-1 mission . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB award) (NP (NP (NP (DT the) (NNP Distinguished) (NNP Service) (NN Medal)) (-LRB- -LRB-) (NP-COORDINATION (NP (NNP United) (NNPS States) (NNP Navy)) (CC and) (NP (DT the) (NNP Department)))) (PP (IN of) (NP (NNP Commerce) (NNP Gold) (NN Medal))))) (. .))  (SINV (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-2)))))) (VP[aspect=simple, tense=past, voice=active] (VB operate) (NP-OBJ (NNP Apollo))) (NP-SUBJ (CD 14) (NN mission)) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Apollo_14</entity>
+				<entity>BRIDGE-2 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-2 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id726" size="4">
+			<originaltripleset>
+				<otriple>British_Hong_Kong | representative | Chris_Patten</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>Apollo_8 | crewMembers | Frank_Borman</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>British_Hong_Kong | representative | Chris_Patten</otriple>
+				<otriple>William_Anders | was a crew member of | Apollo_8</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>Apollo_8 | crewMembers | Frank_Borman</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>British_Hong_Kong | representative | Chris_Patten</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>William Anders was born in British Hong Kong, where Chris Patten is a representative. William was a crew member of Apollo 8, and served along Frank Borman.</text>
+				<template>AGENT-1 was born in BRIDGE-1 ,  where PATIENT-1 is a representative .  AGENT-1 was a crew member of BRIDGE-2 ,  and served along PATIENT-2 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHADVP (WRB where)) (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (DT a) (NN representative)))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-2))))) (, ,) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB serve) (PP (IN along) (NP (TAG PATIENT-2))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>British_Hong_Kong | representative | Chris_Patten</striple>
+						<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Born in Hong Kong, William Anders was a crew member of Apollo 8 with representative Chris Patten and Apollo 8 member Frank Borman.</text>
+				<template>Born in BRIDGE-1 ,  AGENT-1 was a crew member of BRIDGE-2 with representative PATIENT-1 and BRIDGE-2 member PATIENT-2 . </template>
+				<tree>(SENTENCES (S (S (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG BRIDGE-1))))) (, ,) (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP-COORDINATION (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-2))) (PP (IN with) (NP (JJ representative) (NNP Chris) (NNP Patten)))) (CC and) (NP (NP (NNP Apollo) (CD 8) (NN member)) (NP (TAG PATIENT-2))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | British_Hong_Kong</entity>
+				<entity>BRIDGE-2 | Apollo_8</entity>
+				<entity>PATIENT-1 | Chris_Patten</entity>
+				<entity>PATIENT-2 | Frank_Borman</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id727" size="4">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | was a crew member of | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</otriple>
+				<otriple>Buzz_Aldrin | status | &quot;Retired&quot;</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey, was part of Apollo 11 and in 1963 graduated with a Sc. D. from MIT and is now retired.</text>
+				<template>AGENT-1 was born in PATIENT-1 ,  was part of PATIENT-2 and PATIENT-3 and is now PATIENT-4 . </template>
+				<tree/>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey. He obtained an Sc.D in 1963 from Massachusetts Institute of Technology. He was a crew member of Apollo 11 and has retired.</text>
+				<template>AGENT-1 was born in PATIENT-1 .  AGENT-1 obtained PATIENT-3 .  AGENT-1 was a crew member of PATIENT-2 and has PATIENT-4 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB obtain) (NP-OBJ (DT an) (NN Sc.D)) (PP (IN in) (NP (CD 1963))) (PP (IN from) (NP (NP (NNP Massachusetts) (NNP Institute)) (PP (IN of) (NP (NNP Technology)))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-2))))) (CC and) (VP[aspect=perfect, tense=present, voice=active] (VB retire))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Buzz Aldrin, now retired, was born in Glen Ridge, New Jersey and graduated from MIT ScD in 1963. He was a crew member of Apollo 11.</text>
+				<template>AGENT-1 ,  now PATIENT-4 ,  was born in PATIENT-1 and graduated PATIENT-3 .  AGENT-1 was a crew member of PATIENT-2 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (VP[aspect=simple, tense=past, voice=active] (ADVP (RB now)) (VB retire)) (, ,)) (VP[aspect=simple, tense=past, voice=active] (VB be) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (TAG PATIENT-3))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-2))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | Apollo_11</entity>
+				<entity>PATIENT-3 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-4 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id728" size="4">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | was selected by NASA | 1963</otriple>
+				<otriple>Buzz_Aldrin | was a crew member of | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey. He Joined NASA in 1963 where he became a crew member of Apollo 11 as a Fighter pilot.</text>
+				<template>AGENT-1 was born in PATIENT-1 .  AGENT-1 Joined NASA in PATIENT-2 where AGENT-1 became a crew member of PATIENT-3 as PATIENT-4 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB join) (NP-OBJ (NP (NNP NASA)) (PP (IN in) (NP (TAG PATIENT-2)))) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB become) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-3)))) (PP (IN as) (NP (TAG PATIENT-4))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey. He was a fighter pilot before being selected by NASA as a crew member of Apollo 11 in 1963.</text>
+				<template>AGENT-1 was born in PATIENT-1 .  AGENT-1 was PATIENT-4 before being selected by NASA as a crew member of PATIENT-3 in PATIENT-2 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (TAG PATIENT-4)) (PP (IN before) (S (VP[aspect=simple, tense=present, voice=active] (VB select) (PP (IN by) (NP (NNP NASA))) (PP (IN as) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-3))))) (PP (IN in) (NP (TAG PATIENT-2))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Buzz Aldrin was born in Glen Ridge New Jersey. He was a fighter pilot who was selected by NASA in 1963 to be a crew member of Apollo 11.</text>
+				<template>AGENT-1 was born in PATIENT-1 .  AGENT-1 was PATIENT-4 who was selected by NASA in PATIENT-2 to be a crew member of PATIENT-3 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP-SUBJ (NP-OBJ (TAG PATIENT-4)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=passive] (VB select) (PP (IN by) (NP (NP (NNP NASA)) (PP (IN in) (NP (TAG PATIENT-2))))) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-3))))))))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | 1963</entity>
+				<entity>PATIENT-3 | Apollo_11</entity>
+				<entity>PATIENT-4 | Fighter_pilot</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id729" size="4">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | awards | 20</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Buzz_Aldrin | was a crew member of | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;</otriple>
+				<otriple>Buzz_Aldrin | awards | 20</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+						<striple>Buzz_Aldrin | awards | 20</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Buzz Aldrin (born as Edwin Eugene Aldrin Jr) was a crew member for NASA's @ Apollo 11 and had 20 awards.</text>
+				<template>AGENT-1 (born as PATIENT-1) was a crew member for PATIENT-3 @ BRIDGE-1 and had PATIENT-2 awards . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (PRN (-LRB- -LRB-) (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN as) (NP (TAG PATIENT-1)))) (-RRB- -RRB-))) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (DT a) (NN crew) (NN member)) (PP (IN for) (NP (NP (TAG PATIENT-3)) (NP (TAG BRIDGE-1))))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB have) (NP-OBJ (CD (TAG PATIENT-2)) (NNS awards)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>PATIENT-1 | &quot;Edwin Eugene Aldrin Jr.&quot;</entity>
+				<entity>PATIENT-2 | 20</entity>
+				<entity>PATIENT-3 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id730" size="4">
+			<originaltripleset>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+						<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | deathPlace | California</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Alan Shepard, who was awarded the Distinguished Service Medal from the U.S. Navy, an award that is higher than the Department of Commerce Gold Medal, was born in New Hampshire and died in California.</text>
+				<template>AGENT-1 ,  who was awarded BRIDGE-1 ,  an award that is higher than PATIENT-1 ,  was born in PATIENT-3 and died in PATIENT-2 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP-OBJ (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=passive] (VB award) (NP (DT the) (NNP Distinguished) (NNP Service) (NN Medal)) (PP (IN from) (NP (NP (DT the) (NNP U.S.) (NNP Navy)) (, ,) (NP (NP (DT an) (NN award)) (SBAR (WHNP (WDT that)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (ADJP (JJR higher)) (PP (IN than) (NP (TAG PATIENT-1))))))))))))) (, ,)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-2))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-2 | California</entity>
+				<entity>PATIENT-3 | New_Hampshire</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id731" size="4">
+			<originaltripleset>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>California | senators | Dianne_Feinstein</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>California | senators | Dianne_Feinstein</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | deathPlace | California</striple>
+						<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+						<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>California | senators | Dianne_Feinstein</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Alan Shepard died in California, and had a medal and award for Distinguished Service in the United States Navy, and a gold medal for Department of Commerce. Dianne Feinstein is the Senator of California.</text>
+				<template>AGENT-1 died in BRIDGE-1 ,  and had BRIDGE-2 ,  and PATIENT-1 .  PATIENT-2 is the Senator of BRIDGE-1 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG BRIDGE-1)))) (, ,) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB have) (NP-COORDINATION (NP (TAG BRIDGE-2)) (, ,) (CC and) (NP-OBJ (TAG PATIENT-1))))) (. .))  (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NNP Senator)) (PP (IN of) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | California</entity>
+				<entity>BRIDGE-2 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-2 | Dianne_Feinstein</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id732" size="4">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | nationality | United_States</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | nationality | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Elliot See was a national of the United States. He was born in Dallas and attended the University of Texas in AUstin. He died in St. Louis.</text>
+				<template>AGENT-1 was a national of PATIENT-4 .  AGENT-1 was born in PATIENT-3 and attended PATIENT-1 .  AGENT-1 died in PATIENT-2 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (JJ national)) (PP (IN of) (NP (TAG PATIENT-4))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB attend) (NP (NP (DT the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN in) (NP-SUBJ (NNP AUstin))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-2)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | St._Louis</entity>
+				<entity>PATIENT-3 | Dallas</entity>
+				<entity>PATIENT-4 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id733" size="4">
+			<originaltripleset>
+				<otriple>William_Anders | occupation | Fighter_pilot</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+				<otriple>William_Anders | selection | 1963</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>William_Anders | occupation | Fighter_pilot</otriple>
+				<otriple>William_Anders | was a crew member of | Apollo_8</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+				<otriple>William_Anders | was selected by NASA | 1963</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | was selected by NASA | 1963</striple>
+						<striple>William_Anders | occupation | Fighter_pilot</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>Apollo_8 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>William Anders joined NASA in 1963 as a fighter pilot and became a crew member of Apollo 8.</text>
+				<template>AGENT-1 joined PATIENT-2 in PATIENT-3 as PATIENT-1 and became a crew member of BRIDGE-1 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB join) (NP-OBJ (NP (TAG PATIENT-2)) (PP (IN in) (NP (TAG PATIENT-3)))) (PP (IN as) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB become) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-1)))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | Apollo_8</entity>
+				<entity>PATIENT-1 | Fighter_pilot</entity>
+				<entity>PATIENT-2 | NASA</entity>
+				<entity>PATIENT-3 | 1963</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+	
+
+
+</benchmark>
