@@ -8,13 +8,14 @@ corresponding textual realizations. This work aimed to provide intermediate repr
 
 ### Last Version
 
-The last version of the corpus (v1.3), available [here](https://github.com/ThiagoCF05/webnlg/tree/master/final), counts now with the annotation of the test part of the data. Here is the changes per version:
+Here is the changes per version:
 
 1. **v1.0**: first version with annotation of the train and development parts of the corpus and German translation.
 2. **v1.1**: fix on some annotation mistakes. See Issue [#1](https://github.com/ThiagoCF05/webnlg/issues/1). (November 21st, 2018)
 3. **v1.2**: annotation of the test part of the corpus. See Issue [#2](https://github.com/ThiagoCF05/webnlg/issues/2). (January 31st, 2019)
 4. **v1.3**: tokenization by [NLTK](https://www.nltk.org/), leading to a better extraction of references and discourse ordering information. (January 31st, 2019)
 5. **v1.4**: full revision of the delexicalized templates. (April 1st, 2019)
+6. **v2.0 (BETA)**: Tree templates. (April 1st, 2019)
 
 ### German translation
 
