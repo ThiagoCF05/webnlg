@@ -13,6 +13,7 @@
 				<otriple>John_Madin | birthPlace | Birmingham</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>103_Colmore_Row | architect | John_Madin</striple>
@@ -22,9 +23,10 @@
 				<references/>
 				<text>103 Colmore Row was designed by John Madin who was born in Birmingham.</text>
 				<template>AGENT-1 was designed by BRIDGE-1 who was born in PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB design) (PP (IN by) (NP-SUBJ (NP-OBJ (TAG BRIDGE-1)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB design) (PP (IN by) (NP-SUBJ (NP-OBJ (TAG BRIDGE-1)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>103_Colmore_Row | architect | John_Madin</striple>
@@ -34,9 +36,10 @@
 				<references/>
 				<text>103 Colmore Row was designed by Birmingham born architect John Madin.</text>
 				<template>AGENT-1 was designed by PATIENT-2 born architect BRIDGE-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB design) (PP (IN by) (NP (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=past, voice=active] (VB bear) (NP (NN architect) (NNP John) (NNP Madin)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB design) (PP (IN by) (NP (NP (TAG PATIENT-2)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (NP (NN architect) (NNP John) (NNP Madin)))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>103_Colmore_Row | architect | John_Madin</striple>
@@ -46,7 +49,7 @@
 				<references/>
 				<text>103 Colmore Row was designed by the architect, John Madin from Birmingham.</text>
 				<template>AGENT-1 was designed by the architect ,  BRIDGE-1 from PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB design) (PP (IN by) (NP (NP (DT the) (NN architect)) (, ,) (NP (TAG BRIDGE-1)))) (PP (IN from) (NP-SUBJ (TAG PATIENT-2)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB design) (PP (IN by) (NP (NP (DT[form=defined] the) (NN architect)) (, ,) (NP (TAG BRIDGE-1)))) (PP (IN from) (NP-SUBJ (TAG PATIENT-2)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 103_Colmore_Row</entity>
@@ -67,6 +70,7 @@
 				<otriple>Cleveland | leaderName | Frank_G._Jackson</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>200_Public_Square | location | Cleveland</striple>
@@ -77,9 +81,10 @@
 				<references/>
 				<text>200 Public Square is located in Cleveland, part of Cuyahoga County, Ohio which is led by Frank G Jackson.</text>
 				<template>AGENT-1 is located in BRIDGE-1 ,  part of PATIENT-1 which is led by PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (NP-OBJ (NP (NN part)) (PP (IN of) (NP (NP (NNP Cuyahoga) (NNP County)) (, ,) (NP (NP (NNP Ohio)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=passive] (VB lead) (PP (IN by) (NP (TAG PATIENT-2)))))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (NP-OBJ (NP (NN part)) (PP (IN of) (NP (NP (NNP Cuyahoga) (NNP County)) (, ,) (NP (NP (NNP Ohio)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB lead) (PP (IN by) (NP (TAG PATIENT-2)))))))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>200_Public_Square | location | Cleveland</striple>
@@ -92,9 +97,10 @@
 				<references/>
 				<text>200 Public square is in Cleveland which is part of Cuyahoga County, Ohio. The leader in Cleveland is Frank G Jackson.</text>
 				<template>AGENT-1 is in BRIDGE-1 which is part of PATIENT-1 .  The leader in BRIDGE-1 is PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-1)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (NN part)) (PP (IN of) (NP (TAG PATIENT-1)))))))))) (. .))  (S (NP-SUBJ (NP (DT The) (NN leader)) (PP (IN in) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (PP (IN in) (NP (NP (TAG BRIDGE-1)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (NN part)) (PP (IN of) (NP (TAG PATIENT-1)))))))))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NN leader)) (PP (IN in) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Cleveland | leaderName | Frank_G._Jackson</striple>
@@ -105,7 +111,7 @@
 				<references/>
 				<text>Frank G Jackson leads Cleveland, part of Cuyahoga County in Ohio where 200 Public Square is located.</text>
 				<template>PATIENT-2 leads BRIDGE-1 ,  part of PATIENT-1 where AGENT-1 is located . </template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB lead) (NP-SUBJ (NP-OBJ (TAG BRIDGE-1)) (, ,) (NP (NP (NN part)) (PP (IN of) (NP (TAG PATIENT-1))) (SBAR (WHADVP (WRB where) (NP (CD 200))) (S (NP (NNP Public) (NNP Square)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located)))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB lead) (NP-OBJ (NP (TAG BRIDGE-1)) (, ,) (NP (NP (NN part)) (PP (IN of) (NP (TAG PATIENT-1))) (SBAR (WHADVP (WRB where) (NP (CD 200))) (S (NP-SUBJ (NNP Public) (NNP Square)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located)))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 200_Public_Square</entity>
@@ -126,6 +132,7 @@
 				<otriple>250_Delaware_Avenue | floorCount | 12</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>250_Delaware_Avenue | location | United_States</striple>
@@ -136,9 +143,10 @@
 				<references/>
 				<text>250 Delaware Avenue in the United States has 12 floors that cover 30843.8 square metres.</text>
 				<template>AGENT-1 in PATIENT-1 has PATIENT-3 floors that cover PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP (NP (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-1)))) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-SUBJ (NP (CD (TAG PATIENT-3)) (NNS floors)) (SBAR (WHNP (WDT that)) (S (VP[aspect=simple, tense=present, voice=active] (VB cover) (NP-OBJ (TAG PATIENT-2))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (CD (TAG PATIENT-3)) (NNS floors)) (SBAR (WHNP (WDT that)) (S (VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] (VB cover) (NP (TAG PATIENT-2))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>250_Delaware_Avenue | location | United_States</striple>
@@ -149,9 +157,10 @@
 				<references/>
 				<text>250 Delaware Avenue in the United States has 12 floors with a total floor area of 30843.8 square metres.</text>
 				<template>AGENT-1 in PATIENT-1 has PATIENT-3 floors with a total floor area of PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-1)))) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (CD (TAG PATIENT-3)) (NNS floors)) (PP (IN with) (NP (NP (DT a) (JJ total) (NN floor) (NN area)) (PP (IN of) (NP (TAG PATIENT-2))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (CD (TAG PATIENT-3)) (NNS floors)) (PP (IN with) (NP (NP (DT[form=undefined] a) (JJ total) (NN floor) (NN area)) (PP (IN of) (NP (TAG PATIENT-2))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>250_Delaware_Avenue | location | United_States</striple>
@@ -164,7 +173,7 @@
 				<references/>
 				<text>250 Delaware Avenue is located in the United States. It has a floor area of 30843.8 square metres and a floor count of 12.</text>
 				<template>AGENT-1 is located in PATIENT-1 .  AGENT-1 has a floor area of PATIENT-2 and a floor count of PATIENT-3 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-COORDINATION (NP (NP (DT a) (NN floor) (NN area)) (PP (IN of) (NP (TAG PATIENT-2)))) (CC and) (NP-OBJ (NP (DT a) (NN floor) (NN count)) (PP (IN of) (NP (TAG PATIENT-3)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-COORDINATION (NP (NP (DT[form=undefined] a) (NN floor) (NN area)) (PP (IN of) (NP (TAG PATIENT-2)))) (CC and) (NP-OBJ (NP (DT[form=undefined] a) (NN floor) (NN count)) (PP (IN of) (NP (TAG PATIENT-3)))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
@@ -185,6 +194,7 @@
 				<otriple>Chicago | isPartOf | DuPage_County,_Illinois</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>300_North_LaSalle | location | Chicago</striple>
@@ -195,9 +205,10 @@
 				<references/>
 				<text>300 North LaSalle is located in Chicago, DuPage County in Illinois, where Rahm Emanuel is the leader.</text>
 				<template>AGENT-1 is located in BRIDGE-1 ,  PATIENT-2 ,  where PATIENT-1 is the leader . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG BRIDGE-1)) (, ,) (NP (TAG PATIENT-2)) (, ,)))) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (DT the) (NN leader)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG BRIDGE-1)) (, ,) (NP (TAG PATIENT-2)) (, ,)))) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (DT[form=defined] the) (NN leader)))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>300_North_LaSalle | location | Chicago</striple>
@@ -208,9 +219,10 @@
 				<references/>
 				<text>300 North LaSalle is located in Chicago, part of DuPage County, Illinois where Rahm Emanuel is a leader.</text>
 				<template>AGENT-1 is located in BRIDGE-1 ,  part of PATIENT-2 where PATIENT-1 is a leader . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (NP (NP (NN part)) (PP (IN of) (NP (NP (NNP DuPage) (NNP County)) (, ,) (NP (NP (NNP Illinois)) (SBAR (WHADVP (WRB where)) (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (DT a) (NN leader))))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG BRIDGE-1)) (, ,) (NP (NP (NN part)) (PP (IN of) (NP (NP (NNP DuPage) (NNP County)) (, ,) (NP (NP (NNP Illinois)) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (DT[form=undefined] a) (NN leader))))))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Chicago | leaderName | Rahm_Emanuel</striple>
@@ -221,7 +233,7 @@
 				<references/>
 				<text>Rahm Emanuel is the leader of Chicago, which is a part of Dupage County Illinois and the location of 300 North LaSalle.</text>
 				<template>PATIENT-1 is the leader of BRIDGE-1 ,  which is a part of PATIENT-2 and the location of AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (NN leader)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-COORDINATION (NP (NP (DT a) (NN part)) (PP (IN of) (NP (TAG PATIENT-2)))) (CC and) (NP (NP (DT the) (NN location)) (PP (IN of) (NP (TAG AGENT-1)))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN leader)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-COORDINATION (NP (NP (DT[form=undefined] a) (NN part)) (PP (IN of) (NP (TAG PATIENT-2)))) (CC and) (NP (NP (DT[form=defined] the) (NN location)) (PP (IN of) (NP (TAG AGENT-1)))))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 300_North_LaSalle</entity>
@@ -242,6 +254,7 @@
 				<otriple>320_South_Boston_Building | floorCount | 22</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>George_Winkler | country | United_States</striple>
@@ -252,9 +265,10 @@
 				<references/>
 				<text>George Winkler, United States, is the architect of the 22 floor 320 South Boston Building.</text>
 				<template>BRIDGE-1 ,  PATIENT-1 ,  is the architect of the PATIENT-2 floor AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (NP (TAG PATIENT-1)) (, ,)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NN architect)) (PP (IN of) (NP (DT the) (CD (TAG PATIENT-2)) (NN floor) (CD 320))) (NP (NNP South) (NNP Boston) (NNP Building)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (NP (TAG PATIENT-1)) (, ,)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN architect)) (PP (IN of) (NP (DT[form=defined] the) (CD (TAG PATIENT-2)) (NN floor) (CD 320))) (NP (NNP South) (NNP Boston) (NNP Building)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>George_Winkler | country | United_States</striple>
@@ -267,7 +281,7 @@
 				<references/>
 				<text>George Winkler from the United States was the architect of 320 South Boston Building. 320 South Boston Street has 22 floors.</text>
 				<template>BRIDGE-1 from PATIENT-1 was the architect of AGENT-1 .  AGENT-1 has PATIENT-2 floors . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (PP (IN from) (NP (TAG PATIENT-1)))) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT the) (NN architect)) (PP (IN of) (NP (TAG AGENT-1))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (CD (TAG PATIENT-2)) (NNS floors))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (PP (IN from) (NP (TAG PATIENT-1)))) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN architect)) (PP (IN of) (NP (TAG AGENT-1))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (CD (TAG PATIENT-2)) (NNS floors))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 320_South_Boston_Building</entity>
@@ -288,6 +302,7 @@
 				<otriple>3Arena | completionDate | &quot;December 2008&quot;</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
@@ -301,6 +316,7 @@
 				<tree/>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
@@ -311,7 +327,7 @@
 				<references/>
 				<text>Arcitect HOK SVE, completed the 3Arena on North Wall Quay in December 2008.</text>
 				<template>Arcitect PATIENT-2 ,  completed AGENT-1 on PATIENT-1 in PATIENT-3 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NNP Arcitect) (NNP HOK) (NNP SVE)) (, ,) (VP[aspect=simple, tense=past, voice=active] (VB complete) (NP-OBJ (TAG AGENT-1)) (PP (IN on) (NP (NP (TAG PATIENT-1)) (PP (IN in) (NP (TAG PATIENT-3)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NNP Arcitect) (NNP HOK) (NNP SVE)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB complete) (NP-OBJ (TAG AGENT-1)) (PP (IN on) (NP (NP (TAG PATIENT-1)) (PP (IN in) (NP (TAG PATIENT-3)))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 3Arena</entity>
@@ -332,6 +348,7 @@
 				<otriple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
@@ -344,9 +361,10 @@
 				<references/>
 				<text>AC Hotel Bella Sky Copenhagen has 23 floors and is located in Denmark. The tenant is Marriott International.</text>
 				<template>AGENT-1 has PATIENT-3 floors and is located in PATIENT-1 .  The tenant is PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (CD (TAG PATIENT-3)) (NNS floors))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1)))))) (. .))  (S (NP-SUBJ (DT The) (NN tenant)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (CD (TAG PATIENT-3)) (NNS floors))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1)))))) (. .))  (S (NP-SUBJ (DT[form=defined] the) (NN tenant)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
@@ -357,7 +375,7 @@
 				<references/>
 				<text>AC Hotel Bella Sky Copenhagen, whose tenant is Marriott International, has 23 floors and is located in Copenhagen Denmark.</text>
 				<template>AGENT-1 ,  whose tenant is PATIENT-2 ,  has PATIENT-3 floors and is located in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP$ whose) (NN tenant)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))))) (, ,)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (CD (TAG PATIENT-3)) (NNS floors))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP$ whose) (NN tenant)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))))) (, ,)) (VP-COORDINATION (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (CD (TAG PATIENT-3)) (NNS floors))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1)))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
@@ -378,6 +396,7 @@
 				<otriple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
@@ -388,9 +407,10 @@
 				<references/>
 				<text>The tenant of the AC Hotel Bella Sky Copenhagen, which has 23 floors and was designed by 3XN, is the Marriott International.</text>
 				<template>The tenant of AGENT-1 ,  which has PATIENT-3 floors and was designed by PATIENT-2 ,  is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP-OBJ (DT The) (NN tenant)) (PP (IN of) (NP (TAG AGENT-1))) (, ,) (SBAR (WHNP (WDT which)) (S (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-3)) (NNS floors))) (CC and) (VP[aspect=simple, tense=past, voice=passive] (VB design) (PP (IN by) (NP (TAG PATIENT-2))))))) (, ,)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT[form=defined] the) (NN tenant)) (PP (IN of) (NP (TAG AGENT-1))) (, ,) (SBAR (WHNP (WDT which)) (S (VP-COORDINATION (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP (CD (TAG PATIENT-3)) (NNS floors))) (CC and) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB design) (PP (IN by) (NP (TAG PATIENT-2))))))) (, ,)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
@@ -401,7 +421,7 @@
 				<references/>
 				<text>Marriott International is the tenant of AC Hotel Bella Sky Copenhagen, that was designed by the architects of the 3XN firm and has 23 floors.</text>
 				<template>PATIENT-1 is the tenant of AGENT-1 ,  that was designed by the architects of PATIENT-2 and has PATIENT-3 floors . </template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (NN tenant)) (PP (IN of) (NP-OBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WDT that)) (S (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB design) (PP (IN by) (NP (NP (DT the) (NNS architects)) (PP (IN of) (NP (TAG PATIENT-2)))))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-3)) (NNS floors)))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-OBJ (NP (DT[form=defined] the) (NN tenant)) (PP (IN of) (NP (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WDT that)) (S (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB design) (PP (IN by) (NP (NP (DT[form=defined] the) (NNS architects)) (PP (IN of) (NP (TAG PATIENT-2)))))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP (CD (TAG PATIENT-3)) (NNS floors)))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
@@ -422,6 +442,7 @@
 				<otriple>Augustus_Pugin | birthPlace | Bloomsbury</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Augustus_Pugin | birthPlace | Bloomsbury</striple>
@@ -434,9 +455,10 @@
 				<references/>
 				<text>Augustus Pugin who was born in Bloomsbury is the architect of Adare Manor. Another of his significant buildings is the Palace of Westminster.</text>
 				<template>BRIDGE-1 who was born in PATIENT-2 is the architect of AGENT-1 .  Another of BRIDGE-1 significant buildings is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG BRIDGE-1)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-2))))))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (NN architect)) (PP (IN of) (NP (TAG AGENT-1))))) (. .))  (S (NP-SUBJ (NP (DT Another)) (PP (IN of) (NP (PRP$ (TAG BRIDGE-1)) (JJ significant) (NNS buildings)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP-OBJ (TAG BRIDGE-1)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-2))))))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN architect)) (PP (IN of) (NP (TAG AGENT-1))))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] another)) (PP (IN of) (NP (PRP$ (TAG BRIDGE-1)) (JJ significant) (NNS buildings)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Augustus_Pugin | birthPlace | Bloomsbury</striple>
@@ -447,7 +469,7 @@
 				<references/>
 				<text>Augustus Pugin, born in Bloomsbury, designed Adare Manor and Palace Of Westminster.</text>
 				<template>BRIDGE-1 ,  born in PATIENT-2 ,  designed AGENT-1 and PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))) (, ,)) (VP[aspect=simple, tense=past, voice=active] (VB design) (S (NP-COORDINATION (NNP Adare) (NNP Manor) (CC and) (NNP Palace)) (PP (IN Of) (NP (NNP Westminster))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))) (, ,)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (S (NP-COORDINATION (NNP Adare) (NNP Manor) (CC and) (NNP Palace)) (PP (IN Of) (NP (NNP Westminster))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Adare_Manor</entity>
@@ -468,6 +490,7 @@
 				<otriple>Adare_Manor | owner | J._P._McManus</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adare_Manor | architect | Philip_Charles_Hardwick</striple>
@@ -480,9 +503,10 @@
 				<references/>
 				<text>Adare Manor was designed by architect Philip Charles Hardwick and construction finished in 1862. The Manor is owned by J P McManus.</text>
 				<template>AGENT-1 was designed by architect PATIENT-1 and construction finished in PATIENT-2 .  AGENT-1 is owned by PATIENT-3 . </template>
-				<tree>(SENTENCES (S-COORDINATION (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB design) (PP (IN by) (NP (NN architect) (NNP Philip) (NNP Charles) (NNP Hardwick))))) (CC and) (S (NP (NN construction)) (VP[aspect=simple, tense=past, voice=active] (VB finish) (PP (IN in) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=passive] (VB own) (PP (IN by) (NP-SUBJ (TAG PATIENT-3)))) (. .)))</tree>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB design) (PP (IN by) (NP-SUBJ (NN architect) (NNP Philip) (NNP Charles) (NNP Hardwick))))) (CC and) (S (NP-SUBJ (NN construction)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB finish) (PP (IN in) (NP (TAG PATIENT-2))))) (. .))  (S (NP-OBJ (DT[form=defined] the) (NNP Manor)) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB own) (PP (IN by) (NP-SUBJ (TAG PATIENT-3)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adare_Manor | architect | Philip_Charles_Hardwick</striple>
@@ -495,9 +519,10 @@
 				<references/>
 				<text>Adare Manor's architect was Philip Charles Hardwick and it was completed in 1862. JP McManus owns Adare Manor.</text>
 				<template>AGENT-1 architect was PATIENT-1 and AGENT-1 was completed in PATIENT-2 .  PATIENT-3 owns AGENT-1 . </template>
-				<tree>(SENTENCES (S-COORDINATION (S (NP (NP (TAG AGENT-1)) (NN architect)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (TAG PATIENT-1)))) (CC and) (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB complete) (PP (IN in) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (NP-SUBJ (TAG PATIENT-3)) (VP[aspect=simple, tense=present, voice=active] (VB own) (NP-OBJ (TAG AGENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-SUBJ (NP (TAG AGENT-1)) (NN architect)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (TAG PATIENT-1)))) (CC and) (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB complete) (PP (IN in) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (NP-SUBJ (TAG PATIENT-3)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB own) (NP-OBJ (TAG AGENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adare_Manor | architect | Philip_Charles_Hardwick</striple>
@@ -508,7 +533,7 @@
 				<references/>
 				<text>Designed by architect Philip Charles Hardwick, The Adare Manor was completed in 1862 and is now owned by J P McManus.</text>
 				<template>Designed by architect PATIENT-1 ,  AGENT-1 was completed in PATIENT-2 and is now owned by PATIENT-3 . </template>
-				<tree>(SENTENCES (S (S (VP[aspect=simple, tense=past, voice=active] (VB design) (PP (IN by) (NP (NN architect) (NNP Philip) (NNP Charles) (NNP Hardwick))))) (, ,) (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB complete) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=present, voice=passive] (VB own) (PP (IN by) (NP-SUBJ (TAG PATIENT-3))))) (. .)))</tree>
+				<tree>(SENTENCES (S (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (PP (IN by) (NP (NN architect) (NNP Philip) (NNP Charles) (NNP Hardwick))))) (, ,) (NP-OBJ (DT[form=defined] the) (NNP Adare) (NNP Manor)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB complete) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB own) (PP (IN by) (NP-SUBJ (TAG PATIENT-3))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Adare_Manor</entity>
@@ -529,6 +554,7 @@
 				<otriple>Adisham_Hall | location | Haputale</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adisham_Hall | location | Haputale</striple>
@@ -539,9 +565,10 @@
 				<references/>
 				<text>Adisham Hall is located in Haputale and was completed in the Tudor and Jacobean style in 1931.</text>
 				<template>AGENT-1 is located in PATIENT-3 and was completed in the PATIENT-1 style in PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-3))))) (CC and) (VP[aspect=simple, tense=past, voice=passive] (VB complete) (PP (IN in) (NP-COORDINATION (NP (DT the) (NNP Tudor)) (CC and) (NP (JJ Jacobean) (NN style)))) (PP (IN in) (NP-SUBJ (TAG PATIENT-2))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-3))))) (CC and) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB complete) (PP (IN in) (NP-COORDINATION (NP (DT[form=defined] the) (NNP Tudor)) (CC and) (NP (JJ Jacobean) (NN style)))) (PP (IN in) (NP-SUBJ (TAG PATIENT-2))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
@@ -555,6 +582,7 @@
 				<tree/>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adisham_Hall | location | Haputale</striple>
@@ -565,7 +593,7 @@
 				<references/>
 				<text>Adisham Hall in Haputale was finished in 1931 in the Tudor and Jacobean style.</text>
 				<template>AGENT-1 in PATIENT-3 was finished in PATIENT-2 in the PATIENT-1 style . </template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-3)))) (VP[aspect=simple, tense=past, voice=passive] (VB finish) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN in) (NP-COORDINATION (NP (DT the) (NNP Tudor)) (CC and) (NP-SUBJ (JJ Jacobean) (NN style))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-3)))) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB finish) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN in) (NP-COORDINATION (NP (DT[form=defined] the) (NNP Tudor)) (CC and) (NP-SUBJ (JJ Jacobean) (NN style))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Adisham_Hall</entity>
@@ -586,6 +614,7 @@
 				<otriple>Adisham_Hall | completionDate | 1931</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adisham_Hall | completionDate | 1931</striple>
@@ -596,9 +625,10 @@
 				<references/>
 				<text>Adisham Hall, which was finished in 1931, is located in Sri Lanka and has an architectural style known as Tudor and Jacabian.</text>
 				<template>AGENT-1 ,  which was finished in PATIENT-3 ,  is located in PATIENT-2 and has an architectural style known as PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=past, voice=passive] (VB finish) (PP (IN in) (NP (TAG PATIENT-3)))))) (, ,)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-2))))) (CC and) (VP[aspect=perfect, tense=present, voice=active] (VB know) (PP (IN as) (NP-COORDINATION (TAG PATIENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB finish) (PP (IN in) (NP (TAG PATIENT-3)))))) (, ,)) (VP-COORDINATION (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-2))))) (CC and) (VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] (VB know) (PP (IN as) (NP-COORDINATION (TAG PATIENT-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adisham_Hall | location | Sri_Lanka</striple>
@@ -609,7 +639,7 @@
 				<references/>
 				<text>Adisham Hall, Sri Lanka was finished in 1931 and is in the architectural style of &quot;Tudor and Jacobean&quot;.</text>
 				<template>AGENT-1 ,  PATIENT-2 was finished in PATIENT-3 and is in the architectural style of PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (, ,) (NP-OBJ (TAG PATIENT-2)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB finish) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (PP (IN in) (NP (NP (DT the) (JJ architectural) (NN style)) (PP (IN of) ('' '') (NP-COORDINATION (NNP Tudor) (CC and) (NNP Jacobean))))))) ('' '') (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (, ,) (NP-OBJ (TAG PATIENT-2)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB finish) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (PP (IN in) (NP (NP (DT[form=defined] the) (JJ architectural) (NN style)) (PP (IN of) ('' '') (NP-COORDINATION (NNP Tudor) (CC and) (NNP Jacobean))))))) ('' '') (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Adisham_Hall</entity>
@@ -630,6 +660,7 @@
 				<otriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adisham_Hall | location | Haputale</striple>
@@ -640,9 +671,10 @@
 				<references/>
 				<text>Adisham Hall is located in Haputale, Sri Lanka where the leader is Ranil Wickremesinghe.</text>
 				<template>AGENT-1 is located in PATIENT-1 ,  BRIDGE-1 where the leader is PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG PATIENT-1)) (, ,) (NP (TAG BRIDGE-1))))) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (DT the) (NN leader)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG PATIENT-1)) (, ,) (NP (TAG BRIDGE-1))))) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (DT[form=defined] the) (NN leader)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2)))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adisham_Hall | location | Haputale</striple>
@@ -653,7 +685,7 @@
 				<references/>
 				<text>Adisham Hall is located in Haputale, Sri Lanka, whose leader is Ranil Wickremesinghe.</text>
 				<template>AGENT-1 is located in PATIENT-1 ,  BRIDGE-1 ,  whose leader is PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP-SUBJ (NP (NNP (TAG PATIENT-1)) (, ,) (NNP Sri) (NNP Lanka)) (, ,) (SBAR (WHNP (WP$ whose) (NN leader)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (NNP (TAG PATIENT-1)) (, ,) (NNP Sri) (NNP Lanka)) (, ,) (SBAR (WHNP (WP$ whose) (NN leader)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Adisham_Hall</entity>
@@ -674,6 +706,7 @@
 				<otriple>Sri_Lanka | currency | Sri_Lankan_rupee</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
@@ -686,9 +719,10 @@
 				<references/>
 				<text>Sri Jayawardenepura Kotte is the capital of Sri Lanka, whose currency is the rupee. Adisham Hall is located in Sri Lanka.</text>
 				<template>PATIENT-1 is the capital of BRIDGE-1 ,  whose currency is PATIENT-2 .  AGENT-1 is located in BRIDGE-1 . </template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (NN capital)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WP$ whose) (NN currency)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN capital)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WP$ whose) (NN currency)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
@@ -699,7 +733,7 @@
 				<references/>
 				<text>Sri Jayawardenepura Kotte is the capital of Sri Lanka, which uses the Sri Lankan @ rupee as its currency and is the location of Adisham Hall.</text>
 				<template>PATIENT-1 is the capital of BRIDGE-1 ,  which uses PATIENT-2 as BRIDGE-1 currency and is the location of AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (NN capital)) (PP (IN of) (NP-OBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB use) (NP (NP (DT the) (NNP Sri) (NNP Lankan) (NN rupee)) (PP (IN as) (NP (PRP$ (TAG BRIDGE-1)) (NN currency))))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NN location)) (PP (IN of) (NP (TAG AGENT-1)))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-OBJ (NP (DT[form=defined] the) (NN capital)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP-COORDINATION (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB use) (NP (NP (DT[form=defined] the) (NNP Sri) (NNP Lankan) (NN rupee)) (PP (IN as) (NP (PRP$ (TAG BRIDGE-1)) (NN currency))))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN location)) (PP (IN of) (NP (TAG AGENT-1)))))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Adisham_Hall</entity>
@@ -720,6 +754,7 @@
 				<otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
@@ -730,9 +765,10 @@
 				<references/>
 				<text>Alan B. Miller Hall was started on March 30,2007 and has The Mason School of Business in the U.S. as a tenant.</text>
 				<template>AGENT-1 was started on PATIENT-1 and has BRIDGE-1 in PATIENT-2 as a tenant . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB start) (PP (IN on) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (NP (DT The) (NNP Mason) (NNP School)) (PP (IN of) (NP (NP (NNP Business)) (PP (IN in) (NP (NP (TAG PATIENT-2)) (PP (IN as) (NP (DT a) (NN tenant)))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB start) (PP (IN on) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP (NP (DT[form=defined] the) (NNP Mason) (NNP School)) (PP (IN of) (NP (NP (NNP Business)) (PP (IN in) (NP (NP (TAG PATIENT-2)) (PP (IN as) (NP (DT[form=undefined] a) (NN tenant)))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
@@ -745,7 +781,7 @@
 				<references/>
 				<text>Alan B. Miller Hall's building opened in 30th March 2007. The Mason School of Business in the United States are the current tenants of Alan B Miller Hall.</text>
 				<template>AGENT-1 building opened in PATIENT-1 . BRIDGE-1 in PATIENT-2 are the current tenants of AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (NN building)) (VP[aspect=simple, tense=past, voice=active] (VB open) (PP (IN in) (NP (JJ 30th))) (NP-TMP (NNP March) (CD 2007))) (. .))  (S (NP-SUBJ (NP (DT The) (NNP Mason) (NNP School)) (PP (IN of) (NP (NP (NNP Business)) (PP (IN in) (NP (TAG PATIENT-2)))))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (JJ current) (NNS tenants)) (PP (IN of) (NP (TAG AGENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (NN building)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB open) (PP (IN in) (NP (JJ 30th))) (NP-TMP (NNP March) (CD 2007))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Mason) (NNP School)) (PP (IN of) (NP (NP (NNP Business)) (PP (IN in) (NP (TAG PATIENT-2)))))) (VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] (VB be) (NP (NP (DT[form=defined] the) (JJ current) (NNS tenants)) (PP (IN of) (NP (TAG AGENT-1))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
@@ -766,6 +802,7 @@
 				<otriple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
@@ -776,9 +813,10 @@
 				<references/>
 				<text>Julia Morgan was born in San Francisco and is the architect of the grounds of Asilomar Conference at the Riverside Art Museum.</text>
 				<template>BRIDGE-1 was born in PATIENT-1 and is the architect of the grounds of AGENT-1 at PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG BRIDGE-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NN architect)) (PP (IN of) (NP (NP (DT the) (NNS grounds)) (PP (IN of) (NP (NP (TAG AGENT-1)) (PP (IN at) (NP (TAG PATIENT-2)))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG BRIDGE-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN architect)) (PP (IN of) (NP (NP (DT[form=defined] the) (NNS grounds)) (PP (IN of) (NP (NP (TAG AGENT-1)) (PP (IN at) (NP (TAG PATIENT-2)))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
@@ -789,9 +827,10 @@
 				<references/>
 				<text>San Francisco born Julia Morgan was the architect of the Asilomar Conference Grounds and she also designed other significant buildings including the Riverside Art Museum.</text>
 				<template>PATIENT-1 born BRIDGE-1 was the architect of AGENT-1 and BRIDGE-1 also designed other significant buildings including PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB bear) (S-COORDINATION (S (NP (TAG BRIDGE-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT the) (NN architect)) (PP (IN of) (NP (TAG AGENT-1)))))) (CC and) (S (NP-SUBJ (TAG BRIDGE-1)) (ADVP (RB also)) (VP[aspect=simple, tense=past, voice=active] (VB design) (NP-OBJ (NP (JJ other) (JJ significant) (NNS buildings)) (PP (VBG including) (NP (TAG PATIENT-2)))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (S-COORDINATION (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN architect)) (PP (IN of) (NP (TAG AGENT-1)))))) (CC and) (S (NP-SUBJ (TAG BRIDGE-1)) (ADVP (RB also)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (NP-OBJ (NP (JJ other) (JJ significant) (NNS buildings)) (PP (VBG including) (NP (TAG PATIENT-2)))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
@@ -802,7 +841,7 @@
 				<references/>
 				<text>Julia Morgan, born in San Francisco, designed the significant Riverside Art Museum and the Asilomar Conference Grounds.</text>
 				<template>BRIDGE-1 ,  born in PATIENT-1 ,  designed the significant PATIENT-2 and AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-1)))) (, ,)) (VP[aspect=simple, tense=past, voice=active] (VB design) (NP-COORDINATION (NP (DT the) (JJ significant) (NNP Riverside) (NNP Art) (NNP Museum)) (CC and) (NP-OBJ (TAG AGENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (TAG PATIENT-1)))) (, ,)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (NP-COORDINATION (NP (DT[form=defined] the) (JJ significant) (NNP Riverside) (NNP Art) (NNP Museum)) (CC and) (NP-OBJ (TAG AGENT-1)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
@@ -823,6 +862,7 @@
 				<otriple>Julia_Morgan | birthPlace | California</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Julia_Morgan | birthPlace | California</striple>
@@ -836,6 +876,7 @@
 				<tree/>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Julia_Morgan | birthPlace | California</striple>
@@ -846,9 +887,10 @@
 				<references/>
 				<text>Julia Morgan, who was born in California, was the architect of the Asilomar Conference Grounds and designed many significant buildings in Chinatown, San Francisco.</text>
 				<template>BRIDGE-1 ,  who was born in PATIENT-2 ,  was the architect of AGENT-1 and designed many significant buildings in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))))) (, ,)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT the) (NN architect)) (PP (IN of) (NP (TAG AGENT-1))))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB design) (NP (JJ many) (JJ significant) (NNS buildings)) (PP (IN in) (NP-SUBJ (TAG PATIENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))))) (, ,)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN architect)) (PP (IN of) (NP (TAG AGENT-1))))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (NP (JJ many) (JJ significant) (NNS buildings)) (PP (IN in) (NP-SUBJ (TAG PATIENT-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Julia_Morgan | birthPlace | California</striple>
@@ -859,7 +901,7 @@
 				<references/>
 				<text>Californian born Julia Morgan designed significant buildings in Chinatown, San Francisco and also the Asilomar Conference Grounds.</text>
 				<template>PATIENT-2 born BRIDGE-1 designed significant buildings in PATIENT-1 and also AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=past, voice=active] (VB bear) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=past, voice=active] (VB design) (NP-OBJ (JJ significant) (NNS buildings)) (PP (IN in) (NP-COORDINATION (NP (NNP Chinatown)) (, ,) (NP (NNP San) (NNP Francisco)) (CC and) (ADVP (RB also)) (NP (TAG AGENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG PATIENT-2)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (NP-OBJ (JJ significant) (NNS buildings)) (PP (IN in) (NP-COORDINATION (NP (NNP Chinatown)) (, ,) (NP (NNP San) (NNP Francisco)) (CC and) (ADVP (RB also)) (NP (TAG AGENT-1))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
@@ -880,6 +922,7 @@
 				<otriple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Asilomar_Conference_Grounds | location | &quot;Asilomar Blvd., Pacific Grove, California&quot;</striple>
@@ -890,9 +933,10 @@
 				<references/>
 				<text>Asilomar Conference Grounds, located at Asilomar Blvd., Pacific Grove, California, was added to the National Register of Historis Places February 27, 1987 and has the reference number 87000823.</text>
 				<template>AGENT-1 ,  located at PATIENT-1  was added to the National Register of Historis Places PATIENT-2 and has the reference number PATIENT-3 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP-OBJ (TAG AGENT-1)) (, ,) (VP[aspect=simple, tense=past, voice=active] (VB locate) (PP (IN at) (NP (NP (NNP Asilomar) (NNP Blvd.)) (, ,) (NP (NP (NNP Pacific) (NNP Grove)) (, ,) (NP (NNP California)))))) (, ,)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB add) (PP (TO to) (NP (NP (DT the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historis) (NNPS Places))))) (NP-TMP (TAG PATIENT-2))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (DT the) (NN reference) (NN number) (CD (TAG PATIENT-3))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB locate) (PP (IN at) (NP (NP (NNP Asilomar) (NNP Blvd.)) (, ,) (NP (NP (NNP Pacific) (NNP Grove)) (, ,) (NP (NNP California)))))) (, ,)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB add) (PP (TO to) (NP (NP (DT[form=defined] the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historis) (NNPS Places))))) (NP-TMP (TAG PATIENT-2))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP (DT[form=defined] the) (NN reference) (NN number) (CD (TAG PATIENT-3))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Asilomar_Conference_Grounds | location | &quot;Asilomar Blvd., Pacific Grove, California&quot;</striple>
@@ -903,7 +947,7 @@
 				<references/>
 				<text>Asilomar Conference Grounds are located at Asilomar Blvd, Pacific Grove California and given the reference of 87000823 in the National Register of Historic Places on 27 February 1987.</text>
 				<template>AGENT-1 are located at PATIENT-1 and given the reference of PATIENT-3 in the National Register of Historic Places on PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (UCP-COORDINATION (ADJP (JJ located) (PP (IN at) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB give) (NP (NP (DT the) (NN reference)) (PP (IN of) (NP (TAG PATIENT-3)))) (PP (IN in) (NP-SUBJ (NP (DT the) (NNP National) (NNP Register)) (PP (IN of) (NP (NP (NNP Historic) (NNPS Places)) (PP (IN on) (NP (CD 27))) (NP-TMP (NNP February) (CD 1987))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] (VB be) (UCP-COORDINATION (ADJP (JJ located) (PP (IN at) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB give) (NP (NP (DT[form=defined] the) (NN reference)) (PP (IN of) (NP (TAG PATIENT-3)))) (PP (IN in) (NP-SUBJ (NP (DT[form=defined] the) (NNP National) (NNP Register)) (PP (IN of) (NP (NP (NNP Historic) (NNPS Places)) (PP (IN on) (NP (CD 27))) (NP-TMP (NNP February) (CD 1987))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
@@ -924,6 +968,7 @@
 				<otriple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
@@ -936,9 +981,10 @@
 				<references/>
 				<text>Asser Levy Public Baths were built in 1904 at Avenue A, Manhattan. They were added to the National Register of Historic Places on &quot;1980-04-23&quot;.</text>
 				<template>AGENT-1 were built in PATIENT-2 at PATIENT-1 .  AGENT-1 were added to the National Register of Historic Places on PATIENT-3 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB build) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN at) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB add) (PP (TO to) (NP (NP (DT the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) ('' '') (NP-SUBJ (CD 1980-04-23)))) ('' '') (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] (VB build) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN at) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] (VB add) (PP (TO to) (NP (NP (DT[form=defined] the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) ('' '') (NP-SUBJ (CD 1980-04-23)))) ('' '') (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
@@ -951,9 +997,10 @@
 				<references/>
 				<text>Asser Levy Public Baths were constructed in 1904 at Avenue A, Manhattan. They were added to the National Register of Historic Places on 23rd April 1980.</text>
 				<template>AGENT-1 were constructed in PATIENT-2 at PATIENT-1 .  AGENT-1 were added to the National Register of Historic Places on PATIENT-3 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB construct) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN at) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB add) (PP (TO to) (NP (NP (DT the) (NNP National) (NNP Register)) (PP (IN of) (NP (NP (NNP Historic) (NNPS Places)) (PP (IN on) (NP (JJ 23rd))))))) (NP-TMP (NNP April) (CD 1980))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] (VB construct) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN at) (NP-SUBJ (TAG PATIENT-1)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] (VB add) (PP (TO to) (NP (NP (DT[form=defined] the) (NNP National) (NNP Register)) (PP (IN of) (NP (NP (NNP Historic) (NNPS Places)) (PP (IN on) (NP (JJ 23rd))))))) (NP-TMP (NNP April) (CD 1980))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Asser_Levy_Public_Baths | location | Avenue_A_(Manhattan)</striple>
@@ -964,7 +1011,7 @@
 				<references/>
 				<text>Asser Levy Public Baths in Avenue A, Manhattan. was constructed in 1904 and added to the National Register of Historic Places on 1980-04-23.</text>
 				<template>AGENT-1 in PATIENT-1  was constructed in PATIENT-2 and added to the National Register of Historic Places on PATIENT-3 . </template>
-				<tree>(SENTENCES (NP (NP (TAG AGENT-1)) (PP (IN in) (NP (NP (NNP Avenue) (NNP A)) (, ,) (NP (NNP Manhattan)))) (. .))  (S (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB construct) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB add) (PP (TO to) (NP (NP (DT the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) (NP (TAG PATIENT-3))))) (. .)))</tree>
+				<tree>(SENTENCES (NP (NP (TAG AGENT-1)) (PP (IN in) (NP (NP (NNP Avenue) (NNP A)) (, ,) (NP (NNP Manhattan)))) (. .))  (S (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB construct) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB add) (PP (TO to) (NP (NP (DT[form=defined] the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) (NP (TAG PATIENT-3))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
@@ -985,6 +1032,7 @@
 				<otriple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
@@ -997,9 +1045,10 @@
 				<references/>
 				<text>The Asser Levy Public Baths was built in 1904 and are in New York City. They were added to the National Register of Historic Places on &quot;1980-04-23&quot;.</text>
 				<template>AGENT-1 was built in PATIENT-2 and are in PATIENT-1 .  AGENT-1 were added to the National Register of Historic Places on PATIENT-3 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB build) (PP (IN in) (NP-SUBJ (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (PP (IN in) (NP (TAG PATIENT-1))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB add) (PP (TO to) (NP (NP (DT the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) ('' '') (NP-SUBJ (CD 1980-04-23)))) ('' '') (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (DT[form=defined] the) (NNP Asser) (NNP Levy) (NNP Public) (NNP Baths)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB build) (PP (IN in) (NP-SUBJ (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] (VB be) (PP (IN in) (NP (TAG PATIENT-1))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] (VB add) (PP (TO to) (NP (NP (DT[form=defined] the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) ('' '') (NP-SUBJ (CD 1980-04-23)))) ('' '') (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
@@ -1010,9 +1059,10 @@
 				<references/>
 				<text>The Asser Levy Public Baths in New York City were built in 1904 and added to the National Register of Historic Places on &quot;1980-04-23&quot;.</text>
 				<template>AGENT-1 in PATIENT-1 were built in PATIENT-2 and added to the National Register of Historic Places on PATIENT-3 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-1))) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB build) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB add) (PP (TO to) (NP (NP (DT the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) ('' '') (NP-SUBJ (CD 1980-04-23))))) ('' '') (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (DT[form=defined] the) (NNP Asser) (NNP Levy) (NNP Public) (NNPS Baths)) (PP (IN in) (NP (TAG PATIENT-1))) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] (VB build) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB add) (PP (TO to) (NP (NP (DT[form=defined] the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) ('' '') (NP-SUBJ (CD 1980-04-23))))) ('' '') (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
@@ -1023,7 +1073,7 @@
 				<references/>
 				<text>Asser Levy Public Baths located in New York City were constructed in 1904 and added to the National Register of Historic Places on 1980-04-23.</text>
 				<template>AGENT-1 located in PATIENT-1 were constructed in PATIENT-2 and added to the National Register of Historic Places on PATIENT-3 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1))))) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB construct) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB add) (PP (TO to) (NP (NP (DT the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) (NP-SUBJ (TAG PATIENT-3))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1))))) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] (VB construct) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB add) (PP (TO to) (NP (NP (DT[form=defined] the) (NNP National) (NNP Register)) (PP (IN of) (NP (NNP Historic) (NNPS Places))))) (PP (IN on) (NP-SUBJ (TAG PATIENT-3))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
@@ -1044,6 +1094,7 @@
 				<otriple>John_Madin | hometown | Birmingham</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Birmingham | leaderName | Conservative_Party_(UK)</striple>
@@ -1054,7 +1105,7 @@
 				<references/>
 				<text>The leader of Birmingham is the Conservative Party (UK), this city is the home town of John Madin who was the architect that designed 103 Colmore Row.</text>
 				<template>The leader of BRIDGE-2 is PATIENT-1 ,  BRIDGE-2 is the home town of BRIDGE-1 who was the architect that designed AGENT-1 . </template>
-				<tree>(SENTENCES (S (S (NP (NP (DT The) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-2)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NNP Conservative) (NNP Party)) (PRN (-LRB- -LRB-) (NP (NNP UK)) (-RRB- -RRB-))))) (, ,) (NP (TAG BRIDGE-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (NN home) (NN town)) (PP (IN of) (NP-OBJ (NP (TAG BRIDGE-1)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT the) (NN architect)) (SBAR (WHNP (WDT that)) (S (VP[aspect=simple, tense=past, voice=active] (VB design) (NP (TAG AGENT-1))))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (S (NP-SUBJ (NP (DT[form=defined] the) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-2)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NNP Conservative) (NNP Party)) (PRN (-LRB- -LRB-) (NP (NNP UK)) (-RRB- -RRB-))))) (, ,) (NP-SUBJ (TAG BRIDGE-2)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-OBJ (NP (DT[form=defined] the) (NN home) (NN town)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN architect)) (SBAR (WHNP (WDT that)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (NP (TAG AGENT-1))))))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 103_Colmore_Row</entity>
@@ -1075,6 +1126,7 @@
 				<otriple>John_Madin | birthPlace | Birmingham</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Birmingham | leaderName | Liberal_Democrats</striple>
@@ -1085,9 +1137,10 @@
 				<references/>
 				<text>Birmingham is led by the Liberal Democrats and is the birthplace of the architect John Madin who designed 103 Colmore Row.</text>
 				<template>BRIDGE-2 is led by the PATIENT-1 and is the birthplace of the architect BRIDGE-1 who designed AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG BRIDGE-2)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=passive] (VB lead) (PP (IN by) (NP (DT the) (JJ Liberal) (NNPS Democrats)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NN birthplace)) (PP (IN of) (NP (DT the) (NN architect))))) (NP-SUBJ (NP (TAG BRIDGE-1)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=active] (VB design) (NP (TAG AGENT-1))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG BRIDGE-2)) (VP-COORDINATION (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB lead) (PP (IN by) (NP (DT[form=defined] the) (JJ Liberal) (NNPS Democrats)))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN birthplace)) (PP (IN of) (NP (DT[form=defined] the) (NN architect))))) (NP (NP (TAG BRIDGE-1)) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (NP (TAG AGENT-1))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>John_Madin | birthPlace | Birmingham</striple>
@@ -1098,9 +1151,10 @@
 				<references/>
 				<text>Architect John Madin, born in Birmingham (led by the Liberal Democrats), designed 103 Colmore Row.</text>
 				<template>Architect BRIDGE-1 ,  born in BRIDGE-2 (led by PATIENT-1) ,  designed AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (NNP Architect) (NNP John) (NNP Madin)) (, ,) (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (NP (TAG BRIDGE-2)) (PRN (-LRB- -LRB-) (VP[aspect=simple, tense=past, voice=active] (VB lead) (PP (IN by) (NP (TAG PATIENT-1)))) (-RRB- -RRB-))))) (, ,)) (VP[aspect=simple, tense=past, voice=active] (VB design) (NP-TMP (TAG AGENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (NNP Architect) (NNP John) (NNP Madin)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (NP (TAG BRIDGE-2)) (PRN (-LRB- -LRB-) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB lead) (PP (IN by) (NP (TAG PATIENT-1)))) (-RRB- -RRB-))))) (, ,)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB design) (NP-TMP (TAG AGENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>103_Colmore_Row | architect | John_Madin</striple>
@@ -1111,7 +1165,7 @@
 				<references/>
 				<text>John Madin, designer of 103 Colmore Row , was born in Birmingham, currently led by the Liberal Democrats.</text>
 				<template>BRIDGE-1 ,  designer of AGENT-1  ,  was born in BRIDGE-2 ,  currently led by PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG BRIDGE-1)) (, ,) (NP (NP (NP (NN designer)) (PP (IN of) (NP (CD 103)))) (NP (NNP Colmore) (NNP Row))) (, ,)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-2)) (, ,) (VP[aspect=simple, tense=past, voice=active] (ADVP (RB currently)) (VB lead) (PP (IN by) (NP (TAG PATIENT-1))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG BRIDGE-1)) (, ,) (NP (NP (NP (NN designer)) (PP (IN of) (NP (CD 103)))) (NP (NNP Colmore) (NNP Row))) (, ,)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-2)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (ADVP (RB currently)) (VB lead) (PP (IN by) (NP (TAG PATIENT-1))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 103_Colmore_Row</entity>
@@ -1132,6 +1186,7 @@
 				<otriple>Addis_Ababa | country | Ethiopia</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
@@ -1142,9 +1197,10 @@
 				<references/>
 				<text>The leader of Ethiopia is Hailemariam Desalegn and Addis Ababa City Hall is located in Addis Ababa located in Ethiopia.</text>
 				<template>The leader of BRIDGE-2 is PATIENT-1 and AGENT-1 is located in BRIDGE-1 located in BRIDGE-2 . </template>
-				<tree>(SENTENCES (S (NP (NP (DT The) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-2)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (SBAR (S (NP-COORDINATION (NNP Hailemariam) (NNP Desalegn) (CC and) (NNP Addis) (NNP Ababa) (NNP City) (NNP Hall)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG BRIDGE-1)) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-2))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-2)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (SBAR (S (NP-COORDINATION (NNP Hailemariam) (NNP Desalegn) (CC and) (NNP Addis) (NNP Ababa) (NNP City) (NNP Hall)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG BRIDGE-1)) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-2))))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
@@ -1155,7 +1211,7 @@
 				<references/>
 				<text>Addis Ababa City Hall is located in Addis Ababa, Ethiopia, which is led by Hailemariam Desalegn.</text>
 				<template>AGENT-1 is located in BRIDGE-1 ,  BRIDGE-2 ,  which is led by PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP-SUBJ (NP-OBJ (TAG BRIDGE-1)) (, ,) (NP (TAG BRIDGE-2)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=passive] (VB lead) (PP (IN by) (NP (TAG PATIENT-1)))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP-SUBJ (NP-OBJ (TAG BRIDGE-1)) (, ,) (NP (TAG BRIDGE-2)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB lead) (PP (IN by) (NP (TAG PATIENT-1)))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Addis_Ababa_City_Hall</entity>
@@ -1176,6 +1232,7 @@
 				<otriple>Amdavad_ni_Gufa | location | Gujarat</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Gujarat | leaderName | Anandiben_Patel</striple>
@@ -1186,9 +1243,10 @@
 				<references/>
 				<text>Anandiben Patel is the leader of Gujarat, the location of Amdavad ni Gufa in Ahmedabad.</text>
 				<template>PATIENT-1 is the leader of BRIDGE-1 ,  the location of AGENT-1 in PATIENT-2 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NN leader)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (, ,) (NP (NP (DT the) (NN location)) (PP (IN of) (NP (NNP Amdavad) (NNS ni) (NNP Gufa) (IN in) (NNP (TAG PATIENT-2))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN leader)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (, ,) (NP (NP (DT[form=defined] the) (NN location)) (PP (IN of) (NP (NNP Amdavad) (NNS ni) (NNP Gufa) (IN in) (NNP (TAG PATIENT-2))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
@@ -1201,9 +1259,10 @@
 				<references/>
 				<text>Amdavad ni Gufa is located in Ahmedebad, Gujarat. The leader of Gujurat was Anandiben Patel.</text>
 				<template>AGENT-1 is located in PATIENT-2 ,  BRIDGE-1 .  The leader of BRIDGE-1 was PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG BRIDGE-1)))))) (. .))  (S (NP-SUBJ (NP (DT The) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG BRIDGE-1)))))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
@@ -1216,7 +1275,7 @@
 				<references/>
 				<text>Amdavad ni Gufa is located in Ahmedabad, Gujarat. The leader of Gujarat is Anandiben Patel.</text>
 				<template>AGENT-1 is located in PATIENT-2 ,  BRIDGE-1 .  The leader of BRIDGE-1 is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG BRIDGE-1)))))) (. .))  (S (NP-SUBJ (NP (DT The) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG BRIDGE-1)))))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
@@ -1237,6 +1296,7 @@
 				<otriple>Marriott_International | keyPerson | Bill_Marriott</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Marriott_International | keyPerson | Bill_Marriott</striple>
@@ -1247,9 +1307,10 @@
 				<references/>
 				<text>Bill Marriott is one of the key people at the Marriott International based in Bethesda, Maryland and which is a tenant of AC Hotel Bella Sky Copenhagen.</text>
 				<template>PATIENT-2 is one of the key people at BRIDGE-1 based in PATIENT-1 and which is a tenant of AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (CD one)) (PP (IN of) (NP (NP (DT the) (JJ key) (NNS people)) (PP (IN at) (NP (TAG BRIDGE-1))))) (UCP-COORDINATION (PP (VBN based) (PP (IN in) (NP (TAG PATIENT-1)))) (CC and) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT a) (NN tenant)) (PP (IN of) (NP (TAG AGENT-1)))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (CD one)) (PP (IN of) (NP (NP (DT[form=defined] the) (JJ key) (NNS people)) (PP (IN at) (NP (TAG BRIDGE-1))))) (UCP-COORDINATION (PP (VBN based) (PP (IN in) (NP (TAG PATIENT-1)))) (CC and) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN tenant)) (PP (IN of) (NP (TAG AGENT-1)))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Marriott_International | keyPerson | Bill_Marriott</striple>
@@ -1260,7 +1321,7 @@
 				<references/>
 				<text>Marriott International, where Bill Marriott is one of the key people, is located in Bethesda Maryland and is the tenant of AC Hotel Bella Sky Copenhagen.</text>
 				<template>BRIDGE-1 ,  where PATIENT-2 is one of the key people ,  is located in PATIENT-1 and is the tenant of AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHADVP (WRB where)) (S (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (CD one)) (PP (IN of) (NP (DT the) (JJ key) (NNS people))))))) (, ,)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1))))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NN tenant)) (PP (IN of) (NP (TAG AGENT-1)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (CD one)) (PP (IN of) (NP (DT[form=defined] the) (JJ key) (NNS people))))))) (, ,)) (VP-COORDINATION (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG PATIENT-1))))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN tenant)) (PP (IN of) (NP (TAG AGENT-1)))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>

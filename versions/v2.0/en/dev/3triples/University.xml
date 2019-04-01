@@ -13,6 +13,7 @@
 				<mtriple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
@@ -25,9 +26,10 @@
 				<references/>
 				<text>The Accademia di Architettura di Mendrisio is in Switzerland. Its dean is Mario Botta and it has 600 students.</text>
 				<template>AGENT-1 is in PATIENT-1 . AGENT-1 dean is PATIENT-2 and AGENT-1 has PATIENT-3 students .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (PP (IN in) (NP (TAG PATIENT-1)))) (. .))  (S-COORDINATION (S (NP (PRP$ (TAG AGENT-1)) (NN dean)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2)))) (CC and) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (CD (TAG PATIENT-3)) (NNS students)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Accademia)) (NP (FW di) (FW Architettura) (FW di) (FW Mendrisio))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (PP (IN in) (NP (TAG PATIENT-1)))) (. .))  (S-COORDINATION (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (NN dean)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2)))) (CC and) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (CD (TAG PATIENT-3)) (NNS students)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
@@ -38,7 +40,7 @@
 				<references/>
 				<text>The Accademia di Architettura di Mendrisio of Switzerland has 600 students and the dean is called Mario Botta.</text>
 				<template>AGENT-1 of PATIENT-1 has PATIENT-3 students and the dean is called PATIENT-2 .</template>
-				<tree>(SENTENCES (S-COORDINATION (S (NP-SUBJ (NP (DT The) (NNP Accademia)) (NP (FW di) (FW Architettura) (FW di)) (NP (NP (NN Mendrisio)) (PP (IN of) (NP (TAG PATIENT-1))))) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (CD (TAG PATIENT-3)) (NNS students)))) (CC and) (S (NP-OBJ (DT the) (NN dean)) (VP[aspect=simple, tense=present, voice=passive] (VB call) (NP (TAG PATIENT-2)))) (. .)))</tree>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Accademia)) (NP (FW di) (FW Architettura) (FW di)) (NP (NP (NN Mendrisio)) (PP (IN of) (NP (TAG PATIENT-1))))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP (CD (TAG PATIENT-3)) (NNS students)))) (CC and) (S (NP-OBJ (DT[form=defined] the) (NN dean)) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB call) (NP (TAG PATIENT-2)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
@@ -59,6 +61,7 @@
 				<mtriple>Acharya_Institute_of_Technology | country | &quot;India&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
@@ -69,9 +72,10 @@
 				<references/>
 				<text>The Acharya Institute of Technology is located in Bangalore, India and its motto is: &quot;Nurturing Excellence&quot;.</text>
 				<template>AGENT-1 is located in PATIENT-1 , PATIENT-3 and AGENT-1 motto is : `` PATIENT-2 '' .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VBZ is) (ADJP (JJ located)) (PP (IN in) (NP-COORDINATION (NP (NNP (TAG PATIENT-1)) (, ,) (NNP (TAG PATIENT-3))) (CC and) (NP (NP (PRP$ (TAG AGENT-1)) (NN motto)) (VP[aspect=simple, tense=present, voice=active] (VB be))) (: :))) (VB) (S (VP[aspect=progressive, tense=present, voice=active] (VB nurture) (NP-OBJ (NN Excellence) ('' ''))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NNP Technology)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VBZ is) (ADJP (JJ located)) (PP (IN in) (NP-COORDINATION (NP (NNP (TAG PATIENT-1)) (, ,) (NNP (TAG PATIENT-3))) (CC and) (NP (NP (PRP$ (TAG AGENT-1)) (NN motto)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be))) (: :))) (VB) (S (VP[aspect=progressive,tense=present,voice=active,person=null,number=null] (VB nurture) (NP-OBJ (NN Excellence) ('' ''))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
@@ -82,9 +86,10 @@
 				<references/>
 				<text>The Acharya Institute of Technology in Bangalore, India has the motto &quot;Nurturing Excellence&quot;.</text>
 				<template>AGENT-1 in PATIENT-1 , PATIENT-3 has the motto `` PATIENT-2 '' .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (DT The) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NP (NNP Technology)) (PP (IN in) (NP (NNP (TAG PATIENT-1)) (, ,) (NNP (TAG PATIENT-3))))))) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (DT the) (NN motto)) ('' '') (VP[aspect=simple, tense=present, voice=active] (TAG PATIENT-2)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NP (NNP Technology)) (PP (IN in) (NP (NNP (TAG PATIENT-1)) (, ,) (NNP (TAG PATIENT-3))))))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (DT[form=defined] the) (NN motto)) ('' '') (VP[aspect=simple,tense=present,voice=active,person=null,number=null] (TAG PATIENT-2)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
@@ -95,7 +100,7 @@
 				<references/>
 				<text>Acharya Institute of Technology is in Bangalore, India and its motto is&quot;Nurturing Excellence&quot;.</text>
 				<template>AGENT-1 is in PATIENT-1 , PATIENT-3 and AGENT-1 motto is `` PATIENT-2 '' .</template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VBZ is) (SBAR (IN in) (S (NP-COORDINATION (NP (TAG PATIENT-1)) (, ,) (NP (TAG PATIENT-3)) (CC and) (NP-SUBJ (PRP$ (TAG AGENT-1)) (NN motto))) (VP[aspect=simple, tense=present, voice=active] (VB be)))) (VB) (S (VP[aspect=progressive, tense=present, voice=active] (VB nurture) (NP-OBJ (NN Excellence) ('' ''))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VBZ is) (SBAR (IN in) (S (NP-COORDINATION (NP (TAG PATIENT-1)) (, ,) (NP (TAG PATIENT-3)) (CC and) (NP (PRP$ (TAG AGENT-1)) (NN motto))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be)))) (VB) (S (VP[aspect=progressive,tense=present,voice=active,person=null,number=null] (VB nurture) (NP-OBJ (NN Excellence) ('' ''))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
@@ -116,6 +121,7 @@
 				<mtriple>Acharya_Institute_of_Technology | country | &quot;India&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
@@ -126,9 +132,10 @@
 				<references/>
 				<text>B.M. Reddy is the president of the Acharya Institute of Technology, which is located in Bangalore, India.</text>
 				<template>PATIENT-1 is the president of AGENT-1 , which is located in PATIENT-2 , PATIENT-3 .</template>
-				<tree>(SENTENCES (S (NP (NNP B.M.) (NNP Reddy)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (NN president)) (PP (IN of) (NP (NP (DT the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NNP Technology))) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG PATIENT-3)))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NNP B.M.) (NNP Reddy)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN president)) (PP (IN of) (NP (NP (DT[form=defined] the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NNP Technology))) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG PATIENT-3)))))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
@@ -141,9 +148,10 @@
 				<references/>
 				<text>The Acharya Institute of Technology is in Bangalore, India. Its president is B.M. Reddy.</text>
 				<template>AGENT-1 is in PATIENT-2 , PATIENT-3 . AGENT-1 president is PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG PATIENT-3))))) (. .))  (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (NN president)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NNP B.M.) (NNP Reddy))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NNP Technology)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (PP (IN in) (NP (NNP (TAG PATIENT-2)) (, ,) (NNP (TAG PATIENT-3))))) (. .))  (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (NN president)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NNP B.M.) (NNP Reddy))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
@@ -154,7 +162,7 @@
 				<references/>
 				<text>The Acharya Institute of Technology (Bangalore, India) has B. M. Reddy as its president.</text>
 				<template>AGENT-1 ( PATIENT-2 , PATIENT-3 ) has PATIENT-1 as AGENT-1 president .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (PRN (-LRB- -LRB-) (NP (TAG PATIENT-2)) (, ,) (NP (TAG PATIENT-3)) (-RRB- -RRB-))) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (TAG PATIENT-1)) (PP (IN as) (NP (PRP$ (TAG AGENT-1)) (NN president))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (NP (DT[form=defined] the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NNP Technology)))) (PRN (-LRB- -LRB-) (NP (TAG PATIENT-2)) (, ,) (NP (TAG PATIENT-3)) (-RRB- -RRB-))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (TAG PATIENT-1)) (PP (IN as) (NP (PRP$ (TAG AGENT-1)) (NN president))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
@@ -175,6 +183,7 @@
 				<mtriple>Tennis | sportsGoverningBody | International_Tennis_Federation</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
@@ -187,9 +196,10 @@
 				<references/>
 				<text>The Acharya Insitute of Technology offers tennis and it was established in 2000. The tennis governing body is the International Tennis Federation.</text>
 				<template>AGENT-1 offers BRIDGE-1 and AGENT-1 was established in PATIENT-1 . BRIDGE-1 governing body is PATIENT-2 .</template>
-				<tree>(SENTENCES (S-COORDINATION (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB offer) (NP (TAG BRIDGE-1)))) (CC and) (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP-SUBJ (TAG PATIENT-1))))) (. .))  (S (NP-SUBJ (DT The) (NN (TAG BRIDGE-1)) (VBG governing) (NN body)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Acharya) (NNP Insitute)) (PP (IN of) (NP (NNP Technology)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB offer) (NP (TAG BRIDGE-1)))) (CC and) (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB establish) (PP (IN in) (NP-SUBJ (TAG PATIENT-1))))) (. .))  (S (NP-SUBJ (DT[form=defined] the) (NN (TAG BRIDGE-1)) (VBG governing) (NN body)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
@@ -200,7 +210,7 @@
 				<references/>
 				<text>The International Tennis Federation is the governing body for the sport which is offered at the Acharya Institute of Technology which was established in 2000.</text>
 				<template>PATIENT-2 is the governing body for BRIDGE-1 which is offered at AGENT-1 which was established in PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP-SUBJ (NP (DT the) (VBG governing) (NN body)) (PP (IN for) (NP (TAG BRIDGE-1))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=passive] (VB offer) (PP (IN at) (NP-OBJ (NP (DT the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NNP Technology))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP (TAG PATIENT-1))))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (DT[form=defined] the) (NNP International) (NN Tennis) (NNP Federation)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-SUBJ (NP (DT[form=defined] the) (VBG governing) (NN body)) (PP (IN for) (NP (TAG BRIDGE-1))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB offer) (PP (IN at) (NP-OBJ (NP (DT[form=defined] the) (NNP Acharya) (NNP Institute)) (PP (IN of) (NP (NNP Technology))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB establish) (PP (IN in) (NP (TAG PATIENT-1))))))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
@@ -221,6 +231,7 @@
 				<mtriple>India | river | Ganges</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>AWH_Engineering_College | country | India</striple>
@@ -235,9 +246,10 @@
 				<references/>
 				<text>AWH Engineering College is in India. Mumbai is the largest city in India. The river Ganges runs through India.</text>
 				<template>AGENT-1 is in BRIDGE-1 . PATIENT-1 is the largest city in BRIDGE-1 . PATIENT-2 runs through BRIDGE-1 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (PP (IN in) (NP (TAG BRIDGE-1)))) (. .))  (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (JJS largest) (NN city)) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .))  (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB run) (PP (IN through) (NP (TAG BRIDGE-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (PP (IN in) (NP (TAG BRIDGE-1)))) (. .))  (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (JJS largest) (NN city)) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .))  (S (NP-SUBJ (DT[form=defined] the) (NN river) (NNP Ganges)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB run) (PP (IN through) (NP (TAG BRIDGE-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>AWH_Engineering_College | country | India</striple>
@@ -250,7 +262,7 @@
 				<references/>
 				<text>AWH Engineering College is located in the country of India, whose capital city is Mumbai. One of the rivers in India is called the Ganges.</text>
 				<template>AGENT-1 is located in the country of BRIDGE-1 , whose capital city is PATIENT-1 . One of the rivers in BRIDGE-1 is called PATIENT-2 .</template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP-SUBJ (NP (DT the) (NN country)) (PP (IN of) (NP (TAG BRIDGE-1))) (, ,) (SBAR (WHNP (WP$ whose) (NN capital) (NN city)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))))))))) (. .))  (S (NP-OBJ (NP (CD One)) (PP (IN of) (NP (NP (DT the) (NNS rivers)) (PP (IN in) (NP (TAG BRIDGE-1)))))) (VP[aspect=simple, tense=present, voice=passive] (VB call) (NP (TAG PATIENT-2))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (DT[form=defined] the) (NN country)) (PP (IN of) (NP (TAG BRIDGE-1))) (, ,) (SBAR (WHNP (WP$ whose) (NN capital) (NN city)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))))))))) (. .))  (S (NP-OBJ (NP (CD One)) (PP (IN of) (NP (NP (DT[form=defined] the) (NNS rivers)) (PP (IN in) (NP (TAG BRIDGE-1)))))) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB call) (NP (TAG PATIENT-2))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | AWH_Engineering_College</entity>
@@ -271,6 +283,7 @@
 				<mtriple>1_Decembrie_1918_University | country | Romania</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
@@ -283,9 +296,10 @@
 				<references/>
 				<text>The leader of Romania is Prime Minister Klaus Lohannis. The 1 Decembrie 1918 University is in Romania.</text>
 				<template>The leader of BRIDGE-1 is PATIENT-1 PATIENT-2 . AGENT-1 is in BRIDGE-1 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (DT The) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NNP (TAG PATIENT-1)) (NNP Minister) (NNP Klaus) (NNP Lohannis))) (. .))  (S (NP (DT The) (CD 1)) (NP-SUBJ (NNP Decembrie) (CD 1918) (NNP University)) (VP[aspect=simple, tense=present, voice=active] (VB be) (PP (IN in) (NP (TAG BRIDGE-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NN leader)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NNP (TAG PATIENT-1)) (NNP Minister) (NNP Klaus) (NNP Lohannis))) (. .))  (S (NP-SUBJ (DT[form=defined] the) (CD 1)) (NP (NNP Decembrie) (CD 1918) (NNP University)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (PP (IN in) (NP (TAG BRIDGE-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1"/>
 					<sentence ID="2"/>
@@ -293,9 +307,10 @@
 				<references/>
 				<text>The Prime Minister of Romania is Klaus Iohannis. The University of Romania was established on 1 Decembrie 1918.</text>
 				<template>PATIENT-1 is PATIENT-2 . AGENT-1 was established on 1 Decembrie 1918 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN on) (NP (CD 1))) (NP-TMP (NNP Decembrie) (CD 1918))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Prime) (NNP Minister)) (PP (IN of) (NP (NNP Romania)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))) (. .))  (S (NP-OBJ (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP (NNP Romania)))) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB establish) (PP (IN on) (NP (CD 1))) (NP-TMP (NNP Decembrie) (CD 1918))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>1_Decembrie_1918_University | country | Romania</striple>
@@ -308,7 +323,7 @@
 				<references/>
 				<text>1 Decembrie 1918 University is located in Romania. The country's Prime Minister is Klaus Johannis.</text>
 				<template>AGENT-1 is located in BRIDGE-1 . BRIDGE-1 PATIENT-1 is PATIENT-2 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .))  (S (NP-SUBJ (NP (DT (TAG BRIDGE-1)) (NN country) (POS 's)) (NNP Prime) (NNP Minister)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NN country) (POS 's)) (NNP Prime) (NNP Minister)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
@@ -329,6 +344,7 @@
 				<mtriple>1_Decembrie_1918_University | country | Romania</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>1_Decembrie_1918_University | country | Romania</striple>
@@ -343,9 +359,10 @@
 				<references/>
 				<text>1 Decembrie 1918 University is located in Romania. Its Latin name is &quot;Universitas Apulensis&quot;. The patron saint of Romania is Andrew the Apostle.</text>
 				<template>AGENT-1 is located in BRIDGE-1 . AGENT-1 Latin name is `` PATIENT-2 '' . The patron saint of BRIDGE-1 is PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .))  (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (JJ Latin) (NN name)) (VP[aspect=simple, tense=present, voice=active] (TAG PATIENT-2)) ('' '') (. .))  (S (NP-SUBJ (NP (DT The) (NN patron) (NN saint)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .))  (S (NP-SUBJ (PRP$ (TAG AGENT-1)) (JJ Latin) (NN name)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (TAG PATIENT-2)) ('' '') (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NN patron) (NN saint)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</striple>
@@ -358,9 +375,10 @@
 				<references/>
 				<text>Universitas Apulensis is the latin name of the 1 Decembrie 1918 University in Romania. The patron saint of the country is Andrew the Apostle.</text>
 				<template>PATIENT-2 is the latin name of AGENT-1 in BRIDGE-1 . The patron saint of BRIDGE-1 is PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NN latin) (NN name)) (PP (IN of) (NP (DT the) (CD 1) (NNP Decembrie) (CD 1918) (NNP University) (IN in) (NNP (TAG BRIDGE-1)))))) (. .))  (S (NP-SUBJ (NP (DT The) (NN patron) (NN saint)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN latin) (NN name)) (PP (IN of) (NP (DT[form=defined] the) (CD 1) (NNP Decembrie) (CD 1918) (NNP University) (IN in) (NNP (TAG BRIDGE-1)))))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NN patron) (NN saint)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</striple>
@@ -373,7 +391,7 @@
 				<references/>
 				<text>The 1 Decembrie 1918 University has the Latin name, Universitas Apulensis. It is situated in Romania, which has the patron Saint Andrew the Apostle.</text>
 				<template>AGENT-1 has the Latin name , PATIENT-2 . AGENT-1 is situated in BRIDGE-1 , which has PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP (DT The) (CD 1)) (NP-SUBJ (NNP Decembrie) (CD 1918) (NNP University)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (DT the) (JJ Latin) (NN name)) (, ,) (NP (TAG PATIENT-2)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (VBN situated) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB have) (NP (TAG PATIENT-1))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (DT[form=defined] the) (CD 1)) (NP (NNP Decembrie) (CD 1918) (NNP University)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (DT[form=defined] the) (JJ Latin) (NN name)) (, ,) (NP (TAG PATIENT-2)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (VBN situated) (PP (IN in) (NP (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP (TAG PATIENT-1))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
@@ -394,6 +412,7 @@
 				<mtriple>School of Business and Social Sciences at the Aarhus University | established | 1928</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
@@ -407,9 +426,10 @@
 				<references/>
 				<text>The School of Business and Social Sciences at the Aarhus University was established in 1928. It has 737 academic staff and 16,000 students.</text>
 				<template>AGENT-1 was established in PATIENT-3 . AGENT-1 has PATIENT-1 academic staff and PATIENT-2 students. .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-COORDINATION (NP (CD (TAG PATIENT-1)) (JJ academic) (NN staff)) (CC and) (NP-OBJ (CD (TAG PATIENT-2)) (NNS students)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT[form=defined] the) (NNP School)) (PP (IN of) (NP-COORDINATION (NNP Business) (CC and) (NNP Social) (NNPS Sciences))) (PP (IN at) (NP (DT[form=defined] the) (NNP Aarhus) (NNP University)))) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB establish) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-COORDINATION (NP (CD (TAG PATIENT-1)) (JJ academic) (NN staff)) (CC and) (NP-OBJ (CD (TAG PATIENT-2)) (NNS students)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
@@ -422,9 +442,10 @@
 				<references/>
 				<text>The School of Business and Social Sciences at Aarhus University was established in 1928. It has 16000 students and an academic staff of 737.</text>
 				<template>AGENT-1 was established in PATIENT-3 . AGENT-1 has PATIENT-2 students and an academic staff of PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-COORDINATION (NP (CD (TAG PATIENT-2)) (NNS students)) (CC and) (NP-OBJ (NP (DT an) (JJ academic) (NN staff)) (PP (IN of) (NP (TAG PATIENT-1)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT[form=defined] the) (NNP School)) (PP (IN of) (NP-COORDINATION (NNP Business) (CC and) (NNP Social) (NNPS Sciences))) (PP (IN at) (NP (NNP Aarhus) (NNP University)))) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB establish) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-COORDINATION (NP (CD (TAG PATIENT-2)) (NNS students)) (CC and) (NP-OBJ (NP (DT[form=undefined] a) (JJ academic) (NN staff)) (PP (IN of) (NP (TAG PATIENT-1)))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
@@ -435,7 +456,7 @@
 				<references/>
 				<text>The School of Business and Social Sciences at the Aarhus University was established in 1928 and currently has a staff of 737 and a student population of 16000.</text>
 				<template>AGENT-1 was established in PATIENT-3 and currently has a staff of PATIENT-1 and a student population of PATIENT-2 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB establish) (PP (IN in) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (ADVP (RB currently)) (VB have) (NP-COORDINATION (NP (NP (DT a) (NN staff)) (PP (IN of) (NP (TAG PATIENT-1)))) (CC and) (NP (NP (DT a) (NN student) (NN population)) (PP (IN of) (NP (TAG PATIENT-2))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT[form=defined] the) (NNP School)) (PP (IN of) (NP-COORDINATION (NNP Business) (CC and) (NNP Social) (NNPS Sciences))) (PP (IN at) (NP (DT[form=defined] the) (NNP Aarhus) (NNP University)))) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB establish) (PP (IN in) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (ADVP (RB currently)) (VB have) (NP-COORDINATION (NP (NP (DT[form=undefined] a) (NN staff)) (PP (IN of) (NP (TAG PATIENT-1)))) (CC and) (NP (NP (DT[form=undefined] a) (NN student) (NN population)) (PP (IN of) (NP (TAG PATIENT-2))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>

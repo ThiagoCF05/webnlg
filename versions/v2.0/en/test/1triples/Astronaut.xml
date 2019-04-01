@@ -9,6 +9,7 @@
 				<otriple>Alan_Bean | nationality | United_States</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Bean | nationality | United_States</striple>
@@ -17,9 +18,10 @@
 				<references/>
 				<text>The nationality of Alan Bean is United States.</text>
 				<template>The nationality of AGENT-1 is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (DT The) (NN nationality)) (PP (IN of) (NP (TAG AGENT-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NN nationality)) (PP (IN of) (NP (TAG AGENT-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Bean | nationality | United_States</striple>
@@ -28,9 +30,10 @@
 				<references/>
 				<text>Alan Bean's nationality is the United States.</text>
 				<template>AGENT-1 nationality is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (NN nationality)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (NN nationality)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Bean | nationality | United_States</striple>
@@ -39,9 +42,10 @@
 				<references/>
 				<text>Alan Bean is American.</text>
 				<template>AGENT-1 is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id4">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Bean | nationality | United_States</striple>
@@ -50,9 +54,10 @@
 				<references/>
 				<text>Alan Bean was American.</text>
 				<template>AGENT-1 was PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (ADJP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (ADJP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id5">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Bean | nationality | United_States</striple>
@@ -61,7 +66,7 @@
 				<references/>
 				<text>Alan Bean is a US national.</text>
 				<template>AGENT-1 is a PATIENT-1 national . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT a) (NNP (TAG PATIENT-1))) (JJ national))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NNP (TAG PATIENT-1))) (JJ national))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Alan_Bean</entity>
@@ -76,6 +81,7 @@
 				<otriple>Apollo_8 | backup pilot | Buzz_Aldrin</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
@@ -84,9 +90,10 @@
 				<references/>
 				<text>Buzz Aldrin was a backup pilot on the Apollo 8 mission.</text>
 				<template>PATIENT-1 was a backup pilot on AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN backup) (NN pilot)) (PP (IN on) (NP (TAG AGENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN backup) (NN pilot)) (PP (IN on) (NP (TAG AGENT-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
@@ -95,7 +102,7 @@
 				<references/>
 				<text>Apollo 8's backup pilot was Buzz Aldrin.</text>
 				<template>AGENT-1 backup pilot was PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (NN backup) (NN pilot)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (NN backup) (NN pilot)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Apollo_8</entity>
@@ -110,6 +117,7 @@
 				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
@@ -118,9 +126,10 @@
 				<references/>
 				<text>Buzz Aldrin graduated from Massachusetts Institute of Technology with a Sc.D in 1963.</text>
 				<template>AGENT-1 graduated from PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN from) (NP (NP (NNP Massachusetts) (NNP Institute)) (PP (IN of) (NP (NNP Technology))))) (PP (IN with) (NP (NP (DT a) (NN Sc.D)) (PP (IN in) (NP (CD 1963)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP (NP (NNP Massachusetts) (NNP Institute)) (PP (IN of) (NP (NNP Technology))))) (PP (IN with) (NP (NP (DT[form=undefined] a) (NN Sc.D)) (PP (IN in) (NP (CD 1963)))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
@@ -129,9 +138,10 @@
 				<references/>
 				<text>Buzz Aldrin graduated in 1963 from MIT with a Sc.D.</text>
 				<template>AGENT-1 graduated in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN in) (NP (CD 1963))) (PP (IN from) (NP (NNP MIT))) (PP (IN with) (NP (DT a) (NN Sc.D)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN in) (NP (CD 1963))) (PP (IN from) (NP (NNP MIT))) (PP (IN with) (NP (DT[form=undefined] a) (NN Sc.D)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
@@ -140,9 +150,10 @@
 				<references/>
 				<text>Buzz Aldrin graduated from MIT with a Sc. D in 1963.</text>
 				<template>AGENT-1 graduated from PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN from) (NP (NNP MIT))) (PP (IN with) (NP (DT a) (NN Sc)))) (. .))  (NP (NP (NN D)) (PP (IN in) (NP (CD 1963))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP (NNP MIT))) (PP (IN with) (NP (DT[form=undefined] a) (NN Sc)))) (. .))  (NP (NP (NN D)) (PP (IN in) (NP (CD 1963))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id4">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
@@ -151,9 +162,10 @@
 				<references/>
 				<text>Buzz Aldrin graduated from Massachusetts Institute of Technology, Sc.D. 1963.</text>
 				<template>AGENT-1 graduated from PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN from) (NP (TAG PATIENT-1)))) (. .))  (FRAG (NP (CD 1963)) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP (TAG PATIENT-1)))) (. .))  (FRAG (NP (CD 1963)) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id5">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
@@ -162,7 +174,7 @@
 				<references/>
 				<text>Buzz Aldrin graduated from Massachusetts Institute of Technology in 1963 with a doctorate in Science.</text>
 				<template>AGENT-1 graduated from PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN from) (NP (NP (NNP Massachusetts) (NNP Institute)) (PP (IN of) (NP (NNP Technology))))) (PP (IN in) (NP (CD 1963))) (PP (IN with) (NP (NP (DT a) (NN doctorate)) (PP (IN in) (NP (NNP Science)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP (NP (NNP Massachusetts) (NNP Institute)) (PP (IN of) (NP (NNP Technology))))) (PP (IN in) (NP (CD 1963))) (PP (IN with) (NP (NP (DT[form=undefined] a) (NN doctorate)) (PP (IN in) (NP (NNP Science)))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Buzz_Aldrin</entity>
@@ -177,6 +189,7 @@
 				<otriple>Buzz_Aldrin | was a crew member of | Apollo_11</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
@@ -185,9 +198,10 @@
 				<references/>
 				<text>Buzz Aldrin was a crew member of Apollo 11.</text>
 				<template>AGENT-1 was a crew member of PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
@@ -196,9 +210,10 @@
 				<references/>
 				<text>Buzz Aldrin was a member of the Apollo 11 crew.</text>
 				<template>AGENT-1 was a member of the PATIENT-1 crew . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN member)) (PP (IN of) (NP (DT the) (NNP Apollo) (CD 11) (NN crew))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN member)) (PP (IN of) (NP (DT[form=defined] the) (NNP Apollo) (CD 11) (NN crew))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
@@ -207,7 +222,7 @@
 				<references/>
 				<text>Buzz Aldrin was a crew member on Apollo 11.</text>
 				<template>AGENT-1 was a crew member on PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN on) (NP (TAG PATIENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN crew) (NN member)) (PP (IN on) (NP (TAG PATIENT-1))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Buzz_Aldrin</entity>
@@ -222,6 +237,7 @@
 				<otriple>Buzz_Aldrin | was selected by NASA | 1963</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
@@ -230,9 +246,10 @@
 				<references/>
 				<text>NASA selected Buzz Aldrin in 1963.</text>
 				<template>NASA selected AGENT-1 in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NNP NASA)) (VP[aspect=simple, tense=past, voice=active] (VB select) (NP-OBJ (NP (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NNP NASA)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB select) (NP-OBJ (NP (TAG AGENT-1)) (PP (IN in) (NP (TAG PATIENT-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
@@ -241,9 +258,10 @@
 				<references/>
 				<text>Buzz Aldrin was selected by NASA in 1963.</text>
 				<template>AGENT-1 was selected by NASA in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB select) (PP (IN by) (NP (NNP NASA))) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB select) (PP (IN by) (NP (NNP NASA))) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
@@ -252,9 +270,10 @@
 				<references/>
 				<text>Buzz Aldrin was selected to work for NASA in 1963.</text>
 				<template>AGENT-1 was selected to work for NASA in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB select) (S (VP[aspect=simple, tense=present, voice=active] (VB work) (PP (IN for) (NP (NNP NASA))) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB select) (S (VP[aspect=simple,tense=present,voice=active,person=null,number=null] (VB work) (PP (IN for) (NP (NNP NASA))) (PP (IN in) (NP (TAG PATIENT-1)))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id4">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
@@ -263,7 +282,7 @@
 				<references/>
 				<text>Buzz Aldrin was hired by NASA in 1963.</text>
 				<template>AGENT-1 was hired by NASA in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB hire) (PP (IN by) (NP (NNP NASA))) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB hire) (PP (IN by) (NP (NNP NASA))) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Buzz_Aldrin</entity>
@@ -278,6 +297,7 @@
 				<otriple>California | gemstone | Benitoite</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>California | gemstone | Benitoite</striple>
@@ -286,9 +306,10 @@
 				<references/>
 				<text>The gemstone of California is Benitoite.</text>
 				<template>The gemstone of AGENT-1 is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (DT The) (NN gemstone)) (PP (IN of) (NP (TAG AGENT-1)))) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NN gemstone)) (PP (IN of) (NP (TAG AGENT-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>California | gemstone | Benitoite</striple>
@@ -297,9 +318,10 @@
 				<references/>
 				<text>California has a gemstone called Benitoite.</text>
 				<template>AGENT-1 has a gemstone called PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB have) (NP-OBJ (NP (DT a) (NN gemstone)) (VP[aspect=simple, tense=past, voice=active] (VB call) (NP (TAG PATIENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (DT[form=undefined] a) (NN gemstone)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB call) (NP (TAG PATIENT-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>California | gemstone | Benitoite</striple>
@@ -308,9 +330,10 @@
 				<references/>
 				<text>Benitoite is a gemstone from California.</text>
 				<template>PATIENT-1 is a gemstone from AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT a) (NN gemstone)) (PP (IN from) (NP (TAG AGENT-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN gemstone)) (PP (IN from) (NP (TAG AGENT-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id4">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>California | gemstone | Benitoite</striple>
@@ -319,7 +342,7 @@
 				<references/>
 				<text>Benitoite is a gemstone found in California.</text>
 				<template>PATIENT-1 is a gemstone found in AGENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT a) (NN gemstone)) (VP[aspect=simple, tense=past, voice=active] (VB find) (PP (IN in) (NP (TAG AGENT-1)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN gemstone)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB find) (PP (IN in) (NP (TAG AGENT-1)))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | California</entity>
@@ -334,6 +357,7 @@
 				<otriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
@@ -342,9 +366,10 @@
 				<references/>
 				<text>Elliot See died on 28 February, 1966.</text>
 				<template>AGENT-1 died on PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
@@ -353,9 +378,10 @@
 				<references/>
 				<text>Elliot See died on the 28th of February 1966.</text>
 				<template>AGENT-1 died on PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
@@ -364,9 +390,10 @@
 				<references/>
 				<text>Elliot See died on February 28, 1966.</text>
 				<template>AGENT-1 died on PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id4">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
@@ -375,9 +402,10 @@
 				<references/>
 				<text>Elliot See died in 1966-02-28.</text>
 				<template>AGENT-1 died in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id5">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
@@ -386,9 +414,10 @@
 				<references/>
 				<text>Elliot See lived until the 28th of February 1966.</text>
 				<template>AGENT-1 lived until PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB live) (PP (IN until) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB live) (PP (IN until) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id6">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
@@ -397,7 +426,7 @@
 				<references/>
 				<text>Elliot See died on February 28,1966.</text>
 				<template>AGENT-1 died on PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>
@@ -412,6 +441,7 @@
 				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathPlace | St._Louis</striple>
@@ -420,9 +450,10 @@
 				<references/>
 				<text>Elliot See died in St. Louis.</text>
 				<template>AGENT-1 died in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathPlace | St._Louis</striple>
@@ -431,7 +462,7 @@
 				<references/>
 				<text>Elliot See died in St Louis.</text>
 				<template>AGENT-1 died in PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>
@@ -446,6 +477,7 @@
 				<otriple>Elliot_See | status | &quot;Deceased&quot;</otriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
@@ -454,9 +486,10 @@
 				<references/>
 				<text>Elliot See is dead.</text>
 				<template>AGENT-1 is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
@@ -465,9 +498,10 @@
 				<references/>
 				<text>Elliot See has died.</text>
 				<template>AGENT-1 has PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=perfect, tense=present, voice=active] (VB die)) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] (VB die)) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
@@ -476,7 +510,7 @@
 				<references/>
 				<text>Elliot See is deceased.</text>
 				<template>AGENT-1 is PATIENT-1 . </template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (TAG PATIENT-1))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (TAG PATIENT-1))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>

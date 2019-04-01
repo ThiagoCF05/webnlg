@@ -17,6 +17,7 @@
 				<mtriple>Alan_Bean | birthPlace | Wheeler,_Texas</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Bean | nationality | United_States</striple>
@@ -31,9 +32,10 @@
 				<references/>
 				<text>Alan Bean was an American born in Wheeler, Texas. He served as a test pilot and became a crew member of Apollo 12, which was operated by NASA.</text>
 				<template>AGENT-1 was PATIENT-1 born in PATIENT-4 . AGENT-1 served as PATIENT-3 and became a crew member of BRIDGE-1 , which was operated by PATIENT-2 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-4)))))) (. .))  (S (NP (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB serve) (PP (IN as) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB become) (NP-SUBJ (NP-OBJ (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-1))) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=past, voice=passive] (VB operate) (PP (IN by) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (JJ American)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (TAG PATIENT-4)))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB serve) (PP (IN as) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB become) (NP-SUBJ (NP-OBJ (DT[form=undefined] a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-1))) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB operate) (PP (IN by) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Apollo_12 | operator | NASA</striple>
@@ -48,9 +50,10 @@
 				<references/>
 				<text>Apollo 12 was operated by NASA and its crew members included American national Alan Bean. He was born in Wheeler, Texas and served as a test pilot.</text>
 				<template>BRIDGE-1 was operated by PATIENT-2 and BRIDGE-1 crew members included PATIENT-1 national AGENT-1 . AGENT-1 was born in PATIENT-4 and served as PATIENT-3 .</template>
-				<tree>(SENTENCES (S-COORDINATION (S (NP-OBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=past, voice=passive] (VB operate) (PP (IN by) (NP (TAG PATIENT-2))))) (CC and) (S (NP-SUBJ (PRP$ (TAG BRIDGE-1)) (NN crew) (NNS members)) (VP[aspect=simple, tense=past, voice=active] (VB include) (NP (ADJP (TAG PATIENT-1)) (JJ national) (NNP Alan) (NNP Bean)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-4)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB serve) (PP (IN as) (NP-SUBJ (TAG PATIENT-3))))) (. .)))</tree>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-OBJ (TAG BRIDGE-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB operate) (PP (IN by) (NP (TAG PATIENT-2))))) (CC and) (S (NP-SUBJ (PRP$ (TAG BRIDGE-1)) (NN crew) (NNS members)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB include) (NP (ADJP (TAG PATIENT-1)) (JJ national) (NNP Alan) (NNP Bean)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-4)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB serve) (PP (IN as) (NP-SUBJ (TAG PATIENT-3))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Bean | nationality | United_States</striple>
@@ -65,7 +68,7 @@
 				<references/>
 				<text>Alan Bean, a US national, was born in Wheeler, Texas. He served as a test pilot before becoming part of the NASA operated Apollo 12 mission as a crew member.</text>
 				<template>AGENT-1 , PATIENT-1 , was born in PATIENT-4 . AGENT-1 served as PATIENT-3 before becoming part of PATIENT-2 operated BRIDGE-1 mission as PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (NP (TAG PATIENT-1)) (, ,)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-4)))) (. .))  (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB serve) (SBAR (IN as) (S (NP-SUBJ (NP (TAG PATIENT-3)) (PP (IN before) (S (VP[aspect=progressive, tense=present, voice=active] (VB become) (NP (NP (NN part)) (PP (IN of) (NP (TAG PATIENT-2)))))))) (VP[aspect=simple, tense=past, voice=active] (VB operate) (NP-OBJ (NP (NNP Apollo) (CD 12) (NN mission)) (PP (IN as) (NP (TAG PATIENT-1)))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (NP (TAG PATIENT-1)) (, ,)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-4)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB serve) (SBAR (IN as) (S (NP-SUBJ (NP (TAG PATIENT-3)) (PP (IN before) (S (VP[aspect=progressive,tense=present,voice=active,person=null,number=null] (VB become) (NP (NP (NN part)) (PP (IN of) (NP (TAG PATIENT-2)))))))) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB operate) (NP-OBJ (NP (NNP Apollo) (CD 12) (NN mission)) (PP (IN as) (NP (TAG PATIENT-1)))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Alan_Bean</entity>
@@ -92,6 +95,7 @@
 				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
@@ -106,9 +110,10 @@
 				<references/>
 				<text>Alan Shepard, born in New Hampshire on November 18, 1923, graduated from NWC in 1957 with a M.A. He died in California on July 21, 1998.</text>
 				<template>AGENT-1 , born in PATIENT-3 on PATIENT-5 , graduated from PATIENT-1 . AGENT-1 died in PATIENT-2 on PATIENT-4 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (NP (TAG PATIENT-3)) (PP (IN on) (NP (TAG PATIENT-5)))))) (, ,)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN from) (NP (NNP NWC))) (PP (IN in) (NP (CD 1957))) (PP (IN with) (NP (DT a) (NN M.A)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN on) (NP (TAG PATIENT-4)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (NP (TAG PATIENT-3)) (PP (IN on) (NP (TAG PATIENT-5)))))) (, ,)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP (NNP NWC))) (PP (IN in) (NP (CD 1957))) (PP (IN with) (NP (DT[form=undefined] a) (NN M.A)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-2))) (PP (IN on) (NP (TAG PATIENT-4)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
@@ -125,9 +130,10 @@
 				<references/>
 				<text>Alan Shepard was born in New Hampshire on the 18th of November, 1923. He graduated from NWC in 1957 with a M.A. On the 21st of July, 1998, he passed away in California.</text>
 				<template>AGENT-1 was born in PATIENT-3 on PATIENT-5 . AGENT-1 graduated from PATIENT-1 . On PATIENT-4 , AGENT-1 passed away in PATIENT-2 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (NP (TAG PATIENT-3)) (PP (IN on) (NP (TAG PATIENT-5)))))) (. .))  (S (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN from) (NP (NP (NNP NWC)) (PP (IN in) (NP (CD 1957))))) (PP (IN with) (NP (DT a) (NNP M.A.))) (PP (IN On) (NP (NP (DT the) (CD 21st)) (PP (IN of) (NP (NP (NNP July)) (, ,) (NP (CD 1998)))))))) (, ,) (NP-SUBJ (PRP he)) (VP[aspect=simple, tense=past, voice=active] (VB pass) (ADVP (RB away)) (PP (IN in) (NP (TAG PATIENT-2)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP-SUBJ (NP (TAG PATIENT-3)) (PP (IN on) (NP (TAG PATIENT-5)))))) (. .))  (S (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP (NP (NNP NWC)) (PP (IN in) (NP (CD 1957))))) (PP (IN with) (NP (DT[form=undefined] a) (NNP M.A.))) (PP (IN On) (NP (NP (DT[form=defined] the) (CD 21st)) (PP (IN of) (NP (NP (NNP July)) (, ,) (NP (CD 1998)))))))) (, ,) (NP-SUBJ (PRP he)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB pass) (ADVP (RB away)) (PP (IN in) (NP (TAG PATIENT-2)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
@@ -142,7 +148,7 @@
 				<references/>
 				<text>Alan Shepard was born on the 18th of November, 1923 in New Hampshire and passed away on the 21st of July, 1998 in California. He graduated with a M.A. from NWC in 1957.</text>
 				<template>AGENT-1 was born on PATIENT-5 in PATIENT-3 and passed away on PATIENT-4 in PATIENT-2 . AGENT-1 graduated PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN on) (NP (NP (DT the) (JJ 18th)) (PP (IN of) (NP (NP (NNP November)) (, ,) (NP (NP (CD 1923)) (PP (IN in) (NP (TAG PATIENT-3))))))))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB pass) (ADVP (RB away)) (PP (IN on) (NP-SUBJ (NP (DT the) (CD 21st)) (PP (IN of) (NP (NP (NNP July)) (, ,) (NP (NP (CD 1998)) (PP (IN in) (NP (TAG PATIENT-2)))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN with) (NP (DT a) (NNP M.A.))) (PP (IN from) (NP (NP (NNP NWC)) (PP (IN in) (NP (CD 1957)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN on) (NP (NP (DT[form=defined] the) (JJ 18th)) (PP (IN of) (NP (NP (NNP November)) (, ,) (NP (NP (CD 1923)) (PP (IN in) (NP (TAG PATIENT-3))))))))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB pass) (ADVP (RB away)) (PP (IN on) (NP-SUBJ (NP (DT[form=defined] the) (CD 21st)) (PP (IN of) (NP (NP (NNP July)) (, ,) (NP (NP (CD 1998)) (PP (IN in) (NP (TAG PATIENT-2)))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN with) (NP (DT[form=undefined] a) (NNP M.A.))) (PP (IN from) (NP (NP (NNP NWC)) (PP (IN in) (NP (CD 1957)))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Alan_Shepard</entity>
@@ -169,6 +175,7 @@
 				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
@@ -182,9 +189,10 @@
 				<references/>
 				<text>Alan Shepard, born in New Hampshire, has died in California. After graduating from NWC, MA in 1957 he served as a test pilot.</text>
 				<template>AGENT-1 , born in PATIENT-5 , has died in PATIENT-3 . After graduating from PATIENT-2 AGENT-1 served as PATIENT-4 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-5)))) (, ,)) (VP[aspect=perfect, tense=present, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (PP (IN After) (S (VP[aspect=progressive, tense=present, voice=active] (VB graduate) (PP (IN from) (NP (NP (NNP (TAG PATIENT-2)) (, ,) (NNP MA)) (PP (IN in) (NP (CD 1957)))))))) (NP-SUBJ (PRP he)) (VP[aspect=simple, tense=past, voice=active] (VB serve) (PP (IN as) (NP (TAG PATIENT-4)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (TAG PATIENT-5)))) (, ,)) (VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (PP (IN After) (S (VP[aspect=progressive,tense=present,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP (NP (NNP (TAG PATIENT-2)) (, ,) (NNP MA)) (PP (IN in) (NP (CD 1957)))))))) (NP-SUBJ (PRP he)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB serve) (PP (IN as) (NP (TAG PATIENT-4)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | deathPlace | California</striple>
@@ -198,9 +206,10 @@
 				<references/>
 				<text>Alan Shepard has died in California. He was born in New Hampshire and went to school at NWC, graduating with an MA in 1957, He served as a test pilot.</text>
 				<template>AGENT-1 has died in PATIENT-3 . AGENT-1 was born in PATIENT-5 and went to school at PATIENT-2, AGENT-1 served as PATIENT-4 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=perfect, tense=present, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-5)))) (CC and) (VP[aspect=simple, tense=present, voice=active] (VB graduate) (PP (IN with) (NP (NP (DT an) (NNP MA)) (PP (IN in) (NP (CD 1957)))))))) (, ,) (NP (PRP He)) (VP[aspect=simple, tense=past, voice=active] (VB serve) (PP (IN as) (NP-SUBJ (TAG PATIENT-4)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-5)))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=null,number=null] (VB graduate) (PP (IN with) (NP (NP (DT[form=undefined] a) (NNP MA)) (PP (IN in) (NP (CD 1957)))))))) (, ,) (NP-SUBJ (PRP He)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB serve) (PP (IN as) (NP (TAG PATIENT-4)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | deathPlace | California</striple>
@@ -216,7 +225,7 @@
 				<references/>
 				<text>Alan Shepard has died in California. He was born in New Hampshire and graduated from NWC MA in 1957. He served as a test pilot.</text>
 				<template>AGENT-1 has died in PATIENT-3 . AGENT-1 was born in PATIENT-5 and graduated from PATIENT-2. AGENT-1 served as PATIENT-4 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=perfect, tense=present, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-5)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN from) (NP-SUBJ (TAG PATIENT-2)))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB serve) (PP (IN as) (NP (TAG PATIENT-4)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (TAG PATIENT-5)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP-SUBJ (TAG PATIENT-2)))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB serve) (PP (IN as) (NP (TAG PATIENT-4)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Alan_Shepard</entity>
@@ -243,6 +252,7 @@
 				<mtriple>Apollo_14 | operator | NASA</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
@@ -254,9 +264,10 @@
 				<references/>
 				<text>The late Alan Shepard was born in New Hampshire, and chosen by NASA in 1959 a a crew member of Apollo 14.</text>
 				<template>The late AGENT-1 was born in PATIENT-3 , and chosen by PATIENT-4 in PATIENT-2 a a crew member of BRIDGE-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (DT The) (JJ late) (NNP Alan) (NNP Shepard)) (VP[aspect=simple, tense=past, voice=active] (VB be) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-3)))) (, ,) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB choose) (PP (IN by) (NP-SUBJ (NP (TAG PATIENT-4)) (PP (IN in) (NP (CD (TAG PATIENT-2)) (DT a))))) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-1))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (DT[form=defined] the) (JJ late) (NNP Alan) (NNP Shepard)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (TAG PATIENT-3)))) (, ,) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB choose) (PP (IN by) (NP-SUBJ (NP (TAG PATIENT-4)) (PP (IN in) (NP (CD (TAG PATIENT-2)) (DT[form=undefined] a))))) (NP (NP (DT[form=undefined] a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-1))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
@@ -270,9 +281,10 @@
 				<references/>
 				<text>The late Alan Shepard was born in New Hampshire. He was selected by NASA in 1959 and served as a crew member of NASA operated Apollo 14.</text>
 				<template>The late AGENT-1 was born in PATIENT-3 . AGENT-1 was selected by PATIENT-4 in PATIENT-2 and served as a crew member of PATIENT-4 operated BRIDGE-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (DT The) (JJ late) (NNP Alan) (NNP Shepard)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB select) (PP (IN by) (NP (TAG PATIENT-4))) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB serve) (SBAR (IN as) (S (NP-SUBJ (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-4)))) (VP[aspect=simple, tense=past, voice=active] (VB operate) (NP (TAG BRIDGE-1))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (DT[form=defined] the) (JJ late) (NNP Alan) (NNP Shepard)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB select) (PP (IN by) (NP (TAG PATIENT-4))) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB serve) (SBAR (IN as) (S (NP-SUBJ (NP (DT[form=undefined] a) (NN crew) (NN member)) (PP (IN of) (NP (TAG PATIENT-4)))) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB operate) (NP (TAG BRIDGE-1))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
@@ -285,7 +297,7 @@
 				<references/>
 				<text>Alan Shepard was originally from New Hampshire and joined NASA in 1959 where he became a member of the Apollo 14 crew. Mr Shepard passed away.</text>
 				<template>AGENT-1 was originally from PATIENT-3 and joined PATIENT-4 in PATIENT-2 where AGENT-1 became a member of BRIDGE-1 crew . AGENT-1 passed away .</template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB be) (ADVP (RB originally)) (PP (IN from) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB join) (NP-OBJ (TAG PATIENT-4)) (PP (IN in) (NP (TAG PATIENT-2))) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB become) (NP (NP (DT a) (NN member)) (PP (IN of) (NP (DT the) (NNP Apollo) (CD 14) (NN crew))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB pass) (ADVP (RB away))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (ADVP (RB originally)) (PP (IN from) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB join) (NP-OBJ (TAG PATIENT-4)) (PP (IN in) (NP (TAG PATIENT-2))) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB become) (NP (NP (DT[form=undefined] a) (NN member)) (PP (IN of) (NP (DT[form=defined] the) (NNP Apollo) (CD 14) (NN crew))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB pass) (ADVP (RB away))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Alan_Shepard</entity>
@@ -312,6 +324,7 @@
 				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
@@ -326,9 +339,10 @@
 				<references/>
 				<text>Alan Bean (born in Wheeler, Texas) was a crew member of Apollo 12 operated by NASA and was in space 100305 minutes. Apollo 12 was commanded by David Scott and Alfred Worden was a backup pilot.</text>
 				<template>AGENT-1 ( born in Wheeler , Texas ) was a crew member of BRIDGE-1 operated by PATIENT-2 and was in PATIENT-3 . BRIDGE-1 was commanded by PATIENT-4 and PATIENT-1 was a backup pilot .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (PRN (-LRB- -LRB-) (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (NNP Wheeler) (, ,) (NNP Texas)))) (-RRB- -RRB-))) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-1))) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB operate) (PP (IN by) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB be) (PP (IN in) (NP (NN space))) (NP-TMP (CD 100305) (NNS minutes)))))) (. .))  (S-COORDINATION (S (NP-OBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=past, voice=passive] (VB command) (PP (IN by) (NP (TAG PATIENT-4))))) (CC and) (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (DT a) (NN backup) (NN pilot)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (PRN (-LRB- -LRB-) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (NNP Wheeler) (, ,) (NNP Texas)))) (-RRB- -RRB-))) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN crew) (NN member)) (PP (IN of) (NP (TAG BRIDGE-1))) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB operate) (PP (IN by) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (PP (IN in) (NP (NN space))) (NP-TMP (CD 100305) (NNS minutes)))))) (. .))  (S-COORDINATION (S (NP-OBJ (TAG BRIDGE-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB command) (PP (IN by) (NP-SUBJ (TAG PATIENT-4))))) (CC and) (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (DT[form=undefined] a) (NN backup) (NN pilot)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
@@ -341,7 +355,7 @@
 				<references/>
 				<text>Alfred Worden was a backup pilot on the NASA operated Apollo 12 on which David Scott the commander and Alan Bean, who spent a total of 100305 minutes in space, was a crewman.</text>
 				<template>PATIENT-1 was a backup pilot on PATIENT-2 operated BRIDGE-1 on which PATIENT-4 the commander and AGENT-1 , who spent a total of PATIENT-3 in space , was a crewman .</template>
-				<tree>(SENTENCES (S (NP (TAG PATIENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP-SUBJ (NP (DT a) (NN backup) (NN pilot)) (PP (IN on) (NP (TAG PATIENT-2))) (SBAR (S (VP[aspect=simple, tense=past, voice=active] (VB operate) (NP-OBJ (NP (TAG BRIDGE-1)) (SBAR (WHPP (IN on) (WHNP (WDT which))) (S-COORDINATION (S (NP (TAG PATIENT-4)) (NP (DT the) (NN commander))) (CC and) (S (NP (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=active] (VB spend) (NP (NP (DT a) (NN total)) (PP (IN of) (NP (TAG PATIENT-3)))) (PP (IN in) (NP (NN space)))))) (, ,)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (DT a) (NN crewman)))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP-OBJ (NP (DT[form=undefined] a) (NN backup) (NN pilot)) (PP (IN on) (NP (TAG PATIENT-2))) (SBAR (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB operate) (NP (NP (TAG BRIDGE-1)) (SBAR (WHPP (IN on) (WHNP (WDT which))) (S-COORDINATION (S (NP-SUBJ (TAG PATIENT-4)) (NP (DT[form=defined] the) (NN commander))) (CC and) (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB spend) (NP (NP (DT[form=undefined] a) (NN total)) (PP (IN of) (NP (TAG PATIENT-3)))) (PP (IN in) (NP (NN space)))))) (, ,)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (DT[form=undefined] a) (NN crewman)))))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Alan_Bean</entity>
@@ -368,6 +382,7 @@
 				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
@@ -380,9 +395,10 @@
 				<references/>
 				<text>Alan Shepard (born November 18th, 1923, New Hampshire) was awarded the United States Navy Distinguished Service Medal which is higher than the department of commerce gold medal has died in California.</text>
 				<template>AGENT-1 ( born PATIENT-4 , PATIENT-3 ) was awarded BRIDGE-1 which is higher than PATIENT-1 has died in PATIENT-2 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (PRN (-LRB- -LRB-) (VP[aspect=simple, tense=past, voice=active] (VB bear) (S (NP (NNP November) (NAC (NP (JJ 18th)) (, ,) (NP (CD 1923)) (, ,)) (NNP New) (NNP Hampshire)))) (-RRB- -RRB-))) (VP[aspect=simple, tense=past, voice=passive] (VB award) (NP-SUBJ (NP (TAG BRIDGE-1)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (ADJP (JJR higher)) (SBAR (IN than) (S (NP (TAG PATIENT-1)) (VP[aspect=perfect, tense=present, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-2))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (PRN (-LRB- -LRB-) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (S (NP-SUBJ (NNP November) (NAC (NP (JJ 18th)) (, ,) (NP (CD 1923)) (, ,)) (NNP New) (NNP Hampshire)))) (-RRB- -RRB-))) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB award) (NP (NP (TAG BRIDGE-1)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJR higher)) (SBAR (IN than) (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-2))))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
@@ -397,9 +413,10 @@
 				<references/>
 				<text>Alan Shepard was born on 18 November 1923 in New Hampshire. He was awarded the Distinguished Service Medal, which is higher than the Department of Commerce Gold Medal, by the US Navy. He died in California.</text>
 				<template>AGENT-1 was born on PATIENT-4 in PATIENT-3 .AGENT-1 was awarded BRIDGE-1 , which is higher than PATIENT-1 , by the US NAvy . AGENT-1 died in PATIENT-2 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN on) (NP (CD 18))) (NP-TMP (NNP November) (CD 1923)) (PP (IN in) (NP-SUBJ (NNP New) (NNP Hampshire)))) (. .))  (S (NP-OBJ (PRP He)) (VP[aspect=simple, tense=past, voice=passive] (VB award) (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VBZ is) (ADJP (ADJP (JJR higher)) (PP (IN than) (NP (TAG PATIENT-1)))) (VB ,) (PP (IN by) (NP (DT the) (NNP US) (NNP Navy)))))))) (. .))  (S (NP-SUBJ (PRP He)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-2)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN on) (NP (CD 18))) (NP-TMP (NNP November) (CD 1923)) (PP (IN in) (NP-SUBJ (NNP New) (NNP Hampshire)))) (. .))  (S (NP-OBJ (PRP He)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB award) (NP (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VBZ is) (ADJP (ADJP (JJR higher)) (PP (IN than) (NP (TAG PATIENT-1)))) (VB ,) (PP (IN by) (NP (DT[form=defined] the) (NNP US) (NNP Navy)))))))) (. .))  (S (NP-SUBJ (PRP He)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-2)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
@@ -414,7 +431,7 @@
 				<references/>
 				<text>Alan Shepard was born in New Hampshire on 18 November 1923. Before his death in California he had been awarded the Distinguished Service Medal by the US Navy an award higher than the Department of Commerce Gold Medal.</text>
 				<template>AGENT-1 was born in PATIENT-3 on PATIENT-4 . Before AGENT-1 death in PATIENT-2 AGENT-1 had been awarded BRIDGE-1 an award higher than PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (NP (TAG PATIENT-3)) (PP (IN on) (NP (CD 18))))) (NP-TMP (NNP November) (CD 1923))) (. .))  (S (PP (IN Before) (NP (NP (PRP$ (TAG AGENT-1)) (NN death)) (PP (IN in) (NP (TAG PATIENT-2))))) (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past perfect, voice=passive] (VB award) (NP (DT the) (NNP Distinguished) (NNP Service) (NN Medal)) (PP (IN by) (NP (DT the) (NNP US) (NNP Navy))) (PP (ADVP (NP (DT an) (NN award)) (JJR higher)) (IN than) (NP-SUBJ (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (NP (TAG PATIENT-3)) (PP (IN on) (NP (CD 18))))) (NP-TMP (NNP November) (CD 1923))) (. .))  (S (PP (IN Before) (NP (NP (PRP$ (TAG AGENT-1)) (NN death)) (PP (IN in) (NP (TAG PATIENT-2))))) (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past perfect,voice=passive,person=null,number=null] (VB award) (NP (DT[form=defined] the) (NNP Distinguished) (NNP Service) (NN Medal)) (PP (IN by) (NP (DT[form=defined] the) (NNP US) (NNP Navy))) (PP (ADVP (NP (DT[form=undefined] a) (NN award)) (JJR higher)) (IN than) (NP-SUBJ (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Alan_Shepard</entity>
@@ -441,6 +458,7 @@
 				<mtriple>University_of_Texas_at_Austin | president | Gregory_L._Fenves</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -457,9 +475,10 @@
 				<references/>
 				<text>Elliot See was born in Dallas and later attended the University of Texas at Austin. The University of Texas at Austin is affiliated with University of Texas System and is competing in the Big 12 Conference. Nowadays, Gregory L. Fenves is the President of the University.</text>
 				<template>AGENT-1 was born in PATIENT-1 and later attended BRIDGE-1 . BRIDGE-1 is affiliated with PATIENT-3 and is competing in PATIENT-2 . Nowadays , PATIENT-4 is the President of BRIDGE-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (ADVP (RB later)) (VB attend) (NP (NP (TAG BRIDGE-1)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NNP Austin))))) (. .))  (S (NP-OBJ (TAG BRIDGE-1)) (VP-COORDINATION (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (IN with) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=progressive, tense=present, voice=active] (VB compete) (PP (IN in) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (ADVP (RB Nowadays)) (, ,) (NP-SUBJ (TAG PATIENT-4)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (NNP President)) (PP (IN of) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (ADVP (RB later)) (VB attend) (NP (NP (TAG BRIDGE-1)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NNP Austin))))) (. .))  (S (NP-OBJ (TAG BRIDGE-1)) (VP-COORDINATION (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB affiliate) (PP (IN with) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=progressive,tense=present,voice=active,person=3rd,number=singular] (VB compete) (PP (IN in) (NP-SUBJ (TAG PATIENT-2))))) (. .))  (S (ADVP (RB Nowadays)) (, ,) (NP-SUBJ (TAG PATIENT-4)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NNP President)) (PP (IN of) (NP (TAG BRIDGE-1))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -474,9 +493,10 @@
 				<references/>
 				<text>Elliot See was born in Dallas and attended the University of Texas at Austin which is affiliated with the University of Texas System and competed in the Big 12 Conference in Austin. Gregory L. Fenves is the appointed president of the University of Texas at Austin.</text>
 				<template>AGENT-1 was born in PATIENT-1 and attended BRIDGE-1 which is affiliated with PATIENT-3 and competed in PATIENT-2 . PATIENT-4 is the appointed president of BRIDGE-1 .</template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB attend) (NP (NP (DT the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NP-OBJ (NNP Austin)) (SBAR (WHNP (WDT which)) (S (VP-COORDINATION (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (IN with) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB compete) (PP (IN in) (NP (DT the) (JJ Big) (CD 12) (NN Conference))) (PP (IN in) (NP (NNP Austin))))))))))) (. .))  (S (NP-SUBJ (TAG PATIENT-4)) (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT the) (VBN appointed) (NN president)) (PP (IN of) (NP (DT the) (NNP University))) (PP (IN of) (NP (NP (NNP Texas)) (PP (IN at) (NP (NNP Austin))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-1)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB attend) (NP (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NP-OBJ (NNP Austin)) (SBAR (WHNP (WDT which)) (S (VP-COORDINATION (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB affiliate) (PP (IN with) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB compete) (PP (IN in) (NP (DT[form=defined] the) (JJ Big) (CD 12) (NN Conference))) (PP (IN in) (NP (NNP Austin))))))))))) (. .))  (S (NP-SUBJ (TAG PATIENT-4)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (VBN appointed) (NN president)) (PP (IN of) (NP (DT[form=defined] the) (NNP University))) (PP (IN of) (NP (NP (NNP Texas)) (PP (IN at) (NP (NNP Austin))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -493,7 +513,7 @@
 				<references/>
 				<text>Elliot See was born in Dallas and was a student at University of Texas at Austin. This University, whose president is Gregory L. Fenves, is affiliated with the University of Texas System. The University of Texas at Austin competes in the Big 12 Conference.</text>
 				<template>AGENT-1 was born in PATIENT-1 and was a student at BRIDGE-1 . BRIDGE-1 , whose president is PATIENT-4 , is affiliated with PATIENT-3 . BRIDGE-1 competes in PATIENT-2 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN student)) (PP (IN at) (NP (NP (NNP University)) (PP (IN of) (NP (NNP Texas)))))) (PP (IN at) (NP (NNP Austin))))) (. .))  (S (NP-SUBJ (NP-OBJ (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WP$ whose) (NN president)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (TAG PATIENT-4))))) (, ,)) (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (IN with) (NP (TAG PATIENT-3)))) (. .))  (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=present, voice=active] (VB compete) (PP (IN in) (NP (TAG PATIENT-2)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-1)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN student)) (PP (IN at) (NP (NP (NNP University)) (PP (IN of) (NP (NNP Texas)))))) (PP (IN at) (NP (NNP Austin))))) (. .))  (S (NP-OBJ (NP (DT[form=demonstrative] this) (NNP University)) (, ,) (SBAR (WHNP (WP$ whose) (NN president)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-4))))) (, ,)) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB affiliate) (PP (IN with) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP (NP (NNP Texas)) (PP (IN at) (NP (NNP Austin)))))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB compete) (PP (IN in) (NP (TAG PATIENT-2)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>
@@ -520,6 +540,7 @@
 				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
@@ -533,9 +554,10 @@
 				<references/>
 				<text>Elliot See, a graduate of the University of Texas at Austin, passed away on 28th February 1966 in St. Louis. He was born in Dallas.</text>
 				<template>AGENT-1 , a graduate of PATIENT-1 , passed away on PATIENT-5 in PATIENT-3 . AGENT-1 was born in PATIENT-4 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (NP (NP (DT a) (NN graduate)) (PP (IN of) (NP (TAG PATIENT-1)))) (, ,)) (VP[aspect=simple, tense=past, voice=active] (VB pass) (ADVP (RB away) (PP (IN on) (NP (JJ 28th)))) (NP-TMP (NNP February) (CD 1966)) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-4)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (NP (NP (DT[form=undefined] a) (NN graduate)) (PP (IN of) (NP (TAG PATIENT-1)))) (, ,)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB pass) (ADVP (RB away) (PP (IN on) (NP (JJ 28th)))) (NP-TMP (NNP February) (CD 1966)) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP-SUBJ (TAG PATIENT-4)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -549,9 +571,10 @@
 				<references/>
 				<text>Elliot See was born in Dallas and attended the University of Texas at Austin. He died in St Louis on 28 February 1966.</text>
 				<template>AGENT-1 was born in PATIENT-4 and attended PATIENT-1 . AGENT-1 died in PATIENT-3 on PATIENT-5 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-4)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB attend) (NP (NP (DT the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NNP Austin))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (NP (TAG PATIENT-3)) (PP (IN on) (NP (CD 28))))) (NP-TMP (NNP February) (CD 1966))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-4)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB attend) (NP (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NNP Austin))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN in) (NP (NP (TAG PATIENT-3)) (PP (IN on) (NP (CD 28))))) (NP-TMP (NNP February) (CD 1966))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
@@ -565,7 +588,7 @@
 				<references/>
 				<text>Elliot See, who was born on the 28th February 1966 in Dallas, has died in St Louis. He will be remembered as a great student at University of Texas at Austin.</text>
 				<template>AGENT-1 , who was born on PATIENT-5 in PATIENT-4 , has died in PATIENT-3 . AGENT-1 will be remembered as a great student at PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN on) (NP (DT the) (JJ 28th))) (NP-TMP (NNP February) (CD 1966)) (PP (IN in) (NP (TAG PATIENT-4)))))) (, ,)) (VP[aspect=perfect, tense=present, voice=active] (VB die) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=future, voice=passive] (VB remember) (PP (IN as) (NP (NP (DT a) (JJ great) (NN student)) (PP (IN at) (NP (NP (NNP University)) (PP (IN of) (NP (NNP Texas))))))) (PP (IN at) (NP-SUBJ (NNP Austin)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP-OBJ (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN on) (NP (DT[form=defined] the) (JJ 28th))) (NP-TMP (NNP February) (CD 1966)) (PP (IN in) (NP (TAG PATIENT-4)))))) (, ,)) (VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=future,voice=passive,person=null,number=null] (VB remember) (PP (IN as) (NP (NP (DT[form=undefined] a) (JJ great) (NN student)) (PP (IN at) (NP (NP (NNP University)) (PP (IN of) (NP (NNP Texas))))))) (PP (IN at) (NP-SUBJ (NNP Austin)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>
@@ -592,6 +615,7 @@
 				<mtriple>University_of_Texas_at_Austin | compete in | Big_12_Conference</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -607,9 +631,10 @@
 				<references/>
 				<text>Elliot See was born in Dallas, which is a county in Texas. He attended the University of Texas at Austin, which is affiliated to the University of Texas system. The University of Texas at Austin will be part of the Big 12 Conference competition.</text>
 				<template>AGENT-1 was born in BRIDGE-2 , which is a county in Texas . AGENT-1 attended BRIDGE-1 , which is affiliated to PATIENT-1 . BRIDGE-1 will be part of PATIENT-3 competition .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-2)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=active] (VB be) (NP (NP (DT a) (NN county)) (PP (IN in) (NP (NNP Texas)))))))))) (. .))  (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB attend) (NP (NP (DT the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NP-OBJ (NNP Austin)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1))))))))) (. .))  (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=future, voice=active] (VB be) (NP (NP (NN part)) (PP (IN of) (NP (DT the) (JJ Big) (CD 12) (NN Conference) (NN competition))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-2)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN county)) (PP (IN in) (NP (NNP Texas)))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB attend) (NP (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NP-OBJ (NNP Austin)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1))))))))) (. .))  (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple,tense=future,voice=active,person=null,number=null] (VB be) (NP (NP (NN part)) (PP (IN of) (NP (DT[form=defined] the) (JJ Big) (CD 12) (NN Conference) (NN competition))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -621,9 +646,10 @@
 				<references/>
 				<text>Elliot See was born in Dallas, Texas and attended the University of Texas (affiliated to the University of Texas system) which competed in the Big 12 conference.</text>
 				<template>AGENT-1 was born in BRIDGE-2, Texas and attended BRIDGE-1 ( affiliated to PATIENT-1 ) which competed in PATIENT-3 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (NNP (TAG BRIDGE-2)) (, ,) (NNP Texas)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB attend) (NP-SUBJ (NP (DT the) (NNP University)) (PP (IN of) (NP (NP (NNP Texas)) (PRN (-LRB- -LRB-) (VP[aspect=simple, tense=past, voice=active] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1)))) (-RRB- -RRB-)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=past, voice=active] (VB compete) (PP (IN in) (NP (TAG PATIENT-3))))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (NNP (TAG BRIDGE-2)) (, ,) (NNP Texas)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB attend) (NP (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP (NP (NNP Texas)) (PRN (-LRB- -LRB-) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1)))) (-RRB- -RRB-)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB compete) (PP (IN in) (NP (TAG PATIENT-3))))))))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -635,7 +661,7 @@
 				<references/>
 				<text>Elliot See, who was born in Dallas, Texas, attended the University of Texas at Austin (affiliated to the University of Texas system) which will compete in the big 12 conference.</text>
 				<template>AGENT-1 , who was born in BRIDGE-2 , attended BRIDGE-1 ( affiliated to PATIENT-1 ) which will compete in PATIENT-3 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG BRIDGE-2)))))) (, ,)) (VP[aspect=simple, tense=past, voice=active] (VB attend) (NP (NP (DT the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NP (NNP Austin)) (PRN (-LRB- -LRB-) (VP[aspect=simple, tense=past, voice=active] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1)))) (-RRB- -RRB-)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=future, voice=active] (VB compete) (PP (IN in) (NP (TAG PATIENT-3))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG BRIDGE-2)))))) (, ,)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB attend) (NP (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP (NNP Texas)))) (PP (IN at) (NP-SUBJ (NP (NNP Austin)) (PRN (-LRB- -LRB-) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1)))) (-RRB- -RRB-)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=future,voice=active,person=null,number=null] (VB compete) (PP (IN in) (NP (TAG PATIENT-3))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>
@@ -662,6 +688,7 @@
 				<mtriple>Elliot_See | status | &quot;Deceased&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -675,9 +702,10 @@
 				<references/>
 				<text>Elliot See was born in Dallas and studied at the University of Texas in Austin (which is affiliated to the university of Texas system). He died in St. Louis.</text>
 				<template>AGENT-1 was born in PATIENT-2 and studied at BRIDGE-1 ( which is affiliated to PATIENT-1 ) . AGENT-1 died in PATIENT-3 .</template>
-				<tree>(SENTENCES (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB study) (PP (IN at) (NP-SUBJ (NP (DT the) (NNP University)) (PP (IN of) (NP-OBJ (NP (NNP Texas)) (PP (IN in) (NP (NNP Austin))) (PRN (-LRB- -LRB-) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1)))))) (-RRB- -RRB-))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB study) (PP (IN at) (NP-SUBJ (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP-OBJ (NP (NNP Texas)) (PP (IN in) (NP (NNP Austin))) (PRN (-LRB- -LRB-) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1)))))) (-RRB- -RRB-))))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -691,9 +719,10 @@
 				<references/>
 				<text>Elliot See was born in Dallas and studied at Austin University (part of the university of Texas system). He died in St. Louis.</text>
 				<template>AGENT-1 was born in PATIENT-2 and studied at BRIDGE-1 ( part of PATIENT-1 ) . AGENT-1 died in PATIENT-3 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB study) (PP (IN at) (NP-SUBJ (NP (TAG BRIDGE-1)) (PRN (-LRB- -LRB-) (NP (NP (NN part)) (PP (IN of) (NP (TAG PATIENT-1)))) (-RRB- -RRB-))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB study) (PP (IN at) (NP-SUBJ (NP (TAG BRIDGE-1)) (PRN (-LRB- -LRB-) (NP (NP (NN part)) (PP (IN of) (NP (TAG PATIENT-1)))) (-RRB- -RRB-))))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Elliot_See | birthPlace | Dallas</striple>
@@ -707,7 +736,7 @@
 				<references/>
 				<text>Elliot See , who was born in Dallas , has died in St Louis. He graduated from the University of Texas at Austin which is affiliated to the University of Texas system.</text>
 				<template>AGENT-1 , who was born in PATIENT-2 , has died in PATIENT-3 . AGENT-1 graduated from BRIDGE-1 which is affiliated to PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=passive] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))))) (, ,)) (VP[aspect=perfect, tense=present, voice=active] (VB die) (PP (IN in) (NP-SUBJ (TAG PATIENT-3)))) (. .))  (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB graduate) (PP (IN from) (NP (NP (DT the) (NNP University)) (PP (IN of) (NP (NNP Texas))))) (PP (IN at) (NP-SUBJ (NP-OBJ (NNP Austin)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple, tense=present, voice=passive] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1))))))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP-OBJ (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB bear) (PP (IN in) (NP (TAG PATIENT-2)))))) (, ,)) (VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] (VB die) (PP (IN in) (NP (TAG PATIENT-3)))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB graduate) (PP (IN from) (NP (NP (DT[form=defined] the) (NNP University)) (PP (IN of) (NP (NNP Texas))))) (PP (IN at) (NP-SUBJ (NP-OBJ (NNP Austin)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB affiliate) (PP (TO to) (NP (TAG PATIENT-1))))))))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>
@@ -734,6 +763,7 @@
 				<mtriple>Apollo_8 | operator | NASA</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>William_Anders | was a crew member of | Apollo_8</striple>
@@ -748,9 +778,10 @@
 				<references/>
 				<text>William Anders was a member of the Apollo 8 crew (operated by NASA) and he retired on September 1st, 1969. Frank Borman was the commander of Apollo 8 and Buzz Aldrin was a back up pilot.</text>
 				<template>AGENT-1 was a member of BRIDGE-1 crew ( operated by PATIENT-4 ) and AGENT-1 retired on PATIENT-1 . PATIENT-2 was the commander of BRIDGE-1 and PATIENT-3 was a back up pilot .</template>
-				<tree>(SENTENCES (S-COORDINATION (S (NP (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN member)) (PP (IN of) (NP (NP (DT the) (NNP Apollo) (CD 8) (NN crew)) (PRN (-LRB- -LRB-) (VP[aspect=simple, tense=past, voice=active] (VB operate) (PP (IN by) (NP (TAG PATIENT-4)))) (-RRB- -RRB-))))))) (CC and) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB retire) (PP (IN on) (NP (NNP September))) (NP-TMP (NP (JJ 1st)) (, ,) (NP (CD 1969))))) (. .))  (S-COORDINATION (S (NP (TAG PATIENT-2)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT the) (NN commander)) (PP (IN of) (NP (TAG BRIDGE-1)))))) (CC and) (S (NP-SUBJ (TAG PATIENT-3)) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (DT a) (ADVP (RB back) (RB up)) (NN pilot)))) (. .)))</tree>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN member)) (PP (IN of) (NP (NP (DT[form=defined] the) (NNP Apollo) (CD 8) (NN crew)) (PRN (-LRB- -LRB-) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB operate) (PP (IN by) (NP (TAG PATIENT-4)))) (-RRB- -RRB-))))))) (CC and) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB retire) (PP (IN on) (NP (NNP September))) (NP-TMP (NP (JJ 1st)) (, ,) (NP (CD 1969))))) (. .))  (S-COORDINATION (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN commander)) (PP (IN of) (NP (TAG BRIDGE-1)))))) (CC and) (S (NP-SUBJ (TAG PATIENT-3)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (DT[form=undefined] a) (ADVP (RB back) (RB up)) (NN pilot)))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id2">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
@@ -765,9 +796,10 @@
 				<references/>
 				<text>William Anders, who retired on September 1st, 1969, was a crew member on Apollo 8 and served under commander Frank Borman. Apollo 8 was operated by NASA with Buzz Aldrin as backup pilot.</text>
 				<template>AGENT-1 , who retired on PATIENT-1 , was a crew member on BRIDGE-1 and served under PATIENT-2 . BRIDGE-1 was operated by PATIENT-4 with PATIENT-3 as backup pilot .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple, tense=past, voice=active] (VB retire) (PP (IN on) (NP (NNP September))) (NP-TMP (NP (JJ 1st)) (, ,) (NP (CD 1969)))))) (, ,)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (DT a) (NN crew) (NN member)) (PP (IN on) (NP (TAG BRIDGE-1)))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB serve) (PP (IN under) (NP (TAG PATIENT-2))))) (. .))  (S (NP-OBJ (TAG BRIDGE-1)) (VP[aspect=simple, tense=past, voice=passive] (VB operate) (PP (IN by) (NP (TAG PATIENT-4))) (PP (IN with) (NP-SUBJ (NP (TAG PATIENT-3)) (PP (IN as) (NP (JJ backup) (NN pilot)))))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG AGENT-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB retire) (PP (IN on) (NP (NNP September))) (NP-TMP (NP (JJ 1st)) (, ,) (NP (CD 1969)))))) (, ,)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (DT[form=undefined] a) (NN crew) (NN member)) (PP (IN on) (NP (TAG BRIDGE-1)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB serve) (PP (IN under) (NP (TAG PATIENT-2))))) (. .))  (S (NP-OBJ (TAG BRIDGE-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB operate) (PP (IN by) (NP (TAG PATIENT-4))) (PP (IN with) (NP-SUBJ (NP (TAG PATIENT-3)) (PP (IN as) (NP (JJ backup) (NN pilot)))))) (. .)))</tree>
 			</lex>
 			<lex comment="good" lid="Id3">
+				<tree/>
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>William_Anders | was a crew member of | Apollo_8</striple>
@@ -782,7 +814,7 @@
 				<references/>
 				<text>William Anders joined NASA and was a member of Apollo 8 along with Frank Borman as Commander and Buzz Aldrin as back up pilot. William Anders retired on September 1st 1969.</text>
 				<template>AGENT-1 joined PATIENT-4 and was a member of BRIDGE-1 along with PATIENT-2 as Commander and PATIENT-3 as back up pilot . AGENT-1 retired on PATIENT-1 .</template>
-				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple, tense=past, voice=active] (VB join) (NP-OBJ (TAG PATIENT-4))) (CC and) (VP[aspect=simple, tense=past, voice=active] (VB be) (NP (NP (DT a) (NN member)) (PP (IN of) (NP (NNP Apollo)))) (PP (PP (ADVP (NP (CD 8)) (IN along)) (IN with) (NP (NP (TAG PATIENT-2)) (PP (IN as) (NP-COORDINATION (NNP Commander) (CC and) (NNP Buzz) (NNP Aldrin))))) (PP (IN as) (ADVP (RB back) (RB up)) (NP (NN pilot)))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple, tense=past, voice=active] (VB retire) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB join) (NP-OBJ (TAG PATIENT-4))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP (NP (DT[form=undefined] a) (NN member)) (PP (IN of) (NP (NNP Apollo)))) (PP (PP (ADVP (NP (CD 8)) (IN along)) (IN with) (NP (NP (TAG PATIENT-2)) (PP (IN as) (NP-COORDINATION (NNP Commander) (CC and) (NNP Buzz) (NNP Aldrin))))) (PP (IN as) (ADVP (RB back) (RB up)) (NP (NN pilot)))))) (. .))  (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB retire) (PP (IN on) (NP (TAG PATIENT-1)))) (. .)))</tree>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | William_Anders</entity>
