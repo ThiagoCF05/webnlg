@@ -1,0 +1,241 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id586" size="3">
+			<originaltripleset>
+				<otriple>René_Goscinny | nationality | French_people</otriple>
+				<otriple>Asterix_(character) | creator | René_Goscinny</otriple>
+				<otriple>Asterix_(character) | creators | Albert_Uderzo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Asterix_(comicsCharacter) | creator | René_Goscinny</otriple>
+				<otriple>René_Goscinny | nationality | French_people</otriple>
+				<otriple>Asterix_(comicsCharacter) | creator | Albert_Uderzo</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Asterix_(comicsCharacter)</entity>
+				<entity>BRIDGE-1 | René_Goscinny</entity>
+				<entity>PATIENT-1 | French_people</entity>
+				<entity>PATIENT-2 | Albert_Uderzo</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Asterix was created by Albert Uderzo and Rene Goscinny who is a French national.</text>
+				<template>AGENT-1 was created by PATIENT-2 and BRIDGE-1 who is a PATIENT-1 national . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The comic character Asterix, was created by Albert Uderzo and René Goscinny, who is French.</text>
+				<template>AGENT-1 ,  was created by PATIENT-2 and BRIDGE-1 ,  who is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The comic book character Asterix was created by Albert Uderzo and the Frenchman @ René Goscinny.</text>
+				<template>AGENT-1 was created by PATIENT-2 and PATIENT-1 @ BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id587" size="3">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Bananaman | broadcastedBy | BBC</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-2 | BBC</entity>
+				<entity>PATIENT-3 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The TV series Bananaman starred Tim Brooke-Taylor and was last aired on the BBC on 15th April 1986.</text>
+				<template>AGENT-1 starred PATIENT-1 and was last aired on PATIENT-2 on PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bananaman, which was broadcast by the BBC and last aired on April 15th, 1986, starred Tim Brooke-Taylor.</text>
+				<template>AGENT-1 ,  which was broadcast by PATIENT-2 and last aired on PATIENT-3 ,  starred PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Tim Brooke Taylor starred in Bananaman which was broadcast by the BBC and last aired on 15 April 1986.</text>
+				<template>PATIENT-1 starred in AGENT-1 which was broadcast by PATIENT-2 and last aired on PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id588" size="3">
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Walt_Disney_Studios_Motion_Pictures</entity>
+				<entity>PATIENT-2 | Scott_Adsit</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Walt Disney Studios Motion Pictures distributed Big Hero 6, a film starring Scott Adsit in which Baymax first appeared.</text>
+				<template>PATIENT-1 distributed BRIDGE-1 ,  a film starring PATIENT-2 in which AGENT-1 first appeared . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The first appearance in a film for the character Baymax was Big Hero 6, distributed by Walt Disney Studios Motion Pictures, the film starred Scott Adsit.</text>
+				<template>The first appearance in a film for AGENT-1 was BRIDGE-1 ,  distributed by PATIENT-1 ,  the film starred PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Walt Disney Studios Motion Pictures is the distributor of the film , Big Hero 6 starring Scott Adsit and in which Baymax made his first film appearance.</text>
+				<template>PATIENT-1 is the distributor of BRIDGE-1 starring PATIENT-2 and in which AGENT-1 made AGENT-1 first film appearance . </template>
+			</lex>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id589" size="3">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Walt_Disney_Studios_Motion_Pictures</entity>
+				<entity>PATIENT-2 | Scott_Adsit</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The film, Big hero 6 which includes the character of Baymax, stars Scott Adsit and is distributed by Walt Disney Studios Motion Pictures.</text>
+				<template>BRIDGE-1 which includes the character of AGENT-1 ,  stars PATIENT-2 and is distributed by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The film, Big Hero 6 stars Scott Adsit and includes the character Baymax. It was distributed by Walt Disney Studios Motion Pictures.</text>
+				<template>BRIDGE-1 stars PATIENT-2 and includes the character AGENT-1 .  BRIDGE-1 was distributed by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Big Hero 6 is distributed by Walt Disney Studios Motion Pictures and starts Scott Adsit and has a character called Baymax.</text>
+				<template>BRIDGE-1 is distributed by PATIENT-1 and starts PATIENT-2 and has a character called AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id590" size="3">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Ryan_Potter</otriple>
+				<otriple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Big_Hero_6_(film) | starring | Ryan_Potter</otriple>
+				<otriple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Ryan_Potter</entity>
+				<entity>PATIENT-2 | Walt_Disney_Studios_Motion_Pictures</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Walt Disney Studio Motion Picture distributed the film Big Hero 6, in which Ryan Potter starred and Baymax is a character.</text>
+				<template>PATIENT-2 distributed BRIDGE-1 ,  in which PATIENT-1 starred and AGENT-1 is a character . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baymax is a character in the Big Hero 6 film starring Ryan Potter and distributed by Walt Disney Studios Motion Pictures.</text>
+				<template>AGENT-1 is a character in BRIDGE-1 starring PATIENT-1 and distributed by PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The movie Big Hero 6 stars Ryan Potter which has Baymax as one of its characters, was distributed by Walt Disney Studios Motion Pictures.</text>
+				<template>BRIDGE-1 stars PATIENT-1 which has AGENT-1 as one of BRIDGE-1 characters ,  was distributed by PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id591" size="3">
+			<originaltripleset>
+				<otriple>Blockbuster_(DC_Comics) | creators | Gardner_Fox</otriple>
+				<otriple>Blockbuster_(DC_Comics) | alterEgo | &quot;Mark Desmond&quot;@en</otriple>
+				<otriple>Blockbuster_(DC_Comics) | creator | Carmine_Infantino</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Blockbuster_(comicsCharacter) | creator | Gardner_Fox</otriple>
+				<otriple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Mark Desmond&quot;</otriple>
+				<otriple>Blockbuster_(comicsCharacter) | creator | Carmine_Infantino</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Blockbuster_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Gardner_Fox</entity>
+				<entity>PATIENT-2 | &quot;Mark Desmond&quot;</entity>
+				<entity>PATIENT-3 | Carmine_Infantino</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The comic character Blockbuster, AKA Mark Desmond, was created by Gardner Fox and Carmine Infantino.</text>
+				<template>AGENT-1 ,  AKA PATIENT-2 ,  was created by PATIENT-1 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The comics character Blockbuster, aka Mark Desmond,was created by Gardner Fox and Carmine Infantino.</text>
+				<template>AGENT-1 ,  aka PATIENT-2 , was created by PATIENT-1 and PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id592" size="3">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+				<otriple>Bolt_(DC_Comics) | creators | Gary_Cohn_(comics)</otriple>
+				<otriple>Bolt_(DC_Comics) | creator | Dan_Mishkin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</otriple>
+				<otriple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</otriple>
+				<otriple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Larry Bolatinsky&quot;</entity>
+				<entity>PATIENT-2 | Dan_Mishkin</entity>
+				<entity>PATIENT-3 | Gary_Cohn_(comics)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The comic character Bolt, with the alternative name Larry Bolatinsky, was created by Gary Cohn and Dan Mishkin.</text>
+				<template>AGENT-1 ,  with the alternative name PATIENT-1 ,  was created by PATIENT-3 and PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Larry Bolatinsky is the alternative name for the comic character Bolt who was created by Gary Cohn and Dan Mishkin.</text>
+				<template>PATIENT-1 is the alternative name for AGENT-1 who was created by PATIENT-3 and PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Larry Bolatinsky is the alternative name for the comic character, Bolt who was created by Dan Mishkin and the comic book writer, Gary Cohn.</text>
+				<template>PATIENT-1 is the alternative name for AGENT-1 who was created by PATIENT-2 and PATIENT-3 . </template>
+			</lex>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id593" size="3">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creator | Ernie_Colón</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+				<otriple>Bolt_(DC_Comics) | creators | Gary_Cohn_(comics)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bolt_(comicsCharacter) | creator | Ernie_Colón</otriple>
+				<otriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</otriple>
+				<otriple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Ernie_Colón</entity>
+				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
+				<entity>PATIENT-3 | Gary_Cohn_(comics)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The comic character of Bolt has the alternative name of Larry Bolatinsky and was created by Ernie Colon and the comic book writer, Gary Cohn.</text>
+				<template>AGENT-1 has the alternative name of PATIENT-2 and was created by PATIENT-1 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bolt, a comic character is also known as Larry Bolatinsky was created by Ernie Colon and Gary Cohn.</text>
+				<template>AGENT-1 is also known as PATIENT-2 was created by PATIENT-1 and PATIENT-3 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Ernie Colon and Gary Cohn created the comic character Bolt, who has the alternative name Larry Bolatinsky.</text>
+				<template>PATIENT-1 and PATIENT-3 created AGENT-1 ,  who has the alternative name PATIENT-2 . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

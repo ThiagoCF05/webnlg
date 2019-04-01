@@ -25,12 +25,12 @@ class NMT():
 
     def preprocess(self):
         self.prepare_filenames()
-        print 'Preparing input for translation...'
+        print('Preparing input for translation...')
         self.prepare_input()
 
     def postprocess(self):
         self.prepare_filenames()
-        print 'Preparing output to be converted in XML...'
+        print('Preparing output to be converted in XML...')
         self.prepare_output()
         # self.delete_tempfiles()
         return self.entryset

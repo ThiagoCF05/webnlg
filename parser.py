@@ -52,29 +52,35 @@ def parse(in_file):
             comment = lex.attrib['comment']
             lid = lex.attrib['lid']
 
-            orderedtripleset = []
-            otripleset = lex.find('sortedtripleset')
-            for otriple in otripleset:
-                e1, pred, e2 = otriple.text.split(' | ')
+            try:
+                orderedtripleset = []
+                otripleset = lex.find('sortedtripleset')
+                for snt in otripleset:
+                    orderedtripleset_snt = []
+                    for otriple in snt:
+                        e1, pred, e2 = otriple.text.split(' | ')
 
-                orderedtripleset.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
+                        orderedtripleset_snt.append(Triple(subject=e1.replace('\'', ''), predicate=pred, object=e2.replace('\'', '')))
+                    orderedtripleset.append(orderedtripleset_snt)
+            except:
+                orderedtripleset = []
 
             try:
                 text = lex.find('text').text
                 if not text:
-                    print 'error text'
+                    print('error text')
                     text = ''
             except:
-                print 'exception text'
+                print('exception text')
                 text = ''
 
             try:
                 template = lex.find('template').text
                 if not template:
-                    print 'error template'
+                    print('error template')
                     template = ''
             except:
-                print 'exception template'
+                print('exception template')
                 template = ''
 
             lexList.append(Lex(comment=comment, lid=lid, text=text, template=template, orderedtripleset=orderedtripleset))
@@ -117,7 +123,7 @@ def generate(entryset, in_file, out_file, lng):
         for modifiedtripleset in modifiedtriplesets[1:]:
             entry_xml.remove(modifiedtripleset)
 
-        entry = filter(lambda entry: entry.eid==eid and entry.size==str(size) and entry.category==category, entryset)[0]
+        entry = list(filter(lambda entry: entry.eid==eid and entry.size==str(size) and entry.category==category, entryset))[0]
 
         tagentity = entry.entitymap_to_dict()
         for tag in sorted(tagentity.keys()):
@@ -135,6 +141,14 @@ def generate(entryset, in_file, out_file, lng):
             template_xml = lexEntry_xml.find('template')
             if template_xml is not None:
                 lexEntry_xml.remove(template_xml)
+            # remove sortedtripleset
+            orderedtripleset_xml = lexEntry_xml.find('sortedtripleset')
+            if orderedtripleset_xml is not None:
+                lexEntry_xml.remove(orderedtripleset_xml)
+            # remove references
+            references_xml = lexEntry_xml.find('references')
+            if references_xml is not None:
+                lexEntry_xml.remove(references_xml)
 
             # ordered triple set
             if lng == 'en':
@@ -143,9 +157,13 @@ def generate(entryset, in_file, out_file, lng):
                 orderedtripleset = entry.lexEntries[i].orderedtripleset_de
 
             orderedtripleset_xml = ET.SubElement(lexEntry_xml, 'sortedtripleset')
-            for triple in orderedtripleset:
-                striple = ET.SubElement(orderedtripleset_xml, 'striple')
-                striple.text = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
+            for j, orderedtripleset_snt in enumerate(orderedtripleset):
+                orderedtripleset_snt_xml = ET.SubElement(orderedtripleset_xml, 'sentence')
+                orderedtripleset_snt_xml.attrib = { 'ID': str(j+1) }
+
+                for triple in orderedtripleset_snt:
+                    striple = ET.SubElement(orderedtripleset_snt_xml, 'striple')
+                    striple.text = triple.subject + ' | ' + triple.predicate + ' | ' + triple.object
 
             if lng == 'en':
                 references_xml = ET.SubElement(lexEntry_xml, 'references')
@@ -161,9 +179,11 @@ def generate(entryset, in_file, out_file, lng):
             if lng == 'en':
                 text = entry.lexEntries[i].text
                 template = entry.lexEntries[i].template
+                tree_ = entry.lexEntries[i].tree
             else:
                 text = entry.lexEntries[i].text_de
                 template = entry.lexEntries[i].template_de
+                tree_ = entry.lexEntries[i].tree_de
 
             text_xml = ET.SubElement(lexEntry_xml, 'text')
             text_xml.text = text
@@ -171,11 +191,14 @@ def generate(entryset, in_file, out_file, lng):
             template_xml = ET.SubElement(lexEntry_xml, 'template')
             template_xml.text = template
 
+            tree_xml = ET.SubElement(lexEntry_xml, 'tree')
+            tree_xml.text = tree_
+
     rough_string = ET.tostring(tree.getroot(), encoding='utf-8', method='xml')
     rough_string = re.sub(">\n[\t]+<", '><', rough_string)
     xml = minidom.parseString(rough_string).toprettyxml(indent="\t")
 
-    with open(out_file, 'w') as f:
+    with open(out_file, 'wb') as f:
         f.write(xml.encode('utf-8'))
 
 def run_generator(entryset, input_dir, output_dir, lng):

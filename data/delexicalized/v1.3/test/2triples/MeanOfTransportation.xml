@@ -1,0 +1,1000 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="MeanOfTransportation" eid="Id1342" size="2">
+			<originaltripleset>
+				<otriple>A-Rosa_Luna | shipClass | Cruise_ship</otriple>
+				<otriple>A-Rosa_Luna | MeanOfTransportation/length | &quot;125800.0&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A-Rosa_Luna | shipClass | Cruise_ship</otriple>
+				<otriple>A-Rosa_Luna | length | 125800.0 (millimetres)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A-Rosa_Luna</entity>
+				<entity>PATIENT-1 | Cruise_ship</entity>
+				<entity>PATIENT-2 | 125800.0 (millimetres)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The A-Rosa Luna is 125800.0 millimetres in length and classed as a cruise ship.</text>
+				<template>AGENT-1 is PATIENT-2 in length and classed as PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The A-Rosa Luna which is 125.8 metres long, is classed as a Cruise ship.</text>
+				<template>AGENT-1 which is PATIENT-2 long ,  is classed as PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The A-Rosa @ Luna cruise ship is 125800.0 millimetres in length.</text>
+				<template>AGENT-1 @ PATIENT-1 is PATIENT-2 in length . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1343" size="2">
+			<originaltripleset>
+				<otriple>A-Rosa_Luna | shipOrdered | &quot;2004-01-22&quot;^^xsd:date</otriple>
+				<otriple>A-Rosa_Luna | MeanOfTransportation/length | &quot;125800.0&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>A-Rosa_Luna | shipOrdered | 2004-01-22</otriple>
+				<otriple>A-Rosa_Luna | length | 125800.0 (millimetres)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A-Rosa_Luna</entity>
+				<entity>PATIENT-1 | 2004-01-22</entity>
+				<entity>PATIENT-2 | 125800.0 (millimetres)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The A Rosa Luna ship is 125800.0 mms in length and was ordered on 22 January 2004.</text>
+				<template>AGENT-1 is PATIENT-2 in length and was ordered on PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The A-Rosa Luna ship which is 125800.0 millimetres in length, was ordered on January 22nd 2004.</text>
+				<template>AGENT-1 ship which is PATIENT-2 in length ,  was ordered on PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The A-Rosa Luna ship was ordered on the 22nd January 2004 and it is 125.8 metres long.</text>
+				<template>AGENT-1 was ordered on PATIENT-1 and AGENT-1 is PATIENT-2 long . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1344" size="2">
+			<originaltripleset>
+				<otriple>AIDA_Cruises | location | Germany</otriple>
+				<otriple>AIDAstella | shipOperator | AIDA_Cruises</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AIDA_Cruises | location | Germany</otriple>
+				<otriple>AIDAstella | operator | AIDA_Cruises</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AIDAstella</entity>
+				<entity>BRIDGE-1 | AIDA_Cruises</entity>
+				<entity>PATIENT-1 | Germany</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The AIDAstella is operated by AIDA Cruise Line, which is located in Germany.</text>
+				<template>AGENT-1 is operated by BRIDGE-1 ,  which is located in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>AIDA Cruises is located in Germany and is operated by AIDAstella.</text>
+				<template>BRIDGE-1 is located in PATIENT-1 and is operated by AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The ship AIDAstella is operated by AIDA Cruises which is located in Germany.</text>
+				<template>AGENT-1 is operated by BRIDGE-1 which is located in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1345" size="2">
+			<originaltripleset>
+				<otriple>AIDA_Cruises | location | Rostock</otriple>
+				<otriple>AIDAluna | operator | AIDA_Cruises</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AIDA_Cruises | location | Rostock</otriple>
+				<otriple>AIDAluna | operator | AIDA_Cruises</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AIDAluna</entity>
+				<entity>BRIDGE-1 | AIDA_Cruises</entity>
+				<entity>PATIENT-1 | Rostock</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The AIDAluna is operated by AIDA Cruises which are located at Rostock.</text>
+				<template>AGENT-1 is operated by BRIDGE-1 which are located at PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>AIDA Cruises, located in Rostock, are the operator of the ship AIDAluna.</text>
+				<template>BRIDGE-1 ,  located in PATIENT-1 ,  are the operator of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>AIDAluna is operated by AIDA Cruises from Rostock.</text>
+				<template>AGENT-1 is operated by BRIDGE-1 from PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1346" size="2">
+			<originaltripleset>
+				<otriple>AIDAluna | topSpeed | &quot;40.744&quot;^^xsd:double</otriple>
+				<otriple>AIDAluna | MeanOfTransportation/length | &quot;252000.0&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AIDAluna | topSpeed | 40.744</otriple>
+				<otriple>AIDAluna | length | 252000.0 (millimetres)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AIDAluna</entity>
+				<entity>PATIENT-1 | 40.744</entity>
+				<entity>PATIENT-2 | 252000.0 (millimetres)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The AIDAluna has a top speed is 40.744 and is 252000.0 mms in length.</text>
+				<template>AGENT-1 has a top speed is PATIENT-1 and is PATIENT-2 in length . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The AIDAluna has a top speed of 40.744 and it @ 252 metres long.</text>
+				<template>AGENT-1 has a top speed of PATIENT-1 and AGENT-1 @ PATIENT-2 long . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The AIDAluna is 252m long and has a top speed of 40.744.</text>
+				<template>AGENT-1 is PATIENT-2 long and has a top speed of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1347" size="2">
+			<originaltripleset>
+				<otriple>AIDAstella | shipChristened | &quot;--03-16&quot;^^xsd:gMonthDay</otriple>
+				<otriple>AIDAstella | MeanOfTransportation/length | &quot;253260.0&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AIDAstella | christeningDate | 2013-03-16</otriple>
+				<otriple>AIDAstella | length | 253260.0 (millimetres)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AIDAstella</entity>
+				<entity>PATIENT-1 | 2013-03-16</entity>
+				<entity>PATIENT-2 | 253260.0 (millimetres)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The AIDAstella is 253.26m long and was launched March 16th 2013.</text>
+				<template>AGENT-1 is PATIENT-2 long and was launched PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The AIDAstella was christened on the 16th of March, 2013 and is 253260.0 millimetres long.</text>
+				<template>AGENT-1 was christened on PATIENT-1 and is PATIENT-2 long . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>AIDAstella is 253260.0 millimetres in length and was christened on 2013-03-16.</text>
+				<template>AGENT-1 is PATIENT-2 in length and was christened on PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1348" size="2">
+			<originaltripleset>
+				<otriple>ALCO_RS-3 | builder | Montreal_Locomotive_Works</otriple>
+				<otriple>ALCO_RS-3 | powertype | Diesel-electric_transmission</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>ALCO_RS-3 | builder | Montreal_Locomotive_Works</otriple>
+				<otriple>ALCO_RS-3 | powerType | Diesel-electric_transmission</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | ALCO_RS-3</entity>
+				<entity>PATIENT-1 | Montreal_Locomotive_Works</entity>
+				<entity>PATIENT-2 | Diesel-electric_transmission</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Montreal Locomotive Works is the builder of the ALCO RS-3 which has a diesel-electric transmission.</text>
+				<template>PATIENT-1 is the builder of AGENT-1 which has PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Diesel-electric transmission @ ALCO RS-3 was built by the Montreal Locomotive Works.</text>
+				<template>PATIENT-2 @ AGENT-1 was built by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The ALCO RS-3, has a diesel-electric transmission and was built by the Montreal Locomotive Works.</text>
+				<template>AGENT-1 ,  has PATIENT-2 and was built by PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1349" size="2">
+			<originaltripleset>
+				<otriple>ALV_X-1 | diameter | &quot;5.0&quot;^^&lt;http://dbpedia.org/datatype/foot&gt;</otriple>
+				<otriple>ALV_X-1 | rocketStages | &quot;2&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>ALV_X-1 | diameter | 1.524 (metres)</otriple>
+				<otriple>ALV_X-1 | rocketStages | 2</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | ALV_X-1</entity>
+				<entity>PATIENT-1 | 1.524 (metres)</entity>
+				<entity>PATIENT-2 | 2</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The ALV X-1 has 2 rocket stages and a diameter of 1.524 metres.</text>
+				<template>AGENT-1 has PATIENT-2 rocket stages and a diameter of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The ALV X-1 rocket has 2 stages and a diameter of 1.524 metres.</text>
+				<template>AGENT-1 has PATIENT-2 stages and a diameter of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1350" size="2">
+			<originaltripleset>
+				<otriple>AMC_Matador | assembly | Kenosha,_Wisconsin</otriple>
+				<otriple>AMC_Matador | modelYears | 1974</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AMC_Matador | assembly | Kenosha,_Wisconsin</otriple>
+				<otriple>AMC_Matador | modelYears | 1974</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AMC_Matador</entity>
+				<entity>PATIENT-1 | Kenosha,_Wisconsin</entity>
+				<entity>PATIENT-2 | 1974</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>1974 is one of the model years of the AMC Matador which was assembled in Kenosha, Wisconsin.</text>
+				<template>PATIENT-2 is one of the model years of AGENT-1 which was assembled in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The AMC Matador is available in a 1974 model and was assembled in Kenosha, Wisconsin.</text>
+				<template>AGENT-1 is available in a PATIENT-2 model and was assembled in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The AMC Matador is available in a 1974 model and is assembled in Kenosha, Wisconsin.</text>
+				<template>AGENT-1 is available in a PATIENT-2 model and is assembled in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1351" size="2">
+			<originaltripleset>
+				<otriple>AMC_Matador | designer | Richard_A._Teague</otriple>
+				<otriple>Richard_A._Teague | employer | Chrysler</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>AMC_Matador | designer | Richard_A._Teague</otriple>
+				<otriple>Richard_A._Teague | employer | Chrysler</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AMC_Matador</entity>
+				<entity>BRIDGE-1 | Richard_A._Teague</entity>
+				<entity>PATIENT-1 | Chrysler</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Richard A. Teague is emplyed by Chrysler and designed the AMC Matador.</text>
+				<template>BRIDGE-1 is emplyed by PATIENT-1 and designed AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Richard A. Teague is the Chrysler employee who designed the AMC Matador.</text>
+				<template>BRIDGE-1 is the PATIENT-1 employee who designed AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The AMC Matador was designed by Richard A Teague who workes for Chrysler.</text>
+				<template>AGENT-1 was designed by BRIDGE-1 who workes for PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1352" size="2">
+			<originaltripleset>
+				<otriple>ARA_Veinticinco_de_Mayo_(V-2) | length | &quot;192.0&quot;^^xsd:double</otriple>
+				<otriple>ARA_Veinticinco_de_Mayo_(V-2) | country | Argentina</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>ARA_Veinticinco_de_Mayo_(V-2) | length | 192000.0 (millimetres)</otriple>
+				<otriple>ARA_Veinticinco_de_Mayo_(V-2) | country | Argentina</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | ARA_Veinticinco_de_Mayo_(V-2)</entity>
+				<entity>PATIENT-1 | 192000.0 (millimetres)</entity>
+				<entity>PATIENT-2 | Argentina</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The ARA Veinticinco de Mayo (V-2) is 192000.0 millimetres long and comes from Argentina.</text>
+				<template>AGENT-1 is PATIENT-1 long and comes from PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The ARA Veinticinco de Mayo (V-2) which is derived from Argentina has a length of 192000 millimetres.</text>
+				<template>AGENT-1 which is derived from PATIENT-2 has a length of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The ARA Veinticinco de Mayo (V-2) is from Argentina and has a length of 192000 millimetres.</text>
+				<template>AGENT-1 is from PATIENT-2 and has a length of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1353" size="2">
+			<originaltripleset>
+				<otriple>Alfa_Romeo_164 | assembly | Milan</otriple>
+				<otriple>Alfa_Romeo_164 | related | Saab_9000</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alfa_Romeo_164 | assembly | Milan</otriple>
+				<otriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Saab_9000</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alfa_Romeo_164</entity>
+				<entity>PATIENT-1 | Milan</entity>
+				<entity>PATIENT-2 | Saab_9000</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Alfa Romeo 164, which is assembled in Milan, is a related means of transportation to Saab 9000 , in that they are both cars.</text>
+				<template>AGENT-1 ,  which is assembled in PATIENT-1 ,  is a related means of transportation to PATIENT-2  ,  in that they are both cars . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Alfa Romeo 164, assembled in Milan, is a similar means of transport to the Saab 9000.</text>
+				<template>AGENT-1 ,  assembled in PATIENT-1 ,  is a similar means of transport to the PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>As they are both cars, the Saab 9000 and the Alfa Romeo 164 are related means of transport. The latter has an assembly line in Milan.</text>
+				<template>As they are both cars , PATIENT-2 and AGENT-1 are related means of transport .  AGENT-1 has an assembly line in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1354" size="2">
+			<originaltripleset>
+				<otriple>Alfa_Romeo_164 | related | Fiat_Croma</otriple>
+				<otriple>Alfa_Romeo_164 | assembly | Italy</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</otriple>
+				<otriple>Alfa_Romeo_164 | assembly | Italy</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alfa_Romeo_164</entity>
+				<entity>PATIENT-1 | Fiat_Croma</entity>
+				<entity>PATIENT-2 | Italy</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Alfa Romeo 164 is assembled in Italy and is a similar means of transport to the Fiat Croma.</text>
+				<template>AGENT-1 is assembled in PATIENT-2 and is a similar means of transport to PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Alfa Romeo 164 was assembled in Italy and is a similar means of transport to the, Fiat Croma.</text>
+				<template>AGENT-1 was assembled in PATIENT-2 and is a similar means of transport to PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Alfa Romeo 164 is similar to the Fiat Croma andis made in Italy.</text>
+				<template>AGENT-1 is similar to PATIENT-1 andis made in PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1355" size="2">
+			<originaltripleset>
+				<otriple>Alfa_Romeo_164 | related | Lancia_Thema</otriple>
+				<otriple>Alfa_Romeo_164 | assembly | Italy</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</otriple>
+				<otriple>Alfa_Romeo_164 | assembly | Italy</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alfa_Romeo_164</entity>
+				<entity>PATIENT-1 | Lancia_Thema</entity>
+				<entity>PATIENT-2 | Italy</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Alfa Romeo 164, which was assembled in Italy, and Lancia Thema are related types of transportation.</text>
+				<template>AGENT-1 ,  which was assembled in PATIENT-2 ,  and PATIENT-1 are related types of transportation . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alfa Romeo 164 is a related transport to Lancia Thema and is assembled in Italy.</text>
+				<template>AGENT-1 is a related transport to PATIENT-1 and is assembled in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Lancia Thema and the Italian assembled Alfa Romeo 164 are related types of transport.</text>
+				<template>PATIENT-1 and the PATIENT-2 assembled AGENT-1 are related types of transport . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1356" size="2">
+			<originaltripleset>
+				<otriple>Alvis_Speed_25 | manufacturer | Alvis_Car_and_Engineering_Company</otriple>
+				<otriple>Alvis_Car_and_Engineering_Company | locationCity | Coventry</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alvis_Speed_25 | manufacturer | Alvis_Car_and_Engineering_Company</otriple>
+				<otriple>Alvis_Car_and_Engineering_Company | locationCity | Coventry</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alvis_Speed_25</entity>
+				<entity>BRIDGE-1 | Alvis_Car_and_Engineering_Company</entity>
+				<entity>PATIENT-1 | Coventry</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Alvis Speed 25 was made by the Alvis Car and Engineering Company of Coventry.</text>
+				<template>AGENT-1 was made by BRIDGE-1 of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Alvis Speed 25 was made by Coventry based Alvis Car and Engineering Company.</text>
+				<template>AGENT-1 was made by PATIENT-1 based BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Alvis Speed 25 was manufactured by the Alvis Car and Engineering Company, which is located in Coventry.</text>
+				<template>AGENT-1 was manufactured by BRIDGE-1 ,  which is located in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1357" size="2">
+			<originaltripleset>
+				<otriple>Alvis_Speed_25 | transmission | &quot;single plate clutch, separate 4-speed gearbox all-silent&quot;</otriple>
+				<otriple>Alvis_Speed_25 | engine | Alvis_Speed_25__2</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alvis_Speed_25 | transmission | &quot;single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints , spiral bevel fully floating back axle&quot;</otriple>
+				<otriple>Alvis_Speed_25 | engine | 4387.0 (cubicCentimetres)</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alvis_Speed_25</entity>
+				<entity>PATIENT-1 | &quot;single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints , spiral bevel fully floating back axle&quot;</entity>
+				<entity>PATIENT-2 | 4387.0 (cubicCentimetres)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Alvis Speed 25 has a 4387.00 cc engine and an impressive transmission coined as &quot;single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints , spiral bevel fully floating back axle&quot;.</text>
+				<template>AGENT-1 has a PATIENT-2 engine and an impressive transmission coined as PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Alvis Speed 25 has an engine of 4387 cubic centimeters and a transmission system comprising a single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints and spiral bevel fully floating back axle.</text>
+				<template>AGENT-1 has an engine of PATIENT-2 and a transmission system comprising PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Alvis Speed 25, which has a 4387.0 cubic centimetres engine, has a transmission system that comprises of a single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints and spiral bevel fully floating back axle.</text>
+				<template>AGENT-1 ,  which has a PATIENT-2 engine ,  has a transmission system that comprises of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1358" size="2">
+			<originaltripleset>
+				<otriple>Alvis_Speed_25 | transmission | &quot;with metal joints (arranged in a straight line), spiral bevel fully floating back axle&quot;</otriple>
+				<otriple>Alvis_Speed_25 | engine | Alvis_Speed_25__6</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Alvis_Speed_25 | transmission | &quot;single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints , spiral bevel fully floating back axle&quot;</otriple>
+				<otriple>Alvis_Speed_25 | engine | Straight-six_engine</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Alvis_Speed_25</entity>
+				<entity>PATIENT-1 | &quot;single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints , spiral bevel fully floating back axle&quot;</entity>
+				<entity>PATIENT-2 | Straight-six_engine</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Alvis Speed 25 has a straight-six engine and an impressive transmission.</text>
+				<template>AGENT-1 has a PATIENT-2 engine and an impressive transmission . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alvis Speed 25 has a straight-six engine and has a transmission system comprising a single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints and spiral bevel fully floating back axle.</text>
+				<template>AGENT-1 has a PATIENT-2 engine and has a transmission system comprising PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Alvis Speed 25 has a straight-six engine and it's transmission system comprises a single plate clutch, separate 4-speed gearbox all-silent and all-syncromesh, centre change lever, open tubular propellor shaft with metal joints and spiral bevel fully floating back axle.</text>
+				<template>AGENT-1 has a PATIENT-2 engine and AGENT-1 transmission system comprises PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1359" size="2">
+			<originaltripleset>
+				<otriple>American_Motors | successor | Eagle_(automobile)</otriple>
+				<otriple>AMC_Matador | manufacturer | American_Motors</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>American_Motors | successor | Eagle_(automobile)</otriple>
+				<otriple>AMC_Matador | manufacturer | American_Motors</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AMC_Matador</entity>
+				<entity>BRIDGE-1 | American_Motors</entity>
+				<entity>PATIENT-1 | Eagle_(automobile)</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>American Motors, who made the AMC Matador, was succeeded by Eagle.</text>
+				<template>BRIDGE-1 ,  who made AGENT-1 ,  was succeeded by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The AMC Matador is made by American Motors who were succeeded by Eagle.</text>
+				<template>AGENT-1 is made by BRIDGE-1 who were succeeded by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>AMC Matador was manufactured by American Motors who were succeeded by Eagle.</text>
+				<template>AGENT-1 was manufactured by BRIDGE-1 who were succeeded by PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1360" size="2">
+			<originaltripleset>
+				<otriple>Antares_(rocket) | maidenFlight | &quot;2014-01-09&quot;^^xsd:date</otriple>
+				<otriple>Antares_(rocket) | sites | Mid-Atlantic_Regional_Spaceport</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Antares_(rocket) | maidenFlight | 2014-01-09</otriple>
+				<otriple>Antares_(rocket) | launchSite | Mid-Atlantic_Regional_Spaceport</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Antares_(rocket)</entity>
+				<entity>PATIENT-1 | 2014-01-09</entity>
+				<entity>PATIENT-2 | Mid-Atlantic_Regional_Spaceport</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Antares rocket is launched from the Mid ~Atlantic Regional Spaceport and its first voyage was on January 9th 2014.</text>
+				<template>AGENT-1 is launched from PATIENT-2 and AGENT-1 first voyage was on PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Antares rocket had its maiden flight on January 9th 2014 and was launched from the Mid-Atlantic Regional Spaceport.</text>
+				<template>AGENT-1 had AGENT-1 maiden flight on PATIENT-1 and was launched from PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The rocker Antares was launched on its maiden flight from the Mid-Atlantic Regional Spaceport on 9 January 2014.</text>
+				<template>AGENT-1 was launched on AGENT-1 maiden flight from PATIENT-2 on PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1361" size="2">
+			<originaltripleset>
+				<otriple>Argentina | leader | Gabriela_Michetti</otriple>
+				<otriple>ARA_Veinticinco_de_Mayo_(V-2) | country | Argentina</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Argentina | leaderName | Gabriela_Michetti</otriple>
+				<otriple>ARA_Veinticinco_de_Mayo_(V-2) | country | Argentina</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | ARA_Veinticinco_de_Mayo_(V-2)</entity>
+				<entity>BRIDGE-1 | Argentina</entity>
+				<entity>PATIENT-1 | Gabriela_Michetti</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>ARA Veinticinco de Mayo (V-2) comes from Argentina where Gabriela Michetti is the leader.</text>
+				<template>AGENT-1 comes from BRIDGE-1 where PATIENT-1 is the leader . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The ARA Veinticinco de Mayo (V-2) comes from Argentina which is led by Gabriela Michetti.</text>
+				<template>AGENT-1 comes from BRIDGE-1 which is led by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The ARA Veinticinco de Mayo (V-2) is from Argentina whose leader is Gabriela Michetti.</text>
+				<template>AGENT-1 is from BRIDGE-1 whose leader is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1362" size="2">
+			<originaltripleset>
+				<otriple>Ariane_5 | sites | ELA-3</otriple>
+				<otriple>Ariane_5 | manufacturer | Airbus_Defence_and_Space</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ariane_5 | launchSite | ELA-3</otriple>
+				<otriple>Ariane_5 | manufacturer | Airbus_Defence_and_Space</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ariane_5</entity>
+				<entity>PATIENT-1 | ELA-3</entity>
+				<entity>PATIENT-2 | Airbus_Defence_and_Space</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Ariane 5 was launched at ELA-3 and manufactured by The Airbus Defence and Space.</text>
+				<template>AGENT-1 was launched at PATIENT-1 and manufactured by PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Ariane 5 which was launched at the ELA-3, was manufactured by Airbus Defence and Space.</text>
+				<template>AGENT-1 which was launched at PATIENT-1 ,  was manufactured by PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Airbus Defence and Space are the manufacturers of the Ariane 5, the launch site of which, was ELA-3 launchpad.</text>
+				<template>PATIENT-2 are the manufacturers of AGENT-1 ,  the launch site of which ,  was PATIENT-1 launchpad . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1363" size="2">
+			<originaltripleset>
+				<otriple>Ariane_5 | manufacturer | Airbus_Defence_and_Space</otriple>
+				<otriple>Airbus_Defence_and_Space | parentCompany | Airbus_Group</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ariane_5 | manufacturer | Airbus_Defence_and_Space</otriple>
+				<otriple>Airbus_Defence_and_Space | parentCompany | Airbus_Group</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ariane_5</entity>
+				<entity>BRIDGE-1 | Airbus_Defence_and_Space</entity>
+				<entity>PATIENT-1 | Airbus_Group</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Airbus Group is the parent company of Airbus Defence &amp; Space; where Ariane 5 was manufactured.</text>
+				<template>PATIENT-1 is the parent company of BRIDGE-1 ;  where AGENT-1 was manufactured . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Airbus Group is the parent company of Airbus Defence and Space who manufactured the Ariane 5.</text>
+				<template>PATIENT-1 is the parent company of BRIDGE-1 who manufactured AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Airbus Defence and Space, whose parent company is Airbus Group, made the Ariane 5.</text>
+				<template>BRIDGE-1 ,  whose parent company is PATIENT-1 ,  made AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1364" size="2">
+			<originaltripleset>
+				<otriple>Aston_Martin_V8 | assembly | United_Kingdom</otriple>
+				<otriple>Aston_Martin_V8 | related | Aston_Martin_RHAM/1</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aston_Martin_V8 | assembly | United_Kingdom</otriple>
+				<otriple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_RHAM/1</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aston_Martin_V8</entity>
+				<entity>PATIENT-1 | United_Kingdom</entity>
+				<entity>PATIENT-2 | Aston_Martin_RHAM/1</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Aston Martin V8 - assembled in the United Kingdom - and Aston Martin RHAM/1 are related means of transportation.</text>
+				<template>AGENT-1 - assembled in PATIENT-1 - and PATIENT-2 are related means of transportation . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aston Martin V8 was made in the UK. The Aston Martin V8 is connected to the Aston Martin RHAM/1.</text>
+				<template>AGENT-1 was made in PATIENT-1 . AGENT-1 is connected to PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Aston Martin V8 is similar to the RHAM/1 and is assembled in the UK.</text>
+				<template>AGENT-1 is similar to PATIENT-2 and is assembled in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1365" size="2">
+			<originaltripleset>
+				<otriple>Aston_Martin_V8 | manufacturer | Aston_Martin</otriple>
+				<otriple>Aston_Martin_V8 | successor | Aston_Martin_Virage</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aston_Martin_V8 | manufacturer | Aston_Martin</otriple>
+				<otriple>Aston_Martin_V8 | successor | Aston_Martin_Virage</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aston_Martin_V8</entity>
+				<entity>PATIENT-1 | Aston_Martin</entity>
+				<entity>PATIENT-2 | Aston_Martin_Virage</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aston Martin made the Aston Martin V8, which was succeeded by the Aston Martin Virage.</text>
+				<template>PATIENT-1 made AGENT-1 ,  which was succeeded by PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Aston Martin V8 was manufactured by Aston Martin and was succeeded by the Aston Martin Virage.</text>
+				<template>AGENT-1 was manufactured by PATIENT-1 and was succeeded by PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aston Martin produced the Aston Martin V8 which was succeeded by the The Aston Martin Virage.</text>
+				<template>PATIENT-1 produced AGENT-1 which was succeeded by PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1366" size="2">
+			<originaltripleset>
+				<otriple>Aston_Martin_V8 | related | Aston_Martin_DBS</otriple>
+				<otriple>Aston_Martin_V8 | successor | Aston_Martin_Virage</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</otriple>
+				<otriple>Aston_Martin_V8 | successor | Aston_Martin_Virage</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aston_Martin_V8</entity>
+				<entity>PATIENT-1 | Aston_Martin_DBS</entity>
+				<entity>PATIENT-2 | Aston_Martin_Virage</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Aston Martin DBS is a related means of transport to the Aston Martin V8, which was succeeded by the Aston Martin Virage.</text>
+				<template>PATIENT-1 is a related means of transport to AGENT-1 ,  which was succeeded by PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Aston Martin V8 (which was succeeded by the Aston Martin Virage) and the Aston Martin DBS are a related means of transport.</text>
+				<template>AGENT-1 (which was succeeded by PATIENT-2) and PATIENT-1 are a related means of transport . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Aston Martin V8 is connected to the Aston Martin DBS and was succeded by the Aston Martin Virage.</text>
+				<template>AGENT-1 is connected to PATIENT-1 and was succeded by PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1367" size="2">
+			<originaltripleset>
+				<otriple>Aston_Martin_V8 | successor | Aston_Martin_Virage</otriple>
+				<otriple>Aston_Martin_Virage | manufacturer | Aston_Martin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Aston_Martin_V8 | successor | Aston_Martin_Virage</otriple>
+				<otriple>Aston_Martin_Virage | manufacturer | Aston_Martin</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aston_Martin_V8</entity>
+				<entity>BRIDGE-1 | Aston_Martin_Virage</entity>
+				<entity>PATIENT-1 | Aston_Martin</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Aston Martin V8 was succeeded by the Aston Martin Virage which is made by the company Aston Martin.</text>
+				<template>AGENT-1 was succeeded by BRIDGE-1 which is made by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aston Martin Virage succeeded the Aston Martin V8 and is manufactured by Aston Martin.</text>
+				<template>BRIDGE-1 succeeded AGENT-1 and is manufactured by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Aston Martin Virage which was manufactured by Aston Martin, was succeeded the Aston Martin V8.</text>
+				<template>BRIDGE-1 which was manufactured by PATIENT-1 ,  was succeeded AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1368" size="2">
+			<originaltripleset>
+				<otriple>Atlas_II | finalFlight | &quot;1998-03-16&quot;^^xsd:date</otriple>
+				<otriple>Atlas_II | diameter | &quot;3.04 m&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Atlas_II | finalFlight | 1998-03-16</otriple>
+				<otriple>Atlas_II | diameter | 3.04 m</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Atlas_II</entity>
+				<entity>PATIENT-1 | 1998-03-16</entity>
+				<entity>PATIENT-2 | 3.04 m</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Atlas II, which is 3.04m in diameter, had its final flight on March 16th 1998.</text>
+				<template>AGENT-1 ,  which is PATIENT-2 in diameter ,  had AGENT-1 final flight on PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The final flight of Atlas II, which has a diameter of 3.04m, was on 16 March 1998.</text>
+				<template>The final flight of AGENT-1 ,  which has a diameter of PATIENT-2 ,  was on PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Atlas II has a diameter of 3.04m and its final flight was on the 16th March 1998.</text>
+				<template>AGENT-1 has a diameter of PATIENT-2 and AGENT-1 final flight was on PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1369" size="2">
+			<originaltripleset>
+				<otriple>Atlas_II | sites | Cape_Canaveral_Air_Force_Station</otriple>
+				<otriple>Atlas_II | manufacturer | Lockheed_Martin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</otriple>
+				<otriple>Atlas_II | manufacturer | Lockheed_Martin</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Atlas_II</entity>
+				<entity>PATIENT-1 | Cape_Canaveral_Air_Force_Station</entity>
+				<entity>PATIENT-2 | Lockheed_Martin</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Lockheed Martin manufactured Atlas II was launched from Cape Canaveral Air Force Station.</text>
+				<template>PATIENT-2 manufactured AGENT-1 was launched from PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Atlas II, manufactured by Lockheed Martin, was launched from Cape Canaveral Air Force Station.</text>
+				<template>AGENT-1 ,  manufactured by PATIENT-2 ,  was launched from PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Atlas II was manufactured by Lockheed Martin and launched from the Cape Canaveral Air Force Station.</text>
+				<template>AGENT-1 was manufactured by PATIENT-2 and launched from PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1370" size="2">
+			<originaltripleset>
+				<otriple>Audi_A1 | manufacturer | Audi</otriple>
+				<otriple>Audi | division | Audi_e-tron</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Audi_A1 | manufacturer | Audi</otriple>
+				<otriple>Audi | division | Audi_e-tron</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Audi_A1</entity>
+				<entity>BRIDGE-1 | Audi</entity>
+				<entity>PATIENT-1 | Audi_e-tron</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Audi e-tron is a division of Audi, who make the Audi A1.</text>
+				<template>PATIENT-1 is a division of BRIDGE-1 ,  who make AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Audi which is the manufacturer of the Audi A1 has a division called the Audi e-tron.</text>
+				<template>BRIDGE-1 which is the manufacturer of AGENT-1 has a division called PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Audi A1 is manufactured by Audi who have a sub-division known as Audi e-tron.</text>
+				<template>AGENT-1 is manufactured by BRIDGE-1 who have a sub-division known as PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1371" size="2">
+			<originaltripleset>
+				<otriple>Audi_A1 | manufacturer | Audi</otriple>
+				<otriple>Audi | subsidiary | Ducati</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Audi_A1 | manufacturer | Audi</otriple>
+				<otriple>Audi | subsidiary | Ducati</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Audi_A1</entity>
+				<entity>BRIDGE-1 | Audi</entity>
+				<entity>PATIENT-1 | Ducati</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Audi A1 is made by Audi who also own Ducati.</text>
+				<template>AGENT-1 is made by BRIDGE-1 who also own PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Audi A1 is made by Audi who also own Ducati.</text>
+				<template>AGENT-1 is made by BRIDGE-1 who also own PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Ducati is a subsidiary of Audi, which is the manufacturer of the Audi A1.</text>
+				<template>PATIENT-1 is a subsidiary of BRIDGE-1 ,  which is the manufacturer of AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1372" size="2">
+			<originaltripleset>
+				<otriple>Audi_A1 | manufacturer | Audi</otriple>
+				<otriple>Audi | subsidiary | Quattro_GmbH</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Audi_A1 | manufacturer | Audi</otriple>
+				<otriple>Audi | subsidiary | Quattro_GmbH</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Audi_A1</entity>
+				<entity>BRIDGE-1 | Audi</entity>
+				<entity>PATIENT-1 | Quattro_GmbH</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Audi A1 is made by Audi, a subsidiary of which, is the Quattro Gmbh.</text>
+				<template>AGENT-1 is made by BRIDGE-1 ,  a subsidiary of which ,  is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Quattro Gmbh is a subsidiary of the Audi who manufacture the Audi A1.</text>
+				<template>PATIENT-1 is a subsidiary of BRIDGE-1 who manufacture AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Quattro Gmbh is a subsidiary of Audi, the company that manufacturers the Audi A1.</text>
+				<template>PATIENT-1 is a subsidiary of BRIDGE-1 ,  the company that manufacturers AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1373" size="2">
+			<originaltripleset>
+				<otriple>Caterpillar_Inc. | keyPerson | Douglas_R._Oberhelman</otriple>
+				<otriple>AIDAluna | powerType | Caterpillar_Inc.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Caterpillar_Inc. | keyPerson | Douglas_R._Oberhelman</otriple>
+				<otriple>AIDAluna | powerType | Caterpillar_Inc.</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | AIDAluna</entity>
+				<entity>BRIDGE-1 | Caterpillar_Inc.</entity>
+				<entity>PATIENT-1 | Douglas_R._Oberhelman</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Douglas R Oberhelman is a person at Caterpillar Inc. where the AIDAluna is manufactured.</text>
+				<template>PATIENT-1 is a person at BRIDGE-1  where AGENT-1 is manufactured . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The power type of the AIDAluna is an engine manufactured by Caterpillar Inc where Douglas R Oberhelman is a key person.</text>
+				<template>The power type of AGENT-1 is an engine manufactured by BRIDGE-1 where PATIENT-1 is a key person . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Douglas R. Oberhelman is a key person at Caterpillar Inc. who provide the engine power for the AIDAluna.</text>
+				<template>PATIENT-1 is a key person at BRIDGE-1 who provide the engine power for AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1374" size="2">
+			<originaltripleset>
+				<otriple>Delta_II | launchSite | Vandenberg_Air_Force_Base</otriple>
+				<otriple>Antares_(rocket) | comparable | Delta_II</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Delta_II | launchSite | Vandenberg_Air_Force_Base</otriple>
+				<otriple>Antares_(rocket) | comparable | Delta_II</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Antares_(rocket)</entity>
+				<entity>BRIDGE-1 | Delta_II</entity>
+				<entity>PATIENT-1 | Vandenberg_Air_Force_Base</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Antares rocket is comparable with the Delta II whose launch site was at Vandenberg Air Force Base.</text>
+				<template>AGENT-1 is comparable with BRIDGE-1 whose launch site was at PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The rocket Antares is comparable to the Delta II which was launched from the Vandenberg Air Force base.</text>
+				<template>AGENT-1 is comparable to BRIDGE-1 which was launched from PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Delta II, which is comparable to the rocket Antares, was launched at the Vandenberg Air Force Base.</text>
+				<template>BRIDGE-1 ,  which is comparable to AGENT-1 ,  was launched at PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1375" size="2">
+			<originaltripleset>
+				<otriple>Aleksey_Chirikov_(icebreaker) | shipBuilder | Finland</otriple>
+				<otriple>Finland | leaderName | Juha_Sipilä</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Finland | leaderName | Juha_Sipilä</otriple>
+				<otriple>Aleksey_Chirikov_(icebreaker) | builder | Finland</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aleksey_Chirikov_(icebreaker)</entity>
+				<entity>BRIDGE-1 | Finland</entity>
+				<entity>PATIENT-1 | Juha_Sipilä</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The icebreaker Aleksey Chirikov was built in Finland where Juha Sipila is a leader.</text>
+				<template>AGENT-1 was built in BRIDGE-1 where PATIENT-1 is a leader . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The icebreaker, the Aleksey Chirikov, is built by Finland, where the leader is Juha Sipila.</text>
+				<template>AGENT-1  is built by BRIDGE-1 ,  where the leader is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Juha Sipilä is a leader in Finland where the icebreaker ship Aleksey Chirikov was built.</text>
+				<template>PATIENT-1 is a leader in BRIDGE-1 where AGENT-1 was built . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1376" size="2">
+			<originaltripleset>
+				<otriple>American_submarine_NR-1 | builder | General_Dynamics_Electric_Boat</otriple>
+				<otriple>General_Dynamics_Electric_Boat | parent | General_Dynamics</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>General_Dynamics_Electric_Boat | parentCompany | General_Dynamics</otriple>
+				<otriple>American_submarine_NR-1 | builder | General_Dynamics_Electric_Boat</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | American_submarine_NR-1</entity>
+				<entity>BRIDGE-1 | General_Dynamics_Electric_Boat</entity>
+				<entity>PATIENT-1 | General_Dynamics</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>General Dynamics is the parent company of, the General Dynamics Electric Boat Co. which is the builder of the American submarine NR-1.</text>
+				<template>PATIENT-1 is the parent company of , BRIDGE-1  which is the builder of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>General Dynamics is the parent company of the General Dynamics Electric Boat Co which built the American submarine NR-1.</text>
+				<template>PATIENT-1 is the parent company of BRIDGE-1 Co which built AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The American submarine NR-1 was built by General Dynamics Electric Boat, the parent company of which, is General Dynamics.</text>
+				<template>AGENT-1 was built by BRIDGE-1 ,  the parent company of which ,  is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1377" size="2">
+			<originaltripleset>
+				<otriple>MTU_Friedrichshafen | owningCompany | Rolls-Royce_Holdings</otriple>
+				<otriple>A-Rosa_Luna | powerType | MTU_Friedrichshafen</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>MTU_Friedrichshafen | owner | Rolls-Royce_Holdings</otriple>
+				<otriple>A-Rosa_Luna | powerType | MTU_Friedrichshafen</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | A-Rosa_Luna</entity>
+				<entity>BRIDGE-1 | MTU_Friedrichshafen</entity>
+				<entity>PATIENT-1 | Rolls-Royce_Holdings</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The A-Rosa Luna is powered by an engine made by MTU Friedrichshafen which is owned by Rolls-Royce Holdings.</text>
+				<template>AGENT-1 is powered by an engine made by BRIDGE-1 which is owned by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The A-Rosa Luna is powered by the Rolls-Royce Holdings owned, MTU Friedrichshafen, made engines.</text>
+				<template>AGENT-1 is powered by the PATIENT-1 owned ,  BRIDGE-1 ,  made engines . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The A rosa Luna is powered by Rolls-Royce Holdings company MTU Friedrichshafen made engines.</text>
+				<template>AGENT-1 is powered by PATIENT-1 company BRIDGE-1 made engines . </template>
+			</lex>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1378" size="2">
+			<originaltripleset>
+				<otriple>United_Kingdom | leader | Elizabeth_II</otriple>
+				<otriple>Aston_Martin_V8 | assembly | United_Kingdom</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>United_Kingdom | leaderName | Elizabeth_II</otriple>
+				<otriple>Aston_Martin_V8 | assembly | United_Kingdom</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Aston_Martin_V8</entity>
+				<entity>BRIDGE-1 | United_Kingdom</entity>
+				<entity>PATIENT-1 | Elizabeth_II</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Aston Martin V8 is assembled in the United Kingdom, the leader of which, is Elizabeth II.</text>
+				<template>AGENT-1 is assembled in BRIDGE-1 ,  the leader of which ,  is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aston Martin V8 was assembled in the United Kingdom which is ruled by Queen Elizabeth II.</text>
+				<template>AGENT-1 was assembled in BRIDGE-1 which is ruled by PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The Aston Martin V8 is assembled in the United Kingdom where the ruler is Queen Elizabeth II.</text>
+				<template>AGENT-1 is assembled in BRIDGE-1 where the ruler is PATIENT-1 . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

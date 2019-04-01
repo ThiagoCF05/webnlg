@@ -1,0 +1,934 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Food" eid="Id250" size="2">
+			<originaltripleset>
+				<otriple>Amatriciana_sauce | country | Italy</otriple>
+				<otriple>Amatriciana_sauce | ingredient | Tomato</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Amatriciana_sauce | country | Italy</otriple>
+				<otriple>Amatriciana_sauce | ingredient | Tomato</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Amatriciana_sauce</entity>
+				<entity>PATIENT-1 | Italy</entity>
+				<entity>PATIENT-2 | Tomato</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Amatriciana sauce is made with tomatoes. It is a traditional Italian sauce.</text>
+				<template>AGENT-1 is made with PATIENT-2 .  AGENT-1 is a traditional PATIENT-1 sauce . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Amatriciana is a sauce containing tomato that comes from Italy.</text>
+				<template>AGENT-1 is a sauce containing PATIENT-2 that comes from PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id251" size="2">
+			<originaltripleset>
+				<otriple>Arem-arem | country | Indonesia</otriple>
+				<otriple>Indonesia | leaderName | Jusuf_Kalla</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arem-arem | country | Indonesia</otriple>
+				<otriple>Indonesia | leaderName | Jusuf_Kalla</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arem-arem</entity>
+				<entity>BRIDGE-1 | Indonesia</entity>
+				<entity>PATIENT-1 | Jusuf_Kalla</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Arem-arem is a food found in Indonesia where Jusuf Kalla is the leader.</text>
+				<template>AGENT-1 is a food found in BRIDGE-1 where PATIENT-1 is the leader . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arem-arem is commonly served in Indonesia where Jusuf Kalla is leader.</text>
+				<template>AGENT-1 is commonly served in BRIDGE-1 where PATIENT-1 is leader . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Arem-arem is a cuisine found in Jusuf Kalla led, Indonesia.</text>
+				<template>AGENT-1 is a cuisine found in PATIENT-1 led ,  BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id252" size="2">
+			<originaltripleset>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+				<otriple>Italy | language | Italian_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+				<otriple>Italy | language | Italian_language</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arrabbiata_sauce</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Italian_language</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Arrabbiata sauce can be found in Italy where the Italian language is spoken.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 where PATIENT-1 is spoken . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arrabbiata sauce is from Italy where the Italian language is spoken.</text>
+				<template>AGENT-1 is from BRIDGE-1 where PATIENT-1 is spoken . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Arrabbiata sauce can be found in Italy, where surprisingly Italian is spoken.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 ,  where surprisingly PATIENT-1 is spoken . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id253" size="2">
+			<originaltripleset>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+				<otriple>Italy | leaderName | Sergio_Mattarella</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+				<otriple>Italy | leaderName | Sergio_Mattarella</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arrabbiata_sauce</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Sergio_Mattarella</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Sergio Mattarella is a leader in Italy, where Arrabbiata sauce is a traditional dish.</text>
+				<template>PATIENT-1 is a leader in BRIDGE-1 ,  where AGENT-1 is a traditional dish . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arrabbiata sauce can be found in Italy where Sergio Mattarella is the leader.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 where PATIENT-1 is the leader . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Arrabbiata sauce is from Italy, where Sergio Mattarella is the leader.</text>
+				<template>AGENT-1 is from BRIDGE-1 ,  where PATIENT-1 is the leader . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id254" size="2">
+			<originaltripleset>
+				<otriple>Arrabbiata_sauce | ingredient | Chili_pepper</otriple>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arrabbiata_sauce | ingredient | Chili_pepper</otriple>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arrabbiata_sauce</entity>
+				<entity>PATIENT-1 | Chili_pepper</entity>
+				<entity>PATIENT-2 | Italy</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Arrabbiata is an Italian sauce that contains chili pepper.</text>
+				<template>AGENT-1 is an PATIENT-2 sauce that contains PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arrabbiata sauce can be found in Italy and one of the ingredients in it is chili pepper.</text>
+				<template>AGENT-1 can be found in PATIENT-2 and one of the ingredients in AGENT-1 is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Arrabbiata sauce, containing chili pepper, can be found in Italy.</text>
+				<template>AGENT-1 ,  containing PATIENT-1 ,  can be found in PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id255" size="2">
+			<originaltripleset>
+				<otriple>Arròs_negre | region | Valencian_Community</otriple>
+				<otriple>Arròs_negre | country | Spain</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Arròs_negre | region | Valencian_Community</otriple>
+				<otriple>Arròs_negre | country | Spain</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | Valencian_Community</entity>
+				<entity>PATIENT-2 | Spain</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Arros negre is a traditional Spanish dish and comes from the region of the Valencian Community.</text>
+				<template>AGENT-1 is a traditional PATIENT-2 dish and comes from the region of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Arros negre comes from the region of the Valencian Community in Spain.</text>
+				<template>AGENT-1 comes from the region of PATIENT-1 in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Arros negre comes from the Spanish region of the Valencian Community.</text>
+				<template>AGENT-1 comes from the PATIENT-2 region of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id256" size="2">
+			<originaltripleset>
+				<otriple>Asam_pedas | country | Indonesia</otriple>
+				<otriple>Asam_pedas | ingredientName | &quot;Fish cooked in sour and hot sauce&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Asam_pedas | country | Indonesia</otriple>
+				<otriple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Asam_pedas</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+				<entity>PATIENT-2 | &quot;Fish cooked in sour and hot sauce&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>A dish popular in Indonesia is asam pedas which is made from fish cooked in hot and sour sauce.</text>
+				<template>A dish popular in PATIENT-1 is AGENT-1 which is made from PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Fish is cooked in sour and hot sauce to create an Asam Pedas which originates from the country of Indonesia.</text>
+				<template>PATIENT-2 to create an AGENT-1 which originates from the country of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Asam pedas is a dish of fish cooked in a sour and hot sauce that comes from Indonesia.</text>
+				<template>AGENT-1 is a dish of PATIENT-2 that comes from PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id257" size="2">
+			<originaltripleset>
+				<otriple>Ayam_penyet | region | Malaysia</otriple>
+				<otriple>Ayam_penyet | country | Indonesia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Ayam_penyet | region | Malaysia</otriple>
+				<otriple>Ayam_penyet | country | Indonesia</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Ayam_penyet</entity>
+				<entity>PATIENT-1 | Malaysia</entity>
+				<entity>PATIENT-2 | Indonesia</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Ayam penyet is from Indonesia and is a popular dish in Malaysia.</text>
+				<template>AGENT-1 is from PATIENT-2 and is a popular dish in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Ayam penyet comes from both Malaysia and Indonesia.</text>
+				<template>AGENT-1 comes from both PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Ayam Penyet is a dish from Malaysia and Indonesia.</text>
+				<template>AGENT-1 is a dish from PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id258" size="2">
+			<originaltripleset>
+				<otriple>BLT | variations | Club_sandwich</otriple>
+				<otriple>Bacon_sandwich | hasVariant | BLT</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>BLT | dishVariation | Club_sandwich</otriple>
+				<otriple>Bacon_sandwich | dishVariation | BLT</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_sandwich</entity>
+				<entity>BRIDGE-1 | BLT</entity>
+				<entity>PATIENT-1 | Club_sandwich</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>A bacon sandwich can be called a BLT which is a variation of a Club Sandwich.</text>
+				<template>AGENT-1 can be called a BRIDGE-1 which is a variation of PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>BLT is a variation of the club sandwich and the bacon sandwich.</text>
+				<template>BRIDGE-1 is a variation of PATIENT-1 and BRIDGE-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bacon sandwich is a variation of BLT which is a variation of a club sandwich.</text>
+				<template>AGENT-1 is a variation of BRIDGE-1 which is a variation of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id259" size="2">
+			<originaltripleset>
+				<otriple>Bacon_Explosion | ingredient | Sausage</otriple>
+				<otriple>Bacon_Explosion | mainIngredient | Bacon</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bacon_Explosion | ingredient | Sausage</otriple>
+				<otriple>Bacon_Explosion | mainIngredients | Bacon</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_Explosion</entity>
+				<entity>PATIENT-1 | Sausage</entity>
+				<entity>PATIENT-2 | Bacon</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Sausage is an ingredient of a bacon explosion but the main ingredient is bacon.</text>
+				<template>PATIENT-1 is an ingredient of AGENT-1 but the main ingredient is PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aside from the main ingredient bacon, sausage is included in the Bacon Explosion.</text>
+				<template>Aside from the main ingredient PATIENT-2 ,  PATIENT-1 is included in AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id260" size="2">
+			<originaltripleset>
+				<otriple>Bacon_sandwich | alias | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;@en</otriple>
+				<otriple>Bacon_sandwich | ingredient | Bacon</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</otriple>
+				<otriple>Bacon_sandwich | ingredient | Bacon</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_sandwich</entity>
+				<entity>PATIENT-1 | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</entity>
+				<entity>PATIENT-2 | Bacon</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>A bacon sandwich - which can also be known as a bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, or bacon muffin - has the ingredient bacon.</text>
+				<template>AGENT-1 - which can also be known as PATIENT-1 - has the ingredient PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The bacon sandwich, which always includes bacon, has different names including: Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm and bacon muffin.</text>
+				<template>AGENT-1 ,  which always includes PATIENT-2 ,  has different names including :  PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id261" size="2">
+			<originaltripleset>
+				<otriple>Bacon_sandwich | variations | BLT</otriple>
+				<otriple>Bacon_sandwich | ingredient | Bread</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bacon_sandwich | dishVariation | BLT</otriple>
+				<otriple>Bacon_sandwich | ingredient | Bread</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_sandwich</entity>
+				<entity>PATIENT-1 | BLT</entity>
+				<entity>PATIENT-2 | Bread</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>A bacon sandwich can be transformed into a BLT which has an ingredient widely found called bread.</text>
+				<template>AGENT-1 can be transformed into PATIENT-1 which has an ingredient widely found called PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>An ingredient in a bacon sandwich is bread and a variation is the BLT.</text>
+				<template>An ingredient in AGENT-1 is PATIENT-2 and a variation is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The bacon sandwich, made from bread, is a variation of BLT.</text>
+				<template>AGENT-1 ,  made from PATIENT-2 ,  is a variation of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id262" size="2">
+			<originaltripleset>
+				<otriple>Baked_Alaska | country | France</otriple>
+				<otriple>Baked_Alaska | ingredient | Sponge_cake</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baked_Alaska | country | France</otriple>
+				<otriple>Baked_Alaska | ingredient | Sponge_cake</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>PATIENT-1 | France</entity>
+				<entity>PATIENT-2 | Sponge_cake</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Baked Alaska comes from the country of France and one of the ingredients is sponge cake.</text>
+				<template>AGENT-1 comes from the country of PATIENT-1 and one of the ingredients is PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baked Alaska (France) uses sponge cake as an ingredient.</text>
+				<template>AGENT-1 (PATIENT-1) uses PATIENT-2 as an ingredient . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>France's @ Baked Alaska includes the ingredient, sponge cake.</text>
+				<template>PATIENT-1 @ AGENT-1 includes the ingredient ,  PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id263" size="2">
+			<originaltripleset>
+				<otriple>Baked_Alaska | country | France</otriple>
+				<otriple>France | leaderName | Manuel_Valls</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baked_Alaska | country | France</otriple>
+				<otriple>France | leaderName | Manuel_Valls</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>BRIDGE-1 | France</entity>
+				<entity>PATIENT-1 | Manuel_Valls</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Baked Alaska comes from the country of France where Manuel Valls is the leader.</text>
+				<template>AGENT-1 comes from the country of BRIDGE-1 where PATIENT-1 is the leader . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>France (led by Manuel Valls) is the origin of Baked Alaska.</text>
+				<template>BRIDGE-1 (led by PATIENT-1) is the origin of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Manuel Valls is the leader of France, where baked alaska comes from.</text>
+				<template>PATIENT-1 is the leader of BRIDGE-1 ,  where AGENT-1 comes from . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id264" size="2">
+			<originaltripleset>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+				<otriple>Baked_Alaska | ingredient | Meringue</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+				<otriple>Baked_Alaska | ingredient | Meringue</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Meringue</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Meringue is one of the main ingredients of a Baked Alaska, Baked Alaska originates from the United States.</text>
+				<template>PATIENT-2 is one of the main ingredients of AGENT-1 ,  AGENT-1 originates from the PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Baked Alaska, a United States dish, includes the ingredient meringue.</text>
+				<template>AGENT-1 ,  a PATIENT-1 dish ,  includes the ingredient PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Meringue is an ingredient of a Baked Alaska which is a dish found in the U.S.</text>
+				<template>PATIENT-2 is an ingredient of AGENT-1 which is a dish found in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id265" size="2">
+			<originaltripleset>
+				<otriple>Bakewell_pudding | hasVariant | Bakewell_tart</otriple>
+				<otriple>Bakewell_tart | ingredient | Fruit_preserves</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bakewell_pudding | dishVariation | Bakewell_tart</otriple>
+				<otriple>Bakewell_tart | ingredient | Fruit_preserves</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>BRIDGE-1 | Bakewell_tart</entity>
+				<entity>PATIENT-1 | Fruit_preserves</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Fruit preservatives is an ingredient in bakewell tarts which are a variant of bakewell pudding.</text>
+				<template>PATIENT-1 is an ingredient in BRIDGE-1 which are a variant of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Bakewell tart, containing fruit preserves, is a variation of Bakewell pudding.</text>
+				<template>BRIDGE-1 ,  containing PATIENT-1 ,  is a variation of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Fruit preserves are an ingredient in Bakewell tart which is a variation of Bakewell pudding.</text>
+				<template>PATIENT-1 are an ingredient in BRIDGE-1 which is a variation of AGENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id266" size="2">
+			<originaltripleset>
+				<otriple>Bakso | country | Indonesia</otriple>
+				<otriple>Bakso | ingredient | Vermicelli</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bakso | country | Indonesia</otriple>
+				<otriple>Bakso | ingredient | Vermicelli</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+				<entity>PATIENT-2 | Vermicelli</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Vermicelli is an ingredient of the dish Bakso which comes from Indonesia.</text>
+				<template>PATIENT-2 is an ingredient of AGENT-1 which comes from PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Vermicelli is included in the Indonesian dish of bakso.</text>
+				<template>PATIENT-2 is included in the PATIENT-1 dish of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Vermicelli is an ingredient in Bakso which is from Indonesia.</text>
+				<template>PATIENT-2 is an ingredient in AGENT-1 which is from PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id267" size="2">
+			<originaltripleset>
+				<otriple>Bakso | ingredient | Celery</otriple>
+				<otriple>Celery | family | Apiaceae</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bakso | ingredient | Celery</otriple>
+				<otriple>Celery | family | Apiaceae</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>BRIDGE-1 | Celery</entity>
+				<entity>PATIENT-1 | Apiaceae</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Celery is a member of the Apiaceae family and is an ingredient of Bakso.</text>
+				<template>BRIDGE-1 is a member of the PATIENT-1 family and is an ingredient of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Celery, which is part of the Apiaceae family, is an ingredient of Bakso.</text>
+				<template>BRIDGE-1 ,  which is part of the PATIENT-1 family ,  is an ingredient of AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Celery is an ingredient of Bakso and is a member of the family Apiaceae.</text>
+				<template>BRIDGE-1 is an ingredient of AGENT-1 and is a member of the family PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id268" size="2">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | ingredient | Chicharrón</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bandeja_paisa | ingredient | Chicharrón</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>PATIENT-1 | Chicharrón</entity>
+				<entity>PATIENT-2 | Colombian_cuisine</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>An ingredient found in Bandeja paisa (typical Colombian cuisine) is Chicharrón.</text>
+				<template>An ingredient found in AGENT-1 (typical PATIENT-2) is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Chicharrón is one of the ingredients in Colombian cuisine's @ Bandeja paisa.</text>
+				<template>PATIENT-1 is one of the ingredients in PATIENT-2 @ AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Traditional Colombian cuisine, Bandeja paisa, includes the ingredient, chicharron.</text>
+				<template>Traditional PATIENT-2 ,  AGENT-1 ,  includes the ingredient ,  PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id269" size="2">
+			<originaltripleset>
+				<otriple>Barny_Cakes | country | France</otriple>
+				<otriple>France | leaderName | Claude_Bartolone</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Barny_Cakes | country | France</otriple>
+				<otriple>France | leaderName | Claude_Bartolone</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Barny_Cakes</entity>
+				<entity>BRIDGE-1 | France</entity>
+				<entity>PATIENT-1 | Claude_Bartolone</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The country Barny Cakes come from is France where the leader is Claude Bartolone.</text>
+				<template>The country AGENT-1 come from is BRIDGE-1 where the leader is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Barny cakes can be found in France where the leader is Claude Bartolone.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 where the leader is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Barny Cakes come from France, whose leader is Claude Bartolone.</text>
+				<template>AGENT-1 come from BRIDGE-1 ,  whose leader is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id270" size="2">
+			<originaltripleset>
+				<otriple>Batagor | country | Indonesia</otriple>
+				<otriple>Batagor | ingredient | Peanut_sauce</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Batagor | country | Indonesia</otriple>
+				<otriple>Batagor | ingredient | Peanut_sauce</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Batagor</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+				<entity>PATIENT-2 | Peanut_sauce</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Peanut sauce is an ingredient of batagor which is found in Indonesia.</text>
+				<template>PATIENT-2 is an ingredient of AGENT-1 which is found in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Batagor, which has peanut sauce as an ingredient, is found in Indonesia.</text>
+				<template>AGENT-1 ,  which has PATIENT-2 as an ingredient ,  is found in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Peanut sauce is an ingredient of batagor which comes from the country of Indonesia.</text>
+				<template>PATIENT-2 is an ingredient of AGENT-1 which comes from the country of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id271" size="2">
+			<originaltripleset>
+				<otriple>Batagor | ingredient | Peanut_sauce</otriple>
+				<otriple>Batagor | variations | Siomay</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Batagor | ingredient | Peanut_sauce</otriple>
+				<otriple>Batagor | dishVariation | Siomay</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Batagor</entity>
+				<entity>PATIENT-1 | Peanut_sauce</entity>
+				<entity>PATIENT-2 | Siomay</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Batagor has peanut sauce as an ingredient and is a variation of the Siomay dish.</text>
+				<template>AGENT-1 has PATIENT-1 as an ingredient and is a variation of the PATIENT-2 dish . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The dishes Batagor and Siomay both contain the ingredient peanut sauce.</text>
+				<template>The dishes AGENT-1 and PATIENT-2 both contain the ingredient PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Batagor is a variation of the Siomay dish and one of the ingredients is peanut sauce.</text>
+				<template>AGENT-1 is a variation of the PATIENT-2 dish and one of the ingredients is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id272" size="2">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | country | Singapore</otriple>
+				<otriple>Beef_kway_teow | ingredient | Palm_sugar</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Beef_kway_teow | country | Singapore</otriple>
+				<otriple>Beef_kway_teow | ingredient | Palm_sugar</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>PATIENT-1 | Singapore</entity>
+				<entity>PATIENT-2 | Palm_sugar</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Beef kway teow is a dish from the country of Singapore that had palm sugar as an ingredient.</text>
+				<template>AGENT-1 is a dish from the country of PATIENT-1 that had PATIENT-2 as an ingredient . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Palm sugar is an ingredient in beef kway teow which comes from Singapore.</text>
+				<template>PATIENT-2 is an ingredient in AGENT-1 which comes from PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Beef kway teow is a popular dish in Singapore, it includes palm sugar.</text>
+				<template>AGENT-1 is a popular dish in PATIENT-1 ,  AGENT-1 includes PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id273" size="2">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | country | Singapore</otriple>
+				<otriple>Singapore | leader | Halimah_Yacob</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Beef_kway_teow | country | Singapore</otriple>
+				<otriple>Singapore | leaderName | Halimah_Yacob</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>PATIENT-1 | Halimah_Yacob</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Beef kway teow is a popular dish from Singapore and Halimah Yacob is it's leader.</text>
+				<template>AGENT-1 is a popular dish from BRIDGE-1 and PATIENT-1 is BRIDGE-1 leader . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Beef kway teow is a dish from Singapore where Halimah Yacob is the leader.</text>
+				<template>AGENT-1 is a dish from BRIDGE-1 where PATIENT-1 is the leader . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Beef kway teow is a popular dish in Singapore whose leader is Halimah Yacob.</text>
+				<template>AGENT-1 is a popular dish in BRIDGE-1 whose leader is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id274" size="2">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | mainIngredient | &quot;Kway teow , beef tenderloin, gula Melaka ,sliced, dried black beans, garlic, dark soy sauce, lengkuas , oyster sauce, soya sauce, chilli and sesame oil&quot;@en</otriple>
+				<otriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</otriple>
+				<otriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>PATIENT-1 | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</entity>
+				<entity>PATIENT-2 | &quot;Singapore and Indonesia&quot;</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The main ingredients in Beef Kway Teow made in Singapore and Indonesia are kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil.</text>
+				<template>The main ingredients in AGENT-1 made in PATIENT-2 are PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Kway teow, beef tender loin, gula Melaka, sliced dried black beans, garlic, soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil are the main ingredients of Beef Kway Teow which is a dish found in Indonesia and Singapore.</text>
+				<template>PATIENT-1 are the main ingredients of AGENT-1 which is a dish found in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Beef kway teow is a dish commonly found in Singapore and Indonesia and the main ingredients are Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil.</text>
+				<template>AGENT-1 is a dish commonly found in PATIENT-2 and the main ingredients are PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id275" size="2">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | demonym | Indian_people</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | demonym | Indian_people</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | Indian_people</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bhajji comes from the country India, where Indians live.</text>
+				<template>AGENT-1 comes from the country BRIDGE-1 ,  where PATIENT-1 live . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bhajji originates from India which is where Indian people are from.</text>
+				<template>AGENT-1 originates from BRIDGE-1 which is where PATIENT-1 are from . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bhajji is a dish originating from Indian inhabited, India.</text>
+				<template>AGENT-1 is a dish originating from PATIENT-1 inhabited ,  BRIDGE-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id276" size="2">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | leader | T._S._Thakur</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | leaderName | T._S._Thakur</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | T._S._Thakur</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bhajji's come from India where T.S. Thakur is the leader.</text>
+				<template>AGENT-1 come from BRIDGE-1 where PATIENT-1 is the leader . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bhajji and T.S. Thakur are from India and Thakkur is the leader.</text>
+				<template>AGENT-1 and PATIENT-1 are from BRIDGE-1 and PATIENT-1 is the leader . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bhajji originates from India where the leader is T.S. Thakur.</text>
+				<template>AGENT-1 originates from BRIDGE-1 where the leader is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id277" size="2">
+			<originaltripleset>
+				<otriple>Binignit | country | Philippines</otriple>
+				<otriple>Philippines | ethnicGroup | Igorot_people</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Binignit | country | Philippines</otriple>
+				<otriple>Philippines | ethnicGroup | Igorot_people</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>BRIDGE-1 | Philippines</entity>
+				<entity>PATIENT-1 | Igorot_people</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The Igorot people are one of the ethnic groups in the Philippines where the binignit dish can be found.</text>
+				<template>PATIENT-1 are one of the ethnic groups in BRIDGE-1 where AGENT-1 can be found . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Igorot people are an ethnic group found in the Philippines which is also home to the binignit dish.</text>
+				<template>PATIENT-1 are an ethnic group found in BRIDGE-1 which is also home to AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Binignit is a dish from the Philippines, where the ethnic group called the Igorot people are found.</text>
+				<template>AGENT-1 is a dish from BRIDGE-1 ,  where the ethnic group called PATIENT-1 are found . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id278" size="2">
+			<originaltripleset>
+				<otriple>Binignit | mainIngredient | Banana</otriple>
+				<otriple>Binignit | country | Philippines</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Binignit | mainIngredients | Banana</otriple>
+				<otriple>Binignit | country | Philippines</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>PATIENT-1 | Banana</entity>
+				<entity>PATIENT-2 | Philippines</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Binignit comes from the Philippines and has banana as the main ingredient.</text>
+				<template>AGENT-1 comes from PATIENT-2 and has PATIENT-1 as the main ingredient . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>One of the main ingredients in binignit is banana and it can be found in the Philippines.</text>
+				<template>One of the main ingredients in AGENT-1 is PATIENT-1 and AGENT-1 can be found in PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The binignit dish, containing banana, can be found in the Philippines.</text>
+				<template>AGENT-1 ,  containing PATIENT-1 ,  can be found in PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id279" size="2">
+			<originaltripleset>
+				<otriple>Binignit | mainIngredient | Sweet_potato</otriple>
+				<otriple>Binignit | ingredient | Banana</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Binignit | mainIngredients | Sweet_potato</otriple>
+				<otriple>Binignit | ingredient | Banana</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>PATIENT-1 | Sweet_potato</entity>
+				<entity>PATIENT-2 | Banana</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>The main ingredients of binignit are sweet potatoes and banana.</text>
+				<template>The main ingredients of AGENT-1 are PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>One of the main ingredients of Binignit is the sweet potato, and it also contains banana.</text>
+				<template>One of the main ingredients of AGENT-1 is PATIENT-1 ,  and AGENT-1 also contains PATIENT-2 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The main ingredients of binignit are sweet potatotes and bananas.</text>
+				<template>The main ingredients of AGENT-1 are PATIENT-1 and PATIENT-2 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id280" size="2">
+			<originaltripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Mexico | leader | Enrique_Peña_Nieto</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Mexico | leaderName | Enrique_Peña_Nieto</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>BRIDGE-1 | Mexico</entity>
+				<entity>PATIENT-1 | Enrique_Peña_Nieto</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Mexico (led by Enrique Pena Nieto) boasts the dish Bionico.</text>
+				<template>BRIDGE-1 (led by PATIENT-1) boasts the dish AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Enrique Pena Nieto is the leader of Mexico, where the food bionico is found.</text>
+				<template>PATIENT-1 is the leader of BRIDGE-1 ,  where AGENT-1 is found . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bionico is a food found in Mexico where Enrique Pena Nieto is a leader.</text>
+				<template>AGENT-1 is a food found in BRIDGE-1 where PATIENT-1 is a leader . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id281" size="2">
+			<originaltripleset>
+				<otriple>Bionico | region | Guadalajara</otriple>
+				<otriple>Bionico | ingredient | Granola</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Bionico | region | Guadalajara</otriple>
+				<otriple>Bionico | ingredient | Granola</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>PATIENT-1 | Guadalajara</entity>
+				<entity>PATIENT-2 | Granola</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bionico requires granola as one of its ingredients and can be found in Guadalajara.</text>
+				<template>AGENT-1 requires PATIENT-2 as one of AGENT-1 ingredients and can be found in PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Granola is a required ingredient of the Guadalajara regional dish, Bionico.</text>
+				<template>PATIENT-2 is a required ingredient of the PATIENT-1 regional dish ,  AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Bionico, which contains granola, can be found in Guadalajara.</text>
+				<template>AGENT-1 ,  which contains PATIENT-2 ,  can be found in PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id282" size="2">
+			<originaltripleset>
+				<otriple>Dessert | hasVariant | Cake</otriple>
+				<otriple>Bionico | course | Dessert</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Dessert | dishVariation | Cake</otriple>
+				<otriple>Bionico | course | Dessert</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>BRIDGE-1 | Dessert</entity>
+				<entity>PATIENT-1 | Cake</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Bionico is served at the dessert course, as would cake be as a variation.</text>
+				<template>AGENT-1 is served at the BRIDGE-1 course ,  as would PATIENT-1 be as a variation . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Bionico is a dish served for dessert as is cake.</text>
+				<template>AGENT-1 is a dish served for BRIDGE-1 as is PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A variation of cake is dessert and Bionico is one example of this.</text>
+				<template>A variation of PATIENT-1 is BRIDGE-1 and AGENT-1 is one example of PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id283" size="2">
+			<originaltripleset>
+				<otriple>Indonesia | leader | Joko_Widodo</otriple>
+				<otriple>Bakso | country | Indonesia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Indonesia | leaderName | Joko_Widodo</otriple>
+				<otriple>Bakso | country | Indonesia</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>BRIDGE-1 | Indonesia</entity>
+				<entity>PATIENT-1 | Joko_Widodo</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>Indonesia, where Joko Widodo is the leader, is also where Bakso comes from.</text>
+				<template>BRIDGE-1 ,  where PATIENT-1 is the leader ,  is also where AGENT-1 comes from . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Indonesia is the country Bakso comes from and the leader is Joko Widodo.</text>
+				<template>BRIDGE-1 is the country AGENT-1 comes from and the leader is PATIENT-1 . </template>
+			</lex>
+		</entry>
+		<entry category="Food" eid="Id284" size="2">
+			<originaltripleset>
+				<otriple>Shumai | ingredient | Shiitake</otriple>
+				<otriple>Batagor | variations | Shumai</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Shumai | ingredient | Shiitake</otriple>
+				<otriple>Batagor | dishVariation | Shumai</otriple>
+			</modifiedtripleset>
+			<entitymap>
+				<entity>AGENT-1 | Batagor</entity>
+				<entity>BRIDGE-1 | Shumai</entity>
+				<entity>PATIENT-1 | Shiitake</entity>
+			</entitymap>
+			<lex comment="good" lid="Id1">
+				<text>A variation of Shumai includes Batagor which features the ingredient Shiitake.</text>
+				<template>A variation of BRIDGE-1 includes AGENT-1 which features the ingredient PATIENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Shiitake is an ingredient of Shumai which has a variation known as Batagor.</text>
+				<template>PATIENT-1 is an ingredient of BRIDGE-1 which has a variation known as AGENT-1 . </template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Shiitake is an ingredient of Shumai which is a variation of Batagor.</text>
+				<template>PATIENT-1 is an ingredient of BRIDGE-1 which is a variation of AGENT-1 . </template>
+			</lex>
+		</entry>
+	</entries>
+</benchmark>

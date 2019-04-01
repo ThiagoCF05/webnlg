@@ -1,0 +1,355 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id1" size="4">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | network | &quot;STV&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Tim_Brooke-Taylor</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | creator | Steve_Bright</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Tim Brooke-Taylor was the star of Bananaman, an STV series first aired on 10/03/1983 and created by Steve Bright.</text>
+				<template>PATIENT-1 was the star of AGENT-1 , an PATIENT-4 series first aired on PATIENT-3 and created by PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=null,number=singular] (VBD was) (NP (NP (DT[form=defined] the) (NN star)) (PP (IN of) (NP (TAG AGENT-1)))) (VB ,) (S (NP-SUBJ (DT[form=undefined] a) (NNP (TAG PATIENT-4)) (NN series)) (ADJP (JJ first)) (S (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB air) (PP (IN on) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB create) (PP (IN by) (NP (TAG PATIENT-2)))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Bananaman was created by Steve Bright and starred Tim Brooke-Taylor. The show was first aired on 3rd October 1983 by STV.</text>
+				<template>AGENT-1 was created by PATIENT-2 and starred PATIENT-1 . AGENT-1 was first aired on PATIENT-3 by PATIENT-4 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP (TAG PATIENT-2)))) (CC and) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB star) (NP (TAG PATIENT-1)))) (. .))  (S (NP-OBJ (DT[form=defined] the) (NN show)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB air) (PP (IN on) (NP (TAG PATIENT-3))) (PP (IN by) (NP-SUBJ (TAG PATIENT-4)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+						<striple>Bananaman | creator | Steve_Bright</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Tim Brooke-Taylor starred in Bananaman that was created by Steve Bright. It was broadcast by STV and first aired on 3 October 1983.</text>
+				<template>PATIENT-1 starred in AGENT-1 that was created by PATIENT-2 . AGENT-1 was broadcast by PATIENT-4 and first aired on PATIENT-3 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB star) (PP (IN in) (NP-SUBJ (NP-OBJ (TAG AGENT-1)) (SBAR (WHNP (WDT that)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP (TAG PATIENT-2))))))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB broadcast) (PP (IN by) (NP (TAG PATIENT-4)))) (CC and) (ADVP (JJ first)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB air) (PP (IN on) (NP (CD 3))) (NP-TMP (NNP October) (CD 1983))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-4 | &quot;STV&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id2" size="4">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Dan_Mishkin</otriple>
+				<otriple>Ernie_Colón | nationality | Puerto_Ricans</otriple>
+				<otriple>Bolt_(DC_Comics) | creator | Ernie_Colón</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bolt_(comicsCharacter) | creator | Ernie_Colón</mtriple>
+				<mtriple>Ernie_Colón | nationality | Puerto_Ricans</mtriple>
+				<mtriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</mtriple>
+				<mtriple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Dan Mishkin and the Puerto Rican national, Ernie Colon created the comic character of Bolt who has the alternative name of Larry Bolatinsky.</text>
+				<template>PATIENT-3 and the PATIENT-1 national , BRIDGE-1 created AGENT-1 who has the alternative name of PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-COORDINATION (NP (TAG PATIENT-3)) (CC and) (NP (NP (DT[form=defined] the) (NNP Puerto) (NNP Rican)) (NP (JJ national) (, ,) (NNP Ernie) (NN Colon)))) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB create) (NP-OBJ (NP (DT[form=defined] the) (JJ comic) (NN character)) (PP (IN of) (NP (NN Bolt))) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP (NP (DT[form=defined] the) (JJ alternative) (NN name)) (PP (IN of) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Dan Mishkin and Ernie Colón (Puerto Rican) created the comic character Bolt, the alternative name of which is Larry Bolatinsky.</text>
+				<template>PATIENT-3 and BRIDGE-1 ( PATIENT-1 ) created AGENT-1 , the alternative name of which is PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP-COORDINATION (NP (TAG PATIENT-3)) (CC and) (NP (TAG BRIDGE-1))) (PRN (-LRB- -LRB-) (NP (TAG PATIENT-1)) (-RRB- -RRB-))) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB create) (NP-OBJ (NP (TAG AGENT-1)) (, ,) (NP (NP (DT[form=defined] the) (JJ alternative) (NN name)) (PP (IN of) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The comic book character of Bolt has the alternative name of Larry Bolatinsky. It was created by Dan Mishkin and the Puerto Rican national, Ernie Colon.</text>
+				<template>AGENT-1 has the alternative name of PATIENT-2 . AGENT-1 was created by PATIENT-3 and the PATIENT-1 national , BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (JJ comic) (NN book) (NN character)) (PP (IN of) (NP (NNP Bolt)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (DT[form=defined] the) (JJ alternative) (NN name)) (PP (IN of) (NP (TAG PATIENT-2))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP-COORDINATION (NP (TAG PATIENT-3)) (CC and) (NP-SUBJ (NP (DT[form=defined] the) (NNP Puerto) (NNP Rican)) (NP (JJ national) (, ,) (NNP Ernie) (NN Colon)))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>BRIDGE-1 | Ernie_Colón</entity>
+				<entity>PATIENT-1 | Puerto_Ricans</entity>
+				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
+				<entity>PATIENT-3 | Dan_Mishkin</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id3" size="4">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax is a character in Big Hero 6 that stars Damon Wayans Jr. The character was created by the American, Duncan Rouleau.</text>
+				<template>AGENT-1 is a character in BRIDGE-2 that stars PATIENT-2 . AGENT-1 was created by PATIENT-1 , BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-OBJ (NP (DT[form=undefined] a) (NN character)) (PP (IN in) (NP (NP (TAG BRIDGE-2)) (SBAR (WHNP (WDT that)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB star) (NP (TAG PATIENT-2))))))))) (. .))  (S (NP-OBJ (DT[form=defined] the) (NN character)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP-SUBJ (NP (TAG PATIENT-1)) (, ,) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Damon Wayans Jr starred in the film Big Hero 6 which also included the character of Baymax who was created by the American, Duncan Rouleau.</text>
+				<template>PATIENT-2 starred in BRIDGE-2 which also included AGENT-1 who was created by PATIENT-1 , BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB star) (PP (IN in) (NP (DT[form=defined] the) (NN film) (JJ Big) (NN Hero))) (NP-SUBJ (NP (CD 6)) (SBAR (WHNP (WDT which)) (S (ADVP (RB also)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB include) (NP-OBJ (NP (DT[form=defined] the) (NN character)) (PP (IN of) (NP (NNP Baymax))) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP (NP (TAG PATIENT-1)) (, ,) (NP (TAG BRIDGE-1))))))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax is a character in the film Big Hero 6 which starred Damon Wayans, Jr. The character was created by the American national Duncan Rouleau.</text>
+				<template>AGENT-1 is a character in BRIDGE-2 which starred PATIENT-2 . AGENT-1 was created by the PATIENT-1 national BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-OBJ (NP (DT[form=undefined] a) (NN character)) (PP (IN in) (NP (TAG BRIDGE-2))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB star) (NP (TAG PATIENT-2))))))) (. .))  (S (NP-OBJ (DT[form=defined] the) (NN character)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP-SUBJ (DT[form=defined] the) (ADJP (JJ (TAG PATIENT-1)) (JJ national)) (NNP Duncan) (NNP Rouleau)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Damon_Wayans,_Jr.</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id4" size="4">
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Jamie_Chung</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Jamie_Chung</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax, a character in Big Hero 6, starring Jamie Chung, was created by Duncan Rouleau, an American.</text>
+				<template>AGENT-1 , a character in BRIDGE-2 , starring PATIENT-2 , was created by BRIDGE-1 , PATIENT-1 .</template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (TAG AGENT-1)) (, ,) (NP (NP (NP (DT[form=undefined] a) (NN character)) (PP (IN in) (NP (JJ Big) (NN Hero)))) (ADJP (CD 6)) (, ,) (VP[aspect=progressive,tense=present,voice=active,person=null,number=null] (VB star) (NP (TAG PATIENT-2)))) (, ,)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP (NP (TAG BRIDGE-1)) (, ,) (NP (DT[form=undefined] a) (NNP American))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Jamie Chung starred in the film Big Hero 6 in which the character of Baymax appeared. Baymax was created by the American national, Duncan Rouleau.</text>
+				<template>PATIENT-2 starred in BRIDGE-2 in which AGENT-1 appeared . AGENT-1 was created by PATIENT-1 , BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB star) (PP (IN in) (NP (DT[form=defined] the) (NN film) (JJ Big) (NN Hero))) (NP-OBJ (NP (CD 6)) (SBAR (WHPP (IN in) (WHNP (WDT which))) (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB appear)))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP-SUBJ (NP (TAG PATIENT-1)) (, ,) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Duncan Rouleau, who is American, created the character Baymax, which appeared in the movie Big Hero 6 starring Jamie Chung.</text>
+				<template>BRIDGE-1 , who is PATIENT-1 , created AGENT-1 , which appeared in BRIDGE-2 starring PATIENT-2 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))))) (, ,)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB create) (NP (DT[form=defined] the) (NN character)) (NP-TMP (NP (NNP Baymax)) (, ,) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB appear) (PP (IN in) (NP (DT[form=defined] the) (NN movie) (JJ Big) (NN Hero))) (NP-OBJ (NP (CD 6)) (VP[aspect=progressive,tense=present,voice=active,person=null,number=null] (VB star) (NP (TAG PATIENT-2))))))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Jamie_Chung</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id5" size="4">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Maya_Rudolph</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Maya_Rudolph</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Big Hero 6 starred May Rudolph and the character of Baymax who was created by the American, Duncan Rouleau.</text>
+				<template>BRIDGE-2 starred PATIENT-2 and AGENT-1 who was created by PATIENT-1 , BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG BRIDGE-2)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB star) (NP-COORDINATION (NP (TAG PATIENT-2)) (CC and) (NP-SUBJ (NP-OBJ (DT[form=defined] the) (NN character)) (PP (IN of) (NP (NNP Baymax))) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP (NP (TAG PATIENT-1)) (, ,) (NP (TAG BRIDGE-1)))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baymax is a character in the film Big Hero 6 which starred Maya Rudolph. The creator of this character was American born Duncan Rouleau.</text>
+				<template>AGENT-1 is a character in BRIDGE-2 which starred PATIENT-2 . The creator of AGENT-1 was PATIENT-1 born BRIDGE-1 .</template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG AGENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-OBJ (NP (DT[form=undefined] a) (NN character)) (PP (IN in) (NP (TAG BRIDGE-2))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB star) (NP (TAG PATIENT-2))))))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NN creator)) (PP (IN of) (NP (TAG AGENT-1)))) (VP[aspect=simple,tense=past,voice=active,person=null,number=singular] (VB be) (NP-OBJ (NP (TAG PATIENT-1)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB bear) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Maya Rudolph stars in Big Hero 6 in which the character Baymax also appears. Baymax was created by the American, Duncan Rouleau.</text>
+				<template>PATIENT-2 stars in BRIDGE-2 in which AGENT-1 also appears . AGENT-1 was created by PATIENT-1 , BRIDGE-1 .</template>
+				<tree>(SENTENCES (NP (NP (JJ Maya) (NNP Rudolph) (NNS stars)) (PP (IN in) (NP (NP (TAG BRIDGE-2)) (SBAR (WHPP (IN in) (WHNP (WDT which))) (S (NP-SUBJ (TAG AGENT-1)) (ADVP (RB also)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB appear)))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB create) (PP (IN by) (NP-SUBJ (NP (TAG PATIENT-1)) (, ,) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Maya_Rudolph</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+	
+
+
+</benchmark>

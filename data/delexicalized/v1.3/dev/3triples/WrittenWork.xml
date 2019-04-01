@@ -1,0 +1,997 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="WrittenWork" eid="Id1" size="3">
+			<originaltripleset>
+				<otriple>1634:_The_Bavarian_Crisis | isbn | &quot;978-1-4165-4253-7&quot;</otriple>
+				<otriple>1634:_The_Bavarian_Crisis | author | &quot;Virginia DeMarce and&quot;@en</otriple>
+				<otriple>1634:_The_Bavarian_Crisis | mediaType | &quot;Print&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Bavarian_Crisis | ISBN_number | &quot;978-1-4165-4253-7&quot;</mtriple>
+				<mtriple>1634:_The_Bavarian_Crisis | author | &quot;Virginia DeMarce and Eric Flint&quot;</mtriple>
+				<mtriple>1634:_The_Bavarian_Crisis | mediaType | &quot;Print&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>1634: The Bavarian Crisis can be located by it's ISBN number &quot;978-1-4165-4253-7&quot;. It is written by Virginia DeMarce and Eric Flint and was put in print.</text>
+				<template>AGENT-1 can be located by AGENT-1 ISBN number `` PATIENT-1 '' . AGENT-1 is written by PATIENT-2 and was put in PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>1634: The Bavarian Crisis was authored by Virginia DeMarce and Eric Flint and has a ISBN number of 978-1-4165-4253-7.</text>
+				<template>AGENT-1 was authored by PATIENT-2 and has a ISBN number of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The ISBN number of 1634: The Bavarian Crisis is 978-1-4165-4253-7, it is written by Virginia DeMarce and Eric Flint and is available in print form.</text>
+				<template>The ISBN number of AGENT-1 is PATIENT-1 , AGENT-1 is written by PATIENT-2 and is available in PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Bavarian_Crisis</entity>
+				<entity>PATIENT-1 | &quot;978-1-4165-4253-7&quot;</entity>
+				<entity>PATIENT-3 | &quot;Print&quot;</entity>
+				<entity>PATIENT-2 | &quot;Virginia DeMarce and Eric Flint&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id2" size="3">
+			<originaltripleset>
+				<otriple>1634:_The_Bavarian_Crisis | author | Eric_Flint</otriple>
+				<otriple>1634:_The_Bavarian_Crisis | previousWork | 1634:_The_Baltic_War</otriple>
+				<otriple>Eric_Flint | birthPlace | Burbank,_California</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Bavarian_Crisis | author | Eric_Flint</mtriple>
+				<mtriple>1634:_The_Bavarian_Crisis | precededBy | 1634:_The_Baltic_War</mtriple>
+				<mtriple>Eric_Flint | birthPlace | Burbank,_California</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Born in Burbank, California, Eric Flint wrote 1634: The Bavarian Crisis which was preceded by 1634: The Baltic War.</text>
+				<template>Born in PATIENT-2 , BRIDGE-1 wrote AGENT-1 which was preceded by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>1634: The Bavarian Crisis and it's predecessor, 1634: The Baltic War, was written by Eric Flint who was born in Burbank California.</text>
+				<template>AGENT-1 and AGENT-1 predecessor , PATIENT-1 , was written by BRIDGE-1 who was born in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | Eric_Flint</entity>
+				<entity>AGENT-1 | 1634:_The_Bavarian_Crisis</entity>
+				<entity>PATIENT-1 | 1634:_The_Baltic_War</entity>
+				<entity>PATIENT-2 | Burbank,_California</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id3" size="3">
+			<originaltripleset>
+				<otriple>1634:_The_Ram_Rebellion | author | Eric_Flint</otriple>
+				<otriple>1634:_The_Ram_Rebellion | mediaType | E-book</otriple>
+				<otriple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Ram_Rebellion | author | Eric_Flint</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | mediaType | E-book</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Eric Flint is the author of 1634: The Ram Rebellion which has 512 pages and is available as an E-Book.</text>
+				<template>PATIENT-1 is the author of AGENT-1 which has PATIENT-3 pages and is available as PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>During 1634, Eric Flint wrote the RAM Rebellion which is 512 pages long and is of the media type E book.</text>
+				<template>During 1634 , PATIENT-1 wrote AGENT-1 which is PATIENT-3 pages long and is of PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Ram_Rebellion</entity>
+				<entity>PATIENT-1 | Eric_Flint</entity>
+				<entity>PATIENT-3 | &quot;512&quot;</entity>
+				<entity>PATIENT-2 | E-book</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id4" size="3">
+			<originaltripleset>
+				<otriple>1634:_The_Ram_Rebellion | author | Eric_Flint</otriple>
+				<otriple>1634:_The_Ram_Rebellion | mediaType | Hardcover</otriple>
+				<otriple>1634:_The_Ram_Rebellion | isbn | &quot;1-4165-2060-0&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Ram_Rebellion | author | Eric_Flint</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | mediaType | Hardcover</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The hardcover book 1634: The Ram Rebellion was written by Eric Flint and has the ISBN number 1-4165-2060-0.</text>
+				<template>PATIENT-2 AGENT-1 was written by PATIENT-1 and has PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>1634: The Ram Rebellion, ISBN number 1-4165-2060-0, was written by Eric Flint and is available in hardcover.</text>
+				<template>AGENT-1 , ISBN number PATIENT-3 , was written by PATIENT-1 and is available in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Eric Flint wrote 1634: The Ram Rebellion found in hardcover with an ISBN of 1-4165-2060-0.</text>
+				<template>PATIENT-1 wrote AGENT-1 found in PATIENT-2 with an ISBN of PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Ram_Rebellion</entity>
+				<entity>PATIENT-1 | Eric_Flint</entity>
+				<entity>PATIENT-3 | &quot;1-4165-2060-0&quot;</entity>
+				<entity>PATIENT-2 | Hardcover</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id5" size="3">
+			<originaltripleset>
+				<otriple>1634:_The_Ram_Rebellion | mediaType | E-book</otriple>
+				<otriple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;^^xsd:positiveInteger</otriple>
+				<otriple>1634:_The_Ram_Rebellion | author | &quot;Eric Flint, Virginia DeMarce, et al.&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Ram_Rebellion | mediaType | E-book</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | author | &quot;Eric Flint, Virginia DeMarce, et al.&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>1634: The Ram Rebellion, written by Eric Flint, Virginia DeMarce. et al., is 512 pages long and can be found as an E book.</text>
+				<template>AGENT-1 , written by PATIENT-3 , is PATIENT-2 pages long and can be found as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>1634: The Ram Rebellion was written by Eric Flint, Virginia DeMarce, et al. It has 512 pages and is available as an E-Book.</text>
+				<template>AGENT-1 was written by PATIENT-3 . AGENT-1 has PATIENT-2 pages and is available as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>1634: The Ram Rebellion has 512 pages and was written by Eric Flint, Virginia DeMarce, et al. . It can be found as an E book.</text>
+				<template>AGENT-1 has PATIENT-2 pages and was written by PATIENT-3 . AGENT-1 can be found as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Ram_Rebellion</entity>
+				<entity>PATIENT-1 | E-book</entity>
+				<entity>PATIENT-3 | &quot;Eric Flint, Virginia DeMarce, et al.&quot;</entity>
+				<entity>PATIENT-2 | &quot;512&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id6" size="3">
+			<originaltripleset>
+				<otriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;@en</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | discipline | Computer_science</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | issn | &quot;1046-8188&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>ACM_Transactions_on_Information_Systems | discipline | Computer_science</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | issn | &quot;1046-8188&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</mtriple>
+				<mtriple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</mtriple>
+				<mtriple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1046-8188&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>ACM Transactions on Information Systems, or ACM Trans. Inf. Syst., is part of the academic Discipline of Computer Science and has an ISSN number of 1046-8188.</text>
+				<template>AGENT-1 , or PATIENT-1 , is part of the academic Discipline of PATIENT-2 and has an ISSN number of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>ACM Transactions on Information Systems is part of the academic Discipline of Computer Science and has the abbreviation of ACM Trans. Inf. Syst. it has the ISSN number 1046-8188.</text>
+				<template>AGENT-1 is part of the academic Discipline of PATIENT-2 and has the abbreviation of PATIENT-1. AGENT-1 has the ISSN number PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The abbreviation &quot;ACM Trans. Inf. Syst.&quot; is for ACM Transactions on Information Systems which is part of the academic Discipline of Computer Science and has an ISSN number of 1046-8188.</text>
+				<template>PATIENT-1 is for AGENT-1 which is part of the academic Discipline of PATIENT-2 and has an ISSN number of PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ACM_Transactions_on_Information_Systems</entity>
+				<entity>PATIENT-1 | &quot;ACM Trans. Inf. Syst.&quot;</entity>
+				<entity>PATIENT-3 | &quot;1046-8188&quot;</entity>
+				<entity>PATIENT-2 | Computer_science</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id7" size="3">
+			<originaltripleset>
+				<otriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;@en</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | discipline | Computer_science</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | issn | &quot;1558-2868&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>ACM_Transactions_on_Information_Systems | discipline | Computer_science</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | issn | &quot;1558-2868&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</mtriple>
+				<mtriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</mtriple>
+				<mtriple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1558-2868&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The ACM Transactions on Information Systems ISSN number is 1558-2868. It is part of the academic Discipline of Computer Science and abbreviated to ACM Trans. Inf. Syst.</text>
+				<template>AGENT-1 ISSN number is PATIENT-3 . AGENT-1 is part of the academic Discipline of PATIENT-1 and abbreviated to PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>ACM Transactions on Information Systems is part of the academic Discipline of Computer Science and has the abbreviation &quot;ACM Trans. Inf. Syst.&quot; and the ISSN number 1558-2868.</text>
+				<template>AGENT-1 is part of the academic Discipline of PATIENT-1 and has the abbreviation PATIENT-2 and the ISSN number PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>ACM Transactions on Information Systems, or ACM Trans. Inf. Syst., is part of the academic Discipline of Computer Science and has a ISSN number of 1558-2868.</text>
+				<template>AGENT-1 , or PATIENT-2 , is part of the academic Discipline of PATIENT-1 and has a ISSN number of PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ACM_Transactions_on_Information_Systems</entity>
+				<entity>PATIENT-1 | Computer_science</entity>
+				<entity>PATIENT-3 | &quot;1558-2868&quot;</entity>
+				<entity>PATIENT-2 | &quot;ACM Trans. Inf. Syst.&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id8" size="3">
+			<originaltripleset>
+				<otriple>United_Kingdom | leaderName | Elizabeth_II</otriple>
+				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
+				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
+				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
+				<otriple>United_Kingdom | leader | Elizabeth_II</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AIDS_(journal) | country | United_Kingdom</mtriple>
+				<mtriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</mtriple>
+				<mtriple>United_Kingdom | leaderName | Elizabeth_II</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The AIDS journal was published by Lippincott Williams &amp; Wilkins in the United Kingdom where Elizabeth II is the leader.</text>
+				<template>AGENT-1 was published by PATIENT-1 in BRIDGE-1 where PATIENT-2 is the leader .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The AIDS journal is published by Lippincot Williams &amp; Wilkins and comes from the United Kingdom where Elizabeth II is the leader.</text>
+				<template>AGENT-1 is published by PATIENT-1 and comes from BRIDGE-1 where PATIENT-2 is the leader .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The AIDS journal, which came from the United Kingdom in the reign of Elizabeth II, was published by Lippincott Williams and Wilkins.</text>
+				<template>AGENT-1 , which came from BRIDGE-1 in the reign of PATIENT-2 , was published by PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | United_Kingdom</entity>
+				<entity>AGENT-1 | AIDS_(journal)</entity>
+				<entity>PATIENT-1 | Lippincott_Williams_&amp;_Wilkins</entity>
+				<entity>PATIENT-2 | Elizabeth_II</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id9" size="3">
+			<originaltripleset>
+				<otriple>AIP_Advances | editor | A.T._Charlie_Johnson</otriple>
+				<otriple>A.T._Charlie_Johnson | residence | United_States</otriple>
+				<otriple>AIP_Advances | publisher | American_Institute_of_Physics</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AIP_Advances | editor | A.T._Charlie_Johnson</mtriple>
+				<mtriple>A.T._Charlie_Johnson | residence | United_States</mtriple>
+				<mtriple>AIP_Advances | publisher | American_Institute_of_Physics</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>A.T. Charlie Johnson, who lives in the US, is the editor of AIP Advances which is published by the American Institute of Physics.</text>
+				<template>BRIDGE-1 , who lives in PATIENT-1 , is the editor of AGENT-1 which is published by PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A T Charlie Johnson resides in the United States and is the editor of AIP Advances which is published by the American Institute of Physics.</text>
+				<template>BRIDGE-1 resides in PATIENT-1 and is the editor of AGENT-1 which is published by PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A T Charlie Johnson lives in the US and is the editor of AIP Advances which was published by the American Institute of Physics.</text>
+				<template>BRIDGE-1 lives in PATIENT-1 and is the editor of AGENT-1 which was published by PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | A.T._Charlie_Johnson</entity>
+				<entity>AGENT-1 | AIP_Advances</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | American_Institute_of_Physics</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id10" size="3">
+			<originaltripleset>
+				<otriple>AIP_Advances | editor | A.T._Charlie_Johnson</otriple>
+				<otriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;@en</otriple>
+				<otriple>AIP_Advances | coden | &quot;AAIDBI&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>AIP_Advances | editor | A.T._Charlie_Johnson</otriple>
+				<otriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</otriple>
+				<otriple>AIP_Advances | coden | &quot;AAIDBI&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>AIP_Advances | editor | A.T._Charlie_Johnson</otriple>
+				<otriple>AIP_Advances | coden | &quot;AAIDBI&quot;@en</otriple>
+				<otriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>AIP_Advances | editor | A.T._Charlie_Johnson</otriple>
+				<otriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;@en</otriple>
+				<otriple>AIP_Advances | coden | &quot;AAIDBI&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AIP_Advances | editor | A.T._Charlie_Johnson</mtriple>
+				<mtriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</mtriple>
+				<mtriple>AIP_Advances | CODEN_code | &quot;AAIDBI&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>AIP Advances, or AIP Adv., has a CODEN of AAIDBI and is edited by A. T. Charlie Johnson.</text>
+				<template>AGENT-1 , or PATIENT-2 , has a CODEN of PATIENT-3 and is edited by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A T Charlie Johnson is the editor of AIP Advances which is abbreviated to AIP Adv and has a CODEN code of AAIDBI.</text>
+				<template>PATIENT-1 is the editor of AGENT-1 which is abbreviated to PATIENT-2 and has a CODEN code of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>&quot;AIP Adv.&quot; is the abbreviation of AIP Advances which is edited by A T Charlie Johnson and has the CODEN code AAIDBI.</text>
+				<template>`` PATIENT-2 '' is the abbreviation of AGENT-1 which is edited by PATIENT-1 and has the CODEN code PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIP_Advances</entity>
+				<entity>PATIENT-1 | A.T._Charlie_Johnson</entity>
+				<entity>PATIENT-3 | &quot;AAIDBI&quot;</entity>
+				<entity>PATIENT-2 | &quot;AIP Adv.&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id11" size="3">
+			<originaltripleset>
+				<otriple>A_Glastonbury_Romance | mediaType | Hardcover</otriple>
+				<otriple>A_Glastonbury_Romance | oclc | 76798317</otriple>
+				<otriple>A_Glastonbury_Romance | isbn | &quot;0-7156-3648-0&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>A_Glastonbury_Romance | mediaType | Hardcover</otriple>
+				<otriple>A_Glastonbury_Romance | oclc | &quot;76798317&quot;</otriple>
+				<otriple>A_Glastonbury_Romance | isbn | &quot;0-7156-3648-0&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Glastonbury_Romance | mediaType | Hardcover</mtriple>
+				<mtriple>A_Glastonbury_Romance | OCLC_number | 76798317</mtriple>
+				<mtriple>A_Glastonbury_Romance | ISBN_number | &quot;0-7156-3648-0&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>A Glastonbury Romance, which can be found in hardcover, has the ISBN number 0-7156-3648-0 as well as the OCLC number 76798317.</text>
+				<template>AGENT-1 , which can be found in PATIENT-1 , has the ISBN number PATIENT-3 as well as the OCLC number PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A Glastonbury Romance is available in hardcover and has the OCLC number of 76798317. and the ISBN number of 0-7156-3648-0.</text>
+				<template>AGENT-1 is available in PATIENT-1 and has the OCLC number of PATIENT-2 . and the ISBN number of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A Glastonbury Romance is available in hardcover and has the OCLC number 76798317 and the ISBN number 0-7156-3648-0.</text>
+				<template>AGENT-1 is available in PATIENT-1 and has the OCLC number PATIENT-2 and the ISBN number PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Glastonbury_Romance</entity>
+				<entity>PATIENT-1 | Hardcover</entity>
+				<entity>PATIENT-3 | &quot;0-7156-3648-0&quot;</entity>
+				<entity>PATIENT-2 | 76798317</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id12" size="3">
+			<originaltripleset>
+				<otriple>A_Long_Long_Way | language | English_language</otriple>
+				<otriple>English_language | spokenIn | Great_Britain</otriple>
+				<otriple>A_Long_Long_Way | subsequentWork | The_Secret_Scripture</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Long_Long_Way | language | English_language</mtriple>
+				<mtriple>English_language | spokenIn | Great_Britain</mtriple>
+				<mtriple>A_Long_Long_Way | followedBy | The_Secret_Scripture</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>A Long Long Way (followed by the book The Secret Scripture) is written in the English language, which is spoken in Great Britain.</text>
+				<template>AGENT-1 ( followed by PATIENT-2 ) is written in BRIDGE-1 , which is spoken in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Followed by The Secret Scripture, the book A Long Long Way is written in English, the language spoken in Great Britain.</text>
+				<template>Followed by PATIENT-2 , AGENT-1 is written in BRIDGE-1 , the language spoken in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | English_language</entity>
+				<entity>AGENT-1 | A_Long_Long_Way</entity>
+				<entity>PATIENT-1 | Great_Britain</entity>
+				<entity>PATIENT-2 | The_Secret_Scripture</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id13" size="3">
+			<originaltripleset>
+				<otriple>A_Loyal_Character_Dancer | publisher | Soho_Press</otriple>
+				<otriple>A_Loyal_Character_Dancer | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Loyal_Character_Dancer | publisher | Soho_Press</mtriple>
+				<mtriple>A_Loyal_Character_Dancer | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>A Loyal Character Dancer was published by Soho Press in the United States, which counts African Americans among its ethnic groups.</text>
+				<template>AGENT-1 was published by PATIENT-1 in BRIDGE-1 which counts PATIENT-2 among BRIDGE-1 ethnic groups .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A Loyal Character Dancer was published in the United States by Soho Press. One of the ethnic groups in the US are African Americans.</text>
+				<template>AGENT-1 was published in BRIDGE-1 by PATIENT-1 . One of the ethnic groups in BRIDGE-1 are PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A Loyal Character Dancer is published by Soho Press in the United States where the African Americans are an ethnic group.</text>
+				<template>AGENT-1 is published by PATIENT-1 in BRIDGE-1 where PATIENT-2 are an ethnic group .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>AGENT-1 | A_Loyal_Character_Dancer</entity>
+				<entity>PATIENT-1 | Soho_Press</entity>
+				<entity>PATIENT-2 | African_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id14" size="3">
+			<originaltripleset>
+				<otriple>A_Loyal_Character_Dancer | publisher | Soho_Press</otriple>
+				<otriple>Soho_Press | country | United_States</otriple>
+				<otriple>United_States | leader | Barack_Obama</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Loyal_Character_Dancer | publisher | Soho_Press</mtriple>
+				<mtriple>Soho_Press | country | United_States</mtriple>
+				<mtriple>United_States | leaderName | Barack_Obama</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>A Loyal Character Dancer was published by Soho Press in the United States where Barack Obama is the leader.</text>
+				<template>AGENT-1 was published by BRIDGE-1 in BRIDGE-2 where PATIENT-1 is the leader .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A Loyal Character Dancer is published by Soho Press in the United States where Barack Obama is the president.</text>
+				<template>AGENT-1 is published by BRIDGE-1 in BRIDGE-2 where PATIENT-1 is the president .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | Soho_Press</entity>
+				<entity>AGENT-1 | A_Loyal_Character_Dancer</entity>
+				<entity>PATIENT-1 | Barack_Obama</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id15" size="3">
+			<originaltripleset>
+				<otriple>A_Severed_Wasp | oclc | &quot;8805735&quot;</otriple>
+				<otriple>A_Severed_Wasp | congress | &quot;PS3523.E55 S4 1982&quot;@en</otriple>
+				<otriple>A_Severed_Wasp | mediaType | &quot;Print&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Severed_Wasp | OCLC_number | 8805735</mtriple>
+				<mtriple>A_Severed_Wasp | LibraryofCongressClassification | &quot;PS3523.E55 S4 1982&quot;</mtriple>
+				<mtriple>A_Severed_Wasp | mediaType | &quot;Print&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>A Severed Wasp can be found in print with the OCLC number 8805735 and the Library of Congress Classification of PS3523.E55 S4 1982.</text>
+				<template>AGENT-1 can be found in PATIENT-3 with the OCLC number PATIENT-1 and the Library of Congress Classification of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A severed wasp can be found in print and has the OCLC number 8805735 and the Library of Congress Classification is PS3523.E55 S4 1982.</text>
+				<template>AGENT-1 can be found in PATIENT-3 and has the OCLC number PATIENT-1 and the Library of Congress Classification is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Severed_Wasp</entity>
+				<entity>PATIENT-1 | 8805735</entity>
+				<entity>PATIENT-3 | &quot;Print&quot;</entity>
+				<entity>PATIENT-2 | &quot;PS3523.E55 S4 1982&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id16" size="3">
+			<originaltripleset>
+				<otriple>A_Severed_Wasp | numberOfPages | &quot;388&quot;^^xsd:positiveInteger</otriple>
+				<otriple>A_Severed_Wasp | mediaType | &quot;Print&quot;@en</otriple>
+				<otriple>A_Severed_Wasp | isbn | &quot;0-374-26131-8&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Severed_Wasp | numberOfPages | &quot;388&quot;</mtriple>
+				<mtriple>A_Severed_Wasp | mediaType | &quot;Print&quot;</mtriple>
+				<mtriple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>A Severed Wasp has an ISBN number of &quot;0-374-26131-8&quot; , 388 pages and can be found in print.</text>
+				<template>AGENT-1 has an ISBN number of `` PATIENT-3 '' , PATIENT-1 pages and can be found in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>&quot;A Severed Wasp&quot; is in print, has 388 pages and has an ISBN number of &quot;0-374-26131-8&quot;.</text>
+				<template>`` AGENT-1 '' is in PATIENT-2 , has PATIENT-1 pages and has an ISBN number of `` PATIENT-3 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A Severed Wasp (ISBN number 0-374-26131-8) has 388 pages altogether and is available in print.</text>
+				<template>AGENT-1 ( ISBN number PATIENT-3 ) has PATIENT-1 pages altogether and is available in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Severed_Wasp</entity>
+				<entity>PATIENT-1 | &quot;388&quot;</entity>
+				<entity>PATIENT-3 | &quot;0-374-26131-8&quot;</entity>
+				<entity>PATIENT-2 | &quot;Print&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id17" size="3">
+			<originaltripleset>
+				<otriple>A_Wizard_of_Mars | mediaType | Hardcover</otriple>
+				<otriple>A_Wizard_of_Mars | author | Diane_Duane</otriple>
+				<otriple>A_Wizard_of_Mars | oclc | 318875313</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>A_Wizard_of_Mars | mediaType | Hardcover</otriple>
+				<otriple>A_Wizard_of_Mars | oclc | &quot;318875313&quot;</otriple>
+				<otriple>A_Wizard_of_Mars | author | Diane_Duane</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Wizard_of_Mars | mediaType | Hardcover</mtriple>
+				<mtriple>A_Wizard_of_Mars | OCLC_number | 318875313</mtriple>
+				<mtriple>A_Wizard_of_Mars | author | Diane_Duane</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Diane Duane wrote A Wizard of Mars which was published in hardback and has the OCLC number 318875313.</text>
+				<template>PATIENT-3 wrote AGENT-1 which was published in PATIENT-1 and has the OCLC number PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>A Wizard of Mars was written by Diane Duane and is published in Hardcover. The OCLC number of A Wizard of Mars is 318875313.</text>
+				<template>AGENT-1 was written by PATIENT-3 and is published in PATIENT-1 . The OCLC number of AGENT-1 is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A Wizard of Mars, written by Diane Duane, has a OCLC number of 318875313.</text>
+				<template>AGENT-1 , written by PATIENT-3 , has a OCLC number of PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Wizard_of_Mars</entity>
+				<entity>PATIENT-1 | Hardcover</entity>
+				<entity>PATIENT-3 | Diane_Duane</entity>
+				<entity>PATIENT-2 | 318875313</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id18" size="3">
+			<originaltripleset>
+				<otriple>A_Wizard_of_Mars | mediaType | Hardcover</otriple>
+				<otriple>A_Wizard_of_Mars | author | Diane_Duane</otriple>
+				<otriple>A_Wizard_of_Mars | isbn | &quot;978-0-15-204770-2&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Wizard_of_Mars | mediaType | Hardcover</mtriple>
+				<mtriple>A_Wizard_of_Mars | author | Diane_Duane</mtriple>
+				<mtriple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Diane Duane wrote A Wizard of Mars which is published in hardcover and has the ISBN number 978-0-15-204770-2.</text>
+				<template>PATIENT-2 wrote AGENT-1 which is published in PATIENT-1 and has the ISBN number PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The hardcover book. A wizard of Mars, was written by Diane Duane and has the ISBN number 978-0-15-204770-2.</text>
+				<template>PATIENT-1 . AGENT-1 , was written by PATIENT-2 and has the ISBN number PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>A Wizard of Mars by Diane Duane is published in Hardcover ISBN 978-0-15-204770-2.</text>
+				<template>AGENT-1 by PATIENT-2 is published in PATIENT-1 ISBN PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Wizard_of_Mars</entity>
+				<entity>PATIENT-1 | Hardcover</entity>
+				<entity>PATIENT-3 | &quot;978-0-15-204770-2&quot;</entity>
+				<entity>PATIENT-2 | Diane_Duane</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id19" size="3">
+			<originaltripleset>
+				<otriple>Above_the_Veil | country | Australians</otriple>
+				<otriple>Above_the_Veil | precededBy | Aenir</otriple>
+				<otriple>Aenir | previousWork | Castle_(novel)</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Above_the_Veil | country | Australians</otriple>
+				<otriple>Above_the_Veil | previousWork | Aenir</otriple>
+				<otriple>Aenir | precededBy | Castle_(novel)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Above_the_Veil | country | Australians</mtriple>
+				<mtriple>Above_the_Veil | precededBy | Aenir</mtriple>
+				<mtriple>Aenir | precededBy | Castle_(novel)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Above the Veil, from Australia, is the third book in a series after Aenir and Castle.</text>
+				<template>AGENT-1 , from PATIENT-1 , is the third book in a series after BRIDGE-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Above the Veil, from Australia, is the sequel to Aenir, which followed the novel Castle.</text>
+				<template>AGENT-1 , from PATIENT-1 , is the sequel to BRIDGE-1 , which followed PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Above the Veil is from Australia and was preceded by Aenir and Castle.</text>
+				<template>AGENT-1 is from PATIENT-1 and was preceded by BRIDGE-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | Aenir</entity>
+				<entity>AGENT-1 | Above_the_Veil</entity>
+				<entity>PATIENT-1 | Australians</entity>
+				<entity>PATIENT-2 | Castle_(novel)</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id20" size="3">
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;1588-2632&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | lccn | &quot;83646315&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;@en</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;1588-2632&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | lccn | 83646315</otriple>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;1588-2632&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;@en</otriple>
+				<otriple>Acta_Mathematica_Hungarica | lccn | 83646315</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | lccn | &quot;83646315&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;1588-2632&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acta_Mathematica_Hungarica | LCCN_number | 83646315</mtriple>
+				<mtriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</mtriple>
+				<mtriple>Acta_Mathematica_Hungarica | ISSN_number | &quot;1588-2632&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Acta Mathematica Hungarica, or Acta Math. Hungar., has a LCCN number of 83646315 and a ISSN number of 1588-2632.</text>
+				<template>AGENT-1 , or PATIENT-2 , has a LCCN number of PATIENT-1 and a ISSN number of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Acta Mathematica Hungarica (abbreviated to Acta Math. Hungar.) has the LCCN number 83646315 and ISSN number 1588-2632.</text>
+				<template>AGENT-1 ( abbreviated to PATIENT-2 ) has the LCCN number PATIENT-1 and ISSN number PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Acta Mathematica Hungarica, abbreviated to Acta Math.Hungar, has LCCN No. 83646315 and ISSN No. 1588-2632.</text>
+				<template>AGENT-1 , abbreviated to PATIENT-2 , has LCCN No . PATIENT-1 and ISSN No . PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acta_Mathematica_Hungarica</entity>
+				<entity>PATIENT-1 | 83646315</entity>
+				<entity>PATIENT-3 | &quot;1588-2632&quot;</entity>
+				<entity>PATIENT-2 | &quot;Acta Math. Hungar.&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id21" size="3">
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | discipline | Mathematics</otriple>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;0236-5294&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;@en</otriple>
+				<otriple>Acta_Mathematica_Hungarica | discipline | Mathematics</otriple>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;0236-5294&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</mtriple>
+				<mtriple>Acta_Mathematica_Hungarica | academicDiscipline | Mathematics</mtriple>
+				<mtriple>Acta_Mathematica_Hungarica | ISSN_number | &quot;0236-5294&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The Acta Mathematica Hungarica ISSN number is &quot;0236-5294&quot; and the abbreviation is Acta Math. Hungar. It comes under the academic discipline of Math.</text>
+				<template>AGENT-1 ISSN number is `` PATIENT-3 '' and the abbreviation is PATIENT-1 . AGENT-1 comes under the academic discipline of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The Acta Mathematica Hungarica has the ISSN number 0236-5294. It is also known as Acta Math. Hungar and it covers the academic discipline of Mathematics.</text>
+				<template>AGENT-1 has the ISSN number PATIENT-3 . AGENT-1 is also known as PATIENT-1 and AGENT-1 covers PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Acta Mathematica Hungarica (also known as Acta Math. Hungar), covers the academic discipline of Mathematics and has the ISSN number 0236-5294.</text>
+				<template>AGENT-1 ( also known as PATIENT-1 ) , covers PATIENT-2 and has the ISSN number PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acta_Mathematica_Hungarica</entity>
+				<entity>PATIENT-1 | &quot;Acta Math. Hungar.&quot;</entity>
+				<entity>PATIENT-3 | &quot;0236-5294&quot;</entity>
+				<entity>PATIENT-2 | Mathematics</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id22" size="3">
+			<originaltripleset>
+				<otriple>Acta_Palaeontologica_Polonica | issn | &quot;1732-2421&quot;</otriple>
+				<otriple>Acta_Palaeontologica_Polonica | lccn | &quot;60040714&quot;</otriple>
+				<otriple>Acta_Palaeontologica_Polonica | abbreviation | &quot;Acta Palaeontol. Pol.&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acta_Palaeontologica_Polonica | ISSN_number | &quot;1732-2421&quot;</mtriple>
+				<mtriple>Acta_Palaeontologica_Polonica | LCCN_number | 60040714</mtriple>
+				<mtriple>Acta_Palaeontologica_Polonica | abbreviation | &quot;Acta Palaeontol. Pol.&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Acta Palaeontologica Polonica has the ISSN number 1732-2421 and an LCCN number of 60040714. The abbreviated name is Acta Palaeontol. Pol.</text>
+				<template>AGENT-1 has the ISSN number PATIENT-1 and an LCCN number of PATIENT-2 . The abbreviated name is PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Acta Palaeontologica Polonica (abbreviated to Acta Palaeontol. Pol) has the ISSN number 1732-2421 and the LCCN number 60040714.</text>
+				<template>AGENT-1 ( abbreviated to PATIENT-3 ) has the ISSN number PATIENT-1 and the LCCN number PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acta_Palaeontologica_Polonica</entity>
+				<entity>PATIENT-1 | &quot;1732-2421&quot;</entity>
+				<entity>PATIENT-3 | &quot;Acta Palaeontol. Pol.&quot;</entity>
+				<entity>PATIENT-2 | 60040714</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id23" size="3">
+			<originaltripleset>
+				<otriple>Addiction_(journal) | discipline | Addiction</otriple>
+				<otriple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</otriple>
+				<otriple>Addiction_(journal) | issn | &quot;0965-2140&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;@en</otriple>
+				<otriple>Addiction_(journal) | discipline | Addiction</otriple>
+				<otriple>Addiction_(journal) | issn | &quot;0965-2140&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Addiction_(journal) | academicDiscipline | Addiction</mtriple>
+				<mtriple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</mtriple>
+				<mtriple>Addiction_(journal) | ISSN_number | &quot;0965-2140&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Addiction is the abbreviated version of the &quot;Addiction Journal&quot; which has the ISSN number 0965-2140.</text>
+				<template>PATIENT-2 is the abbreviated version of `` AGENT-1 '' which has the ISSN number PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Addiction journal (abbreviated to Addiction) is about addiction. It has the ISSN number 0965-2140.</text>
+				<template>PATIENT-1 ( abbreviated to PATIENT-2 ) is about addiction . AGENT-1 has the ISSN number PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Addiction_(journal)</entity>
+				<entity>PATIENT-1 | Addiction</entity>
+				<entity>PATIENT-3 | &quot;0965-2140&quot;</entity>
+				<entity>PATIENT-2 | &quot;Addiction&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id24" size="3">
+			<originaltripleset>
+				<otriple>Aenir | oclc | &quot;45644811&quot;</otriple>
+				<otriple>Aenir | author | Garth_Nix</otriple>
+				<otriple>Aenir | mediaType | &quot;Print&quot;@en</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aenir | author | Garth_Nix</otriple>
+				<otriple>Aenir | mediaType | &quot;Print&quot;@en</otriple>
+				<otriple>Aenir | oclc | 45644811</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aenir | OCLC_number | 45644811</mtriple>
+				<mtriple>Aenir | author | Garth_Nix</mtriple>
+				<mtriple>Aenir | mediaType | &quot;Print&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Aenir, written by Garth Nix, was produced in print and has the OCLC number 45644811.</text>
+				<template>AGENT-1 , written by PATIENT-2 , was produced in PATIENT-3 and has the OCLC number PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Aenir was written by Garth Nix and produced in print. It has an OCLC number of 45644811.</text>
+				<template>AGENT-1 was written by PATIENT-2 and produced in PATIENT-3 . AGENT-1 has an OCLC number of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aenir, OCLC number 45644811, by author Garth Nix is available in print.</text>
+				<template>AGENT-1 , OCLC number PATIENT-1 , by PATIENT-2 is available in PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aenir</entity>
+				<entity>PATIENT-1 | 45644811</entity>
+				<entity>PATIENT-3 | &quot;Print&quot;</entity>
+				<entity>PATIENT-2 | Garth_Nix</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id25" size="3">
+			<originaltripleset>
+				<otriple>Aenir | author | Garth_Nix</otriple>
+				<otriple>Aenir | mediaType | &quot;Print&quot;@en</otriple>
+				<otriple>Aenir | isbn | &quot;0-439-17684-0&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aenir | author | Garth_Nix</mtriple>
+				<mtriple>Aenir | mediaType | &quot;Print&quot;</mtriple>
+				<mtriple>Aenir | ISBN_number | &quot;0-439-17684-0&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Aenir has the ISBN number of &quot;0-439-17684-0&quot;, it was written by Garth Nix and was produced in print.</text>
+				<template>AGENT-1 has the ISBN number of `` PATIENT-3 '' , AGENT-1 was written by PATIENT-1 and was produced in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Garth Nix is the author of Aenir. It can be found by ISBN number 0-439-17684-0.</text>
+				<template>PATIENT-1 is the author of AGENT-1 . AGENT-1 can be found by ISBN number PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Aenir was written by Garth Nix and has a ISBN number of 0-439-17684-0.</text>
+				<template>AGENT-1 was written by PATIENT-1 and has a ISBN number of PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aenir</entity>
+				<entity>PATIENT-1 | Garth_Nix</entity>
+				<entity>PATIENT-3 | &quot;0-439-17684-0&quot;</entity>
+				<entity>PATIENT-2 | &quot;Print&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id26" size="3">
+			<originaltripleset>
+				<otriple>American_Journal_of_Mathematics | discipline | Mathematics</otriple>
+				<otriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</otriple>
+				<otriple>American_Journal_of_Mathematics | issn | &quot;1080-6377&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;@en</otriple>
+				<otriple>American_Journal_of_Mathematics | discipline | Mathematics</otriple>
+				<otriple>American_Journal_of_Mathematics | issn | &quot;1080-6377&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</mtriple>
+				<mtriple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</mtriple>
+				<mtriple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The American Journal of Mathematics, abbreviated to Am.J.Math, whose academic discipline is Mathematics has ISSN No. 1080-6377.</text>
+				<template>AGENT-1 , abbreviated to PATIENT-1 , whose academic discipline is PATIENT-2 has ISSN No . PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Am. J. Math is the abbreviation for the American Journal of Mathematics with the ISSN number of 1080-6377 in the discipline of Math.</text>
+				<template>PATIENT-1 is the abbreviation for AGENT-1 with the ISSN number of PATIENT-3 in the discipline of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The American Journal of Mathematics (discipline Mathematics) is also known by the abbreviated title of Am. J. Math and has the ISSN number 1080-6377.</text>
+				<template>AGENT-1 ( PATIENT-2 ) is also known by the abbreviated title of PATIENT-1 and has the ISSN number PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | American_Journal_of_Mathematics</entity>
+				<entity>PATIENT-1 | &quot;Am. J. Math.&quot;</entity>
+				<entity>PATIENT-3 | &quot;1080-6377&quot;</entity>
+				<entity>PATIENT-2 | Mathematics</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id27" size="3">
+			<originaltripleset>
+				<otriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;@en</otriple>
+				<otriple>American_Journal_of_Mathematics | history | 1878</otriple>
+				<otriple>American_Journal_of_Mathematics | issn | &quot;1080-6377&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</mtriple>
+				<mtriple>American_Journal_of_Mathematics | firstPublicationYear | 1878</mtriple>
+				<mtriple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The American Journal of Mathematics was first published in 1878 and is also known by the abbreviated title of Am. J. Math. It has an ISSN number of 1080-6377.</text>
+				<template>AGENT-1 was first published in PATIENT-2 and is also known by the abbreviated title of PATIENT-1. AGENT-1 has an ISSN number of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The American Journal of Mathematics was first published in 1878 and has the abbreviation Am. J. Math.. The ISSN number for the journal is 1080-6377.</text>
+				<template>AGENT-1 was first published in PATIENT-2 and has PATIENT-1 . The ISSN number for the journal is PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Also known by the abbreviated title of Am. J. Math, the American Journal of Mathematics was first published in 1878 and has the ISSN number 1080-6377.</text>
+				<template>Also known by the abbreviated title of PATIENT-1 , AGENT-1 was first published in PATIENT-2 and has the ISSN number PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | American_Journal_of_Mathematics</entity>
+				<entity>PATIENT-1 | &quot;Am. J. Math.&quot;</entity>
+				<entity>PATIENT-3 | &quot;1080-6377&quot;</entity>
+				<entity>PATIENT-2 | 1878</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id28" size="3">
+			<originaltripleset>
+				<otriple>SAGE_Publications | founder | Sara_Miller_McCune</otriple>
+				<otriple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;@en</otriple>
+				<otriple>Administrative_Science_Quarterly | publisher | SAGE_Publications</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>SAGE_Publications | founder | Sara_Miller_McCune</otriple>
+				<otriple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</otriple>
+				<otriple>Administrative_Science_Quarterly | publisher | SAGE_Publications</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>SAGE_Publications | founder | Sara_Miller_McCune</mtriple>
+				<mtriple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</mtriple>
+				<mtriple>Administrative_Science_Quarterly | publisher | SAGE_Publications</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>Administrative Science Quarterly (Admin. Sci. Q) is published by SAGE Publications which was founded by Sara Miller McCune.</text>
+				<template>AGENT-1 ( PATIENT-2 ) is published by BRIDGE-1 which was founded by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Administrative Science Quarterly ( Admin. Sci. Q,) is published by SAGE Publications who's founder is Sara Miller McCune.</text>
+				<template>AGENT-1 ( PATIENT-2 , ) is published by BRIDGE-1 AGENT-1 founder is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>Sara Miller McCune is the founder of SAGE publications which publishes the Administrative Science Quarterly. The abbreviation for the Administrative Science Quarterly is Admin. Sci. Q.</text>
+				<template>PATIENT-1 is the founder of BRIDGE-1 which publishes AGENT-1 . The abbreviation for AGENT-1 is PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | SAGE_Publications</entity>
+				<entity>AGENT-1 | Administrative_Science_Quarterly</entity>
+				<entity>PATIENT-1 | Sara_Miller_McCune</entity>
+				<entity>PATIENT-2 | &quot;Admin. Sci. Q.&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id29" size="3">
+			<originaltripleset>
+				<otriple>United_Kingdom | leader | David_Cameron</otriple>
+				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
+				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>United_Kingdom | leaderName | David_Cameron</otriple>
+				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
+				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_Kingdom | leaderName | David_Cameron</mtriple>
+				<mtriple>AIDS_(journal) | country | United_Kingdom</mtriple>
+				<mtriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>The AIDS (journal), is published by Lippincott Williams &amp; Wilkins who are based in the United Kingdom which is where David Cameron is the leader.</text>
+				<template>AGENT-1 , is published by PATIENT-2 who are based in BRIDGE-1 which is where PATIENT-1 is the leader .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>The AIDS journal was published by Lippincott, Williams &amp; Wilkins in the UK. David Cameron is the leader.</text>
+				<template>AGENT-1 was published by PATIENT-2 in BRIDGE-1 . PATIENT-1 is the leader .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The AIDS (journal) is published by Lippincott Williams &amp; Wilkins. It was published in the United Kingdom, which leader is David Cameron.</text>
+				<template>AGENT-1 is published by PATIENT-2 . AGENT-1 was published in BRIDGE-1 , which leader is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | United_Kingdom</entity>
+				<entity>AGENT-1 | AIDS_(journal)</entity>
+				<entity>PATIENT-1 | David_Cameron</entity>
+				<entity>PATIENT-2 | Lippincott_Williams_&amp;_Wilkins</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id30" size="3">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>United_States | leader | Barack_Obama</otriple>
+				<otriple>A_Fortress_of_Grey_Ice | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+				<mtriple>United_States | leaderName | Barack_Obama</mtriple>
+				<mtriple>A_Fortress_of_Grey_Ice | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>A Fortress of Grey Ice is from the United States where Barack Obama is the leader and the African Americans are one of the ethnic groups.</text>
+				<template>AGENT-1 is from BRIDGE-1 where PATIENT-2 is the leader and PATIENT-1 are one of the ethnic groups .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Barack Obama is both president of the US and African American, which is an ethnic group of the United States. A Fortress of Grey Ice originates from the US.</text>
+				<template>PATIENT-2 is both president of BRIDGE-1 and PATIENT-1 , which is an ethnic group of BRIDGE-1 . AGENT-1 originates from BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>In the United States, one of the ethnic groups is African American, Barack Obama is President and it is where A Fortress of Grey Ice originates.</text>
+				<template>In BRIDGE-1 one of the ethnic groups is PATIENT-1 , PATIENT-2 is President and BRIDGE-1 is where AGENT-1 originates .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>AGENT-1 | A_Fortress_of_Grey_Ice</entity>
+				<entity>PATIENT-1 | African_Americans</entity>
+				<entity>PATIENT-2 | Barack_Obama</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id31" size="3">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<text>In the United States, English is the language, Asian Americans are an ethnic group and the book Alcatraz versus the Evil Librarians was written.</text>
+				<template>In BRIDGE-1 PATIENT-2 is the language , PATIENT-1 are an ethnic group and AGENT-1 was written .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<text>Alcatraz Versus the Evil Librarians is from The United States where English is spoken and the Asian Americans are an ethnic group.</text>
+				<template>AGENT-1 is from BRIDGE-1 where PATIENT-2 is spoken and PATIENT-1 are an ethnic group .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<text>The book Alcatraz Versus the Evil Librarians comes from the United States where English is the primary language. Additionally, Asian Americans is one of the ethnic groups in the United States.</text>
+				<template>AGENT-1 comes from BRIDGE-1 where PATIENT-2 is the primary language . Additionally , PATIENT-1 is one of the ethnic groups in BRIDGE-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>AGENT-1 | Alcatraz_Versus_the_Evil_Librarians</entity>
+				<entity>PATIENT-1 | Asian_Americans</entity>
+				<entity>PATIENT-2 | English_language</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>
