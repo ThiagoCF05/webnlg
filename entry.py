@@ -36,6 +36,9 @@ class Lex():
         self.orderedtripleset_de = []
         self.references_de = []
 
+        # portuguese entry
+        self.text_pt = ''
+
 class TagEntity():
     def __init__(self, tag, entity):
         self.tag = tag

@@ -42,6 +42,7 @@ class NMT():
 
         self.en_text_fname = os.path.join(self.tmp, '.'.join(['text', self._set, 'en']))
         self.de_text_fname = os.path.join(self.tmp, '.'.join(['text', self._set, 'de']))
+        self.pt_text_fname = os.path.join(self.tmp, '.'.join(['text', self._set, 'pt']))
         self.textinfo_fname = os.path.join(self.tmp, ''.join(['text', self._set, 'info']))
 
     def prepare_input(self):
@@ -69,10 +70,12 @@ class NMT():
 
     def prepare_output(self):
         ftextinfo = open(self.textinfo_fname)
-        ftext = open(self.de_text_fname)
+        ftext_de = open(self.de_text_fname)
+        ftext_pt = open(self.pt_text_fname)
 
         textinfo = ftextinfo.read().decode('utf-8').split('\n')
-        text = ftext.read().decode('utf-8').split('\n')
+        text_de = ftext_de.read().decode('utf-8').split('\n')
+        text_pt = ftext_pt.read().decode('utf-8').split('\n')
         for i, entryinfo in enumerate(textinfo[:-1]):
             entryinfo = entryinfo.split(',')
             eid = entryinfo[0]
@@ -84,7 +87,8 @@ class NMT():
                 if entry.eid==eid and entry.size==str(size) and entry.category==category:
                     for z, lexEntry in enumerate(entry.lexEntries):
                         if lexEntry.lid==lid:
-                            self.entryset[j].lexEntries[z].text_de = self.entryset[j].lexEntries[z].text_de + text[i] + ' '
+                            self.entryset[j].lexEntries[z].text_de = self.entryset[j].lexEntries[z].text_de + text_de[i] + ' '
+                            self.entryset[j].lexEntries[z].text_pt = self.entryset[j].lexEntries[z].text_pt + text_pt[i] + ' '
 
         ftemplateinfo = open(self.templateinfo_fname)
         ftemplate = open(self.de_template_fname)
@@ -111,7 +115,8 @@ class NMT():
 
 
         ftextinfo.close()
-        ftext.close()
+        ftext_de.close()
+        ftext_pt.close()
         ftemplateinfo.close()
         ftemplate.close()
 
@@ -120,5 +125,6 @@ class NMT():
         os.remove(self.templateinfo_fname)
         os.remove(self.en_template_fname)
         os.remove(self.en_text_fname)
+        os.remove(self.pt_text_fname)
         os.remove(self.de_template_fname)
         os.remove(self.de_text_fname)

@@ -1,0 +1,1041 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Building" eid="Id1" size="5">
+			<originaltripleset>
+				<otriple>20_Fenchurch_Street | location | United_Kingdom</otriple>
+				<otriple>United_Kingdom | capital | London</otriple>
+				<otriple>London | leaderName | Boris_Johnson</otriple>
+				<otriple>United_Kingdom | leader | Elizabeth_II</otriple>
+				<otriple>United_Kingdom | currency | Pound_sterling</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>20_Fenchurch_Street | location | United_Kingdom</mtriple>
+				<mtriple>United_Kingdom | capital | London</mtriple>
+				<mtriple>London | leaderName | Boris_Johnson</mtriple>
+				<mtriple>United_Kingdom | leaderName | Elizabeth_II</mtriple>
+				<mtriple>United_Kingdom | currency | Pound_sterling</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
+						<striple>United_Kingdom | capital | London</striple>
+						<striple>United_Kingdom | currency | Pound_sterling</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>London | leaderName | Boris_Johnson</striple>
+						<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A &quot;20 Fenchurch Street&quot; está localizada dentro da &quot;United Kingdom&quot;, onde Londres é a&quot; capital, &quot;. Boris Johnson é o líder do Reino Unido e um dos líderes do Reino Unido é Elizabeth II.. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_Kingdom | currency | Pound_sterling</striple>
+						<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_Kingdom | capital | London</striple>
+						<striple>London | leaderName | Boris_Johnson</striple>
+						<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>O Reino Unido usa a moeda da garagem e é liderado por Isabel II, juntamente com Boris Johnson. Sua capital é a cidade de Londres. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id2" size="5">
+			<originaltripleset>
+				<otriple>250_Delaware_Avenue | location | Buffalo,_New_York</otriple>
+				<otriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</otriple>
+				<otriple>250_Delaware_Avenue | cost | &quot;1.1E8&quot;^^&lt;http://dbpedia.org/datatype/usDollar&gt;</otriple>
+				<otriple>250_Delaware_Avenue | floorArea | &quot;30843.8&quot;^^xsd:double</otriple>
+				<otriple>250_Delaware_Avenue | floorCount | &quot;12&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>250_Delaware_Avenue | location | Buffalo,_New_York</mtriple>
+				<mtriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</mtriple>
+				<mtriple>250_Delaware_Avenue | cost | &quot;110 million (dollars)&quot;</mtriple>
+				<mtriple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</mtriple>
+				<mtriple>250_Delaware_Avenue | floorCount | 12</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | location | Buffalo,_New_York</striple>
+						<striple>250_Delaware_Avenue | cost | &quot;110 million (dollars)&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
+						<striple>250_Delaware_Avenue | floorCount | 12</striple>
+						<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Foi construída em Nova Iorque, com um custo de 110 milhões de golfinhos. A construção começou em janeiro de 2014 e o edifício tem 12 andares com uma área de 30843,8 metressas. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | floorCount | 12</striple>
+						<striple>250_Delaware_Avenue | location | Buffalo,_New_York</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
+						<striple>250_Delaware_Avenue | cost | &quot;110 million (dollars)&quot;</striple>
+						<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Existem 12 andares em 250 andares em Buffalo, Nova Escócia. Construction, que começou em janeiro de 2014 custou 110 milhões de dólares para uma área de 30 843,8 metressas. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id3" size="5">
+			<originaltripleset>
+				<otriple>300_North_LaSalle | location | Chicago</otriple>
+				<otriple>Chicago | leaderName | Rahm_Emanuel</otriple>
+				<otriple>Chicago | isPartOf | DuPage_County,_Illinois</otriple>
+				<otriple>300_North_LaSalle | floorCount | &quot;60&quot;^^xsd:positiveInteger</otriple>
+				<otriple>Chicago | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>300_North_LaSalle | location | Chicago</mtriple>
+				<mtriple>Chicago | leaderName | Rahm_Emanuel</mtriple>
+				<mtriple>Chicago | isPartOf | DuPage_County,_Illinois</mtriple>
+				<mtriple>300_North_LaSalle | floorCount | 60</mtriple>
+				<mtriple>Chicago | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Chicago | leaderName | Rahm_Emanuel</striple>
+						<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+						<striple>Chicago | country | United_States</striple>
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = A cidade está localizada no estado norte-americano de Carolina do Norte, no Condado de DuPage e Condado de Illinois. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+						<striple>Chicago | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Chicago | leaderName | Rahm_Emanuel</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = De acordo com o United States Census Bureau tem uma área de4,6 km ², dos quais 300 km ² cobertos por terra e 0,0 km ² cobertos por água. &amp; lt; br clear = left &amp; gt; = = Ligações externas = = </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+						<striple>Chicago | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Chicago | leaderName | Rahm_Emanuel</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>300 North LaSalleé uma Região censo-designada localizada no estado americano de Illinois, no Condado de DuPage. &amp; lt; br clear = left &amp; gt; = = Ligações externas = = </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id4" size="5">
+			<originaltripleset>
+				<otriple>3Arena | owner | Live_Nation_Entertainment</otriple>
+				<otriple>Dublin | leaderTitle | Dáil_Éireann</otriple>
+				<otriple>Dublin | country | Republic_of_Ireland</otriple>
+				<otriple>3Arena | location | Dublin</otriple>
+				<otriple>Dublin | isPartOf | Leinster</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | owner | Live_Nation_Entertainment</mtriple>
+				<mtriple>Dublin | leaderTitle | Dáil_Éireann</mtriple>
+				<mtriple>Dublin | country | Republic_of_Ireland</mtriple>
+				<mtriple>3Arena | location | Dublin</mtriple>
+				<mtriple>Dublin | isPartOf | Leinster</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | country | Republic_of_Ireland</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
+						<striple>Dublin | isPartOf | Leinster</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3Arena é uma Região censo-designada localizada no estado americano de Iowa, no Condado de Dublin. = = Geografia = = A cidade está localizada em Dublin, na província de Leinster. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | isPartOf | Leinster</striple>
+						<striple>Dublin | country | Republic_of_Ireland</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3Arenaé uma Região censo-designada localizada no estado americano de Missouri, no Condado de Dublin. = = Ligações externas = = * Site oficial </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Dublin | isPartOf | Leinster</striple>
+						<striple>3Arena | location | Dublin</striple>
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Dublin | country | Republic_of_Ireland</striple>
+						<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Localiza-se em Dublin, Leinster. Dublin também faz parte da República da Irlanda e é liderado por Hochil Éañann. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id5" size="5">
+			<originaltripleset>
+				<otriple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;@en</otriple>
+				<otriple>Adisham_Hall | location | Sri_Lanka</otriple>
+				<otriple>Adisham_Hall | buildingEndDate | &quot;1931&quot;</otriple>
+				<otriple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</otriple>
+				<otriple>Adisham_Hall | address | &quot;St. Benedict's Monastery, Adisham, Haputhale, Sri Lanka&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</mtriple>
+				<mtriple>Adisham_Hall | location | Sri_Lanka</mtriple>
+				<mtriple>Adisham_Hall | completionDate | 1931</mtriple>
+				<mtriple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</mtriple>
+				<mtriple>Adisham_Hall | address | &quot;St. Benedict's Monastery, Adisham, Haputhale, Sri Lanka&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+						<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
+						<striple>Adisham_Hall | completionDate | 1931</striple>
+						<striple>Adisham_Hall | address | &quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;</striple>
+						<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Foi construído entre 1927 e 1931, no &quot;Concurso de São Paulo&quot;, na cidade de São Paulo, no Sri Lanka. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
+						<striple>Adisham_Hall | completionDate | 1931</striple>
+						<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | address | &quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A construção de Awitam Hall ocorreu entre 1927 e 1931, no estilo arquitetônico de Hartford e Jacobean. = = Geografia = = A cidade está localizada a. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id6" size="5">
+			<originaltripleset>
+				<otriple>Adisham_Hall | locationCountry | Sri_Lanka</otriple>
+				<otriple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;@en</otriple>
+				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
+				<otriple>Sri_Lanka | language | Tamil_language</otriple>
+				<otriple>Sri_Lanka | currency | Sri_Lankan_rupee</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | country | Sri_Lanka</mtriple>
+				<mtriple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</mtriple>
+				<mtriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</mtriple>
+				<mtriple>Sri_Lanka | language | Tamil_language</mtriple>
+				<mtriple>Sri_Lanka | currency | Sri_Lankan_rupee</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Sri_Lanka | language | Tamil_language</striple>
+						<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>&amp; lt; br clear = left &amp; gt; = = Ligações externas = = A capital do Sri Lanka é o Sri Lanka. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Sri_Lanka | language | Tamil_language</striple>
+						<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>&amp; lt; br clear = left &amp; gt; = = Ligações externas = = A capital do Sri Lanka é o Sri Lanka. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+						<striple>Sri_Lanka | language | Tamil_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>&amp; lt; br clear = left &amp; gt; = = Ligações externas = = Sri Lanka awardenepura Kotte é a capital do Sri Lanka, onde a moeda é o Sri Lanka e a língua usada é Tamil. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id7" size="5">
+			<originaltripleset>
+				<otriple>Adisham_Hall | locationCountry | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leader | Ranil_Wickremesinghe</otriple>
+				<otriple>Adisham_Hall | location | Haputale</otriple>
+				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
+				<otriple>Sri_Lanka | currency | Sri_Lankan_rupee</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | country | Sri_Lanka</mtriple>
+				<mtriple>Adisham_Hall | location | Haputale</mtriple>
+				<mtriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</mtriple>
+				<mtriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</mtriple>
+				<mtriple>Sri_Lanka | currency | Sri_Lankan_rupee</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Adisham_Hall | location | Haputale</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>É o líder do Sri Lanka, onde a capital é o Sri Lanka. &amp; lt; br clear = left &amp; gt; = = Ligações externas = = </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | Haputale</striple>
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+						<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>&amp; lt; br clear = left &amp; gt; = = Ligações externas = = Sua capital é a cidade de Sri Lanka. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | Haputale</striple>
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+						<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = A cidade está localizada a. Ele é líder do Sri Lanka, e a moeda é o &quot;Sri Lanka&quot;. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id8" size="5">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | country | Japan</otriple>
+				<otriple>Akita,_Akita | subdivisionName | Akita_Prefecture</otriple>
+				<otriple>Japan | leader | Tarō_Asō</otriple>
+				<otriple>Japan | ethnicGroup | Japanese_people</otriple>
+				<otriple>Akita_Museum_of_Art | location | Akita,_Akita</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akita_Museum_of_Art | country | Japan</mtriple>
+				<mtriple>Akita,_Akita | isPartOf | Akita_Prefecture</mtriple>
+				<mtriple>Japan | leaderName | Tarō_Asō</mtriple>
+				<mtriple>Japan | ethnicGroup | Japanese_people</mtriple>
+				<mtriple>Akita_Museum_of_Art | location | Akita,_Akita</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Japan | ethnicGroup | Japanese_people</striple>
+						<striple>Japan | leaderName | Tarō_Asō</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>O principal grupo étnico do Japão é o japonês e o líder é Tarō Asō. Akita Museum of Art está localizado em Akita, Akita, que faz parte do Japão e da Akita Prefecture. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Japan | leaderName | Tarō_Asō</striple>
+						<striple>Japan | ethnicGroup | Japanese_people</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>O Museu Akita de Arte está localizado em Akita, Akita, que está localizado em Japan. O líder do Japão é Taro Aso e o principal grupo étnico do Japão é o Kozanesoya. Akita, Akita faz parte da Akita Prefecture. 2005. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Japan | ethnicGroup | Japanese_people</striple>
+						<striple>Japan | leaderName | Tarō_Asō</striple>
+						<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Akita Museum of Art é uma cidade localizada no estado americano de Alasca, no Condado de Akita. O principal grupo étnico do Japão é o pinguanese, o líder é Taro Aso e Akita, Akita faz parte de Akita Prefecture. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id9" size="5">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | location | Gujarat</otriple>
+				<otriple>Amdavad_ni_Gufa | locationTown | Ahmedabad</otriple>
+				<otriple>Amdavad_ni_Gufa | locationCountry | India</otriple>
+				<otriple>India | leaderName | Narendra_Modi</otriple>
+				<otriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | location | Gujarat</mtriple>
+				<mtriple>Amdavad_ni_Gufa | location | Ahmedabad</mtriple>
+				<mtriple>Amdavad_ni_Gufa | country | India</mtriple>
+				<mtriple>India | leaderName | Narendra_Modi</mtriple>
+				<mtriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+						<striple>India | leaderName | Narendra_Modi</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa é uma Região censo-designada localizada no estado americano de Índia, no Distrito de Ahmedabad. O líder da Índia é Narendra Modi. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | Narendra_Modi</striple>
+						<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa é uma Região censo-designada localizada no estado norte-americano de Alasca, no Distrito de Ahmedesh. O líder da Índia é Narendra Modi. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+						<striple>India | leaderName | Narendra_Modi</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = Amdavad ni Gufa está localizada a. O líder do partido é Narendra Modi, que é o primeiro-ministro da Índia. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id10" size="5">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | location | Gujarat</otriple>
+				<otriple>India | leaderName | T._S._Thakur</otriple>
+				<otriple>Ahmedabad | country | India</otriple>
+				<otriple>Amdavad_ni_Gufa | locationTown | Ahmedabad</otriple>
+				<otriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | location | Gujarat</mtriple>
+				<mtriple>India | leaderName | T._S._Thakur</mtriple>
+				<mtriple>Ahmedabad | country | India</mtriple>
+				<mtriple>Amdavad_ni_Gufa | location | Ahmedabad</mtriple>
+				<mtriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Ahmedabad | country | India</striple>
+						<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa é uma Região censo-designada localizada no estado americano de Alasca, no Condado de Ahmedabad. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id11" size="5">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leader | Ranil_Wickremesinghe</otriple>
+				<otriple>Ampara_Hospital | beds | 476</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
+				<mtriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</mtriple>
+				<mtriple>Ampara_Hospital | bedCount | 476</mtriple>
+				<mtriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</mtriple>
+				<mtriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | bedCount | 476</striple>
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>O Hospital Ampara 476 está localizado no estado norte-americano do Sri Lanka. = = Referências = = = = Ligações externas = = </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | bedCount | 476</striple>
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ampara Hreial, que tem 476 cápsulas, está localizado na província Oriental do Sri Lanka, liderado por Austin Fernando. O líder do Sri Lanka é Ranil Wickremesinghe. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | bedCount | 476</striple>
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Há 476 leitos no Hospital Ampara na Província Oriental do Sri Lanka, onde Austin Fernando é o local de nascimento. Outro líder dentro do país é Ranil Wickremesinghe. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id12" size="5">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</otriple>
+				<otriple>Julia_Morgan | significantBuildings | Riverside_Art_Museum</otriple>
+				<otriple>Julia_Morgan | significantProject | Hearst_Castle</otriple>
+				<otriple>Julia_Morgan | birthPlace | California</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</mtriple>
+				<mtriple>Julia_Morgan | significantProject | Hearst_Castle</mtriple>
+				<mtriple>Julia_Morgan | birthPlace | California</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | California</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Julia Morgan, que nasceu em OCLC nia, projetou a Conferência Asilhurst Grounds, o engenheiro de exame de Los Angeles, o Musuem de Arte e o Sindicador de Estágio. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | California</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+						<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Julia Morgan foi um arquiteto nascido em Dienia. Ela projetou Asilhurst Conference Grounds, The Smile Art Museum, Westerst Castle e o Los Angeles Horror Choice iner building. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id13" size="5">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | significantBuildings | Riverside_Art_Museum</otriple>
+				<otriple>Julia_Morgan | significantProject | Hearst_Castle</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</otriple>
+				<otriple>Julia_Morgan | birthPlace | California</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</mtriple>
+				<mtriple>Julia_Morgan | significantProject | Hearst_Castle</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</mtriple>
+				<mtriple>Julia_Morgan | birthPlace | California</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | birthPlace | California</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+						<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A Conferência de Assunção de Assunção foi desenhada por Julia Morgan chs, nascida em OCLC niachs, que é conhecida por um grande número de buildings, incluindo o Castelo de Westerst e o Mapa de Arte Bem, e seu trabalho em São francócodilos Chinathurst. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | California</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+						<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Julia Morgan, a Condessa, nasceu na Califórnia e alguns de seus projetos importantes, Hoode: a Conferência Asilhurst Grounds, O Castelo de Arte Mseum, Castelo de Westerst e alguns edifícios em Chinathurst, San franco. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | California</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+						<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Julia Morgan, nascida em OCLC nia, foi o arquiteto por trás do local de Asilhurst Conferthose, o Castelo de Arte de Livingston st e Chinatown em San franco. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id14" size="5">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</otriple>
+				<otriple>Asilomar_Conference_Grounds | added | &quot;1987-02-27&quot;^^xsd:date</otriple>
+				<otriple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</otriple>
+				<otriple>Asilomar_Conference_Grounds | nrhpReferenceNumber | &quot;87000823&quot;</otriple>
+				<otriple>Asilomar_Conference_Grounds | yearOfConstruction | &quot;1913&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</mtriple>
+				<mtriple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</mtriple>
+				<mtriple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</mtriple>
+				<mtriple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</mtriple>
+				<mtriple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
+						<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
+						<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Referências = = = = Ligações externas = = Eles estão localizados em Pacific Grove, California, e eles foram adicionados ao Esquadrão Nacional de Convenções em 27 de fevereiro de 1987 com o número de referência 8710.823mg. O registro está no estilo arquitetônico das Artes e do Convestimento Convestimado. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
+						<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
+						<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = Assunção está localizada a. Eles foram construídos em 1913 com o estilo arquitetônico das Artes e do Convestimento Convestimado. Eles foram adicionados ao Esquadrão Nacional de Convenções em 27 de fevereiro de 1987, com o número de referências 871.823. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
+						<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
+						<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
+						<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A Conferência de Assunção de Assunção foi construída em 1913 e estão no Pacífico de Grove, no Canadá. Eles têm uma arquitetura de estilo de arte e design de desenvolvimento e foram adicionados ao Fundo Nacional de Trabalho em 27 de fevereiro de 1987, com o número de referências 823. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id15" size="5">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</otriple>
+				<otriple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</otriple>
+				<otriple>Asser_Levy_Public_Baths | nrhpReferenceNumber | &quot;80002709&quot;</otriple>
+				<otriple>Asser_Levy_Public_Baths | yearOfConstruction | &quot;1904&quot;^^xsd:gYear</otriple>
+				<otriple>Asser_Levy_Public_Baths | added | &quot;1980-04-23&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</mtriple>
+				<mtriple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</mtriple>
+				<mtriple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</mtriple>
+				<mtriple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</mtriple>
+				<mtriple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+						<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
+						<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</striple>
+						<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = A cidade está localizada a. O local foi adicionado ao Esquadrão Nacional de Convenções sobre o 1980-04-23, com o número de esquemas 810.2709. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
+						<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+						<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
+						<striple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>As salas de Asser Hampton estão localizados na 234.ª rua em Manhattan, e têm o estilo do Revival Romeu. Eles foram construídos em 1904 e adicionados ao Esquadrão Nacional de Convenções com o número de referência 810.2709 em 23 de abril do mesmo ano. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+						<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
+						<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</striple>
+						<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>O Asser Hampton Public Bbill foi construído em 1904 no estilo arquitetônico do Convestimento Prófico, e está localizado na 234.ª Streetada, na cidade de Dieattan. O local foi adicionado ao Esquadrão Nacional de Convenções sobre o Oito 0-04-23N1, com o número de referência 810.2709. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id16" size="5">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | location | New_York_City</otriple>
+				<otriple>New_York_City | country | United_States</otriple>
+				<otriple>Manhattan | leaderName | Gale_Brewer</otriple>
+				<otriple>New_York_City | isPartOf | New_York</otriple>
+				<otriple>New_York_City | subdivisionName | Manhattan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | location | New_York_City</mtriple>
+				<mtriple>New_York_City | country | United_States</mtriple>
+				<mtriple>Manhattan | leaderName | Gale_Brewer</mtriple>
+				<mtriple>New_York_City | isPartOf | New_York</mtriple>
+				<mtriple>New_York_City | isPartOf | Manhattan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+						<striple>Manhattan | leaderName | Gale_Brewer</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Referências = = = = Ligações externas = = * Site oficial = = Geografia = = Nova Iorque está localizada a. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Manhattan | leaderName | Gale_Brewer</striple>
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>&amp; lt; br clear = left &amp; gt; = = Ligações externas = = = = Geografia = = Asser está localizada a. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+						<striple>New_York_City | isPartOf | New_York</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Manhattan | leaderName | Gale_Brewer</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = Asser está localizada a. &amp; lt; br clear = left &amp; gt; = = Ligações externas = = &amp; lt; br clear = left &amp; gt; = = Ligações externas = = </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id17" size="5">
+			<originaltripleset>
+				<otriple>Birmingham | postalCode | B_postcode_area</otriple>
+				<otriple>103_Colmore_Row | architect | John_Madin</otriple>
+				<otriple>John_Madin | birthPlace | Birmingham</otriple>
+				<otriple>Birmingham | governingBody | Birmingham_City_Council</otriple>
+				<otriple>Birmingham | leaderName | Andrew_Mitchell</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Birmingham | postalCode | B_postcode_area</mtriple>
+				<mtriple>103_Colmore_Row | architect | John_Madin</mtriple>
+				<mtriple>John_Madin | birthPlace | Birmingham</mtriple>
+				<mtriple>Birmingham | governingBody | Birmingham_City_Council</mtriple>
+				<mtriple>Birmingham | leaderName | Andrew_Mitchell</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+						<striple>John_Madin | birthPlace | Birmingham</striple>
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Birmingham | leaderName | Andrew_Mitchell</striple>
+						<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>103 Colmore foi projetado pelo arquiteto John Madin, que nasceu em Birmmir, onde o código do Coringa é Oito. Andrew Mitchell é o líder da cidade e da Câmara Municipal de Birmingham. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
+						<striple>Birmingham | leaderName | Andrew_Mitchell</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+						<striple>John_Madin | birthPlace | Birmingham</striple>
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>O Conselho da Cidade é o órgão de governo para Birmingham, onde Andrew Mitchell é um bandido. A cidade tem o código B e é o local onde se encontra o ladrão John Madin, que projetou 103 Colmore Row. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Birmingham | leaderName | Andrew_Mitchell</striple>
+						<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+						<striple>John_Madin | birthPlace | Birmingham</striple>
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Birmingham é liderado por Andrew Mitchell. O abade, que tem o cartaz B, é o local do arquiteto John Madin, que projetou 103 Colmore Row. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id18" size="5">
+			<originaltripleset>
+				<otriple>Ethiopia | leader | Mulatu_Teshome</otriple>
+				<otriple>Ethiopia | leaderName | Hailemariam_Desalegn</otriple>
+				<otriple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</otriple>
+				<otriple>Addis_Ababa_City_Hall | location | Addis_Ababa</otriple>
+				<otriple>Addis_Ababa | country | Ethiopia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ethiopia | leaderName | Mulatu_Teshome</mtriple>
+				<mtriple>Ethiopia | leaderName | Hailemariam_Desalegn</mtriple>
+				<mtriple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | location | Addis_Ababa</mtriple>
+				<mtriple>Addis_Ababa | country | Ethiopia</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
+						<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Addis_Ababa | country | Ethiopia</striple>
+						<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Hailemariam Desalegn e Mulatu Teshome são líderes dentro do grupo. Ababaé um estádio localizado na cidade de Ababa, no estado indiano de Karnataka. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+						<striple>Addis_Ababa | country | Ethiopia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
+						<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = Ababa está localizada a. O país é liderado por Malatu Teshome e Hailemariam DesalegnSolaris. </text>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+						<striple>Addis_Ababa | country | Ethiopia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
+						<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = Ababa está localizada a. Malatu Teshome e Hailemariam Desalegn são líderes do país. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id19" size="5">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>United_States | leaderTitle | President_of_the_United_States</otriple>
+				<otriple>United_States | leaderName | John_Roberts</otriple>
+				<otriple>250_Delaware_Avenue | location | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>United_States | leaderTitle | President_of_the_United_States</mtriple>
+				<mtriple>United_States | leaderName | John_Roberts</mtriple>
+				<mtriple>250_Delaware_Avenue | location | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | leaderName | John_Roberts</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>O presidente é o principal líder da língua inglesa falando com o Estágio Unificado, incluindo o líder John Westertszon, tem o grupo étnico norte-americano e é o lar de 250 membros do Partido Socialista. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+						<striple>United_States | leaderName | John_Roberts</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>= = Geografia = = = = = Transporte = = = O parque está localizado no Estágio dos Estados Unidos, onde o líder é conhecido como o presidente do Estágio dos Estados Unidos, apoiado pelos Estados Unidos da América. A língua principal é o galego, e um dos grupos étnicos é o marinheiro africano. </text>
+			</lex>
+		</entry>
+		<entry category="Building" eid="Id20" size="5">
+			<originaltripleset>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>United_States | leaderTitle | President_of_the_United_States</otriple>
+				<otriple>United_States | leaderName | Joe_Biden</otriple>
+				<otriple>250_Delaware_Avenue | location | United_States</otriple>
+				<otriple>United_States | ethnicGroup | White_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>United_States | leaderTitle | President_of_the_United_States</mtriple>
+				<mtriple>United_States | leaderName | Joe_Biden</mtriple>
+				<mtriple>250_Delaware_Avenue | location | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | White_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leaderName | Joe_Biden</striple>
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | White_Americans</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Joe Biden é um líder dos Estados Unidos. Os Estados Unidos da América são um grupo étnico do país que usa a língua inglesa e é onde a Linha 250 está localizada. </text>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+						<striple>United_States | leaderName | Joe_Biden</striple>
+						<striple>United_States | ethnicGroup | White_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>&amp; lt; br clear = left &amp; gt; = = Ligações externas = = O presidente dos Estados Unidos é o principal grupo étnico do país. </text>
+			</lex>
+		</entry>
+	</entries>
+	
+
+</benchmark>

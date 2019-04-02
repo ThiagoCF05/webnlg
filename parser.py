@@ -109,10 +109,6 @@ def generate(entryset, in_file, out_file, lng):
         size = int(entry_xml.attrib['size'])
         category = entry_xml.attrib['category']
 
-        entitymap = entry_xml.find('entitymap')
-        entry_xml.remove(entitymap)
-        entitymap = ET.SubElement(entry_xml, 'entitymap')
-
         # remove double entries
         originaltriplesets = entry_xml.findall('originaltripleset')
         for originaltripleset in originaltriplesets[1:]:
@@ -125,11 +121,17 @@ def generate(entryset, in_file, out_file, lng):
 
         entry = list(filter(lambda entry: entry.eid==eid and entry.size==str(size) and entry.category==category, entryset))[0]
 
-        tagentity = entry.entitymap_to_dict()
-        for tag in sorted(tagentity.keys()):
-            entity = tagentity[tag]
-            entity_xml = ET.SubElement(entitymap, 'entity')
-            entity_xml.text = tag + ' | ' + entity
+        entitymap = entry_xml.find('entitymap')
+        entry_xml.remove(entitymap)
+
+        if lng != 'pt':
+            entitymap = ET.SubElement(entry_xml, 'entitymap')
+
+            tagentity = entry.entitymap_to_dict()
+            for tag in sorted(tagentity.keys()):
+                entity = tagentity[tag]
+                entity_xml = ET.SubElement(entitymap, 'entity')
+                entity_xml.text = tag + ' | ' + entity
 
         # process lexical entries
         lexEntries = entry_xml.findall('lex')
@@ -151,10 +153,10 @@ def generate(entryset, in_file, out_file, lng):
                 lexEntry_xml.remove(references_xml)
 
             # ordered triple set
-            if lng == 'en':
-                orderedtripleset = entry.lexEntries[i].orderedtripleset
-            else:
+            if lng == 'de':
                 orderedtripleset = entry.lexEntries[i].orderedtripleset_de
+            else:
+                orderedtripleset = entry.lexEntries[i].orderedtripleset
 
             orderedtripleset_xml = ET.SubElement(lexEntry_xml, 'sortedtripleset')
             for j, orderedtripleset_snt in enumerate(orderedtripleset):
@@ -180,19 +182,31 @@ def generate(entryset, in_file, out_file, lng):
                 text = entry.lexEntries[i].text
                 template = entry.lexEntries[i].template
                 tree_ = entry.lexEntries[i].tree
+                text_xml = ET.SubElement(lexEntry_xml, 'text')
+                text_xml.text = text
+
+                template_xml = ET.SubElement(lexEntry_xml, 'template')
+                template_xml.text = template
+
+                tree_xml = ET.SubElement(lexEntry_xml, 'tree')
+                tree_xml.text = tree_
+            elif lng == 'pt':
+                text = entry.lexEntries[i].text_pt
+                text_xml = ET.SubElement(lexEntry_xml, 'text')
+                text_xml.text = text
             else:
                 text = entry.lexEntries[i].text_de
                 template = entry.lexEntries[i].template_de
                 tree_ = entry.lexEntries[i].tree_de
 
-            text_xml = ET.SubElement(lexEntry_xml, 'text')
-            text_xml.text = text
+                text_xml = ET.SubElement(lexEntry_xml, 'text')
+                text_xml.text = text
 
-            template_xml = ET.SubElement(lexEntry_xml, 'template')
-            template_xml.text = template
+                template_xml = ET.SubElement(lexEntry_xml, 'template')
+                template_xml.text = template
 
-            tree_xml = ET.SubElement(lexEntry_xml, 'tree')
-            tree_xml.text = tree_
+                tree_xml = ET.SubElement(lexEntry_xml, 'tree')
+                tree_xml.text = tree_
 
     rough_string = ET.tostring(tree.getroot(), encoding='utf-8', method='xml')
     rough_string = re.sub(">\n[\t]+<", '><', rough_string)
