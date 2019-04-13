@@ -120,8 +120,15 @@ def generate(entryset, in_file, out_file, lng):
 
         # remove double entries
         modifiedtriplesets = entry_xml.findall('modifiedtripleset')
+        triples = [mtriple.text for mtriple in modifiedtriplesets[0]]
         for modifiedtripleset in modifiedtriplesets[1:]:
             entry_xml.remove(modifiedtripleset)
+        modifiedtripleset = modifiedtriplesets[0]
+        for triple in triples:
+            mtriple = ET.SubElement(modifiedtripleset, 'mtriple')
+            mtriple.text = triple
+        for otriple in modifiedtripleset.findall('otriple'):
+            modifiedtripleset.remove(otriple)
 
         entry = list(filter(lambda entry: entry.eid==eid and entry.size==str(size) and entry.category==category, entryset))[0]
 
@@ -189,10 +196,11 @@ def generate(entryset, in_file, out_file, lng):
             text_xml.text = text
 
             template_xml = ET.SubElement(lexEntry_xml, 'template')
-            template_xml.text = template
+            template_xml.text = ' '.join(template.split())
 
-            tree_xml = ET.SubElement(lexEntry_xml, 'tree')
-            tree_xml.text = tree_
+            if tree_.strip() != '':
+                tree_xml = ET.SubElement(lexEntry_xml, 'tree')
+                tree_xml.text = tree_
 
     rough_string = ET.tostring(tree.getroot(), encoding='utf-8', method='xml')
     rough_string = re.sub(">\n[\t]+<", '><', rough_string)

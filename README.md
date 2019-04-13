@@ -1,4 +1,4 @@
-# Webnlg
+# WebNLG
 The enriched version of the WebNLG dataset, described at [the INLG 2018 paper](https://aclweb.org/anthology/W18-6521).
 
 ### Description
@@ -6,16 +6,18 @@ The enriched version of the WebNLG dataset, described at [the INLG 2018 paper](h
 WebNLG is a valuable resource and benchmark for the Natural Language Generation (NLG) community. However, as other NLG benchmarks, it only consists of a collection of parallel raw representations and their
 corresponding textual realizations. This work aimed to provide intermediate representations of the data for the development and evaluation of popular tasks in the NLG pipeline architecture (Reiter and Dale, 2000), such as Discourse Ordering, Lexicalization, Aggregation and Referring Expression Generation.
 
-### Last Version
+### Data
 
-Here is the changes per version:
+Here are the changes per version:
 
-1. **v1.0**: first version with annotation of the train and development parts of the corpus and German translation.
-2. **v1.1**: fix on some annotation mistakes. See Issue [#1](https://github.com/ThiagoCF05/webnlg/issues/1). (November 21st, 2018)
-3. **v1.2**: annotation of the test part of the corpus. See Issue [#2](https://github.com/ThiagoCF05/webnlg/issues/2). (January 31st, 2019)
-4. **v1.3**: tokenization by [NLTK](https://www.nltk.org/), leading to a better extraction of references and discourse ordering information. (January 31st, 2019)
-5. **v1.4**: full revision of the delexicalized templates. (April 1st, 2019)
-6. **v2.0 (BETA)**: Tree templates. (April 1st, 2019)
+- [**v1.4**](versions/v1.4): full revision of the delexicalized templates. (April 1st, 2019)
+- [**v1.3**](versions/v1.3): tokenization by [NLTK](https://www.nltk.org/), leading to a better extraction of references and discourse ordering information. (January 31st, 2019)
+- [**v1.2**](versions/v1.2): annotation of the test part of the corpus. See Issue [#2](https://github.com/ThiagoCF05/webnlg/issues/2). (January 31st, 2019)
+- [**v1.1**](versions/v1.1): fix on some annotation mistakes. See Issue [#1](https://github.com/ThiagoCF05/webnlg/issues/1). (November 21st, 2018)
+- [**v1.0**](versions/v1.0): first version with annotation of the train and development parts of the corpus and German translation.
+
+**BETA**
+- [**v2.0 (BETA)**](versions/v2.0): Tree templates. (April 1st, 2019)
 
 ### German translation
 
