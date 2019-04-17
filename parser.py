@@ -124,11 +124,13 @@ def generate(entryset, in_file, out_file, lng):
         for modifiedtripleset in modifiedtriplesets[1:]:
             entry_xml.remove(modifiedtripleset)
         modifiedtripleset = modifiedtriplesets[0]
-        for triple in triples:
-            mtriple = ET.SubElement(modifiedtripleset, 'mtriple')
-            mtriple.text = triple
-        for otriple in modifiedtripleset.findall('otriple'):
-            modifiedtripleset.remove(otriple)
+        otriples = modifiedtripleset.findall('otriple')
+        if len(otriples) > 0:
+            for triple in triples:
+                mtriple = ET.SubElement(modifiedtripleset, 'mtriple')
+                mtriple.text = triple
+            for otriple in modifiedtripleset.findall('otriple'):
+                modifiedtripleset.remove(otriple)
 
         entry = list(filter(lambda entry: entry.eid==eid and entry.size==str(size) and entry.category==category, entryset))[0]
 
