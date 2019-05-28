@@ -188,6 +188,7 @@ def generate(entryset, in_file, out_file, lng):
             if lng == 'en':
                 text = entry.lexEntries[i].text
                 template = entry.lexEntries[i].template
+                lex_template = entry.lexEntries[i].lex_template
                 tree_ = entry.lexEntries[i].tree
             else:
                 text = entry.lexEntries[i].text_de
@@ -199,6 +200,10 @@ def generate(entryset, in_file, out_file, lng):
 
             template_xml = ET.SubElement(lexEntry_xml, 'template')
             template_xml.text = ' '.join(template.split())
+
+            if lex_template.strip() != '':
+                lex_xml = ET.SubElement(lexEntry_xml, 'lexicalization')
+                lex_xml.text = lex_template.strip()
 
             if tree_.strip() != '':
                 tree_xml = ET.SubElement(lexEntry_xml, 'tree')
