@@ -1,0 +1,1432 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Building" eid="Id1" size="4">
+			<originaltripleset>
+				<otriple>11_Diagonal_Street | location | South_Africa</otriple>
+				<otriple>South_Africa | capital | Cape_Town</otriple>
+				<otriple>South_Africa | leaderName | Cyril_Ramaphosa</otriple>
+				<otriple>South_Africa | ethnicGroup | Asian_South_Africans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>11_Diagonal_Street | location | South_Africa</mtriple>
+				<mtriple>South_Africa | capital | Cape_Town</mtriple>
+				<mtriple>South_Africa | leaderName | Cyril_Ramaphosa</mtriple>
+				<mtriple>South_Africa | ethnicGroup | Asian_South_Africans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>South_Africa | leaderName | Cyril_Ramaphosa</striple>
+						<striple>South_Africa | capital | Cape_Town</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>11_Diagonal_Street | location | South_Africa</striple>
+						<striple>South_Africa | ethnicGroup | Asian_South_Africans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Cyril Ramaphosa ist einer der Führer Südafrikas, dessen Hauptstadt Kapstadt ist. Die Adresse, 11 Diagonal Street befindet sich in diesem Land und eine der ethnischen Gruppen sind asiatische Südafrikaner. </text>
+				<template>PATIENT-2 ist einer der Anführer von BRIDGE-1, welches Kapital PATIENT-1 ist. AGENT-1 befindet sich in BRIDGE-1 und eine der ethnischen Gruppen ist PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>South_Africa | leaderName | Cyril_Ramaphosa</striple>
+						<striple>11_Diagonal_Street | location | South_Africa</striple>
+						<striple>South_Africa | capital | Cape_Town</striple>
+						<striple>South_Africa | ethnicGroup | Asian_South_Africans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Führung durch Cyril Ramaphosa, Südafrika ist Standort der 11 Diagonal Street, hat die Hauptstadt von Kapstadt und hat eine ethnische Gruppe asiatischer Südafrikaner. </text>
+				<template>Führen durch PATIENT-2, BRIDGE-1 ist Standort von AGENT-1, hat die Hauptstadt von PATIENT-1 und hat eine ethnische Gruppe von PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>South_Africa | capital | Cape_Town</striple>
+						<striple>11_Diagonal_Street | location | South_Africa</striple>
+						<striple>South_Africa | ethnicGroup | Asian_South_Africans</striple>
+						<striple>South_Africa | leaderName | Cyril_Ramaphosa</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Mit der Hauptstadt von Kapstadt, Südafrika ist die Lage von 11 Diagonal Street, hat die ethnische Gruppe der asiatischen Südafrikaner und einer ihrer Führer ist Cyril Ramaphosa. </text>
+				<template>With the capital of PATIENT-1, BRIDGE-1 is the location of AGENT-1, has the ethnic group of PATIENT-3 and one of BRIDGE-1 leaders is PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11_Diagonal_Street</entity>
+				<entity>BRIDGE-1 | South_Africa</entity>
+				<entity>PATIENT-1 | Cape_Town</entity>
+				<entity>PATIENT-2 | Cyril_Ramaphosa</entity>
+				<entity>PATIENT-3 | Asian_South_Africans</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id2" size="4">
+			<originaltripleset>
+				<otriple>11_Diagonal_Street | location | South_Africa</otriple>
+				<otriple>South_Africa | ethnicGroups | Asian_South_Africans</otriple>
+				<otriple>South_Africa | capital | Cape_Town</otriple>
+				<otriple>South_Africa | ethnicGroup | White_South_African</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>11_Diagonal_Street | location | South_Africa</mtriple>
+				<mtriple>South_Africa | ethnicGroup | Asian_South_Africans</mtriple>
+				<mtriple>South_Africa | capital | Cape_Town</mtriple>
+				<mtriple>South_Africa | ethnicGroup | White_South_African</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>South_Africa | capital | Cape_Town</striple>
+						<striple>11_Diagonal_Street | location | South_Africa</striple>
+						<striple>South_Africa | ethnicGroup | Asian_South_Africans</striple>
+						<striple>South_Africa | ethnicGroup | White_South_African</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Mit der Hauptstadt von Kapstadt ist Südafrika der Standort der 11 Diagonal Street und hat die ethnischen Gruppen asiatischer Südafrikaner und weißer Südafrikaner. </text>
+				<template>Mit der Hauptstadt von PATIENT-2 ist BRIDGE-1 der Standort von AGENT-1 und hat die ethnischen Gruppen von PATIENT-1 und PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11_Diagonal_Street | location | South_Africa</striple>
+						<striple>South_Africa | capital | Cape_Town</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>South_Africa | ethnicGroup | Asian_South_Africans</striple>
+						<striple>South_Africa | ethnicGroup | White_South_African</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>11 Diagonal Street befindet sich in Südafrika, von denen Kapstadt die Hauptstadt ist. Zwei ethnische Gruppen innerhalb Südafrikas sind die asiatischen Südafrikaner und weiße Südafrikaner. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, von dem PATIENT-2 die Hauptstadt ist. Zwei ethnische Gruppen innerhalb von BRIDGE-1 sind PATIENT-1 und PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11_Diagonal_Street | location | South_Africa</striple>
+						<striple>South_Africa | capital | Cape_Town</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>South_Africa | ethnicGroup | White_South_African</striple>
+						<striple>South_Africa | ethnicGroup | Asian_South_Africans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>11 Diagonal Street befindet sich in Südafrika, wo die Hauptstadt Kapstadt ist. Weiße Südafrikaner und asiatische Südafrikaner sind ethnische Gruppen in Südafrika. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, wo die Hauptstadt PATIENT-2 ist. PATIENT-3 und PATIENT-1 sind ethnische Gruppen in BRIDGE-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11_Diagonal_Street</entity>
+				<entity>BRIDGE-1 | South_Africa</entity>
+				<entity>PATIENT-1 | Asian_South_Africans</entity>
+				<entity>PATIENT-2 | Cape_Town</entity>
+				<entity>PATIENT-3 | White_South_African</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id3" size="4">
+			<originaltripleset>
+				<otriple>200_Public_Square | location | Cleveland</otriple>
+				<otriple>Cleveland | subdivisionName | Cuyahoga_County,_Ohio</otriple>
+				<otriple>Cleveland | isPartOf | Ohio</otriple>
+				<otriple>Cleveland | governingBody | Cleveland_City_Council</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>200_Public_Square | location | Cleveland</mtriple>
+				<mtriple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</mtriple>
+				<mtriple>Cleveland | isPartOf | Ohio</mtriple>
+				<mtriple>Cleveland | governingBody | Cleveland_City_Council</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | location | Cleveland</striple>
+						<striple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</striple>
+						<striple>Cleveland | governingBody | Cleveland_City_Council</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>200 Public Square befindet sich in Cleveland, Cuyahoga County, Ohio, das von Cleveland City Council regiert wird. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-1, das von PATIENT-3 verwaltet wird.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | location | Cleveland</striple>
+						<striple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</striple>
+						<striple>Cleveland | governingBody | Cleveland_City_Council</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>200 Public Square befindet sich in Cleveland, Cuyahoga County, Ohio, das von der Cleveland Stadtverwaltung regiert wird. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-1, das von PATIENT-3 verwaltet wird.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | location | Cleveland</striple>
+						<striple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</striple>
+						<striple>Cleveland | governingBody | Cleveland_City_Council</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>200 Public Square befindet sich in Cleveland, Cuyahoga County, Ohio, und wird von Cleveland City Council regiert. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-1 und wird von PATIENT-3 verwaltet.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 200_Public_Square</entity>
+				<entity>BRIDGE-1 | Cleveland</entity>
+				<entity>PATIENT-1 | Cuyahoga_County,_Ohio</entity>
+				<entity>PATIENT-2 | Ohio</entity>
+				<entity>PATIENT-3 | Cleveland_City_Council</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id4" size="4">
+			<originaltripleset>
+				<otriple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</otriple>
+				<otriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</otriple>
+				<otriple>250_Delaware_Avenue | floorArea | &quot;30843.8&quot;^^xsd:double</otriple>
+				<otriple>250_Delaware_Avenue | floorCount | &quot;12&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</mtriple>
+				<mtriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</mtriple>
+				<mtriple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</mtriple>
+				<mtriple>250_Delaware_Avenue | floorCount | 12</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
+						<striple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</striple>
+						<striple>250_Delaware_Avenue | floorCount | 12</striple>
+						<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Baubeginn im Januar 2014, Postmoderne Kunst @ 250 Delaware Avenue hat zwölf Etagen mit einer Gesamtfläche von 30843,8 Quadratmetern. </text>
+				<template>Baubeginn in PATIENT-2, PATIENT-1 @ AGENT-1 hat PATIENT-4 Etagen mit einer Gesamtfläche von PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | floorCount | 12</striple>
+						<striple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</striple>
+						<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
+						<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Bau des 12-stöckigen Postmoderne-Gebäudes, 250 Delaware Avenue, die eine Bodenfläche von 30843,8 Quadratmetern hat, begann im Januar 2014. </text>
+				<template>Der Bau des PATIENT-4-Gebäudes PATIENT-1, AGENT-1, das eine Bodenfläche von PATIENT-3 hat, begann in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
+						<striple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</striple>
+						<striple>250_Delaware_Avenue | floorCount | 12</striple>
+						<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Als erstes wurde im Januar 2014 gebaut, die postmodernistische Kunst @ 250 Delaware Avenue verfügt über 12 Etagen und eine Gesamtfläche von 30843,8 Quadratmetern. </text>
+				<template>Zuerst in PATIENT-2 gebaut, PATIENT-1 @ AGENT-1 hat PATIENT-4 Etagen und PATIENT-3 von Quadratmetern.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>PATIENT-1 | Postmodern_architecture</entity>
+				<entity>PATIENT-2 | &quot;January, 2014&quot;</entity>
+				<entity>PATIENT-3 | 30843.8 (square metres)</entity>
+				<entity>PATIENT-4 | 12</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id5" size="4">
+			<originaltripleset>
+				<otriple>300_North_LaSalle | location | Chicago</otriple>
+				<otriple>Chicago | isPartOf | DuPage_County,_Illinois</otriple>
+				<otriple>Chicago | country | United_States</otriple>
+				<otriple>Chicago | leaderName | Susana_Mendoza</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>300_North_LaSalle | location | Chicago</mtriple>
+				<mtriple>Chicago | isPartOf | DuPage_County,_Illinois</mtriple>
+				<mtriple>Chicago | country | United_States</mtriple>
+				<mtriple>Chicago | leaderName | Susana_Mendoza</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+						<striple>Chicago | country | United_States</striple>
+						<striple>Chicago | leaderName | Susana_Mendoza</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>300 North LaSalle befindet sich in Chicago, Du Page County, Illinois, USA, wo der Führer Susana Mendoza ist. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-1, PATIENT-2, wo der Führer PATIENT-3 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Chicago | leaderName | Susana_Mendoza</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>300 North Lasalle befindet sich in Chicago, DuPage County, Illinois. Der Führer oder Chicago ist Susana Mendoza. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-1. Der Führer oder BRIDGE-1 ist PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+						<striple>Chicago | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Chicago | leaderName | Susana_Mendoza</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>300 North LaSalle is situated in Chicago which is part of the Dupage County in Illinois located in the U.S. Susana Mendoza is currently the leader of Chicago. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, das Teil von PATIENT-1 in PATIENT-2 in PATIENT-2 ist. PATIENT-3 ist derzeit der Anführer von BRIDGE-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 300_North_LaSalle</entity>
+				<entity>BRIDGE-1 | Chicago</entity>
+				<entity>PATIENT-1 | DuPage_County,_Illinois</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Susana_Mendoza</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id6" size="4">
+			<originaltripleset>
+				<otriple>3Arena | owner | Live_Nation_Entertainment</otriple>
+				<otriple>Dublin | leaderName | Críona_Ní_Dhálaigh</otriple>
+				<otriple>Dublin | country | Republic_of_Ireland</otriple>
+				<otriple>3Arena | location | Dublin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | owner | Live_Nation_Entertainment</mtriple>
+				<mtriple>Dublin | leaderName | Críona_Ní_Dhálaigh</mtriple>
+				<mtriple>Dublin | country | Republic_of_Ireland</mtriple>
+				<mtriple>3Arena | location | Dublin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | country | Republic_of_Ireland</striple>
+						<striple>Dublin | leaderName | Críona_Ní_Dhálaigh</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3 Arena befindet sich in Dublin, der Republik Irland, wo Críona Ní Dhálaigh Oberbürgermeister war. Der Besitzer der 3Arena ist Live Nation Entertainment. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-3, wo PATIENT-2 Oberbürgermeister war. Der Besitzer von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Dublin | country | Republic_of_Ireland</striple>
+						<striple>Dublin | leaderName | Críona_Ní_Dhálaigh</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>3Arena | location | Dublin</striple>
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Oberbürgermeister von Dublin (Republik Irland) ist Criona Ni Dhalaigh. Sitz in Dublin ist die 3Arena, die im Besitz von Live Nation Entretainment ist. </text>
+				<template>Der Oberbürgermeister von BRIDGE-1 (PATIENT-3) ist PATIENT-2. Mit Sitz in BRIDGE-1 ist AGENT-1 im Besitz von PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | country | Republic_of_Ireland</striple>
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Dublin | leaderName | Críona_Ní_Dhálaigh</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 3Arena, Dublin, Republik Irland befindet sich im Besitz von Live Nation Entertainment. Críona Ní Dhálaigh war Oberbürgermeister von Dublin. </text>
+				<template>AGENT-1, BRIDGE-1, PATIENT-3 ist Eigentum von PATIENT-1. PATIENT-2 war Oberbürgermeister von BRIDGE-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>BRIDGE-1 | Dublin</entity>
+				<entity>PATIENT-1 | Live_Nation_Entertainment</entity>
+				<entity>PATIENT-2 | Críona_Ní_Dhálaigh</entity>
+				<entity>PATIENT-3 | Republic_of_Ireland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id7" size="4">
+			<originaltripleset>
+				<otriple>3Arena | owner | Live_Nation_Entertainment</otriple>
+				<otriple>Dublin | leaderName | Críona_Ní_Dhálaigh</otriple>
+				<otriple>Dublin | subdivisionName | Republic_of_Ireland</otriple>
+				<otriple>3Arena | location | Dublin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | owner | Live_Nation_Entertainment</mtriple>
+				<mtriple>Dublin | leaderName | Críona_Ní_Dhálaigh</mtriple>
+				<mtriple>Dublin | isPartOf | Republic_of_Ireland</mtriple>
+				<mtriple>3Arena | location | Dublin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | isPartOf | Republic_of_Ireland</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Dublin | leaderName | Críona_Ní_Dhálaigh</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Live Nation Entertainment besitzt 3Arena, befindet sich in Dublin, Republik Irland. Der Oberbürgermeister von Dublin ist Críona Ní Dhálaigh. </text>
+				<template>PATIENT-1 besitzt AGENT-1 mit Sitz in BRIDGE-1, PATIENT-3. Der Oberbürgermeister von BRIDGE-1 ist PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | isPartOf | Republic_of_Ireland</striple>
+						<striple>Dublin | leaderName | Críona_Ní_Dhálaigh</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Im Besitz von Live Nation Entertainment, 3Arena finden Sie in Dublin in der Republik Irland, eine Republik, die von Oberbürgermeister Críona Ní Dhálaigh geführt wird. </text>
+				<template>Im Besitz von PATIENT-1, AGENT-1 finden Sie in BRIDGE-1 in PATIENT-3, einer Republik, die von PATIENT-2 geführt wird.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>BRIDGE-1 | Dublin</entity>
+				<entity>PATIENT-1 | Live_Nation_Entertainment</entity>
+				<entity>PATIENT-2 | Críona_Ní_Dhálaigh</entity>
+				<entity>PATIENT-3 | Republic_of_Ireland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id8" size="4">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | operator | Marriott_International</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | &quot;23&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das AC Hotel Bella Sky befindet sich in Kopenhagen, Dänemark und der Mieter aus dem Hotel ist Marriott International. It is own by Bella Center and there is 23 floors in this hotel. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1 und der Mieter von AGENT-1 ist PATIENT-2. AGENT-1 ist von PATIENT-3 und es gibt PATIENT-4 Etagen in AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Im AC Hotel Bella Sky Copenhagen, Dänemark, gibt es 23 Etagen. Der Mieter ist das Marriott International Hotel und der Eigentümer ist Bella Center. </text>
+				<template>Es gibt PATIENT-4 Etagen in AGENT-1, PATIENT-1. Der Mieter ist PATIENT-2 und der Eigentümer ist PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Located in Dänemark and with mieter Marriott International, AC Hotel Bella Sky Copenhagen is owned by Bella Center and has 23 floors. </text>
+				<template>Located in PATIENT-1 and with mieter PATIENT-2, AGENT-1 is owned by PATIENT-3 and has PATIENT-4 floors.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>PATIENT-1 | Denmark</entity>
+				<entity>PATIENT-2 | Marriott_International</entity>
+				<entity>PATIENT-3 | Bella_Center</entity>
+				<entity>PATIENT-4 | 23</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id9" size="4">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | architect | 3XN</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | &quot;23&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | architect | 3XN</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | architect | 3XN</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Mieter des AC Hotel Bella Sky Copenhagen ist Marriott International. Das Hotel hat 23 Etagen, wurde von der Firma 3XN entworfen und befindet sich im Besitz des Bella Center. </text>
+				<template>PATIENT-4 Mieter von AGENT-1 ist PATIENT-2. AGENT-1 hat PATIENT-4 Etagen, wurde von PATIENT-3 entworfen und ist im Besitz von PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | architect | 3XN</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3XN war der Architekt des AC Hotel Bella Sky Copenhagen, das 23 Stockwerke hat und im Besitz des Bella Centers ist und derzeit von Marriott International betreut wird. </text>
+				<template>PATIENT-3 war der Architekt von AGENT-1, das PATIENT-4 Etagen hat und im Besitz von PATIENT-1 ist und derzeit von PATIENT-2 geführt wird.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | owner | Bella_Center</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | architect | 3XN</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bella Center besitzt das AC Hotel Bella Sky Copenhagen und Marriott International ist ein Mieter. Das Hotel hat 23 Etagen und wurde von 3XN entworfen. </text>
+				<template>PATIENT-1 besitzt AGENT-1 und PATIENT-2 ist ein Mieter. AGENT-1 hat PATIENT-4 Etagen und wurde von PATIENT-3 entworfen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>PATIENT-1 | Bella_Center</entity>
+				<entity>PATIENT-2 | Marriott_International</entity>
+				<entity>PATIENT-3 | 3XN</entity>
+				<entity>PATIENT-4 | 23</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id10" size="4">
+			<originaltripleset>
+				<otriple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;@en</otriple>
+				<otriple>Adisham_Hall | completionDate | 1931</otriple>
+				<otriple>Adisham_Hall | location | Sri_Lanka</otriple>
+				<otriple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</mtriple>
+				<mtriple>Adisham_Hall | location | Sri_Lanka</mtriple>
+				<mtriple>Adisham_Hall | completionDate | 1931</mtriple>
+				<mtriple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
+						<striple>Adisham_Hall | completionDate | 1931</striple>
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+						<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Bau begann 1927 und endete 1931 in der Adisham Hall in Sri Lanka und war im Tudor und Jacobean-Stil. </text>
+				<template>Der Bau begann in PATIENT-4 und endete in PATIENT-3 von AGENT-1 in PATIENT-2 und war im PATIENT-1-Stil.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1"/>
+				</sortedtripleset>
+				<text>Die Adisham Hall wurde zwischen 1927 und 1931 in Sri Lanka gebaut. </text>
+				<template>Das PATIENT-1 wurde in PATIENT-2 zwischen PATIENT-4 und PATIENT-3 gebaut.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
+						<striple>Adisham_Hall | completionDate | 1931</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adisham Hall begann 1927 und wurde 1931 abgeschlossen. Es hat einen Tudor und Jacabian Stil und befindet sich in Sri Lanka. </text>
+				<template>AGENT-1 begann in PATIENT-4 und wurde in PATIENT-3 abgeschlossen. AGENT-1 hat einen PATIENT-1-Stil und befindet sich in PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>PATIENT-1 | &quot;Tudor and Jacabian&quot;</entity>
+				<entity>PATIENT-2 | Sri_Lanka</entity>
+				<entity>PATIENT-3 | 1931</entity>
+				<entity>PATIENT-4 | &quot;1927&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id11" size="4">
+			<originaltripleset>
+				<otriple>Adisham_Hall | locationCountry | Sri_Lanka</otriple>
+				<otriple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;@en</otriple>
+				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
+				<otriple>Sri_Lanka | language | Tamil_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | country | Sri_Lanka</mtriple>
+				<mtriple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</mtriple>
+				<mtriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</mtriple>
+				<mtriple>Sri_Lanka | language | Tamil_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Sri_Lanka | language | Tamil_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adisham Hall befindet sich in Haputale, Sri Lanka mit der Hauptstadt Sri Jayawardenepura Kotte. Tamil ist die Sprache des Landes. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1, das die Hauptstadt von PATIENT-2 hat. PATIENT-3 ist die Sprache von BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adisham Hall befindet sich in Haputale, Sri Lanka, einem Land mit der Hauptstadt Sri Jayawardenepura Kotte und Sprache der tamilischen Sprache. </text>
+				<template>AGENT-1 findet sich in PATIENT-1, einem Land mit der Hauptstadt PATIENT-2 und der Sprache von PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Sri_Lanka | language | Tamil_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adisham Hall befindet sich in Haputale, Sri Lanka, wo Sri Lankas Hauptstadt Sri Jayawardenepura Kotte ist und die Sprache die tamilische Sprache ist. </text>
+				<template>AGENT-1 finden Sie in PATIENT-1, wo BRIDGE-1 Kapital ist PATIENT-2 und die Sprache ist das PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>PATIENT-1 | &quot;Haputale, Sri Lanka&quot;</entity>
+				<entity>PATIENT-2 | Sri_Jayawardenepura_Kotte</entity>
+				<entity>PATIENT-3 | Tamil_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id12" size="4">
+			<originaltripleset>
+				<otriple>Adisham_Hall | location | Sri_Lanka</otriple>
+				<otriple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</otriple>
+				<otriple>Adisham_Hall | buildingEndDate | &quot;1931&quot;</otriple>
+				<otriple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | location | Sri_Lanka</mtriple>
+				<mtriple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</mtriple>
+				<mtriple>Adisham_Hall | completionDate | 1931</mtriple>
+				<mtriple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+						<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
+						<striple>Adisham_Hall | completionDate | 1931</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Bau der Adisham Hall in Sri Lanka begann 1927 und endete 1931. Es wurde im Tudor Revival architektonischen Stil gebaut. </text>
+				<template>Der Bau von AGENT-1 in PATIENT-1 begann in PATIENT-4 und endete in PATIENT-3. AGENT-1 wurde in PATIENT-2 gebaut.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+						<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
+						<striple>Adisham_Hall | completionDate | 1931</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adisham Hall, Sri Lanka, wurde 1927 gegründet und 1931 fertiggestellt. Es hat den Tudor Revival Stil. </text>
+				<template>AGENT-1, PATIENT-1, wurde in PATIENT-4 gestartet und in PATIENT-3 abgeschlossen. AGENT-1 hat PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+						<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
+						<striple>Adisham_Hall | completionDate | 1931</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das architektonisch gestaltete &quot;Tudor Revival&quot; Adisham Hall befindet sich in Sri Lanka und wurde 1927 erbaut und 1931 fertiggestellt. </text>
+				<template>Das architektonische &quot;PATIENT-2&quot; AGENT-1 befindet sich in PATIENT-1 und wurde in PATIENT-4 gebaut und in PATIENT-3 fertiggestellt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>PATIENT-1 | Sri_Lanka</entity>
+				<entity>PATIENT-2 | Tudor_Revival_architecture</entity>
+				<entity>PATIENT-3 | 1931</entity>
+				<entity>PATIENT-4 | &quot;1927&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id13" size="4">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | locationTown | Akita,_Akita</otriple>
+				<otriple>Akita,_Akita | subdivisionName | Akita_Prefecture</otriple>
+				<otriple>Japan | ethnicGroup | Filipinos_in_Japan</otriple>
+				<otriple>Akita_Prefecture | country | Japan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akita_Museum_of_Art | location | Akita,_Akita</mtriple>
+				<mtriple>Akita,_Akita | isPartOf | Akita_Prefecture</mtriple>
+				<mtriple>Japan | ethnicGroup | Filipinos_in_Japan</mtriple>
+				<mtriple>Akita_Prefecture | country | Japan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Prefecture | country | Japan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Japan | ethnicGroup | Filipinos_in_Japan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Akita Museum für Kunst befindet sich in der Präfektur Akita, Akita, Japan. Eine der ethnischen Gruppen Japans sind die Philippinos. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-2, BRIDGE-3. Eine der ethnischen Gruppen von BRIDGE-3 ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
+						<striple>Akita_Prefecture | country | Japan</striple>
+						<striple>Japan | ethnicGroup | Filipinos_in_Japan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Akita Museum of Art befindet sich in Akita, Akita, Akita Präfektur, Japan, wo eine der ethnischen Gruppen die Philippinos ist. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, BRIDGE-3, wo BRIDGE-2 der ethnischen Gruppen PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Prefecture | country | Japan</striple>
+						<striple>Japan | ethnicGroup | Filipinos_in_Japan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Präfektur Akita, wo sich das Akita Museum of Art befindet, ist Teil des Landes Japan, einem Land, in dem eine der ethnischen Gruppen Filipinos ist. </text>
+				<template>BRIDGE-2, wo sich AGENT-1 befindet, ist Teil des Landes BRIDGE-3 ein Land, in dem BRIDGE-2 der ethnischen Gruppen PATIENT-1 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>BRIDGE-1 | Akita,_Akita</entity>
+				<entity>BRIDGE-2 | Akita_Prefecture</entity>
+				<entity>BRIDGE-3 | Japan</entity>
+				<entity>PATIENT-1 | Filipinos_in_Japan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id14" size="4">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | location | Virginia</otriple>
+				<otriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</otriple>
+				<otriple>Mason_School_of_Business | country | United_States</otriple>
+				<otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_B._Miller_Hall | location | Virginia</mtriple>
+				<mtriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</mtriple>
+				<mtriple>Mason_School_of_Business | country | United_States</mtriple>
+				<mtriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Mason_School_of_Business | country | United_States</striple>
+						<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</striple>
+						<striple>Alan_B._Miller_Hall | location | Virginia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Mason School of Business befindet sich in den USA und sie sind die aktuellen Mieter von Alan B Miller Hall. Robert A.M. Stern ist der Architekt für Alan B. Miller Hall, der sich in Virginia befindet. </text>
+				<template>BRIDGE-1 befindet sich in PATIENT-3 und BRIDGE-1 sind die aktuellen Mieter von AGENT-1. PATIENT-2 ist der Architekt für AGENT-1, der sich in PATIENT-1 befindet.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Mason_School_of_Business | country | United_States</striple>
+						<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+						<striple>Alan_B._Miller_Hall | location | Virginia</striple>
+						<striple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die US-amerikanische Mason School of Business sind die aktuellen Mieter der Alan B Miller Hall in Virginia, die vom Architekten Robert A M Stern entworfen wurde. </text>
+				<template>PATIENT-3-basierte BRIDGE-1 sind die derzeitigen Mieter von AGENT-1 in PATIENT-1, die von PATIENT-2 entworfen wurde.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+						<striple>Alan_B._Miller_Hall | location | Virginia</striple>
+						<striple>Mason_School_of_Business | country | United_States</striple>
+						<striple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Mason School of Business sind die aktuellen Mieter der Alan B Miller Hall, die sich in Virginia, USA befindet und vom Architekten Robert A M Stern entworfen wurde. </text>
+				<template>BRIDGE-1 sind die derzeitigen Mieter von AGENT-1, die sich in PATIENT-1, PATIENT-3 befindet und vom Architekten PATIENT-2 entworfen wurde.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>BRIDGE-1 | Mason_School_of_Business</entity>
+				<entity>PATIENT-1 | Virginia</entity>
+				<entity>PATIENT-2 | Robert_A._M._Stern</entity>
+				<entity>PATIENT-3 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id15" size="4">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | location | Virginia</otriple>
+				<otriple>Alan_B._Miller_Hall | completionDate | &quot;2009-06-01&quot;^^xsd:date</otriple>
+				<otriple>Mason_School_of_Business | country | United_States</otriple>
+				<otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_B._Miller_Hall | location | Virginia</mtriple>
+				<mtriple>Alan_B._Miller_Hall | completionDate | &quot;1 June 2009&quot;</mtriple>
+				<mtriple>Mason_School_of_Business | country | United_States</mtriple>
+				<mtriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | location | Virginia</striple>
+						<striple>Alan_B._Miller_Hall | completionDate | &quot;1 June 2009&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Mason_School_of_Business | country | United_States</striple>
+						<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>In Virginia, USA, wurde Alan B. Miller Hall am 1. Juni 2009 fertiggestellt. Die aktuellen Mieter sind die Mason School of Business. </text>
+				<template>In PATIENT-1, PATIENT-3, wurde AGENT-1 auf PATIENT-2 fertiggestellt. Die aktuellen Mieter sind BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Mason_School_of_Business | country | United_States</striple>
+						<striple>Alan_B._Miller_Hall | location | Virginia</striple>
+						<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+						<striple>Alan_B._Miller_Hall | completionDate | &quot;1 June 2009&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>In Virginia, USA und mit den aktuellen Mietern der Mason School of Business, wurde die Alan B. Miller Hall am 1. Juni 2009 abgeschlossen. </text>
+				<template>In PATIENT-1, PATIENT-3 und mit den aktuellen Mietern von BRIDGE-1 wurde AGENT-1 in PATIENT-2 abgeschlossen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>BRIDGE-1 | Mason_School_of_Business</entity>
+				<entity>PATIENT-1 | Virginia</entity>
+				<entity>PATIENT-2 | &quot;1 June 2009&quot;</entity>
+				<entity>PATIENT-3 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id16" size="4">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | locationTown | Ahmedabad</otriple>
+				<otriple>Amdavad_ni_Gufa | locationCountry | India</otriple>
+				<otriple>India | leaderName | Narendra_Modi</otriple>
+				<otriple>India | leader | Sumitra_Mahajan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | location | Ahmedabad</mtriple>
+				<mtriple>Amdavad_ni_Gufa | country | India</mtriple>
+				<mtriple>India | leaderName | Narendra_Modi</mtriple>
+				<mtriple>India | leaderName | Sumitra_Mahajan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | leaderName | Narendra_Modi</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Narendra Modi und Sumitra Mahajan sind Führer in Indien, wo sich Amdavad ni Gufa in Ahmedabad befindet. </text>
+				<template>PATIENT-2 und PATIENT-3 sind führend in BRIDGE-1, wo sich AGENT-1 in PATIENT-1 befindet.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | Narendra_Modi</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa befindet sich in Ahmedabad, Indien. Narendra Modi ist der Premierminister von Indien, während Sumitra Mahajan ein weiterer Führer Indiens ist. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1, BRIDGE-1. PATIENT-2 ist der Premierminister von BRIDGE-1, während PATIENT-3 ein weiterer Anführer von BRIDGE-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+						<striple>India | leaderName | Narendra_Modi</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa befindet sich in Ahmedabad, Indien, einem Land, das von Narendra Modi und Sumitra Mahajan geführt wird. </text>
+				<template>AGENT-1 findet sich in PATIENT-1, BRIDGE-1, einem Land von PATIENT-2 und PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | Ahmedabad</entity>
+				<entity>PATIENT-2 | Narendra_Modi</entity>
+				<entity>PATIENT-3 | Sumitra_Mahajan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id17" size="4">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | location | Gujarat</otriple>
+				<otriple>Amdavad_ni_Gufa | address | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;@en</otriple>
+				<otriple>Amdavad_ni_Gufa | locationTown | Ahmedabad</otriple>
+				<otriple>Amdavad_ni_Gufa | locationCountry | India</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | location | Gujarat</mtriple>
+				<mtriple>Amdavad_ni_Gufa | address | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;</mtriple>
+				<mtriple>Amdavad_ni_Gufa | country | India</mtriple>
+				<mtriple>Amdavad_ni_Gufa | location | Ahmedabad</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | address | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Adresse für Amdavad ni Gufa ist Lalbhai Dalpatbhai Campus, in der Nähe der CEPT Universität, opp. Gujarat University, University Road, Gujarat, Ahmedabad, Indien. </text>
+				<template>Die Adresse für AGENT-1 ist PATIENT-2, PATIENT-1, PATIENT-4, PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | address | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;</striple>
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Adresse von Amdavad ni Gufa ist Lalbhai Dalpatbhai Campus, in der Nähe der CEPT Universität, opp. Universität Gujarat, University Road, Ahmedabad, Gujarat, Indien. </text>
+				<template>Die Adresse von AGENT-1 ist PATIENT-2, PATIENT-4, PATIENT-1, PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>PATIENT-1 | Gujarat</entity>
+				<entity>PATIENT-2 | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;</entity>
+				<entity>PATIENT-3 | India</entity>
+				<entity>PATIENT-4 | Ahmedabad</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id18" size="4">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | location | Gujarat</otriple>
+				<otriple>India | leaderName | T._S._Thakur</otriple>
+				<otriple>Amdavad_ni_Gufa | locationTown | Ahmedabad</otriple>
+				<otriple>Amdavad_ni_Gufa | locationCountry | India</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | location | Gujarat</mtriple>
+				<mtriple>India | leaderName | T._S._Thakur</mtriple>
+				<mtriple>Amdavad_ni_Gufa | location | Ahmedabad</mtriple>
+				<mtriple>Amdavad_ni_Gufa | country | India</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | T._S._Thakur</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa befindet sich in Ahmedabad, Gujarat, Indien. T S Thakur war ein indischer Führer. </text>
+				<template>AGENT-1 befindet sich in PATIENT-3, PATIENT-1, BRIDGE-1. PATIENT-2 war ein BRIDGE-1-Führer.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | T._S._Thakur</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa befindet sich in Ahmedabad, Gujurat, Indien. T S Thakur ist führend in Indien. </text>
+				<template>AGENT-1 befindet sich in PATIENT-3, PATIENT-1, BRIDGE-1. PATIENT-2 ist führend in BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | country | India</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa befindet sich in Gujarat, Ahmedabad, Indien, wo der Führer T. S. Thakur war. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1, PATIENT-3, BRIDGE-1, wo der Führer PATIENT-2 war.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | Gujarat</entity>
+				<entity>PATIENT-2 | T._S._Thakur</entity>
+				<entity>PATIENT-3 | Ahmedabad</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id19" size="4">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</otriple>
+				<otriple>Sri_Lanka | currency | Sri_Lankan_rupee</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
+				<mtriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</mtriple>
+				<mtriple>Sri_Lanka | currency | Sri_Lankan_rupee</mtriple>
+				<mtriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+					</sentence>
+					<sentence ID="2"/>
+				</sortedtripleset>
+				<text>Ampara Hospital befindet sich in der östlichen Provinz von Sri Lanka, wo die Währung ist die Ski-lankische Rupie. Einer der Führer von Sri Lanka ist Ranil Wickremesinghe. </text>
+				<template>AGENT-1 befindet sich in PATIENT-3, wo die Währung PATIENT-2 ist. Einer der Anführer von PATIENT-3 ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ampara Hospital befindet sich in der östlichen Provinz, Sri Lanka. Die Währung von Sri Lanka ist die hessische Rupie und der Führer des Landes ist Ranil Wickremesinghe. </text>
+				<template>AGENT-1 befindet sich in PATIENT-3. Die Währung von BRIDGE-1 ist PATIENT-2 und der Anführer von BRIDGE-1 ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+						<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ampara Hospital ist in der östlichen Provinz, Sri Lanka. Der Führer Sri Lankas ist Ranil Wickremesinghe und seine Währung ist die hessische Rupie. </text>
+				<template>AGENT-1 ist in PATIENT-3. Der Führer von BRIDGE-1 ist PATIENT-1 und BRIDGE-1 Währung ist PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>PATIENT-1 | Ranil_Wickremesinghe</entity>
+				<entity>PATIENT-2 | Sri_Lankan_rupee</entity>
+				<entity>PATIENT-3 | Eastern_Province,_Sri_Lanka</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id20" size="4">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | birthPlace | San_Francisco</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</otriple>
+				<otriple>Julia_Morgan | significantBuildings | Asilomar_State_Beach</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</mtriple>
+				<mtriple>Julia_Morgan | birthPlace | San_Francisco</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+						<striple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die in San Francisco geborene Architektin Julia Morgan entwarf viele bedeutende Gebäude, darunter die Asilomar Conference Grounds, das Los Angeles Herald Examiner Building und den Asilomar State Beach. </text>
+				<template>PATIENT-1 geborene BRIDGE-1 entwarf viele bedeutende Gebäude wie AGENT-1, PATIENT-2 und PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
+						<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+						<striple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Julia Morgan, geboren in San Francisco und Designer vieler bedeutender Gebäude, darunter das Los Angeles Herald Examiner Gebäude und der Asilomar State Beach, war auch der Architekt des Geländes der Asilomar Konferenz. </text>
+				<template>BRIDGE-1, geboren in PATIENT-1 und Designer vieler bedeutender Gebäude, einschließlich PATIENT-2 und PATIENT-3, war auch der Architekt von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</striple>
+						<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Julia Morgan wurde in San Fransisco geboren. Sie entwarf die Asilomar Conference Grounds, den Asilomar State Beach und den Los Angeles Herald Prüfer, ein Wahrzeichen in Kalifornien. </text>
+				<template>BRIDGE-1 wurde in PATIENT-1 geboren. BRIDGE-1 entwarf AGENT-1, PATIENT-3 und PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>BRIDGE-1 | Julia_Morgan</entity>
+				<entity>PATIENT-1 | San_Francisco</entity>
+				<entity>PATIENT-2 | Los_Angeles_Herald-Examiner</entity>
+				<entity>PATIENT-3 | Asilomar_State_Beach</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id21" size="4">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</otriple>
+				<otriple>Julia_Morgan | significantBuildings | Riverside_Art_Museum</otriple>
+				<otriple>Julia_Morgan | birthPlace | California</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</mtriple>
+				<mtriple>Julia_Morgan | birthPlace | California</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | California</striple>
+						<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die in Kalifornien geborene Julia Morgan hat Gebäude wie das Los Angeles Herald Examiner Gebäude und das Riverside Art Museum entworfen und war auch der Architekt der Asilomar-Konferenz. </text>
+				<template>Geboren in PATIENT-3, hat BRIDGE-1 Gebäude wie PATIENT-1 und PATIENT-2 entworfen und war auch der Architekt von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | California</striple>
+						<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Julia Morgan aus Kalifornien, entwarf viele wichtige Gebäude, darunter das Los Angeles Herald Building und die Asilomer Conference Grounds. </text>
+				<template>BRIDGE-1 von PATIENT-3, entwarf viele wichtige Gebäude wie PATIENT-1 und AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>BRIDGE-1 | Julia_Morgan</entity>
+				<entity>PATIENT-1 | Los_Angeles_Herald-Examiner</entity>
+				<entity>PATIENT-2 | Riverside_Art_Museum</entity>
+				<entity>PATIENT-3 | California</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id22" size="4">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | location | New_York_City</otriple>
+				<otriple>New_York_City | country | United_States</otriple>
+				<otriple>New_York_City | subdivisionName | Manhattan</otriple>
+				<otriple>New_York_City | isPartOf | New_Netherland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | location | New_York_City</mtriple>
+				<mtriple>New_York_City | country | United_States</mtriple>
+				<mtriple>New_York_City | isPartOf | Manhattan</mtriple>
+				<mtriple>New_York_City | isPartOf | New_Netherland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | country | United_States</striple>
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>New_York_City | isPartOf | New_Netherland</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asser Levy Public Baths are in New York City, U.S. which is part of Manhattan. New York City war Teil von New Netherland. </text>
+				<template>AGENT-1 sind in BRIDGE-1, PATIENT-1, das Teil von PATIENT-2 ist. BRIDGE-1 war Teil von PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+						<striple>New_York_City | isPartOf | New_Netherland</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asser Levy Public Baths are located in New York City, Manhattan, New Netherland in the United States. </text>
+				<template>AGENT-1 befinden sich in BRIDGE-1, PATIENT-2, PATIENT-3 in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>New_York_City | isPartOf | New_Netherland</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asser Levy Public Baths is located in New York City, on Manhattan Island, New York, in the United States. New York City war ein Teil von New Netherland. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, auf PATIENT-2, BRIDGE-1, in PATIENT-1. BRIDGE-1 war Teil dessen, was PATIENT-3 war.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
+				<entity>BRIDGE-1 | New_York_City</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Manhattan</entity>
+				<entity>PATIENT-3 | New_Netherland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id23" size="4">
+			<originaltripleset>
+				<otriple>Birmingham | postalCode | B_postcode_area</otriple>
+				<otriple>103_Colmore_Row | architect | John_Madin</otriple>
+				<otriple>John_Madin | hometown | Birmingham</otriple>
+				<otriple>Birmingham | leaderName | John_Clancy_(Labour_politician)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Birmingham | postalCode | B_postcode_area</mtriple>
+				<mtriple>103_Colmore_Row | architect | John_Madin</mtriple>
+				<mtriple>John_Madin | hometown | Birmingham</mtriple>
+				<mtriple>Birmingham | leaderName | John_Clancy_(Labour_politician)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+						<striple>John_Madin | hometown | Birmingham</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Birmingham | leaderName | John_Clancy_(Labour_politician)</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Architekt John Madin war der Designer von 103 Colmore Row, der sich in seiner Heimatstadt Birmingham befindet. Labour-Politiker John Clancy ist der Führer von Birmingham und die Stadt hat die Postleitzahl 'B'. </text>
+				<template>BRIDGE-1 war der Designer von AGENT-1, das sich in der BRIDGE-1-Heimatstadt BRIDGE-2 befindet. PATIENT-2 ist der Anführer von BRIDGE-2 und BRIDGE-2 hat die Postleitzahl 'PATIENT-1'.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+						<striple>John_Madin | hometown | Birmingham</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+						<striple>Birmingham | leaderName | John_Clancy_(Labour_politician)</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>103 Colmore Row wurde vom Architekten John Madin, Birmingham, entworfen. Birmingham hat den Postcode-Bereich 'B' und wird von Labour-Politiker John Clancy geführt. </text>
+				<template>AGENT-1 wurde von BRIDGE-1, BRIDGE-2, entwickelt. BRIDGE-2 hat PATIENT-1 und wird von PATIENT-2 geführt.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Birmingham | leaderName | John_Clancy_(Labour_politician)</striple>
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+						<striple>John_Madin | hometown | Birmingham</striple>
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Labour-Politiker John Clancy ist der Führer von Birmingham, der den Postcode-Bereich 'B' hat und ist Heimatort von John Madin der Architekt, der 103 Colmore Row entworfen hat. </text>
+				<template>PATIENT-2 ist der Anführer von BRIDGE-2, das PATIENT-1 hat und die Heimatstadt von BRIDGE-1 ist, dem Architekten, der AGENT-1 entworfen hat.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 103_Colmore_Row</entity>
+				<entity>BRIDGE-1 | John_Madin</entity>
+				<entity>BRIDGE-2 | Birmingham</entity>
+				<entity>PATIENT-1 | B_postcode_area</entity>
+				<entity>PATIENT-2 | John_Clancy_(Labour_politician)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id24" size="4">
+			<originaltripleset>
+				<otriple>Ethiopia | leader | Mulatu_Teshome</otriple>
+				<otriple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</otriple>
+				<otriple>Addis_Ababa_City_Hall | country | Ethiopia</otriple>
+				<otriple>Addis_Ababa_City_Hall | location | Addis_Ababa</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ethiopia | leaderName | Mulatu_Teshome</mtriple>
+				<mtriple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | country | Ethiopia</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | location | Addis_Ababa</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+						<striple>Addis_Ababa_City_Hall | country | Ethiopia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>In Addis Abeba befindet sich das Stadion von Addis Abeba und das Rathaus von Addis Abeba. Der Name des Führers in Äthiopien ist Malatu Teshome. </text>
+				<template>BRIDGE-2, BRIDGE-1 ist die Heimat von PATIENT-2 und AGENT-1. Der Name des Führers in BRIDGE-1 ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
+						<striple>Addis_Ababa_City_Hall | country | Ethiopia</striple>
+						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+						<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Mulatu Teshome ist führend in Äthiopien, einem Land, in dem Addis Abeba liegt und in dem sich das Rathaus von Addis Abeba und das Stadion von Addis Abeba befindet. </text>
+				<template>PATIENT-1 ist führend in BRIDGE-1, einem Land, in dem sich BRIDGE-2 befindet und in dem sich AGENT-1 und PATIENT-2 befinden.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Addis_Ababa_City_Hall | country | Ethiopia</striple>
+						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Mulata Teshome ist ein äthiopischer Führer. Das Rathaus von Addis Abeba befindet sich in Addis Abeba, Ethopia. Das Stadion von Addis Abeba ist Teil von Addid Abeba. </text>
+				<template>PATIENT-1 ist ein BRIDGE-1-Führer. AGENT-1 befindet sich in BRIDGE-2, BRIDGE-1. PATIENT-2 ist Teil von BRIDGE-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Addis_Ababa_City_Hall</entity>
+				<entity>BRIDGE-1 | Ethiopia</entity>
+				<entity>BRIDGE-2 | Addis_Ababa</entity>
+				<entity>PATIENT-1 | Mulatu_Teshome</entity>
+				<entity>PATIENT-2 | Addis_Ababa_Stadium</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id25" size="4">
+			<originaltripleset>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>United_States | leaderTitle | President_of_the_United_States</otriple>
+				<otriple>United_States | leaderName | Paul_Ryan</otriple>
+				<otriple>250_Delaware_Avenue | location | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>United_States | leaderTitle | President_of_the_United_States</mtriple>
+				<mtriple>United_States | leaderName | Paul_Ryan</mtriple>
+				<mtriple>250_Delaware_Avenue | location | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | leaderName | Paul_Ryan</striple>
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Führer der USA ist bekannt als der Präsident und die Hauptstadt ist Washington DC. Einer der Führer des Landes, wenn Paul Ryan und es ist die Lage von 250 Delaware Avenue. </text>
+				<template>Der Führer von BRIDGE-1 ist bekannt als PATIENT-2 und die Hauptstadt ist PATIENT-1. One of BRIDGE-1 leaders if PATIENT-3 and BRIDGE-1 is the location of AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leaderName | Paul_Ryan</striple>
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Paul Ryan ist Präsident der Vereinigten Staaten und sowohl 250 Delaware Avenue als auch Washington DC (die Hauptstadt) befinden sich dort. </text>
+				<template>PATIENT-3 ist Präsident von BRIDGE-1 und sowohl AGENT-1 als auch PATIENT-1 (die Hauptstadt) befinden sich dort.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1"/>
+					<sentence ID="2">
+						<striple>United_States | leaderName | Paul_Ryan</striple>
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Paul Ryan ist der Führer oder Präsident der Vereinigten Staaten, von denen Washington D.C. die Hauptstadt ist. 250 Delaware Avenue gehört zu den USA. </text>
+				<template>PATIENT-3 ist der Anführer, oder PATIENT-2, von dem PATIENT-1 die Hauptstadt ist. AGENT-1 ist Teil von BRIDGE-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | President_of_the_United_States</entity>
+				<entity>PATIENT-3 | Paul_Ryan</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

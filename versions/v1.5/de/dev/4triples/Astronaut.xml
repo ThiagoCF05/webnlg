@@ -1,0 +1,517 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id1" size="4">
+			<originaltripleset>
+				<otriple>Alan_Bean | mission | Apollo_12</otriple>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Apollo_12 | operator | NASA</otriple>
+				<otriple>Apollo_12 | crew1Up | David_Scott</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Bean | was a crew member of | Apollo_12</mtriple>
+				<mtriple>Alan_Bean | nationality | United_States</mtriple>
+				<mtriple>Apollo_12 | operator | NASA</mtriple>
+				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+						<striple>Apollo_12 | operator | NASA</striple>
+						<striple>Apollo_12 | commander | David_Scott</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Bean (von den Vereinigten Staaten) war ein Besatzungsmitglied von NASA 's @ Apollo 12 unter dem Kommandeur David Scott. </text>
+				<template>AGENT-1 (von PATIENT-1) war ein Besatzungsmitglied von PATIENT-2 @ BRIDGE-1 unter dem Kommandeur PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+						<striple>Apollo_12 | operator | NASA</striple>
+						<striple>Apollo_12 | commander | David_Scott</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>United States National Alan Bean war ein Besatzungsmitglied der NASA 's @ Apollo 12 Mission unter dem Kommandeur David S COTT. </text>
+				<template>PATIENT-1 National AGENT-1 war ein Besatzungsmitglied von PATIENT-2 @ BRIDGE-1 Mission unter Kommandeur PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | NASA</entity>
+				<entity>PATIENT-3 | David_Scott</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id2" size="4">
+			<originaltripleset>
+				<otriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;@en</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | dateOfRet | &quot;1974-08-01&quot;^^xsd:date</otriple>
+				<otriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</mtriple>
+				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+						<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+						<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Shepard, der am 18. November 1923 in New Hampshire geboren wurde, schloss mit einem M.A. Von NWC im Jahr 1957 und im Ruhestand am 1. August 1974. </text>
+				<template>AGENT-1, der in PATIENT-2 auf PATIENT-4 geboren wurde, schloss mit PATIENT-1 ab und ging auf PATIENT-3 zurück.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+						<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Shepard wurde 1923-11-18 in New Hampshire geboren. Er erhielt eine MA im Jahr 1957 von &quot;NWC&quot; @ er im Ruhestand 1974-08-01. </text>
+				<template>AGENT-1 wurde PATIENT-4 in PATIENT-2 geboren. AGENT-1 erhielt PATIENT-1 @ AGENT-1 Ruhestand PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | &quot;NWC, M.A. 1957&quot;</entity>
+				<entity>PATIENT-2 | New_Hampshire</entity>
+				<entity>PATIENT-3 | &quot;1974-08-01&quot;</entity>
+				<entity>PATIENT-4 | &quot;1923-11-18&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id3" size="4">
+			<originaltripleset>
+				<otriple>Alan_Shepard | status | &quot;Deceased&quot;@en</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | occupation | Test_pilot</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | status | &quot;Deceased&quot;</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | occupation | Test_pilot</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | deathPlace | California</striple>
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der amerikanische Testpilot Alan Shepard starb in Kalifornien und wurde in New Hampshire geboren. </text>
+				<template>American PATIENT-3 AGENT-1 starb in PATIENT-2 und wurde in PATIENT-4 geboren.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Shepard | deathPlace | California</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Shepard wurde in New Hampshire geboren und wurde Testpilot. Er starb in Kalifornien. </text>
+				<template>AGENT-1 wurde in PATIENT-4 geboren und wurde PATIENT-3. AGENT-1 starb in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | deathPlace | California</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Shepard wurde in New Hampshire geboren und starb in Kalifornien. Er diente als Testpilot. </text>
+				<template>AGENT-1 wurde in PATIENT-4 geboren und starb in PATIENT-2. AGENT-1 diente als PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
+				<entity>PATIENT-2 | California</entity>
+				<entity>PATIENT-3 | Test_pilot</entity>
+				<entity>PATIENT-4 | New_Hampshire</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id4" size="4">
+			<originaltripleset>
+				<otriple>Alan_Shepard | mission | Apollo_14</otriple>
+				<otriple>Alan_Shepard | occupation | Test_pilot</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Apollo_14 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | was a crew member of | Apollo_14</mtriple>
+				<mtriple>Alan_Shepard | occupation | Test_pilot</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Apollo_14 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+						<striple>Apollo_14 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Shepard war ein in New Hampshire geborener Testpilot, den die NASA als Mitglied von Apollo 14 holte. </text>
+				<template>AGENT-1 war PATIENT-1, geboren in PATIENT-2, die PATIENT-3 als Mitglied von BRIDGE-1 gewonnen hat.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+						<striple>Apollo_14 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Shepard, der ursprünglich aus New Hampshire stammt, trat der NASA als Testpilot bei und wurde ebenfalls Mitglied von Apollo 14. </text>
+				<template>AGENT-1, ursprünglich aus PATIENT-2 kam PATIENT-3 als PATIENT-1 und wurde auch Mitglied von BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+						<striple>Apollo_14 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Shepard, der in New Hampshire geboren wurde und als Testpilot diente, war Besatzungsmitglied der von der NASA betriebenen Apollo-14-Mission. </text>
+				<template>AGENT-1, der in PATIENT-2 geboren wurde und als PATIENT-1 diente, war ein Besatzungsmitglied von PATIENT-3 betrieben BRIDGE-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Apollo_14</entity>
+				<entity>PATIENT-1 | Test_pilot</entity>
+				<entity>PATIENT-2 | New_Hampshire</entity>
+				<entity>PATIENT-3 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id5" size="4">
+			<originaltripleset>
+				<otriple>Apollo_12 | crew2Up | Alfred_Worden</otriple>
+				<otriple>Alan_Bean | mission | Apollo_12</otriple>
+				<otriple>Apollo_12 | operator | NASA</otriple>
+				<otriple>Apollo_12 | crew1Up | David_Scott</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Apollo_12 | backup pilot | Alfred_Worden</mtriple>
+				<mtriple>Alan_Bean | was a crew member of | Apollo_12</mtriple>
+				<mtriple>Apollo_12 | operator | NASA</mtriple>
+				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+						<striple>Apollo_12 | commander | David_Scott</striple>
+						<striple>Apollo_12 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Backup-Pilot zu Apollo 12 war Alfred Worden und auch Teil von Apollo 12 waren Alan Bean und Kommandant David Scott, die alle von der NASA ausgewählt wurden. </text>
+				<template>Der Backup-Pilot zu BRIDGE-1 war PATIENT-1 und auch Teil von BRIDGE-1 waren AGENT-1 und Kommandeur PATIENT-3, die alle von PATIENT-2 ausgewählt wurden.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+						<striple>Apollo_12 | operator | NASA</striple>
+						<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
+						<striple>Apollo_12 | commander | David_Scott</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Bean war ein Besatzungsmitglied auf der NASA @ Apollo 12 Mission zusammen mit Backup-Pilot Alfred Worden und Kommandeur David Scott. </text>
+				<template>AGENT-1 war ein Besatzungsmitglied auf PATIENT-2 @ BRIDGE-1 Mission zusammen mit Backup-Pilot PATIENT-1 und Kommandeur PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>PATIENT-1 | Alfred_Worden</entity>
+				<entity>PATIENT-2 | NASA</entity>
+				<entity>PATIENT-3 | David_Scott</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id6" size="4">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>United_States | leaderName | Joe_Biden</otriple>
+				<otriple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
+				<mtriple>United_States | leaderName | Joe_Biden</mtriple>
+				<mtriple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>United_States | leaderName | Joe_Biden</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin ist ein Staatsangehöriger der Vereinigten Staaten, dessen Anführer Joe Biden ist. Er wurde in Glen Ridge, Essex County, New Jersey geboren. </text>
+				<template>AGENT-1 ist ein Staatsangehöriger von BRIDGE-1, dessen Führer PATIENT-1 ist. AGENT-1 wurde in BRIDGE-2, PATIENT-2 geboren.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>BRIDGE-2 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-1 | Joe_Biden</entity>
+				<entity>PATIENT-2 | Essex_County,_New_Jersey</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id7" size="4">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | birthDate | &quot;1927-07-23&quot;^^xsd:date</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | birthDate | &quot;1927-07-23&quot;</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Elliot See, Absolvent der University of Texas in Austin, wurde am 23. Juli 1927 in Dallas geboren und starb in St. Louis. </text>
+				<template>AGENT-1, ein Absolvent von PATIENT-1, wurde in PATIENT-4 auf PATIENT-3 geboren und starb in PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | St._Louis</entity>
+				<entity>PATIENT-3 | &quot;1927-07-23&quot;</entity>
+				<entity>PATIENT-4 | Dallas</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id8" size="4">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | deathDate | &quot;1966-02-28&quot;^^xsd:date</otriple>
+				<otriple>Elliot_See | occupation | Test_pilot</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
+				<mtriple>Elliot_See | occupation | Test_pilot</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Elliot_See | occupation | Test_pilot</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Elliot See besuchte die University of Texas in Austin. Er wurde Testpilot. Er starb in St. Louis am 1966-02-28. </text>
+				<template>AGENT-1 besuchte PATIENT-1. AGENT-1 wurde PATIENT-4. AGENT-1 starb in PATIENT-2 auf PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Elliot_See | occupation | Test_pilot</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ellior See besuchte die University of Texas in Austin. Er war Pilot und starb in St. Louis, 28. Februar 1966. </text>
+				<template>AGENT-1 besuchte PATIENT-1. AGENT-1 war PATIENT-4 und starb in PATIENT-2, PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | St._Louis</entity>
+				<entity>PATIENT-3 | &quot;1966-02-28&quot;</entity>
+				<entity>PATIENT-4 | Test_pilot</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id9" size="4">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>St._Louis | isPartOf | Kingdom_of_France</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>St._Louis | isPartOf | Kingdom_of_France</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Elliot See besuchte die University of Texas in Austin, die an die Universität von Texas angeschlossen ist. Er starb in St Louis, das Teil des Königreichs Frankreich ist. </text>
+				<template>AGENT-1 besuchte BRIDGE-1, die an PATIENT-1 angeschlossen ist. AGENT-1 starb in BRIDGE-2, das Teil von PATIENT-2 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Elliot See starb in St Louis, das Teil des Königreichs Frankreich ist, seine alma mater war die Universität von Texas in Austin, die mit dem System der University of Texas verbunden ist. </text>
+				<template>AGENT-1 starb in BRIDGE-2, das Teil von PATIENT-2 ist, AGENT-1 alma mater war BRIDGE-1, das mit PATIENT-1 verbunden ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>BRIDGE-1 | University_of_Texas_at_Austin</entity>
+				<entity>BRIDGE-2 | St._Louis</entity>
+				<entity>PATIENT-1 | University_of_Texas_System</entity>
+				<entity>PATIENT-2 | Kingdom_of_France</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id10" size="4">
+			<originaltripleset>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | birthDate | &quot;1927-07-23&quot;^^xsd:date</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | deathDate | &quot;1966-02-28&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | birthDate | &quot;1927-07-23&quot;</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Elliot See wurde am 23. Juli 1927 in Dallas geboren und starb am 28. Februar 1966 in St. Louis. </text>
+				<template>AGENT-1 wurde auf PATIENT-2 in PATIENT-3 geboren und starb in PATIENT-1 auf PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ellior See wurde am 23. Juli 1927 in Dallas geboren und starb am 28. Februar 1966 in St. Louis. </text>
+				<template>AGENT-1 wurde PATIENT-2 in PATIENT-3 geboren und starb in PATIENT-1 auf PATIENT-4.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | St._Louis</entity>
+				<entity>PATIENT-2 | &quot;1927-07-23&quot;</entity>
+				<entity>PATIENT-3 | Dallas</entity>
+				<entity>PATIENT-4 | &quot;1966-02-28&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id11" size="4">
+			<originaltripleset>
+				<otriple>William_Anders | dateOfRet | &quot;1969-09-01&quot;^^xsd:date</otriple>
+				<otriple>Apollo_8 | crew1Up | Frank_Borman</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>Apollo_8 | crew2Up | Buzz_Aldrin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</mtriple>
+				<mtriple>Apollo_8 | commander | Frank_Borman</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+				<mtriple>Apollo_8 | backup pilot | Buzz_Aldrin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+						<striple>Apollo_8 | commander | Frank_Borman</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Mitglieder von Apollo 8 waren Buzz Aldrin, der Backup-Pilot war, Kommandant Frank Borman und William Anders, der am 1. September 1969 in den Ruhestand ging. </text>
+				<template>Die Mitglieder von BRIDGE-1 waren PATIENT-3, die Backup-Pilot, Kommandeur PATIENT-2 und AGENT-1, die sich auf PATIENT-1 zurückgezogen haben.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>Apollo_8 | commander | Frank_Borman</striple>
+						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>William Anders diente als Besatzungsmitglied von Apollo 8 unter Kommandant Frank Borrman und Backup-Pilot Buzz Aldrin. Er ging 1969.09.01 in den Ruhestand. </text>
+				<template>AGENT-1 diente als Besatzungsmitglied von BRIDGE-1 unter Commander PATIENT-2 und Backup-Pilot PATIENT-3. AGENT-1 im Ruhestand PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | Apollo_8</entity>
+				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
+				<entity>PATIENT-2 | Frank_Borman</entity>
+				<entity>PATIENT-3 | Buzz_Aldrin</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

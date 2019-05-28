@@ -1,0 +1,2334 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Food" eid="Id1" size="4">
+			<originaltripleset>
+				<otriple>Ajoblanco | country | Spain</otriple>
+				<otriple>Ajoblanco | mainIngredient | &quot;Bread, almonds, garlic, water, olive oil&quot;@en</otriple>
+				<otriple>Ajoblanco | region | Andalusia</otriple>
+				<otriple>Ajoblanco | ingredient | Bread</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ajoblanco | country | Spain</mtriple>
+				<mtriple>Ajoblanco | mainIngredients | &quot;Bread, almonds, garlic, water, olive oil&quot;</mtriple>
+				<mtriple>Ajoblanco | region | Andalusia</mtriple>
+				<mtriple>Ajoblanco | ingredient | Bread</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ajoblanco | mainIngredients | &quot;Bread, almonds, garlic, water, olive oil&quot;</striple>
+						<striple>Ajoblanco | region | Andalusia</striple>
+						<striple>Ajoblanco | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Brot, Mandeln, Knoblauch, Wasser und Olivenöl sind die wichtigsten Zutaten in Ajoblanco, einem Lebensmittel, das aus Andalusien stammt, in Spanien. </text>
+				<template>PATIENT-2 sind die wichtigsten Bestandteile von AGENT-1, einem Lebensmittel, das von PATIENT-3 in PATIENT-1 stammt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ajoblanco | region | Andalusia</striple>
+						<striple>Ajoblanco | country | Spain</striple>
+						<striple>Ajoblanco | mainIngredients | &quot;Bread, almonds, garlic, water, olive oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ajoblanco stammt aus Andalusien @ Spanien und zu den Zutaten gehören Brot, Mandeln, Knoblauch, Wasser und Olivenöl. </text>
+				<template>AGENT-1 ist von PATIENT-3 @ PATIENT-1 und Zutaten enthalten PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ajoblanco | region | Andalusia</striple>
+						<striple>Ajoblanco | country | Spain</striple>
+						<striple>Ajoblanco | mainIngredients | &quot;Bread, almonds, garlic, water, olive oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ajoblanco, ein Gericht aus der spanischen Region Andalusien, hat die wichtigsten Zutaten Brot, Mandeln, Knoblauch, Wasser und Olivenöl. </text>
+				<template>AGENT-1, ein Gericht aus der PATIENT-3-Region PATIENT-1, hat die wichtigsten Zutaten PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ajoblanco</entity>
+				<entity>PATIENT-1 | Spain</entity>
+				<entity>PATIENT-2 | &quot;Bread, almonds, garlic, water, olive oil&quot;</entity>
+				<entity>PATIENT-3 | Andalusia</entity>
+				<entity>PATIENT-4 | Bread</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id2" size="4">
+			<originaltripleset>
+				<otriple>Ajoblanco | country | Spain</otriple>
+				<otriple>Ajoblanco | region | Andalusia</otriple>
+				<otriple>Ajoblanco | alias | &quot;Ajo blanco&quot;@en</otriple>
+				<otriple>Ajoblanco | ingredient | Water</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ajoblanco | country | Spain</mtriple>
+				<mtriple>Ajoblanco | region | Andalusia</mtriple>
+				<mtriple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</mtriple>
+				<mtriple>Ajoblanco | ingredient | Water</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ajoblanco | ingredient | Water</striple>
+						<striple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</striple>
+						<striple>Ajoblanco | region | Andalusia</striple>
+						<striple>Ajoblanco | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Wasser ist eine Zutat in Ajoblanco, auch bekannt als Ajo blanco, ein Gericht, das aus Andalusien @ Spanien kommt. </text>
+				<template>PATIENT-4 ist eine Zutat in AGENT-1, auch bekannt als PATIENT-3, ein Gericht, das von PATIENT-2 @ PATIENT-1 stammt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ajoblanco | region | Andalusia</striple>
+						<striple>Ajoblanco | country | Spain</striple>
+						<striple>Ajoblanco | ingredient | Water</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ajoblanco ist ein Lebensmittel, das aus der andalusischen Region Spaniens stammt und Wasser enthält. Ein anderer alternativer Name des Gerichts ist Ajo blanco. </text>
+				<template>AGENT-1 stammt aus der PATIENT-2-Region PATIENT-1 und enthält PATIENT-4. Ein anderer alternativer Name von AGENT-1 ist PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ajoblanco</entity>
+				<entity>PATIENT-1 | Spain</entity>
+				<entity>PATIENT-2 | Andalusia</entity>
+				<entity>PATIENT-3 | &quot;Ajo blanco&quot;</entity>
+				<entity>PATIENT-4 | Water</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id3" size="4">
+			<originaltripleset>
+				<otriple>Arem-arem | hasVariant | Lemper</otriple>
+				<otriple>Arem-arem | ingredient | Banana_leaf</otriple>
+				<otriple>Arem-arem | ingredientName | &quot;compressed rice cooked inbanana leafwith vegetables or minced meat fillings&quot;</otriple>
+				<otriple>Arem-arem | region | Javanese_cuisine</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arem-arem | dishVariation | Lemper</mtriple>
+				<mtriple>Arem-arem | ingredient | Banana_leaf</mtriple>
+				<mtriple>Arem-arem | mainIngredients | &quot;compressed rice cooked in banana leaf with vegetables or minced meat fillings&quot;</mtriple>
+				<mtriple>Arem-arem | region | Javanese_cuisine</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arem-arem | dishVariation | Lemper</striple>
+						<striple>Arem-arem | ingredient | Banana_leaf</striple>
+						<striple>Arem-arem | mainIngredients | &quot;compressed rice cooked in banana leaf with vegetables or minced meat fillings&quot;</striple>
+						<striple>Arem-arem | region | Javanese_cuisine</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Lemper, eine Gericht-Variante von Arem-Arem enthält Banana Blatt, in dem gekocht wird komprimierten Reis mit Gemüse oder Hackfleisch Füllungen und ist eine Form der Javanischen Küche. </text>
+				<template>PATIENT-1, eine Gericht-Variante von AGENT-1 enthält PATIENT-2, in dem PATIENT-3 ist und eine Form von PATIENT-4 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arem-arem | mainIngredients | &quot;compressed rice cooked in banana leaf with vegetables or minced meat fillings&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arem-arem | region | Javanese_cuisine</striple>
+						<striple>Arem-arem | dishVariation | Lemper</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Hauptzutaten von Arem-arem sind komprimierter Reis, der in Bananenblatt mit Gemüse oder Hackfleisch-Füllungen gekocht wird. Das Gericht ist von Javaner Küche und hat eine Variante bekannt als Lemper. </text>
+				<template>Die wichtigsten Bestandteile von AGENT-1 sind PATIENT-3. AGENT-1 ist PATIENT-4 und hat eine Variante, die als PATIENT-1 bekannt ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arem-arem</entity>
+				<entity>PATIENT-1 | Lemper</entity>
+				<entity>PATIENT-2 | Banana_leaf</entity>
+				<entity>PATIENT-3 | &quot;compressed rice cooked in banana leaf with vegetables or minced meat fillings&quot;</entity>
+				<entity>PATIENT-4 | Javanese_cuisine</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id4" size="4">
+			<originaltripleset>
+				<otriple>Arem-arem | ingredient | Banana_leaf</otriple>
+				<otriple>Arem-arem | ingredientName | &quot;compressed rice cooked inbanana leafwith vegetables or minced meat fillings&quot;</otriple>
+				<otriple>Arem-arem | course | &quot;Main course&quot;@en</otriple>
+				<otriple>Arem-arem | region | &quot;Nationwide in Indonesia, but more specific to Java&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arem-arem | ingredient | Banana_leaf</mtriple>
+				<mtriple>Arem-arem | course | &quot;Main course&quot;</mtriple>
+				<mtriple>Arem-arem | mainIngredients | &quot;compressed rice cooked in banana leaf with vegetables or minced meat fillings&quot;</mtriple>
+				<mtriple>Arem-arem | region | &quot;Nationwide in Indonesia, but more specific to Java&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arem-arem | region | &quot;Nationwide in Indonesia, but more specific to Java&quot;</striple>
+						<striple>Arem-arem | course | &quot;Main course&quot;</striple>
+						<striple>Arem-arem | ingredient | Banana_leaf</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arem-arem | mainIngredients | &quot;compressed rice cooked in banana leaf with vegetables or minced meat fillings&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arem-arem ist ein Lebensmittel, das bundesweit in Indonesien gefunden wird, aber spezifischer auf Java, es kann als Hauptgang bedient werden und hat ein Bananenblatt darin. Hauptzutaten sind komprimierter Reis, der in Bananenblatt mit Gemüse oder Hackfleisch-Füllungen gekocht wird. </text>
+				<template>AGENT-1 is a food that is found PATIENT-4, AGENT-1 can be served as PATIENT-2 and has PATIENT-1 in AGENT-1. Die wichtigsten Zutaten sind PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arem-arem | mainIngredients | &quot;compressed rice cooked in banana leaf with vegetables or minced meat fillings&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arem-arem | course | &quot;Main course&quot;</striple>
+						<striple>Arem-arem | region | &quot;Nationwide in Indonesia, but more specific to Java&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Hauptzutaten von Arem-arem sind komprimierter Reis, der in Bananenblatt mit Gemüse oder Hackfleisch-Füllungen gekocht wird. Es wird als Hauptgang gedient und wird bundesweit in Indonesien und speziell in Java gefunden. </text>
+				<template>Die wichtigsten Bestandteile von AGENT-1 sind PATIENT-3. AGENT-1 dient als PATIENT-2 und wird PATIENT-4 gefunden.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arem-arem</entity>
+				<entity>PATIENT-1 | Banana_leaf</entity>
+				<entity>PATIENT-2 | &quot;Main course&quot;</entity>
+				<entity>PATIENT-3 | &quot;compressed rice cooked in banana leaf with vegetables or minced meat fillings&quot;</entity>
+				<entity>PATIENT-4 | &quot;Nationwide in Indonesia, but more specific to Java&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id5" size="4">
+			<originaltripleset>
+				<otriple>Arrabbiata_sauce | ingredient | Chili_pepper</otriple>
+				<otriple>Arrabbiata_sauce | mainIngredient | &quot;Tomatoes, red chili, garlic, olive oil&quot;@en</otriple>
+				<otriple>Arrabbiata_sauce | region | &quot;Rome&quot;@en</otriple>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arrabbiata_sauce | ingredient | Chili_pepper</mtriple>
+				<mtriple>Arrabbiata_sauce | mainIngredients | &quot;Tomatoes, red chili, garlic, olive oil&quot;</mtriple>
+				<mtriple>Arrabbiata_sauce | country | Italy</mtriple>
+				<mtriple>Arrabbiata_sauce | region | Rome</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arrabbiata_sauce | region | Rome</striple>
+						<striple>Arrabbiata_sauce | country | Italy</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arrabbiata_sauce | mainIngredients | &quot;Tomatoes, red chili, garlic, olive oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arrabbiata Sauce stammt aus der Region Rom in Italien. Es wird mit Tomaten, rotem Chili, Knoblauch und Olivenöl hergestellt. </text>
+				<template>AGENT-1 stammt aus der Region PATIENT-4 in PATIENT-3. AGENT-1 wird mit PATIENT-2 hergestellt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arrabbiata_sauce | region | Rome</striple>
+						<striple>Arrabbiata_sauce | country | Italy</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arrabbiata_sauce | mainIngredients | &quot;Tomatoes, red chili, garlic, olive oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arrabbiata Sauce ist ein traditionelles Gericht aus Rom, Italien. Die Hauptbestandteile davon sind Tomaten, roter Chili-Pfeffer, Knoblauch und Olivenöl. </text>
+				<template>AGENT-1 ist ein traditionelles Gericht aus PATIENT-4, PATIENT-3. Die wichtigsten Bestandteile von AGENT-1 sind PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arrabbiata_sauce | region | Rome</striple>
+						<striple>Arrabbiata_sauce | country | Italy</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arrabbiata_sauce | ingredient | Chili_pepper</striple>
+						<striple>Arrabbiata_sauce | mainIngredients | &quot;Tomatoes, red chili, garlic, olive oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arrabbiata Sauce ist ein traditionelles Gericht aus Rom in Italien. Ein wichtiger Bestandteil ist Chili-Pfeffer und enthält auch Tomaten, rote Chili, Knoblauch und Olivenöl. </text>
+				<template>AGENT-1 ist ein traditionelles Gericht aus PATIENT-4 in PATIENT-3. Ein wichtiger Bestandteil ist PATIENT-1 und AGENT-1 enthält auch PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arrabbiata_sauce</entity>
+				<entity>PATIENT-1 | Chili_pepper</entity>
+				<entity>PATIENT-2 | &quot;Tomatoes, red chili, garlic, olive oil&quot;</entity>
+				<entity>PATIENT-3 | Italy</entity>
+				<entity>PATIENT-4 | Rome</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id6" size="4">
+			<originaltripleset>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Arròs_negre | mainIngredient | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;@en</otriple>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+				<otriple>Arròs_negre | ingredient | Cephalopod_ink</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arròs_negre | country | Spain</mtriple>
+				<mtriple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</mtriple>
+				<mtriple>Arròs_negre | region | Catalonia</mtriple>
+				<mtriple>Arròs_negre | ingredient | Cephalopod_ink</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Catalonia</striple>
+						<striple>Arròs_negre | country | Spain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arros Negre ist ein traditionelles Gericht aus der spanischen Region Katalonien. Die Hauptzutaten von arros negre sind weißer Reis, Tintenfisch oder Tintenfisch, Kopffüßer-Tinte und cubanelle Paprika. </text>
+				<template>AGENT-1 ist ein traditionelles Gericht aus der PATIENT-3-Region PATIENT-1. Die wichtigsten Bestandteile von AGENT-1 sind PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Catalonia</striple>
+						<striple>Arròs_negre | country | Spain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arros Negre stammt aus der Region Katalonien in Spanien. Die Hauptzutaten von arros negre sind weißer Reis, Tintenfisch oder Tintenfisch, Kopffüßer-Tinte und cubanelle Paprika. </text>
+				<template>AGENT-1 stammt aus der Region PATIENT-3 in PATIENT-1. Die wichtigsten Bestandteile von AGENT-1 sind PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Catalonia</striple>
+						<striple>Arròs_negre | country | Spain</striple>
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arros negre, aus der Region Katalonien in Spanien, beinhaltet Cephalopod Tinte, weißer Reis, Tintenfisch / Tintenfisch und cubanelle Paprika. </text>
+				<template>AGENT-1, aus der PATIENT-3-Region PATIENT-1, enthält PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | Spain</entity>
+				<entity>PATIENT-2 | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</entity>
+				<entity>PATIENT-3 | Catalonia</entity>
+				<entity>PATIENT-4 | Cephalopod_ink</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id7" size="4">
+			<originaltripleset>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Arròs_negre | mainIngredient | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;@en</otriple>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+				<otriple>Arròs_negre | ingredient | Cubanelle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arròs_negre | country | Spain</mtriple>
+				<mtriple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</mtriple>
+				<mtriple>Arròs_negre | region | Catalonia</mtriple>
+				<mtriple>Arròs_negre | ingredient | Cubanelle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | country | Spain</striple>
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | region | Catalonia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Hauptzutaten von Arròs Negre, das aus Spanien stammt, sind weißer Reis, Tintenfisch oder Tintenfisch, Kopffüßer-Tinte, Kubanelle und cubanelle Paprika. Arròs Negre stammt aus der Region Katalonien. </text>
+				<template>Die wichtigsten Bestandteile von AGENT-1 von PATIENT-1 sind PATIENT-2. AGENT-1 stammt aus der PATIENT-3 Region.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | region | Catalonia</striple>
+						<striple>Arròs_negre | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die wichtigsten Zutaten in arròs negre sind weißer Reis, Tintenfisch oder Tintenfisch, Kopffüßer-Tinte und cubanelle Paprika. Es ist ein traditionelles Gericht aus der Region Katalonien in Spanien. </text>
+				<template>Die wichtigsten Bestandteile von AGENT-1 sind PATIENT-2. AGENT-1 ist ein traditionelles Gericht aus der PATIENT-3-Region PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | country | Spain</striple>
+						<striple>Arròs_negre | region | Catalonia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die wichtigsten Zutaten in arròs negre sind weißer Reis, Tintenfisch oder Tintenfisch, Kopffüßer-Tinte und cubanelle Paprika. Es ist ein traditionelles spanisches Gericht aus der Region Katalonien. </text>
+				<template>Die wichtigsten Bestandteile von AGENT-1 sind PATIENT-2. AGENT-1 ist ein traditionelles PATIENT-1 Gericht aus der PATIENT-3 Region.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | Spain</entity>
+				<entity>PATIENT-2 | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</entity>
+				<entity>PATIENT-3 | Catalonia</entity>
+				<entity>PATIENT-4 | Cubanelle</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id8" size="4">
+			<originaltripleset>
+				<otriple>Arròs_negre | region | Valencian_Community</otriple>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Arròs_negre | mainIngredient | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;@en</otriple>
+				<otriple>Arròs_negre | ingredient | Cubanelle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arròs_negre | region | Valencian_Community</mtriple>
+				<mtriple>Arròs_negre | country | Spain</mtriple>
+				<mtriple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</mtriple>
+				<mtriple>Arròs_negre | ingredient | Cubanelle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Valencian_Community</striple>
+						<striple>Arròs_negre | country | Spain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arros negre ist ein traditionelles Gericht aus der valencianischen Gemeinschaft, Spanien. Es hat die wichtigsten Zutaten von weißem Reis, Tintenfisch oder Tintenfisch, Kopffüßer-Tinte und cubnelle Paprika. </text>
+				<template>AGENT-1 ist ein traditionelles Gericht aus PATIENT-1, PATIENT-2. AGENT-1 hat die wichtigsten Bestandteile von PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Valencian_Community</striple>
+						<striple>Arròs_negre | country | Spain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arros Negre kommt aus der Region der valencianischen Gemeinschaft, Spanien. Die Hauptzutaten sind weißer Reis, Tintenfisch oder Tintenfisch, Kopffüßer-Tinte und kubanelle Paprika. </text>
+				<template>AGENT-1 kommt aus der Region PATIENT-1, PATIENT-2. Die wichtigsten Zutaten sind PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Valencian_Community</striple>
+						<striple>Arròs_negre | country | Spain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | mainIngredients | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arros Negre kommt aus der Region der valencianischen Gemeinschaft in Spanien. Die wichtigsten Zutaten sind weißer Reis, Tintenfisch oder Tintenfisch, Kopffüßer-Tinte, kubanelle Paprika. </text>
+				<template>AGENT-1 kommt aus der Region PATIENT-1 in PATIENT-2. Die wichtigsten Zutaten sind PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | Valencian_Community</entity>
+				<entity>PATIENT-2 | Spain</entity>
+				<entity>PATIENT-3 | &quot;White rice, cuttlefish or squid, cephalopod ink, cubanelle peppers&quot;</entity>
+				<entity>PATIENT-4 | Cubanelle</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id9" size="4">
+			<originaltripleset>
+				<otriple>Asam_pedas | country | Malaysia</otriple>
+				<otriple>Asam_pedas | region | &quot;Sumatra and Malay Peninsula&quot;@en</otriple>
+				<otriple>Asam_pedas | ingredientName | &quot;Fish cooked in sour and hot sauce&quot;</otriple>
+				<otriple>Asam_pedas | alternateName | &quot;Asam padeh&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asam_pedas | country | Malaysia</mtriple>
+				<mtriple>Asam_pedas | region | &quot;Sumatra and Malay Peninsula&quot;</mtriple>
+				<mtriple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</mtriple>
+				<mtriple>Asam_pedas | alternativeName | &quot;Asam padeh&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asam_pedas | region | &quot;Sumatra and Malay Peninsula&quot;</striple>
+						<striple>Asam_pedas | country | Malaysia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asam_pedas | alternativeName | &quot;Asam padeh&quot;</striple>
+						<striple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>ASAM pedas findet sich in der Region Sumatra und Malay Halbinsel in Malaysia. Es kann auch Asam padeh genannt werden und es sind Zutaten, die in sauer und heißer Soße gekocht werden. </text>
+				<template>AGENT-1 findet sich in der Region PATIENT-2 in PATIENT-1. AGENT-1 kann auch PATIENT-4 und AGENT-1 Zutaten sind PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asam_pedas | alternativeName | &quot;Asam padeh&quot;</striple>
+						<striple>Asam_pedas | region | &quot;Sumatra and Malay Peninsula&quot;</striple>
+						<striple>Asam_pedas | country | Malaysia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>ASAM pedas (aka asam padeh) is from the Sumatra and Malay Peninsula regions of Malaysia. Die Hauptzutaten sind Fische, die in sauer und heißer Soße gekocht werden. </text>
+				<template>AGENT-1 (aka PATIENT-4) stammt aus den PATIENT-2-Regionen von PATIENT-1. Die wichtigsten Zutaten sind PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asam_pedas | alternativeName | &quot;Asam padeh&quot;</striple>
+						<striple>Asam_pedas | country | Malaysia</striple>
+						<striple>Asam_pedas | region | &quot;Sumatra and Malay Peninsula&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asam_pedas | mainIngredients | &quot;Fish cooked in sour and hot sauce&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>ASAM padeh ist auch bekannt als asam pedas und ist ein Lebensmittel, das in Malaysia aus den Regionen Sunatra und Malay Halbinsel gefunden wird. Die wichtigsten Zutaten sind Fische, die in sauer und heißer Soße gekocht werden. </text>
+				<template>PATIENT-4 ist auch als AGENT-1 bekannt und ist ein Lebensmittel, das in PATIENT-1 von PATIENT-2 gefunden wird. Die wichtigsten Zutaten sind PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asam_pedas</entity>
+				<entity>PATIENT-1 | Malaysia</entity>
+				<entity>PATIENT-2 | &quot;Sumatra and Malay Peninsula&quot;</entity>
+				<entity>PATIENT-3 | &quot;Fish cooked in sour and hot sauce&quot;</entity>
+				<entity>PATIENT-4 | &quot;Asam padeh&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id10" size="4">
+			<originaltripleset>
+				<otriple>Asam_pedas | country | Malaysia</otriple>
+				<otriple>Malaysia | ethnicGroups | Malaysian_Malay</otriple>
+				<otriple>Sumatra | ethnicGroup | Minangkabau_people</otriple>
+				<otriple>Asam_pedas | region | Sumatra</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asam_pedas | country | Malaysia</mtriple>
+				<mtriple>Malaysia | ethnicGroup | Malaysian_Malay</mtriple>
+				<mtriple>Sumatra | ethnicGroup | Minangkabau_people</mtriple>
+				<mtriple>Asam_pedas | region | Sumatra</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asam_pedas | country | Malaysia</striple>
+						<striple>Asam_pedas | region | Sumatra</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Malaysia | ethnicGroup | Malaysian_Malay</striple>
+						<striple>Sumatra | ethnicGroup | Minangkabau_people</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>ASAM pedas ist ein Lebensmittel in Malaysia und Sumatra. Malaysian Malay ist eine ethnische Gruppe in Malaysia und Sumatra hat eine ethnische Gruppe namens Minangkabau Menschen. </text>
+				<template>AGENT-1 ist ein Lebensmittel in BRIDGE-1 und BRIDGE-2. PATIENT-1 ist eine ethnische Gruppe in BRIDGE-1 und BRIDGE-2 hat eine ethnische Gruppe namens PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asam_pedas | country | Malaysia</striple>
+						<striple>Asam_pedas | region | Sumatra</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Malaysia | ethnicGroup | Malaysian_Malay</striple>
+						<striple>Sumatra | ethnicGroup | Minangkabau_people</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>ASAM pedas ist ein Lebensmittel in Malaysia und Sumatra. Malay ist die ethnische Gruppe von Malaysia und die Minangkabauer Menschen sind eine ethnische Gruppe von Sumatra. </text>
+				<template>AGENT-1 ist ein Lebensmittel in BRIDGE-1 und BRIDGE-2. PATIENT-1 ist die ethnische Gruppe von BRIDGE-1 und PATIENT-2 ist eine ethnische Gruppe von BRIDGE-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asam_pedas | country | Malaysia</striple>
+						<striple>Asam_pedas | region | Sumatra</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Sumatra | ethnicGroup | Minangkabau_people</striple>
+						<striple>Malaysia | ethnicGroup | Malaysian_Malay</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>ASAM pedas findet man in Malaysia, das aus Sumatra stammt. Sumatra ist die Heimat der Minangkabauer Menschen und Malaysia, die malaiischen Menschen. </text>
+				<template>AGENT-1 wird in BRIDGE-1 von BRIDGE-2 gefunden. BRIDGE-2 ist die Heimat von PATIENT-2 und BRIDGE-1, PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asam_pedas</entity>
+				<entity>BRIDGE-1 | Malaysia</entity>
+				<entity>BRIDGE-2 | Sumatra</entity>
+				<entity>PATIENT-1 | Malaysian_Malay</entity>
+				<entity>PATIENT-2 | Minangkabau_people</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id11" size="4">
+			<originaltripleset>
+				<otriple>Bacon_Explosion | country | United_States</otriple>
+				<otriple>Bacon_Explosion | ingredient | Sausage</otriple>
+				<otriple>Bacon_Explosion | region | Kansas_City_metropolitan_area</otriple>
+				<otriple>Bacon_Explosion | mainIngredient | Bacon</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bacon_Explosion | country | United_States</mtriple>
+				<mtriple>Bacon_Explosion | ingredient | Sausage</mtriple>
+				<mtriple>Bacon_Explosion | region | Kansas_City_metropolitan_area</mtriple>
+				<mtriple>Bacon_Explosion | mainIngredients | Bacon</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_Explosion | region | Kansas_City_metropolitan_area</striple>
+						<striple>Bacon_Explosion | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_Explosion | mainIngredients | Bacon</striple>
+						<striple>Bacon_Explosion | ingredient | Sausage</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>The Bacon Explosion comes from the Kansas city metro area in the U.S. Der Hauptbestandteil darin ist Speck und enthält auch Wurst. </text>
+				<template>AGENT-1 kommt von PATIENT-3 in PATIENT-1. Der Hauptbestandteil von AGENT-1 ist PATIENT-4 und beinhaltet auch PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_Explosion | region | Kansas_City_metropolitan_area</striple>
+						<striple>Bacon_Explosion | country | United_States</striple>
+						<striple>Bacon_Explosion | ingredient | Sausage</striple>
+						<striple>Bacon_Explosion | mainIngredients | Bacon</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bacon Explosion kommt aus der Metropolregion Kansas City der USA und enthält den Hauptbestandteil von Wurst und Speck. </text>
+				<template>AGENT-1 stammt von PATIENT-3 von PATIENT-1 und enthält den Hauptbestandteil von PATIENT-2 und PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_Explosion | region | Kansas_City_metropolitan_area</striple>
+						<striple>Bacon_Explosion | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_Explosion | mainIngredients | Bacon</striple>
+						<striple>Bacon_Explosion | ingredient | Sausage</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bacon Explosion stammt aus der Metropolregion Kansas City der USA. Der Hauptbestandteil ist Speck zusammen mit Wurst. </text>
+				<template>AGENT-1 ist von PATIENT-3 von PATIENT-1. Der Hauptbestandteil ist PATIENT-4 zusammen mit PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_Explosion</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Sausage</entity>
+				<entity>PATIENT-3 | Kansas_City_metropolitan_area</entity>
+				<entity>PATIENT-4 | Bacon</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id12" size="4">
+			<originaltripleset>
+				<otriple>Bacon_Explosion | country | United_States</otriple>
+				<otriple>United_States | leader | Paul_Ryan</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bacon_Explosion | country | United_States</mtriple>
+				<mtriple>United_States | leaderName | Paul_Ryan</mtriple>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_Explosion | country | United_States</striple>
+						<striple>United_States | leaderName | Paul_Ryan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Speck Explosion kommt aus den USA, wo einer der Anführer Paul Ryan ist. Es ist auch dort, wo die asiatischen Amerikaner eine der ethnischen Gruppen sind und Washington, D.C. ist die Hauptstadt. </text>
+				<template>AGENT-1 kommt von BRIDGE-1, wo einer der Anführer PATIENT-1 ist. BRIDGE-1 ist auch, wo PATIENT-2 ist eine der ethnischen Gruppen und PATIENT-3 ist die Hauptstadt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_Explosion | country | United_States</striple>
+						<striple>United_States | leaderName | Paul_Ryan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Vereinigten Staaten sind das Land der Bacon Explosion und der Führer ist Paul Ryan. Die asiatischen Amerikaner sind eine ethnische Gruppe in den Vereinigten Staaten und die Hauptstadt ist Washington, D.C. </text>
+				<template>BRIDGE-1 ist das Land von AGENT-1 und der Führer ist PATIENT-1. PATIENT-2 sind eine ethnische Gruppe in BRIDGE-1 und die Hauptstadt ist PATIENT-3</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_Explosion | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | leaderName | Paul_Ryan</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Bacon-Explosion stammt aus den USA. Der US-Amerikaner rühmt Staatschef Paul Ryan, ist Heimat der asiatischen Amerikaner und hat seine Hauptstadt in Washington D.C. </text>
+				<template>AGENT-1 stammt von BRIDGE-1. BRIDGE-1 hat Führer PATIENT-1, ist die Heimat von PATIENT-2 und hat BRIDGE-1 Kapital in PATIENT-3</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_Explosion</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Paul_Ryan</entity>
+				<entity>PATIENT-2 | Asian_Americans</entity>
+				<entity>PATIENT-3 | Washington,_D.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id13" size="4">
+			<originaltripleset>
+				<otriple>Bacon_sandwich | variations | BLT</otriple>
+				<otriple>Bacon_sandwich | country | United_Kingdom</otriple>
+				<otriple>Bacon_sandwich | alias | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, bacon muffin&quot;@en</otriple>
+				<otriple>Bacon_sandwich | ingredient | Bacon</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bacon_sandwich | dishVariation | BLT</mtriple>
+				<mtriple>Bacon_sandwich | country | United_Kingdom</mtriple>
+				<mtriple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, bacon muffin&quot;</mtriple>
+				<mtriple>Bacon_sandwich | ingredient | Bacon</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | country | United_Kingdom</striple>
+						<striple>Bacon_sandwich | dishVariation | BLT</striple>
+						<striple>Bacon_sandwich | ingredient | Bacon</striple>
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, </text>
+				<template>AGENT-1 sind in PATIENT-2 beliebt, haben eine Variante namens PATIENT-1, beinhalten die Zutat PATIENT-4 und gehen manchmal mit dem Namen: PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | ingredient | Bacon</striple>
+						<striple>Bacon_sandwich | dishVariation | BLT</striple>
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, Speck, </text>
+				<template>AGENT-1, von dem eine Zutat PATIENT-4 ist, hat eine Variante namens PATIENT-1 und hat verschiedene Namen, darunter: PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | dishVariation | BLT</striple>
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_sandwich | ingredient | Bacon</striple>
+						<striple>Bacon_sandwich | country | United_Kingdom</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Speck-Sandwich, das ist eine Variante des BLT, kann auch als Speck butty, Speck sarnie, rasher Sandwich, Speck Sanger, Stück 'n Speck, Speck kob, Speck barm, oder Speck Muffin. Es ist ein Gericht mit Speck und kommt aus dem Vereinigten Königreich. </text>
+				<template>AGENT-1, eine Variante von PATIENT-1, kann auch als PATIENT-3 bezeichnet werden. AGENT-1 ist ein Gericht mit PATIENT-4 und stammt von PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_sandwich</entity>
+				<entity>PATIENT-1 | BLT</entity>
+				<entity>PATIENT-2 | United_Kingdom</entity>
+				<entity>PATIENT-3 | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</entity>
+				<entity>PATIENT-4 | Bacon</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id14" size="4">
+			<originaltripleset>
+				<otriple>Bacon_sandwich | variations | BLT</otriple>
+				<otriple>Bacon_sandwich | country | United_Kingdom</otriple>
+				<otriple>Bacon_sandwich | alias | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, bacon muffin&quot;@en</otriple>
+				<otriple>Bacon_sandwich | ingredient | Brown_sauce</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bacon_sandwich | dishVariation | BLT</mtriple>
+				<mtriple>Bacon_sandwich | country | United_Kingdom</mtriple>
+				<mtriple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, bacon muffin&quot;</mtriple>
+				<mtriple>Bacon_sandwich | ingredient | Brown_sauce</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | country | United_Kingdom</striple>
+						<striple>Bacon_sandwich | dishVariation | BLT</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_sandwich | ingredient | Brown_sauce</striple>
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Speck-Sandwich ist ein Gericht aus dem Vereinigten Königreich und eine Variante ist die BLT. Ein Bestandteil, der verwendet wird, ist braune Soße und es sind verschiedene Namen wie Bacon Butty, Speck sarnie, rasher Sandwich, Speck Sanger, Stück 'n Speck, Speck Kob, Speck-Barm und Speck Muffin. </text>
+				<template>Korrekt: AGENT-1 ist ein Gericht aus PATIENT-2 und eine Variante ist PATIENT-1. Eine Zutat ist PATIENT-4 und AGENT-1 verschiedene Namen beinhalten PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | country | United_Kingdom</striple>
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_sandwich | ingredient | Brown_sauce</striple>
+						<striple>Bacon_sandwich | dishVariation | BLT</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Land, das Speck-Brötchen kommt, ist das Vereinigte Königreich, es ist auch bekannt als Speck butty, Speck sarnie, rasher Sandwich, Speck Sanger, Stück 'n Speck, Speck kob, Speck barm, oder Speck Muffin. Braune Soße kann mit ihr bedient werden und eine Variante ist die BLT. </text>
+				<template>Das Land, aus dem AGENT-1 stammt, ist PATIENT-2, AGENT-1 ist auch als PATIENT-3 bekannt. PATIENT-4 kann mit AGENT-1 bedient werden und eine Variante ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | country | United_Kingdom</striple>
+						<striple>Bacon_sandwich | ingredient | Brown_sauce</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_sandwich | dishVariation | BLT</striple>
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Speck-Brötchen sind in Großbritannien beliebt und können die Zutat braune Soße enthalten. Eine Variante des Sandwich ist ein BLT und es kann auch als Speck butty, Speck sarnie, rasher Sandwich, Speck Sanger, Stück 'n Speck, Speck kob, Speck barm, oder Speck Muffin. </text>
+				<template>AGENT-1 sind in PATIENT-2 beliebt und können die Zutat PATIENT-4 enthalten. Eine Variante von AGENT-1 ist PATIENT-1 und AGENT-1 kann auch als PATIENT-3 bezeichnet werden.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_sandwich</entity>
+				<entity>PATIENT-1 | BLT</entity>
+				<entity>PATIENT-2 | United_Kingdom</entity>
+				<entity>PATIENT-3 | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</entity>
+				<entity>PATIENT-4 | Brown_sauce</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id15" size="4">
+			<originaltripleset>
+				<otriple>Bacon_sandwich | mainIngredient | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;@en</otriple>
+				<otriple>Bacon_sandwich | country | United_Kingdom</otriple>
+				<otriple>Bacon_sandwich | ingredient | Ketchup</otriple>
+				<otriple>Bacon_sandwich | alias | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, bacon muffin&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bacon_sandwich | mainIngredients | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;</mtriple>
+				<mtriple>Bacon_sandwich | country | United_Kingdom</mtriple>
+				<mtriple>Bacon_sandwich | ingredient | Ketchup</mtriple>
+				<mtriple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece 'n bacon, bacon cob, bacon barm, bacon muffin&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | country | United_Kingdom</striple>
+						<striple>Bacon_sandwich | mainIngredients | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Aus dem Vereinigten Königreich sind die Hauptzutaten des Speck-Sandwichs Brot und Speck und eine Konditionierung, oft Ketchup oder braune Soße. It can also be known as a Speck butty, Speck sarnie, rasher sandwich, Speck Sanger, piece 'n Speck, Speck cob, Speck barm, or Speck Muffin. </text>
+				<template>Von PATIENT-2, AGENT-1 Hauptzutaten sind PATIENT-1. AGENT-1 kann auch als PATIENT-4 bezeichnet werden.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | country | United_Kingdom</striple>
+						<striple>Bacon_sandwich | mainIngredients | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Speck-Sandwich stammt aus dem Vereinigten Königreich und seine wichtigsten Zutaten sind Brot, Speck mit Ketchup oder braune Soße. It has different names including: Speck butty, Speck sarnie, rasher sandwich, Speck Sanger, piece 'n Speck, Speck cob, Speck barm and Speck Muffin. </text>
+				<template>AGENT-1 stammt aus PATIENT-2 und AGENT-1 Hauptzutaten sind PATIENT-1. AGENT-1 hat verschiedene Namen, darunter: PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bacon_sandwich | country | United_Kingdom</striple>
+						<striple>Bacon_sandwich | mainIngredients | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bacon_sandwich | alternativeName | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Hauptzutaten eines Speck-Sandwich, (beliebt im Vereinigten Königreich), sind Brot, Speck und Ketchup oder braune Soße als Konditionierung. Das Speck-Sandwich hat mehrere alternative Namen, darunter: Speck butty, Speck sarnie, rasher Sandwich, Speck Sanger, Stück 'n Speck, Speck kob, Speck barm und Speck Muffin. </text>
+				<template>Die wichtigsten Bestandteile von AGENT-1, (beliebt in PATIENT-2), sind PATIENT-1. AGENT-1 hat mehrere alternative Namen, darunter: PATIENT-4.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_sandwich</entity>
+				<entity>PATIENT-1 | &quot;Bread and bacon, with a condiment, often ketchup or brown sauce&quot;</entity>
+				<entity>PATIENT-2 | United_Kingdom</entity>
+				<entity>PATIENT-3 | Ketchup</entity>
+				<entity>PATIENT-4 | &quot;Bacon butty, bacon sarnie, rasher sandwich, bacon sanger, piece n bacon, bacon cob, bacon barm, bacon muffin&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id16" size="4">
+			<originaltripleset>
+				<otriple>Baked_Alaska | ingredientName | &quot;Meringue, ice cream,sponge cakeorChristmas pudding&quot;</otriple>
+				<otriple>Baked_Alaska | country | &quot;France, United States or China&quot;@en</otriple>
+				<otriple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;@en</otriple>
+				<otriple>Baked_Alaska | ingredient | Meringue</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</mtriple>
+				<mtriple>Baked_Alaska | country | &quot;France, United States or China&quot;</mtriple>
+				<mtriple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;</mtriple>
+				<mtriple>Baked_Alaska | ingredient | Meringue</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baked_Alaska | country | &quot;France, United States or China&quot;</striple>
+						<striple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gebackene Alaska hat die wichtigsten Zutaten von Meringue, Eis und Biskuitkuchen (oder Weihnachtspudding). Sie findet sich in Frankreich, den USA, China, @ Hong Kong, New York und Paris. </text>
+				<template>AGENT-1 hat die wichtigsten Bestandteile von PATIENT-1. AGENT-1 findet sich in PATIENT-2, @ PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Baked_Alaska | country | &quot;France, United States or China&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gebackene Alaska enthält: Eis, Biskuitkuchen (Weihnachtspudding) und Meringue. Es wird in Hong Kong, New York und Paris gefunden. Die Ursprünge sind entweder Frankreich, Kanada oder die Vereinigten Staaten. </text>
+				<template>AGENT-1 enthält: PATIENT-1. AGENT-1 wird in PATIENT-3 gefunden. Die Ursprünge sind entweder PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>PATIENT-1 | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</entity>
+				<entity>PATIENT-2 | &quot;France, United States or China&quot;</entity>
+				<entity>PATIENT-3 | &quot;Paris, New York or Hong Kong&quot;</entity>
+				<entity>PATIENT-4 | Meringue</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id17" size="4">
+			<originaltripleset>
+				<otriple>Baked_Alaska | ingredientName | &quot;Meringue, ice cream,sponge cakeorChristmas pudding&quot;</otriple>
+				<otriple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;@en</otriple>
+				<otriple>Baked_Alaska | country | United_States</otriple>
+				<otriple>Baked_Alaska | ingredient | Ice_cream</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</mtriple>
+				<mtriple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;</mtriple>
+				<mtriple>Baked_Alaska | country | United_States</mtriple>
+				<mtriple>Baked_Alaska | ingredient | Ice_cream</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gebackenes Alaska kommt entweder aus Paris, New York USA oder Hongkong. Meringue, Eis, Biskuitkuchen oder Weihnachtspudding sind Hauptzutaten im gebackenen Alaska. </text>
+				<template>AGENT-1 kommt von PATIENT-2. PATIENT-1 sind die wichtigsten Bestandteile von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baked_Alaska | region | &quot;Paris, New York or Hong Kong&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baked_Alaska | mainIngredients | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gebackenes Alaska wird in Hong Kong, New York und Paris gefunden. Meringue, Eis, Biskuitkuchen oder Weihnachtspudding sind seine wichtigsten Zutaten. </text>
+				<template>AGENT-1 wird in PATIENT-2 gefunden. PATIENT-1 sind AGENT-1 Hauptbestandteile.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>PATIENT-1 | &quot;Meringue, ice cream, sponge cake or Christmas pudding&quot;</entity>
+				<entity>PATIENT-2 | &quot;Paris, New York or Hong Kong&quot;</entity>
+				<entity>PATIENT-3 | United_States</entity>
+				<entity>PATIENT-4 | Ice_cream</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id18" size="4">
+			<originaltripleset>
+				<otriple>Bakewell_pudding | hasVariant | Bakewell_tart</otriple>
+				<otriple>Bakewell_tart | region | Derbyshire_Dales</otriple>
+				<otriple>Derbyshire_Dales | isPartOf | Derbyshire</otriple>
+				<otriple>Bakewell_tart | ingredient | Frangipane</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bakewell_pudding | dishVariation | Bakewell_tart</mtriple>
+				<mtriple>Bakewell_tart | region | Derbyshire_Dales</mtriple>
+				<mtriple>Derbyshire_Dales | isPartOf | Derbyshire</mtriple>
+				<mtriple>Bakewell_tart | ingredient | Frangipane</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_tart | region | Derbyshire_Dales</striple>
+						<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+						<striple>Bakewell_tart | ingredient | Frangipane</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>The Bakewell tart is popular in the Derbyshire Dales area which is part of Derbyshire. Es ist eine Variante von Bakewell Pudding und benutzt Frangischeibe. </text>
+				<template>BRIDGE-1 ist beliebt in BRIDGE-2, die Teil von PATIENT-1 ist. BRIDGE-1 eine Variante von AGENT-1 und verwendet PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+						<striple>Bakewell_tart | ingredient | Frangipane</striple>
+						<striple>Bakewell_tart | region | Derbyshire_Dales</striple>
+						<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakewell tart, eine Variante von Bakewell Pudding, enthält die Zutat Frangischeibe und stammt aus der Derbyshire Dales Region Derbyshire. </text>
+				<template>BRIDGE-1, eine Variante von AGENT-1, enthält die Zutat PATIENT-2 und stammt aus der BRIDGE-2-Region PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+						<striple>Bakewell_tart | region | Derbyshire_Dales</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bakewell_tart | ingredient | Frangipane</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakewell tart ist eine Variante von Bakewell Pudding und kommt aus den Derbyshire Dales. Sie enthält Frangischeibe. </text>
+				<template>BRIDGE-1 ist eine Variante von AGENT-1 und stammt von BRIDGE-2. AGENT-1 enthält PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>BRIDGE-1 | Bakewell_tart</entity>
+				<entity>BRIDGE-2 | Derbyshire_Dales</entity>
+				<entity>PATIENT-1 | Derbyshire</entity>
+				<entity>PATIENT-2 | Frangipane</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id19" size="4">
+			<originaltripleset>
+				<otriple>Bakewell_pudding | region | Derbyshire_Dales</otriple>
+				<otriple>Bakewell_pudding | hasVariant | Bakewell_tart</otriple>
+				<otriple>Bakewell_pudding | ingredientName | &quot;Ground almond, jam, butter, eggs&quot;</otriple>
+				<otriple>Bakewell_pudding | course | &quot;Dessert&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bakewell_pudding | region | Derbyshire_Dales</mtriple>
+				<mtriple>Bakewell_pudding | dishVariation | Bakewell_tart</mtriple>
+				<mtriple>Bakewell_pudding | course | &quot;Dessert&quot;</mtriple>
+				<mtriple>Bakewell_pudding | mainIngredients | &quot;Ground almond, jam, butter, eggs&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+						<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bakewell_pudding | course | &quot;Dessert&quot;</striple>
+						<striple>Bakewell_pudding | mainIngredients | &quot;Ground almond, jam, butter, eggs&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakewell tart ist eine Variante von Bakewell Pudding, die aus den Derbyshire Dales stammt. Es ist ein Dessert, das die Hauptzutaten von Erdmandeln, Marmelade, Butter und Eiern hat. </text>
+				<template>PATIENT-2 ist eine Variante von AGENT-1, die von PATIENT-1 stammt. AGENT-1 ist PATIENT-3, das die wichtigsten Bestandteile von PATIENT-4 hat.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+						<striple>Bakewell_pudding | course | &quot;Dessert&quot;</striple>
+						<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+						<striple>Bakewell_pudding | mainIngredients | &quot;Ground almond, jam, butter, eggs&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakewell tart ist eine Variante von Bakewell Pudding, ein Dessert, das aus dem Derbyshire Dales Gebiet stammt und die wichtigsten Zutaten Boden-Mandeln, Marmelade, Butter und Eier hat. </text>
+				<template>PATIENT-2 ist eine Variante von AGENT-1, die PATIENT-3 ist, die von PATIENT-1 stammt und die wichtigsten Zutaten PATIENT-4 hat.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | course | &quot;Dessert&quot;</striple>
+						<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+						<striple>Bakewell_pudding | mainIngredients | &quot;Ground almond, jam, butter, eggs&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakewell Pudding ist ein Dessert aus der Region Derbyshire Dales und enthält die Zutaten Boden-Mandeln, Marmelade, Butter und Eier. Es hat eine Variante namens Bakewell tart. </text>
+				<template>AGENT-1 ist PATIENT-3 aus der Region PATIENT-1 und enthält die Zutaten PATIENT-4. AGENT-1 hat eine Variante namens PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>PATIENT-1 | Derbyshire_Dales</entity>
+				<entity>PATIENT-2 | Bakewell_tart</entity>
+				<entity>PATIENT-3 | &quot;Dessert&quot;</entity>
+				<entity>PATIENT-4 | &quot;Ground almond, jam, butter, eggs&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id20" size="4">
+			<originaltripleset>
+				<otriple>Bakewell_pudding | region | Derbyshire_Dales</otriple>
+				<otriple>Bakewell_pudding | hasVariant | Bakewell_tart</otriple>
+				<otriple>Derbyshire_Dales | isPartOf | Derbyshire</otriple>
+				<otriple>Bakewell_tart | ingredient | Shortcrust_pastry</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bakewell_pudding | region | Derbyshire_Dales</mtriple>
+				<mtriple>Bakewell_pudding | dishVariation | Bakewell_tart</mtriple>
+				<mtriple>Derbyshire_Dales | isPartOf | Derbyshire</mtriple>
+				<mtriple>Bakewell_tart | ingredient | Shortcrust_pastry</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+						<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+						<striple>Bakewell_tart | ingredient | Shortcrust_pastry</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Aus der Region Derbyshire Dales (in Derbyshire) ist Bakewell Pudding. Eine Variante, von der, ist Bakewell tart, sein Hauptbestandteil ist Shortcrust Gebäck. </text>
+				<template>Von der BRIDGE-1 Region (in PATIENT-1), ist AGENT-1. Eine Variante, die, ist BRIDGE-2, AGENT-1 Hauptbestandteil ist PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+						<striple>Bakewell_tart | ingredient | Shortcrust_pastry</striple>
+						<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+						<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakewell tart ist eine Variante von Bakewell Pudding, die Shortcut-Gebäck verwendet und aus den Derbyshire Dales in Derbyshire stammt. </text>
+				<template>BRIDGE-2 ist eine Variante von AGENT-1, die PATIENT-2 verwendet und von BRIDGE-1 in PATIENT-1 stammt.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+						<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+						<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bakewell_tart | ingredient | Shortcrust_pastry</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakewell tart ist eine Variante von Bakewell Pudding aus den Derbyshire Dales in Derbyshire. Der Hauptbestandteil ist das Shortcrust-Gebäck. </text>
+				<template>BRIDGE-2 ist eine Variante von AGENT-1 von BRIDGE-1 in PATIENT-1. Der Hauptbestandteil ist PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>BRIDGE-1 | Derbyshire_Dales</entity>
+				<entity>BRIDGE-2 | Bakewell_tart</entity>
+				<entity>PATIENT-1 | Derbyshire</entity>
+				<entity>PATIENT-2 | Shortcrust_pastry</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id21" size="4">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | ingredient | Rice</otriple>
+				<otriple>Bandeja_paisa | ingredientName | &quot;red beans,pork belly, whiterice,ground meat,chicharon,fried egg,plantain(patacones),chorizo, arepa, hogao sauce,black pudding(morcilla),avocadoandlemon&quot;</otriple>
+				<otriple>Bandeja_paisa | region | Paisa_Region</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bandeja_paisa | ingredient | Rice</mtriple>
+				<mtriple>Bandeja_paisa | mainIngredients | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</mtriple>
+				<mtriple>Bandeja_paisa | region | Paisa_Region</mtriple>
+				<mtriple>Bandeja_paisa | country | Colombian_cuisine</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+						<striple>Bandeja_paisa | region | Paisa_Region</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bandeja_paisa | mainIngredients | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bandeja paisa ist ein kolumbianisches Gericht aus der Region Paisa. Seine wichtigsten Zutaten sind rote Bohnen, Schweinefleisch-Bauch, weißer Reis, Bodenfleisch, Chicharon, gebratenes Ei, plantain (patacones), chorizo, arepa, hogao Soße, schwarzer Pudding (Morcilla), Avocado und Zitrone. </text>
+				<template>AGENT-1 ist ein PATIENT-4 Gericht von PATIENT-3. AGENT-1-Hauptbestandteile sind PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | region | Paisa_Region</striple>
+						<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bandeja_paisa | mainIngredients | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bandeja paisa stammt aus der Paisa-Region, Columbia. Die wichtigsten Zutaten sind: Rote Bohnen, Schweinefleisch-Bauch, weißer Reis, Bodenfleisch, Chicharon, gebratenes Ei, plantain (patacones), chorizo, arepa, hogao Soße, schwarzer Pudding (Morcilla), Avocado und Zitrone. </text>
+				<template>AGENT-1 stammt aus PATIENT-3, PATIENT-4. Die wichtigsten Zutaten sind: PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+						<striple>Bandeja_paisa | region | Paisa_Region</striple>
+						<striple>Bandeja_paisa | mainIngredients | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bandeja paisa ist ein typisch kolumbianisches Gericht aus der Paisa-Region und enthält die Zutaten: Rote Bohnen, Schweinefleisch-Bauch, weißer Reis, Bodenfleisch, Chicharon, gebratenes Ei, Plantain (Patacones), Avocado und Zitrone. </text>
+				<template>AGENT-1 ist ein typisches PATIENT-4-Gericht aus PATIENT-3 und enthält die Zutaten: PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>PATIENT-1 | Rice</entity>
+				<entity>PATIENT-2 | &quot;red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon&quot;</entity>
+				<entity>PATIENT-3 | Paisa_Region</entity>
+				<entity>PATIENT-4 | Colombian_cuisine</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id22" size="4">
+			<originaltripleset>
+				<otriple>Batagor | country | Indonesia</otriple>
+				<otriple>Batagor | ingredient | Peanut_sauce</otriple>
+				<otriple>Batagor | mainIngredient | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;@en</otriple>
+				<otriple>Batagor | variations | Siomay</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Batagor | country | Indonesia</mtriple>
+				<mtriple>Batagor | ingredient | Peanut_sauce</mtriple>
+				<mtriple>Batagor | dishVariation | Siomay</mtriple>
+				<mtriple>Batagor | mainIngredients | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | country | Indonesia</striple>
+						<striple>Batagor | dishVariation | Siomay</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Batagor | mainIngredients | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Batagor ist ein indonesisches Essen und eine Variante des Siomay-Gerichts. Es enthält einen gebratenen Fisch stumm mit Tofu und Gemüse in peanut suace. </text>
+				<template>AGENT-1 ist ein PATIENT-1 Lebensmittel und eine Variation von PATIENT-3. AGENT-1 enthält PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | dishVariation | Siomay</striple>
+						<striple>Batagor | country | Indonesia</striple>
+						<striple>Batagor | mainIngredients | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Batagor, (eine Variante von Siomay), ist ein Gericht, das in Indonesien gefunden wird, und seine wichtigsten Zutaten sind gebratene Fische mit Tofu und Gemüse in Erdnusssoße. </text>
+				<template>AGENT-1, (eine Variante von PATIENT-3), ist ein Gericht in PATIENT-1 und AGENT-1 Hauptzutaten sind PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | country | Indonesia</striple>
+						<striple>Batagor | mainIngredients | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Batagor | dishVariation | Siomay</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Batagor, aus Indonesien, ist ein Gericht, bestehend aus gebratenen Fisch-Knödel, Tofu und Gemüse in Erdnusssoße. Siomay ist eine Variante von Batagor. </text>
+				<template>AGENT-1 von PATIENT-1 ist ein Gericht, das aus PATIENT-4 besteht. PATIENT-3 ist eine Variante von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Batagor</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+				<entity>PATIENT-2 | Peanut_sauce</entity>
+				<entity>PATIENT-3 | Siomay</entity>
+				<entity>PATIENT-4 | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id23" size="4">
+			<originaltripleset>
+				<otriple>Batagor | country | Indonesia</otriple>
+				<otriple>Shumai | variations | Siomay</otriple>
+				<otriple>Shumai | ingredient | Shiitake</otriple>
+				<otriple>Batagor | hasVariant | Shumai</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Batagor | country | Indonesia</mtriple>
+				<mtriple>Shumai | dishVariation | Siomay</mtriple>
+				<mtriple>Shumai | ingredient | Shiitake</mtriple>
+				<mtriple>Batagor | dishVariation | Shumai</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | country | Indonesia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Batagor | dishVariation | Shumai</striple>
+						<striple>Shumai | dishVariation | Siomay</striple>
+						<striple>Shumai | ingredient | Shiitake</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Batagor ist im Land Indonesien gefunden. Es handelt sich um eine Variante von Siomay oder Shumai, zu der auch Shiitake gehört. </text>
+				<template>AGENT-1 wird im Land von PATIENT-1 gefunden. AGENT-1 ist eine Variante von PATIENT-2 oder BRIDGE-1, BRIDGE-1, die PATIENT-3 enthält.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Shumai | ingredient | Shiitake</striple>
+						<striple>Shumai | dishVariation | Siomay</striple>
+						<striple>Batagor | dishVariation | Shumai</striple>
+						<striple>Batagor | country | Indonesia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Shumai, die Shiitake als Komponente und ist ähnlich wie Siomay, ist eine Variante der indonesischen Gericht batagor. </text>
+				<template>BRIDGE-1, die PATIENT-3 als Komponente und ist ähnlich wie PATIENT-2, ist eine Variante des PATIENT-1 Gericht AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Batagor</entity>
+				<entity>BRIDGE-1 | Shumai</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+				<entity>PATIENT-2 | Siomay</entity>
+				<entity>PATIENT-3 | Shiitake</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id24" size="4">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | country | Singapore</otriple>
+				<otriple>Beef_kway_teow | region | Indonesia</otriple>
+				<otriple>Singapore | language | Standard_Chinese</otriple>
+				<otriple>Singapore | leaderName | Halimah_Yacob</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Beef_kway_teow | country | Singapore</mtriple>
+				<mtriple>Beef_kway_teow | region | Indonesia</mtriple>
+				<mtriple>Singapore | language | Standard_Chinese</mtriple>
+				<mtriple>Singapore | leaderName | Halimah_Yacob</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | country | Singapore</striple>
+						<striple>Singapore | leaderName | Halimah_Yacob</striple>
+						<striple>Singapore | language | Standard_Chinese</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | region | Indonesia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rindfleisch Kway Teow ist ein Gericht aus dem Land Singapur, wo Halimah Yacob Führer ist und Standard-Chinesisch gesprochen wird. Das Gericht stammt aus der Region Indonesien. </text>
+				<template>AGENT-1 ist ein Gericht aus dem Land der BRIDGE-1, wo PATIENT-3 führend ist und PATIENT-2 gesprochen wird. AGENT-1 stammt aus der Region PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | region | Indonesia</striple>
+						<striple>Beef_kway_teow | country | Singapore</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Singapore | language | Standard_Chinese</striple>
+						<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rindfleisch Kway Teow kommt aus der Region Indonesien und auch Singapur. Der Führer von Singapur, wo Standard-Chinesisch die gesprochene Sprache ist, ist Halimah Yacob. </text>
+				<template>AGENT-1 kommt aus der Region PATIENT-1 und auch BRIDGE-1. Der Führer von BRIDGE-1, wo PATIENT-2 die gesprochene Sprache ist, ist PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+				<entity>PATIENT-2 | Standard_Chinese</entity>
+				<entity>PATIENT-3 | Halimah_Yacob</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id25" size="4">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | mainIngredient | &quot;Kway teow , beef tenderloin, gula Melaka ,sliced, dried black beans, garlic, dark soy sauce, lengkuas , oyster sauce, soya sauce, chilli and sesame oil&quot;@en</otriple>
+				<otriple>Beef_kway_teow | ingredient | Oyster_sauce</otriple>
+				<otriple>Beef_kway_teow | region | Indonesia</otriple>
+				<otriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</mtriple>
+				<mtriple>Beef_kway_teow | ingredient | Oyster_sauce</mtriple>
+				<mtriple>Beef_kway_teow | region | Indonesia</mtriple>
+				<mtriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rindfleisch Kway Teow ist ein Gericht in Singapur und Indonesien. Kway Teow, Rinderbügel, Gula Melaka, geschnitten, getrocknete schwarze Bohnen, Knoblauch, dunkle Sojasauce, lengkuas, Austernsoße, Sojasauce, Chilli und Sesamöl sind die wichtigsten Zutaten in Rindfleisch Kway Teow. </text>
+				<template>AGENT-1 ist ein Gericht, das in PATIENT-4 gefunden wurde. PATIENT-1 sind die wichtigsten Bestandteile von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | region | Indonesia</striple>
+						<striple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rindfleisch Kway Teow wird in der Region von Indonesien serviert und findet sich auch in Singapur. Die wichtigsten Zutaten sind Kway Teow, Rinderbügel, Gula Melaka, geschnitten, getrocknete schwarze Bohnen, Knoblauch, dunkle Sojasauce, lengkuas, Austernsoße, Sojasauce, Chilli und Sesamöl. </text>
+				<template>AGENT-1 wird in der Region PATIENT-3 serviert und ist auch in PATIENT-4 zu finden. Die wichtigsten Zutaten sind PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Beek Kway Teos beinhaltet: Kway Teow, Rindfleisch tenderloin, gula Melaka, schwarze Bohnen, Knoblauch, Austern, Soja und Sojasauce, lengkuas, Chili und Sesamöl. Es wird in Singapur gefunden. </text>
+				<template>AGENT-1 beinhaltet: PATIENT-1. AGENT-1 wird in PATIENT-4 gefunden.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>PATIENT-1 | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</entity>
+				<entity>PATIENT-2 | Oyster_sauce</entity>
+				<entity>PATIENT-3 | Indonesia</entity>
+				<entity>PATIENT-4 | &quot;Singapore and Indonesia&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id26" size="4">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | region | Singapore</otriple>
+				<otriple>Beef_kway_teow | mainIngredient | &quot;Kway teow , beef tenderloin, gula Melaka ,sliced, dried black beans, garlic, dark soy sauce, lengkuas , oyster sauce, soya sauce, chilli and sesame oil&quot;@en</otriple>
+				<otriple>Beef_kway_teow | country | Indonesia</otriple>
+				<otriple>Beef_kway_teow | ingredient | Oyster_sauce</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Beef_kway_teow | region | Singapore</mtriple>
+				<mtriple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</mtriple>
+				<mtriple>Beef_kway_teow | country | Indonesia</mtriple>
+				<mtriple>Beef_kway_teow | ingredient | Oyster_sauce</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | region | Singapore</striple>
+						<striple>Beef_kway_teow | country | Indonesia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rindfleisch Kway Teow ist bekannt dafür, aus der Region Singapur und auch Indonesien zu kommen. Es sind die wichtigsten Zutaten sind Kway Teow, Rindfleisch tender loin, gula Melaka, geschnitten, getrocknete schwarze Bohnen, Knoblauch, dunkle Sojasauce, lengkuas, Austernsoße, Sojasauce, Chilli und Sesamöl. </text>
+				<template>AGENT-1 ist bekannt aus der PATIENT-1 Region und auch PATIENT-3. AGENT-1 Hauptbestandteile sind PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | country | Indonesia</striple>
+						<striple>Beef_kway_teow | region | Singapore</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rindfleisch Kway Teow, mit Ursprung in Indonesien, ist ein Gericht, das in Singapur gefunden wurde. Seine Hauptzutaten sind Kway Teow, Rinderbügel, Gula Melaka, geschnitten, getrocknete schwarze Bohnen, Knoblauch, dunkle Sojasauce, lengkuas, Austernsoße, Sojasauce, Chilli und Sesamöl. </text>
+				<template>AGENT-1, mit Ursprung in PATIENT-3, ist ein Gericht in PATIENT-1. AGENT-1 Hauptbestandteile sind PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | mainIngredients | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | region | Singapore</striple>
+						<striple>Beef_kway_teow | country | Indonesia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Kway Teow, Rinderbügel, Gula Melaka, geschnitten, getrocknete schwarze Bohnen, Knoblauch, dunkle Sojasauce, lengkuas, Austernsoße, Sojasauce, Chilli und Sesamöl sind die Hauptzutaten von Beef Kway Teow. Das Gericht hat seinen Ursprung in Singapur und wird in Indonesien gefunden. </text>
+				<template>PATIENT-2 sind die wichtigsten Bestandteile von AGENT-1. AGENT-1 hat seinen Ursprung in PATIENT-1 und wird in PATIENT-3 gefunden.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>PATIENT-1 | Singapore</entity>
+				<entity>PATIENT-2 | &quot;Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil&quot;</entity>
+				<entity>PATIENT-3 | Indonesia</entity>
+				<entity>PATIENT-4 | Oyster_sauce</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id27" size="4">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | region | Singapore</otriple>
+				<otriple>Singapore | language | English_language</otriple>
+				<otriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;@en</otriple>
+				<otriple>Singapore | leaderName | Tony_Tan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Beef_kway_teow | region | Singapore</mtriple>
+				<mtriple>Singapore | language | English_language</mtriple>
+				<mtriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</mtriple>
+				<mtriple>Singapore | leaderName | Tony_Tan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | region | Singapore</striple>
+						<striple>Singapore | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Singapore | leaderName | Tony_Tan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rindfleisch Kway Teow kommt aus der Region Singapur, wo die englische Sprache gesprochen wird. Das Gericht findet sich in den Ländern Indonesien und Singapur. Der Führer von Singapur ist Tony Tan. </text>
+				<template>AGENT-1 kommt von BRIDGE-1, wo PATIENT-1 gesprochen wird. AGENT-1 wird in den Ländern von PATIENT-2 gefunden. Der Führer von BRIDGE-1 ist PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | region | Singapore</striple>
+						<striple>Singapore | leaderName | Tony_Tan</striple>
+						<striple>Singapore | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rindfleisch Kway Teow ist ein Gericht von Singapur, wo Tony Tan der Führer und Englisch gesprochen wird. Das Gericht ist auch in Indonesien beliebt. </text>
+				<template>AGENT-1 ist ein Gericht von BRIDGE-1, wo PATIENT-3 der Führer und PATIENT-1 gesprochen wird. AGENT-1 ist auch in PATIENT-2 beliebt.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Singapore | leaderName | Tony_Tan</striple>
+						<striple>Singapore | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Beef_kway_teow | region | Singapore</striple>
+						<striple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Singapurs Staatschef ist Tony Tan und eine der gesprochenen Sprache des Landes ist Englisch. Rindfleisch Kway Teow wird dort und Indonesien gemacht. </text>
+				<template>BRIDGE-1-Führer ist PATIENT-3 und eine von BRIDGE-1 gesprochene Sprache ist PATIENT-1. AGENT-1 wird dort hergestellt und PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-2 | &quot;Singapore and Indonesia&quot;</entity>
+				<entity>PATIENT-3 | Tony_Tan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id28" size="4">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | currency | Indian_rupee</otriple>
+				<otriple>India | leaderName | T._S._Thakur</otriple>
+				<otriple>India | leader | Narendra_Modi</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bhajji | country | India</mtriple>
+				<mtriple>India | currency | Indian_rupee</mtriple>
+				<mtriple>India | leaderName | T._S._Thakur</mtriple>
+				<mtriple>India | leaderName | Narendra_Modi</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | country | India</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+						<striple>India | leaderName | Narendra_Modi</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | currency | Indian_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji kommt aus dem Land Indien, wo zwei der Führer sind T.S. Thakur und Narendra Modi. Es ist auch dort, wo die indische Rupie die Währung ist. </text>
+				<template>AGENT-1 kommt aus dem Land BRIDGE-1, wo zwei der Führer PATIENT-2 und PATIENT-3 sind. BRIDGE-1 ist auch dort, wo PATIENT-1 die Währung ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | country | India</striple>
+						<striple>India | currency | Indian_rupee</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | T._S._Thakur</striple>
+						<striple>India | leaderName | Narendra_Modi</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji kommt aus dem Land Indien, wo die Währung die Rupie ist. Der Führer von Indien ist entweder T. S. Thakur und / oder Narendra Modi. </text>
+				<template>AGENT-1 kommt aus dem Land BRIDGE-1, wo die Währung PATIENT-1 ist. Der Anführer von BRIDGE-1 ist entweder PATIENT-2 und / oder PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | country | India</striple>
+						<striple>India | currency | Indian_rupee</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+						<striple>India | leaderName | Narendra_Modi</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji kommt aus dem Land Indien, wo die Währung ist die Rupie und der Führer ist entweder T. S. Thakur und / oder Narendra Modi. </text>
+				<template>AGENT-1 kommt aus dem Land BRIDGE-1, wo die Währung PATIENT-1 und der Führer ist entweder PATIENT-2 und / oder PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | Indian_rupee</entity>
+				<entity>PATIENT-2 | T._S._Thakur</entity>
+				<entity>PATIENT-3 | Narendra_Modi</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id29" size="4">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | demonym | Indian_people</otriple>
+				<otriple>India | leader | T._S._Thakur</otriple>
+				<otriple>India | leaderName | Sumitra_Mahajan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bhajji | country | India</mtriple>
+				<mtriple>India | demonym | Indian_people</mtriple>
+				<mtriple>India | leaderName | T._S._Thakur</mtriple>
+				<mtriple>India | leaderName | Sumitra_Mahajan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | country | India</striple>
+						<striple>India | demonym | Indian_people</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | T._S._Thakur</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji stammt aus Indien, woher das indische Volk kommt. Die Führer des Landes sind T S Thakur und Sumitra Mahajan. </text>
+				<template>AGENT-1 stammt aus BRIDGE-1, wo PATIENT-1 stammt. Die Führer von BRIDGE-1 sind PATIENT-2 und PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | country | India</striple>
+						<striple>India | demonym | Indian_people</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji stammt aus Indien, wo das indische Volk von T S Thakur und Sumitra Mahajan geleitet wird. </text>
+				<template>AGENT-1 stammt von BRIDGE-1, wo PATIENT-1 von PATIENT-2 und PATIENT-3 geführt wird.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | Indian_people</entity>
+				<entity>PATIENT-2 | T._S._Thakur</entity>
+				<entity>PATIENT-3 | Sumitra_Mahajan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id30" size="4">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | leader | Narendra_Modi</otriple>
+				<otriple>India | leaderName | Sumitra_Mahajan</otriple>
+				<otriple>Bhajji | region | Karnataka</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bhajji | country | India</mtriple>
+				<mtriple>India | leaderName | Narendra_Modi</mtriple>
+				<mtriple>India | leaderName | Sumitra_Mahajan</mtriple>
+				<mtriple>Bhajji | region | Karnataka</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | region | Karnataka</striple>
+						<striple>Bhajji | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | Narendra_Modi</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji kommt aus der Region Karnataka in Indien. Narendra Modi ist der Name des Führers von Indien, ein weiterer Führer ist Sumitra Mahajan. </text>
+				<template>AGENT-1 kommt aus der PATIENT-3 Region BRIDGE-1. PATIENT-1 ist der Name des Führers von BRIDGE-1, ein weiterer Führer ist PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | Narendra_Modi</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji stammt aus der Region Karnataka in Indien. Die Führer des Landes sind Narendra Modi und Sumitra Mahajan. </text>
+				<template>AGENT-1 stammt aus der PATIENT-3-Region BRIDGE-1. BRIDGE-1-Führer sind PATIENT-1 und PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | region | Karnataka</striple>
+						<striple>Bhajji | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | Narendra_Modi</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji stammt aus der Region Karnataka in Indien. Die Führer des Landes sind Narendra Modi und Sumitra Mahajan. </text>
+				<template>AGENT-1 stammt aus der Region PATIENT-3 in BRIDGE-1. BRIDGE-1-Führer sind PATIENT-1 und PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | Narendra_Modi</entity>
+				<entity>PATIENT-2 | Sumitra_Mahajan</entity>
+				<entity>PATIENT-3 | Karnataka</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id31" size="4">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | leader | T._S._Thakur</otriple>
+				<otriple>Bhajji | region | Karnataka</otriple>
+				<otriple>Karnataka | leaderName | Vajubhai_Vala</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bhajji | country | India</mtriple>
+				<mtriple>India | leaderName | T._S._Thakur</mtriple>
+				<mtriple>Bhajji | region | Karnataka</mtriple>
+				<mtriple>Karnataka | leaderName | Vajubhai_Vala</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | region | Karnataka</striple>
+						<striple>Bhajji | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | T._S._Thakur</striple>
+						<striple>Karnataka | leaderName | Vajubhai_Vala</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji kommt aus Karnataka, Indien. Ein Führer in Indien ist T.S. Thakur und ein weiterer Vajubhai Vala. </text>
+				<template>AGENT-1 kommt von BRIDGE-2, BRIDGE-1. Ein Führer in BRIDGE-1 ist PATIENT-1 und ein weiteres PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | region | Karnataka</striple>
+						<striple>Bhajji | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | T._S._Thakur</striple>
+						<striple>Karnataka | leaderName | Vajubhai_Vala</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji finden sich in der Region Karnataka, Indien. Der Führer von Indien heißt T. S. Thakur und Vajubhai Vala ist der Anführer von Karnataka. </text>
+				<template>AGENT-1 finden sich in der Region BRIDGE-2, BRIDGE-1. Der Anführer von BRIDGE-1 heißt PATIENT-1 und PATIENT-2 ist der Anführer von BRIDGE-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | region | Karnataka</striple>
+						<striple>Bhajji | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Karnataka | leaderName | Vajubhai_Vala</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bhajji kommt aus der Region Karnataka oder Indien. Vajubhai Vala ist ein Führer von Karnatka und T.S. Thakur ist der Führer von Indien. </text>
+				<template>AGENT-1 kommt aus der BRIDGE-2-Region oder BRIDGE-1. PATIENT-2 ist ein Führer von BRIDGE-2 und PATIENT-1 ist der Anführer von BRIDGE-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>BRIDGE-2 | Karnataka</entity>
+				<entity>PATIENT-1 | T._S._Thakur</entity>
+				<entity>PATIENT-2 | Vajubhai_Vala</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id32" size="4">
+			<originaltripleset>
+				<otriple>Binignit | ingredient | Sweet_potato</otriple>
+				<otriple>Binignit | course | Dessert</otriple>
+				<otriple>Dessert | hasVariant | Cookie</otriple>
+				<otriple>Sweet_potato | order | Solanales</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Binignit | ingredient | Sweet_potato</mtriple>
+				<mtriple>Binignit | course | Dessert</mtriple>
+				<mtriple>Dessert | dishVariation | Cookie</mtriple>
+				<mtriple>Sweet_potato | order | Solanales</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Dessert | dishVariation | Cookie</striple>
+						<striple>Binignit | course | Dessert</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Binignit | ingredient | Sweet_potato</striple>
+						<striple>Sweet_potato | order | Solanales</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Cookies und binignit sind Arten von Dessert. Eine der ingrediens in binignit ist süße Kartoffel, die zur Bestellung Solanales gehört. </text>
+				<template>PATIENT-1 und AGENT-1 sind Typen von BRIDGE-1. Eine der ingrediens in AGENT-1 ist BRIDGE-2, die zur Bestellung PATIENT-2 gehört.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>BRIDGE-1 | Dessert</entity>
+				<entity>BRIDGE-2 | Sweet_potato</entity>
+				<entity>PATIENT-1 | Cookie</entity>
+				<entity>PATIENT-2 | Solanales</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id33" size="4">
+			<originaltripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Bionico | mainIngredient | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;@en</otriple>
+				<otriple>Bionico | region | Guadalajara</otriple>
+				<otriple>Bionico | ingredient | Condensed_milk</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bionico | country | Mexico</mtriple>
+				<mtriple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</mtriple>
+				<mtriple>Bionico | region | Guadalajara</mtriple>
+				<mtriple>Bionico | ingredient | Condensed_milk</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</striple>
+						<striple>Bionico | region | Guadalajara</striple>
+						<striple>Bionico | country | Mexico</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Sauerrahm, gehackte Früchte, verdichtete Milch. Granola, Rosinen und geschredderte Kokosnuss sind die Hauptzutaten in Bionico, einem Essen, das in Guadalajara, in Mexiko, gefunden wird. </text>
+				<template>PATIENT-2 sind die wichtigsten Zutaten in AGENT-1, eine in PATIENT-3, in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</striple>
+						<striple>Bionico | region | Guadalajara</striple>
+						<striple>Bionico | country | Mexico</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bionico hat die Zutaten gehackte Früchte, Sauerrahm, verdichtete Milch, Granola, geschredderte Kokosnuss und Rosinen und ist in Guadalajara, Mexiko, zu finden. </text>
+				<template>AGENT-1 hat die Zutaten PATIENT-2 und kann in PATIENT-3, PATIENT-1 gefunden werden.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | region | Guadalajara</striple>
+						<striple>Bionico | country | Mexico</striple>
+						<striple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die wichtigsten Zutaten von Bionico, ein Gericht aus der Region Guadalaraja in Mexiko, sind gehackte Früchte, Sauerrahm, verdichtete Milch, Granola, geschredderte Kokosnuss und Rosinen. </text>
+				<template>Die wichtigsten Zutaten von AGENT-1, ein Gericht aus der PATIENT-3-Region PATIENT-1, sind PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>PATIENT-1 | Mexico</entity>
+				<entity>PATIENT-2 | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</entity>
+				<entity>PATIENT-3 | Guadalajara</entity>
+				<entity>PATIENT-4 | Condensed_milk</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id34" size="4">
+			<originaltripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Bionico | mainIngredient | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;@en</otriple>
+				<otriple>Bionico | region | Jalisco</otriple>
+				<otriple>Bionico | ingredient | Sour_cream</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bionico | country | Mexico</mtriple>
+				<mtriple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</mtriple>
+				<mtriple>Bionico | region | Jalisco</mtriple>
+				<mtriple>Bionico | ingredient | Sour_cream</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | country | Mexico</striple>
+						<striple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bionico ist ein Lebensmittel, das in der Region Jalisco in Mexiko gefunden wurde; seine Zutaten enthalten folgendes: Sauerrahm, gehackte Früchte, verdichtete Milch. Granola, Rosinen und geschredderte Kokosnuss. </text>
+				<template>AGENT-1 ist ein Lebensmittel, das in der PATIENT-3-Region PATIENT-1 gefunden wird; AGENT-1-Zutaten enthalten folgendes: PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | region | Jalisco</striple>
+						<striple>Bionico | country | Mexico</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bionico kommt aus der Region Jalisco in Mexiko. Die Hauptzutaten des Essens sind: Gehackte Fruits, Sauerrahm, verdichtete Milch, Granola, geschredderte Kokosnuss und Rosinen. </text>
+				<template>AGENT-1 kommt aus der PATIENT-3-Region PATIENT-1. Die wichtigsten Bestandteile von AGENT-1 sind: PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | region | Jalisco</striple>
+						<striple>Bionico | country | Mexico</striple>
+						<striple>Bionico | mainIngredients | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bionico ist in der Region von Jalisco, Mexiko gefunden und besteht aus Sauerrahm, gehackten Früchten, verdichteter Milch. Granola, Rosinen und geschredderte Kokosnuss. </text>
+				<template>AGENT-1 befindet sich in der Region PATIENT-3, PATIENT-1 und besteht aus PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>PATIENT-1 | Mexico</entity>
+				<entity>PATIENT-2 | &quot;Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins&quot;</entity>
+				<entity>PATIENT-3 | Jalisco</entity>
+				<entity>PATIENT-4 | Sour_cream</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id35" size="4">
+			<originaltripleset>
+				<otriple>Indonesia | capital | Jakarta</otriple>
+				<otriple>Indonesia | leaderName | Jusuf_Kalla</otriple>
+				<otriple>Bakso | region | Indonesia</otriple>
+				<otriple>Bakso | country | Chinese_cuisine</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Indonesia | capital | Jakarta</mtriple>
+				<mtriple>Indonesia | leaderName | Jusuf_Kalla</mtriple>
+				<mtriple>Bakso | region | Indonesia</mtriple>
+				<mtriple>Bakso | country | Chinese_cuisine</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakso | country | Chinese_cuisine</striple>
+						<striple>Bakso | region | Indonesia</striple>
+						<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Indonesia | capital | Jakarta</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakso ist ein chinesisches Gericht in Indonesien, dessen Führer Jusuf Kalla ist. Jakarta ist die Hauptstadt Indonesiens. </text>
+				<template>AGENT-1 ist PATIENT-3 in BRIDGE-1, dessen Leiter PATIENT-2 ist. PATIENT-1 ist die Hauptstadt von BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakso | country | Chinese_cuisine</striple>
+						<striple>Bakso | region | Indonesia</striple>
+						<striple>Indonesia | capital | Jakarta</striple>
+						<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakso ist aus der chinesischen Küche und ist in Indonesien gefunden, wo die Hauptstadt ist Jakarta und Jusuf Kalla ist ein Führer. </text>
+				<template>AGENT-1 is from PATIENT-3 and is found in BRIDGE-1 where the capital city is PATIENT-1 and PATIENT-2 is a leader.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>BRIDGE-1 | Indonesia</entity>
+				<entity>PATIENT-1 | Jakarta</entity>
+				<entity>PATIENT-2 | Jusuf_Kalla</entity>
+				<entity>PATIENT-3 | Chinese_cuisine</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id36" size="4">
+			<originaltripleset>
+				<otriple>Indonesia | leaderName | Jusuf_Kalla</otriple>
+				<otriple>Bakso | region | Indonesia</otriple>
+				<otriple>Bakso | country | &quot;Indonesia, derived from Chinese meat ball&quot;@en</otriple>
+				<otriple>Bakso | ingredient | Celery</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Indonesia | leaderName | Jusuf_Kalla</mtriple>
+				<mtriple>Bakso | region | Indonesia</mtriple>
+				<mtriple>Bakso | country | Indonesia</mtriple>
+				<mtriple>Bakso | ingredient | Celery</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakso | region | Indonesia</striple>
+						<striple>Bakso | ingredient | Celery</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+						<striple>Bakso | country | Indonesia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakso kommt aus Indonesien, und Sellerie ist ein Hauptbestandteil. Jasuf Kalla ist führend in Indonesien. </text>
+				<template>AGENT-1 kommt von BRIDGE-1, und PATIENT-2 ist ein Hauptbestandteil. PATIENT-1 ist führend in BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakso | ingredient | Celery</striple>
+						<striple>Bakso | region | Indonesia</striple>
+						<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Sellerie ist eine Zutat von Bakso, ein Gericht aus dem Land Indonesien, wo Jusuf Kalla ein Führer ist. </text>
+				<template>PATIENT-2 ist eine Zutat von AGENT-1, einem Gericht aus dem Land BRIDGE-1, in dem PATIENT-1 führend ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakso | ingredient | Celery</striple>
+						<striple>Bakso | region | Indonesia</striple>
+						<striple>Bakso | country | Indonesia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bakso (welches Sellerie enthält) ist ein Gericht, das in Indonesien gefunden wurde, wo es seinen Ursprung hat. Einer der Landesvorsitzenden ist Jusuf Kalla. </text>
+				<template>AGENT-1 (das PATIENT-2 enthält) ist ein Gericht in BRIDGE-1, wo AGENT-1 seinen Ursprung hat. Einer der BRIDGE-1-Führer ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>BRIDGE-1 | Indonesia</entity>
+				<entity>PATIENT-1 | Jusuf_Kalla</entity>
+				<entity>PATIENT-2 | Celery</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id37" size="4">
+			<originaltripleset>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Italy | leader | Matteo_Renzi</otriple>
+				<otriple>Amatriciana_sauce | country | Italy</otriple>
+				<otriple>Italy | leaderName | Sergio_Mattarella</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Italy | capital | Rome</mtriple>
+				<mtriple>Italy | leaderName | Matteo_Renzi</mtriple>
+				<mtriple>Amatriciana_sauce | country | Italy</mtriple>
+				<mtriple>Italy | leaderName | Sergio_Mattarella</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amatriciana_sauce | country | Italy</striple>
+						<striple>Italy | leaderName | Matteo_Renzi</striple>
+						<striple>Italy | leaderName | Sergio_Mattarella</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | capital | Rome</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Zwei Führer Italiens, wo Amatriciana Sauce gefunden wird, sind Matteo Renzi und Sergio Mattarella. Seine Hauptstadt ist Rom. </text>
+				<template>Zwei Führer von BRIDGE-1, wo AGENT-1 gefunden wird, sind PATIENT-2 und PATIENT-3. BRIDGE-1 Kapital ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amatriciana_sauce | country | Italy</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | capital | Rome</striple>
+						<striple>Italy | leaderName | Matteo_Renzi</striple>
+						<striple>Italy | leaderName | Sergio_Mattarella</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Italien ist das Land Amatriciana Sauce kommt. Die Hauptstadt ist Rom und politische Führer sind Matteo Renzi und Sergio Mattarella. </text>
+				<template>BRIDGE-1 ist das Land AGENT-1 kommt. Die Hauptstadt ist PATIENT-1 und politische Führer sind PATIENT-2 und PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Italy | capital | Rome</striple>
+						<striple>Italy | leaderName | Sergio_Mattarella</striple>
+						<striple>Italy | leaderName | Matteo_Renzi</striple>
+						<striple>Amatriciana_sauce | country | Italy</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Rom ist die Hauptstadt Italiens, wo Sergio Mattarell und Matteo Renzi führend sind und wo amatriciana Sauce ein traditionelles Gericht ist. </text>
+				<template>PATIENT-1 ist die Hauptstadt von BRIDGE-1, wo PATIENT-3 und PATIENT-2 führend sind und wo AGENT-1 ein traditionelles Gericht ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amatriciana_sauce</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Rome</entity>
+				<entity>PATIENT-2 | Matteo_Renzi</entity>
+				<entity>PATIENT-3 | Sergio_Mattarella</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id38" size="4">
+			<originaltripleset>
+				<otriple>Java | ethnicGroup | Baduy</otriple>
+				<otriple>Singapore | leaderName | Halimah_Yacob</otriple>
+				<otriple>Ayam_penyet | region | Singapore</otriple>
+				<otriple>Ayam_penyet | country | Java</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Java | ethnicGroup | Baduy</mtriple>
+				<mtriple>Singapore | leaderName | Halimah_Yacob</mtriple>
+				<mtriple>Ayam_penyet | region | Singapore</mtriple>
+				<mtriple>Ayam_penyet | country | Java</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ayam_penyet | region | Singapore</striple>
+						<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ayam_penyet | country | Java</striple>
+						<striple>Java | ethnicGroup | Baduy</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ayam Penyet kommt aus der Region Singapurs und Halimah Yacob ist der Führer des Landes. Es ist auch in Java zu finden, wo Baduy Volk eine ethnische Gruppe ist. </text>
+				<template>AGENT-1 kommt aus der BRIDGE-1 Region und PATIENT-2 ist BRIDGE-1 Leader. AGENT-1 findet sich auch in BRIDGE-2, wo PATIENT-1 eine ethnische Gruppe ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ayam_penyet | region | Singapore</striple>
+						<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ayam_penyet | country | Java</striple>
+						<striple>Java | ethnicGroup | Baduy</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ayam Penyet ist ein Gericht aus der Region Singapur, das von Halimah Yacob geleitet wird. Es findet sich auch in Java, wo die Baduy eine ethnische Gruppe sind. </text>
+				<template>AGENT-1 ist ein Gericht aus der Region BRIDGE-1, das von PATIENT-2 geleitet wird. AGENT-1 findet sich auch in BRIDGE-2, wo PATIENT-1 eine ethnische Gruppe ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ayam_penyet | country | Java</striple>
+						<striple>Java | ethnicGroup | Baduy</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ayam_penyet | region | Singapore</striple>
+						<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ayem penyet ist ein Gericht aus Java, wo die Baduy eine ethnische Gruppe sind. Es stammt auch aus der Region Singapur, wo der Führer Halimah Yacob ist. </text>
+				<template>AGENT-1 ist ein Gericht aus BRIDGE-2, wo PATIENT-1 eine ethnische Gruppe ist. AGENT-1 stammt auch aus der Region BRIDGE-1, wo der Führer PATIENT-2 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ayam_penyet</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>BRIDGE-2 | Java</entity>
+				<entity>PATIENT-1 | Baduy</entity>
+				<entity>PATIENT-2 | Halimah_Yacob</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id39" size="4">
+			<originaltripleset>
+				<otriple>Java | ethnicGroup | Banyumasan_people</otriple>
+				<otriple>Ayam_penyet | region | Singapore</otriple>
+				<otriple>Singapore | leaderName | Tony_Tan</otriple>
+				<otriple>Ayam_penyet | country | Java</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Java | ethnicGroup | Banyumasan_people</mtriple>
+				<mtriple>Ayam_penyet | region | Singapore</mtriple>
+				<mtriple>Singapore | leaderName | Tony_Tan</mtriple>
+				<mtriple>Ayam_penyet | country | Java</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ayam_penyet | country | Java</striple>
+						<striple>Ayam_penyet | region | Singapore</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Singapore | leaderName | Tony_Tan</striple>
+						<striple>Java | ethnicGroup | Banyumasan_people</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ayam penyet ist ein Gericht aus Java und Singapur. Der Führer des Letzteren ist Tony Tan und die Banyumasan Menschen sind eine ethnische Gruppe aus Java. </text>
+				<template>AGENT-1 ist ein Gericht aus BRIDGE-2 und BRIDGE-1. Der Führer von BRIDGE-1 ist PATIENT-2 und PATIENT-1 sind eine ethnische Gruppe von BRIDGE-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ayam_penyet | region | Singapore</striple>
+						<striple>Ayam_penyet | country | Java</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Java | ethnicGroup | Banyumasan_people</striple>
+						<striple>Singapore | leaderName | Tony_Tan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ayam penyet ist ein Gericht aus Singapur und Java. Banyumasan Menschen ist eine der ethnischen Gruppen in Java und Tony Tan ist ein Führer in Singapur. </text>
+				<template>AGENT-1 ist ein Gericht aus BRIDGE-1 und BRIDGE-2. PATIENT-1 ist eine der ethnischen Gruppen in BRIDGE-2 und PATIENT-2 ist führend in BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Java | ethnicGroup | Banyumasan_people</striple>
+						<striple>Ayam_penyet | country | Java</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ayam_penyet | region | Singapore</striple>
+						<striple>Singapore | leaderName | Tony_Tan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Banyumasan Menschen sind eine ethnische Gruppe in Java, wo das Gericht ayam penyet gefunden wird. Das Gericht stammt aus Singapur, wo Tony Tan der Anführer ist. </text>
+				<template>PATIENT-1 ist eine ethnische Gruppe in BRIDGE-2, wo AGENT-1 gefunden wird. AGENT-1 hat seinen Ursprung in BRIDGE-1, wo PATIENT-2 führend ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ayam_penyet</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>BRIDGE-2 | Java</entity>
+				<entity>PATIENT-1 | Banyumasan_people</entity>
+				<entity>PATIENT-2 | Tony_Tan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id40" size="4">
+			<originaltripleset>
+				<otriple>Philippines | ethnicGroups | Ilocano_people</otriple>
+				<otriple>Philippines | language | Philippine_Spanish</otriple>
+				<otriple>Batchoy | country | Philippines</otriple>
+				<otriple>Philippines | ethnicGroup | Moro_people</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Philippines | ethnicGroup | Ilocano_people</mtriple>
+				<mtriple>Philippines | language | Philippine_Spanish</mtriple>
+				<mtriple>Batchoy | country | Philippines</mtriple>
+				<mtriple>Philippines | ethnicGroup | Moro_people</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Philippines | language | Philippine_Spanish</striple>
+						<striple>Philippines | ethnicGroup | Ilocano_people</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Philippines | ethnicGroup | Moro_people</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Sprache, die auf den Philippinen gesprochen wird, ist philippinische Spanisch und batchoy wird dort gegessen. Ethnischen Gruppen gehören die llocano Menschen und die Moro Menschen. </text>
+				<template>Die Sprache, die in BRIDGE-1 gesprochen wird, ist PATIENT-2 und PATIENT-1 wird dort gegessen. Zu den ethnischen Gruppen gehören PATIENT-1 und PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batchoy | country | Philippines</striple>
+						<striple>Philippines | language | Philippine_Spanish</striple>
+						<striple>Philippines | ethnicGroup | Ilocano_people</striple>
+						<striple>Philippines | ethnicGroup | Moro_people</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Batchoy wird auf den Philippinen gegessen, wo Phillippine Spanisch gesprochen wird und ethnische Gruppen sind die Ilocano und Moro. </text>
+				<template>AGENT-1 wird in BRIDGE-1 gegessen, wo PATIENT-2 gesprochen wird und ethnische Gruppen PATIENT-1 und PATIENT-3 enthalten.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Philippines | ethnicGroup | Moro_people</striple>
+						<striple>Philippines | ethnicGroup | Ilocano_people</striple>
+						<striple>Batchoy | country | Philippines</striple>
+						<striple>Philippines | language | Philippine_Spanish</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Moro und die Ilocano Menschen sind ethnische Gruppen auf den Philippinen, wo Batchoy gegessen wird und die verwendete Sprache ist philippinische Spanisch. </text>
+				<template>PATIENT-3 und PATIENT-1 sind ethnische Gruppen innerhalb von BRIDGE-1, wo AGENT-1 gegessen wird und die verwendete Sprache PATIENT-2 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Batchoy</entity>
+				<entity>BRIDGE-1 | Philippines</entity>
+				<entity>PATIENT-1 | Ilocano_people</entity>
+				<entity>PATIENT-2 | Philippine_Spanish</entity>
+				<entity>PATIENT-3 | Moro_people</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id41" size="4">
+			<originaltripleset>
+				<otriple>Spain | currency | Euro</otriple>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Spain | ethnicGroup | Spaniards</otriple>
+				<otriple>Spain | leader | Felipe_VI_of_Spain</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Spain | currency | Euro</mtriple>
+				<mtriple>Arròs_negre | country | Spain</mtriple>
+				<mtriple>Spain | ethnicGroup | Spaniards</mtriple>
+				<mtriple>Spain | leaderName | Felipe_VI_of_Spain</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | country | Spain</striple>
+						<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+						<striple>Spain | currency | Euro</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Spain | ethnicGroup | Spaniards</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arròs Negre ist ein traditionelles Gericht aus Spanien, dessen Führer Felipe VI. und Euro seine Währung ist. Spanier sind die ethnische Gruppe Spaniens. </text>
+				<template>AGENT-1 ist ein traditionelles Gericht von BRIDGE-1, dessen Führer PATIENT-3 und PATIENT-1 BRIDGE-1 Währung ist. PATIENT-2 ist die ethnische Gruppe von BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Spain | currency | Euro</striple>
+						<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+						<striple>Spain | ethnicGroup | Spaniards</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Arròs_negre | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Euro ist die Währung in Spanien, wo der Führer Felipe VI. und die Spanier eine ethnische Gruppe sind. Spanien ist auch die Heimat des traditionellen Gerichts Arròs Negre. </text>
+				<template>PATIENT-1 ist die Währung in BRIDGE-1, wo der Führer PATIENT-3 und PATIENT-2 eine ethnische Gruppe sind. BRIDGE-1 ist auch die Heimat von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | country | Spain</striple>
+						<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Spain | ethnicGroup | Spaniards</striple>
+						<striple>Spain | currency | Euro</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Arròs negre ist ein Gericht aus Spanien, wo der Führer Felipe VI. Spanier sind eine ethnische Gruppe von Spanien und die Währung, die verwendet wird, ist der Euro. </text>
+				<template>AGENT-1 ist ein Gericht von BRIDGE-1, wo der Führer PATIENT-3 ist. PATIENT-2 sind eine ethnische Gruppe von BRIDGE-1 und die verwendete Währung ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>BRIDGE-1 | Spain</entity>
+				<entity>PATIENT-1 | Euro</entity>
+				<entity>PATIENT-2 | Spaniards</entity>
+				<entity>PATIENT-3 | Felipe_VI_of_Spain</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>
