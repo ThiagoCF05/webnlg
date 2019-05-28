@@ -600,6 +600,7 @@ class TemplateExtraction:
                 try:
                     if lng == 'en':
                         lex.lex_template, d = self.extract(template=lex.template)
+                        lex.lex_template = ' '.join(lex.lex_template)
                 except:
                     errors += 1
 
