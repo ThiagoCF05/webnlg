@@ -19,7 +19,7 @@ class NMT():
         self.entryset = entryset
         self._set = _set
 
-        self.tmp = 'tmp/'
+        self.tmp = 'dependencies/tmp/'
         if not os.path.exists(self.tmp):
             os.mkdir(self.tmp)
 
