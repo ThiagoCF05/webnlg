@@ -1,0 +1,1134 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Athlete" eid="Id1769" size="5">
+			<originaltripleset>
+				<otriple>Abel_Hernández | youthclubs | Peñarol</otriple>
+				<otriple>Central_Español | league | Uruguayan_Segunda_División</otriple>
+				<otriple>Abel_Hernández | team | Central_Español</otriple>
+				<otriple>Peñarol | manager | Jorge_Orosmán_da_Silva</otriple>
+				<otriple>Abel_Hernández | clubs | U.S._Città_di_Palermo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abel_Hernández | youthclub | Peñarol</mtriple>
+				<mtriple>Central_Español | league | Uruguayan_Segunda_División</mtriple>
+				<mtriple>Abel_Hernández | club | Central_Español</mtriple>
+				<mtriple>Peñarol | manager | Jorge_Orosmán_da_Silva</mtriple>
+				<mtriple>Abel_Hernández | club | U.S._Città_di_Palermo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Central_Español</striple>
+						<striple>Central_Español | league | Uruguayan_Segunda_División</striple>
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peñarol" number="1" tag="BRIDGE-2" type="name">Penarol</reference>
+					<reference entity="Abel_Hernández" number="2" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="3" tag="PATIENT-2" type="name">Jorge Orosmán da Silva</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="name">Hernandez</reference>
+					<reference entity="Uruguayan_Segunda_División" number="5" tag="PATIENT-1" type="name">Uruguayan Segunda División</reference>
+					<reference entity="Central_Español" number="6" tag="BRIDGE-1" type="name">Central Español</reference>
+					<reference entity="U.S._Città_di_Palermo" number="7" tag="PATIENT-3" type="name">U.S. Città di Palermo</reference>
+				</references>
+				<text>Penarol, where Abel Hernandez played youth football, is managed by Jorge Orosmán da Silva. Hernandez later played for Uruguayan Segunda División side Central Español and then moved to U.S. Città di Palermo.</text>
+				<template>BRIDGE-2 , where AGENT-1 played youth football , is managed by PATIENT-2 . AGENT-1 later played for PATIENT-1 side BRIDGE-1 and then moved to PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Central_Español</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Central_Español | league | Uruguayan_Segunda_División</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Peñarol" number="2" tag="BRIDGE-2" type="name">Penarol 's</reference>
+					<reference entity="Peñarol" number="3" tag="BRIDGE-2" type="description">the club</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="4" tag="PATIENT-2" type="name">Jorge Orosmán da Silva</reference>
+					<reference entity="U.S._Città_di_Palermo" number="5" tag="PATIENT-3" type="name">US Citta di Palermo</reference>
+					<reference entity="Central_Español" number="6" tag="BRIDGE-1" type="description">the Central Espanol</reference>
+					<reference entity="Abel_Hernández" number="7" tag="AGENT-1" type="name">Mr. Hernandez 's</reference>
+					<reference entity="Central_Español" number="8" tag="BRIDGE-1" type="description">The latter club</reference>
+					<reference entity="Uruguayan_Segunda_División" number="9" tag="PATIENT-1" type="name">Uruguayan Segunda División</reference>
+				</references>
+				<text>Abel Hernandez is a member of Penarol's youth club and the club is managed by Jorge Orosmán da Silva. US Citta di Palermo and the Central Espanol are also Mr. Hernandez's clubs. The latter club is part of the Uruguayan Segunda División league.</text>
+				<template>AGENT-1 is a member of BRIDGE-2 youth club and BRIDGE-2 is managed by PATIENT-2 . PATIENT-3 and BRIDGE-1 are also AGENT-1 clubs . BRIDGE-1 is part of the PATIENT-1 league .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Central_Español</striple>
+						<striple>Central_Español | league | Uruguayan_Segunda_División</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Abel_Hernández" number="2" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Peñarol" number="3" tag="BRIDGE-2" type="name">Peñarol</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="4" tag="PATIENT-2" type="name">Jorge Orosman da Silva</reference>
+					<reference entity="Abel_Hernández" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="U.S._Città_di_Palermo" number="6" tag="PATIENT-3" type="name">US Citta di Palermo</reference>
+					<reference entity="Uruguayan_Segunda_División" number="7" tag="PATIENT-1" type="name">Uruguayan Segunda Division</reference>
+					<reference entity="Central_Español" number="8" tag="BRIDGE-1" type="name">Central Espanol</reference>
+				</references>
+				<text>In his youth, Abel Hernández played for Peñarol where Jorge Orosman da Silva is the manager. He currently plays for US Citta di Palermo and also in the Uruguayan Segunda Division league with Central Espanol.</text>
+				<template>In AGENT-1 youth , AGENT-1 played for BRIDGE-2 where PATIENT-2 is the manager . AGENT-1 currently plays for PATIENT-3 and also in the PATIENT-1 league with BRIDGE-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Central_Español</entity>
+				<entity>BRIDGE-2 | Peñarol</entity>
+				<entity>PATIENT-1 | Uruguayan_Segunda_División</entity>
+				<entity>PATIENT-2 | Jorge_Orosmán_da_Silva</entity>
+				<entity>PATIENT-3 | U.S._Città_di_Palermo</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1770" size="5">
+			<originaltripleset>
+				<otriple>Aleksandr_Chumakov | deathPlace | Russia</otriple>
+				<otriple>Russia | leaderName | Valentina_Matviyenko</otriple>
+				<otriple>Aleksandr_Chumakov | clubs | FC_Torpedo_Moscow</otriple>
+				<otriple>Aleksandr_Chumakov | team | Soviet_Union_national_football_team</otriple>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Chumakov | deathPlace | Russia</mtriple>
+				<mtriple>Russia | leaderName | Valentina_Matviyenko</mtriple>
+				<mtriple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</mtriple>
+				<mtriple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</mtriple>
+				<mtriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Russia" number="2" tag="BRIDGE-1" type="name">Russia</reference>
+					<reference entity="FC_Torpedo_Moscow" number="3" tag="BRIDGE-2" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Soviet_Union_national_football_team" number="4" tag="PATIENT-2" type="description">the Soviet Union national football team</reference>
+					<reference entity="FC_Torpedo_Moscow" number="5" tag="BRIDGE-2" type="name">FC Torpedo</reference>
+					<reference entity="Valery_Petrakov" number="6" tag="PATIENT-3" type="name">FC Torpedo</reference>
+					<reference entity="Russia" number="7" tag="BRIDGE-1" type="name">Russian</reference>
+				</references>
+				<text>Aleksandr Chumakov, who died in Russia, belonged to FC Torpedo Moscow and the Soviet Union national football team. FC Torpedo is managed by FC Torpedo, a Russian leader.</text>
+				<template>AGENT-1 , who died in BRIDGE-1 , belonged to BRIDGE-2 and PATIENT-2 . BRIDGE-2 is managed by PATIENT-3 , a BRIDGE-1 leader .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</striple>
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+						<striple>Russia | leaderName | Valentina_Matviyenko</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Soviet_Union_national_football_team" number="1" tag="PATIENT-2" type="name">Former Soviet Union international</reference>
+					<reference entity="Aleksandr_Chumakov" number="2" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Russia" number="3" tag="BRIDGE-1" type="name">Russia</reference>
+					<reference entity="Valentina_Matviyenko" number="4" tag="PATIENT-1" type="name">Valentina Matviyenko</reference>
+					<reference entity="FC_Torpedo_Moscow" number="5" tag="BRIDGE-2" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="6" tag="PATIENT-3" type="name">Valery Petrakov</reference>
+					<reference entity="Aleksandr_Chumakov" number="7" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+				</references>
+				<text>Former Soviet Union international footballer Aleksandr Chumakov died in Russia, where the leader is Valentina Matviyenko. FC Torpedo Moscow, managed by Valery Petrakov, once signed Aleksandr Chumakov.</text>
+				<template>PATIENT-2 footballer AGENT-1 died in BRIDGE-1 , where the leader is PATIENT-1 . BRIDGE-2 , managed by PATIENT-3 , once signed AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+						<striple>Russia | leaderName | Valentina_Matviyenko</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</striple>
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Russia" number="2" tag="BRIDGE-1" type="name">Russia</reference>
+					<reference entity="Valentina_Matviyenko" number="3" tag="PATIENT-1" type="name">Valentina Matviyenko</reference>
+					<reference entity="Aleksandr_Chumakov" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Soviet_Union_national_football_team" number="5" tag="PATIENT-2" type="description">the Soviet Union national football team</reference>
+					<reference entity="FC_Torpedo_Moscow" number="6" tag="BRIDGE-2" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="7" tag="PATIENT-3" type="name">Valery Petrakov</reference>
+				</references>
+				<text>Aleksandr Chumakov died in Russia where Valentina Matviyenko is a leader. He belongs to the Soviet Union national football team and has played for FC Torpedo Moscow under the manager Valery Petrakov.</text>
+				<template>AGENT-1 died in BRIDGE-1 where PATIENT-1 is a leader . AGENT-1 belongs to PATIENT-2 and has played for BRIDGE-2 under the manager PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | Russia</entity>
+				<entity>BRIDGE-2 | FC_Torpedo_Moscow</entity>
+				<entity>PATIENT-1 | Valentina_Matviyenko</entity>
+				<entity>PATIENT-2 | Soviet_Union_national_football_team</entity>
+				<entity>PATIENT-3 | Valery_Petrakov</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1771" size="5">
+			<originaltripleset>
+				<otriple>Aleksandre_Guruli | team | FC_Karpaty_Lviv</otriple>
+				<otriple>FC_Karpaty_Lviv | manager | Oleh_Luzhny</otriple>
+				<otriple>Olympique_Lyonnais | chairman | Jean-Michel_Aulas</otriple>
+				<otriple>Aleksandre_Guruli | clubs | Olympique_Lyonnais</otriple>
+				<otriple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</mtriple>
+				<mtriple>FC_Karpaty_Lviv | manager | Oleh_Luzhny</mtriple>
+				<mtriple>Olympique_Lyonnais | chairman | Jean-Michel_Aulas</mtriple>
+				<mtriple>Aleksandre_Guruli | club | Olympique_Lyonnais</mtriple>
+				<mtriple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | chairman | Jean-Michel_Aulas</striple>
+						<striple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+						<striple>FC_Karpaty_Lviv | manager | Oleh_Luzhny</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli 's</reference>
+					<reference entity="Olympique_Lyonnais" number="2" tag="BRIDGE-2" type="name">Olympique Lyonnais</reference>
+					<reference entity="Jean-Michel_Aulas" number="3" tag="PATIENT-2" type="name">Jean-Michel Aulas</reference>
+					<reference entity="Olympique_Lyonnais" number="4" tag="BRIDGE-2" type="name">their</reference>
+					<reference entity="Parc_Olympique_Lyonnais" number="5" tag="PATIENT-3" type="description">the Parc Olympique Lyonnais stadium</reference>
+					<reference entity="Aleksandre_Guruli" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Karpaty_Lviv" number="7" tag="BRIDGE-1" type="name">FC Karpaty Lviv</reference>
+					<reference entity="Oleh_Luzhny" number="8" tag="PATIENT-1" type="name">Oleh Luzhny</reference>
+				</references>
+				<text>Aleksandre Guruli's club is Olympique Lyonnais who are chaired by Jean-Michel Aulas and have their home ground at the Parc Olympique Lyonnais stadium. He also plays for FC Karpaty Lviv who are managed by Oleh Luzhny.</text>
+				<template>AGENT-1 club is BRIDGE-2 who are chaired by PATIENT-2 and have BRIDGE-2 home ground at PATIENT-3 . AGENT-1 also plays for BRIDGE-1 who are managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | chairman | Jean-Michel_Aulas</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+						<striple>FC_Karpaty_Lviv | manager | Oleh_Luzhny</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="Olympique_Lyonnais" number="2" tag="BRIDGE-2" type="name">Olympique Lyonnais</reference>
+					<reference entity="Olympique_Lyonnais" number="3" tag="BRIDGE-2" type="name">their</reference>
+					<reference entity="Parc_Olympique_Lyonnais" number="4" tag="PATIENT-3" type="description">the Parc Olympique Lyonnais</reference>
+					<reference entity="Jean-Michel_Aulas" number="5" tag="PATIENT-2" type="name">Jean-Michel Aulas</reference>
+					<reference entity="Aleksandre_Guruli" number="6" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="FC_Karpaty_Lviv" number="7" tag="BRIDGE-1" type="name">FC Karpaty Lviv</reference>
+					<reference entity="Oleh_Luzhny" number="8" tag="PATIENT-1" type="name">Oleh Luzhny</reference>
+				</references>
+				<text>Aleksandre Guruli played for the Olympique Lyonnais club who play their home games at the Parc Olympique Lyonnais and have the chairman, Jean-Michel Aulas. His current club is FC Karpaty Lviv managed by Oleh Luzhny.</text>
+				<template>AGENT-1 played for the BRIDGE-2 club who play BRIDGE-2 home games at PATIENT-3 and have the chairman , PATIENT-2 . AGENT-1 current club is BRIDGE-1 managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+						<striple>FC_Karpaty_Lviv | manager | Oleh_Luzhny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandre_Guruli | club | Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | chairman | Jean-Michel_Aulas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="FC_Karpaty_Lviv" number="2" tag="BRIDGE-1" type="name">FC Karpaty Lviv</reference>
+					<reference entity="Oleh_Luzhny" number="3" tag="PATIENT-1" type="name">Oleh Luzhny</reference>
+					<reference entity="Aleksandre_Guruli" number="4" tag="AGENT-1" type="name">Guruli</reference>
+					<reference entity="Olympique_Lyonnais" number="5" tag="BRIDGE-2" type="name">Olympique Lyonnais</reference>
+					<reference entity="Parc_Olympique_Lyonnais" number="6" tag="PATIENT-3" type="description">the Parc Olympique Lyonnais</reference>
+					<reference entity="Jean-Michel_Aulas" number="7" tag="PATIENT-2" type="name">Jean-Michel Aulas</reference>
+				</references>
+				<text>Aleksandre Guruli played for FC Karpaty Lviv who are managed by Oleh Luzhny. Guruli has also played for Olympique Lyonnais whose home ground is the Parc Olympique Lyonnais and whose chairman is Jean-Michel Aulas.</text>
+				<template>AGENT-1 played for BRIDGE-1 who are managed by PATIENT-1 . AGENT-1 has also played for BRIDGE-2 whose home ground is PATIENT-3 and whose chairman is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandre_Guruli</entity>
+				<entity>BRIDGE-1 | FC_Karpaty_Lviv</entity>
+				<entity>BRIDGE-2 | Olympique_Lyonnais</entity>
+				<entity>PATIENT-1 | Oleh_Luzhny</entity>
+				<entity>PATIENT-2 | Jean-Michel_Aulas</entity>
+				<entity>PATIENT-3 | Parc_Olympique_Lyonnais</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1772" size="5">
+			<originaltripleset>
+				<otriple>Alessio_Romagnoli | team | A.C._Milan</otriple>
+				<otriple>A.C._Milan | league | Serie_A</otriple>
+				<otriple>A.C._Milan | manager | Siniša_Mihajlović</otriple>
+				<otriple>Alessio_Romagnoli | position | Defender_(association_football)</otriple>
+				<otriple>Alessio_Romagnoli | clubs | &quot;→ Sampdoria&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alessio_Romagnoli | club | A.C._Milan</mtriple>
+				<mtriple>A.C._Milan | league | Serie_A</mtriple>
+				<mtriple>A.C._Milan | manager | Siniša_Mihajlović</mtriple>
+				<mtriple>Alessio_Romagnoli | position | Defender_(football)</mtriple>
+				<mtriple>Alessio_Romagnoli | club | U.C._Sampdoria</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | position | Defender_(football)</striple>
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+						<striple>A.C._Milan | league | Serie_A</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Defender_(football)" number="1" tag="PATIENT-3" type="description">The defender</reference>
+					<reference entity="Alessio_Romagnoli" number="2" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="Serie_A" number="3" tag="PATIENT-1" type="name">Serie A</reference>
+					<reference entity="A.C._Milan" number="4" tag="BRIDGE-1" type="name">A.C. Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="5" tag="PATIENT-2" type="name">Sinisa Mihajlovic</reference>
+					<reference entity="Alessio_Romagnoli" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="U.C._Sampdoria" number="7" tag="PATIENT-4" type="name">UC Sampdoria</reference>
+				</references>
+				<text>The defender, Alessio Romagnoli is a member of the Serie A league club A.C. Milan who are managed by Sinisa Mihajlovic. He is also connected to UC Sampdoria.</text>
+				<template>PATIENT-3 , AGENT-1 is a member of the PATIENT-1 league club BRIDGE-1 who are managed by PATIENT-2 . AGENT-1 is also connected to PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | position | Defender_(football)</striple>
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+						<striple>A.C._Milan | league | Serie_A</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Defender_(football)" number="1" tag="PATIENT-3" type="name">Defender</reference>
+					<reference entity="Alessio_Romagnoli" number="2" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="U.C._Sampdoria" number="3" tag="PATIENT-4" type="name">UC Sampdoria</reference>
+					<reference entity="Serie_A" number="4" tag="PATIENT-1" type="name">Serie A</reference>
+					<reference entity="A.C._Milan" number="5" tag="BRIDGE-1" type="name">AC Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="6" tag="PATIENT-2" type="name">Siniša Mihajlović</reference>
+				</references>
+				<text>Defender @ Alessio Romagnoli, whose former clubs include UC Sampdoria, has played for the Serie A side AC Milan, which is managed by Siniša Mihajlović.</text>
+				<template>PATIENT-3 @ AGENT-1 , whose former clubs include PATIENT-4 , has played for the PATIENT-1 side BRIDGE-1 , which is managed by PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+						<striple>A.C._Milan | league | Serie_A</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="U.C._Sampdoria" number="2" tag="PATIENT-4" type="name">UC Sampdoria</reference>
+					<reference entity="Alessio_Romagnoli" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Serie_A" number="4" tag="PATIENT-1" type="name">Serie A</reference>
+					<reference entity="A.C._Milan" number="5" tag="BRIDGE-1" type="name">AC Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="6" tag="PATIENT-2" type="name">Sinisa Mihajlovic</reference>
+				</references>
+				<text>Alessio Romagnoli is a defender who plays for UC Sampdoria. He also plays in Serie A for AC Milan who are managed by Sinisa Mihajlovic.</text>
+				<template>AGENT-1 is a defender who plays for PATIENT-4 . AGENT-1 also plays in PATIENT-1 for BRIDGE-1 who are managed by PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alessio_Romagnoli</entity>
+				<entity>BRIDGE-1 | A.C._Milan</entity>
+				<entity>PATIENT-1 | Serie_A</entity>
+				<entity>PATIENT-2 | Siniša_Mihajlović</entity>
+				<entity>PATIENT-3 | Defender_(football)</entity>
+				<entity>PATIENT-4 | U.C._Sampdoria</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1773" size="5">
+			<originaltripleset>
+				<otriple>Alessio_Romagnoli | currentclub | A.C._Milan</otriple>
+				<otriple>A.C._Milan | manager | Siniša_Mihajlović</otriple>
+				<otriple>A.C._Milan | chairman | Silvio_Berlusconi</otriple>
+				<otriple>Alessio_Romagnoli | team | Italy_national_under-17_football_team</otriple>
+				<otriple>Alessio_Romagnoli | clubs | &quot;→ Sampdoria&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alessio_Romagnoli | currentclub | A.C._Milan</mtriple>
+				<mtriple>A.C._Milan | manager | Siniša_Mihajlović</mtriple>
+				<mtriple>A.C._Milan | chairman | Silvio_Berlusconi</mtriple>
+				<mtriple>Alessio_Romagnoli | club | Italy_national_under-17_football_team</mtriple>
+				<mtriple>Alessio_Romagnoli | club | U.C._Sampdoria</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | currentclub | A.C._Milan</striple>
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+						<striple>Alessio_Romagnoli | club | Italy_national_under-17_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+						<striple>A.C._Milan | chairman | Silvio_Berlusconi</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="A.C._Milan" number="2" tag="BRIDGE-1" type="name">A.C. Milan</reference>
+					<reference entity="U.C._Sampdoria" number="3" tag="PATIENT-4" type="name">U.C . Sampdoria</reference>
+					<reference entity="Italy_national_under-17_football_team" number="4" tag="PATIENT-3" type="name">Italy 's national under-17 football tea ,</reference>
+					<reference entity="A.C._Milan" number="5" tag="BRIDGE-1" type="description">A C Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="6" tag="PATIENT-1" type="name">Siniša Mihajlović</reference>
+					<reference entity="Silvio_Berlusconi" number="7" tag="PATIENT-2" type="name">Silvio Berlusconi</reference>
+				</references>
+				<text>Alessio Romagnoli belongs to A.C. Milan and plays for U.C. Sampdoria and Italy's national under-17 football tea,. A C Milan is managed by Siniša Mihajlović and includes chairman Silvio Berlusconi.</text>
+				<template>AGENT-1 belongs to BRIDGE-1 and plays for PATIENT-4 and PATIENT-3 . BRIDGE-1 is managed by PATIENT-1 and includes chairman PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | Italy_national_under-17_football_team</striple>
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alessio_Romagnoli | currentclub | A.C._Milan</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+						<striple>A.C._Milan | chairman | Silvio_Berlusconi</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="Italy_national_under-17_football_team" number="2" tag="PATIENT-3" type="description">the Italian national under 17 football team</reference>
+					<reference entity="U.C._Sampdoria" number="3" tag="PATIENT-4" type="name">U.C</reference>
+					<reference entity="Alessio_Romagnoli" number="4" tag="AGENT-1" type="name">Sampdoria . He</reference>
+					<reference entity="A.C._Milan" number="5" tag="BRIDGE-1" type="description">the AC Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="6" tag="PATIENT-1" type="name">Siniša Mihajlović</reference>
+					<reference entity="Silvio_Berlusconi" number="7" tag="PATIENT-2" type="name">Silvio Berlusconi</reference>
+				</references>
+				<text>Alessio Romagnoli is a member of the Italian national under 17 football team and has represented the club U.C. Sampdoria. He is presently with the AC Milan that is managed by Siniša Mihajlović and whose chairman is Silvio Berlusconi.</text>
+				<template>AGENT-1 is a member of PATIENT-3 and has represented the club PATIENT-4 . AGENT-1 is presently with BRIDGE-1 that is managed by PATIENT-1 and whose chairman is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alessio_Romagnoli</entity>
+				<entity>BRIDGE-1 | A.C._Milan</entity>
+				<entity>PATIENT-1 | Siniša_Mihajlović</entity>
+				<entity>PATIENT-2 | Silvio_Berlusconi</entity>
+				<entity>PATIENT-3 | Italy_national_under-17_football_team</entity>
+				<entity>PATIENT-4 | U.C._Sampdoria</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1774" size="5">
+			<originaltripleset>
+				<otriple>Central_Español | league | Uruguayan_Segunda_División</otriple>
+				<otriple>Abel_Hernández | youthclubs | Central_Español</otriple>
+				<otriple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</otriple>
+				<otriple>Abel_Hernández | team | Uruguay_national_football_team</otriple>
+				<otriple>Abel_Hernández | clubs | U.S._Città_di_Palermo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Central_Español | league | Uruguayan_Segunda_División</mtriple>
+				<mtriple>Abel_Hernández | youthclub | Central_Español</mtriple>
+				<mtriple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</mtriple>
+				<mtriple>Abel_Hernández | club | Uruguay_national_football_team</mtriple>
+				<mtriple>Abel_Hernández | club | U.S._Città_di_Palermo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+						<striple>Central_Español | league | Uruguayan_Segunda_División</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Uruguay_national_football_team</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Central_Español" number="2" tag="BRIDGE-1" type="name">Central Español</reference>
+					<reference entity="Uruguayan_Segunda_División" number="3" tag="PATIENT-1" type="name">Uruguayan Segunda División</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="name">Mr. Hernandez</reference>
+					<reference entity="U.S._Città_di_Palermo" number="5" tag="BRIDGE-2" type="description">the US Citta di Palermo</reference>
+					<reference entity="Uruguay_national_football_team" number="6" tag="PATIENT-3" type="description">the Uruguay National football team</reference>
+					<reference entity="Giuseppe_Iachini" number="7" tag="PATIENT-2" type="name">Giuseppe Iachini</reference>
+					<reference entity="U.S._Città_di_Palermo" number="8" tag="BRIDGE-2" type="name">U.S. Città di Palermo</reference>
+				</references>
+				<text>Abel Hernández played youth football for Central Español part of the Uruguayan Segunda División league. Mr. Hernandez plays for the US Citta di Palermo and the Uruguay National football team. Giuseppe Iachini manages the U.S. Città di Palermo team.</text>
+				<template>AGENT-1 played youth football for BRIDGE-1 part of the PATIENT-1 league . AGENT-1 plays for BRIDGE-2 and PATIENT-3 . PATIENT-2 manages the BRIDGE-2 team .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+						<striple>Central_Español | league | Uruguayan_Segunda_División</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Uruguay_national_football_team</striple>
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Central_Español" number="1" tag="BRIDGE-1" type="name">Central Español</reference>
+					<reference entity="Abel_Hernández" number="2" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Uruguayan_Segunda_División" number="3" tag="PATIENT-1" type="name">Uruguayan Segunda División</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="name">Hernández</reference>
+					<reference entity="Uruguay_national_football_team" number="5" tag="PATIENT-3" type="name">Uruguay at international level</reference>
+					<reference entity="U.S._Città_di_Palermo" number="6" tag="BRIDGE-2" type="name">U.S. Città di Palermo</reference>
+					<reference entity="Giuseppe_Iachini" number="7" tag="PATIENT-2" type="name">Giuseppe Iachini</reference>
+				</references>
+				<text>Central Español, where Abel Hernandez played youth football, are part of the Uruguayan Segunda División league. Hernández has represented Uruguay at international level and also played for the club U.S. Città di Palermo, where the manager is Giuseppe Iachini.</text>
+				<template>BRIDGE-1 , where AGENT-1 played youth football , are part of the PATIENT-1 league . AGENT-1 has represented PATIENT-3 and also played for the club BRIDGE-2 , where the manager is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+						<striple>Central_Español | league | Uruguayan_Segunda_División</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</striple>
+						<striple>Abel_Hernández | club | Uruguay_national_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Central_Español" number="2" tag="BRIDGE-1" type="name">Central Espanol</reference>
+					<reference entity="Uruguayan_Segunda_División" number="3" tag="PATIENT-1" type="name">Uruguayan Segunda División</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="U.S._Città_di_Palermo" number="5" tag="BRIDGE-2" type="description">the US Citta di Palermo</reference>
+					<reference entity="Giuseppe_Iachini" number="6" tag="PATIENT-2" type="name">Giuseppe Iachini</reference>
+					<reference entity="Uruguay_national_football_team" number="7" tag="PATIENT-3" type="description">the Uruguay National football team</reference>
+				</references>
+				<text>Abel Hernandez played youth football for Central Espanol, part of the Uruguayan Segunda División league. He plays for the US Citta di Palermo, managed by Giuseppe Iachini, and the Uruguay National football team.</text>
+				<template>AGENT-1 played youth football for BRIDGE-1 , part of the PATIENT-1 league . AGENT-1 plays for BRIDGE-2 , managed by PATIENT-2 , and PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Central_Español</entity>
+				<entity>BRIDGE-2 | U.S._Città_di_Palermo</entity>
+				<entity>PATIENT-1 | Uruguayan_Segunda_División</entity>
+				<entity>PATIENT-2 | Giuseppe_Iachini</entity>
+				<entity>PATIENT-3 | Uruguay_national_football_team</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1775" size="5">
+			<originaltripleset>
+				<otriple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</otriple>
+				<otriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Amkar_Perm</otriple>
+				<otriple>FC_Amkar_Perm | manager | Gadzhi_Gadzhiyev</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</mtriple>
+				<mtriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Amkar_Perm</mtriple>
+				<mtriple>FC_Amkar_Perm | manager | Gadzhi_Gadzhiyev</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Amkar_Perm</striple>
+						<striple>FC_Amkar_Perm | manager | Gadzhi_Gadzhiyev</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov 's</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Sergey_Rodionov" number="3" tag="PATIENT-1" type="name">Sergey Rodionov</reference>
+					<reference entity="FC_Spartak_Moscow" number="4" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Otkrytiye_Arena" number="5" tag="PATIENT-2" type="description">the Otkrytiye arena</reference>
+					<reference entity="Aleksandr_Prudnikov" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Amkar_Perm" number="7" tag="BRIDGE-2" type="name">FC Amkar Perm</reference>
+					<reference entity="Gadzhi_Gadzhiyev" number="8" tag="PATIENT-3" type="name">Gadzhi Gadzhiyev</reference>
+				</references>
+				<text>Aleksandr Prudnikov's club is FC Spartak Moscow who have Sergey Rodionov as their chairman and play at the Otkrytiye arena. He also plays for FC Amkar Perm who are managed by Gadzhi Gadzhiyev.</text>
+				<template>AGENT-1 club is BRIDGE-1 who have PATIENT-1 as BRIDGE-1 chairman and play at PATIENT-2 . AGENT-1 also plays for BRIDGE-2 who are managed by PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+						<striple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Amkar_Perm</striple>
+						<striple>FC_Amkar_Perm | manager | Gadzhi_Gadzhiyev</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="FC_Spartak_Moscow" number="3" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Otkrytiye_Arena" number="4" tag="PATIENT-2" type="name">Otkrytiye Arena</reference>
+					<reference entity="Sergey_Rodionov" number="5" tag="PATIENT-1" type="name">Sergey Rodionov</reference>
+					<reference entity="Aleksandr_Prudnikov" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Amkar_Perm" number="7" tag="BRIDGE-2" type="name">FC Amkar Perm</reference>
+					<reference entity="Gadzhi_Gadzhiyev" number="8" tag="PATIENT-3" type="name">Gadzhi Gadzhiyev</reference>
+				</references>
+				<text>Aleksandr Prudnikov plays for FC Spartak Moscow who have their home ground at Otkrytiye Arena and are chaired by Sergey Rodionov. He also plays for FC Amkar Perm under the management of Gadzhi Gadzhiyev.</text>
+				<template>AGENT-1 plays for BRIDGE-1 who have BRIDGE-1 home ground at PATIENT-2 and are chaired by PATIENT-1 . AGENT-1 also plays for BRIDGE-2 under the management of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Amkar_Perm</striple>
+						<striple>FC_Amkar_Perm | manager | Gadzhi_Gadzhiyev</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sergey_Rodionov" number="1" tag="PATIENT-1" type="name">Sergey Rodionov</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Otkrytiye_Arena" number="3" tag="PATIENT-2" type="description">the Otkrytiye Arena</reference>
+					<reference entity="Aleksandr_Prudnikov" number="4" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="5" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Aleksandr_Prudnikov" number="6" tag="AGENT-1" type="name">Prudnikov</reference>
+					<reference entity="FC_Amkar_Perm" number="7" tag="BRIDGE-2" type="name">FC Amkar Perm</reference>
+					<reference entity="Gadzhi_Gadzhiyev" number="8" tag="PATIENT-3" type="name">Gadzhi Gadzhiyev</reference>
+				</references>
+				<text>Sergey Rodionov is the chairman of FC Spartak Moscow, who play at the Otkrytiye Arena and count Aleksandr Prudnikov as one of their former players. Prudnikov has also played for FC Amkar Perm, where the manager was Gadzhi Gadzhiyev.</text>
+				<template>PATIENT-1 is the chairman of BRIDGE-1 , who play at PATIENT-2 and count AGENT-1 as one of BRIDGE-1 former players . AGENT-1 has also played for BRIDGE-2 , where the manager was PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Spartak_Moscow</entity>
+				<entity>BRIDGE-2 | FC_Amkar_Perm</entity>
+				<entity>PATIENT-1 | Sergey_Rodionov</entity>
+				<entity>PATIENT-2 | Otkrytiye_Arena</entity>
+				<entity>PATIENT-3 | Gadzhi_Gadzhiyev</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1776" size="5">
+			<originaltripleset>
+				<otriple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</otriple>
+				<otriple>FC_Terek_Grozny | ground | Grozny</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Terek_Grozny</otriple>
+				<otriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</mtriple>
+				<mtriple>FC_Terek_Grozny | ground | Grozny</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</mtriple>
+				<mtriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Terek_Grozny" number="2" tag="BRIDGE-2" type="name">FC Terek Grozny</reference>
+					<reference entity="Grozny" number="3" tag="PATIENT-2" type="name">Grozny</reference>
+					<reference entity="Rashid_Rakhimov" number="4" tag="PATIENT-3" type="name">Rashid Rakhimov</reference>
+					<reference entity="FC_Spartak_Moscow" number="5" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Sergey_Rodionov" number="6" tag="PATIENT-1" type="name">Sergey Rodionov</reference>
+				</references>
+				<text>Aleksandr Prudnikov has played for the clubs FC Terek Grozny (based in Grozny), where the manager was Rashid Rakhimov and FC Spartak Moscow, whose chairman is Sergey Rodionov.</text>
+				<template>AGENT-1 has played for the clubs BRIDGE-2 (based in PATIENT-2) , where the manager was PATIENT-3 and BRIDGE-1 , whose chairman is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prydnikov</reference>
+					<reference entity="FC_Terek_Grozny" number="2" tag="BRIDGE-2" type="name">FC Terek Grozny</reference>
+					<reference entity="Rashid_Rakhimov" number="3" tag="PATIENT-3" type="name">Rashid Rakhimov</reference>
+					<reference entity="FC_Terek_Grozny" number="4" tag="BRIDGE-2" type="pronoun">its</reference>
+					<reference entity="Grozny" number="5" tag="PATIENT-2" type="name">Grozny</reference>
+					<reference entity="Aleksandr_Prudnikov" number="6" tag="AGENT-1" type="name">Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="7" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Sergey_Rodionov" number="8" tag="PATIENT-1" type="name">Sergey Rodionov</reference>
+				</references>
+				<text>Aleksandr Prydnikov belongs to FC Terek Grozny, which is managed by Rashid Rakhimov, and has its grounds at Grozny. Prudnikov plays for FC Spartak Moscow, which includes chairman Sergey Rodionov.</text>
+				<template>AGENT-1 belongs to BRIDGE-2 , which is managed by PATIENT-3 , and has BRIDGE-2 grounds at PATIENT-2 . AGENT-1 plays for BRIDGE-1 , which includes chairman PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | chairman | Sergey_Rodionov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Terek_Grozny" number="2" tag="BRIDGE-2" type="name">FC Terek Grozny</reference>
+					<reference entity="Rashid_Rakhimov" number="3" tag="PATIENT-3" type="name">Rashid Rakhimov</reference>
+					<reference entity="FC_Terek_Grozny" number="4" tag="BRIDGE-2" type="pronoun">it</reference>
+					<reference entity="Grozny" number="5" tag="PATIENT-2" type="name">Grozny</reference>
+					<reference entity="Aleksandr_Prudnikov" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Spartak_Moscow" number="7" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Sergey_Rodionov" number="8" tag="PATIENT-1" type="name">Sergey Rodionov</reference>
+				</references>
+				<text>Aleksandr Prudnikov belongs to FC Terek Grozny, which is managed by Rashid Rakhimov and has it grounds at Grozny. He played for FC Spartak Moscow, which includes Sergey Rodionov.</text>
+				<template>AGENT-1 belongs to BRIDGE-2 , which is managed by PATIENT-3 and has BRIDGE-2 grounds at PATIENT-2 . AGENT-1 played for BRIDGE-1 , which includes PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Spartak_Moscow</entity>
+				<entity>BRIDGE-2 | FC_Terek_Grozny</entity>
+				<entity>PATIENT-1 | Sergey_Rodionov</entity>
+				<entity>PATIENT-2 | Grozny</entity>
+				<entity>PATIENT-3 | Rashid_Rakhimov</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1777" size="5">
+			<originaltripleset>
+				<otriple>FC_Terek_Grozny | ground | Grozny</otriple>
+				<otriple>Aleksandr_Prudnikov | youthclubs | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Terek_Grozny</otriple>
+				<otriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Dynamo_Moscow</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Terek_Grozny | ground | Grozny</mtriple>
+				<mtriple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</mtriple>
+				<mtriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="PATIENT-2" type="name">FC Spartak Moscow 's</reference>
+					<reference entity="FC_Dynamo_Moscow" number="3" tag="PATIENT-4" type="name">FC Dynamo Moscow</reference>
+					<reference entity="Aleksandr_Prudnikov" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Grozny" number="5" tag="PATIENT-1" type="name">Grozy</reference>
+					<reference entity="FC_Terek_Grozny" number="6" tag="BRIDGE-1" type="name">FC Terek Grozny</reference>
+					<reference entity="Rashid_Rakhimov" number="7" tag="PATIENT-3" type="name">Rashid Rakhimov</reference>
+				</references>
+				<text>Aleksandr Prudnikov played for FC Spartak Moscow's youth team and later for FC Dynamo Moscow. He has also been signed to Grozy based FC Terek Grozny, who are managed by Rashid Rakhimov.</text>
+				<template>AGENT-1 played for PATIENT-2 youth team and later for PATIENT-4 . AGENT-1 has also been signed to PATIENT-1 based BRIDGE-1 , who are managed by PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="PATIENT-2" type="name">FC Spartak Moscow 's</reference>
+					<reference entity="FC_Dynamo_Moscow" number="3" tag="PATIENT-4" type="description">the FC Dynamo Moscow</reference>
+					<reference entity="FC_Terek_Grozny" number="4" tag="BRIDGE-1" type="description">the FC Terek Grozny</reference>
+					<reference entity="Grozny" number="5" tag="PATIENT-1" type="name">Grozny</reference>
+					<reference entity="FC_Terek_Grozny" number="6" tag="BRIDGE-1" type="description">The FC Terek Grozny</reference>
+					<reference entity="Rashid_Rakhimov" number="7" tag="PATIENT-3" type="name">Rashid Rakhimov</reference>
+				</references>
+				<text>Aleksandr Prudnikov once played for FC Spartak Moscow's youth team but now plays for the FC Dynamo Moscow and the FC Terek Grozny out of Grozny. The FC Terek Grozny sees a manager in Rashid Rakhimov.</text>
+				<template>AGENT-1 once played for PATIENT-2 youth team but now plays for PATIENT-4 and BRIDGE-1 out of PATIENT-1 . BRIDGE-1 sees a manager in PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov 's</reference>
+					<reference entity="FC_Dynamo_Moscow" number="2" tag="PATIENT-4" type="name">FC Dynamo Moscow</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="FC_Spartak_Moscow" number="4" tag="PATIENT-2" type="name">FC Spartak Moscow 's</reference>
+					<reference entity="Aleksandr_Prudnikov" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Grozny" number="6" tag="PATIENT-1" type="name">Grozny</reference>
+					<reference entity="FC_Terek_Grozny" number="7" tag="BRIDGE-1" type="name">FC Terek Grozny</reference>
+					<reference entity="FC_Terek_Grozny" number="8" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Rashid_Rakhimov" number="9" tag="PATIENT-3" type="name">Rashid Rakhimov</reference>
+				</references>
+				<text>Aleksandr Prudnikov's club is FC Dynamo Moscow although he previously played for FC Spartak Moscow's youth team. He is currently in the Grozny based FC Terek Grozny club under their manager, Rashid Rakhimov.</text>
+				<template>AGENT-1 club is PATIENT-4 although AGENT-1 previously played for PATIENT-2 youth team . AGENT-1 is currently in the PATIENT-1 based BRIDGE-1 club under BRIDGE-1 manager , PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Terek_Grozny</entity>
+				<entity>PATIENT-1 | Grozny</entity>
+				<entity>PATIENT-2 | FC_Spartak_Moscow</entity>
+				<entity>PATIENT-3 | Rashid_Rakhimov</entity>
+				<entity>PATIENT-4 | FC_Dynamo_Moscow</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1778" size="5">
+			<originaltripleset>
+				<otriple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</otriple>
+				<otriple>Aleksandr_Chumakov | placeOfBirth | Soviet_Union</otriple>
+				<otriple>Aleksandr_Chumakov | clubs | FC_Torpedo_Moscow</otriple>
+				<otriple>Aleksandr_Chumakov | team | Soviet_Union_national_football_team</otriple>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</mtriple>
+				<mtriple>Aleksandr_Chumakov | birthPlace | Soviet_Union</mtriple>
+				<mtriple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</mtriple>
+				<mtriple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</mtriple>
+				<mtriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | birthPlace | Soviet_Union</striple>
+						<striple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</striple>
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Soviet_Union" number="2" tag="PATIENT-2" type="description">the soviet Union</reference>
+					<reference entity="Soviet_Union_national_football_team" number="3" tag="PATIENT-3" type="description">the Soviet Union national football team</reference>
+					<reference entity="FC_Torpedo_Moscow" number="4" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="5" tag="PATIENT-1" type="name">Russian Premier League 's 2014-15</reference>
+					<reference entity="Valery_Petrakov" number="6" tag="PATIENT-4" type="name">Valery Petrakov</reference>
+				</references>
+				<text>Aleksandr Chumakov, born in the soviet Union, belongs to the Soviet Union national football team and plays for FC Torpedo Moscow, which plays in the Russian Premier League's 2014-15 season and is managed by Valery Petrakov.</text>
+				<template>AGENT-1 , born in PATIENT-2 , belongs to PATIENT-3 and plays for BRIDGE-1 , which plays in the PATIENT-1 season and is managed by PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | birthPlace | Soviet_Union</striple>
+						<striple>Aleksandr_Chumakov | club | Soviet_Union_national_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Soviet_Union" number="2" tag="PATIENT-2" type="description">the Soviet Union</reference>
+					<reference entity="Soviet_Union_national_football_team" number="3" tag="PATIENT-3" type="description">the Soviet Union national football team</reference>
+					<reference entity="Aleksandr_Chumakov" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Torpedo_Moscow" number="5" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="6" tag="PATIENT-4" type="name">Valery Petrakov</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="7" tag="PATIENT-1" type="description">the 2014-15 Russian Premier League</reference>
+				</references>
+				<text>Aleksandr Chumakov was born in the Soviet Union and was a member of the Soviet Union national football team. He has also played for FC Torpedo Moscow who are managed by Valery Petrakov and participated in the 2014-15 Russian Premier League.</text>
+				<template>AGENT-1 was born in PATIENT-2 and was a member of PATIENT-3 . AGENT-1 has also played for BRIDGE-1 who are managed by PATIENT-4 and participated in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | birthPlace | Soviet_Union</striple>
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Soviet_Union" number="1" tag="PATIENT-2" type="description">the Soviet Union</reference>
+					<reference entity="Aleksandr_Chumakov" number="2" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Aleksandr_Chumakov" number="3" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="4" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="5" tag="PATIENT-1" type="description">the 2014-15 Russian Premier League</reference>
+					<reference entity="Valery_Petrakov" number="6" tag="PATIENT-4" type="name">Valery Petrakov</reference>
+				</references>
+				<text>Born in the Soviet Union and representing his country at international football, Aleksandr Chumakov played for FC Torpedo Moscow, who competed in the 2014-15 Russian Premier League and whose manager is Valery Petrakov.</text>
+				<template>Born in PATIENT-2 and representing AGENT-1 country at international football , AGENT-1 played for BRIDGE-1 , who competed in PATIENT-1 and whose manager is PATIENT-4 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | FC_Torpedo_Moscow</entity>
+				<entity>PATIENT-1 | 2014–15_Russian_Premier_League</entity>
+				<entity>PATIENT-2 | Soviet_Union</entity>
+				<entity>PATIENT-3 | Soviet_Union_national_football_team</entity>
+				<entity>PATIENT-4 | Valery_Petrakov</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1779" size="5">
+			<originaltripleset>
+				<otriple>Ferencvárosi_TC | manager | Thomas_Doll</otriple>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco</otriple>
+				<otriple>Akeem_Adams | team | Ferencvárosi_TC</otriple>
+				<otriple>Ferencvárosi_TC | chairman | Gábor_Kubatov</otriple>
+				<otriple>Akeem_Adams | clubs | United_Petrotrin_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ferencvárosi_TC | manager | Thomas_Doll</mtriple>
+				<mtriple>United_Petrotrin_F.C. | ground | Palo_Seco</mtriple>
+				<mtriple>Akeem_Adams | club | Ferencvárosi_TC</mtriple>
+				<mtriple>Ferencvárosi_TC | chairman | Gábor_Kubatov</mtriple>
+				<mtriple>Akeem_Adams | club | United_Petrotrin_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+						<striple>Ferencvárosi_TC | chairman | Gábor_Kubatov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams '</reference>
+					<reference entity="United_Petrotrin_F.C." number="2" tag="BRIDGE-2" type="name">United Petrotrin FC</reference>
+					<reference entity="Palo_Seco" number="3" tag="PATIENT-2" type="name">Palo Seco</reference>
+					<reference entity="Ferencvárosi_TC" number="4" tag="BRIDGE-1" type="name">Ferencvarosi TC</reference>
+					<reference entity="Thomas_Doll" number="5" tag="PATIENT-1" type="name">Thomas Doll</reference>
+					<reference entity="Gábor_Kubatov" number="6" tag="PATIENT-3" type="name">Gabor Kubatov</reference>
+				</references>
+				<text>Akeem Adams' former clubs include United Petrotrin FC, who play at Palo Seco, and Ferencvarosi TC, where Thomas Doll is the manager and Gabor Kubatov is the chairman.</text>
+				<template>AGENT-1 former clubs include BRIDGE-2 , who play at PATIENT-2 , and BRIDGE-1 , where PATIENT-1 is the manager and PATIENT-3 is the chairman .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+						<striple>Ferencvárosi_TC | chairman | Gábor_Kubatov</striple>
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="United_Petrotrin_F.C." number="2" tag="BRIDGE-2" type="name">United Petrotrin F.C .</reference>
+					<reference entity="Ferencvárosi_TC" number="3" tag="BRIDGE-1" type="name">Ferencvarosi TC</reference>
+					<reference entity="Ferencvárosi_TC" number="4" tag="BRIDGE-1" type="description">The latter club</reference>
+					<reference entity="Palo_Seco" number="5" tag="PATIENT-2" type="name">Palo Seco</reference>
+					<reference entity="Gábor_Kubatov" number="6" tag="PATIENT-3" type="name">Gabor Kubatov</reference>
+					<reference entity="Thomas_Doll" number="7" tag="PATIENT-1" type="name">Thomas Doll</reference>
+				</references>
+				<text>Akeem Adams is a member of the United Petrotrin F.C. club and also Ferencvarosi TC. The latter club, whose ground is Palo Seco, is chaired by Gabor Kubatov and managed by Thomas Doll.</text>
+				<template>AGENT-1 is a member of the BRIDGE-2 club and also BRIDGE-1 . BRIDGE-1 , whose ground is PATIENT-2 , is chaired by PATIENT-3 and managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+						<striple>Ferencvárosi_TC | chairman | Gábor_Kubatov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="United_Petrotrin_F.C." number="2" tag="BRIDGE-2" type="name">United Petrotrin F.C .</reference>
+					<reference entity="United_Petrotrin_F.C." number="3" tag="BRIDGE-2" type="name">their</reference>
+					<reference entity="Palo_Seco" number="4" tag="PATIENT-2" type="name">Palo Seco</reference>
+					<reference entity="Akeem_Adams" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Ferencvárosi_TC" number="6" tag="BRIDGE-1" type="name">Ferencvarosi TC</reference>
+					<reference entity="Thomas_Doll" number="7" tag="PATIENT-1" type="name">Thomas Doll</reference>
+					<reference entity="Gábor_Kubatov" number="8" tag="PATIENT-3" type="name">Gabor Kubatov</reference>
+				</references>
+				<text>Akeem Adams is a member of the United Petrotrin F.C. club who have their ground at Palo Seco. He plays for Ferencvarosi TC which is managed by Thomas Doll and chaired by Gabor Kubatov.</text>
+				<template>AGENT-1 is a member of the BRIDGE-2 club who have BRIDGE-2 ground at PATIENT-2 . AGENT-1 plays for BRIDGE-1 which is managed by PATIENT-1 and chaired by PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>BRIDGE-1 | Ferencvárosi_TC</entity>
+				<entity>BRIDGE-2 | United_Petrotrin_F.C.</entity>
+				<entity>PATIENT-1 | Thomas_Doll</entity>
+				<entity>PATIENT-2 | Palo_Seco</entity>
+				<entity>PATIENT-3 | Gábor_Kubatov</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1780" size="5">
+			<originaltripleset>
+				<otriple>Ferencvárosi_TC | manager | Thomas_Doll</otriple>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</otriple>
+				<otriple>Akeem_Adams | team | Ferencvárosi_TC</otriple>
+				<otriple>Ferencvárosi_TC | chairman | Gábor_Kubatov</otriple>
+				<otriple>Akeem_Adams | clubs | United_Petrotrin_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ferencvárosi_TC | manager | Thomas_Doll</mtriple>
+				<mtriple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</mtriple>
+				<mtriple>Akeem_Adams | club | Ferencvárosi_TC</mtriple>
+				<mtriple>Ferencvárosi_TC | chairman | Gábor_Kubatov</mtriple>
+				<mtriple>Akeem_Adams | club | United_Petrotrin_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+						<striple>Ferencvárosi_TC | chairman | Gábor_Kubatov</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams '</reference>
+					<reference entity="Ferencvárosi_TC" number="2" tag="BRIDGE-1" type="name">Ferencvarosi TC</reference>
+					<reference entity="Thomas_Doll" number="3" tag="PATIENT-1" type="name">Thomas Doll</reference>
+					<reference entity="Gábor_Kubatov" number="4" tag="PATIENT-3" type="name">Gabor Kubatov</reference>
+					<reference entity="Akeem_Adams" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="United_Petrotrin_F.C." number="6" tag="BRIDGE-2" type="name">United Petrotrin FC</reference>
+					<reference entity="Palo_Seco_Velodrome" number="7" tag="PATIENT-2" type="description">the Palo Seco Velodrome</reference>
+				</references>
+				<text>Akeem Adams' club is Ferencvarosi TC who are managed by Thomas Doll and chaired by Gabor Kubatov. He has previously played for United Petrotrin FC who are based at the Palo Seco Velodrome.</text>
+				<template>AGENT-1 club is BRIDGE-1 who are managed by PATIENT-1 and chaired by PATIENT-3 . AGENT-1 has previously played for BRIDGE-2 who are based at PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+						<striple>Ferencvárosi_TC | chairman | Gábor_Kubatov</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="Ferencvárosi_TC" number="2" tag="BRIDGE-1" type="name">Ferencvárosi TC</reference>
+					<reference entity="Thomas_Doll" number="3" tag="PATIENT-1" type="name">Thomas Doll</reference>
+					<reference entity="Gábor_Kubatov" number="4" tag="PATIENT-3" type="name">Gábor Kubatov</reference>
+					<reference entity="Akeem_Adams" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="United_Petrotrin_F.C." number="6" tag="BRIDGE-2" type="name">United Petrotrin F.C.</reference>
+					<reference entity="Palo_Seco_Velodrome" number="7" tag="PATIENT-2" type="name">Palo Seco Velodrome</reference>
+				</references>
+				<text>Akeem Adams belongs to Ferencvárosi TC, which is managed by Thomas Doll and includes chairman Gábor Kubatov. He has played for United Petrotrin F.C., who play in Palo Seco Velodrome.</text>
+				<template>AGENT-1 belongs to BRIDGE-1 , which is managed by PATIENT-1 and includes chairman PATIENT-3 . AGENT-1 has played for BRIDGE-2 , who play in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+						<striple>Ferencvárosi_TC | chairman | Gábor_Kubatov</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="Ferencvárosi_TC" number="2" tag="BRIDGE-1" type="description">the team Ferencvarosi TC</reference>
+					<reference entity="Thomas_Doll" number="3" tag="PATIENT-1" type="name">Thomas Doll</reference>
+					<reference entity="Gábor_Kubatov" number="4" tag="PATIENT-3" type="name">Gabor Kubatov</reference>
+					<reference entity="Akeem_Adams" number="5" tag="AGENT-1" type="name">Adams '</reference>
+					<reference entity="United_Petrotrin_F.C." number="6" tag="BRIDGE-2" type="name">United Petrotrin FC</reference>
+					<reference entity="Palo_Seco_Velodrome" number="7" tag="PATIENT-2" type="description">the Palo Seco Velodrome</reference>
+				</references>
+				<text>Akeem Adams was part of the team Ferencvarosi TC, which is managed by Thomas Doll and where the chairman is Gabor Kubatov. Adams' former clubs also include United Petrotrin FC, whose home ground is the Palo Seco Velodrome.</text>
+				<template>AGENT-1 was part of BRIDGE-1 , which is managed by PATIENT-1 and where the chairman is PATIENT-3 . AGENT-1 former clubs also include BRIDGE-2 , whose home ground is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>BRIDGE-1 | Ferencvárosi_TC</entity>
+				<entity>BRIDGE-2 | United_Petrotrin_F.C.</entity>
+				<entity>PATIENT-1 | Thomas_Doll</entity>
+				<entity>PATIENT-2 | Palo_Seco_Velodrome</entity>
+				<entity>PATIENT-3 | Gábor_Kubatov</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

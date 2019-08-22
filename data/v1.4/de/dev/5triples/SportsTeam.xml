@@ -1,0 +1,340 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="SportsTeam" eid="Id1" size="5">
+			<originaltripleset>
+				<otriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</otriple>
+				<otriple>Stuart_Parker_(footballer) | team | KV_Mechelen</otriple>
+				<otriple>Stuart_Parker_(footballer) | clubs | Chesterfield_F.C.</otriple>
+				<otriple>Blackpool | leaderName | Gordon_Marsden</otriple>
+				<otriple>A.F.C._Blackpool | ground | Blackpool</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</mtriple>
+				<mtriple>Stuart_Parker_(footballer) | club | KV_Mechelen</mtriple>
+				<mtriple>Stuart_Parker_(footballer) | club | Chesterfield_F.C.</mtriple>
+				<mtriple>Blackpool | leader | Gordon_Marsden</mtriple>
+				<mtriple>A.F.C._Blackpool | ground | Blackpool</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Blackpool | leader | Gordon_Marsden</striple>
+						<striple>A.F.C._Blackpool | ground | Blackpool</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
+						<striple>Stuart_Parker_(footballer) | club | Chesterfield_F.C.</striple>
+						<striple>Stuart_Parker_(footballer) | club | KV_Mechelen</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gordon Marsden ist der Führer von Blackpool, wo sich AFC Blackpool befindet. Ihr Manager ist Stuart Parker, der Mitglied des Chesterfield FC ist und für den KV Mechelen spielt. </text>
+				<template>PATIENT-3 ist der Anführer von BRIDGE-2, wo sich AGENT-1 befindet. AGENT-1-Manager ist BRIDGE-1, der Mitglied von PATIENT-2 ist und für PATIENT-1 spielt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Blackpool | leader | Gordon_Marsden</striple>
+						<striple>A.F.C._Blackpool | ground | Blackpool</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
+						<striple>Stuart_Parker_(footballer) | club | KV_Mechelen</striple>
+						<striple>Stuart_Parker_(footballer) | club | Chesterfield_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gordon Marsden ist der Führer von Blackpool, wo sich AFC Blackpool befindet. Der Verein wird von Stuart Parker verwaltet, der Teil des KV Mechelen-Clubs und Mitglied von Chesterfield FC ist. </text>
+				<template>PATIENT-3 ist der Anführer von BRIDGE-2, wo sich AGENT-1 befindet. AGENT-1 wird von BRIDGE-1 verwaltet, der Teil von PATIENT-1 und Mitglied von PATIENT-2 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
+				<entity>BRIDGE-1 | Stuart_Parker_(footballer)</entity>
+				<entity>BRIDGE-2 | Blackpool</entity>
+				<entity>PATIENT-1 | KV_Mechelen</entity>
+				<entity>PATIENT-2 | Chesterfield_F.C.</entity>
+				<entity>PATIENT-3 | Gordon_Marsden</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id2" size="5">
+			<originaltripleset>
+				<otriple>AEK_Athens_F.C. | league | Superleague_Greece</otriple>
+				<otriple>Superleague_Greece | champions | Olympiacos_F.C.</otriple>
+				<otriple>AEK_Athens_F.C. | manager | Gus_Poyet</otriple>
+				<otriple>Gus_Poyet | clubs | Real_Zaragoza</otriple>
+				<otriple>Gus_Poyet | team | Chelsea_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AEK_Athens_F.C. | league | Superleague_Greece</mtriple>
+				<mtriple>Superleague_Greece | champions | Olympiacos_F.C.</mtriple>
+				<mtriple>AEK_Athens_F.C. | manager | Gus_Poyet</mtriple>
+				<mtriple>Gus_Poyet | club | Real_Zaragoza</mtriple>
+				<mtriple>Gus_Poyet | club | Chelsea_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Superleague_Greece | champions | Olympiacos_F.C.</striple>
+						<striple>AEK_Athens_F.C. | league | Superleague_Greece</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AEK_Athens_F.C. | manager | Gus_Poyet</striple>
+						<striple>Gus_Poyet | club | Real_Zaragoza</striple>
+						<striple>Gus_Poyet | club | Chelsea_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Olympiacos F.C. Waren früher Meister in der Griechenland-Superliga, tritt die Liga AEK Athens FC an. Ihr Manager ist Gus Poyet, dessen Klub Real Zaragoza ist, obwohl er für Chelsea F.C. spielte. </text>
+				<template>PATIENT-1 waren frühere Meister in BRIDGE-1, BRIDGE-1 AGENT-1 Wettbewerb in. AGENT-1-Manager ist BRIDGE-2, dessen Verein PATIENT-2 ist, obwohl BRIDGE-2 für PATIENT-3 gespielt hat.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AEK_Athens_F.C. | manager | Gus_Poyet</striple>
+						<striple>AEK_Athens_F.C. | league | Superleague_Greece</striple>
+						<striple>Superleague_Greece | champions | Olympiacos_F.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Gus_Poyet | club | Chelsea_F.C.</striple>
+						<striple>Gus_Poyet | club | Real_Zaragoza</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gus Poyet ist der Manager von AEK Athens F.C. Wer in der Superliga Griechenland spielt (das hat Olympiacos FC als früherer Meister). Poyet spielte zuvor für den FC Chelsea und ist im Real Zaragoza Club. </text>
+				<template>BRIDGE-2 ist der Manager von AGENT-1, die in BRIDGE-1 spielen (das hat PATIENT-1 als frühere Meister). BRIDGE-2 spielte zuvor für PATIENT-3 und ist in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Superleague_Greece | champions | Olympiacos_F.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AEK_Athens_F.C. | league | Superleague_Greece</striple>
+						<striple>AEK_Athens_F.C. | manager | Gus_Poyet</striple>
+						<striple>Gus_Poyet | club | Chelsea_F.C.</striple>
+						<striple>Gus_Poyet | club | Real_Zaragoza</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bisheriger Meister der Superliga Griechenland ist Olympiacos FC. AEK Athens FC tritt auch in der Liga an und wird von Gus Poyet geführt, der zuvor für den FC Chelsea spielte und dessen Verein Real Zaragoza ist. </text>
+				<template>Frühere Champions von BRIDGE-1 sind PATIENT-1. AGENT-1 konkurrieren auch in BRIDGE-1 und AGENT-1 werden von BRIDGE-2 verwaltet, die zuvor für PATIENT-3 gespielt haben und deren Verein PATIENT-2 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AEK_Athens_F.C.</entity>
+				<entity>BRIDGE-1 | Superleague_Greece</entity>
+				<entity>BRIDGE-2 | Gus_Poyet</entity>
+				<entity>PATIENT-1 | Olympiacos_F.C.</entity>
+				<entity>PATIENT-2 | Real_Zaragoza</entity>
+				<entity>PATIENT-3 | Chelsea_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id3" size="5">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | country | Brazil</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</otriple>
+				<otriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | country | Brazil</mtriple>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</mtriple>
+				<mtriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Estádio Municipal Coaracy da Mata Fonseca ist der Name des Bodens der Agremiação Sportiva Arapiraquense. Es befindet sich in Alagoas. Agremiação Sportiva Arapiraquense spielen in der Campeonato Brasileiro série C Liga aus Brasilien. Die Vila Nova Futebol Clube wurden Meister bei der série C. </text>
+				<template>BRIDGE-2 ist der Name des Bodens von AGENT-1. AGENT-1 befindet sich in PATIENT-2. AGENT-1 spielen in der BRIDGE-1 Liga von PATIENT-1. PATIENT-3 waren Meister bei BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Vila Nova Futebol Clube wurden Meister von Campeonato Brasileiro série C. aus Brasilien, in dem Agremiação Sportiva Arapiraquense auch spielen. Diese Mannschaft hat ihren Boden im Estádio Municipal Coaracy da Mata Fonseca, das sich in Alagoas befindet. </text>
+				<template>PATIENT-3 wurde Meister von BRIDGE-1 von PATIENT-1, in dem auch AGENT-1 spielt. AGENT-1 hat AGENT-1 Boden bei BRIDGE-2, die sich in PATIENT-2 befindet.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</striple>
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Llocated in Alagoas, Estádio Municipal Coaracy da Mata Fonseca ist der Name der Boden der Agremiação Sportiva Arapiraquense. Sie spielen in der Campeonato Brasileiro série C Liga, die aus Brasilien, und die Meister von denen ist Vila Nova Futebol Clube. </text>
+				<template>Llocated in PATIENT-2, BRIDGE-2 ist der Name von BRIDGE-1 Boden von AGENT-1. AGENT-1 spielen in BRIDGE-1 Liga, die von PATIENT-1, und BRIDGE-1 Meister von denen wurde PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>BRIDGE-1 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>BRIDGE-2 | Estádio_Municipal_Coaracy_da_Mata_Fonseca</entity>
+				<entity>PATIENT-1 | Brazil</entity>
+				<entity>PATIENT-2 | Alagoas</entity>
+				<entity>PATIENT-3 | Vila_Nova_Futebol_Clube</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id4" size="5">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | country | Brazil</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</otriple>
+				<otriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | country | Brazil</mtriple>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</mtriple>
+				<mtriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Vila Nova Futebol Clube wurden Meister der Campeonato Brasileiro série C. Liga in Brasilien. Agremiação Sportiva Arapiraquense spielen auch in der Liga und haben ihren Heimplatz im Estádio Municipal Coaracy da Mata Fonseca in Arapiraca. </text>
+				<template>PATIENT-3 wurden Meister von BRIDGE-1 in PATIENT-1. AGENT-1 spielen auch in BRIDGE-1 und haben AGENT-1 Heimplatz bei BRIDGE-2 in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agremiação Sportiva Arapiraquense spielen in der Campeonato Brasileiro série C Liga (in Brasilien), die von Vila Nova Futebol Clube gewonnen wurde. Agremiacao Sportiva Arapiraquense ist das Estadio Minicipal Coaracy da Mata Fonseca, das sich in Arapiraca befindet. </text>
+				<template>AGENT-1 spielt in der BRIDGE-1 Liga (in PATIENT-1), die von PATIENT-3 gewonnen wurde. AGENT-1-Boden ist BRIDGE-2, die sich in PATIENT-2 befindet.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agremiação Sportiva Arapiraquense spielen in der Campeonato Brasileiro série C Liga in Brasilien. Vila Nova Futebol Clube sind die Meister der Serie C. Estádio Municipal Coaracy da Mata Fonseca (Arapiraca) ist der Name der Boden der Agremiação Sportiva Arapiraquense. </text>
+				<template>AGENT-1 spielen in der BRIDGE-1 Liga in PATIENT-1. PATIENT-3 sind die Meister von BRIDGE-1 (PATIENT-2) ist der Name von BRIDGE-1 Boden von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>BRIDGE-1 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>BRIDGE-2 | Estádio_Municipal_Coaracy_da_Mata_Fonseca</entity>
+				<entity>PATIENT-1 | Brazil</entity>
+				<entity>PATIENT-2 | Arapiraca</entity>
+				<entity>PATIENT-3 | Vila_Nova_Futebol_Clube</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id5" size="5">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | country | Brazil</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | capacity | &quot;17000&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | manager | Vica</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | country | Brazil</mtriple>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | manager | Vica</mtriple>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | numberOfMembers | 17000</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Agremiação_Sportiva_Arapiraquense | numberOfMembers | 17000</striple>
+						<striple>Agremiação_Sportiva_Arapiraquense | manager | Vica</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Vila Nova Futebol Clube wurden Meister im Campeonato Brasileiro série C. in Brasilien. Agremiação Sportiva Arapiraquense, die auch in der Liga spielen, haben 17000 Mitglieder und werden von vica verwaltet. </text>
+				<template>PATIENT-4 waren Meister bei BRIDGE-1 in PATIENT-1. AGENT-1, die auch in BRIDGE-1 spielen, haben PATIENT-3 Mitglieder und werden von PATIENT-2 verwaltet.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | numberOfMembers | 17000</striple>
+						<striple>Agremiação_Sportiva_Arapiraquense | manager | Vica</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agremiação Sportiva Arapiraquense spielen in der Campeonato Brasileiro série C Liga in Brasilien, die von Vila Nova Futebol Clube gewonnen wurde. Agremiacao Sportiva Arapiraquense Boden kann 17000 Fans halten und das Team wird von vica verwaltet. </text>
+				<template>AGENT-1 spielt in der BRIDGE-1 Liga in PATIENT-1, die von PATIENT-4 gewonnen wurde. AGENT-1 ground can hold PATIENT-3 fans and AGENT-1 is managed by PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Agremiação_Sportiva_Arapiraquense | manager | Vica</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Vila Nova Futebol Clube wurden Meister von Campeonato Brasileiro série C, die aus Brasilien. Es ist in dieser Liga, die Agremiação Sportiva Arapiraquense spielen. Sie werden von vica verwaltet, und have17000 Mitglieder. </text>
+				<template>PATIENT-4 wurden Meister der BRIDGE-1, die von PATIENT-1 ist. Es ist in BRIDGE-1, dass AGENT-1 spielen. AGENT-1 werden von PATIENT-2, und havePATIENT-3 Mitglieder verwaltet.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>BRIDGE-1 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>PATIENT-1 | Brazil</entity>
+				<entity>PATIENT-2 | Vica</entity>
+				<entity>PATIENT-3 | 17000</entity>
+				<entity>PATIENT-4 | Vila_Nova_Futebol_Clube</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

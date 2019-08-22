@@ -1,0 +1,1181 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Building" eid="Id376" size="2">
+			<originaltripleset>
+				<otriple>108_St_Georges_Terrace | floorCount | 50</otriple>
+				<otriple>108_St_Georges_Terrace | completionDate | 1988</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>108_St_Georges_Terrace | floorCount | 50</mtriple>
+				<mtriple>108_St_Georges_Terrace | completionDate | 1988</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>108_St_Georges_Terrace | completionDate | 1988</striple>
+						<striple>108_St_Georges_Terrace | floorCount | 50</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="108_St_Georges_Terrace" number="1" tag="AGENT-1" type="name">108 St Georges Terrace</reference>
+					<reference entity="1988" number="2" tag="PATIENT-2" type="name">1988</reference>
+					<reference entity="50" number="3" tag="PATIENT-1" type="name">50</reference>
+				</references>
+				<text>108 St Georges Terrace was completed in 1988 and has a floor count of 50.</text>
+				<template>AGENT-1 was completed in PATIENT-2 and has a floor count of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>108_St_Georges_Terrace | completionDate | 1988</striple>
+						<striple>108_St_Georges_Terrace | floorCount | 50</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="108_St_Georges_Terrace" number="1" tag="AGENT-1" type="name">108 St Georges Terrace</reference>
+					<reference entity="1988" number="2" tag="PATIENT-2" type="name">1988</reference>
+					<reference entity="50" number="3" tag="PATIENT-1" type="name">50</reference>
+				</references>
+				<text>108 St Georges Terrace, completed in 1988, has 50 floors.</text>
+				<template>AGENT-1 , completed in PATIENT-2 , has PATIENT-1 floors .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>108_St_Georges_Terrace | floorCount | 50</striple>
+						<striple>108_St_Georges_Terrace | completionDate | 1988</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="108_St_Georges_Terrace" number="1" tag="AGENT-1" type="name">108 St Georges Terrace</reference>
+					<reference entity="50" number="2" tag="PATIENT-1" type="name">50</reference>
+					<reference entity="1988" number="3" tag="PATIENT-2" type="name">1988</reference>
+				</references>
+				<text>108 St Georges Terrace has a floor count of 50 and was completed in 1988.</text>
+				<template>AGENT-1 has a floor count of PATIENT-1 and was completed in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 108_St_Georges_Terrace</entity>
+				<entity>PATIENT-1 | 50</entity>
+				<entity>PATIENT-2 | 1988</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id377" size="2">
+			<originaltripleset>
+				<otriple>200_Public_Square | floorCount | 45</otriple>
+				<otriple>200_Public_Square | location | &quot;United States&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>200_Public_Square | floorCount | 45</mtriple>
+				<mtriple>200_Public_Square | location | &quot;United States&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | location | &quot;United States&quot;</striple>
+						<striple>200_Public_Square | floorCount | 45</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="200_Public_Square" number="1" tag="AGENT-1" type="name">200 Public Square</reference>
+					<reference entity="&quot;United States&quot;" number="2" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="45" number="3" tag="PATIENT-1" type="name">45</reference>
+				</references>
+				<text>200 Public Square, located in the United States, has 45 floors.</text>
+				<template>AGENT-1 , located in PATIENT-2 , has PATIENT-1 floors .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | location | &quot;United States&quot;</striple>
+						<striple>200_Public_Square | floorCount | 45</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="200_Public_Square" number="1" tag="AGENT-1" type="name">200 Public Square</reference>
+					<reference entity="&quot;United States&quot;" number="2" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="45" number="3" tag="PATIENT-1" type="name">45</reference>
+				</references>
+				<text>200 Public Square in the United States has a floor count of 45.</text>
+				<template>AGENT-1 in PATIENT-2 has a floor count of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | floorCount | 45</striple>
+						<striple>200_Public_Square | location | &quot;United States&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="45" number="1" tag="PATIENT-1" type="name">45</reference>
+					<reference entity="200_Public_Square" number="2" tag="AGENT-1" type="name">200 Public Square</reference>
+					<reference entity="&quot;United States&quot;" number="3" tag="PATIENT-2" type="description">the United States</reference>
+				</references>
+				<text>There are 45 floors of 200 Public Square in the United States.</text>
+				<template>There are PATIENT-1 floors of AGENT-1 in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 200_Public_Square</entity>
+				<entity>PATIENT-1 | 45</entity>
+				<entity>PATIENT-2 | &quot;United States&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id378" size="2">
+			<originaltripleset>
+				<otriple>20_Fenchurch_Street | floorCount | 34</otriple>
+				<otriple>20_Fenchurch_Street | Building/floorArea | &quot;62145.25893504&quot;^^&lt;http://dbpedia.org/datatype/squareMetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>20_Fenchurch_Street | floorCount | 34</mtriple>
+				<mtriple>20_Fenchurch_Street | floorArea | 62145.3 (square metres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | floorArea | 62145.3 (square metres)</striple>
+						<striple>20_Fenchurch_Street | floorCount | 34</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="20_Fenchurch_Street" number="1" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
+					<reference entity="62145.3 (square metres)" number="2" tag="PATIENT-2" type="name">62145.3 square metres</reference>
+					<reference entity="34" number="3" tag="PATIENT-1" type="name">34</reference>
+				</references>
+				<text>20 Fenchurch Street has an area of 62145.3 square metres and 34 floors.</text>
+				<template>AGENT-1 has an area of PATIENT-2 and PATIENT-1 floors .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | floorCount | 34</striple>
+						<striple>20_Fenchurch_Street | floorArea | 62145.3 (square metres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="20_Fenchurch_Street" number="1" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
+					<reference entity="34" number="2" tag="PATIENT-1" type="name">34</reference>
+					<reference entity="62145.3 (square metres)" number="3" tag="PATIENT-2" type="name">62145.3 square metres</reference>
+				</references>
+				<text>20 Fenchurch Street has 34 floors and has a floor area of 62145.3 square metres.</text>
+				<template>AGENT-1 has PATIENT-1 floors and has a floor area of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | floorCount | 34</striple>
+						<striple>20_Fenchurch_Street | floorArea | 62145.3 (square metres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="20_Fenchurch_Street" number="1" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
+					<reference entity="34" number="2" tag="PATIENT-1" type="name">34</reference>
+					<reference entity="62145.3 (square metres)" number="3" tag="PATIENT-2" type="name">62145.3 square metres</reference>
+				</references>
+				<text>20 Fenchurch Street has 34 floors and 62145.3 square metres.</text>
+				<template>AGENT-1 has PATIENT-1 floors and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 20_Fenchurch_Street</entity>
+				<entity>PATIENT-1 | 34</entity>
+				<entity>PATIENT-2 | 62145.3 (square metres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id379" size="2">
+			<originaltripleset>
+				<otriple>300_North_LaSalle | location | Chicago</otriple>
+				<otriple>300_North_LaSalle | floorCount | 60</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>300_North_LaSalle | location | Chicago</mtriple>
+				<mtriple>300_North_LaSalle | floorCount | 60</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+						<striple>300_North_LaSalle | location | Chicago</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="60" number="1" tag="PATIENT-2" type="name">60</reference>
+					<reference entity="300_North_LaSalle" number="2" tag="AGENT-1" type="name">300 North LaSalle</reference>
+					<reference entity="Chicago" number="3" tag="PATIENT-1" type="name">Chicago</reference>
+				</references>
+				<text>There are 60 floors at 300 North LaSalle, which is located in Chicago.</text>
+				<template>There are PATIENT-2 floors at AGENT-1 , which is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
+					<reference entity="Chicago" number="2" tag="PATIENT-1" type="name">Chicago</reference>
+					<reference entity="60" number="3" tag="PATIENT-2" type="name">60</reference>
+				</references>
+				<text>300 North LaSalle is located in Chicago and has 60 floors.</text>
+				<template>AGENT-1 is located in PATIENT-1 and has PATIENT-2 floors .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
+					<reference entity="Chicago" number="2" tag="PATIENT-1" type="name">Chicago</reference>
+					<reference entity="60" number="3" tag="PATIENT-2" type="name">60</reference>
+				</references>
+				<text>300 North LaSalle, Chicago, has 60 floors.</text>
+				<template>AGENT-1 , PATIENT-1 , has PATIENT-2 floors .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 300_North_LaSalle</entity>
+				<entity>PATIENT-1 | Chicago</entity>
+				<entity>PATIENT-2 | 60</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id380" size="2">
+			<originaltripleset>
+				<otriple>320_South_Boston_Building | architect | George_Winkler</otriple>
+				<otriple>George_Winkler | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>320_South_Boston_Building | architect | George_Winkler</mtriple>
+				<mtriple>George_Winkler | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>320_South_Boston_Building | architect | George_Winkler</striple>
+						<striple>George_Winkler | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="George_Winkler" number="1" tag="BRIDGE-1" type="name">George Winkler</reference>
+					<reference entity="320_South_Boston_Building" number="2" tag="AGENT-1" type="description">the 320 South Boston Building</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the United States of America</reference>
+				</references>
+				<text>George Winkler is the architect of the 320 South Boston Building and is from the United States of America.</text>
+				<template>BRIDGE-1 is the architect of AGENT-1 and is from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>George_Winkler | country | United_States</striple>
+						<striple>320_South_Boston_Building | architect | George_Winkler</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="George_Winkler" number="1" tag="BRIDGE-1" type="name">George Winkler</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States of America</reference>
+					<reference entity="320_South_Boston_Building" number="3" tag="AGENT-1" type="name">320 South Boston Building</reference>
+				</references>
+				<text>George Winkler, from the United States of America, was the architect of 320 South Boston Building.</text>
+				<template>BRIDGE-1 , from PATIENT-1 , was the architect of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>George_Winkler | country | United_States</striple>
+						<striple>320_South_Boston_Building | architect | George_Winkler</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="George_Winkler" number="1" tag="BRIDGE-1" type="name">George Winkler</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+					<reference entity="320_South_Boston_Building" number="3" tag="AGENT-1" type="name">320 South Boston Building</reference>
+				</references>
+				<text>George Winkler, from the United States, was the architect of 320 South Boston Building.</text>
+				<template>BRIDGE-1 , from PATIENT-1 , was the architect of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 320_South_Boston_Building</entity>
+				<entity>BRIDGE-1 | George_Winkler</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id381" size="2">
+			<originaltripleset>
+				<otriple>3Arena | location | &quot;East Link Bridge&quot;@en</otriple>
+				<otriple>3Arena | architect | &quot;HOK SVE&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | location | &quot;East Link Bridge&quot;</mtriple>
+				<mtriple>3Arena | architect | &quot;HOK SVE&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+						<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;HOK SVE&quot;" number="1" tag="PATIENT-2" type="name">HOK SVE</reference>
+					<reference entity="3Arena" number="2" tag="AGENT-1" type="name">3Arena</reference>
+					<reference entity="&quot;East Link Bridge&quot;" number="3" tag="PATIENT-1" type="description">the East Link Bridge</reference>
+				</references>
+				<text>HOK SVE was the architect of 3Arena, located on the East Link Bridge.</text>
+				<template>PATIENT-2 was the architect of AGENT-1 , located on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+						<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="&quot;HOK SVE&quot;" number="2" tag="PATIENT-2" type="name">HOK SVE</reference>
+					<reference entity="&quot;East Link Bridge&quot;" number="3" tag="PATIENT-1" type="name">East Link Bridge</reference>
+				</references>
+				<text>The 3Arena, created by architect HOK SVE, is located at East Link Bridge.</text>
+				<template>AGENT-1 , created by architect PATIENT-2 , is located at PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+						<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;HOK SVE&quot;" number="1" tag="PATIENT-2" type="name">HOK SVE</reference>
+					<reference entity="3Arena" number="2" tag="AGENT-1" type="description">the 3Arena</reference>
+					<reference entity="&quot;East Link Bridge&quot;" number="3" tag="PATIENT-1" type="name">East Link Bridge</reference>
+				</references>
+				<text>HOK SVE was the architect of the 3Arena, wich is located at East Link Bridge.</text>
+				<template>PATIENT-2 was the architect of AGENT-1 , wich is located at PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | &quot;East Link Bridge&quot;</entity>
+				<entity>PATIENT-2 | &quot;HOK SVE&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id382" size="2">
+			<originaltripleset>
+				<otriple>3Arena | location | Dublin</otriple>
+				<otriple>3Arena | architect | Populous_(company)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | location | Dublin</mtriple>
+				<mtriple>3Arena | architect | Populous_(company)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | architect | Populous_(company)</striple>
+						<striple>3Arena | location | Dublin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="Populous_(company)" number="2" tag="PATIENT-2" type="name">company Populous</reference>
+					<reference entity="Dublin" number="3" tag="PATIENT-1" type="name">Dublin</reference>
+				</references>
+				<text>The 3Arena, which was designed by the architect company Populous, is located in Dublin.</text>
+				<template>AGENT-1 , which was designed by the architect PATIENT-2 , is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | architect | Populous_(company)</striple>
+						<striple>3Arena | location | Dublin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="Populous_(company)" number="2" tag="PATIENT-2" type="name">Populous</reference>
+					<reference entity="Dublin" number="3" tag="PATIENT-1" type="name">Dublin</reference>
+				</references>
+				<text>The 3Arena, designed by Populous, is located in Dublin.</text>
+				<template>AGENT-1 , designed by PATIENT-2 , is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | Dublin</striple>
+						<striple>3Arena | architect | Populous_(company)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="name">3Arena</reference>
+					<reference entity="Dublin" number="2" tag="PATIENT-1" type="name">Dublin</reference>
+					<reference entity="Populous_(company)" number="3" tag="PATIENT-2" type="description">the company Populous</reference>
+				</references>
+				<text>3Arena is located in Dublin, which was built by the company Populous.</text>
+				<template>AGENT-1 is located in PATIENT-1 , which was built by PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | Dublin</entity>
+				<entity>PATIENT-2 | Populous_(company)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id383" size="2">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Copenhagen</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | location | Copenhagen</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Copenhagen</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marriott_International" number="1" tag="PATIENT-1" type="name">Marriott International</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="2" tag="AGENT-1" type="name">AC Hotel Bella Sky</reference>
+					<reference entity="Copenhagen" number="3" tag="PATIENT-2" type="name">Copenhagen</reference>
+				</references>
+				<text>Marriott International is the tenant of AC Hotel Bella Sky and is located in Copenhagen.</text>
+				<template>PATIENT-1 is the tenant of AGENT-1 and is located in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Copenhagen</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="1" tag="AGENT-1" type="description">the AC Hotel Bella Sky</reference>
+					<reference entity="Copenhagen" number="2" tag="PATIENT-2" type="name">Copenhagen</reference>
+					<reference entity="Marriott_International" number="3" tag="PATIENT-1" type="name">Marriott International</reference>
+				</references>
+				<text>The tenant of the AC Hotel Bella Sky, located in Copenhagen, is Marriott International.</text>
+				<template>The tenant of AGENT-1 , located in PATIENT-2 , is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Copenhagen</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marriott_International" number="1" tag="PATIENT-1" type="name">Marriott International</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="2" tag="AGENT-1" type="name">AC Hotel Bella Sky</reference>
+					<reference entity="Copenhagen" number="3" tag="PATIENT-2" type="name">Copenhagen</reference>
+				</references>
+				<text>Marriott International is the tenant of AC Hotel Bella Sky which is located in Copenhagen.</text>
+				<template>PATIENT-1 is the tenant of AGENT-1 which is located in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>PATIENT-1 | Marriott_International</entity>
+				<entity>PATIENT-2 | Copenhagen</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id384" size="2">
+			<originaltripleset>
+				<otriple>Adare_Manor | architect | George_Richard_Pain</otriple>
+				<otriple>Adare_Manor | buildingEndDate | &quot;1862&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adare_Manor | architect | George_Richard_Pain</mtriple>
+				<mtriple>Adare_Manor | completionDate | 1862</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | architect | George_Richard_Pain</striple>
+						<striple>Adare_Manor | completionDate | 1862</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor 's</reference>
+					<reference entity="George_Richard_Pain" number="2" tag="PATIENT-1" type="name">George Richard Pain</reference>
+					<reference entity="Adare_Manor" number="3" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="1862" number="4" tag="PATIENT-2" type="name">1862</reference>
+				</references>
+				<text>Adare Manor's architect was George Richard Pain and it was completed in 1862.</text>
+				<template>AGENT-1 architect was PATIENT-1 and AGENT-1 was completed in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | architect | George_Richard_Pain</striple>
+						<striple>Adare_Manor | completionDate | 1862</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="George_Richard_Pain" number="1" tag="PATIENT-1" type="name">George Richard Pain</reference>
+					<reference entity="Adare_Manor" number="2" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="1862" number="3" tag="PATIENT-2" type="name">1862</reference>
+				</references>
+				<text>The architect George Richard Pain completed Adare Manor in 1862.</text>
+				<template>The architect PATIENT-1 completed AGENT-1 in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>PATIENT-1 | George_Richard_Pain</entity>
+				<entity>PATIENT-2 | 1862</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id385" size="2">
+			<originaltripleset>
+				<otriple>Adare_Manor | location | Adare</otriple>
+				<otriple>Adare_Manor | locationTown | County_Limerick</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adare_Manor | location | Adare</mtriple>
+				<mtriple>Adare_Manor | location | County_Limerick</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | location | Adare</striple>
+						<striple>Adare_Manor | location | County_Limerick</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="Adare" number="2" tag="PATIENT-1" type="name">Adare</reference>
+					<reference entity="County_Limerick" number="3" tag="PATIENT-2" type="name">County Limerick</reference>
+				</references>
+				<text>Adare Manor is found in Adare, County Limerick.</text>
+				<template>AGENT-1 is found in PATIENT-1 , PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | location | Adare</striple>
+						<striple>Adare_Manor | location | County_Limerick</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="Adare" number="2" tag="PATIENT-1" type="name">Adare</reference>
+					<reference entity="County_Limerick" number="3" tag="PATIENT-2" type="name">County Limerick</reference>
+				</references>
+				<text>Adare Manor is located in Adare, in County Limerick.</text>
+				<template>AGENT-1 is located in PATIENT-1 , in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | location | Adare</striple>
+						<striple>Adare_Manor | location | County_Limerick</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="Adare" number="2" tag="PATIENT-1" type="name">Adare</reference>
+					<reference entity="County_Limerick" number="3" tag="PATIENT-2" type="name">County Limerick</reference>
+				</references>
+				<text>Adare Manor, Adare is in County Limerick.</text>
+				<template>AGENT-1 , PATIENT-1 is in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>PATIENT-1 | Adare</entity>
+				<entity>PATIENT-2 | County_Limerick</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id386" size="2">
+			<originaltripleset>
+				<otriple>Addis_Ababa_City_Hall | country | Ethiopia</otriple>
+				<otriple>Addis_Ababa_City_Hall | location | Addis_Ababa</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Addis_Ababa_City_Hall | country | Ethiopia</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | location | Addis_Ababa</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+						<striple>Addis_Ababa_City_Hall | country | Ethiopia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Addis_Ababa_City_Hall" number="1" tag="AGENT-1" type="description">The Addis Ababa City Hall</reference>
+					<reference entity="Addis_Ababa" number="2" tag="PATIENT-2" type="name">Addis Ababa</reference>
+					<reference entity="Ethiopia" number="3" tag="PATIENT-1" type="name">Ethiopia</reference>
+				</references>
+				<text>The Addis Ababa City Hall is located in Addis Ababa, Ethiopia.</text>
+				<template>AGENT-1 is located in PATIENT-2 , PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
+						<striple>Addis_Ababa_City_Hall | country | Ethiopia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Addis_Ababa_City_Hall" number="1" tag="AGENT-1" type="name">Addis Ababa City Hall</reference>
+					<reference entity="Addis_Ababa" number="2" tag="PATIENT-2" type="name">Addis Ababa</reference>
+					<reference entity="Ethiopia" number="3" tag="PATIENT-1" type="name">Ethiopia</reference>
+				</references>
+				<text>Addis Ababa City Hall is located in Addis Ababa, Ethiopia.</text>
+				<template>AGENT-1 is located in PATIENT-2 , PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Addis_Ababa_City_Hall</entity>
+				<entity>PATIENT-1 | Ethiopia</entity>
+				<entity>PATIENT-2 | Addis_Ababa</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id387" size="2">
+			<originaltripleset>
+				<otriple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;@en</otriple>
+				<otriple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</mtriple>
+				<mtriple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
+					<reference entity="&quot;Haputale, Sri Lanka&quot;" number="2" tag="PATIENT-1" type="name">Haputale , Sri Lanka</reference>
+					<reference entity="Tudor_Revival_architecture" number="3" tag="PATIENT-2" type="name">Tudor Revival</reference>
+				</references>
+				<text>Adisham Hall in Haputale, Sri Lanka is built in the Tudor Revival style.</text>
+				<template>AGENT-1 in PATIENT-1 is built in the PATIENT-2 style .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
+					<reference entity="&quot;Haputale, Sri Lanka&quot;" number="2" tag="PATIENT-1" type="name">Haputale , Sri Lanka</reference>
+					<reference entity="Tudor_Revival_architecture" number="3" tag="PATIENT-2" type="name">Tudor Revival</reference>
+				</references>
+				<text>Adisham Hall is located in Haputale, Sri Lanka and is Tudor Revival in style.</text>
+				<template>AGENT-1 is located in PATIENT-1 and is PATIENT-2 in style .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
+					<reference entity="&quot;Haputale, Sri Lanka&quot;" number="2" tag="PATIENT-1" type="name">Haputale , Sri Lanka</reference>
+					<reference entity="Tudor_Revival_architecture" number="3" tag="PATIENT-2" type="name">Tudor Revival</reference>
+				</references>
+				<text>Adisham Hall which is located in Haputale, Sri Lanka has the architectural style Tudor Revival.</text>
+				<template>AGENT-1 which is located in PATIENT-1 has the architectural style PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>PATIENT-1 | &quot;Haputale, Sri Lanka&quot;</entity>
+				<entity>PATIENT-2 | Tudor_Revival_architecture</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id388" size="2">
+			<originaltripleset>
+				<otriple>Adisham_Hall | location | Sri_Lanka</otriple>
+				<otriple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | location | Sri_Lanka</mtriple>
+				<mtriple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
+					<reference entity="Sri_Lanka" number="2" tag="PATIENT-1" type="name">Sri Lanka</reference>
+					<reference entity="Tudor_Revival_architecture" number="3" tag="PATIENT-2" type="name">Tudor Revival</reference>
+				</references>
+				<text>Adisham Hall is located in Sri Lanka and has the architectural style Tudor Revival.</text>
+				<template>AGENT-1 is located in PATIENT-1 and has the architectural style PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
+					<reference entity="Sri_Lanka" number="2" tag="PATIENT-1" type="name">Sri Lanka</reference>
+					<reference entity="Adisham_Hall" number="3" tag="AGENT-1" type="name">it 's</reference>
+					<reference entity="Tudor_Revival_architecture" number="4" tag="PATIENT-2" type="name">Tudor Revival</reference>
+				</references>
+				<text>Adisham Hall is located in Sri Lanka and it's architectural style is Tudor Revival.</text>
+				<template>AGENT-1 is located in PATIENT-1 and AGENT-1 architectural style is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | Sri_Lanka</striple>
+						<striple>Adisham_Hall | architecturalStyle | Tudor_Revival_architecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
+					<reference entity="Sri_Lanka" number="2" tag="PATIENT-1" type="name">Sri Lanka</reference>
+					<reference entity="Adisham_Hall" number="3" tag="AGENT-1" type="name">it 's</reference>
+					<reference entity="Tudor_Revival_architecture" number="4" tag="PATIENT-2" type="name">Tudor Revival</reference>
+				</references>
+				<text>Adisham Hall is located in Sri Lanka and it's architectural style is Tudor Revival.</text>
+				<template>AGENT-1 is located in PATIENT-1 and AGENT-1 architectural style is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>PATIENT-1 | Sri_Lanka</entity>
+				<entity>PATIENT-2 | Tudor_Revival_architecture</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id389" size="2">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | country | Japan</otriple>
+				<otriple>Japan | ethnicGroup | Brazilians_in_Japan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akita_Museum_of_Art | country | Japan</mtriple>
+				<mtriple>Japan | ethnicGroup | Brazilians_in_Japan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+						<striple>Japan | ethnicGroup | Brazilians_in_Japan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="name">Akita Museum of Art</reference>
+					<reference entity="Japan" number="2" tag="BRIDGE-1" type="name">Japan</reference>
+					<reference entity="Japan" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Brazilians_in_Japan" number="4" tag="PATIENT-1" type="description">the Brazilians</reference>
+				</references>
+				<text>Akita Museum of Art is located in Japan, which has as one of its ethnic groups the Brazilians.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , which has as one of BRIDGE-1 ethnic groups PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+						<striple>Japan | ethnicGroup | Brazilians_in_Japan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="name">Akita Museum of Art</reference>
+					<reference entity="Japan" number="2" tag="BRIDGE-1" type="name">Japan</reference>
+					<reference entity="Brazilians_in_Japan" number="3" tag="PATIENT-1" type="name">Brazilians</reference>
+				</references>
+				<text>Akita Museum of Art is located in Japan where some Brazilians are found.</text>
+				<template>AGENT-1 is located in BRIDGE-1 where some PATIENT-1 are found .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Japan | ethnicGroup | Brazilians_in_Japan</striple>
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Brazilians_in_Japan" number="1" tag="PATIENT-1" type="name">Brazilians</reference>
+					<reference entity="Japan" number="2" tag="BRIDGE-1" type="name">Japan</reference>
+					<reference entity="Akita_Museum_of_Art" number="3" tag="AGENT-1" type="description">the Akita Museum of Art</reference>
+				</references>
+				<text>Brazilians are one of the ethnic groups in Japan where the Akita Museum of Art is located.</text>
+				<template>PATIENT-1 are one of the ethnic groups in BRIDGE-1 where AGENT-1 is located .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>BRIDGE-1 | Japan</entity>
+				<entity>PATIENT-1 | Brazilians_in_Japan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id390" size="2">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | floorCount | &quot;3&quot;^^xsd:positiveInteger</otriple>
+				<otriple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akita_Museum_of_Art | floorCount | 3</mtriple>
+				<mtriple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;</striple>
+						<striple>Akita_Museum_of_Art | floorCount | 3</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="name">Akita Museum of Art</reference>
+					<reference entity="&quot;1-4-2 Nakadori&quot;" number="2" tag="PATIENT-2" type="name">1-4 -2 Nakadori</reference>
+					<reference entity="3" number="3" tag="PATIENT-1" type="name">3</reference>
+				</references>
+				<text>Akita Museum of Art is located at 1-4-2 Nakadori and has 3 floors.</text>
+				<template>AGENT-1 is located at PATIENT-2 and has PATIENT-1 floors .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;</striple>
+						<striple>Akita_Museum_of_Art | floorCount | 3</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="description">The Akita Museum of Art</reference>
+					<reference entity="&quot;1-4-2 Nakadori&quot;" number="2" tag="PATIENT-2" type="name">1-4 -2 Nakadori</reference>
+					<reference entity="3" number="3" tag="PATIENT-1" type="name">3</reference>
+				</references>
+				<text>The Akita Museum of Art, found at 1-4-2 Nakadori, has 3 floors.</text>
+				<template>AGENT-1 , found at PATIENT-2 , has PATIENT-1 floors .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>PATIENT-1 | 3</entity>
+				<entity>PATIENT-2 | &quot;1-4-2 Nakadori&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id391" size="2">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | locationTown | Gujarat</otriple>
+				<otriple>Amdavad_ni_Gufa | address | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | location | Gujarat</mtriple>
+				<mtriple>Amdavad_ni_Gufa | address | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | address | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
+					<reference entity="&quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;" number="2" tag="PATIENT-2" type="name">Lalbhai Dalpatbhai Campus</reference>
+					<reference entity="Gujarat" number="3" tag="PATIENT-1" type="name">near CEPT University , opp</reference>
+				</references>
+				<text>The address of Amdavad ni Gufa is Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road, Gujarat.</text>
+				<template>The address of AGENT-1 is PATIENT-2 , PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | address | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
+					<reference entity="&quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;" number="2" tag="PATIENT-2" type="name">Lalbhai Dalpatbhai Campus , near CEPT University , opp . Gujarat University , University Road</reference>
+					<reference entity="Gujarat" number="3" tag="PATIENT-1" type="name">Gujarat</reference>
+				</references>
+				<text>Amdavad ni Gufa is at Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road in Gujarat.</text>
+				<template>AGENT-1 is at PATIENT-2 in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>PATIENT-1 | Gujarat</entity>
+				<entity>PATIENT-2 | &quot;Lalbhai Dalpatbhai Campus, near CEPT University, opp. Gujarat University, University Road&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id392" size="2">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</mtriple>
+				<mtriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="2" tag="BRIDGE-1" type="description">the Eastern Province , of Sri Lanka</reference>
+					<reference entity="Austin_Fernando" number="3" tag="PATIENT-1" type="name">Austin Fernando</reference>
+				</references>
+				<text>Ampara Hospital is in the Eastern Province, of Sri Lanka whose leader is Austin Fernando.</text>
+				<template>AGENT-1 is in BRIDGE-1 whose leader is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="2" tag="BRIDGE-1" type="name">Eastern Province , Sri Lanka</reference>
+					<reference entity="Austin_Fernando" number="3" tag="PATIENT-1" type="name">Austin Fernando</reference>
+				</references>
+				<text>Ampara Hospital is located in Eastern Province, Sri Lanka whose leader is Austin Fernando.</text>
+				<template>AGENT-1 is located in BRIDGE-1 whose leader is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>BRIDGE-1 | Eastern_Province,_Sri_Lanka</entity>
+				<entity>PATIENT-1 | Austin_Fernando</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id393" size="2">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | location | New_York_City</otriple>
+				<otriple>New_York_City | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | location | New_York_City</mtriple>
+				<mtriple>New_York_City | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>Asser Levy Public Baths are located in New York City, United States.</text>
+				<template>AGENT-1 are located in BRIDGE-1 , PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>The Asser Levy Public Baths are located in New York City which is in the United States.</text>
+				<template>AGENT-1 are located in BRIDGE-1 which is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
+				<entity>BRIDGE-1 | New_York_City</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id394" size="2">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | location | New_York_City</otriple>
+				<otriple>New_York_City | subdivisionName | Brooklyn</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | location | New_York_City</mtriple>
+				<mtriple>New_York_City | isPartOf | Brooklyn</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | isPartOf | Brooklyn</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="Brooklyn" number="3" tag="PATIENT-1" type="name">Brooklyn</reference>
+				</references>
+				<text>Asser Levy Public Baths are located in New York City, of which Brooklyn is a part.</text>
+				<template>AGENT-1 are located in BRIDGE-1 , of which PATIENT-1 is a part .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | isPartOf | Brooklyn</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="Brooklyn" number="3" tag="PATIENT-1" type="name">Brooklyn</reference>
+				</references>
+				<text>Asser Levy Public Baths are located in New York City which contains Brooklyn.</text>
+				<template>AGENT-1 are located in BRIDGE-1 which contains PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | isPartOf | Brooklyn</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="Brooklyn" number="3" tag="PATIENT-1" type="name">Brooklyn</reference>
+				</references>
+				<text>The Asser Levy Public Baths are located in New York City, which Brooklyn is a part of.</text>
+				<template>AGENT-1 are located in BRIDGE-1 , which PATIENT-1 is a part of .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
+				<entity>BRIDGE-1 | New_York_City</entity>
+				<entity>PATIENT-1 | Brooklyn</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id395" size="2">
+			<originaltripleset>
+				<otriple>Adare_Manor | location | County_Limerick</otriple>
+				<otriple>County_Limerick | subdivisionName | Munster</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>County_Limerick | isPartOf | Munster</mtriple>
+				<mtriple>Adare_Manor | location | County_Limerick</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | location | County_Limerick</striple>
+						<striple>County_Limerick | isPartOf | Munster</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="County_Limerick" number="2" tag="BRIDGE-1" type="name">County Limerick</reference>
+					<reference entity="Munster" number="3" tag="PATIENT-1" type="name">Munster</reference>
+				</references>
+				<text>Adare Manor can be found in County Limerick, which is part of Munster.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 , which is part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | location | County_Limerick</striple>
+						<striple>County_Limerick | isPartOf | Munster</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="County_Limerick" number="2" tag="BRIDGE-1" type="name">County Limerick</reference>
+					<reference entity="Munster" number="3" tag="PATIENT-1" type="name">Munster</reference>
+				</references>
+				<text>Adare Manor is located in County Limerick which is part of Munster.</text>
+				<template>AGENT-1 is located in BRIDGE-1 which is part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | location | County_Limerick</striple>
+						<striple>County_Limerick | isPartOf | Munster</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="County_Limerick" number="2" tag="BRIDGE-1" type="name">County Limerick</reference>
+					<reference entity="Munster" number="3" tag="PATIENT-1" type="name">Munster</reference>
+				</references>
+				<text>Adare Manor is located in County Limerick, which is part of Munster.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , which is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>BRIDGE-1 | County_Limerick</entity>
+				<entity>PATIENT-1 | Munster</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id396" size="2">
+			<originaltripleset>
+				<otriple>Dublin | subdivisionName | Republic_of_Ireland</otriple>
+				<otriple>3Arena | location | Dublin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dublin | isPartOf | Republic_of_Ireland</mtriple>
+				<mtriple>3Arena | location | Dublin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | isPartOf | Republic_of_Ireland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="Dublin" number="2" tag="BRIDGE-1" type="name">Dublin</reference>
+					<reference entity="Republic_of_Ireland" number="3" tag="PATIENT-1" type="description">the Republic of Ireland</reference>
+				</references>
+				<text>The 3Arena is in Dublin which is part of the Republic of Ireland.</text>
+				<template>AGENT-1 is in BRIDGE-1 which is part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | isPartOf | Republic_of_Ireland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="Dublin" number="2" tag="BRIDGE-1" type="name">Dublin</reference>
+					<reference entity="Republic_of_Ireland" number="3" tag="PATIENT-1" type="description">the Republic of Ireland</reference>
+				</references>
+				<text>The 3Arena is located in Dublin in the Republic of Ireland.</text>
+				<template>AGENT-1 is located in BRIDGE-1 in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | Dublin</striple>
+						<striple>Dublin | isPartOf | Republic_of_Ireland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="Dublin" number="2" tag="BRIDGE-1" type="name">Dublin</reference>
+					<reference entity="Republic_of_Ireland" number="3" tag="PATIENT-1" type="description">the Republic of Ireland</reference>
+				</references>
+				<text>The 3Arena is located in Dublin, which is part of the Republic of Ireland.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , which is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>BRIDGE-1 | Dublin</entity>
+				<entity>PATIENT-1 | Republic_of_Ireland</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

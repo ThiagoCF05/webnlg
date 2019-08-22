@@ -1,0 +1,506 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id397" size="3">
+			<originaltripleset>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+				<otriple>Alan_Bean | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Bean | nationality | United_States</mtriple>
+				<mtriple>Alan_Bean | birthPlace | Wheeler,_Texas</mtriple>
+				<mtriple>Alan_Bean | status | &quot;Retired&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+						<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="&quot;Retired&quot;" number="2" tag="PATIENT-3" type="name">retiree</reference>
+					<reference entity="Alan_Bean" number="3" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="Wheeler,_Texas" number="4" tag="PATIENT-2" type="name">Wheeler , Texas</reference>
+				</references>
+				<text>American @ retiree @ Alan Bean was born in Wheeler, Texas.</text>
+				<template>PATIENT-1 @ PATIENT-3 @ AGENT-1 was born in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+						<striple>Alan_Bean | nationality | United_States</striple>
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Wheeler,_Texas" number="4" tag="PATIENT-2" type="name">Wheeler , Texas</reference>
+				</references>
+				<text>Retired US National Alan Bean was born in Wheeler, Texas.</text>
+				<template>PATIENT-3 @ PATIENT-1 National AGENT-1 was born in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+						<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+					<reference entity="Wheeler,_Texas" number="3" tag="PATIENT-2" type="name">Wheeler , Texas</reference>
+					<reference entity="&quot;Retired&quot;" number="4" tag="PATIENT-3" type="name">retired</reference>
+				</references>
+				<text>Alan Bean was born in the United States in Wheeler, Texas and has retired.</text>
+				<template>AGENT-1 was born in PATIENT-1 in PATIENT-2 and has PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Wheeler,_Texas</entity>
+				<entity>PATIENT-3 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id398" size="3">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>United_States | leaderName | Joe_Biden</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
+				<mtriple>United_States | leaderName | Joe_Biden</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>United_States | leaderName | Joe_Biden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="name">New Jersey , USA</reference>
+					<reference entity="Joe_Biden" number="4" tag="PATIENT-2" type="name">Joe Biden</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey, USA (the leader of which was Joe Biden).</text>
+				<template>AGENT-1 was born in PATIENT-1 , BRIDGE-1 (the leader of which was PATIENT-2) .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | Joe_Biden</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id399" size="3">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
+				<mtriple>Buzz_Aldrin | was selected by NASA | 1963</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="description">The United States</reference>
+					<reference entity="Buzz_Aldrin" number="2" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="3" tag="PATIENT-3" type="name">Massachusetts Institute of Technology , Sc . D.</reference>
+					<reference entity="1963" number="4" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">his</reference>
+				</references>
+				<text>The United States National Buzz Aldrin, who graduated from Massachusetts Institute of Technology, Sc. D. in 1963, was hired by NASA shortly after his graduation.</text>
+				<template>PATIENT-1 National AGENT-1 , who graduated from PATIENT-3 in PATIENT-2 , was hired by NASA shortly after AGENT-1 graduation .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">US</reference>
+					<reference entity="1963" number="3" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="4" tag="PATIENT-3" type="name">from MIT in 1963 with a doctorate in Science</reference>
+				</references>
+				<text>Buzz Aldrin, a US national, was selected by NASA in 1963 having graduated from MIT in 1963 with a doctorate in Science.</text>
+				<template>AGENT-1 , a PATIENT-1 national , was selected by NASA in PATIENT-2 having graduated PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="Buzz_Aldrin" number="2" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="3" tag="PATIENT-3" type="name">Massachusetts Institute of Technology in 1963 with a doctorate in Science</reference>
+					<reference entity="1963" number="4" tag="PATIENT-2" type="demonstrative">that year</reference>
+				</references>
+				<text>American @ Buzz Aldrin graduated from Massachusetts Institute of Technology in 1963 with a doctorate in Science and was hired by NASA that year.</text>
+				<template>PATIENT-1 @ AGENT-1 graduated from PATIENT-3 and was hired by NASA PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">United States</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="3" tag="PATIENT-3" type="name">Massachusetts Institute of Technology , Sc.D . 1963</reference>
+					<reference entity="1963" number="4" tag="PATIENT-2" type="name">1963</reference>
+				</references>
+				<text>Buzz Aldrin (from the United States) went to Massachusetts Institute of Technology, Sc.D. 1963 and was selected by NASA in 1963.</text>
+				<template>AGENT-1 (from the PATIENT-1) went to PATIENT-3 and was selected by NASA in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | 1963</entity>
+				<entity>PATIENT-3 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id400" size="3">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>Elliot_See | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | nationality | United_States</striple>
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-3" type="name">US</reference>
+					<reference entity="Dallas" number="3" tag="PATIENT-2" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+				</references>
+				<text>Elliot See, a US national, was born in Dallas and graduated from the University of Texas at Austin.</text>
+				<template>AGENT-1 , a PATIENT-3 national , was born in PATIENT-2 and graduated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | nationality | United_States</striple>
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-3" type="name">US</reference>
+					<reference entity="Dallas" number="3" tag="PATIENT-2" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="PATIENT-1" type="name">University of Texas at Austin</reference>
+				</references>
+				<text>Elliot See, a US national born in Dallas, was a student at University of Texas at Austin.</text>
+				<template>AGENT-1 , a PATIENT-3 national born in PATIENT-2 , was a student at PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | nationality | United_States</striple>
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-3" type="name">United States</reference>
+					<reference entity="Dallas" number="3" tag="PATIENT-2" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+				</references>
+				<text>Elliot See, a United States national born in Dallas, attended the University of Texas at Austin.</text>
+				<template>AGENT-1 , a PATIENT-3 national born in PATIENT-2 , attended PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | nationality | United_States</striple>
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-2" type="name">Dallas</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-3" type="name">United States</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+				</references>
+				<text>Elliot See (born in Dallas, United States) attended the University of Texas at Austin.</text>
+				<template>AGENT-1 (born in PATIENT-2 , PATIENT-3) attended PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | Dallas</entity>
+				<entity>PATIENT-3 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id401" size="3">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | selection | 1962</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | was selected by NASA | 1962</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>Elliot_See | was selected by NASA | 1962</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="1962" number="3" tag="PATIENT-3" type="name">1962</reference>
+					<reference entity="St._Louis" number="4" tag="PATIENT-2" type="name">St. Louis</reference>
+				</references>
+				<text>Elliot See, who graduated from the University of Texas at Austin and was chosen by NASA in 1962, died in St. Louis.</text>
+				<template>AGENT-1 , who graduated from PATIENT-1 and was chosen by NASA in PATIENT-3 , died in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | was selected by NASA | 1962</striple>
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="1962" number="2" tag="PATIENT-3" type="name">1962</reference>
+					<reference entity="University_of_Texas_at_Austin" number="3" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="St._Louis" number="4" tag="PATIENT-2" type="name">St Louis</reference>
+				</references>
+				<text>Elliot See who was selected by NASA in 1962, attended the University of Texas at Austin and died in St Louis.</text>
+				<template>AGENT-1 who was selected by NASA in PATIENT-3 , attended PATIENT-1 and died in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>Elliot_See | was selected by NASA | 1962</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="description">the University of Texas in Austin</reference>
+					<reference entity="1962" number="3" tag="PATIENT-3" type="name">1962</reference>
+					<reference entity="St._Louis" number="4" tag="PATIENT-2" type="name">St Louis</reference>
+				</references>
+				<text>Elliot See, who graduated from the University of Texas in Austin and was chosen by NASA in 1962, has died in St Louis.</text>
+				<template>AGENT-1 , who graduated from PATIENT-1 and was chosen by NASA in PATIENT-3 , has died in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | St._Louis</entity>
+				<entity>PATIENT-3 | 1962</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id402" size="3">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>St._Louis | leaderName | Francis_G._Slay</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>St._Louis | leaderName | Francis_G._Slay</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>St._Louis | leaderName | Francis_G._Slay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="description">the University of Texas , Austin</reference>
+					<reference entity="St._Louis" number="3" tag="BRIDGE-1" type="name">St Louis</reference>
+					<reference entity="Francis_G._Slay" number="4" tag="PATIENT-2" type="name">Francis G Slay</reference>
+				</references>
+				<text>Elliot See, a past graduate of the University of Texas, Austin, died in St Louis where the leader is Francis G Slay.</text>
+				<template>AGENT-1 , a past graduate of PATIENT-1 , died in BRIDGE-1 where the leader is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>St._Louis | leaderName | Francis_G._Slay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="St._Louis" number="3" tag="BRIDGE-1" type="name">St. Louis</reference>
+					<reference entity="Francis_G._Slay" number="4" tag="PATIENT-2" type="name">Francis G. Slay</reference>
+				</references>
+				<text>Elliot See, who attended the University of Texas at Austin, died in St. Louis, whose Mayor is Francis G. Slay.</text>
+				<template>AGENT-1 , who attended PATIENT-1 , died in BRIDGE-1 , whose Mayor is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>St._Louis | leaderName | Francis_G._Slay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="name">University of Texas at Austin</reference>
+					<reference entity="St._Louis" number="3" tag="BRIDGE-1" type="name">St. Louis</reference>
+					<reference entity="Francis_G._Slay" number="4" tag="PATIENT-2" type="name">Francis G. Slay</reference>
+				</references>
+				<text>Elliot See was a student at University of Texas at Austin and died in St. Louis led by Francis G. Slay.</text>
+				<template>AGENT-1 was a student at PATIENT-1 and died in BRIDGE-1 led by PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>BRIDGE-1 | St._Louis</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | Francis_G._Slay</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id403" size="3">
+			<originaltripleset>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>St._Louis | isPartOf | Kingdom_of_France</otriple>
+				<otriple>Elliot_See | deathDate | &quot;1966-02-28&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>St._Louis | isPartOf | Kingdom_of_France</mtriple>
+				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot see</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-2" type="description">the 28th of February 1966</reference>
+					<reference entity="St._Louis" number="3" tag="BRIDGE-1" type="name">St. Louis</reference>
+					<reference entity="Kingdom_of_France" number="4" tag="PATIENT-1" type="description">the Kingdom of France</reference>
+				</references>
+				<text>Elliot see died on the 28th of February 1966 in St. Louis, which is part of the Kingdom of France.</text>
+				<template>AGENT-1 died on PATIENT-2 in BRIDGE-1 , which is part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+						<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-2" type="name">28 February , 1966</reference>
+					<reference entity="St._Louis" number="3" tag="BRIDGE-1" type="name">St. Louis</reference>
+					<reference entity="Kingdom_of_France" number="4" tag="PATIENT-1" type="description">the kingdom of France</reference>
+				</references>
+				<text>Elliot See died on 28 February, 1966 in St. Louis a part of the kingdom of France.</text>
+				<template>AGENT-1 died on PATIENT-2 in BRIDGE-1 a part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>BRIDGE-1 | St._Louis</entity>
+				<entity>PATIENT-1 | Kingdom_of_France</entity>
+				<entity>PATIENT-2 | &quot;1966-02-28&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id404" size="3">
+			<originaltripleset>
+				<otriple>New_Hampshire | bird | Purple_finch</otriple>
+				<otriple>Alan_Shepard | timeInSpace | &quot;13017.0&quot;^^&lt;http://dbpedia.org/datatype/minute&gt;</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>New_Hampshire | bird | Purple_finch</mtriple>
+				<mtriple>Alan_Shepard | timeInSpace | &quot;13017.0&quot;(minutes)</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>New_Hampshire | bird | Purple_finch</striple>
+						<striple>Alan_Shepard | timeInSpace | &quot;13017.0&quot;(minutes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="BRIDGE-1" type="name">New Hampshire</reference>
+					<reference entity="Purple_finch" number="3" tag="PATIENT-1" type="description">the Purple Finch</reference>
+					<reference entity="&quot;13017.0&quot;(minutes)" number="4" tag="PATIENT-2" type="name">130170 minutes</reference>
+				</references>
+				<text>Alan Shepard was born in New Hampshire, the home of the Purple Finch, and spent 130170 minutes in space.</text>
+				<template>AGENT-1 was born in BRIDGE-1 , the home of PATIENT-1 , and spent PATIENT-2 in space .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | New_Hampshire</entity>
+				<entity>PATIENT-1 | Purple_finch</entity>
+				<entity>PATIENT-2 | &quot;13017.0&quot;(minutes)</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

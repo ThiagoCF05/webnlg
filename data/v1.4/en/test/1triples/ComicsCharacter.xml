@@ -1,0 +1,473 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id147" size="1">
+			<originaltripleset>
+				<otriple>April_ONeil | creator | Kevin_Eastman</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>April_ONeil | creator | Kevin_Eastman</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1"/>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kevin_Eastman" number="1" tag="PATIENT-1" type="name">Kevin Eastman</reference>
+				</references>
+				<text>April O'Neil was created by Kevin Eastman.</text>
+				<template>April O'Neil was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>April_ONeil | creator | Kevin_Eastman</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kevin_Eastman" number="1" tag="PATIENT-1" type="name">Kevin Eastman</reference>
+					<reference entity="April_ONeil" number="2" tag="AGENT-1" type="name">April O'Neil</reference>
+				</references>
+				<text>Kevin Eastman is the creator of April O'Neil.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | April_ONeil</entity>
+				<entity>PATIENT-1 | Kevin_Eastman</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id148" size="1">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
+				</references>
+				<text>Bananaman is broadcast by the BBC.</text>
+				<template>AGENT-1 is broadcast by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman the TV series</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="name">BBC</reference>
+				</references>
+				<text>Bananaman the TV series was shown on the BBC.</text>
+				<template>AGENT-1 was shown on the PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="PATIENT-1" type="description">The BBC</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>The BBC broadcasted Bananaman.</text>
+				<template>PATIENT-1 broadcasted AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id149" size="1">
+			<originaltripleset>
+				<otriple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ben_Urich" number="1" tag="AGENT-1" type="name">Ben Urich 's</reference>
+					<reference entity="&quot;Benjamin Urich&quot;" number="2" tag="PATIENT-1" type="name">Benjamin Urich</reference>
+				</references>
+				<text>Ben Urich's full name is actually Benjamin Urich.</text>
+				<template>AGENT-1 full name is actually PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ben_Urich" number="1" tag="AGENT-1" type="name">Ben Urich 's</reference>
+					<reference entity="&quot;Benjamin Urich&quot;" number="2" tag="PATIENT-1" type="name">Benjamin Urich</reference>
+				</references>
+				<text>Ben Urich's full name is Benjamin Urich.</text>
+				<template>AGENT-1 full name is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ben_Urich</entity>
+				<entity>PATIENT-1 | &quot;Benjamin Urich&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id150" size="1">
+			<originaltripleset>
+				<otriple>Bibbo_Bibbowski | creators | Jerry_Ordway</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bibbo_Bibbowski | creator | Jerry_Ordway</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | creator | Jerry_Ordway</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jerry_Ordway" number="1" tag="PATIENT-1" type="name">Jerry Ordway</reference>
+					<reference entity="Bibbo_Bibbowski" number="2" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+				</references>
+				<text>Jerry Ordway is the creator of Bibbo Bibbowski.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | creator | Jerry_Ordway</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bibbo_Bibbowski" number="1" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+					<reference entity="Jerry_Ordway" number="2" tag="PATIENT-1" type="name">Jerry Ordway</reference>
+				</references>
+				<text>The creator of Bibbo Bibbowski is Jerry Ordway.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | creator | Jerry_Ordway</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bibbo_Bibbowski" number="1" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+					<reference entity="Jerry_Ordway" number="2" tag="PATIENT-1" type="name">Jerry Ordway</reference>
+				</references>
+				<text>Bibbo Bibbowski was created by Jerry Ordway.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bibbo_Bibbowski</entity>
+				<entity>PATIENT-1 | Jerry_Ordway</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id151" size="1">
+			<originaltripleset>
+				<otriple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Bo Bibbowski&quot;" number="1" tag="PATIENT-1" type="name">Bo Bibbowski</reference>
+					<reference entity="Bibbo_Bibbowski" number="2" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+				</references>
+				<text>Bo Bibbowski is the full name of Bibbo Bibbowski.</text>
+				<template>PATIENT-1 is the full name of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Bo Bibbowski&quot;" number="1" tag="PATIENT-1" type="name">Bo Bibbowski</reference>
+					<reference entity="Bibbo_Bibbowski" number="2" tag="AGENT-1" type="name">Bibbo</reference>
+				</references>
+				<text>Bo Bibbowski is often called Bibbo.</text>
+				<template>PATIENT-1 is often called AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bibbo_Bibbowski</entity>
+				<entity>PATIENT-1 | &quot;Bo Bibbowski&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id152" size="1">
+			<originaltripleset>
+				<otriple>Bill_Oddie | birthPlace | Lancashire</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bill_Oddie | birthPlace | Lancashire</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bill_Oddie | birthPlace | Lancashire</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bill_Oddie" number="1" tag="AGENT-1" type="name">Bill Oddie</reference>
+					<reference entity="Lancashire" number="2" tag="PATIENT-1" type="name">Lancashire</reference>
+				</references>
+				<text>Bill Oddie was born in Lancashire.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bill_Oddie</entity>
+				<entity>PATIENT-1 | Lancashire</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id153" size="1">
+			<originaltripleset>
+				<otriple>Black_Pirate | alterEgo | &quot;Jon Valor&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Black_Pirate | alternativeName | &quot;Jon Valor&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Black_Pirate | alternativeName | &quot;Jon Valor&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Black_Pirate" number="1" tag="AGENT-1" type="description">The Black Pirate</reference>
+					<reference entity="&quot;Jon Valor&quot;" number="2" tag="PATIENT-1" type="name">Jon Valor</reference>
+				</references>
+				<text>The Black Pirate is also known as Jon Valor.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Black_Pirate | alternativeName | &quot;Jon Valor&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Black_Pirate" number="1" tag="AGENT-1" type="name">Black Pirate</reference>
+					<reference entity="&quot;Jon Valor&quot;" number="2" tag="PATIENT-1" type="name">`` Jon Valor ''</reference>
+				</references>
+				<text>The alternative name of Black Pirate is &quot;Jon Valor&quot;.</text>
+				<template>The alternative name of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Black_Pirate | alternativeName | &quot;Jon Valor&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Black_Pirate" number="1" tag="AGENT-1" type="name">Black Pirate</reference>
+					<reference entity="&quot;Jon Valor&quot;" number="2" tag="PATIENT-1" type="name">Jon Valor</reference>
+				</references>
+				<text>Black Pirate is also known as Jon Valor.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Black_Pirate</entity>
+				<entity>PATIENT-1 | &quot;Jon Valor&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id154" size="1">
+			<originaltripleset>
+				<otriple>John_Buscema | award | Eisner_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>John_Buscema | award | Eisner_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>John_Buscema | award | Eisner_Award</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema</reference>
+					<reference entity="Eisner_Award" number="2" tag="PATIENT-1" type="description">the Eisner Award</reference>
+				</references>
+				<text>John Buscema won the Eisner Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | John_Buscema</entity>
+				<entity>PATIENT-1 | Eisner_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id155" size="1">
+			<originaltripleset>
+				<otriple>Karl_Kesel | nationality | Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Karl_Kesel | nationality | Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Karl_Kesel | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Karl_Kesel" number="1" tag="AGENT-1" type="name">Karl Kesel 's</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>Karl Kesel's nationality is American.</text>
+				<template>AGENT-1 nationality is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Karl_Kesel | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Karl_Kesel" number="1" tag="AGENT-1" type="name">Karl Kesel</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>Karl Kesel is an American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Karl_Kesel</entity>
+				<entity>PATIENT-1 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id156" size="1">
+			<originaltripleset>
+				<otriple>Marv_Wolfman | award | Kirby_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Marv_Wolfman | award | Kirby_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Marv_Wolfman | award | Kirby_Award</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marv_Wolfman" number="1" tag="AGENT-1" type="name">Marv Wolfman</reference>
+					<reference entity="Kirby_Award" number="2" tag="PATIENT-1" type="description">the Kirby Award</reference>
+				</references>
+				<text>Marv Wolfman has won the Kirby Award.</text>
+				<template>AGENT-1 has won PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Marv_Wolfman | award | Kirby_Award</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marv_Wolfman" number="1" tag="AGENT-1" type="name">Marv Wolfman</reference>
+					<reference entity="Kirby_Award" number="2" tag="PATIENT-1" type="description">the Kirby Award</reference>
+				</references>
+				<text>Marv Wolfman won the Kirby Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Marv_Wolfman</entity>
+				<entity>PATIENT-1 | Kirby_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id157" size="1">
+			<originaltripleset>
+				<otriple>Peter_Laird | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Peter_Laird | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Peter_Laird | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peter_Laird" number="1" tag="AGENT-1" type="name">Peter Laird</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>Peter Laird is a United States national.</text>
+				<template>AGENT-1 is a PATIENT-1 national .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Peter_Laird | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peter_Laird" number="1" tag="AGENT-1" type="name">Peter Laird</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">a United States American</reference>
+				</references>
+				<text>Peter Laird is a United States American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Peter_Laird</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id158" size="1">
+			<originaltripleset>
+				<otriple>Scott_Adsit | birthPlace | Northbrook,_Illinois</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Scott_Adsit | birthPlace | Northbrook,_Illinois</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Scott_Adsit | birthPlace | Northbrook,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Scott_Adsit" number="1" tag="AGENT-1" type="name">Scott Adsit</reference>
+					<reference entity="Northbrook,_Illinois" number="2" tag="PATIENT-1" type="name">Northbrook , Illinois</reference>
+				</references>
+				<text>Scott Adsit was born in Northbrook, Illinois.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Scott_Adsit | birthPlace | Northbrook,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Scott_Adsit" number="1" tag="AGENT-1" type="name">Scott Adsit</reference>
+					<reference entity="Northbrook,_Illinois" number="2" tag="PATIENT-1" type="name">Northbrook Illinois</reference>
+				</references>
+				<text>Scott Adsit was born in Northbrook Illinois.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Scott_Adsit</entity>
+				<entity>PATIENT-1 | Northbrook,_Illinois</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

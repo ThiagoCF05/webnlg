@@ -1,0 +1,2329 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Artist" eid="Id1280" size="2">
+			<originaltripleset>
+				<otriple>Aaron_Deer | genre | Psychedelia</otriple>
+				<otriple>Aaron_Deer | instrument | Guitar</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_Deer | genre | Psychedelia</mtriple>
+				<mtriple>Aaron_Deer | instrument | Guitar</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Deer | instrument | Guitar</striple>
+						<striple>Aaron_Deer | genre | Psychedelia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Guitar" number="1" tag="PATIENT-2" type="name">Guitarist</reference>
+					<reference entity="Aaron_Deer" number="2" tag="AGENT-1" type="name">Aaron Deer</reference>
+					<reference entity="Psychedelia" number="3" tag="PATIENT-1" type="name">Psychedelia</reference>
+				</references>
+				<text>Guitarist @ Aaron Deer plays Psychedelia.</text>
+				<template>PATIENT-2 @ AGENT-1 plays PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Deer | instrument | Guitar</striple>
+						<striple>Aaron_Deer | genre | Psychedelia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Deer" number="1" tag="AGENT-1" type="name">Aaron Deer</reference>
+					<reference entity="Guitar" number="2" tag="PATIENT-2" type="description">the guitar</reference>
+					<reference entity="Psychedelia" number="3" tag="PATIENT-1" type="name">Psychedelia music</reference>
+				</references>
+				<text>Aaron Deer plays the guitar and performs Psychedelia music.</text>
+				<template>AGENT-1 plays PATIENT-2 and performs PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Deer | instrument | Guitar</striple>
+						<striple>Aaron_Deer | genre | Psychedelia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Guitar" number="1" tag="PATIENT-2" type="name">Guitarist</reference>
+					<reference entity="Aaron_Deer" number="2" tag="AGENT-1" type="name">Aaron Deer</reference>
+					<reference entity="Psychedelia" number="3" tag="PATIENT-1" type="name">Psychedelia</reference>
+				</references>
+				<text>Guitarist @ Aaron Deer performs music from the Psychedelia genre.</text>
+				<template>PATIENT-2 @ AGENT-1 performs music from the PATIENT-1 genre .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Deer</entity>
+				<entity>PATIENT-1 | Psychedelia</entity>
+				<entity>PATIENT-2 | Guitar</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1281" size="2">
+			<originaltripleset>
+				<otriple>Aaron_Deer | hometown | United_States</otriple>
+				<otriple>Aaron_Deer | origin | Indiana</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_Deer | origin | United_States</mtriple>
+				<mtriple>Aaron_Deer | origin | Indiana</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Deer | origin | Indiana</striple>
+						<striple>Aaron_Deer | origin | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Deer" number="1" tag="AGENT-1" type="name">Aaron Deer</reference>
+					<reference entity="Indiana" number="2" tag="PATIENT-2" type="name">Indiana</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Aaron Deer is from Indiana in the United States.</text>
+				<template>AGENT-1 is from PATIENT-2 in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Deer | origin | United_States</striple>
+						<striple>Aaron_Deer | origin | Indiana</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Deer" number="1" tag="AGENT-1" type="name">Aaron Deer</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+					<reference entity="Indiana" number="3" tag="PATIENT-2" type="name">Indiana</reference>
+				</references>
+				<text>Aaron Deer is from the United States, specifically Indiana.</text>
+				<template>AGENT-1 is from PATIENT-1 , specifically PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Deer | origin | Indiana</striple>
+						<striple>Aaron_Deer | origin | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Deer" number="1" tag="AGENT-1" type="name">Aaron Deer</reference>
+					<reference entity="Indiana" number="2" tag="PATIENT-2" type="name">Indiana</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the United states</reference>
+				</references>
+				<text>Aaron Deer was born in Indiana in the United states.</text>
+				<template>AGENT-1 was born in PATIENT-2 in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Deer</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Indiana</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1282" size="2">
+			<originaltripleset>
+				<otriple>Aaron_Turner | associatedMusicalArtist | Twilight_(band)</otriple>
+				<otriple>Aaron_Turner | genre | Electroacoustic_music</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_Turner | associatedBand/associatedMusicalArtist | Twilight_(band)</mtriple>
+				<mtriple>Aaron_Turner | genre | Electroacoustic_music</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Turner | genre | Electroacoustic_music</striple>
+						<striple>Aaron_Turner | associatedBand/associatedMusicalArtist | Twilight_(band)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Turner" number="1" tag="AGENT-1" type="name">Aaron Turner</reference>
+					<reference entity="Electroacoustic_music" number="2" tag="PATIENT-2" type="name">electroacoustic music</reference>
+					<reference entity="Twilight_(band)" number="3" tag="PATIENT-1" type="description">the band Twilight</reference>
+				</references>
+				<text>Aaron Turner performs electroacoustic music and played with the band Twilight.</text>
+				<template>AGENT-1 performs PATIENT-2 and played with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Turner | genre | Electroacoustic_music</striple>
+						<striple>Aaron_Turner | associatedBand/associatedMusicalArtist | Twilight_(band)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Turner" number="1" tag="AGENT-1" type="name">Aaron Turner</reference>
+					<reference entity="Electroacoustic_music" number="2" tag="PATIENT-2" type="name">electroacoustic music</reference>
+					<reference entity="Aaron_Turner" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Twilight_(band)" number="4" tag="PATIENT-1" type="description">the band Twilight</reference>
+				</references>
+				<text>Aaron Turner performs electroacoustic music and he played with the band Twilight.</text>
+				<template>AGENT-1 performs PATIENT-2 and AGENT-1 played with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Turner | associatedBand/associatedMusicalArtist | Twilight_(band)</striple>
+						<striple>Aaron_Turner | genre | Electroacoustic_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Turner" number="1" tag="AGENT-1" type="name">Aaron Turner</reference>
+					<reference entity="Twilight_(band)" number="2" tag="PATIENT-1" type="description">the band Twilight</reference>
+					<reference entity="Electroacoustic_music" number="3" tag="PATIENT-2" type="name">electroacoustic music</reference>
+				</references>
+				<text>Aaron Turner was with the band Twilight and plays electroacoustic music.</text>
+				<template>AGENT-1 was with PATIENT-1 and plays PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Turner</entity>
+				<entity>PATIENT-1 | Twilight_(band)</entity>
+				<entity>PATIENT-2 | Electroacoustic_music</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1283" size="2">
+			<originaltripleset>
+				<otriple>Aaron_Turner | instrument | Singing</otriple>
+				<otriple>Aaron_Turner | genre | Avant-garde_metal</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_Turner | instrument | Singing</mtriple>
+				<mtriple>Aaron_Turner | genre | Avant-garde_metal</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Turner | genre | Avant-garde_metal</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Turner" number="1" tag="AGENT-1" type="name">Aaron Turner</reference>
+					<reference entity="Avant-garde_metal" number="2" tag="PATIENT-2" type="name">Avant-garde metal</reference>
+				</references>
+				<text>Aaron Turner sings for a living and uses the musical genre Avant-garde metal.</text>
+				<template>AGENT-1 sings for a living and uses the musical genre PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Turner | genre | Avant-garde_metal</striple>
+						<striple>Aaron_Turner | instrument | Singing</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Turner" number="1" tag="AGENT-1" type="name">Aaron Turner</reference>
+					<reference entity="Avant-garde_metal" number="2" tag="PATIENT-2" type="description">an avant-garde metal music</reference>
+					<reference entity="Singing" number="3" tag="PATIENT-1" type="name">singer</reference>
+				</references>
+				<text>Aaron Turner is an avant-garde metal music @ singer.</text>
+				<template>AGENT-1 is PATIENT-2 @ PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Turner | instrument | Singing</striple>
+						<striple>Aaron_Turner | genre | Avant-garde_metal</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Singing" number="1" tag="PATIENT-1" type="name">Singer</reference>
+					<reference entity="Aaron_Turner" number="2" tag="AGENT-1" type="name">Aaron Turner</reference>
+					<reference entity="Avant-garde_metal" number="3" tag="PATIENT-2" type="name">Avant-Garde Metal music</reference>
+				</references>
+				<text>Singer @ Aaron Turner plays Avant-Garde Metal music.</text>
+				<template>PATIENT-1 @ AGENT-1 plays PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Turner</entity>
+				<entity>PATIENT-1 | Singing</entity>
+				<entity>PATIENT-2 | Avant-garde_metal</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1284" size="2">
+			<originaltripleset>
+				<otriple>Abradab | associatedBand | Magik_(rapper)</otriple>
+				<otriple>Abradab | associatedMusicalArtist | Kaliber_44</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abradab | associatedBand/associatedMusicalArtist | Magik_(rapper)</mtriple>
+				<mtriple>Abradab | associatedBand/associatedMusicalArtist | Kaliber_44</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abradab | associatedBand/associatedMusicalArtist | Kaliber_44</striple>
+						<striple>Abradab | associatedBand/associatedMusicalArtist | Magik_(rapper)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abradab" number="1" tag="AGENT-1" type="name">Abradab</reference>
+					<reference entity="Kaliber_44" number="2" tag="PATIENT-2" type="description">the band Kaliber 44</reference>
+					<reference entity="Magik_(rapper)" number="3" tag="PATIENT-1" type="name">Magik ( rapper )</reference>
+				</references>
+				<text>Abradab, an artist for the band Kaliber 44, is associated with Magik (rapper).</text>
+				<template>AGENT-1 , an artist for PATIENT-2 , is associated with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abradab | associatedBand/associatedMusicalArtist | Kaliber_44</striple>
+						<striple>Abradab | associatedBand/associatedMusicalArtist | Magik_(rapper)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abradab" number="1" tag="AGENT-1" type="name">Abradab</reference>
+					<reference entity="Kaliber_44" number="2" tag="PATIENT-2" type="description">the band Kaliber 44</reference>
+					<reference entity="Magik_(rapper)" number="3" tag="PATIENT-1" type="description">the rapper Magik</reference>
+				</references>
+				<text>Abradab played with the band Kaliber 44 and is associated with the rapper Magik.</text>
+				<template>AGENT-1 played with PATIENT-2 and is associated with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abradab | associatedBand/associatedMusicalArtist | Kaliber_44</striple>
+						<striple>Abradab | associatedBand/associatedMusicalArtist | Magik_(rapper)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abradab" number="1" tag="AGENT-1" type="name">Abradab</reference>
+					<reference entity="Kaliber_44" number="2" tag="PATIENT-2" type="description">the band Kaliber 44</reference>
+					<reference entity="Abradab" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Magik_(rapper)" number="4" tag="PATIENT-1" type="description">the rapper Magik</reference>
+				</references>
+				<text>Abradab is an artist for the band Kaliber 44 and he is associated with the rapper Magik.</text>
+				<template>AGENT-1 is an artist for PATIENT-2 and AGENT-1 is associated with PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abradab</entity>
+				<entity>PATIENT-1 | Magik_(rapper)</entity>
+				<entity>PATIENT-2 | Kaliber_44</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1285" size="2">
+			<originaltripleset>
+				<otriple>Abradab | dateOfBirth | &quot;1978-11-12&quot;^^xsd:date</otriple>
+				<otriple>Abradab | placeOfBirth | Katowice</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abradab | birthDate | 1978-11-12</mtriple>
+				<mtriple>Abradab | birthPlace | Katowice</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abradab | birthDate | 1978-11-12</striple>
+						<striple>Abradab | birthPlace | Katowice</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abradab" number="1" tag="AGENT-1" type="name">Abradab</reference>
+					<reference entity="1978-11-12" number="2" tag="PATIENT-1" type="name">November 12 , 1978</reference>
+					<reference entity="Katowice" number="3" tag="PATIENT-2" type="name">Katowice</reference>
+				</references>
+				<text>Abradab was born on November 12, 1978 in Katowice.</text>
+				<template>AGENT-1 was born on PATIENT-1 in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abradab | birthPlace | Katowice</striple>
+						<striple>Abradab | birthDate | 1978-11-12</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abradab" number="1" tag="AGENT-1" type="name">Abradab</reference>
+					<reference entity="Katowice" number="2" tag="PATIENT-2" type="name">Katowice</reference>
+					<reference entity="1978-11-12" number="3" tag="PATIENT-1" type="name">12th November 1978</reference>
+				</references>
+				<text>Abradab was born in Katowice on 12th November 1978.</text>
+				<template>AGENT-1 was born in PATIENT-2 on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abradab</entity>
+				<entity>PATIENT-1 | 1978-11-12</entity>
+				<entity>PATIENT-2 | Katowice</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1286" size="2">
+			<originaltripleset>
+				<otriple>Abradab | birthPlace | Katowice</otriple>
+				<otriple>Abradab | placeOfBirth | Poland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abradab | birthPlace | Katowice</mtriple>
+				<mtriple>Abradab | birthPlace | Poland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abradab | birthPlace | Katowice</striple>
+						<striple>Abradab | birthPlace | Poland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abradab" number="1" tag="AGENT-1" type="name">Abradab</reference>
+					<reference entity="Katowice" number="2" tag="PATIENT-1" type="name">Katowice</reference>
+					<reference entity="Poland" number="3" tag="PATIENT-2" type="name">Poland</reference>
+				</references>
+				<text>Abradab was born in Katowice, Poland.</text>
+				<template>AGENT-1 was born in PATIENT-1 , PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abradab | birthPlace | Poland</striple>
+						<striple>Abradab | birthPlace | Katowice</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abradab" number="1" tag="AGENT-1" type="name">Abradab</reference>
+					<reference entity="Poland" number="2" tag="PATIENT-2" type="name">Poland</reference>
+					<reference entity="Katowice" number="3" tag="PATIENT-1" type="name">Katowice</reference>
+				</references>
+				<text>The birth place of Abradab is Poland, in Katowice.</text>
+				<template>The birth place of AGENT-1 is PATIENT-2 , in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abradab | birthPlace | Katowice</striple>
+						<striple>Abradab | birthPlace | Poland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abradab" number="1" tag="AGENT-1" type="name">Abradab</reference>
+					<reference entity="Katowice" number="2" tag="PATIENT-1" type="name">Katowice</reference>
+					<reference entity="Poland" number="3" tag="PATIENT-2" type="name">Poland</reference>
+				</references>
+				<text>Abradab was born is Katowice, Poland.</text>
+				<template>AGENT-1 was born is PATIENT-1 , PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abradab</entity>
+				<entity>PATIENT-1 | Katowice</entity>
+				<entity>PATIENT-2 | Poland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1287" size="2">
+			<originaltripleset>
+				<otriple>Ace_Wilder | genre | Hip_hop_music</otriple>
+				<otriple>Hip_hop_music | stylisticOrigin | Disco</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ace_Wilder | genre | Hip_hop_music</mtriple>
+				<mtriple>Hip_hop_music | stylisticOrigin | Disco</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ace_Wilder | genre | Hip_hop_music</striple>
+						<striple>Hip_hop_music | stylisticOrigin | Disco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ace_Wilder" number="1" tag="AGENT-1" type="name">Ace Wilder</reference>
+					<reference entity="Hip_hop_music" number="2" tag="BRIDGE-1" type="name">hip hop music</reference>
+					<reference entity="Disco" number="3" tag="PATIENT-1" type="name">disco</reference>
+				</references>
+				<text>Ace Wilder is an exponent of hip hop music, a style that originated from disco.</text>
+				<template>AGENT-1 is an exponent of BRIDGE-1 , a style that originated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ace_Wilder | genre | Hip_hop_music</striple>
+						<striple>Hip_hop_music | stylisticOrigin | Disco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ace_Wilder" number="1" tag="AGENT-1" type="name">Ace Wilder</reference>
+					<reference entity="Hip_hop_music" number="2" tag="BRIDGE-1" type="name">hip hop music</reference>
+					<reference entity="Hip_hop_music" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Disco" number="4" tag="PATIENT-1" type="name">Disco</reference>
+				</references>
+				<text>The musical genre of Ace Wilder is hip hop music which has its origins in Disco.</text>
+				<template>The musical genre of AGENT-1 is BRIDGE-1 which has BRIDGE-1 origins in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ace_Wilder | genre | Hip_hop_music</striple>
+						<striple>Hip_hop_music | stylisticOrigin | Disco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ace_Wilder" number="1" tag="AGENT-1" type="name">Ace Wilder 's</reference>
+					<reference entity="Hip_hop_music" number="2" tag="BRIDGE-1" type="name">Hip hop music</reference>
+					<reference entity="Hip_hop_music" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Disco" number="4" tag="PATIENT-1" type="name">Disco</reference>
+				</references>
+				<text>Ace Wilder's musical genre is Hip hop music which has its origins in Disco.</text>
+				<template>AGENT-1 musical genre is BRIDGE-1 which has BRIDGE-1 origins in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ace_Wilder</entity>
+				<entity>BRIDGE-1 | Hip_hop_music</entity>
+				<entity>PATIENT-1 | Disco</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1288" size="2">
+			<originaltripleset>
+				<otriple>Ace_Wilder | recordLabel | Warner_Music_Group</otriple>
+				<otriple>Ace_Wilder | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ace_Wilder | recordLabel | Warner_Music_Group</mtriple>
+				<mtriple>Ace_Wilder | background | &quot;solo_singer&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ace_Wilder | background | &quot;solo_singer&quot;</striple>
+						<striple>Ace_Wilder | recordLabel | Warner_Music_Group</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ace_Wilder" number="1" tag="AGENT-1" type="name">Ace Wilder</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-2" type="description">a solo singer</reference>
+					<reference entity="Warner_Music_Group" number="3" tag="PATIENT-1" type="name">Warner Music Group</reference>
+				</references>
+				<text>Ace Wilder has a background as a solo singer and is signed to the record label Warner Music Group.</text>
+				<template>AGENT-1 has a background as PATIENT-2 and is signed to the record label PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ace_Wilder | background | &quot;solo_singer&quot;</striple>
+						<striple>Ace_Wilder | recordLabel | Warner_Music_Group</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ace_Wilder" number="1" tag="AGENT-1" type="name">Ace Wilder</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-2" type="description">a solo singer</reference>
+					<reference entity="Warner_Music_Group" number="3" tag="PATIENT-1" type="name">Warner Music group</reference>
+				</references>
+				<text>Ace Wilder is a solo singer who uses the record label Warner Music group.</text>
+				<template>AGENT-1 is PATIENT-2 who uses the record label PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ace_Wilder | background | &quot;solo_singer&quot;</striple>
+						<striple>Ace_Wilder | recordLabel | Warner_Music_Group</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ace_Wilder" number="1" tag="AGENT-1" type="name">Ace Wilder</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-2" type="description">a solo singer</reference>
+					<reference entity="Warner_Music_Group" number="3" tag="PATIENT-1" type="name">Warner Music Group</reference>
+				</references>
+				<text>Ace Wilder is a solo singer with the record label Warner Music Group.</text>
+				<template>AGENT-1 is PATIENT-2 with the record label PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ace_Wilder</entity>
+				<entity>PATIENT-1 | Warner_Music_Group</entity>
+				<entity>PATIENT-2 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1289" size="2">
+			<originaltripleset>
+				<otriple>Agustín_Barboza | birthPlace | Paraguay</otriple>
+				<otriple>Agustín_Barboza | recordLabel | Philips_Records</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agustín_Barboza | birthPlace | Paraguay</mtriple>
+				<mtriple>Agustín_Barboza | recordLabel | Philips_Records</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agustín_Barboza | birthPlace | Paraguay</striple>
+						<striple>Agustín_Barboza | recordLabel | Philips_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paraguay" number="1" tag="PATIENT-1" type="name">Paraguay</reference>
+					<reference entity="Agustín_Barboza" number="2" tag="AGENT-1" type="name">Agustin Barboza</reference>
+					<reference entity="Philips_Records" number="3" tag="PATIENT-2" type="name">Philips Records</reference>
+				</references>
+				<text>Born in Paraguay, Agustin Barboza is signed to Philips Records.</text>
+				<template>Born in PATIENT-1 , AGENT-1 is signed to PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agustín_Barboza | birthPlace | Paraguay</striple>
+						<striple>Agustín_Barboza | recordLabel | Philips_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paraguay" number="1" tag="PATIENT-1" type="name">Paraguay</reference>
+					<reference entity="Agustín_Barboza" number="2" tag="AGENT-1" type="name">Agustin Barboza</reference>
+					<reference entity="Philips_Records" number="3" tag="PATIENT-2" type="name">Philips Records</reference>
+				</references>
+				<text>Paraguay born Agustin Barboza is signed to Philips Records.</text>
+				<template>PATIENT-1 born AGENT-1 is signed to PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agustín_Barboza | birthPlace | Paraguay</striple>
+						<striple>Agustín_Barboza | recordLabel | Philips_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agustín_Barboza" number="1" tag="AGENT-1" type="name">Agustin Barboza</reference>
+					<reference entity="Paraguay" number="2" tag="PATIENT-1" type="name">Paraguay</reference>
+					<reference entity="Philips_Records" number="3" tag="PATIENT-2" type="name">Philips Records</reference>
+				</references>
+				<text>Agustin Barboza was born in Paraguay and is signed to Philips Records.</text>
+				<template>AGENT-1 was born in PATIENT-1 and is signed to PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agustín_Barboza</entity>
+				<entity>PATIENT-1 | Paraguay</entity>
+				<entity>PATIENT-2 | Philips_Records</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1290" size="2">
+			<originaltripleset>
+				<otriple>Alan_Frew | genre | Rock_music</otriple>
+				<otriple>Rock_music | musicFusionGenre | Bhangra_(music)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Frew | genre | Rock_music</mtriple>
+				<mtriple>Rock_music | musicFusionGenre | Bhangra_(music)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Frew | genre | Rock_music</striple>
+						<striple>Rock_music | musicFusionGenre | Bhangra_(music)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Frew" number="1" tag="AGENT-1" type="name">Alan Frew</reference>
+					<reference entity="Rock_music" number="2" tag="BRIDGE-1" type="description">a rock musician</reference>
+					<reference entity="Bhangra_(music)" number="3" tag="PATIENT-1" type="name">Bhangra styles</reference>
+				</references>
+				<text>Alan Frew is a rock musician, which includes fusion and Bhangra styles.</text>
+				<template>AGENT-1 is BRIDGE-1 , which includes fusion and PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Frew | genre | Rock_music</striple>
+						<striple>Rock_music | musicFusionGenre | Bhangra_(music)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Frew" number="1" tag="AGENT-1" type="name">Alan Frew 's</reference>
+					<reference entity="Rock_music" number="2" tag="BRIDGE-1" type="name">Rock music</reference>
+					<reference entity="Bhangra_(music)" number="3" tag="PATIENT-1" type="name">bhangra</reference>
+					<reference entity="Rock_music" number="4" tag="BRIDGE-1" type="name">rock</reference>
+				</references>
+				<text>Alan Frew's genre is Rock music of which bhangra is a fusion of rock.</text>
+				<template>AGENT-1 genre is BRIDGE-1 of which PATIENT-1 is a fusion of BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Frew | genre | Rock_music</striple>
+						<striple>Rock_music | musicFusionGenre | Bhangra_(music)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Frew" number="1" tag="AGENT-1" type="name">Alan Frews '</reference>
+					<reference entity="Rock_music" number="2" tag="BRIDGE-1" type="name">rock music</reference>
+					<reference entity="Bhangra_(music)" number="3" tag="PATIENT-1" type="name">Bhangra</reference>
+				</references>
+				<text>Alan Frews' musical genre is rock music and a type of rock music fusion is Bhangra.</text>
+				<template>AGENT-1 musical genre is BRIDGE-1 and a type of rock music fusion is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Frew</entity>
+				<entity>BRIDGE-1 | Rock_music</entity>
+				<entity>PATIENT-1 | Bhangra_(music)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1291" size="2">
+			<originaltripleset>
+				<otriple>Alan_Frew | genre | Rock_music</otriple>
+				<otriple>Rock_music | stylisticOrigin | Country_music</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Frew | genre | Rock_music</mtriple>
+				<mtriple>Rock_music | stylisticOrigin | Country_music</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Frew | genre | Rock_music</striple>
+						<striple>Rock_music | stylisticOrigin | Country_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Frew" number="1" tag="AGENT-1" type="name">Alan Frew</reference>
+					<reference entity="Rock_music" number="2" tag="BRIDGE-1" type="name">rock music</reference>
+					<reference entity="Country_music" number="3" tag="PATIENT-1" type="name">country music</reference>
+				</references>
+				<text>Alan Frew plays rock music, which originated from country music.</text>
+				<template>AGENT-1 plays BRIDGE-1 , which originated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Frew | genre | Rock_music</striple>
+						<striple>Rock_music | stylisticOrigin | Country_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Frew" number="1" tag="AGENT-1" type="name">Alan Frews '</reference>
+					<reference entity="Rock_music" number="2" tag="BRIDGE-1" type="name">rock music</reference>
+					<reference entity="Country_music" number="3" tag="PATIENT-1" type="name">country music</reference>
+				</references>
+				<text>Alan Frews' musical genre is rock music, which originated from country music.</text>
+				<template>AGENT-1 musical genre is BRIDGE-1 , which originated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Frew | genre | Rock_music</striple>
+						<striple>Rock_music | stylisticOrigin | Country_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Frew" number="1" tag="AGENT-1" type="name">Alan Frew</reference>
+					<reference entity="Rock_music" number="2" tag="BRIDGE-1" type="name">rock music</reference>
+					<reference entity="Rock_music" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Country_music" number="4" tag="PATIENT-1" type="name">country music</reference>
+				</references>
+				<text>Alan Frew plays rock music which has its roots in country music.</text>
+				<template>AGENT-1 plays BRIDGE-1 which has BRIDGE-1 roots in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Frew</entity>
+				<entity>BRIDGE-1 | Rock_music</entity>
+				<entity>PATIENT-1 | Country_music</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1292" size="2">
+			<originaltripleset>
+				<otriple>Albennie_Jones | genre | Jazz</otriple>
+				<otriple>Jazz | stylisticOrigin | Blues</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Albennie_Jones | genre | Jazz</mtriple>
+				<mtriple>Jazz | stylisticOrigin | Blues</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jazz | stylisticOrigin | Blues</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albennie_Jones | genre | Jazz</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jazz" number="1" tag="BRIDGE-1" type="name">Jazz</reference>
+					<reference entity="Blues" number="2" tag="PATIENT-1" type="name">blues music</reference>
+					<reference entity="Albennie_Jones" number="3" tag="AGENT-1" type="name">Albennie Jones</reference>
+					<reference entity="Jazz" number="4" tag="BRIDGE-1" type="name">jazz</reference>
+				</references>
+				<text>Jazz music originated from blues music. Albennie Jones is a jazz performer.</text>
+				<template>BRIDGE-1 music originated from PATIENT-1 . AGENT-1 is a BRIDGE-1 performer .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albennie_Jones | genre | Jazz</striple>
+						<striple>Jazz | stylisticOrigin | Blues</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albennie_Jones" number="1" tag="AGENT-1" type="name">Albennie Jones</reference>
+					<reference entity="Jazz" number="2" tag="BRIDGE-1" type="name">Jazz</reference>
+					<reference entity="Blues" number="3" tag="PATIENT-1" type="name">Blues music</reference>
+				</references>
+				<text>Albennie Jones plays Jazz, which originated from Blues music.</text>
+				<template>AGENT-1 plays BRIDGE-1 , which originated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jazz | stylisticOrigin | Blues</striple>
+						<striple>Albennie_Jones | genre | Jazz</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jazz" number="1" tag="BRIDGE-1" type="name">Jazz</reference>
+					<reference entity="Blues" number="2" tag="PATIENT-1" type="name">Blues</reference>
+					<reference entity="Jazz" number="3" tag="BRIDGE-1" type="name">jazz</reference>
+					<reference entity="Albennie_Jones" number="4" tag="AGENT-1" type="name">Albennie Jones</reference>
+				</references>
+				<text>The origins of Jazz is Blues and a jazz artist is Albennie Jones.</text>
+				<template>The origins of BRIDGE-1 is PATIENT-1 and a BRIDGE-1 artist is AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albennie_Jones</entity>
+				<entity>BRIDGE-1 | Jazz</entity>
+				<entity>PATIENT-1 | Blues</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1293" size="2">
+			<originaltripleset>
+				<otriple>Aleksandra_Kovač | genre | Pop_music</otriple>
+				<otriple>Aleksandra_Kovač | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandra_Kovač | genre | Pop_music</mtriple>
+				<mtriple>Aleksandra_Kovač | background | &quot;solo_singer&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | background | &quot;solo_singer&quot;</striple>
+						<striple>Aleksandra_Kovač | genre | Pop_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandra_Kovač" number="1" tag="AGENT-1" type="name">Aleksandra Kovac</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-2" type="description">a solo singer</reference>
+					<reference entity="Pop_music" number="3" tag="PATIENT-1" type="name">pop music</reference>
+				</references>
+				<text>Aleksandra Kovac has been a solo singer , and a performer in the pop music genre.</text>
+				<template>AGENT-1 has been PATIENT-2 , and a performer in the PATIENT-1 genre .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | background | &quot;solo_singer&quot;</striple>
+						<striple>Aleksandra_Kovač | genre | Pop_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;solo_singer&quot;" number="1" tag="PATIENT-2" type="name">solo singing</reference>
+					<reference entity="Aleksandra_Kovač" number="2" tag="AGENT-1" type="name">Aleksandra Kovač</reference>
+					<reference entity="Pop_music" number="3" tag="PATIENT-1" type="name">Pop</reference>
+				</references>
+				<text>With a background in solo singing, Aleksandra Kovač, belongs to the musical genre of Pop.</text>
+				<template>With a background in PATIENT-2 , AGENT-1 , belongs to the musical genre of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | genre | Pop_music</striple>
+						<striple>Aleksandra_Kovač | background | &quot;solo_singer&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandra_Kovač" number="1" tag="AGENT-1" type="name">Aleksandra Kovač</reference>
+					<reference entity="Pop_music" number="2" tag="PATIENT-1" type="description">a solo pop musician</reference>
+					<reference entity="&quot;solo_singer&quot;" number="3" tag="PATIENT-2" type="name">singer</reference>
+				</references>
+				<text>Aleksandra Kovač is a solo pop musician @ singer.</text>
+				<template>AGENT-1 is PATIENT-1 @ PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandra_Kovač</entity>
+				<entity>PATIENT-1 | Pop_music</entity>
+				<entity>PATIENT-2 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1294" size="2">
+			<originaltripleset>
+				<otriple>Aleksandra_Kovač | genre | Rhythm_and_blues</otriple>
+				<otriple>Rhythm_and_blues | stylisticOrigin | Blues</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandra_Kovač | genre | Rhythm_and_blues</mtriple>
+				<mtriple>Rhythm_and_blues | stylisticOrigin | Blues</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | genre | Rhythm_and_blues</striple>
+						<striple>Rhythm_and_blues | stylisticOrigin | Blues</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandra_Kovač" number="1" tag="AGENT-1" type="name">Aleksandra Kovac</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="BRIDGE-1" type="name">rhythm and blues</reference>
+					<reference entity="Blues" number="3" tag="PATIENT-1" type="name">blues music</reference>
+				</references>
+				<text>Aleksandra Kovac plays rhythm and blues, which originated from blues music.</text>
+				<template>AGENT-1 plays BRIDGE-1 , which originated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | genre | Rhythm_and_blues</striple>
+						<striple>Rhythm_and_blues | stylisticOrigin | Blues</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandra_Kovač" number="1" tag="AGENT-1" type="name">Aleksandra Kovac</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="BRIDGE-1" type="name">Rhythm and blues</reference>
+					<reference entity="Blues" number="3" tag="PATIENT-1" type="description">the blues</reference>
+				</references>
+				<text>Aleksandra Kovac is an exponent of Rhythm and blues, the music that originated from the blues.</text>
+				<template>AGENT-1 is an exponent of BRIDGE-1 , the music that originated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | genre | Rhythm_and_blues</striple>
+						<striple>Rhythm_and_blues | stylisticOrigin | Blues</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandra_Kovač" number="1" tag="AGENT-1" type="name">Aleksandra Kovac</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="BRIDGE-1" type="name">rhythm and blues</reference>
+					<reference entity="Blues" number="3" tag="PATIENT-1" type="name">blues music</reference>
+				</references>
+				<text>Aleksandra Kovac plays rhythm and blues which originated from blues music.</text>
+				<template>AGENT-1 plays BRIDGE-1 which originated from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandra_Kovač</entity>
+				<entity>BRIDGE-1 | Rhythm_and_blues</entity>
+				<entity>PATIENT-1 | Blues</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1295" size="2">
+			<originaltripleset>
+				<otriple>Aleksandra_Kovač | genre | Soul_music</otriple>
+				<otriple>Aleksandra_Kovač | activeYearsStartYear | &quot;1990&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandra_Kovač | genre | Soul_music</mtriple>
+				<mtriple>Aleksandra_Kovač | activeYearsStartYear | 1990</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | activeYearsStartYear | 1990</striple>
+						<striple>Aleksandra_Kovač | genre | Soul_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandra_Kovač" number="1" tag="AGENT-1" type="name">Aleksandra Kovac</reference>
+					<reference entity="1990" number="2" tag="PATIENT-2" type="name">1990</reference>
+					<reference entity="Aleksandra_Kovač" number="3" tag="AGENT-1" type="pronoun">she</reference>
+					<reference entity="Soul_music" number="4" tag="PATIENT-1" type="name">soul music</reference>
+				</references>
+				<text>Aleksandra Kovac stared in 1990 and she performs soul music.</text>
+				<template>AGENT-1 stared in PATIENT-2 and AGENT-1 performs PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | activeYearsStartYear | 1990</striple>
+						<striple>Aleksandra_Kovač | genre | Soul_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandra_Kovač" number="1" tag="AGENT-1" type="name">Aleksandra Kovač</reference>
+					<reference entity="Aleksandra_Kovač" number="2" tag="AGENT-1" type="pronoun">her</reference>
+					<reference entity="1990" number="3" tag="PATIENT-2" type="name">1990</reference>
+					<reference entity="Aleksandra_Kovač" number="4" tag="AGENT-1" type="pronoun">she</reference>
+					<reference entity="Soul_music" number="5" tag="PATIENT-1" type="name">soul music</reference>
+				</references>
+				<text>Aleksandra Kovač began her musical career in 1990, she performs soul music.</text>
+				<template>AGENT-1 began AGENT-1 musical career in PATIENT-2 , AGENT-1 performs PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandra_Kovač | genre | Soul_music</striple>
+						<striple>Aleksandra_Kovač | activeYearsStartYear | 1990</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandra_Kovač" number="1" tag="AGENT-1" type="name">Aleksandra Kovac</reference>
+					<reference entity="Soul_music" number="2" tag="PATIENT-1" type="name">soul music</reference>
+					<reference entity="Aleksandra_Kovač" number="3" tag="AGENT-1" type="pronoun">her</reference>
+					<reference entity="1990" number="4" tag="PATIENT-2" type="name">1990</reference>
+				</references>
+				<text>Aleksandra Kovac is a soul music performer who began her musical career in 1990.</text>
+				<template>AGENT-1 is a PATIENT-1 performer who began AGENT-1 musical career in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandra_Kovač</entity>
+				<entity>PATIENT-1 | Soul_music</entity>
+				<entity>PATIENT-2 | 1990</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1296" size="2">
+			<originaltripleset>
+				<otriple>Alex_Day | genre | Synthpop</otriple>
+				<otriple>Synthpop | stylisticOrigin | New_wave_music</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Day | genre | Synthpop</mtriple>
+				<mtriple>Synthpop | stylisticOrigin | New_wave_music</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Day | genre | Synthpop</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Day" number="1" tag="AGENT-1" type="name">Alex Day</reference>
+					<reference entity="Synthpop" number="2" tag="BRIDGE-1" type="name">Synthpop</reference>
+				</references>
+				<text>Alex Day plays Synthpop, which originated from new wave music.</text>
+				<template>AGENT-1 plays BRIDGE-1 , which originated from new wave music .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Day | genre | Synthpop</striple>
+						<striple>Synthpop | stylisticOrigin | New_wave_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Day" number="1" tag="AGENT-1" type="name">Alex Day</reference>
+					<reference entity="Synthpop" number="2" tag="BRIDGE-1" type="name">Synthpop music</reference>
+					<reference entity="Synthpop" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="New_wave_music" number="4" tag="PATIENT-1" type="name">new wave music</reference>
+				</references>
+				<text>Alex Day performs Synthpop music which has its stylistic origin in new wave music.</text>
+				<template>AGENT-1 performs BRIDGE-1 which has BRIDGE-1 stylistic origin in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Day | genre | Synthpop</striple>
+						<striple>Synthpop | stylisticOrigin | New_wave_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Day" number="1" tag="AGENT-1" type="name">Alex Day</reference>
+					<reference entity="Synthpop" number="2" tag="BRIDGE-1" type="name">Synthpop</reference>
+					<reference entity="New_wave_music" number="3" tag="PATIENT-1" type="name">New Wave music</reference>
+				</references>
+				<text>Alex Day plays Synthpop, which is derived from New Wave music.</text>
+				<template>AGENT-1 plays BRIDGE-1 , which is derived from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Day</entity>
+				<entity>BRIDGE-1 | Synthpop</entity>
+				<entity>PATIENT-1 | New_wave_music</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1297" size="2">
+			<originaltripleset>
+				<otriple>Alfred_Garth_Jones | birthPlace | England</otriple>
+				<otriple>Alfred_Garth_Jones | birthYear | &quot;1872&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfred_Garth_Jones | birthPlace | England</mtriple>
+				<mtriple>Alfred_Garth_Jones | birthYear | 1872</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_Garth_Jones | birthPlace | England</striple>
+						<striple>Alfred_Garth_Jones | birthYear | 1872</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_Garth_Jones" number="1" tag="AGENT-1" type="name">Alfred Garth Jones</reference>
+					<reference entity="England" number="2" tag="PATIENT-1" type="name">England</reference>
+					<reference entity="1872" number="3" tag="PATIENT-2" type="name">1872</reference>
+				</references>
+				<text>Alfred Garth Jones was in England in 1872.</text>
+				<template>AGENT-1 was in PATIENT-1 in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_Garth_Jones | birthPlace | England</striple>
+						<striple>Alfred_Garth_Jones | birthYear | 1872</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_Garth_Jones" number="1" tag="AGENT-1" type="name">Alfred Garth Jones</reference>
+					<reference entity="England" number="2" tag="PATIENT-1" type="name">England</reference>
+					<reference entity="1872" number="3" tag="PATIENT-2" type="name">1872</reference>
+				</references>
+				<text>Alfred Garth Jones was born in England in 1872.</text>
+				<template>AGENT-1 was born in PATIENT-1 in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_Garth_Jones | birthYear | 1872</striple>
+						<striple>Alfred_Garth_Jones | birthPlace | England</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_Garth_Jones" number="1" tag="AGENT-1" type="name">Alfred Garth Jones</reference>
+					<reference entity="1872" number="2" tag="PATIENT-2" type="name">1872</reference>
+					<reference entity="England" number="3" tag="PATIENT-1" type="name">England</reference>
+				</references>
+				<text>Alfred Garth Jones was born in 1872 in England.</text>
+				<template>AGENT-1 was born in PATIENT-2 in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfred_Garth_Jones</entity>
+				<entity>PATIENT-1 | England</entity>
+				<entity>PATIENT-2 | 1872</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1298" size="2">
+			<originaltripleset>
+				<otriple>Alfredo_Zitarrosa | genre | Milonga_(music)</otriple>
+				<otriple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</mtriple>
+				<mtriple>Alfredo_Zitarrosa | genre | Milonga_(music)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+						<striple>Alfredo_Zitarrosa | genre | Milonga_(music)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-1" type="description">a solo singer</reference>
+					<reference entity="Milonga_(music)" number="3" tag="PATIENT-2" type="name">Milonga</reference>
+				</references>
+				<text>The musical genre of Alfredo Zitarrosa, who started out as a solo singer, is Milonga.</text>
+				<template>The musical genre of AGENT-1 , who started out as PATIENT-1 , is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+						<striple>Alfredo_Zitarrosa | genre | Milonga_(music)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;solo_singer&quot;" number="1" tag="PATIENT-1" type="name">Solo singer</reference>
+					<reference entity="Alfredo_Zitarrosa" number="2" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="Milonga_(music)" number="3" tag="PATIENT-2" type="name">Milonga</reference>
+				</references>
+				<text>Solo singer @ Alfredo Zitarrosa is a Milonga stylist.</text>
+				<template>PATIENT-1 @ AGENT-1 is a PATIENT-2 stylist .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | genre | Milonga_(music)</striple>
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="Milonga_(music)" number="2" tag="PATIENT-2" type="name">Milonga</reference>
+					<reference entity="&quot;solo_singer&quot;" number="3" tag="PATIENT-1" type="description">a solo singer</reference>
+				</references>
+				<text>Alfredo Zitarrosa is a Milonga musician, who started out as a solo singer.</text>
+				<template>AGENT-1 is a PATIENT-2 musician , who started out as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfredo_Zitarrosa</entity>
+				<entity>PATIENT-1 | &quot;solo_singer&quot;</entity>
+				<entity>PATIENT-2 | Milonga_(music)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1299" size="2">
+			<originaltripleset>
+				<otriple>Alfredo_Zitarrosa | genre | Taquirari</otriple>
+				<otriple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</mtriple>
+				<mtriple>Alfredo_Zitarrosa | genre | Taquirari</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+						<striple>Alfredo_Zitarrosa | genre | Taquirari</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-1" type="description">a solo singer</reference>
+					<reference entity="Taquirari" number="3" tag="PATIENT-2" type="name">Taquirari</reference>
+				</references>
+				<text>Alfredo Zitarrosa, whose background was as a solo singer, is a performer of Taquirari.</text>
+				<template>AGENT-1 , whose background was as PATIENT-1 , is a performer of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+						<striple>Alfredo_Zitarrosa | genre | Taquirari</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-1" type="description">a solo singer</reference>
+					<reference entity="Taquirari" number="3" tag="PATIENT-2" type="name">Taquirari</reference>
+				</references>
+				<text>Alfredo Zitarrosa started out as a solo singer and is an exponent of Taquirari.</text>
+				<template>AGENT-1 started out as PATIENT-1 and is an exponent of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+						<striple>Alfredo_Zitarrosa | genre | Taquirari</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;solo_singer&quot;" number="1" tag="PATIENT-1" type="name">Singer</reference>
+					<reference entity="Alfredo_Zitarrosa" number="2" tag="AGENT-1" type="name">Alfredo Zitarrosa 's</reference>
+					<reference entity="Taquirari" number="3" tag="PATIENT-2" type="name">Taquirari</reference>
+				</references>
+				<text>Singer @ Alfredo Zitarrosa's musical genre is Taquirari.</text>
+				<template>PATIENT-1 @ AGENT-1 musical genre is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfredo_Zitarrosa</entity>
+				<entity>PATIENT-1 | &quot;solo_singer&quot;</entity>
+				<entity>PATIENT-2 | Taquirari</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1300" size="2">
+			<originaltripleset>
+				<otriple>Alfredo_Zitarrosa | birthPlace | Uruguay</otriple>
+				<otriple>Alfredo_Zitarrosa | deathPlace | Montevideo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfredo_Zitarrosa | birthPlace | Uruguay</mtriple>
+				<mtriple>Alfredo_Zitarrosa | deathPlace | Montevideo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | birthPlace | Uruguay</striple>
+						<striple>Alfredo_Zitarrosa | deathPlace | Montevideo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="Uruguay" number="2" tag="PATIENT-1" type="name">Uruguay</reference>
+					<reference entity="Montevideo" number="3" tag="PATIENT-2" type="name">Montevideo</reference>
+				</references>
+				<text>Alfredo Zitarrosa, was born in Uruguay and died in Montevideo.</text>
+				<template>AGENT-1 , was born in PATIENT-1 and died in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | birthPlace | Uruguay</striple>
+						<striple>Alfredo_Zitarrosa | deathPlace | Montevideo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Uruguay" number="1" tag="PATIENT-1" type="name">Uruguay</reference>
+					<reference entity="Alfredo_Zitarrosa" number="2" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="Montevideo" number="3" tag="PATIENT-2" type="name">Montevideo</reference>
+				</references>
+				<text>Born in Uruguay, Alfredo Zitarrosa died in Montevideo.</text>
+				<template>Born in PATIENT-1 , AGENT-1 died in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | birthPlace | Uruguay</striple>
+						<striple>Alfredo_Zitarrosa | deathPlace | Montevideo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="Uruguay" number="2" tag="PATIENT-1" type="name">Uruguay</reference>
+					<reference entity="Alfredo_Zitarrosa" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Montevideo" number="4" tag="PATIENT-2" type="name">Montevideo</reference>
+				</references>
+				<text>Alfredo Zitarrosa was born in Uruguay and he died in Montevideo.</text>
+				<template>AGENT-1 was born in PATIENT-1 and AGENT-1 died in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfredo_Zitarrosa</entity>
+				<entity>PATIENT-1 | Uruguay</entity>
+				<entity>PATIENT-2 | Montevideo</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1301" size="2">
+			<originaltripleset>
+				<otriple>Alfredo_Zitarrosa | deathPlace | Uruguay</otriple>
+				<otriple>Alfredo_Zitarrosa | birthPlace | Montevideo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfredo_Zitarrosa | deathPlace | Uruguay</mtriple>
+				<mtriple>Alfredo_Zitarrosa | birthPlace | Montevideo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | birthPlace | Montevideo</striple>
+						<striple>Alfredo_Zitarrosa | deathPlace | Uruguay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="Montevideo" number="2" tag="PATIENT-2" type="name">Montevideo</reference>
+					<reference entity="Uruguay" number="3" tag="PATIENT-1" type="name">Uruguay</reference>
+				</references>
+				<text>Alfredo Zitarrosa was born in Montevideo and died in Uruguay.</text>
+				<template>AGENT-1 was born in PATIENT-2 and died in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfredo_Zitarrosa</entity>
+				<entity>PATIENT-1 | Uruguay</entity>
+				<entity>PATIENT-2 | Montevideo</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1302" size="2">
+			<originaltripleset>
+				<otriple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</otriple>
+				<otriple>Alfredo_Zitarrosa | genre | Zamba_(artform)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfredo_Zitarrosa | genre | Zamba_(artform)</mtriple>
+				<mtriple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | genre | Zamba_(artform)</striple>
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa 's</reference>
+					<reference entity="Zamba_(artform)" number="2" tag="PATIENT-1" type="name">Zamba which is considered an art form</reference>
+					<reference entity="Alfredo_Zitarrosa" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;solo_singer&quot;" number="4" tag="PATIENT-2" type="description">a solo singer</reference>
+				</references>
+				<text>Alfredo Zitarrosa's genre is Zamba which is considered an art form and he started out as a solo singer.</text>
+				<template>AGENT-1 genre is PATIENT-1 and AGENT-1 started out as PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+						<striple>Alfredo_Zitarrosa | genre | Zamba_(artform)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-2" type="description">a solo singer</reference>
+					<reference entity="Zamba_(artform)" number="3" tag="PATIENT-1" type="name">Zamba music</reference>
+				</references>
+				<text>Alfredo Zitarrosa has a background as a solo singer and performs Zamba music.</text>
+				<template>AGENT-1 has a background as PATIENT-2 and performs PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfredo_Zitarrosa | genre | Zamba_(artform)</striple>
+						<striple>Alfredo_Zitarrosa | background | &quot;solo_singer&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfredo_Zitarrosa" number="1" tag="AGENT-1" type="name">Alfredo Zitarrosa</reference>
+					<reference entity="Zamba_(artform)" number="2" tag="PATIENT-1" type="name">Zamba music</reference>
+					<reference entity="&quot;solo_singer&quot;" number="3" tag="PATIENT-2" type="description">a solo singer</reference>
+				</references>
+				<text>Alfredo Zitarrosa performs Zamba music and started out as a solo singer.</text>
+				<template>AGENT-1 performs PATIENT-1 and started out as PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfredo_Zitarrosa</entity>
+				<entity>PATIENT-1 | Zamba_(artform)</entity>
+				<entity>PATIENT-2 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1303" size="2">
+			<originaltripleset>
+				<otriple>Alison_ODonnell | associatedBand | Plastik_Mak</otriple>
+				<otriple>Alison_ODonnell | associatedMusicalArtist | Bajik</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Plastik_Mak</mtriple>
+				<mtriple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Bajik</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Plastik_Mak</striple>
+						<striple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Bajik</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alison_ODonnell" number="1" tag="AGENT-1" type="name">Alison O'Donnell</reference>
+					<reference entity="Plastik_Mak" number="2" tag="PATIENT-1" type="description">the Plastik Mak</reference>
+					<reference entity="Bajik" number="3" tag="PATIENT-2" type="description">the band Bajik</reference>
+				</references>
+				<text>Alison O'Donnell is a musician associated with the Plastik Mak and was also associated with the band Bajik.</text>
+				<template>AGENT-1 is a musician associated with PATIENT-1 and was also associated with PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Bajik</striple>
+						<striple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Plastik_Mak</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alison_ODonnell" number="1" tag="AGENT-1" type="name">Alison O'Donnell</reference>
+					<reference entity="Bajik" number="2" tag="PATIENT-2" type="description">the bands Bajik</reference>
+					<reference entity="Plastik_Mak" number="3" tag="PATIENT-1" type="name">Plastik Mak</reference>
+				</references>
+				<text>Alison O'Donnell was with the bands Bajik and Plastik Mak.</text>
+				<template>AGENT-1 was with PATIENT-2 and PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Plastik_Mak</striple>
+						<striple>Alison_ODonnell | associatedBand/associatedMusicalArtist | Bajik</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Plastik_Mak" number="1" tag="PATIENT-1" type="name">Plastik Mak</reference>
+					<reference entity="Bajik" number="2" tag="PATIENT-2" type="name">Bajik</reference>
+					<reference entity="Alison_ODonnell" number="3" tag="AGENT-1" type="name">Alison O'Donnell</reference>
+				</references>
+				<text>Plastik Mak and Bajik are acts associated with Alison O'Donnell.</text>
+				<template>PATIENT-1 and PATIENT-2 are acts associated with AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alison_ODonnell</entity>
+				<entity>PATIENT-1 | Plastik_Mak</entity>
+				<entity>PATIENT-2 | Bajik</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1304" size="2">
+			<originaltripleset>
+				<otriple>Alison_ODonnell | genre | Folk_rock</otriple>
+				<otriple>Alison_ODonnell | recordLabel | Floating_World_Records</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alison_ODonnell | genre | Folk_rock</mtriple>
+				<mtriple>Alison_ODonnell | recordLabel | Floating_World_Records</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | genre | Folk_rock</striple>
+						<striple>Alison_ODonnell | recordLabel | Floating_World_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alison_ODonnell" number="1" tag="AGENT-1" type="name">Alison O'Donnell</reference>
+					<reference entity="Folk_rock" number="2" tag="PATIENT-1" type="name">folk rock</reference>
+					<reference entity="Floating_World_Records" number="3" tag="PATIENT-2" type="name">Floating World Records</reference>
+				</references>
+				<text>Alison O'Donnell is a folk rock musician signed to Floating World Records.</text>
+				<template>AGENT-1 is a PATIENT-1 musician signed to PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | genre | Folk_rock</striple>
+						<striple>Alison_ODonnell | recordLabel | Floating_World_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alison_ODonnell" number="1" tag="AGENT-1" type="name">Alison O'Donnell 's</reference>
+					<reference entity="Folk_rock" number="2" tag="PATIENT-1" type="name">folk rock</reference>
+					<reference entity="Alison_ODonnell" number="3" tag="AGENT-1" type="pronoun">her</reference>
+					<reference entity="Floating_World_Records" number="4" tag="PATIENT-2" type="name">Floating World Records</reference>
+				</references>
+				<text>Alison O'Donnell's musical genre is folk rock and her recording label is Floating World Records.</text>
+				<template>AGENT-1 musical genre is PATIENT-1 and AGENT-1 recording label is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | genre | Folk_rock</striple>
+						<striple>Alison_ODonnell | recordLabel | Floating_World_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alison_ODonnell" number="1" tag="AGENT-1" type="name">Alison O'Donnell</reference>
+					<reference entity="Folk_rock" number="2" tag="PATIENT-1" type="name">folk rock</reference>
+					<reference entity="Floating_World_Records" number="3" tag="PATIENT-2" type="name">Floating World Records</reference>
+				</references>
+				<text>Alison O'Donnell, a folk rock artist, signed to the record label, Floating World Records.</text>
+				<template>AGENT-1 , a PATIENT-1 artist , signed to the record label , PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alison_ODonnell</entity>
+				<entity>PATIENT-1 | Folk_rock</entity>
+				<entity>PATIENT-2 | Floating_World_Records</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1305" size="2">
+			<originaltripleset>
+				<otriple>Alison_ODonnell | genre | Jazz</otriple>
+				<otriple>Alison_ODonnell | instrument | &quot;Voice, bodhrán, percussion, autoharp&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alison_ODonnell | genre | Jazz</mtriple>
+				<mtriple>Alison_ODonnell | instrument | &quot;Voice, bodhrán, percussion, autoharp&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | genre | Jazz</striple>
+						<striple>Alison_ODonnell | instrument | &quot;Voice, bodhrán, percussion, autoharp&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alison_ODonnell" number="1" tag="AGENT-1" type="name">Alison O'Donnell</reference>
+					<reference entity="Jazz" number="2" tag="PATIENT-1" type="name">jazz</reference>
+					<reference entity="&quot;Voice, bodhrán, percussion, autoharp&quot;" number="3" tag="PATIENT-2" type="description">the bodhran , percussion and the autoharp</reference>
+				</references>
+				<text>Alison O'Donnell is a jazz musician who sings and also plays the bodhran, percussion and the autoharp.</text>
+				<template>AGENT-1 is a PATIENT-1 musician who sings and also plays PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | genre | Jazz</striple>
+						<striple>Alison_ODonnell | instrument | &quot;Voice, bodhrán, percussion, autoharp&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alison_ODonnell" number="1" tag="AGENT-1" type="name">Alison O'Donnell</reference>
+					<reference entity="Jazz" number="2" tag="PATIENT-1" type="name">jazz music</reference>
+					<reference entity="Alison_ODonnell" number="3" tag="AGENT-1" type="pronoun">she</reference>
+					<reference entity="&quot;Voice, bodhrán, percussion, autoharp&quot;" number="4" tag="PATIENT-2" type="description">the bodhran , perscussion , and autoharp in addition to singing</reference>
+				</references>
+				<text>Alison O'Donnell performs jazz music, she plays the bodhran, perscussion, and autoharp in addition to singing.</text>
+				<template>AGENT-1 performs PATIENT-1 , AGENT-1 plays PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alison_ODonnell | genre | Jazz</striple>
+						<striple>Alison_ODonnell | instrument | &quot;Voice, bodhrán, percussion, autoharp&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alison_ODonnell" number="1" tag="AGENT-1" type="name">Alison O'Donnell</reference>
+					<reference entity="Jazz" number="2" tag="PATIENT-1" type="name">jazz music</reference>
+					<reference entity="&quot;Voice, bodhrán, percussion, autoharp&quot;" number="3" tag="PATIENT-2" type="description">a singer and also plays the bodhran , percussion and autoharp</reference>
+				</references>
+				<text>Alison O'Donnell performs jazz music and is a singer and also plays the bodhran, percussion and autoharp.</text>
+				<template>AGENT-1 performs PATIENT-1 and is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alison_ODonnell</entity>
+				<entity>PATIENT-1 | Jazz</entity>
+				<entity>PATIENT-2 | &quot;Voice, bodhrán, percussion, autoharp&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1306" size="2">
+			<originaltripleset>
+				<otriple>Allen_Forrest | genre | Hip_hop_music</otriple>
+				<otriple>Allen_Forrest | background | &quot;solo_singer&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Allen_Forrest | genre | Hip_hop_music</mtriple>
+				<mtriple>Allen_Forrest | background | &quot;solo_singer&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allen_Forrest | genre | Hip_hop_music</striple>
+						<striple>Allen_Forrest | background | &quot;solo_singer&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Hip_hop_music" number="1" tag="PATIENT-1" type="name">Hip Hop</reference>
+					<reference entity="Allen_Forrest" number="2" tag="AGENT-1" type="name">Allen Forrest</reference>
+					<reference entity="&quot;solo_singer&quot;" number="3" tag="PATIENT-2" type="description">a solo singer</reference>
+				</references>
+				<text>Hip Hop artist Allen Forrest is a solo singer.</text>
+				<template>PATIENT-1 artist AGENT-1 is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allen_Forrest | background | &quot;solo_singer&quot;</striple>
+						<striple>Allen_Forrest | genre | Hip_hop_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allen_Forrest" number="1" tag="AGENT-1" type="name">Allen Forrest</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-2" type="description">a solo singer</reference>
+					<reference entity="Hip_hop_music" number="3" tag="PATIENT-1" type="name">Hip Hop music</reference>
+				</references>
+				<text>Allen Forrest is a solo singer whose genre is Hip Hop music.</text>
+				<template>AGENT-1 is PATIENT-2 whose genre is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allen_Forrest | background | &quot;solo_singer&quot;</striple>
+						<striple>Allen_Forrest | genre | Hip_hop_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allen_Forrest" number="1" tag="AGENT-1" type="name">Allen Forrest</reference>
+					<reference entity="&quot;solo_singer&quot;" number="2" tag="PATIENT-2" type="description">a solo singer</reference>
+					<reference entity="Hip_hop_music" number="3" tag="PATIENT-1" type="name">hip hop</reference>
+				</references>
+				<text>Allen Forrest is a solo singer whose musical genre is hip hop.</text>
+				<template>AGENT-1 is PATIENT-2 whose musical genre is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allen_Forrest</entity>
+				<entity>PATIENT-1 | Hip_hop_music</entity>
+				<entity>PATIENT-2 | &quot;solo_singer&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1307" size="2">
+			<originaltripleset>
+				<otriple>Alternative_rock | musicSubgenre | Christian_alternative_rock</otriple>
+				<otriple>Andrew_White_(musician) | genre | Alternative_rock</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alternative_rock | musicSubgenre | Christian_alternative_rock</mtriple>
+				<mtriple>Andrew_White_(musician) | genre | Alternative_rock</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_White_(musician) | genre | Alternative_rock</striple>
+						<striple>Alternative_rock | musicSubgenre | Christian_alternative_rock</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_White_(musician)" number="1" tag="AGENT-1" type="description">The musician Andrew White 's</reference>
+					<reference entity="Alternative_rock" number="2" tag="BRIDGE-1" type="name">alternative rock</reference>
+					<reference entity="Christian_alternative_rock" number="3" tag="PATIENT-1" type="name">Christian alternative rock</reference>
+				</references>
+				<text>The musician Andrew White's genre is alternative rock, the genre which has the sub genre Christian alternative rock.</text>
+				<template>AGENT-1 genre is BRIDGE-1 , the genre which has the sub genre PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_White_(musician) | genre | Alternative_rock</striple>
+						<striple>Alternative_rock | musicSubgenre | Christian_alternative_rock</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_White_(musician)" number="1" tag="AGENT-1" type="description">The musician Andrew White 's</reference>
+					<reference entity="Alternative_rock" number="2" tag="BRIDGE-1" type="name">alternative rock</reference>
+					<reference entity="Christian_alternative_rock" number="3" tag="PATIENT-1" type="name">Christian alternative rock</reference>
+				</references>
+				<text>The musician Andrew White's genre is alternative rock which has the subgenre of Christian alternative rock.</text>
+				<template>AGENT-1 genre is BRIDGE-1 which has the subgenre of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_White_(musician) | genre | Alternative_rock</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alternative_rock | musicSubgenre | Christian_alternative_rock</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_White_(musician)" number="1" tag="AGENT-1" type="name">Andrew White</reference>
+					<reference entity="Alternative_rock" number="2" tag="BRIDGE-1" type="name">alternative rock music</reference>
+					<reference entity="Alternative_rock" number="3" tag="BRIDGE-1" type="name">alternative rock</reference>
+					<reference entity="Christian_alternative_rock" number="4" tag="PATIENT-1" type="name">Christian alternative rock</reference>
+				</references>
+				<text>Andrew White performs alternative rock music. A sub genre or alternative rock is Christian alternative rock.</text>
+				<template>AGENT-1 performs BRIDGE-1 . A sub genre or BRIDGE-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_White_(musician)</entity>
+				<entity>BRIDGE-1 | Alternative_rock</entity>
+				<entity>PATIENT-1 | Christian_alternative_rock</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1308" size="2">
+			<originaltripleset>
+				<otriple>Anders_Osborne | associatedBand | Phil_Lesh_and_Friends</otriple>
+				<otriple>Anders_Osborne | associatedMusicalArtist | Tab_Benoit</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Anders_Osborne | associatedBand/associatedMusicalArtist | Phil_Lesh_and_Friends</mtriple>
+				<mtriple>Anders_Osborne | associatedBand/associatedMusicalArtist | Tab_Benoit</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | associatedBand/associatedMusicalArtist | Phil_Lesh_and_Friends</striple>
+						<striple>Anders_Osborne | associatedBand/associatedMusicalArtist | Tab_Benoit</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anders_Osborne" number="1" tag="AGENT-1" type="name">Anders Osborne</reference>
+					<reference entity="Phil_Lesh_and_Friends" number="2" tag="PATIENT-1" type="name">Phil Lesh</reference>
+					<reference entity="Anders_Osborne" number="3" tag="AGENT-1" type="name">Friends and he</reference>
+					<reference entity="Tab_Benoit" number="4" tag="PATIENT-2" type="name">Tab Benoit</reference>
+				</references>
+				<text>Anders Osborne is associated with Phil Lesh and Friends and he has worked with Tab Benoit.</text>
+				<template>AGENT-1 is associated with PATIENT-1 and AGENT-1 has worked with PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | associatedBand/associatedMusicalArtist | Phil_Lesh_and_Friends</striple>
+						<striple>Anders_Osborne | associatedBand/associatedMusicalArtist | Tab_Benoit</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anders_Osborne" number="1" tag="AGENT-1" type="name">Anders Osborne</reference>
+					<reference entity="Phil_Lesh_and_Friends" number="2" tag="PATIENT-1" type="name">Phil Lesh and Friends</reference>
+					<reference entity="Tab_Benoit" number="3" tag="PATIENT-2" type="name">Tab Benoit</reference>
+				</references>
+				<text>Anders Osborne is associated with Phil Lesh and Friends as well as Tab Benoit.</text>
+				<template>AGENT-1 is associated with PATIENT-1 as well as PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | associatedBand/associatedMusicalArtist | Tab_Benoit</striple>
+						<striple>Anders_Osborne | associatedBand/associatedMusicalArtist | Phil_Lesh_and_Friends</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anders_Osborne" number="1" tag="AGENT-1" type="name">Anders Osborne</reference>
+					<reference entity="Tab_Benoit" number="2" tag="PATIENT-2" type="name">Tab Benoit</reference>
+					<reference entity="Phil_Lesh_and_Friends" number="3" tag="PATIENT-1" type="name">Phil Lesh and Friends</reference>
+				</references>
+				<text>Anders Osborne has worked with Tab Benoit and is associated with Phil Lesh and Friends.</text>
+				<template>AGENT-1 has worked with PATIENT-2 and is associated with PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Anders_Osborne</entity>
+				<entity>PATIENT-1 | Phil_Lesh_and_Friends</entity>
+				<entity>PATIENT-2 | Tab_Benoit</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1309" size="2">
+			<originaltripleset>
+				<otriple>Anders_Osborne | genre | Rhythm_and_blues</otriple>
+				<otriple>Anders_Osborne | recordLabel | Rabadash_Records</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Anders_Osborne | genre | Rhythm_and_blues</mtriple>
+				<mtriple>Anders_Osborne | recordLabel | Rabadash_Records</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | genre | Rhythm_and_blues</striple>
+						<striple>Anders_Osborne | recordLabel | Rabadash_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rhythm_and_blues" number="1" tag="PATIENT-1" type="name">Rhythm and blues</reference>
+					<reference entity="Anders_Osborne" number="2" tag="AGENT-1" type="name">Anders Osborne</reference>
+					<reference entity="Rabadash_Records" number="3" tag="PATIENT-2" type="name">Rabadash Records</reference>
+				</references>
+				<text>Rhythm and blues artist Anders Osborne is signed with Rabadash Records.</text>
+				<template>PATIENT-1 artist AGENT-1 is signed with PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | genre | Rhythm_and_blues</striple>
+						<striple>Anders_Osborne | recordLabel | Rabadash_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anders_Osborne" number="1" tag="AGENT-1" type="name">Anders Osborne</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="PATIENT-1" type="name">Rhythm</reference>
+					<reference entity="Anders_Osborne" number="3" tag="AGENT-1" type="name">blues and his</reference>
+					<reference entity="Rabadash_Records" number="4" tag="PATIENT-2" type="name">Rabadash Records</reference>
+				</references>
+				<text>Anders Osborne genre is Rhythm and blues and his record label is Rabadash Records.</text>
+				<template>AGENT-1 genre is PATIENT-1 and AGENT-1 record label is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | genre | Rhythm_and_blues</striple>
+						<striple>Anders_Osborne | recordLabel | Rabadash_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anders_Osborne" number="1" tag="AGENT-1" type="name">Anders Osborne 's</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="PATIENT-1" type="name">Rhythm</reference>
+					<reference entity="Anders_Osborne" number="3" tag="AGENT-1" type="name">blues and he</reference>
+					<reference entity="Rabadash_Records" number="4" tag="PATIENT-2" type="name">Rabadash Records</reference>
+				</references>
+				<text>Anders Osborne's genre is Rhythm and blues and he is signed to the Rabadash Records label.</text>
+				<template>AGENT-1 genre is PATIENT-1 and AGENT-1 is signed to the PATIENT-2 label .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Anders_Osborne</entity>
+				<entity>PATIENT-1 | Rhythm_and_blues</entity>
+				<entity>PATIENT-2 | Rabadash_Records</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1310" size="2">
+			<originaltripleset>
+				<otriple>Anders_Osborne | genre | Rhythm_and_blues</otriple>
+				<otriple>Anders_Osborne | recordLabel | Shanachie_Records</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Anders_Osborne | genre | Rhythm_and_blues</mtriple>
+				<mtriple>Anders_Osborne | recordLabel | Shanachie_Records</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | genre | Rhythm_and_blues</striple>
+						<striple>Anders_Osborne | recordLabel | Shanachie_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rhythm_and_blues" number="1" tag="PATIENT-1" type="name">Rhythm and blues</reference>
+					<reference entity="Anders_Osborne" number="2" tag="AGENT-1" type="name">Anders Osborne</reference>
+					<reference entity="Shanachie_Records" number="3" tag="PATIENT-2" type="name">Shanachie Records</reference>
+				</references>
+				<text>Rhythm and blues artist Anders Osborne performs under the Shanachie Records label.</text>
+				<template>PATIENT-1 artist AGENT-1 performs under the PATIENT-2 label .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | genre | Rhythm_and_blues</striple>
+						<striple>Anders_Osborne | recordLabel | Shanachie_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anders_Osborne" number="1" tag="AGENT-1" type="name">Anders Osborne</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="PATIENT-1" type="name">rhythm and blues music</reference>
+					<reference entity="Shanachie_Records" number="3" tag="PATIENT-2" type="name">Shanachie Records</reference>
+				</references>
+				<text>Anders Osborne performs rhythm and blues music and is signed to Shanachie Records.</text>
+				<template>AGENT-1 performs PATIENT-1 and is signed to PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anders_Osborne | genre | Rhythm_and_blues</striple>
+						<striple>Anders_Osborne | recordLabel | Shanachie_Records</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anders_Osborne" number="1" tag="AGENT-1" type="name">Anders Osborne</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="PATIENT-1" type="name">rhythm</reference>
+					<reference entity="Anders_Osborne" number="3" tag="AGENT-1" type="name">blues music and his</reference>
+					<reference entity="Shanachie_Records" number="4" tag="PATIENT-2" type="name">Shanachie Records</reference>
+				</references>
+				<text>Anders Osborne performs rhythm and blues music and his record label is Shanachie Records.</text>
+				<template>AGENT-1 performs PATIENT-1 and AGENT-1 record label is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Anders_Osborne</entity>
+				<entity>PATIENT-1 | Rhythm_and_blues</entity>
+				<entity>PATIENT-2 | Shanachie_Records</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1311" size="2">
+			<originaltripleset>
+				<otriple>Andra_(singer) | genre | Pop_music</otriple>
+				<otriple>Andra_(singer) | activeYearsStartYear | &quot;2000&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andra_(singer) | genre | Pop_music</mtriple>
+				<mtriple>Andra_(singer) | activeYearsStartYear | 2000</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andra_(singer) | genre | Pop_music</striple>
+						<striple>Andra_(singer) | activeYearsStartYear | 2000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andra_(singer)" number="1" tag="AGENT-1" type="name">Andra</reference>
+					<reference entity="Andra_(singer)" number="2" tag="AGENT-1" type="pronoun">her</reference>
+					<reference entity="Pop_music" number="3" tag="PATIENT-1" type="name">Pop music</reference>
+					<reference entity="2000" number="4" tag="PATIENT-2" type="name">2000</reference>
+				</references>
+				<text>Andra began her @ Pop music singing career in 2000.</text>
+				<template>AGENT-1 began AGENT-1 @ PATIENT-1 singing career in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andra_(singer) | genre | Pop_music</striple>
+						<striple>Andra_(singer) | activeYearsStartYear | 2000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andra_(singer)" number="1" tag="AGENT-1" type="name">Andra</reference>
+					<reference entity="Pop_music" number="2" tag="PATIENT-1" type="name">pop</reference>
+					<reference entity="2000" number="3" tag="PATIENT-2" type="name">2000</reference>
+				</references>
+				<text>Andra is a pop singer who started in 2000.</text>
+				<template>AGENT-1 is a PATIENT-1 singer who started in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andra_(singer) | activeYearsStartYear | 2000</striple>
+						<striple>Andra_(singer) | genre | Pop_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andra_(singer)" number="1" tag="AGENT-1" type="name">Andra</reference>
+					<reference entity="Andra_(singer)" number="2" tag="AGENT-1" type="pronoun">her</reference>
+					<reference entity="2000" number="3" tag="PATIENT-2" type="name">2000</reference>
+					<reference entity="Pop_music" number="4" tag="PATIENT-1" type="name">pop music</reference>
+				</references>
+				<text>Andra began her singing career in 2000 and sings pop music.</text>
+				<template>AGENT-1 began AGENT-1 singing career in PATIENT-2 and sings PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andra_(singer)</entity>
+				<entity>PATIENT-1 | Pop_music</entity>
+				<entity>PATIENT-2 | 2000</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1312" size="2">
+			<originaltripleset>
+				<otriple>Andra_(singer) | genre | Rhythm_and_blues</otriple>
+				<otriple>Rhythm_and_blues | stylisticOrigin | Blues</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andra_(singer) | genre | Rhythm_and_blues</mtriple>
+				<mtriple>Rhythm_and_blues | stylisticOrigin | Blues</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andra_(singer) | genre | Rhythm_and_blues</striple>
+						<striple>Rhythm_and_blues | stylisticOrigin | Blues</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andra_(singer)" number="1" tag="AGENT-1" type="name">Andra</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="BRIDGE-1" type="name">rhythm and blues</reference>
+					<reference entity="Blues" number="3" tag="PATIENT-1" type="name">blues</reference>
+				</references>
+				<text>Andra sings rhythm and blues, which originated from blues.</text>
+				<template>AGENT-1 sings BRIDGE-1 , which originated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andra_(singer) | genre | Rhythm_and_blues</striple>
+						<striple>Rhythm_and_blues | stylisticOrigin | Blues</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andra_(singer)" number="1" tag="AGENT-1" type="name">Andra</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="BRIDGE-1" type="name">rhythm and blues music</reference>
+					<reference entity="Blues" number="3" tag="PATIENT-1" type="name">blues</reference>
+				</references>
+				<text>Andra performs rhythm and blues music, a style that originated from blues.</text>
+				<template>AGENT-1 performs BRIDGE-1 , a style that originated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andra_(singer) | genre | Rhythm_and_blues</striple>
+						<striple>Rhythm_and_blues | stylisticOrigin | Blues</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andra_(singer)" number="1" tag="AGENT-1" type="name">Andra</reference>
+					<reference entity="Rhythm_and_blues" number="2" tag="BRIDGE-1" type="name">rhythm and blues</reference>
+					<reference entity="Blues" number="3" tag="PATIENT-1" type="description">the blues</reference>
+				</references>
+				<text>Andra is a singer of rhythm and blues which originated from the blues.</text>
+				<template>AGENT-1 is a singer of BRIDGE-1 which originated from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andra_(singer)</entity>
+				<entity>BRIDGE-1 | Rhythm_and_blues</entity>
+				<entity>PATIENT-1 | Blues</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1313" size="2">
+			<originaltripleset>
+				<otriple>Andrew_Rayel | associatedMusicalArtist | Jonathan_Mendelsohn</otriple>
+				<otriple>Andrew_Rayel | associatedBand | Christian_Burns</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Christian_Burns</mtriple>
+				<mtriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Christian_Burns</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Jonathan_Mendelsohn" number="2" tag="PATIENT-2" type="name">musical artist Jonathan Mendelsohn</reference>
+					<reference entity="Christian_Burns" number="3" tag="PATIENT-1" type="name">Christian Burns</reference>
+				</references>
+				<text>Andrew Rayel, is associated with musical artist Jonathan Mendelsohn and Christian Burns.</text>
+				<template>AGENT-1 , is associated with PATIENT-2 and PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Christian_Burns</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Christian_Burns" number="2" tag="PATIENT-1" type="name">Christian Burns</reference>
+					<reference entity="Jonathan_Mendelsohn" number="3" tag="PATIENT-2" type="description">the musical artist Jonathan Mendelsohn</reference>
+				</references>
+				<text>Andrew Rayel is associated with Christian Burns and the musical artist Jonathan Mendelsohn.</text>
+				<template>AGENT-1 is associated with PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Christian_Burns</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Christian_Burns" number="2" tag="PATIENT-1" type="name">Christian Burns</reference>
+					<reference entity="Jonathan_Mendelsohn" number="3" tag="PATIENT-2" type="name">Jonathan Mendelsohn</reference>
+				</references>
+				<text>Andrew Rayel is musically associated with Christian Burns and Jonathan Mendelsohn.</text>
+				<template>AGENT-1 is musically associated with PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_Rayel</entity>
+				<entity>PATIENT-1 | Christian_Burns</entity>
+				<entity>PATIENT-2 | Jonathan_Mendelsohn</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1314" size="2">
+			<originaltripleset>
+				<otriple>Andrew_Rayel | associatedBand | Jonathan_Mendelsohn</otriple>
+				<otriple>Andrew_Rayel | associatedMusicalArtist | Mark_Sixma</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</mtriple>
+				<mtriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Mark_Sixma</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Mark_Sixma</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Jonathan_Mendelsohn" number="2" tag="PATIENT-1" type="name">Jonathan Mendelsohn</reference>
+					<reference entity="Mark_Sixma" number="3" tag="PATIENT-2" type="name">Mark Sixma</reference>
+				</references>
+				<text>Andrew Rayel is associated with both musical artist Jonathan Mendelsohn and Mark Sixma.</text>
+				<template>AGENT-1 is associated with both musical artist PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Mark_Sixma</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Jonathan_Mendelsohn" number="2" tag="PATIENT-1" type="name">Jonathan Mendelsohn</reference>
+					<reference entity="Mark_Sixma" number="3" tag="PATIENT-2" type="name">Mark Sixma</reference>
+				</references>
+				<text>Andrew Rayel has worked musically with Jonathan Mendelsohn and Mark Sixma.</text>
+				<template>AGENT-1 has worked musically with PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jonathan_Mendelsohn</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Mark_Sixma</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Jonathan_Mendelsohn" number="2" tag="PATIENT-1" type="name">Jonathan Mendelsohn</reference>
+					<reference entity="Mark_Sixma" number="3" tag="PATIENT-2" type="name">Mark Sima</reference>
+				</references>
+				<text>Andrew Rayel is associated with Jonathan Mendelsohn and Mark Sima.</text>
+				<template>AGENT-1 is associated with PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_Rayel</entity>
+				<entity>PATIENT-1 | Jonathan_Mendelsohn</entity>
+				<entity>PATIENT-2 | Mark_Sixma</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1315" size="2">
+			<originaltripleset>
+				<otriple>Andrew_Rayel | associatedMusicalArtist | Jwaydan_Moyine</otriple>
+				<otriple>Andrew_Rayel | associatedBand | Armin_van_Buuren</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jwaydan_Moyine</mtriple>
+				<mtriple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Armin_van_Buuren</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jwaydan_Moyine</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Armin_van_Buuren</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Jwaydan_Moyine" number="2" tag="PATIENT-1" type="name">Jwaydan Moyine</reference>
+					<reference entity="Armin_van_Buuren" number="3" tag="PATIENT-2" type="name">Armin van Buuren</reference>
+				</references>
+				<text>Andrew Rayel is associated with both the musician Jwaydan Moyine and Armin van Buuren.</text>
+				<template>AGENT-1 is associated with both the musician PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jwaydan_Moyine</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Armin_van_Buuren</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Jwaydan_Moyine" number="2" tag="PATIENT-1" type="description">the musician Jwaydan Moyine</reference>
+					<reference entity="Armin_van_Buuren" number="3" tag="PATIENT-2" type="description">the musical artist Armin van Buuren</reference>
+				</references>
+				<text>Andrew Rayel is associated with the musician Jwaydan Moyine and the musical artist Armin van Buuren.</text>
+				<template>AGENT-1 is associated with PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Jwaydan_Moyine</striple>
+						<striple>Andrew_Rayel | associatedBand/associatedMusicalArtist | Armin_van_Buuren</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_Rayel" number="1" tag="AGENT-1" type="name">Andrew Rayel</reference>
+					<reference entity="Jwaydan_Moyine" number="2" tag="PATIENT-1" type="name">Jwaydan Moyine</reference>
+					<reference entity="Armin_van_Buuren" number="3" tag="PATIENT-2" type="name">Armin van Buuren</reference>
+				</references>
+				<text>Andrew Rayel is associated with the musicians Jwaydan Moyine and Armin van Buuren.</text>
+				<template>AGENT-1 is associated with the musicians PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_Rayel</entity>
+				<entity>PATIENT-1 | Jwaydan_Moyine</entity>
+				<entity>PATIENT-2 | Armin_van_Buuren</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1316" size="2">
+			<originaltripleset>
+				<otriple>Andrew_White_(musician) | genre | Alternative_rock</otriple>
+				<otriple>Alternative_rock | stylisticOrigins | New_wave_music</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrew_White_(musician) | genre | Alternative_rock</mtriple>
+				<mtriple>Alternative_rock | stylisticOrigin | New_wave_music</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_White_(musician) | genre | Alternative_rock</striple>
+						<striple>Alternative_rock | stylisticOrigin | New_wave_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_White_(musician)" number="1" tag="AGENT-1" type="description">The musician Andrew White 's</reference>
+					<reference entity="Alternative_rock" number="2" tag="BRIDGE-1" type="name">alternative rock</reference>
+					<reference entity="New_wave_music" number="3" tag="PATIENT-1" type="name">New wave music</reference>
+				</references>
+				<text>The musician Andrew White's genre is alternative rock which has origins in New wave music.</text>
+				<template>AGENT-1 genre is BRIDGE-1 which has origins in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alternative_rock | stylisticOrigin | New_wave_music</striple>
+						<striple>Andrew_White_(musician) | genre | Alternative_rock</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="New_wave_music" number="1" tag="PATIENT-1" type="name">New wave music</reference>
+					<reference entity="Alternative_rock" number="2" tag="BRIDGE-1" type="name">Alternative rock</reference>
+					<reference entity="Andrew_White_(musician)" number="3" tag="AGENT-1" type="name">Andrew White</reference>
+				</references>
+				<text>New wave music is the origin of Alternative rock, which is the genre of Andrew White.</text>
+				<template>PATIENT-1 is the origin of BRIDGE-1 , which is the genre of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_White_(musician) | genre | Alternative_rock</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alternative_rock | stylisticOrigin | New_wave_music</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_White_(musician)" number="1" tag="AGENT-1" type="name">Andrew White</reference>
+					<reference entity="Alternative_rock" number="2" tag="BRIDGE-1" type="name">alternative rock</reference>
+					<reference entity="New_wave_music" number="3" tag="PATIENT-1" type="name">New Wave music</reference>
+					<reference entity="Alternative_rock" number="4" tag="BRIDGE-1" type="name">Alternative rock</reference>
+				</references>
+				<text>Andrew White is an alternative rock musician . New Wave music was the origin of Alternative rock.</text>
+				<template>AGENT-1 is an BRIDGE-1 musician . PATIENT-1 was the origin of BRIDGE-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_White_(musician)</entity>
+				<entity>BRIDGE-1 | Alternative_rock</entity>
+				<entity>PATIENT-1 | New_wave_music</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1317" size="2">
+			<originaltripleset>
+				<otriple>Country_music | instrument | Banjo</otriple>
+				<otriple>Al_Anderson_(NRBQ) | genre | Country_music</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Country_music | instrument | Banjo</mtriple>
+				<mtriple>Al_Anderson_(NRBQ band) | genre | Country_music</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Anderson_(NRBQ band) | genre | Country_music</striple>
+						<striple>Country_music | instrument | Banjo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al_Anderson_(NRBQ band)" number="1" tag="AGENT-1" type="name">Al Anderson of NRBQ</reference>
+					<reference entity="Country_music" number="2" tag="BRIDGE-1" type="name">country</reference>
+					<reference entity="Banjo" number="3" tag="PATIENT-1" type="name">banjo</reference>
+				</references>
+				<text>Al Anderson of NRBQ is a country musician in which genre the banjo features.</text>
+				<template>AGENT-1 is a BRIDGE-1 musician in which genre the PATIENT-1 features .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Anderson_(NRBQ band) | genre | Country_music</striple>
+						<striple>Country_music | instrument | Banjo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al_Anderson_(NRBQ band)" number="1" tag="AGENT-1" type="name">Al Anderson of NRBQ</reference>
+					<reference entity="Country_music" number="2" tag="BRIDGE-1" type="name">country music</reference>
+					<reference entity="Banjo" number="3" tag="PATIENT-1" type="description">the banjo</reference>
+				</references>
+				<text>Al Anderson of NRBQ performs country music which is a genre of music which uses the banjo.</text>
+				<template>AGENT-1 performs BRIDGE-1 which is a genre of music which uses PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Anderson_(NRBQ band) | genre | Country_music</striple>
+						<striple>Country_music | instrument | Banjo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al_Anderson_(NRBQ band)" number="1" tag="AGENT-1" type="name">Al Anderson ( NRBQ band )</reference>
+					<reference entity="Country_music" number="2" tag="BRIDGE-1" type="name">country music</reference>
+					<reference entity="Banjo" number="3" tag="PATIENT-1" type="description">the banjo</reference>
+				</references>
+				<text>Al Anderson (NRBQ band) performs country music, in which the banjo is one of the instruments.</text>
+				<template>AGENT-1 performs BRIDGE-1 , in which PATIENT-1 is one of the instruments .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al_Anderson_(NRBQ band)</entity>
+				<entity>BRIDGE-1 | Country_music</entity>
+				<entity>PATIENT-1 | Banjo</entity>
+			</entitymap>
+		</entry>
+		<entry category="Artist" eid="Id1318" size="2">
+			<originaltripleset>
+				<otriple>Polydor_Records | location | London</otriple>
+				<otriple>Andrew_White_(musician) | label | Polydor_Records</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Polydor_Records | location | London</mtriple>
+				<mtriple>Andrew_White_(musician) | recordLabel | Polydor_Records</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_White_(musician) | recordLabel | Polydor_Records</striple>
+						<striple>Polydor_Records | location | London</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_White_(musician)" number="1" tag="AGENT-1" type="name">Andrew White records</reference>
+					<reference entity="Polydor_Records" number="2" tag="BRIDGE-1" type="name">Polydor Records</reference>
+					<reference entity="London" number="3" tag="PATIENT-1" type="name">London</reference>
+				</references>
+				<text>Andrew White records under label Polydor Records, who are based in London.</text>
+				<template>AGENT-1 under label BRIDGE-1 , who are based in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_White_(musician) | recordLabel | Polydor_Records</striple>
+						<striple>Polydor_Records | location | London</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_White_(musician)" number="1" tag="AGENT-1" type="name">Andrew White</reference>
+					<reference entity="Polydor_Records" number="2" tag="BRIDGE-1" type="name">Polydor Records</reference>
+					<reference entity="London" number="3" tag="PATIENT-1" type="name">London</reference>
+				</references>
+				<text>Andrew White is a musician signed to the record label Polydor Records which is located in London.</text>
+				<template>AGENT-1 is a musician signed to the record label BRIDGE-1 which is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrew_White_(musician) | recordLabel | Polydor_Records</striple>
+						<striple>Polydor_Records | location | London</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrew_White_(musician)" number="1" tag="AGENT-1" type="name">Andrew White</reference>
+					<reference entity="Polydor_Records" number="2" tag="BRIDGE-1" type="name">Polydor Records</reference>
+					<reference entity="London" number="3" tag="PATIENT-1" type="name">London</reference>
+				</references>
+				<text>Andrew White is a musician signed to Polydor Records which are based in London.</text>
+				<template>AGENT-1 is a musician signed to BRIDGE-1 which are based in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrew_White_(musician)</entity>
+				<entity>BRIDGE-1 | Polydor_Records</entity>
+				<entity>PATIENT-1 | London</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

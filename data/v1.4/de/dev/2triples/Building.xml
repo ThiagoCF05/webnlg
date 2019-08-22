@@ -1,0 +1,899 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Building" eid="Id1" size="2">
+			<originaltripleset>
+				<otriple>11_Diagonal_Street | location | South_Africa</otriple>
+				<otriple>South_Africa | ethnicGroups | Coloured</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>11_Diagonal_Street | location | South_Africa</mtriple>
+				<mtriple>South_Africa | ethnicGroup | Coloured</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11_Diagonal_Street | location | South_Africa</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>South_Africa | ethnicGroup | Coloured</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>11 Diagonal Street ist in Südafrika. Eine südafrikanische Gruppe ist der Collier. </text>
+				<template>AGENT-1 ist in BRIDGE-1. Eine BRIDGE-1 Gruppe ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11_Diagonal_Street | location | South_Africa</striple>
+						<striple>South_Africa | ethnicGroup | Coloured</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Adresse, 11 Diagonal Street befindet sich in Südafrika, die Heimat von einigen farbigen Menschen. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, die Heimat von PATIENT-1 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11_Diagonal_Street</entity>
+				<entity>BRIDGE-1 | South_Africa</entity>
+				<entity>PATIENT-1 | Coloured</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id2" size="2">
+			<originaltripleset>
+				<otriple>200_Public_Square | location | Cleveland</otriple>
+				<otriple>200_Public_Square | floorCount | 45</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>200_Public_Square | location | Cleveland</mtriple>
+				<mtriple>200_Public_Square | floorCount | 45</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | floorCount | 45</striple>
+						<striple>200_Public_Square | location | Cleveland</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Auf dem 200 öffentlichen Platz in Cleveland gibt es 45 Etagen. </text>
+				<template>Es gibt PATIENT-2 Etagen bei AGENT-1 in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | location | Cleveland</striple>
+						<striple>200_Public_Square | floorCount | 45</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>200 öffentlicher Platz, Cleveland, hat eine Bodenanzahl von 45. </text>
+				<template>AGENT-1, PATIENT-1, hat eine Bodenanzahl von PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 200_Public_Square</entity>
+				<entity>PATIENT-1 | Cleveland</entity>
+				<entity>PATIENT-2 | 45</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id3" size="2">
+			<originaltripleset>
+				<otriple>20_Fenchurch_Street | location | London</otriple>
+				<otriple>London | leaderTitle | European_Parliament</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>20_Fenchurch_Street | location | London</mtriple>
+				<mtriple>London | leaderTitle | European_Parliament</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | location | London</striple>
+						<striple>London | leaderTitle | European_Parliament</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>20 Fenchurch Street befindet sich in London, die derzeit vom Europäischen Parlament geführt wird. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, die derzeit von PATIENT-1 geführt wird.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | location | London</striple>
+						<striple>London | leaderTitle | European_Parliament</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>20 Fenchurch Street befindet sich in London, die über das Europäische Parlament geführt wird. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, die über PATIENT-1 geführt wird.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | location | London</striple>
+						<striple>London | leaderTitle | European_Parliament</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 20 Fenchurch Street befindet sich in London, die über das Europäische Parlament führt. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, die über PATIENT-1 geführt wird.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 20_Fenchurch_Street</entity>
+				<entity>BRIDGE-1 | London</entity>
+				<entity>PATIENT-1 | European_Parliament</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id4" size="2">
+			<originaltripleset>
+				<otriple>250_Delaware_Avenue | location | United_States</otriple>
+				<otriple>United_States | leaderName | Barack_Obama</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>250_Delaware_Avenue | location | United_States</mtriple>
+				<mtriple>United_States | leaderName | Barack_Obama</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+						<striple>United_States | leaderName | Barack_Obama</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>250 Delaware Avenue befindet sich in den USA, deren Anführer Barack Obama war. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, deren Leiter PATIENT-1 war.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+						<striple>United_States | leaderName | Barack_Obama</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>250 Delaware Avenue befindet sich in den USA - die von Barack Obama geführt wird. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, die von PATIENT-1 geführt wird.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Barack_Obama</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id5" size="2">
+			<originaltripleset>
+				<otriple>300_North_LaSalle | location | Illinois</otriple>
+				<otriple>300_North_LaSalle | floorCount | 60</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>300_North_LaSalle | location | Illinois</mtriple>
+				<mtriple>300_North_LaSalle | floorCount | 60</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+						<striple>300_North_LaSalle | location | Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Es gibt 60 Etagen auf 300 North LaSalle in Illinois. </text>
+				<template>Es gibt PATIENT-2 Etagen bei AGENT-1 in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Illinois</striple>
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>300 North LaSalle in Illinois hat 60 Etagen. </text>
+				<template>AGENT-1 in PATIENT-1 hat PATIENT-2 Etagen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 300_North_LaSalle</entity>
+				<entity>PATIENT-1 | Illinois</entity>
+				<entity>PATIENT-2 | 60</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id6" size="2">
+			<originaltripleset>
+				<otriple>3Arena | location | North_Wall,_Dublin</otriple>
+				<otriple>3Arena | architect | &quot;HOK SVE&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | location | North_Wall,_Dublin</mtriple>
+				<mtriple>3Arena | architect | &quot;HOK SVE&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+						<striple>3Arena | location | North_Wall,_Dublin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Hok SVE war der Architekt der 3Arena am Nordwall, Dublin. </text>
+				<template>PATIENT-2 war der Architekt von AGENT-1 bei PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | North_Wall,_Dublin</striple>
+						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3Arena befindet sich am Nordwall, Dublin, und wurde von hok SVE gebaut. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-1 und wurde von PATIENT-2 gebaut.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | North_Wall,_Dublin</striple>
+						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 3Arena befindet sich am Nordwall, Dublin und wurde von hok SVE entworfen. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-1 und wurde von PATIENT-2 entworfen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | North_Wall,_Dublin</entity>
+				<entity>PATIENT-2 | &quot;HOK SVE&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id7" size="2">
+			<originaltripleset>
+				<otriple>3Arena | owner | Live_Nation_Entertainment</otriple>
+				<otriple>3Arena | location | &quot;East Link Bridge&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | owner | Live_Nation_Entertainment</mtriple>
+				<mtriple>3Arena | location | &quot;East Link Bridge&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3Arena an der East Link Bridge ist im Besitz von Live Nation Entertainment. </text>
+				<template>AGENT-1 bei PATIENT-2 ist Eigentum von PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3 Arena befindet sich an der East Link Bridge und befindet sich im Besitz von Live Nation Entertainment. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-2 und ist im Besitz von PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | Live_Nation_Entertainment</entity>
+				<entity>PATIENT-2 | &quot;East Link Bridge&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id8" size="2">
+			<originaltripleset>
+				<otriple>3Arena | owner | Live_Nation_Entertainment</otriple>
+				<otriple>Live_Nation_Entertainment | location | Beverly_Hills,_California</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | owner | Live_Nation_Entertainment</mtriple>
+				<mtriple>Live_Nation_Entertainment | location | Beverly_Hills,_California</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+						<striple>Live_Nation_Entertainment | location | Beverly_Hills,_California</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3Arena, im Besitz von Live Nation Entertainment, befindet sich in Beverly Hills, Kalifornien. </text>
+				<template>AGENT-1, im Besitz von BRIDGE-1, befindet sich in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Live_Nation_Entertainment | location | Beverly_Hills,_California</striple>
+						<striple>3Arena | owner | Live_Nation_Entertainment</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Live Nation Entertainment aus Beverly Hills, Kalifornien, sind die Besitzer von 3Arena. </text>
+				<template>BRIDGE-1 von PATIENT-1 sind die Besitzer von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>BRIDGE-1 | Live_Nation_Entertainment</entity>
+				<entity>PATIENT-1 | Beverly_Hills,_California</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id9" size="2">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | operator | Marriott_International</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | &quot;23&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Marriott International ist der Mieter des AC Hotel Bella Sky Kopenhagen und verfügt über 23 Etagen. </text>
+				<template>PATIENT-1 ist der Mieter von AGENT-1 und AGENT-1 hat PATIENT-2 Etagen.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | floorCount | 23</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Mieter des AC Hotel Bella Sky Copenhagen, das 23 Etagen hat, ist das Marriott International Hotel. </text>
+				<template>Der Mieter von AGENT-1, das PATIENT-2 Etagen hat, ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>PATIENT-1 | Marriott_International</entity>
+				<entity>PATIENT-2 | 23</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id10" size="2">
+			<originaltripleset>
+				<otriple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;@en</otriple>
+				<otriple>Addis_Ababa_City_Hall | height | &quot;42.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</striple>
+						<striple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Rathaus von Addis Abeba ist 42 m hoch und beherbergt die Regierung von Addis Abeba. </text>
+				<template>AGENT-1 ist PATIENT-2 hoch und Häuser PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</striple>
+						<striple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die &quot;Regierung von Addis Abeba&quot; sind die derzeitigen Mieter des Rathauses von Addis Abeba, das 42 Meter hoch ist. </text>
+				<template>Die &quot;PATIENT-1&quot; sind die aktuellen Mieter von AGENT-1, das PATIENT-2 hoch ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</striple>
+						<striple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Rathaus von Addis Abeba ist 42 m hoch und wird von der Regierung von Addis Adaba besetzt. </text>
+				<template>AGENT-1 ist PATIENT-2 hoch und wird von PATIENT-1 besetzt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Addis_Ababa_City_Hall</entity>
+				<entity>PATIENT-1 | &quot;Government of Addis Ababa&quot;</entity>
+				<entity>PATIENT-2 | &quot;42 m&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id11" size="2">
+			<originaltripleset>
+				<otriple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;@en</otriple>
+				<otriple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</mtriple>
+				<mtriple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Architekturstil von Admisham Hall ist Tudor und Jacabian und das Gebäude befindet sich in Haputale, Sri Lanka. </text>
+				<template>AGENT-1 Architekturstil ist PATIENT-1 und PATIENT-2 befindet sich in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
+						<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adisham Hall, Haputale, Sri Lanka, ist Tudor und Jacabian im Stil. </text>
+				<template>AGENT-1, PATIENT-2, ist PATIENT-1 im Stil.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>PATIENT-1 | &quot;Tudor and Jacabian&quot;</entity>
+				<entity>PATIENT-2 | &quot;Haputale, Sri Lanka&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id12" size="2">
+			<originaltripleset>
+				<otriple>Adisham_Hall | locationCountry | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | language | Tamil_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adisham_Hall | country | Sri_Lanka</mtriple>
+				<mtriple>Sri_Lanka | language | Tamil_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | language | Tamil_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adisham Hall befindet sich in Sri Lanka, wo sie die tamilische Sprache sprechen. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, wo sie PATIENT-1 sprechen.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adisham_Hall | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | language | Tamil_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adisham Hall befindet sich im Land von Sri Lanka, wo sie Tamil sprechen. </text>
+				<template>AGENT-1 befindet sich im Land der BRIDGE-1, wo BRIDGE-1 PATIENT-1 spricht.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>PATIENT-1 | Tamil_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id13" size="2">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | startDate | &quot;2007-03-30&quot;^^xsd:date</otriple>
+				<otriple>Alan_B._Miller_Hall | address | &quot;101 Ukrop Way&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</mtriple>
+				<mtriple>Alan_B._Miller_Hall | address | &quot;101 Ukrop Way&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | address | &quot;101 Ukrop Way&quot;</striple>
+						<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Bau von Alan B Miller Hall, 101 Ukrop Way, begann am 30. März 2007. </text>
+				<template>Der Bau von AGENT-1, PATIENT-2, begann auf PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
+						<striple>Alan_B._Miller_Hall | address | &quot;101 Ukrop Way&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Baubeginn von Alan B. Miller Hall war am 30. März 2007 und befindet sich bei 101 Ukrop Way. </text>
+				<template>AGENT-1 Baubeginn war in PATIENT-1 und befindet sich bei PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | address | &quot;101 Ukrop Way&quot;</striple>
+						<striple>Alan_B._Miller_Hall | buildingStartDate | &quot;30 March 2007&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan B. Miller Hall at 101 Ukrop Way opened on March 30, 2007. </text>
+				<template>AGENT-1 bei PATIENT-2 auf PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>PATIENT-1 | &quot;30 March 2007&quot;</entity>
+				<entity>PATIENT-2 | &quot;101 Ukrop Way&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id14" size="2">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</otriple>
+				<otriple>Alan_B._Miller_Hall | location | Williamsburg,_Virginia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</mtriple>
+				<mtriple>Alan_B._Miller_Hall | location | Williamsburg,_Virginia</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</striple>
+						<striple>Alan_B._Miller_Hall | location | Williamsburg,_Virginia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan B Miller Hall befindet sich im Besitz von The College of William and Mary und befindet sich in Williamsburg, Virginia. </text>
+				<template>AGENT-1 befindet sich im Besitz von PATIENT-1 und befindet sich in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | location | Williamsburg,_Virginia</striple>
+						<striple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan B. Miller Hall in Williamsburg, Virginia befindet sich im Besitz von The College of William and Mary. </text>
+				<template>AGENT-1 in PATIENT-2 ist Eigentum von PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</striple>
+						<striple>Alan_B._Miller_Hall | location | Williamsburg,_Virginia</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das College von William und Mary ist Inhaber der Alan B. Miller Hall in Williamsburg, Virginia. </text>
+				<template>PATIENT-1 ist Eigentümer von AGENT-1 in PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>PATIENT-1 | College_of_William_&amp;_Mary</entity>
+				<entity>PATIENT-2 | Williamsburg,_Virginia</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id15" size="2">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | tenant | Mason_School_of_Business</otriple>
+				<otriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_B._Miller_Hall | tenant | Mason_School_of_Business</mtriple>
+				<mtriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</striple>
+						<striple>Alan_B._Miller_Hall | tenant | Mason_School_of_Business</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Robert A. M. Stern ist der Architekt der Alan B. Miller Hall, wo sich die Mason School of Business befindet. </text>
+				<template>PATIENT-2 ist der Architekt von AGENT-1, wo sich PATIENT-1 befindet.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</striple>
+						<striple>Alan_B._Miller_Hall | tenant | Mason_School_of_Business</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Robert A M Stern entwarf Alan B Miller Hall und die Mason School of Business ist ein Mieter dort. </text>
+				<template>PATIENT-2 entworfen AGENT-1 und PATIENT-1 ist ein Mieter dort.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | tenant | Mason_School_of_Business</striple>
+						<striple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Mason School of Business ist ein Mieter der Alan B. Miller Hall, die von Robert A.M. Stern entworfen wurde. </text>
+				<template>PATIENT-1 ist ein Mieter von AGENT-1, der von PATIENT-2 entworfen wurde.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>PATIENT-1 | Mason_School_of_Business</entity>
+				<entity>PATIENT-2 | Robert_A._M._Stern</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id16" size="2">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | region | Ampara_District</otriple>
+				<otriple>Ampara_Hospital | country | &quot;Sri Lanka&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
+				<mtriple>Ampara_Hospital | region | Ampara_District</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | region | Ampara_District</striple>
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das ampara Hospital befindet sich im ampara District in Sri Lanka. </text>
+				<template>AGENT-1 befindet sich in PATIENT-2 in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | region | Ampara_District</striple>
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das ampara Hospital befindet sich im ampara District von Sri Lanka. </text>
+				<template>AGENT-1 befindet sich in PATIENT-2 von PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>PATIENT-1 | Sri_Lanka</entity>
+				<entity>PATIENT-2 | Ampara_District</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id17" size="2">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
+				<mtriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Sri Jayawardenepura Kotte ist die Hauptstadt Sri Lankas, wo sich das ampara Hospital befindet. </text>
+				<template>PATIENT-1 ist die Hauptstadt von BRIDGE-1, wo sich AGENT-1 befindet.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ampara Hospital befindet sich in Sri Lanka, dessen Hauptstadt Sri Jayawardenepura Kotte ist. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, dessen Kapital PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ampara Hospital befindet sich in Sri Lanka, dessen Hauptstadt Sri Jayawardenepura ist. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, dessen Kapital PATIENT-1 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>PATIENT-1 | Sri_Jayawardenepura_Kotte</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id18" size="2">
+			<originaltripleset>
+				<otriple>Asher_and_Mary_Isabelle_Richardson_House | location | U.S._Route_83</otriple>
+				<otriple>Asher_and_Mary_Isabelle_Richardson_House | nrhpReferenceNumber | &quot;88002539&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asher_and_Mary_Isabelle_Richardson_House | location | U.S._Route_83</mtriple>
+				<mtriple>Asher_and_Mary_Isabelle_Richardson_House | ReferenceNumber in the National Register of Historic Places | &quot;88002539&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asher_and_Mary_Isabelle_Richardson_House | location | U.S._Route_83</striple>
+						<striple>Asher_and_Mary_Isabelle_Richardson_House | ReferenceNumber in the National Register of Historic Places | &quot;88002539&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>The Asher and Mary Isabelle Richardson House is located on U.S. Route 83 and has the reference number 88002539 in the National Register of Historic Places. </text>
+				<template>AGENT-1 befindet sich auf PATIENT-1 und hat die Referenznummer PATIENT-2 im nationalen Register historischer Orte.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asher_and_Mary_Isabelle_Richardson_House | location | U.S._Route_83</striple>
+						<striple>Asher_and_Mary_Isabelle_Richardson_House | ReferenceNumber in the National Register of Historic Places | &quot;88002539&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>The National Register of Historic Places has the Asher and Mary Isabelle Richardson House, located at U.S. Route 83, referred at 88002539. </text>
+				<template>The National Register of Historic Places has AGENT-1, located at PATIENT-1, referred at PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asher_and_Mary_Isabelle_Richardson_House | ReferenceNumber in the National Register of Historic Places | &quot;88002539&quot;</striple>
+						<striple>Asher_and_Mary_Isabelle_Richardson_House | location | U.S._Route_83</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asher and Mary Isabelle Richardson House has the reference number 88002539 in the National Register of Historic Places, and is located at U.S. Route 83. </text>
+				<template>AGENT-1 hat die Referenznummer PATIENT-2 im National Register of Historic Places und befindet sich bei PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asher_and_Mary_Isabelle_Richardson_House</entity>
+				<entity>PATIENT-1 | U.S._Route_83</entity>
+				<entity>PATIENT-2 | &quot;88002539&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id19" size="2">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | location | &quot;Asilomar Blvd., Pacific Grove, California&quot;@en</otriple>
+				<otriple>Asilomar_Conference_Grounds | nrhpReferenceNumber | &quot;87000823&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | location | &quot;Asilomar Blvd., Pacific Grove, California&quot;</mtriple>
+				<mtriple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | location | &quot;Asilomar Blvd., Pacific Grove, California&quot;</striple>
+						<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asilomar Conference Grounds, Asilomar Blvd., Pacific Grove, California has a reference number in the National Register of Historic Places of: 87000823. </text>
+				<template>AGENT-1, PATIENT-1 hat eine Referenznummer im nationalen Register historischer Orte von: PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | location | &quot;Asilomar Blvd., Pacific Grove, California&quot;</striple>
+						<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asilomar Conference Grounds is located at Asilomar Blvd., Pacific Grove, California and it 's reference number is 87000823 in the National Register of Historic Places. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-1 und AGENT-1 Referenznummer ist PATIENT-2 im nationalen Register historischer Orte.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
+						<striple>Asilomar_Conference_Grounds | location | &quot;Asilomar Blvd., Pacific Grove, California&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>&quot;87000823&quot; is Asilomar Conference Grounds 'reference number in the National Register of Historic Places, and it is located on Asilomar Blvd, Pacific Grove, California. </text>
+				<template>&quot;PATIENT-2&quot; ist AGENT-1 Referenznummer im National Register of Historic Places, und AGENT-1 befindet sich auf PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>PATIENT-1 | &quot;Asilomar Blvd., Pacific Grove, California&quot;</entity>
+				<entity>PATIENT-2 | &quot;87000823&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id20" size="2">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</otriple>
+				<otriple>Asilomar_Conference_Grounds | added | &quot;1987-02-27&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</mtriple>
+				<mtriple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
+						<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asilomar Conference Grounds at Pacific Grove, California was added to the National Register of Historic Places on February the 27nd 1987. </text>
+				<template>AGENT-1 bei PATIENT-1 wurde dem National Register of Historic Places on PATIENT-2 hinzugefügt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
+						<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asilomar Conference Grounds befindet sich in Pacific Grove, Kalifornien und wurde dem National Register of Historic Places am 27. Februar 1987 hinzugefügt. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1 und wurde dem National Register of Historic Places on PATIENT-2 hinzugefügt.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
+						<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asilomar Conference Grounds, Pacific Grove, California was added to the National Register of Historic Places on February 27, 1987. </text>
+				<template>AGENT-1, PATIENT-1 wurde zum National Register of Historic Places on PATIENT-2 hinzugefügt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>PATIENT-1 | Pacific_Grove,_California</entity>
+				<entity>PATIENT-2 | &quot;1987-02-27&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id21" size="2">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</otriple>
+				<otriple>Asser_Levy_Public_Baths | built | 1904</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</mtriple>
+				<mtriple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
+						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asser Levy Public Bäder befindet sich auf der 23. Street, Manhattan, und wurde 1904 gebaut. </text>
+				<template>AGENT-1 befindet sich auf PATIENT-1 und wurde in PATIENT-2 gebaut.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+						<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asser Levy Bäder, die 1904 erbaut wurde, befindet sich an der 23. Street in Manhattan. </text>
+				<template>AGENT-1, das in PATIENT-2 gebaut wurde, befindet sich bei PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+						<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 1904 erbaute Asser Levy Public Bäder befindet sich an der 23. Straße (Manhattan). </text>
+				<template>AGENT-1, konstruiert in PATIENT-2, befindet sich bei PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
+				<entity>PATIENT-1 | 23rd_Street_(Manhattan)</entity>
+				<entity>PATIENT-2 | 1904</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id22" size="2">
+			<originaltripleset>
+				<otriple>Gujarat | leaderName | Anandiben_Patel</otriple>
+				<otriple>Amdavad_ni_Gufa | locationTown | Gujarat</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Gujarat | leaderName | Anandiben_Patel</mtriple>
+				<mtriple>Amdavad_ni_Gufa | location | Gujarat</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Gujarat | leaderName | Anandiben_Patel</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Anandiben Patel war der Anführer von Gujurat, wo sich Amdavad ni Gufa befindet. </text>
+				<template>PATIENT-1 war der Anführer von BRIDGE-1, wo sich AGENT-1 befindet.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Gujarat | leaderName | Anandiben_Patel</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad Gufa befindet sich in Gujarat und ihr Anführer ist Anandiben Patel. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1 und AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Gujarat | leaderName | Anandiben_Patel</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amdavad ni Gufa befindet sich in Gujarat und ihr Anführer ist Anandiben Patel. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1 und BRIDGE-1 Führer ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>BRIDGE-1 | Gujarat</entity>
+				<entity>PATIENT-1 | Anandiben_Patel</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

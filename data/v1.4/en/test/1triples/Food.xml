@@ -1,0 +1,1463 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Food" eid="Id189" size="1">
+			<originaltripleset>
+				<otriple>Amatriciana_sauce | ingredient | Pecorino_Romano</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amatriciana_sauce | ingredient | Pecorino_Romano</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1"/>
+				</sortedtripleset>
+				<references/>
+				<text>An ingredient of amatriciana sauce is pecorino romano.</text>
+				<template>An ingredient of amatriciana sauce is pecorino romano .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amatriciana_sauce | ingredient | Pecorino_Romano</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Pecorino_Romano" number="1" tag="PATIENT-1" type="name">Pecorino Romano</reference>
+					<reference entity="Amatriciana_sauce" number="2" tag="AGENT-1" type="name">Amatriciana sauce</reference>
+				</references>
+				<text>Pecorino Romano is an ingredient used in Amatriciana sauce.</text>
+				<template>PATIENT-1 is an ingredient used in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amatriciana_sauce | ingredient | Pecorino_Romano</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Pecorino_Romano" number="1" tag="PATIENT-1" type="name">Pecorino Romano</reference>
+					<reference entity="Amatriciana_sauce" number="2" tag="AGENT-1" type="name">Amatriciana sauce</reference>
+				</references>
+				<text>Pecorino Romano is an ingredient of Amatriciana sauce.</text>
+				<template>PATIENT-1 is an ingredient of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amatriciana_sauce</entity>
+				<entity>PATIENT-1 | Pecorino_Romano</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id190" size="1">
+			<originaltripleset>
+				<otriple>Arrabbiata_sauce | ingredient | Chili_pepper</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arrabbiata_sauce | ingredient | Chili_pepper</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arrabbiata_sauce | ingredient | Chili_pepper</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arrabbiata_sauce" number="1" tag="AGENT-1" type="name">arrabbiata sauce</reference>
+					<reference entity="Chili_pepper" number="2" tag="PATIENT-1" type="name">chili pepper</reference>
+				</references>
+				<text>An important ingredient in arrabbiata sauce is chili pepper.</text>
+				<template>An important ingredient in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arrabbiata_sauce | ingredient | Chili_pepper</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chili_pepper" number="1" tag="PATIENT-1" type="description">The chili pepper</reference>
+					<reference entity="Arrabbiata_sauce" number="2" tag="AGENT-1" type="name">Arrabbiata sauce</reference>
+				</references>
+				<text>The chili pepper serves as an ingredient in Arrabbiata sauce.</text>
+				<template>PATIENT-1 serves as an ingredient in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arrabbiata_sauce</entity>
+				<entity>PATIENT-1 | Chili_pepper</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id191" size="1">
+			<originaltripleset>
+				<otriple>Arròs_negre | ingredient | White_rice</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arròs_negre | ingredient | White_rice</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | ingredient | White_rice</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arròs_negre" number="1" tag="AGENT-1" type="name">Arros negre</reference>
+					<reference entity="White_rice" number="2" tag="PATIENT-1" type="name">white rice</reference>
+				</references>
+				<text>Arros negre contains white rice as an ingredient.</text>
+				<template>AGENT-1 contains PATIENT-1 as an ingredient .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | ingredient | White_rice</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="White_rice" number="1" tag="PATIENT-1" type="name">white rice</reference>
+					<reference entity="Arròs_negre" number="2" tag="AGENT-1" type="name">Arròs negre</reference>
+				</references>
+				<text>white rice is an ingredient in Arròs negre.</text>
+				<template>PATIENT-1 is an ingredient in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | White_rice</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id192" size="1">
+			<originaltripleset>
+				<otriple>Arròs_negre | region | Catalonia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arròs_negre | region | Catalonia</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Catalonia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arròs_negre" number="1" tag="AGENT-1" type="name">Arros negre</reference>
+					<reference entity="Catalonia" number="2" tag="PATIENT-1" type="name">Catalonia</reference>
+				</references>
+				<text>Arros negre is from the region of Catalonia.</text>
+				<template>AGENT-1 is from the region of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Catalonia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arròs_negre" number="1" tag="AGENT-1" type="name">Arròs negre</reference>
+					<reference entity="Catalonia" number="2" tag="PATIENT-1" type="name">Catalonia</reference>
+				</references>
+				<text>Arròs negre is from the Catalonia region.</text>
+				<template>AGENT-1 is from the PATIENT-1 region .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | Catalonia</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id193" size="1">
+			<originaltripleset>
+				<otriple>Arròs_negre | region | Valencian_Community</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arròs_negre | region | Valencian_Community</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Arròs_negre | region | Valencian_Community</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arròs_negre" number="1" tag="AGENT-1" type="name">Arros negre</reference>
+					<reference entity="Valencian_Community" number="2" tag="PATIENT-1" type="description">the Valencian Community</reference>
+				</references>
+				<text>Arros negre comes from the region of the Valencian Community.</text>
+				<template>AGENT-1 comes from the region of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>PATIENT-1 | Valencian_Community</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id194" size="1">
+			<originaltripleset>
+				<otriple>Ayam_penyet | region | Singapore</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ayam_penyet | region | Singapore</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ayam_penyet | region | Singapore</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ayam_penyet" number="1" tag="AGENT-1" type="name">Ayam penyet</reference>
+					<reference entity="Singapore" number="2" tag="PATIENT-1" type="name">Singapore</reference>
+				</references>
+				<text>Ayam penyet is a dish from the region of Singapore.</text>
+				<template>AGENT-1 is a dish from the region of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ayam_penyet | region | Singapore</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ayam_penyet" number="1" tag="AGENT-1" type="name">Ayam penyet</reference>
+					<reference entity="Singapore" number="2" tag="PATIENT-1" type="name">Singapore</reference>
+				</references>
+				<text>Ayam penyet is a dish from Singapore.</text>
+				<template>AGENT-1 is a dish from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ayam_penyet | region | Singapore</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ayam_penyet" number="1" tag="AGENT-1" type="name">Ayam penyet</reference>
+					<reference entity="Singapore" number="2" tag="PATIENT-1" type="name">Singapore</reference>
+				</references>
+				<text>Ayam penyet is from the Singapore region.</text>
+				<template>AGENT-1 is from the PATIENT-1 region .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ayam_penyet</entity>
+				<entity>PATIENT-1 | Singapore</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id195" size="1">
+			<originaltripleset>
+				<otriple>BLT | ingredient | Tomato</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>BLT | ingredient | Tomato</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>BLT | ingredient | Tomato</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tomato" number="1" tag="PATIENT-1" type="name">Tomato</reference>
+					<reference entity="BLT" number="2" tag="AGENT-1" type="description">a BLT</reference>
+				</references>
+				<text>Tomato is an ingredient in a BLT.</text>
+				<template>PATIENT-1 is an ingredient in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>BLT | ingredient | Tomato</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="BLT" number="1" tag="AGENT-1" type="description">the BLT Sandwich</reference>
+					<reference entity="Tomato" number="2" tag="PATIENT-1" type="name">Tomato</reference>
+				</references>
+				<text>one of the ingredients of the BLT Sandwich is Tomato.</text>
+				<template>one of the ingredients of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | BLT</entity>
+				<entity>PATIENT-1 | Tomato</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id196" size="1">
+			<originaltripleset>
+				<otriple>Baked_Alaska | region | Hong_Kong</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baked_Alaska | region | Hong_Kong</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baked_Alaska | region | Hong_Kong</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baked_Alaska" number="1" tag="AGENT-1" type="name">Baked Alaska</reference>
+					<reference entity="Hong_Kong" number="2" tag="PATIENT-1" type="name">Hong Kong</reference>
+				</references>
+				<text>Baked Alaska is served in the region of Hong Kong.</text>
+				<template>AGENT-1 is served in the region of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baked_Alaska | region | Hong_Kong</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baked_Alaska" number="1" tag="AGENT-1" type="name">Baked Alaska</reference>
+					<reference entity="Hong_Kong" number="2" tag="PATIENT-1" type="name">Hong Kong</reference>
+				</references>
+				<text>Baked Alaska hails from Hong Kong.</text>
+				<template>AGENT-1 hails from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>PATIENT-1 | Hong_Kong</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id197" size="1">
+			<originaltripleset>
+				<otriple>Bakewell_pudding | served | &quot;Warm  or cold&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bakewell_pudding | served | &quot;Warm  or cold&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | served | &quot;Warm  or cold&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bakewell_pudding" number="1" tag="AGENT-1" type="name">Bakewell pudding</reference>
+					<reference entity="&quot;Warm  or cold&quot;" number="2" tag="PATIENT-1" type="name">either warm or cold</reference>
+				</references>
+				<text>Bakewell pudding can be served either warm or cold.</text>
+				<template>AGENT-1 can be served PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bakewell_pudding | served | &quot;Warm  or cold&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bakewell_pudding" number="1" tag="AGENT-1" type="name">Bakewell pudding</reference>
+					<reference entity="&quot;Warm  or cold&quot;" number="2" tag="PATIENT-1" type="name">warm or cold</reference>
+				</references>
+				<text>Bakewell pudding can be served warm or cold.</text>
+				<template>AGENT-1 can be served PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>PATIENT-1 | &quot;Warm  or cold&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id198" size="1">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bandeja_paisa | country | Colombian_cuisine</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Colombian_cuisine" number="2" tag="PATIENT-1" type="name">Colombian cuisine</reference>
+				</references>
+				<text>Bandeja paisa is a dish from Colombian cuisine.</text>
+				<template>AGENT-1 is a dish from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Colombian_cuisine" number="2" tag="PATIENT-1" type="name">Colombian cuisine</reference>
+				</references>
+				<text>Bandeja paisa is typical Colombian cuisine.</text>
+				<template>AGENT-1 is typical PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Colombian_cuisine" number="2" tag="PATIENT-1" type="name">Colombian cuisine</reference>
+				</references>
+				<text>Bandeja paisa is part of Colombian cuisine.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>PATIENT-1 | Colombian_cuisine</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id199" size="1">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | ingredient | Chicharrón</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bandeja_paisa | ingredient | Chicharrón</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | ingredient | Chicharrón</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chicharrón" number="1" tag="PATIENT-1" type="name">Chicharrón</reference>
+					<reference entity="Bandeja_paisa" number="2" tag="AGENT-1" type="name">Bandeja paisa</reference>
+				</references>
+				<text>Chicharrón is one of the ingredients in Bandeja paisa.</text>
+				<template>PATIENT-1 is one of the ingredients in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | ingredient | Chicharrón</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Chicharrón" number="2" tag="PATIENT-1" type="name">Chicharrón</reference>
+				</references>
+				<text>An ingredient found in Bandeja paisa is Chicharrón.</text>
+				<template>An ingredient found in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>PATIENT-1 | Chicharrón</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id200" size="1">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | region | Paisa_Region</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bandeja_paisa | region | Paisa_Region</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | region | Paisa_Region</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Paisa_Region" number="2" tag="PATIENT-1" type="description">the Paisa region</reference>
+				</references>
+				<text>Bandeja paisa originates from the Paisa region.</text>
+				<template>AGENT-1 originates from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | region | Paisa_Region</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Paisa_Region" number="2" tag="PATIENT-1" type="description">the Paisa region</reference>
+				</references>
+				<text>Bandeja paisa is a traditional dish from the Paisa region.</text>
+				<template>AGENT-1 is a traditional dish from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bandeja_paisa | region | Paisa_Region</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Paisa_Region" number="2" tag="PATIENT-1" type="description">the Paisa region</reference>
+				</references>
+				<text>Bandeja paisa is from the Paisa region.</text>
+				<template>AGENT-1 is from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>PATIENT-1 | Paisa_Region</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id201" size="1">
+			<originaltripleset>
+				<otriple>Barny_Cakes | servingSize | &quot;30.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Barny_Cakes | servingSize | 30.0 g</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Barny_Cakes | servingSize | 30.0 g</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barny_Cakes" number="1" tag="AGENT-1" type="name">Barny cakes</reference>
+					<reference entity="30.0 g" number="2" tag="PATIENT-1" type="name">30 gram</reference>
+				</references>
+				<text>Barny cakes can be served in 30 gram sizes.</text>
+				<template>AGENT-1 can be served in PATIENT-1 sizes .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Barny_Cakes | servingSize | 30.0 g</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barny_Cakes" number="1" tag="AGENT-1" type="description">the Barny cakes</reference>
+					<reference entity="30.0 g" number="2" tag="PATIENT-1" type="name">30.0g</reference>
+				</references>
+				<text>Serving size for the Barny cakes is 30.0g.</text>
+				<template>Serving size for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Barny_Cakes | servingSize | 30.0 g</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barny_Cakes" number="1" tag="AGENT-1" type="name">Barny cakes</reference>
+					<reference entity="30.0 g" number="2" tag="PATIENT-1" type="name">30.0g</reference>
+				</references>
+				<text>The serving size of Barny cakes is 30.0g.</text>
+				<template>The serving size of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Barny_Cakes</entity>
+				<entity>PATIENT-1 | 30.0 g</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id202" size="1">
+			<originaltripleset>
+				<otriple>Batagor | hasVariant | Shumai</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Batagor | dishVariation | Shumai</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | dishVariation | Shumai</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Batagor" number="1" tag="AGENT-1" type="name">Batagor</reference>
+					<reference entity="Shumai" number="2" tag="PATIENT-1" type="name">shumai</reference>
+				</references>
+				<text>Batagor and shumai are variations on the same dish.</text>
+				<template>AGENT-1 and PATIENT-1 are variations on the same dish .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | dishVariation | Shumai</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Shumai" number="1" tag="PATIENT-1" type="name">Shumai</reference>
+					<reference entity="Batagor" number="2" tag="AGENT-1" type="name">Batagor</reference>
+				</references>
+				<text>Shumai is a variation of Batagor.</text>
+				<template>PATIENT-1 is a variation of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | dishVariation | Shumai</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Batagor" number="1" tag="AGENT-1" type="name">Batagor</reference>
+					<reference entity="Shumai" number="2" tag="PATIENT-1" type="name">Shumai</reference>
+				</references>
+				<text>Batagor is a variation of Shumai.</text>
+				<template>AGENT-1 is a variation of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Batagor</entity>
+				<entity>PATIENT-1 | Shumai</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id203" size="1">
+			<originaltripleset>
+				<otriple>Batagor | ingredientName | &quot;fried fish dumpling with tofu and vegetables inpeanut sauce&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Batagor | mainIngredients | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | mainIngredients | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Batagor" number="1" tag="AGENT-1" type="description">A batagor</reference>
+					<reference entity="&quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;" number="2" tag="PATIENT-1" type="description">a fried fish dumpling with tofu and vegetables in peanut sauce</reference>
+				</references>
+				<text>A batagor consists of a fried fish dumpling with tofu and vegetables in peanut sauce.</text>
+				<template>AGENT-1 consists of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | mainIngredients | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Batagor" number="1" tag="AGENT-1" type="name">Batagor</reference>
+					<reference entity="&quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;" number="2" tag="PATIENT-1" type="name">fried fish dumplings , tofu and vegetables in peanut sauce</reference>
+				</references>
+				<text>Batagor has these main ingredients - fried fish dumplings, tofu and vegetables in peanut sauce.</text>
+				<template>AGENT-1 has these main ingredients - PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batagor | mainIngredients | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Batagor" number="1" tag="AGENT-1" type="name">Batagor 's</reference>
+					<reference entity="&quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;" number="2" tag="PATIENT-1" type="name">fried fish dumpling with tofu and vegetables in peanut sauce</reference>
+				</references>
+				<text>Batagor's main ingredients are fried fish dumpling with tofu and vegetables in peanut sauce.</text>
+				<template>AGENT-1 main ingredients are PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Batagor</entity>
+				<entity>PATIENT-1 | &quot;fried fish dumpling with tofu and vegetables in peanut sauce&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id204" size="1">
+			<originaltripleset>
+				<otriple>Batchoy | ingredient | Shrimp</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Batchoy | ingredient | Shrimp</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batchoy | ingredient | Shrimp</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Shrimp" number="1" tag="PATIENT-1" type="name">Shrimp</reference>
+					<reference entity="Batchoy" number="2" tag="AGENT-1" type="name">Batchoy</reference>
+				</references>
+				<text>Shrimp is an ingredient in Batchoy.</text>
+				<template>PATIENT-1 is an ingredient in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Batchoy | ingredient | Shrimp</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Batchoy" number="1" tag="AGENT-1" type="name">Batchoy</reference>
+					<reference entity="Shrimp" number="2" tag="PATIENT-1" type="name">Shrimp</reference>
+				</references>
+				<text>one of the ingredients for Batchoy is Shrimp.</text>
+				<template>one of the ingredients for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Batchoy</entity>
+				<entity>PATIENT-1 | Shrimp</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id205" size="1">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | region | Indonesia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Beef_kway_teow | region | Indonesia</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | region | Indonesia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Beef_kway_teow" number="1" tag="AGENT-1" type="name">Beef kway teow</reference>
+					<reference entity="Indonesia" number="2" tag="PATIENT-1" type="name">Indonesia</reference>
+				</references>
+				<text>Beef kway teow is a food found in Indonesia.</text>
+				<template>AGENT-1 is a food found in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | region | Indonesia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Beef_kway_teow" number="1" tag="AGENT-1" type="name">Beef kway teow</reference>
+					<reference entity="Indonesia" number="2" tag="PATIENT-1" type="name">Indonesia</reference>
+				</references>
+				<text>Beef kway teow comes from the region of Indonesia.</text>
+				<template>AGENT-1 comes from the region of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Beef_kway_teow | region | Indonesia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Beef_kway_teow" number="1" tag="AGENT-1" type="name">Beef kway teow</reference>
+					<reference entity="Indonesia" number="2" tag="PATIENT-1" type="name">Indonesia</reference>
+				</references>
+				<text>Beef kway teow is served in the region of Indonesia.</text>
+				<template>AGENT-1 is served in the region of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>PATIENT-1 | Indonesia</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id206" size="1">
+			<originaltripleset>
+				<otriple>Bhajji | alias | &quot;Bhaji, bajji&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Bhaji, bajji&quot;" number="1" tag="PATIENT-1" type="name">Bhaji and bajji</reference>
+					<reference entity="Bhajji" number="2" tag="AGENT-1" type="name">Bhajji</reference>
+				</references>
+				<text>Bhaji and bajji are alternative names for Bhajji.</text>
+				<template>PATIENT-1 are alternative names for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bhajji" number="1" tag="AGENT-1" type="name">Bhajji</reference>
+					<reference entity="&quot;Bhaji, bajji&quot;" number="2" tag="PATIENT-1" type="name">Bhaji or bajji</reference>
+				</references>
+				<text>Bhajji is also known as Bhaji or bajji.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>PATIENT-1 | &quot;Bhaji, bajji&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id207" size="1">
+			<originaltripleset>
+				<otriple>Binignit | ingredient | Taro</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Binignit | ingredient | Taro</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Binignit | ingredient | Taro</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Binignit" number="1" tag="AGENT-1" type="name">Binignit</reference>
+					<reference entity="Taro" number="2" tag="PATIENT-1" type="name">taro</reference>
+				</references>
+				<text>Binignit is an ingredient found in taro.</text>
+				<template>AGENT-1 is an ingredient found in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Binignit | ingredient | Taro</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Taro" number="1" tag="PATIENT-1" type="name">Taro</reference>
+					<reference entity="Binignit" number="2" tag="AGENT-1" type="name">Binignit</reference>
+				</references>
+				<text>Taro is an ingredient in Binignit.</text>
+				<template>PATIENT-1 is an ingredient in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Binignit | ingredient | Taro</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Taro" number="1" tag="PATIENT-1" type="name">Taro</reference>
+					<reference entity="Binignit" number="2" tag="AGENT-1" type="name">Binignit</reference>
+				</references>
+				<text>Taro is an ingredient of Binignit.</text>
+				<template>PATIENT-1 is an ingredient of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Binignit</entity>
+				<entity>PATIENT-1 | Taro</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id208" size="1">
+			<originaltripleset>
+				<otriple>Bionico | hasVariant | Cottage_cheese</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bionico | dishVariation | Cottage_cheese</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | dishVariation | Cottage_cheese</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bionico" number="1" tag="AGENT-1" type="name">Bionico</reference>
+					<reference entity="Cottage_cheese" number="2" tag="PATIENT-1" type="name">cottage cheese</reference>
+				</references>
+				<text>Bionico can be varied by using cottage cheese.</text>
+				<template>AGENT-1 can be varied by using PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>PATIENT-1 | Cottage_cheese</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id209" size="1">
+			<originaltripleset>
+				<otriple>Bionico | region | Jalisco</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bionico | region | Jalisco</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | region | Jalisco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bionico" number="1" tag="AGENT-1" type="name">Bionico</reference>
+					<reference entity="Jalisco" number="2" tag="PATIENT-1" type="name">Jalisco</reference>
+				</references>
+				<text>Bionico is found in the region of Jalisco.</text>
+				<template>AGENT-1 is found in the region of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bionico | region | Jalisco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bionico" number="1" tag="AGENT-1" type="name">Bionico</reference>
+					<reference entity="Jalisco" number="2" tag="PATIENT-1" type="name">Jalisco</reference>
+				</references>
+				<text>Bionico comes from the region Jalisco.</text>
+				<template>AGENT-1 comes from the region PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>PATIENT-1 | Jalisco</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id210" size="1">
+			<originaltripleset>
+				<otriple>Chicken | class | Bird</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Chicken | class | Bird</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Chicken | class | Bird</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chicken" number="1" tag="AGENT-1" type="name">Chicken</reference>
+					<reference entity="Bird" number="2" tag="PATIENT-1" type="name">bird</reference>
+				</references>
+				<text>Chicken is a type of bird.</text>
+				<template>AGENT-1 is a type of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Chicken | class | Bird</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chicken" number="1" tag="AGENT-1" type="name">chickens</reference>
+					<reference entity="Bird" number="2" tag="PATIENT-1" type="name">bird</reference>
+				</references>
+				<text>the class of chickens is bird.</text>
+				<template>the class of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Chicken</entity>
+				<entity>PATIENT-1 | Bird</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id211" size="1">
+			<originaltripleset>
+				<otriple>India | currency | Indian_rupee</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>India | currency | Indian_rupee</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | currency | Indian_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="India" number="1" tag="AGENT-1" type="name">India</reference>
+					<reference entity="Indian_rupee" number="2" tag="PATIENT-1" type="description">the Indian rupee</reference>
+				</references>
+				<text>The currency of India is the Indian rupee.</text>
+				<template>The currency of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | currency | Indian_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Indian_rupee" number="1" tag="PATIENT-1" type="name">Indian rupee</reference>
+					<reference entity="India" number="2" tag="AGENT-1" type="name">India</reference>
+				</references>
+				<text>Indian rupee is the currency in India.</text>
+				<template>PATIENT-1 is the currency in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | currency | Indian_rupee</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Indian_rupee" number="1" tag="PATIENT-1" type="description">the Indian rupee</reference>
+					<reference entity="India" number="2" tag="AGENT-1" type="name">India</reference>
+				</references>
+				<text>the Indian rupee is the currency in India.</text>
+				<template>PATIENT-1 is the currency in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | India</entity>
+				<entity>PATIENT-1 | Indian_rupee</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id212" size="1">
+			<originaltripleset>
+				<otriple>India | leader | Sumitra_Mahajan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>India | leaderName | Sumitra_Mahajan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sumitra_Mahajan" number="1" tag="PATIENT-1" type="name">Sumitra Mahajan</reference>
+					<reference entity="India" number="2" tag="AGENT-1" type="name">India</reference>
+				</references>
+				<text>Sumitra Mahajan is a leader in India.</text>
+				<template>PATIENT-1 is a leader in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sumitra_Mahajan" number="1" tag="PATIENT-1" type="name">Sumitra Mahajan</reference>
+					<reference entity="India" number="2" tag="AGENT-1" type="name">India</reference>
+				</references>
+				<text>Sumitra Mahajan is the leader of India.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | India</entity>
+				<entity>PATIENT-1 | Sumitra_Mahajan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id213" size="1">
+			<originaltripleset>
+				<otriple>Indonesia | language | Indonesian_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Indonesia | language | Indonesian_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Indonesia | language | Indonesian_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Indonesian_language" number="1" tag="PATIENT-1" type="name">Indonesian language</reference>
+					<reference entity="Indonesia" number="2" tag="AGENT-1" type="name">Indonesia</reference>
+				</references>
+				<text>Indonesian language is the language spoken in Indonesia.</text>
+				<template>PATIENT-1 is the language spoken in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Indonesia | language | Indonesian_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Indonesian_language" number="1" tag="PATIENT-1" type="name">Indonesian</reference>
+					<reference entity="Indonesia" number="2" tag="AGENT-1" type="name">Indonesia</reference>
+				</references>
+				<text>Indonesian is the language of Indonesia.</text>
+				<template>PATIENT-1 is the language of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Indonesia</entity>
+				<entity>PATIENT-1 | Indonesian_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id214" size="1">
+			<originaltripleset>
+				<otriple>Jalisco | leaderName | Aristóteles_Sandoval</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Jalisco | leaderName | Aristóteles_Sandoval</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jalisco | leaderName | Aristóteles_Sandoval</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aristóteles_Sandoval" number="1" tag="PATIENT-1" type="name">Aristoteles Sandoval</reference>
+					<reference entity="Jalisco" number="2" tag="AGENT-1" type="name">Jalisco</reference>
+				</references>
+				<text>Aristoteles Sandoval is a leader of Jalisco.</text>
+				<template>PATIENT-1 is a leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jalisco | leaderName | Aristóteles_Sandoval</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aristóteles_Sandoval" number="1" tag="PATIENT-1" type="name">Aristoteles Sandoval</reference>
+					<reference entity="Jalisco" number="2" tag="AGENT-1" type="name">Jalisco</reference>
+				</references>
+				<text>Aristoteles Sandoval is a leader in Jalisco.</text>
+				<template>PATIENT-1 is a leader in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jalisco | leaderName | Aristóteles_Sandoval</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aristóteles_Sandoval" number="1" tag="PATIENT-1" type="name">Aristóteles Sandoval</reference>
+					<reference entity="Jalisco" number="2" tag="AGENT-1" type="name">Jalisco</reference>
+				</references>
+				<text>Aristóteles Sandoval is the leader of Jalisco.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Jalisco</entity>
+				<entity>PATIENT-1 | Aristóteles_Sandoval</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id215" size="1">
+			<originaltripleset>
+				<otriple>Java | ethnicGroup | Banyumasan_people</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Java | ethnicGroup | Banyumasan_people</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Java | ethnicGroup | Banyumasan_people</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Banyumasan_people" number="1" tag="PATIENT-1" type="description">The Banyumasan people</reference>
+					<reference entity="Java" number="2" tag="AGENT-1" type="name">Java</reference>
+				</references>
+				<text>The Banyumasan people are an ethnic group from Java.</text>
+				<template>PATIENT-1 are an ethnic group from AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Java | ethnicGroup | Banyumasan_people</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Banyumasan_people" number="1" tag="PATIENT-1" type="description">The Banyumasan people</reference>
+					<reference entity="Java" number="2" tag="AGENT-1" type="name">Java</reference>
+				</references>
+				<text>The Banyumasan people are an ethnic group in Java.</text>
+				<template>PATIENT-1 are an ethnic group in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Java | ethnicGroup | Banyumasan_people</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Banyumasan_people" number="1" tag="PATIENT-1" type="name">Banyumasan people</reference>
+					<reference entity="Java" number="2" tag="AGENT-1" type="name">Java</reference>
+				</references>
+				<text>Banyumasan people is one of the ethnic groups in Java.</text>
+				<template>PATIENT-1 is one of the ethnic groups in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Java</entity>
+				<entity>PATIENT-1 | Banyumasan_people</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id216" size="1">
+			<originaltripleset>
+				<otriple>Malaysia | ethnicGroups | Malaysian_Malay</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Malaysia | ethnicGroup | Malaysian_Malay</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Malaysia | ethnicGroup | Malaysian_Malay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Malaysian_Malay" number="1" tag="PATIENT-1" type="name">Malay</reference>
+					<reference entity="Malaysia" number="2" tag="AGENT-1" type="name">Malaysia</reference>
+				</references>
+				<text>Malay is the ethnic group of Malaysia.</text>
+				<template>PATIENT-1 is the ethnic group of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Malaysia | ethnicGroup | Malaysian_Malay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Malaysian_Malay" number="1" tag="PATIENT-1" type="name">Malaysian Malay</reference>
+					<reference entity="Malaysia" number="2" tag="AGENT-1" type="name">Malaysia</reference>
+				</references>
+				<text>Malaysian Malay is an ethnic group in Malaysia.</text>
+				<template>PATIENT-1 is an ethnic group in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Malaysia | ethnicGroup | Malaysian_Malay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Malaysian_Malay" number="1" tag="PATIENT-1" type="name">Malay</reference>
+					<reference entity="Malaysia" number="2" tag="AGENT-1" type="name">Malaysia</reference>
+				</references>
+				<text>Malay is an ethnic group in Malaysia.</text>
+				<template>PATIENT-1 is an ethnic group in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Malaysia</entity>
+				<entity>PATIENT-1 | Malaysian_Malay</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id217" size="1">
+			<originaltripleset>
+				<otriple>Mexico | leader | Silvano_Aureoles_Conejo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Mexico | leaderName | Silvano_Aureoles_Conejo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Mexico | leaderName | Silvano_Aureoles_Conejo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mexico" number="1" tag="AGENT-1" type="name">Mexico</reference>
+					<reference entity="Silvano_Aureoles_Conejo" number="2" tag="PATIENT-1" type="name">Silvano Aureoles Conejo</reference>
+				</references>
+				<text>The leader of Mexico is Silvano Aureoles Conejo.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Mexico | leaderName | Silvano_Aureoles_Conejo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mexico" number="1" tag="AGENT-1" type="name">Mexico</reference>
+					<reference entity="Silvano_Aureoles_Conejo" number="2" tag="PATIENT-1" type="name">Silvano Aureoles Conejo</reference>
+				</references>
+				<text>The name of the leader of Mexico is Silvano Aureoles Conejo.</text>
+				<template>The name of the leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Mexico | leaderName | Silvano_Aureoles_Conejo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mexico" number="1" tag="AGENT-1" type="name">Mexico</reference>
+					<reference entity="Silvano_Aureoles_Conejo" number="2" tag="PATIENT-1" type="name">Silvano Aureoles Conejo</reference>
+				</references>
+				<text>The name of the leader in Mexico is Silvano Aureoles Conejo.</text>
+				<template>The name of the leader in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Mexico</entity>
+				<entity>PATIENT-1 | Silvano_Aureoles_Conejo</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id218" size="1">
+			<originaltripleset>
+				<otriple>New_York | language | Spanish_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>New_York | language | Spanish_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>New_York | language | Spanish_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Spanish_language" number="1" tag="PATIENT-1" type="name">Spanish language</reference>
+					<reference entity="New_York" number="2" tag="AGENT-1" type="name">New York</reference>
+				</references>
+				<text>Spanish language is one of the languages spoken in New York.</text>
+				<template>PATIENT-1 is one of the languages spoken in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>New_York | language | Spanish_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="New_York" number="1" tag="AGENT-1" type="name">New York</reference>
+					<reference entity="Spanish_language" number="2" tag="PATIENT-1" type="name">Spanish</reference>
+				</references>
+				<text>one of the languages of New York is Spanish.</text>
+				<template>one of the languages of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | New_York</entity>
+				<entity>PATIENT-1 | Spanish_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id219" size="1">
+			<originaltripleset>
+				<otriple>Shumai | country | China</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Shumai | country | China</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Shumai | country | China</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="China" number="1" tag="PATIENT-1" type="name">China</reference>
+					<reference entity="Shumai" number="2" tag="AGENT-1" type="name">Shumai</reference>
+				</references>
+				<text>China is the country Shumai comes from.</text>
+				<template>PATIENT-1 is the country AGENT-1 comes from .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Shumai | country | China</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Shumai" number="1" tag="AGENT-1" type="name">Shumai</reference>
+					<reference entity="China" number="2" tag="PATIENT-1" type="name">China</reference>
+				</references>
+				<text>Shumai is a dish from China.</text>
+				<template>AGENT-1 is a dish from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Shumai</entity>
+				<entity>PATIENT-1 | China</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id220" size="1">
+			<originaltripleset>
+				<otriple>Siomay | ingredient | Peanut_sauce</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Siomay | ingredient | Peanut_sauce</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Siomay | ingredient | Peanut_sauce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peanut_sauce" number="1" tag="PATIENT-1" type="name">Peanut sauce</reference>
+					<reference entity="Siomay" number="2" tag="AGENT-1" type="name">Siomay</reference>
+				</references>
+				<text>Peanut sauce is an ingredient in Siomay.</text>
+				<template>PATIENT-1 is an ingredient in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Siomay | ingredient | Peanut_sauce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peanut_sauce" number="1" tag="PATIENT-1" type="name">Peanut sauce</reference>
+					<reference entity="Siomay" number="2" tag="AGENT-1" type="name">Siomay</reference>
+				</references>
+				<text>Peanut sauce is an ingredient of Siomay.</text>
+				<template>PATIENT-1 is an ingredient of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Siomay</entity>
+				<entity>PATIENT-1 | Peanut_sauce</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id221" size="1">
+			<originaltripleset>
+				<otriple>Sumatra | ethnicGroups | Malays_(ethnic_group)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Sumatra | ethnicGroup | Malays_(ethnic_group)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Sumatra | ethnicGroup | Malays_(ethnic_group)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Malays_(ethnic_group)" number="1" tag="PATIENT-1" type="name">Malays</reference>
+					<reference entity="Sumatra" number="2" tag="AGENT-1" type="name">Sumatra</reference>
+				</references>
+				<text>Malays are an ethnic group of Sumatra.</text>
+				<template>PATIENT-1 are an ethnic group of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Sumatra | ethnicGroup | Malays_(ethnic_group)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Malays_(ethnic_group)" number="1" tag="PATIENT-1" type="name">Malays</reference>
+					<reference entity="Sumatra" number="2" tag="AGENT-1" type="name">Sumatra</reference>
+				</references>
+				<text>Malays are an ethnic group in Sumatra.</text>
+				<template>PATIENT-1 are an ethnic group in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Sumatra</entity>
+				<entity>PATIENT-1 | Malays_(ethnic_group)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id222" size="1">
+			<originaltripleset>
+				<otriple>United_Kingdom | leaderName | David_Cameron</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_Kingdom | leaderName | David_Cameron</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_Kingdom | leaderName | David_Cameron</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="David_Cameron" number="1" tag="PATIENT-1" type="name">David Cameron</reference>
+					<reference entity="United_Kingdom" number="2" tag="AGENT-1" type="description">the United Kingdom</reference>
+				</references>
+				<text>David Cameron is the leader of the United Kingdom.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_Kingdom | leaderName | David_Cameron</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="David_Cameron" number="1" tag="PATIENT-1" type="name">David Cameron</reference>
+					<reference entity="United_Kingdom" number="2" tag="AGENT-1" type="description">the United Kingdom</reference>
+				</references>
+				<text>David Cameron is a leader in the United Kingdom.</text>
+				<template>PATIENT-1 is a leader in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_Kingdom | leaderName | David_Cameron</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="David_Cameron" number="1" tag="PATIENT-1" type="name">David Cameron</reference>
+					<reference entity="United_Kingdom" number="2" tag="AGENT-1" type="description">the United Kingdon</reference>
+				</references>
+				<text>David Cameron is the leader of the United Kingdon.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_Kingdom</entity>
+				<entity>PATIENT-1 | David_Cameron</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

@@ -1,0 +1,323 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Monument" eid="Id1" size="6">
+			<originaltripleset>
+				<otriple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</otriple>
+				<otriple>Turkey | leaderName | Ahmet_Davutoğlu</otriple>
+				<otriple>Turkey | capital | Ankara</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;@en</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | open | &quot;1932-07-27&quot;^^xsd:date</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | location | Turkey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</mtriple>
+				<mtriple>Turkey | leaderName | Ahmet_Davutoğlu</mtriple>
+				<mtriple>Turkey | capital | Ankara</mtriple>
+				<mtriple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;</mtriple>
+				<mtriple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</mtriple>
+				<mtriple>Atatürk_Monument_(İzmir) | location | Turkey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Turkey | capital | Ankara</striple>
+						<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</striple>
+						<striple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ankara ist die türkische Hauptstadt und der Name des Landes ist Ahmet Davutoglu. Das Atatürk-Denkmal (İzmir) befindet sich in der Türkei. Pietro Canonica entwarf das Denkmal und es ist aus Bronze. Das Atatürk-Denkmal wurde am 27. Juli 1932 eingeweiht. </text>
+				<template>PATIENT-3 is the BRIDGE-1 capital and BRIDGE-1 leader 's name is PATIENT-2. AGENT-1 finden Sie in BRIDGE-1. PATIENT-1 designed AGENT-1 and AGENT-1 is made of PATIENT-4. AGENT-1 wurde auf PATIENT-5 eingeweiht.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;</striple>
+						<striple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+						<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+						<striple>Turkey | capital | Ankara</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Atatürk-Denkmal in Izmir wurde am 27. Juli 1932 eingeweiht. Es ist aus Bronze und es wurde von Pietro Canonica entworfen. Der türkische Regierungschef heißt Ahmet Davutoglu und seine Hauptstadt ist Ankara. </text>
+				<template>AGENT-1 wurde auf PATIENT-5 eingeweiht. AGENT-1 besteht aus PATIENT-4 und AGENT-1 wurde von PATIENT-1 entworfen. BRIDGE-1-Führer heißt PATIENT-2 und BRIDGE-1 Kapital ist PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Turkey | capital | Ankara</striple>
+						<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+						<striple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;</striple>
+						<striple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</striple>
+						<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Hauptstadt der Türkei ist Ankara und der Landeschef ist Ahmet Davutoglu. Das Land ist der Standort von Izmir, wo das Bronze @ Ataturk Denkmal, das von Pietro Canonica entworfen wurde, am 27. Juli 1932 eingeweiht wurde. </text>
+				<template>Die Hauptstadt von BRIDGE-1 ist PATIENT-3 und BRIDGE-1 ist PATIENT-2. BRIDGE-1 ist der Standort von BRIDGE-1, wo PATIENT-4 @ AGENT-1 von PATIENT-1 auf PATIENT-5 eingeweiht wurde.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atatürk_Monument_(İzmir)</entity>
+				<entity>BRIDGE-1 | Turkey</entity>
+				<entity>PATIENT-1 | Pietro_Canonica</entity>
+				<entity>PATIENT-2 | Ahmet_Davutoğlu</entity>
+				<entity>PATIENT-3 | Ankara</entity>
+				<entity>PATIENT-4 | &quot;Bronze&quot;</entity>
+				<entity>PATIENT-5 | &quot;1932-07-27&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id2" size="6">
+			<originaltripleset>
+				<otriple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | location | Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;@en</otriple>
+				<otriple>Azerbaijan | leaderName | Artur_Rasizade</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | location | Azerbaijan</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</mtriple>
+				<mtriple>Azerbaijan | leaderName | Artur_Rasizade</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
+						<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Baku Turkish Martyrs 'Memorial wurde von Huseyin Butuner und Hilmi Guner entworfen und befindet sich in Aserbaidschan. Es ist der osmanischen Armee Soldiers gewidmet, die in der Schlacht von Baku getötet wurden. Der Führer, der Ministerpräsident von Aserbaidschan ist Artur Rasizade. </text>
+				<template>AGENT-1 wurde von PATIENT-5 entworfen und befindet sich in BRIDGE-1. AGENT-1 ist dem PATIENT-2 gewidmet. Der Führer, PATIENT-1 ist PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Baku Turkish Martyrs 'Memorial befindet sich in Aserbaidschan und der Führer des Landes ist Premierminister Artur Rasizade. Das Memorial ist den Soldaten der osmanischen Armee gewidmet, die in der Schlacht von Baku getötet wurden, und ihre Designer sind Huseyin Butuner und Hilmi Guner. The native name for the Baku Turkish Martyrs 'Memorial is Türk Şehitleri Anıtı. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1 und BRIDGE-1 Führer ist PATIENT-1. AGENT-1 widmet sich PATIENT-2 und AGENT-1 Designer sind PATIENT-5. Der native Name für AGENT-1 ist PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
+						<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Huseyin Butuner und Hilmi Guner sind die Designer der Baku Turkish Martyrs Gedenkstätte, auch bekannt als Turk Sehitleri Aniti. Die Gedenkstätte befindet sich in Aserbaidschan und widmet sich den Soldaten der osmanischen Armee, die in der Schlacht von Baku gestorben sind. Premierminister @ Artur Rasizade ist der Führer des Landes. </text>
+				<template>PATIENT-5 sind die Designer von AGENT-1, auch bekannt als PATIENT-3. AGENT-1 befindet sich in BRIDGE-1 und ist dem PATIENT-2 gewidmet. PATIENT-1 @ PATIENT-4 ist der Leiter von BRIDGE-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>BRIDGE-1 | Azerbaijan</entity>
+				<entity>PATIENT-1 | Prime_Minister_of_Azerbaijan</entity>
+				<entity>PATIENT-2 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-3 | &quot;Türk Şehitleri Anıtı&quot;</entity>
+				<entity>PATIENT-4 | Artur_Rasizade</entity>
+				<entity>PATIENT-5 | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id3" size="6">
+			<originaltripleset>
+				<otriple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;^^xsd:date</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</otriple>
+				<otriple>Monocacy_National_Battlefield | nearestCity | Frederick,_Maryland</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</mtriple>
+				<mtriple>Monocacy_National_Battlefield | nearestCity | Frederick,_Maryland</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</striple>
+						<striple>Monocacy_National_Battlefield | nearestCity | Frederick,_Maryland</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das 14. New Jersey Volunteer Infantry Monument befindet sich am Monocacy National Battlefield in der Nähe von Frederick, Maryland. Das Denkmal wurde 1907-07-11 gegründet und gehört zur Kategorie der historischen Bezirke in den Vereinigten Staaten. Das Denkmal hat der Nationalparkdienst zur Verfügung gestellt. </text>
+				<template>AGENT-1 befindet sich bei BRIDGE-1 in der Nähe von PATIENT-4. AGENT-1 wurde PATIENT-2 gegründet und gehört zur Kategorie PATIENT-3. AGENT-1 wurde von PATIENT-5 bereitgestellt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</striple>
+						<striple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Monocacy_National_Battlefield | nearestCity | Frederick,_Maryland</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das 14. New Jersey Volunteer Infantry Monument wurde am 11. Juli 1907 im Monocacy National Battlefield in Frederick County, Maryland gegründet. Das Denkmal wird als historisches Viertel der Vereinigten Staaten eingestuft und untersteht der Nationalparkverwaltung. Die nächste Stadt auf dem Schlachtfeld ist Frederick, Maryland. </text>
+				<template>AGENT-1 wurde auf PATIENT-2, in BRIDGE-1, in PATIENT-1. AGENT-1 wird als historisches Viertel der Vereinigten Staaten eingestuft und steht unter der Verantwortung von PATIENT-5. Die nächste Stadt zu BRIDGE-1 ist PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Monocacy_National_Battlefield | nearestCity | Frederick,_Maryland</striple>
+						<striple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das 14. New Jersey Volunteer Infantry Monument (gegründet am 11. Juli 1907) gehört zur Kategorie der historischen Bezirke in den Vereinigten Staaten und befindet sich auf Monocacy National Battlefield. Die nächstgelegene Stadt ist Frederick, Frederick County, Maryland. Das 14. New Jersey Volunteer Infantry Monument befindet sich im Besitz der Nationalparkverwaltung. </text>
+				<template>AGENT-1 (gegründet auf PATIENT-2) gehört zur Kategorie PATIENT-3 und befindet sich auf BRIDGE-1. Die nächste Stadt ist PATIENT-4, PATIENT-1. AGENT-1 befindet sich im Besitz von PATIENT-5.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 14th_New_Jersey_Volunteer_Infantry_Monument</entity>
+				<entity>BRIDGE-1 | Monocacy_National_Battlefield</entity>
+				<entity>PATIENT-1 | Frederick_County,_Maryland</entity>
+				<entity>PATIENT-2 | &quot;1907-07-11&quot;</entity>
+				<entity>PATIENT-3 | Historic_districts_in_the_United_States</entity>
+				<entity>PATIENT-4 | Frederick,_Maryland</entity>
+				<entity>PATIENT-5 | National_Park_Service</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id4" size="6">
+			<originaltripleset>
+				<otriple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;^^xsd:date</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | country | &quot;United States&quot;@en</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</otriple>
+				<otriple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | country | &quot;United States&quot;</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</mtriple>
+				<mtriple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</striple>
+						<striple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | country | &quot;United States&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>The 14. New Jersey Volunteer Infantry Monument is located in the Monocacy National Battlefield, in Frederick County, Maryland, United States. Das Denkmal wurde am 11. Juli 1907 gegründet. Es ist heute als historisches Viertel der Vereinigten Staaten eingestuft und befindet sich im Besitz der Nationalparkverwaltung. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, in PATIENT-1, PATIENT-3. AGENT-1 wurde auf PATIENT-2 gegründet. AGENT-1 ist jetzt als PATIENT-4 kategorisiert und befindet sich im Besitz von PATIENT-5.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</striple>
+						<striple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | country | &quot;United States&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das 14. New Jersey Volunteer Infantry Monument wurde am 11. Juli 1907 im Bezirk der Monocacy National Battlefield, Frederick County, Maryland, USA gegründet. Es gehört zur Kategorie der historischen US-Bezirke und befindet sich im Besitz des Nationalparkdienstes. </text>
+				<template>AGENT-1 wurde auf PATIENT-2 im Bezirk BRIDGE-1, PATIENT-1, PATIENT-3 gegründet. AGENT-1 gehört zur Kategorie PATIENT-4 und befindet sich im Besitz von PATIENT-5.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | district | Monocacy_National_Battlefield</striple>
+						<striple>Monocacy_National_Battlefield | location | Frederick_County,_Maryland</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | country | &quot;United States&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | established | &quot;1907-07-11&quot;</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | category | Historic_districts_in_the_United_States</striple>
+						<striple>14th_New_Jersey_Volunteer_Infantry_Monument | owningOrganisation | National_Park_Service</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das 14. New Jersey Volunteer Infantry Monument befindet sich im Monocacy National Battlefield in Frederick County, Maryland, USA. Am 11. Juli 1907 gegründet, wird das Denkmal als historischer Stadtteil eingestuft und befindet sich im Besitz der Nationalparkverwaltung. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, in PATIENT-1, PATIENT-3. Gegründet auf PATIENT-2, ist AGENT-1 als PATIENT-4 kategorisiert und befindet sich im Besitz von PATIENT-5.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 14th_New_Jersey_Volunteer_Infantry_Monument</entity>
+				<entity>BRIDGE-1 | Monocacy_National_Battlefield</entity>
+				<entity>PATIENT-1 | Frederick_County,_Maryland</entity>
+				<entity>PATIENT-2 | &quot;1907-07-11&quot;</entity>
+				<entity>PATIENT-3 | &quot;United States&quot;</entity>
+				<entity>PATIENT-4 | Historic_districts_in_the_United_States</entity>
+				<entity>PATIENT-5 | National_Park_Service</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

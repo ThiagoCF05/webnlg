@@ -1,0 +1,981 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Airport" eid="Id1" size="2">
+			<originaltripleset>
+				<otriple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</otriple>
+				<otriple>Abilene,_Texas | isPartOf | Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</mtriple>
+				<mtriple>Abilene,_Texas | isPartOf | Texas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abilene,_Texas | isPartOf | Texas</striple>
+						<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Abilene ist in Texas und wird vom Regionalflughafen Abilene bedient. </text>
+				<template>BRIDGE-1 ist in PATIENT-1 und wird von AGENT-1 bedient.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abilene,_Texas | isPartOf | Texas</striple>
+						<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Abilene, ein Teil von Texas, wird vom Regionalflughafen Abilene bedient. </text>
+				<template>BRIDGE-1, Teil von PATIENT-1, wird von AGENT-1 bedient.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
+						<striple>Abilene,_Texas | isPartOf | Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Abilene Regionalflughafen dient der Stadt Abilene, die in Texas ist. </text>
+				<template>AGENT-1 dient der Stadt BRIDGE-1, die sich in PATIENT-1 befindet.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abilene_Regional_Airport</entity>
+				<entity>BRIDGE-1 | Abilene,_Texas</entity>
+				<entity>PATIENT-1 | Texas</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id2" size="2">
+			<originaltripleset>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</otriple>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | &quot;3499.71&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</mtriple>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Adolfo Suárez Madrid-Barajas liegt in Alcobendas und hat eine Fahrbahnlänge von 3500. </text>
+				<template>AGENT-1 ist in PATIENT-1 und hat eine Fahrbahnlänge von PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>In Alcobendas gelegen, hat der Flughafen Adolfo Suarez Madrid-Barajas eine Landebahn mit einer Länge von 3500,0 Metern. </text>
+				<template>In PATIENT-1 gelegen, hat AGENT-1 eine Landebahn mit der Länge von PATIENT-2 Metern.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>PATIENT-1 | Alcobendas</entity>
+				<entity>PATIENT-2 | 3500.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id3" size="2">
+			<originaltripleset>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | &quot;3499.71&quot;^^xsd:double</otriple>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0</mtriple>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Adolfo Suárez Madrid-Barajas in San Sebastian de los Reye hat eine Fahrbahnlänge von 3500. </text>
+				<template>AGENT-1 bei PATIENT-2 hat eine Fahrbahnlänge von PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Adolfo Suárez Madrid-Barajas liegt in San Sebastián de los Reyes und hat eine Fahrbahnlänge von 3500,0 Metern. </text>
+				<template>AGENT-1 ist in PATIENT-2 und hat eine Fahrbahnlänge von PATIENT-1 Meter.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 3500.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Adolfo Suarez Madrid-Barajas befindet sich in San Sebastian de los Reyes und hat eine Fahrbahnlänge von 3500. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-2 und hat eine Fahrbahnlänge von PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>PATIENT-1 | 3500.0</entity>
+				<entity>PATIENT-2 | San_Sebastián_de_los_Reyes</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id4" size="2">
+			<originaltripleset>
+				<otriple>Agra_Airport | location | India</otriple>
+				<otriple>India | leaderName | T._S._Thakur</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agra_Airport | location | India</mtriple>
+				<mtriple>India | leaderName | T._S._Thakur</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agra_Airport | location | India</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agra Airport ist in Indien, wo einer ihrer Führer ist T.S. Thakur. </text>
+				<template>AGENT-1 ist in BRIDGE-1, wo einer der BRIDGE-1-Führer PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agra_Airport | location | India</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agra Airport ist in Indien, wo der Führer ist TS Thakur. </text>
+				<template>AGENT-1 ist in BRIDGE-1, wo der Führer PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agra_Airport | location | India</striple>
+						<striple>India | leaderName | T._S._Thakur</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agra Airport befindet sich in Indien, wo der Führer T S Thakur ist. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, wo der Führer PATIENT-1 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agra_Airport</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | T._S._Thakur</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id5" size="2">
+			<originaltripleset>
+				<otriple>Al_Asad_Airbase | elevationF | 618</otriple>
+				<otriple>Al_Asad_Airbase | location | &quot;Al Anbar Province, Iraq&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al_Asad_Airbase | elevationAboveTheSeaLevel_(in_feet) | 618</mtriple>
+				<mtriple>Al_Asad_Airbase | location | &quot;Al Anbar Province, Iraq&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | elevationAboveTheSeaLevel_(in_feet) | 618</striple>
+						<striple>Al_Asad_Airbase | location | &quot;Al Anbar Province, Iraq&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Al Asad Airbase ist 618 ft über dem Meeresspiegel und befindet sich in der Provinz Al Anbar, Irak. </text>
+				<template>AGENT-1 ist PATIENT-1 ft über dem Meeresspiegel und befindet sich in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | elevationAboveTheSeaLevel_(in_feet) | 618</striple>
+						<striple>Al_Asad_Airbase | location | &quot;Al Anbar Province, Iraq&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Al Asad Airbase, die 618 Meter über dem Meeresspiegel liegt, befindet sich in der Provinz Al Anbar im Irak. </text>
+				<template>AGENT-1, das PATIENT-1 Meter über dem Meeresspiegel liegt, befindet sich in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | elevationAboveTheSeaLevel_(in_feet) | 618</striple>
+						<striple>Al_Asad_Airbase | location | &quot;Al Anbar Province, Iraq&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Al Asad Airbase, die 618 m über dem Meeresspiegel liegt, befindet sich in der Provinz Al Anbar, Irak. </text>
+				<template>AGENT-1, das PATIENT-1 ft über dem Meeresspiegel, befindet sich in PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>PATIENT-1 | 618</entity>
+				<entity>PATIENT-2 | &quot;Al Anbar Province, Iraq&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id6" size="2">
+			<originaltripleset>
+				<otriple>Al_Asad_Airbase | operator | United_States_Air_Force</otriple>
+				<otriple>United_States_Air_Force | battle | Operation_Enduring_Freedom</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</mtriple>
+				<mtriple>United_States_Air_Force | battles | Operation_Enduring_Freedom</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+						<striple>United_States_Air_Force | battles | Operation_Enduring_Freedom</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Al Asad Airbase wird von der United States Air Force betrieben, die in The Operation of Enduring Freedom gekämpft hat. </text>
+				<template>AGENT-1 wird von BRIDGE-1 betrieben, der in PATIENT-1 gekämpft hat.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | battles | Operation_Enduring_Freedom</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Operation Enduring Freedom war ein Kampf mit der United States Air Force, die die Luftwaffenbasis Al Asad betreibt. </text>
+				<template>PATIENT-1 war ein Kampf mit BRIDGE-1, der BRIDGE-1 betreibt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>BRIDGE-1 | United_States_Air_Force</entity>
+				<entity>PATIENT-1 | Operation_Enduring_Freedom</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id7" size="2">
+			<originaltripleset>
+				<otriple>Al_Asad_Airbase | operator | United_States_Air_Force</otriple>
+				<otriple>United_States_Air_Force | battle | United_States_invasion_of_Panama</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</mtriple>
+				<mtriple>United_States_Air_Force | battles | United_States_invasion_of_Panama</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die United States Invasion in Panama war eine Schlacht unter Beteiligung der US-Luftwaffe, die die Al Asad Airbase betreibt. </text>
+				<template>PATIENT-1 war ein Kampf mit BRIDGE-1, der AGENT-1 betreibt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Vereinigten Staaten Invasion in Panama war ein Kampf mit der United States Air Force, die die Betriebsorganisation für Al Asad Luftwaffenbasis. </text>
+				<template>PATIENT-1 war ein Kampf mit BRIDGE-1, der die Betriebsorganisation für BRIDGE-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die United States Air Force war an der Invasion in Panama beteiligt und ist auch die Betriebsorganisation für die Luftwaffenbasis Al Asad. </text>
+				<template>BRIDGE-1 war an PATIENT-1 beteiligt und ist auch die Betriebsorganisation für AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>BRIDGE-1 | United_States_Air_Force</entity>
+				<entity>PATIENT-1 | United_States_invasion_of_Panama</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id8" size="2">
+			<originaltripleset>
+				<otriple>Alcobendas | isPartOf | Community_of_Madrid</otriple>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alcobendas | isPartOf | Community_of_Madrid</mtriple>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
+						<striple>Alcobendas | isPartOf | Community_of_Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Adolfo Suárez Madrid-Barajas befindet sich in Alcobendas, das Teil der Gemeinschaft von Madrid ist. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, das Teil von PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
+						<striple>Alcobendas | isPartOf | Community_of_Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Adolfo Suárez Madrid-Barajas befindet sich in Alcobendas, das Teil der Gemeinschaft von Madrid ist. </text>
+				<template>AGENT-1 ist in BRIDGE-1, das Teil von PATIENT-1 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>BRIDGE-1 | Alcobendas</entity>
+				<entity>PATIENT-1 | Community_of_Madrid</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id9" size="2">
+			<originaltripleset>
+				<otriple>Alderney_Airport | r1Surface | Poaceae</otriple>
+				<otriple>Alderney_Airport | runwayLength | &quot;877.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alderney_Airport | 1st_runway_SurfaceType | Poaceae</mtriple>
+				<mtriple>Alderney_Airport | runwayLength | 877.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1"/>
+					<sentence ID="2">
+						<striple>Alderney_Airport | 1st_runway_SurfaceType | Poaceae</striple>
+						<striple>Alderney_Airport | runwayLength | 877.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Poaceae ist die Oberfläche der 1. Startbahn am Flughafen Alderney, die eine Landebahn mit einer Länge von 877,0 Metern hat. </text>
+				<template>PATIENT-1 ist die Oberfläche der 1. Startbahn bei AGENT-1, die eine Landebahn mit der Länge von PATIENT-2 Metern hat.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alderney_Airport | runwayLength | 877.0</striple>
+						<striple>Alderney_Airport | 1st_runway_SurfaceType | Poaceae</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 1. Fahrbahnlänge von Alderney Airport ist 877,0 und die Oberfläche ist poaceae. </text>
+				<template>Die erste Fahrbahnlänge von AGENT-1 ist PATIENT-2 und die Oberfläche ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alderney_Airport</entity>
+				<entity>PATIENT-1 | Poaceae</entity>
+				<entity>PATIENT-2 | 877.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id10" size="2">
+			<originaltripleset>
+				<otriple>Allama_Iqbal_International_Airport | operator | Pakistan_Civil_Aviation_Authority</otriple>
+				<otriple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</mtriple>
+				<mtriple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
+						<striple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Allama Iqbal International Airport wird von der pakistanischen Zivilluftfahrtbehörde betrieben, deren Hauptsitz sich am internationalen Flughafen Jinnah befindet. </text>
+				<template>AGENT-1 wird von BRIDGE-1 betrieben, dessen Hauptsitz bei PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</striple>
+						<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die pakistanische Zivilluftfahrtbehörde, die ihren Sitz am internationalen Flughafen Jinnah hat, regelt den internationalen Flughafen Allama Iqbal. </text>
+				<template>BRIDGE-1, die BRIDGE-1 HQ bei PATIENT-1, regelt AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
+						<striple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Allama Iqbal International Airport wird von der pakistanischen Zivilluftfahrtbehörde betrieben, die ihren Sitz am internationalen Flughafen Jinnah hat. </text>
+				<template>AGENT-1 wird von BRIDGE-1 betrieben, das seinen Hauptsitz bei PATIENT-1 hat.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allama_Iqbal_International_Airport</entity>
+				<entity>BRIDGE-1 | Pakistan_Civil_Aviation_Authority</entity>
+				<entity>PATIENT-1 | Jinnah_International_Airport</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id11" size="2">
+			<originaltripleset>
+				<otriple>Alpena_County_Regional_Airport | location | Wilson_Township,_Alpena_County,_Michigan</otriple>
+				<otriple>Wilson_Township,_Alpena_County,_Michigan | subdivisionName | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alpena_County_Regional_Airport | location | Wilson_Township,_Alpena_County,_Michigan</mtriple>
+				<mtriple>Wilson_Township,_Alpena_County,_Michigan | isPartOf | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpena_County_Regional_Airport | location | Wilson_Township,_Alpena_County,_Michigan</striple>
+						<striple>Wilson_Township,_Alpena_County,_Michigan | isPartOf | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Standort von Alpena County Regional Airport ist Wilson Township, Alpena County, Michigan, USA. </text>
+				<template>Der Standort von AGENT-1 ist BRIDGE-1, PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpena_County_Regional_Airport | location | Wilson_Township,_Alpena_County,_Michigan</striple>
+						<striple>Wilson_Township,_Alpena_County,_Michigan | isPartOf | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alpena County Regional Airport befindet sich in Wilson Township, Alpena County, Michigan, USA. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpena_County_Regional_Airport | location | Wilson_Township,_Alpena_County,_Michigan</striple>
+						<striple>Wilson_Township,_Alpena_County,_Michigan | isPartOf | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alpena County Regional Airport is located in the Wilson Township, Alpena County, Michigan, USA. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alpena_County_Regional_Airport</entity>
+				<entity>BRIDGE-1 | Wilson_Township,_Alpena_County,_Michigan</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id12" size="2">
+			<originaltripleset>
+				<otriple>Amsterdam_Airport_Schiphol | elevation | &quot;-3.3528&quot;^^xsd:double</otriple>
+				<otriple>Amsterdam_Airport_Schiphol | operator | Schiphol_Group</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amsterdam_Airport_Schiphol | elevationAboveTheSeaLevel_(in_metres) | -3.3528</mtriple>
+				<mtriple>Amsterdam_Airport_Schiphol | operatingOrganisation | Schiphol_Group</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | operatingOrganisation | Schiphol_Group</striple>
+						<striple>Amsterdam_Airport_Schiphol | elevationAboveTheSeaLevel_(in_metres) | -3.3528</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Schipol-Gruppe sind die Betreiber des Amsterdamer Flughafens Schiphol, der -3.3528 über dem Meeresspiegel liegt. </text>
+				<template>PATIENT-2 sind die Betreiber von AGENT-1, das PATIENT-1 über dem Meeresspiegel ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | operatingOrganisation | Schiphol_Group</striple>
+						<striple>Amsterdam_Airport_Schiphol | elevationAboveTheSeaLevel_(in_metres) | -3.3528</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Schiphol-Gruppe betreibt den Flughafen Amsterdam Schiphol mit -3.3528m a.s.l. </text>
+				<template>PATIENT-2 betreibt AGENT-1, das PATIENT-1 m a.s.l.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | operatingOrganisation | Schiphol_Group</striple>
+						<striple>Amsterdam_Airport_Schiphol | elevationAboveTheSeaLevel_(in_metres) | -3.3528</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Amsterdamer Flughafen Schipol wird von der Schipol-Gruppe betrieben und ist -3.3528 über dem Meeresspiegel. </text>
+				<template>AGENT-1 wird von PATIENT-2 betrieben und ist PATIENT-1 über dem Meeresspiegel.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amsterdam_Airport_Schiphol</entity>
+				<entity>PATIENT-1 | -3.3528</entity>
+				<entity>PATIENT-2 | Schiphol_Group</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id13" size="2">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | r4Surface | &quot;Asphalt&quot;@en</otriple>
+				<otriple>Andrews_County_Airport | elevation | &quot;973.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | 4th_runway_SurfaceType | &quot;Asphalt&quot;</mtriple>
+				<mtriple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Andrews_County_Airport | 4th_runway_SurfaceType | &quot;Asphalt&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Andrews County ist 973 Meter über dem Meeresspiegel und die 4. Startbahn ist aus Asphalt. </text>
+				<template>AGENT-1 ist PATIENT-2 über dem Meeresspiegel und die 4. Startbahn ist aus PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | 4th_runway_SurfaceType | &quot;Asphalt&quot;</striple>
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die vierte Startbahn am Andrews County Airport ist aus Asphalt und der Flughafen ist 973 unter dem Meeresspiegel. </text>
+				<template>Die vierte Startbahn bei AGENT-1 besteht aus PATIENT-1 und AGENT-1 ist PATIENT-2 unter dem Meeresspiegel.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>PATIENT-1 | &quot;Asphalt&quot;</entity>
+				<entity>PATIENT-2 | 973.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id14" size="2">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | location | Texas</otriple>
+				<otriple>Texas | capital | Austin,_Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | location | Texas</mtriple>
+				<mtriple>Texas | capital | Austin,_Texas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Texas | capital | Austin,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Andrews County befindet sich in Texas, der Hauptstadt von Austin. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, dessen Hauptstadt PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Texas | capital | Austin,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Andrews County befindet sich in Texas, der Hauptstadt von Austin. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, das die Hauptstadt von PATIENT-1 hat.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Texas | capital | Austin,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Andrews County befindet sich in Texas, wo Austin die Hauptstadt ist. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, wo PATIENT-1 die Hauptstadt ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>BRIDGE-1 | Texas</entity>
+				<entity>PATIENT-1 | Austin,_Texas</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id15" size="2">
+			<originaltripleset>
+				<otriple>Angola_International_Airport | cityServed | Luanda</otriple>
+				<otriple>Angola_International_Airport | elevation | &quot;159.106&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Angola_International_Airport | cityServed | Luanda</mtriple>
+				<mtriple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola_International_Airport | cityServed | Luanda</striple>
+						<striple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Angola International Airport dient der Stadt Luanda, es ist 159m über dem Meeresspiegel. </text>
+				<template>AGENT-1 dient der Stadt PATIENT-1, AGENT-1 ist PATIENT-2 über dem Meeresspiegel.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</striple>
+						<striple>Angola_International_Airport | cityServed | Luanda</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der internationale Flughafen Angola, 159 m über dem Meeresspiegel, dient Luanda. </text>
+				<template>AGENT-1, PATIENT-2 m über dem Meeresspiegel dient PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Angola_International_Airport</entity>
+				<entity>PATIENT-1 | Luanda</entity>
+				<entity>PATIENT-2 | 159</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id16" size="2">
+			<originaltripleset>
+				<otriple>Angola_International_Airport | location | Ícolo_e_Bengo</otriple>
+				<otriple>Ícolo_e_Bengo | country | Angola</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Angola_International_Airport | location | Ícolo_e_Bengo</mtriple>
+				<mtriple>Ícolo_e_Bengo | country | Angola</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola_International_Airport | location | Ícolo_e_Bengo</striple>
+						<striple>Ícolo_e_Bengo | country | Angola</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Angola International Airport befindet sich in Ícolo e Bengo, Angola. </text>
+				<template>AGENT-1 befindet sich in BRIDGE-1, PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Angola_International_Airport</entity>
+				<entity>BRIDGE-1 | Ícolo_e_Bengo</entity>
+				<entity>PATIENT-1 | Angola</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id17" size="2">
+			<originaltripleset>
+				<otriple>Antwerp_International_Airport | operator | &quot;Flemish department of Mobility and Public Works&quot;@en</otriple>
+				<otriple>Antwerp_International_Airport | elevation | &quot;11.8872&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Antwerp_International_Airport | operatingOrganisation | &quot;Flemish department of Mobility and Public Works&quot;</mtriple>
+				<mtriple>Antwerp_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 12.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp_International_Airport | operatingOrganisation | &quot;Flemish department of Mobility and Public Works&quot;</striple>
+						<striple>Antwerp_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 12.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der internationale Flughafen Antwerpen, der von der flämischen Abteilung für Mobilität und öffentliche Arbeiten betrieben wird, liegt 12 Meter über dem Meeresspiegel. </text>
+				<template>AGENT-1, betrieben von PATIENT-1, ist PATIENT-2 über dem Meeresspiegel.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Antwerp_International_Airport</entity>
+				<entity>PATIENT-1 | &quot;Flemish department of Mobility and Public Works&quot;</entity>
+				<entity>PATIENT-2 | 12.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id18" size="2">
+			<originaltripleset>
+				<otriple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</otriple>
+				<otriple>Appleton,_Wisconsin | subdivisionName | Grand_Chute,_Wisconsin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</mtriple>
+				<mtriple>Appleton,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Appleton,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin</striple>
+						<striple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Appleton, Grand Chute, Wisconsin ist eine Stadt, die vom internationalen Flughafen Appleton bedient wird. </text>
+				<template>BRIDGE-1, PATIENT-1 ist eine Stadt, die von AGENT-1 bedient wird.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Appleton,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin</striple>
+						<striple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Appleton, Wisconsin gehört zu Grand Chute, Wisconsin und wird von Appletone International Airport angeflogen. </text>
+				<template>BRIDGE-1 ist Teil von PATIENT-1 und wird von AGENT-1 bedient.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</striple>
+						<striple>Appleton,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Appleton International Airport dient der Stadt Appleton, die Teil von Grand Chute, Wisconsin ist. </text>
+				<template>AGENT-1 dient der Stadt BRIDGE-1, die Teil von PATIENT-1 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Appleton_International_Airport</entity>
+				<entity>BRIDGE-1 | Appleton,_Wisconsin</entity>
+				<entity>PATIENT-1 | Grand_Chute,_Wisconsin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id19" size="2">
+			<originaltripleset>
+				<otriple>Ardmore_Airport_(New_Zealand) | r2Surface | Poaceae</otriple>
+				<otriple>Poaceae | order | Poales</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ardmore_Airport_(New_Zealand) | 2nd_runway_SurfaceType | Poaceae</mtriple>
+				<mtriple>Poaceae | order | Poales</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ardmore_Airport_(New_Zealand) | 2nd_runway_SurfaceType | Poaceae</striple>
+						<striple>Poaceae | order | Poales</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>New Zealand 's Ardmore Airport' s second Landebahn has the surface type Poaceae which is part of the Poales order. </text>
+				<template>AGENT-1 zweite Startbahn hat die Oberflächenart BRIDGE-1, die Teil der PATIENT-1-Bestellung ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1"/>
+					<sentence ID="2">
+						<striple>Ardmore_Airport_(New_Zealand) | 2nd_runway_SurfaceType | Poaceae</striple>
+						<striple>Poaceae | order | Poales</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>The 2nd Landebahn at Ardmore Airport (New Zealand) is made of Poaceae, which is a member of the order of Poales. </text>
+				<template>Die 2. Startbahn bei AGENT-1 besteht aus BRIDGE-1, das Mitglied der Bestellung von PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Poaceae | order | Poales</striple>
+						<striple>Ardmore_Airport_(New_Zealand) | 2nd_runway_SurfaceType | Poaceae</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Poaceae (Teil der Poales-Bestellung) ist der Oberflächentyp der zweiten Landebahn von Ardmore Airport, Neuseeland. </text>
+				<template>BRIDGE-1 (Teil der PATIENT-1-Bestellung) ist der Oberflächentyp der zweiten Startbahn von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ardmore_Airport_(New_Zealand)</entity>
+				<entity>BRIDGE-1 | Poaceae</entity>
+				<entity>PATIENT-1 | Poales</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id20" size="2">
+			<originaltripleset>
+				<otriple>Ardmore_Airport_(New_Zealand) | r3Surface | Poaceae</otriple>
+				<otriple>Poaceae | class | Monocotyledon</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae</mtriple>
+				<mtriple>Poaceae | class | Monocotyledon</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1"/>
+					<sentence ID="2">
+						<striple>Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae</striple>
+						<striple>Poaceae | class | Monocotyledon</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ardmore Airport (Neuseeland) 's 3. Startbahn-Typ ist Poaceae der Klasse Monocotyledon. </text>
+				<template>AGENT-1 3. Startbahn-Typ ist BRIDGE-1 der Klasse PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae</striple>
+						<striple>Poaceae | class | Monocotyledon</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 3. Startbahn am Ardmore Airport (Neuseeland) besteht aus Poaceae, die in der Klasse Monocotyledon enthalten ist. </text>
+				<template>Die dritte Startbahn bei AGENT-1 besteht aus BRIDGE-1, die in der Klasse PATIENT-1 enthalten ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1"/>
+					<sentence ID="2">
+						<striple>Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae</striple>
+						<striple>Poaceae | class | Monocotyledon</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ardmore Airport (Neuseeland) 's 3. Startbahn-Typ ist Poaceae, die in der Klasse von Monocotyledon enthalten ist. </text>
+				<template>AGENT-1 3. Startbahn-Typ ist BRIDGE-1, die in der Klasse von PATIENT-1 enthalten ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ardmore_Airport_(New_Zealand)</entity>
+				<entity>BRIDGE-1 | Poaceae</entity>
+				<entity>PATIENT-1 | Monocotyledon</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id21" size="2">
+			<originaltripleset>
+				<otriple>Ashgabat_International_Airport | runwayLength | &quot;3800.0&quot;^^xsd:double</otriple>
+				<otriple>Ashgabat_International_Airport | location | Ashgabat</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ashgabat_International_Airport | runwayLength | 3800.0</mtriple>
+				<mtriple>Ashgabat_International_Airport | location | Ashgabat</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ashgabat_International_Airport | location | Ashgabat</striple>
+						<striple>Ashgabat_International_Airport | runwayLength | 3800.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Fahrbahnlänge bei Ashgabat International Airport, der sich in Aschgabat befindet, beträgt 3800,0. </text>
+				<template>Die Fahrbahnlänge bei AGENT-1, die sich in PATIENT-2 befindet, ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ashgabat_International_Airport | location | Ashgabat</striple>
+						<striple>Ashgabat_International_Airport | runwayLength | 3800.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ashgabat International Airport befindet sich in Aschgabat und seine Fahrbahnlänge ist 3800. </text>
+				<template>AGENT-1 befindet sich in PATIENT-2 und AGENT-1 Fahrbahnlänge ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ashgabat_International_Airport | location | Ashgabat</striple>
+						<striple>Ashgabat_International_Airport | runwayLength | 3800.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Fahrbahnlänge von Ashgabat International Airport in Ashgabat beträgt 3800,0. </text>
+				<template>Die Fahrbahnlänge von AGENT-1 in PATIENT-2 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ashgabat_International_Airport</entity>
+				<entity>PATIENT-1 | 3800.0</entity>
+				<entity>PATIENT-2 | Ashgabat</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id22" size="2">
+			<originaltripleset>
+				<otriple>Athens_International_Airport | cityServed | Athens</otriple>
+				<otriple>Athens_International_Airport | location | Spata</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Athens_International_Airport | cityServed | Athens</mtriple>
+				<mtriple>Athens_International_Airport | location | Spata</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Athens_International_Airport | location | Spata</striple>
+						<striple>Athens_International_Airport | cityServed | Athens</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der internationale Flughafen Athen befindet sich in Spata und dient der Stadt Athen. </text>
+				<template>AGENT-1 ist in PATIENT-2 und dient der Stadt PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Athens_International_Airport | location | Spata</striple>
+						<striple>Athens_International_Airport | cityServed | Athens</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der internationale Flughafen Athen, der sich in Spata befindet, bedient die Stadt Athen. </text>
+				<template>AGENT-1, das sich in PATIENT-2 befindet, dient der Stadt PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Athens_International_Airport | location | Spata</striple>
+						<striple>Athens_International_Airport | cityServed | Athens</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Athens Internationaler Flughafen in Spata dient der Stadt Athen. </text>
+				<template>AGENT-1 in PATIENT-2 dient der Stadt PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Athens_International_Airport</entity>
+				<entity>PATIENT-1 | Athens</entity>
+				<entity>PATIENT-2 | Spata</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id23" size="2">
+			<originaltripleset>
+				<otriple>Athens_International_Airport | cityServed | Athens</otriple>
+				<otriple>Athens_International_Airport | runwayLength | &quot;3800.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Athens_International_Airport | cityServed | Athens</mtriple>
+				<mtriple>Athens_International_Airport | runwayLength | 3800.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Athens_International_Airport | cityServed | Athens</striple>
+						<striple>Athens_International_Airport | runwayLength | 3800.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der internationale Flughafen Athen dient der Stadt Athen und hat eine Fahrbahnlänge von 3800.0. </text>
+				<template>AGENT-1 dient PATIENT-1 und hat eine Fahrbahnlänge von PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Athens_International_Airport | cityServed | Athens</striple>
+						<striple>Athens_International_Airport | runwayLength | 3800.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der internationale Flughafen Athen bedient die Stadt Athen und hat eine Fahrbahnlänge von 3.800 Metern. </text>
+				<template>AGENT-1 dient PATIENT-1 und hat eine Fahrbahnlänge von PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Athens_International_Airport</entity>
+				<entity>PATIENT-1 | Athens</entity>
+				<entity>PATIENT-2 | 3800.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id24" size="2">
+			<originaltripleset>
+				<otriple>San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid</otriple>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid</mtriple>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>San Sebastian de los Reyes ist Teil der Gemeinschaft von Madrid und ist auch der Standort von Adolfo Suárez Madrid-Barajas Flughafen. </text>
+				<template>BRIDGE-1 ist Teil von PATIENT-1 und ist auch der Standort von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+						<striple>San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Adolfo Suárez Madrid-Barajas befindet sich in San Sebastián de los Reyes, Teil der Gemeinschaft von Madrid. </text>
+				<template>AGENT-1 findet sich in BRIDGE-1, einem Teil von PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+						<striple>San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Flughafen Adolfo Suárez Madrid-Barajas befindet sich in San Sebastián de los Reyes, das Teil der Gemeinschaft von Madrid ist. </text>
+				<template>AGENT-1 ist in BRIDGE-1, das Teil von PATIENT-1 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>BRIDGE-1 | San_Sebastián_de_los_Reyes</entity>
+				<entity>PATIENT-1 | Community_of_Madrid</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

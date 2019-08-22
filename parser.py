@@ -194,6 +194,7 @@ def generate(entryset, in_file, out_file, lng):
                 text = entry.lexEntries[i].text_de
                 template = entry.lexEntries[i].template_de
                 tree_ = entry.lexEntries[i].tree_de
+                lex_template = ''
 
             text_xml = ET.SubElement(lexEntry_xml, 'text')
             text_xml.text = text
@@ -210,7 +211,7 @@ def generate(entryset, in_file, out_file, lng):
                 tree_xml.text = tree_
 
     rough_string = ET.tostring(tree.getroot(), encoding='utf-8', method='xml')
-    rough_string = re.sub(">\n[\n \t]*<", '><', rough_string.decode('utf-8'))
+    rough_string = re.sub(">\n[\n \t]*<", '><', rough_string)
     xml = minidom.parseString(rough_string).toprettyxml(indent="\t")
 
     with open(out_file, 'wb') as f:

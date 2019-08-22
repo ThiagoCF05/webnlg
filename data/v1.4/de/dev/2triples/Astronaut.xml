@@ -1,0 +1,301 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id1" size="2">
+			<originaltripleset>
+				<otriple>Alan_Shepard | mission | Apollo_14</otriple>
+				<otriple>Alan_Shepard | dateOfRet | &quot;1974-08-01&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | was a crew member of | Apollo_14</mtriple>
+				<mtriple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+						<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Apollo 14 Besatzungsmitglied Alan Shepard ging am 1. August 1974 in den Ruhestand. </text>
+				<template>Das PATIENT-1-Besatzungsmitglied AGENT-1 ging auf PATIENT-2 zurück.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+						<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alan Shepard, der als Besatzungsmitglied von Apollo 14 diente, ging 1974-08-01 in den Ruhestand. </text>
+				<template>AGENT-1, der als Besatzungsmitglied von PATIENT-1, pensionierte PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | Apollo_14</entity>
+				<entity>PATIENT-2 | &quot;1974-08-01&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id2" size="2">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin ist ein US-amerikanischer Staatsbürger, weil er in Glen Ridge, New Jersey, geboren wurde. </text>
+				<template>AGENT-1 ist PATIENT-2, weil AGENT-1 in PATIENT-1 geboren wurde.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>American Buzz Aldrin hakt aus Glen Ridge, New Jersey. </text>
+				<template>AGENT-1 stammt aus PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin wurde in Glen Ridge, New Jersey in den USA geboren. </text>
+				<template>AGENT-1 wurde in PATIENT-1 in PATIENT-2 geboren.</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin war ein US-Bürger, der in Glen Ridge, New Jersey, geboren wurde. </text>
+				<template>AGENT-1 wurde PATIENT-2 in PATIENT-1 geboren.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id3" size="2">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | status | &quot;Retired&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | occupation | Fighter_pilot</mtriple>
+				<mtriple>Buzz_Aldrin | status | &quot;Retired&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Pensionistin @ Buzz Aldrin ist eine ehemalige Kampfpilotin. </text>
+				<template>PATIENT-2 @ AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin ist jetzt im Ruhestand, aber er war einst Kampfpilot. </text>
+				<template>AGENT-1 ist jetzt PATIENT-2, aber AGENT-1 war einmal PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin ist inzwischen im Ruhestand, aber er diente einst als Kampfpilotin. </text>
+				<template>AGENT-1 hat seitdem PATIENT-2, aber AGENT-1 diente einst als PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin diente als Kampfpilot und ist jetzt im Ruhestand. </text>
+				<template>AGENT-1 diente als PATIENT-1 und ist jetzt PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Fighter_pilot</entity>
+				<entity>PATIENT-2 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id4" size="2">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Apollo_11 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Apollo_11 | operator | NASA</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Apollo-11-Programm wurde von der NASA organisiert und umfasste Buzz Aldrin als eines seiner Besatzungsmitglieder. </text>
+				<template>BRIDGE-1 wurde von PATIENT-1 organisiert und umfasste AGENT-1 als eines der BRIDGE-1-Besatzungsmitglieder.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Apollo_11 | operator | NASA</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die NASA betreibt das Apollo-11-Programm, bei dem Buzz Aldrin Mitglied war. </text>
+				<template>PATIENT-1 operierte BRIDGE-1, von denen AGENT-1 Mitglied war.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin war auf Apollo 11, das von der NASA betrieben wurde. </text>
+				<template>AGENT-1 war auf BRIDGE-1, welches PATIENT-1 betrieben wurde.</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin diente als Besatzungsmitglied von Apollo 11, das von der NASA betrieben wird. </text>
+				<template>AGENT-1 diente als Besatzungsmitglied von BRIDGE-1, das von PATIENT-1 betrieben wird.</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin war ein Besatzungsmitglied von Apollo 11 - dessen Betreiber die NASA war. </text>
+				<template>AGENT-1 war ein Besatzungsmitglied von BRIDGE-1 - dessen Betreiber PATIENT-1 war.</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz aldrin war ein Besatzungsmitglied von apollo 11, das von der NASA betrieben wurde. </text>
+				<template>AGENT-1 war ein Besatzungsmitglied von BRIDGE-1, das von PATIENT-1 betrieben wurde.</template>
+			</lex>
+			<lex comment="good" lid="Id7">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin war ein Besatzungsmitglied von NASA 's @ Apollo 11. </text>
+				<template>AGENT-1 war ein Besatzungsmitglied von PATIENT-1 @ BRIDGE-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>PATIENT-1 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id5" size="2">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | occupation | Fighter_pilot</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin trat als Kampfpilot auf und war Besatzungsmitglied auf Apollo 11. </text>
+				<template>AGENT-1 trat als PATIENT-2 auf und war ein Besatzungsmitglied auf PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin, der eine Kampfpilotin war, war ein Besatzungsmitglied auf Apollo 11. </text>
+				<template>AGENT-1, der PATIENT-2 war, war ein Besatzungsmitglied auf PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin war ein Kampfpilot, der auch Teil der Apollo-11-Crew war. </text>
+				<template>AGENT-1 war PATIENT-2, der auch Teil der PATIENT-1-Crew war.</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin war sowohl Kampfpilot als auch Mitglied der Apollo-11-Flugbesatzung. </text>
+				<template>AGENT-1 war sowohl PATIENT-2 als auch Mitglied der PATIENT-1-Flugbesatzung.</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Buzz Aldrin war Kampfpilot und Besatzungsmitglied von Apollo 11. </text>
+				<template>AGENT-1 war PATIENT-2 und Besatzungsmitglied von PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Apollo_11</entity>
+				<entity>PATIENT-2 | Fighter_pilot</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

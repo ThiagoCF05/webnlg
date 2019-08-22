@@ -1,0 +1,1686 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Airport" eid="Id1" size="1">
+			<originaltripleset>
+				<otriple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abilene,_Texas" number="1" tag="PATIENT-1" type="name">Abilene , Texas</reference>
+					<reference entity="Abilene_Regional_Airport" number="2" tag="AGENT-1" type="description">the Abilene regional airport</reference>
+				</references>
+				<text>Abilene, Texas is served by the Abilene regional airport.</text>
+				<template>PATIENT-1 is served by AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abilene_Regional_Airport" number="1" tag="AGENT-1" type="name">Abilene Regional Airport</reference>
+					<reference entity="Abilene,_Texas" number="2" tag="PATIENT-1" type="name">Abilene in Texas</reference>
+				</references>
+				<text>Abilene Regional Airport serves the city of Abilene in Texas.</text>
+				<template>AGENT-1 serves the city of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abilene_Regional_Airport</entity>
+				<entity>PATIENT-1 | Abilene,_Texas</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id2" size="1">
+			<originaltripleset>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | &quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | &quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | &quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suárez Madrid–Barajas Airport</reference>
+					<reference entity="&quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;" number="2" tag="PATIENT-1" type="name">Madrid , Paracuellos de Jarama , San Sebastián de los Reyes and Alcobendas</reference>
+				</references>
+				<text>Adolfo Suárez Madrid–Barajas Airport can be found in Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas.</text>
+				<template>AGENT-1 can be found in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | &quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suarez Madrid-Barajas airport</reference>
+					<reference entity="&quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;" number="2" tag="PATIENT-1" type="name">Madrid , Paracuellos de Jarama , San Sebastián de los Reyes and Alcobendas</reference>
+				</references>
+				<text>Adolfo Suarez Madrid-Barajas airport is located at Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas.</text>
+				<template>AGENT-1 is located at PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | &quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suarez Madrid-Barajas Airport</reference>
+					<reference entity="&quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;" number="2" tag="PATIENT-1" type="name">Madrid , Paracuellos de Jarama , San Sebastian de los Reyes and Alcobendas</reference>
+				</references>
+				<text>Adolfo Suarez Madrid-Barajas Airport is located in Madrid, Paracuellos de Jarama, San Sebastian de los Reyes and Alcobendas.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>PATIENT-1 | &quot;Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id3" size="1">
+			<originaltripleset>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayDesignation | &quot;18L/36R&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | &quot;18L/36R&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | &quot;18L/36R&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suárez Madrid–Barajas Airport</reference>
+					<reference entity="&quot;18L/36R&quot;" number="2" tag="PATIENT-1" type="name">18L/36R</reference>
+				</references>
+				<text>The runway name of Adolfo Suárez Madrid–Barajas Airport is 18L/36R.</text>
+				<template>The runway name of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | &quot;18L/36R&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suarez Madrid-Barajas airport</reference>
+					<reference entity="&quot;18L/36R&quot;" number="2" tag="PATIENT-1" type="name">18L/36R</reference>
+				</references>
+				<text>The runway name at Adolfo Suarez Madrid-Barajas airport is 18L/36R.</text>
+				<template>The runway name at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | &quot;18L/36R&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suarez Madrid-Barajas Airport</reference>
+					<reference entity="&quot;18L/36R&quot;" number="2" tag="PATIENT-1" type="name">18L/36R</reference>
+				</references>
+				<text>The runway name of Adolfo Suarez Madrid-Barajas Airport is 18L/36R.</text>
+				<template>The runway name of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>PATIENT-1 | &quot;18L/36R&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id4" size="1">
+			<originaltripleset>
+				<otriple>Afonso_Pena_International_Airport | icaoLocationIdentifier | &quot;SBCT&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Afonso_Pena_International_Airport | ICAO_Location_Identifier | &quot;SBCT&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Afonso_Pena_International_Airport | ICAO_Location_Identifier | &quot;SBCT&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Afonso_Pena_International_Airport" number="1" tag="AGENT-1" type="name">Afonso Pena International Airport</reference>
+					<reference entity="&quot;SBCT&quot;" number="2" tag="PATIENT-1" type="name">SBCT</reference>
+				</references>
+				<text>Afonso Pena International Airport ICAO Location Idenitifier is SBCT.</text>
+				<template>AGENT-1 ICAO Location Idenitifier is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Afonso_Pena_International_Airport | ICAO_Location_Identifier | &quot;SBCT&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;SBCT&quot;" number="1" tag="PATIENT-1" type="name">SBCT</reference>
+					<reference entity="Afonso_Pena_International_Airport" number="2" tag="AGENT-1" type="name">Afonso Pena International Airport</reference>
+				</references>
+				<text>SBCT is the ICAO location identifier of Afonso Pena International Airport.</text>
+				<template>PATIENT-1 is the ICAO location identifier of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Afonso_Pena_International_Airport</entity>
+				<entity>PATIENT-1 | &quot;SBCT&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id5" size="1">
+			<originaltripleset>
+				<otriple>Afonso_Pena_International_Airport | cityServed | Curitiba</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Afonso_Pena_International_Airport | cityServed | Curitiba</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Afonso_Pena_International_Airport | cityServed | Curitiba</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Afonso_Pena_International_Airport" number="1" tag="AGENT-1" type="name">Afonso Pena International Airport</reference>
+					<reference entity="Curitiba" number="2" tag="PATIENT-1" type="name">Curitiba</reference>
+				</references>
+				<text>Afonso Pena International Airport serves the city of Curitiba.</text>
+				<template>AGENT-1 serves the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Afonso_Pena_International_Airport | cityServed | Curitiba</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Afonso_Pena_International_Airport" number="1" tag="AGENT-1" type="name">Afonso Pena International Airport</reference>
+					<reference entity="Curitiba" number="2" tag="PATIENT-1" type="name">Curitiba</reference>
+				</references>
+				<text>Afonso Pena International Airport serves Curitiba.</text>
+				<template>AGENT-1 serves PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Afonso_Pena_International_Airport</entity>
+				<entity>PATIENT-1 | Curitiba</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id6" size="1">
+			<originaltripleset>
+				<otriple>Al-Taqaddum_Air_Base | city | Fallujah</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al-Taqaddum_Air_Base | cityServed | Fallujah</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al-Taqaddum_Air_Base | cityServed | Fallujah</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al-Taqaddum_Air_Base" number="1" tag="AGENT-1" type="description">The Al Taqaddum Air Base</reference>
+					<reference entity="Fallujah" number="2" tag="PATIENT-1" type="name">Fallujah</reference>
+				</references>
+				<text>The Al Taqaddum Air Base serves the city of Fallujah.</text>
+				<template>AGENT-1 serves the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al-Taqaddum_Air_Base | cityServed | Fallujah</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al-Taqaddum_Air_Base" number="1" tag="AGENT-1" type="name">Al-Taqaddum Air Base</reference>
+					<reference entity="Fallujah" number="2" tag="PATIENT-1" type="name">Fallujah</reference>
+				</references>
+				<text>Al-Taqaddum Air Base serves the city of Fallujah.</text>
+				<template>AGENT-1 serves the city of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al-Taqaddum_Air_Base</entity>
+				<entity>PATIENT-1 | Fallujah</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id7" size="1">
+			<originaltripleset>
+				<otriple>Al-Taqaddum_Air_Base | runwayLength | &quot;3684.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al-Taqaddum_Air_Base | runwayLength | 3684.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al-Taqaddum_Air_Base | runwayLength | 3684.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al-Taqaddum_Air_Base" number="1" tag="AGENT-1" type="name">Al-Taqaddum Air Base</reference>
+					<reference entity="3684.0" number="2" tag="PATIENT-1" type="name">3684.0</reference>
+				</references>
+				<text>The runway length of Al-Taqaddum Air Base is 3684.0.</text>
+				<template>The runway length of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al-Taqaddum_Air_Base | runwayLength | 3684.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al-Taqaddum_Air_Base" number="1" tag="AGENT-1" type="name">Al-Taqaddum Air Base</reference>
+					<reference entity="3684.0" number="2" tag="PATIENT-1" type="name">3684.0</reference>
+				</references>
+				<text>The length of the runway at Al-Taqaddum Air Base is 3684.0.</text>
+				<template>The length of the runway at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al-Taqaddum_Air_Base</entity>
+				<entity>PATIENT-1 | 3684.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id8" size="1">
+			<originaltripleset>
+				<otriple>Alderney_Airport | runwayDesignation | &quot;14/32&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alderney_Airport | runwayName | &quot;14/32&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alderney_Airport | runwayName | &quot;14/32&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alderney_Airport" number="1" tag="AGENT-1" type="name">Alderney Airport</reference>
+					<reference entity="&quot;14/32&quot;" number="2" tag="PATIENT-1" type="name">14/32</reference>
+				</references>
+				<text>Alderney Airport runway name is 14/32.</text>
+				<template>AGENT-1 runway name is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alderney_Airport | runwayName | &quot;14/32&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;14/32&quot;" number="1" tag="PATIENT-1" type="name">14/32</reference>
+					<reference entity="Alderney_Airport" number="2" tag="AGENT-1" type="name">Alderney Airport</reference>
+				</references>
+				<text>14/32 is the runway name of Alderney Airport.</text>
+				<template>PATIENT-1 is the runway name of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alderney_Airport | runwayName | &quot;14/32&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alderney_Airport" number="1" tag="AGENT-1" type="name">Alderney Airport</reference>
+					<reference entity="&quot;14/32&quot;" number="2" tag="PATIENT-1" type="name">14/32</reference>
+				</references>
+				<text>The runway name of Alderney Airport is 14/32.</text>
+				<template>The runway name of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alderney_Airport</entity>
+				<entity>PATIENT-1 | &quot;14/32&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id9" size="1">
+			<originaltripleset>
+				<otriple>Allama_Iqbal_International_Airport | runwayLength | &quot;3360.12&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Allama_Iqbal_International_Airport | runwayLength | 3360.12</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | runwayLength | 3360.12</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
+					<reference entity="3360.12" number="2" tag="PATIENT-1" type="name">3,360.12</reference>
+				</references>
+				<text>The runway length at Allama Iqbal International Airport is 3,360.12.</text>
+				<template>The runway length at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | runwayLength | 3360.12</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
+					<reference entity="3360.12" number="2" tag="PATIENT-1" type="name">3360.12</reference>
+				</references>
+				<text>The runway at Allama Iqbal International Airport has a length of 3360.12.</text>
+				<template>The runway at AGENT-1 has a length of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | runwayLength | 3360.12</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
+					<reference entity="3360.12" number="2" tag="PATIENT-1" type="name">3360.12</reference>
+				</references>
+				<text>The runway at Allama Iqbal International Airport is 3360.12 long.</text>
+				<template>The runway at AGENT-1 is PATIENT-1 long .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allama_Iqbal_International_Airport</entity>
+				<entity>PATIENT-1 | 3360.12</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id10" size="1">
+			<originaltripleset>
+				<otriple>Amsterdam_Airport_Schiphol | r1Number | 18</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amsterdam_Airport_Schiphol | 1st_runway_Number | 18</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | 1st_runway_Number | 18</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amsterdam_Airport_Schiphol" number="1" tag="AGENT-1" type="name">Amsterdam 's Schiphol Airport</reference>
+					<reference entity="18" number="2" tag="PATIENT-1" type="name">18</reference>
+				</references>
+				<text>The first runway at Amsterdam's Schiphol Airport is known as Number 18.</text>
+				<template>The first runway at AGENT-1 is known as Number PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | 1st_runway_Number | 18</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amsterdam_Airport_Schiphol" number="1" tag="AGENT-1" type="description">The Amsterdam Airport Schiphol 's</reference>
+					<reference entity="18" number="2" tag="PATIENT-1" type="name">18</reference>
+				</references>
+				<text>The Amsterdam Airport Schiphol's 1st runway number is 18.</text>
+				<template>AGENT-1 1st runway number is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | 1st_runway_Number | 18</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amsterdam_Airport_Schiphol" number="1" tag="AGENT-1" type="name">Amsterdam Airport Schiphol</reference>
+					<reference entity="18" number="2" tag="PATIENT-1" type="name">18</reference>
+				</references>
+				<text>The number of the 1st runway at Amsterdam Airport Schiphol is 18.</text>
+				<template>The number of the 1st runway at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amsterdam_Airport_Schiphol</entity>
+				<entity>PATIENT-1 | 18</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id11" size="1">
+			<originaltripleset>
+				<otriple>Amsterdam_Airport_Schiphol | r5Surface | &quot;Asphalt&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amsterdam_Airport_Schiphol | 5th_runway_SurfaceType | &quot;Asphalt&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | 5th_runway_SurfaceType | &quot;Asphalt&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amsterdam_Airport_Schiphol" number="1" tag="AGENT-1" type="name">Amsterdam airport Schiphol</reference>
+					<reference entity="&quot;Asphalt&quot;" number="2" tag="PATIENT-1" type="name">asphalt</reference>
+				</references>
+				<text>The 5th runway at Amsterdam airport Schiphol has an asphalt surfacing.</text>
+				<template>The 5th runway at AGENT-1 has an PATIENT-1 surfacing .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | 5th_runway_SurfaceType | &quot;Asphalt&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amsterdam_Airport_Schiphol" number="1" tag="AGENT-1" type="name">Amsterdam Airport Schiphol</reference>
+					<reference entity="&quot;Asphalt&quot;" number="2" tag="PATIENT-1" type="name">asphalt</reference>
+				</references>
+				<text>The fifth runway of Amsterdam Airport Schiphol has an asphalt surface.</text>
+				<template>The fifth runway of AGENT-1 has an PATIENT-1 surface .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | 5th_runway_SurfaceType | &quot;Asphalt&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amsterdam_Airport_Schiphol" number="1" tag="AGENT-1" type="name">Amsterdam Airport Schiphol</reference>
+					<reference entity="&quot;Asphalt&quot;" number="2" tag="PATIENT-1" type="name">asphalt</reference>
+				</references>
+				<text>The 5th runway of the Amsterdam Airport Schiphol is asphalt.</text>
+				<template>The 5th runway of the AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amsterdam_Airport_Schiphol</entity>
+				<entity>PATIENT-1 | &quot;Asphalt&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id12" size="1">
+			<originaltripleset>
+				<otriple>Amsterdam_Airport_Schiphol | runwayDesignation | &quot;06/24 Kaagbaan&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amsterdam_Airport_Schiphol | runwayName | &quot;06/24 Kaagbaan&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | runwayName | &quot;06/24 Kaagbaan&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amsterdam_Airport_Schiphol" number="1" tag="AGENT-1" type="name">Amsterdam Airport Schiphol</reference>
+					<reference entity="&quot;06/24 Kaagbaan&quot;" number="2" tag="PATIENT-1" type="name">06/24 Kaagbaan</reference>
+				</references>
+				<text>Amsterdam Airport Schiphol runway name is 06/24 Kaagbaan.</text>
+				<template>AGENT-1 runway name is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | runwayName | &quot;06/24 Kaagbaan&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;06/24 Kaagbaan&quot;" number="1" tag="PATIENT-1" type="name">06/24 , Kaagbaan ,</reference>
+					<reference entity="Amsterdam_Airport_Schiphol" number="2" tag="AGENT-1" type="name">Amsterdam Airport Schiphol</reference>
+				</references>
+				<text>06/24, Kaagbaan, is the runway name of Amsterdam Airport Schiphol.</text>
+				<template>PATIENT-1 is the runway name of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam_Airport_Schiphol | runwayName | &quot;06/24 Kaagbaan&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amsterdam_Airport_Schiphol" number="1" tag="AGENT-1" type="name">Amsterdam Airport Schiphol</reference>
+					<reference entity="&quot;06/24 Kaagbaan&quot;" number="2" tag="PATIENT-1" type="name">06/24 Kaagbaan</reference>
+				</references>
+				<text>The runway name of Amsterdam Airport Schiphol is 06/24 Kaagbaan.</text>
+				<template>The runway name of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amsterdam_Airport_Schiphol</entity>
+				<entity>PATIENT-1 | &quot;06/24 Kaagbaan&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id13" size="1">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | elevation | &quot;967.435&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="973.0" number="2" tag="PATIENT-1" type="name">973</reference>
+				</references>
+				<text>Andrews County Airport is 973 metres above sea level.</text>
+				<template>AGENT-1 is PATIENT-1 metres above sea level .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews airport 's</reference>
+					<reference entity="973.0" number="2" tag="PATIENT-1" type="name">973.0</reference>
+				</references>
+				<text>Andrews airport's is 973.0 above sea level.</text>
+				<template>AGENT-1 is PATIENT-1 above sea level .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>PATIENT-1 | 973.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id14" size="1">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | owner | Andrews_County,_Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | owner | Andrews_County,_Texas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | owner | Andrews_County,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="description">The Andrews County Airport</reference>
+					<reference entity="Andrews_County,_Texas" number="2" tag="PATIENT-1" type="name">Andrews County , Texas</reference>
+				</references>
+				<text>The Andrews County Airport is owned by Andrews County, Texas.</text>
+				<template>AGENT-1 is owned by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | owner | Andrews_County,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County airport</reference>
+					<reference entity="Andrews_County,_Texas" number="2" tag="PATIENT-1" type="name">Andrews County , Texas</reference>
+				</references>
+				<text>The owner of Andrews County airport is Andrews County, Texas.</text>
+				<template>The owner of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | owner | Andrews_County,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="Andrews_County,_Texas" number="2" tag="PATIENT-1" type="name">Andrews County , Texas</reference>
+				</references>
+				<text>Andrews County Airport is owned by Andrews County, Texas.</text>
+				<template>AGENT-1 is owned by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>PATIENT-1 | Andrews_County,_Texas</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id15" size="1">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | runwayLength | &quot;895.807&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | runwayLength | 896.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | runwayLength | 896.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="896.0" number="2" tag="PATIENT-1" type="name">896</reference>
+				</references>
+				<text>The runway length of Andrews County Airport is 896.</text>
+				<template>The runway length of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>PATIENT-1 | 896.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id16" size="1">
+			<originaltripleset>
+				<otriple>Angola_International_Airport | r1Surface | &quot;ASPHALT&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Angola_International_Airport | 1st_runway_SurfaceType | &quot;Asphalt&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola_International_Airport | 1st_runway_SurfaceType | &quot;Asphalt&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola_International_Airport" number="1" tag="AGENT-1" type="name">Angola International Airport</reference>
+					<reference entity="&quot;Asphalt&quot;" number="2" tag="PATIENT-1" type="name">asphalt</reference>
+				</references>
+				<text>Angola International Airport is the first runway made of asphalt.</text>
+				<template>AGENT-1 is the first runway made of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola_International_Airport | 1st_runway_SurfaceType | &quot;Asphalt&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Asphalt&quot;" number="1" tag="PATIENT-1" type="name">Asphalt</reference>
+					<reference entity="Angola_International_Airport" number="2" tag="AGENT-1" type="name">Angola International Airport</reference>
+				</references>
+				<text>Asphalt is the surface of the first runway of Angola International Airport.</text>
+				<template>PATIENT-1 is the surface of the first runway of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola_International_Airport | 1st_runway_SurfaceType | &quot;Asphalt&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola_International_Airport" number="1" tag="AGENT-1" type="name">Angola International Airport</reference>
+					<reference entity="&quot;Asphalt&quot;" number="2" tag="PATIENT-1" type="name">asphalt</reference>
+				</references>
+				<text>The 1st runway at Angola International Airport has an asphalt surface.</text>
+				<template>The 1st runway at AGENT-1 has an PATIENT-1 surface .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Angola_International_Airport</entity>
+				<entity>PATIENT-1 | &quot;Asphalt&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id17" size="1">
+			<originaltripleset>
+				<otriple>Antwerp_International_Airport | elevation | &quot;12.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Antwerp_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 12.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 12.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International Airport</reference>
+					<reference entity="12.0" number="2" tag="PATIENT-1" type="name">12</reference>
+				</references>
+				<text>Antwerp International Airport is 12 metres above sea level.</text>
+				<template>AGENT-1 is PATIENT-1 metres above sea level .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 12.0</striple>
+					</sentence>
+					<sentence ID="2"/>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International Airport</reference>
+					<reference entity="12.0" number="2" tag="PATIENT-1" type="name">12.0</reference>
+				</references>
+				<text>Antwerp International Airport has an elevation of 12.0 metres above sea level.e.</text>
+				<template>AGENT-1 has an elevation of PATIENT-1 metres above sea level . e .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Antwerp_International_Airport</entity>
+				<entity>PATIENT-1 | 12.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id18" size="1">
+			<originaltripleset>
+				<otriple>Antwerp_International_Airport | operator | Flemish_Government</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Antwerp_International_Airport | operatingOrganisation | Flemish_Government</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp_International_Airport | operatingOrganisation | Flemish_Government</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International Airport</reference>
+					<reference entity="Flemish_Government" number="2" tag="PATIENT-1" type="name">Flemish Government</reference>
+				</references>
+				<text>The Antwerp International Airport is operated by the Flemish Government.</text>
+				<template>The AGENT-1 is operated by the PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp_International_Airport | operatingOrganisation | Flemish_Government</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International airport</reference>
+					<reference entity="Flemish_Government" number="2" tag="PATIENT-1" type="description">the Flemish government</reference>
+				</references>
+				<text>The operating organisation of Antwerp International airport is the Flemish government.</text>
+				<template>The operating organisation of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp_International_Airport | operatingOrganisation | Flemish_Government</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International Airport</reference>
+					<reference entity="Flemish_Government" number="2" tag="PATIENT-1" type="description">the Flemish government</reference>
+				</references>
+				<text>Antwerp International Airport is operated by the Flemish government.</text>
+				<template>AGENT-1 is operated by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Antwerp_International_Airport</entity>
+				<entity>PATIENT-1 | Flemish_Government</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id19" size="1">
+			<originaltripleset>
+				<otriple>Appleton_International_Airport | runwayLength | &quot;2439.01&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Appleton_International_Airport | runwayLength | 2439.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Appleton_International_Airport | runwayLength | 2439.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Appleton_International_Airport" number="1" tag="AGENT-1" type="name">Appleton International Airport</reference>
+					<reference entity="2439.0" number="2" tag="PATIENT-1" type="name">2,439</reference>
+				</references>
+				<text>The runway length of Appleton International Airport is 2,439.</text>
+				<template>The runway length of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Appleton_International_Airport | runwayLength | 2439.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Appleton_International_Airport" number="1" tag="AGENT-1" type="description">the Appleton International airport</reference>
+					<reference entity="2439.0" number="2" tag="PATIENT-1" type="name">2439 units</reference>
+				</references>
+				<text>The runway length of the Appleton International airport is 2439 units.</text>
+				<template>The runway length of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Appleton_International_Airport | runwayLength | 2439.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Appleton_International_Airport" number="1" tag="AGENT-1" type="name">Appleton International Airport</reference>
+					<reference entity="2439.0" number="2" tag="PATIENT-1" type="name">2439.0</reference>
+				</references>
+				<text>The runway length of Appleton International Airport is 2439.0.</text>
+				<template>The runway length of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Appleton_International_Airport</entity>
+				<entity>PATIENT-1 | 2439.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id20" size="1">
+			<originaltripleset>
+				<otriple>Ardmore_Airport_(New_Zealand) | runwayLength | &quot;518.16&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ardmore_Airport_(New_Zealand) | runwayLength | 518.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ardmore_Airport_(New_Zealand) | runwayLength | 518.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ardmore_Airport_(New_Zealand)" number="1" tag="AGENT-1" type="name">Ardmore Airport ( New Zealand )</reference>
+					<reference entity="518.0" number="2" tag="PATIENT-1" type="name">518.0</reference>
+				</references>
+				<text>Ardmore Airport (New Zealand) runway length is 518.0.</text>
+				<template>AGENT-1 runway length is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ardmore_Airport_(New_Zealand) | runwayLength | 518.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ardmore_Airport_(New_Zealand)" number="1" tag="AGENT-1" type="name">Ardmore Airport , New Zealand ,</reference>
+					<reference entity="518.0" number="2" tag="PATIENT-1" type="name">518.0</reference>
+				</references>
+				<text>The runway length of Ardmore Airport, New Zealand, is 518.0.</text>
+				<template>The runway length of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ardmore_Airport_(New_Zealand) | runwayLength | 518.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ardmore_Airport_(New_Zealand)" number="1" tag="AGENT-1" type="name">Ardmore Airport ( New Zealand )</reference>
+					<reference entity="518.0" number="2" tag="PATIENT-1" type="name">518.0</reference>
+				</references>
+				<text>The runway length of Ardmore Airport (New Zealand) is 518.0.</text>
+				<template>The runway length of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ardmore_Airport_(New_Zealand)</entity>
+				<entity>PATIENT-1 | 518.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id21" size="1">
+			<originaltripleset>
+				<otriple>Ashgabat_International_Airport | icaoLocationIdentifier | &quot;(Location of airport in Turkmenistan)&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ashgabat_International_Airport | ICAO_Location_Identifier | &quot;UTAA&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ashgabat_International_Airport | ICAO_Location_Identifier | &quot;UTAA&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;UTAA&quot;" number="1" tag="PATIENT-1" type="name">UTAA</reference>
+					<reference entity="Ashgabat_International_Airport" number="2" tag="AGENT-1" type="name">Ashgabat International Airport</reference>
+				</references>
+				<text>UTAA is the ICAO Location Identifier of Ashgabat International Airport.</text>
+				<template>PATIENT-1 is the ICAO Location Identifier of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ashgabat_International_Airport | ICAO_Location_Identifier | &quot;UTAA&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ashgabat_International_Airport" number="1" tag="AGENT-1" type="name">Ashgabat International Airport</reference>
+					<reference entity="&quot;UTAA&quot;" number="2" tag="PATIENT-1" type="name">UTAA</reference>
+				</references>
+				<text>The ICAO Location Identifier of Ashgabat International Airport is UTAA.</text>
+				<template>The ICAO Location Identifier of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ashgabat_International_Airport</entity>
+				<entity>PATIENT-1 | &quot;UTAA&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id22" size="1">
+			<originaltripleset>
+				<otriple>Ashgabat_International_Airport | runwayDesignation | &quot;11/29&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ashgabat_International_Airport | runwayName | &quot;11/29&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ashgabat_International_Airport | runwayName | &quot;11/29&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ashgabat_International_Airport" number="1" tag="AGENT-1" type="name">Ashgabat International Airport</reference>
+					<reference entity="&quot;11/29&quot;" number="2" tag="PATIENT-1" type="name">11/29</reference>
+				</references>
+				<text>The runway name of Ashgabat International Airport is 11/29.</text>
+				<template>The runway name of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ashgabat_International_Airport | runwayName | &quot;11/29&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ashgabat_International_Airport" number="1" tag="AGENT-1" type="name">Ashgabat International airport</reference>
+					<reference entity="&quot;11/29&quot;" number="2" tag="PATIENT-1" type="name">11/29</reference>
+				</references>
+				<text>The runway name at Ashgabat International airport is 11/29.</text>
+				<template>The runway name at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ashgabat_International_Airport</entity>
+				<entity>PATIENT-1 | &quot;11/29&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id23" size="1">
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | owner | South_Jersey_Transportation_Authority</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlantic_City_International_Airport | owner | South_Jersey_Transportation_Authority</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | owner | South_Jersey_Transportation_Authority</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="South_Jersey_Transportation_Authority" number="2" tag="PATIENT-1" type="name">South Jersey Transportation Authority</reference>
+				</references>
+				<text>Atlantic City International Airport owner is South Jersey Transportation Authority.</text>
+				<template>AGENT-1 owner is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | owner | South_Jersey_Transportation_Authority</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="South_Jersey_Transportation_Authority" number="1" tag="PATIENT-1" type="name">South Jersey Transportation Authority</reference>
+					<reference entity="Atlantic_City_International_Airport" number="2" tag="AGENT-1" type="description">the Atlantic City International Airport</reference>
+				</references>
+				<text>South Jersey Transportation Authority is the owner of the Atlantic City International Airport.</text>
+				<template>PATIENT-1 is the owner of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | owner | South_Jersey_Transportation_Authority</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="South_Jersey_Transportation_Authority" number="2" tag="PATIENT-1" type="description">the South Jersey Transportation Authority</reference>
+				</references>
+				<text>Atlantic City International Airport is owned by the South Jersey Transportation Authority.</text>
+				<template>AGENT-1 is owned by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlantic_City_International_Airport</entity>
+				<entity>PATIENT-1 | South_Jersey_Transportation_Authority</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id24" size="1">
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | runwayDesignation | &quot;13/31&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlantic_City_International_Airport | runwayName | &quot;13/31&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | runwayName | &quot;13/31&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="&quot;13/31&quot;" number="2" tag="PATIENT-1" type="name">`` 13/31 ''</reference>
+				</references>
+				<text>The name of the runway at Atlantic City International Airport is &quot;13/31&quot;.</text>
+				<template>The name of the runway at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | runwayName | &quot;13/31&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;13/31&quot;" number="1" tag="PATIENT-1" type="name">13/31</reference>
+					<reference entity="Atlantic_City_International_Airport" number="2" tag="AGENT-1" type="name">Atlantic City International airport</reference>
+				</references>
+				<text>13/31 is the runway name for Atlantic City International airport.</text>
+				<template>PATIENT-1 is the runway name for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | runwayName | &quot;13/31&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport 's</reference>
+					<reference entity="&quot;13/31&quot;" number="2" tag="PATIENT-1" type="name">`` 13/31 ''</reference>
+				</references>
+				<text>Atlantic City International Airport's runway name is &quot;13/31&quot;.</text>
+				<template>AGENT-1 runway name is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlantic_City_International_Airport</entity>
+				<entity>PATIENT-1 | &quot;13/31&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id25" size="1">
+			<originaltripleset>
+				<otriple>Belgium | language | Dutch_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Belgium | language | Dutch_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Belgium | language | Dutch_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dutch_language" number="1" tag="PATIENT-1" type="description">The Dutch language</reference>
+					<reference entity="Belgium" number="2" tag="AGENT-1" type="name">Belgium</reference>
+				</references>
+				<text>The Dutch language is spoken in Belgium.</text>
+				<template>PATIENT-1 is spoken in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Belgium | language | Dutch_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dutch_language" number="1" tag="PATIENT-1" type="name">Dutch</reference>
+					<reference entity="Belgium" number="2" tag="AGENT-1" type="name">Belgium</reference>
+				</references>
+				<text>Dutch is the language spoken in Belgium.</text>
+				<template>PATIENT-1 is the language spoken in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Belgium | language | Dutch_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Belgium" number="1" tag="AGENT-1" type="name">Belgium 's</reference>
+					<reference entity="Dutch_language" number="2" tag="PATIENT-1" type="name">Dutch</reference>
+				</references>
+				<text>Belgium's language is Dutch.</text>
+				<template>AGENT-1 language is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Belgium</entity>
+				<entity>PATIENT-1 | Dutch_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id26" size="1">
+			<originaltripleset>
+				<otriple>Curitiba | subdivisionName | South_Region,_Brazil</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Curitiba | isPartOf | South_Region,_Brazil</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Curitiba | isPartOf | South_Region,_Brazil</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Curitiba" number="1" tag="AGENT-1" type="name">Curitiba</reference>
+					<reference entity="South_Region,_Brazil" number="2" tag="PATIENT-1" type="description">the South Region , Brazil</reference>
+				</references>
+				<text>Curitiba is part of the South Region, Brazil.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Curitiba</entity>
+				<entity>PATIENT-1 | South_Region,_Brazil</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id27" size="1">
+			<originaltripleset>
+				<otriple>Denmark | demonym | Danes</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Denmark | demonym | Danes</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Denmark | demonym | Danes</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark</reference>
+					<reference entity="Danes" number="2" tag="PATIENT-1" type="name">Danes</reference>
+				</references>
+				<text>Denmark demonym is Danes.</text>
+				<template>AGENT-1 demonym is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Denmark | demonym | Danes</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark</reference>
+					<reference entity="Danes" number="2" tag="PATIENT-1" type="name">Danes</reference>
+				</references>
+				<text>The inhabitants of Denmark have the demonym of Danes.</text>
+				<template>The inhabitants of AGENT-1 have the demonym of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Denmark | demonym | Danes</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark</reference>
+					<reference entity="Danes" number="2" tag="PATIENT-1" type="name">Danes</reference>
+				</references>
+				<text>The people of Denmark are called Danes.</text>
+				<template>The people of AGENT-1 are called PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Denmark</entity>
+				<entity>PATIENT-1 | Danes</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id28" size="1">
+			<originaltripleset>
+				<otriple>Fallujah | country | Iraq</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Fallujah | country | Iraq</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Fallujah | country | Iraq</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Fallujah" number="1" tag="AGENT-1" type="name">Fallujah</reference>
+					<reference entity="Iraq" number="2" tag="PATIENT-1" type="name">Iraq</reference>
+				</references>
+				<text>Fallujah is in the country of Iraq.</text>
+				<template>AGENT-1 is in the country of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Fallujah | country | Iraq</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Fallujah" number="1" tag="AGENT-1" type="name">Fallujah</reference>
+					<reference entity="Iraq" number="2" tag="PATIENT-1" type="name">Iraq</reference>
+				</references>
+				<text>Fallujah is located in the country of Iraq.</text>
+				<template>AGENT-1 is located in the country of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Fallujah | country | Iraq</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Fallujah" number="1" tag="AGENT-1" type="name">Fallujah</reference>
+					<reference entity="Iraq" number="2" tag="PATIENT-1" type="name">Iraq</reference>
+				</references>
+				<text>Fallujah is in Iraq.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Fallujah</entity>
+				<entity>PATIENT-1 | Iraq</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id29" size="1">
+			<originaltripleset>
+				<otriple>Greenville,_Wisconsin | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Greenville,_Wisconsin | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Greenville,_Wisconsin | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Greenville,_Wisconsin" number="1" tag="AGENT-1" type="name">Greenville , Wisconsin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the U.S.A</reference>
+				</references>
+				<text>Greenville, Wisconsin is in the U.S.A.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Greenville,_Wisconsin | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Greenville,_Wisconsin" number="1" tag="AGENT-1" type="name">Greenville , Wisconsin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Greenville, Wisconsin is located in the United States.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Greenville,_Wisconsin | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Greenville,_Wisconsin" number="1" tag="AGENT-1" type="name">Greenville , Wisconsin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Greenville, Wisconsin is in the United States.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Greenville,_Wisconsin</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id30" size="1">
+			<originaltripleset>
+				<otriple>Greenville,_Wisconsin | subdivisionName | Grand_Chute,_Wisconsin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Greenville,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Greenville,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Greenville,_Wisconsin" number="1" tag="AGENT-1" type="name">Greenville , Wisconsin</reference>
+					<reference entity="Grand_Chute,_Wisconsin" number="2" tag="PATIENT-1" type="name">Grand Chute , Wisconsin</reference>
+				</references>
+				<text>Greenville, Wisconsin is part of Grand Chute, Wisconsin.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Greenville,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Greenville,_Wisconsin" number="1" tag="AGENT-1" type="name">Greenville , Wisconsin</reference>
+					<reference entity="Grand_Chute,_Wisconsin" number="2" tag="PATIENT-1" type="name">Grand Chute , Wisconsin</reference>
+				</references>
+				<text>Greenville, Wisconsin is in Grand Chute, Wisconsin.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Greenville,_Wisconsin | isPartOf | Grand_Chute,_Wisconsin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Greenville,_Wisconsin" number="1" tag="AGENT-1" type="name">Greenville , Wisconsin ,</reference>
+					<reference entity="Grand_Chute,_Wisconsin" number="2" tag="PATIENT-1" type="name">Grand Chute , Wisconsin</reference>
+				</references>
+				<text>Greenville, Wisconsin, is part of Grand Chute, Wisconsin.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Greenville,_Wisconsin</entity>
+				<entity>PATIENT-1 | Grand_Chute,_Wisconsin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id31" size="1">
+			<originaltripleset>
+				<otriple>Iraq | language | Arabic</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Iraq | language | Arabic</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Iraq | language | Arabic</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Iraq" number="1" tag="AGENT-1" type="name">Iraq</reference>
+					<reference entity="Arabic" number="2" tag="PATIENT-1" type="name">Arabic</reference>
+				</references>
+				<text>Iraq language is Arabic.</text>
+				<template>AGENT-1 language is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Iraq | language | Arabic</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arabic" number="1" tag="PATIENT-1" type="name">Arabic</reference>
+					<reference entity="Iraq" number="2" tag="AGENT-1" type="name">Iraq</reference>
+				</references>
+				<text>Arabic is the language in Iraq.</text>
+				<template>PATIENT-1 is the language in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Iraq</entity>
+				<entity>PATIENT-1 | Arabic</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id32" size="1">
+			<originaltripleset>
+				<otriple>Madrid | country | Spain</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Madrid | country | Spain</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Madrid | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Madrid" number="1" tag="AGENT-1" type="name">Madrid</reference>
+					<reference entity="Spain" number="2" tag="PATIENT-1" type="name">Spain</reference>
+				</references>
+				<text>Madrid is in the country of Spain.</text>
+				<template>AGENT-1 is in the country of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Madrid | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Madrid" number="1" tag="AGENT-1" type="name">Madrid</reference>
+					<reference entity="Spain" number="2" tag="PATIENT-1" type="name">Spain</reference>
+				</references>
+				<text>The city of Madrid is found in Spain.</text>
+				<template>The city of AGENT-1 is found in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Madrid | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Madrid" number="1" tag="AGENT-1" type="name">Madrid</reference>
+					<reference entity="Spain" number="2" tag="PATIENT-1" type="name">Spain</reference>
+				</references>
+				<text>Madrid is located in Spain.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Madrid</entity>
+				<entity>PATIENT-1 | Spain</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id33" size="1">
+			<originaltripleset>
+				<otriple>Maple_Ridge_Township,_Alpena_County,_Michigan | subdivisionName | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Maple_Ridge_Township,_Alpena_County,_Michigan | isPartOf | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Maple_Ridge_Township,_Alpena_County,_Michigan | isPartOf | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Maple_Ridge_Township,_Alpena_County,_Michigan" number="1" tag="AGENT-1" type="name">Maple Ridge Township in Alpena County , Michigan</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Maple Ridge Township in Alpena County, Michigan is part of the United States.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Maple_Ridge_Township,_Alpena_County,_Michigan | isPartOf | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Maple_Ridge_Township,_Alpena_County,_Michigan" number="1" tag="AGENT-1" type="name">Maple Ridge Township , Alpena County , Michigan</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Maple Ridge Township, Alpena County, Michigan is part of the United States.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Maple_Ridge_Township,_Alpena_County,_Michigan</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id34" size="1">
+			<originaltripleset>
+				<otriple>Pakistan | leader | Sardar_Ayaz_Sadiq</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Pakistan | leaderName | Sardar_Ayaz_Sadiq</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Pakistan | leaderName | Sardar_Ayaz_Sadiq</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Pakistan" number="1" tag="AGENT-1" type="name">Pakistan</reference>
+					<reference entity="Sardar_Ayaz_Sadiq" number="2" tag="PATIENT-1" type="name">Sardar Ayaz Sadiq</reference>
+				</references>
+				<text>The leader of Pakistan is Sardar Ayaz Sadiq.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Pakistan</entity>
+				<entity>PATIENT-1 | Sardar_Ayaz_Sadiq</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id35" size="1">
+			<originaltripleset>
+				<otriple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="New_Jersey" number="1" tag="PATIENT-1" type="name">New Jersey</reference>
+					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="2" tag="AGENT-1" type="description">the Port Authority of New York and New Jersey</reference>
+				</references>
+				<text>New Jersey is a region served by the Port Authority of New York and New Jersey.</text>
+				<template>PATIENT-1 is a region served by AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="1" tag="AGENT-1" type="description">The Port Authority of N.Y. and N.J.</reference>
+					<reference entity="New_Jersey" number="2" tag="PATIENT-1" type="name">New Jersey</reference>
+				</references>
+				<text>The Port Authority of N.Y. and N.J. serves New Jersey.</text>
+				<template>AGENT-1 serves PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="1" tag="AGENT-1" type="description">The Port Authority of New York and New Jersey</reference>
+					<reference entity="New_Jersey" number="2" tag="PATIENT-1" type="name">New Jersey</reference>
+				</references>
+				<text>The Port Authority of New York and New Jersey serves the region of New Jersey.</text>
+				<template>AGENT-1 serves the region of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Port_Authority_of_New_York_and_New_Jersey</entity>
+				<entity>PATIENT-1 | New_Jersey</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id36" size="1">
+			<originaltripleset>
+				<otriple>Texas | largestcity | Houston</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Texas | largestCity | Houston</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Texas | largestCity | Houston</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Houston" number="1" tag="PATIENT-1" type="name">Houston</reference>
+					<reference entity="Texas" number="2" tag="AGENT-1" type="name">Texas</reference>
+				</references>
+				<text>Houston is the largest city in Texas.</text>
+				<template>PATIENT-1 is the largest city in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Texas</entity>
+				<entity>PATIENT-1 | Houston</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id37" size="1">
+			<originaltripleset>
+				<otriple>United_States_Air_Force | battle | 1986_United_States_bombing_of_Libya</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States_Air_Force | battles | 1986_United_States_bombing_of_Libya</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | battles | 1986_United_States_bombing_of_Libya</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States_Air_Force" number="1" tag="AGENT-1" type="description">The USAF</reference>
+					<reference entity="1986_United_States_bombing_of_Libya" number="2" tag="PATIENT-1" type="description">the 1986 bombing of Libya</reference>
+				</references>
+				<text>The USAF was involved in the 1986 bombing of Libya.</text>
+				<template>AGENT-1 was involved in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | battles | 1986_United_States_bombing_of_Libya</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States_Air_Force" number="1" tag="AGENT-1" type="description">The United States Air Force</reference>
+					<reference entity="1986_United_States_bombing_of_Libya" number="2" tag="PATIENT-1" type="description">the United States bombing of Libya in 1986</reference>
+				</references>
+				<text>The United States Air Force was fighting in the United States bombing of Libya in 1986.</text>
+				<template>AGENT-1 was fighting in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | battles | 1986_United_States_bombing_of_Libya</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1986_United_States_bombing_of_Libya" number="1" tag="PATIENT-1" type="description">The 1986 United States bombing of Libya</reference>
+					<reference entity="United_States_Air_Force" number="2" tag="AGENT-1" type="description">the United States Air Force</reference>
+				</references>
+				<text>The 1986 United States bombing of Libya was carried out by the United States Air Force.</text>
+				<template>PATIENT-1 was carried out by AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_States_Air_Force</entity>
+				<entity>PATIENT-1 | 1986_United_States_bombing_of_Libya</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id38" size="1">
+			<originaltripleset>
+				<otriple>United_States_Air_Force | aircraftTransport | Boeing_C-17_Globemaster_III</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States_Air_Force" number="1" tag="AGENT-1" type="description">The United States Air Force</reference>
+					<reference entity="Boeing_C-17_Globemaster_III" number="2" tag="PATIENT-1" type="name">Boeing C-17 Globemaster III</reference>
+				</references>
+				<text>The United States Air Force has a Boeing C-17 Globemaster III transport aircraft.</text>
+				<template>AGENT-1 has a PATIENT-1 transport aircraft .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Boeing_C-17_Globemaster_III" number="1" tag="PATIENT-1" type="description">The Boeing C-17 Globemaster III</reference>
+					<reference entity="United_States_Air_Force" number="2" tag="AGENT-1" type="description">the United States Air Force</reference>
+				</references>
+				<text>The Boeing C-17 Globemaster III is a transport aircraft of the United States Air Force.</text>
+				<template>PATIENT-1 is a transport aircraft of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_States_Air_Force</entity>
+				<entity>PATIENT-1 | Boeing_C-17_Globemaster_III</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

@@ -1,0 +1,1891 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Athlete" eid="Id1247" size="2">
+			<originaltripleset>
+				<otriple>Aaron_Boogaard | team | Wichita_Thunder</otriple>
+				<otriple>Aaron_Boogaard | placeOfBirth | Saskatchewan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_Boogaard | club | Wichita_Thunder</mtriple>
+				<mtriple>Aaron_Boogaard | birthPlace | Saskatchewan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Boogaard | birthPlace | Saskatchewan</striple>
+						<striple>Aaron_Boogaard | club | Wichita_Thunder</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Boogaard" number="1" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Saskatchewan" number="2" tag="PATIENT-2" type="name">Saskatchewan</reference>
+					<reference entity="Aaron_Boogaard" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Wichita_Thunder" number="4" tag="PATIENT-1" type="name">Wichita Thunder</reference>
+				</references>
+				<text>Aaron Boogaard was born in Saskatchewan and his club is Wichita Thunder.</text>
+				<template>AGENT-1 was born in PATIENT-2 and AGENT-1 club is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Boogaard | birthPlace | Saskatchewan</striple>
+						<striple>Aaron_Boogaard | club | Wichita_Thunder</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Boogaard" number="1" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Saskatchewan" number="2" tag="PATIENT-2" type="name">Saskatchewan</reference>
+					<reference entity="Wichita_Thunder" number="3" tag="PATIENT-1" type="name">Wichita Thunder</reference>
+				</references>
+				<text>Aaron Boogaard was born in Saskatchewan and plays for Wichita Thunder.</text>
+				<template>AGENT-1 was born in PATIENT-2 and plays for PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Boogaard | birthPlace | Saskatchewan</striple>
+						<striple>Aaron_Boogaard | club | Wichita_Thunder</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Boogaard" number="1" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Saskatchewan" number="2" tag="PATIENT-2" type="name">Saskatchewan</reference>
+					<reference entity="Wichita_Thunder" number="3" tag="PATIENT-1" type="name">Wichita Thunder club</reference>
+				</references>
+				<text>Aaron Boogaard was born in Saskatchewan and played for Wichita Thunder club.</text>
+				<template>AGENT-1 was born in PATIENT-2 and played for PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Boogaard</entity>
+				<entity>PATIENT-1 | Wichita_Thunder</entity>
+				<entity>PATIENT-2 | Saskatchewan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1248" size="2">
+			<originaltripleset>
+				<otriple>Abel_Hernández | team | Peñarol</otriple>
+				<otriple>Peñarol | manager | Jorge_Orosmán_da_Silva</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abel_Hernández | club | Peñarol</mtriple>
+				<mtriple>Peñarol | manager | Jorge_Orosmán_da_Silva</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Peñarol</striple>
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Peñarol" number="2" tag="BRIDGE-1" type="description">the club Penarol</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="3" tag="PATIENT-1" type="name">Jorge Orosmán da Silva</reference>
+				</references>
+				<text>Abel Hernandez played for the club Penarol, which was managed by Jorge Orosmán da Silva.</text>
+				<template>AGENT-1 played for BRIDGE-1 , which was managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Peñarol</striple>
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Peñarol" number="2" tag="BRIDGE-1" type="name">Peñarol</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="3" tag="PATIENT-1" type="name">Jorge Orosmán da Silva</reference>
+				</references>
+				<text>Abel Hernandez has played for the club Peñarol which is managed by Jorge Orosmán da Silva.</text>
+				<template>AGENT-1 has played for the club BRIDGE-1 which is managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+						<striple>Abel_Hernández | club | Peñarol</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peñarol" number="1" tag="BRIDGE-1" type="name">Peñarol</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="2" tag="PATIENT-1" type="name">Jorge Orosmán da Silva</reference>
+					<reference entity="Abel_Hernández" number="3" tag="AGENT-1" type="description">the player Abel Hernandez</reference>
+				</references>
+				<text>Peñarol, managed by Jorge Orosmán da Silva, is a former club of the player Abel Hernandez.</text>
+				<template>BRIDGE-1 , managed by PATIENT-1 , is a former club of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Peñarol</entity>
+				<entity>PATIENT-1 | Jorge_Orosmán_da_Silva</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1249" size="2">
+			<originaltripleset>
+				<otriple>Abel_Hernández | team | U.S._Città_di_Palermo</otriple>
+				<otriple>Abel_Hernández | clubs | Peñarol</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abel_Hernández | club | U.S._Città_di_Palermo</mtriple>
+				<mtriple>Abel_Hernández | club | Peñarol</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Peñarol</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="U.S._Città_di_Palermo" number="2" tag="PATIENT-1" type="description">the US Citta de Palermo club</reference>
+					<reference entity="Peñarol" number="3" tag="PATIENT-2" type="name">Penarol</reference>
+				</references>
+				<text>Abel Hernandez plays for the US Citta de Palermo club and also played for Penarol.</text>
+				<template>AGENT-1 plays for PATIENT-1 and also played for PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Peñarol</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez 's</reference>
+					<reference entity="U.S._Città_di_Palermo" number="2" tag="PATIENT-1" type="name">US Citta di Palermo</reference>
+					<reference entity="Peñarol" number="3" tag="PATIENT-2" type="name">Penarol</reference>
+				</references>
+				<text>Abel Hernandez's club is US Citta di Palermo and Penarol.</text>
+				<template>AGENT-1 club is PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Peñarol</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="U.S._Città_di_Palermo" number="2" tag="PATIENT-1" type="name">US Città di Palermo</reference>
+					<reference entity="Peñarol" number="3" tag="PATIENT-2" type="name">Penarol</reference>
+				</references>
+				<text>Abel Hernández has played for the clubs US Città di Palermo and Penarol.</text>
+				<template>AGENT-1 has played for the clubs PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>PATIENT-1 | U.S._Città_di_Palermo</entity>
+				<entity>PATIENT-2 | Peñarol</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1250" size="2">
+			<originaltripleset>
+				<otriple>Adam_Maher | team | Netherlands_national_under-17_football_team</otriple>
+				<otriple>Adam_Maher | clubs | AZ_Alkmaar</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adam_Maher | club | Netherlands_national_under-17_football_team</mtriple>
+				<mtriple>Adam_Maher | club | AZ_Alkmaar</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | club | AZ_Alkmaar</striple>
+						<striple>Adam_Maher | club | Netherlands_national_under-17_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Maher" number="1" tag="AGENT-1" type="name">Adam Maher</reference>
+					<reference entity="AZ_Alkmaar" number="2" tag="PATIENT-2" type="name">AZ Alkmaar</reference>
+					<reference entity="Netherlands_national_under-17_football_team" number="3" tag="PATIENT-1" type="description">the Netherlands National club for players under 17</reference>
+				</references>
+				<text>Adam Maher is connected to the AZ Alkmaar club and plays for the Netherlands National club for players under 17.</text>
+				<template>AGENT-1 is connected to the PATIENT-2 club and plays for PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | club | AZ_Alkmaar</striple>
+						<striple>Adam_Maher | club | Netherlands_national_under-17_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AZ_Alkmaar" number="1" tag="PATIENT-2" type="name">AZ Alkmaar</reference>
+					<reference entity="Adam_Maher" number="2" tag="AGENT-1" type="name">Adam Maher</reference>
+					<reference entity="Netherlands_national_under-17_football_team" number="3" tag="PATIENT-1" type="description">the Netherlands national side at Under 17 level</reference>
+				</references>
+				<text>AZ Alkmaar player Adam Maher represented the Netherlands national side at Under 17 level.</text>
+				<template>PATIENT-2 player AGENT-1 represented PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | club | AZ_Alkmaar</striple>
+						<striple>Adam_Maher | club | Netherlands_national_under-17_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Maher" number="1" tag="AGENT-1" type="name">Adam Maher</reference>
+					<reference entity="AZ_Alkmaar" number="2" tag="PATIENT-2" type="name">AZ Alkmaar</reference>
+					<reference entity="Netherlands_national_under-17_football_team" number="3" tag="PATIENT-1" type="description">the Netherlands national under-17 football team</reference>
+				</references>
+				<text>Adam Maher is connected to the AZ Alkmaar club and played for the Netherlands national under-17 football team.</text>
+				<template>AGENT-1 is connected to the PATIENT-2 club and played for PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_Maher</entity>
+				<entity>PATIENT-1 | Netherlands_national_under-17_football_team</entity>
+				<entity>PATIENT-2 | AZ_Alkmaar</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1251" size="2">
+			<originaltripleset>
+				<otriple>Adam_Maher | clubs | PSV_Eindhoven</otriple>
+				<otriple>Adam_Maher | team | Netherlands_national_under-17_football_team</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adam_Maher | club | PSV_Eindhoven</mtriple>
+				<mtriple>Adam_Maher | club | Netherlands_national_under-17_football_team</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | club | PSV_Eindhoven</striple>
+						<striple>Adam_Maher | club | Netherlands_national_under-17_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Maher" number="1" tag="AGENT-1" type="name">Adam Maher 's</reference>
+					<reference entity="PSV_Eindhoven" number="2" tag="PATIENT-1" type="name">PSV Eindhoven</reference>
+					<reference entity="Adam_Maher" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Netherlands_national_under-17_football_team" number="4" tag="PATIENT-2" type="description">the Netherlands national under-17 football team</reference>
+				</references>
+				<text>Adam Maher's club is PSV Eindhoven and he played for the Netherlands national under-17 football team.</text>
+				<template>AGENT-1 club is PATIENT-1 and AGENT-1 played for PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | club | PSV_Eindhoven</striple>
+						<striple>Adam_Maher | club | Netherlands_national_under-17_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Maher" number="1" tag="AGENT-1" type="name">Adam Maher</reference>
+					<reference entity="PSV_Eindhoven" number="2" tag="PATIENT-1" type="name">PSV Eindhoven</reference>
+					<reference entity="Netherlands_national_under-17_football_team" number="3" tag="PATIENT-2" type="description">the Netherlands under 17 football team</reference>
+				</references>
+				<text>Adam Maher played for PSV Eindhoven and represented the Netherlands under 17 football team.</text>
+				<template>AGENT-1 played for PATIENT-1 and represented PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | club | PSV_Eindhoven</striple>
+						<striple>Adam_Maher | club | Netherlands_national_under-17_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Maher" number="1" tag="AGENT-1" type="name">Adam Maher</reference>
+					<reference entity="PSV_Eindhoven" number="2" tag="PATIENT-1" type="name">PSV Eindhoven</reference>
+					<reference entity="Netherlands_national_under-17_football_team" number="3" tag="PATIENT-2" type="name">Netherlands National under 17 club</reference>
+				</references>
+				<text>Adam Maher, whose club is PSV Eindhoven, plays for Netherlands National under 17 club.</text>
+				<template>AGENT-1 , whose club is PATIENT-1 , plays for PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_Maher</entity>
+				<entity>PATIENT-1 | PSV_Eindhoven</entity>
+				<entity>PATIENT-2 | Netherlands_national_under-17_football_team</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1252" size="2">
+			<originaltripleset>
+				<otriple>Ahmad_Kadhim_Assad | team | Steel_Azin_F.C.</otriple>
+				<otriple>Ahmad_Kadhim_Assad | clubs | Al_Shorta_SC</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ahmad_Kadhim_Assad | club | Steel_Azin_F.C.</mtriple>
+				<mtriple>Ahmad_Kadhim_Assad | club | Al_Shorta_SC</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ahmad_Kadhim_Assad | club | Steel_Azin_F.C.</striple>
+						<striple>Ahmad_Kadhim_Assad | club | Al_Shorta_SC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ahmad_Kadhim_Assad" number="1" tag="AGENT-1" type="name">Ahmad Kadhim Assad</reference>
+					<reference entity="Steel_Azin_F.C." number="2" tag="PATIENT-1" type="name">Steel Azin FC</reference>
+					<reference entity="Al_Shorta_SC" number="3" tag="PATIENT-2" type="name">Al Shorta SC</reference>
+				</references>
+				<text>Ahmad Kadhim Assad clubs are Steel Azin FC and Al Shorta SC.</text>
+				<template>AGENT-1 clubs are PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ahmad_Kadhim_Assad | club | Steel_Azin_F.C.</striple>
+						<striple>Ahmad_Kadhim_Assad | club | Al_Shorta_SC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ahmad_Kadhim_Assad" number="1" tag="AGENT-1" type="name">Ahmad Kadhim Assad</reference>
+					<reference entity="Steel_Azin_F.C." number="2" tag="PATIENT-1" type="name">Steel Azin F.C .</reference>
+					<reference entity="Al_Shorta_SC" number="3" tag="PATIENT-2" type="name">Al Shorta SC</reference>
+				</references>
+				<text>Ahmad Kadhim Assad played for both Steel Azin F.C. and Al Shorta SC.</text>
+				<template>AGENT-1 played for both PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ahmad_Kadhim_Assad</entity>
+				<entity>PATIENT-1 | Steel_Azin_F.C.</entity>
+				<entity>PATIENT-2 | Al_Shorta_SC</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1253" size="2">
+			<originaltripleset>
+				<otriple>Akeem_Adams | clubs | Ferencvárosi_TC</otriple>
+				<otriple>Ferencvárosi_TC | manager | Thomas_Doll</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Adams | club | Ferencvárosi_TC</mtriple>
+				<mtriple>Ferencvárosi_TC | manager | Thomas_Doll</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="Ferencvárosi_TC" number="2" tag="BRIDGE-1" type="name">Ferencvarosi TC</reference>
+					<reference entity="Thomas_Doll" number="3" tag="PATIENT-1" type="name">Thomas Doll</reference>
+				</references>
+				<text>Akeem Adams played for Ferencvarosi TC, where the manager is Thomas Doll.</text>
+				<template>AGENT-1 played for BRIDGE-1 , where the manager is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="Ferencvárosi_TC" number="2" tag="BRIDGE-1" type="name">Ferencvarosi TC</reference>
+					<reference entity="Thomas_Doll" number="3" tag="PATIENT-1" type="name">Thomas Doll</reference>
+				</references>
+				<text>Akeem Adams club is Ferencvarosi TC, where the manager is Thomas Doll.</text>
+				<template>AGENT-1 club is BRIDGE-1 , where the manager is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ferencvárosi_TC | manager | Thomas_Doll</striple>
+						<striple>Akeem_Adams | club | Ferencvárosi_TC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ferencvárosi_TC" number="1" tag="BRIDGE-1" type="name">Ferencvarosi TC</reference>
+					<reference entity="Thomas_Doll" number="2" tag="PATIENT-1" type="name">Thomas Doll</reference>
+					<reference entity="Akeem_Adams" number="3" tag="AGENT-1" type="name">Akeem Adams</reference>
+				</references>
+				<text>Ferencvarosi TC is managed by Thomas Doll and is the club of Akeem Adams.</text>
+				<template>BRIDGE-1 is managed by PATIENT-1 and is the club of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>BRIDGE-1 | Ferencvárosi_TC</entity>
+				<entity>PATIENT-1 | Thomas_Doll</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1254" size="2">
+			<originaltripleset>
+				<otriple>Akeem_Adams | team | Trinidad_and_Tobago_national_football_team</otriple>
+				<otriple>Akeem_Adams | clubs | T&amp;TEC_Sports_Club</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Adams | club | Trinidad_and_Tobago_national_football_team</mtriple>
+				<mtriple>Akeem_Adams | club | T&amp;TEC_Sports_Club</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Trinidad_and_Tobago_national_football_team</striple>
+						<striple>Akeem_Adams | club | T&amp;TEC_Sports_Club</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="Trinidad_and_Tobago_national_football_team" number="2" tag="PATIENT-1" type="description">the Trinidad and Tobago National football team</reference>
+					<reference entity="T&amp;TEC_Sports_Club" number="3" tag="PATIENT-2" type="name">T &amp; TEC Sports Club</reference>
+				</references>
+				<text>Akeem Adams plays for the Trinidad and Tobago National football team and the T&amp;TEC Sports Club.</text>
+				<template>AGENT-1 plays for PATIENT-1 and the PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Trinidad_and_Tobago_national_football_team</striple>
+						<striple>Akeem_Adams | club | T&amp;TEC_Sports_Club</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="Trinidad_and_Tobago_national_football_team" number="2" tag="PATIENT-1" type="description">the Trinidad and Tobago national football team</reference>
+					<reference entity="T&amp;TEC_Sports_Club" number="3" tag="PATIENT-2" type="description">the T &amp; TEC Sports Club</reference>
+				</references>
+				<text>Akeem Adams, who plays for the Trinidad and Tobago national football team formerly played for the T&amp;TEC Sports Club.</text>
+				<template>AGENT-1 , who plays for PATIENT-1 formerly played for PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>PATIENT-1 | Trinidad_and_Tobago_national_football_team</entity>
+				<entity>PATIENT-2 | T&amp;TEC_Sports_Club</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1255" size="2">
+			<originaltripleset>
+				<otriple>Akeem_Ayers | formerTeam | New_England_Patriots</otriple>
+				<otriple>Akeem_Ayers | draftPick | &quot;39&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Ayers | formerTeam | New_England_Patriots</mtriple>
+				<mtriple>Akeem_Ayers | draftPick | &quot;39&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+						<striple>Akeem_Ayers | formerTeam | New_England_Patriots</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="&quot;39&quot;" number="2" tag="PATIENT-2" type="name">39</reference>
+					<reference entity="Akeem_Ayers" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="New_England_Patriots" number="4" tag="PATIENT-1" type="name">New England Patriots</reference>
+				</references>
+				<text>Akeem Ayers was number 39 in the draft pick and his former team was New England Patriots.</text>
+				<template>AGENT-1 was number PATIENT-2 in the draft pick and AGENT-1 former team was PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+						<striple>Akeem_Ayers | formerTeam | New_England_Patriots</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="&quot;39&quot;" number="2" tag="PATIENT-2" type="name">39</reference>
+					<reference entity="Akeem_Ayers" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="New_England_Patriots" number="4" tag="PATIENT-1" type="description">the New England Patriots</reference>
+				</references>
+				<text>Akeem Ayers draft pick is 39 ad his former team is the New England Patriots.</text>
+				<template>AGENT-1 draft pick is PATIENT-2 ad AGENT-1 former team is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+						<striple>Akeem_Ayers | formerTeam | New_England_Patriots</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="&quot;39&quot;" number="2" tag="PATIENT-2" type="name">39</reference>
+					<reference entity="New_England_Patriots" number="3" tag="PATIENT-1" type="description">the New England Patriots</reference>
+				</references>
+				<text>Akeem Ayers was number 39 in the draft pick and was a former member of the New England Patriots.</text>
+				<template>AGENT-1 was number PATIENT-2 in the draft pick and was a former member of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Ayers</entity>
+				<entity>PATIENT-1 | New_England_Patriots</entity>
+				<entity>PATIENT-2 | &quot;39&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1256" size="2">
+			<originaltripleset>
+				<otriple>Akeem_Ayers | formerTeam | Tennessee_Titans</otriple>
+				<otriple>Akeem_Ayers | draftPick | &quot;39&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Ayers | formerTeam | Tennessee_Titans</mtriple>
+				<mtriple>Akeem_Ayers | draftPick | &quot;39&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | Tennessee_Titans</striple>
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers '</reference>
+					<reference entity="Tennessee_Titans" number="2" tag="PATIENT-1" type="name">Tennessee Titans</reference>
+					<reference entity="Akeem_Ayers" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;39&quot;" number="4" tag="PATIENT-2" type="name">number 39</reference>
+				</references>
+				<text>Akeem Ayers' former team was Tennessee Titans and he was number 39 in the draft pick.</text>
+				<template>AGENT-1 former team was PATIENT-1 and AGENT-1 was PATIENT-2 in the draft pick .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | Tennessee_Titans</striple>
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="Tennessee_Titans" number="2" tag="PATIENT-1" type="name">Tennessee Titans</reference>
+					<reference entity="Akeem_Ayers" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;39&quot;" number="4" tag="PATIENT-2" type="name">number 39</reference>
+				</references>
+				<text>Akeem Ayers used to play for Tennessee Titans and he was number 39 in the draft pick.</text>
+				<template>AGENT-1 used to play for PATIENT-1 and AGENT-1 was PATIENT-2 in the draft pick .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | Tennessee_Titans</striple>
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="Tennessee_Titans" number="2" tag="PATIENT-1" type="name">Tennessee Titans</reference>
+					<reference entity="&quot;39&quot;" number="3" tag="PATIENT-2" type="name">39</reference>
+				</references>
+				<text>Akeem Ayers played for Tennessee Titans and was 39 in the draft pick.</text>
+				<template>AGENT-1 played for PATIENT-1 and was PATIENT-2 in the draft pick .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Ayers</entity>
+				<entity>PATIENT-1 | Tennessee_Titans</entity>
+				<entity>PATIENT-2 | &quot;39&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1257" size="2">
+			<originaltripleset>
+				<otriple>Akeem_Dent | birthYear | &quot;1987&quot;^^xsd:gYear</otriple>
+				<otriple>Akeem_Dent | dateOfBirth | &quot;1987-09-27&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Dent | birthYear | 1987</mtriple>
+				<mtriple>Akeem_Dent | birthDate | 1987-09-27</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+						<striple>Akeem_Dent | birthYear | 1987</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="1987-09-27" number="2" tag="PATIENT-2" type="name">September 27</reference>
+					<reference entity="1987" number="3" tag="PATIENT-1" type="name">1987</reference>
+				</references>
+				<text>Akeem Dent was born September 27, 1987.</text>
+				<template>AGENT-1 was born PATIENT-2 , PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="1987-09-27" number="2" tag="PATIENT-2" type="description">the 27th September 1987</reference>
+				</references>
+				<text>Akeem Dent date of birth is the 27th September 1987.</text>
+				<template>AGENT-1 date of birth is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="1987-09-27" number="2" tag="PATIENT-2" type="name">27 September 1987</reference>
+				</references>
+				<text>Akeem Dent was born on 27 September 1987.</text>
+				<template>AGENT-1 was born on PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Dent</entity>
+				<entity>PATIENT-1 | 1987</entity>
+				<entity>PATIENT-2 | 1987-09-27</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1258" size="2">
+			<originaltripleset>
+				<otriple>Akeem_Priestley | team | Connecticut_Huskies</otriple>
+				<otriple>Akeem_Priestley | clubs | Sheikh_Russel_KC</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Priestley | club | Connecticut_Huskies</mtriple>
+				<mtriple>Akeem_Priestley | club | Sheikh_Russel_KC</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | Connecticut_Huskies</striple>
+						<striple>Akeem_Priestley | club | Sheikh_Russel_KC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley 's</reference>
+					<reference entity="Connecticut_Huskies" number="2" tag="PATIENT-1" type="description">the Connecticut Huskies</reference>
+					<reference entity="Akeem_Priestley" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Sheikh_Russel_KC" number="4" tag="PATIENT-2" type="name">Sheikh Russel KC</reference>
+				</references>
+				<text>Akeem Priestley's club is the Connecticut Huskies and he previously played for Sheikh Russel KC.</text>
+				<template>AGENT-1 club is PATIENT-1 and AGENT-1 previously played for PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | Connecticut_Huskies</striple>
+						<striple>Akeem_Priestley | club | Sheikh_Russel_KC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley</reference>
+					<reference entity="Connecticut_Huskies" number="2" tag="PATIENT-1" type="description">the Connecticut Huskies</reference>
+					<reference entity="Sheikh_Russel_KC" number="3" tag="PATIENT-2" type="name">Sheikh Russel KC</reference>
+				</references>
+				<text>Akeem Priestley plays for the Connecticut Huskies, having previously played for Sheikh Russel KC.</text>
+				<template>AGENT-1 plays for PATIENT-1 , having previously played for PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | Connecticut_Huskies</striple>
+						<striple>Akeem_Priestley | club | Sheikh_Russel_KC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley</reference>
+					<reference entity="Connecticut_Huskies" number="2" tag="PATIENT-1" type="description">the Connecticut Huskies</reference>
+					<reference entity="Sheikh_Russel_KC" number="3" tag="PATIENT-2" type="name">Sheikh Russel KC</reference>
+				</references>
+				<text>Akeem Priestley plays for the Connecticut Huskies and formerly played for Sheikh Russel KC.</text>
+				<template>AGENT-1 plays for PATIENT-1 and formerly played for PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Priestley</entity>
+				<entity>PATIENT-1 | Connecticut_Huskies</entity>
+				<entity>PATIENT-2 | Sheikh_Russel_KC</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1259" size="2">
+			<originaltripleset>
+				<otriple>Akeem_Priestley | team | RoPS</otriple>
+				<otriple>Akeem_Priestley | clubs | Sheikh_Russel_KC</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Priestley | club | RoPS</mtriple>
+				<mtriple>Akeem_Priestley | club | Sheikh_Russel_KC</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | RoPS</striple>
+						<striple>Akeem_Priestley | club | Sheikh_Russel_KC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley’s</reference>
+					<reference entity="RoPS" number="2" tag="PATIENT-1" type="name">RoPS</reference>
+					<reference entity="Akeem_Priestley" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Sheikh_Russel_KC" number="4" tag="PATIENT-2" type="name">Sheikh Russel KC</reference>
+				</references>
+				<text>Akeem Priestley’s club is RoPS and he played for Sheikh Russel KC.</text>
+				<template>AGENT-1 club is PATIENT-1 and AGENT-1 played for PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | Sheikh_Russel_KC</striple>
+						<striple>Akeem_Priestley | club | RoPS</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley</reference>
+					<reference entity="Sheikh_Russel_KC" number="2" tag="PATIENT-2" type="name">Sheikh Russel KC</reference>
+					<reference entity="RoPS" number="3" tag="PATIENT-1" type="name">RoPS</reference>
+				</references>
+				<text>Akeem Priestley plays for Sheikh Russel KC and formerly for RoPS.</text>
+				<template>AGENT-1 plays for PATIENT-2 and formerly for PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | RoPS</striple>
+						<striple>Akeem_Priestley | club | Sheikh_Russel_KC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley</reference>
+					<reference entity="RoPS" number="2" tag="PATIENT-1" type="name">RoPS</reference>
+					<reference entity="Sheikh_Russel_KC" number="3" tag="PATIENT-2" type="name">Sheikh Russel KC</reference>
+				</references>
+				<text>Akeem Priestley played for the clubs RoPS and Sheikh Russel KC.</text>
+				<template>AGENT-1 played for the clubs PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Priestley</entity>
+				<entity>PATIENT-1 | RoPS</entity>
+				<entity>PATIENT-2 | Sheikh_Russel_KC</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1260" size="2">
+			<originaltripleset>
+				<otriple>Alaa_Abdul-Zahra | team | Al-Khor_Sports_Club</otriple>
+				<otriple>Al-Khor_Sports_Club | ground | Al_Khor</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alaa_Abdul-Zahra | club | Al-Khor_Sports_Club</mtriple>
+				<mtriple>Al-Khor_Sports_Club | ground | Al_Khor</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al-Khor_Sports_Club</striple>
+						<striple>Al-Khor_Sports_Club | ground | Al_Khor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al-Khor_Sports_Club" number="2" tag="BRIDGE-1" type="name">Al-Khor Sports Club</reference>
+					<reference entity="Al_Khor" number="3" tag="PATIENT-1" type="name">Al-Khor</reference>
+				</references>
+				<text>Alaa Abdul Zahra plays for Al-Khor Sports Club located in Al-Khor.</text>
+				<template>AGENT-1 plays for BRIDGE-1 located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al-Khor_Sports_Club</striple>
+						<striple>Al-Khor_Sports_Club | ground | Al_Khor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul -Zahra</reference>
+					<reference entity="Al-Khor_Sports_Club" number="2" tag="BRIDGE-1" type="name">Al-Khor Sports Club</reference>
+					<reference entity="Al_Khor" number="3" tag="PATIENT-1" type="name">Al-Khor</reference>
+				</references>
+				<text>Alaa Abdul -Zahra has played for Al-Khor Sports Club, located in Al-Khor.</text>
+				<template>AGENT-1 has played for BRIDGE-1 , located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al-Khor_Sports_Club</striple>
+						<striple>Al-Khor_Sports_Club | ground | Al_Khor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al-Khor_Sports_Club" number="2" tag="BRIDGE-1" type="description">the Al-Khor Sports Club</reference>
+					<reference entity="Al_Khor" number="3" tag="PATIENT-1" type="name">Al-Khor</reference>
+				</references>
+				<text>Alaa Abdul Zahra plays for the Al-Khor Sports Club, located in Al-Khor.</text>
+				<template>AGENT-1 plays for BRIDGE-1 , located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alaa_Abdul-Zahra</entity>
+				<entity>BRIDGE-1 | Al-Khor_Sports_Club</entity>
+				<entity>PATIENT-1 | Al_Khor</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1261" size="2">
+			<originaltripleset>
+				<otriple>Alaa_Abdul-Zahra | clubs | Al_Kharaitiyat_SC</otriple>
+				<otriple>Al_Kharaitiyat_SC | manager | Amar_Osim</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</mtriple>
+				<mtriple>Al_Kharaitiyat_SC | manager | Amar_Osim</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra 's</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="2" tag="BRIDGE-1" type="name">AL Kharaitiyat SC</reference>
+					<reference entity="Amar_Osim" number="3" tag="PATIENT-1" type="name">Amar Osim</reference>
+				</references>
+				<text>Alaa Abdul Zahra's club is AL Kharaitiyat SC managed by Amar Osim.</text>
+				<template>AGENT-1 club is BRIDGE-1 managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="2" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Amar_Osim" number="3" tag="PATIENT-1" type="name">Amar Osim</reference>
+				</references>
+				<text>Alaa Abdul Zahra plays for Al Kharaitiyat SC managed by Amar Osim.</text>
+				<template>AGENT-1 plays for BRIDGE-1 managed by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alaa_Abdul-Zahra</entity>
+				<entity>BRIDGE-1 | Al_Kharaitiyat_SC</entity>
+				<entity>PATIENT-1 | Amar_Osim</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1262" size="2">
+			<originaltripleset>
+				<otriple>Alan_Martin_(footballer,_born_1989) | team | Hamilton_Academical_F.C.</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | clubs | Leeds_United_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</mtriple>
+				<mtriple>Alan_Martin_(footballer) | club | Leeds_United_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Leeds_United_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="description">the footballer Alan Martin</reference>
+					<reference entity="Hamilton_Academical_F.C." number="2" tag="PATIENT-1" type="name">Hamilton Academicals FC</reference>
+					<reference entity="Leeds_United_F.C." number="3" tag="PATIENT-2" type="name">Leeds United FC</reference>
+				</references>
+				<text>Former clubs of the footballer Alan Martin include Hamilton Academicals FC and Leeds United FC.</text>
+				<template>Former clubs of AGENT-1 include PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Leeds_United_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan Martin</reference>
+					<reference entity="Hamilton_Academical_F.C." number="2" tag="PATIENT-1" type="name">Hamilton Academical F.C</reference>
+					<reference entity="Leeds_United_F.C." number="3" tag="PATIENT-2" type="name">Leeds United F.C</reference>
+				</references>
+				<text>Alan Martin plays football for Hamilton Academical F.C and Leeds United F.C.</text>
+				<template>AGENT-1 plays football for PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Leeds_United_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan Martin</reference>
+					<reference entity="Hamilton_Academical_F.C." number="2" tag="PATIENT-1" type="name">Hamilton Academical</reference>
+					<reference entity="Leeds_United_F.C." number="3" tag="PATIENT-2" type="name">Leeds United football</reference>
+				</references>
+				<text>Alan Martin is a footballer who plays for Hamilton Academical and Leeds United football clubs.</text>
+				<template>AGENT-1 is a footballer who plays for PATIENT-1 and PATIENT-2 clubs .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Martin_(footballer)</entity>
+				<entity>PATIENT-1 | Hamilton_Academical_F.C.</entity>
+				<entity>PATIENT-2 | Leeds_United_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1263" size="2">
+			<originaltripleset>
+				<otriple>Alan_Martin_(footballer,_born_1989) | team | Hamilton_Academical_F.C.</otriple>
+				<otriple>Hamilton_Academical_F.C. | ground | New_Douglas_Park</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</mtriple>
+				<mtriple>Hamilton_Academical_F.C. | ground | New_Douglas_Park</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Hamilton_Academical_F.C. | ground | New_Douglas_Park</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan Martin</reference>
+					<reference entity="Hamilton_Academical_F.C." number="2" tag="BRIDGE-1" type="name">Hamilton Academicals FC</reference>
+					<reference entity="Hamilton_Academical_F.C." number="3" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="New_Douglas_Park" number="4" tag="PATIENT-1" type="name">New Douglas Park</reference>
+				</references>
+				<text>Alan Martin once played for Hamilton Academicals FC, which plays their home games at New Douglas Park.</text>
+				<template>AGENT-1 once played for BRIDGE-1 , which plays BRIDGE-1 home games at PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Hamilton_Academical_F.C. | ground | New_Douglas_Park</striple>
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Hamilton_Academical_F.C." number="1" tag="BRIDGE-1" type="name">Hamilton Academical FC 's</reference>
+					<reference entity="New_Douglas_Park" number="2" tag="PATIENT-1" type="name">New Douglas Park</reference>
+					<reference entity="Alan_Martin_(footballer)" number="3" tag="AGENT-1" type="name">Alan Martin</reference>
+				</references>
+				<text>Hamilton Academical FC's ground is New Douglas Park and is the club of Alan Martin.</text>
+				<template>BRIDGE-1 ground is PATIENT-1 and is the club of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Hamilton_Academical_F.C. | ground | New_Douglas_Park</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan Martin</reference>
+					<reference entity="Hamilton_Academical_F.C." number="2" tag="BRIDGE-1" type="name">Hamilton Academical F.C .</reference>
+					<reference entity="New_Douglas_Park" number="3" tag="PATIENT-1" type="name">New Douglas Park</reference>
+				</references>
+				<text>Alan Martin played for Hamilton Academical F.C. at New Douglas Park.</text>
+				<template>AGENT-1 played for BRIDGE-1 at PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Martin_(footballer)</entity>
+				<entity>BRIDGE-1 | Hamilton_Academical_F.C.</entity>
+				<entity>PATIENT-1 | New_Douglas_Park</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1264" size="2">
+			<originaltripleset>
+				<otriple>Aleksander_Barkov,_Jr. | team | Florida_Panthers</otriple>
+				<otriple>Aleksander_Barkov,_Jr. | dateOfBirth | &quot;1995-09-02&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</mtriple>
+				<mtriple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov</reference>
+					<reference entity="1995-09-02" number="2" tag="PATIENT-2" type="name">2 September 1995</reference>
+					<reference entity="Florida_Panthers" number="3" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Aleksander Barkov was born on 2 September 1995 and plays for the Florida Panthers.</text>
+				<template>AGENT-1 was born on PATIENT-2 and plays for PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov Jr.</reference>
+					<reference entity="1995-09-02" number="2" tag="PATIENT-2" type="description">the 2nd September 1995</reference>
+					<reference entity="Florida_Panthers" number="3" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Aleksander Barkov Jr. was born on the 2nd September 1995 and plays for the Florida Panthers.</text>
+				<template>AGENT-1 was born on PATIENT-2 and plays for PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1995-09-02" number="1" tag="PATIENT-2" type="name">2nd September 1995</reference>
+					<reference entity="Aleksander_Barkov,_Jr." number="2" tag="AGENT-1" type="name">Aleksander Barkov Jr</reference>
+					<reference entity="Florida_Panthers" number="3" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Born on 2nd September 1995, Aleksander Barkov Jr plays for the Florida Panthers.</text>
+				<template>Born on PATIENT-2 , AGENT-1 plays for PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksander_Barkov,_Jr.</entity>
+				<entity>PATIENT-1 | Florida_Panthers</entity>
+				<entity>PATIENT-2 | 1995-09-02</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1265" size="2">
+			<originaltripleset>
+				<otriple>Aleksander_Barkov,_Jr. | team | Florida_Panthers</otriple>
+				<otriple>Aleksander_Barkov,_Jr. | placeOfBirth | &quot;Tampere, Finland&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</mtriple>
+				<mtriple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov Jr .</reference>
+					<reference entity="&quot;Tampere, Finland&quot;" number="2" tag="PATIENT-2" type="name">Tampere , Finland</reference>
+					<reference entity="Florida_Panthers" number="3" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Aleksander Barkov Jr . was born in Tampere, Finland and played with the Florida Panthers.</text>
+				<template>AGENT-1 was born in PATIENT-2 and played with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov Jr</reference>
+					<reference entity="&quot;Tampere, Finland&quot;" number="2" tag="PATIENT-2" type="name">Tampere Finland</reference>
+					<reference entity="Florida_Panthers" number="3" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Aleksander Barkov Jr was born in Tampere Finland and plays for the Florida Panthers.</text>
+				<template>AGENT-1 was born in PATIENT-2 and plays for PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Tampere, Finland&quot;" number="1" tag="PATIENT-2" type="name">Tampere</reference>
+					<reference entity="Aleksander_Barkov,_Jr." number="2" tag="AGENT-1" type="name">Finland , Aleksander Barkov Jr</reference>
+					<reference entity="Florida_Panthers" number="3" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Born in Tampere, Finland, Aleksander Barkov Jr played for the Florida Panthers.</text>
+				<template>Born in PATIENT-2 , AGENT-1 played for PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksander_Barkov,_Jr.</entity>
+				<entity>PATIENT-1 | Florida_Panthers</entity>
+				<entity>PATIENT-2 | &quot;Tampere, Finland&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1266" size="2">
+			<originaltripleset>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+				<otriple>Aleksandr_Chumakov | team | FC_Torpedo_Moscow</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</mtriple>
+				<mtriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="2" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="3" tag="PATIENT-1" type="name">Valery Petrakov</reference>
+				</references>
+				<text>Aleksandr Chumakov has played for the club FC Torpedo Moscow, which is managed by Valery Petrakov.</text>
+				<template>AGENT-1 has played for the club BRIDGE-1 , which is managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="FC_Torpedo_Moscow" number="1" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="2" tag="PATIENT-1" type="name">Valery Petrakov</reference>
+					<reference entity="Aleksandr_Chumakov" number="3" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+				</references>
+				<text>FC Torpedo Moscow, managed by Valery Petrakov, is a former club of Aleksandr Chumakov.</text>
+				<template>BRIDGE-1 , managed by PATIENT-1 , is a former club of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="FC_Torpedo_Moscow" number="1" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="2" tag="PATIENT-1" type="name">Valery Petrakov</reference>
+					<reference entity="Aleksandr_Chumakov" number="3" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+				</references>
+				<text>FC Torpedo Moscow, managed by Valery Petrakov, is the former club of Aleksandr Chumakov.</text>
+				<template>BRIDGE-1 , managed by PATIENT-1 , is the former club of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | FC_Torpedo_Moscow</entity>
+				<entity>PATIENT-1 | Valery_Petrakov</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1267" size="2">
+			<originaltripleset>
+				<otriple>Aleksandr_Prudnikov | team | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Kuban_Krasnodar</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov 's</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="PATIENT-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="4" tag="PATIENT-2" type="name">FC Kuban Krasnodar</reference>
+				</references>
+				<text>Aleksandr Prudnikov's club is FC Spartak Moscow and he also plays for the FC Kuban Krasnodar club.</text>
+				<template>AGENT-1 club is PATIENT-1 and AGENT-1 also plays for the PATIENT-2 club .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="PATIENT-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="3" tag="PATIENT-2" type="name">FC Kuban Krasnodar</reference>
+				</references>
+				<text>Former clubs of Aleksandr Prudnikov include FC Spartak Moscow and FC Kuban Krasnodar.</text>
+				<template>Former clubs of AGENT-1 include PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="PATIENT-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="3" tag="PATIENT-2" type="name">FC Kuban Krasnodar</reference>
+				</references>
+				<text>Aleksandr Prudnikov has played for FC Spartak Moscow and FC Kuban Krasnodar.</text>
+				<template>AGENT-1 has played for PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>PATIENT-1 | FC_Spartak_Moscow</entity>
+				<entity>PATIENT-2 | FC_Kuban_Krasnodar</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1268" size="2">
+			<originaltripleset>
+				<otriple>Aleksandr_Prudnikov | team | FC_Tom_Tomsk</otriple>
+				<otriple>FC_Tom_Tomsk | league | Russian_Football_National_League</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</mtriple>
+				<mtriple>FC_Tom_Tomsk | league | Russian_Football_National_League</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</striple>
+						<striple>FC_Tom_Tomsk | league | Russian_Football_National_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudinov</reference>
+					<reference entity="FC_Tom_Tomsk" number="2" tag="BRIDGE-1" type="name">FC Tom Tomsk</reference>
+					<reference entity="Russian_Football_National_League" number="3" tag="PATIENT-1" type="description">the Russian National Football League</reference>
+				</references>
+				<text>Aleksandr Prudinov plays for FC Tom Tomsk, which plays in the Russian National Football League.</text>
+				<template>AGENT-1 plays for BRIDGE-1 , which plays in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</striple>
+						<striple>FC_Tom_Tomsk | league | Russian_Football_National_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Tom_Tomsk" number="2" tag="BRIDGE-1" type="name">FC Tom Tomsk</reference>
+					<reference entity="Russian_Football_National_League" number="3" tag="PATIENT-1" type="description">the Russian Football National league</reference>
+				</references>
+				<text>Aleksandr Prudnikov plays for FC Tom Tomsk which plays in the Russian Football National league.</text>
+				<template>AGENT-1 plays for BRIDGE-1 which plays in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</striple>
+						<striple>FC_Tom_Tomsk | league | Russian_Football_National_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Tom_Tomsk" number="2" tag="BRIDGE-1" type="description">the FC Tom Tomsk</reference>
+					<reference entity="Russian_Football_National_League" number="3" tag="PATIENT-1" type="description">the Russian Football National League</reference>
+				</references>
+				<text>Aleksandr Prudnikov is with the FC Tom Tomsk which is in the Russian Football National League.</text>
+				<template>AGENT-1 is with BRIDGE-1 which is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Tom_Tomsk</entity>
+				<entity>PATIENT-1 | Russian_Football_National_League</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1269" size="2">
+			<originaltripleset>
+				<otriple>Aleksandre_Guruli | team | FC_Karpaty_Lviv</otriple>
+				<otriple>Aleksandre_Guruli | clubs | FC_Dinamo_Batumi</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</mtriple>
+				<mtriple>Aleksandre_Guruli | club | FC_Dinamo_Batumi</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+						<striple>Aleksandre_Guruli | club | FC_Dinamo_Batumi</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="FC_Karpaty_Lviv" number="2" tag="PATIENT-1" type="name">FC Karpaty Lviv</reference>
+					<reference entity="FC_Dinamo_Batumi" number="3" tag="PATIENT-2" type="name">FC Dinamo Batumi</reference>
+				</references>
+				<text>Aleksandre Guruli played for FC Karpaty Lviv and FC Dinamo Batumi.</text>
+				<template>AGENT-1 played for PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+						<striple>Aleksandre_Guruli | club | FC_Dinamo_Batumi</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli 's</reference>
+					<reference entity="FC_Karpaty_Lviv" number="2" tag="PATIENT-1" type="name">FC Karpaty Lviv</reference>
+					<reference entity="Aleksandre_Guruli" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="FC_Dinamo_Batumi" number="4" tag="PATIENT-2" type="name">FC Dinamo Batumi</reference>
+				</references>
+				<text>Aleksandre Guruli's club is FC Karpaty Lviv and he also played for FC Dinamo Batumi.</text>
+				<template>AGENT-1 club is PATIENT-1 and AGENT-1 also played for PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+						<striple>Aleksandre_Guruli | club | FC_Dinamo_Batumi</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="FC_Karpaty_Lviv" number="2" tag="PATIENT-1" type="name">FC Karpaty Lviv club</reference>
+					<reference entity="FC_Dinamo_Batumi" number="3" tag="PATIENT-2" type="name">FC Dinamo Batumi</reference>
+				</references>
+				<text>Aleksandre Guruli plays for FC Karpaty Lviv club and FC Dinamo Batumi.</text>
+				<template>AGENT-1 plays for PATIENT-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandre_Guruli</entity>
+				<entity>PATIENT-1 | FC_Karpaty_Lviv</entity>
+				<entity>PATIENT-2 | FC_Dinamo_Batumi</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1270" size="2">
+			<originaltripleset>
+				<otriple>Alex_Plante | birthYear | &quot;1989&quot;^^xsd:gYear</otriple>
+				<otriple>Alex_Plante | placeOfBirth | Manitoba</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Plante | birthYear | 1989</mtriple>
+				<mtriple>Alex_Plante | birthPlace | Manitoba</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthYear | 1989</striple>
+						<striple>Alex_Plante | birthPlace | Manitoba</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="1989" number="2" tag="PATIENT-1" type="name">1989</reference>
+					<reference entity="Manitoba" number="3" tag="PATIENT-2" type="name">Manitoba</reference>
+				</references>
+				<text>Alex Plante was born in 1989 in Manitoba.</text>
+				<template>AGENT-1 was born in PATIENT-1 in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthPlace | Manitoba</striple>
+						<striple>Alex_Plante | birthYear | 1989</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Manitoba" number="2" tag="PATIENT-2" type="name">Manitoba</reference>
+					<reference entity="1989" number="3" tag="PATIENT-1" type="name">1989</reference>
+				</references>
+				<text>Alex Plante was born in Manitoba in 1989.</text>
+				<template>AGENT-1 was born in PATIENT-2 in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Plante</entity>
+				<entity>PATIENT-1 | 1989</entity>
+				<entity>PATIENT-2 | Manitoba</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1271" size="2">
+			<originaltripleset>
+				<otriple>Alex_Tyus | team | Pallacanestro_Cantù</otriple>
+				<otriple>Alex_Tyus | dateOfBirth | &quot;1988-01-08&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Tyus | club | Pallacanestro_Cantù</mtriple>
+				<mtriple>Alex_Tyus | birthDate | 1988-01-08</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | birthDate | 1988-01-08</striple>
+						<striple>Alex_Tyus | club | Pallacanestro_Cantù</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="1988-01-08" number="2" tag="PATIENT-2" type="description">the 8th January 1988</reference>
+					<reference entity="Pallacanestro_Cantù" number="3" tag="PATIENT-1" type="name">Pallacanestro Cantu</reference>
+				</references>
+				<text>Alex Tyus was born on the 8th January 1988 and plays for the club Pallacanestro Cantu.</text>
+				<template>AGENT-1 was born on PATIENT-2 and plays for the club PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | birthDate | 1988-01-08</striple>
+						<striple>Alex_Tyus | club | Pallacanestro_Cantù</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1988-01-08" number="1" tag="PATIENT-2" type="name">January 8th 1988</reference>
+					<reference entity="Alex_Tyus" number="2" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Pallacanestro_Cantù" number="3" tag="PATIENT-1" type="name">Pallacanestro Cantu</reference>
+				</references>
+				<text>Born on January 8th 1988, Alex Tyus plays for the club Pallacanestro Cantu.</text>
+				<template>Born on PATIENT-2 , AGENT-1 plays for the club PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | birthDate | 1988-01-08</striple>
+						<striple>Alex_Tyus | club | Pallacanestro_Cantù</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="1988-01-08" number="2" tag="PATIENT-2" type="description">the 8th January 1988</reference>
+					<reference entity="Alex_Tyus" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Pallacanestro_Cantù" number="4" tag="PATIENT-1" type="name">Pallacanestro Cantu</reference>
+				</references>
+				<text>Alex Tyus was born on the 8th January 1988 and his club is Pallacanestro Cantu.</text>
+				<template>AGENT-1 was born on PATIENT-2 and AGENT-1 club is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Tyus</entity>
+				<entity>PATIENT-1 | Pallacanestro_Cantù</entity>
+				<entity>PATIENT-2 | 1988-01-08</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1272" size="2">
+			<originaltripleset>
+				<otriple>Alex_Tyus | league | Turkish_Basketball_Super_League</otriple>
+				<otriple>Alex_Tyus | team | Maccabi_Tel_Aviv_B.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Tyus | league | Turkish_Basketball_Super_League</mtriple>
+				<mtriple>Alex_Tyus | club | Maccabi_Tel_Aviv_B.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | club | Maccabi_Tel_Aviv_B.C.</striple>
+						<striple>Alex_Tyus | league | Turkish_Basketball_Super_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Maccabi_Tel_Aviv_B.C." number="2" tag="PATIENT-2" type="name">Maccabi Tel Aviv B.C</reference>
+					<reference entity="Turkish_Basketball_Super_League" number="3" tag="PATIENT-1" type="description">the Turkish Basketball Super league</reference>
+				</references>
+				<text>Alex Tyus plays for the club, Maccabi Tel Aviv B.C which is in the Turkish Basketball Super league.</text>
+				<template>AGENT-1 plays for the club , PATIENT-2 which is in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | league | Turkish_Basketball_Super_League</striple>
+						<striple>Alex_Tyus | club | Maccabi_Tel_Aviv_B.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Turkish_Basketball_Super_League" number="2" tag="PATIENT-1" type="description">the Turkish Basketball Super League</reference>
+					<reference entity="Maccabi_Tel_Aviv_B.C." number="3" tag="PATIENT-2" type="name">Maccabi Tel Aviv BC</reference>
+				</references>
+				<text>Alex Tyus has played in the Turkish Basketball Super League and has also represented the club Maccabi Tel Aviv BC.</text>
+				<template>AGENT-1 has played in PATIENT-1 and has also represented the club PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | club | Maccabi_Tel_Aviv_B.C.</striple>
+						<striple>Alex_Tyus | league | Turkish_Basketball_Super_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Maccabi_Tel_Aviv_B.C." number="2" tag="PATIENT-2" type="name">Maccabi Tel Aviv B.C .</reference>
+					<reference entity="Turkish_Basketball_Super_League" number="3" tag="PATIENT-1" type="description">the Turkish Basketball Super League</reference>
+				</references>
+				<text>Alex Tyus plays for Maccabi Tel Aviv B.C. in the Turkish Basketball Super League.</text>
+				<template>AGENT-1 plays for PATIENT-2 in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Tyus</entity>
+				<entity>PATIENT-1 | Turkish_Basketball_Super_League</entity>
+				<entity>PATIENT-2 | Maccabi_Tel_Aviv_B.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1273" size="2">
+			<originaltripleset>
+				<otriple>Brandon,_Manitoba | leaderName | Conservative_Party_of_Canada</otriple>
+				<otriple>Alex_Plante | placeOfBirth | Brandon,_Manitoba</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Brandon,_Manitoba | leaderName | Conservative_Party_of_Canada</mtriple>
+				<mtriple>Alex_Plante | birthPlace | Brandon,_Manitoba</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthPlace | Brandon,_Manitoba</striple>
+						<striple>Brandon,_Manitoba | leaderName | Conservative_Party_of_Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Brandon,_Manitoba" number="2" tag="BRIDGE-1" type="name">Brandon , Manitoba</reference>
+					<reference entity="Conservative_Party_of_Canada" number="3" tag="PATIENT-1" type="description">the Conservative Party of Canada</reference>
+				</references>
+				<text>Alex Plante was born in Brandon, Manitoba, which is led by the Conservative Party of Canada.</text>
+				<template>AGENT-1 was born in BRIDGE-1 , which is led by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Brandon,_Manitoba | leaderName | Conservative_Party_of_Canada</striple>
+						<striple>Alex_Plante | birthPlace | Brandon,_Manitoba</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Conservative_Party_of_Canada" number="1" tag="PATIENT-1" type="description">The Conservative Party of Canada</reference>
+					<reference entity="Brandon,_Manitoba" number="2" tag="BRIDGE-1" type="name">Brandon , Manitoba</reference>
+					<reference entity="Alex_Plante" number="3" tag="AGENT-1" type="name">Alex Plante</reference>
+				</references>
+				<text>The Conservative Party of Canada is the leader of Brandon, Manitoba, where Alex Plante was born.</text>
+				<template>PATIENT-1 is the leader of BRIDGE-1 , where AGENT-1 was born .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthPlace | Brandon,_Manitoba</striple>
+						<striple>Brandon,_Manitoba | leaderName | Conservative_Party_of_Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante 's</reference>
+					<reference entity="Brandon,_Manitoba" number="2" tag="BRIDGE-1" type="name">Brandon , Manitoba</reference>
+					<reference entity="Conservative_Party_of_Canada" number="3" tag="PATIENT-1" type="description">the Conservative Party of Canada</reference>
+				</references>
+				<text>Alex Plante's birth place is Brandon, Manitoba where the leader is the Conservative Party of Canada.</text>
+				<template>AGENT-1 birth place is BRIDGE-1 where the leader is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Plante</entity>
+				<entity>BRIDGE-1 | Brandon,_Manitoba</entity>
+				<entity>PATIENT-1 | Conservative_Party_of_Canada</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1274" size="2">
+			<originaltripleset>
+				<otriple>Canada | anthem | O_Canada</otriple>
+				<otriple>Adam_McQuaid | placeOfBirth | Canada</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Canada | anthem | O_Canada</mtriple>
+				<mtriple>Adam_McQuaid | birthPlace | Canada</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | birthPlace | Canada</striple>
+						<striple>Canada | anthem | O_Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_McQuaid" number="1" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="O_Canada" number="3" tag="PATIENT-1" type="name">O Canada</reference>
+				</references>
+				<text>Adam McQuaid was born in Canada where the national anthem is O Canada.</text>
+				<template>AGENT-1 was born in BRIDGE-1 where the national anthem is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | birthPlace | Canada</striple>
+						<striple>Canada | anthem | O_Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_McQuaid" number="1" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="O_Canada" number="3" tag="PATIENT-1" type="name">O Canada</reference>
+				</references>
+				<text>Adam McQuaid came from Canada whose anthem is O Canada.</text>
+				<template>AGENT-1 came from BRIDGE-1 whose anthem is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | birthPlace | Canada</striple>
+						<striple>Canada | anthem | O_Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Canada" number="1" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Adam_McQuaid" number="2" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="Canada" number="3" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="O_Canada" number="4" tag="PATIENT-1" type="name">O Canada</reference>
+				</references>
+				<text>Canada is the birthplace of Adam McQuaid and their national anthem is O Canada.</text>
+				<template>BRIDGE-1 is the birthplace of AGENT-1 and BRIDGE-1 national anthem is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_McQuaid</entity>
+				<entity>BRIDGE-1 | Canada</entity>
+				<entity>PATIENT-1 | O_Canada</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1275" size="2">
+			<originaltripleset>
+				<otriple>Canada | language | English_language</otriple>
+				<otriple>Adam_McQuaid | placeOfBirth | Canada</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Canada | language | English_language</mtriple>
+				<mtriple>Adam_McQuaid | birthPlace | Canada</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | birthPlace | Canada</striple>
+						<striple>Canada | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_McQuaid" number="1" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="English_language" number="3" tag="PATIENT-1" type="description">the English language</reference>
+				</references>
+				<text>Adam McQuaid was born in Canada where the English language is spoken.</text>
+				<template>AGENT-1 was born in BRIDGE-1 where PATIENT-1 is spoken .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Canada | language | English_language</striple>
+						<striple>Adam_McQuaid | birthPlace | Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="English_language" number="1" tag="PATIENT-1" type="description">The English language</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Adam_McQuaid" number="3" tag="AGENT-1" type="name">Adam McQuaid</reference>
+				</references>
+				<text>The English language is spoken in Canada which is the birthplace of Adam McQuaid.</text>
+				<template>PATIENT-1 is spoken in BRIDGE-1 which is the birthplace of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_McQuaid</entity>
+				<entity>BRIDGE-1 | Canada</entity>
+				<entity>PATIENT-1 | English_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1276" size="2">
+			<originaltripleset>
+				<otriple>FC_Dinamo_Batumi | manager | Levan_Khomeriki</otriple>
+				<otriple>Aleksandre_Guruli | clubs | FC_Dinamo_Batumi</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Dinamo_Batumi | manager | Levan_Khomeriki</mtriple>
+				<mtriple>Aleksandre_Guruli | club | FC_Dinamo_Batumi</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | FC_Dinamo_Batumi</striple>
+						<striple>FC_Dinamo_Batumi | manager | Levan_Khomeriki</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="FC_Dinamo_Batumi" number="2" tag="BRIDGE-1" type="name">FC Dinamo Batumi</reference>
+					<reference entity="Levan_Khomeriki" number="3" tag="PATIENT-1" type="name">Levan Khomeriki</reference>
+				</references>
+				<text>Aleksandre Guruli played for FC Dinamo Batumi managed by Levan Khomeriki.</text>
+				<template>AGENT-1 played for BRIDGE-1 managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | FC_Dinamo_Batumi</striple>
+						<striple>FC_Dinamo_Batumi | manager | Levan_Khomeriki</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="FC_Dinamo_Batumi" number="2" tag="BRIDGE-1" type="name">FC Dinamo Batumi</reference>
+					<reference entity="Levan_Khomeriki" number="3" tag="PATIENT-1" type="name">Levan Khomeriki</reference>
+				</references>
+				<text>Aleksandre Guruli plays for FC Dinamo Batumi managed by Levan Khomeriki.</text>
+				<template>AGENT-1 plays for BRIDGE-1 managed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | FC_Dinamo_Batumi</striple>
+						<striple>FC_Dinamo_Batumi | manager | Levan_Khomeriki</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="FC_Dinamo_Batumi" number="2" tag="BRIDGE-1" type="name">FC Dinamo Batumi</reference>
+					<reference entity="Levan_Khomeriki" number="3" tag="PATIENT-1" type="name">Levan Khomeriki</reference>
+				</references>
+				<text>Aleksandre Guruli played for FC Dinamo Batumi, managed by Levan Khomeriki.</text>
+				<template>AGENT-1 played for BRIDGE-1 , managed by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandre_Guruli</entity>
+				<entity>BRIDGE-1 | FC_Dinamo_Batumi</entity>
+				<entity>PATIENT-1 | Levan_Khomeriki</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1277" size="2">
+			<originaltripleset>
+				<otriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Spartak_Moscow</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="BRIDGE-1" type="description">the Spartak Moscow FC</reference>
+					<reference entity="Otkrytiye_Arena" number="3" tag="PATIENT-1" type="description">the Otkrytiye Arena</reference>
+				</references>
+				<text>Aleksandr Prudnikov played with the Spartak Moscow FC whose playing ground is the Otkrytiye Arena.</text>
+				<template>AGENT-1 played with BRIDGE-1 whose playing ground is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Otkrytiye_Arena" number="3" tag="PATIENT-1" type="description">the Otkrytiye Arena</reference>
+				</references>
+				<text>Aleksandr Prudnikov plays for FC Spartak Moscow at the Otkrytiye Arena.</text>
+				<template>AGENT-1 plays for BRIDGE-1 at PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Spartak_Moscow</entity>
+				<entity>PATIENT-1 | Otkrytiye_Arena</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1278" size="2">
+			<originaltripleset>
+				<otriple>RoPS | league | Veikkausliiga</otriple>
+				<otriple>Akeem_Priestley | clubs | RoPS</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>RoPS | league | Veikkausliiga</mtriple>
+				<mtriple>Akeem_Priestley | club | RoPS</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | RoPS</striple>
+						<striple>RoPS | league | Veikkausliiga</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley’s</reference>
+					<reference entity="RoPS" number="2" tag="BRIDGE-1" type="name">RoPS</reference>
+					<reference entity="Veikkausliiga" number="3" tag="PATIENT-1" type="description">the Veikkausliiga</reference>
+				</references>
+				<text>Akeem Priestley’s club is RoPS which plays in the Veikkausliiga.</text>
+				<template>AGENT-1 club is BRIDGE-1 which plays in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | RoPS</striple>
+						<striple>RoPS | league | Veikkausliiga</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley</reference>
+					<reference entity="RoPS" number="2" tag="BRIDGE-1" type="name">RoPS</reference>
+					<reference entity="Veikkausliiga" number="3" tag="PATIENT-1" type="name">Veikkausliiga</reference>
+				</references>
+				<text>Akeem Priestley plays for the club RoPS in the Veikkausliiga league.</text>
+				<template>AGENT-1 plays for the club BRIDGE-1 in the PATIENT-1 league .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Priestley | club | RoPS</striple>
+						<striple>RoPS | league | Veikkausliiga</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Priestley" number="1" tag="AGENT-1" type="name">Akeem Priestley</reference>
+					<reference entity="RoPS" number="2" tag="BRIDGE-1" type="name">RoPS</reference>
+					<reference entity="Veikkausliiga" number="3" tag="PATIENT-1" type="description">the Veikkausliiga</reference>
+				</references>
+				<text>Akeem Priestley played for club RoPS in the Veikkausliiga.</text>
+				<template>AGENT-1 played for club BRIDGE-1 in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Priestley</entity>
+				<entity>BRIDGE-1 | RoPS</entity>
+				<entity>PATIENT-1 | Veikkausliiga</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1279" size="2">
+			<originaltripleset>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</otriple>
+				<otriple>Akeem_Adams | clubs | United_Petrotrin_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</mtriple>
+				<mtriple>Akeem_Adams | club | United_Petrotrin_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="United_Petrotrin_F.C." number="2" tag="BRIDGE-1" type="name">United Petrotrin FC</reference>
+					<reference entity="Palo_Seco_Velodrome" number="3" tag="PATIENT-1" type="name">Palo Seco Velodrome</reference>
+				</references>
+				<text>Akeem Adams played for United Petrotrin FC whose ground is Palo Seco Velodrome.</text>
+				<template>AGENT-1 played for BRIDGE-1 whose ground is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco_Velodrome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="United_Petrotrin_F.C." number="2" tag="BRIDGE-1" type="name">United Petrotrin FC</reference>
+					<reference entity="Palo_Seco_Velodrome" number="3" tag="PATIENT-1" type="name">Palo Seco Velodrome</reference>
+				</references>
+				<text>Akeem Adams played for United Petrotrin FC, who were playing in Palo Seco Velodrome.</text>
+				<template>AGENT-1 played for BRIDGE-1 , who were playing in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>BRIDGE-1 | United_Petrotrin_F.C.</entity>
+				<entity>PATIENT-1 | Palo_Seco_Velodrome</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

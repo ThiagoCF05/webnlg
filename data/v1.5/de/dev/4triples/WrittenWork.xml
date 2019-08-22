@@ -1,0 +1,1228 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="WrittenWork" eid="Id1" size="4">
+			<originaltripleset>
+				<otriple>1634:_The_Bavarian_Crisis | previousWork | 1634:_The_Baltic_War</otriple>
+				<otriple>1634:_The_Baltic_War | author | David_Weber</otriple>
+				<otriple>1634:_The_Bavarian_Crisis | followedBy | Ring_of_Fire_II</otriple>
+				<otriple>Ring_of_Fire_II | language | English_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Bavarian_Crisis | precededBy | 1634:_The_Baltic_War</mtriple>
+				<mtriple>1634:_The_Baltic_War | author | David_Weber</mtriple>
+				<mtriple>1634:_The_Bavarian_Crisis | followedBy | Ring_of_Fire_II</mtriple>
+				<mtriple>Ring_of_Fire_II | language | English_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1634:_The_Bavarian_Crisis | precededBy | 1634:_The_Baltic_War</striple>
+						<striple>1634:_The_Baltic_War | author | David_Weber</striple>
+						<striple>1634:_The_Bavarian_Crisis | followedBy | Ring_of_Fire_II</striple>
+						<striple>Ring_of_Fire_II | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>1634: Die bayerische Krise war 1634 vorausgegangen: Der Baltische Krieg (Autor: David Weber) und gefolgt von Ring of Fire II, der auf Englisch verfasst ist. </text>
+				<template>AGENT-1 war vorausgegangen von BRIDGE-1 (Autor: PATIENT-1) und gefolgt von BRIDGE-2, die in PATIENT-2 geschrieben ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1634:_The_Baltic_War | author | David_Weber</striple>
+						<striple>1634:_The_Bavarian_Crisis | precededBy | 1634:_The_Baltic_War</striple>
+						<striple>1634:_The_Bavarian_Crisis | followedBy | Ring_of_Fire_II</striple>
+						<striple>Ring_of_Fire_II | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>1634: Der Baltische Krieg, geschrieben von David Weber, hat zwei Sequels, 1634: Die bayerische Krise und Ring of Fire II (geschrieben in Englisch). </text>
+				<template>BRIDGE-1, geschrieben von PATIENT-1, hat zwei Sequels, AGENT-1 und BRIDGE-2 (geschrieben in PATIENT-2).</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Bavarian_Crisis</entity>
+				<entity>BRIDGE-1 | 1634:_The_Baltic_War</entity>
+				<entity>BRIDGE-2 | Ring_of_Fire_II</entity>
+				<entity>PATIENT-1 | David_Weber</entity>
+				<entity>PATIENT-2 | English_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id2" size="4">
+			<originaltripleset>
+				<otriple>1634:_The_Ram_Rebellion | mediaType | E-book</otriple>
+				<otriple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;^^xsd:positiveInteger</otriple>
+				<otriple>1634:_The_Ram_Rebellion | author | Virginia_DeMarce</otriple>
+				<otriple>1634:_The_Ram_Rebellion | isbn | &quot;1-4165-2060-0&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Ram_Rebellion | mediaType | E-book</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | author | Virginia_DeMarce</mtriple>
+				<mtriple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1634:_The_Ram_Rebellion | author | Virginia_DeMarce</striple>
+						<striple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>1634:_The_Ram_Rebellion | mediaType | E-book</striple>
+						<striple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>1634: Die Ram Rebellion wurde von Virginia DeMarce geschrieben und hat 512 Seiten. Es kann als eBook gefunden werden und hat die ISBN Nummer von 1-4165-2060-0. </text>
+				<template>AGENT-1 wurde von PATIENT-3 geschrieben und hat PATIENT-2 Seiten. AGENT-1 kann als PATIENT-1 gefunden werden und hat die ISBN Nummer von PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1634:_The_Ram_Rebellion | author | Virginia_DeMarce</striple>
+						<striple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</striple>
+						<striple>1634:_The_Ram_Rebellion | mediaType | E-book</striple>
+						<striple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Autor des Romans 1634 The Ram Rebellions Autor ist Virginia DeMarce, es ist 512 Seiten lang (kann auch als E-Book gefunden werden) und hat eine ISBN Nummer 1-4165-2060-0. </text>
+				<template>Der Autor von AGENT-1 ist PATIENT-3, AGENT-1 ist PATIENT-2 Seiten lang (auch als PATIENT-1) und hat eine ISBN Nummer PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1634:_The_Ram_Rebellion | author | Virginia_DeMarce</striple>
+						<striple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</striple>
+						<striple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</striple>
+						<striple>1634:_The_Ram_Rebellion | mediaType | E-book</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Virginia DeMarce ist der Autor von 1634: Die Ram Rebellion, die 512 Seiten hat, die ISBN Nummer 1-4165-2060-0 und ist als E-Book erhältlich. </text>
+				<template>PATIENT-3 ist der Autor von AGENT-1, die PATIENT-2 Seiten hat, die ISBN Nummer PATIENT-4 und ist als PATIENT-1 verfügbar.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Ram_Rebellion</entity>
+				<entity>PATIENT-1 | E-book</entity>
+				<entity>PATIENT-2 | &quot;512&quot;</entity>
+				<entity>PATIENT-3 | Virginia_DeMarce</entity>
+				<entity>PATIENT-4 | &quot;1-4165-2060-0&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id3" size="4">
+			<originaltripleset>
+				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
+				<otriple>United_Kingdom | capital | London</otriple>
+				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
+				<otriple>United_Kingdom | leader | Elizabeth_II</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AIDS_(journal) | country | United_Kingdom</mtriple>
+				<mtriple>United_Kingdom | capital | London</mtriple>
+				<mtriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</mtriple>
+				<mtriple>United_Kingdom | leaderName | Elizabeth_II</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
+						<striple>AIDS_(journal) | country | United_Kingdom</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_Kingdom | capital | London</striple>
+						<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die AIDS-Zeitschrift wird von Lippincott, Williams &amp; Wilkins im Vereinigten Königreich veröffentlicht. Die Hauptstadt des Landes ist London und ihr Anführer ist Elizabeth II. </text>
+				<template>AGENT-1 wird von PATIENT-2 in BRIDGE-1 veröffentlicht. Die Hauptstadt von BRIDGE-1 ist PATIENT-1 und AGENT-1 ist PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDS_(journal) | country | United_Kingdom</striple>
+						<striple>United_Kingdom | capital | London</striple>
+						<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die AIDS-Zeitschrift wurde im Vereinigten Königreich, London, von Lippincott, Williams &amp; Wilkins veröffentlicht. </text>
+				<template>AGENT-1 wurde in BRIDGE-1, PATIENT-1, von PATIENT-2 veröffentlicht.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
+						<striple>AIDS_(journal) | country | United_Kingdom</striple>
+						<striple>United_Kingdom | capital | London</striple>
+						<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Veröffentlicht von Lippincott Williams &amp; Wilkins, die AIDS-Zeitschrift wurde im Vereinigten Königreich veröffentlicht, tha Hauptstadt des Vereinigten Königreichs ist London und das Staatsoberhaupt ist Elizabeth II. </text>
+				<template>Veröffentlicht von PATIENT-2, AGENT-1 wurde in BRIDGE-1, tha Hauptstadt von BRIDGE-1 ist PATIENT-1 und das Staatsoberhaupt ist PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIDS_(journal)</entity>
+				<entity>BRIDGE-1 | United_Kingdom</entity>
+				<entity>PATIENT-1 | London</entity>
+				<entity>PATIENT-2 | Lippincott_Williams_&amp;_Wilkins</entity>
+				<entity>PATIENT-3 | Elizabeth_II</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id4" size="4">
+			<originaltripleset>
+				<otriple>A_Fortress_of_Grey_Ice | author | J._V._Jones</otriple>
+				<otriple>A_Fortress_of_Grey_Ice | mediaType | &quot;Print&quot;@en</otriple>
+				<otriple>A_Fortress_of_Grey_Ice | oclc | 51969173</otriple>
+				<otriple>A_Fortress_of_Grey_Ice | isbn | &quot;0-7653-0633-6&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Fortress_of_Grey_Ice | author | J._V._Jones</mtriple>
+				<mtriple>A_Fortress_of_Grey_Ice | mediaType | &quot;Print&quot;</mtriple>
+				<mtriple>A_Fortress_of_Grey_Ice | OCLC_number | 51969173</mtriple>
+				<mtriple>A_Fortress_of_Grey_Ice | ISBN_number | &quot;0-7653-0633-6&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Fortress_of_Grey_Ice | author | J._V._Jones</striple>
+						<striple>A_Fortress_of_Grey_Ice | mediaType | &quot;Print&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Fortress_of_Grey_Ice | ISBN_number | &quot;0-7653-0633-6&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>A_Fortress_of_Grey_Ice | OCLC_number | 51969173</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Eine Festung von Grey Ice wurde von J. V. Jones geschrieben und ist in der Printausgabe erhältlich. Das Buch, das die ISBN Nummer 0-7653-0633-6 hat. Sie hat auch die OCLC-Nummer 51969173. </text>
+				<template>AGENT-1 wurde von PATIENT-1 geschrieben und ist in PATIENT-2 verfügbar. AGENT-1, der die ISBN Nummer PATIENT-4 hat. AGENT-1 hat auch die OCLC-Nummer PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Fortress_of_Grey_Ice | mediaType | &quot;Print&quot;</striple>
+						<striple>A_Fortress_of_Grey_Ice | author | J._V._Jones</striple>
+						<striple>A_Fortress_of_Grey_Ice | OCLC_number | 51969173</striple>
+						<striple>A_Fortress_of_Grey_Ice | ISBN_number | &quot;0-7653-0633-6&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Autor von A Fortress of Grey Ice, in Print erhältlich, ist J.V. Jones und hat eine OCLC-Nummer von 51969173 und die ISBN Nummer ist 0-7653-0633-6. </text>
+				<template>The author of AGENT-1, available in PATIENT-2, is PATIENT-1 and has an OCLC number of PATIENT-3 and the ISBN number is PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Fortress_of_Grey_Ice | author | J._V._Jones</striple>
+						<striple>A_Fortress_of_Grey_Ice | mediaType | &quot;Print&quot;</striple>
+						<striple>A_Fortress_of_Grey_Ice | OCLC_number | 51969173</striple>
+						<striple>A_Fortress_of_Grey_Ice | ISBN_number | &quot;0-7653-0633-6&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>J.V. Jones verfasst eine Festung von Grey Ice, zur Verfügung gestellt in print @ it 's OCLC und ISBN Nummern sind 51969173 und 0-7653-0633-6. </text>
+				<template>PATIENT-1 verfasst AGENT-1, verfügbar in PATIENT-2 @ AGENT-1 OCLC und ISBN Nummern sind PATIENT-3 und PATIENT-4.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Fortress_of_Grey_Ice</entity>
+				<entity>PATIENT-1 | J._V._Jones</entity>
+				<entity>PATIENT-2 | &quot;Print&quot;</entity>
+				<entity>PATIENT-3 | 51969173</entity>
+				<entity>PATIENT-4 | &quot;0-7653-0633-6&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id5" size="4">
+			<originaltripleset>
+				<otriple>A_Long_Long_Way | previousWork | Annie_Dunne</otriple>
+				<otriple>A_Long_Long_Way | country | Ireland</otriple>
+				<otriple>A_Long_Long_Way | publisher | Viking_Press</otriple>
+				<otriple>A_Long_Long_Way | subsequentWork | The_Secret_Scripture</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Long_Long_Way | precededBy | Annie_Dunne</mtriple>
+				<mtriple>A_Long_Long_Way | country | Ireland</mtriple>
+				<mtriple>A_Long_Long_Way | publisher | Viking_Press</mtriple>
+				<mtriple>A_Long_Long_Way | followedBy | The_Secret_Scripture</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Long_Long_Way | publisher | Viking_Press</striple>
+						<striple>A_Long_Long_Way | country | Ireland</striple>
+						<striple>A_Long_Long_Way | precededBy | Annie_Dunne</striple>
+						<striple>A_Long_Long_Way | followedBy | The_Secret_Scripture</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Herausgegeben von Viking Press, dem irischen Roman A Long Long Way war Annie Dunne vorausgegangen und gefolgt von The Secret Schrift. </text>
+				<template>Veröffentlicht von PATIENT-3, der PATIENT-2 Roman AGENT-1 war von PATIENT-1 und gefolgt von PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Long_Long_Way | country | Ireland</striple>
+						<striple>A_Long_Long_Way | publisher | Viking_Press</striple>
+						<striple>A_Long_Long_Way | precededBy | Annie_Dunne</striple>
+						<striple>A_Long_Long_Way | followedBy | The_Secret_Scripture</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein langer langer Weg, der in Irland geschrieben und von Viking Press veröffentlicht wurde, war Annie Dunne vorausgegangen, gefolgt von The Secret Schrift. </text>
+				<template>AGENT-1, in PATIENT-2 geschrieben und von PATIENT-3 veröffentlicht, war von PATIENT-1, gefolgt von PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Long_Long_Way | country | Ireland</striple>
+						<striple>A_Long_Long_Way | publisher | Viking_Press</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Long_Long_Way | precededBy | Annie_Dunne</striple>
+						<striple>A_Long_Long_Way | followedBy | The_Secret_Scripture</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein langer langer Weg wurde in Irland geschrieben und von Viking Press veröffentlicht. Vorausgegangen war Annie Dunn und gefolgt von The Secret Schrift. </text>
+				<template>AGENT-1 wurde in PATIENT-2 geschrieben und von PATIENT-3 veröffentlicht. AGENT-1 war vorausgegangen von PATIENT-1 und gefolgt von PATIENT-4.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Long_Long_Way</entity>
+				<entity>PATIENT-1 | Annie_Dunne</entity>
+				<entity>PATIENT-2 | Ireland</entity>
+				<entity>PATIENT-3 | Viking_Press</entity>
+				<entity>PATIENT-4 | The_Secret_Scripture</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id6" size="4">
+			<originaltripleset>
+				<otriple>A_Severed_Wasp | oclc | &quot;8805735&quot;</otriple>
+				<otriple>A_Severed_Wasp | congress | &quot;PS3523.E55 S4 1982&quot;@en</otriple>
+				<otriple>A_Severed_Wasp | mediaType | &quot;Print&quot;@en</otriple>
+				<otriple>A_Severed_Wasp | isbn | &quot;0-374-26131-8&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Severed_Wasp | OCLC_number | 8805735</mtriple>
+				<mtriple>A_Severed_Wasp | LibraryofCongressClassification | &quot;PS3523.E55 S4 1982&quot;</mtriple>
+				<mtriple>A_Severed_Wasp | mediaType | &quot;Print&quot;</mtriple>
+				<mtriple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Severed_Wasp | mediaType | &quot;Print&quot;</striple>
+						<striple>A_Severed_Wasp | LibraryofCongressClassification | &quot;PS3523.E55 S4 1982&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
+						<striple>A_Severed_Wasp | OCLC_number | 8805735</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A Severed Wasp is available in print, with The Library of Congress Classification PS3523.E55 S4 1982. Seine ISBN Nummer ist 0-374-26131-8, und seine OCLC-Nummer ist 8805735. </text>
+				<template>AGENT-1 ist in PATIENT-3 verfügbar, mit The Library of Congress Classification PATIENT-2. AGENT-1 ISBN Nummer ist PATIENT-4, und AGENT-1 OCLC Nummer ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
+						<striple>A_Severed_Wasp | mediaType | &quot;Print&quot;</striple>
+						<striple>A_Severed_Wasp | OCLC_number | 8805735</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Severed_Wasp | LibraryofCongressClassification | &quot;PS3523.E55 S4 1982&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Buch A Severed Wasp (ISBN Nummer 0-374-26131-8) ist in der Printausgabe erhältlich und hat die OCLC-Nummer 8805735. Es hat die Library of Congress Classification PS3523.E55 S4 1982. </text>
+				<template>AGENT-1 (ISBN Nummer PATIENT-4) ist in PATIENT-3 verfügbar und hat die OCLC-Nummer PATIENT-1. AGENT-1 hat die Library of Congress Classification PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Severed_Wasp | mediaType | &quot;Print&quot;</striple>
+						<striple>A_Severed_Wasp | OCLC_number | 8805735</striple>
+						<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Severed_Wasp | LibraryofCongressClassification | &quot;PS3523.E55 S4 1982&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Severed Wasp ist im Druck und hat die OCLC-Nummer von 8805735 und die ISBN Nummer 0-374-26131-8. Die Library of Congress Classification ist PS3523.E55 S4 1982. </text>
+				<template>AGENT-1 ist in PATIENT-3 und hat die OCLC-Nummer von PATIENT-1 und die ISBN Nummer PATIENT-4. Die Library of Congress Classification ist PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Severed_Wasp</entity>
+				<entity>PATIENT-1 | 8805735</entity>
+				<entity>PATIENT-2 | &quot;PS3523.E55 S4 1982&quot;</entity>
+				<entity>PATIENT-3 | &quot;Print&quot;</entity>
+				<entity>PATIENT-4 | &quot;0-374-26131-8&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id7" size="4">
+			<originaltripleset>
+				<otriple>A_Severed_Wasp | language | English_language</otriple>
+				<otriple>English_language | spokenIn | Great_Britain</otriple>
+				<otriple>A_Severed_Wasp | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Severed_Wasp | language | English_language</mtriple>
+				<mtriple>English_language | spokenIn | Great_Britain</mtriple>
+				<mtriple>A_Severed_Wasp | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>English_language | spokenIn | Great_Britain</striple>
+						<striple>A_Severed_Wasp | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Severed_Wasp | country | United_States</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Englisch wird in Großbritannien gesprochen und ist die Sprache, die in A Severed Wasp verwendet wird. Das Buch stammt aus den USA, wo die afrikanischen Amerikaner eine ethnische Gruppe sind. </text>
+				<template>BRIDGE-1 wird in PATIENT-1 gesprochen und ist die Sprache, die in AGENT-1 verwendet wird. AGENT-1 stammt aus BRIDGE-2, wo PATIENT-2 eine ethnische Gruppe ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Severed_Wasp | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+						<striple>A_Severed_Wasp | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Severed Wasp wurde auf Englisch geschrieben (die Sprache hat ihren Ursprung in Great Britian) in den USA. Die USA haben viele ethnische Gruppen, darunter auch afrikanische Amerikaner. </text>
+				<template>AGENT-1 wurde in BRIDGE-1 geschrieben (die Sprache hat ihren Ursprung in PATIENT-1) in BRIDGE-2. BRIDGE-2 hat viele ethnische Gruppen, einschließlich PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Severed_Wasp</entity>
+				<entity>BRIDGE-1 | English_language</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Great_Britain</entity>
+				<entity>PATIENT-2 | African_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id8" size="4">
+			<originaltripleset>
+				<otriple>A_Severed_Wasp | numberOfPages | &quot;388&quot;^^xsd:positiveInteger</otriple>
+				<otriple>A_Severed_Wasp | oclc | 8805735</otriple>
+				<otriple>A_Severed_Wasp | isbn | &quot;0-374-26131-8&quot;</otriple>
+				<otriple>A_Severed_Wasp | mediaType | Hardcover</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Severed_Wasp | numberOfPages | &quot;388&quot;</mtriple>
+				<mtriple>A_Severed_Wasp | OCLC_number | 8805735</mtriple>
+				<mtriple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</mtriple>
+				<mtriple>A_Severed_Wasp | mediaType | Hardcover</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Severed_Wasp | mediaType | Hardcover</striple>
+						<striple>A_Severed_Wasp | numberOfPages | &quot;388&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Severed_Wasp | OCLC_number | 8805735</striple>
+						<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Severed Wasp wurde in Hardback veröffentlicht und hat 388 Seiten. Die OCLC-Nummer von A Severed Wasp ist 8805735 und die ISBN Nummer von &quot;0-374-26131-8&quot;. </text>
+				<template>AGENT-1 wurde in PATIENT-4 veröffentlicht und hat PATIENT-1 Seiten. Die OCLC-Nummer von AGENT-1 ist PATIENT-2 und die ISBN Nummer von &quot;PATIENT-3&quot;.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Severed_Wasp | mediaType | Hardcover</striple>
+						<striple>A_Severed_Wasp | numberOfPages | &quot;388&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Severed_Wasp | OCLC_number | 8805735</striple>
+						<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Severed Wasp, in Hardback veröffentlicht, hat 388 Seiten. Seine OCLC-Nummer ist 8805735, und ISBN Nummer ist 0-374-26131-8. </text>
+				<template>AGENT-1, veröffentlicht in PATIENT-4, hat PATIENT-1 Seiten. AGENT-1 OCLC Nummer ist PATIENT-2, und ISBN Nummer ist PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Severed_Wasp | mediaType | Hardcover</striple>
+						<striple>A_Severed_Wasp | numberOfPages | &quot;388&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Severed_Wasp | OCLC_number | 8805735</striple>
+						<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Severed Wasp ist ein Hardcover-Buch mit 388 Seiten. It 's OCLC number is 8805735 and the ISBN number is 0-374-26131-8. </text>
+				<template>AGENT-1 ist PATIENT-4 mit PATIENT-1 Seiten. AGENT-1 OCLC Nummer ist PATIENT-2 und die ISBN Nummer ist PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Severed_Wasp</entity>
+				<entity>PATIENT-1 | &quot;388&quot;</entity>
+				<entity>PATIENT-2 | 8805735</entity>
+				<entity>PATIENT-3 | &quot;0-374-26131-8&quot;</entity>
+				<entity>PATIENT-4 | Hardcover</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id9" size="4">
+			<originaltripleset>
+				<otriple>A_Wizard_of_Mars | mediaType | Hardcover</otriple>
+				<otriple>A_Wizard_of_Mars | author | Diane_Duane</otriple>
+				<otriple>A_Wizard_of_Mars | oclc | 318875313</otriple>
+				<otriple>A_Wizard_of_Mars | isbn | &quot;978-0-15-204770-2&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Wizard_of_Mars | mediaType | Hardcover</mtriple>
+				<mtriple>A_Wizard_of_Mars | author | Diane_Duane</mtriple>
+				<mtriple>A_Wizard_of_Mars | OCLC_number | 318875313</mtriple>
+				<mtriple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
+						<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
+						<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
+						<striple>A_Wizard_of_Mars | OCLC_number | 318875313</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Zauberer von Mars, geschrieben von Diane Duane, ist in Hardcover erhältlich, hat die ISBN Nummer 978-0-15-204770-2 und die OCLC-Nummer 318875313. </text>
+				<template>AGENT-1, geschrieben von PATIENT-2, ist in PATIENT-1 verfügbar, hat die ISBN Nummer PATIENT-4 und die OCLC-Nummer PATIENT-3.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Wizard_of_Mars | OCLC_number | 318875313</striple>
+						<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
+						<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
+						<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Zauberer von Mars, OCLC Nummer 318875313, ISBN Nummer 978-0-15-204770-2, wurde von Diane Duane geschrieben und in Hardback veröffentlicht. </text>
+				<template>AGENT-1, OCLC Nummer PATIENT-3, ISBN Nummer PATIENT-4, wurde von PATIENT-2 geschrieben und in PATIENT-1 veröffentlicht.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
+						<striple>A_Wizard_of_Mars | OCLC_number | 318875313</striple>
+						<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
+						<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Zauberer von Mars, ISBN Nummer ist &quot;978-0-15-204770-2&quot;, OCLC Nummer 318875313, wurde von Diane Duane geschrieben und in Hardback veröffentlicht. </text>
+				<template>AGENT-1, ISBN Nummer ist &quot;PATIENT-4&quot;, OCLC Nummer PATIENT-3, wurde von PATIENT-2 geschrieben und in PATIENT-1 veröffentlicht.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Wizard_of_Mars</entity>
+				<entity>PATIENT-1 | Hardcover</entity>
+				<entity>PATIENT-2 | Diane_Duane</entity>
+				<entity>PATIENT-3 | 318875313</entity>
+				<entity>PATIENT-4 | &quot;978-0-15-204770-2&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id10" size="4">
+			<originaltripleset>
+				<otriple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;@en</otriple>
+				<otriple>Addiction_(journal) | discipline | Addiction</otriple>
+				<otriple>Addiction_(journal) | lccn | 93645978</otriple>
+				<otriple>Addiction_(journal) | issn | &quot;1360-0443&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Addiction_(journal) | academicDiscipline | Addiction</mtriple>
+				<mtriple>Addiction_(journal) | LCCN_number | 93645978</mtriple>
+				<mtriple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</mtriple>
+				<mtriple>Addiction_(journal) | ISSN_number | &quot;1360-0443&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addiction_(journal) | academicDiscipline | Addiction</striple>
+						<striple>Addiction_(journal) | LCCN_number | 93645978</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</striple>
+						<striple>Addiction_(journal) | ISSN_number | &quot;1360-0443&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Es geht um das Thema Drogensucht und hat die LCCN-Nummer 93645978. Der verkürzte Name lautet &quot;Drogensucht&quot; und die ISSN-Nummer ist 1360-0443. </text>
+				<template>AGENT-1 betrifft das Thema PATIENT-1 und hat die LCCN-Nummer PATIENT-2. Der verkürzte Name ist &quot;PATIENT-3&quot; und die ISSN-Nummer ist PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</striple>
+						<striple>Addiction_(journal) | academicDiscipline | Addiction</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Addiction_(journal) | LCCN_number | 93645978</striple>
+						<striple>Addiction_(journal) | ISSN_number | &quot;1360-0443&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Sucht ist die verkürzte Version des Additional-Journals und dreht sich um die Sucht. Die LCCN-Nummer ist 93645978 und die ISSN-Nummer ist 1360-0443. </text>
+				<template>PATIENT-3 ist die verkürzte Version von AGENT-1 und ist etwa PATIENT-1. Die LCCN-Nummer ist PATIENT-2 und die ISSN-Nummer ist PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addiction_(journal) | academicDiscipline | Addiction</striple>
+						<striple>Addiction_(journal) | ISSN_number | &quot;1360-0443&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</striple>
+						<striple>Addiction_(journal) | LCCN_number | 93645978</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die ISSN-Zahl der Drogensucht (Zeitschrift), bei der es um Sucht geht, ist 1360-0443. Sucht (Zeitschrift) hat die Abkürzung von Sucht und die LCCN Nummer 93645978. </text>
+				<template>Die ISSN-Nummer von AGENT-1, bei der es um PATIENT-1 geht, ist PATIENT-4. AGENT-1 hat die Abkürzung PATIENT-3 und die LCCN-Nummer PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Addiction_(journal)</entity>
+				<entity>PATIENT-1 | Addiction</entity>
+				<entity>PATIENT-2 | 93645978</entity>
+				<entity>PATIENT-3 | &quot;Addiction&quot;</entity>
+				<entity>PATIENT-4 | &quot;1360-0443&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id11" size="4">
+			<originaltripleset>
+				<otriple>Administrative_Science_Quarterly | publisher | Cornell_University</otriple>
+				<otriple>Cornell_University | affiliation | Association_of_American_Universities</otriple>
+				<otriple>Cornell_University | state | New_York</otriple>
+				<otriple>Cornell_University | city | Ithaca,_New_York</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Administrative_Science_Quarterly | publisher | Cornell_University</mtriple>
+				<mtriple>Cornell_University | affiliation | Association_of_American_Universities</mtriple>
+				<mtriple>Cornell_University | state | New_York</mtriple>
+				<mtriple>Cornell_University | city | Ithaca,_New_York</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Cornell_University | city | Ithaca,_New_York</striple>
+						<striple>Administrative_Science_Quarterly | publisher | Cornell_University</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Cornell_University | affiliation | Association_of_American_Universities</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Cornell University in Ithaca, New York ist der Verlag der Verwaltungswissenschaft Quarterly. Die Universität ist mit dem Verband der amerikanischen Universitäten verbunden. </text>
+				<template>BRIDGE-1 in PATIENT-3 ist der Herausgeber von AGENT-1. BRIDGE-1 ist mit PATIENT-1 verbunden.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Cornell_University | city | Ithaca,_New_York</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Cornell_University | affiliation | Association_of_American_Universities</striple>
+						<striple>Administrative_Science_Quarterly | publisher | Cornell_University</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Cornell University befindet sich in Ithaca, New York. Es ist mit dem Verband der amerikanischen Universitäten verbunden und veröffentlicht das Management Science Quarterly. </text>
+				<template>BRIDGE-1 befindet sich in PATIENT-3. BRIDGE-1 ist mit PATIENT-1 verbunden und veröffentlicht AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Cornell_University | city | Ithaca,_New_York</striple>
+						<striple>Cornell_University | affiliation | Association_of_American_Universities</striple>
+						<striple>Administrative_Science_Quarterly | publisher | Cornell_University</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Cornell University befindet sich in der Stadt Ithaca, New York, sie ist mit dem Verband der amerikanischen Universitäten verbunden und veröffentlicht das Management Science Quarterly. </text>
+				<template>BRIDGE-1 befindet sich in der Stadt PATIENT-3, BRIDGE-1 's mit PATIENT-1 und veröffentlicht AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Administrative_Science_Quarterly</entity>
+				<entity>BRIDGE-1 | Cornell_University</entity>
+				<entity>PATIENT-1 | Association_of_American_Universities</entity>
+				<entity>PATIENT-2 | New_York</entity>
+				<entity>PATIENT-3 | Ithaca,_New_York</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id12" size="4">
+			<originaltripleset>
+				<otriple>Alcatraz_Versus_the_Evil_Librarians | language | English_language</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alcatraz_Versus_the_Evil_Librarians | language | English_language</mtriple>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alcatraz_Versus_the_Evil_Librarians | language | English_language</striple>
+						<striple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Buch Alcatraz Versus the Evil Librarians wurde auf Englisch geschrieben und kommt aus den USA, wo die Hauptstadt Washington DC und die afrikanischen Amerikaner eine ethnische Gruppe sind. </text>
+				<template>AGENT-1 wurde in PATIENT-1 geschrieben und stammt von BRIDGE-1, wo die Hauptstadt PATIENT-2 und PATIENT-3 eine ethnische Gruppe sind.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alcatraz_Versus_the_Evil_Librarians | language | English_language</striple>
+						<striple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alcatraz Versus the Evil Librarians ist ein englisches Buch, das in den USA geschrieben wurde, wo afrikanische Amerikaner eine ethnische Gruppe sind und die Kapitol-Stadt Washington ist. </text>
+				<template>AGENT-1 ist ein PATIENT-1 Buch, das in BRIDGE-1 geschrieben ist, wo PATIENT-3 eine ethnische Gruppe und die Kapitol-Stadt PATIENT-2 ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alcatraz_Versus_the_Evil_Librarians</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-2 | Washington,_D.C.</entity>
+				<entity>PATIENT-3 | African_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id13" size="4">
+			<originaltripleset>
+				<otriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;@en</otriple>
+				<otriple>American_Journal_of_Mathematics | discipline | Mathematics</otriple>
+				<otriple>American_Journal_of_Mathematics | frequency | &quot;Bimonthly&quot;@en</otriple>
+				<otriple>American_Journal_of_Mathematics | issn | &quot;1080-6377&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</mtriple>
+				<mtriple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</mtriple>
+				<mtriple>American_Journal_of_Mathematics | frequency | &quot;Bimonthly&quot;</mtriple>
+				<mtriple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
+						<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>American_Journal_of_Mathematics | frequency | &quot;Bimonthly&quot;</striple>
+						<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das American Journal of Mathematics ist abgekürzt zu Am. J. Mathematik. Und kommt unter die Disziplin Math. Es wird bimonthly veröffentlicht und hat die ISSN-Nummer 1080-6377. </text>
+				<template>AGENT-1 ist abgekürzt zu PATIENT-1 und steht unter der Disziplin PATIENT-2. AGENT-1 wird PATIENT-3 veröffentlicht und hat die ISSN-Nummer PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
+						<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
+						<striple>American_Journal_of_Mathematics | frequency | &quot;Bimonthly&quot;</striple>
+						<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das American Journal of Mathematics studiert Mathematik und ist abgekürzt zu Am. J. Mathematik. @ Es wird bimonthly veröffentlicht und hat die ISSN Nummer 1080-6377. </text>
+				<template>AGENT-1 studiert PATIENT-2 und ist abgekürzt PATIENT-1 @ AGENT-1 veröffentlicht PATIENT-3 und hat die ISSN-Nummer PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
+						<striple>American_Journal_of_Mathematics | frequency | &quot;Bimonthly&quot;</striple>
+						<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
+						<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>The American Journal of Mathematics, aka Am. J. Mathe., ist eine zweimonatliche Zeitschrift über Mathematik, ISBN Nummer 1080-6377. </text>
+				<template>AGENT-1, aka PATIENT-1, ist eine PATIENT-3 Zeitschrift über PATIENT-2, ISBN Nummer PATIENT-4.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | American_Journal_of_Mathematics</entity>
+				<entity>PATIENT-1 | &quot;Am. J. Math.&quot;</entity>
+				<entity>PATIENT-2 | Mathematics</entity>
+				<entity>PATIENT-3 | &quot;Bimonthly&quot;</entity>
+				<entity>PATIENT-4 | &quot;1080-6377&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id14" size="4">
+			<originaltripleset>
+				<otriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;@en</otriple>
+				<otriple>American_Journal_of_Mathematics | discipline | Mathematics</otriple>
+				<otriple>American_Journal_of_Mathematics | history | 1878</otriple>
+				<otriple>American_Journal_of_Mathematics | issn | &quot;1080-6377&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</mtriple>
+				<mtriple>American_Journal_of_Mathematics | firstPublicationYear | 1878</mtriple>
+				<mtriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</mtriple>
+				<mtriple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
+						<striple>American_Journal_of_Mathematics | firstPublicationYear | 1878</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die akademische Disziplin des American Journal of Mathematics ist Mathematik, veröffentlicht im Jahr 1878. </text>
+				<template>Die akademische Disziplin von AGENT-1 ist PATIENT-1, veröffentlicht in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
+						<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>American_Journal_of_Mathematics | firstPublicationYear | 1878</striple>
+						<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>The American Journal of Mathematics, abbreivated to Am. J. Mathe, Studium Mathematik. Es wurde erst 1878 veröffentlicht und hat eine ISSN-Zahl von 1080-6377. </text>
+				<template>AGENT-1, abbreikt zu PATIENT-3, Studien PATIENT-1. AGENT-1 wurde zuerst in PATIENT-2 veröffentlicht und hat eine ISSN-Nummer von PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Journal_of_Mathematics | firstPublicationYear | 1878</striple>
+						<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
+						<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das American Journal of Mathematics wurde erstmals 1878 veröffentlicht und hat die ISSN-Nummer 1080-6377. Es fällt unter die akademische Disziplin von Math und der verkürzte Titel ist Am. J. Mathematik.. </text>
+				<template>AGENT-1 wurde zuerst in PATIENT-2 veröffentlicht und hat die ISSN-Nummer PATIENT-4. AGENT-1 fällt unter die akademische Disziplin von PATIENT-1 und der verkürzte Titel ist PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | American_Journal_of_Mathematics</entity>
+				<entity>PATIENT-1 | Mathematics</entity>
+				<entity>PATIENT-2 | 1878</entity>
+				<entity>PATIENT-3 | &quot;Am. J. Math.&quot;</entity>
+				<entity>PATIENT-4 | &quot;1080-6377&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id15" size="4">
+			<originaltripleset>
+				<otriple>English_language | spokenIn | Great_Britain</otriple>
+				<otriple>A_Loyal_Character_Dancer | publisher | Soho_Press</otriple>
+				<otriple>Soho_Press | country | United_States</otriple>
+				<otriple>United_States | language | English_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>English_language | spokenIn | Great_Britain</mtriple>
+				<mtriple>A_Loyal_Character_Dancer | publisher | Soho_Press</mtriple>
+				<mtriple>Soho_Press | country | United_States</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>English_language | spokenIn | Great_Britain</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Soho_Press | country | United_States</striple>
+						<striple>A_Loyal_Character_Dancer | publisher | Soho_Press</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Englisch ist die Sprache in Großbritannien und den USA. Ein Loyal Character Dancer wurde von Soho Press in den USA veröffentlicht. </text>
+				<template>BRIDGE-3 ist die Sprache in PATIENT-1 und BRIDGE-2. AGENT-1 wurde von BRIDGE-1 in BRIDGE-2 veröffentlicht.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>English_language | spokenIn | Great_Britain</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Soho_Press | country | United_States</striple>
+						<striple>A_Loyal_Character_Dancer | publisher | Soho_Press</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>In Großbritannien und den Vereinigten Staaten wird Englisch gesprochen. Ein Loyal Character Dancer wurde von Soho Press veröffentlicht, die in den USA ansässig sind. </text>
+				<template>BRIDGE-3 wird in PATIENT-1 und BRIDGE-2 gesprochen. AGENT-1 wurde von BRIDGE-1 veröffentlicht, die in BRIDGE-2 ansässig sind.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Loyal_Character_Dancer | publisher | Soho_Press</striple>
+						<striple>Soho_Press | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A Loyal Character Dancer is published by Soho Press which is based in the United States. Die Sprache, die in den USA gesprochen wird, und in Großbritannien, ist Englisch. </text>
+				<template>AGENT-1 wird von BRIDGE-1 veröffentlicht, die in BRIDGE-2 ansässig ist. Die Sprache, die in BRIDGE-2 und in PATIENT-1 gesprochen wird, ist BRIDGE-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Loyal_Character_Dancer</entity>
+				<entity>BRIDGE-1 | Soho_Press</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>BRIDGE-3 | English_language</entity>
+				<entity>PATIENT-1 | Great_Britain</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id16" size="4">
+			<originaltripleset>
+				<otriple>English_language | spokenIn | Great_Britain</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>A_Severed_Wasp | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>English_language | spokenIn | Great_Britain</mtriple>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>A_Severed_Wasp | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>A_Severed_Wasp | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Sprache der Vereinigten Staaten und Großbritannien ist Englisch. Die Vereinigten Staaten haben eine ethnische Gruppe namens asiatische Amerikaner und ist dort, wo ein abgetrennter Wasp stammt. </text>
+				<template>Die Sprache von BRIDGE-2 und PATIENT-1 ist BRIDGE-1. BRIDGE-2 hat eine ethnische Gruppe namens PATIENT-2 und ist, woher AGENT-1 stammt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>English_language | spokenIn | Great_Britain</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Severed_Wasp | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Englisch ist die Sprache Großbritanniens und der Vereinigten Staaten. Das Land ist der Ursprung von A Severed Wasp und umfasst viele asiatische Amerikaner. </text>
+				<template>BRIDGE-1 ist die Sprache von PATIENT-1 und BRIDGE-2. BRIDGE-2 ist der Ursprung von AGENT-1 und enthält viele PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>English_language | spokenIn | Great_Britain</striple>
+						<striple>A_Severed_Wasp | country | United_States</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein Severed Wasp stammt aus dem Englischen (auch in Großbritannien gesprochen) Vereinigte Staaten. Die Vereinigten Staaten sind die Heimat der asiatisch-amerikanischen Volksgruppe. </text>
+				<template>AGENT-1 ist von BRIDGE-1 gesprochen (auch in PATIENT-1 gesprochen) BRIDGE-2. BRIDGE-2 ist die Heimat der ethnischen Gruppe PATIENT-2.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Severed_Wasp</entity>
+				<entity>BRIDGE-1 | English_language</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Great_Britain</entity>
+				<entity>PATIENT-2 | Asian_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id17" size="4">
+			<originaltripleset>
+				<otriple>English_language | spokenIn | Great_Britain</otriple>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>English_language | spokenIn | Great_Britain</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Alcatraz Versus the Evil Librarians is from The United States where one of the ethnic groups are the Native Americans. Die englische Sprache wird sowohl in den USA als auch in Großbritannien gesprochen. </text>
+				<template>AGENT-1 stammt von BRIDGE-2, wo eine der ethnischen Gruppen PATIENT-2 ist. BRIDGE-1 wird in BRIDGE-2 sowie PATIENT-1 gesprochen.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Buch Alcatraz Versus der Evil Librarians hat seinen Ursprung in den USA, wo die Indianer viele der ethnischen Gruppen ausmachen. Englisch ist die Landessprache sowohl Großbritanniens als auch der Vereinigten Staaten. </text>
+				<template>AGENT-1 hat seinen Ursprung in BRIDGE-2, wo PATIENT-2 viele der ethnischen Gruppen ausmachen. BRIDGE-1 ist die Landessprache von PATIENT-1 und BRIDGE-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>English_language | spokenIn | Great_Britain</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+						<striple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Englisch wird in Großbritannien gesprochen und ist auch die Sprache der Vereinigten Staaten, von denen Native Americans eine ihrer ethnischen Gruppen sind und von wo Alcatraz Versus die Evil Librarians gekommen sind. </text>
+				<template>BRIDGE-1 wird in PATIENT-1 gesprochen und ist auch die Sprache von BRIDGE-2, von denen PATIENT-2 eine von BRIDGE-2 ethnischen Gruppen sind und von wo AGENT-1 gekommen ist.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alcatraz_Versus_the_Evil_Librarians</entity>
+				<entity>BRIDGE-1 | English_language</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Great_Britain</entity>
+				<entity>PATIENT-2 | Native_Americans_in_the_United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id18" size="4">
+			<originaltripleset>
+				<otriple>United_Kingdom | leaderName | David_Cameron</otriple>
+				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
+				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
+				<otriple>United_Kingdom | leader | Elizabeth_II</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_Kingdom | leaderName | David_Cameron</mtriple>
+				<mtriple>AIDS_(journal) | country | United_Kingdom</mtriple>
+				<mtriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</mtriple>
+				<mtriple>United_Kingdom | leaderName | Elizabeth_II</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_Kingdom | leaderName | David_Cameron</striple>
+						<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AIDS_(journal) | country | United_Kingdom</striple>
+						<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Im Vereinigten Königreich ist der Premierminister David Cameron und die Königin ist Elizabeth II. Die AIDS-Zeitschrift wurde im Vereinigten Königreich von Lippincott, Williams &amp; Wilkins veröffentlicht. </text>
+				<template>In BRIDGE-1 ist der Premierminister PATIENT-1 und die Königin ist PATIENT-3. AGENT-1 wurde in BRIDGE-1 von PATIENT-2 veröffentlicht.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
+						<striple>AIDS_(journal) | country | United_Kingdom</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_Kingdom | leaderName | David_Cameron</striple>
+						<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>AIDS Journal, herausgegeben von Lippincott Williams und Wilkins, stammt aus dem Vereinigten Königreich. Der Führer des Vereinigten Königreichs war David Cameron und Elizabeth II. ist die Königin. </text>
+				<template>AGENT-1, herausgegeben von PATIENT-2, ist von BRIDGE-1. Der Anführer von BRIDGE-1 war PATIENT-1 und PATIENT-3 ist die Königin.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
+						<striple>AIDS_(journal) | country | United_Kingdom</striple>
+						<striple>United_Kingdom | leaderName | David_Cameron</striple>
+						<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die AIDS (Zeitschrift) wird von Lippincott Williams &amp; Wilkins im Vereinigten Königreich veröffentlicht, die beiden Führer dieses Landes sind David Cameron und Elizabeth II. </text>
+				<template>AGENT-1 wird von PATIENT-2 in BRIDGE-1 veröffentlicht, die beiden Führer von BRIDGE-1 sind PATIENT-1 und PATIENT-3.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIDS_(journal)</entity>
+				<entity>BRIDGE-1 | United_Kingdom</entity>
+				<entity>PATIENT-1 | David_Cameron</entity>
+				<entity>PATIENT-2 | Lippincott_Williams_&amp;_Wilkins</entity>
+				<entity>PATIENT-3 | Elizabeth_II</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id19" size="4">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>English_language | spokenIn | Great_Britain</otriple>
+				<otriple>A_Fortress_of_Grey_Ice | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>English_language | spokenIn | Great_Britain</mtriple>
+				<mtriple>A_Fortress_of_Grey_Ice | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Eine Festung von Grey Ice stammt aus den Vereinigten Staaten, wo die afrikanische Amerikanerin eine ethnische Gruppe ist und Englisch gesprochen wird wie in Großbritannien. </text>
+				<template>AGENT-1 ist von BRIDGE-2, wo PATIENT-1 eine ethnische Gruppe ist und BRIDGE-1 wie in PATIENT-2 gesprochen wird.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>English_language | spokenIn | Great_Britain</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>In Großbritannien und den Vereinigten Staaten wird Englisch gesprochen. Eine Festung von Grey Ice stammt aus den USA, wo eine der ethnischen Gruppen afrikanische Amerikaner sind. </text>
+				<template>BRIDGE-1 wird in PATIENT-2 und BRIDGE-2 gesprochen. AGENT-1 stammt von BRIDGE-2, wo eine der ethnischen Gruppen PATIENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Eine Festung von Grey Ice stammt aus den USA, wo die afrikanischen Amerikaner eine ethnische Gruppe sind. Englisch wird in den USA und auch in Großbritannien gesprochen. </text>
+				<template>AGENT-1 stammt von BRIDGE-2, wo PATIENT-1 eine ethnische Gruppe ist. BRIDGE-1 wird in BRIDGE-2 und auch in PATIENT-2 gesprochen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Fortress_of_Grey_Ice</entity>
+				<entity>BRIDGE-1 | English_language</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | African_Americans</entity>
+				<entity>PATIENT-2 | Great_Britain</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id20" size="4">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>English_language | spokenIn | Great_Britain</otriple>
+				<otriple>A_Fortress_of_Grey_Ice | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>English_language | spokenIn | Great_Britain</mtriple>
+				<mtriple>A_Fortress_of_Grey_Ice | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Eine Festung von Grey Ice stammt aus den USA. Dieses Land hat eine ethnische Gruppe namens asiatische Amerikaner und sie sprechen Englisch, ähnlich wie in Großbritannien. </text>
+				<template>AGENT-1 stammt von BRIDGE-2. BRIDGE-2 hat eine ethnische Gruppe namens PATIENT-1 und sie sprechen BRIDGE-1, ähnlich wie in PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>In Great Britain @ English ist die Sprache gesprochen. Dasselbe gilt für die Vereinigten Staaten, wo es viele asiatische Amerikaner gibt. Es ist auch dort, wo eine Festung von Grey Ice stammt. </text>
+				<template>In PATIENT-2 @ BRIDGE-1 ist die Sprache gesprochen. Dasselbe gilt für BRIDGE-2, wo es viele PATIENT-1 gibt. BRIDGE-2 ist auch dort, wo AGENT-1 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>English_language | spokenIn | Great_Britain</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asiatische Amerikaner sind eine der ethnischen Gruppen in den Vereinigten Staaten, von denen auch eine Festung von Grey Ice ist, die englische Sprache wird sowohl in den Vereinigten Staaten als auch in Großbritannien gesprochen. </text>
+				<template>PATIENT-1 ist eine der ethnischen Gruppen in BRIDGE-2, von denen auch AGENT-1 ist, BRIDGE-1 wird sowohl in BRIDGE-2 als auch in PATIENT-2 gesprochen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Fortress_of_Grey_Ice</entity>
+				<entity>BRIDGE-1 | English_language</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Asian_Americans</entity>
+				<entity>PATIENT-2 | Great_Britain</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id21" size="4">
+			<originaltripleset>
+				<otriple>United_States | leader | Barack_Obama</otriple>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>A_Severed_Wasp | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | leaderName | Barack_Obama</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>A_Severed_Wasp | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A_Severed_Wasp | country | United_States</striple>
+						<striple>United_States | leaderName | Barack_Obama</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein abgetrennter Wasp stammt aus den USA, wo der Anführer Barack Obama ist. Die englische Sprache wird in den USA gesprochen, wo eine der ethnischen Gruppen afrikanische Amerikanerin ist. </text>
+				<template>AGENT-1 stammt von BRIDGE-1, wo der Führer PATIENT-1 ist. PATIENT-2 wird in BRIDGE-1 gesprochen, wo eine der ethnischen Gruppen PATIENT-3 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leaderName | Barack_Obama</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>A_Severed_Wasp | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Präsident der Vereinigten Staaten ist Barack Obama, der afrikanische Amerikaner, der eine der vielen ethnischen Gruppen in den Vereinigten Staaten ausmacht. Die Nationalsprache, die in den USA gesprochen wird, ist Englisch. Das Buch A Severed Wasp hat seinen Ursprung in den USA. </text>
+				<template>Der Präsident von BRIDGE-1 ist PATIENT-1, der PATIENT-3 ist, der eine der vielen ethnischen Gruppen in BRIDGE-1 ausmacht. Die nationale Sprache, die in BRIDGE-1 gesprochen wird, ist PATIENT-2. AGENT-1 hat seinen Ursprung in BRIDGE-1</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Severed_Wasp</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Barack_Obama</entity>
+				<entity>PATIENT-2 | English_language</entity>
+				<entity>PATIENT-3 | African_Americans</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

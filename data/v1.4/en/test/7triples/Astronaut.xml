@@ -1,0 +1,1263 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id961" size="7">
+			<originaltripleset>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Alan_Bean | occupation | Test_pilot</otriple>
+				<otriple>Alan_Bean | birthDate | &quot;1932-03-15&quot;^^xsd:date</otriple>
+				<otriple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;@en</otriple>
+				<otriple>Alan_Bean | mission | Apollo_12</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+				<otriple>Alan_Bean | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Bean | nationality | United_States</mtriple>
+				<mtriple>Alan_Bean | occupation | Test_pilot</mtriple>
+				<mtriple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</mtriple>
+				<mtriple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;</mtriple>
+				<mtriple>Alan_Bean | was a crew member of | Apollo_12</mtriple>
+				<mtriple>Alan_Bean | birthPlace | Wheeler,_Texas</mtriple>
+				<mtriple>Alan_Bean | status | &quot;Retired&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Alan_Bean | occupation | Test_pilot</striple>
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="&quot;1932-03-15&quot;" number="2" tag="PATIENT-3" type="name">March 15 , 1932</reference>
+					<reference entity="Wheeler,_Texas" number="3" tag="PATIENT-6" type="name">Wheeler , Texas</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="Alan_Bean" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;UT Austin, B.S. 1955&quot;" number="6" tag="PATIENT-4" type="name">UT Austin with a BSc</reference>
+					<reference entity="Alan_Bean" number="7" tag="AGENT-1" type="name">in 1955 . He</reference>
+					<reference entity="Test_pilot" number="8" tag="PATIENT-2" type="description">a test pilot</reference>
+					<reference entity="Apollo_12" number="9" tag="PATIENT-5" type="name">Apollo 12</reference>
+					<reference entity="Alan_Bean" number="10" tag="AGENT-1" type="name">Bean</reference>
+					<reference entity="&quot;Retired&quot;" number="11" tag="PATIENT-7" type="name">retired</reference>
+				</references>
+				<text>Alan Bean was born on March 15, 1932 in Wheeler, Texas and is American. He graduated from UT Austin with a BSc. in 1955. He worked as a test pilot and as a member of Apollo 12. Bean is retired.</text>
+				<template>AGENT-1 was born on PATIENT-3 in PATIENT-6 and is PATIENT-1 . AGENT-1 graduated from PATIENT-4 . AGENT-1 worked as PATIENT-2 and as a member of PATIENT-5 . AGENT-1 is PATIENT-7 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+						<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Bean | almaMater | &quot;UT Austin, B.S. 1955&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Alan_Bean | occupation | Test_pilot</striple>
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">an American</reference>
+					<reference entity="&quot;1932-03-15&quot;" number="3" tag="PATIENT-3" type="name">March 15 , 1932</reference>
+					<reference entity="Wheeler,_Texas" number="4" tag="PATIENT-6" type="name">Wheeler , Texas</reference>
+					<reference entity="Alan_Bean" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;UT Austin, B.S. 1955&quot;" number="6" tag="PATIENT-4" type="name">UT Austin in 1955 with a BSc</reference>
+					<reference entity="Alan_Bean" number="7" tag="AGENT-1" type="name">Bean</reference>
+					<reference entity="Test_pilot" number="8" tag="PATIENT-2" type="description">a test pilot</reference>
+					<reference entity="Apollo_12" number="9" tag="PATIENT-5" type="name">Apollo 12</reference>
+					<reference entity="Alan_Bean" number="10" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Retired&quot;" number="11" tag="PATIENT-7" type="name">retired</reference>
+				</references>
+				<text>Alan Bean is an American born on March 15, 1932 in Wheeler, Texas. He graduated from UT Austin in 1955 with a BSc. Bean was a test pilot and a member of Apollo 12. He is retired.</text>
+				<template>AGENT-1 is PATIENT-1 born on PATIENT-3 in PATIENT-6 . AGENT-1 graduated from PATIENT-4 . AGENT-1 was PATIENT-2 and a member of PATIENT-5 . AGENT-1 is PATIENT-7 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Test_pilot</entity>
+				<entity>PATIENT-3 | &quot;1932-03-15&quot;</entity>
+				<entity>PATIENT-4 | &quot;UT Austin, B.S. 1955&quot;</entity>
+				<entity>PATIENT-5 | Apollo_12</entity>
+				<entity>PATIENT-6 | Wheeler,_Texas</entity>
+				<entity>PATIENT-7 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id962" size="7">
+			<originaltripleset>
+				<otriple>Alan_Shepard | status | &quot;Deceased&quot;@en</otriple>
+				<otriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;@en</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | occupation | Test_pilot</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | selection | 1959</otriple>
+				<otriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | status | &quot;Deceased&quot;</mtriple>
+				<mtriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | occupation | Test_pilot</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | was selected by NASA | 1959</mtriple>
+				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Alan_Shepard | deathPlace | California</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="3" tag="PATIENT-7" type="name">November 18th , 1923</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="5" tag="PATIENT-2" type="name">NWC in 1957 with an M.A</reference>
+					<reference entity="Alan_Shepard" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="1959" number="7" tag="PATIENT-6" type="name">1959</reference>
+					<reference entity="Alan_Shepard" number="8" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Test_pilot" number="9" tag="PATIENT-4" type="description">a test pilot</reference>
+					<reference entity="Alan_Shepard" number="10" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="California" number="11" tag="PATIENT-3" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was born in New Hampshire on November 18th, 1923. He graduated from NWC in 1957 with an M.A. He was selected by NASA in 1959 and he was a test pilot. He died in California.</text>
+				<template>AGENT-1 was born in PATIENT-5 on PATIENT-7 . AGENT-1 graduated from PATIENT-2 . AGENT-1 was selected by NASA in PATIENT-6 and AGENT-1 was PATIENT-4 . AGENT-1 died in PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+						<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | deathPlace | California</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="2" tag="PATIENT-7" type="name">November 18 , 1923</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="3" tag="PATIENT-2" type="name">NWC in 1957 with an M.A</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="Test_pilot" number="5" tag="PATIENT-4" type="description">a test pilot</reference>
+					<reference entity="1959" number="6" tag="PATIENT-6" type="name">1959.Alan Shepard , born in New Hampshire , died in California ,</reference>
+					<reference entity="New_Hampshire" number="8" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="California" number="9" tag="PATIENT-3" type="name">California</reference>
+				</references>
+				<text>Alan Shepard,born on November 18, 1923,graduated from NWC in 1957 with an M.A. Alan Shepard served as a test pilot, and was selected by NASA in 1959.Alan Shepard, born in New Hampshire, died in California,.</text>
+				<template>AGENT-1 , born on PATIENT-7 , graduated from PATIENT-2 . AGENT-1 served as PATIENT-4 , and was selected by NASA in PATIENT-6 . AGENT-1 , born in PATIENT-5 , died in PATIENT-3 , .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | deathPlace | California</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="California" number="2" tag="PATIENT-3" type="name">California</reference>
+					<reference entity="Alan_Shepard" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="4" tag="PATIENT-7" type="name">18 November 1923</reference>
+					<reference entity="New_Hampshire" number="5" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="6" tag="PATIENT-2" type="name">NWC , graduating in 1957 with an MA</reference>
+					<reference entity="Alan_Shepard" number="7" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Test_pilot" number="8" tag="PATIENT-4" type="description">a test pilot</reference>
+					<reference entity="1959" number="9" tag="PATIENT-6" type="name">1959</reference>
+				</references>
+				<text>Alan Shepard has died in California. He was born on 18 November 1923 in New Hampshire and attended school at NWC, graduating in 1957 with an MA. He became a test pilot and was eventually selected by NASA in 1959.</text>
+				<template>AGENT-1 has died in PATIENT-3 . AGENT-1 was born on PATIENT-7 in PATIENT-5 and attended school at PATIENT-2 . AGENT-1 became PATIENT-4 and was eventually selected by NASA in PATIENT-6 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
+				<entity>PATIENT-2 | &quot;NWC, M.A. 1957&quot;</entity>
+				<entity>PATIENT-3 | California</entity>
+				<entity>PATIENT-4 | Test_pilot</entity>
+				<entity>PATIENT-5 | New_Hampshire</entity>
+				<entity>PATIENT-6 | 1959</entity>
+				<entity>PATIENT-7 | &quot;1923-11-18&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id963" size="7">
+			<originaltripleset>
+				<otriple>Apollo_12 | crew2Up | Alfred_Worden</otriple>
+				<otriple>Alan_Bean | mission | Apollo_12</otriple>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Apollo_12 | operator | NASA</otriple>
+				<otriple>Alan_Bean | occupation | Test_pilot</otriple>
+				<otriple>Apollo_12 | crew1Up | David_Scott</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Apollo_12 | backup pilot | Alfred_Worden</mtriple>
+				<mtriple>Alan_Bean | was a crew member of | Apollo_12</mtriple>
+				<mtriple>Alan_Bean | nationality | United_States</mtriple>
+				<mtriple>Apollo_12 | operator | NASA</mtriple>
+				<mtriple>Alan_Bean | occupation | Test_pilot</mtriple>
+				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
+				<mtriple>Alan_Bean | birthPlace | Wheeler,_Texas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+						<striple>Alan_Bean | occupation | Test_pilot</striple>
+						<striple>Apollo_12 | operator | NASA</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Apollo_12 | commander | David_Scott</striple>
+						<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="Wheeler,_Texas" number="2" tag="PATIENT-6" type="name">Wheeler , Texas</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">an American</reference>
+					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_12" number="5" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="Test_pilot" number="6" tag="PATIENT-4" type="description">a test pilot</reference>
+					<reference entity="NASA" number="7" tag="PATIENT-3" type="name">NASA</reference>
+					<reference entity="Apollo_12" number="8" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="David_Scott" number="9" tag="PATIENT-5" type="name">David Scott</reference>
+					<reference entity="Alfred_Worden" number="10" tag="PATIENT-1" type="name">Alfred Worden</reference>
+				</references>
+				<text>Alan Bean was born in Wheeler, Texas and is an American. He was a crew member of Apollo 12 and a test pilot which was operated by NASA. Apollo 12 was commanded by David Scott and Alfred Worden was the backup pilot.</text>
+				<template>AGENT-1 was born in PATIENT-6 and is PATIENT-2 . AGENT-1 was a crew member of BRIDGE-1 and PATIENT-4 which was operated by PATIENT-3 . BRIDGE-1 was commanded by PATIENT-5 and PATIENT-1 was the backup pilot .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Bean | occupation | Test_pilot</striple>
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+						<striple>Apollo_12 | operator | NASA</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Apollo_12 | commander | David_Scott</striple>
+						<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="name">US</reference>
+					<reference entity="Wheeler,_Texas" number="3" tag="PATIENT-6" type="name">Wheeler , Texas</reference>
+					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Test_pilot" number="5" tag="PATIENT-4" type="description">a test pilot</reference>
+					<reference entity="NASA" number="6" tag="PATIENT-3" type="name">NASA</reference>
+					<reference entity="Apollo_12" number="7" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="Apollo_12" number="8" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="David_Scott" number="9" tag="PATIENT-5" type="name">David Scott</reference>
+					<reference entity="Alfred_Worden" number="10" tag="PATIENT-1" type="name">Alfred Worden</reference>
+				</references>
+				<text>Alan Bean is a US national, who was born in Wheeler, Texas. He was a test pilot and part of the crew of the NASA operated Apollo 12. Apollo 12 was commanded by David Scott, and had Alfred Worden as a backup pilot.</text>
+				<template>AGENT-1 is a PATIENT-2 national , who was born in PATIENT-6 . AGENT-1 was PATIENT-4 and part of the crew of the PATIENT-3 operated BRIDGE-1 . BRIDGE-1 was commanded by PATIENT-5 , and had PATIENT-1 as a backup pilot .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Bean | occupation | Test_pilot</striple>
+						<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+						<striple>Apollo_12 | operator | NASA</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
+						<striple>Apollo_12 | commander | David_Scott</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="name">US</reference>
+					<reference entity="Wheeler,_Texas" number="3" tag="PATIENT-6" type="name">Wheeler , Texas</reference>
+					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Test_pilot" number="5" tag="PATIENT-4" type="description">a test pilot</reference>
+					<reference entity="NASA" number="6" tag="PATIENT-3" type="name">NASA</reference>
+					<reference entity="Apollo_12" number="7" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="Apollo_12" number="8" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="Alfred_Worden" number="9" tag="PATIENT-1" type="name">Alfred Worden</reference>
+					<reference entity="David_Scott" number="10" tag="PATIENT-5" type="name">David Scott</reference>
+				</references>
+				<text>Alan Bean is a US national, who was born in Wheeler, Texas. He served as a test pilot and was part of the crew of NASA operated Apollo 12. Other crew of Apollo 12 included Alfred Worden (back up pilot) and David Scott (commander).</text>
+				<template>AGENT-1 is a PATIENT-2 national , who was born in PATIENT-6 . AGENT-1 served as PATIENT-4 and was part of the crew of PATIENT-3 operated BRIDGE-1 . Other crew of BRIDGE-1 included PATIENT-1 (back up pilot) and PATIENT-5 (commander) .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>PATIENT-1 | Alfred_Worden</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | NASA</entity>
+				<entity>PATIENT-4 | Test_pilot</entity>
+				<entity>PATIENT-5 | David_Scott</entity>
+				<entity>PATIENT-6 | Wheeler,_Texas</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id964" size="7">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | was selected by NASA | 1963</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | occupation | Fighter_pilot</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="1" tag="PATIENT-2" type="name">Edwin E. Aldrin , Jr.</reference>
+					<reference entity="Buzz_Aldrin" number="2" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Fighter_pilot" number="4" tag="PATIENT-5" type="description">a test pilot</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Apollo_11" number="6" tag="PATIENT-4" type="name">Apollo 11</reference>
+					<reference entity="1963" number="7" tag="PATIENT-3" type="name">1963</reference>
+					<reference entity="Buzz_Aldrin" number="8" tag="AGENT-1" type="name">Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="9" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="10" tag="PATIENT-7" type="name">January 20th,1930</reference>
+					<reference entity="1963" number="11" tag="PATIENT-3" type="name">1963</reference>
+					<reference entity="Buzz_Aldrin" number="12" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="13" tag="PATIENT-6" type="name">MIT with a Sc</reference>
+				</references>
+				<text>Edwin E. Aldrin, Jr. was better known by his nickname of Buzz Aldrin and as a test pilot @ he was picked to crew Apollo 11 by NASA in 1963. Aldrin was born in Glen Ridge, New Jersey on January 20th,1930 and in 1963 @ he graduated from MIT with a Sc. D.</text>
+				<template>PATIENT-2 was better known by AGENT-1 nickname of AGENT-1 and as PATIENT-5 @ AGENT-1 was picked to crew PATIENT-4 by NASA in PATIENT-3 . AGENT-1 was born in PATIENT-1 on PATIENT-7 and in PATIENT-3 @ AGENT-1 graduated from PATIENT-6 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="1" tag="PATIENT-2" type="name">Edwin E. Aldrin , Jr.</reference>
+					<reference entity="Buzz_Aldrin" number="2" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Fighter_pilot" number="3" tag="PATIENT-5" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_11" number="4" tag="PATIENT-4" type="name">Apollo 11</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">him</reference>
+					<reference entity="1963" number="6" tag="PATIENT-3" type="name">1963</reference>
+					<reference entity="Buzz_Aldrin" number="7" tag="AGENT-1" type="name">Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="8" tag="PATIENT-7" type="name">January 20th , 1930</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="9" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="10" tag="PATIENT-6" type="name">MIT 's Sc . D. program</reference>
+					<reference entity="1963" number="11" tag="PATIENT-3" type="name">1963</reference>
+				</references>
+				<text>Edwin E. Aldrin, Jr. was better known as Buzz Aldrin, a fighter pilot and member of Apollo 11 after NASA picked him for the space program in 1963. Aldrin was born on January 20th, 1930 in Glen Ridge, New Jersey and a graduate of MIT's Sc. D. program in 1963.</text>
+				<template>PATIENT-2 was better known as AGENT-1 , PATIENT-5 and member of PATIENT-4 after NASA picked AGENT-1 for the space program in PATIENT-3 . AGENT-1 was born on PATIENT-7 in PATIENT-1 and a graduate of PATIENT-6 in PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1"/>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="1" tag="PATIENT-2" type="name">Edwin E. `` Buzz '' Aldrin Jr</reference>
+					<reference entity="Fighter_pilot" number="2" tag="PATIENT-5" type="description">a Fighter pilot</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="4" tag="PATIENT-7" type="name">1930 01 20</reference>
+					<reference entity="1963" number="5" tag="PATIENT-3" type="name">1963</reference>
+					<reference entity="Buzz_Aldrin" number="6" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="7" tag="PATIENT-6" type="name">Massachusetts Institute of Technology in 1963 with a doctorate in Science</reference>
+					<reference entity="Apollo_11" number="8" tag="PATIENT-4" type="name">Apollo 11</reference>
+				</references>
+				<text>Edwin E. &quot;Buzz&quot; Aldrin Jr was a Fighter pilot who was born in Glen Ridge, New Jersey on 1930 01 20. In 1963, he graduated from Massachusetts Institute of Technology in 1963 with a doctorate in Science and was selected by NASA to be part of their Apollo 11 crew.</text>
+				<template>PATIENT-2 was PATIENT-5 who was born in PATIENT-1 on PATIENT-7 . In PATIENT-3 , AGENT-1 graduated from PATIENT-6 and was selected by NASA to be part of their PATIENT-4 crew .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | &quot;Edwin E. Aldrin, Jr.&quot;</entity>
+				<entity>PATIENT-3 | 1963</entity>
+				<entity>PATIENT-4 | Apollo_11</entity>
+				<entity>PATIENT-5 | Fighter_pilot</entity>
+				<entity>PATIENT-6 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-7 | &quot;1930-01-20&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id965" size="7">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;^^&lt;http://dbpedia.org/datatype/minute&gt;</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
+				<mtriple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | occupation | Fighter_pilot</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="bad" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-2" type="name">American</reference>
+					<reference entity="Buzz_Aldrin" number="2" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Fighter_pilot" number="3" tag="PATIENT-5" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_11" number="4" tag="PATIENT-4" type="name">Apollo 11</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;52.0&quot;(minutes)" number="6" tag="PATIENT-3" type="name">52 minutes</reference>
+					<reference entity="Buzz_Aldrin" number="7" tag="AGENT-1" type="name">Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="8" tag="PATIENT-7" type="name">January 20th , 1930</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="9" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="10" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="11" tag="PATIENT-6" type="name">from MIT with a Sc</reference>
+				</references>
+				<text>American @ Buzz Aldrin was a fighter pilot who later joined the Apollo 11 program where he spent 52 minutes in space. Aldrin was born January 20th, 1930 in Glen Ridge, New Jersey and in 1963 he graduated from MIT with a Sc. D.</text>
+				<template>PATIENT-2 @ AGENT-1 was PATIENT-5 who later joined the PATIENT-4 program where AGENT-1 spent PATIENT-3 in space . AGENT-1 was born PATIENT-7 in PATIENT-1 and in 1963 AGENT-1 graduated PATIENT-6 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">an American</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="4" tag="PATIENT-7" type="description">the 20th January , 1930</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="6" tag="PATIENT-6" type="name">MIT with an Sc.D in 1963</reference>
+					<reference entity="Buzz_Aldrin" number="7" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Fighter_pilot" number="8" tag="PATIENT-5" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_11" number="9" tag="PATIENT-4" type="name">Apollo 11</reference>
+					<reference entity="Buzz_Aldrin" number="10" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;52.0&quot;(minutes)" number="11" tag="PATIENT-3" type="name">52 minutes</reference>
+				</references>
+				<text>Buzz Aldrin was an American, who was born in Glen Ridge, New Jersey on the 20th January, 1930. He graduated from MIT with an Sc.D in 1963. He was a fighter pilot and member of the Apollo 11 crew. He walked in space for 52 minutes.</text>
+				<template>AGENT-1 was PATIENT-2 , who was born in PATIENT-1 on PATIENT-7 . AGENT-1 graduated from PATIENT-6 . AGENT-1 was PATIENT-5 and member of the PATIENT-4 crew . AGENT-1 walked in space for PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="2" tag="PATIENT-7" type="name">January 20 , 1930</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="5" tag="PATIENT-6" type="name">MIT with A sc . D 1n 1963</reference>
+					<reference entity="Fighter_pilot" number="6" tag="PATIENT-5" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_11" number="7" tag="PATIENT-4" type="name">Apollo 11</reference>
+					<reference entity="Buzz_Aldrin" number="8" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;52.0&quot;(minutes)" number="9" tag="PATIENT-3" type="name">52 minutes</reference>
+				</references>
+				<text>Buzz Aldrin was born on January 20, 1930 in Glen Ridge, New Jersey. He graduated from MIT with A sc. D 1n 1963; served as a fighter pilot, and was a member of the Apollo 11 crew. He spent 52 minutes in space.</text>
+				<template>AGENT-1 was born on PATIENT-7 in PATIENT-1 . AGENT-1 graduated from PATIENT-6 ; served as PATIENT-5 , and was a member of the PATIENT-4 crew . AGENT-1 spent PATIENT-3 in space .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | &quot;52.0&quot;(minutes)</entity>
+				<entity>PATIENT-4 | Apollo_11</entity>
+				<entity>PATIENT-5 | Fighter_pilot</entity>
+				<entity>PATIENT-6 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-7 | &quot;1930-01-20&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id966" size="7">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | awards | 20</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;^^xsd:date</otriple>
+				<otriple>Buzz_Aldrin | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | awards | 20</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | status | &quot;Retired&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | awards | 20</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="name">US</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="4" tag="PATIENT-6" type="description">the 20th January 1930</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="6" tag="PATIENT-5" type="name">MIT with a Sc.D in 1963</reference>
+					<reference entity="Buzz_Aldrin" number="7" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_11" number="8" tag="PATIENT-3" type="name">Apollo</reference>
+					<reference entity="20" number="9" tag="PATIENT-4" type="name">20</reference>
+					<reference entity="Buzz_Aldrin" number="10" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Retired&quot;" number="11" tag="PATIENT-7" type="name">retired</reference>
+				</references>
+				<text>Buzz Aldrin is a US national, who was born in Glen Ridge, New Jersey on the 20th January 1930. He graduated from MIT with a Sc.D in 1963. He was a member of the Apollo Crew and received 20 awards. He is now retired.</text>
+				<template>AGENT-1 is a PATIENT-2 national , who was born in PATIENT-1 on PATIENT-6 . AGENT-1 graduated from PATIENT-5 . AGENT-1 was a member of the PATIENT-3 Crew and received PATIENT-4 awards . AGENT-1 is now PATIENT-7 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | awards | 20</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="name">US</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="3" tag="PATIENT-6" type="name">1930 01 20</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="4" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="6" tag="PATIENT-5" type="name">1963 from MIT with a Sc.D</reference>
+					<reference entity="Apollo_11" number="7" tag="PATIENT-3" type="name">Apollo 11</reference>
+					<reference entity="20" number="8" tag="PATIENT-4" type="name">20</reference>
+					<reference entity="Buzz_Aldrin" number="9" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Retired&quot;" number="10" tag="PATIENT-7" type="name">retired</reference>
+				</references>
+				<text>Buzz Aldrin is a US national born on 1930 01 20 in Glen Ridge, New Jersey. He graduated in 1963 from MIT with a Sc.D, was a member of the Apollo 11 crew and has won 20 awards. Buzz Aldrin is now retired.</text>
+				<template>AGENT-1 is a PATIENT-2 national born on PATIENT-6 in PATIENT-1 . AGENT-1 graduated in PATIENT-5 , was a member of the PATIENT-3 crew and has won PATIENT-4 awards . AGENT-1 is now PATIENT-7 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Apollo_11</entity>
+				<entity>PATIENT-4 | 20</entity>
+				<entity>PATIENT-5 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-6 | &quot;1930-01-20&quot;</entity>
+				<entity>PATIENT-7 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id967" size="7">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | status | &quot;Retired&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;^^xsd:date</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | status | &quot;Retired&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
+				<mtriple>Buzz_Aldrin | was selected by NASA | 1963</mtriple>
+				<mtriple>Apollo_11 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-4" type="name">US</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="3" tag="PATIENT-3" type="name">20 January 1930</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="4" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Retired&quot;" number="6" tag="PATIENT-2" type="name">retired</reference>
+					<reference entity="1963" number="7" tag="PATIENT-5" type="name">1963</reference>
+					<reference entity="NASA" number="8" tag="PATIENT-6" type="name">NASA</reference>
+					<reference entity="Apollo_11" number="9" tag="BRIDGE-1" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin, a US national, was born on 20 January 1930 in Glen Ridge, New Jersey. He has now retired after a career which included being selected in 1963 by NASA and serving on Apollo 11 as a member of the crew.</text>
+				<template>AGENT-1 , a PATIENT-4 national , was born on PATIENT-3 in PATIENT-1 . AGENT-1 has now PATIENT-2 after a career which included being selected in PATIENT-5 by PATIENT-6 and serving on BRIDGE-1 as a member of the crew .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-4" type="name">US</reference>
+					<reference entity="&quot;Retired&quot;" number="3" tag="PATIENT-2" type="name">retired</reference>
+					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="5" tag="PATIENT-3" type="name">20 January 1930</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="6" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="7" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="NASA" number="8" tag="PATIENT-6" type="name">NASA</reference>
+					<reference entity="1963" number="9" tag="PATIENT-5" type="name">1963</reference>
+					<reference entity="Apollo_11" number="10" tag="BRIDGE-1" type="description">the Apollo 11 program</reference>
+				</references>
+				<text>Buzz Aldrin, a US national, has retired. He was born on 20 January 1930 in Glen Ridge, New Jersey. He was selected by NASA in 1963 to serve as crew member on the Apollo 11 program.</text>
+				<template>AGENT-1 , a PATIENT-4 national , has PATIENT-2 . AGENT-1 was born on PATIENT-3 in PATIENT-1 . AGENT-1 was selected by PATIENT-6 in PATIENT-5 to serve as crew member on BRIDGE-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | &quot;Retired&quot;</entity>
+				<entity>PATIENT-3 | &quot;1930-01-20&quot;</entity>
+				<entity>PATIENT-4 | United_States</entity>
+				<entity>PATIENT-5 | 1963</entity>
+				<entity>PATIENT-6 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id968" size="7">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | status | &quot;Retired&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | nationality | United_States</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Apollo_11 | crew2Up | William_Anders</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | status | &quot;Retired&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+				<mtriple>Apollo_11 | backup pilot | William_Anders</mtriple>
+				<mtriple>Apollo_11 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+						<striple>Apollo_11 | backup pilot | William_Anders</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-3" type="description">an American</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_11" number="5" tag="BRIDGE-1" type="name">Apollo 11</reference>
+					<reference entity="NASA" number="6" tag="PATIENT-6" type="name">NASA</reference>
+					<reference entity="William_Anders" number="7" tag="PATIENT-5" type="name">William Anders</reference>
+					<reference entity="Buzz_Aldrin" number="8" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Buzz_Aldrin" number="9" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="10" tag="PATIENT-4" type="name">MIT in 1963 with a Sc</reference>
+					<reference entity="Buzz_Aldrin" number="11" tag="AGENT-1" type="name">D. Aldrin</reference>
+					<reference entity="&quot;Retired&quot;" number="12" tag="PATIENT-2" type="name">retired</reference>
+				</references>
+				<text>Buzz Aldrin is an American born in Glen Ridge, New Jersey. He was a member of Apollo 11, which was run by NASA and where William Anders was his backup pilot. He also graduated from MIT in 1963 with a Sc. D. Aldrin is retired.</text>
+				<template>AGENT-1 is PATIENT-3 born in PATIENT-1 . AGENT-1 was a member of BRIDGE-1 , which was run by PATIENT-6 and where PATIENT-5 was AGENT-1 backup pilot . AGENT-1 also graduated from PATIENT-4 . AGENT-1 is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+					<sentence ID="5">
+						<striple>Apollo_11 | backup pilot | William_Anders</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="4" tag="PATIENT-4" type="name">MIT in 1963 with a Sc.D</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="United_States" number="6" tag="PATIENT-3" type="description">an American</reference>
+					<reference entity="NASA" number="7" tag="PATIENT-6" type="name">NASA</reference>
+					<reference entity="Apollo_11" number="8" tag="BRIDGE-1" type="name">Apollo 11</reference>
+					<reference entity="Buzz_Aldrin" number="9" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Retired&quot;" number="10" tag="PATIENT-2" type="name">retired</reference>
+					<reference entity="Apollo_11" number="11" tag="BRIDGE-1" type="name">Apollo 11 's</reference>
+					<reference entity="William_Anders" number="12" tag="PATIENT-5" type="name">William Anders</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey. He graduated from MIT in 1963 with a Sc.D. He is an American who was a crew member on NASA operated Apollo 11. He is now retired. Apollo 11's back up pilot was William Anders.</text>
+				<template>AGENT-1 was born in PATIENT-1 . AGENT-1 graduated from PATIENT-4 . AGENT-1 is PATIENT-3 who was a crew member on PATIENT-6 operated BRIDGE-1 . AGENT-1 is now PATIENT-2 . BRIDGE-1 back up pilot was PATIENT-5 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | nationality | United_States</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+						<striple>Apollo_11 | backup pilot | William_Anders</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-3" type="description">an American</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="4" tag="PATIENT-4" type="name">Massachusetts Institute of Technology with a Sc.D in 1963</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_11" number="6" tag="BRIDGE-1" type="name">Apollo 11</reference>
+					<reference entity="NASA" number="7" tag="PATIENT-6" type="name">NASA</reference>
+					<reference entity="William_Anders" number="8" tag="PATIENT-5" type="name">William Anders</reference>
+				</references>
+				<text>Buzz Aldrin was an American born in Glen Ridge, New Jersey and graduated from Massachusetts Institute of Technology with a Sc.D in 1963. He was a crew member of Apollo 11 operated by NASA with William Anders as the backup pilot.</text>
+				<template>AGENT-1 was PATIENT-3 born in PATIENT-1 and graduated from PATIENT-4 . AGENT-1 was a crew member of BRIDGE-1 operated by PATIENT-6 with PATIENT-5 as the backup pilot .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | &quot;Retired&quot;</entity>
+				<entity>PATIENT-3 | United_States</entity>
+				<entity>PATIENT-4 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-5 | William_Anders</entity>
+				<entity>PATIENT-6 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id969" size="7">
+			<originaltripleset>
+				<otriple>William_Anders | dateOfRet | &quot;1969-09-01&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | nationality | United_States</otriple>
+				<otriple>William_Anders | status | &quot;Retired&quot;@en</otriple>
+				<otriple>William_Anders | birthDate | &quot;1933-10-17&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | occupation | Fighter_pilot</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</mtriple>
+				<mtriple>William_Anders | nationality | United_States</mtriple>
+				<mtriple>William_Anders | status | &quot;Retired&quot;</mtriple>
+				<mtriple>William_Anders | birthDate | &quot;1933-10-17&quot;</mtriple>
+				<mtriple>William_Anders | occupation | Fighter_pilot</mtriple>
+				<mtriple>William_Anders | birthPlace | British_Hong_Kong</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>William_Anders | occupation | Fighter_pilot</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="2" tag="PATIENT-4" type="description">the 17th of October</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-6" type="name">1933 in British Hong Kong</reference>
+					<reference entity="William_Anders" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_8" number="5" tag="PATIENT-7" type="name">Apollo 8</reference>
+					<reference entity="Fighter_pilot" number="6" tag="PATIENT-5" type="description">a fighter pilot</reference>
+					<reference entity="William_Anders" number="7" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="8" tag="PATIENT-1" type="description">the 1st of September in 1969</reference>
+				</references>
+				<text>William Anders was born on the 17th of October in 1933 in British Hong Kong. He was a member on Apollo 8 as a fighter pilot. He retired on the 1st of September in 1969.</text>
+				<template>AGENT-1 was born on PATIENT-4 in PATIENT-6 . AGENT-1 was a member on PATIENT-7 as PATIENT-5 . AGENT-1 retired on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | nationality | United_States</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | occupation | Fighter_pilot</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">an American</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-6" type="name">British Hong Kong</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="4" tag="PATIENT-4" type="name">October 17th 1933</reference>
+					<reference entity="William_Anders" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Fighter_pilot" number="6" tag="PATIENT-5" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_8" number="7" tag="PATIENT-7" type="name">Apollo 8</reference>
+					<reference entity="William_Anders" number="8" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="9" tag="PATIENT-1" type="description">the 1st September 1969</reference>
+				</references>
+				<text>William Anders is an American who was born in British Hong Kong on October 17th 1933. He was a fighter pilot and crewed Apollo 8. He retired on the 1st September 1969.</text>
+				<template>AGENT-1 is PATIENT-2 who was born in PATIENT-6 on PATIENT-4 . AGENT-1 was PATIENT-5 and crewed PATIENT-7 . AGENT-1 retired on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | nationality | United_States</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | occupation | Fighter_pilot</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="name">US</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-6" type="name">British Hong Kong</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="4" tag="PATIENT-4" type="name">17 October 1933</reference>
+					<reference entity="William_Anders" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Fighter_pilot" number="6" tag="PATIENT-5" type="description">a test pilot</reference>
+					<reference entity="Apollo_8" number="7" tag="PATIENT-7" type="name">Apollo 8</reference>
+					<reference entity="William_Anders" number="8" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="9" tag="PATIENT-1" type="name">1 September 1969</reference>
+				</references>
+				<text>William Anders was a US national who was born in British Hong Kong on 17 October 1933. He became a test pilot and was a member of the crew aboard Apollo 8. He retired on 1 September 1969.</text>
+				<template>AGENT-1 was a PATIENT-2 national who was born in PATIENT-6 on PATIENT-4 . AGENT-1 became PATIENT-5 and was a member of the crew aboard PATIENT-7 . AGENT-1 retired on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | &quot;Retired&quot;</entity>
+				<entity>PATIENT-4 | &quot;1933-10-17&quot;</entity>
+				<entity>PATIENT-5 | Fighter_pilot</entity>
+				<entity>PATIENT-6 | British_Hong_Kong</entity>
+				<entity>PATIENT-7 | Apollo_8</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id970" size="7">
+			<originaltripleset>
+				<otriple>William_Anders | dateOfRet | &quot;1969-09-01&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>William_Anders | nationality | United_States</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>Apollo_8 | crew2Up | Buzz_Aldrin</otriple>
+				<otriple>Apollo_8 | crewMembers | Frank_Borman</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+				<mtriple>William_Anders | nationality | United_States</mtriple>
+				<mtriple>William_Anders | birthPlace | British_Hong_Kong</mtriple>
+				<mtriple>Apollo_8 | backup pilot | Buzz_Aldrin</mtriple>
+				<mtriple>Apollo_8 | crewMembers | Frank_Borman</mtriple>
+				<mtriple>Apollo_8 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | nationality | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
+						<striple>Apollo_8 | operator | NASA</striple>
+						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="British_Hong_Kong" number="2" tag="PATIENT-3" type="name">British Hong Kong</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">U.S</reference>
+					<reference entity="William_Anders" number="4" tag="AGENT-1" type="name">William</reference>
+					<reference entity="Apollo_8" number="5" tag="BRIDGE-1" type="name">Apollo 8</reference>
+					<reference entity="Frank_Borman" number="6" tag="PATIENT-5" type="name">Frank Borman</reference>
+					<reference entity="NASA" number="7" tag="PATIENT-6" type="name">NASA 's</reference>
+					<reference entity="Buzz_Aldrin" number="8" tag="PATIENT-4" type="name">Buzz Aldrin</reference>
+					<reference entity="William_Anders" number="9" tag="AGENT-1" type="name">William</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="10" tag="PATIENT-1" type="name">September 1st in 1969</reference>
+				</references>
+				<text>William Anders was born in British Hong Kong and is a U.S Citizen. William was a member of the Apollo 8 crew (along with Frank Borman) which was operated by NASA's backup pilot Buzz Aldrin. William retired on September 1st in 1969.</text>
+				<template>AGENT-1 was born in PATIENT-3 and is a PATIENT-2 Citizen . AGENT-1 was a member of the BRIDGE-1 crew (along with PATIENT-5) which was operated by PATIENT-6 backup pilot PATIENT-4 . AGENT-1 retired on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | nationality | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>Apollo_8 | operator | NASA</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="British_Hong_Kong" number="2" tag="PATIENT-3" type="name">British Hong Kong</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">an American</reference>
+					<reference entity="William_Anders" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_8" number="5" tag="BRIDGE-1" type="name">Apollo 8</reference>
+					<reference entity="NASA" number="6" tag="PATIENT-6" type="name">NASA</reference>
+					<reference entity="William_Anders" number="7" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="Buzz_Aldrin" number="8" tag="PATIENT-4" type="name">Buzz Aldrin</reference>
+					<reference entity="William_Anders" number="9" tag="AGENT-1" type="name">Anders</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="10" tag="PATIENT-1" type="name">1960-09-01</reference>
+				</references>
+				<text>William Anders was born in British Hong Kong but is an American. He was a member of Apollo 8 which is operated by NASA. His backup pilot was Buzz Aldrin. Anders retired in 1960-09-01.</text>
+				<template>AGENT-1 was born in PATIENT-3 but is PATIENT-2 . AGENT-1 was a member of BRIDGE-1 which is operated by PATIENT-6 . AGENT-1 backup pilot was PATIENT-4 . AGENT-1 retired in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | nationality | United_States</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
+						<striple>Apollo_8 | operator | NASA</striple>
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">the US</reference>
+					<reference entity="William_Anders" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="British_Hong_Kong" number="4" tag="PATIENT-3" type="name">British Hong Kong</reference>
+					<reference entity="Frank_Borman" number="5" tag="PATIENT-5" type="name">Frank Borman</reference>
+					<reference entity="William_Anders" number="6" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="NASA" number="7" tag="PATIENT-6" type="name">NASA</reference>
+					<reference entity="Apollo_8" number="8" tag="BRIDGE-1" type="name">Apollo 8</reference>
+					<reference entity="William_Anders" number="9" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="10" tag="PATIENT-1" type="name">1969-09-01</reference>
+					<reference entity="Apollo_8" number="11" tag="BRIDGE-1" type="name">Apollo 8 's</reference>
+					<reference entity="Buzz_Aldrin" number="12" tag="PATIENT-4" type="name">Buzz Aldrin</reference>
+				</references>
+				<text>William Anders was from the US and he was born in British Hong Kong. Alongside Frank Borman, he crewed the NASA operated Apollo 8 before he retired on 1969-09-01. Apollo 8's backup pilot was Buzz Aldrin.</text>
+				<template>AGENT-1 was from PATIENT-2 and AGENT-1 was born in PATIENT-3 . Alongside PATIENT-5 , AGENT-1 crewed the PATIENT-6 operated BRIDGE-1 before AGENT-1 retired on PATIENT-1 . BRIDGE-1 backup pilot was PATIENT-4 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | Apollo_8</entity>
+				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | British_Hong_Kong</entity>
+				<entity>PATIENT-4 | Buzz_Aldrin</entity>
+				<entity>PATIENT-5 | Frank_Borman</entity>
+				<entity>PATIENT-6 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id971" size="7">
+			<originaltripleset>
+				<otriple>William_Anders | dateOfRet | &quot;1969-09-01&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | selection | 1963</otriple>
+				<otriple>William_Anders | timeInSpace | &quot;8820.0&quot;^^&lt;http://dbpedia.org/datatype/minute&gt;</otriple>
+				<otriple>William_Anders | birthDate | &quot;1933-10-17&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | occupation | Fighter_pilot</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</mtriple>
+				<mtriple>William_Anders | was selected by NASA | 1963</mtriple>
+				<mtriple>William_Anders | timeInSpace | &quot;8820.0&quot;(minutes)</mtriple>
+				<mtriple>William_Anders | birthDate | &quot;1933-10-17&quot;</mtriple>
+				<mtriple>William_Anders | occupation | Fighter_pilot</mtriple>
+				<mtriple>William_Anders | birthPlace | British_Hong_Kong</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | occupation | Fighter_pilot</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | was selected by NASA | 1963</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+						<striple>William_Anders | timeInSpace | &quot;8820.0&quot;(minutes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Fighter_pilot" number="1" tag="PATIENT-5" type="name">Test pilot</reference>
+					<reference entity="William_Anders" number="2" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-6" type="name">British Hong Kong</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="4" tag="PATIENT-4" type="name">October 17th , 1933</reference>
+					<reference entity="1963" number="5" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="William_Anders" number="6" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Apollo_8" number="7" tag="PATIENT-7" type="name">Apollo 8</reference>
+					<reference entity="William_Anders" number="8" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="9" tag="PATIENT-1" type="name">September 1st , 1969</reference>
+					<reference entity="William_Anders" number="10" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="&quot;8820.0&quot;(minutes)" number="11" tag="PATIENT-3" type="name">8820.0 minutes</reference>
+				</references>
+				<text>Test pilot @ William Anders was born in British Hong Kong on October 17th, 1933. After joining NASA in 1963, he served as a crew member of Apollo 8. When he retired on September 1st, 1969 @ his total space time was 8820.0 minutes.</text>
+				<template>PATIENT-5 @ AGENT-1 was born in PATIENT-6 on PATIENT-4 . After joining NASA in PATIENT-2 , AGENT-1 served as a crew member of PATIENT-7 . When AGENT-1 retired on PATIENT-1 @ AGENT-1 total space time was PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | occupation | Fighter_pilot</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>William_Anders | was selected by NASA | 1963</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					</sentence>
+					<sentence ID="4">
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+						<striple>William_Anders | timeInSpace | &quot;8820.0&quot;(minutes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="British_Hong_Kong" number="2" tag="PATIENT-6" type="name">British Hong Kong</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="3" tag="PATIENT-4" type="name">October 17th , 1933</reference>
+					<reference entity="William_Anders" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Fighter_pilot" number="5" tag="PATIENT-5" type="description">a fighter pilot</reference>
+					<reference entity="William_Anders" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="1963" number="7" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="Apollo_8" number="8" tag="PATIENT-7" type="name">Apollo 8</reference>
+					<reference entity="William_Anders" number="9" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="10" tag="PATIENT-1" type="description">the 1st September 1969</reference>
+					<reference entity="&quot;8820.0&quot;(minutes)" number="11" tag="PATIENT-3" type="name">8820 minutes</reference>
+				</references>
+				<text>William Anders was born in British Hong Kong on October 17th, 1933. He served as a fighter pilot. He joined NASA in 1963 and was a crew member on Apollo 8. He retired on the 1st September 1969, having spent 8820 minutes in space.</text>
+				<template>AGENT-1 was born in PATIENT-6 on PATIENT-4 . AGENT-1 served as PATIENT-5 . AGENT-1 joined NASA in PATIENT-2 and was a crew member on PATIENT-7 . AGENT-1 retired on PATIENT-1 , having spent PATIENT-3 in space .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | was selected by NASA | 1963</striple>
+						<striple>William_Anders | occupation | Fighter_pilot</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+						<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>William_Anders | timeInSpace | &quot;8820.0&quot;(minutes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1963" number="1" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="Fighter_pilot" number="2" tag="PATIENT-5" type="description">a test pilot</reference>
+					<reference entity="William_Anders" number="3" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="British_Hong_Kong" number="4" tag="PATIENT-6" type="name">Hong Kong</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="5" tag="PATIENT-4" type="name">October 17 1933</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="6" tag="PATIENT-1" type="name">1969</reference>
+					<reference entity="Apollo_8" number="7" tag="PATIENT-7" type="name">Apollo 8</reference>
+					<reference entity="&quot;8820.0&quot;(minutes)" number="8" tag="PATIENT-3" type="name">8820 minutes</reference>
+				</references>
+				<text>Selected in 1963 by NASA as a test pilot, William Anders was born in Hong Kong on October 17 1933, retired in 1969, and served as a crew member of Apollo 8 spending 8820 minutes in space.</text>
+				<template>Selected in PATIENT-2 by NASA as PATIENT-5 , AGENT-1 was born in PATIENT-6 on PATIENT-4 , retired in PATIENT-1 , and served as a crew member of PATIENT-7 spending PATIENT-3 in space .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
+				<entity>PATIENT-2 | 1963</entity>
+				<entity>PATIENT-3 | &quot;8820.0&quot;(minutes)</entity>
+				<entity>PATIENT-4 | &quot;1933-10-17&quot;</entity>
+				<entity>PATIENT-5 | Fighter_pilot</entity>
+				<entity>PATIENT-6 | British_Hong_Kong</entity>
+				<entity>PATIENT-7 | Apollo_8</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

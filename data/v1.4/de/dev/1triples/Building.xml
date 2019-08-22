@@ -1,0 +1,862 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Building" eid="Id1" size="1">
+			<originaltripleset>
+				<otriple>103_Colmore_Row | architect | John_Madin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>103_Colmore_Row | architect | John_Madin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>103 Colmore Row wurde vom Architekten John Madin entworfen. </text>
+				<template>AGENT-1 wurde von PATIENT-1 entworfen.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>103 Colmore Row wurde vom Architekten John Madin entworfen. </text>
+				<template>AGENT-1 wurde von PATIENT-1 entworfen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 103_Colmore_Row</entity>
+				<entity>PATIENT-1 | John_Madin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id2" size="1">
+			<originaltripleset>
+				<otriple>103_Colmore_Row | location | Colmore_Row</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>103_Colmore_Row | location | Colmore_Row</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | location | Colmore_Row</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>103 Colmore Row befindet sich bei Colmore Row. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | location | Colmore_Row</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>103 Colmore Row befindet sich in Colmore Row. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 103_Colmore_Row</entity>
+				<entity>PATIENT-1 | Colmore_Row</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id3" size="1">
+			<originaltripleset>
+				<otriple>11_Diagonal_Street | buildingEndDate | &quot;1983&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>11_Diagonal_Street | completionDate | 1983</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11_Diagonal_Street | completionDate | 1983</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 11 Diagonal Street wurde 1983 fertiggestellt. </text>
+				<template>AGENT-1 wurde in PATIENT-1 abgeschlossen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11_Diagonal_Street</entity>
+				<entity>PATIENT-1 | 1983</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id4" size="1">
+			<originaltripleset>
+				<otriple>200_Public_Square | buildingEndDate | &quot;1985&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>200_Public_Square | completionDate | 1985</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | completionDate | 1985</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der 200 öffentliche Platz wurde 1985 fertiggestellt. </text>
+				<template>AGENT-1 wurde in PATIENT-1 abgeschlossen.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | completionDate | 1985</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>200 öffentlicher Platz wurde 1985 fertiggestellt. </text>
+				<template>AGENT-1 wurde in PATIENT-1 abgeschlossen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 200_Public_Square</entity>
+				<entity>PATIENT-1 | 1985</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id5" size="1">
+			<originaltripleset>
+				<otriple>20_Fenchurch_Street | buildingStartDate | &quot;January 2009&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>20_Fenchurch_Street | buildingStartDate | &quot;January 2009&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | buildingStartDate | &quot;January 2009&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Gebäude an der 20 Fenchurch Street wurde im Januar 2009 begonnen. </text>
+				<template>Das Gebäude bei AGENT-1 wurde in PATIENT-1 gestartet.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | buildingStartDate | &quot;January 2009&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Bau der 20 Fenchurch Street begann im Januar 2009. </text>
+				<template>Der Bau von AGENT-1 begann in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 20_Fenchurch_Street</entity>
+				<entity>PATIENT-1 | &quot;January 2009&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id6" size="1">
+			<originaltripleset>
+				<otriple>20_Fenchurch_Street | location | United_Kingdom</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>20_Fenchurch_Street | location | United_Kingdom</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>20 Fenchurch Street befindet sich im Vereinigten Königreich. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>20 Fenchurch Street befindet sich im Vereinigten Königreich. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 20_Fenchurch_Street</entity>
+				<entity>PATIENT-1 | United_Kingdom</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id7" size="1">
+			<originaltripleset>
+				<otriple>300_North_LaSalle | floorCount | &quot;60&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>300_North_LaSalle | floorCount | 60</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Auf 300 North LaSalle gibt es 60 Etagen. </text>
+				<template>Es gibt PATIENT-1 Etagen bei AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | floorCount | 60</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>300 North LaSalle hat 60 Etagen. </text>
+				<template>AGENT-1 hat PATIENT-1 Etagen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 300_North_LaSalle</entity>
+				<entity>PATIENT-1 | 60</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id8" size="1">
+			<originaltripleset>
+				<otriple>3Arena | architect | &quot;HOK SVE&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | architect | &quot;HOK SVE&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Hok SVE war der Architekt der 3Arena. </text>
+				<template>PATIENT-1 war der Architekt von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Hok SVE war der Architekt der 3Arena. </text>
+				<template>PATIENT-1 war der Architekt von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | &quot;HOK SVE&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id9" size="1">
+			<originaltripleset>
+				<otriple>3Arena | location | &quot;East Link Bridge&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | location | &quot;East Link Bridge&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 3Arena befindet sich an der East Link Bridge. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die 3Arena befindet sich auf der East Link Bridge. </text>
+				<template>AGENT-1 befindet sich auf PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>3 Arena befindet sich an der East Link Bridge. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | &quot;East Link Bridge&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id10" size="1">
+			<originaltripleset>
+				<otriple>Adare_Manor | buildingStartDate | &quot;(original structure); 1832 (current structure)&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adare_Manor | buildingStartDate | &quot;1700&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | buildingStartDate | &quot;1700&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adare Manor Baubeginn war im Jahr 1700. </text>
+				<template>AGENT-1 's Baustart war in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | buildingStartDate | &quot;1700&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Gebäude des Adare Manor wurde im Jahr 1700 gegründet. </text>
+				<template>Das Gebäude von AGENT-1 wurde in PATIENT-1 gestartet.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>PATIENT-1 | &quot;1700&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id11" size="1">
+			<originaltripleset>
+				<otriple>Adare_Manor | locationCountry | Republic_of_Ireland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adare_Manor | country | Republic_of_Ireland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | country | Republic_of_Ireland</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Adare Manor befindet sich in der Republik Irland. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | country | Republic_of_Ireland</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Adare Manor befindet sich in der Republik Irland. </text>
+				<template>AGENT-1 ist in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>PATIENT-1 | Republic_of_Ireland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id12" size="1">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | openingDate | &quot;2013-09-28&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akita_Museum_of_Art | inaugurationDate | &quot;2013-09-28&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | inaugurationDate | &quot;2013-09-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Akita Museum für Kunst wurde am 28. September 2013 eingeweiht. </text>
+				<template>AGENT-1 wurde auf PATIENT-1 eingeweiht.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>PATIENT-1 | &quot;2013-09-28&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id13" size="1">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Mason School of Business sind die aktuellen Mieter von Alan B Miller Hall. </text>
+				<template>PATIENT-1 sind die aktuellen Mieter von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>PATIENT-1 | Mason_School_of_Business</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id14" size="1">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | architect | B._V._Doshi</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | architect | B._V._Doshi</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | architect | B._V._Doshi</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Architekturbüro B V Doshi entwarf Amdavad Ni Gufa. </text>
+				<template>PATIENT-1 designed AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | architect | B._V._Doshi</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>B V Doshi ist der Architekt, der Amdavad ni Gufa entworfen hat. </text>
+				<template>PATIENT-1 ist der Architekt, der AGENT-1 entworfen hat.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>PATIENT-1 | B._V._Doshi</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id15" size="1">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das ampara Hospital befindet sich in Sri Lanka. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Ampara-Hospital befindet sich in Sri Lanka. </text>
+				<template>AGENT-1 ist in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>PATIENT-1 | Sri_Lanka</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id16" size="1">
+			<originaltripleset>
+				<otriple>Asher_and_Mary_Isabelle_Richardson_House | added | &quot;1988-11-22&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asher und Mary Isabelle Richardson House wurde in das Nationale Register der historischen Orte auf &quot;1988-11-22&quot; aufgenommen. </text>
+				<template>AGENT-1 wurde dem National Register of Historic Places auf &quot;PATIENT-1&quot; hinzugefügt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Asher und Mary Isabelle Richardson House wurde am 22. November 1988 in das National Register of Historic Places aufgenommen. </text>
+				<template>AGENT-1 wurde zum National Register of Historic Places, on PATIENT-1 hinzugefügt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asher_and_Mary_Isabelle_Richardson_House</entity>
+				<entity>PATIENT-1 | &quot;1988-11-22&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id17" size="1">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | built | 1904</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Asser Levy Public Bäder wurde 1904 gebaut. </text>
+				<template>AGENT-1 wurde in PATIENT-1 gebaut.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Asser Levy Öffentliche Bäder wurden im Jahr 1904 errichtet. </text>
+				<template>AGENT-1 wurde in PATIENT-1 konstruiert.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
+				<entity>PATIENT-1 | 1904</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id18" size="1">
+			<originaltripleset>
+				<otriple>Birmingham | postalCode | B_postcode_area</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Birmingham | postalCode | B_postcode_area</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Birmingham hat den Postleitzahl-Bereich 'B'. </text>
+				<template>AGENT-1 hat PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die B-Postleitzahl ist die Postleitzahl von Birmingham. </text>
+				<template>PATIENT-1 ist AGENT-1 Postleitzahl von Birmingham.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Birmingham</entity>
+				<entity>PATIENT-1 | B_postcode_area</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id19" size="1">
+			<originaltripleset>
+				<otriple>Chicago | isPartOf | DuPage_County,_Illinois</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Chicago | isPartOf | DuPage_County,_Illinois</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Chicago ist Teil des DuPage County in Illinois. </text>
+				<template>AGENT-1 ist Teil von PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Chicago ist Teil von DuPage County Illinois. </text>
+				<template>AGENT-1 ist Teil von PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Chicago</entity>
+				<entity>PATIENT-1 | DuPage_County,_Illinois</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id20" size="1">
+			<originaltripleset>
+				<otriple>Dublin | country | Republic_of_Ireland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dublin | country | Republic_of_Ireland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Dublin | country | Republic_of_Ireland</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Dublin liegt in der Republik Irland. </text>
+				<template>AGENT-1 ist in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dublin</entity>
+				<entity>PATIENT-1 | Republic_of_Ireland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id21" size="1">
+			<originaltripleset>
+				<otriple>Dublin | isPartOf | Leinster</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dublin | isPartOf | Leinster</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Dublin | isPartOf | Leinster</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Dublin gehört zu Leinster. </text>
+				<template>AGENT-1 ist Teil von PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dublin</entity>
+				<entity>PATIENT-1 | Leinster</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id22" size="1">
+			<originaltripleset>
+				<otriple>India | leader | Sumitra_Mahajan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>India | leaderName | Sumitra_Mahajan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Sumitra Mahajan ist ein indischer Führer. </text>
+				<template>PATIENT-1 ist AGENT-1-Chef.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Name des Führers in Indien ist Sumitra Mahajan. </text>
+				<template>Der Name des Führers in AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | India</entity>
+				<entity>PATIENT-1 | Sumitra_Mahajan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id23" size="1">
+			<originaltripleset>
+				<otriple>Japan | ethnicGroup | Brazilians_in_Japan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Japan | ethnicGroup | Brazilians_in_Japan</mtriple>
+			</modifiedtripleset>
+			<lex comment="toFix" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Japan | ethnicGroup | Brazilians_in_Japan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Eine der ethnischen Gruppen in Japan bei den Brasilianern. </text>
+				<template>Eine der ethnischen Gruppen in AGENT-1 in PATIENT-1.</template>
+			</lex>
+			<lex comment="toFix" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Japan | ethnicGroup | Brazilians_in_Japan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Brasilianer in Japan ist eine ethnische Gruppe, die in Japan gefunden wurde. </text>
+				<template>PATIENT-1 ist eine ethnische Gruppe, die in AGENT-1 gefunden wurde.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Japan</entity>
+				<entity>PATIENT-1 | Brazilians_in_Japan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id24" size="1">
+			<originaltripleset>
+				<otriple>Japan | leader | Tarō_Asō</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Japan | leaderName | Tarō_Asō</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Japan | leaderName | Tarō_Asō</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Führer von Japan ist tarō Asō. </text>
+				<template>Der Führer von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Japan</entity>
+				<entity>PATIENT-1 | Tarō_Asō</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id25" size="1">
+			<originaltripleset>
+				<otriple>Marriott_International | keyPeople | Bill_Marriott</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Marriott_International | keyPerson | Bill_Marriott</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Marriott_International | keyPerson | Bill_Marriott</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bill Marriott ist die Schlüsselperson bei Marriott International. </text>
+				<template>PATIENT-1 ist die Schlüsselperson bei AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Marriott_International | keyPerson | Bill_Marriott</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Eine der Schlüsselpersonen von Marriott International ist Bill Marriott. </text>
+				<template>Eine der Schlüsselpersonen in AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Marriott_International</entity>
+				<entity>PATIENT-1 | Bill_Marriott</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id26" size="1">
+			<originaltripleset>
+				<otriple>Republic_of_Ireland | languages | English_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Republic_of_Ireland | language | English_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Republic_of_Ireland | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Irland Amtssprache ist irisches Englisch. </text>
+				<template>AGENT-1 Amtssprache ist PATIENT-1.</template>
+			</lex>
+			<lex comment="toFix" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Republic_of_Ireland | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die englische Sprache ist die Hauptsprache der Republik Irland. </text>
+				<template>PATIENT-1 ist die Hauptsprache von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Republic_of_Ireland | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Eine Sprache, die in der Republik Irland verwendet wird, ist Englisch. </text>
+				<template>Eine Sprache, die in AGENT-1 verwendet wird, ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Republic_of_Ireland</entity>
+				<entity>PATIENT-1 | English_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id27" size="1">
+			<originaltripleset>
+				<otriple>South_Africa | capital | Cape_Town</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>South_Africa | capital | Cape_Town</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>South_Africa | capital | Cape_Town</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Kapstadt ist die Hauptstadt von Südafrika. </text>
+				<template>PATIENT-1 ist die Hauptstadt von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>South_Africa | capital | Cape_Town</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Hauptstadt von Südafrika ist Kapstadt. </text>
+				<template>Die Hauptstadt von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | South_Africa</entity>
+				<entity>PATIENT-1 | Cape_Town</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id28" size="1">
+			<originaltripleset>
+				<otriple>United_Kingdom | capital | London</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_Kingdom | capital | London</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_Kingdom | capital | London</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Hauptstadt des Vereinigten Königreichs ist London. </text>
+				<template>Die Hauptstadt von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_Kingdom | capital | London</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>London ist die Hauptstadt des Vereinigten Königreichs. </text>
+				<template>PATIENT-1 ist die Hauptstadt von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_Kingdom</entity>
+				<entity>PATIENT-1 | London</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id29" size="1">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gebürtige Amerikaner sind in den USA eine ethnische Gruppe. </text>
+				<template>PATIENT-1 ist eine ethnische Gruppe in AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_States</entity>
+				<entity>PATIENT-1 | Native_Americans_in_the_United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id30" size="1">
+			<originaltripleset>
+				<otriple>United_States | leader | Paul_Ryan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | leaderName | Paul_Ryan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leaderName | Paul_Ryan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Paul Ryan ist der Anführer der USA. </text>
+				<template>PATIENT-1 ist der Anführer von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leaderName | Paul_Ryan</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Führer der Vereinigten Staaten ist Paul Ryan. </text>
+				<template>Der Führer von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_States</entity>
+				<entity>PATIENT-1 | Paul_Ryan</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

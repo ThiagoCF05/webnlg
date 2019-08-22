@@ -1,0 +1,378 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="University" eid="Id131" size="1">
+			<originaltripleset>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | state | Alba</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1_Decembrie_1918_University | state | Alba</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1_Decembrie_1918_University | state | Alba</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="description">The 1 Decembrie 1918 University</reference>
+					<reference entity="Alba" number="2" tag="PATIENT-1" type="name">Alba</reference>
+				</references>
+				<text>The 1 Decembrie 1918 University is located in the state of Alba.</text>
+				<template>AGENT-1 is located in the state of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>PATIENT-1 | Alba</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id132" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="&quot;B.M. Reddy&quot;" number="2" tag="PATIENT-1" type="name">B. M. Reddy</reference>
+				</references>
+				<text>The President of Acharya Institute of Technology is B. M. Reddy.</text>
+				<template>The President of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology 's</reference>
+					<reference entity="&quot;B.M. Reddy&quot;" number="2" tag="PATIENT-1" type="name">B.M</reference>
+				</references>
+				<text>Acharya Institute of Technology's president is B.M. Reddy.</text>
+				<template>AGENT-1 president is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;B.M. Reddy&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id133" size="1">
+			<originaltripleset>
+				<otriple>Kerala | northwest | Mahé,_India</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Kerala | has to its northwest | Mahé,_India</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Kerala | has to its northwest | Mahé,_India</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kerala" number="1" tag="AGENT-1" type="name">Kerala</reference>
+					<reference entity="Mahé,_India" number="2" tag="PATIENT-1" type="name">Mahe in India</reference>
+				</references>
+				<text>The northwest border to Kerala is Mahe in India.</text>
+				<template>The northwest border to AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Kerala | has to its northwest | Mahé,_India</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kerala" number="1" tag="AGENT-1" type="name">Kerala</reference>
+					<reference entity="Kerala" number="2" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Mahé,_India" number="3" tag="PATIENT-1" type="name">Mahé in India</reference>
+				</references>
+				<text>Kerala has to its northwest Mahé in India.</text>
+				<template>AGENT-1 has to AGENT-1 northwest PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Kerala | has to its northwest | Mahé,_India</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mahé,_India" number="1" tag="PATIENT-1" type="name">Mahé in India ,</reference>
+					<reference entity="Kerala" number="2" tag="AGENT-1" type="name">Kerala</reference>
+				</references>
+				<text>Mahé in India, is to the northwest of Kerala.</text>
+				<template>PATIENT-1 is to the northwest of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Kerala</entity>
+				<entity>PATIENT-1 | Mahé,_India</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id134" size="1">
+			<originaltripleset>
+				<otriple>Mendrisio | neighboringMunicipalities | Meride</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Mendrisio | neighboringMunicipality | Meride</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Mendrisio | neighboringMunicipality | Meride</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mendrisio" number="1" tag="AGENT-1" type="name">Mendrisio</reference>
+					<reference entity="Meride" number="2" tag="PATIENT-1" type="name">Meride</reference>
+				</references>
+				<text>Mendrisio and Meride are neighboring Municipalities.</text>
+				<template>AGENT-1 and PATIENT-1 are neighboring Municipalities .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Mendrisio | neighboringMunicipality | Meride</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mendrisio" number="1" tag="AGENT-1" type="name">Mendrisio</reference>
+					<reference entity="Meride" number="2" tag="PATIENT-1" type="name">Meride</reference>
+				</references>
+				<text>Mendrisio is a neighbouring municipality of Meride.</text>
+				<template>AGENT-1 is a neighbouring municipality of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Mendrisio</entity>
+				<entity>PATIENT-1 | Meride</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id135" size="1">
+			<originaltripleset>
+				<otriple>Romania | capital | Bucharest</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | capital | Bucharest</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Romania | capital | Bucharest</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania</reference>
+					<reference entity="Bucharest" number="2" tag="PATIENT-1" type="name">Bucharest</reference>
+				</references>
+				<text>The capital of Romania is Bucharest.</text>
+				<template>The capital of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Romania | capital | Bucharest</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bucharest" number="1" tag="PATIENT-1" type="name">Bucharest</reference>
+					<reference entity="Romania" number="2" tag="AGENT-1" type="name">Romania</reference>
+				</references>
+				<text>Bucharest is the capital of Romania.</text>
+				<template>PATIENT-1 is the capital of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Romania</entity>
+				<entity>PATIENT-1 | Bucharest</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id136" size="1">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | dean | &quot;Thomas Pallesen&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | dean | &quot;Thomas Pallesen&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | dean | &quot;Thomas Pallesen&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Thomas Pallesen&quot;" number="1" tag="PATIENT-1" type="name">Thomas Pallesen</reference>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="2" tag="AGENT-1" type="name">Aarhus University School of Business and Social Sciences</reference>
+				</references>
+				<text>Thomas Pallesen is the dean of Aarhus University School of Business and Social Sciences .</text>
+				<template>PATIENT-1 is the dean of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | dean | &quot;Thomas Pallesen&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="name">School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="&quot;Thomas Pallesen&quot;" number="2" tag="PATIENT-1" type="name">Thomas Pallesen</reference>
+				</references>
+				<text>The dean of School of Business and Social Sciences at the Aarhus University is Thomas Pallesen.</text>
+				<template>The dean of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | dean | &quot;Thomas Pallesen&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Thomas Pallesen&quot;" number="1" tag="PATIENT-1" type="name">Thomas Pallesen</reference>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="2" tag="AGENT-1" type="description">the School of Business and Social Sciences at Aarhus University</reference>
+				</references>
+				<text>Thomas Pallesen is the Dean at the School of Business and Social Sciences at Aarhus University.</text>
+				<template>PATIENT-1 is the Dean at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | dean | &quot;Thomas Pallesen&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">the School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="&quot;Thomas Pallesen&quot;" number="2" tag="PATIENT-1" type="name">Thomas Pallesen</reference>
+				</references>
+				<text>The dean of the School of Business and Social Sciences at the Aarhus University is Thomas Pallesen.</text>
+				<template>The dean of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | &quot;Thomas Pallesen&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id137" size="1">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | numberOfStudents | &quot;16000&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at Aarhus University</reference>
+					<reference entity="16000" number="2" tag="PATIENT-1" type="name">16000</reference>
+				</references>
+				<text>The School of Business and Social Sciences at Aarhus University has 16000 students.</text>
+				<template>AGENT-1 has PATIENT-1 students .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="name">Aarhus University School of Business and Social Sciences '</reference>
+					<reference entity="16000" number="2" tag="PATIENT-1" type="name">16000</reference>
+				</references>
+				<text>Aarhus University School of Business and Social Sciences' number of students are 16000.</text>
+				<template>AGENT-1 number of students are PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="16000" number="1" tag="PATIENT-1" type="name">16000</reference>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="2" tag="AGENT-1" type="description">the School of Business and Social Sciences at the University of Aarhus</reference>
+				</references>
+				<text>There are 16000 students at the School of Business and Social Sciences at the University of Aarhus.</text>
+				<template>There are PATIENT-1 students at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="16000" number="1" tag="PATIENT-1" type="name">16000</reference>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="2" tag="AGENT-1" type="description">the Aarhus University School of Business and Social Sciences</reference>
+				</references>
+				<text>There are 16000 students in the Aarhus University School of Business and Social Sciences.</text>
+				<template>There are PATIENT-1 students in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="name">Aarhus University School of Business and Social Sciences</reference>
+					<reference entity="16000" number="2" tag="PATIENT-1" type="name">16000</reference>
+				</references>
+				<text>Aarhus University School of Business and Social Sciences has 16000 students.</text>
+				<template>AGENT-1 has PATIENT-1 students .</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="name">School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="16000" number="2" tag="PATIENT-1" type="name">16000</reference>
+				</references>
+				<text>The number of students in School of Business and Social Sciences at the Aarhus University is 16000.</text>
+				<template>The number of students in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id7">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">the School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="16000" number="2" tag="PATIENT-1" type="name">16000</reference>
+				</references>
+				<text>The number of students at the School of Business and Social Sciences at the Aarhus University is 16000.</text>
+				<template>The number of students at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id8">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="16000" number="2" tag="PATIENT-1" type="name">16000</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University has 16000 students.</text>
+				<template>AGENT-1 has PATIENT-1 students .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | 16000</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

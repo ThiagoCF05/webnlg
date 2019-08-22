@@ -1,0 +1,263 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="University" eid="Id355" size="2">
+			<originaltripleset>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | nickname | Uab</otriple>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | state | Alba</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1_Decembrie_1918_University | nickname | Uab</mtriple>
+				<mtriple>1_Decembrie_1918_University | state | Alba</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1_Decembrie_1918_University | nickname | Uab</striple>
+						<striple>1_Decembrie_1918_University | state | Alba</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Uab" number="1" tag="PATIENT-1" type="description">The Uab</reference>
+					<reference entity="1_Decembrie_1918_University" number="2" tag="AGENT-1" type="description">the 1 1918 Decembrie University</reference>
+					<reference entity="Alba" number="3" tag="PATIENT-2" type="name">Alba</reference>
+				</references>
+				<text>The Uab is the nickname of the 1 1918 Decembrie University in the state of Alba.</text>
+				<template>PATIENT-1 is the nickname of AGENT-1 in the state of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1_Decembrie_1918_University | nickname | Uab</striple>
+						<striple>1_Decembrie_1918_University | state | Alba</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="name">1 Decembrie 1918 University 's</reference>
+					<reference entity="Uab" number="2" tag="PATIENT-1" type="name">Uab</reference>
+					<reference entity="Alba" number="3" tag="PATIENT-2" type="name">Alba</reference>
+				</references>
+				<text>1 Decembrie 1918 University's nickname is Uab and is located in Alba.</text>
+				<template>AGENT-1 nickname is PATIENT-1 and is located in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>PATIENT-1 | Uab</entity>
+				<entity>PATIENT-2 | Alba</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id356" size="2">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</otriple>
+				<otriple>Visvesvaraya_Technological_University | city | Belgaum</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</mtriple>
+				<mtriple>Visvesvaraya_Technological_University | city | Belgaum</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+						<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Visvesvaraya_Technological_University" number="2" tag="BRIDGE-1" type="description">the Visvesvaraya Technological University</reference>
+					<reference entity="Belgaum" number="3" tag="PATIENT-1" type="name">Belgaum</reference>
+				</references>
+				<text>The Acharya Institute of Technology is affiliated with the Visvesvaraya Technological University in the city of Belgaum.</text>
+				<template>AGENT-1 is affiliated with BRIDGE-1 in the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+						<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Belgaum" number="2" tag="PATIENT-1" type="name">Belgaum</reference>
+					<reference entity="Visvesvaraya_Technological_University" number="3" tag="BRIDGE-1" type="name">Visvesvaraya Technological University</reference>
+				</references>
+				<text>Acharya Institute of Technology in Belgaum is affiliated with Visvesvaraya Technological University.</text>
+				<template>AGENT-1 in PATIENT-1 is affiliated with BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+						<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Visvesvaraya_Technological_University" number="2" tag="BRIDGE-1" type="description">the Visvesvaraya Technological University</reference>
+					<reference entity="Belgaum" number="3" tag="PATIENT-1" type="name">Belgaum</reference>
+				</references>
+				<text>Acharya Institute of Technology is affiliated with the Visvesvaraya Technological University in Belgaum.</text>
+				<template>AGENT-1 is affiliated with BRIDGE-1 in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>BRIDGE-1 | Visvesvaraya_Technological_University</entity>
+				<entity>PATIENT-1 | Belgaum</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id357" size="2">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | city | Bangalore</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;B.M. Reddy&quot;" number="1" tag="PATIENT-1" type="name">B M Reddy</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="3" tag="PATIENT-2" type="name">Bangalore</reference>
+				</references>
+				<text>B M Reddy is president of the Acharya Institute of Technology in Bangalore.</text>
+				<template>PATIENT-1 is president of AGENT-1 in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+						<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="2" tag="PATIENT-2" type="name">Bangalore</reference>
+					<reference entity="&quot;B.M. Reddy&quot;" number="3" tag="PATIENT-1" type="name">B.M</reference>
+				</references>
+				<text>The president of Acharya Institute of Technology in Bangalore is B.M. Reddy.</text>
+				<template>The president of AGENT-1 in PATIENT-2 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;B.M. Reddy&quot;</entity>
+				<entity>PATIENT-2 | Bangalore</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id358" size="2">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | free | All_India_Council_for_Technical_Education</otriple>
+				<otriple>All_India_Council_for_Technical_Education | location | Mumbai</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</mtriple>
+				<mtriple>All_India_Council_for_Technical_Education | location | Mumbai</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>All_India_Council_for_Technical_Education | location | Mumbai</striple>
+						<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="All_India_Council_for_Technical_Education" number="1" tag="BRIDGE-1" type="description">The All India Council for Technical Education</reference>
+					<reference entity="Mumbai" number="2" tag="PATIENT-1" type="name">Mumbai</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+				</references>
+				<text>The All India Council for Technical Education which is located in Mumbai, gave the status of &quot;Technical Campus&quot; to the Acharya Institute of Technology.</text>
+				<template>BRIDGE-1 which is located in PATIENT-1 , gave the status of &quot;Technical Campus&quot; to AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>All_India_Council_for_Technical_Education | location | Mumbai</striple>
+						<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="All_India_Council_for_Technical_Education" number="1" tag="BRIDGE-1" type="name">All India Council for Technical Education</reference>
+					<reference entity="Mumbai" number="2" tag="PATIENT-1" type="name">Mumbai</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="pronoun">its</reference>
+				</references>
+				<text>It was the All India Council for Technical Education in Mumbai that gave Acharya Institute of Technology @ its Technical Campus status.</text>
+				<template>It was the BRIDGE-1 in PATIENT-1 that gave AGENT-1 @ AGENT-1 Technical Campus status .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
+						<striple>All_India_Council_for_Technical_Education | location | Mumbai</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="All_India_Council_for_Technical_Education" number="2" tag="BRIDGE-1" type="description">the All India Council for Technical Education</reference>
+					<reference entity="Mumbai" number="3" tag="PATIENT-1" type="name">Mumbai</reference>
+				</references>
+				<text>Acharya Institute of Technology was given the 'Technical Campus' status by the All India Council for Technical Education who are based in Mumbai.</text>
+				<template>AGENT-1 was given the 'Technical Campus' status by BRIDGE-1 who are based in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>BRIDGE-1 | All_India_Council_for_Technical_Education</entity>
+				<entity>PATIENT-1 | Mumbai</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id359" size="2">
+			<originaltripleset>
+				<otriple>Kerala | leaderName | Kochi</otriple>
+				<otriple>AWH_Engineering_College | state | Kerala</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Kerala | leaderName | Kochi</mtriple>
+				<mtriple>AWH_Engineering_College | state | Kerala</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AWH_Engineering_College | state | Kerala</striple>
+						<striple>Kerala | leaderName | Kochi</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="Kerala" number="2" tag="BRIDGE-1" type="name">Kerala</reference>
+					<reference entity="Kochi" number="3" tag="PATIENT-1" type="name">Kochi</reference>
+				</references>
+				<text>AWH Engineering College is located in Kerala whose leader is Kochi.</text>
+				<template>AGENT-1 is located in BRIDGE-1 whose leader is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AWH_Engineering_College | state | Kerala</striple>
+						<striple>Kerala | leaderName | Kochi</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="Kerala" number="2" tag="BRIDGE-1" type="name">Kerala</reference>
+					<reference entity="Kochi" number="3" tag="PATIENT-1" type="name">Kochi</reference>
+				</references>
+				<text>AWH Engineering College is in the state of Kerala, whose leader is Kochi.</text>
+				<template>AGENT-1 is in the state of BRIDGE-1 , whose leader is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>BRIDGE-1 | Kerala</entity>
+				<entity>PATIENT-1 | Kochi</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

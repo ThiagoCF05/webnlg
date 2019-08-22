@@ -1,0 +1,380 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Monument" eid="Id823" size="5">
+			<originaltripleset>
+				<otriple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;@en</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | range | Seminary_Ridge</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | established | 2000</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | location | Seminary_Ridge</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | established | 2000</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11th_Mississippi_Infantry_Monument | established | 2000</striple>
+						<striple>11th_Mississippi_Infantry_Monument | location | Seminary_Ridge</striple>
+						<striple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</striple>
+						<striple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</striple>
+						<striple>11th_Mississippi_Infantry_Monument | category | Contributing_property</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The 11th Mississippi Infantry Monument, established in 2000 was built at Seminary Ridge, Gettysburg Pennsylvania, USA and is a contributing property.</text>
+				<template>AGENT-1 ,  established in PATIENT-3 was built at PATIENT-2 ,  PATIENT-5 ,  PATIENT-1 and is PATIENT-4 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT[form=defined] the) (JJ 11th) (NNP Mississippi) (NNP Infantry) (NNP Monument)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB establish) (PP (IN in) (NP (TAG PATIENT-3))))) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB build) (PP (IN at) (NP-SUBJ (NP (TAG PATIENT-2)) (, ,) (NP (NP (TAG PATIENT-5)) (, ,) (NP (TAG PATIENT-1)))))) (CC and) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-4)))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11th_Mississippi_Infantry_Monument | location | Seminary_Ridge</striple>
+						<striple>11th_Mississippi_Infantry_Monument | category | Contributing_property</striple>
+						<striple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>11th_Mississippi_Infantry_Monument | established | 2000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The 11th Mississippi Infantry Monument is in Seminary Ridge, Gettysburg, Pennsylvania, USA. It was established in 2000 and is categorized as a Contributing Property.</text>
+				<template>AGENT-1 is in PATIENT-2 ,  PATIENT-4 ,  PATIENT-1 .  AGENT-1 was established in PATIENT-3 and is categorized as PATIENT-4 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (DT[form=defined] the) (JJ 11th) (NNP Mississippi) (NNP Infantry) (NNP Monument)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (PP (IN in) (NP (NP (TAG PATIENT-2)) (, ,) (NP (NNP (TAG PATIENT-4)) (, ,) (NNP Pennsylvania) (, ,) (NNP USA))))) (. .))  (S (NP-OBJ (TAG AGENT-1)) (VP-COORDINATION (VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] (VB establish) (PP (IN in) (NP (TAG PATIENT-3)))) (CC and) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB categorize) (PP (IN as) (NP-SUBJ (TAG PATIENT-4))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
+				<entity>PATIENT-1 | &quot;United States&quot;</entity>
+				<entity>PATIENT-2 | Seminary_Ridge</entity>
+				<entity>PATIENT-3 | 2000</entity>
+				<entity>PATIENT-4 | Contributing_property</entity>
+				<entity>PATIENT-5 | Gettysburg,_Pennsylvania</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id824" size="5">
+			<originaltripleset>
+				<otriple>Adams_County,_Pennsylvania | southeast | Carroll_County,_Maryland</otriple>
+				<otriple>Adams_County,_Pennsylvania | north | Cumberland_County,_Pennsylvania</otriple>
+				<otriple>Adams_County,_Pennsylvania | southwest | Frederick_County,_Maryland</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | region | Adams_County,_Pennsylvania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</otriple>
+				<otriple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</otriple>
+				<otriple>Adams_County,_Pennsylvania | has to its southwest | Frederick_County,_Maryland</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
+						<striple>11th_Mississippi_Infantry_Monument | category | Contributing_property</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
+						<striple>Adams_County,_Pennsylvania | has to its southwest | Frederick_County,_Maryland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The 11th Mississippi Infantry Monument is found in the Adams County in Pennsylvania and is categorised as a contributing property. Cumberland County, Pennsylvania is to the north of the Adams County. To the southeast lies Carroll County and to southwest lies Frederick County, both of Maryland.</text>
+				<template>AGENT-1 is found in BRIDGE-1 and is categorised as PATIENT-4 .  PATIENT-2 is to the north of BRIDGE-1 .  To the southeast lies PATIENT-1 and to southwest lies PATIENT-3 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (DT[form=defined] the) (JJ 11th) (NNP Mississippi) (NNP Infantry) (NNP Monument)) (VP-COORDINATION (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB find) (PP (IN in) (NP (TAG BRIDGE-1)))) (CC and) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB categorise) (PP (IN as) (NP-SUBJ (TAG PATIENT-4))))) (. .))  (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (PP (TO to) (NP (NP (DT[form=defined] the) (NN north)) (PP (IN of) (NP (TAG BRIDGE-1)))))) (. .))  (SINV-COORDINATION (SINV (PP (TO To) (NP (DT[form=defined] the) (NN southeast))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB lie)) (NP (TAG PATIENT-1))) (CC and) (SINV (PP (TO to) (NP (NN southwest))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB lie)) (NP (TAG PATIENT-3))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11th_Mississippi_Infantry_Monument | category | Contributing_property</striple>
+						<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</striple>
+						<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
+						<striple>Adams_County,_Pennsylvania | has to its southwest | Frederick_County,_Maryland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The 11th Mississippi Infantry Monument, classed as a contributing property, can be found in Adams County Pennsylvania. Adams County, south of Cumberland County has Carroll County, Maryland to the southeast and Frederick County, Maryland to the southwest.</text>
+				<template>AGENT-1 ,  classed as PATIENT-4 ,  can be found in BRIDGE-1 .  BRIDGE-1 ,  south of PATIENT-2 has PATIENT-1 to the southeast and PATIENT-3 to the southwest . </template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT[form=defined] the) (JJ 11th) (NNP Mississippi) (NNP Infantry) (NNP Monument)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB class) (PP (IN as) (NP (TAG PATIENT-4)))) (, ,)) (VP[aspect=simple,tense=present,voice=active,person=null,number=null] (VB find) (PP (IN in) (NP-SUBJ (TAG BRIDGE-1)))) (. .))  (S (NP-SUBJ (NP (TAG BRIDGE-1)) (, ,) (ADVP (RB south) (PP (IN of) (NP (TAG PATIENT-2))))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (NNP Carroll) (NNP County) (PRN (, ,) (NP (NNP Maryland)) (PP (TO to) (NP-COORDINATION (NP (DT[form=defined] the) (NN southeast)) (CC and) (NP (NNP Frederick) (NNP County)))) (, ,)) (NNP Maryland)) (PP (TO to) (NP (DT[form=defined] the) (NN southwest))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
+						<striple>11th_Mississippi_Infantry_Monument | category | Contributing_property</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
+						<striple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</striple>
+						<striple>Adams_County,_Pennsylvania | has to its southwest | Frederick_County,_Maryland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The 11th Mississippi Infantry Monument in Adams County, Pennsylvania is categorised as a contributing property. Adams County is surrounded by Carroll County, Maryland to its southeast, Cumberland County,, Pennsylvania in North and Frederick County Maryland in southwest.</text>
+				<template>AGENT-1 in BRIDGE-1 is categorised as PATIENT-4 .  BRIDGE-1 is surrounded by PATIENT-1 to BRIDGE-1 southeast ,  PATIENT-2 in North and PATIENT-3 in southwest . </template>
+				<tree>(SENTENCES (S (NP-OBJ (NP (DT[form=defined] the) (JJ 11th) (NNP Mississippi) (NNP Infantry) (NNP Monument)) (PP (IN in) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB categorise) (PP (IN as) (NP-SUBJ (TAG PATIENT-4)))) (. .))  (S (NP-OBJ (TAG BRIDGE-1)) (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB surround) (PP (IN by) (NP-COORDINATION (NP (NP (NNP Carroll) (NNP County)) (, ,) (NP (NP (NNP Maryland)) (PP (TO to) (NP (NP (PRP$ (TAG BRIDGE-1)) (NN southeast)) (, ,) (NP (NNP Cumberland) (NNP County)) (, ,))))) (, ,) (NP (NP (NNP Pennsylvania)) (PP (IN in) (NP (NNP North)))) (CC and) (NP-SUBJ (NP (TAG PATIENT-3)) (PP (IN in) (NP (NN southwest))))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
+				<entity>BRIDGE-1 | Adams_County,_Pennsylvania</entity>
+				<entity>PATIENT-1 | Carroll_County,_Maryland</entity>
+				<entity>PATIENT-2 | Cumberland_County,_Pennsylvania</entity>
+				<entity>PATIENT-3 | Frederick_County,_Maryland</entity>
+				<entity>PATIENT-4 | Contributing_property</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id825" size="5">
+			<originaltripleset>
+				<otriple>Azerbaijan | capital | Baku</otriple>
+				<otriple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Azerbaijan | leaderName | Artur_Rasizade</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Azerbaijan | capital | Baku</otriple>
+				<otriple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Azerbaijan | leaderName | Artur_Rasizade</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
+						<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Azerbaijan | capital | Baku</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Azerbaijan's leader is Artur Rasizade and his official title is Prime Minister of Azerbaijan. Baku is the capital and the Baku Turkish Martyrs Memorial which is dedicated to the Ottoman army soldiers killed in the Battle of Baku is located in the country.</text>
+				<template>BRIDGE-1 leader is PATIENT-4 and PATIENT-4 official title is PATIENT-2 .  PATIENT-1 is the capital and AGENT-1 which is dedicated to PATIENT-3 is located in BRIDGE-1 . </template>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-SUBJ (NP (TAG BRIDGE-1)) (NN leader)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-4)))) (CC and) (S (NP-SUBJ (PRP$ (TAG PATIENT-4)) (JJ official) (NN title)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2)))) (. .))  (S-COORDINATION (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (DT[form=defined] the) (NN capital)))) (CC and) (S (NP-SUBJ (NP-OBJ (TAG AGENT-1)) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB dedicate) (PP (TO to) (NP (NP (DT[form=defined] the) (NNP Ottoman) (NN army) (NNS soldiers)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB kill) (PP (IN in) (NP (NP (DT[form=defined] the) (NN Battle)) (PP (IN of) (NP (NNP Baku)))))))))))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1)))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Azerbaijan | capital | Baku</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
+						<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Dedicated to the Ottoman Army soldiers killed in the Battle of Baku and located in Baku is the Turkish Martyrs Memorial. Baku is the capital of Azerbaijan whose Prime Minister and leader is Artur Rasizade.</text>
+				<template>Dedicated to PATIENT-3 and located in PATIENT-1 is AGENT-1 .  PATIENT-1 is the capital of BRIDGE-1 whose PATIENT-2 and leader is PATIENT-4 . </template>
+				<tree/>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+					</sentence>
+					<sentence ID="2"/>
+				</sortedtripleset>
+				<references/>
+				<text>The Baku Turkish Martyr's Memorial honours the Ottoman Army Soldiers killed in the Battle of Baku. Artur Rasizade is the leader and Prime Minister of Azerbaijan whose capital is Baku.</text>
+				<template>AGENT-1 honours PATIENT-3 .  PATIENT-4 is the leader and PATIENT-2 whose capital is PATIENT-1 . </template>
+				<tree>(SENTENCES (NP (NP (DT[form=defined] the) (NNP (TAG PATIENT-1))) (PP (NP (NP (JJ Turkish) (NNP Martyr) (POS 's)) (NNP Memorial) (NNS honours)) (NP (NP (DT[form=defined] the) (NNP Ottoman) (NNP Army) (NNS Soldiers)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB kill) (PP (IN in) (NP (NP (DT[form=defined] the) (NN Battle)) (PP (IN of) (NP (NNP (TAG PATIENT-1))))))))) (. .))  (S (NP-SUBJ (TAG PATIENT-4)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-COORDINATION (NP (DT[form=defined] the) (NN leader)) (CC and) (NP (NP (NNP Prime) (NNP Minister)) (PP (IN of) (NP (NNP Azerbaijan))) (SBAR (WHNP (WP$ whose) (NN capital)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1)))))))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>BRIDGE-1 | Azerbaijan</entity>
+				<entity>PATIENT-1 | Baku</entity>
+				<entity>PATIENT-2 | Prime_Minister_of_Azerbaijan</entity>
+				<entity>PATIENT-3 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-4 | Artur_Rasizade</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id826" size="5">
+			<originaltripleset>
+				<otriple>Azerbaijan | capital | Baku</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Azerbaijan | leaderName | Artur_Rasizade</otriple>
+				<otriple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Azerbaijan | capital | Baku</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Azerbaijan | leaderName | Artur_Rasizade</otriple>
+				<otriple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Azerbaijan | capital | Baku</striple>
+						<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+						<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Baku is the capital of Azerbaijan where the legislature is the National Assembly and the leader is Artur Rasizade. The country is the location of the Baku Turkish Martyrs memorial which is dedicated to the soldiers of the Ottoman army who lost their lives in the battle of Baku.</text>
+				<template>PATIENT-1 is the capital of BRIDGE-1 where the legislature is PATIENT-4 and the leader is PATIENT-3 .  BRIDGE-1 is the location of AGENT-1 which is dedicated to PATIENT-2 . </template>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN capital)) (PP (IN of) (NP (TAG BRIDGE-1))) (SBAR (WHADVP (WRB where)) (S (NP-SUBJ (DT[form=defined] the) (NN legislature)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-4)))))))) (CC and) (S (NP-SUBJ (DT[form=defined] the) (NN leader)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-3)))) (. .))  (S (NP-SUBJ (DT[form=defined] the) (NN country)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-SUBJ (NP-OBJ (DT[form=defined] the) (NN location)) (PP (IN of) (NP (DT[form=defined] the) (NP (NNP (TAG PATIENT-1)) (JJ Turkish) (NNPS Martyrs)) (NN memorial))) (SBAR (WHNP (WDT which)) (S (VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] (VB dedicate) (PP (TO to) (NP (NP (DT[form=defined] the) (NNS soldiers)) (PP (IN of) (NP (DT[form=defined] the) (NNP Ottoman) (NN army))) (SBAR (WHNP (WP who)) (S (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB lose) (NP (PRP$ their) (NNS lives)) (PP (IN in) (NP (NP (DT[form=defined] the) (NN battle)) (PP (IN of) (NP (NNP (TAG PATIENT-1)))))))))))))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Azerbaijan | capital | Baku</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
+						<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The Turkish Martyrs Memorial, dedicated to Ottoman Army soldiers killed in the Battle of Baku is located in that city, the Capital of Azerbaijan. The leader of the country, Artur Rasizade is head of the National Assembly.</text>
+				<template>AGENT-1 ,  dedicated to PATIENT-2 is located in PATIENT-1 ,  the Capital of BRIDGE-1 .  The leader of BRIDGE-1 ,  PATIENT-3 is head of PATIENT-4 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (JJ Turkish) (NNP Martyrs) (NN Memorial)) (, ,) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB dedicate) (PP (TO to) (NP (NP (NNP Ottoman) (NNP Army) (NNS soldiers)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB kill) (PP (IN in) (NP (NP (DT[form=defined] the) (NN Battle)) (PP (IN of) (NP (NNP Baku)))))))))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG PATIENT-1)) (, ,) (NP (NP (DT[form=defined] the) (NN Capital)) (PP (IN of) (NP (TAG BRIDGE-1)))))))) (. .))  (S (NP-SUBJ (NP (DT[form=defined] the) (NN leader)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (, ,) (NP (TAG PATIENT-3))))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (NN head)) (PP (IN of) (NP (TAG PATIENT-4))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Azerbaijan | capital | Baku</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+						<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The Baku Turkish Martyrs Memorial has been dedicated to Ottoman Army soldiers killed in the Battle of Baku. The Memorial is situated in Azerbaijan whose capital city is Baku. Azerbaijan has legislature of National Assembly and the leader's name is Artur Rasizade.</text>
+				<template>AGENT-1 has been dedicated to PATIENT-2 .  AGENT-1 is situated in BRIDGE-1 whose capital city is PATIENT-1 .  BRIDGE-1 has legislature of PATIENT-4 and the leader's name is PATIENT-3 . </template>
+				<tree>(SENTENCES (S (NP-OBJ (DT[form=defined] the) (NP (NP (NNP (TAG PATIENT-1)) (JJ Turkish) (NNPS Martyrs)) (NP (NNP Memorial)))) (VP[aspect=perfect,tense=present,voice=passive,person=3rd,number=null] (VB dedicate) (PP (TO to) (NP-SUBJ (NP (NNP Ottoman) (NNP Army) (NNS soldiers)) (VP[aspect=simple,tense=past,voice=active,person=null,number=null] (VB kill) (PP (IN in) (NP (NP (DT[form=defined] the) (NN Battle)) (PP (IN of) (NP (NNP (TAG PATIENT-1)))))))))) (. .))  (S (NP-OBJ (DT[form=defined] the) (NN Memorial)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (VBN situated) (PP (IN in) (NP-SUBJ (NP (TAG BRIDGE-1)) (SBAR (WHNP (WP$ whose) (NN capital) (NN city)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-1))))))))) (. .))  (S-COORDINATION (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] (VB have) (NP-OBJ (NP (NN legislature)) (PP (IN of) (NP (TAG PATIENT-4)))))) (CC and) (S (NP-SUBJ (NP (DT[form=defined] the) (NN leader) (POS 's)) (NN name)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-3)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>BRIDGE-1 | Azerbaijan</entity>
+				<entity>PATIENT-1 | Baku</entity>
+				<entity>PATIENT-2 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-3 | Artur_Rasizade</entity>
+				<entity>PATIENT-4 | National_Assembly_(Azerbaijan)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id827" size="5">
+			<originaltripleset>
+				<otriple>Turkey | leaderTitle | President_of_Turkey</otriple>
+				<otriple>Turkey | leader | Ahmet_Davutoğlu</otriple>
+				<otriple>Turkey | capital | Ankara</otriple>
+				<otriple>Turkey | largestCity | Istanbul</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | location | Turkey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<otriple>Turkey | leaderTitle | President_of_Turkey</otriple>
+				<otriple>Turkey | leader | Ahmet_Davutoğlu</otriple>
+				<otriple>Turkey | capital | Ankara</otriple>
+				<otriple>Turkey | largestCity | Istanbul</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | location | Turkey</otriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1"/>
+					<sentence ID="2">
+						<striple>Turkey | leader | Ahmet_Davutoğlu</striple>
+						<striple>Turkey | leaderTitle | President_of_Turkey</striple>
+						<striple>Turkey | capital | Ankara</striple>
+						<striple>Turkey | largestCity | Istanbul</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>Ahmet Davutoglu is the President of Turkey (the leader). While the capital of Turkey is Ankara, the largest city is Istanbul. Turkey is the location of the Ataturk monument (Izmir).</text>
+				<template>PATIENT-2 is PATIENT-1 (the leader) .  While the capital of BRIDGE-1 is PATIENT-3 ,  the largest city is PATIENT-4 .  BRIDGE-1 is the location of AGENT-1 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (TAG PATIENT-2)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NNP President)) (PP (IN of) (NP (NP (TAG BRIDGE-1)) (PRN (-LRB- -LRB-) (NP (DT[form=defined] the) (NN leader)) (-RRB- -RRB-)))))) (. .))  (S (SBAR (IN While) (S (NP-SUBJ (NP (DT[form=defined] the) (NN capital)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-3))))) (, ,) (NP-SUBJ (DT[form=defined] the) (JJS largest) (NN city)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-4))) (. .))  (S (NP-SUBJ (TAG BRIDGE-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (NN location)) (PP (IN of) (NP (NP (DT[form=defined] the) (NNP Ataturk) (NN monument)) (PRN (-LRB- -LRB-) (NP (NN Izmir)) (-RRB- -RRB-)))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Turkey | leaderTitle | President_of_Turkey</striple>
+						<striple>Turkey | leader | Ahmet_Davutoğlu</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Turkey | capital | Ankara</striple>
+						<striple>Turkey | largestCity | Istanbul</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>President of Turkey is the official title of the Turkish leader and his name is Ahmet Davutoglu. Turkey's capital is Ankara and its largest city is Istanbul. The Atatürk Monument is located in Izmir, Turkey.</text>
+				<template>PATIENT-1 is the official title of the BRIDGE-1 leader and PATIENT-2 name is PATIENT-2 .  BRIDGE-1 capital is PATIENT-3 and BRIDGE-1 largest city is PATIENT-4 .  AGENT-1 is located in BRIDGE-1 . </template>
+				<tree>(SENTENCES (S-COORDINATION (S (NP-SUBJ (TAG PATIENT-1)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (JJ official) (NN title)) (PP (IN of) (NP (DT[form=defined] the) (JJ (TAG BRIDGE-1)) (NN leader)))))) (CC and) (S (NP-SUBJ (PRP$ (TAG PATIENT-2)) (NN name)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2)))) (. .))  (S-COORDINATION (S (NP-SUBJ (NP (TAG BRIDGE-1)) (NN capital)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-3)))) (CC and) (S (NP-SUBJ (PRP$ (TAG BRIDGE-1)) (JJS largest) (NN city)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-4)))) (. .))  (S (NP-SUBJ (DT[form=defined] the) (NNP Atatürk) (NNP Monument)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (TAG BRIDGE-1))))) (. .)))</tree>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<tree/>
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+						<striple>Turkey | largestCity | Istanbul</striple>
+						<striple>Turkey | capital | Ankara</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Turkey | leaderTitle | President_of_Turkey</striple>
+						<striple>Turkey | leader | Ahmet_Davutoğlu</striple>
+					</sentence>
+				</sortedtripleset>
+				<references/>
+				<text>The Ataturk Monument (Izmir) is located in Turkey, whose largest city is Istanbul and whose capital is Ankara. President of Turkey is the official title of the Turkish leader and his name is Ahmet Davutoglu.</text>
+				<template>AGENT-1 is located in BRIDGE-1 ,  whose largest city is PATIENT-4 and whose capital is PATIENT-3 .  PATIENT-1 is the official title of the BRIDGE-1 leader and PATIENT-2 name is PATIENT-2 . </template>
+				<tree>(SENTENCES (S (NP-SUBJ (NP (DT[form=defined] the) (NNP Ataturk) (NNP Monument)) (PRN (-LRB- -LRB-) (NP (NNP Izmir)) (-RRB- -RRB-))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (ADJP (JJ located) (PP (IN in) (NP (NP (TAG BRIDGE-1)) (, ,) (SBAR (WHNP (WP$ whose) (JJS largest) (NN city)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP-COORDINATION (NP (TAG PATIENT-4)) (CC and) (SBAR (WHNP (WP$ whose) (NN capital)) (S (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-3))))))))))))) (. .))  (S-COORDINATION (S (NP-SUBJ (NP (NNP President)) (PP (IN of) (NP (TAG BRIDGE-1)))) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (NP (DT[form=defined] the) (JJ official) (NN title)) (PP (IN of) (NP (DT[form=defined] the) (JJ (TAG BRIDGE-1)) (NN leader)))))) (CC and) (S (NP-SUBJ (PRP$ (TAG PATIENT-2)) (NN name)) (VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] (VB be) (NP (TAG PATIENT-2)))) (. .)))</tree>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atatürk_Monument_(İzmir)</entity>
+				<entity>BRIDGE-1 | Turkey</entity>
+				<entity>PATIENT-1 | President_of_Turkey</entity>
+				<entity>PATIENT-2 | Ahmet_Davutoğlu</entity>
+				<entity>PATIENT-3 | Ankara</entity>
+				<entity>PATIENT-4 | Istanbul</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+	
+
+
+</benchmark>

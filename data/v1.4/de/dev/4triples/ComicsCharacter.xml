@@ -1,0 +1,308 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id1" size="4">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | network | &quot;STV&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Tim_Brooke-Taylor</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | creator | Steve_Bright</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Tim Brooke-Taylor war der Star von Bananaman, einer STV-Serie, die erstmals am 10. / 03 / 1983 ausgestrahlt und von Steve Bright erstellt wurde. </text>
+				<template>PATIENT-1 war der Star von AGENT-1, einer PATIENT-4-Serie, die zuerst auf PATIENT-3 ausgestrahlt und von PATIENT-2 erstellt wurde.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Bananaman wurde von Steve Bright gegründet und spielte Tim Brooke-Taylor. Die Show wurde erstmals am 3. Oktober 1983 vom STV ausgestrahlt. </text>
+				<template>AGENT-1 wurde von PATIENT-2 erstellt und spielte PATIENT-1. AGENT-1 wurde zuerst auf PATIENT-3 von PATIENT-4 ausgestrahlt.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+						<striple>Bananaman | creator | Steve_Bright</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Tim Brooke-Taylor spielte in Bananaman, die von Steve Bright erschaffen wurde. Sie wurde vom STV ausgestrahlt und am 3. Oktober 1983 erstmals ausgestrahlt. </text>
+				<template>PATIENT-1 spielte in AGENT-1, die von PATIENT-2 erstellt wurde. AGENT-1 wurde von PATIENT-4 ausgestrahlt und zunächst auf PATIENT-3 ausgestrahlt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-4 | &quot;STV&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id2" size="4">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Dan_Mishkin</otriple>
+				<otriple>Ernie_Colón | nationality | Puerto_Ricans</otriple>
+				<otriple>Bolt_(DC_Comics) | creator | Ernie_Colón</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bolt_(comicsCharacter) | creator | Ernie_Colón</mtriple>
+				<mtriple>Ernie_Colón | nationality | Puerto_Ricans</mtriple>
+				<mtriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</mtriple>
+				<mtriple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Dan Mishkin and the Puerto Rican national, Ernie Colon created the comic character of Bolt who has the alternative name of Larry Bolatinsky. </text>
+				<template>PATIENT-3 and the PATIENT-1 national, BRIDGE-1 created AGENT-1 who has the alternative name of PATIENT-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Dan Mishkin und Ernie Colón (Puerto Rican) schufen die komische Figur Bolt, der alternative Name ist Larry Bolatinsky. </text>
+				<template>PATIENT-3 und BRIDGE-1 (PATIENT-1) schufen AGENT-1, deren alternativer Name PATIENT-2 ist.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die komische Buchfigur von Bolt hat den alternativen Namen von Larry Bolatinsky. Geschaffen wurde es von Dan Mishkin und dem Puerto Rican National, Ernie Colon. </text>
+				<template>AGENT-1 hat den alternativen Namen von PATIENT-2. AGENT-1 wurde von PATIENT-3 und PATIENT-1 national, BRIDGE-1 erstellt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>BRIDGE-1 | Ernie_Colón</entity>
+				<entity>PATIENT-1 | Puerto_Ricans</entity>
+				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
+				<entity>PATIENT-3 | Dan_Mishkin</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id3" size="4">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Baymax ist ein Charakter in Big Hero 6, dass Stars Damon Wayans Jr. Die Figur wurde von der Amerikanerin Duncan Rouleau geschaffen. </text>
+				<template>AGENT-1 ist ein Zeichen in BRIDGE-2, dass Sterne PATIENT-2. AGENT-1 wurde von PATIENT-1, BRIDGE-1 erstellt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Damon Wayans Jr spielte in dem Film Big Hero 6, der auch den Charakter von Baymax aufgenommen hat, der von der Amerikanerin Duncan Rouleau gegründet wurde. </text>
+				<template>PATIENT-2 spielte in BRIDGE-2, die auch AGENT-1, die von PATIENT-1, BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Baymax ist ein Charakter im Film Big Hero 6, der Damon Wayans, Jr. Die Figur wurde vom amerikanischen Nationalspieler Duncan Rouleau geschaffen. </text>
+				<template>AGENT-1 ist ein Zeichen in BRIDGE-2, das PATIENT-2 spielte. AGENT-1 wurde vom PATIENT-1 National BRIDGE-1 erstellt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Damon_Wayans,_Jr.</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id4" size="4">
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Jamie_Chung</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Jamie_Chung</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Baymax, eine Figur in Big Hero 6, mit Jamie Chung, wurde von Duncan Rouleau, einer Amerikanerin, gegründet. </text>
+				<template>AGENT-1, ein Zeichen in BRIDGE-2, mit PATIENT-2, wurde von BRIDGE-1, PATIENT-1 erstellt.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Jamie Chung spielte in dem Film Big Hero 6, in dem der Charakter von Baymax erschien. Baymax wurde vom amerikanischen Nationalspieler Duncan Rouleau gegründet. </text>
+				<template>PATIENT-2 spielte in BRIDGE-2, in dem AGENT-1 erschien. AGENT-1 wurde von PATIENT-1, BRIDGE-1 erstellt.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Duncan Rouleau, der Amerikaner ist, schuf die Figur Baymax, die im Film Big Hero 6 mit Jamie Chung erschien. </text>
+				<template>BRIDGE-1, die PATIENT-1, erstellt AGENT-1, die in BRIDGE-2 mit PATIENT-2 erschien.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Jamie_Chung</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id5" size="4">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Maya_Rudolph</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Maya_Rudolph</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Big Hero 6 spielte May Rudolph und den Charakter von Baymax, der von der Amerikanerin Duncan Rouleau ins Leben gerufen wurde. </text>
+				<template>BRIDGE-2 spielte PATIENT-2 und AGENT-1, die von PATIENT-1, BRIDGE-1 erstellt wurde.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Baymax ist eine Figur im Film Big Hero 6, die Maya Rudolph spielte. Der Schöpfer dieser Figur war die Amerikanerin Duncan Rouleau. </text>
+				<template>AGENT-1 ist ein Zeichen in BRIDGE-2, das PATIENT-2 spielte. Der Schöpfer von AGENT-1 war PATIENT-1 geboren BRIDGE-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Maya Rudolph Stars in Big Hero 6, in dem auch die Figur Baymax erscheint. Baymax wurde von der Amerikanerin Duncan Rouleau gegründet. </text>
+				<template>PATIENT-2-Sterne in BRIDGE-2, in denen auch AGENT-1 erscheint. AGENT-1 wurde von PATIENT-1, BRIDGE-1 erstellt.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Maya_Rudolph</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

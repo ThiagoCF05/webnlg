@@ -1,0 +1,317 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id699" size="4">
+			<originaltripleset>
+				<otriple>BBC | keyPeople | Rona_Fairhead</otriple>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>BBC | product | BBC_Radio</otriple>
+				<otriple>BBC | locationCity | Broadcasting_House</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>BBC | keyPerson | Rona_Fairhead</mtriple>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>BBC | product | BBC_Radio</mtriple>
+				<mtriple>BBC | locationCity | Broadcasting_House</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>BBC | keyPerson | Rona_Fairhead</striple>
+						<striple>BBC | locationCity | Broadcasting_House</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>BBC | product | BBC_Radio</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rona_Fairhead" number="1" tag="PATIENT-1" type="name">Rona Fairhead</reference>
+					<reference entity="BBC" number="2" tag="BRIDGE-1" type="description">the BBC</reference>
+					<reference entity="Broadcasting_House" number="3" tag="PATIENT-3" type="name">Broadcasting House</reference>
+					<reference entity="BBC" number="4" tag="BRIDGE-1" type="description">The BBC</reference>
+					<reference entity="Bananaman" number="5" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC_Radio" number="6" tag="PATIENT-2" type="name">BBC radio</reference>
+				</references>
+				<text>Rona Fairhead is the key person for the BBC whose headquarters are at Broadcasting House. The BBC broadcast Bananaman and also produces BBC radio.</text>
+				<template>PATIENT-1 is the key person for BRIDGE-1 whose headquarters are at PATIENT-3 . BRIDGE-1 broadcast AGENT-1 and also produces PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>BBC | keyPerson | Rona_Fairhead</striple>
+						<striple>BBC | locationCity | Broadcasting_House</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>BBC | product | BBC_Radio</striple>
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rona_Fairhead" number="1" tag="PATIENT-1" type="name">Rona Fairhead</reference>
+					<reference entity="BBC" number="2" tag="BRIDGE-1" type="description">the BBC</reference>
+					<reference entity="Broadcasting_House" number="3" tag="PATIENT-3" type="description">the Broadcasting House</reference>
+					<reference entity="BBC_Radio" number="4" tag="PATIENT-2" type="name">BBC radio</reference>
+					<reference entity="Bananaman" number="5" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>Rona Fairhead is a key person for the BBC which headquarters are called the Broadcasting House. Along others, both BBC radio and Bananaman are broadcasted.</text>
+				<template>PATIENT-1 is a key person for BRIDGE-1 which headquarters are called PATIENT-3 . Along others , both PATIENT-2 and AGENT-1 are broadcasted .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>BBC | keyPerson | Rona_Fairhead</striple>
+						<striple>BBC | locationCity | Broadcasting_House</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>BBC | product | BBC_Radio</striple>
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rona_Fairhead" number="1" tag="PATIENT-1" type="name">Rona Fairhead</reference>
+					<reference entity="BBC" number="2" tag="BRIDGE-1" type="description">the BBC</reference>
+					<reference entity="Broadcasting_House" number="3" tag="PATIENT-3" type="name">Broadcasting House in London</reference>
+					<reference entity="BBC_Radio" number="4" tag="PATIENT-2" type="name">BBC radio</reference>
+					<reference entity="BBC" number="5" tag="BRIDGE-1" type="description">the BBC</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="description">the TV series Bananaman</reference>
+				</references>
+				<text>Rona Fairhead is a key person for the BBC, who are based in Broadcasting House in London. BBC radio is produced by the BBC, who also broadcast the TV series Bananaman.</text>
+				<template>PATIENT-1 is a key person for BRIDGE-1 , who are based in PATIENT-3 . PATIENT-2 is produced by BRIDGE-1 , who also broadcast AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>BRIDGE-1 | BBC</entity>
+				<entity>PATIENT-1 | Rona_Fairhead</entity>
+				<entity>PATIENT-2 | BBC_Radio</entity>
+				<entity>PATIENT-3 | Broadcasting_House</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id700" size="4">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Jill_Shilling</otriple>
+				<otriple>Bananaman | creator | Steve_Bright</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | network | &quot;STV&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Jill_Shilling</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="2" tag="PATIENT-3" type="name">3 October 1983</reference>
+					<reference entity="Jill_Shilling" number="3" tag="PATIENT-1" type="name">Jill Shilling</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Steve_Bright" number="5" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="&quot;STV&quot;" number="6" tag="PATIENT-4" type="name">STV</reference>
+				</references>
+				<text>Bananaman first aired on 3 October 1983 and starred Jill Shilling. It was created by Steve Bright and broadcast by STV.</text>
+				<template>AGENT-1 first aired on PATIENT-3 and starred PATIENT-1 . AGENT-1 was created by PATIENT-2 and broadcast by PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jill_Shilling" number="1" tag="PATIENT-1" type="name">Jill shilling</reference>
+					<reference entity="&quot;STV&quot;" number="2" tag="PATIENT-4" type="name">STV</reference>
+					<reference entity="Bananaman" number="3" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Steve_Bright" number="4" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="5" tag="PATIENT-3" type="description">the 3rd of October 1983</reference>
+				</references>
+				<text>Jill shilling was the star of the STV hit Bananaman, created by Steve Bright and first aired on the 3rd of October 1983.</text>
+				<template>PATIENT-1 was the star of the PATIENT-4 hit AGENT-1 , created by PATIENT-2 and first aired on PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | creator | Steve_Bright</striple>
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+						<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Steve_Bright" number="2" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="Jill_Shilling" number="3" tag="PATIENT-1" type="name">Jill Shilling</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;STV&quot;" number="5" tag="PATIENT-4" type="name">STV</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="6" tag="PATIENT-3" type="name">3 October 1983</reference>
+				</references>
+				<text>Bananaman was created by Steve Bright and starred Jill Shilling. It was first broadcast by STV on 3 October 1983.</text>
+				<template>AGENT-1 was created by PATIENT-2 and starred PATIENT-1 . AGENT-1 was first broadcast by PATIENT-4 on PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Jill_Shilling</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-4 | &quot;STV&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id701" size="4">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Ryan_Potter</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Ryan_Potter</mtriple>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-2" type="name">American</reference>
+					<reference entity="Duncan_Rouleau" number="3" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Big_Hero_6_(film)" number="4" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
+					<reference entity="Ryan_Potter" number="5" tag="PATIENT-1" type="name">Ryan Potter</reference>
+				</references>
+				<text>Baymax is a character which was created by American @ Duncan Rouleau and featured in the film Big Hero 6 ( starring Ryan Potter ).</text>
+				<template>AGENT-1 is a character which was created by PATIENT-2 @ BRIDGE-1 and featured in BRIDGE-2 ( starring PATIENT-1 ) .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Americans" number="1" tag="PATIENT-2" type="name">American</reference>
+					<reference entity="Duncan_Rouleau" number="2" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Baymax" number="3" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="4" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
+					<reference entity="Ryan_Potter" number="5" tag="PATIENT-1" type="name">Ryan Potter</reference>
+				</references>
+				<text>American, Duncan Rouleau created Baymax, a character in the film Big Hero 6, which starred Ryan Potter.</text>
+				<template>PATIENT-2 , BRIDGE-1 created AGENT-1 , a character in BRIDGE-2 , which starred PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Ryan_Potter</entity>
+				<entity>PATIENT-2 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id702" size="4">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Ernie_Colón</otriple>
+				<otriple>Ernie_Colón | nationality | Puerto_Ricans</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+				<otriple>Bolt_(DC_Comics) | creator | Gary_Cohn_(comics)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</mtriple>
+				<mtriple>Ernie_Colón | nationality | Puerto_Ricans</mtriple>
+				<mtriple>Bolt_(comicsCharacter) | creator | Ernie_Colón</mtriple>
+				<mtriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt</reference>
+					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
+					<reference entity="Gary_Cohn_(comics)" number="3" tag="PATIENT-1" type="name">Gary Cohn</reference>
+					<reference entity="Puerto_Ricans" number="4" tag="PATIENT-2" type="name">Puerto Rican</reference>
+					<reference entity="Ernie_Colón" number="5" tag="BRIDGE-1" type="name">Ernie Colon</reference>
+				</references>
+				<text>The comic character Bolt, who has the alternative name of Larry Bolatinsky, was created by Gary Cohn and the Puerto Rican national, Ernie Colon.</text>
+				<template>AGENT-1 , who has the alternative name of PATIENT-3 , was created by PATIENT-1 and the PATIENT-2 national , BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt</reference>
+					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
+					<reference entity="Gary_Cohn_(comics)" number="3" tag="PATIENT-1" type="name">Gary Cohn</reference>
+					<reference entity="Ernie_Colón" number="4" tag="BRIDGE-1" type="name">Ernie Colon</reference>
+					<reference entity="Puerto_Ricans" number="5" tag="PATIENT-2" type="name">Puerto Rican</reference>
+				</references>
+				<text>The comic character Bolt, with the alternative name Larry Bolatinsky, was created by Gary Cohn and Ernie Colon, who is a Puerto Rican national.</text>
+				<template>AGENT-1 , with the alternative name PATIENT-3 , was created by PATIENT-1 and BRIDGE-1 , who is a PATIENT-2 national .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+						<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+						<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Larry Bolatinsky&quot;" number="1" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
+					<reference entity="Bolt_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Bolt</reference>
+					<reference entity="Bolt_(comicsCharacter)" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Puerto_Ricans" number="4" tag="PATIENT-2" type="name">Puerto Rican</reference>
+					<reference entity="Ernie_Colón" number="5" tag="BRIDGE-1" type="name">Ernie Colon</reference>
+					<reference entity="Gary_Cohn_(comics)" number="6" tag="PATIENT-1" type="description">the comic book writer , Gary Cohn</reference>
+				</references>
+				<text>Larry Bolatinsky is the alternative name for the comic character, Bolt. It was created by the Puerto Rican national Ernie Colon and the comic book writer, Gary Cohn.</text>
+				<template>PATIENT-3 is the alternative name for AGENT-1 . AGENT-1 was created by the PATIENT-2 national BRIDGE-1 and PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>BRIDGE-1 | Ernie_Colón</entity>
+				<entity>PATIENT-1 | Gary_Cohn_(comics)</entity>
+				<entity>PATIENT-2 | Puerto_Ricans</entity>
+				<entity>PATIENT-3 | &quot;Larry Bolatinsky&quot;</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

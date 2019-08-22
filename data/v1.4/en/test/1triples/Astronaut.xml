@@ -1,0 +1,557 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id138" size="1">
+			<originaltripleset>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Bean | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>The nationality of Alan Bean is United States.</text>
+				<template>The nationality of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean 's</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Alan Bean's nationality is the United States.</text>
+				<template>AGENT-1 nationality is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>Alan Bean is American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>Alan Bean was American.</text>
+				<template>AGENT-1 was PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">US</reference>
+				</references>
+				<text>Alan Bean is a US national.</text>
+				<template>AGENT-1 is a PATIENT-1 national .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id139" size="1">
+			<originaltripleset>
+				<otriple>Apollo_8 | crew2Up | Buzz_Aldrin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Apollo_8 | backup pilot | Buzz_Aldrin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="PATIENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Apollo_8" number="2" tag="AGENT-1" type="description">the Apollo 8 mission</reference>
+				</references>
+				<text>Buzz Aldrin was a backup pilot on the Apollo 8 mission.</text>
+				<template>PATIENT-1 was a backup pilot on AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Apollo_8" number="1" tag="AGENT-1" type="name">Apollo 8 's</reference>
+					<reference entity="Buzz_Aldrin" number="2" tag="PATIENT-1" type="name">Buzz Aldrin</reference>
+				</references>
+				<text>Apollo 8's backup pilot was Buzz Aldrin.</text>
+				<template>AGENT-1 backup pilot was PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Apollo_8</entity>
+				<entity>PATIENT-1 | Buzz_Aldrin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id140" size="1">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="2" tag="PATIENT-1" type="name">Massachusetts Institute of Technology with a Sc.D in 1963</reference>
+				</references>
+				<text>Buzz Aldrin graduated from Massachusetts Institute of Technology with a Sc.D in 1963.</text>
+				<template>AGENT-1 graduated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="2" tag="PATIENT-1" type="name">1963 from MIT with a Sc.D</reference>
+				</references>
+				<text>Buzz Aldrin graduated in 1963 from MIT with a Sc.D.</text>
+				<template>AGENT-1 graduated in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="2" tag="PATIENT-1" type="name">MIT with a Sc</reference>
+				</references>
+				<text>Buzz Aldrin graduated from MIT with a Sc. D in 1963.</text>
+				<template>AGENT-1 graduated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="2" tag="PATIENT-1" type="name">Massachusetts Institute of Technology , Sc.D</reference>
+				</references>
+				<text>Buzz Aldrin graduated from Massachusetts Institute of Technology, Sc.D. 1963.</text>
+				<template>AGENT-1 graduated from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="2" tag="PATIENT-1" type="name">Massachusetts Institute of Technology in 1963 with a doctorate in Science</reference>
+				</references>
+				<text>Buzz Aldrin graduated from Massachusetts Institute of Technology in 1963 with a doctorate in Science.</text>
+				<template>AGENT-1 graduated from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id141" size="1">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Apollo_11" number="2" tag="PATIENT-1" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin was a crew member of Apollo 11.</text>
+				<template>AGENT-1 was a crew member of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Apollo_11" number="2" tag="PATIENT-1" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin was a member of the Apollo 11 crew.</text>
+				<template>AGENT-1 was a member of the PATIENT-1 crew .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Apollo_11" number="2" tag="PATIENT-1" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin was a crew member on Apollo 11.</text>
+				<template>AGENT-1 was a crew member on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Apollo_11</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id142" size="1">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | was selected by NASA | 1963</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="1963" number="2" tag="PATIENT-1" type="name">1963</reference>
+				</references>
+				<text>NASA selected Buzz Aldrin in 1963.</text>
+				<template>NASA selected AGENT-1 in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="1963" number="2" tag="PATIENT-1" type="name">1963</reference>
+				</references>
+				<text>Buzz Aldrin was selected by NASA in 1963.</text>
+				<template>AGENT-1 was selected by NASA in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="1963" number="2" tag="PATIENT-1" type="name">1963</reference>
+				</references>
+				<text>Buzz Aldrin was selected to work for NASA in 1963.</text>
+				<template>AGENT-1 was selected to work for NASA in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="1963" number="2" tag="PATIENT-1" type="name">1963</reference>
+				</references>
+				<text>Buzz Aldrin was hired by NASA in 1963.</text>
+				<template>AGENT-1 was hired by NASA in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | 1963</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id143" size="1">
+			<originaltripleset>
+				<otriple>California | gemstone | Benitoite</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>California | gemstone | Benitoite</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>California | gemstone | Benitoite</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="California" number="1" tag="AGENT-1" type="name">California</reference>
+					<reference entity="Benitoite" number="2" tag="PATIENT-1" type="name">Benitoite</reference>
+				</references>
+				<text>The gemstone of California is Benitoite.</text>
+				<template>The gemstone of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>California | gemstone | Benitoite</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="California" number="1" tag="AGENT-1" type="name">California</reference>
+					<reference entity="Benitoite" number="2" tag="PATIENT-1" type="name">Benitoite</reference>
+				</references>
+				<text>California has a gemstone called Benitoite.</text>
+				<template>AGENT-1 has a gemstone called PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>California | gemstone | Benitoite</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Benitoite" number="1" tag="PATIENT-1" type="name">Benitoite</reference>
+					<reference entity="California" number="2" tag="AGENT-1" type="name">California</reference>
+				</references>
+				<text>Benitoite is a gemstone from California.</text>
+				<template>PATIENT-1 is a gemstone from AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>California | gemstone | Benitoite</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Benitoite" number="1" tag="PATIENT-1" type="name">Benitoite</reference>
+					<reference entity="California" number="2" tag="AGENT-1" type="name">California</reference>
+				</references>
+				<text>Benitoite is a gemstone found in California.</text>
+				<template>PATIENT-1 is a gemstone found in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | California</entity>
+				<entity>PATIENT-1 | Benitoite</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id144" size="1">
+			<originaltripleset>
+				<otriple>Elliot_See | deathDate | &quot;1966-02-28&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-1" type="name">28 February , 1966</reference>
+				</references>
+				<text>Elliot See died on 28 February, 1966.</text>
+				<template>AGENT-1 died on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-1" type="description">the 28th of February 1966</reference>
+				</references>
+				<text>Elliot See died on the 28th of February 1966.</text>
+				<template>AGENT-1 died on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-1" type="name">February 28 , 1966</reference>
+				</references>
+				<text>Elliot See died on February 28, 1966.</text>
+				<template>AGENT-1 died on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-1" type="name">1966-02-28</reference>
+				</references>
+				<text>Elliot See died in 1966-02-28.</text>
+				<template>AGENT-1 died in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-1" type="description">the 28th of February 1966</reference>
+				</references>
+				<text>Elliot See lived until the 28th of February 1966.</text>
+				<template>AGENT-1 lived until PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-1" type="name">February 28,1966</reference>
+				</references>
+				<text>Elliot See died on February 28,1966.</text>
+				<template>AGENT-1 died on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | &quot;1966-02-28&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id145" size="1">
+			<originaltripleset>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="St._Louis" number="2" tag="PATIENT-1" type="name">St. Louis</reference>
+				</references>
+				<text>Elliot See died in St. Louis.</text>
+				<template>AGENT-1 died in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="St._Louis" number="2" tag="PATIENT-1" type="name">St Louis</reference>
+				</references>
+				<text>Elliot See died in St Louis.</text>
+				<template>AGENT-1 died in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | St._Louis</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id146" size="1">
+			<originaltripleset>
+				<otriple>Elliot_See | status | &quot;Deceased&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | status | &quot;Deceased&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;Deceased&quot;" number="2" tag="PATIENT-1" type="name">dead</reference>
+				</references>
+				<text>Elliot See is dead.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;Deceased&quot;" number="2" tag="PATIENT-1" type="name">died</reference>
+				</references>
+				<text>Elliot See has died.</text>
+				<template>AGENT-1 has PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;Deceased&quot;" number="2" tag="PATIENT-1" type="name">deceased</reference>
+				</references>
+				<text>Elliot See is deceased.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

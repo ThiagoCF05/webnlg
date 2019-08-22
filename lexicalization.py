@@ -7,12 +7,12 @@ Description:
     This script aims to extract the gold-standard templates for the lexicalization step.
 
     ARGS:
-        [1] Path to the folder where WebNLG corpus is available (versions/v1.4/en)
+        [1] Path to the folder where WebNLG corpus is available (data/v1.4/en)
         [2] Path to the folder where the data will be saved (Folder will be created in case it does not exist)
         [3] Path to the stanford parser (which can be downloaded here: https://stanfordnlp.github.io/CoreNLP/)
 
     EXAMPLE:
-        python3 preprocess.py ../versions/v1.4/en lexicalization stanford_path
+        python3 preprocess.py ../data/v1.4/en lexicalization stanford_path
 """
 
 
@@ -614,20 +614,20 @@ class TemplateExtraction:
 if __name__ == '__main__':
     template = TemplateExtraction()
 
-    FINAL_PATH = 'versions/v1.5'
+    FINAL_PATH = 'data/v1.5'
     if not os.path.exists(FINAL_PATH):
         os.mkdir(FINAL_PATH)
 
-    EN_PATH = 'versions/v1.5/en'
+    EN_PATH = 'data/v1.5/en'
     if not os.path.exists(EN_PATH):
         os.mkdir(EN_PATH)
 
     # TRAINSET
     print('Preparing trainset...')
-    TRAIN_PATH = 'versions/v1.4/en/train'
+    TRAIN_PATH = 'data/v1.4/en/train'
     _set = 'train'
 
-    EN_TRAIN_PATH = 'versions/v1.5/en/train'
+    EN_TRAIN_PATH = 'data/v1.5/en/train'
     if not os.path.exists(EN_TRAIN_PATH):
         os.mkdir(EN_TRAIN_PATH)
 
@@ -639,10 +639,10 @@ if __name__ == '__main__':
 
     # DEVSET
     print('Preparing devset...')
-    DEV_PATH = 'versions/v1.4/en/dev'
+    DEV_PATH = 'data/v1.4/en/dev'
     _set = 'train'
 
-    EN_DEV_PATH = 'versions/v1.5/en/dev'
+    EN_DEV_PATH = 'data/v1.5/en/dev'
     if not os.path.exists(EN_DEV_PATH):
         os.mkdir(EN_DEV_PATH)
 
@@ -654,10 +654,10 @@ if __name__ == '__main__':
 
     # TESTSET
     print('Preparing test...')
-    TEST_PATH = 'versions/v1.4/en/test'
+    TEST_PATH = 'data/v1.4/en/test'
     _set = 'train'
 
-    EN_TEST_PATH = 'versions/v1.5/en/test'
+    EN_TEST_PATH = 'data/v1.5/en/test'
     if not os.path.exists(EN_TEST_PATH):
         os.mkdir(EN_TEST_PATH)
 
