@@ -1,0 +1,952 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="SportsTeam" eid="Id1" size="1">
+			<originaltripleset>
+				<otriple>1._FC_Köln | manager | Peter_Stöger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1._FC_Köln | manager | Peter_Stöger</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1._FC_Köln | manager | Peter_Stöger</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Peter Stoger ist der Manager des FC Kolin. </text>
+				<template>PATIENT-1 ist der Manager von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1._FC_Köln | manager | Peter_Stöger</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Peter Stöger ist Manager der 1. FC Köln. </text>
+				<template>PATIENT-1 ist Manager von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1._FC_Köln | manager | Peter_Stöger</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Manager von 1. FC Koln ist Peter Stoger. </text>
+				<template>Der Manager von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1._FC_Köln</entity>
+				<entity>PATIENT-1 | Peter_Stöger</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id2" size="1">
+			<originaltripleset>
+				<otriple>1._FC_Magdeburg | season | 2014</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1._FC_Magdeburg | season | 2014</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1._FC_Magdeburg | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>1. FC Magdeburg spielte in der Saison 2014. </text>
+				<template>AGENT-1 spielte in PATIENT-1 Saison.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1._FC_Magdeburg</entity>
+				<entity>PATIENT-1 | 2014</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id3" size="1">
+			<originaltripleset>
+				<otriple>A.C._Lumezzane | season | 2014–15_Lega_Pro</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.C._Lumezzane | season | 2014–15_Lega_Pro</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.C._Lumezzane | season | 2014–15_Lega_Pro</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Ein C Lumezzane spielte die Saison 2014-2015 in Lega Pro. </text>
+				<template>AGENT-1 spielte PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.C._Lumezzane | season | 2014–15_Lega_Pro</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Lumezzane spielte während der Saison 2014 in der Lega Pro. </text>
+				<template>AGENT-1 spielte in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Lumezzane</entity>
+				<entity>PATIENT-1 | 2014–15_Lega_Pro</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id4" size="1">
+			<originaltripleset>
+				<otriple>A.D._Isidro_Metapán | fullname | &quot;Asociación Deportiva&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.D._Isidro_Metapán | fullname | &quot;Asociación Deportiva&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.D._Isidro_Metapán | fullname | &quot;Asociación Deportiva&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>N. Isidro Metapans vollständiger Name ist &quot;Asociación Deportiva&quot;. </text>
+				<template>AGENT-1 vollständiger Name ist &quot;PATIENT-1&quot;.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.D._Isidro_Metapán | fullname | &quot;Asociación Deportiva&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>N. Isidro Metapán vollständiger Name ist Asociación Deportiva. </text>
+				<template>AGENT-1 's vollständiger Name ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.D._Isidro_Metapán | fullname | &quot;Asociación Deportiva&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Name von Isidro Metapan ist Asociacion Deportiva. </text>
+				<template>Der Vollname von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.D._Isidro_Metapán</entity>
+				<entity>PATIENT-1 | &quot;Asociación Deportiva&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id5" size="1">
+			<originaltripleset>
+				<otriple>A.E_Dimitra_Efxeinoupolis | fullname | &quot;A.E Dimitra Efxeinoupolis&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.E_Dimitra_Efxeinoupolis | fullname | &quot;A.E Dimitra Efxeinoupolis&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1"/>
+				</sortedtripleset>
+				<text>A.E Dimitra Efxeinoupolis 's vollständiger Name ist A.E Dimitra Efxeinoupolis. </text>
+				<template>Der volle Name von AGENT-1 ist AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1"/>
+				</sortedtripleset>
+				<text>&quot;A.E Dimitra Efxeinoupolis&quot; ist der vollständige Name von A.E Dimitra Efxeinoupolis. </text>
+				<template>&quot;AGENT-1&quot; ist der vollständige Name von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1"/>
+				</sortedtripleset>
+				<text>A.E Dimitra Efxeinoupolis hat den Namen A.E Dimitra Efxeinoupolis. </text>
+				<template>AGENT-1 hat den Namen AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.E_Dimitra_Efxeinoupolis</entity>
+				<entity>PATIENT-1 | &quot;A.E Dimitra Efxeinoupolis&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id6" size="1">
+			<originaltripleset>
+				<otriple>A.E_Dimitra_Efxeinoupolis | season | 2014</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.E_Dimitra_Efxeinoupolis | season | 2014</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.E_Dimitra_Efxeinoupolis | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A.E Dimitra Efxeinoupolis spielte in der Saison 2014. </text>
+				<template>AGENT-1 spielte in PATIENT-1 Saison.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.E_Dimitra_Efxeinoupolis | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A.E Dimitia Efxeinoupolis war in der Saison 2014. </text>
+				<template>AGENT-1 war in PATIENT-1 Saison.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.E_Dimitra_Efxeinoupolis | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A.E Dimitra Efxeinoupolis spielte in der Saison 2014. </text>
+				<template>AGENT-1 spielte in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.E_Dimitra_Efxeinoupolis</entity>
+				<entity>PATIENT-1 | 2014</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id7" size="1">
+			<originaltripleset>
+				<otriple>A.E_Dimitra_Efxeinoupolis | season | 2014–15_A_EPSTH,_Greece</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.E_Dimitra_Efxeinoupolis | season | 2014–15_A_EPSTH,_Greece</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.E_Dimitra_Efxeinoupolis | season | 2014–15_A_EPSTH,_Greece</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A.E Dimitra Efxeinoupolis waren in der 2014-15 A EPSTH. Griechenland Saison. </text>
+				<template>AGENT-1 war in PATIENT-1 Saison.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.E_Dimitra_Efxeinoupolis | season | 2014–15_A_EPSTH,_Greece</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A.E Dimitra Efxeinoupolis war im Jahr 2014-15 A EPSTH, Griechenland. </text>
+				<template>AGENT-1 waren in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.E_Dimitra_Efxeinoupolis</entity>
+				<entity>PATIENT-1 | 2014–15_A_EPSTH,_Greece</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id8" size="1">
+			<originaltripleset>
+				<otriple>A.F.C._Blackpool | capacity | &quot;1500&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.F.C._Blackpool | numberOfMembers | 1500</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Blackpool | numberOfMembers | 1500</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A.F.C. Blackpool hat 1500 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
+				<entity>PATIENT-1 | 1500</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id9" size="1">
+			<originaltripleset>
+				<otriple>A.F.C._Fylde | ground | The_Fylde</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.F.C._Fylde | ground | The_Fylde</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Fylde | ground | The_Fylde</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die Fylde ist die Heimstätte des AFC Fylde. </text>
+				<template>PATIENT-1 ist die Heimstätte von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Fylde | ground | The_Fylde</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>AFC Fylde hat die Heimstätte namens The Fylde. </text>
+				<template>AGENT-1 hat den Heimplatz namens PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Fylde</entity>
+				<entity>PATIENT-1 | The_Fylde</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id10" size="1">
+			<originaltripleset>
+				<otriple>A.S._Gubbio_1910 | ground | Italy</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.S._Gubbio_1910 | ground | Italy</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Boden von A.S. Gubbio 1910 befindet sich in Italien. </text>
+				<template>Der Boden von AGENT-1 befindet sich in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Gubbio_1910</entity>
+				<entity>PATIENT-1 | Italy</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id11" size="1">
+			<originaltripleset>
+				<otriple>A.S._Livorno_Calcio | capacity | 19238</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.S._Livorno_Calcio | numberOfMembers | 19238</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Livorno_Calcio | numberOfMembers | 19238</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A.s. Livorno Calcio hat 19238 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Livorno_Calcio | numberOfMembers | 19238</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der AS Livorno Calcio hat 19238 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Livorno_Calcio | numberOfMembers | 19238</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Die A.S. Livorno Calcio hat 19238 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Livorno_Calcio</entity>
+				<entity>PATIENT-1 | 19238</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id12" size="1">
+			<originaltripleset>
+				<otriple>A.S._Roma | season | 2014–15_Serie_A</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.S._Roma | season | 2014–15_Serie_A</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Roma | season | 2014–15_Serie_A</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>A.s. Roma war 2014-15 in der Serie A. </text>
+				<template>AGENT-1 waren in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Roma</entity>
+				<entity>PATIENT-1 | 2014–15_Serie_A</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id13" size="1">
+			<originaltripleset>
+				<otriple>AFC_Ajax | manager | Frank_de_Boer</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AFC_Ajax | manager | Frank_de_Boer</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax | manager | Frank_de_Boer</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Frank de Boer verwaltet das AFC Ajax-Team. </text>
+				<template>PATIENT-1 verwaltet das AGENT-1-Team.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax | manager | Frank_de_Boer</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>AFC Ajax-Manager ist Frank de Boer. </text>
+				<template>AGENT-1 's Manager ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax | manager | Frank_de_Boer</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Manager des AFC Ajax ist Frank de Boer. </text>
+				<template>Der Manager von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AFC_Ajax</entity>
+				<entity>PATIENT-1 | Frank_de_Boer</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id14" size="1">
+			<originaltripleset>
+				<otriple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>AFC Ajax (Amateure) haben den Spitznamen &quot;Joden, Godenzonen&quot;. </text>
+				<template>AGENT-1 hat den Spitznamen &quot;PATIENT-1&quot;.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Spitzname des AFC Ajax-Teams ist Joden, Godenzonen. </text>
+				<template>Der Spitzname des AGENT-1-Teams ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>AFC Ajax (Amateure) Spitzname ist Joden, Godenzonen. </text>
+				<template>AGENT-1 Spitzname ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AFC_Ajax_(amateurs)</entity>
+				<entity>PATIENT-1 | &quot;Joden , Godenzonen&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id15" size="1">
+			<originaltripleset>
+				<otriple>AFC_Ajax_(amateurs) | capacity | &quot;5000&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>AFC Ajax hat 5000 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>AFC Ajax (Amateure) hat 5000 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AFC_Ajax_(amateurs)</entity>
+				<entity>PATIENT-1 | 5000</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id16" size="1">
+			<originaltripleset>
+				<otriple>AZAL_PFK | location | &quot;Shuvalan, Baku, Azerbaijan&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AZAL_PFK | location | &quot;Shuvalan, Baku, Azerbaijan&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AZAL_PFK | location | &quot;Shuvalan, Baku, Azerbaijan&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Azal PFK befindet sich in Shuvalan, Baku, Aserbaidschan. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AZAL_PFK | location | &quot;Shuvalan, Baku, Azerbaijan&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Azal PFK befindet sich in Shuvalan, Baku, Aserbaidschan. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AZAL_PFK</entity>
+				<entity>PATIENT-1 | &quot;Shuvalan, Baku, Azerbaijan&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id17" size="1">
+			<originaltripleset>
+				<otriple>AZ_Alkmaar | capacity | &quot;17023&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AZ_Alkmaar | numberOfMembers | 17023</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AZ_Alkmaar | numberOfMembers | 17023</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Az Alkmaar hat 17023 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AZ_Alkmaar</entity>
+				<entity>PATIENT-1 | 17023</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id18" size="1">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | manager | Vica</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | manager | Vica</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | manager | Vica</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agremiacao Sportiva Arapiraquense werden von vica verwaltet. </text>
+				<template>AGENT-1 werden von PATIENT-1 verwaltet.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>PATIENT-1 | Vica</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id19" size="1">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | season | 2015_Campeonato_Brasileiro_Série_C</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | season | 2015_Campeonato_Brasileiro_Série_C</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | season | 2015_Campeonato_Brasileiro_Série_C</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agremiação Sportiva Arapiraquense siegte im Jahr 2015 Campeonato Brasileiro série C. </text>
+				<template>AGENT-1 trat in PATIENT-1 an.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | season | 2015_Campeonato_Brasileiro_Série_C</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Agremiacao Sportiva Arapiraquense waren 2015 in Campeonato Brasileiro Serie C. </text>
+				<template>AGENT-1 waren in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>PATIENT-1 | 2015_Campeonato_Brasileiro_Série_C</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id20" size="1">
+			<originaltripleset>
+				<otriple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Akron Summit Assault 's ground ist die St. Vincent-St. Mary High School. </text>
+				<template>AGENT-1 's Boden ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>St. Vincent-St Mary High School ist der Boden von Akron Summit Assault. </text>
+				<template>PATIENT-1 ist der Boden von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akron_Summit_Assault</entity>
+				<entity>PATIENT-1 | St._Vincent–St._Mary_High_School</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id21" size="1">
+			<originaltripleset>
+				<otriple>Akron_Summit_Assault | capacity | &quot;3000&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akron_Summit_Assault | numberOfMembers | 3000</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akron_Summit_Assault | numberOfMembers | 3000</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Akron Summit Assault hat 3000 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akron_Summit_Assault | numberOfMembers | 3000</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Akron Summit Assault hat 3000 Mitglieder. </text>
+				<template>AGENT-1 hat PATIENT-1 Mitglieder.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akron_Summit_Assault</entity>
+				<entity>PATIENT-1 | 3000</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id22" size="1">
+			<originaltripleset>
+				<otriple>Amsterdam | part | Amsterdam-Centrum</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amsterdam | part | Amsterdam-Centrum</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amsterdam | part | Amsterdam-Centrum</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Amsterdam-Centrum ist Teil von Amsterdam. </text>
+				<template>PATIENT-1 ist Teil von AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amsterdam</entity>
+				<entity>PATIENT-1 | Amsterdam-Centrum</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id23" size="1">
+			<originaltripleset>
+				<otriple>Greece | leaderName | Nikos_Voutsis</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Greece | leader | Nikos_Voutsis</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Greece | leader | Nikos_Voutsis</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Führer Griechenlands ist Nikos Voutsis. </text>
+				<template>Der Führer von AGENT-1 ist PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Greece</entity>
+				<entity>PATIENT-1 | Nikos_Voutsis</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id24" size="1">
+			<originaltripleset>
+				<otriple>Gus_Poyet | team | AEK_Athens_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Gus_Poyet | club | AEK_Athens_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Gus_Poyet | club | AEK_Athens_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gus Poyet ist in AEK Athen F.C. </text>
+				<template>AGENT-1 ist in PATIENT-1 F.C.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Gus_Poyet | club | AEK_Athens_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Gus Poyet spielt für AEK Athens F.C. </text>
+				<template>AGENT-1 spielt für PATIENT-1 F.C.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Gus_Poyet</entity>
+				<entity>PATIENT-1 | AEK_Athens_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id25" size="1">
+			<originaltripleset>
+				<otriple>Jens_Härtel | managerClub | SV_Germania_Schöneiche</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Jens_Härtel | club | SV_Germania_Schöneiche</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jens_Härtel | club | SV_Germania_Schöneiche</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Jens Hartel spielt für den SV Germania Schoneiche. </text>
+				<template>AGENT-1 spielt für PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Jens_Härtel</entity>
+				<entity>PATIENT-1 | SV_Germania_Schöneiche</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id26" size="1">
+			<originaltripleset>
+				<otriple>John_van_den_Brom | team | AZ_Alkmaar</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>John_van_den_Brom | club | AZ_Alkmaar</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>John_van_den_Brom | club | AZ_Alkmaar</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>John van den Brom spielt im AZ Alkmaar Club. </text>
+				<template>AGENT-1 spielt bei PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>John_van_den_Brom | club | AZ_Alkmaar</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>John van den Brom spielt für AZ Alkmaar. </text>
+				<template>AGENT-1 spielt für PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | John_van_den_Brom</entity>
+				<entity>PATIENT-1 | AZ_Alkmaar</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id27" size="1">
+			<originaltripleset>
+				<otriple>Jorge_Humberto_Rodríguez | team | A.D._Isidro_Metapán</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Jorge_Humberto_Rodríguez | club | A.D._Isidro_Metapán</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jorge_Humberto_Rodríguez | club | A.D._Isidro_Metapán</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Jorge Humberto Rodriguez 's Club ist n. Isidro Metapan. </text>
+				<template>AGENT-1 's Club ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jorge_Humberto_Rodríguez | club | A.D._Isidro_Metapán</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Jorge Humberto Rodríguez ist mit dem A.D. Isidro Metapán Club. </text>
+				<template>AGENT-1 ist mit dem PATIENT-1 Club.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Jorge_Humberto_Rodríguez | club | A.D._Isidro_Metapán</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Jorge Humberto Rodríguez war Mitglied des Clubs A.D. Isidro Metapán. </text>
+				<template>AGENT-1 war ein Mitglied von PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Jorge_Humberto_Rodríguez</entity>
+				<entity>PATIENT-1 | A.D._Isidro_Metapán</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id28" size="1">
+			<originaltripleset>
+				<otriple>Massimo_Drago | team | Delfino_Pescara_1936</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Massimo_Drago | club | Delfino_Pescara_1936</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Massimo_Drago | club | Delfino_Pescara_1936</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Massimo Drago ist dem Verein Delfino Pescara 1936 beigesetzt. </text>
+				<template>AGENT-1 ist an PATIENT-1 angeschlossen.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Massimo_Drago</entity>
+				<entity>PATIENT-1 | Delfino_Pescara_1936</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id29" size="1">
+			<originaltripleset>
+				<otriple>Massimo_Drago | clubs | S.S._Chieti_Calcio</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Massimo_Drago | club | S.S._Chieti_Calcio</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Massimo_Drago | club | S.S._Chieti_Calcio</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Massimo Drago spielt für S.S.Chieti Calcio. </text>
+				<template>AGENT-1 spielt für PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Massimo_Drago | club | S.S._Chieti_Calcio</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Club von Massimo Drago ist der S.S. Chieti Calcio. </text>
+				<template>AGENT-1 's Club ist PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Massimo_Drago | club | S.S._Chieti_Calcio</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Massimo Drago spielt für S.S. Chieti Calcio. </text>
+				<template>AGENT-1 spielt für PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Massimo_Drago</entity>
+				<entity>PATIENT-1 | S.S._Chieti_Calcio</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id30" size="1">
+			<originaltripleset>
+				<otriple>Olympic_Stadium_(Athens) | location | Marousi</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Olympic_Stadium_(Athens) | location | Marousi</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Olympic_Stadium_(Athens) | location | Marousi</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Olympiastadion (Athen) liegt bei Marousi. </text>
+				<template>AGENT-1 befindet sich bei PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Olympic_Stadium_(Athens) | location | Marousi</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Das Olympiastadion (Athen) befindet sich in Marousi. </text>
+				<template>AGENT-1 befindet sich in PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Olympic_Stadium_(Athens)</entity>
+				<entity>PATIENT-1 | Marousi</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id31" size="1">
+			<originaltripleset>
+				<otriple>Premier_Development_League | champions | K-W_United_FC</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Premier_Development_League | champions | K-W_United_FC</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Premier_Development_League | champions | K-W_United_FC</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>K-W United FC wurde Meister der Premier Development League. </text>
+				<template>PATIENT-1 wurde Meister von AGENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Premier_Development_League | champions | K-W_United_FC</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>K-W United FC wurde Meister in der Premier Development League. </text>
+				<template>PATIENT-1 war Meister bei AGENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Premier_Development_League</entity>
+				<entity>PATIENT-1 | K-W_United_FC</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id32" size="1">
+			<originaltripleset>
+				<otriple>Stuart_Parker_(footballer) | team | Bury_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Stuart_Parker_(footballer) | club | Bury_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Stuart_Parker_(footballer) | club | Bury_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Stuart Parker spielte Fußball für Bury FC. </text>
+				<template>AGENT-1 spielte Fußball für PATIENT-1.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Stuart_Parker_(footballer) | club | Bury_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<text>Der Fußballer Stuart Parker spielt für den Bury FC. </text>
+				<template>AGENT-1 spielt für PATIENT-1.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Stuart_Parker_(footballer)</entity>
+				<entity>PATIENT-1 | Bury_F.C.</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>
