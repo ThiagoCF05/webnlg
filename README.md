@@ -10,7 +10,7 @@ corresponding textual realizations. This work aimed to provide intermediate repr
 
 Here are the changes per version:
 
-- [**v1.5**](versions/v1.5): Brazilian Portuguese version of the corpus, produced by [Abelardo Mota](https://github.com/abevieiramota), and English Lexicalization templates. (May 28th, 2019)
+- [**v1.5**](versions/v1.5): English Lexicalization templates, introduced in the EMNLP 2019 paper "Neural data-to-text generation: A comparison between pipeline and end-to-end architectures". (August 22th, 2019)
 - [**v1.4**](versions/v1.4): full revision of the delexicalized templates. (April 1st, 2019)
 - [**v1.3**](versions/v1.3): tokenization by [NLTK](https://www.nltk.org/), leading to a better extraction of references and discourse ordering information. (January 31st, 2019)
 - [**v1.2**](versions/v1.2): annotation of the test part of the corpus. See Issue [#2](https://github.com/ThiagoCF05/webnlg/issues/2). (January 31st, 2019)
