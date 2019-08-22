@@ -23,20 +23,23 @@ Here are the changes per version:
 ### Example
 
 ```xml
+<!-- entry -->
 <entry category="Monument" eid="Id5" size="3">
+    <!-- original tripleset -->
     <originaltripleset>
         <otriple>11th_Mississippi_Infantry_Monument | region | Adams_County,_Pennsylvania</otriple>
         <otriple>11th_Mississippi_Infantry_Monument | established | 2000</otriple>
         <otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
     </originaltripleset>
+    <!-- modified tripleset -->
     <modifiedtripleset>
         <mtriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</mtriple>
         <mtriple>11th_Mississippi_Infantry_Monument | established | 2000</mtriple>
         <mtriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</mtriple>
     </modifiedtripleset>
-    # lexical entry
+    <!-- lexical entry -->
     <lex comment="good" lid="Id1">
-        # ordered tripleset segmented in sentences
+        <!-- ordered tripleset segmented in sentences -->
         <sortedtripleset>
             <sentence ID="1">
                 <striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
@@ -46,7 +49,7 @@ Here are the changes per version:
                 <striple>11th_Mississippi_Infantry_Monument | category | Contributing_property</striple>
             </sentence>
         </sortedtripleset>
-        # extracted referring expressions
+        <!-- extracted referring expressions -->
         <references>
             <reference entity="11th_Mississippi_Infantry_Monument" number="1" tag="AGENT-1" type="description">The 11th Mississippi Infantry Monument</reference>
             <reference entity="Adams_County,_Pennsylvania" number="2" tag="PATIENT-1" type="name">Adams County , Pennsylvania</reference>
@@ -54,15 +57,15 @@ Here are the changes per version:
             <reference entity="2000" number="4" tag="PATIENT-2" type="name">2000</reference>
             <reference entity="Contributing_property" number="5" tag="PATIENT-3" type="name">contributing property</reference>
         </references>
-        # original text
+        <!-- original text -->
         <text>
             The 11th Mississippi Infantry Monument which is located in Adams County, Pennsylvania. It was established in 2000 and falls under the category of contributing property.
         </text>
-        # text with delexicalized referring expressions
+        <!-- text with delexicalized referring expressions -->
         <template>
             AGENT-1 which is located in PATIENT-1 . AGENT-1 was established in PATIENT-2 and falls under the category of PATIENT-3 .
         </template>
-        # lexicalization template
+        <!-- lexicalization template -->
         <lexicalization>
             AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] establish in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] fall under DT[form=defined] the category of PATIENT-3 .
         </lexicalization>
