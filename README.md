@@ -1,5 +1,5 @@
 # WebNLG
-The enriched version of the WebNLG dataset, described at [the INLG 2018 paper](https://aclweb.org/anthology/W18-6521).
+The enriched version of the WebNLG dataset, described in the INLG 2018 paper ["Enriching the WebNLG corpus"](https://aclweb.org/anthology/W18-6521).
 
 ### Description
 
@@ -81,19 +81,26 @@ Besides the official English version of the data (``en``), we also provide a sil
 
 To obtain the enriched version of the dataset as available in the mentioned directory, 
 make sure to proper set up *the University of Edinburgh's Neural MT System for WMT17*, publicly available [here](http://data.statmt.org/wmt17_systems).  
+
 After the settings, update the path variable ``MT_PATH`` in the ``main.sh`` script before execute it:
 
 ``
 sh main.sh
 ``
 
+### Related Projects
+
+- [**WebNLG Reader**](https://github.com/zhijing-jin/WebNLG_Reader/): An easy-to-use Python reader and cleaner for the corpus.
+- [**NeuralREG**](https://github.com/ThiagoCF05/NeuralREG): An end-to-end approach to Referring Expression Generation trained and evaluated on the enriched WebNLG.
+- [**DeepNLG**](https://github.com/ThiagoCF05/DeepNLG): Project which aims to systematically compare neural pipeline and end-to-end architectures for NLG. The enriched WebNLG was used for evaluation.
+
 ### License
 
-The WebNLG data is licensed under the following license: [CC Attribution-Noncommercial-Share Alike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). The original version of the dataset may be found at [the official website of the WebNLG challenge](http://webnlg.loria.fr/pages/challenge.html).
+The WebNLG data is licensed under the [CC Attribution-Noncommercial-Share Alike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/). The original version of the dataset can be found [here](https://gitlab.com/shimorina/webnlg-dataset).
 
 ### Citations:
 
-```Tex
+```
 @InProceedings{ferreiraetal2018,
   author = 	"Castro Ferreira, Thiago
 		and Moussallem, Diego
@@ -108,7 +115,7 @@ The WebNLG data is licensed under the following license: [CC Attribution-Noncomm
 }
 ```
 
-```Tex
+```
 @InProceedings{gardentetal017,
   author = 	"Gardent, Claire
 		and Shimorina, Anastasia
@@ -123,22 +130,5 @@ The WebNLG data is licensed under the following license: [CC Attribution-Noncomm
   address = 	"Vancouver, Canada",
   doi = 	"10.18653/v1/P17-1017",
   url = 	"http://www.aclweb.org/anthology/P17-1017"
-}
-```
-
-```Tex
-@InProceedings{ferreiraetal2018b,
-  author = 	"Castro Ferreira, Thiago
-		and Moussallem, Diego
-		and K{\'a}d{\'a}r, {\'A}kos
-		and Wubben, Sander
-		and Krahmer, Emiel",
-  title = 	"NeuralREG: An end-to-end approach to referring expression generation",
-  booktitle = 	"Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-  year = 	"2018",
-  publisher = 	"Association for Computational Linguistics",
-  pages = 	"1959--1969",
-  location = 	"Melbourne, Australia",
-  url = 	"http://aclweb.org/anthology/P18-1182"
 }
 ```
