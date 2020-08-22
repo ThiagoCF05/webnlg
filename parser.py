@@ -66,6 +66,19 @@ def parse(in_file):
                 orderedtripleset = []
 
             try:
+                references = []
+                references_xml = lex.find('references')
+                for reference in references_xml:
+                    tag = reference.attrib['tag']
+                    entity = reference.attrib['entity']
+                    refex = reference.text
+                    number = reference.attrib['number']
+                    reftype = reference.attrib['type']
+                    references.append(Reference(tag, entity, refex, number, reftype))
+            except:
+                references = []
+
+            try:
                 text = lex.find('text').text
                 if not text:
                     print('error text')
@@ -83,7 +96,7 @@ def parse(in_file):
                 print('exception template')
                 template = ''
 
-            lexList.append(Lex(comment=comment, lid=lid, text=text, template=template, orderedtripleset=orderedtripleset))
+            lexList.append(Lex(comment=comment, lid=lid, text=text, template=template, orderedtripleset=orderedtripleset, references=references))
 
         yield Entry(eid=eid, size=size, category=category, originaltripleset=originaltripleset, \
                     modifiedtripleset=modifiedtripleset, entitymap=entitymap, lexEntries=lexList)
