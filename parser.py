@@ -6,7 +6,7 @@ Date: 24/07/2017
 Description:
     Parse and generate the corpus in the xml format
 
-    PYTHON VERSION: 2.7
+    PYTHON VERSION: 2.7 / 3
 """
 
 import os
@@ -65,6 +65,16 @@ def parse(in_file):
             except:
                 orderedtripleset = []
 
+
+            references = []
+            for reference_xml in lex.find('references').findall('reference'):
+                entity = reference_xml.attrib['entity']
+                number = reference_xml.attrib['number']
+                tag = reference_xml.attrib['tag']
+                reftype = reference_xml.attrib['type']
+                refex = reference_xml.text
+                references.append(Reference(tag, entity, refex, number, reftype))
+
             try:
                 text = lex.find('text').text
                 if not text:
@@ -83,7 +93,7 @@ def parse(in_file):
                 print('exception template')
                 template = ''
 
-            lexList.append(Lex(comment=comment, lid=lid, text=text, template=template, orderedtripleset=orderedtripleset))
+            lexList.append(Lex(comment=comment, lid=lid, text=text, template=template, orderedtripleset=orderedtripleset, references=references))
 
         yield Entry(eid=eid, size=size, category=category, originaltripleset=originaltripleset, \
                     modifiedtripleset=modifiedtripleset, entitymap=entitymap, lexEntries=lexList)
