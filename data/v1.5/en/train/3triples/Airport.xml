@@ -4341,22 +4341,23 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<sentence ID="1">
-						<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
 					</sentence>
 					<sentence ID="2">
 						<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
+						<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
 					<reference entity="United_States_Air_Force" number="1" tag="BRIDGE-1" type="description">The United States Air Force</reference>
-					<reference entity="McDonnell_Douglas_F-15_Eagle" number="2" tag="PATIENT-1" type="name">Al Asad airbase</reference>
+					<reference entity="Al_Asad_Airbase" number="2" tag="AGENT-1" type="name">Al Asad airbase</reference>
 					<reference entity="United_States_Air_Force" number="3" tag="BRIDGE-1" type="pronoun">They</reference>
 					<reference entity="United_States_invasion_of_Panama" number="4" tag="PATIENT-2" type="description">the US invasion of Panama</reference>
 					<reference entity="McDonnell_Douglas_F-15_Eagle" number="5" tag="PATIENT-1" type="name">McDonnel Douglas F15 Eagle</reference>
 				</references>
 				<text>The United States Air Force operates Al Asad airbase. They were involved in the US invasion of Panama and deploy the McDonnel Douglas F15 Eagle fighter aircraft.</text>
-				<template>BRIDGE-1 operates PATIENT-1 . BRIDGE-1 were involved in PATIENT-2 and deploy the PATIENT-1 fighter aircraft .</template>
-				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] operate PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] involve in PATIENT-2 and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] deploy DT[form=defined] the PATIENT-1 fighter aircraft .</lexicalization>
+				<template>BRIDGE-1 operates AGENT-1 . BRIDGE-1 were involved in PATIENT-2 and deploy the PATIENT-1 fighter aircraft .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] operate AGENT-1 . BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] involve in PATIENT-2 and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] deploy DT[form=defined] the PATIENT-1 fighter aircraft .</lexicalization>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Al_Asad_Airbase</entity>
