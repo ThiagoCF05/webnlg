@@ -2660,9 +2660,9 @@
 					<reference entity="&quot;11/29&quot;" number="3" tag="PATIENT-2" type="name">11/29</reference>
 					<reference entity="1800.0" number="4" tag="PATIENT-3" type="name">1800.0</reference>
 				</references>
-				<text>Located at Sao Jose dos Pinhais, Afonso Pena International Airport has the runway name 11/29, and a runway length of 1800.0 metres.</text>
-				<template>Located at PATIENT-1 , AGENT-1 has the runway name PATIENT-2 , and a runway length of PATIENT-3 metres .</template>
-				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] locate at PATIENT-1 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the runway name PATIENT-2 , and DT[form=undefined] a runway length of PATIENT-3 metres .</lexicalization>
+				<text>Located at Sao Jose dos Pinhais, Afonso Pena International Airport has the runway name 11/29, and a runwiay length of 1800.0 metres.</text>
+				<template>Located at PATIENT-1 , AGENT-1 has the runway name PATIENT-2 , and a runwiay length of PATIENT-3 metres .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] locate at PATIENT-1 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the runway name PATIENT-2 , and DT[form=undefined] a runwiay length of PATIENT-3 metres .</lexicalization>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
@@ -4316,9 +4316,9 @@
 					<reference entity="United_States_invasion_of_Panama" number="3" tag="PATIENT-2" type="description">the United States invasion of Panama</reference>
 					<reference entity="McDonnell_Douglas_F-15_Eagle" number="4" tag="PATIENT-1" type="name">McDonnell Douglas F-15 Eagle</reference>
 				</references>
-				<text>Al Asad airbase is operated by the United States Air Force, which was involved in the United States invasion of Panama, and who use an aircraft fighter called McDonnell Douglas F-15 Eagle.</text>
-				<template>AGENT-1 is operated by BRIDGE-1 , which was involved in PATIENT-2 , and who use an aircraft fighter called PATIENT-1 .</template>
-				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by BRIDGE-1 , which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] involve in PATIENT-2 , and who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] use DT[form=undefined] a aircraft fighter VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-1 .</lexicalization>
+				<text>Al Asad airbase is operated by the United States Air Force, which was involved in the United States invasion of Panama, and who use an aircarft fighter called McDonnell Douglas F-15 Eagle.</text>
+				<template>AGENT-1 is operated by BRIDGE-1 , which was involved in PATIENT-2 , and who use an aircarft fighter called PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by BRIDGE-1 , which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] involve in PATIENT-2 , and who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] use DT[form=undefined] a aircarft fighter VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-1 .</lexicalization>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
@@ -4341,23 +4341,22 @@
 			<lex comment="good" lid="Id3">
 				<sortedtripleset>
 					<sentence ID="1">
-						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+						<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
 					</sentence>
 					<sentence ID="2">
 						<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
-						<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
 					<reference entity="United_States_Air_Force" number="1" tag="BRIDGE-1" type="description">The United States Air Force</reference>
-					<reference entity="Al_Asad_Airbase" number="2" tag="AGENT-1" type="name">Al Asad airbase</reference>
+					<reference entity="McDonnell_Douglas_F-15_Eagle" number="2" tag="PATIENT-1" type="name">Al Asad airbase</reference>
 					<reference entity="United_States_Air_Force" number="3" tag="BRIDGE-1" type="pronoun">They</reference>
 					<reference entity="United_States_invasion_of_Panama" number="4" tag="PATIENT-2" type="description">the US invasion of Panama</reference>
 					<reference entity="McDonnell_Douglas_F-15_Eagle" number="5" tag="PATIENT-1" type="name">McDonnel Douglas F15 Eagle</reference>
 				</references>
 				<text>The United States Air Force operates Al Asad airbase. They were involved in the US invasion of Panama and deploy the McDonnel Douglas F15 Eagle fighter aircraft.</text>
-				<template>BRIDGE-1 operates AGENT-1 . BRIDGE-1 were involved in PATIENT-2 and deploy the PATIENT-1 fighter aircraft .</template>
-				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] operate AGENT-1 . BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] involve in PATIENT-2 and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] deploy DT[form=defined] the PATIENT-1 fighter aircraft .</lexicalization>
+				<template>BRIDGE-1 operates PATIENT-1 . BRIDGE-1 were involved in PATIENT-2 and deploy the PATIENT-1 fighter aircraft .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] operate PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] involve in PATIENT-2 and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] deploy DT[form=defined] the PATIENT-1 fighter aircraft .</lexicalization>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Al_Asad_Airbase</entity>
@@ -4829,7 +4828,7 @@
 						<striple>Alcobendas | isPartOf | Community_of_Madrid</striple>
 					</sentence>
 					<sentence ID="2">
-						<striple>Alcobendas | leaderParty | People's_Party_(Spain)</striple>
+						<striple>Alcobendas | leaderParty | Peoples_Party_(Spain)</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
@@ -4837,7 +4836,7 @@
 					<reference entity="Alcobendas" number="2" tag="BRIDGE-1" type="name">Alcobendas</reference>
 					<reference entity="Community_of_Madrid" number="3" tag="PATIENT-1" type="description">the community of Madrid</reference>
 					<reference entity="Alcobendas" number="4" tag="BRIDGE-1" type="name">Alcobendas</reference>
-					<reference entity="People's_Party_(Spain)" number="5" tag="PATIENT-2" type="description">the Peoples Party ( Spain )</reference>
+					<reference entity="Peoples_Party_(Spain)" number="5" tag="PATIENT-2" type="description">the Peoples Party ( Spain )</reference>
 				</references>
 				<text>Adolfo Suárez Madrid Barajas Airport is found in Alcobendas which is part of the community of Madrid. The leader party at Alcobendas is the Peoples Party (Spain).</text>
 				<template>AGENT-1 is found in BRIDGE-1 which is part of PATIENT-1 . The leader party at BRIDGE-1 is PATIENT-2 .</template>
@@ -4849,13 +4848,13 @@
 						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
 					</sentence>
 					<sentence ID="2">
-						<striple>Alcobendas | leaderParty | People's_Party_(Spain)</striple>
+						<striple>Alcobendas | leaderParty | Peoples_Party_(Spain)</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
 					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suarez Madrid- Barajas airport</reference>
 					<reference entity="Alcobendas" number="2" tag="BRIDGE-1" type="name">Alcobendas , Madrid</reference>
-					<reference entity="People's_Party_(Spain)" number="3" tag="PATIENT-2" type="description">the People Party ( Spain )</reference>
+					<reference entity="Peoples_Party_(Spain)" number="3" tag="PATIENT-2" type="description">the People Party ( Spain )</reference>
 				</references>
 				<text>Adolfo Suarez Madrid- Barajas airport is located in Alcobendas, Madrid. The leading party is the People Party (Spain).</text>
 				<template>AGENT-1 is located in BRIDGE-1 . The leading party is PATIENT-2 .</template>
@@ -4865,7 +4864,7 @@
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Alcobendas | isPartOf | Community_of_Madrid</striple>
-						<striple>Alcobendas | leaderParty | People's_Party_(Spain)</striple>
+						<striple>Alcobendas | leaderParty | Peoples_Party_(Spain)</striple>
 					</sentence>
 					<sentence ID="2">
 						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
@@ -4875,7 +4874,7 @@
 					<reference entity="Alcobendas" number="1" tag="BRIDGE-1" type="name">Alcobendas</reference>
 					<reference entity="Community_of_Madrid" number="2" tag="PATIENT-1" type="name">Community of Madrid</reference>
 					<reference entity="Alcobendas" number="3" tag="BRIDGE-1" type="name">Alcobendas</reference>
-					<reference entity="People's_Party_(Spain)" number="4" tag="PATIENT-2" type="description">the Peoples Party ( Spain )</reference>
+					<reference entity="Peoples_Party_(Spain)" number="4" tag="PATIENT-2" type="description">the Peoples Party ( Spain )</reference>
 					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="5" tag="AGENT-1" type="description">The Adolfo Suárez Madrid–Barajas Airport</reference>
 				</references>
 				<text>Alcobendas is part of Community of Madrid whose leader party at Alcobendas is the Peoples Party (Spain). The Adolfo Suárez Madrid–Barajas Airport is located there.</text>
@@ -4886,7 +4885,7 @@
 				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
 				<entity>BRIDGE-1 | Alcobendas</entity>
 				<entity>PATIENT-1 | Community_of_Madrid</entity>
-				<entity>PATIENT-2 | People's_Party_(Spain)</entity>
+				<entity>PATIENT-2 | Peoples_Party_(Spain)</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id74" size="3">
@@ -4905,14 +4904,14 @@
 					<sentence ID="1">
 						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
 						<striple>Alcobendas | country | Spain</striple>
-						<striple>Alcobendas | leaderParty | People's_Party_(Spain)</striple>
+						<striple>Alcobendas | leaderParty | Peoples_Party_(Spain)</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
 					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suárez Madrid Barajas Airport</reference>
 					<reference entity="Alcobendas" number="2" tag="BRIDGE-1" type="name">Alcobendas</reference>
 					<reference entity="Spain" number="3" tag="PATIENT-2" type="name">Spain</reference>
-					<reference entity="People's_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the Peoples Party</reference>
+					<reference entity="Peoples_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the Peoples Party</reference>
 				</references>
 				<text>Adolfo Suárez Madrid Barajas Airport is found in Alcobendas (Spain) where the leader party is the Peoples Party.</text>
 				<template>AGENT-1 is found in BRIDGE-1 (PATIENT-2) where the leader party is PATIENT-1 .</template>
@@ -4923,14 +4922,14 @@
 					<sentence ID="1">
 						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
 						<striple>Alcobendas | country | Spain</striple>
-						<striple>Alcobendas | leaderParty | People's_Party_(Spain)</striple>
+						<striple>Alcobendas | leaderParty | Peoples_Party_(Spain)</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
 					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suárez Madrid–Barajas Airport</reference>
 					<reference entity="Spain" number="2" tag="PATIENT-2" type="name">Spain</reference>
 					<reference entity="Alcobendas" number="3" tag="BRIDGE-1" type="name">Alcobendas</reference>
-					<reference entity="People's_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the Peoples Party</reference>
+					<reference entity="Peoples_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the Peoples Party</reference>
 					<reference entity="Spain" number="5" tag="PATIENT-2" type="name">Spain</reference>
 				</references>
 				<text>Adolfo Suárez Madrid–Barajas Airport is located in Spain at Alcobendas where the leader party is the Peoples Party (Spain).</text>
@@ -4942,14 +4941,14 @@
 					<sentence ID="1">
 						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Alcobendas</striple>
 						<striple>Alcobendas | country | Spain</striple>
-						<striple>Alcobendas | leaderParty | People's_Party_(Spain)</striple>
+						<striple>Alcobendas | leaderParty | Peoples_Party_(Spain)</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
 					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suarez Madrid-Barajas airport</reference>
 					<reference entity="Alcobendas" number="2" tag="BRIDGE-1" type="name">alcobendas</reference>
 					<reference entity="Spain" number="3" tag="PATIENT-2" type="name">spain</reference>
-					<reference entity="People's_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the People 's party</reference>
+					<reference entity="Peoples_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the People 's party</reference>
 				</references>
 				<text>Adolfo Suarez Madrid-Barajas airport is located in alcobendas, spain, where the leader party is the People's party.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , PATIENT-2 , where the leader party is PATIENT-1 .</template>
@@ -4958,7 +4957,7 @@
 			<entitymap>
 				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
 				<entity>BRIDGE-1 | Alcobendas</entity>
-				<entity>PATIENT-1 | People's_Party_(Spain)</entity>
+				<entity>PATIENT-1 | Peoples_Party_(Spain)</entity>
 				<entity>PATIENT-2 | Spain</entity>
 			</entitymap>
 		</entry>
@@ -8195,9 +8194,9 @@
 					<reference entity="Flemish_Government" number="3" tag="PATIENT-1" type="description">the Flemish Government</reference>
 					<reference entity="12.0" number="4" tag="PATIENT-3" type="name">12.0</reference>
 				</references>
-				<text>The Antwerp International Airport, Antwerp is operated by the Flemish Government and is 12.0 metres above sea level.</text>
-				<template>AGENT-1 , PATIENT-2 is operated by PATIENT-1 and is PATIENT-3 metres above sea level .</template>
-				<lexicalization>AGENT-1 , PATIENT-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 metres above sea level .</lexicalization>
+				<text>The Antwerp International Airport, Antwerp is operated by the Flemish Government and is 12.0 meteres above sea level.</text>
+				<template>AGENT-1 , PATIENT-2 is operated by PATIENT-1 and is PATIENT-3 meteres above sea level .</template>
+				<lexicalization>AGENT-1 , PATIENT-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 meteres above sea level .</lexicalization>
 			</lex>
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
@@ -12204,14 +12203,14 @@
 				<sortedtripleset>
 					<sentence ID="1">
 						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
-						<striple>San_Sebastián_de_los_Reyes | leaderParty | People's_Party_(Spain)</striple>
+						<striple>San_Sebastián_de_los_Reyes | leaderParty | Peoples_Party_(Spain)</striple>
 						<striple>San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
 					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="description">The Adolfo Suárez Madrid–Barajas Airport</reference>
 					<reference entity="San_Sebastián_de_los_Reyes" number="2" tag="BRIDGE-1" type="name">n San Sebastián de los Reyes</reference>
-					<reference entity="People's_Party_(Spain)" number="3" tag="PATIENT-1" type="description">the Peoples Party</reference>
+					<reference entity="Peoples_Party_(Spain)" number="3" tag="PATIENT-1" type="description">the Peoples Party</reference>
 					<reference entity="Community_of_Madrid" number="4" tag="PATIENT-2" type="description">the community of Madrid</reference>
 				</references>
 				<text>The Adolfo Suárez Madrid–Barajas Airport is located n San Sebastián de los Reyes which is lead by the Peoples Party and is part of the community of Madrid.</text>
@@ -12221,7 +12220,7 @@
 			<lex comment="good" lid="Id2">
 				<sortedtripleset>
 					<sentence ID="1">
-						<striple>San_Sebastián_de_los_Reyes | leaderParty | People's_Party_(Spain)</striple>
+						<striple>San_Sebastián_de_los_Reyes | leaderParty | Peoples_Party_(Spain)</striple>
 						<striple>San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid</striple>
 					</sentence>
 					<sentence ID="2">
@@ -12229,7 +12228,7 @@
 					</sentence>
 				</sortedtripleset>
 				<references>
-					<reference entity="People's_Party_(Spain)" number="1" tag="PATIENT-1" type="description">The People 's Party</reference>
+					<reference entity="Peoples_Party_(Spain)" number="1" tag="PATIENT-1" type="description">The People 's Party</reference>
 					<reference entity="San_Sebastián_de_los_Reyes" number="2" tag="BRIDGE-1" type="name">San Sebastian de los Reyes , Spain</reference>
 					<reference entity="Community_of_Madrid" number="3" tag="PATIENT-2" type="description">the Community of Madrid</reference>
 					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="4" tag="AGENT-1" type="description">The Adolfo Suárez Madrid–Barajas</reference>
@@ -12243,14 +12242,14 @@
 					<sentence ID="1">
 						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
 						<striple>San_Sebastián_de_los_Reyes | isPartOf | Community_of_Madrid</striple>
-						<striple>San_Sebastián_de_los_Reyes | leaderParty | People's_Party_(Spain)</striple>
+						<striple>San_Sebastián_de_los_Reyes | leaderParty | Peoples_Party_(Spain)</striple>
 					</sentence>
 				</sortedtripleset>
 				<references>
 					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="description">The Adolfo Suárez Madrid–Barajas Airport</reference>
 					<reference entity="San_Sebastián_de_los_Reyes" number="2" tag="BRIDGE-1" type="name">San Sebastián de los Reyes</reference>
 					<reference entity="Community_of_Madrid" number="3" tag="PATIENT-2" type="name">Madrid</reference>
-					<reference entity="People's_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the People 's Party</reference>
+					<reference entity="Peoples_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the People 's Party</reference>
 				</references>
 				<text>The Adolfo Suárez Madrid–Barajas Airport is located in San Sebastián de los Reyes,Madrid,where the People's Party is the leading political organization.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , PATIENT-2 , where PATIENT-1 is the leading political organization .</template>
@@ -12259,7 +12258,7 @@
 			<entitymap>
 				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
 				<entity>BRIDGE-1 | San_Sebastián_de_los_Reyes</entity>
-				<entity>PATIENT-1 | People's_Party_(Spain)</entity>
+				<entity>PATIENT-1 | Peoples_Party_(Spain)</entity>
 				<entity>PATIENT-2 | Community_of_Madrid</entity>
 			</entitymap>
 		</entry>

@@ -1,0 +1,1667 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Building" eid="Id908" size="5">
+			<originaltripleset>
+				<otriple>200_Public_Square | location | Cleveland</otriple>
+				<otriple>200_Public_Square | buildingEndDate | &quot;1985&quot;</otriple>
+				<otriple>Cleveland | subdivisionName | Cuyahoga_County,_Ohio</otriple>
+				<otriple>Cleveland | isPartOf | Ohio</otriple>
+				<otriple>Cleveland | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>200_Public_Square | location | Cleveland</mtriple>
+				<mtriple>200_Public_Square | completionDate | 1985</mtriple>
+				<mtriple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</mtriple>
+				<mtriple>Cleveland | isPartOf | Ohio</mtriple>
+				<mtriple>Cleveland | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | completionDate | 1985</striple>
+						<striple>200_Public_Square | location | Cleveland</striple>
+						<striple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</striple>
+						<striple>Cleveland | isPartOf | Ohio</striple>
+						<striple>Cleveland | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="200_Public_Square" number="1" tag="AGENT-1" type="description">The 200 Public Square</reference>
+					<reference entity="1985" number="2" tag="PATIENT-1" type="name">1985</reference>
+					<reference entity="Cuyahoga_County,_Ohio" number="3" tag="PATIENT-2" type="name">Cuyahoga County</reference>
+					<reference entity="Cleveland" number="4" tag="BRIDGE-1" type="name">Cleveland</reference>
+					<reference entity="Ohio" number="5" tag="PATIENT-3" type="name">Ohio</reference>
+					<reference entity="United_States" number="6" tag="PATIENT-4" type="name">United States</reference>
+				</references>
+				<text>The 200 Public Square was completed in 1985 in Cuyahoga County, Cleveland, Ohio, United States.</text>
+				<template>AGENT-1 was completed in PATIENT-1 in PATIENT-2 , BRIDGE-1 , PATIENT-3 , PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] complete in PATIENT-1 in PATIENT-2 , BRIDGE-1 , PATIENT-3 , PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | completionDate | 1985</striple>
+						<striple>200_Public_Square | location | Cleveland</striple>
+						<striple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</striple>
+						<striple>Cleveland | isPartOf | Ohio</striple>
+						<striple>Cleveland | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="200_Public_Square" number="1" tag="AGENT-1" type="name">200 Public Square</reference>
+					<reference entity="1985" number="2" tag="PATIENT-1" type="name">1985</reference>
+					<reference entity="Cleveland" number="3" tag="BRIDGE-1" type="name">Cleveland</reference>
+					<reference entity="Cuyahoga_County,_Ohio" number="4" tag="PATIENT-2" type="name">Cuyahoga County</reference>
+					<reference entity="Ohio" number="5" tag="PATIENT-3" type="name">Ohio</reference>
+					<reference entity="United_States" number="6" tag="PATIENT-4" type="name">U.S</reference>
+				</references>
+				<text>200 Public Square completed in 1985 is in Cleveland (part of Cuyahoga County) in Ohio, U.S.</text>
+				<template>AGENT-1 completed in PATIENT-1 is in BRIDGE-1 (part of PATIENT-2) in PATIENT-3 , PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] complete in PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 ( part of PATIENT-2 ) in PATIENT-3 , PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>200_Public_Square | completionDate | 1985</striple>
+						<striple>200_Public_Square | location | Cleveland</striple>
+						<striple>Cleveland | isPartOf | Cuyahoga_County,_Ohio</striple>
+						<striple>Cleveland | isPartOf | Ohio</striple>
+						<striple>Cleveland | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="200_Public_Square" number="1" tag="AGENT-1" type="name">200 Public Square</reference>
+					<reference entity="1985" number="2" tag="PATIENT-1" type="name">1985</reference>
+					<reference entity="Cleveland" number="3" tag="BRIDGE-1" type="name">Cleveland</reference>
+					<reference entity="Cuyahoga_County,_Ohio" number="4" tag="PATIENT-2" type="name">Cuyahoga County</reference>
+					<reference entity="Ohio" number="5" tag="PATIENT-3" type="name">Ohio</reference>
+					<reference entity="United_States" number="6" tag="PATIENT-4" type="name">United States</reference>
+				</references>
+				<text>200 Public Square was completed in 1985, and is located in Cleveland, Cuyahoga County, Ohio, United States.</text>
+				<template>AGENT-1 was completed in PATIENT-1 , and is located in BRIDGE-1 , PATIENT-2 , PATIENT-3 , PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] complete in PATIENT-1 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , PATIENT-2 , PATIENT-3 , PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 200_Public_Square</entity>
+				<entity>BRIDGE-1 | Cleveland</entity>
+				<entity>PATIENT-1 | 1985</entity>
+				<entity>PATIENT-2 | Cuyahoga_County,_Ohio</entity>
+				<entity>PATIENT-3 | Ohio</entity>
+				<entity>PATIENT-4 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id909" size="5">
+			<originaltripleset>
+				<otriple>250_Delaware_Avenue | location | Buffalo,_New_York</otriple>
+				<otriple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</otriple>
+				<otriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</otriple>
+				<otriple>250_Delaware_Avenue | floorArea | &quot;30843.8&quot;^^xsd:double</otriple>
+				<otriple>250_Delaware_Avenue | floorCount | &quot;12&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>250_Delaware_Avenue | location | Buffalo,_New_York</mtriple>
+				<mtriple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</mtriple>
+				<mtriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</mtriple>
+				<mtriple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</mtriple>
+				<mtriple>250_Delaware_Avenue | floorCount | 12</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | location | Buffalo,_New_York</striple>
+						<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
+						<striple>250_Delaware_Avenue | architecturalStyle | Postmodern_architecture</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>250_Delaware_Avenue | floorCount | 12</striple>
+						<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
+					<reference entity="Buffalo,_New_York" number="2" tag="PATIENT-1" type="name">Buffalo , New York</reference>
+					<reference entity="&quot;January, 2014&quot;" number="3" tag="PATIENT-3" type="name">January 2014</reference>
+					<reference entity="Postmodern_architecture" number="4" tag="PATIENT-2" type="description">the postmodernist style of architecture</reference>
+					<reference entity="12" number="5" tag="PATIENT-5" type="name">12</reference>
+					<reference entity="30843.8 (square metres)" number="6" tag="PATIENT-4" type="name">30843.8 square metres</reference>
+				</references>
+				<text>Construction of 250 Delaware Avenue, Buffalo, New York, began in January 2014 in the postmodernist style of architecture. The building has 12 floors with a total area of 30843.8 square metres.</text>
+				<template>Construction of AGENT-1 , PATIENT-1 , began in PATIENT-3 in PATIENT-2 . The building has PATIENT-5 floors with a total area of PATIENT-4 .</template>
+				<lexicalization>Construction of AGENT-1 , PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] begin in PATIENT-3 in PATIENT-2 . DT[form=defined] the building VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-5 floors with DT[form=undefined] a total area of PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>PATIENT-1 | Buffalo,_New_York</entity>
+				<entity>PATIENT-2 | Postmodern_architecture</entity>
+				<entity>PATIENT-3 | &quot;January, 2014&quot;</entity>
+				<entity>PATIENT-4 | 30843.8 (square metres)</entity>
+				<entity>PATIENT-5 | 12</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id910" size="5">
+			<originaltripleset>
+				<otriple>300_North_LaSalle | location | Chicago</otriple>
+				<otriple>Chicago | leaderName | Rahm_Emanuel</otriple>
+				<otriple>Chicago | country | United_States</otriple>
+				<otriple>Illinois | capital | Springfield,_Illinois</otriple>
+				<otriple>Chicago | isPartOf | Illinois</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>300_North_LaSalle | location | Chicago</mtriple>
+				<mtriple>Chicago | leaderName | Rahm_Emanuel</mtriple>
+				<mtriple>Chicago | country | United_States</mtriple>
+				<mtriple>Illinois | capital | Springfield,_Illinois</mtriple>
+				<mtriple>Chicago | isPartOf | Illinois</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>Chicago | isPartOf | Illinois</striple>
+						<striple>Chicago | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Chicago | leaderName | Rahm_Emanuel</striple>
+						<striple>Illinois | capital | Springfield,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
+					<reference entity="Chicago" number="2" tag="BRIDGE-1" type="name">Chicago</reference>
+					<reference entity="Illinois" number="3" tag="BRIDGE-2" type="name">Illinois</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-2" type="name">United States</reference>
+					<reference entity="Chicago" number="5" tag="BRIDGE-1" type="name">Chicago</reference>
+					<reference entity="Rahm_Emanuel" number="6" tag="PATIENT-1" type="name">Rahm Emanuel</reference>
+					<reference entity="Illinois" number="7" tag="BRIDGE-2" type="name">Illinois</reference>
+					<reference entity="Springfield,_Illinois" number="8" tag="PATIENT-3" type="name">Springfield</reference>
+				</references>
+				<text>300 North LaSalle is located in Chicago, Illinois, United States. The leader of Chicago is Rahm Emanuel and the capital of the state of Illinois is Springfield.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , BRIDGE-2 , PATIENT-2 . The leader of BRIDGE-1 is PATIENT-1 and the capital of the state of BRIDGE-2 is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , BRIDGE-2 , PATIENT-2 . DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 and DT[form=defined] the capital of DT[form=defined] the state of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>Chicago | leaderName | Rahm_Emanuel</striple>
+						<striple>Chicago | isPartOf | Illinois</striple>
+						<striple>Chicago | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Illinois | capital | Springfield,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
+					<reference entity="Chicago" number="2" tag="BRIDGE-1" type="name">Chicago</reference>
+					<reference entity="Rahm_Emanuel" number="3" tag="PATIENT-1" type="name">Rahm Emanuel</reference>
+					<reference entity="Illinois" number="4" tag="BRIDGE-2" type="name">Illinois</reference>
+					<reference entity="United_States" number="5" tag="PATIENT-2" type="name">United States</reference>
+					<reference entity="Illinois" number="6" tag="BRIDGE-2" type="name">Illinois</reference>
+					<reference entity="Springfield,_Illinois" number="7" tag="PATIENT-3" type="name">Springfield</reference>
+				</references>
+				<text>300 North LaSalle is located in Chicago (leader: Rahm Emanuel), which is part of Illinois, United States. The capital of Illinois is Springfield.</text>
+				<template>AGENT-1 is located in BRIDGE-1 (leader : PATIENT-1) , which is part of BRIDGE-2 , PATIENT-2 . The capital of BRIDGE-2 is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 ( leader : PATIENT-1 ) , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-2 , PATIENT-2 . DT[form=defined] the capital of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>300_North_LaSalle | location | Chicago</striple>
+						<striple>Chicago | isPartOf | Illinois</striple>
+						<striple>Chicago | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Chicago | leaderName | Rahm_Emanuel</striple>
+						<striple>Illinois | capital | Springfield,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
+					<reference entity="Chicago" number="2" tag="BRIDGE-1" type="name">Chicago</reference>
+					<reference entity="Illinois" number="3" tag="BRIDGE-2" type="name">Illinois</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-2" type="description">the US</reference>
+					<reference entity="Rahm_Emanuel" number="5" tag="PATIENT-1" type="name">Rahm Emanuel</reference>
+					<reference entity="Chicago" number="6" tag="BRIDGE-1" type="name">Chicago</reference>
+					<reference entity="Illinois" number="7" tag="BRIDGE-2" type="name">Illinois</reference>
+					<reference entity="Springfield,_Illinois" number="8" tag="PATIENT-3" type="name">Springfield</reference>
+				</references>
+				<text>300 North LaSalle is located in Chicago, Illinois, in the US. Rahm Emanuel is the leader of Chicago but the capital of the state of Illinois is Springfield.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , BRIDGE-2 , in PATIENT-2 . PATIENT-1 is the leader of BRIDGE-1 but the capital of the state of BRIDGE-2 is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , BRIDGE-2 , in PATIENT-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader of BRIDGE-1 but DT[form=defined] the capital of DT[form=defined] the state of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 300_North_LaSalle</entity>
+				<entity>BRIDGE-1 | Chicago</entity>
+				<entity>BRIDGE-2 | Illinois</entity>
+				<entity>PATIENT-1 | Rahm_Emanuel</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Springfield,_Illinois</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id911" size="5">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Denmark | language | Faroese_language</otriple>
+				<otriple>Denmark | leaderName | Margrethe_II_of_Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | operator | Marriott_International</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</mtriple>
+				<mtriple>Denmark | language | Faroese_language</mtriple>
+				<mtriple>Denmark | leaderName | Margrethe_II_of_Denmark</mtriple>
+				<mtriple>Marriott_International | foundationPlace | Washington,_D.C.</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</striple>
+						<striple>Denmark | language | Faroese_language</striple>
+						<striple>Denmark | leaderName | Margrethe_II_of_Denmark</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>Marriott_International | foundationPlace | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="1" tag="AGENT-1" type="name">AC Hotel Bella Sky Copenhagen</reference>
+					<reference entity="Denmark" number="2" tag="BRIDGE-1" type="name">Denmark</reference>
+					<reference entity="Faroese_language" number="3" tag="PATIENT-1" type="name">Faroese</reference>
+					<reference entity="Margrethe_II_of_Denmark" number="4" tag="PATIENT-2" type="name">Margrethe II of Denmark</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="5" tag="AGENT-1" type="description">The hotel 's</reference>
+					<reference entity="Marriott_International" number="6" tag="BRIDGE-2" type="description">the Marriott International Hotel</reference>
+					<reference entity="Washington,_D.C." number="7" tag="PATIENT-3" type="name">Washington , D.C</reference>
+				</references>
+				<text>AC Hotel Bella Sky Copenhagen is located in Denmark, where Faroese is spoken, and the leader is Margrethe II of Denmark. The hotel's current tenant is the Marriott International Hotel, which was founded in Washington, D.C.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , where PATIENT-1 is spoken , and the leader is PATIENT-2 . AGENT-1 current tenant is BRIDGE-2 , which was founded in PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , where PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak , and DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 . AGENT-1 current tenant VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 , which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1"/>
+					<sentence ID="2">
+						<striple>Marriott_International | foundationPlace | Washington,_D.C.</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Margrethe_II_of_Denmark" number="1" tag="PATIENT-2" type="name">Margrethe II of Denmark</reference>
+					<reference entity="Faroese_language" number="2" tag="PATIENT-1" type="description">the Faroese language</reference>
+					<reference entity="Marriott_International" number="3" tag="BRIDGE-2" type="description">The Marriott International</reference>
+					<reference entity="Washington,_D.C." number="4" tag="PATIENT-3" type="name">Washington DC</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="5" tag="AGENT-1" type="description">the AC Hotel Bella Sky in Copenhagen</reference>
+				</references>
+				<text>Margrethe II of Denmark leads the country where the Faroese language is spoken. The Marriott International, founded in Washington DC, are the current tenants of the AC Hotel Bella Sky in Copenhagen.</text>
+				<template>PATIENT-2 leads the country where PATIENT-1 is spoken . BRIDGE-2 , founded in PATIENT-3 , are the current tenants of AGENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] lead DT[form=defined] the country where PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak . BRIDGE-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] found in PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] the current tenants of AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>BRIDGE-1 | Denmark</entity>
+				<entity>BRIDGE-2 | Marriott_International</entity>
+				<entity>PATIENT-1 | Faroese_language</entity>
+				<entity>PATIENT-2 | Margrethe_II_of_Denmark</entity>
+				<entity>PATIENT-3 | Washington,_D.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id912" size="5">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | operator | Marriott_International</otriple>
+				<otriple>Marriott_International | keyPerson | Bill_Marriott</otriple>
+				<otriple>Denmark | language | Greenlandic_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</mtriple>
+				<mtriple>Marriott_International | foundationPlace | Washington,_D.C.</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</mtriple>
+				<mtriple>Marriott_International | keyPerson | Bill_Marriott</mtriple>
+				<mtriple>Denmark | language | Greenlandic_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Marriott_International | foundationPlace | Washington,_D.C.</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</striple>
+						<striple>Denmark | language | Greenlandic_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Marriott_International | keyPerson | Bill_Marriott</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marriott_International" number="1" tag="BRIDGE-1" type="name">Marriott International</reference>
+					<reference entity="Washington,_D.C." number="2" tag="PATIENT-1" type="name">Washington , D.C.</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="3" tag="AGENT-1" type="name">AC Hotel Bella Sky Copenhagen</reference>
+					<reference entity="Denmark" number="4" tag="BRIDGE-2" type="name">Denmark</reference>
+					<reference entity="Greenlandic_language" number="5" tag="PATIENT-3" type="name">Greenlandic</reference>
+					<reference entity="Bill_Marriott" number="6" tag="PATIENT-2" type="name">Bill Marriott</reference>
+					<reference entity="Marriott_International" number="7" tag="BRIDGE-1" type="name">Marriott International</reference>
+				</references>
+				<text>Marriott International was founded in Washington, D.C. and is the tenant of AC Hotel Bella Sky Copenhagen which is in Denmark where Greenlandic is one of the languages spoken there. Bill Marriott is one of the key employees of Marriott International.</text>
+				<template>BRIDGE-1 was founded in PATIENT-1 and is the tenant of AGENT-1 which is in BRIDGE-2 where PATIENT-3 is one of the languages spoken there . PATIENT-2 is one of the key employees of BRIDGE-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the tenant of AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 where PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the languages VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak there . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the key employees of BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Marriott_International | keyPerson | Bill_Marriott</striple>
+						<striple>Marriott_International | foundationPlace | Washington,_D.C.</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Denmark | language | Greenlandic_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bill_Marriott" number="1" tag="PATIENT-2" type="name">Bill Marriott</reference>
+					<reference entity="Marriott_International" number="2" tag="BRIDGE-1" type="name">Marriott International</reference>
+					<reference entity="Washington,_D.C." number="3" tag="PATIENT-1" type="name">Washington DC</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="4" tag="AGENT-1" type="description">the AC Hotel Bella Sky in Copenhagen</reference>
+					<reference entity="Denmark" number="5" tag="BRIDGE-2" type="name">Denmark</reference>
+					<reference entity="Denmark" number="6" tag="BRIDGE-2" type="description">the country</reference>
+					<reference entity="Greenlandic_language" number="7" tag="PATIENT-3" type="name">Greenlandic</reference>
+				</references>
+				<text>Bill Marriott is the key person of Marriott International which was founded in Washington DC and is the tenant of the AC Hotel Bella Sky in Copenhagen, Denmark. One of the languages spoken in the country is Greenlandic.</text>
+				<template>PATIENT-2 is the key person of BRIDGE-1 which was founded in PATIENT-1 and is the tenant of AGENT-1 , BRIDGE-2 . One of the languages spoken in BRIDGE-2 is PATIENT-3 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the key person of BRIDGE-1 which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the tenant of AGENT-1 , BRIDGE-2 . One of DT[form=defined] the languages VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak in BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>BRIDGE-1 | Marriott_International</entity>
+				<entity>BRIDGE-2 | Denmark</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | Bill_Marriott</entity>
+				<entity>PATIENT-3 | Greenlandic_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id913" size="5">
+			<originaltripleset>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</otriple>
+				<otriple>Marriott_International | foundationPlace | Washington,_D.C.</otriple>
+				<otriple>Denmark | leaderName | Lars_Løkke_Rasmussen</otriple>
+				<otriple>AC_Hotel_Bella_Sky_Copenhagen | operator | Marriott_International</otriple>
+				<otriple>Denmark | language | Greenlandic_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</mtriple>
+				<mtriple>Marriott_International | foundationPlace | Washington,_D.C.</mtriple>
+				<mtriple>Denmark | leaderName | Lars_Løkke_Rasmussen</mtriple>
+				<mtriple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</mtriple>
+				<mtriple>Denmark | language | Greenlandic_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</striple>
+						<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+						<striple>Denmark | language | Greenlandic_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>Marriott_International | foundationPlace | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="1" tag="AGENT-1" type="name">AC Hotel Bella Sky Copenhagen</reference>
+					<reference entity="Denmark" number="2" tag="BRIDGE-1" type="name">Denmark</reference>
+					<reference entity="Lars_Løkke_Rasmussen" number="3" tag="PATIENT-2" type="name">Lars Løkke Rasmussen</reference>
+					<reference entity="Greenlandic_language" number="4" tag="PATIENT-3" type="name">Greenlandic</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="5" tag="AGENT-1" type="description">the AC Hotel Bella Sky Copenhagen</reference>
+					<reference entity="Marriott_International" number="6" tag="BRIDGE-2" type="name">in Denmark where the leader is Lars Løkke Rasmussen and Greenlandic is one of the languages spoken there . The tenant of the AC Hotel Bella Sky Copenhagen is the Marriott International Hotel</reference>
+					<reference entity="Washington,_D.C." number="7" tag="PATIENT-1" type="name">Washington , D.C</reference>
+				</references>
+				<text>AC Hotel Bella Sky Copenhagen is in Denmark where the leader is Lars Løkke Rasmussen and Greenlandic is one of the languages spoken there. The tenant of the AC Hotel Bella Sky Copenhagen is the Marriott International Hotel which was founded in Washington, D.C.</text>
+				<template>AGENT-1 is in BRIDGE-1 where the leader is PATIENT-2 and PATIENT-3 is one of the languages spoken there . The tenant of AGENT-1 is BRIDGE-2 which was founded in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the languages VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak there . DT[form=defined] the tenant of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Marriott_International | foundationPlace | Washington,_D.C.</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | tenant | Marriott_International</striple>
+						<striple>AC_Hotel_Bella_Sky_Copenhagen | location | Denmark</striple>
+						<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+						<striple>Denmark | language | Greenlandic_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marriott_International" number="1" tag="BRIDGE-2" type="name">Marriott International</reference>
+					<reference entity="Washington,_D.C." number="2" tag="PATIENT-1" type="name">Washington DC</reference>
+					<reference entity="AC_Hotel_Bella_Sky_Copenhagen" number="3" tag="AGENT-1" type="name">AC Hotel Bella Sky located in Copenhagen</reference>
+					<reference entity="Denmark" number="4" tag="BRIDGE-1" type="name">Denmark</reference>
+					<reference entity="Lars_Løkke_Rasmussen" number="5" tag="PATIENT-2" type="name">Lars Lokke Rasmussen</reference>
+					<reference entity="Greenlandic_language" number="6" tag="PATIENT-3" type="name">Greenlandic</reference>
+				</references>
+				<text>Marriott International, founded in Washington DC, is a tenant of AC Hotel Bella Sky located in Copenhagen, Denmark (which is led by Lars Lokke Rasmussen and has Greenlandic as a spoken language).</text>
+				<template>BRIDGE-2 , founded in PATIENT-1 , is a tenant of AGENT-1 , BRIDGE-1 (which is led by PATIENT-2 and has PATIENT-3 as a spoken language) .</template>
+				<lexicalization>BRIDGE-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] found in PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a tenant of AGENT-1 , BRIDGE-1 ( which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-3 as DT[form=undefined] a VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak language ) .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AC_Hotel_Bella_Sky_Copenhagen</entity>
+				<entity>BRIDGE-1 | Denmark</entity>
+				<entity>BRIDGE-2 | Marriott_International</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | Lars_Løkke_Rasmussen</entity>
+				<entity>PATIENT-3 | Greenlandic_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id914" size="5">
+			<originaltripleset>
+				<otriple>Adare_Manor | architect | Augustus_Pugin</otriple>
+				<otriple>Augustus_Pugin | significantBuilding | Palace_of_Westminster</otriple>
+				<otriple>Augustus_Pugin | birthPlace | Bloomsbury</otriple>
+				<otriple>Republic_of_Ireland | leader | Enda_Kenny</otriple>
+				<otriple>Adare_Manor | country | Republic_of_Ireland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adare_Manor | country | Republic_of_Ireland</mtriple>
+				<mtriple>Adare_Manor | architect | Augustus_Pugin</mtriple>
+				<mtriple>Augustus_Pugin | significantBuilding | Palace_of_Westminster</mtriple>
+				<mtriple>Augustus_Pugin | birthPlace | Bloomsbury</mtriple>
+				<mtriple>Republic_of_Ireland | leaderName | Enda_Kenny</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | country | Republic_of_Ireland</striple>
+						<striple>Republic_of_Ireland | leaderName | Enda_Kenny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adare_Manor | architect | Augustus_Pugin</striple>
+						<striple>Augustus_Pugin | birthPlace | Bloomsbury</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Augustus_Pugin | significantBuilding | Palace_of_Westminster</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="description">The Adare Manor</reference>
+					<reference entity="Republic_of_Ireland" number="2" tag="BRIDGE-2" type="description">the Republic of Ireland</reference>
+					<reference entity="Enda_Kenny" number="3" tag="PATIENT-3" type="name">Enda Kenny</reference>
+					<reference entity="Augustus_Pugin" number="4" tag="BRIDGE-1" type="name">Augustus Pugin</reference>
+					<reference entity="Bloomsbury" number="5" tag="PATIENT-2" type="name">Bloomsbury</reference>
+					<reference entity="Augustus_Pugin" number="6" tag="BRIDGE-1" type="name">Augustus Pugin</reference>
+					<reference entity="Palace_of_Westminster" number="7" tag="PATIENT-1" type="description">the Palace Of Westminster</reference>
+				</references>
+				<text>The Adare Manor is in the Republic of Ireland, which leader is Enda Kenny. The architect is Augustus Pugin, who was born in Bloomsbury. One of the significant buildings designed by Augustus Pugin is the Palace Of Westminster.</text>
+				<template>AGENT-1 is in BRIDGE-2 , which leader is PATIENT-3 . The architect is BRIDGE-1 , who was born in PATIENT-2 . One of the significant buildings designed by BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 , which leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 . DT[form=defined] the architect VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 . One of DT[form=defined] the significant buildings VP[aspect=simple,tense=past,voice=active,person=null,number=null] design by BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adare_Manor | country | Republic_of_Ireland</striple>
+						<striple>Republic_of_Ireland | leaderName | Enda_Kenny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adare_Manor | architect | Augustus_Pugin</striple>
+						<striple>Augustus_Pugin | birthPlace | Bloomsbury</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Augustus_Pugin | significantBuilding | Palace_of_Westminster</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="Republic_of_Ireland" number="2" tag="BRIDGE-2" type="description">the Republic of Ireland</reference>
+					<reference entity="Enda_Kenny" number="3" tag="PATIENT-3" type="name">Enda Kenny</reference>
+					<reference entity="Adare_Manor" number="4" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="Augustus_Pugin" number="5" tag="BRIDGE-1" type="name">Augustus Pugin</reference>
+					<reference entity="Bloomsbury" number="6" tag="PATIENT-2" type="name">Bloomsbury</reference>
+					<reference entity="Augustus_Pugin" number="7" tag="BRIDGE-1" type="name">Pugin</reference>
+					<reference entity="Palace_of_Westminster" number="8" tag="PATIENT-1" type="description">the Palace of Westminster</reference>
+				</references>
+				<text>Adare Manor is located in the Republic of Ireland, whose leader is Enda Kenny. Its architect was Augustus Pugin, who was born in Bloomsbury. Another significant building designed by Pugin is the Palace of Westminster.</text>
+				<template>AGENT-1 is located in BRIDGE-2 , whose leader is PATIENT-3 . AGENT-1 architect was BRIDGE-1 , who was born in PATIENT-2 . Another significant building designed by BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-2 , whose leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 . AGENT-1 architect VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 . DT[form=defined] another significant building VP[aspect=simple,tense=past,voice=active,person=null,number=null] design by BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Augustus_Pugin | birthPlace | Bloomsbury</striple>
+						<striple>Adare_Manor | architect | Augustus_Pugin</striple>
+						<striple>Adare_Manor | country | Republic_of_Ireland</striple>
+						<striple>Republic_of_Ireland | leaderName | Enda_Kenny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Augustus_Pugin | significantBuilding | Palace_of_Westminster</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Augustus_Pugin" number="1" tag="BRIDGE-1" type="name">Augustus Pugin</reference>
+					<reference entity="Bloomsbury" number="2" tag="PATIENT-2" type="name">Bloomsbury</reference>
+					<reference entity="Adare_Manor" number="3" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="Republic_of_Ireland" number="4" tag="BRIDGE-2" type="description">the Republic of Ireland</reference>
+					<reference entity="Enda_Kenny" number="5" tag="PATIENT-3" type="name">Enda Kenny</reference>
+					<reference entity="Augustus_Pugin" number="6" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Palace_of_Westminster" number="7" tag="PATIENT-1" type="description">the Palace of Westminster</reference>
+				</references>
+				<text>Augustus Pugin was born in Bloomsbury and was the architect of Adare Manor in the Republic of Ireland, where the leader is Enda Kenny. He also designed the significant building of the Palace of Westminster.</text>
+				<template>BRIDGE-1 was born in PATIENT-2 and was the architect of AGENT-1 in BRIDGE-2 , where the leader is PATIENT-3 . BRIDGE-1 also designed the significant building of PATIENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=defined] the architect of AGENT-1 in BRIDGE-2 , where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 . BRIDGE-1 also VP[aspect=simple,tense=past,voice=active,person=null,number=null] design DT[form=defined] the significant building of PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>BRIDGE-1 | Augustus_Pugin</entity>
+				<entity>BRIDGE-2 | Republic_of_Ireland</entity>
+				<entity>PATIENT-1 | Palace_of_Westminster</entity>
+				<entity>PATIENT-2 | Bloomsbury</entity>
+				<entity>PATIENT-3 | Enda_Kenny</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id915" size="5">
+			<originaltripleset>
+				<otriple>Addis_Ababa_City_Hall | completionDate | 1964</otriple>
+				<otriple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;@en</otriple>
+				<otriple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;@en</otriple>
+				<otriple>Addis_Ababa_City_Hall | startDate | 1961</otriple>
+				<otriple>Addis_Ababa_City_Hall | floorArea | &quot;140000.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Addis_Ababa_City_Hall | completionDate | 1964</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | buildingStartDate | 1961</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | floorArea | 140000.0 (square metres)</mtriple>
+				<mtriple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</striple>
+						<striple>Addis_Ababa_City_Hall | floorArea | 140000.0 (square metres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Addis_Ababa_City_Hall | buildingStartDate | 1961</striple>
+						<striple>Addis_Ababa_City_Hall | completionDate | 1964</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Addis_Ababa_City_Hall" number="1" tag="AGENT-1" type="name">Addis Ababa City Hall</reference>
+					<reference entity="&quot;42 m&quot;" number="2" tag="PATIENT-5" type="name">42m</reference>
+					<reference entity="140000.0 (square metres)" number="3" tag="PATIENT-4" type="name">140000.0 ( square metres )</reference>
+					<reference entity="1961" number="4" tag="PATIENT-3" type="name">1961</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="5" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="1964" number="6" tag="PATIENT-1" type="name">1964</reference>
+					<reference entity="&quot;Government of Addis Ababa&quot;" number="7" tag="PATIENT-2" type="description">the Government of Addis Ababa</reference>
+				</references>
+				<text>Addis Ababa City Hall is 42m high and has a 140000.0 (square metres) floor area. Construction began in 1961 and it was completed in 1964. The current tenants are the Government of Addis Ababa.</text>
+				<template>AGENT-1 is PATIENT-5 high and has a PATIENT-4 floor area . Construction began in PATIENT-3 and AGENT-1 was completed in PATIENT-1 . The current tenants are PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-5 high and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-4 floor area . Construction VP[aspect=simple,tense=past,voice=active,person=null,number=null] begin in PATIENT-3 and AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] complete in PATIENT-1 . DT[form=defined] the current tenants VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Addis_Ababa_City_Hall | buildingStartDate | 1961</striple>
+						<striple>Addis_Ababa_City_Hall | completionDate | 1964</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Addis_Ababa_City_Hall | floorArea | 140000.0 (square metres)</striple>
+						<striple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Government of Addis Ababa&quot;" number="1" tag="PATIENT-2" type="description">The `` Government of Addis Ababa ''</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="2" tag="AGENT-1" type="name">Addis Ababa City Hall</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="3" tag="AGENT-1" type="description">The building</reference>
+					<reference entity="1961" number="4" tag="PATIENT-3" type="name">1961</reference>
+					<reference entity="1964" number="5" tag="PATIENT-1" type="name">1964</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="6" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="140000.0 (square metres)" number="7" tag="PATIENT-4" type="name">140000.0 square metres</reference>
+					<reference entity="&quot;42 m&quot;" number="8" tag="PATIENT-5" type="name">42 m</reference>
+				</references>
+				<text>The &quot; Government of Addis Ababa&quot; are the current tenants of Addis Ababa City Hall. The building started in 1961 and was completed in 1964. It has a floor area of 140000.0 square metres and is 42 m high.</text>
+				<template>PATIENT-2 are the current tenants of AGENT-1 . AGENT-1 started in PATIENT-3 and was completed in PATIENT-1 . AGENT-1 has a floor area of PATIENT-4 and is PATIENT-5 high .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] the current tenants of AGENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] start in PATIENT-3 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] complete in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a floor area of PATIENT-4 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-5 high .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Addis_Ababa_City_Hall | buildingStartDate | 1961</striple>
+						<striple>Addis_Ababa_City_Hall | completionDate | 1964</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Addis_Ababa_City_Hall | height | &quot;42 m&quot;</striple>
+						<striple>Addis_Ababa_City_Hall | floorArea | 140000.0 (square metres)</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Addis_Ababa_City_Hall | currentTenants | &quot;Government of Addis Ababa&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Addis_Ababa_City_Hall" number="1" tag="AGENT-1" type="name">Addis Ababa City Hall 's</reference>
+					<reference entity="1961" number="2" tag="PATIENT-3" type="name">1961</reference>
+					<reference entity="1964" number="3" tag="PATIENT-1" type="name">1964</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;42 m&quot;" number="5" tag="PATIENT-5" type="name">42 metres</reference>
+					<reference entity="140000.0 (square metres)" number="6" tag="PATIENT-4" type="name">140000 square metres</reference>
+					<reference entity="&quot;Government of Addis Ababa&quot;" number="7" tag="PATIENT-2" type="description">The `` Government of Addis Ababa ''</reference>
+					<reference entity="Addis_Ababa_City_Hall" number="8" tag="AGENT-1" type="demonstrative">that hall</reference>
+				</references>
+				<text>Addis Ababa City Hall's was started in 1961 and completed in 1964. It is 42 metres high and has 140000 square metres of floor area. The &quot; Government of Addis Ababa&quot; are the current tenants of that hall.</text>
+				<template>AGENT-1 was started in PATIENT-3 and completed in PATIENT-1 . AGENT-1 is PATIENT-5 high and has PATIENT-4 of floor area . PATIENT-2 are the current tenants of AGENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] start in PATIENT-3 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] complete in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-5 high and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-4 of floor area . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] the current tenants of AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Addis_Ababa_City_Hall</entity>
+				<entity>PATIENT-1 | 1964</entity>
+				<entity>PATIENT-2 | &quot;Government of Addis Ababa&quot;</entity>
+				<entity>PATIENT-3 | 1961</entity>
+				<entity>PATIENT-4 | 140000.0 (square metres)</entity>
+				<entity>PATIENT-5 | &quot;42 m&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id916" size="5">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | locationCountry | Japan</otriple>
+				<otriple>Akita_Museum_of_Art | floorCount | 3</otriple>
+				<otriple>Akita_Museum_of_Art | locationTown | Akita,_Akita</otriple>
+				<otriple>Akita_Museum_of_Art | location | Akita_Prefecture</otriple>
+				<otriple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akita_Museum_of_Art | country | Japan</mtriple>
+				<mtriple>Akita_Museum_of_Art | floorCount | 3</mtriple>
+				<mtriple>Akita_Museum_of_Art | location | Akita,_Akita</mtriple>
+				<mtriple>Akita_Museum_of_Art | location | Akita_Prefecture</mtriple>
+				<mtriple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;</striple>
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita_Museum_of_Art | location | Akita_Prefecture</striple>
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akita_Museum_of_Art | floorCount | 3</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="name">Akita Museum of Art</reference>
+					<reference entity="&quot;1-4-2 Nakadori&quot;" number="2" tag="PATIENT-5" type="name">1-4 -2 Nakadori</reference>
+					<reference entity="Akita,_Akita" number="3" tag="PATIENT-3" type="name">Akita</reference>
+					<reference entity="Akita_Prefecture" number="4" tag="PATIENT-4" type="name">Akita Prefecture</reference>
+					<reference entity="Japan" number="5" tag="PATIENT-1" type="name">Japan</reference>
+					<reference entity="Akita_Museum_of_Art" number="6" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="3" number="7" tag="PATIENT-2" type="name">3</reference>
+				</references>
+				<text>Akita Museum of Art is an art museum at 1-4-2 Nakadori, Akita, Akita Prefecture, Japan. It was constructed with 3 floors.</text>
+				<template>AGENT-1 is an art museum at PATIENT-5 , PATIENT-3 , PATIENT-4 , PATIENT-1 . AGENT-1 was constructed with PATIENT-2 floors .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a art museum at PATIENT-5 , PATIENT-3 , PATIENT-4 , PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] construct with PATIENT-2 floors .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita_Museum_of_Art | location | Akita_Prefecture</striple>
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akita_Museum_of_Art | floorCount | 3</striple>
+						<striple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="description">The Akita Museum of Art</reference>
+					<reference entity="Akita,_Akita" number="2" tag="PATIENT-3" type="name">Akita , Akita</reference>
+					<reference entity="Akita_Prefecture" number="3" tag="PATIENT-4" type="name">Akita Prefecture</reference>
+					<reference entity="Japan" number="4" tag="PATIENT-1" type="name">Japan</reference>
+					<reference entity="Akita_Museum_of_Art" number="5" tag="AGENT-1" type="description">The museum</reference>
+					<reference entity="3" number="6" tag="PATIENT-2" type="name">3</reference>
+					<reference entity="Akita_Museum_of_Art" number="7" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="&quot;1-4-2 Nakadori&quot;" number="8" tag="PATIENT-5" type="name">1-4 -2 Nakadori</reference>
+				</references>
+				<text>The Akita Museum of Art is located in Akita, Akita, which is part of Akita Prefecture, Japan. The museum has 3 floors and its address is 1-4-2 Nakadori.</text>
+				<template>AGENT-1 is located in PATIENT-3 , which is part of PATIENT-4 , PATIENT-1 . AGENT-1 has PATIENT-2 floors and AGENT-1 address is PATIENT-5 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-3 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-4 , PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 floors and AGENT-1 address VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-5 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akita_Museum_of_Art | floorCount | 3</striple>
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akita_Museum_of_Art | address | &quot;1-4-2 Nakadori&quot;</striple>
+						<striple>Akita_Museum_of_Art | location | Akita_Prefecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="description">The Akita Museum of Art</reference>
+					<reference entity="3" number="2" tag="PATIENT-2" type="name">3</reference>
+					<reference entity="Akita,_Akita" number="3" tag="PATIENT-3" type="description">the city of Akita</reference>
+					<reference entity="Japan" number="4" tag="PATIENT-1" type="name">Japan</reference>
+					<reference entity="Akita_Museum_of_Art" number="5" tag="AGENT-1" type="name">It 's</reference>
+					<reference entity="&quot;1-4-2 Nakadori&quot;" number="6" tag="PATIENT-5" type="name">142 Nakadori</reference>
+					<reference entity="Akita_Prefecture" number="7" tag="PATIENT-4" type="description">the Akita Prefecture</reference>
+				</references>
+				<text>The Akita Museum of Art, which has 3 floors, is an art museum in the city of Akita, Japan. It's address is 142 Nakadori, which is the Akita Prefecture.</text>
+				<template>AGENT-1 , which has PATIENT-2 floors , is an art museum in PATIENT-3 , PATIENT-1 . AGENT-1 address is PATIENT-5 , which is PATIENT-4 .</template>
+				<lexicalization>AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 floors , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a art museum in PATIENT-3 , PATIENT-1 . AGENT-1 address VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-5 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>PATIENT-1 | Japan</entity>
+				<entity>PATIENT-2 | 3</entity>
+				<entity>PATIENT-3 | Akita,_Akita</entity>
+				<entity>PATIENT-4 | Akita_Prefecture</entity>
+				<entity>PATIENT-5 | &quot;1-4-2 Nakadori&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id917" size="5">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | country | Japan</otriple>
+				<otriple>Akita_Museum_of_Art | locationTown | Akita,_Akita</otriple>
+				<otriple>Akita,_Akita | subdivisionName | Akita_Prefecture</otriple>
+				<otriple>Japan | leader | Tarō_Asō</otriple>
+				<otriple>Japan | ethnicGroup | Chinese_people_in_Japan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akita_Museum_of_Art | country | Japan</mtriple>
+				<mtriple>Akita_Museum_of_Art | location | Akita,_Akita</mtriple>
+				<mtriple>Akita,_Akita | isPartOf | Akita_Prefecture</mtriple>
+				<mtriple>Japan | leaderName | Tarō_Asō</mtriple>
+				<mtriple>Japan | ethnicGroup | Chinese_people_in_Japan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Japan | ethnicGroup | Chinese_people_in_Japan</striple>
+						<striple>Japan | leaderName | Tarō_Asō</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chinese_people_in_Japan" number="1" tag="PATIENT-3" type="description">The Chinese</reference>
+					<reference entity="Japan" number="2" tag="BRIDGE-2" type="name">Japan</reference>
+					<reference entity="Tarō_Asō" number="3" tag="PATIENT-2" type="name">Taro Aso</reference>
+					<reference entity="Japan" number="4" tag="BRIDGE-2" type="description">The country</reference>
+					<reference entity="Akita_Museum_of_Art" number="5" tag="AGENT-1" type="description">the Akita Museum of Art</reference>
+					<reference entity="Akita,_Akita" number="6" tag="BRIDGE-1" type="name">Akita</reference>
+					<reference entity="Akita_Prefecture" number="7" tag="PATIENT-1" type="name">Akita Prefecture</reference>
+				</references>
+				<text>The Chinese are one of the ethnic groups in Japan which is led by Taro Aso. The country is the location of the Akita Museum of Art found in Akita, Akita Prefecture.</text>
+				<template>PATIENT-3 are one of the ethnic groups in BRIDGE-2 which is led by PATIENT-2 . BRIDGE-2 is the location of AGENT-1 found in BRIDGE-1 , PATIENT-1 .</template>
+				<lexicalization>PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be one of DT[form=defined] the ethnic groups in BRIDGE-2 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-2 . BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the location of AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] find in BRIDGE-1 , PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Japan | leaderName | Tarō_Asō</striple>
+						<striple>Japan | ethnicGroup | Chinese_people_in_Japan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tarō_Asō" number="1" tag="PATIENT-2" type="name">Tarō Asō</reference>
+					<reference entity="Japan" number="2" tag="BRIDGE-2" type="name">Japan</reference>
+					<reference entity="Chinese_people_in_Japan" number="3" tag="PATIENT-3" type="name">Chinese people</reference>
+					<reference entity="Akita_Museum_of_Art" number="4" tag="AGENT-1" type="description">the Akita Museum of Art</reference>
+					<reference entity="Akita,_Akita" number="5" tag="BRIDGE-1" type="name">Akita</reference>
+					<reference entity="Akita_Prefecture" number="6" tag="PATIENT-1" type="name">Akita Prefecture</reference>
+				</references>
+				<text>Tarō Asō is one of the leaders in Japan, A country where there is an ethnic group of Chinese people. Also where the Akita Museum of Art is located, in Akita which is part of Akita Prefecture.</text>
+				<template>PATIENT-2 is one of the leaders in BRIDGE-2 , A country where there is an ethnic group of PATIENT-3 . Also where AGENT-1 is located , in BRIDGE-1 which is part of PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the leaders in BRIDGE-2 , DT[form=undefined] a country where there VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a ethnic group of PATIENT-3 . Also where AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located , in BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Japan | ethnicGroup | Chinese_people_in_Japan</striple>
+						<striple>Japan | leaderName | Tarō_Asō</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akita_Museum_of_Art | country | Japan</striple>
+						<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
+						<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chinese_people_in_Japan" number="1" tag="PATIENT-3" type="description">The Chinese people</reference>
+					<reference entity="Japan" number="2" tag="BRIDGE-2" type="name">Japan</reference>
+					<reference entity="Tarō_Asō" number="3" tag="PATIENT-2" type="name">Taro Aso</reference>
+					<reference entity="Japan" number="4" tag="BRIDGE-2" type="description">The country</reference>
+					<reference entity="Akita_Museum_of_Art" number="5" tag="AGENT-1" type="description">the Akita Museum of Art</reference>
+					<reference entity="Akita,_Akita" number="6" tag="BRIDGE-1" type="name">Akita</reference>
+					<reference entity="Akita_Prefecture" number="7" tag="PATIENT-1" type="name">Akita Prefecture</reference>
+				</references>
+				<text>The Chinese people are an ethnic group of Japan which is led by Taro Aso. The country is the location of the Akita Museum of Art in Akita, Akita Prefecture.</text>
+				<template>PATIENT-3 are an ethnic group of BRIDGE-2 which is led by PATIENT-2 . BRIDGE-2 is the location of AGENT-1 in BRIDGE-1 , PATIENT-1 .</template>
+				<lexicalization>PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group of BRIDGE-2 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-2 . BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the location of AGENT-1 in BRIDGE-1 , PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>BRIDGE-1 | Akita,_Akita</entity>
+				<entity>BRIDGE-2 | Japan</entity>
+				<entity>PATIENT-1 | Akita_Prefecture</entity>
+				<entity>PATIENT-2 | Tarō_Asō</entity>
+				<entity>PATIENT-3 | Chinese_people_in_Japan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id918" size="5">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | location | Virginia</otriple>
+				<otriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</otriple>
+				<otriple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</otriple>
+				<otriple>Mason_School_of_Business | country | United_States</otriple>
+				<otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_B._Miller_Hall | location | Virginia</mtriple>
+				<mtriple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</mtriple>
+				<mtriple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</mtriple>
+				<mtriple>Mason_School_of_Business | country | United_States</mtriple>
+				<mtriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</striple>
+						<striple>Alan_B._Miller_Hall | location | Virginia</striple>
+						<striple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+						<striple>Mason_School_of_Business | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_B._Miller_Hall" number="1" tag="AGENT-1" type="name">Alan B. Miller Hall</reference>
+					<reference entity="Robert_A._M._Stern" number="2" tag="PATIENT-2" type="name">Robert A.M. Stern</reference>
+					<reference entity="Alan_B._Miller_Hall" number="3" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="Virginia" number="4" tag="PATIENT-1" type="name">Virginia</reference>
+					<reference entity="Alan_B._Miller_Hall" number="5" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="College_of_William_&amp;_Mary" number="6" tag="PATIENT-3" type="description">the College of William and Mary</reference>
+					<reference entity="Alan_B._Miller_Hall" number="7" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="Mason_School_of_Business" number="8" tag="BRIDGE-1" type="description">the Mason School of Business</reference>
+					<reference entity="United_States" number="9" tag="PATIENT-4" type="description">the US</reference>
+				</references>
+				<text>Alan B. Miller Hall was designed by Robert A.M. Stern; it is located in Virginia and it is owned by the College of William and Mary. Its current tenants are the Mason School of Business in the US.</text>
+				<template>AGENT-1 was designed by PATIENT-2 ; AGENT-1 is located in PATIENT-1 and AGENT-1 is owned by PATIENT-3 . AGENT-1 current tenants are BRIDGE-1 in PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] design by PATIENT-2 ; AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 and AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] own by PATIENT-3 . AGENT-1 current tenants VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be BRIDGE-1 in PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_B._Miller_Hall | owner | College_of_William_&amp;_Mary</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_B._Miller_Hall | architect | Robert_A._M._Stern</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Alan_B._Miller_Hall | location | Virginia</striple>
+						<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+						<striple>Mason_School_of_Business | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="College_of_William_&amp;_Mary" number="1" tag="PATIENT-3" type="description">The College of William and Mary</reference>
+					<reference entity="Alan_B._Miller_Hall" number="2" tag="AGENT-1" type="description">the Alan B. Miller Hall</reference>
+					<reference entity="Robert_A._M._Stern" number="3" tag="PATIENT-2" type="name">Robert A.M. Stern</reference>
+					<reference entity="Virginia" number="4" tag="PATIENT-1" type="name">Virginia</reference>
+					<reference entity="Alan_B._Miller_Hall" number="5" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="Alan_B._Miller_Hall" number="6" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="United_States" number="7" tag="PATIENT-4" type="name">United States</reference>
+					<reference entity="Mason_School_of_Business" number="8" tag="BRIDGE-1" type="name">Mason School of Business</reference>
+				</references>
+				<text>The College of William and Mary is the owner of the Alan B. Miller Hall. which was designed by Robert A.M. Stern. Situated in Virginia, it has as its tenants United States based Mason School of Business.</text>
+				<template>PATIENT-3 is the owner of AGENT-1 . which was designed by PATIENT-2 . Situated in PATIENT-1 , AGENT-1 has as AGENT-1 tenants PATIENT-4 based BRIDGE-1 .</template>
+				<lexicalization>PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the owner of AGENT-1 . which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] design by PATIENT-2 . VP[aspect=simple,tense=past,voice=active,person=null,number=null] situate in PATIENT-1 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have as AGENT-1 tenants PATIENT-4 VP[aspect=simple,tense=past,voice=active,person=null,number=null] base BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>BRIDGE-1 | Mason_School_of_Business</entity>
+				<entity>PATIENT-1 | Virginia</entity>
+				<entity>PATIENT-2 | Robert_A._M._Stern</entity>
+				<entity>PATIENT-3 | College_of_William_&amp;_Mary</entity>
+				<entity>PATIENT-4 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id919" size="5">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | location | Ahmedabad</otriple>
+				<otriple>Ahmedabad | country | India</otriple>
+				<otriple>Amdavad_ni_Gufa | locationTown | Gujarat</otriple>
+				<otriple>India | leaderName | Sumitra_Mahajan</otriple>
+				<otriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | location | Ahmedabad</mtriple>
+				<mtriple>Ahmedabad | country | India</mtriple>
+				<mtriple>Amdavad_ni_Gufa | location | Gujarat</mtriple>
+				<mtriple>India | leaderName | Sumitra_Mahajan</mtriple>
+				<mtriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Ahmedabad | country | India</striple>
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gujarat" number="1" tag="BRIDGE-3" type="name">Gujarat</reference>
+					<reference entity="India" number="2" tag="BRIDGE-2" type="name">India</reference>
+					<reference entity="Gujarat_Legislative_Assembly" number="3" tag="PATIENT-2" type="description">the Gujarat Legislative Assembly</reference>
+					<reference entity="Amdavad_ni_Gufa" number="4" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
+					<reference entity="Ahmedabad" number="5" tag="BRIDGE-1" type="name">Ahmedabad</reference>
+					<reference entity="Sumitra_Mahajan" number="6" tag="PATIENT-1" type="name">Sumitra Mahajan</reference>
+					<reference entity="India" number="7" tag="BRIDGE-2" type="name">Indian</reference>
+				</references>
+				<text>Gujarat in India is led by the Gujarat Legislative Assembly and is the location of Amdavad ni Gufa in Ahmedabad. Sumitra Mahajan is known as an Indian leader.</text>
+				<template>BRIDGE-3 in BRIDGE-2 is led by PATIENT-2 and is the location of AGENT-1 in BRIDGE-1 . PATIENT-1 is known as an BRIDGE-2 leader .</template>
+				<lexicalization>BRIDGE-3 in BRIDGE-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the location of AGENT-1 in BRIDGE-1 . PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] know as DT[form=undefined] a BRIDGE-2 leader .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Ahmedabad | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+						<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
+					<reference entity="Ahmedabad" number="2" tag="BRIDGE-1" type="name">Ahmedabad</reference>
+					<reference entity="Gujarat" number="3" tag="BRIDGE-3" type="name">Gujarat</reference>
+					<reference entity="India" number="4" tag="BRIDGE-2" type="name">India</reference>
+					<reference entity="Sumitra_Mahajan" number="5" tag="PATIENT-1" type="name">Sumitra Mahajan</reference>
+					<reference entity="India" number="6" tag="BRIDGE-2" type="name">Indian</reference>
+					<reference entity="Gujarat" number="7" tag="BRIDGE-3" type="name">Gujarat</reference>
+					<reference entity="Gujarat_Legislative_Assembly" number="8" tag="PATIENT-2" type="description">the Legislative Assembly</reference>
+				</references>
+				<text>Amdavad ni Gufa is located in Ahmedabad, Gujarat, India. Sumitra Mahajan is an Indian leader and Gujarat is led by the Legislative Assembly.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , BRIDGE-3 , BRIDGE-2 . PATIENT-1 is an BRIDGE-2 leader and BRIDGE-3 is led by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , BRIDGE-3 , BRIDGE-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a BRIDGE-2 leader and BRIDGE-3 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
+						<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
+						<striple>Ahmedabad | country | India</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
+						<striple>India | leaderName | Sumitra_Mahajan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
+					<reference entity="Ahmedabad" number="2" tag="BRIDGE-1" type="name">Ahmedabad</reference>
+					<reference entity="Gujarat" number="3" tag="BRIDGE-3" type="name">Gujarat</reference>
+					<reference entity="India" number="4" tag="BRIDGE-2" type="name">India</reference>
+					<reference entity="Gujarat" number="5" tag="BRIDGE-3" type="name">Gujarat 's</reference>
+					<reference entity="Gujarat_Legislative_Assembly" number="6" tag="PATIENT-2" type="description">the Gujarat Legislative Assembly</reference>
+					<reference entity="India" number="7" tag="BRIDGE-2" type="name">India</reference>
+					<reference entity="Sumitra_Mahajan" number="8" tag="PATIENT-1" type="name">Sumitra Mahajan</reference>
+				</references>
+				<text>The location of Amdavad ni Gufa is Ahmedabad, Gujarat, India. Gujarat's leader is known as the Gujarat Legislative Assembly, and the name of the leader in India is Sumitra Mahajan.</text>
+				<template>The location of AGENT-1 is BRIDGE-1 , BRIDGE-3 , BRIDGE-2 . BRIDGE-3 leader is known as PATIENT-2 , and the name of the leader in BRIDGE-2 is PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the location of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , BRIDGE-3 , BRIDGE-2 . BRIDGE-3 leader VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] know as PATIENT-2 , and DT[form=defined] the name of DT[form=defined] the leader in BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>BRIDGE-1 | Ahmedabad</entity>
+				<entity>BRIDGE-2 | India</entity>
+				<entity>BRIDGE-3 | Gujarat</entity>
+				<entity>PATIENT-1 | Sumitra_Mahajan</entity>
+				<entity>PATIENT-2 | Gujarat_Legislative_Assembly</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id920" size="5">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leader | Ranil_Wickremesinghe</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Ampara_Hospital | region | Ampara_District</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
+				<mtriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</mtriple>
+				<mtriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</mtriple>
+				<mtriple>Ampara_Hospital | region | Ampara_District</mtriple>
+				<mtriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+						<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Ampara_Hospital | region | Ampara_District</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sri_Lanka" number="1" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Ranil_Wickremesinghe" number="2" tag="PATIENT-1" type="name">Ranil Wickremesinghe</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="3" tag="BRIDGE-2" type="description">the Eastern Province</reference>
+					<reference entity="Austin_Fernando" number="4" tag="PATIENT-3" type="name">Austin Fernando</reference>
+					<reference entity="Ampara_Hospital" number="5" tag="AGENT-1" type="description">the Ampara Hospital</reference>
+					<reference entity="Ampara_District" number="6" tag="PATIENT-2" type="name">Ampara District</reference>
+				</references>
+				<text>The leader of Sri Lanka is Ranil Wickremesinghe, but in the Eastern Province it is Austin Fernando. This is where the Ampara Hospital is located in Ampara District.</text>
+				<template>The leader of BRIDGE-1 is PATIENT-1 , but in BRIDGE-2 it is PATIENT-3 . This is where AGENT-1 is located in PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , but in BRIDGE-2 it VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 . DT[form=demonstrative] this VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be where AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | region | Ampara_District</striple>
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Ampara_District" number="2" tag="PATIENT-2" type="description">the Ampara district</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="3" tag="BRIDGE-2" type="name">Eastern Province</reference>
+					<reference entity="Sri_Lanka" number="4" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="5" tag="BRIDGE-2" type="name">Eastern Province</reference>
+					<reference entity="Austin_Fernando" number="6" tag="PATIENT-3" type="name">Austin Fernando</reference>
+					<reference entity="Sri_Lanka" number="7" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Ranil_Wickremesinghe" number="8" tag="PATIENT-1" type="name">Ranil Wickremesinghe</reference>
+				</references>
+				<text>Ampara Hospital is in the Ampara district of Eastern Province, Sri Lanka. The leader of Eastern Province is Austin Fernando and the leader of Sri Lanka is Ranil Wickremesinghe.</text>
+				<template>AGENT-1 is in PATIENT-2 of BRIDGE-2 , BRIDGE-1 . The leader of BRIDGE-2 is PATIENT-3 and the leader of BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-2 of BRIDGE-2 , BRIDGE-1 . DT[form=defined] the leader of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 and DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | region | Ampara_District</striple>
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+						<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Ampara_District" number="2" tag="PATIENT-2" type="name">Ampara District</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="3" tag="BRIDGE-2" type="name">Eastern Province</reference>
+					<reference entity="Sri_Lanka" number="4" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Austin_Fernando" number="5" tag="PATIENT-3" type="name">Austin Fernando</reference>
+					<reference entity="Ranil_Wickremesinghe" number="6" tag="PATIENT-1" type="name">Ranil Wickremesinghe</reference>
+					<reference entity="Sri_Lanka" number="7" tag="BRIDGE-1" type="description">the country</reference>
+				</references>
+				<text>Ampara Hospital is located in Ampara District, Eastern Province, Sri Lanka which is led by Austin Fernando. Ranil Wickremesinghe is a leader of the country.</text>
+				<template>AGENT-1 is located in PATIENT-2 , BRIDGE-2 , BRIDGE-1 which is led by PATIENT-3 . PATIENT-1 is a leader of BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 , BRIDGE-2 , BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-3 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a leader of BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>BRIDGE-2 | Eastern_Province,_Sri_Lanka</entity>
+				<entity>PATIENT-1 | Ranil_Wickremesinghe</entity>
+				<entity>PATIENT-2 | Ampara_District</entity>
+				<entity>PATIENT-3 | Austin_Fernando</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id921" size="5">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | governingBody | Eastern_Provincial_Council</otriple>
+				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
+				<mtriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</mtriple>
+				<mtriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</mtriple>
+				<mtriple>Eastern_Province,_Sri_Lanka | governingBody | Eastern_Provincial_Council</mtriple>
+				<mtriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Eastern_Province,_Sri_Lanka | governingBody | Eastern_Provincial_Council</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ranil_Wickremesinghe" number="1" tag="PATIENT-1" type="name">Ranil Wickremesinghe</reference>
+					<reference entity="Sri_Lanka" number="2" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Sri_Jayawardenepura_Kotte" number="3" tag="PATIENT-3" type="name">Sri Jayawardenepura Kotte</reference>
+					<reference entity="Ampara_Hospital" number="4" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="5" tag="BRIDGE-2" type="description">the Eastern Province</reference>
+					<reference entity="Eastern_Provincial_Council" number="6" tag="PATIENT-2" type="description">the Eastern Provincial Council</reference>
+				</references>
+				<text>Ranil Wickremesinghe is the leader of Sri Lanka whose capital is Sri Jayawardenepura Kotte. Ampara Hospital is in the Eastern Province which is governed by the Eastern Provincial Council.</text>
+				<template>PATIENT-1 is the leader of BRIDGE-1 whose capital is PATIENT-3 . AGENT-1 is in BRIDGE-2 which is governed by PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader of BRIDGE-1 whose capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] govern by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Eastern_Province,_Sri_Lanka | governingBody | Eastern_Provincial_Council</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="2" tag="BRIDGE-2" type="description">the Eastern Province</reference>
+					<reference entity="Sri_Lanka" number="3" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Eastern_Provincial_Council" number="4" tag="PATIENT-2" type="description">The Eastern Provincial Council</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="5" tag="BRIDGE-2" type="name">Eastern Province</reference>
+					<reference entity="Sri_Lanka" number="6" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Sri_Jayawardenepura_Kotte" number="7" tag="PATIENT-3" type="name">Sri Jayawardenepura Kotte</reference>
+					<reference entity="Sri_Lanka" number="8" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="Ranil_Wickremesinghe" number="9" tag="PATIENT-1" type="name">Ranil Wickremesinghe</reference>
+				</references>
+				<text>Ampara Hospital is in the Eastern Province, Sri Lanka. The Eastern Provincial Council is the governing body of Eastern Province. The capital of Sri Lanka is Sri Jayawardenepura Kotte and the leader of the country is Ranil Wickremesinghe.</text>
+				<template>AGENT-1 is in BRIDGE-2 , BRIDGE-1 . PATIENT-2 is the governing body of BRIDGE-2 . The capital of BRIDGE-1 is PATIENT-3 and the leader of BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 , BRIDGE-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the VP[aspect=progressive,tense=present,voice=active,person=null,number=null] govern body of BRIDGE-2 . DT[form=defined] the capital of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 and DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
+						<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+						<striple>Eastern_Province,_Sri_Lanka | governingBody | Eastern_Provincial_Council</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
+						<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Eastern_Province,_Sri_Lanka" number="2" tag="BRIDGE-2" type="description">the Eastern Province</reference>
+					<reference entity="Sri_Lanka" number="3" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Eastern_Provincial_Council" number="4" tag="PATIENT-2" type="name">Eastern Provincial Council</reference>
+					<reference entity="Ranil_Wickremesinghe" number="5" tag="PATIENT-1" type="name">Ranil Wickremesinghe</reference>
+					<reference entity="Sri_Lanka" number="6" tag="BRIDGE-1" type="name">Sri Lanka</reference>
+					<reference entity="Sri_Jayawardenepura_Kotte" number="7" tag="PATIENT-3" type="name">Sri Jayawardenepura Kotte</reference>
+				</references>
+				<text>Ampara Hospital is in the Eastern Province, Sri Lanka and is governed by Eastern Provincial Council. Ranil Wickremesinghe is a leader of Sri Lanka with the capital being Sri Jayawardenepura Kotte.</text>
+				<template>AGENT-1 is in BRIDGE-2 , BRIDGE-1 and is governed by PATIENT-2 . PATIENT-1 is a leader of BRIDGE-1 with the capital being PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 , BRIDGE-1 and VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] govern by PATIENT-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a leader of BRIDGE-1 with DT[form=defined] the capital VP[aspect=progressive,tense=present,voice=active,person=null,number=null] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>BRIDGE-2 | Eastern_Province,_Sri_Lanka</entity>
+				<entity>PATIENT-1 | Ranil_Wickremesinghe</entity>
+				<entity>PATIENT-2 | Eastern_Provincial_Council</entity>
+				<entity>PATIENT-3 | Sri_Jayawardenepura_Kotte</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id922" size="5">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | birthPlace | San_Francisco</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</otriple>
+				<otriple>Julia_Morgan | significantProject | Hearst_Castle</otriple>
+				<otriple>Julia_Morgan | significantBuildings | Asilomar_State_Beach</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</mtriple>
+				<mtriple>Julia_Morgan | birthPlace | San_Francisco</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</mtriple>
+				<mtriple>Julia_Morgan | significantProject | Hearst_Castle</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+						<striple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Julia_Morgan" number="1" tag="BRIDGE-1" type="name">Julia Morgan</reference>
+					<reference entity="San_Francisco" number="2" tag="PATIENT-1" type="name">San Francisco</reference>
+					<reference entity="Asilomar_Conference_Grounds" number="3" tag="AGENT-1" type="name">Asilomar Conference Grounds</reference>
+					<reference entity="Los_Angeles_Herald-Examiner" number="4" tag="PATIENT-2" type="description">the Los Angeles Herald examiner building</reference>
+					<reference entity="San_Francisco" number="5" tag="PATIENT-1" type="name">California</reference>
+					<reference entity="Hearst_Castle" number="6" tag="PATIENT-3" type="name">Hearst Castle</reference>
+					<reference entity="Asilomar_State_Beach" number="7" tag="PATIENT-4" type="description">the Asilomar State Beach</reference>
+				</references>
+				<text>Julia Morgan, who was born in San Francisco, was the architect of Asilomar Conference Grounds, the Los Angeles Herald examiner building (a landmark in California), Hearst Castle and the Asilomar State Beach.</text>
+				<template>BRIDGE-1 , who was born in PATIENT-1 , was the architect of AGENT-1 , PATIENT-2 (a landmark in PATIENT-1) , PATIENT-3 and PATIENT-4 .</template>
+				<lexicalization>BRIDGE-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=defined] the architect of AGENT-1 , PATIENT-2 ( DT[form=undefined] a landmark in PATIENT-1 ) , PATIENT-3 and PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>BRIDGE-1 | Julia_Morgan</entity>
+				<entity>PATIENT-1 | San_Francisco</entity>
+				<entity>PATIENT-2 | Los_Angeles_Herald-Examiner</entity>
+				<entity>PATIENT-3 | Hearst_Castle</entity>
+				<entity>PATIENT-4 | Asilomar_State_Beach</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id923" size="5">
+			<originaltripleset>
+				<otriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</otriple>
+				<otriple>Julia_Morgan | birthPlace | San_Francisco</otriple>
+				<otriple>Julia_Morgan | significantBuildings | Riverside_Art_Museum</otriple>
+				<otriple>Julia_Morgan | significantProject | Hearst_Castle</otriple>
+				<otriple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asilomar_Conference_Grounds | architect | Julia_Morgan</mtriple>
+				<mtriple>Julia_Morgan | birthPlace | San_Francisco</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</mtriple>
+				<mtriple>Julia_Morgan | significantProject | Hearst_Castle</mtriple>
+				<mtriple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+						<striple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Julia_Morgan" number="1" tag="BRIDGE-1" type="name">Julia Morgan</reference>
+					<reference entity="San_Francisco" number="2" tag="PATIENT-1" type="name">San Francisco</reference>
+					<reference entity="Julia_Morgan" number="3" tag="BRIDGE-1" type="pronoun">her</reference>
+					<reference entity="Asilomar_Conference_Grounds" number="4" tag="AGENT-1" type="name">Asilomar Conference Grounds</reference>
+					<reference entity="Riverside_Art_Museum" number="5" tag="PATIENT-2" type="description">The Riverside Art Museum</reference>
+					<reference entity="Hearst_Castle" number="6" tag="PATIENT-3" type="name">Hearst Castle</reference>
+					<reference entity="Asilomar_State_Beach" number="7" tag="PATIENT-4" type="name">Asilomar State Beach</reference>
+				</references>
+				<text>Julia Morgan, the architect, was born in San Francisco and some of her significant projects include Asilomar Conference Grounds, The Riverside Art Museum, Hearst Castle and Asilomar State Beach.</text>
+				<template>BRIDGE-1 , the architect , was born in PATIENT-1 and some of BRIDGE-1 significant projects include AGENT-1 , PATIENT-2 , PATIENT-3 and PATIENT-4 .</template>
+				<lexicalization>BRIDGE-1 , DT[form=defined] the architect , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and DT[form=defined] some of BRIDGE-1 significant projects VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] include AGENT-1 , PATIENT-2 , PATIENT-3 and PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+						<striple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Julia_Morgan" number="1" tag="BRIDGE-1" type="description">The architect Julia Morgan</reference>
+					<reference entity="San_Francisco" number="2" tag="PATIENT-1" type="name">San Francisco</reference>
+					<reference entity="Asilomar_Conference_Grounds" number="3" tag="AGENT-1" type="description">the grounds of Asilomar Conference</reference>
+					<reference entity="Riverside_Art_Museum" number="4" tag="PATIENT-2" type="description">the Riverside Art Museum</reference>
+					<reference entity="Hearst_Castle" number="5" tag="PATIENT-3" type="name">Hearst Castle</reference>
+					<reference entity="Asilomar_State_Beach" number="6" tag="PATIENT-4" type="name">Asilomar State Beach</reference>
+				</references>
+				<text>The architect Julia Morgan was born in San Francisco and designed several significant buildings. These included the grounds of Asilomar Conference, the Riverside Art Museum, Hearst Castle and Asilomar State Beach.</text>
+				<template>BRIDGE-1 was born in PATIENT-1 and designed several significant buildings . These included AGENT-1 , PATIENT-2 , PATIENT-3 and PATIENT-4 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] design several significant buildings . DT[form=demonstrative] these VP[aspect=simple,tense=past,voice=active,person=null,number=null] include AGENT-1 , PATIENT-2 , PATIENT-3 and PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Julia_Morgan | birthPlace | San_Francisco</striple>
+						<striple>Julia_Morgan | significantBuilding | Asilomar_State_Beach</striple>
+						<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
+						<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="San_Francisco" number="1" tag="PATIENT-1" type="name">San Francisco</reference>
+					<reference entity="Julia_Morgan" number="2" tag="BRIDGE-1" type="name">Julia Morgan</reference>
+					<reference entity="Asilomar_State_Beach" number="3" tag="PATIENT-4" type="name">Asilomar State Beach</reference>
+					<reference entity="Riverside_Art_Museum" number="4" tag="PATIENT-2" type="description">the Riverside Art Museum</reference>
+					<reference entity="Julia_Morgan" number="5" tag="BRIDGE-1" type="pronoun">she</reference>
+					<reference entity="Asilomar_Conference_Grounds" number="6" tag="AGENT-1" type="name">Asilomar Conference Grounds</reference>
+					<reference entity="Hearst_Castle" number="7" tag="PATIENT-3" type="name">Hearst Castle</reference>
+				</references>
+				<text>Born in San Francisco, Julia Morgan was an architect mostly known for designing significant buildings such as Asilomar State Beach and the Riverside Art Museum. Other buildings she designed included Asilomar Conference Grounds and Hearst Castle.</text>
+				<template>Born in PATIENT-1 , BRIDGE-1 was an architect mostly known for designing significant buildings such as PATIENT-4 and PATIENT-2 . Other buildings BRIDGE-1 designed included AGENT-1 and PATIENT-3 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-1 , BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a architect mostly VP[aspect=simple,tense=past,voice=active,person=null,number=null] know for VP[aspect=progressive,tense=present,voice=active,person=null,number=null] design significant buildings such as PATIENT-4 and PATIENT-2 . Other buildings BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] design AGENT-1 and PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>BRIDGE-1 | Julia_Morgan</entity>
+				<entity>PATIENT-1 | San_Francisco</entity>
+				<entity>PATIENT-2 | Riverside_Art_Museum</entity>
+				<entity>PATIENT-3 | Hearst_Castle</entity>
+				<entity>PATIENT-4 | Asilomar_State_Beach</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id924" size="5">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | location | New_York_City</otriple>
+				<otriple>New_York_City | country | United_States</otriple>
+				<otriple>Manhattan | leaderName | Cyrus_Vance,_Jr.</otriple>
+				<otriple>New_York_City | subdivisionName | Manhattan</otriple>
+				<otriple>New_York_City | isPartOf | New_Netherland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | location | New_York_City</mtriple>
+				<mtriple>New_York_City | country | United_States</mtriple>
+				<mtriple>Manhattan | leaderName | Cyrus_Vance,_Jr.</mtriple>
+				<mtriple>New_York_City | isPartOf | Manhattan</mtriple>
+				<mtriple>New_York_City | isPartOf | New_Netherland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+						<striple>Manhattan | leaderName | Cyrus_Vance,_Jr.</striple>
+						<striple>New_York_City | isPartOf | New_Netherland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the U.S. New York City has a leader called Cyrus Vance Jr. and it is part of Manhattan and New Netherland</reference>
+					<reference entity="Cyrus_Vance,_Jr." number="5" tag="PATIENT-2" type="name">Cyrus Vance Jr.</reference>
+					<reference entity="New_York_City" number="6" tag="BRIDGE-1" type="pronoun">it</reference>
+					<reference entity="Manhattan" number="7" tag="BRIDGE-2" type="name">Manhattan</reference>
+					<reference entity="New_Netherland" number="8" tag="PATIENT-3" type="name">New Netherland</reference>
+				</references>
+				<text>The Asser Levy Public Baths are in New York City in the U.S. New York City has a leader called Cyrus Vance Jr. and it is part of Manhattan and New Netherland.</text>
+				<template>AGENT-1 are in BRIDGE-1 in PATIENT-1 . BRIDGE-1 has a leader called PATIENT-2 and BRIDGE-1 is part of BRIDGE-2 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be in BRIDGE-1 in PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a leader VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-2 and BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+						<striple>New_York_City | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>New_York_City | isPartOf | New_Netherland</striple>
+						<striple>Manhattan | leaderName | Cyrus_Vance,_Jr.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
+					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="Manhattan" number="3" tag="BRIDGE-2" type="name">Manhattan</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="description">the U.S. New York City is part of New Netherland and a leader there is Cyrus Vance Jr</reference>
+					<reference entity="New_Netherland" number="6" tag="PATIENT-3" type="name">New Netherland</reference>
+					<reference entity="Cyrus_Vance,_Jr." number="7" tag="PATIENT-2" type="name">Cyrus Vance Jr</reference>
+				</references>
+				<text>The Asser Levy Public Baths are in New York City (part of Manhattan) in the U.S. New York City is part of New Netherland and a leader there is Cyrus Vance Jr.</text>
+				<template>AGENT-1 are in BRIDGE-1 (part of BRIDGE-2) in PATIENT-1 . BRIDGE-1 is part of PATIENT-3 and a leader there is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be in BRIDGE-1 ( part of BRIDGE-2 ) in PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-3 and DT[form=undefined] a leader there VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>New_York_City | isPartOf | New_Netherland</striple>
+						<striple>New_York_City | country | United_States</striple>
+						<striple>New_York_City | isPartOf | Manhattan</striple>
+						<striple>Manhattan | leaderName | Cyrus_Vance,_Jr.</striple>
+						<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="New_York_City" number="1" tag="BRIDGE-1" type="name">New York City</reference>
+					<reference entity="New_Netherland" number="2" tag="PATIENT-3" type="name">New Netherland</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the United States</reference>
+					<reference entity="Manhattan" number="4" tag="BRIDGE-2" type="name">Manhattan</reference>
+					<reference entity="Cyrus_Vance,_Jr." number="5" tag="PATIENT-2" type="name">Cyrus Vance Jr.</reference>
+					<reference entity="Asser_Levy_Public_Baths" number="6" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
+				</references>
+				<text>New York City (former part of New Netherland), is located in the United States, is a part of Manhattan (led by Cyrus Vance Jr.), is the loction of Asser Levy Public Baths.</text>
+				<template>BRIDGE-1 (former part of PATIENT-3) , is located in PATIENT-1 , is a part of BRIDGE-2 (led by PATIENT-2 ) , is the loction of AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 ( former part of PATIENT-3 ) , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a part of BRIDGE-2 ( VP[aspect=simple,tense=past,voice=active,person=null,number=null] lead by PATIENT-2 ) , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the loction of AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
+				<entity>BRIDGE-1 | New_York_City</entity>
+				<entity>BRIDGE-2 | Manhattan</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Cyrus_Vance,_Jr.</entity>
+				<entity>PATIENT-3 | New_Netherland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id925" size="5">
+			<originaltripleset>
+				<otriple>Birmingham | postalCode | B_postcode_area</otriple>
+				<otriple>103_Colmore_Row | architect | John_Madin</otriple>
+				<otriple>John_Madin | birthPlace | Birmingham</otriple>
+				<otriple>Birmingham | leaderName | John_Clancy_(Labour_politician)</otriple>
+				<otriple>Birmingham | governingBody | Birmingham_City_Council</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Birmingham | postalCode | B_postcode_area</mtriple>
+				<mtriple>103_Colmore_Row | architect | John_Madin</mtriple>
+				<mtriple>John_Madin | birthPlace | Birmingham</mtriple>
+				<mtriple>Birmingham | leaderName | John_Clancy_(Labour_politician)</mtriple>
+				<mtriple>Birmingham | governingBody | Birmingham_City_Council</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+						<striple>John_Madin | birthPlace | Birmingham</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+						<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Birmingham | leaderName | John_Clancy_(Labour_politician)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Madin" number="1" tag="BRIDGE-1" type="name">John Madin</reference>
+					<reference entity="103_Colmore_Row" number="2" tag="AGENT-1" type="name">103 Colmore Row</reference>
+					<reference entity="Birmingham" number="3" tag="BRIDGE-2" type="name">Birmingham</reference>
+					<reference entity="Birmingham" number="4" tag="BRIDGE-2" type="demonstrative">that area</reference>
+					<reference entity="B_postcode_area" number="5" tag="PATIENT-1" type="name">B.</reference>
+					<reference entity="Birmingham_City_Council" number="6" tag="PATIENT-3" type="description">the Birmingham City Council</reference>
+					<reference entity="John_Clancy_(Labour_politician)" number="7" tag="PATIENT-2" type="name">Labour politician , John Clancy</reference>
+					<reference entity="Birmingham" number="8" tag="BRIDGE-2" type="description">the area</reference>
+				</references>
+				<text>John Madin, the architect who designed 103 Colmore Row, was born in Birmingham. The postal code of that area is B. and the governing body is the Birmingham City Council. Labour politician, John Clancy is the leader the area.</text>
+				<template>BRIDGE-1 , the architect who designed AGENT-1 , was born in BRIDGE-2 . The postal code of BRIDGE-2 is PATIENT-1 and the governing body is PATIENT-3 . PATIENT-2 is the leader BRIDGE-2 .</template>
+				<lexicalization>BRIDGE-1 , DT[form=defined] the architect who VP[aspect=simple,tense=past,voice=active,person=null,number=null] design AGENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-2 . DT[form=defined] the postal code of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 and DT[form=defined] the VP[aspect=progressive,tense=present,voice=active,person=null,number=null] govern body VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader BRIDGE-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+						<striple>John_Madin | birthPlace | Birmingham</striple>
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Birmingham | leaderName | John_Clancy_(Labour_politician)</striple>
+						<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="103_Colmore_Row" number="1" tag="AGENT-1" type="name">103 Colmore Row</reference>
+					<reference entity="John_Madin" number="2" tag="BRIDGE-1" type="description">the architect John Madin</reference>
+					<reference entity="Birmingham" number="3" tag="BRIDGE-2" type="name">Birmingham</reference>
+					<reference entity="B_postcode_area" number="4" tag="PATIENT-1" type="description">the postcode area ' B '</reference>
+					<reference entity="John_Clancy_(Labour_politician)" number="5" tag="PATIENT-2" type="name">Labour politician , John Clancy</reference>
+					<reference entity="Birmingham" number="6" tag="BRIDGE-2" type="description">the city 's</reference>
+					<reference entity="Birmingham_City_Council" number="7" tag="PATIENT-3" type="name">Birmingham City Council</reference>
+				</references>
+				<text>103 Colmore Row was designed by the architect John Madin, who was born in Birmingham, with the postcode area 'B'. Labour politician, John Clancy is the city's leader, and the local governing body is Birmingham City Council.</text>
+				<template>AGENT-1 was designed by BRIDGE-1 , who was born in BRIDGE-2 , with PATIENT-1 . PATIENT-2 is BRIDGE-2 leader , and the local governing body is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] design by BRIDGE-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-2 , with PATIENT-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 leader , and DT[form=defined] the local VP[aspect=progressive,tense=present,voice=active,person=null,number=null] govern body VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
+						<striple>Birmingham | leaderName | John_Clancy_(Labour_politician)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Birmingham | postalCode | B_postcode_area</striple>
+						<striple>John_Madin | birthPlace | Birmingham</striple>
+						<striple>103_Colmore_Row | architect | John_Madin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Birmingham_City_Council" number="1" tag="PATIENT-3" type="description">The City Council</reference>
+					<reference entity="John_Clancy_(Labour_politician)" number="2" tag="PATIENT-2" type="name">labour politician John Clancy</reference>
+					<reference entity="Birmingham" number="3" tag="BRIDGE-2" type="name">Birmingham</reference>
+					<reference entity="Birmingham" number="4" tag="BRIDGE-2" type="description">The city</reference>
+					<reference entity="B_postcode_area" number="5" tag="PATIENT-1" type="description">the B Postcode</reference>
+					<reference entity="John_Madin" number="6" tag="BRIDGE-1" type="description">the architect John Madin</reference>
+					<reference entity="103_Colmore_Row" number="7" tag="AGENT-1" type="name">103 Colmore Row</reference>
+				</references>
+				<text>The City Council, led by labour politician John Clancy, is the governing body for Birmingham. The city (which uses the B Postcode) is the birthplace of the architect John Madin who designed 103 Colmore Row.</text>
+				<template>PATIENT-3 , led by PATIENT-2 , is the governing body for BRIDGE-2 . BRIDGE-2 (which uses PATIENT-1) is the birthplace of BRIDGE-1 who designed AGENT-1 .</template>
+				<lexicalization>PATIENT-3 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] lead by PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the VP[aspect=progressive,tense=present,voice=active,person=null,number=null] govern body for BRIDGE-2 . BRIDGE-2 ( which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use PATIENT-1 ) VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the birthplace of BRIDGE-1 who VP[aspect=simple,tense=past,voice=active,person=null,number=null] design AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 103_Colmore_Row</entity>
+				<entity>BRIDGE-1 | John_Madin</entity>
+				<entity>BRIDGE-2 | Birmingham</entity>
+				<entity>PATIENT-1 | B_postcode_area</entity>
+				<entity>PATIENT-2 | John_Clancy_(Labour_politician)</entity>
+				<entity>PATIENT-3 | Birmingham_City_Council</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id926" size="5">
+			<originaltripleset>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>United_States | leaderTitle | President_of_the_United_States</otriple>
+				<otriple>United_States | leader | John_Roberts</otriple>
+				<otriple>250_Delaware_Avenue | location | United_States</otriple>
+				<otriple>United_States | leaderName | Barack_Obama</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>United_States | leaderTitle | President_of_the_United_States</mtriple>
+				<mtriple>United_States | leaderName | John_Roberts</mtriple>
+				<mtriple>250_Delaware_Avenue | location | United_States</mtriple>
+				<mtriple>United_States | leaderName | Barack_Obama</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+						<striple>United_States | leaderName | Barack_Obama</striple>
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | leaderName | John_Roberts</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Barack_Obama" number="3" tag="PATIENT-4" type="name">Barack Obama</reference>
+					<reference entity="Barack_Obama" number="4" tag="PATIENT-4" type="pronoun">he</reference>
+					<reference entity="President_of_the_United_States" number="5" tag="PATIENT-2" type="name">President of the United States</reference>
+					<reference entity="John_Roberts" number="6" tag="PATIENT-3" type="name">John Roberts</reference>
+					<reference entity="United_States" number="7" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="United_States" number="8" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="Washington,_D.C." number="9" tag="PATIENT-1" type="name">Washington DC</reference>
+				</references>
+				<text>250 Delaware Avenue can be found in the United States, where the leader is Barack Obama and he has the title President of the United States. John Roberts is a leader in the US and the capital of the country is Washington DC.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 , where the leader is PATIENT-4 and PATIENT-4 has the title PATIENT-2 . PATIENT-3 is a leader in BRIDGE-1 and the capital of BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 can VP[aspect=simple,tense=present,voice=passive,person=null,number=null] find in BRIDGE-1 , where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 and PATIENT-4 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the title PATIENT-2 . PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a leader in BRIDGE-1 and DT[form=defined] the capital of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+						<striple>United_States | leaderName | Barack_Obama</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | leaderName | John_Roberts</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>250_Delaware_Avenue | location | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="President_of_the_United_States" number="2" tag="PATIENT-2" type="description">the President of the United States</reference>
+					<reference entity="Barack_Obama" number="3" tag="PATIENT-4" type="name">Barack Obama</reference>
+					<reference entity="John_Roberts" number="4" tag="PATIENT-3" type="name">John Roberts</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="United_States" number="6" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="Washington,_D.C." number="7" tag="PATIENT-1" type="name">Washington DC</reference>
+					<reference entity="250_Delaware_Avenue" number="8" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
+					<reference entity="United_States" number="9" tag="BRIDGE-1" type="description">the US</reference>
+				</references>
+				<text>The title of the leader of the United States is the President of the United States, and the leader was Barack Obama. John Roberts is a leader in the US. The capital of the US is Washington DC, and 250 Delaware Avenue is located in the US.</text>
+				<template>The title of the leader of BRIDGE-1 is PATIENT-2 , and the leader was PATIENT-4 . PATIENT-3 is a leader in BRIDGE-1 . The capital of BRIDGE-1 is PATIENT-1 , and AGENT-1 is located in BRIDGE-1 .</template>
+				<lexicalization>DT[form=defined] the title of DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , and DT[form=defined] the leader VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-4 . PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a leader in BRIDGE-1 . DT[form=defined] the capital of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | President_of_the_United_States</entity>
+				<entity>PATIENT-3 | John_Roberts</entity>
+				<entity>PATIENT-4 | Barack_Obama</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

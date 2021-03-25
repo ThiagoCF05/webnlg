@@ -1,0 +1,459 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id370" size="2">
+			<originaltripleset>
+				<otriple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</otriple>
+				<otriple>Alan_Bean | status | &quot;Retired&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</mtriple>
+				<mtriple>Alan_Bean | status | &quot;Retired&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1"/>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+				</references>
+				<text>Alan Bean, who is now retired, was born on March 15th, 1932.</text>
+				<template>AGENT-1 , who is now retired , was born on March 15th , 1932 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be now VP[aspect=simple,tense=past,voice=active,person=null,number=null] retire , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on March 15th , 1932 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+						<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;1932-03-15&quot;" number="1" tag="PATIENT-1" type="name">March 15</reference>
+					<reference entity="Alan_Bean" number="2" tag="AGENT-1" type="name">1932 , Alan Bean</reference>
+					<reference entity="&quot;Retired&quot;" number="3" tag="PATIENT-2" type="name">retired</reference>
+				</references>
+				<text>Born on March 15, 1932, Alan Bean has now retired.</text>
+				<template>Born on PATIENT-1 , AGENT-1 has now PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear on PATIENT-1 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have now PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+						<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="&quot;Retired&quot;" number="2" tag="PATIENT-2" type="name">retired</reference>
+					<reference entity="&quot;1932-03-15&quot;" number="3" tag="PATIENT-1" type="name">May 15th , 1932</reference>
+				</references>
+				<text>Alan Bean, who has since retired, was born on May 15th, 1932.</text>
+				<template>AGENT-1 , who has since PATIENT-2 , was born on PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have since PATIENT-2 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | birthDate | &quot;1932-03-15&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="&quot;1932-03-15&quot;" number="2" tag="PATIENT-1" type="description">the 15th of March of 1932</reference>
+					<reference entity="Alan_Bean" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Retired&quot;" number="4" tag="PATIENT-2" type="name">retired</reference>
+				</references>
+				<text>Alan Bean was born on the 15th of March of 1932. He is currently retired.</text>
+				<template>AGENT-1 was born on PATIENT-1 . AGENT-1 is currently PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be currently PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>PATIENT-1 | &quot;1932-03-15&quot;</entity>
+				<entity>PATIENT-2 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id371" size="2">
+			<originaltripleset>
+				<otriple>Alan_Shepard | status | &quot;Deceased&quot;</otriple>
+				<otriple>Alan_Shepard | occupation | Test_pilot</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | status | &quot;Deceased&quot;</mtriple>
+				<mtriple>Alan_Shepard | occupation | Test_pilot</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | status | &quot;Deceased&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Test_pilot" number="1" tag="PATIENT-2" type="name">Former test</reference>
+					<reference entity="Alan_Shepard" number="2" tag="AGENT-1" type="name">pilot Alan Shepard</reference>
+					<reference entity="&quot;Deceased&quot;" number="3" tag="PATIENT-1" type="name">died</reference>
+				</references>
+				<text>Former test @ pilot Alan Shepard has died.</text>
+				<template>PATIENT-2 @ AGENT-1 has PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | status | &quot;Deceased&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Test_pilot" number="1" tag="PATIENT-2" type="name">Test pilot</reference>
+					<reference entity="Alan_Shepard" number="2" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;Deceased&quot;" number="3" tag="PATIENT-1" type="name">died</reference>
+				</references>
+				<text>Test pilot @ Alan Shepard has died.</text>
+				<template>PATIENT-2 @ AGENT-1 has PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | occupation | Test_pilot</striple>
+						<striple>Alan_Shepard | status | &quot;Deceased&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="Test_pilot" number="2" tag="PATIENT-2" type="description">a test pilot</reference>
+					<reference entity="&quot;Deceased&quot;" number="3" tag="PATIENT-1" type="name">passed away</reference>
+				</references>
+				<text>Alan Shepard was a test pilot who has since passed away.</text>
+				<template>AGENT-1 was PATIENT-2 who has since PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-2 who VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have since PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
+				<entity>PATIENT-2 | Test_pilot</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id372" size="2">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="2" tag="PATIENT-2" type="description">the 20th January , 1030</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+				</references>
+				<text>Buzz Aldrin was born on the 20th January, 1030 in Glen Ridge , New Jersey.</text>
+				<template>AGENT-1 was born on PATIENT-2 in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="3" tag="PATIENT-2" type="name">January 20 , 1930</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey on January 20, 1930.</text>
+				<template>AGENT-1 was born in PATIENT-1 on PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 on PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="2" tag="PATIENT-2" type="description">the 20th of January 1930</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge New Jersey</reference>
+				</references>
+				<text>Buzz Aldrin was born on the 20th of January 1930, in Glen Ridge New Jersey.</text>
+				<template>AGENT-1 was born on PATIENT-2 , in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 , in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="2" tag="PATIENT-2" type="name">January 20th , 1930</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="description">the community of Glen Ridge , New Jersey</reference>
+				</references>
+				<text>Buzz Aldrin was born on January 20th, 1930 in the community of Glen Ridge, New Jersey.</text>
+				<template>AGENT-1 was born on PATIENT-2 in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="2" tag="PATIENT-2" type="name">1930-01-20</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge New Jersey</reference>
+				</references>
+				<text>Buzz Aldrin was born on 1930-01-20 in Glen Ridge New Jersey.</text>
+				<template>AGENT-1 was born on PATIENT-2 in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="2" tag="PATIENT-2" type="name">1930-01-20</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+				</references>
+				<text>Buzz Aldrin was born on 1930-01-20 in Glen Ridge, New Jersey.</text>
+				<template>AGENT-1 was born on PATIENT-2 in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id7">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="2" tag="PATIENT-2" type="name">1930-01-20</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+				</references>
+				<text>Buzz Aldrin was born on 1930-01-20, in Glen Ridge, New Jersey.</text>
+				<template>AGENT-1 was born on PATIENT-2 , in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 , in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | &quot;1930-01-20&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id373" size="2">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="BRIDGE-1" type="name">Glen Ridge</reference>
+					<reference entity="Essex_County,_New_Jersey" number="3" tag="PATIENT-1" type="description">the Essex County in New Jersey</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, located in the Essex County in New Jersey.</text>
+				<template>AGENT-1 was born in BRIDGE-1 , located in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 , located in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Essex_County,_New_Jersey" number="2" tag="PATIENT-1" type="name">Essex County</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="BRIDGE-1" type="name">Glen Ridge New Jersey</reference>
+				</references>
+				<text>Buzz Aldrin was born in Essex County, at Glen Ridge New Jersey.</text>
+				<template>AGENT-1 was born in PATIENT-1 , at BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 , at BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-1 | Essex_County,_New_Jersey</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id374" size="2">
+			<originaltripleset>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | birthPlace | British_Hong_Kong</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Apollo_8" number="1" tag="PATIENT-2" type="name">Apollo 8</reference>
+				</references>
+				<text>The Apollo 8 crew included the British Hong Kong-born William Anders.</text>
+				<template>The PATIENT-2 crew included the PATIENT-1 - born AGENT-1 .</template>
+				<lexicalization>DT[form=defined] the PATIENT-2 crew VP[aspect=simple,tense=past,voice=active,person=null,number=null] include DT[form=defined] the PATIENT-1 - VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="Apollo_8" number="2" tag="PATIENT-2" type="name">Apollo 8</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-1" type="name">British Hong Kong</reference>
+				</references>
+				<text>William Anders was a member of the Apollo 8 crew and was born in British Hong Kong.</text>
+				<template>AGENT-1 was a member of the PATIENT-2 crew and was born in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of DT[form=defined] the PATIENT-2 crew and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="Apollo_8" number="2" tag="PATIENT-2" type="name">Apollo 8</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-1" type="name">British Hong Kong</reference>
+				</references>
+				<text>William Anders was a crew member on Apollo 8 and was born in British Hong Kong.</text>
+				<template>AGENT-1 was a crew member on PATIENT-2 and was born in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a crew member on PATIENT-2 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="British_Hong_Kong" number="2" tag="PATIENT-1" type="name">British Hong Kong</reference>
+					<reference entity="Apollo_8" number="3" tag="PATIENT-2" type="name">Apollo 8</reference>
+				</references>
+				<text>William Anders (born in British Hong Kong) was a crew member of Apollo 8.</text>
+				<template>AGENT-1 (born in PATIENT-1) was a crew member of PATIENT-2 .</template>
+				<lexicalization>AGENT-1 ( VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-1 ) VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a crew member of PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>PATIENT-1 | British_Hong_Kong</entity>
+				<entity>PATIENT-2 | Apollo_8</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id375" size="2">
+			<originaltripleset>
+				<otriple>William_Anders | status | &quot;Retired&quot;</otriple>
+				<otriple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | status | &quot;Retired&quot;</mtriple>
+				<mtriple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
+						<striple>William_Anders | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;AFIT, M.S. 1962&quot;" number="2" tag="PATIENT-2" type="description">an M.S. , from AFIT in 1962</reference>
+					<reference entity="&quot;Retired&quot;" number="3" tag="PATIENT-1" type="name">retired</reference>
+				</references>
+				<text>William Anders graduated, with an M.S., from AFIT in 1962, and is now retired.</text>
+				<template>AGENT-1 graduated , with PATIENT-2 , and is now PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] graduate , with PATIENT-2 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be now PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
+						<striple>William_Anders | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;AFIT, M.S. 1962&quot;" number="2" tag="PATIENT-2" type="description">a M.S from his alma Mater , AFIT , in 1962</reference>
+					<reference entity="&quot;Retired&quot;" number="3" tag="PATIENT-1" type="name">retired</reference>
+				</references>
+				<text>William Anders, who received a M.S from his alma Mater, AFIT, in 1962, is retired.</text>
+				<template>AGENT-1 , who received PATIENT-2 , is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] receive PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | status | &quot;Retired&quot;</striple>
+						<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;Retired&quot;" number="2" tag="PATIENT-1" type="name">retired</reference>
+					<reference entity="&quot;AFIT, M.S. 1962&quot;" number="3" tag="PATIENT-2" type="name">In 1962 he received a M.S</reference>
+				</references>
+				<text>William Anders has since retired, but In 1962 he received a M.S. from his alma Mater, AFIT.</text>
+				<template>AGENT-1 has since PATIENT-1 , but PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have since PATIENT-1 , but PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>PATIENT-1 | &quot;Retired&quot;</entity>
+				<entity>PATIENT-2 | &quot;AFIT, M.S. 1962&quot;</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

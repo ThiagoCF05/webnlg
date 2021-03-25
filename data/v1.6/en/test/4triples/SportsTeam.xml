@@ -1,0 +1,1450 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="SportsTeam" eid="Id654" size="4">
+			<originaltripleset>
+				<otriple>1._FC_Magdeburg | manager | Jens_Härtel</otriple>
+				<otriple>Jens_Härtel | managerClub | SV_Babelsberg_03</otriple>
+				<otriple>Jens_Härtel | team | 1._FC_Union_Berlin</otriple>
+				<otriple>Jens_Härtel | clubs | FSV_Zwickau</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1._FC_Magdeburg | manager | Jens_Härtel</mtriple>
+				<mtriple>Jens_Härtel | club | SV_Babelsberg_03</mtriple>
+				<mtriple>Jens_Härtel | club | 1._FC_Union_Berlin</mtriple>
+				<mtriple>Jens_Härtel | club | FSV_Zwickau</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1._FC_Magdeburg | manager | Jens_Härtel</striple>
+						<striple>Jens_Härtel | club | SV_Babelsberg_03</striple>
+						<striple>Jens_Härtel | club | 1._FC_Union_Berlin</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Jens_Härtel | club | FSV_Zwickau</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jens_Härtel" number="1" tag="BRIDGE-1" type="name">Jens Härtel</reference>
+					<reference entity="1._FC_Magdeburg" number="2" tag="AGENT-1" type="name">1 FC Magdeburg</reference>
+					<reference entity="SV_Babelsberg_03" number="3" tag="PATIENT-1" type="name">SV Babelsberg 03 club</reference>
+					<reference entity="1._FC_Union_Berlin" number="4" tag="PATIENT-2" type="name">1 FC Union Berlin</reference>
+					<reference entity="Jens_Härtel" number="5" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="FSV_Zwickau" number="6" tag="PATIENT-3" type="name">FSV Zwickau</reference>
+				</references>
+				<text>Jens Härtel has been the manager of 1 FC Magdeburg, part of SV Babelsberg 03 club and 1 FC Union Berlin. He is also attched to FSV Zwickau.</text>
+				<template>BRIDGE-1 has been the manager of AGENT-1 , part of PATIENT-1 and PATIENT-2 . BRIDGE-1 is also attched to PATIENT-3 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] be DT[form=defined] the manager of AGENT-1 , part of PATIENT-1 and PATIENT-2 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also VP[aspect=simple,tense=past,voice=active,person=null,number=null] attch to PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1._FC_Magdeburg</entity>
+				<entity>BRIDGE-1 | Jens_Härtel</entity>
+				<entity>PATIENT-1 | SV_Babelsberg_03</entity>
+				<entity>PATIENT-2 | 1._FC_Union_Berlin</entity>
+				<entity>PATIENT-3 | FSV_Zwickau</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id655" size="4">
+			<originaltripleset>
+				<otriple>A.C._Chievo_Verona | manager | Rolando_Maran</otriple>
+				<otriple>Rolando_Maran | managerClub | F.C._Bari_1908</otriple>
+				<otriple>Rolando_Maran | placeOfBirth | Italy</otriple>
+				<otriple>Rolando_Maran | team | Carrarese_Calcio</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.C._Chievo_Verona | manager | Rolando_Maran</mtriple>
+				<mtriple>Rolando_Maran | club | F.C._Bari_1908</mtriple>
+				<mtriple>Rolando_Maran | placeOfBirth | Italy</mtriple>
+				<mtriple>Rolando_Maran | club | Carrarese_Calcio</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Rolando_Maran | club | F.C._Bari_1908</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.C._Chievo_Verona | manager | Rolando_Maran</striple>
+						<striple>Rolando_Maran | club | Carrarese_Calcio</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Rolando_Maran | placeOfBirth | Italy</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rolando_Maran" number="1" tag="BRIDGE-1" type="name">Rolando Maran</reference>
+					<reference entity="F.C._Bari_1908" number="2" tag="PATIENT-1" type="name">FC Bari 1908</reference>
+					<reference entity="Rolando_Maran" number="3" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="A.C._Chievo_Verona" number="4" tag="AGENT-1" type="name">Associazione Calcio ChievoVerona</reference>
+					<reference entity="Carrarese_Calcio" number="5" tag="PATIENT-3" type="name">Carrarese Calcio</reference>
+					<reference entity="Rolando_Maran" number="6" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Italy" number="7" tag="PATIENT-2" type="name">Italy</reference>
+				</references>
+				<text>Rolando Maran has worked at FC Bari 1908. He managed Associazione Calcio ChievoVerona and is in the Carrarese Calcio club. He was born in Italy.</text>
+				<template>BRIDGE-1 has worked at PATIENT-1 . BRIDGE-1 managed AGENT-1 and is in the PATIENT-3 club . BRIDGE-1 was born in PATIENT-2 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] work at PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] manage AGENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the PATIENT-3 club . BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Rolando_Maran | placeOfBirth | Italy</striple>
+						<striple>Rolando_Maran | club | Carrarese_Calcio</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Rolando_Maran | club | F.C._Bari_1908</striple>
+						<striple>A.C._Chievo_Verona | manager | Rolando_Maran</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rolando_Maran" number="1" tag="BRIDGE-1" type="name">Rolando Maran</reference>
+					<reference entity="Italy" number="2" tag="PATIENT-2" type="name">Italy</reference>
+					<reference entity="Carrarese_Calcio" number="3" tag="PATIENT-3" type="name">Carrarese Calcio</reference>
+					<reference entity="Rolando_Maran" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="F.C._Bari_1908" number="5" tag="PATIENT-1" type="name">F.C . Bari 1908</reference>
+					<reference entity="A.C._Chievo_Verona" number="6" tag="AGENT-1" type="name">A.C. Chievo Verona</reference>
+				</references>
+				<text>Rolando Maran was born in Italy and is in the Carrarese Calcio Club. He currently plays for F.C. Bari 1908 while managing A.C. Chievo Verona.</text>
+				<template>BRIDGE-1 was born in PATIENT-2 and is in the PATIENT-3 Club . BRIDGE-1 currently plays for PATIENT-1 while managing AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the PATIENT-3 Club . BRIDGE-1 currently VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 while VP[aspect=progressive,tense=present,voice=active,person=null,number=null] manage AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Rolando_Maran | placeOfBirth | Italy</striple>
+						<striple>Rolando_Maran | club | F.C._Bari_1908</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Rolando_Maran | club | Carrarese_Calcio</striple>
+						<striple>A.C._Chievo_Verona | manager | Rolando_Maran</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rolando_Maran" number="1" tag="BRIDGE-1" type="name">Rolando Maran</reference>
+					<reference entity="Italy" number="2" tag="PATIENT-2" type="name">Italy</reference>
+					<reference entity="F.C._Bari_1908" number="3" tag="PATIENT-1" type="name">FC Bari 1908</reference>
+					<reference entity="Rolando_Maran" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Carrarese_Calcio" number="5" tag="PATIENT-3" type="name">Carrarese Calcio</reference>
+					<reference entity="A.C._Chievo_Verona" number="6" tag="AGENT-1" type="name">Associazione Calcio ChievoVerona</reference>
+				</references>
+				<text>Rolando Maran, who was born in Italy and has previously worked for FC Bari 1908. He currently plays for Carrarese Calcio and manages Associazione Calcio ChievoVerona.</text>
+				<template>BRIDGE-1 , who was born in PATIENT-2 and has previously worked for PATIENT-1 . BRIDGE-1 currently plays for PATIENT-3 and manages AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] work for PATIENT-1 . BRIDGE-1 currently VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] manage AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Chievo_Verona</entity>
+				<entity>BRIDGE-1 | Rolando_Maran</entity>
+				<entity>PATIENT-1 | F.C._Bari_1908</entity>
+				<entity>PATIENT-2 | Italy</entity>
+				<entity>PATIENT-3 | Carrarese_Calcio</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id656" size="4">
+			<originaltripleset>
+				<otriple>A.C._Lumezzane | manager | Michele_Marcolini</otriple>
+				<otriple>Michele_Marcolini | team | A.C._Chievo_Verona</otriple>
+				<otriple>Michele_Marcolini | placeOfBirth | Italy</otriple>
+				<otriple>Michele_Marcolini | clubs | Torino_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.C._Lumezzane | manager | Michele_Marcolini</mtriple>
+				<mtriple>Michele_Marcolini | placeOfBirth | Italy</mtriple>
+				<mtriple>Michele_Marcolini | club | Torino_F.C.</mtriple>
+				<mtriple>Michele_Marcolini | club | A.C._Chievo_Verona</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Michele_Marcolini | placeOfBirth | Italy</striple>
+						<striple>Michele_Marcolini | club | A.C._Chievo_Verona</striple>
+						<striple>Michele_Marcolini | club | Torino_F.C.</striple>
+						<striple>A.C._Lumezzane | manager | Michele_Marcolini</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Italy" number="1" tag="PATIENT-1" type="name">Italian</reference>
+					<reference entity="Michele_Marcolini" number="2" tag="BRIDGE-1" type="name">Michele Marcolini</reference>
+					<reference entity="A.C._Chievo_Verona" number="3" tag="PATIENT-3" type="name">A.C. Chievo Verona</reference>
+					<reference entity="Torino_F.C." number="4" tag="PATIENT-2" type="name">Torino F.C.</reference>
+					<reference entity="A.C._Lumezzane" number="5" tag="AGENT-1" type="name">A.C. Lumezzane</reference>
+				</references>
+				<text>Italian born, Michele Marcolini, plays for A.C. Chievo Verona, owns Torino F.C., and is manager of A.C. Lumezzane.</text>
+				<template>PATIENT-1 born , BRIDGE-1 , plays for PATIENT-3 , owns PATIENT-2 , and is manager of AGENT-1 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear , BRIDGE-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] own PATIENT-2 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be manager of AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Michele_Marcolini | placeOfBirth | Italy</striple>
+						<striple>A.C._Lumezzane | manager | Michele_Marcolini</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Michele_Marcolini | club | Torino_F.C.</striple>
+						<striple>Michele_Marcolini | club | A.C._Chievo_Verona</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Italy" number="1" tag="PATIENT-1" type="name">Italian</reference>
+					<reference entity="Michele_Marcolini" number="2" tag="BRIDGE-1" type="name">Michele Marcolini</reference>
+					<reference entity="A.C._Lumezzane" number="3" tag="AGENT-1" type="name">AC Lumezzane</reference>
+					<reference entity="Michele_Marcolini" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Torino_F.C." number="5" tag="PATIENT-2" type="name">Torino FC</reference>
+					<reference entity="A.C._Chievo_Verona" number="6" tag="PATIENT-3" type="name">AC Chievo Verona</reference>
+				</references>
+				<text>Italian born Michele Marcolini has been the manager of AC Lumezzane. He currently plays for Torino FC and AC Chievo Verona.</text>
+				<template>PATIENT-1 born BRIDGE-1 has been the manager of AGENT-1 . BRIDGE-1 currently plays for PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear BRIDGE-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] be DT[form=defined] the manager of AGENT-1 . BRIDGE-1 currently VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Michele_Marcolini | placeOfBirth | Italy</striple>
+						<striple>A.C._Lumezzane | manager | Michele_Marcolini</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Michele_Marcolini | club | Torino_F.C.</striple>
+						<striple>Michele_Marcolini | club | A.C._Chievo_Verona</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Michele_Marcolini" number="1" tag="BRIDGE-1" type="name">Michele Marcolini</reference>
+					<reference entity="Italy" number="2" tag="PATIENT-1" type="name">Italy</reference>
+					<reference entity="A.C._Lumezzane" number="3" tag="AGENT-1" type="name">AC Lumezzane</reference>
+					<reference entity="Michele_Marcolini" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Torino_F.C." number="5" tag="PATIENT-2" type="name">Torino F.C .</reference>
+					<reference entity="A.C._Chievo_Verona" number="6" tag="PATIENT-3" type="name">A.C. Chievo Verona</reference>
+				</references>
+				<text>Michele Marcolini was born in Italy and has been the manager of AC Lumezzane. He currently owns Torino F.C. and plays for A.C. Chievo Verona.</text>
+				<template>BRIDGE-1 was born in PATIENT-1 and has been the manager of AGENT-1 . BRIDGE-1 currently owns PATIENT-2 and plays for PATIENT-3 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] be DT[form=defined] the manager of AGENT-1 . BRIDGE-1 currently VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] own PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Lumezzane</entity>
+				<entity>BRIDGE-1 | Michele_Marcolini</entity>
+				<entity>PATIENT-1 | Italy</entity>
+				<entity>PATIENT-2 | Torino_F.C.</entity>
+				<entity>PATIENT-3 | A.C._Chievo_Verona</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id657" size="4">
+			<originaltripleset>
+				<otriple>A.E_Dimitra_Efxeinoupolis | capacity | 1500</otriple>
+				<otriple>A.E_Dimitra_Efxeinoupolis | chairman | Antonis_Milionis</otriple>
+				<otriple>A.E_Dimitra_Efxeinoupolis | ground | Efxeinoupoli</otriple>
+				<otriple>A.E_Dimitra_Efxeinoupolis | league | A_EPSTH_2nd_GROUP</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.E_Dimitra_Efxeinoupolis | numberOfMembers | 1500</mtriple>
+				<mtriple>A.E_Dimitra_Efxeinoupolis | chairman | Antonis_Milionis</mtriple>
+				<mtriple>A.E_Dimitra_Efxeinoupolis | ground | Efxeinoupoli</mtriple>
+				<mtriple>A.E_Dimitra_Efxeinoupolis | league | A_EPSTH_2nd_GROUP</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.E_Dimitra_Efxeinoupolis | chairman | Antonis_Milionis</striple>
+						<striple>A.E_Dimitra_Efxeinoupolis | numberOfMembers | 1500</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.E_Dimitra_Efxeinoupolis | league | A_EPSTH_2nd_GROUP</striple>
+						<striple>A.E_Dimitra_Efxeinoupolis | ground | Efxeinoupoli</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antonis_Milionis" number="1" tag="PATIENT-2" type="name">Antonis Milionis</reference>
+					<reference entity="A.E_Dimitra_Efxeinoupolis" number="2" tag="AGENT-1" type="name">A.E Dimitra Efxeinoupolis</reference>
+					<reference entity="1500" number="3" tag="PATIENT-1" type="name">1500</reference>
+					<reference entity="A.E_Dimitra_Efxeinoupolis" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="A_EPSTH_2nd_GROUP" number="5" tag="PATIENT-4" type="name">EPSTH 2nd GROUP</reference>
+					<reference entity="A.E_Dimitra_Efxeinoupolis" number="6" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Efxeinoupoli" number="7" tag="PATIENT-3" type="description">the town of Efxeinoupoli</reference>
+				</references>
+				<text>Antonis Milionis is chairman of A.E Dimitra Efxeinoupolis which has 1500 members. It is in the league EPSTH 2nd GROUP and its grounds are in the town of Efxeinoupoli.</text>
+				<template>PATIENT-2 is chairman of AGENT-1 which has PATIENT-1 members . AGENT-1 is in the league PATIENT-4 and AGENT-1 grounds are in PATIENT-3 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be chairman of AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-1 members . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the league PATIENT-4 and AGENT-1 grounds VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be in PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.E_Dimitra_Efxeinoupolis | league | A_EPSTH_2nd_GROUP</striple>
+						<striple>A.E_Dimitra_Efxeinoupolis | numberOfMembers | 1500</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.E_Dimitra_Efxeinoupolis | chairman | Antonis_Milionis</striple>
+						<striple>A.E_Dimitra_Efxeinoupolis | ground | Efxeinoupoli</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.E_Dimitra_Efxeinoupolis" number="1" tag="AGENT-1" type="name">A.E Dimitra Efxeinoupolis</reference>
+					<reference entity="A_EPSTH_2nd_GROUP" number="2" tag="PATIENT-4" type="name">EPSTH 2nd GROUP</reference>
+					<reference entity="1500" number="3" tag="PATIENT-1" type="name">1500</reference>
+					<reference entity="A.E_Dimitra_Efxeinoupolis" number="4" tag="AGENT-1" type="name">Their</reference>
+					<reference entity="Antonis_Milionis" number="5" tag="PATIENT-2" type="name">Antonis Milionis</reference>
+					<reference entity="A.E_Dimitra_Efxeinoupolis" number="6" tag="AGENT-1" type="name">their</reference>
+					<reference entity="Efxeinoupoli" number="7" tag="PATIENT-3" type="name">Efxeinoupoli</reference>
+				</references>
+				<text>A.E Dimitra Efxeinoupolis is in the league, EPSTH 2nd GROUP and have 1500 members. Their chairman is Antonis Milionis and their home ground is situated in Efxeinoupoli.</text>
+				<template>AGENT-1 is in the league , PATIENT-4 and have PATIENT-1 members . AGENT-1 chairman is PATIENT-2 and AGENT-1 home ground is situated in PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the league , PATIENT-4 and VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have PATIENT-1 members . AGENT-1 chairman VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and AGENT-1 home ground VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] situate in PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.E_Dimitra_Efxeinoupolis</entity>
+				<entity>PATIENT-1 | 1500</entity>
+				<entity>PATIENT-2 | Antonis_Milionis</entity>
+				<entity>PATIENT-3 | Efxeinoupoli</entity>
+				<entity>PATIENT-4 | A_EPSTH_2nd_GROUP</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id658" size="4">
+			<originaltripleset>
+				<otriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</otriple>
+				<otriple>Blackpool | leaderName | Conservative_Party_(UK)</otriple>
+				<otriple>Stuart_Parker_(footballer) | team | Stockport_County_F.C.</otriple>
+				<otriple>A.F.C._Blackpool | ground | Blackpool</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</mtriple>
+				<mtriple>Blackpool | leader | Conservative_Party_(UK)</mtriple>
+				<mtriple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</mtriple>
+				<mtriple>A.F.C._Blackpool | ground | Blackpool</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</striple>
+						<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Blackpool | ground | Blackpool</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Blackpool | leader | Conservative_Party_(UK)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Stuart_Parker_(footballer)" number="1" tag="BRIDGE-1" type="name">Stuart Parker</reference>
+					<reference entity="Stockport_County_F.C." number="2" tag="PATIENT-2" type="name">Stockport County F.C .</reference>
+					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="name">AFC Blackpool</reference>
+					<reference entity="A.F.C._Blackpool" number="4" tag="AGENT-1" type="description">The club</reference>
+					<reference entity="Blackpool" number="5" tag="BRIDGE-2" type="name">Blackpool</reference>
+					<reference entity="Conservative_Party_(UK)" number="6" tag="PATIENT-1" type="description">The Conservative Party ( UK )</reference>
+					<reference entity="Blackpool" number="7" tag="BRIDGE-2" type="name">Blackpool</reference>
+				</references>
+				<text>Stuart Parker who plays for Stockport County F.C. was a manager at AFC Blackpool. The club is also located in Blackpool. The Conservative Party (UK) is the leader of Blackpool.</text>
+				<template>BRIDGE-1 who plays for PATIENT-2 was a manager at AGENT-1 . AGENT-1 is also located in BRIDGE-2 . PATIENT-1 is the leader of BRIDGE-2 .</template>
+				<lexicalization>BRIDGE-1 who VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a manager at AGENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also VP[aspect=simple,tense=past,voice=active,person=null,number=null] locate in BRIDGE-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader of BRIDGE-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Blackpool | ground | Blackpool</striple>
+						<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
+						<striple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Blackpool | leader | Conservative_Party_(UK)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.F.C._Blackpool" number="1" tag="AGENT-1" type="name">AFC Blackpool</reference>
+					<reference entity="Blackpool" number="2" tag="BRIDGE-2" type="name">Blackpool</reference>
+					<reference entity="Stuart_Parker_(footballer)" number="3" tag="BRIDGE-1" type="name">Stuart Parker</reference>
+					<reference entity="Stockport_County_F.C." number="4" tag="PATIENT-2" type="name">Stockport County F.C</reference>
+					<reference entity="Blackpool" number="5" tag="BRIDGE-2" type="name">Blackpool</reference>
+					<reference entity="Conservative_Party_(UK)" number="6" tag="PATIENT-1" type="description">the Conservative Party ( UK )</reference>
+				</references>
+				<text>AFC Blackpool in Blackpool are managed by Stuart Parker, previously a player for Stockport County F.C. The leader of Blackpool is the Conservative Party (UK).</text>
+				<template>AGENT-1 in BRIDGE-2 are managed by BRIDGE-1 , previously a player for PATIENT-2 . The leader of BRIDGE-2 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 in BRIDGE-2 VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] manage by BRIDGE-1 , previously DT[form=undefined] a player for PATIENT-2 . DT[form=defined] the leader of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
+				<entity>BRIDGE-1 | Stuart_Parker_(footballer)</entity>
+				<entity>BRIDGE-2 | Blackpool</entity>
+				<entity>PATIENT-1 | Conservative_Party_(UK)</entity>
+				<entity>PATIENT-2 | Stockport_County_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id659" size="4">
+			<originaltripleset>
+				<otriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</otriple>
+				<otriple>Blackpool | leaderName | Gordon_Marsden</otriple>
+				<otriple>Stuart_Parker_(footballer) | team | Stockport_County_F.C.</otriple>
+				<otriple>A.F.C._Blackpool | ground | Blackpool</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</mtriple>
+				<mtriple>Blackpool | leader | Gordon_Marsden</mtriple>
+				<mtriple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</mtriple>
+				<mtriple>A.F.C._Blackpool | ground | Blackpool</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</striple>
+						<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Blackpool | ground | Blackpool</striple>
+						<striple>Blackpool | leader | Gordon_Marsden</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Stuart_Parker_(footballer)" number="1" tag="BRIDGE-1" type="name">Footballer , Stuart Parker ,</reference>
+					<reference entity="Stockport_County_F.C." number="2" tag="PATIENT-2" type="name">Stockport County F.C .</reference>
+					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="name">A.F.C . Blackpool</reference>
+					<reference entity="Blackpool" number="4" tag="BRIDGE-2" type="name">Blackpool</reference>
+					<reference entity="Gordon_Marsden" number="5" tag="PATIENT-1" type="name">Gordon Marsden</reference>
+				</references>
+				<text>Footballer, Stuart Parker, plays for Stockport County F.C. and is the manager of A.F.C. Blackpool. The ground of which is in Blackpool, where Gordon Marsden is one of the leaders.</text>
+				<template>BRIDGE-1 plays for PATIENT-2 and is the manager of AGENT-1 . The ground of which is in BRIDGE-2 , where PATIENT-1 is one of the leaders .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of AGENT-1 . DT[form=defined] the ground of which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 , where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the leaders .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Blackpool | leader | Gordon_Marsden</striple>
+						<striple>A.F.C._Blackpool | ground | Blackpool</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
+						<striple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gordon_Marsden" number="1" tag="PATIENT-1" type="name">Gordon Marsden</reference>
+					<reference entity="Blackpool" number="2" tag="BRIDGE-2" type="name">Blackpool</reference>
+					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="name">A.F.C . Blackpool</reference>
+					<reference entity="A.F.C._Blackpool" number="4" tag="AGENT-1" type="pronoun">They</reference>
+					<reference entity="Stuart_Parker_(footballer)" number="5" tag="BRIDGE-1" type="name">Stuart Parker</reference>
+					<reference entity="Stockport_County_F.C." number="6" tag="PATIENT-2" type="name">Stockport County F.C</reference>
+				</references>
+				<text>Gordon Marsden, leads Blackpool, which is where A.F.C. Blackpool is located. They have had, for a manager, Stuart Parker, whose club was Stockport County F.C.</text>
+				<template>PATIENT-1 , leads BRIDGE-2 , which is where AGENT-1 is located . AGENT-1 have had , for a manager , BRIDGE-1 , whose club was PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] lead BRIDGE-2 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be where AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located . AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=non-3rd,number=null] have , for DT[form=undefined] a manager , BRIDGE-1 , whose club VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Blackpool | leader | Gordon_Marsden</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Blackpool | ground | Blackpool</striple>
+						<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
+						<striple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gordon_Marsden" number="1" tag="PATIENT-1" type="name">Gordon Marsden</reference>
+					<reference entity="Blackpool" number="2" tag="BRIDGE-2" type="name">Blackpool 's</reference>
+					<reference entity="Blackpool" number="3" tag="BRIDGE-2" type="description">The city</reference>
+					<reference entity="A.F.C._Blackpool" number="4" tag="AGENT-1" type="name">AFC Blackpool</reference>
+					<reference entity="Stuart_Parker_(footballer)" number="5" tag="BRIDGE-1" type="name">Stuart Parker , a footballer</reference>
+					<reference entity="Stockport_County_F.C." number="6" tag="PATIENT-2" type="name">Stockport County FC</reference>
+				</references>
+				<text>Gordon Marsden is one of Blackpool's leaders. The city is the location of AFC Blackpool who are managed by Stuart Parker, a footballer who once played for Stockport County FC.</text>
+				<template>PATIENT-1 is one of BRIDGE-2 leaders . BRIDGE-2 is the location of AGENT-1 who are managed by BRIDGE-1 who once played for PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of BRIDGE-2 leaders . BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the location of AGENT-1 who VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] manage by BRIDGE-1 who once VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
+				<entity>BRIDGE-1 | Stuart_Parker_(footballer)</entity>
+				<entity>BRIDGE-2 | Blackpool</entity>
+				<entity>PATIENT-1 | Gordon_Marsden</entity>
+				<entity>PATIENT-2 | Stockport_County_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id660" size="4">
+			<originaltripleset>
+				<otriple>A.F.C._Fylde | ground | &quot;Warton, Fylde, Lancashire&quot;@en</otriple>
+				<otriple>A.F.C._Fylde | season | 2014</otriple>
+				<otriple>A.F.C._Fylde | capacity | &quot;3180&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.F.C._Fylde | ground | &quot;Warton, Fylde, Lancashire&quot;</mtriple>
+				<mtriple>A.F.C._Fylde | season | 2014</mtriple>
+				<mtriple>A.F.C._Fylde | numberOfMembers | 3180</mtriple>
+				<mtriple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Fylde | ground | &quot;Warton, Fylde, Lancashire&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>A.F.C._Fylde | season | 2014</striple>
+						<striple>A.F.C._Fylde | numberOfMembers | 3180</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Warton, Fylde, Lancashire&quot;" number="1" tag="PATIENT-1" type="name">Warton , Fylde , Lancashire</reference>
+					<reference entity="A.F.C._Fylde" number="2" tag="AGENT-1" type="name">A.F.C . Fylde</reference>
+					<reference entity="&quot;Association Football Club Fylde&quot;" number="3" tag="PATIENT-4" type="name">Association Football Club Fylde</reference>
+					<reference entity="A.F.C._Fylde" number="4" tag="AGENT-1" type="description">The club</reference>
+					<reference entity="2014" number="5" tag="PATIENT-2" type="name">2014</reference>
+					<reference entity="3180" number="6" tag="PATIENT-3" type="name">3180</reference>
+				</references>
+				<text>Based at Warton, Fylde, Lancashire, is A.F.C. Fylde. The full name of which, is Association Football Club Fylde. The club played in 2014 and has 3180 members.</text>
+				<template>Based at PATIENT-1 , is AGENT-1 . The full name of which , is PATIENT-4 . AGENT-1 played in PATIENT-2 and has PATIENT-3 members .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] base at PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be AGENT-1 . DT[form=defined] the full name of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-3 members .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</striple>
+						<striple>A.F.C._Fylde | season | 2014</striple>
+						<striple>A.F.C._Fylde | numberOfMembers | 3180</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Fylde | ground | &quot;Warton, Fylde, Lancashire&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.F.C._Fylde" number="1" tag="AGENT-1" type="name">A.F.C . Fylde</reference>
+					<reference entity="&quot;Association Football Club Fylde&quot;" number="2" tag="PATIENT-4" type="name">Association Football Club Fylde</reference>
+					<reference entity="2014" number="3" tag="PATIENT-2" type="name">2014</reference>
+					<reference entity="3180" number="4" tag="PATIENT-3" type="name">3180</reference>
+					<reference entity="A.F.C._Fylde" number="5" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="&quot;Warton, Fylde, Lancashire&quot;" number="6" tag="PATIENT-1" type="name">Warton , Fylde , Lancashire</reference>
+				</references>
+				<text>A.F.C. Fylde (Association Football Club Fylde) played in 2014 and has 3180 members. Its ground is in Warton, Fylde, Lancashire.</text>
+				<template>AGENT-1 (PATIENT-4) played in PATIENT-2 and has PATIENT-3 members . AGENT-1 ground is in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 ( PATIENT-4 ) VP[aspect=simple,tense=past,voice=active,person=null,number=null] play in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-3 members . AGENT-1 ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Fylde</entity>
+				<entity>PATIENT-1 | &quot;Warton, Fylde, Lancashire&quot;</entity>
+				<entity>PATIENT-2 | 2014</entity>
+				<entity>PATIENT-3 | 3180</entity>
+				<entity>PATIENT-4 | &quot;Association Football Club Fylde&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id661" size="4">
+			<originaltripleset>
+				<otriple>A.F.C._Fylde | season | 2014</otriple>
+				<otriple>A.F.C._Fylde | capacity | 3180</otriple>
+				<otriple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;@en</otriple>
+				<otriple>A.F.C._Fylde | ground | &quot;Bryning Lane&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.F.C._Fylde | season | 2014</mtriple>
+				<mtriple>A.F.C._Fylde | numberOfMembers | 3180</mtriple>
+				<mtriple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</mtriple>
+				<mtriple>A.F.C._Fylde | ground | &quot;Bryning Lane&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Fylde | ground | &quot;Bryning Lane&quot;</striple>
+						<striple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</striple>
+						<striple>A.F.C._Fylde | numberOfMembers | 3180</striple>
+						<striple>A.F.C._Fylde | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.F.C._Fylde" number="1" tag="AGENT-1" type="name">A.F.C . Fylde</reference>
+					<reference entity="&quot;Bryning Lane&quot;" number="2" tag="PATIENT-4" type="name">Bryning Lane</reference>
+					<reference entity="A.F.C._Fylde" number="3" tag="AGENT-1" type="name">their</reference>
+					<reference entity="&quot;Association Football Club Fylde&quot;" number="4" tag="PATIENT-3" type="name">`` Association Football Club Fylde . ''</reference>
+					<reference entity="A.F.C._Fylde" number="5" tag="AGENT-1" type="pronoun">They</reference>
+					<reference entity="3180" number="6" tag="PATIENT-2" type="name">3180</reference>
+					<reference entity="2014" number="7" tag="PATIENT-1" type="name">2014</reference>
+				</references>
+				<text>A.F.C. Fylde are based at Bryning Lane and their full name is &quot;Association Football Club Fylde.&quot; @ They have 3180 members and competed in the 2014 season.</text>
+				<template>AGENT-1 are based at PATIENT-4 and AGENT-1 full name is PATIENT-3 @ AGENT-1 have PATIENT-2 members and competed in the PATIENT-1 season .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] base at PATIENT-4 and AGENT-1 full name VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 AGENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have PATIENT-2 members and VP[aspect=simple,tense=past,voice=active,person=null,number=null] compete in DT[form=defined] the PATIENT-1 season .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</striple>
+						<striple>A.F.C._Fylde | ground | &quot;Bryning Lane&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.F.C._Fylde | numberOfMembers | 3180</striple>
+						<striple>A.F.C._Fylde | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.F.C._Fylde" number="1" tag="AGENT-1" type="name">AFC Fylde</reference>
+					<reference entity="&quot;Association Football Club Fylde&quot;" number="2" tag="PATIENT-3" type="name">`` Association Football Club Fylde ''</reference>
+					<reference entity="&quot;Bryning Lane&quot;" number="3" tag="PATIENT-4" type="name">Bryning Lane</reference>
+					<reference entity="A.F.C._Fylde" number="4" tag="AGENT-1" type="description">The club</reference>
+					<reference entity="3180" number="5" tag="PATIENT-2" type="name">3180</reference>
+					<reference entity="2014" number="6" tag="PATIENT-1" type="name">2014</reference>
+				</references>
+				<text>AFC Fylde, which has the full name &quot;Association Football Club Fylde&quot; are based at Bryning Lane. The club has 3180 members and played in 2014.</text>
+				<template>AGENT-1 , which has the full name PATIENT-3 are based at PATIENT-4 . AGENT-1 has PATIENT-2 members and played in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the full name PATIENT-3 VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] base at PATIENT-4 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 members and VP[aspect=simple,tense=past,voice=active,person=null,number=null] play in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</striple>
+						<striple>A.F.C._Fylde | numberOfMembers | 3180</striple>
+						<striple>A.F.C._Fylde | ground | &quot;Bryning Lane&quot;</striple>
+						<striple>A.F.C._Fylde | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Association Football Club Fylde&quot;" number="1" tag="PATIENT-3" type="name">Association Football Club Fylde</reference>
+					<reference entity="A.F.C._Fylde" number="2" tag="AGENT-1" type="name">A.F.C . Fylde</reference>
+					<reference entity="3180" number="3" tag="PATIENT-2" type="name">3180</reference>
+					<reference entity="&quot;Bryning Lane&quot;" number="4" tag="PATIENT-4" type="name">Bryning Lane</reference>
+					<reference entity="2014" number="5" tag="PATIENT-1" type="name">2014</reference>
+				</references>
+				<text>Association Football Club Fylde (abbreviated to A.F.C. Fylde) has 3180 members , are based at Bryning Lane and competed in the 2014 season.</text>
+				<template>PATIENT-3 (abbreviated to AGENT-1) has PATIENT-2 members , are based at PATIENT-4 and competed in the PATIENT-1 season .</template>
+				<lexicalization>PATIENT-3 ( abbreviated to AGENT-1 ) VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 members , VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] base at PATIENT-4 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] compete in DT[form=defined] the PATIENT-1 season .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Fylde</entity>
+				<entity>PATIENT-1 | 2014</entity>
+				<entity>PATIENT-2 | 3180</entity>
+				<entity>PATIENT-3 | &quot;Association Football Club Fylde&quot;</entity>
+				<entity>PATIENT-4 | &quot;Bryning Lane&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id662" size="4">
+			<originaltripleset>
+				<otriple>ACF_Fiorentina | manager | Paulo_Sousa</otriple>
+				<otriple>Paulo_Sousa | clubs | Juventus_F.C.</otriple>
+				<otriple>Paulo_Sousa | managerClub | Maccabi_Tel_Aviv_F.C.</otriple>
+				<otriple>Paulo_Sousa | team | Inter_Milan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ACF_Fiorentina | manager | Paulo_Sousa</mtriple>
+				<mtriple>Paulo_Sousa | club | Juventus_F.C.</mtriple>
+				<mtriple>Paulo_Sousa | club | Maccabi_Tel_Aviv_F.C.</mtriple>
+				<mtriple>Paulo_Sousa | club | Inter_Milan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Paulo_Sousa | club | Inter_Milan</striple>
+						<striple>Paulo_Sousa | club | Juventus_F.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Paulo_Sousa | club | Maccabi_Tel_Aviv_F.C.</striple>
+						<striple>ACF_Fiorentina | manager | Paulo_Sousa</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Inter_Milan" number="1" tag="PATIENT-3" type="name">Inter Milan</reference>
+					<reference entity="Paulo_Sousa" number="2" tag="BRIDGE-1" type="name">Paulo Sousa 's</reference>
+					<reference entity="Juventus_F.C." number="3" tag="PATIENT-1" type="name">Juventus</reference>
+					<reference entity="Paulo_Sousa" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Maccabi_Tel_Aviv_F.C." number="5" tag="PATIENT-2" type="name">Maccabi Tel Aviv F.C .</reference>
+					<reference entity="ACF_Fiorentina" number="6" tag="AGENT-1" type="name">ACF Fiorentina</reference>
+				</references>
+				<text>Attached to the club Inter Milan, Paulo Sousa's club is Juventus. He also plays for Maccabi Tel Aviv F.C. and is manager of ACF Fiorentina.</text>
+				<template>Attached to the club PATIENT-3 , BRIDGE-1 club is PATIENT-1 . BRIDGE-1 also plays for PATIENT-2 and is manager of AGENT-1 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] attach to DT[form=defined] the club PATIENT-3 , BRIDGE-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . BRIDGE-1 also VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be manager of AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ACF_Fiorentina | manager | Paulo_Sousa</striple>
+						<striple>Paulo_Sousa | club | Juventus_F.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Paulo_Sousa | club | Maccabi_Tel_Aviv_F.C.</striple>
+						<striple>Paulo_Sousa | club | Inter_Milan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paulo_Sousa" number="1" tag="BRIDGE-1" type="name">Paulo Sousa</reference>
+					<reference entity="ACF_Fiorentina" number="2" tag="AGENT-1" type="name">ACF Fiorentina</reference>
+					<reference entity="Paulo_Sousa" number="3" tag="BRIDGE-1" type="pronoun">his</reference>
+					<reference entity="Juventus_F.C." number="4" tag="PATIENT-1" type="name">Juventus</reference>
+					<reference entity="Paulo_Sousa" number="5" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Maccabi_Tel_Aviv_F.C." number="6" tag="PATIENT-2" type="name">Maccabi Tel Aviv F.C .</reference>
+					<reference entity="Inter_Milan" number="7" tag="PATIENT-3" type="name">Inter Milan</reference>
+				</references>
+				<text>Paulo Sousa is the manager of ACF Fiorentina and his club is Juventus. He plays for both plays for Maccabi Tel Aviv F.C. and the Inter Milan club.</text>
+				<template>BRIDGE-1 is the manager of AGENT-1 and BRIDGE-1 club is PATIENT-1 . BRIDGE-1 plays for both plays for PATIENT-2 and the PATIENT-3 club .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of AGENT-1 and BRIDGE-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] both plays for PATIENT-2 and DT[form=defined] the PATIENT-3 club .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Paulo_Sousa | club | Inter_Milan</striple>
+						<striple>Paulo_Sousa | club | Juventus_F.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>ACF_Fiorentina | manager | Paulo_Sousa</striple>
+						<striple>Paulo_Sousa | club | Maccabi_Tel_Aviv_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paulo_Sousa" number="1" tag="BRIDGE-1" type="name">Paulo Sousa</reference>
+					<reference entity="Inter_Milan" number="2" tag="PATIENT-3" type="name">Inter Milan</reference>
+					<reference entity="Juventus_F.C." number="3" tag="PATIENT-1" type="name">Juventus FC</reference>
+					<reference entity="Paulo_Sousa" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="ACF_Fiorentina" number="5" tag="AGENT-1" type="name">ACF Fiorentina</reference>
+				</references>
+				<text>Paulo Sousa once played for Inter Milan and Juventus FC. He now manages ACF Fiorentina and plays for Maccabi Tel Aviv F.C..</text>
+				<template>BRIDGE-1 once played for PATIENT-3 and PATIENT-1 . BRIDGE-1 now manages AGENT-1 and plays for PATIENT-2 .</template>
+				<lexicalization>BRIDGE-1 once VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-3 and PATIENT-1 . BRIDGE-1 now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] manage AGENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ACF_Fiorentina</entity>
+				<entity>BRIDGE-1 | Paulo_Sousa</entity>
+				<entity>PATIENT-1 | Juventus_F.C.</entity>
+				<entity>PATIENT-2 | Maccabi_Tel_Aviv_F.C.</entity>
+				<entity>PATIENT-3 | Inter_Milan</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id663" size="4">
+			<originaltripleset>
+				<otriple>AEK_Athens_F.C. | ground | Greece</otriple>
+				<otriple>AEK_Athens_F.C. | league | Superleague_Greece</otriple>
+				<otriple>AEK_Athens_F.C. | season | 2014</otriple>
+				<otriple>AEK_Athens_F.C. | capacity | &quot;69618&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AEK_Athens_F.C. | numberOfMembers | 69618</mtriple>
+				<mtriple>AEK_Athens_F.C. | ground | Greece</mtriple>
+				<mtriple>AEK_Athens_F.C. | league | Superleague_Greece</mtriple>
+				<mtriple>AEK_Athens_F.C. | season | 2014</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AEK_Athens_F.C. | numberOfMembers | 69618</striple>
+						<striple>AEK_Athens_F.C. | ground | Greece</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AEK_Athens_F.C. | league | Superleague_Greece</striple>
+						<striple>AEK_Athens_F.C. | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="69618" number="1" tag="PATIENT-1" type="name">69618</reference>
+					<reference entity="AEK_Athens_F.C." number="2" tag="AGENT-1" type="name">AEK Athens F.C .</reference>
+					<reference entity="AEK_Athens_F.C." number="3" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Greece" number="4" tag="PATIENT-2" type="name">Greece</reference>
+					<reference entity="AEK_Athens_F.C." number="5" tag="AGENT-1" type="pronoun">They</reference>
+					<reference entity="Superleague_Greece" number="6" tag="PATIENT-3" type="description">the Superleague Greece</reference>
+					<reference entity="2014" number="7" tag="PATIENT-4" type="name">2014</reference>
+				</references>
+				<text>With 69618 members, AEK Athens F.C. has its ground in Greece. They play in the Superleague Greece, and played in the 2014 season.</text>
+				<template>With PATIENT-1 members , AGENT-1 has AGENT-1 ground in PATIENT-2 . AGENT-1 play in PATIENT-3 , and played in the PATIENT-4 season .</template>
+				<lexicalization>With PATIENT-1 members , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have AGENT-1 ground in PATIENT-2 . AGENT-1 play in PATIENT-3 , and VP[aspect=simple,tense=past,voice=active,person=null,number=null] play in DT[form=defined] the PATIENT-4 season .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AEK_Athens_F.C. | ground | Greece</striple>
+						<striple>AEK_Athens_F.C. | numberOfMembers | 69618</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AEK_Athens_F.C. | season | 2014</striple>
+						<striple>AEK_Athens_F.C. | league | Superleague_Greece</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AEK_Athens_F.C." number="1" tag="AGENT-1" type="name">AEK Athens FC</reference>
+					<reference entity="Greece" number="2" tag="PATIENT-2" type="name">Greece</reference>
+					<reference entity="69618" number="3" tag="PATIENT-1" type="name">69618</reference>
+					<reference entity="AEK_Athens_F.C." number="4" tag="AGENT-1" type="pronoun">They</reference>
+					<reference entity="2014" number="5" tag="PATIENT-4" type="name">2014</reference>
+					<reference entity="Superleague_Greece" number="6" tag="PATIENT-3" type="description">the Superleague Greece</reference>
+				</references>
+				<text>AEK Athens FC has a ground in Greece and has 69618 memberrs. They played in the 2014 season and compete in the Superleague Greece.</text>
+				<template>AGENT-1 has a ground in PATIENT-2 and has PATIENT-1 members . AGENT-1 played in the PATIENT-4 season and compete in PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a ground in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-1 members . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play in DT[form=defined] the PATIENT-4 season and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] compete in PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AEK_Athens_F.C.</entity>
+				<entity>PATIENT-1 | 69618</entity>
+				<entity>PATIENT-2 | Greece</entity>
+				<entity>PATIENT-3 | Superleague_Greece</entity>
+				<entity>PATIENT-4 | 2014</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id664" size="4">
+			<originaltripleset>
+				<otriple>AFC_Ajax_(amateurs) | ground | Sportpark_De_Toekomst</otriple>
+				<otriple>Sportpark_De_Toekomst | operator | AFC_Ajax</otriple>
+				<otriple>Sportpark_De_Toekomst | owner | AFC_Ajax_N.V.</otriple>
+				<otriple>Sportpark_De_Toekomst | tenant | Jong_Ajax</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AFC_Ajax_(amateurs) | ground | Sportpark_De_Toekomst</mtriple>
+				<mtriple>Sportpark_De_Toekomst | operator | AFC_Ajax</mtriple>
+				<mtriple>Sportpark_De_Toekomst | owner | AFC_Ajax_N.V.</mtriple>
+				<mtriple>Sportpark_De_Toekomst | tenant | Jong_Ajax</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | ground | Sportpark_De_Toekomst</striple>
+						<striple>Sportpark_De_Toekomst | operator | AFC_Ajax</striple>
+						<striple>Sportpark_De_Toekomst | owner | AFC_Ajax_N.V.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Sportpark_De_Toekomst | tenant | Jong_Ajax</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AFC_Ajax_(amateurs)" number="1" tag="AGENT-1" type="name">AFC Ajax ( amateurs ) 's</reference>
+					<reference entity="Sportpark_De_Toekomst" number="2" tag="BRIDGE-1" type="name">Sportpark De Toekomst</reference>
+					<reference entity="AFC_Ajax" number="3" tag="PATIENT-1" type="name">AFC Ajax</reference>
+					<reference entity="AFC_Ajax_N.V." number="4" tag="PATIENT-2" type="name">AFC Ajax N.V</reference>
+					<reference entity="Jong_Ajax" number="5" tag="PATIENT-3" type="name">Jong Ajax</reference>
+				</references>
+				<text>AFC Ajax (amateurs)'s ground is Sportpark De Toekomst operated by AFC Ajax and owned by AFC Ajax N.V. The current tenant is Jong Ajax.</text>
+				<template>AGENT-1 ground is BRIDGE-1 operated by PATIENT-1 and owned by PATIENT-2 . The current tenant is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] operate by PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] own by PATIENT-2 . DT[form=defined] the current tenant VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | ground | Sportpark_De_Toekomst</striple>
+						<striple>Sportpark_De_Toekomst | operator | AFC_Ajax</striple>
+						<striple>Sportpark_De_Toekomst | owner | AFC_Ajax_N.V.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Sportpark_De_Toekomst | tenant | Jong_Ajax</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AFC_Ajax_(amateurs)" number="1" tag="AGENT-1" type="name">AFC Ajax ( amateurs ) 's</reference>
+					<reference entity="Sportpark_De_Toekomst" number="2" tag="BRIDGE-1" type="name">Sportpark De Toekomst</reference>
+					<reference entity="AFC_Ajax" number="3" tag="PATIENT-1" type="name">AFC Ajax</reference>
+					<reference entity="AFC_Ajax_N.V." number="4" tag="PATIENT-2" type="name">AFC Ajax N.V</reference>
+					<reference entity="Sportpark_De_Toekomst" number="5" tag="BRIDGE-1" type="description">the ground</reference>
+					<reference entity="Jong_Ajax" number="6" tag="PATIENT-3" type="name">Jong Ajax</reference>
+				</references>
+				<text>AFC Ajax (amateurs)'s ground is Sportpark De Toekomst which is operated by AFC Ajax and owned by AFC Ajax N.V. The current tenant of the ground is Jong Ajax.</text>
+				<template>AGENT-1 ground is BRIDGE-1 which is operated by PATIENT-1 and owned by PATIENT-2 . The current tenant of BRIDGE-1 is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] own by PATIENT-2 . DT[form=defined] the current tenant of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | ground | Sportpark_De_Toekomst</striple>
+						<striple>Sportpark_De_Toekomst | operator | AFC_Ajax</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Sportpark_De_Toekomst | owner | AFC_Ajax_N.V.</striple>
+						<striple>Sportpark_De_Toekomst | tenant | Jong_Ajax</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AFC_Ajax_(amateurs)" number="1" tag="AGENT-1" type="name">AFC Ajax ( amateurs ) 's</reference>
+					<reference entity="Sportpark_De_Toekomst" number="2" tag="BRIDGE-1" type="name">Sportpark De Toekomst</reference>
+					<reference entity="AFC_Ajax" number="3" tag="PATIENT-1" type="name">AFC Ajax</reference>
+					<reference entity="AFC_Ajax_N.V." number="4" tag="PATIENT-2" type="name">AFC Ajax NV</reference>
+					<reference entity="Jong_Ajax" number="5" tag="PATIENT-3" type="name">Jong Ajax</reference>
+				</references>
+				<text>AFC Ajax (amateurs)'s ground is Sportpark De Toekomst which is operated by AFC Ajax. The ground is owned by AFC Ajax NV and the current tenants are Jong Ajax.</text>
+				<template>AGENT-1 ground is BRIDGE-1 which is operated by PATIENT-1 . The ground is owned by PATIENT-2 and the current tenants are PATIENT-3 .</template>
+				<lexicalization>AGENT-1 ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-1 . DT[form=defined] the ground VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] own by PATIENT-2 and DT[form=defined] the current tenants VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AFC_Ajax_(amateurs)</entity>
+				<entity>BRIDGE-1 | Sportpark_De_Toekomst</entity>
+				<entity>PATIENT-1 | AFC_Ajax</entity>
+				<entity>PATIENT-2 | AFC_Ajax_N.V.</entity>
+				<entity>PATIENT-3 | Jong_Ajax</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id665" size="4">
+			<originaltripleset>
+				<otriple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;@en</otriple>
+				<otriple>AFC_Ajax_(amateurs) | season | 2014</otriple>
+				<otriple>AFC_Ajax_(amateurs) | capacity | &quot;5000&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>AFC_Ajax_(amateurs) | fullname | &quot;Amsterdamsche Football Club Ajax Amateurs&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;</mtriple>
+				<mtriple>AFC_Ajax_(amateurs) | season | 2014</mtriple>
+				<mtriple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</mtriple>
+				<mtriple>AFC_Ajax_(amateurs) | fullname | &quot;Amsterdamsche Football Club Ajax Amateurs&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | fullname | &quot;Amsterdamsche Football Club Ajax Amateurs&quot;</striple>
+						<striple>AFC_Ajax_(amateurs) | season | 2014</striple>
+						<striple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AFC_Ajax_(amateurs)" number="1" tag="AGENT-1" type="name">AFC Ajax ( amateurs )</reference>
+					<reference entity="&quot;Amsterdamsche Football Club Ajax Amateurs&quot;" number="2" tag="PATIENT-4" type="name">Amsterdamsche Football Club Ajax Amateurs</reference>
+					<reference entity="AFC_Ajax_(amateurs)" number="3" tag="AGENT-1" type="pronoun">they</reference>
+					<reference entity="2014" number="4" tag="PATIENT-2" type="name">2014</reference>
+					<reference entity="5000" number="5" tag="PATIENT-3" type="name">5000</reference>
+					<reference entity="AFC_Ajax_(amateurs)" number="6" tag="AGENT-1" type="name">Their</reference>
+					<reference entity="&quot;Joden , Godenzonen&quot;" number="7" tag="PATIENT-1" type="name">Joden , Godenzonen</reference>
+				</references>
+				<text>The full name of AFC Ajax (amateurs) is Amsterdamsche Football Club Ajax Amateurs, they played in the 2014 season and have 5000 members. Their nickname is Joden, Godenzonen.</text>
+				<template>The full name of AGENT-1 is PATIENT-4 , AGENT-1 played in the PATIENT-2 season and have PATIENT-3 members . AGENT-1 nickname is PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the full name of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play in DT[form=defined] the PATIENT-2 season and VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have PATIENT-3 members . AGENT-1 nickname VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | fullname | &quot;Amsterdamsche Football Club Ajax Amateurs&quot;</striple>
+						<striple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</striple>
+						<striple>AFC_Ajax_(amateurs) | season | 2014</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Amsterdamsche Football Club Ajax Amateurs&quot;" number="1" tag="PATIENT-4" type="name">Amsterdamsche Football Club Ajax Amateurs</reference>
+					<reference entity="AFC_Ajax_(amateurs)" number="2" tag="AGENT-1" type="name">AFC Ajax ( amateurs )</reference>
+					<reference entity="&quot;Joden , Godenzonen&quot;" number="3" tag="PATIENT-1" type="name">Joden , Godenzonen</reference>
+					<reference entity="AFC_Ajax_(amateurs)" number="4" tag="AGENT-1" type="pronoun">They</reference>
+					<reference entity="5000" number="5" tag="PATIENT-3" type="name">5000</reference>
+					<reference entity="AFC_Ajax_(amateurs)" number="6" tag="AGENT-1" type="pronoun">they</reference>
+					<reference entity="2014" number="7" tag="PATIENT-2" type="name">2014</reference>
+				</references>
+				<text>Amsterdamsche Football Club Ajax Amateurs is abbreviated to AFC Ajax (amateurs) and has the nickname Joden, Godenzonen. They have 5000 members and they have played in the 2014 season.</text>
+				<template>PATIENT-4 is abbreviated to AGENT-1 and has the nickname PATIENT-1 . AGENT-1 have PATIENT-3 members and AGENT-1 have played in the PATIENT-2 season .</template>
+				<lexicalization>PATIENT-4 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] abbreviate to AGENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the nickname PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have PATIENT-3 members and AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=non-3rd,number=null] play in DT[form=defined] the PATIENT-2 season .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AFC_Ajax_(amateurs) | fullname | &quot;Amsterdamsche Football Club Ajax Amateurs&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AFC_Ajax_(amateurs) | nickname | &quot;Joden , Godenzonen&quot;</striple>
+						<striple>AFC_Ajax_(amateurs) | season | 2014</striple>
+						<striple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AFC_Ajax_(amateurs)" number="1" tag="AGENT-1" type="name">AFC Ajax ( amateurs )</reference>
+					<reference entity="&quot;Amsterdamsche Football Club Ajax Amateurs&quot;" number="2" tag="PATIENT-4" type="name">Amsterdamsche Football Club Ajax Amateurs</reference>
+					<reference entity="AFC_Ajax_(amateurs)" number="3" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="&quot;Joden , Godenzonen&quot;" number="4" tag="PATIENT-1" type="name">Joden</reference>
+					<reference entity="AFC_Ajax_(amateurs)" number="5" tag="AGENT-1" type="name">Godenzonen , it</reference>
+					<reference entity="2014" number="6" tag="PATIENT-2" type="name">2014</reference>
+					<reference entity="5000" number="7" tag="PATIENT-3" type="name">5000</reference>
+				</references>
+				<text>The full name of AFC Ajax (amateurs) is Amsterdamsche Football Club Ajax Amateurs. Its nickname is Joden, Godenzonen, it competed in the 2014 season and has 5000 members.</text>
+				<template>The full name of AGENT-1 is PATIENT-4 . AGENT-1 nickname is PATIENT-1 , AGENT-1 competed in the PATIENT-2 season and has PATIENT-3 members .</template>
+				<lexicalization>DT[form=defined] the full name of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 . AGENT-1 nickname VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] compete in DT[form=defined] the PATIENT-2 season and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-3 members .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AFC_Ajax_(amateurs)</entity>
+				<entity>PATIENT-1 | &quot;Joden , Godenzonen&quot;</entity>
+				<entity>PATIENT-2 | 2014</entity>
+				<entity>PATIENT-3 | 5000</entity>
+				<entity>PATIENT-4 | &quot;Amsterdamsche Football Club Ajax Amateurs&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id666" size="4">
+			<originaltripleset>
+				<otriple>AZ_Alkmaar | manager | John_van_den_Brom</otriple>
+				<otriple>John_van_den_Brom | managerClub | Vitesse_Arnhem</otriple>
+				<otriple>John_van_den_Brom | clubs | AFC_Ajax</otriple>
+				<otriple>John_van_den_Brom | team | Netherlands_national_football_team</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AZ_Alkmaar | manager | John_van_den_Brom</mtriple>
+				<mtriple>John_van_den_Brom | club | Vitesse_Arnhem</mtriple>
+				<mtriple>John_van_den_Brom | club | AFC_Ajax</mtriple>
+				<mtriple>John_van_den_Brom | club | Netherlands_national_football_team</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AZ_Alkmaar | manager | John_van_den_Brom</striple>
+						<striple>John_van_den_Brom | club | Vitesse_Arnhem</striple>
+						<striple>John_van_den_Brom | club | AFC_Ajax</striple>
+						<striple>John_van_den_Brom | club | Netherlands_national_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_van_den_Brom" number="1" tag="BRIDGE-1" type="name">John Van Den Brom</reference>
+					<reference entity="AZ_Alkmaar" number="2" tag="AGENT-1" type="name">AZ Alkmaar</reference>
+					<reference entity="Vitesse_Arnhem" number="3" tag="PATIENT-1" type="name">Vitesse Arnhem</reference>
+					<reference entity="AFC_Ajax" number="4" tag="PATIENT-2" type="name">AFC Ajax</reference>
+					<reference entity="Netherlands_national_football_team" number="5" tag="PATIENT-3" type="description">the Netherlands National Football team</reference>
+				</references>
+				<text>John Van Den Brom, manager for AZ Alkmaar, play for Vitesse Arnhem and AFC Ajax, and has played for the Netherlands National Football team.</text>
+				<template>BRIDGE-1 , manager for AGENT-1 , play for PATIENT-1 and PATIENT-2 , and has played for PATIENT-3 .</template>
+				<lexicalization>BRIDGE-1 , manager for AGENT-1 , VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play for PATIENT-1 and PATIENT-2 , and VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AZ_Alkmaar | manager | John_van_den_Brom</striple>
+						<striple>John_van_den_Brom | club | Netherlands_national_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>John_van_den_Brom | club | Vitesse_Arnhem</striple>
+						<striple>John_van_den_Brom | club | AFC_Ajax</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_van_den_Brom" number="1" tag="BRIDGE-1" type="name">John van den Brom</reference>
+					<reference entity="AZ_Alkmaar" number="2" tag="AGENT-1" type="name">AZ Alkmaar</reference>
+					<reference entity="Netherlands_national_football_team" number="3" tag="PATIENT-3" type="description">the Netherlands national football team</reference>
+					<reference entity="John_van_den_Brom" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Vitesse_Arnhem" number="5" tag="PATIENT-1" type="name">Vitesse Arnhem</reference>
+					<reference entity="AFC_Ajax" number="6" tag="PATIENT-2" type="name">AFC Ajax</reference>
+				</references>
+				<text>John van den Brom has been manager of AZ Alkmaar and played for the Netherlands national football team. He is in Vitesse Arnhem and now plays for AFC Ajax.</text>
+				<template>BRIDGE-1 has been manager of AGENT-1 and played for PATIENT-3 . BRIDGE-1 is in PATIENT-1 and now plays for PATIENT-2 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] be manager of AGENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-3 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-1 and now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>John_van_den_Brom | club | AFC_Ajax</striple>
+						<striple>John_van_den_Brom | club | Vitesse_Arnhem</striple>
+						<striple>John_van_den_Brom | club | Netherlands_national_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AZ_Alkmaar | manager | John_van_den_Brom</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_van_den_Brom" number="1" tag="BRIDGE-1" type="name">John van den Brom</reference>
+					<reference entity="AFC_Ajax" number="2" tag="PATIENT-2" type="name">AFC Ajax</reference>
+					<reference entity="Vitesse_Arnhem" number="3" tag="PATIENT-1" type="name">Vitesse Arnhem</reference>
+					<reference entity="Netherlands_national_football_team" number="4" tag="PATIENT-3" type="description">the Netherlands national football team</reference>
+					<reference entity="John_van_den_Brom" number="5" tag="BRIDGE-1" type="pronoun">he</reference>
+					<reference entity="AZ_Alkmaar" number="6" tag="AGENT-1" type="name">AZ Alkmaar</reference>
+				</references>
+				<text>John van den Brom plays for AFC Ajax, Vitesse Arnhem and the Netherlands national football team. In addition he also manages AZ Alkmaar.</text>
+				<template>BRIDGE-1 plays for PATIENT-2 , PATIENT-1 and PATIENT-3 . In addition BRIDGE-1 also manages AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 , PATIENT-1 and PATIENT-3 . In addition BRIDGE-1 also VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] manage AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AZ_Alkmaar</entity>
+				<entity>BRIDGE-1 | John_van_den_Brom</entity>
+				<entity>PATIENT-1 | Vitesse_Arnhem</entity>
+				<entity>PATIENT-2 | AFC_Ajax</entity>
+				<entity>PATIENT-3 | Netherlands_national_football_team</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id667" size="4">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</otriple>
+				<otriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</mtriple>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</mtriple>
+				<mtriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
+					<reference entity="Campeonato_Brasileiro_Série_C" number="2" tag="BRIDGE-2" type="name">Campeonato Brasileiro Série C</reference>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="3" tag="AGENT-1" type="name">Their</reference>
+					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="4" tag="BRIDGE-1" type="description">the Estadio Municipal Coaracy da Mata Fonseca</reference>
+					<reference entity="Alagoas" number="5" tag="PATIENT-1" type="name">Alagoas</reference>
+					<reference entity="Campeonato_Brasileiro_Série_C" number="6" tag="BRIDGE-2" type="name">Campeonato Brasileiro Serie C</reference>
+					<reference entity="Vila_Nova_Futebol_Clube" number="7" tag="PATIENT-2" type="name">Vila Nova Futebol Clube</reference>
+				</references>
+				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league. Their ground is the Estadio Municipal Coaracy da Mata Fonseca located in Alagoas. The champions of Campeonato Brasileiro Serie C are Vila Nova Futebol Clube.</text>
+				<template>AGENT-1 play in the BRIDGE-2 league . AGENT-1 ground is BRIDGE-1 located in PATIENT-1 . The champions of BRIDGE-2 are PATIENT-2 .</template>
+				<lexicalization>AGENT-1 play in DT[form=defined] the BRIDGE-2 league . AGENT-1 ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 located in PATIENT-1 . DT[form=defined] the champions of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>BRIDGE-1 | Estádio_Municipal_Coaracy_da_Mata_Fonseca</entity>
+				<entity>BRIDGE-2 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>PATIENT-1 | Alagoas</entity>
+				<entity>PATIENT-2 | Vila_Nova_Futebol_Clube</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id668" size="4">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | country | Brazil</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</otriple>
+				<otriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | country | Brazil</mtriple>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</mtriple>
+				<mtriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
+					<reference entity="Campeonato_Brasileiro_Série_C" number="2" tag="BRIDGE-1" type="name">Campeonato Brasileiro Série C</reference>
+					<reference entity="Brazil" number="3" tag="PATIENT-1" type="name">Brazil</reference>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="4" tag="AGENT-1" type="description">The club 's</reference>
+					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="5" tag="BRIDGE-2" type="description">the Estádio Municipal Coaracy da Mata Fonseca</reference>
+					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="6" tag="BRIDGE-2" type="pronoun">it</reference>
+					<reference entity="Alagoas" number="7" tag="PATIENT-2" type="name">Alagoas</reference>
+				</references>
+				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league, which is based in Brazil. The club's ground is called the Estádio Municipal Coaracy da Mata Fonseca and it is located in Alagoas.</text>
+				<template>AGENT-1 play in the BRIDGE-1 league , which is based in PATIENT-1 . AGENT-1 ground is called BRIDGE-2 and BRIDGE-2 is located in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 play in DT[form=defined] the BRIDGE-1 league , which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] base in PATIENT-1 . AGENT-1 ground VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] call BRIDGE-2 and BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Alagoas</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense 's</reference>
+					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="2" tag="BRIDGE-2" type="name">Estadio Municipal Coaracy da Mata Fonseca</reference>
+					<reference entity="Alagoas" number="3" tag="PATIENT-2" type="name">Alagoas</reference>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="4" tag="AGENT-1" type="pronoun">They</reference>
+					<reference entity="Campeonato_Brasileiro_Série_C" number="5" tag="BRIDGE-1" type="name">Campeonato Brasileiro Série C</reference>
+					<reference entity="Brazil" number="6" tag="PATIENT-1" type="name">Brazil</reference>
+				</references>
+				<text>Agremiação Sportiva Arapiraquense's ground is Estadio Municipal Coaracy da Mata Fonseca which is located in Alagoas. They play in the Campeonato Brasileiro Série C league which is from Brazil.</text>
+				<template>AGENT-1 ground is BRIDGE-2 which is located in PATIENT-2 . AGENT-1 play in the BRIDGE-1 league which is from PATIENT-1 .</template>
+				<lexicalization>AGENT-1 ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 . AGENT-1 play in DT[form=defined] the BRIDGE-1 league which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be from PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>BRIDGE-1 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>BRIDGE-2 | Estádio_Municipal_Coaracy_da_Mata_Fonseca</entity>
+				<entity>PATIENT-1 | Brazil</entity>
+				<entity>PATIENT-2 | Alagoas</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id669" size="4">
+			<originaltripleset>
+				<otriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</otriple>
+				<otriple>Campeonato_Brasileiro_Série_C | country | Brazil</otriple>
+				<otriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</otriple>
+				<otriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</mtriple>
+				<mtriple>Campeonato_Brasileiro_Série_C | country | Brazil</mtriple>
+				<mtriple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</mtriple>
+				<mtriple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
+					<reference entity="Campeonato_Brasileiro_Série_C" number="2" tag="BRIDGE-1" type="name">Campeonato Brasileiro Série C</reference>
+					<reference entity="Brazil" number="3" tag="PATIENT-1" type="name">Brazil</reference>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="4" tag="AGENT-1" type="name">Their</reference>
+					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="5" tag="BRIDGE-2" type="name">Estádio Municipal Coaracy da Mata Fonseca</reference>
+					<reference entity="Arapiraca" number="6" tag="PATIENT-2" type="name">Arapiraca</reference>
+				</references>
+				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league in Brazil. Their home ground is Estádio Municipal Coaracy da Mata Fonseca in Arapiraca.</text>
+				<template>AGENT-1 play in the BRIDGE-1 league in PATIENT-1 . AGENT-1 home ground is BRIDGE-2 in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 play in DT[form=defined] the BRIDGE-1 league in PATIENT-1 . AGENT-1 home ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+						<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiacao Sportiva Arapiraquense 's</reference>
+					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="2" tag="BRIDGE-2" type="description">the Estadio Municipal Coaracy da Mata Fonseca</reference>
+					<reference entity="Arapiraca" number="3" tag="PATIENT-2" type="name">Arapiraca</reference>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="4" tag="AGENT-1" type="pronoun">They</reference>
+					<reference entity="Campeonato_Brasileiro_Série_C" number="5" tag="BRIDGE-1" type="name">Campeonato Brasileiro Série C</reference>
+					<reference entity="Brazil" number="6" tag="PATIENT-1" type="name">Brazil</reference>
+				</references>
+				<text>Agremiacao Sportiva Arapiraquense's ground is the Estadio Municipal Coaracy da Mata Fonseca in Arapiraca. They play in the Campeonato Brasileiro Série C league which is based in Brazil.</text>
+				<template>AGENT-1 ground is BRIDGE-2 in PATIENT-2 . AGENT-1 play in the BRIDGE-1 league which is based in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 in PATIENT-2 . AGENT-1 play in DT[form=defined] the BRIDGE-1 league which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] base in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
+						<striple>Estádio_Municipal_Coaracy_da_Mata_Fonseca | location | Arapiraca</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
+					<reference entity="Campeonato_Brasileiro_Série_C" number="2" tag="BRIDGE-1" type="name">Brazilian Campeonato Brasileiro Série C</reference>
+					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="3" tag="BRIDGE-2" type="name">Estádio Municipal Coaracy da Mata Fonseca</reference>
+					<reference entity="Agremiação_Sportiva_Arapiraquense" number="4" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
+					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="5" tag="BRIDGE-2" type="pronoun">it</reference>
+					<reference entity="Arapiraca" number="6" tag="PATIENT-2" type="name">Arapiraca</reference>
+				</references>
+				<text>Agremiação Sportiva Arapiraquense play in the Brazilian Campeonato Brasileiro Série C league. Estádio Municipal Coaracy da Mata Fonseca is the name of the ground of Agremiação Sportiva Arapiraquense and it is located in Arapiraca.</text>
+				<template>AGENT-1 play in the BRIDGE-1 league . BRIDGE-2 is the name of the ground of AGENT-1 and BRIDGE-2 is located in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 play in DT[form=defined] the BRIDGE-1 league . BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the name of DT[form=defined] the ground of AGENT-1 and BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
+				<entity>BRIDGE-1 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>BRIDGE-2 | Estádio_Municipal_Coaracy_da_Mata_Fonseca</entity>
+				<entity>PATIENT-1 | Brazil</entity>
+				<entity>PATIENT-2 | Arapiraca</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id670" size="4">
+			<originaltripleset>
+				<otriple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</otriple>
+				<otriple>St._Vincent–St._Mary_High_School | country | United_States</otriple>
+				<otriple>Akron,_Ohio | isPartOf | Summit_County,_Ohio</otriple>
+				<otriple>St._Vincent–St._Mary_High_School | city | Akron,_Ohio</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</mtriple>
+				<mtriple>St._Vincent–St._Mary_High_School | country | United_States</mtriple>
+				<mtriple>Akron,_Ohio | isPartOf | Summit_County,_Ohio</mtriple>
+				<mtriple>St._Vincent–St._Mary_High_School | city | Akron,_Ohio</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</striple>
+						<striple>St._Vincent–St._Mary_High_School | city | Akron,_Ohio</striple>
+						<striple>St._Vincent–St._Mary_High_School | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akron,_Ohio | isPartOf | Summit_County,_Ohio</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="St._Vincent–St._Mary_High_School" number="1" tag="BRIDGE-1" type="name">St Vincent-St Mary High School</reference>
+					<reference entity="Akron_Summit_Assault" number="2" tag="AGENT-1" type="name">Akron Summit Assault</reference>
+					<reference entity="Akron,_Ohio" number="3" tag="BRIDGE-2" type="name">Akron</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">Ohio , U.S. Akron , Ohio is part of Summit County , Ohio</reference>
+					<reference entity="Summit_County,_Ohio" number="6" tag="PATIENT-2" type="name">Summit County , Ohio</reference>
+				</references>
+				<text>St Vincent-St Mary High School is the ground of Akron Summit Assault, Akron, Ohio, U.S. Akron, Ohio is part of Summit County, Ohio.</text>
+				<template>BRIDGE-1 is the ground of AGENT-1 , BRIDGE-2 , PATIENT-1 . BRIDGE-2 is part of PATIENT-2 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the ground of AGENT-1 , BRIDGE-2 , PATIENT-1 . BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</striple>
+						<striple>St._Vincent–St._Mary_High_School | city | Akron,_Ohio</striple>
+						<striple>Akron,_Ohio | isPartOf | Summit_County,_Ohio</striple>
+						<striple>St._Vincent–St._Mary_High_School | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akron_Summit_Assault" number="1" tag="AGENT-1" type="name">Akron Summit Assault</reference>
+					<reference entity="St._Vincent–St._Mary_High_School" number="2" tag="BRIDGE-1" type="name">St Vincent-St Mary High School</reference>
+					<reference entity="Akron,_Ohio" number="3" tag="BRIDGE-2" type="name">Akron</reference>
+					<reference entity="Summit_County,_Ohio" number="4" tag="PATIENT-2" type="name">Ohio</reference>
+					<reference entity="United_States" number="5" tag="PATIENT-1" type="name">Summit County , United States</reference>
+				</references>
+				<text>The ground of Akron Summit Assault is at St Vincent-St Mary High School in Akron, Ohio, Summit County, United States.</text>
+				<template>The ground of AGENT-1 is at BRIDGE-1 in BRIDGE-2 , PATIENT-2 , PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the ground of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be at BRIDGE-1 in BRIDGE-2 , PATIENT-2 , PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>St._Vincent–St._Mary_High_School | city | Akron,_Ohio</striple>
+						<striple>Akron,_Ohio | isPartOf | Summit_County,_Ohio</striple>
+						<striple>St._Vincent–St._Mary_High_School | country | United_States</striple>
+						<striple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="St._Vincent–St._Mary_High_School" number="1" tag="BRIDGE-1" type="name">St Vincent-St Mary High School</reference>
+					<reference entity="Akron,_Ohio" number="2" tag="BRIDGE-2" type="name">Akron</reference>
+					<reference entity="Summit_County,_Ohio" number="3" tag="PATIENT-2" type="name">Summit County</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">Ohio , United States</reference>
+					<reference entity="Akron_Summit_Assault" number="5" tag="AGENT-1" type="name">Akron Summit Assault</reference>
+				</references>
+				<text>St Vincent-St Mary High School, Akron, Summit County, Ohio, United States is the ground of Akron Summit Assault.</text>
+				<template>BRIDGE-1 , BRIDGE-2 , PATIENT-2 , PATIENT-1 is the ground of AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 , BRIDGE-2 , PATIENT-2 , PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the ground of AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akron_Summit_Assault</entity>
+				<entity>BRIDGE-1 | St._Vincent–St._Mary_High_School</entity>
+				<entity>BRIDGE-2 | Akron,_Ohio</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Summit_County,_Ohio</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id671" size="4">
+			<originaltripleset>
+				<otriple>Italy | leaderName | Pietro_Grasso</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Italy | leader | Sergio_Mattarella</otriple>
+				<otriple>A.S._Gubbio_1910 | ground | Italy</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Italy | leader | Pietro_Grasso</mtriple>
+				<mtriple>Italy | capital | Rome</mtriple>
+				<mtriple>Italy | leader | Sergio_Mattarella</mtriple>
+				<mtriple>A.S._Gubbio_1910 | ground | Italy</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+						<striple>Italy | leader | Pietro_Grasso</striple>
+						<striple>Italy | leader | Sergio_Mattarella</striple>
+						<striple>Italy | capital | Rome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="name">A.S. Gubbio 1910</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Pietro_Grasso" number="3" tag="PATIENT-1" type="name">Pietro Grasso</reference>
+					<reference entity="Sergio_Mattarella" number="4" tag="PATIENT-3" type="name">Sergio Mattarella</reference>
+					<reference entity="Rome" number="5" tag="PATIENT-2" type="name">Rome</reference>
+				</references>
+				<text>The ground of A.S. Gubbio 1910 is located in Italy, where there are leaders called Pietro Grasso and Sergio Mattarella and the capital is Rome.</text>
+				<template>The ground of AGENT-1 is located in BRIDGE-1 , where there are leaders called PATIENT-1 and PATIENT-3 and the capital is PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the ground of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , where there VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be leaders VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-1 and PATIENT-3 and DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+						<striple>Italy | capital | Rome</striple>
+						<striple>Italy | leader | Pietro_Grasso</striple>
+						<striple>Italy | leader | Sergio_Mattarella</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="name">A.S. Gubbio 1910</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="3" tag="PATIENT-2" type="name">Rome</reference>
+					<reference entity="Pietro_Grasso" number="4" tag="PATIENT-1" type="name">Pietro Grasso</reference>
+					<reference entity="Sergio_Mattarella" number="5" tag="PATIENT-3" type="name">Sergio Mattarella</reference>
+				</references>
+				<text>The ground of A.S. Gubbio 1910 is located in Italy where Rome is the capital and two of the leaders are Pietro Grasso and Sergio Mattarella.</text>
+				<template>The ground of AGENT-1 is located in BRIDGE-1 where PATIENT-2 is the capital and two of the leaders are PATIENT-1 and PATIENT-3 .</template>
+				<lexicalization>DT[form=defined] the ground of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital and two of DT[form=defined] the leaders VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-1 and PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Gubbio_1910</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Pietro_Grasso</entity>
+				<entity>PATIENT-2 | Rome</entity>
+				<entity>PATIENT-3 | Sergio_Mattarella</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id672" size="4">
+			<originaltripleset>
+				<otriple>Peter_Stöger | team | SK_Vorwärts_Steyr</otriple>
+				<otriple>Peter_Stöger | clubs | FC_Admira_Wacker_Mödling</otriple>
+				<otriple>1._FC_Köln | manager | Peter_Stöger</otriple>
+				<otriple>Peter_Stöger | managerClub | FK_Austria_Wien</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Peter_Stöger | club | SK_Vorwärts_Steyr</mtriple>
+				<mtriple>Peter_Stöger | club | FC_Admira_Wacker_Mödling</mtriple>
+				<mtriple>1._FC_Köln | manager | Peter_Stöger</mtriple>
+				<mtriple>Peter_Stöger | club | FK_Austria_Wien</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1._FC_Köln | manager | Peter_Stöger</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Peter_Stöger | club | SK_Vorwärts_Steyr</striple>
+						<striple>Peter_Stöger | club | FC_Admira_Wacker_Mödling</striple>
+						<striple>Peter_Stöger | club | FK_Austria_Wien</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peter_Stöger" number="1" tag="BRIDGE-1" type="name">Peter Stöger</reference>
+					<reference entity="1._FC_Köln" number="2" tag="AGENT-1" type="name">1</reference>
+					<reference entity="Peter_Stöger" number="3" tag="BRIDGE-1" type="name">FC Köln . He</reference>
+					<reference entity="SK_Vorwärts_Steyr" number="4" tag="PATIENT-1" type="name">SK Vorwärts Steyr</reference>
+					<reference entity="FC_Admira_Wacker_Mödling" number="5" tag="PATIENT-2" type="name">FC Admira Wacker Mödling</reference>
+					<reference entity="FK_Austria_Wien" number="6" tag="PATIENT-3" type="name">FK Austria Wien</reference>
+				</references>
+				<text>Peter Stöger is the manager at 1. FC Köln. He is a former player of SK Vorwärts Steyr, FC Admira Wacker Mödling and FK Austria Wien.</text>
+				<template>BRIDGE-1 is the manager at AGENT-1 . BRIDGE-1 is a former player of PATIENT-1 , PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager at AGENT-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a former player of PATIENT-1 , PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Peter_Stöger | club | FK_Austria_Wien</striple>
+						<striple>Peter_Stöger | club | SK_Vorwärts_Steyr</striple>
+						<striple>Peter_Stöger | club | FC_Admira_Wacker_Mödling</striple>
+						<striple>1._FC_Köln | manager | Peter_Stöger</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peter_Stöger" number="1" tag="BRIDGE-1" type="name">Peter Stöger</reference>
+					<reference entity="FK_Austria_Wien" number="2" tag="PATIENT-3" type="name">FK Austria Wien</reference>
+					<reference entity="SK_Vorwärts_Steyr" number="3" tag="PATIENT-1" type="name">SK Vorwärts Steyr</reference>
+					<reference entity="FC_Admira_Wacker_Mödling" number="4" tag="PATIENT-2" type="name">FC Admira Wacker Mödling</reference>
+					<reference entity="1._FC_Köln" number="5" tag="AGENT-1" type="name">FC Kolin</reference>
+				</references>
+				<text>Peter Stöger is at the FK Austria Wien club and is in the SK Vorwärts Steyr club, a player in FC Admira Wacker Mödling, and is the manager of FC Kolin.</text>
+				<template>BRIDGE-1 is at the PATIENT-3 club and is in the PATIENT-1 club , a player in PATIENT-2 , and is the manager of AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be at DT[form=defined] the PATIENT-3 club and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the PATIENT-1 club , DT[form=undefined] a player in PATIENT-2 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1._FC_Köln</entity>
+				<entity>BRIDGE-1 | Peter_Stöger</entity>
+				<entity>PATIENT-1 | SK_Vorwärts_Steyr</entity>
+				<entity>PATIENT-2 | FC_Admira_Wacker_Mödling</entity>
+				<entity>PATIENT-3 | FK_Austria_Wien</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

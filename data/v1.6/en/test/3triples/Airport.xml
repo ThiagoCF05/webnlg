@@ -1,0 +1,1524 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Airport" eid="Id512" size="3">
+			<originaltripleset>
+				<otriple>Aarhus_Airport | runwayLength | &quot;2776.73&quot;^^xsd:double</otriple>
+				<otriple>Aarhus_Airport | operator | &quot;Aarhus Lufthavn A/S&quot;@en</otriple>
+				<otriple>Aarhus_Airport | runwayDesignation | &quot;10R/28L&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aarhus_Airport | runwayLength | 2776.0</mtriple>
+				<mtriple>Aarhus_Airport | operatingOrganisation | &quot;Aarhus Lufthavn A/S&quot;</mtriple>
+				<mtriple>Aarhus_Airport | runwayName | &quot;10R/28L&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aarhus_Airport | operatingOrganisation | &quot;Aarhus Lufthavn A/S&quot;</striple>
+						<striple>Aarhus_Airport | runwayLength | 2776.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Aarhus Lufthavn A/S&quot;" number="1" tag="PATIENT-2" type="name">Aarhus Lufthavn A/S</reference>
+					<reference entity="Aarhus_Airport" number="2" tag="AGENT-1" type="name">Aarhus Airport</reference>
+					<reference entity="2776.0" number="3" tag="PATIENT-1" type="name">2776.0 metres</reference>
+					<reference entity="&quot;Aarhus Lufthavn A/S&quot;" number="4" tag="PATIENT-2" type="name">10R/28L</reference>
+				</references>
+				<text>Operated by Aarhus Lufthavn A/S, Aarhus Airport has a runway length of 2776.0 metres and a runway name 10R/28L.</text>
+				<template>Operated by PATIENT-2 , AGENT-1 has a runway length of PATIENT-1 and a runway name PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] operate by PATIENT-2 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a runway length of PATIENT-1 and DT[form=undefined] a runway name PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aarhus_Airport | operatingOrganisation | &quot;Aarhus Lufthavn A/S&quot;</striple>
+						<striple>Aarhus_Airport | runwayLength | 2776.0</striple>
+						<striple>Aarhus_Airport | runwayName | &quot;10R/28L&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aarhus_Airport" number="1" tag="AGENT-1" type="name">Aarhus Airport</reference>
+					<reference entity="&quot;Aarhus Lufthavn A/S&quot;" number="2" tag="PATIENT-2" type="name">Aarhus Lufthavn A/S</reference>
+					<reference entity="Aarhus_Airport" number="3" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="2776.0" number="4" tag="PATIENT-1" type="name">2776 meters</reference>
+					<reference entity="&quot;10R/28L&quot;" number="5" tag="PATIENT-3" type="name">10R/28L</reference>
+				</references>
+				<text>Aarhus Airport is operated by Aarhus Lufthavn A/S and its @ 2776 meters long runway is called 10R/28L.</text>
+				<template>AGENT-1 is operated by PATIENT-2 and AGENT-1 @ PATIENT-1 long runway is called PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-2 and AGENT-1 PATIENT-1 long runway VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] call PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aarhus_Airport</entity>
+				<entity>PATIENT-1 | 2776.0</entity>
+				<entity>PATIENT-2 | &quot;Aarhus Lufthavn A/S&quot;</entity>
+				<entity>PATIENT-3 | &quot;10R/28L&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id513" size="3">
+			<originaltripleset>
+				<otriple>Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York</otriple>
+				<otriple>Adirondack_Regional_Airport | runwayLength | &quot;2003.0&quot;^^xsd:double</otriple>
+				<otriple>Adirondack_Regional_Airport | city | Saranac_Lake,_New_York</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York</mtriple>
+				<mtriple>Adirondack_Regional_Airport | runwayLength | 2003.0</mtriple>
+				<mtriple>Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York</striple>
+						<striple>Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adirondack_Regional_Airport | runwayLength | 2003.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adirondack_Regional_Airport" number="1" tag="AGENT-1" type="name">Adirondack regional airport</reference>
+					<reference entity="Lake_Placid,_New_York" number="2" tag="PATIENT-1" type="name">Lake Placid</reference>
+					<reference entity="Saranac_Lake,_New_York" number="3" tag="PATIENT-3" type="name">Saranac Lake , New York</reference>
+					<reference entity="Adirondack_Regional_Airport" number="4" tag="AGENT-1" type="name">Asirondack regional airport</reference>
+					<reference entity="2003.0" number="5" tag="PATIENT-2" type="name">2003</reference>
+				</references>
+				<text>Adirondack regional airport serves both Lake Placid and Saranac Lake, New York. The length of the runway at Asirondack regional airport is 2003.</text>
+				<template>AGENT-1 serves both PATIENT-1 and PATIENT-3 . The length of the runway at AGENT-1 is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] serve both PATIENT-1 and PATIENT-3 . DT[form=defined] the length of DT[form=defined] the runway at AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York</striple>
+						<striple>Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adirondack_Regional_Airport | runwayLength | 2003.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adirondack_Regional_Airport" number="1" tag="AGENT-1" type="name">Adirondack Regional Airport</reference>
+					<reference entity="Lake_Placid,_New_York" number="2" tag="PATIENT-1" type="name">Lake Placid , New York</reference>
+					<reference entity="Saranac_Lake,_New_York" number="3" tag="PATIENT-3" type="name">Saranac Lake , New York</reference>
+					<reference entity="2003.0" number="4" tag="PATIENT-2" type="name">2003</reference>
+				</references>
+				<text>Adirondack Regional Airport serves the city of Lake Placid, New York and Saranac Lake, New York. The runway is 2003 feet long.</text>
+				<template>AGENT-1 serves the city of PATIENT-1 and PATIENT-3 . The runway is PATIENT-2 feet long .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] serve DT[form=defined] the city of PATIENT-1 and PATIENT-3 . DT[form=defined] the runway VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 feet long .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York</striple>
+						<striple>Adirondack_Regional_Airport | runwayLength | 2003.0</striple>
+						<striple>Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Lake_Placid,_New_York" number="1" tag="PATIENT-1" type="name">Lake Placid , N.Y.</reference>
+					<reference entity="Adirondack_Regional_Airport" number="2" tag="AGENT-1" type="description">the Adirondack Regional Airport</reference>
+					<reference entity="2003.0" number="3" tag="PATIENT-2" type="name">2003.0.</reference>
+					<reference entity="Saranac_Lake,_New_York" number="4" tag="PATIENT-3" type="name">Saranac Lake , New York</reference>
+				</references>
+				<text>Lake Placid, N.Y. is served by the Adirondack Regional Airport, where the length of the runway is 2003.0. and serves the city of Saranac Lake, New York.</text>
+				<template>PATIENT-1 is served by AGENT-1 , where the length of the runway is PATIENT-2 and serves the city of PATIENT-3 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] serve by AGENT-1 , where DT[form=defined] the length of DT[form=defined] the runway VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] serve DT[form=defined] the city of PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adirondack_Regional_Airport</entity>
+				<entity>PATIENT-1 | Lake_Placid,_New_York</entity>
+				<entity>PATIENT-2 | 2003.0</entity>
+				<entity>PATIENT-3 | Saranac_Lake,_New_York</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id514" size="3">
+			<originaltripleset>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Paracuellos_de_Jarama</otriple>
+				<otriple>Paracuellos_de_Jarama | country | Spain</otriple>
+				<otriple>Paracuellos_de_Jarama | isPartOf | Community_of_Madrid</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Paracuellos_de_Jarama</mtriple>
+				<mtriple>Paracuellos_de_Jarama | country | Spain</mtriple>
+				<mtriple>Paracuellos_de_Jarama | isPartOf | Community_of_Madrid</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Paracuellos_de_Jarama</striple>
+						<striple>Paracuellos_de_Jarama | isPartOf | Community_of_Madrid</striple>
+						<striple>Paracuellos_de_Jarama | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suarez Madrid-Barajas Airport</reference>
+					<reference entity="Paracuellos_de_Jarama" number="2" tag="BRIDGE-1" type="name">Paracuellos de Jarama</reference>
+					<reference entity="Community_of_Madrid" number="3" tag="PATIENT-2" type="description">the community of Madrid</reference>
+					<reference entity="Spain" number="4" tag="PATIENT-1" type="name">Spain</reference>
+				</references>
+				<text>Adolfo Suarez Madrid-Barajas Airport is in Paracuellos de Jarama, which is located in the community of Madrid, Spain.</text>
+				<template>AGENT-1 is in BRIDGE-1 , which is located in PATIENT-2 , PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 , PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Paracuellos_de_Jarama</striple>
+						<striple>Paracuellos_de_Jarama | isPartOf | Community_of_Madrid</striple>
+						<striple>Paracuellos_de_Jarama | country | Spain</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suarez Madrid-Barajas airport</reference>
+					<reference entity="Paracuellos_de_Jarama" number="2" tag="BRIDGE-1" type="name">Paracuellos de Jarama</reference>
+					<reference entity="Community_of_Madrid" number="3" tag="PATIENT-2" type="description">the community of Madrid</reference>
+					<reference entity="Spain" number="4" tag="PATIENT-1" type="name">Spain</reference>
+				</references>
+				<text>Adolfo Suarez Madrid-Barajas airport is located at Paracuellos de Jarama which is part of the community of Madrid, Spain.</text>
+				<template>AGENT-1 is located at BRIDGE-1 which is part of PATIENT-2 , PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located at BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-2 , PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>BRIDGE-1 | Paracuellos_de_Jarama</entity>
+				<entity>PATIENT-1 | Spain</entity>
+				<entity>PATIENT-2 | Community_of_Madrid</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id515" size="3">
+			<originaltripleset>
+				<otriple>Agra_Airport | location | Uttar_Pradesh</otriple>
+				<otriple>Agra_Airport | operator | Indian_Air_Force</otriple>
+				<otriple>Agra_Airport | icaoLocationIdentifier | &quot;VIAG&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agra_Airport | location | Uttar_Pradesh</mtriple>
+				<mtriple>Agra_Airport | operatingOrganisation | Indian_Air_Force</mtriple>
+				<mtriple>Agra_Airport | ICAO_Location_Identifier | &quot;VIAG&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agra_Airport | ICAO_Location_Identifier | &quot;VIAG&quot;</striple>
+						<striple>Agra_Airport | location | Uttar_Pradesh</striple>
+						<striple>Agra_Airport | operatingOrganisation | Indian_Air_Force</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agra_Airport" number="1" tag="AGENT-1" type="name">Agra Airport</reference>
+					<reference entity="&quot;VIAG&quot;" number="2" tag="PATIENT-3" type="name">VIAG</reference>
+					<reference entity="Uttar_Pradesh" number="3" tag="PATIENT-1" type="name">Uttar Pradesh</reference>
+					<reference entity="Indian_Air_Force" number="4" tag="PATIENT-2" type="description">the Indian Air Force</reference>
+				</references>
+				<text>Agra Airport (ICAO Location Identifier - VIAG) is located in Uttar Pradesh and operated by the Indian Air Force.</text>
+				<template>AGENT-1 (ICAO Location Identifier - PATIENT-3) is located in PATIENT-1 and operated by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 ( ICAO Location Identifier - PATIENT-3 ) VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] operate by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agra_Airport | ICAO_Location_Identifier | &quot;VIAG&quot;</striple>
+						<striple>Agra_Airport | location | Uttar_Pradesh</striple>
+						<striple>Agra_Airport | operatingOrganisation | Indian_Air_Force</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agra_Airport" number="1" tag="AGENT-1" type="description">The Agra Airport</reference>
+					<reference entity="&quot;VIAG&quot;" number="2" tag="PATIENT-3" type="name">VIAG</reference>
+					<reference entity="Uttar_Pradesh" number="3" tag="PATIENT-1" type="name">Uttar Pradesh</reference>
+					<reference entity="Indian_Air_Force" number="4" tag="PATIENT-2" type="description">the Indian Air Force</reference>
+				</references>
+				<text>The Agra Airport (VIAG) in Uttar Pradesh is operated by the Indian Air Force.</text>
+				<template>AGENT-1 (PATIENT-3) in PATIENT-1 is operated by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 ( PATIENT-3 ) in PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agra_Airport | operatingOrganisation | Indian_Air_Force</striple>
+						<striple>Agra_Airport | location | Uttar_Pradesh</striple>
+						<striple>Agra_Airport | ICAO_Location_Identifier | &quot;VIAG&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Indian_Air_Force" number="1" tag="PATIENT-2" type="description">The Indian Air Force</reference>
+					<reference entity="Agra_Airport" number="2" tag="AGENT-1" type="name">Agra Airport</reference>
+					<reference entity="Uttar_Pradesh" number="3" tag="PATIENT-1" type="name">Uttar Pradesh</reference>
+					<reference entity="&quot;VIAG&quot;" number="4" tag="PATIENT-3" type="name">VIAG</reference>
+				</references>
+				<text>The Indian Air Force operates Agra Airport which is located in Uttar Pradesh and has the ICAO location identifier VIAG.</text>
+				<template>PATIENT-2 operates AGENT-1 which is located in PATIENT-1 and has the ICAO location identifier PATIENT-3 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] operate AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the ICAO location identifier PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agra_Airport</entity>
+				<entity>PATIENT-1 | Uttar_Pradesh</entity>
+				<entity>PATIENT-2 | Indian_Air_Force</entity>
+				<entity>PATIENT-3 | &quot;VIAG&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id516" size="3">
+			<originaltripleset>
+				<otriple>Al_Asad_Airbase | operator | United_States_Air_Force</otriple>
+				<otriple>Al_Asad_Airbase | location | Iraq</otriple>
+				<otriple>Al_Asad_Airbase | runwayLength | &quot;3992.88&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</mtriple>
+				<mtriple>Al_Asad_Airbase | location | Iraq</mtriple>
+				<mtriple>Al_Asad_Airbase | runwayLength | 3992.88</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+						<striple>Al_Asad_Airbase | location | Iraq</striple>
+						<striple>Al_Asad_Airbase | runwayLength | 3992.88</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States_Air_Force" number="1" tag="PATIENT-1" type="description">the United States Air Force</reference>
+					<reference entity="Al_Asad_Airbase" number="2" tag="AGENT-1" type="name">Al Asad Airbase</reference>
+					<reference entity="Iraq" number="3" tag="PATIENT-2" type="name">Iraq</reference>
+					<reference entity="3992.88" number="4" tag="PATIENT-3" type="name">3992.88 metres</reference>
+				</references>
+				<text>Operated by the United States Air Force, Al Asad Airbase is in Iraq and has a runway length of 3992.88 metres.</text>
+				<template>Operated by PATIENT-1 , AGENT-1 is in PATIENT-2 and has a runway length of PATIENT-3 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] operate by PATIENT-1 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a runway length of PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+						<striple>Al_Asad_Airbase | location | Iraq</striple>
+						<striple>Al_Asad_Airbase | runwayLength | 3992.88</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States_Air_Force" number="1" tag="PATIENT-1" type="description">The United States Air Force</reference>
+					<reference entity="Al_Asad_Airbase" number="2" tag="AGENT-1" type="name">Al Asad airbase</reference>
+					<reference entity="Iraq" number="3" tag="PATIENT-2" type="name">Iraq</reference>
+					<reference entity="3992.88" number="4" tag="PATIENT-3" type="name">3992.88</reference>
+				</references>
+				<text>The United States Air Force is the operating organisation for Al Asad airbase in Iraq where the length of the runway is 3992.88.</text>
+				<template>PATIENT-1 is the operating organisation for AGENT-1 in PATIENT-2 where the length of the runway is PATIENT-3 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the operating organisation for AGENT-1 in PATIENT-2 where DT[form=defined] the length of DT[form=defined] the runway VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | location | Iraq</striple>
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Al_Asad_Airbase | runwayLength | 3992.88</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al_Asad_Airbase" number="1" tag="AGENT-1" type="name">Al Asad Airbase</reference>
+					<reference entity="Iraq" number="2" tag="PATIENT-2" type="name">Iraq</reference>
+					<reference entity="United_States_Air_Force" number="3" tag="PATIENT-1" type="description">the United States Air Force</reference>
+					<reference entity="3992.88" number="4" tag="PATIENT-3" type="name">3992.88 feet long</reference>
+				</references>
+				<text>Al Asad Airbase, found in Iraq, is operated by the United States Air Force. The runway is 3992.88 feet long.</text>
+				<template>AGENT-1 , found in PATIENT-2 , is operated by PATIENT-1 . The runway is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] find in PATIENT-2 , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-1 . DT[form=defined] the runway VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>PATIENT-1 | United_States_Air_Force</entity>
+				<entity>PATIENT-2 | Iraq</entity>
+				<entity>PATIENT-3 | 3992.88</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id517" size="3">
+			<originaltripleset>
+				<otriple>Al_Asad_Airbase | operator | United_States_Air_Force</otriple>
+				<otriple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</otriple>
+				<otriple>United_States_Air_Force | battle | 1986_United_States_bombing_of_Libya</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</mtriple>
+				<mtriple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</mtriple>
+				<mtriple>United_States_Air_Force | battles | 1986_United_States_bombing_of_Libya</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+						<striple>United_States_Air_Force | battles | 1986_United_States_bombing_of_Libya</striple>
+						<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al_Asad_Airbase" number="1" tag="AGENT-1" type="name">Al Asad Airbase</reference>
+					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">the United States Air Force</reference>
+					<reference entity="1986_United_States_bombing_of_Libya" number="3" tag="PATIENT-2" type="description">the 1986 United States bombing of Libya</reference>
+					<reference entity="McDonnell_Douglas_F-15_Eagle" number="4" tag="PATIENT-1" type="description">the McDonnell Douglas F-15 Eagle</reference>
+				</references>
+				<text>Al Asad Airbase is operated by the United States Air Force which carried out the 1986 United States bombing of Libya and which uses an aircraft fighter called the McDonnell Douglas F-15 Eagle.</text>
+				<template>AGENT-1 is operated by BRIDGE-1 which carried out PATIENT-2 and which uses an aircraft fighter called PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by BRIDGE-1 which VP[aspect=simple,tense=past,voice=active,person=null,number=null] carry out PATIENT-2 and which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use DT[form=undefined] a aircraft fighter VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | battles | 1986_United_States_bombing_of_Libya</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+						<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1986_United_States_bombing_of_Libya" number="1" tag="PATIENT-2" type="name">In 1986</reference>
+					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">the USAF</reference>
+					<reference entity="McDonnell_Douglas_F-15_Eagle" number="5" tag="PATIENT-1" type="description">the McDonnell Douglas F-15 Eagle fighter jet</reference>
+				</references>
+				<text>In 1986 @ the USAF @ bombed Libya. It operates the Al Asad airbase and uses the McDonnell Douglas F-15 Eagle fighter jet.</text>
+				<template>PATIENT-2 @ BRIDGE-1 @ PATIENT-2 . BRIDGE-1 operates AGENT-1 and uses PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 BRIDGE-1 PATIENT-2 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] operate AGENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>BRIDGE-1 | United_States_Air_Force</entity>
+				<entity>PATIENT-1 | McDonnell_Douglas_F-15_Eagle</entity>
+				<entity>PATIENT-2 | 1986_United_States_bombing_of_Libya</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id518" size="3">
+			<originaltripleset>
+				<otriple>Al_Asad_Airbase | operator | United_States_Air_Force</otriple>
+				<otriple>United_States_Air_Force | battle | Invasion_of_Grenada</otriple>
+				<otriple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</mtriple>
+				<mtriple>United_States_Air_Force | battles | Invasion_of_Grenada</mtriple>
+				<mtriple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+						<striple>United_States_Air_Force | battles | Invasion_of_Grenada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="McDonnell_Douglas_F-15_Eagle" number="1" tag="PATIENT-2" type="description">The McDonnell Douglas F-15 Eagle</reference>
+					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">the United States Air Force</reference>
+					<reference entity="Al_Asad_Airbase" number="3" tag="AGENT-1" type="name">Al Asad Airbase</reference>
+					<reference entity="Invasion_of_Grenada" number="4" tag="PATIENT-1" type="description">the Invasion of Grenada</reference>
+				</references>
+				<text>The McDonnell Douglas F-15 Eagle is an aircraft fighter in the United States Air Force operated Al Asad Airbase and was used during the Invasion of Grenada.</text>
+				<template>PATIENT-2 is an aircraft fighter in BRIDGE-1 operated AGENT-1 and was used during PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a aircraft fighter in BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] operate AGENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] use during PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States_Air_Force | battles | Invasion_of_Grenada</striple>
+						<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al_Asad_Airbase" number="1" tag="AGENT-1" type="name">Al Asad airbase</reference>
+					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">the United States Air Force</reference>
+					<reference entity="United_States_Air_Force" number="3" tag="BRIDGE-1" type="pronoun">They</reference>
+					<reference entity="Invasion_of_Grenada" number="4" tag="PATIENT-1" type="description">the invasion of Grenada</reference>
+					<reference entity="McDonnell_Douglas_F-15_Eagle" number="5" tag="PATIENT-2" type="description">the McDonnell Douglas F15 Eagle</reference>
+				</references>
+				<text>The operating organisation for Al Asad airbase is the United States Air Force. They were involved in battles at the invasion of Grenada and deploy the aircraft fighter plane known as the McDonnell Douglas F15 Eagle.</text>
+				<template>The operating organisation for AGENT-1 is BRIDGE-1 . BRIDGE-1 were involved in battles at PATIENT-1 and deploy the aircraft fighter plane known as PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the operating organisation for AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 . BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=plural] involve in battles at PATIENT-1 and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] deploy DT[form=defined] the aircraft fighter plane VP[aspect=simple,tense=past,voice=active,person=null,number=null] know as PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>BRIDGE-1 | United_States_Air_Force</entity>
+				<entity>PATIENT-1 | Invasion_of_Grenada</entity>
+				<entity>PATIENT-2 | McDonnell_Douglas_F-15_Eagle</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id519" size="3">
+			<originaltripleset>
+				<otriple>Alderney_Airport | r1Surface | Poaceae</otriple>
+				<otriple>Alderney_Airport | runwayLength | &quot;877.0&quot;^^xsd:double</otriple>
+				<otriple>Alderney_Airport | city | Alderney</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alderney_Airport | 1st_runway_SurfaceType | Poaceae</mtriple>
+				<mtriple>Alderney_Airport | runwayLength | 877.0</mtriple>
+				<mtriple>Alderney_Airport | cityServed | Alderney</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alderney_Airport | runwayLength | 877.0</striple>
+						<striple>Alderney_Airport | cityServed | Alderney</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alderney_Airport | 1st_runway_SurfaceType | Poaceae</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alderney_Airport" number="1" tag="AGENT-1" type="name">Alderney Airport</reference>
+					<reference entity="877.0" number="2" tag="PATIENT-2" type="name">877 m</reference>
+					<reference entity="Alderney" number="3" tag="PATIENT-3" type="name">Alderney</reference>
+					<reference entity="Alderney_Airport" number="4" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="Poaceae" number="5" tag="PATIENT-1" type="name">poaceae</reference>
+				</references>
+				<text>Alderney Airport, whose runway is 877 m, serves the city of Alderney. Its surface is poaceae.</text>
+				<template>AGENT-1 , whose runway is PATIENT-2 , serves the city of PATIENT-3 . AGENT-1 surface is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , whose runway VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] serve DT[form=defined] the city of PATIENT-3 . AGENT-1 surface VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alderney_Airport</entity>
+				<entity>PATIENT-1 | Poaceae</entity>
+				<entity>PATIENT-2 | 877.0</entity>
+				<entity>PATIENT-3 | Alderney</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id520" size="3">
+			<originaltripleset>
+				<otriple>Allama_Iqbal_International_Airport | location | Pakistan</otriple>
+				<otriple>Allama_Iqbal_International_Airport | operator | Pakistan_Civil_Aviation_Authority</otriple>
+				<otriple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Allama_Iqbal_International_Airport | location | Pakistan</mtriple>
+				<mtriple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</mtriple>
+				<mtriple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | location | Pakistan</striple>
+						<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
+						<striple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International airport</reference>
+					<reference entity="Pakistan" number="2" tag="PATIENT-1" type="name">Pakistan</reference>
+					<reference entity="Pakistan_Civil_Aviation_Authority" number="3" tag="BRIDGE-1" type="description">the Pakistan Civil Aviation Authority</reference>
+					<reference entity="Jinnah_International_Airport" number="4" tag="PATIENT-2" type="name">Jinnah International Airport</reference>
+				</references>
+				<text>Allama Iqbal International airport located in Pakistan is operated by the Pakistan Civil Aviation Authority headquartered at Jinnah International Airport.</text>
+				<template>AGENT-1 located in PATIENT-1 is operated by BRIDGE-1 headquartered at PATIENT-2 .</template>
+				<lexicalization>AGENT-1 located in PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] headquarter at PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | location | Pakistan</striple>
+						<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
+						<striple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Pakistan" number="1" tag="PATIENT-1" type="name">Pakistan</reference>
+					<reference entity="Allama_Iqbal_International_Airport" number="2" tag="AGENT-1" type="name">Allama Iqbal International airport</reference>
+					<reference entity="Pakistan_Civil_Aviation_Authority" number="3" tag="BRIDGE-1" type="description">the Pakistan Civil Aviation Authority</reference>
+					<reference entity="Jinnah_International_Airport" number="4" tag="PATIENT-2" type="description">the Jinnah International Airport</reference>
+				</references>
+				<text>Located in Pakistan, Allama Iqbal International airport is operated by the Pakistan Civil Aviation Authority, the headquarters of which is the Jinnah International Airport.</text>
+				<template>Located in PATIENT-1 , AGENT-1 is operated by BRIDGE-1 , the headquarters of which is PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] locate in PATIENT-1 , AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by BRIDGE-1 , DT[form=defined] the headquarters of which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | location | Pakistan</striple>
+						<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
+						<striple>Pakistan_Civil_Aviation_Authority | headquarter | Jinnah_International_Airport</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Pakistan" number="1" tag="PATIENT-1" type="name">Pakistan</reference>
+					<reference entity="Allama_Iqbal_International_Airport" number="2" tag="AGENT-1" type="name">Allama Iqbal International airport</reference>
+					<reference entity="Pakistan_Civil_Aviation_Authority" number="3" tag="BRIDGE-1" type="description">the Pakistan Civil Aviation Authority</reference>
+					<reference entity="Allama_Iqbal_International_Airport" number="4" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Jinnah_International_Airport" number="5" tag="PATIENT-2" type="name">Jinnah International Airport</reference>
+				</references>
+				<text>Located in Pakistan, Allama Iqbal International airport is governed by the Pakistan Civil Aviation Authority which has its headquarters at Jinnah International Airport.</text>
+				<template>Located in PATIENT-1 , AGENT-1 is governed by BRIDGE-1 which has AGENT-1 headquarters at PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] locate in PATIENT-1 , AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] govern by BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have AGENT-1 headquarters at PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allama_Iqbal_International_Airport</entity>
+				<entity>BRIDGE-1 | Pakistan_Civil_Aviation_Authority</entity>
+				<entity>PATIENT-1 | Pakistan</entity>
+				<entity>PATIENT-2 | Jinnah_International_Airport</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id521" size="3">
+			<originaltripleset>
+				<otriple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</otriple>
+				<otriple>Allama_Iqbal_International_Airport | runwayLength | &quot;2900.0&quot;^^xsd:double</otriple>
+				<otriple>Allama_Iqbal_International_Airport | runwayDesignation | &quot;18L/36R&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</mtriple>
+				<mtriple>Allama_Iqbal_International_Airport | runwayName | &quot;18L/36R&quot;</mtriple>
+				<mtriple>Allama_Iqbal_International_Airport | runwayLength | 2900.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</striple>
+						<striple>Allama_Iqbal_International_Airport | runwayName | &quot;18L/36R&quot;</striple>
+						<striple>Allama_Iqbal_International_Airport | runwayLength | 2900.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
+					<reference entity="Punjab,_Pakistan" number="2" tag="PATIENT-1" type="name">Punjab , Pakistan</reference>
+					<reference entity="&quot;18L/36R&quot;" number="3" tag="PATIENT-2" type="name">18L/36R</reference>
+					<reference entity="2900.0" number="4" tag="PATIENT-3" type="name">2900.0</reference>
+				</references>
+				<text>Allama Iqbal International Airport in Punjab, Pakistan has a runway known as 18L/36R with a length of 2900.0.</text>
+				<template>AGENT-1 in PATIENT-1 has a runway known as PATIENT-2 with a length of PATIENT-3 .</template>
+				<lexicalization>AGENT-1 in PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a runway VP[aspect=simple,tense=past,voice=active,person=null,number=null] know as PATIENT-2 with DT[form=undefined] a length of PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | runwayName | &quot;18L/36R&quot;</striple>
+						<striple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Allama_Iqbal_International_Airport | runwayLength | 2900.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
+					<reference entity="&quot;18L/36R&quot;" number="2" tag="PATIENT-2" type="name">18L/36</reference>
+					<reference entity="Punjab,_Pakistan" number="3" tag="PATIENT-1" type="name">Punjab , Pakistan</reference>
+					<reference entity="Allama_Iqbal_International_Airport" number="4" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="2900.0" number="5" tag="PATIENT-3" type="name">2900</reference>
+				</references>
+				<text>Allama Iqbal International Airport, whose runway name is 18L/36 is located in Punjab, Pakistan. Its length is 2900.</text>
+				<template>AGENT-1 , whose runway name is PATIENT-2 is located in PATIENT-1 . AGENT-1 length is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , whose runway name VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 . AGENT-1 length VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</striple>
+						<striple>Allama_Iqbal_International_Airport | runwayName | &quot;18L/36R&quot;</striple>
+						<striple>Allama_Iqbal_International_Airport | runwayLength | 2900.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
+					<reference entity="Punjab,_Pakistan" number="2" tag="PATIENT-1" type="name">Punjab , Pakistan</reference>
+					<reference entity="&quot;18L/36R&quot;" number="3" tag="PATIENT-2" type="name">18L/36R</reference>
+					<reference entity="2900.0" number="4" tag="PATIENT-3" type="name">29000.0</reference>
+				</references>
+				<text>Allama Iqbal International Airport is located in Punjab, Pakistan, with the runway's name is 18L/36R, and the length is 29000.0.</text>
+				<template>AGENT-1 is located in PATIENT-1 , with the runway's name is PATIENT-2 , and the length is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 , with DT[form=defined] the runway 's name VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , and DT[form=defined] the length VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allama_Iqbal_International_Airport</entity>
+				<entity>PATIENT-1 | Punjab,_Pakistan</entity>
+				<entity>PATIENT-2 | &quot;18L/36R&quot;</entity>
+				<entity>PATIENT-3 | 2900.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id522" size="3">
+			<originaltripleset>
+				<otriple>Alpena_County_Regional_Airport | elevation | &quot;210.0&quot;^^xsd:double</otriple>
+				<otriple>Alpena_County_Regional_Airport | location | Maple_Ridge_Township,_Alpena_County,_Michigan</otriple>
+				<otriple>Maple_Ridge_Township,_Alpena_County,_Michigan | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alpena_County_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 210</mtriple>
+				<mtriple>Alpena_County_Regional_Airport | location | Maple_Ridge_Township,_Alpena_County,_Michigan</mtriple>
+				<mtriple>Maple_Ridge_Township,_Alpena_County,_Michigan | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpena_County_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 210</striple>
+						<striple>Alpena_County_Regional_Airport | location | Maple_Ridge_Township,_Alpena_County,_Michigan</striple>
+						<striple>Maple_Ridge_Township,_Alpena_County,_Michigan | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="210" number="1" tag="PATIENT-1" type="name">210</reference>
+					<reference entity="Alpena_County_Regional_Airport" number="2" tag="AGENT-1" type="name">Alpena County Regional Airport</reference>
+					<reference entity="Maple_Ridge_Township,_Alpena_County,_Michigan" number="3" tag="BRIDGE-1" type="name">Maple Ridge Township , Alpena County , Michigan ,</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-2" type="description">the United States</reference>
+				</references>
+				<text>With an elevation of 210 metres above sea level, Alpena County Regional Airport is located in Maple Ridge Township, Alpena County, Michigan, in the United States.</text>
+				<template>With an elevation of PATIENT-1 metres above sea level , AGENT-1 is located in BRIDGE-1 in PATIENT-2 .</template>
+				<lexicalization>With DT[form=undefined] a elevation of PATIENT-1 metres above sea level , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpena_County_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 210</striple>
+						<striple>Alpena_County_Regional_Airport | location | Maple_Ridge_Township,_Alpena_County,_Michigan</striple>
+						<striple>Maple_Ridge_Township,_Alpena_County,_Michigan | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="210" number="1" tag="PATIENT-1" type="name">210</reference>
+					<reference entity="Alpena_County_Regional_Airport" number="2" tag="AGENT-1" type="name">Alpena County Regional Airport</reference>
+					<reference entity="Maple_Ridge_Township,_Alpena_County,_Michigan" number="3" tag="BRIDGE-1" type="name">Maple Ridge Township , Alpena County , Michigan ,</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-2" type="description">the United States</reference>
+				</references>
+				<text>At 210 metres above sea level, Alpena County Regional Airport is located in Maple Ridge Township, Alpena County, Michigan, in the United States.</text>
+				<template>At PATIENT-1 metres above sea level , AGENT-1 is located in BRIDGE-1 in PATIENT-2 .</template>
+				<lexicalization>At PATIENT-1 metres above sea level , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpena_County_Regional_Airport | location | Maple_Ridge_Township,_Alpena_County,_Michigan</striple>
+						<striple>Maple_Ridge_Township,_Alpena_County,_Michigan | country | United_States</striple>
+						<striple>Alpena_County_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 210</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alpena_County_Regional_Airport" number="1" tag="AGENT-1" type="name">Alpena County Regional Airport</reference>
+					<reference entity="Maple_Ridge_Township,_Alpena_County,_Michigan" number="2" tag="BRIDGE-1" type="name">Maple Ridge Township</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">Alpena County , Michigan , US</reference>
+					<reference entity="210" number="4" tag="PATIENT-1" type="name">210m</reference>
+				</references>
+				<text>Alpena County Regional Airport is in Maple Ridge Township, Alpena County, Michigan, US and is 210m above sea level.</text>
+				<template>AGENT-1 is in BRIDGE-1 , PATIENT-2 and is PATIENT-1 above sea level .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 above sea level .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alpena_County_Regional_Airport</entity>
+				<entity>BRIDGE-1 | Maple_Ridge_Township,_Alpena_County,_Michigan</entity>
+				<entity>PATIENT-1 | 210</entity>
+				<entity>PATIENT-2 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id523" size="3">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | location | Texas</otriple>
+				<otriple>Andrews_County_Airport | runwayLength | &quot;1773.0&quot;^^xsd:double</otriple>
+				<otriple>Andrews_County_Airport | elevation | &quot;967.435&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | location | Texas</mtriple>
+				<mtriple>Andrews_County_Airport | runwayLength | 1773.0</mtriple>
+				<mtriple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+						<striple>Andrews_County_Airport | runwayLength | 1773.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County airport</reference>
+					<reference entity="Texas" number="2" tag="PATIENT-1" type="name">Texas</reference>
+					<reference entity="973.0" number="3" tag="PATIENT-3" type="name">973.0</reference>
+					<reference entity="1773.0" number="4" tag="PATIENT-2" type="name">1773.0</reference>
+				</references>
+				<text>The runway length at Andrews County airport ( located in Texas and 973.0 above sea level), is 1773.0.</text>
+				<template>The runway length at AGENT-1 ( located in PATIENT-1 and PATIENT-3 above sea level) , is PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the runway length at AGENT-1 ( located in PATIENT-1 and PATIENT-3 above sea level ) , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+						<striple>Andrews_County_Airport | runwayLength | 1773.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Texas" number="1" tag="PATIENT-1" type="name">Texas</reference>
+					<reference entity="Andrews_County_Airport" number="2" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="973.0" number="3" tag="PATIENT-3" type="name">973.0</reference>
+					<reference entity="1773.0" number="4" tag="PATIENT-2" type="name">1773 metres</reference>
+				</references>
+				<text>Located in Texas, Andrews County Airport, is 973.0 above sea level and has a runway length of 1773 metres.</text>
+				<template>Located in PATIENT-1 , AGENT-1 , is PATIENT-3 above sea level and has a runway length of PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] locate in PATIENT-1 , AGENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 above sea level and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a runway length of PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Andrews_County_Airport | runwayLength | 1773.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="Texas" number="2" tag="PATIENT-1" type="name">Texas</reference>
+					<reference entity="973.0" number="3" tag="PATIENT-3" type="name">973</reference>
+					<reference entity="Andrews_County_Airport" number="4" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="1773.0" number="5" tag="PATIENT-2" type="name">1773.0</reference>
+				</references>
+				<text>Andrews County Airport is located in Texas and is 973 metres above sea level. Its runway length is 1773.0.</text>
+				<template>AGENT-1 is located in PATIENT-1 and is PATIENT-3 metres above sea level . AGENT-1 runway length is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 metres above sea level . AGENT-1 runway length VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>PATIENT-1 | Texas</entity>
+				<entity>PATIENT-2 | 1773.0</entity>
+				<entity>PATIENT-3 | 973.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id524" size="3">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | location | Texas</otriple>
+				<otriple>Andrews_County_Airport | runwayLength | &quot;895.807&quot;^^xsd:double</otriple>
+				<otriple>Andrews_County_Airport | elevation | &quot;967.435&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | location | Texas</mtriple>
+				<mtriple>Andrews_County_Airport | runwayLength | 896.0</mtriple>
+				<mtriple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+						<striple>Andrews_County_Airport | runwayLength | 896.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="Texas" number="2" tag="PATIENT-1" type="name">Texas</reference>
+					<reference entity="973.0" number="3" tag="PATIENT-3" type="name">973.0</reference>
+					<reference entity="896.0" number="4" tag="PATIENT-2" type="name">896</reference>
+				</references>
+				<text>The runway length of Andrews County Airport (located in Texas and 973.0 above sea level) is 896.</text>
+				<template>The runway length of AGENT-1 (located in PATIENT-1 and PATIENT-3 above sea level) is PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the runway length of AGENT-1 ( located in PATIENT-1 and PATIENT-3 above sea level ) VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+						<striple>Andrews_County_Airport | runwayLength | 896.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Texas" number="1" tag="PATIENT-1" type="name">Texas</reference>
+					<reference entity="Andrews_County_Airport" number="2" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="973.0" number="3" tag="PATIENT-3" type="name">973.0</reference>
+					<reference entity="896.0" number="4" tag="PATIENT-2" type="name">896</reference>
+				</references>
+				<text>Located in Texas, Andrews County Airport is 973.0 above sea level and has a runway length of 896.</text>
+				<template>Located in PATIENT-1 , AGENT-1 is PATIENT-3 above sea level and has a runway length of PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] locate in PATIENT-1 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 above sea level and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a runway length of PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
+						<striple>Andrews_County_Airport | runwayLength | 896.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="Texas" number="2" tag="PATIENT-1" type="name">Texas</reference>
+					<reference entity="973.0" number="3" tag="PATIENT-3" type="name">973</reference>
+					<reference entity="896.0" number="4" tag="PATIENT-2" type="name">896</reference>
+				</references>
+				<text>Andrews County Airport which is located in Texas is 973 metres above sea level and has a runway length of 896.</text>
+				<template>AGENT-1 which is located in PATIENT-1 is PATIENT-3 metres above sea level and has a runway length of PATIENT-2 .</template>
+				<lexicalization>AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 metres above sea level and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a runway length of PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>PATIENT-1 | Texas</entity>
+				<entity>PATIENT-2 | 896.0</entity>
+				<entity>PATIENT-3 | 973.0</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id525" size="3">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | location | Texas</otriple>
+				<otriple>Texas | capital | Austin,_Texas</otriple>
+				<otriple>Texas | language | English_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | location | Texas</mtriple>
+				<mtriple>Texas | capital | Austin,_Texas</mtriple>
+				<mtriple>Texas | language | English_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Texas | capital | Austin,_Texas</striple>
+						<striple>Texas | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="Austin,_Texas" number="3" tag="PATIENT-1" type="name">Austin</reference>
+					<reference entity="Texas" number="4" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="English_language" number="5" tag="PATIENT-2" type="name">English</reference>
+				</references>
+				<text>Andrews County Airport is located in Texas , Austin and the language spoken in Texas is English.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , PATIENT-1 and the language spoken in BRIDGE-1 is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , PATIENT-1 and DT[form=defined] the language VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak in BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Texas | capital | Austin,_Texas</striple>
+						<striple>Texas | language | English_language</striple>
+						<striple>Andrews_County_Airport | location | Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Austin,_Texas" number="1" tag="PATIENT-1" type="name">Austin</reference>
+					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="English_language" number="3" tag="PATIENT-2" type="name">English</reference>
+					<reference entity="Andrews_County_Airport" number="4" tag="AGENT-1" type="name">Andrews County Airport</reference>
+				</references>
+				<text>Austin is the capital of Texas, where they speak English, and Andrews County Airport is located.</text>
+				<template>PATIENT-1 is the capital of BRIDGE-1 , where they speak PATIENT-2 , and AGENT-1 is located .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital of BRIDGE-1 , where they VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] speak PATIENT-2 , and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>BRIDGE-1 | Texas</entity>
+				<entity>PATIENT-1 | Austin,_Texas</entity>
+				<entity>PATIENT-2 | English_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id526" size="3">
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | location | Texas</otriple>
+				<otriple>Texas | demonym | Tejano</otriple>
+				<otriple>Texas | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Andrews_County_Airport | location | Texas</mtriple>
+				<mtriple>Texas | demonym | Tejano</mtriple>
+				<mtriple>Texas | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Texas | country | United_States</striple>
+						<striple>Texas | demonym | Tejano</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Texas" number="1" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="Texas" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Tejano" number="4" tag="PATIENT-1" type="name">Tejano</reference>
+					<reference entity="Andrews_County_Airport" number="5" tag="AGENT-1" type="description">The Andrews County airport</reference>
+					<reference entity="Texas" number="6" tag="BRIDGE-1" type="name">Texas</reference>
+				</references>
+				<text>Texas is located in the United States, and its demonym is Tejano. The Andrews County airport is located in Texas.</text>
+				<template>BRIDGE-1 is located in PATIENT-2 , and BRIDGE-1 demonym is PATIENT-1 . AGENT-1 is located in BRIDGE-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 , and BRIDGE-1 demonym VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Texas | country | United_States</striple>
+						<striple>Texas | demonym | Tejano</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="Tejano" number="4" tag="PATIENT-1" type="name">tejano</reference>
+				</references>
+				<text>Andrews County Airport is located in Texas in the United States where the inhabitants have the demonym tejano,.</text>
+				<template>AGENT-1 is located in BRIDGE-1 in PATIENT-2 where the inhabitants have the demonym PATIENT-1 , .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 in PATIENT-2 where DT[form=defined] the inhabitants VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have DT[form=defined] the demonym PATIENT-1 , .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Andrews_County_Airport | location | Texas</striple>
+						<striple>Texas | country | United_States</striple>
+						<striple>Texas | demonym | Tejano</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
+					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">United States</reference>
+					<reference entity="Tejano" number="4" tag="PATIENT-1" type="name">Tejano</reference>
+				</references>
+				<text>Andrews County Airport is located in Texas, United States where the inhabitants have the demonym of Tejano.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , PATIENT-2 where the inhabitants have the demonym of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , PATIENT-2 where DT[form=defined] the inhabitants VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have DT[form=defined] the demonym of PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>BRIDGE-1 | Texas</entity>
+				<entity>PATIENT-1 | Tejano</entity>
+				<entity>PATIENT-2 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id527" size="3">
+			<originaltripleset>
+				<otriple>Antwerp_International_Airport | city | Antwerp</otriple>
+				<otriple>Belgium | language | German_language</otriple>
+				<otriple>Antwerp | country | Belgium</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Antwerp_International_Airport | cityServed | Antwerp</mtriple>
+				<mtriple>Belgium | language | German_language</mtriple>
+				<mtriple>Antwerp | country | Belgium</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
+						<striple>Antwerp | country | Belgium</striple>
+						<striple>Belgium | language | German_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International Airport</reference>
+					<reference entity="Antwerp" number="2" tag="BRIDGE-1" type="name">Antwerp</reference>
+					<reference entity="Belgium" number="3" tag="BRIDGE-2" type="name">Belgium</reference>
+					<reference entity="German_language" number="4" tag="PATIENT-1" type="name">German</reference>
+				</references>
+				<text>Antwerp International Airport serves the city of Antwerp which is in Belgium and one of the spoken languages is German.</text>
+				<template>AGENT-1 serves the city of BRIDGE-1 which is in BRIDGE-2 and one of the spoken languages is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] serve DT[form=defined] the city of BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 and one of DT[form=defined] the VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak languages VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
+						<striple>Antwerp | country | Belgium</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Belgium | language | German_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antwerp" number="1" tag="BRIDGE-1" type="name">Antwerp</reference>
+					<reference entity="Antwerp_International_Airport" number="2" tag="AGENT-1" type="name">Antwerp International airport</reference>
+					<reference entity="Belgium" number="3" tag="BRIDGE-2" type="name">Belgium</reference>
+					<reference entity="German_language" number="4" tag="PATIENT-1" type="name">German</reference>
+					<reference entity="Belgium" number="5" tag="BRIDGE-2" type="name">Belgium</reference>
+				</references>
+				<text>Antwerp, served by Antwerp International airport, is a popular tourist destination in Belgium. German is spoken in Belgium.</text>
+				<template>BRIDGE-1 , served by AGENT-1 , is a popular tourist destination in BRIDGE-2 . PATIENT-1 is spoken in BRIDGE-2 .</template>
+				<lexicalization>BRIDGE-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] serve by AGENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a popular tourist destination in BRIDGE-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak in BRIDGE-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antwerp | country | Belgium</striple>
+						<striple>Belgium | language | German_language</striple>
+						<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antwerp" number="1" tag="BRIDGE-1" type="name">Antwerp</reference>
+					<reference entity="German_language" number="2" tag="PATIENT-1" type="name">German</reference>
+					<reference entity="Belgium" number="3" tag="BRIDGE-2" type="name">Belgium</reference>
+					<reference entity="Antwerp_International_Airport" number="4" tag="AGENT-1" type="description">the International airport</reference>
+				</references>
+				<text>Antwerp is located in German speaking part of Belgium and served by the International airport.</text>
+				<template>BRIDGE-1 is located in PATIENT-1 speaking part of BRIDGE-2 and served by AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 speaking part of BRIDGE-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] serve by AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Antwerp_International_Airport</entity>
+				<entity>BRIDGE-1 | Antwerp</entity>
+				<entity>BRIDGE-2 | Belgium</entity>
+				<entity>PATIENT-1 | German_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id528" size="3">
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</otriple>
+				<otriple>Egg_Harbor_Township,_New_Jersey | country | United_States</otriple>
+				<otriple>Egg_Harbor_Township,_New_Jersey | isPartOf | Atlantic_County,_New_Jersey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</mtriple>
+				<mtriple>Egg_Harbor_Township,_New_Jersey | country | United_States</mtriple>
+				<mtriple>Egg_Harbor_Township,_New_Jersey | isPartOf | Atlantic_County,_New_Jersey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</striple>
+						<striple>Egg_Harbor_Township,_New_Jersey | isPartOf | Atlantic_County,_New_Jersey</striple>
+						<striple>Egg_Harbor_Township,_New_Jersey | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="Egg_Harbor_Township,_New_Jersey" number="2" tag="BRIDGE-1" type="name">Egg Harbor Township , New Jersey</reference>
+					<reference entity="Atlantic_County,_New_Jersey" number="3" tag="PATIENT-2" type="name">Atlantic County , New Jersey ,</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Atlantic City International Airport is located at Egg Harbor Township, New Jersey, part of Atlantic County, New Jersey, in the United States.</text>
+				<template>AGENT-1 is located at BRIDGE-1 , part of PATIENT-2 in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located at BRIDGE-1 , part of PATIENT-2 in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</striple>
+						<striple>Egg_Harbor_Township,_New_Jersey | isPartOf | Atlantic_County,_New_Jersey</striple>
+						<striple>Egg_Harbor_Township,_New_Jersey | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="Egg_Harbor_Township,_New_Jersey" number="2" tag="BRIDGE-1" type="name">Egg Harbor Township</reference>
+					<reference entity="Atlantic_County,_New_Jersey" number="3" tag="PATIENT-2" type="name">Atlantic County</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">New Jersey , United States</reference>
+				</references>
+				<text>Atlantic City International Airport is in Egg Harbor Township, Atlantic County, New Jersey, United States.</text>
+				<template>AGENT-1 is in BRIDGE-1 , PATIENT-2 , PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , PATIENT-2 , PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlantic_City_International_Airport</entity>
+				<entity>BRIDGE-1 | Egg_Harbor_Township,_New_Jersey</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Atlantic_County,_New_Jersey</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id529" size="3">
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | operator | Port_Authority_of_New_York_and_New_Jersey</otriple>
+				<otriple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</otriple>
+				<otriple>Port_Authority_of_New_York_and_New_Jersey | headquarter | Four_World_Trade_Center</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey</mtriple>
+				<mtriple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</mtriple>
+				<mtriple>Port_Authority_of_New_York_and_New_Jersey | headquarter | Four_World_Trade_Center</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Port_Authority_of_New_York_and_New_Jersey | headquarter | Four_World_Trade_Center</striple>
+						<striple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="1" tag="BRIDGE-1" type="description">The Port Authority of New York and New Jersey</reference>
+					<reference entity="Four_World_Trade_Center" number="2" tag="PATIENT-2" type="description">the Four World Trade Center</reference>
+					<reference entity="New_Jersey" number="3" tag="PATIENT-1" type="name">New Jersey</reference>
+					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="4" tag="BRIDGE-1" type="pronoun">It</reference>
+					<reference entity="Atlantic_City_International_Airport" number="5" tag="AGENT-1" type="description">the Atlantic City International Airport</reference>
+				</references>
+				<text>The Port Authority of New York and New Jersey is headquartered in the Four World Trade Center and serves New Jersey. It operates the Atlantic City International Airport.</text>
+				<template>BRIDGE-1 is headquartered in PATIENT-2 and serves PATIENT-1 . BRIDGE-1 operates AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] headquarter in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] serve PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] operate AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey</striple>
+						<striple>Port_Authority_of_New_York_and_New_Jersey | headquarter | Four_World_Trade_Center</striple>
+						<striple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="2" tag="BRIDGE-1" type="description">the Port Authority of New York and New Jersey</reference>
+					<reference entity="Four_World_Trade_Center" number="3" tag="PATIENT-2" type="name">Four World Trade Centre</reference>
+					<reference entity="New_Jersey" number="4" tag="PATIENT-1" type="name">New Jersey</reference>
+				</references>
+				<text>Atlantic City International Airport is operated by the Port Authority of New York and New Jersey located at Four World Trade Centre and serves the New Jersey region.</text>
+				<template>AGENT-1 is operated by BRIDGE-1 located at PATIENT-2 and serves the PATIENT-1 region .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by BRIDGE-1 located at PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] serve DT[form=defined] the PATIENT-1 region .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Port_Authority_of_New_York_and_New_Jersey | headquarter | Four_World_Trade_Center</striple>
+						<striple>Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey</striple>
+						<striple>Port_Authority_of_New_York_and_New_Jersey | regionServed | New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Four_World_Trade_Center" number="1" tag="PATIENT-2" type="description">The Four World Trade Center</reference>
+					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="2" tag="BRIDGE-1" type="description">the Port Authority of New York and New Jersey</reference>
+					<reference entity="Atlantic_City_International_Airport" number="3" tag="AGENT-1" type="description">the Atlantic City International Airport</reference>
+					<reference entity="New_Jersey" number="4" tag="PATIENT-1" type="name">New Jersey</reference>
+				</references>
+				<text>The Four World Trade Center is the headquarters of the Port Authority of New York and New Jersey, which operates the Atlantic City International Airport and serves New Jersey.</text>
+				<template>PATIENT-2 is the headquarters of BRIDGE-1 , which operates AGENT-1 and serves PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the headquarters of BRIDGE-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] operate AGENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] serve PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlantic_City_International_Airport</entity>
+				<entity>BRIDGE-1 | Port_Authority_of_New_York_and_New_Jersey</entity>
+				<entity>PATIENT-1 | New_Jersey</entity>
+				<entity>PATIENT-2 | Four_World_Trade_Center</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id530" size="3">
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | runwayLength | &quot;3048.0&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</otriple>
+				<otriple>Egg_Harbor_Township,_New_Jersey | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlantic_City_International_Airport | runwayLength | 3048.0</mtriple>
+				<mtriple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</mtriple>
+				<mtriple>Egg_Harbor_Township,_New_Jersey | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</striple>
+						<striple>Egg_Harbor_Township,_New_Jersey | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atlantic_City_International_Airport | runwayLength | 3048.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="Egg_Harbor_Township,_New_Jersey" number="2" tag="BRIDGE-1" type="name">Egg Harbor Township</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">New Jersey , United States</reference>
+					<reference entity="Atlantic_City_International_Airport" number="4" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="3048.0" number="5" tag="PATIENT-1" type="name">3048.0</reference>
+				</references>
+				<text>Atlantic City International Airport is in Egg Harbor Township, New Jersey, United States. Its runway length is 3048.0.</text>
+				<template>AGENT-1 is in BRIDGE-1 , PATIENT-2 . AGENT-1 runway length is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , PATIENT-2 . AGENT-1 runway length VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</striple>
+						<striple>Egg_Harbor_Township,_New_Jersey | country | United_States</striple>
+						<striple>Atlantic_City_International_Airport | runwayLength | 3048.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="Egg_Harbor_Township,_New_Jersey" number="2" tag="BRIDGE-1" type="name">Egg Harbor Township</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="name">New Jersey , United States</reference>
+					<reference entity="3048.0" number="4" tag="PATIENT-1" type="name">3048.0</reference>
+				</references>
+				<text>Atlantic City International Airport is in Egg Harbor Township, New Jersey, United States and has a runway length of 3048.0.</text>
+				<template>AGENT-1 is in BRIDGE-1 , PATIENT-2 and has a runway length of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a runway length of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City_International_Airport | location | Egg_Harbor_Township,_New_Jersey</striple>
+						<striple>Egg_Harbor_Township,_New_Jersey | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atlantic_City_International_Airport | runwayLength | 3048.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
+					<reference entity="Egg_Harbor_Township,_New_Jersey" number="2" tag="BRIDGE-1" type="name">Egg Harbor Township , New Jersey</reference>
+					<reference entity="Atlantic_City_International_Airport" number="4" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="3048.0" number="5" tag="PATIENT-1" type="name">3.048</reference>
+				</references>
+				<text>Atlantic City International Airport can be found in Egg Harbor Township, New Jersey of the U.S.A. and it has a runway that's 3.048 long.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 of the PATIENT-2 . and AGENT-1 has a runway that's PATIENT-1 long .</template>
+				<lexicalization>AGENT-1 can VP[aspect=simple,tense=present,voice=passive,person=null,number=null] find in BRIDGE-1 of DT[form=defined] the PATIENT-2 . and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a runway that VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] be PATIENT-1 long .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlantic_City_International_Airport</entity>
+				<entity>BRIDGE-1 | Egg_Harbor_Township,_New_Jersey</entity>
+				<entity>PATIENT-1 | 3048.0</entity>
+				<entity>PATIENT-2 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id531" size="3">
+			<originaltripleset>
+				<otriple>Allama_Iqbal_International_Airport | city | Lahore</otriple>
+				<otriple>Lahore | country | Pakistan</otriple>
+				<otriple>Pakistan | leader | Anwar_Zaheer_Jamali</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Lahore | country | Pakistan</mtriple>
+				<mtriple>Allama_Iqbal_International_Airport | cityServed | Lahore</mtriple>
+				<mtriple>Pakistan | leaderName | Anwar_Zaheer_Jamali</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allama_Iqbal_International_Airport | cityServed | Lahore</striple>
+						<striple>Lahore | country | Pakistan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Pakistan | leaderName | Anwar_Zaheer_Jamali</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International airport</reference>
+					<reference entity="Lahore" number="2" tag="BRIDGE-1" type="name">Lahore</reference>
+					<reference entity="Pakistan" number="3" tag="BRIDGE-2" type="name">Pakistan</reference>
+					<reference entity="Pakistan" number="4" tag="BRIDGE-2" type="description">the country</reference>
+					<reference entity="Anwar_Zaheer_Jamali" number="5" tag="PATIENT-1" type="name">Anwar Zaheer Jamali</reference>
+				</references>
+				<text>Allama Iqbal International airport is located in Lahore, Pakistan. The leader of the country is Anwar Zaheer Jamali.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , BRIDGE-2 . The leader of BRIDGE-2 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , BRIDGE-2 . DT[form=defined] the leader of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Lahore | country | Pakistan</striple>
+						<striple>Allama_Iqbal_International_Airport | cityServed | Lahore</striple>
+						<striple>Pakistan | leaderName | Anwar_Zaheer_Jamali</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Lahore" number="1" tag="BRIDGE-1" type="name">Lahore</reference>
+					<reference entity="Pakistan" number="2" tag="BRIDGE-2" type="name">Pakistan</reference>
+					<reference entity="Allama_Iqbal_International_Airport" number="3" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
+					<reference entity="Anwar_Zaheer_Jamali" number="4" tag="PATIENT-1" type="name">Anwar Zaheer Jamali</reference>
+				</references>
+				<text>Lahore, Pakistan is served by Allama Iqbal International Airport, and is led by Anwar Zaheer Jamali.</text>
+				<template>BRIDGE-1 , BRIDGE-2 is served by AGENT-1 , and is led by PATIENT-1 .</template>
+				<lexicalization>BRIDGE-1 , BRIDGE-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] serve by AGENT-1 , and VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allama_Iqbal_International_Airport</entity>
+				<entity>BRIDGE-1 | Lahore</entity>
+				<entity>BRIDGE-2 | Pakistan</entity>
+				<entity>PATIENT-1 | Anwar_Zaheer_Jamali</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id532" size="3">
+			<originaltripleset>
+				<otriple>Madrid | isPartOf | Community_of_Madrid</otriple>
+				<otriple>Madrid | leaderParty | Ahora_Madrid</otriple>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Madrid | isPartOf | Community_of_Madrid</mtriple>
+				<mtriple>Madrid | leaderParty | Ahora_Madrid</mtriple>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Madrid | isPartOf | Community_of_Madrid</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</striple>
+						<striple>Madrid | leaderParty | Ahora_Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Madrid" number="1" tag="BRIDGE-1" type="name">Madrid</reference>
+					<reference entity="Community_of_Madrid" number="2" tag="PATIENT-1" type="description">the community of Madrid</reference>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="3" tag="AGENT-1" type="description">the Adolfo Suarez Madrid-Barajas Airport</reference>
+					<reference entity="Ahora_Madrid" number="4" tag="PATIENT-2" type="name">Ahora Madrid</reference>
+				</references>
+				<text>The leader party in Madrid (which is part of the community of Madrid and has the Adolfo Suarez Madrid-Barajas Airport) is Ahora Madrid.</text>
+				<template>The leader party in BRIDGE-1 (which is part of PATIENT-1 and has AGENT-1) is PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the leader party in BRIDGE-1 ( which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have AGENT-1 ) VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</striple>
+						<striple>Madrid | isPartOf | Community_of_Madrid</striple>
+						<striple>Madrid | leaderParty | Ahora_Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suárez Madrid–Barajas Airport</reference>
+					<reference entity="Madrid" number="2" tag="BRIDGE-1" type="name">Madrid</reference>
+					<reference entity="Community_of_Madrid" number="3" tag="PATIENT-1" type="description">the community of Madrid</reference>
+					<reference entity="Ahora_Madrid" number="4" tag="PATIENT-2" type="name">Ahora Madrid</reference>
+				</references>
+				<text>Adolfo Suárez Madrid–Barajas Airport is located in Madrid which is part of the community of Madrid led by Ahora Madrid.</text>
+				<template>AGENT-1 is located in BRIDGE-1 which is part of PATIENT-1 led by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] lead by PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>BRIDGE-1 | Madrid</entity>
+				<entity>PATIENT-1 | Community_of_Madrid</entity>
+				<entity>PATIENT-2 | Ahora_Madrid</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id533" size="3">
+			<originaltripleset>
+				<otriple>Madrid | leaderParty | Ahora_Madrid</otriple>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</otriple>
+				<otriple>Madrid | country | Spain</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Madrid | leaderParty | Ahora_Madrid</mtriple>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</mtriple>
+				<mtriple>Madrid | country | Spain</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Madrid | country | Spain</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</striple>
+						<striple>Madrid | leaderParty | Ahora_Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Madrid" number="1" tag="BRIDGE-1" type="name">Madrid</reference>
+					<reference entity="Spain" number="2" tag="PATIENT-2" type="name">Spain</reference>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="3" tag="AGENT-1" type="description">the Adolfo Suarez Madrid - Barajas Airport</reference>
+					<reference entity="Ahora_Madrid" number="4" tag="PATIENT-1" type="name">Ahora Madrid</reference>
+				</references>
+				<text>The leader party in Madrid @ Spain (in which the Adolfo Suarez Madrid - Barajas Airport is located) ,is called Ahora Madrid.</text>
+				<template>The leader party in BRIDGE-1 @ PATIENT-2 (in which AGENT-1 is located) , is called PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the leader party in BRIDGE-1 PATIENT-2 ( in which AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located ) , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] call PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</striple>
+						<striple>Madrid | country | Spain</striple>
+						<striple>Madrid | leaderParty | Ahora_Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suárez Madrid–Barajas Airport</reference>
+					<reference entity="Madrid" number="2" tag="BRIDGE-1" type="name">Madrid</reference>
+					<reference entity="Spain" number="3" tag="PATIENT-2" type="name">Spain</reference>
+					<reference entity="Ahora_Madrid" number="4" tag="PATIENT-1" type="name">Ahora Madrid</reference>
+				</references>
+				<text>Adolfo Suárez Madrid–Barajas Airport is found in Madrid, Spain where the leading party is Ahora Madrid.</text>
+				<template>AGENT-1 is found in BRIDGE-1 , PATIENT-2 where the leading party is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] find in BRIDGE-1 , PATIENT-2 where DT[form=defined] the VP[aspect=progressive,tense=present,voice=active,person=null,number=null] lead party VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Madrid | leaderParty | Ahora_Madrid</striple>
+						<striple>Madrid | country | Spain</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ahora_Madrid" number="1" tag="PATIENT-1" type="name">Ahora Madrid</reference>
+					<reference entity="Madrid" number="2" tag="BRIDGE-1" type="name">Madrid</reference>
+					<reference entity="Spain" number="3" tag="PATIENT-2" type="name">Spain</reference>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="4" tag="AGENT-1" type="name">Adolfo Suárez Madrid–Barajas Airport</reference>
+					<reference entity="Madrid" number="5" tag="BRIDGE-1" type="name">Madrid</reference>
+				</references>
+				<text>Ahora Madrid is the leading party of Madrid, Spain. Adolfo Suárez Madrid–Barajas Airport is found in Madrid.</text>
+				<template>PATIENT-1 is the leading party of BRIDGE-1 , PATIENT-2 . AGENT-1 is found in BRIDGE-1 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the VP[aspect=progressive,tense=present,voice=active,person=null,number=null] lead party of BRIDGE-1 , PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] find in BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>BRIDGE-1 | Madrid</entity>
+				<entity>PATIENT-1 | Ahora_Madrid</entity>
+				<entity>PATIENT-2 | Spain</entity>
+			</entitymap>
+		</entry>
+		<entry category="Airport" eid="Id534" size="3">
+			<originaltripleset>
+				<otriple>San_Sebastián_de_los_Reyes | leaderParty | Peoples_Party_(Spain)</otriple>
+				<otriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</otriple>
+				<otriple>San_Sebastián_de_los_Reyes | country | Spain</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>San_Sebastián_de_los_Reyes | leaderParty | Peoples_Party_(Spain)</mtriple>
+				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</mtriple>
+				<mtriple>San_Sebastián_de_los_Reyes | country | Spain</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+						<striple>San_Sebastián_de_los_Reyes | country | Spain</striple>
+						<striple>San_Sebastián_de_los_Reyes | leaderParty | Peoples_Party_(Spain)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="description">The Adolfo Suárez Madrid–Barajas Airport</reference>
+					<reference entity="San_Sebastián_de_los_Reyes" number="2" tag="BRIDGE-1" type="name">San Sebastián de los Reyes</reference>
+					<reference entity="Spain" number="3" tag="PATIENT-2" type="name">Spain</reference>
+					<reference entity="Peoples_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the People 's Party</reference>
+				</references>
+				<text>The Adolfo Suárez Madrid–Barajas Airport is in San Sebastián de los Reyes (Spain), where the lead party is the People's Party.</text>
+				<template>AGENT-1 is in BRIDGE-1 (PATIENT-2) , where the lead party is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 ( PATIENT-2 ) , where DT[form=defined] the lead party VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+						<striple>San_Sebastián_de_los_Reyes | country | Spain</striple>
+						<striple>San_Sebastián_de_los_Reyes | leaderParty | Peoples_Party_(Spain)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adolfo Suárez Madrid–Barajas Airport</reference>
+					<reference entity="San_Sebastián_de_los_Reyes" number="2" tag="BRIDGE-1" type="name">San Sebastián de los Reyes</reference>
+					<reference entity="Spain" number="3" tag="PATIENT-2" type="name">Spain</reference>
+					<reference entity="Peoples_Party_(Spain)" number="4" tag="PATIENT-1" type="description">the People 's Party</reference>
+				</references>
+				<text>Adolfo Suárez Madrid–Barajas Airport is found in San Sebastián de los Reyes (Spain) where the lead party is the People's Party.</text>
+				<template>AGENT-1 is found in BRIDGE-1 (PATIENT-2) where the lead party is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] find in BRIDGE-1 ( PATIENT-2 ) where DT[form=defined] the lead party VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>San_Sebastián_de_los_Reyes | leaderParty | Peoples_Party_(Spain)</striple>
+						<striple>San_Sebastián_de_los_Reyes | country | Spain</striple>
+						<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | San_Sebastián_de_los_Reyes</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Peoples_Party_(Spain)" number="1" tag="PATIENT-1" type="description">The People 's Party</reference>
+					<reference entity="San_Sebastián_de_los_Reyes" number="2" tag="BRIDGE-1" type="name">San Sebastian de los Reyes</reference>
+					<reference entity="Spain" number="3" tag="PATIENT-2" type="name">Spain</reference>
+					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="4" tag="AGENT-1" type="description">the Adolfo Suarez Madrid-Barajas airport</reference>
+				</references>
+				<text>The People's Party is the lead party of San Sebastian de los Reyes, Spain where the Adolfo Suarez Madrid-Barajas airport is located.</text>
+				<template>PATIENT-1 is the lead party of BRIDGE-1 , PATIENT-2 where AGENT-1 is located .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the lead party of BRIDGE-1 , PATIENT-2 where AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
+				<entity>BRIDGE-1 | San_Sebastián_de_los_Reyes</entity>
+				<entity>PATIENT-1 | Peoples_Party_(Spain)</entity>
+				<entity>PATIENT-2 | Spain</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

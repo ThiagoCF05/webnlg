@@ -1,0 +1,2237 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="City" eid="Id626" size="4">
+			<originaltripleset>
+				<otriple>Albany,_Georgia | subdivisionName | Georgia_(U.S._state)</otriple>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>Albany,_Georgia | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Albany,_Georgia | isPartOf | Georgia_(U.S._state)</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>Albany,_Georgia | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albany,_Georgia | country | United_States</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albany,_Georgia" number="1" tag="AGENT-1" type="name">Albany , Georgia ,</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="English_language" number="3" tag="PATIENT-2" type="name">English</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-1" type="description">the United States of America</reference>
+				</references>
+				<text>Albany, Georgia, is located within the United States,where English is one of the spoken languages.Native Americans are one of the ethnic groups in the United States of America.</text>
+				<template>AGENT-1 is located within BRIDGE-1 , where PATIENT-2 is one of the spoken languages . PATIENT-3 are one of the ethnic groups in BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located within BRIDGE-1 , where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak languages . PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be one of DT[form=defined] the ethnic groups in BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albany,_Georgia | country | United_States</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albany,_Georgia" number="1" tag="AGENT-1" type="name">Albany , Georgia ,</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="English_language" number="3" tag="PATIENT-2" type="name">English</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="4" tag="PATIENT-3" type="name">Native Americans</reference>
+				</references>
+				<text>Albany, Georgia, is in the United States, where English is spoken, and, where Native Americans are one of the ethnic groups.</text>
+				<template>AGENT-1 is in BRIDGE-1 , where PATIENT-2 is spoken , and , where PATIENT-3 are one of the ethnic groups .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , where PATIENT-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak , and , where PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be one of DT[form=defined] the ethnic groups .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albany,_Georgia | isPartOf | Georgia_(U.S._state)</striple>
+						<striple>Albany,_Georgia | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albany,_Georgia" number="1" tag="AGENT-1" type="name">Albany</reference>
+					<reference entity="Georgia_(U.S._state)" number="2" tag="PATIENT-1" type="name">Georgia</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">The country</reference>
+					<reference entity="English_language" number="5" tag="PATIENT-2" type="description">the English language</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="6" tag="PATIENT-3" type="name">Native Americans</reference>
+				</references>
+				<text>Albany is part of the state of Georgia in the United States. The country uses the English language and includes the ethnic group of Native Americans.</text>
+				<template>AGENT-1 is part of the state of PATIENT-1 in BRIDGE-1 . BRIDGE-1 uses PATIENT-2 and includes the ethnic group of PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of DT[form=defined] the state of PATIENT-1 in BRIDGE-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] include DT[form=defined] the ethnic group of PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albany,_Georgia</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Georgia_(U.S._state)</entity>
+				<entity>PATIENT-2 | English_language</entity>
+				<entity>PATIENT-3 | Native_Americans_in_the_United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id627" size="4">
+			<originaltripleset>
+				<otriple>Albuquerque,_New_Mexico | areaLand | 4.862e+08</otriple>
+				<otriple>Albuquerque,_New_Mexico | populationDensity | &quot;1142.3&quot;^^xsd:double</otriple>
+				<otriple>Albuquerque,_New_Mexico | areaCode | 505575</otriple>
+				<otriple>Albuquerque,_New_Mexico | areaTotal | &quot;490.9&quot;^^&lt;http://dbpedia.org/datatype/squareKilometre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Albuquerque,_New_Mexico | areaCode | 505, 575</mtriple>
+				<mtriple>Albuquerque,_New_Mexico | areaOfLand | 486.2 (square kilometres)</mtriple>
+				<mtriple>Albuquerque,_New_Mexico | areaTotal | 490.9 (square kilometres)</mtriple>
+				<mtriple>Albuquerque,_New_Mexico | populationDensity | 1142.3 (inhabitants per square kilometre)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albuquerque,_New_Mexico | areaTotal | 490.9 (square kilometres)</striple>
+						<striple>Albuquerque,_New_Mexico | areaOfLand | 486.2 (square kilometres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albuquerque,_New_Mexico | populationDensity | 1142.3 (inhabitants per square kilometre)</striple>
+						<striple>Albuquerque,_New_Mexico | areaCode | 505, 575</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albuquerque,_New_Mexico" number="1" tag="AGENT-1" type="name">Albuquerque , in New Mexico ,</reference>
+					<reference entity="490.9 (square kilometres)" number="2" tag="PATIENT-3" type="name">490.9 square kilometres</reference>
+					<reference entity="486.2 (square kilometres)" number="3" tag="PATIENT-2" type="name">486.2 square kilometres</reference>
+					<reference entity="Albuquerque,_New_Mexico" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="1142.3 (inhabitants per square kilometre)" number="5" tag="PATIENT-4" type="name">1142.3 people per square kilometers</reference>
+					<reference entity="505, 575" number="6" tag="PATIENT-1" type="name">505 and 575</reference>
+				</references>
+				<text>Albuquerque, in New Mexico, has a total are of 490.9 square kilometres and a land area of 486.2 square kilometres. It has a population density of 1142.3 people per square kilometers, and the area codes are 505 and 575.</text>
+				<template>AGENT-1 has a total are of PATIENT-3 and a land area of PATIENT-2 . AGENT-1 has a population density of PATIENT-4 , and the area codes are PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a total VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be of PATIENT-3 and DT[form=undefined] a land area of PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a population density of PATIENT-4 , and DT[form=defined] the area codes VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albuquerque,_New_Mexico | areaTotal | 490.9 (square kilometres)</striple>
+						<striple>Albuquerque,_New_Mexico | areaOfLand | 486.2 (square kilometres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albuquerque,_New_Mexico | areaCode | 505, 575</striple>
+						<striple>Albuquerque,_New_Mexico | populationDensity | 1142.3 (inhabitants per square kilometre)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albuquerque,_New_Mexico" number="1" tag="AGENT-1" type="name">Albuquerque , New Mexico</reference>
+					<reference entity="490.9 (square kilometres)" number="2" tag="PATIENT-3" type="name">490.0 sq kms</reference>
+					<reference entity="486.2 (square kilometres)" number="3" tag="PATIENT-2" type="name">486.2 sq km</reference>
+					<reference entity="Albuquerque,_New_Mexico" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="505, 575" number="5" tag="PATIENT-1" type="name">505 and 575</reference>
+					<reference entity="1142.3 (inhabitants per square kilometre)" number="6" tag="PATIENT-4" type="name">1142.3 inhabitants per sq km</reference>
+				</references>
+				<text>Albuquerque, New Mexico covers a total of 490.0 sq kms which includes a land area of 486.2 sq km. It has the area codes 505 and 575 and a population density of 1142.3 inhabitants per sq km.</text>
+				<template>AGENT-1 covers a total of PATIENT-3 which includes a land area of PATIENT-2 . AGENT-1 has the area codes PATIENT-1 and a population density of PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] cover DT[form=undefined] a total of PATIENT-3 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] include DT[form=undefined] a land area of PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the area VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] code PATIENT-1 and DT[form=undefined] a population density of PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albuquerque,_New_Mexico</entity>
+				<entity>PATIENT-1 | 505, 575</entity>
+				<entity>PATIENT-2 | 486.2 (square kilometres)</entity>
+				<entity>PATIENT-3 | 490.9 (square kilometres)</entity>
+				<entity>PATIENT-4 | 1142.3 (inhabitants per square kilometre)</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id628" size="4">
+			<originaltripleset>
+				<otriple>Alpharetta,_Georgia | country | United_States</otriple>
+				<otriple>Alpharetta,_Georgia | subdivisionName | Georgia_(U.S._state)</otriple>
+				<otriple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</otriple>
+				<otriple>Fulton_County,_Georgia | countySeat | Atlanta</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alpharetta,_Georgia | country | United_States</mtriple>
+				<mtriple>Alpharetta,_Georgia | isPartOf | Georgia_(U.S._state)</mtriple>
+				<mtriple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</mtriple>
+				<mtriple>Fulton_County,_Georgia | countySeat | Atlanta</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</striple>
+						<striple>Alpharetta,_Georgia | isPartOf | Georgia_(U.S._state)</striple>
+						<striple>Alpharetta,_Georgia | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Fulton_County,_Georgia | countySeat | Atlanta</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alpharetta,_Georgia" number="1" tag="AGENT-1" type="name">Alpharetta</reference>
+					<reference entity="Fulton_County,_Georgia" number="2" tag="BRIDGE-1" type="name">Fulton County</reference>
+					<reference entity="Georgia_(U.S._state)" number="3" tag="PATIENT-2" type="name">Georgia</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="description">the United States</reference>
+					<reference entity="Atlanta" number="5" tag="PATIENT-3" type="name">Atlanta</reference>
+					<reference entity="Fulton_County,_Georgia" number="6" tag="BRIDGE-1" type="name">Fulton County</reference>
+				</references>
+				<text>Alpharetta, Fulton County, Georgia is located within the United States. Atlanta is the county seat of Fulton County.</text>
+				<template>AGENT-1 , BRIDGE-1 , PATIENT-2 is located within PATIENT-1 . PATIENT-3 is the county seat of BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 , BRIDGE-1 , PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located within PATIENT-1 . PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the county seat of BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</striple>
+						<striple>Alpharetta,_Georgia | isPartOf | Georgia_(U.S._state)</striple>
+						<striple>Alpharetta,_Georgia | country | United_States</striple>
+						<striple>Fulton_County,_Georgia | countySeat | Atlanta</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alpharetta,_Georgia" number="1" tag="AGENT-1" type="name">Alpharetta</reference>
+					<reference entity="Fulton_County,_Georgia" number="2" tag="BRIDGE-1" type="name">Fulton County</reference>
+					<reference entity="Georgia_(U.S._state)" number="3" tag="PATIENT-2" type="name">Georgia</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">United States</reference>
+					<reference entity="Atlanta" number="5" tag="PATIENT-3" type="name">Atlanta</reference>
+				</references>
+				<text>Alpharetta is part of Fulton County in Georgia (United States), where Atlanta is the county seat.</text>
+				<template>AGENT-1 is part of BRIDGE-1 in PATIENT-2 (PATIENT-1) , where PATIENT-3 is the county seat .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 in PATIENT-2 ( PATIENT-1 ) , where PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the county seat .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alpharetta,_Georgia</entity>
+				<entity>BRIDGE-1 | Fulton_County,_Georgia</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Georgia_(U.S._state)</entity>
+				<entity>PATIENT-3 | Atlanta</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id629" size="4">
+			<originaltripleset>
+				<otriple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</otriple>
+				<otriple>Potter_County,_Texas | country | United_States</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</mtriple>
+				<mtriple>Potter_County,_Texas | country | United_States</mtriple>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Potter_County,_Texas | country | United_States</striple>
+						<striple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Washington,_D.C." number="1" tag="PATIENT-1" type="name">Washington DC</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="African_Americans" number="3" tag="PATIENT-2" type="name">African Americans</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-2" type="description">The US</reference>
+					<reference entity="Amarillo,_Texas" number="5" tag="AGENT-1" type="name">Amarillo</reference>
+					<reference entity="Potter_County,_Texas" number="6" tag="BRIDGE-1" type="name">Potter County in Texas</reference>
+				</references>
+				<text>Washington DC is the capital of the United States, where African Americans are an ethnic group. The US is also where you will find Amarillo, which is part of Potter County in Texas.</text>
+				<template>PATIENT-1 is the capital of BRIDGE-2 , where PATIENT-2 are an ethnic group . BRIDGE-2 is also where you will find AGENT-1 , which is part of BRIDGE-1 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital of BRIDGE-2 , where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group . BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also where you will VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] find AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</striple>
+						<striple>Potter_County,_Texas | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amarillo,_Texas" number="1" tag="AGENT-1" type="name">Amarillo</reference>
+					<reference entity="Potter_County,_Texas" number="2" tag="BRIDGE-1" type="name">Potter County , Texas</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-2" type="description">the United States.African Americans are an ethnic group in the United States</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-2" type="description">the United States</reference>
+				</references>
+				<text>Amarillo is part of Potter County,Texas in the United States.African Americans are an ethnic group in the United States.</text>
+				<template>AGENT-1 is part of BRIDGE-1 in BRIDGE-2 . PATIENT-2 are an ethnic group in BRIDGE-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 in BRIDGE-2 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group in BRIDGE-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</striple>
+						<striple>Potter_County,_Texas | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amarillo,_Texas" number="1" tag="AGENT-1" type="name">Amarillo</reference>
+					<reference entity="Potter_County,_Texas" number="2" tag="BRIDGE-1" type="name">Potter County</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-2" type="name">Texas in the U.S. Washington , D.C. is the U.S. capital and African Americans are an ethnic group in that country</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-2" type="name">U.S.</reference>
+					<reference entity="African_Americans" number="6" tag="PATIENT-2" type="name">African Americans</reference>
+					<reference entity="United_States" number="7" tag="BRIDGE-2" type="demonstrative">that country</reference>
+				</references>
+				<text>Amarillo is part of Potter County in Texas in the U.S. Washington, D.C. is the U.S. capital and African Americans are an ethnic group in that country.</text>
+				<template>AGENT-1 is part of BRIDGE-1 in BRIDGE-2 . PATIENT-1 is the BRIDGE-2 capital and PATIENT-2 are an ethnic group in BRIDGE-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 in BRIDGE-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the BRIDGE-2 capital and PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group in BRIDGE-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amarillo,_Texas</entity>
+				<entity>BRIDGE-1 | Potter_County,_Texas</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | African_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id630" size="4">
+			<originaltripleset>
+				<otriple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</otriple>
+				<otriple>Potter_County,_Texas | state | Texas</otriple>
+				<otriple>Amarillo,_Texas | country | United_States</otriple>
+				<otriple>Texas | capital | Austin,_Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</mtriple>
+				<mtriple>Potter_County,_Texas | state | Texas</mtriple>
+				<mtriple>Amarillo,_Texas | country | United_States</mtriple>
+				<mtriple>Texas | capital | Austin,_Texas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</striple>
+						<striple>Potter_County,_Texas | state | Texas</striple>
+						<striple>Amarillo,_Texas | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Texas | capital | Austin,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amarillo,_Texas" number="1" tag="AGENT-1" type="name">Amarillo</reference>
+					<reference entity="Potter_County,_Texas" number="2" tag="BRIDGE-1" type="name">Potter County</reference>
+					<reference entity="Texas" number="3" tag="BRIDGE-2" type="name">Texas</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">USA</reference>
+					<reference entity="Austin,_Texas" number="5" tag="PATIENT-2" type="name">Austin</reference>
+					<reference entity="Texas" number="6" tag="BRIDGE-2" type="name">Texas</reference>
+				</references>
+				<text>Amarillo is a part of Potter County, in Texas, USA. Austin is the state capital of Texas.</text>
+				<template>AGENT-1 is a part of BRIDGE-1 , in BRIDGE-2 , PATIENT-1 . PATIENT-2 is the state capital of BRIDGE-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a part of BRIDGE-1 , in BRIDGE-2 , PATIENT-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the state capital of BRIDGE-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Amarillo,_Texas | isPartOf | Potter_County,_Texas</striple>
+						<striple>Potter_County,_Texas | state | Texas</striple>
+						<striple>Amarillo,_Texas | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Texas | capital | Austin,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amarillo,_Texas" number="1" tag="AGENT-1" type="name">Amarillo</reference>
+					<reference entity="Potter_County,_Texas" number="2" tag="BRIDGE-1" type="name">Potter County</reference>
+					<reference entity="Texas" number="3" tag="BRIDGE-2" type="name">Texas</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">United States</reference>
+					<reference entity="Austin,_Texas" number="5" tag="PATIENT-2" type="name">Austin</reference>
+					<reference entity="Texas" number="6" tag="BRIDGE-2" type="name">Texas</reference>
+				</references>
+				<text>Amarillo is part of Potter County in Texas, United States. Austin is the capital of Texas.</text>
+				<template>AGENT-1 is part of BRIDGE-1 in BRIDGE-2 , PATIENT-1 . PATIENT-2 is the capital of BRIDGE-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 in BRIDGE-2 , PATIENT-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital of BRIDGE-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amarillo,_Texas</entity>
+				<entity>BRIDGE-1 | Potter_County,_Texas</entity>
+				<entity>BRIDGE-2 | Texas</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Austin,_Texas</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id631" size="4">
+			<originaltripleset>
+				<otriple>Anaheim,_California | leaderTitle | California_State_Assembly</otriple>
+				<otriple>Anaheim,_California | isPartOf | California</otriple>
+				<otriple>California_State_Assembly | location | California_State_Capitol</otriple>
+				<otriple>California | language | Spanish_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Anaheim,_California | leaderTitle | California_State_Assembly</mtriple>
+				<mtriple>Anaheim,_California | isPartOf | California</mtriple>
+				<mtriple>California_State_Assembly | location | California_State_Capitol</mtriple>
+				<mtriple>California | language | Spanish_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anaheim,_California | isPartOf | California</striple>
+						<striple>Anaheim,_California | leaderTitle | California_State_Assembly</striple>
+						<striple>California_State_Assembly | location | California_State_Capitol</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>California | language | Spanish_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anaheim,_California" number="1" tag="AGENT-1" type="name">Anaheim</reference>
+					<reference entity="California" number="2" tag="BRIDGE-2" type="name">California</reference>
+					<reference entity="California_State_Assembly" number="3" tag="BRIDGE-1" type="description">the California State Assembly</reference>
+					<reference entity="California_State_Capitol" number="4" tag="PATIENT-1" type="description">the California State Capitol</reference>
+					<reference entity="Spanish_language" number="5" tag="PATIENT-2" type="name">Spanish</reference>
+					<reference entity="California" number="6" tag="BRIDGE-2" type="demonstrative">that state</reference>
+				</references>
+				<text>Anaheim is in California which is led by the California State Assembly found in the California State Capitol. Spanish is spoken in that state.</text>
+				<template>AGENT-1 is in BRIDGE-2 which is led by BRIDGE-1 found in PATIENT-1 . PATIENT-2 is spoken in BRIDGE-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] find in PATIENT-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak in BRIDGE-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>California | language | Spanish_language</striple>
+						<striple>Anaheim,_California | isPartOf | California</striple>
+						<striple>Anaheim,_California | leaderTitle | California_State_Assembly</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="California" number="1" tag="BRIDGE-2" type="name">California</reference>
+					<reference entity="California_State_Assembly" number="2" tag="BRIDGE-1" type="description">the California State Assembly</reference>
+					<reference entity="California" number="3" tag="BRIDGE-2" type="name">state capital</reference>
+					<reference entity="Spanish_language" number="4" tag="PATIENT-2" type="name">spanish</reference>
+					<reference entity="Anaheim,_California" number="5" tag="AGENT-1" type="name">Anaheim</reference>
+				</references>
+				<text>California is led by the California State Assembly (location: state capital), is spanish speaking and location of Anaheim.</text>
+				<template>BRIDGE-2 is led by BRIDGE-1 (location : BRIDGE-2) , is PATIENT-2 speaking and location of AGENT-1 .</template>
+				<lexicalization>BRIDGE-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by BRIDGE-1 ( location : BRIDGE-2 ) , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 speaking and location of AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>California | language | Spanish_language</striple>
+						<striple>Anaheim,_California | isPartOf | California</striple>
+						<striple>Anaheim,_California | leaderTitle | California_State_Assembly</striple>
+						<striple>California_State_Assembly | location | California_State_Capitol</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="California" number="1" tag="BRIDGE-2" type="name">California</reference>
+					<reference entity="Spanish_language" number="2" tag="PATIENT-2" type="name">Spanish</reference>
+					<reference entity="Anaheim,_California" number="3" tag="AGENT-1" type="name">Anaheim</reference>
+					<reference entity="California_State_Assembly" number="4" tag="BRIDGE-1" type="description">the California State Assembly</reference>
+					<reference entity="California_State_Capitol" number="5" tag="PATIENT-1" type="description">the California State Capitol</reference>
+				</references>
+				<text>Part of California (where Spanish is spoken), Anaheim, is led by the California State Assembly, in the California State Capitol.</text>
+				<template>Part of BRIDGE-2 (where PATIENT-2 is spoken) , AGENT-1 , is led by BRIDGE-1 , in PATIENT-1 .</template>
+				<lexicalization>Part of BRIDGE-2 ( where PATIENT-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak ) , AGENT-1 , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by BRIDGE-1 , in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Anaheim,_California</entity>
+				<entity>BRIDGE-1 | California_State_Assembly</entity>
+				<entity>BRIDGE-2 | California</entity>
+				<entity>PATIENT-1 | California_State_Capitol</entity>
+				<entity>PATIENT-2 | Spanish_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id632" size="4">
+			<originaltripleset>
+				<otriple>Anderson,_Indiana | populationDensity | &quot;523.9&quot;^^&lt;http://dbpedia.org/datatype/inhabitantsPerSquareKilometre&gt;</otriple>
+				<otriple>Anderson,_Indiana | areaTotal | 1.07433e+08</otriple>
+				<otriple>Anderson,_Indiana | elevation | &quot;267.919&quot;^^xsd:double</otriple>
+				<otriple>Anderson,_Indiana | subdivisionName | &quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Anderson,_Indiana | populationDensity | 523.9 (inhabitants per square kilometre)</mtriple>
+				<mtriple>Anderson,_Indiana | areaTotal | 107.43 (square kilometres)</mtriple>
+				<mtriple>Anderson,_Indiana | elevationAboveTheSeaLevel | 268.0</mtriple>
+				<mtriple>Anderson,_Indiana | isPartOf | &quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anderson,_Indiana | isPartOf | &quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;</striple>
+						<striple>Anderson,_Indiana | elevationAboveTheSeaLevel | 268.0</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Anderson,_Indiana | populationDensity | 523.9 (inhabitants per square kilometre)</striple>
+						<striple>Anderson,_Indiana | areaTotal | 107.43 (square kilometres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anderson,_Indiana" number="1" tag="AGENT-1" type="name">Anderson , Indiana</reference>
+					<reference entity="&quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;" number="2" tag="PATIENT-4" type="name">Adams Fall Creek , Lafayette , Richland , Union</reference>
+					<reference entity="268.0" number="3" tag="PATIENT-3" type="name">268.0</reference>
+					<reference entity="Anderson,_Indiana" number="4" tag="AGENT-1" type="name">Anderson , Indiana ,</reference>
+					<reference entity="523.9 (inhabitants per square kilometre)" number="5" tag="PATIENT-1" type="name">523.9 ( inhabitants per square kilometre )</reference>
+					<reference entity="107.43 (square kilometres)" number="6" tag="PATIENT-2" type="name">107.43 square kilometres</reference>
+				</references>
+				<text>Anderson, Indiana is part of Adams Fall Creek, Lafayette, Richland, Union, and is located at 268.0 above sea level. The population density of Anderson, Indiana, is 523.9 (inhabitants per square kilometre) and the area is 107.43 square kilometres.</text>
+				<template>AGENT-1 is part of PATIENT-4 , and is located at PATIENT-3 above sea level . The population density of AGENT-1 is PATIENT-1 and the area is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-4 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located at PATIENT-3 above sea level . DT[form=defined] the population density of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 and DT[form=defined] the area VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anderson,_Indiana | isPartOf | &quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;</striple>
+						<striple>Anderson,_Indiana | elevationAboveTheSeaLevel | 268.0</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Anderson,_Indiana | areaTotal | 107.43 (square kilometres)</striple>
+						<striple>Anderson,_Indiana | populationDensity | 523.9 (inhabitants per square kilometre)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anderson,_Indiana" number="1" tag="AGENT-1" type="name">Anderson , Indiana</reference>
+					<reference entity="&quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;" number="2" tag="PATIENT-4" type="name">Adams Fall Creek , Lafayette , Richland , Union</reference>
+					<reference entity="268.0" number="3" tag="PATIENT-3" type="name">268.0 meters</reference>
+					<reference entity="107.43 (square kilometres)" number="5" tag="PATIENT-2" type="name">107.43 square kilometres</reference>
+					<reference entity="Anderson,_Indiana" number="6" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="523.9 (inhabitants per square kilometre)" number="7" tag="PATIENT-1" type="name">523.9 inhabitants/sq km</reference>
+				</references>
+				<text>Anderson, Indiana is part of Adams Fall Creek, Lafayette, Richland, Union and elevated 268.0 meters above sea level.The town has an area of 107.43 square kilometres and its population density is 523.9 inhabitants/sq km.</text>
+				<template>AGENT-1 is part of PATIENT-4 and elevated PATIENT-3 above sea level . AGENT-1 has an area of PATIENT-2 and AGENT-1 population density is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-4 and elevated PATIENT-3 above sea level . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a area of PATIENT-2 and AGENT-1 population density VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anderson,_Indiana | isPartOf | &quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Anderson,_Indiana | populationDensity | 523.9 (inhabitants per square kilometre)</striple>
+						<striple>Anderson,_Indiana | areaTotal | 107.43 (square kilometres)</striple>
+						<striple>Anderson,_Indiana | elevationAboveTheSeaLevel | 268.0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anderson,_Indiana" number="1" tag="AGENT-1" type="name">Anderson , Indiana</reference>
+					<reference entity="&quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;" number="2" tag="PATIENT-4" type="name">Adams Fall Creek , Lafayette , Richland , Union</reference>
+					<reference entity="Anderson,_Indiana" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="523.9 (inhabitants per square kilometre)" number="4" tag="PATIENT-1" type="name">523.9 ( inhabitants per square kilometre )</reference>
+					<reference entity="107.43 (square kilometres)" number="5" tag="PATIENT-2" type="name">107.43 sq . km .</reference>
+					<reference entity="268.0" number="6" tag="PATIENT-3" type="name">268.0</reference>
+				</references>
+				<text>Anderson, Indiana is part of Adams Fall Creek, Lafayette, Richland, Union. It has a population density of 523.9 (inhabitants per square kilometre), a total area of 107.43 sq. km. and located 268.0 above sea level.</text>
+				<template>AGENT-1 is part of PATIENT-4 . AGENT-1 has a population density of PATIENT-1 , a total area of PATIENT-2 and located PATIENT-3 above sea level .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-4 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a population density of PATIENT-1 , DT[form=undefined] a total area of PATIENT-2 and located PATIENT-3 above sea level .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Anderson,_Indiana</entity>
+				<entity>PATIENT-1 | 523.9 (inhabitants per square kilometre)</entity>
+				<entity>PATIENT-2 | 107.43 (square kilometres)</entity>
+				<entity>PATIENT-3 | 268.0</entity>
+				<entity>PATIENT-4 | &quot;Adams, Fall Creek, Lafayette, Richland, Union&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id633" size="4">
+			<originaltripleset>
+				<otriple>Angola,_Indiana | country | United_States</otriple>
+				<otriple>Angola,_Indiana | subdivisionName | Pleasant_Township,_Steuben_County,_Indiana</otriple>
+				<otriple>Angola,_Indiana | areaTotal | &quot;16.55&quot;^^&lt;http://dbpedia.org/datatype/squareKilometre&gt;</otriple>
+				<otriple>Angola,_Indiana | isPartOf | Indiana</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Angola,_Indiana | isPartOf | Pleasant_Township,_Steuben_County,_Indiana</mtriple>
+				<mtriple>Angola,_Indiana | country | United_States</mtriple>
+				<mtriple>Angola,_Indiana | isPartOf | Indiana</mtriple>
+				<mtriple>Angola,_Indiana | areaTotal | 16.55 (square kilometres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola,_Indiana | isPartOf | Pleasant_Township,_Steuben_County,_Indiana</striple>
+						<striple>Angola,_Indiana | isPartOf | Indiana</striple>
+						<striple>Angola,_Indiana | country | United_States</striple>
+						<striple>Angola,_Indiana | areaTotal | 16.55 (square kilometres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola,_Indiana" number="1" tag="AGENT-1" type="name">Angola</reference>
+					<reference entity="Pleasant_Township,_Steuben_County,_Indiana" number="2" tag="PATIENT-1" type="name">Pleasant Township in Steuben County</reference>
+					<reference entity="Indiana" number="3" tag="PATIENT-3" type="name">Indiana</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-2" type="description">the U.S.</reference>
+					<reference entity="16.55 (square kilometres)" number="5" tag="PATIENT-4" type="name">16.55 square kilometres</reference>
+				</references>
+				<text>Angola is part of Pleasant Township in Steuben County, Indiana, in the U.S. and is 16.55 square kilometres in size.</text>
+				<template>AGENT-1 is part of PATIENT-1 , PATIENT-3 , in PATIENT-2 and is PATIENT-4 in size .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-1 , PATIENT-3 , in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 in size .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola,_Indiana | isPartOf | Pleasant_Township,_Steuben_County,_Indiana</striple>
+						<striple>Angola,_Indiana | areaTotal | 16.55 (square kilometres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Angola,_Indiana | isPartOf | Indiana</striple>
+						<striple>Angola,_Indiana | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola,_Indiana" number="1" tag="AGENT-1" type="name">Angola</reference>
+					<reference entity="Pleasant_Township,_Steuben_County,_Indiana" number="2" tag="PATIENT-1" type="name">Pleasant Township in Steuben County</reference>
+					<reference entity="16.55 (square kilometres)" number="3" tag="PATIENT-4" type="name">16.55 square kilometres</reference>
+					<reference entity="Angola,_Indiana" number="4" tag="AGENT-1" type="description">The city</reference>
+					<reference entity="Indiana" number="5" tag="PATIENT-3" type="name">Indiana</reference>
+					<reference entity="United_States" number="6" tag="PATIENT-2" type="name">United States</reference>
+				</references>
+				<text>Angola is part of Pleasant Township in Steuben County and covers a total area of 16.55 square kilometres. The city is in Indiana, United States.</text>
+				<template>AGENT-1 is part of PATIENT-1 and covers a total area of PATIENT-4 . AGENT-1 is in PATIENT-3 , PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] cover DT[form=undefined] a total area of PATIENT-4 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-3 , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola,_Indiana | isPartOf | Pleasant_Township,_Steuben_County,_Indiana</striple>
+						<striple>Angola,_Indiana | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Angola,_Indiana | isPartOf | Indiana</striple>
+						<striple>Angola,_Indiana | areaTotal | 16.55 (square kilometres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola,_Indiana" number="1" tag="AGENT-1" type="name">Angola</reference>
+					<reference entity="Pleasant_Township,_Steuben_County,_Indiana" number="2" tag="PATIENT-1" type="name">Pleasant township , Steuben County</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the US</reference>
+					<reference entity="Angola,_Indiana" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Indiana" number="5" tag="PATIENT-3" type="name">Indiana</reference>
+					<reference entity="16.55 (square kilometres)" number="6" tag="PATIENT-4" type="name">16.55 sq km</reference>
+				</references>
+				<text>Angola is part of Pleasant township, Steuben County in the US. It is located in the state of Indiana and has a total area of 16.55 sq km.</text>
+				<template>AGENT-1 is part of PATIENT-1 in PATIENT-2 . AGENT-1 is located in the state of PATIENT-3 and has a total area of PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-1 in PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in DT[form=defined] the state of PATIENT-3 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a total area of PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Angola,_Indiana</entity>
+				<entity>PATIENT-1 | Pleasant_Township,_Steuben_County,_Indiana</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Indiana</entity>
+				<entity>PATIENT-4 | 16.55 (square kilometres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id634" size="4">
+			<originaltripleset>
+				<otriple>Antioch,_California | utcOffset | &quot;&amp;minus;7&quot;</otriple>
+				<otriple>Antioch,_California | populationTotal | 102372</otriple>
+				<otriple>Antioch,_California | areaCode | &quot;925&quot;</otriple>
+				<otriple>Antioch,_California | areaTotal | 7.5324e+07</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Antioch,_California | UTCOffset | &quot;-7&quot;</mtriple>
+				<mtriple>Antioch,_California | populationTotal | 102372</mtriple>
+				<mtriple>Antioch,_California | areaCode | 925</mtriple>
+				<mtriple>Antioch,_California | areaTotal | 75.324 (square kilometres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antioch,_California | areaTotal | 75.324 (square kilometres)</striple>
+						<striple>Antioch,_California | UTCOffset | &quot;-7&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Antioch,_California | populationTotal | 102372</striple>
+						<striple>Antioch,_California | areaCode | 925</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antioch,_California" number="1" tag="AGENT-1" type="name">Antioch , California</reference>
+					<reference entity="75.324 (square kilometres)" number="2" tag="PATIENT-4" type="name">75.324 square km</reference>
+					<reference entity="&quot;-7&quot;" number="3" tag="PATIENT-1" type="name">-7.It has a total population of 102372 inhabitants and its area code is 925</reference>
+					<reference entity="102372" number="5" tag="PATIENT-2" type="name">102372 inhabitants</reference>
+					<reference entity="Antioch,_California" number="6" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="925" number="7" tag="PATIENT-3" type="name">925</reference>
+				</references>
+				<text>The total area of Antioch, California is 75.324 square km and uses UTC offset of -7.It has a total population of 102372 inhabitants and its area code is 925.</text>
+				<template>The total area of AGENT-1 is PATIENT-4 and uses UTC offset of PATIENT-1 . AGENT-1 has a total population of PATIENT-2 and AGENT-1 area code is PATIENT-3 .</template>
+				<lexicalization>DT[form=defined] the total area of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use UTC VP[aspect=simple,tense=past,voice=active,person=null,number=null] offset of PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a total population of PATIENT-2 and AGENT-1 area code VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antioch,_California | areaTotal | 75.324 (square kilometres)</striple>
+						<striple>Antioch,_California | UTCOffset | &quot;-7&quot;</striple>
+						<striple>Antioch,_California | populationTotal | 102372</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Antioch,_California | areaCode | 925</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antioch,_California" number="1" tag="AGENT-1" type="name">Antioch , California</reference>
+					<reference entity="75.324 (square kilometres)" number="2" tag="PATIENT-4" type="name">75.324 square km.</reference>
+					<reference entity="&quot;-7&quot;" number="3" tag="PATIENT-1" type="name">-7</reference>
+					<reference entity="Antioch,_California" number="4" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="102372" number="5" tag="PATIENT-2" type="name">102372</reference>
+					<reference entity="925" number="6" tag="PATIENT-3" type="name">925</reference>
+				</references>
+				<text>The total area of Antioch, California is 75.324 square km., has an UTC offset of -7 and its population is 102372. The area code there is 925.</text>
+				<template>The total area of AGENT-1 is PATIENT-4 , has an UTC offset of PATIENT-1 and AGENT-1 population is PATIENT-2 . The area code there is PATIENT-3 .</template>
+				<lexicalization>DT[form=defined] the total area of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a UTC VP[aspect=simple,tense=past,voice=active,person=null,number=null] offset of PATIENT-1 and AGENT-1 population VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 . DT[form=defined] the area code there VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antioch,_California | UTCOffset | &quot;-7&quot;</striple>
+						<striple>Antioch,_California | populationTotal | 102372</striple>
+						<striple>Antioch,_California | areaCode | 925</striple>
+						<striple>Antioch,_California | areaTotal | 75.324 (square kilometres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antioch,_California" number="1" tag="AGENT-1" type="name">Antioch , California</reference>
+					<reference entity="&quot;-7&quot;" number="2" tag="PATIENT-1" type="name">- 7</reference>
+					<reference entity="102372" number="3" tag="PATIENT-2" type="name">102372</reference>
+					<reference entity="925" number="4" tag="PATIENT-3" type="name">925</reference>
+					<reference entity="75.324 (square kilometres)" number="5" tag="PATIENT-4" type="name">75.324 square km</reference>
+				</references>
+				<text>Antioch, California has a UTC offset of - 7, the population is 102372, the area code is 925, and has a total area of 75.324 square km.</text>
+				<template>AGENT-1 has a UTC offset of PATIENT-1 , the population is PATIENT-2 , the area code is PATIENT-3 , and has a total area of PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a UTC VP[aspect=simple,tense=past,voice=active,person=null,number=null] offset of PATIENT-1 , DT[form=defined] the population VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , DT[form=defined] the area code VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a total area of PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Antioch,_California</entity>
+				<entity>PATIENT-1 | &quot;-7&quot;</entity>
+				<entity>PATIENT-2 | 102372</entity>
+				<entity>PATIENT-3 | 925</entity>
+				<entity>PATIENT-4 | 75.324 (square kilometres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id635" size="4">
+			<originaltripleset>
+				<otriple>Atlantic_City,_New_Jersey | populationDensity | &quot;1421.2&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City,_New_Jersey | areaCode | 609</otriple>
+				<otriple>Atlantic_City,_New_Jersey | leaderTitle | Mayors_of_Atlantic_City,_New_Jersey</otriple>
+				<otriple>Atlantic_City,_New_Jersey | areaTotal | &quot;44.125627435794435&quot;^^&lt;http://dbpedia.org/datatype/squareKilometre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlantic_City,_New_Jersey | populationDensity | 1421.2 (inhabitants per square kilometre)</mtriple>
+				<mtriple>Atlantic_City,_New_Jersey | areaCode | 609</mtriple>
+				<mtriple>Atlantic_City,_New_Jersey | leaderTitle | Mayors_of_Atlantic_City,_New_Jersey</mtriple>
+				<mtriple>Atlantic_City,_New_Jersey | areaTotal | 44.125 (square kilometres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City,_New_Jersey | areaTotal | 44.125 (square kilometres)</striple>
+						<striple>Atlantic_City,_New_Jersey | populationDensity | 1421.2 (inhabitants per square kilometre)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atlantic_City,_New_Jersey | areaCode | 609</striple>
+						<striple>Atlantic_City,_New_Jersey | leaderTitle | Mayors_of_Atlantic_City,_New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City,_New_Jersey" number="1" tag="AGENT-1" type="name">Atlantic City , New Jersey</reference>
+					<reference entity="44.125 (square kilometres)" number="2" tag="PATIENT-4" type="name">44.125 square kilometres</reference>
+					<reference entity="1421.2 (inhabitants per square kilometre)" number="3" tag="PATIENT-1" type="name">1421.2 inhabitants per square kilometre</reference>
+					<reference entity="609" number="4" tag="PATIENT-2" type="name">609</reference>
+					<reference entity="Atlantic_City,_New_Jersey" number="5" tag="AGENT-1" type="name">Atlantic City , N.J.</reference>
+					<reference entity="Mayors_of_Atlantic_City,_New_Jersey" number="6" tag="PATIENT-3" type="name">`` Mayor ''</reference>
+				</references>
+				<text>The total area of Atlantic City, New Jersey is 44.125 square kilometres and the population density is 1421.2 inhabitants per square kilometre. 609 is the area code of Atlantic City, N.J. and &quot;Mayor&quot; is the title of the leader.</text>
+				<template>The total area of AGENT-1 is PATIENT-4 and the population density is PATIENT-1 . PATIENT-2 is the area code of AGENT-1 and PATIENT-3 is the title of the leader .</template>
+				<lexicalization>DT[form=defined] the total area of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 and DT[form=defined] the population density VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the area code of AGENT-1 and PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the title of DT[form=defined] the leader .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City,_New_Jersey | areaCode | 609</striple>
+						<striple>Atlantic_City,_New_Jersey | areaTotal | 44.125 (square kilometres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atlantic_City,_New_Jersey | leaderTitle | Mayors_of_Atlantic_City,_New_Jersey</striple>
+						<striple>Atlantic_City,_New_Jersey | populationDensity | 1421.2 (inhabitants per square kilometre)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City,_New_Jersey" number="1" tag="AGENT-1" type="name">Atlantic City , New Jersey</reference>
+					<reference entity="609" number="2" tag="PATIENT-2" type="name">609</reference>
+					<reference entity="44.125 (square kilometres)" number="3" tag="PATIENT-4" type="name">44.125 square kilometres</reference>
+					<reference entity="Mayors_of_Atlantic_City,_New_Jersey" number="4" tag="PATIENT-3" type="description">The Mayor of the city</reference>
+					<reference entity="1421.2 (inhabitants per square kilometre)" number="5" tag="PATIENT-1" type="name">1421 people for each of those square kilometres</reference>
+				</references>
+				<text>Atlantic City, New Jersey (area code 609), covers a total area of 44.125 square kilometres. The Mayor of the city is responsible of a population which averages about 1421 people for each of those square kilometres.</text>
+				<template>AGENT-1 (area code PATIENT-2) , covers a total area of PATIENT-4 . PATIENT-3 is responsible of a population which averages about PATIENT-1 .</template>
+				<lexicalization>AGENT-1 ( area code PATIENT-2 ) , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] cover DT[form=undefined] a total area of PATIENT-4 . PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be responsible of DT[form=undefined] a population which averages about PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City,_New_Jersey | populationDensity | 1421.2 (inhabitants per square kilometre)</striple>
+						<striple>Atlantic_City,_New_Jersey | leaderTitle | Mayors_of_Atlantic_City,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Atlantic_City,_New_Jersey | areaTotal | 44.125 (square kilometres)</striple>
+						<striple>Atlantic_City,_New_Jersey | areaCode | 609</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City,_New_Jersey" number="1" tag="AGENT-1" type="name">Atlantic City in New Jersey</reference>
+					<reference entity="1421.2 (inhabitants per square kilometre)" number="2" tag="PATIENT-1" type="name">1421.2 inhabitants per sq km</reference>
+					<reference entity="Mayors_of_Atlantic_City,_New_Jersey" number="3" tag="PATIENT-3" type="description">the Mayor</reference>
+					<reference entity="Atlantic_City,_New_Jersey" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="44.125 (square kilometres)" number="5" tag="PATIENT-4" type="name">44.125 sq km</reference>
+					<reference entity="609" number="6" tag="PATIENT-2" type="name">609</reference>
+				</references>
+				<text>Atlantic City in New Jersey has a population of 1421.2 inhabitants per sq km and is led by the Mayor. It covers a total area of 44.125 sq km and uses the area code of 609.</text>
+				<template>AGENT-1 has a population of PATIENT-1 and is led by PATIENT-3 . AGENT-1 covers a total area of PATIENT-4 and uses the area code of PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a population of PATIENT-1 and VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-3 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] cover DT[form=undefined] a total area of PATIENT-4 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use DT[form=defined] the area code of PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlantic_City,_New_Jersey</entity>
+				<entity>PATIENT-1 | 1421.2 (inhabitants per square kilometre)</entity>
+				<entity>PATIENT-2 | 609</entity>
+				<entity>PATIENT-3 | Mayors_of_Atlantic_City,_New_Jersey</entity>
+				<entity>PATIENT-4 | 44.125 (square kilometres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id636" size="4">
+			<originaltripleset>
+				<otriple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</otriple>
+				<otriple>Auburn,_Alabama | country | United_States</otriple>
+				<otriple>Lee_County,_Alabama | state | Alabama</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</mtriple>
+				<mtriple>Auburn,_Alabama | country | United_States</mtriple>
+				<mtriple>Lee_County,_Alabama | state | Alabama</mtriple>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</striple>
+						<striple>Lee_County,_Alabama | state | Alabama</striple>
+						<striple>Auburn,_Alabama | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auburn,_Alabama" number="1" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Alabama" number="2" tag="PATIENT-1" type="name">Alabama</reference>
+					<reference entity="Lee_County,_Alabama" number="3" tag="BRIDGE-1" type="name">Lee County</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-2" type="name">United States</reference>
+					<reference entity="Asian_Americans" number="5" tag="PATIENT-2" type="name">Asian Americans</reference>
+				</references>
+				<text>Auburn, Alabama is part of Lee County, United States, of which one of the ethnic groups is Asian Americans.</text>
+				<template>AGENT-1 , PATIENT-1 is part of BRIDGE-1 , BRIDGE-2 , of which one of the ethnic groups is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 , BRIDGE-2 , of which one of DT[form=defined] the ethnic groups VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>Auburn,_Alabama | country | United_States</striple>
+						<striple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</striple>
+						<striple>Lee_County,_Alabama | state | Alabama</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asian_Americans" number="1" tag="PATIENT-2" type="description">The Asian Americans</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="Auburn,_Alabama" number="3" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Lee_County,_Alabama" number="4" tag="BRIDGE-1" type="name">Lee County</reference>
+					<reference entity="Alabama" number="5" tag="PATIENT-1" type="name">Alabama</reference>
+				</references>
+				<text>The Asian Americans are an ethnic group in the United States, where you will find Auburn, which is part of Lee County in the state of Alabama.</text>
+				<template>PATIENT-2 are an ethnic group in BRIDGE-2 , where you will find AGENT-1 , which is part of BRIDGE-1 in the state of PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group in BRIDGE-2 , where you will VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] find AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 in DT[form=defined] the state of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Auburn,_Alabama | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</striple>
+						<striple>Lee_County,_Alabama | state | Alabama</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auburn,_Alabama" number="1" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Alabama" number="2" tag="PATIENT-1" type="name">Alabama</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="Asian_Americans" number="4" tag="PATIENT-2" type="name">Asian Americans</reference>
+					<reference entity="Auburn,_Alabama" number="5" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Lee_County,_Alabama" number="6" tag="BRIDGE-1" type="name">Lee County</reference>
+					<reference entity="Alabama" number="7" tag="PATIENT-1" type="name">Alabama</reference>
+				</references>
+				<text>Auburn, Alabama is in the United States, where one of the ethnic groups is Asian Americans. Auburn is part of Lee County, Alabama.</text>
+				<template>AGENT-1 , PATIENT-1 is in BRIDGE-2 , where one of the ethnic groups is PATIENT-2 . AGENT-1 is part of BRIDGE-1 , PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 , where one of DT[form=defined] the ethnic groups VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 , PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Auburn,_Alabama</entity>
+				<entity>BRIDGE-1 | Lee_County,_Alabama</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Alabama</entity>
+				<entity>PATIENT-2 | Asian_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id637" size="4">
+			<originaltripleset>
+				<otriple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</otriple>
+				<otriple>Lee_County,_Alabama | country | United_States</otriple>
+				<otriple>Lee_County,_Alabama | state | Alabama</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</mtriple>
+				<mtriple>Lee_County,_Alabama | country | United_States</mtriple>
+				<mtriple>Lee_County,_Alabama | state | Alabama</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</striple>
+						<striple>Lee_County,_Alabama | state | Alabama</striple>
+						<striple>Lee_County,_Alabama | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auburn,_Alabama" number="1" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Lee_County,_Alabama" number="2" tag="BRIDGE-1" type="name">Lee County</reference>
+					<reference entity="Alabama" number="3" tag="PATIENT-1" type="name">Alabama</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-2" type="description">the United States.African Americans are an ethnic group within the United States</reference>
+					<reference entity="United_States" number="6" tag="BRIDGE-2" type="description">the United States</reference>
+				</references>
+				<text>Auburn is part of Lee County,Alabama in the United States.African Americans are an ethnic group within the United States.</text>
+				<template>AGENT-1 is part of BRIDGE-1 , PATIENT-1 in BRIDGE-2 . PATIENT-2 are an ethnic group within BRIDGE-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 , PATIENT-1 in BRIDGE-2 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group within BRIDGE-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</striple>
+						<striple>Lee_County,_Alabama | state | Alabama</striple>
+						<striple>Lee_County,_Alabama | country | United_States</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auburn,_Alabama" number="1" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Lee_County,_Alabama" number="2" tag="BRIDGE-1" type="name">Lee County</reference>
+					<reference entity="Alabama" number="3" tag="PATIENT-1" type="name">Alabama</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-2" type="description">the U.S.A.</reference>
+					<reference entity="African_Americans" number="5" tag="PATIENT-2" type="name">African Americans</reference>
+				</references>
+				<text>Auburn in Lee County, Alabama is in the U.S.A. which is home to African Americans.</text>
+				<template>AGENT-1 in BRIDGE-1 , PATIENT-1 is in BRIDGE-2 which is home to PATIENT-2 .</template>
+				<lexicalization>AGENT-1 in BRIDGE-1 , PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be home to PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Auburn,_Alabama | isPartOf | Lee_County,_Alabama</striple>
+						<striple>Lee_County,_Alabama | state | Alabama</striple>
+						<striple>Lee_County,_Alabama | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auburn,_Alabama" number="1" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Lee_County,_Alabama" number="2" tag="BRIDGE-1" type="name">Lee County</reference>
+					<reference entity="Alabama" number="3" tag="PATIENT-1" type="name">Alabama</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-2" type="description">the country</reference>
+					<reference entity="African_Americans" number="6" tag="PATIENT-2" type="description">the African Americans</reference>
+				</references>
+				<text>Auburn is part of Lee County, Alabama in the United States. One of the ethnic groups of the country are the African Americans.</text>
+				<template>AGENT-1 is part of BRIDGE-1 , PATIENT-1 in BRIDGE-2 . One of the ethnic groups of BRIDGE-2 are PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 , PATIENT-1 in BRIDGE-2 . One of DT[form=defined] the ethnic groups of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Auburn,_Alabama</entity>
+				<entity>BRIDGE-1 | Lee_County,_Alabama</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Alabama</entity>
+				<entity>PATIENT-2 | African_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id638" size="4">
+			<originaltripleset>
+				<otriple>Auburn,_Washington | isPartOf | Pierce_County,_Washington</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>Pierce_County,_Washington | country | United_States</otriple>
+				<otriple>Auburn,_Washington | subdivisionName | King_County,_Washington</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Auburn,_Washington | isPartOf | Pierce_County,_Washington</mtriple>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>Pierce_County,_Washington | country | United_States</mtriple>
+				<mtriple>Auburn,_Washington | isPartOf | King_County,_Washington</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Auburn,_Washington | isPartOf | King_County,_Washington</striple>
+						<striple>Pierce_County,_Washington | country | United_States</striple>
+						<striple>Auburn,_Washington | isPartOf | Pierce_County,_Washington</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Washington,_D.C." number="1" tag="PATIENT-1" type="name">Washington DC</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="Auburn,_Washington" number="3" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Auburn,_Washington" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="King_County,_Washington" number="5" tag="PATIENT-2" type="name">King County</reference>
+					<reference entity="Pierce_County,_Washington" number="6" tag="BRIDGE-1" type="name">Pierce County in Washington</reference>
+				</references>
+				<text>Washington DC is the capital of the United States where Auburn is to be found. It is part of both King County and Pierce County in Washington.</text>
+				<template>PATIENT-1 is the capital of BRIDGE-2 where AGENT-1 is to be found . AGENT-1 is part of both PATIENT-2 and BRIDGE-1 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital of BRIDGE-2 where AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be to VP[aspect=simple,tense=present,voice=passive,person=null,number=null] find . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of both PATIENT-2 and BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Auburn,_Washington | isPartOf | Pierce_County,_Washington</striple>
+						<striple>Auburn,_Washington | isPartOf | King_County,_Washington</striple>
+						<striple>Pierce_County,_Washington | country | United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+					<sentence ID="2"/>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auburn,_Washington" number="1" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="Pierce_County,_Washington" number="2" tag="BRIDGE-1" type="name">Pierce County</reference>
+					<reference entity="King_County,_Washington" number="3" tag="PATIENT-2" type="name">King County</reference>
+					<reference entity="Washington,_D.C." number="4" tag="PATIENT-1" type="name">Washington</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="United_States" number="6" tag="BRIDGE-2" type="description">The country 's</reference>
+					<reference entity="Washington,_D.C." number="7" tag="PATIENT-1" type="name">Washington DC</reference>
+				</references>
+				<text>Auburn is part of both Pierce County and King County in Washington in the United States. The country's capital city is Washington DC.</text>
+				<template>AGENT-1 is part of both BRIDGE-1 and PATIENT-2 in PATIENT-1 in BRIDGE-2 . BRIDGE-2 capital city is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of both BRIDGE-1 and PATIENT-2 in PATIENT-1 in BRIDGE-2 . BRIDGE-2 capital city VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Auburn,_Washington</entity>
+				<entity>BRIDGE-1 | Pierce_County,_Washington</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | King_County,_Washington</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id639" size="4">
+			<originaltripleset>
+				<otriple>Auburn,_Washington | isPartOf | Washington_(state)</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>Auburn,_Washington | country | United_States</otriple>
+				<otriple>Auburn,_Washington | subdivisionName | King_County,_Washington</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Auburn,_Washington | isPartOf | Washington_(state)</mtriple>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>Auburn,_Washington | country | United_States</mtriple>
+				<mtriple>Auburn,_Washington | isPartOf | King_County,_Washington</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Auburn,_Washington | isPartOf | King_County,_Washington</striple>
+						<striple>Auburn,_Washington | isPartOf | Washington_(state)</striple>
+						<striple>Auburn,_Washington | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auburn,_Washington" number="1" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="King_County,_Washington" number="2" tag="PATIENT-3" type="name">King County</reference>
+					<reference entity="Washington_(state)" number="3" tag="PATIENT-1" type="name">Washington</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-1" type="name">United States</reference>
+					<reference entity="Washington,_D.C." number="6" tag="PATIENT-2" type="name">Washington DC</reference>
+				</references>
+				<text>Auburn, King County, Washington is located within the United States. The capital of the United States is Washington DC.</text>
+				<template>AGENT-1 , PATIENT-3 , PATIENT-1 is located within BRIDGE-1 . The capital of the BRIDGE-1 is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , PATIENT-3 , PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located within BRIDGE-1 . DT[form=defined] the capital of DT[form=defined] the BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Auburn,_Washington | country | United_States</striple>
+						<striple>Auburn,_Washington | isPartOf | King_County,_Washington</striple>
+						<striple>Auburn,_Washington | isPartOf | Washington_(state)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="BRIDGE-1" type="name">U.S</reference>
+					<reference entity="Washington,_D.C." number="2" tag="PATIENT-2" type="name">Washington , D.C.. King County , Auburn is located in this state</reference>
+					<reference entity="Washington_(state)" number="5" tag="PATIENT-1" type="demonstrative">this state</reference>
+				</references>
+				<text>The capital of U.S is Washington, D.C.. King County, Auburn is located in this state.</text>
+				<template>The capital of BRIDGE-1 is PATIENT-2 . PATIENT-3 , AGENT-1 is located in PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the capital of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 . PATIENT-3 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Auburn,_Washington | isPartOf | King_County,_Washington</striple>
+						<striple>Auburn,_Washington | isPartOf | Washington_(state)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Auburn,_Washington | country | United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auburn,_Washington" number="1" tag="AGENT-1" type="name">Auburn</reference>
+					<reference entity="King_County,_Washington" number="2" tag="PATIENT-3" type="name">King County</reference>
+					<reference entity="Washington_(state)" number="3" tag="PATIENT-1" type="name">Washington state</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="Washington,_D.C." number="5" tag="PATIENT-2" type="name">Washington DC</reference>
+				</references>
+				<text>Auburn is located in King County, Washington state. The capital of the US is Washington DC.</text>
+				<template>AGENT-1 is located in PATIENT-3 , PATIENT-1 . The capital of BRIDGE-1 is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-3 , PATIENT-1 . DT[form=defined] the capital of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Auburn,_Washington</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Washington_(state)</entity>
+				<entity>PATIENT-2 | Washington,_D.C.</entity>
+				<entity>PATIENT-3 | King_County,_Washington</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id640" size="4">
+			<originaltripleset>
+				<otriple>Austin,_Texas | isPartOf | Texas</otriple>
+				<otriple>Texas | largestCity | Houston</otriple>
+				<otriple>Hays_County,_Texas | countySeat | San_Marcos,_Texas</otriple>
+				<otriple>Austin,_Texas | subdivisionName | Hays_County,_Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Austin,_Texas | isPartOf | Texas</mtriple>
+				<mtriple>Texas | largestCity | Houston</mtriple>
+				<mtriple>Hays_County,_Texas | countySeat | San_Marcos,_Texas</mtriple>
+				<mtriple>Austin,_Texas | isPartOf | Hays_County,_Texas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Austin,_Texas | isPartOf | Hays_County,_Texas</striple>
+						<striple>Austin,_Texas | isPartOf | Texas</striple>
+						<striple>Texas | largestCity | Houston</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Hays_County,_Texas | countySeat | San_Marcos,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Austin,_Texas" number="1" tag="AGENT-1" type="name">Austin</reference>
+					<reference entity="Hays_County,_Texas" number="2" tag="BRIDGE-2" type="name">Hays County</reference>
+					<reference entity="Texas" number="3" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="Texas" number="4" tag="BRIDGE-1" type="description">the state 's</reference>
+					<reference entity="Houston" number="5" tag="PATIENT-1" type="name">Houston</reference>
+					<reference entity="San_Marcos,_Texas" number="6" tag="PATIENT-2" type="name">San Marcos</reference>
+					<reference entity="Hays_County,_Texas" number="7" tag="BRIDGE-2" type="name">Hays County</reference>
+					<reference entity="Texas" number="8" tag="BRIDGE-1" type="name">Texas</reference>
+				</references>
+				<text>Austin is in Hays County @ Texas, where the state's largest city is Houston. San Marcos is the county seat of Hays County, Texas.</text>
+				<template>AGENT-1 is in BRIDGE-2 @ BRIDGE-1 , where BRIDGE-1 largest city is PATIENT-1 . PATIENT-2 is the county seat of BRIDGE-2 , BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 BRIDGE-1 , where BRIDGE-1 largest city VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the county seat of BRIDGE-2 , BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Austin,_Texas | isPartOf | Hays_County,_Texas</striple>
+						<striple>Austin,_Texas | isPartOf | Texas</striple>
+						<striple>Hays_County,_Texas | countySeat | San_Marcos,_Texas</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Texas | largestCity | Houston</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Austin,_Texas" number="1" tag="AGENT-1" type="name">Austin</reference>
+					<reference entity="Hays_County,_Texas" number="2" tag="BRIDGE-2" type="name">Hays County</reference>
+					<reference entity="Texas" number="3" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="San_Marcos,_Texas" number="4" tag="PATIENT-2" type="name">San Marcos</reference>
+					<reference entity="Texas" number="5" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="Houston" number="6" tag="PATIENT-1" type="name">Houston</reference>
+				</references>
+				<text>Austin is in Hays County, Texas whose county seat is San Marcos. The largest city in Texas is Houston.</text>
+				<template>AGENT-1 is in BRIDGE-2 , BRIDGE-1 whose county seat is PATIENT-2 . The largest city in BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 , BRIDGE-1 whose county seat VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 . DT[form=defined] the largest city in BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Austin,_Texas | isPartOf | Hays_County,_Texas</striple>
+						<striple>Hays_County,_Texas | countySeat | San_Marcos,_Texas</striple>
+						<striple>Austin,_Texas | isPartOf | Texas</striple>
+						<striple>Texas | largestCity | Houston</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Austin,_Texas" number="1" tag="AGENT-1" type="name">Austin</reference>
+					<reference entity="Hays_County,_Texas" number="2" tag="BRIDGE-2" type="name">Hays County</reference>
+					<reference entity="Hays_County,_Texas" number="3" tag="BRIDGE-2" type="pronoun">its</reference>
+					<reference entity="San_Marcos,_Texas" number="4" tag="PATIENT-2" type="name">San Marcos</reference>
+					<reference entity="Texas" number="5" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="Houston" number="6" tag="PATIENT-1" type="name">Houston</reference>
+				</references>
+				<text>Austin, Hays County (with its seat in San Marcos) is in Texas (largest city being Houston), United States.</text>
+				<template>AGENT-1 , BRIDGE-2 (with BRIDGE-2 seat in PATIENT-2) is in BRIDGE-1 (largest city being PATIENT-1) , United States .</template>
+				<lexicalization>AGENT-1 , BRIDGE-2 ( with BRIDGE-2 seat in PATIENT-2 ) VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 ( largest city VP[aspect=progressive,tense=present,voice=active,person=null,number=null] be PATIENT-1 ) , United States .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Austin,_Texas</entity>
+				<entity>BRIDGE-1 | Texas</entity>
+				<entity>BRIDGE-2 | Hays_County,_Texas</entity>
+				<entity>PATIENT-1 | Houston</entity>
+				<entity>PATIENT-2 | San_Marcos,_Texas</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id641" size="4">
+			<originaltripleset>
+				<otriple>California | language | Chinese_language</otriple>
+				<otriple>Anaheim,_California | leaderTitle | California_State_Assembly</otriple>
+				<otriple>Anaheim,_California | isPartOf | California</otriple>
+				<otriple>California_State_Assembly | location | California_State_Capitol</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>California | language | Chinese_language</mtriple>
+				<mtriple>Anaheim,_California | leaderTitle | California_State_Assembly</mtriple>
+				<mtriple>Anaheim,_California | isPartOf | California</mtriple>
+				<mtriple>California_State_Assembly | location | California_State_Capitol</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anaheim,_California | isPartOf | California</striple>
+						<striple>Anaheim,_California | leaderTitle | California_State_Assembly</striple>
+						<striple>California_State_Assembly | location | California_State_Capitol</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>California | language | Chinese_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anaheim,_California" number="1" tag="AGENT-1" type="name">Anaheim</reference>
+					<reference entity="California" number="2" tag="BRIDGE-1" type="name">California</reference>
+					<reference entity="California_State_Assembly" number="3" tag="BRIDGE-2" type="description">the California State Assembly</reference>
+					<reference entity="California_State_Capitol" number="4" tag="PATIENT-2" type="description">the California State Capitol</reference>
+					<reference entity="Chinese_language" number="5" tag="PATIENT-1" type="name">Chinese</reference>
+					<reference entity="California" number="6" tag="BRIDGE-1" type="demonstrative">that state</reference>
+				</references>
+				<text>Anaheim, California is led by the California State Assembly located in the California State Capitol. Chinese is spoken in some parts of that state.</text>
+				<template>AGENT-1 , BRIDGE-1 is led by BRIDGE-2 located in PATIENT-2 . PATIENT-1 is spoken in some parts of BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 , BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by BRIDGE-2 located in PATIENT-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak in DT[form=defined] some parts of BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anaheim,_California | isPartOf | California</striple>
+						<striple>Anaheim,_California | leaderTitle | California_State_Assembly</striple>
+						<striple>California_State_Assembly | location | California_State_Capitol</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>California | language | Chinese_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anaheim,_California" number="1" tag="AGENT-1" type="name">Anaheim</reference>
+					<reference entity="California" number="2" tag="BRIDGE-1" type="name">California</reference>
+					<reference entity="California_State_Assembly" number="3" tag="BRIDGE-2" type="description">the California State Assembly</reference>
+					<reference entity="California_State_Capitol" number="4" tag="PATIENT-2" type="description">the California State Capitol</reference>
+					<reference entity="Chinese_language" number="5" tag="PATIENT-1" type="name">Chinese</reference>
+					<reference entity="California" number="6" tag="BRIDGE-1" type="name">California</reference>
+				</references>
+				<text>Anaheim is part of California and led by the California State Assembly located at the California State Capitol. Chinese is a language spoken in California.</text>
+				<template>AGENT-1 is part of BRIDGE-1 and led by BRIDGE-2 located at PATIENT-2 . PATIENT-1 is a language spoken in BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] lead by BRIDGE-2 located at PATIENT-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a language VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak in BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Anaheim,_California</entity>
+				<entity>BRIDGE-1 | California</entity>
+				<entity>BRIDGE-2 | California_State_Assembly</entity>
+				<entity>PATIENT-1 | Chinese_language</entity>
+				<entity>PATIENT-2 | California_State_Capitol</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id642" size="4">
+			<originaltripleset>
+				<otriple>Georgia_(U.S._state) | country | United_States</otriple>
+				<otriple>Alpharetta,_Georgia | subdivisionName | Georgia_(U.S._state)</otriple>
+				<otriple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</otriple>
+				<otriple>Fulton_County,_Georgia | countySeat | Atlanta</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Georgia_(U.S._state) | country | United_States</mtriple>
+				<mtriple>Alpharetta,_Georgia | isPartOf | Georgia_(U.S._state)</mtriple>
+				<mtriple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</mtriple>
+				<mtriple>Fulton_County,_Georgia | countySeat | Atlanta</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</striple>
+						<striple>Fulton_County,_Georgia | countySeat | Atlanta</striple>
+						<striple>Alpharetta,_Georgia | isPartOf | Georgia_(U.S._state)</striple>
+						<striple>Georgia_(U.S._state) | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alpharetta,_Georgia" number="1" tag="AGENT-1" type="name">Alpharetta</reference>
+					<reference entity="Fulton_County,_Georgia" number="2" tag="BRIDGE-2" type="name">Fulton County</reference>
+					<reference entity="Atlanta" number="3" tag="PATIENT-2" type="name">Atlanta</reference>
+					<reference entity="Georgia_(U.S._state)" number="4" tag="BRIDGE-1" type="name">Georgia</reference>
+					<reference entity="United_States" number="5" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Alpharetta is part of Fulton County (Atlanta is the county seat), in Georgia, in the United States.</text>
+				<template>AGENT-1 is part of BRIDGE-2 (PATIENT-2 is the county seat) , in BRIDGE-1 , in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-2 ( PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the county seat ) , in BRIDGE-1 , in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</striple>
+						<striple>Fulton_County,_Georgia | countySeat | Atlanta</striple>
+						<striple>Alpharetta,_Georgia | isPartOf | Georgia_(U.S._state)</striple>
+						<striple>Georgia_(U.S._state) | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alpharetta,_Georgia" number="1" tag="AGENT-1" type="name">Alpharetta</reference>
+					<reference entity="Fulton_County,_Georgia" number="2" tag="BRIDGE-2" type="name">Fulton County</reference>
+					<reference entity="Atlanta" number="3" tag="PATIENT-2" type="name">Atlanta</reference>
+					<reference entity="Georgia_(U.S._state)" number="4" tag="BRIDGE-1" type="name">Georgia</reference>
+					<reference entity="United_States" number="5" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Alpharetta, Fulton County, Atlanta, Georgia are in the United States.</text>
+				<template>AGENT-1 , BRIDGE-2 , PATIENT-2 , BRIDGE-1 are in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , BRIDGE-2 , PATIENT-2 , BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alpharetta,_Georgia | isPartOf | Fulton_County,_Georgia</striple>
+						<striple>Alpharetta,_Georgia | isPartOf | Georgia_(U.S._state)</striple>
+						<striple>Georgia_(U.S._state) | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Fulton_County,_Georgia | countySeat | Atlanta</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alpharetta,_Georgia" number="1" tag="AGENT-1" type="name">Alpharetta</reference>
+					<reference entity="Fulton_County,_Georgia" number="2" tag="BRIDGE-2" type="name">Fulton County</reference>
+					<reference entity="Georgia_(U.S._state)" number="3" tag="BRIDGE-1" type="name">Georgia</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">U.S</reference>
+					<reference entity="Fulton_County,_Georgia" number="5" tag="BRIDGE-2" type="demonstrative">that county</reference>
+					<reference entity="Atlanta" number="6" tag="PATIENT-2" type="name">Atlanta</reference>
+				</references>
+				<text>Alpharetta is part of Fulton County in Georgia, U.S. The county seat of that county is Atlanta.</text>
+				<template>AGENT-1 is part of BRIDGE-2 in BRIDGE-1 , PATIENT-1 . The county seat of BRIDGE-2 is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-2 in BRIDGE-1 , PATIENT-1 . DT[form=defined] the county seat of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alpharetta,_Georgia</entity>
+				<entity>BRIDGE-1 | Georgia_(U.S._state)</entity>
+				<entity>BRIDGE-2 | Fulton_County,_Georgia</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Atlanta</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id643" size="4">
+			<originaltripleset>
+				<otriple>Indiana | capital | Indianapolis</otriple>
+				<otriple>Anderson,_Indiana | isPartOf | Lafayette_Township,_Madison_County,_Indiana</otriple>
+				<otriple>Lafayette_Township,_Madison_County,_Indiana | country | United_States</otriple>
+				<otriple>Anderson,_Indiana | subdivisionName | Indiana</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Indiana | capital | Indianapolis</mtriple>
+				<mtriple>Anderson,_Indiana | isPartOf | Lafayette_Township,_Madison_County,_Indiana</mtriple>
+				<mtriple>Lafayette_Township,_Madison_County,_Indiana | country | United_States</mtriple>
+				<mtriple>Anderson,_Indiana | isPartOf | Indiana</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Anderson,_Indiana | isPartOf | Lafayette_Township,_Madison_County,_Indiana</striple>
+						<striple>Lafayette_Township,_Madison_County,_Indiana | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Anderson,_Indiana | isPartOf | Indiana</striple>
+						<striple>Indiana | capital | Indianapolis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Anderson,_Indiana" number="1" tag="AGENT-1" type="description">The city of Anderson</reference>
+					<reference entity="Lafayette_Township,_Madison_County,_Indiana" number="2" tag="BRIDGE-1" type="name">Lafayette Township</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="Anderson,_Indiana" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Lafayette_Township,_Madison_County,_Indiana" number="5" tag="BRIDGE-1" type="name">Madison County</reference>
+					<reference entity="Indiana" number="6" tag="BRIDGE-2" type="name">Indiana</reference>
+					<reference entity="Indianapolis" number="7" tag="PATIENT-1" type="name">Indianapolis</reference>
+				</references>
+				<text>The city of Anderson is part of Lafayette Township in the United States. It is located in Madison County, Indiana which has the capital city of Indianapolis.</text>
+				<template>AGENT-1 is part of BRIDGE-1 in PATIENT-2 . AGENT-1 is located in BRIDGE-1 , BRIDGE-2 which has the capital city of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 in PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , BRIDGE-2 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the capital city of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Lafayette_Township,_Madison_County,_Indiana | country | United_States</striple>
+						<striple>Anderson,_Indiana | isPartOf | Lafayette_Township,_Madison_County,_Indiana</striple>
+						<striple>Anderson,_Indiana | isPartOf | Indiana</striple>
+						<striple>Indiana | capital | Indianapolis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Lafayette_Township,_Madison_County,_Indiana" number="1" tag="BRIDGE-1" type="name">Lafayette Township</reference>
+					<reference entity="Indiana" number="2" tag="BRIDGE-2" type="name">Madison County , Indiana</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="Lafayette_Township,_Madison_County,_Indiana" number="4" tag="BRIDGE-1" type="description">the township</reference>
+					<reference entity="Anderson,_Indiana" number="5" tag="AGENT-1" type="name">Anderson</reference>
+					<reference entity="Indianapolis" number="6" tag="PATIENT-1" type="name">Indianapolis</reference>
+					<reference entity="Indiana" number="7" tag="BRIDGE-2" type="description">the state</reference>
+				</references>
+				<text>Lafayette Township, Madison County, Indiana is in the United States and the township is home to Anderson while Indianapolis is the state capital.</text>
+				<template>BRIDGE-1 , BRIDGE-2 is in PATIENT-2 and BRIDGE-1 is home to AGENT-1 while PATIENT-1 is BRIDGE-2 capital .</template>
+				<lexicalization>BRIDGE-1 , BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-2 and BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be home to AGENT-1 while PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 capital .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Indiana | capital | Indianapolis</striple>
+						<striple>Anderson,_Indiana | isPartOf | Indiana</striple>
+						<striple>Anderson,_Indiana | isPartOf | Lafayette_Township,_Madison_County,_Indiana</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Indianapolis" number="1" tag="PATIENT-1" type="name">Indianapolis</reference>
+					<reference entity="Indiana" number="2" tag="BRIDGE-2" type="description">the state of Indiana</reference>
+					<reference entity="Anderson,_Indiana" number="3" tag="AGENT-1" type="description">the city of Anderson</reference>
+					<reference entity="Lafayette_Township,_Madison_County,_Indiana" number="4" tag="BRIDGE-1" type="name">Lafayette Township , Madison County</reference>
+				</references>
+				<text>Indianapolis is the capital of the state of Indiana, where you will find the city of Anderson, which is part of Lafayette Township, Madison County.</text>
+				<template>PATIENT-1 is the capital of BRIDGE-2 , where you will find AGENT-1 , which is part of BRIDGE-1 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital of BRIDGE-2 , where you will VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] find AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Anderson,_Indiana</entity>
+				<entity>BRIDGE-1 | Lafayette_Township,_Madison_County,_Indiana</entity>
+				<entity>BRIDGE-2 | Indiana</entity>
+				<entity>PATIENT-1 | Indianapolis</entity>
+				<entity>PATIENT-2 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id644" size="4">
+			<originaltripleset>
+				<otriple>Texas | language | English_language</otriple>
+				<otriple>Arlington,_Texas | isPartOf | Texas</otriple>
+				<otriple>Texas | country | United_States</otriple>
+				<otriple>Texas | largestCity | Houston</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Texas | language | English_language</mtriple>
+				<mtriple>Arlington,_Texas | isPartOf | Texas</mtriple>
+				<mtriple>Texas | country | United_States</mtriple>
+				<mtriple>Texas | largestCity | Houston</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Texas | largestCity | Houston</striple>
+						<striple>Texas | country | United_States</striple>
+						<striple>Texas | language | English_language</striple>
+						<striple>Arlington,_Texas | isPartOf | Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Houston" number="1" tag="PATIENT-3" type="name">Houston</reference>
+					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the U.S.</reference>
+					<reference entity="English_language" number="4" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="Arlington,_Texas" number="5" tag="AGENT-1" type="name">Arlington</reference>
+				</references>
+				<text>Houston is the largest city in Texas in the U.S. where English is spoken and is also home to Arlington.</text>
+				<template>PATIENT-3 is the largest city in BRIDGE-1 in PATIENT-2 where PATIENT-1 is spoken and is also home to AGENT-1 .</template>
+				<lexicalization>PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the largest city in BRIDGE-1 in PATIENT-2 where PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also home to AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Texas | language | English_language</striple>
+						<striple>Texas | country | United_States</striple>
+						<striple>Arlington,_Texas | isPartOf | Texas</striple>
+						<striple>Texas | largestCity | Houston</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Texas" number="1" tag="BRIDGE-1" type="name">Texas</reference>
+					<reference entity="English_language" number="2" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the U.S.</reference>
+					<reference entity="Texas" number="4" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Arlington,_Texas" number="5" tag="AGENT-1" type="name">Arlington</reference>
+					<reference entity="Houston" number="6" tag="PATIENT-3" type="name">Houston</reference>
+					<reference entity="Texas" number="7" tag="BRIDGE-1" type="description">the state</reference>
+				</references>
+				<text>Texas, where English is spoken, is part of the U.S. and among its cities are Arlington and Houston which is the largest city in the state.</text>
+				<template>BRIDGE-1 , where PATIENT-1 is spoken , is part of PATIENT-2 and among BRIDGE-1 cities are AGENT-1 and PATIENT-3 which is the largest city in BRIDGE-1 .</template>
+				<lexicalization>BRIDGE-1 , where PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-2 and among BRIDGE-1 cities VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be AGENT-1 and PATIENT-3 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the largest city in BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arlington,_Texas</entity>
+				<entity>BRIDGE-1 | Texas</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Houston</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id645" size="4">
+			<originaltripleset>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>Albany,_Oregon | subdivisionName | Benton_County,_Oregon</otriple>
+				<otriple>Albany,_Oregon | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>Albany,_Oregon | isPartOf | Benton_County,_Oregon</mtriple>
+				<mtriple>Albany,_Oregon | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+						<striple>Albany,_Oregon | country | United_States</striple>
+						<striple>Albany,_Oregon | isPartOf | Benton_County,_Oregon</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="BRIDGE-1" type="name">United States</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Washington,_D.C." number="3" tag="PATIENT-1" type="name">Washington , DC</reference>
+					<reference entity="African_Americans" number="4" tag="PATIENT-3" type="name">African Americans</reference>
+					<reference entity="Albany,_Oregon" number="5" tag="AGENT-1" type="name">Albany</reference>
+					<reference entity="Benton_County,_Oregon" number="6" tag="PATIENT-2" type="name">Benton County , Oregon</reference>
+				</references>
+				<text>United States has its capital as Washington, DC, home to African Americans and Albany, Benton County, Oregon.</text>
+				<template>BRIDGE-1 has BRIDGE-1 capital as PATIENT-1 , home to PATIENT-3 and AGENT-1 , PATIENT-2 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have BRIDGE-1 capital as PATIENT-1 , home to PATIENT-3 and AGENT-1 , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albany,_Oregon | isPartOf | Benton_County,_Oregon</striple>
+						<striple>Albany,_Oregon | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albany,_Oregon" number="1" tag="AGENT-1" type="description">The city of Albany</reference>
+					<reference entity="Benton_County,_Oregon" number="2" tag="PATIENT-2" type="name">Benton County , Oregon</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="Washington,_D.C." number="5" tag="PATIENT-1" type="name">Washington D.C.</reference>
+					<reference entity="African_Americans" number="6" tag="PATIENT-3" type="name">African Americans</reference>
+					<reference entity="United_States" number="7" tag="BRIDGE-1" type="description">the country 's</reference>
+				</references>
+				<text>The city of Albany is part of Benton County, Oregon, in the United States. The capital of the country is, Washington D.C., and African Americans, are one of the country's ethnic groups.</text>
+				<template>AGENT-1 is part of PATIENT-2 , in BRIDGE-1 . The capital of BRIDGE-1 is , PATIENT-1 , and PATIENT-3 , are one of BRIDGE-1 ethnic groups .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-2 , in BRIDGE-1 . DT[form=defined] the capital of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be , PATIENT-1 , and PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be one of BRIDGE-1 ethnic groups .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albany,_Oregon | country | United_States</striple>
+						<striple>Albany,_Oregon | isPartOf | Benton_County,_Oregon</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albany,_Oregon" number="1" tag="AGENT-1" type="name">Albany</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="name">Oregon , U.S</reference>
+					<reference entity="Benton_County,_Oregon" number="3" tag="PATIENT-2" type="name">Benton County</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="African_Americans" number="5" tag="PATIENT-3" type="description">the African Americans</reference>
+					<reference entity="Washington,_D.C." number="6" tag="PATIENT-1" type="name">Washington DC</reference>
+				</references>
+				<text>The city of Albany, Oregon, U.S is part of Benton County. One of the ethnic groups in the United States are the African Americans and the capital is Washington DC.</text>
+				<template>The city of AGENT-1 , BRIDGE-1 is part of PATIENT-2 . One of the ethnic groups in BRIDGE-1 are PATIENT-3 and the capital is PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the city of AGENT-1 , BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-2 . One of DT[form=defined] the ethnic groups in BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-3 and DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albany,_Oregon</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | Benton_County,_Oregon</entity>
+				<entity>PATIENT-3 | African_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id646" size="4">
+			<originaltripleset>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>New_Jersey | country | United_States</otriple>
+				<otriple>United_States | largestCity | New_York_City</otriple>
+				<otriple>Atlantic_City,_New_Jersey | isPartOf | New_Jersey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>New_Jersey | country | United_States</mtriple>
+				<mtriple>United_States | largestCity | New_York_City</mtriple>
+				<mtriple>Atlantic_City,_New_Jersey | isPartOf | New_Jersey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | largestCity | New_York_City</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>New_Jersey | country | United_States</striple>
+						<striple>Atlantic_City,_New_Jersey | isPartOf | New_Jersey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="New_York_City" number="1" tag="PATIENT-2" type="name">New York City</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Washington,_D.C." number="3" tag="PATIENT-1" type="name">Washington DC</reference>
+					<reference entity="Atlantic_City,_New_Jersey" number="4" tag="AGENT-1" type="name">Atlantic City</reference>
+					<reference entity="New_Jersey" number="5" tag="BRIDGE-2" type="name">New Jersey</reference>
+					<reference entity="United_States" number="6" tag="BRIDGE-1" type="description">the country</reference>
+				</references>
+				<text>New York City is the largest city in the United States although the capital is Washington DC. Atlantic City, part of New Jersey, is located within the country.</text>
+				<template>PATIENT-2 is the largest city in BRIDGE-1 although the capital is PATIENT-1 . AGENT-1 , part of BRIDGE-2 , is located within BRIDGE-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the largest city in BRIDGE-1 although DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . AGENT-1 , part of BRIDGE-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located within BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City,_New_Jersey | isPartOf | New_Jersey</striple>
+						<striple>New_Jersey | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>United_States | largestCity | New_York_City</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City,_New_Jersey" number="1" tag="AGENT-1" type="name">Atlantic City</reference>
+					<reference entity="New_Jersey" number="2" tag="BRIDGE-2" type="name">New Jersey</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">The country 's</reference>
+					<reference entity="Washington,_D.C." number="5" tag="PATIENT-1" type="name">Washington D.C.</reference>
+					<reference entity="United_States" number="6" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="New_York_City" number="7" tag="PATIENT-2" type="name">New York City</reference>
+				</references>
+				<text>Atlantic City, is a part of New Jersey, in the United States. The country's capital, is Washington D.C., and its largest city, is New York City.</text>
+				<template>AGENT-1 , is a part of BRIDGE-2 , in BRIDGE-1 . BRIDGE-1 capital , is PATIENT-1 , and BRIDGE-1 largest city , is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a part of BRIDGE-2 , in BRIDGE-1 . BRIDGE-1 capital , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , and BRIDGE-1 largest city , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlantic_City,_New_Jersey | isPartOf | New_Jersey</striple>
+						<striple>New_Jersey | country | United_States</striple>
+						<striple>United_States | largestCity | New_York_City</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlantic_City,_New_Jersey" number="1" tag="AGENT-1" type="name">Atlantic City</reference>
+					<reference entity="New_Jersey" number="2" tag="BRIDGE-2" type="name">New Jersey</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="New_York_City" number="4" tag="PATIENT-2" type="name">New York City</reference>
+					<reference entity="Washington,_D.C." number="5" tag="PATIENT-1" type="name">Washington , D.C</reference>
+				</references>
+				<text>Atlantic City, New Jersey is located within the United States which the biggest city is New York City and the capital is Washington, D.C.</text>
+				<template>AGENT-1 , BRIDGE-2 is located within BRIDGE-1 which the biggest city is PATIENT-2 and the capital is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located within BRIDGE-1 which DT[form=defined] the biggest city VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlantic_City,_New_Jersey</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>BRIDGE-2 | New_Jersey</entity>
+				<entity>PATIENT-1 | Washington,_D.C.</entity>
+				<entity>PATIENT-2 | New_York_City</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id647" size="4">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>United_States | leaderTitle | President_of_the_United_States</otriple>
+				<otriple>United_States | leader | Barack_Obama</otriple>
+				<otriple>Albuquerque,_New_Mexico | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+				<mtriple>United_States | leaderTitle | President_of_the_United_States</mtriple>
+				<mtriple>United_States | leader | Barack_Obama</mtriple>
+				<mtriple>Albuquerque,_New_Mexico | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albuquerque,_New_Mexico | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | leader | Barack_Obama</striple>
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albuquerque,_New_Mexico" number="1" tag="AGENT-1" type="name">Albuquerque is in New Mexico</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="Barack_Obama" number="4" tag="PATIENT-3" type="name">Barack Obama</reference>
+					<reference entity="Barack_Obama" number="5" tag="PATIENT-3" type="pronoun">he</reference>
+					<reference entity="President_of_the_United_States" number="6" tag="PATIENT-2" type="name">President of the United States</reference>
+					<reference entity="African_Americans" number="7" tag="PATIENT-1" type="name">African Americans</reference>
+					<reference entity="United_States" number="8" tag="BRIDGE-1" type="description">the country</reference>
+				</references>
+				<text>Albuquerque is in New Mexico, which is located in the United States. The leader of the US is Barack Obama and he has the title of President of the United States. African Americans are an ethnic group in the country.</text>
+				<template>AGENT-1 , which is located in BRIDGE-1 . The leader of BRIDGE-1 is PATIENT-3 and PATIENT-3 has the title of PATIENT-2 . PATIENT-1 are an ethnic group in BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 . DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 and PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the title of PATIENT-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group in BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leader | Barack_Obama</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+						<striple>Albuquerque,_New_Mexico | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barack_Obama" number="1" tag="PATIENT-3" type="name">Barack Obama</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="African_Americans" number="3" tag="PATIENT-1" type="name">African Americans</reference>
+					<reference entity="Albuquerque,_New_Mexico" number="4" tag="AGENT-1" type="name">Albuquerque in New Mexico</reference>
+				</references>
+				<text>Barack Obama is the president of the United States where one finds African Americans and the city of Albuquerque in New Mexico.</text>
+				<template>PATIENT-3 is the president of BRIDGE-1 where one finds PATIENT-1 and the city of AGENT-1 .</template>
+				<lexicalization>PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the president of BRIDGE-1 where one VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] find PATIENT-1 and DT[form=defined] the city of AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albuquerque,_New_Mexico</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | African_Americans</entity>
+				<entity>PATIENT-2 | President_of_the_United_States</entity>
+				<entity>PATIENT-3 | Barack_Obama</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id648" size="4">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>Albuquerque,_New_Mexico | leaderTitle | New_Mexico_Senate</otriple>
+				<otriple>New_Mexico_Senate | leader | John_Sánchez</otriple>
+				<otriple>Albuquerque,_New_Mexico | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+				<mtriple>Albuquerque,_New_Mexico | leaderTitle | New_Mexico_Senate</mtriple>
+				<mtriple>New_Mexico_Senate | leader | John_Sánchez</mtriple>
+				<mtriple>Albuquerque,_New_Mexico | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albuquerque,_New_Mexico | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albuquerque,_New_Mexico | leaderTitle | New_Mexico_Senate</striple>
+						<striple>New_Mexico_Senate | leader | John_Sánchez</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albuquerque,_New_Mexico" number="1" tag="AGENT-1" type="name">Albuquerque , New Mexico</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="Asian_Americans" number="3" tag="PATIENT-1" type="name">Asian Americans</reference>
+					<reference entity="New_Mexico_Senate" number="5" tag="BRIDGE-1" type="description">the New Mexico Senate</reference>
+				</references>
+				<text>Albuquerque,New Mexico is located in the United States and Asian Americans are an ethnic group there.John Sánchez, is one of the leaders, in the New Mexico Senate which is leading the state.</text>
+				<template>AGENT-1 is located in BRIDGE-2 and PATIENT-1 are an ethnic group there . PATIENT-2 , is one of the leaders , in BRIDGE-1 which is leading the state .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-2 and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group there . PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the leaders , in BRIDGE-1 which VP[aspect=progressive,tense=present,voice=active,person=3rd,number=singular] lead DT[form=defined] the state .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albuquerque,_New_Mexico | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albuquerque,_New_Mexico | leaderTitle | New_Mexico_Senate</striple>
+						<striple>New_Mexico_Senate | leader | John_Sánchez</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albuquerque,_New_Mexico" number="1" tag="AGENT-1" type="name">Albuquerque is in New Mexico</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="Asian_Americans" number="3" tag="PATIENT-1" type="name">Asian Americans</reference>
+					<reference entity="New_Mexico_Senate" number="4" tag="BRIDGE-1" type="description">The New Mexico Senate</reference>
+					<reference entity="Albuquerque,_New_Mexico" number="5" tag="AGENT-1" type="name">Albuquerque</reference>
+					<reference entity="John_Sánchez" number="6" tag="PATIENT-2" type="name">John Sánchez</reference>
+				</references>
+				<text>Albuquerque is in New Mexico, in the United States, where one of the ethnic groups is Asian Americans. The New Mexico Senate leads Albuquerque and John Sánchez is one of the leaders.</text>
+				<template>AGENT-1 , in BRIDGE-2 , where one of the ethnic groups is PATIENT-1 . BRIDGE-1 leads AGENT-1 and PATIENT-2 is one of the leaders .</template>
+				<lexicalization>AGENT-1 , in BRIDGE-2 , where one of DT[form=defined] the ethnic groups VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] lead AGENT-1 and PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the leaders .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albuquerque,_New_Mexico | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albuquerque,_New_Mexico | leaderTitle | New_Mexico_Senate</striple>
+						<striple>New_Mexico_Senate | leader | John_Sánchez</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albuquerque,_New_Mexico" number="1" tag="AGENT-1" type="name">Albuquerque , New Mexico</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-2" type="description">the United States</reference>
+					<reference entity="Asian_Americans" number="3" tag="PATIENT-1" type="name">Asian Americans</reference>
+					<reference entity="Albuquerque,_New_Mexico" number="4" tag="AGENT-1" type="name">Albuquerque , New Mexico</reference>
+					<reference entity="New_Mexico_Senate" number="5" tag="BRIDGE-1" type="description">the New Mexico Senate</reference>
+					<reference entity="John_Sánchez" number="6" tag="PATIENT-2" type="name">John Sánchez</reference>
+				</references>
+				<text>Albuquerque, New Mexico is in the United States, where Asian Americans are an ethnic group. Albuquerque, New Mexico is led by the New Mexico Senate, where John Sánchez is one of the leaders.</text>
+				<template>AGENT-1 is in BRIDGE-2 , where PATIENT-1 are an ethnic group . AGENT-1 is led by BRIDGE-1 , where PATIENT-2 is one of the leaders .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 , where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group . AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by BRIDGE-1 , where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the leaders .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albuquerque,_New_Mexico</entity>
+				<entity>BRIDGE-1 | New_Mexico_Senate</entity>
+				<entity>BRIDGE-2 | United_States</entity>
+				<entity>PATIENT-1 | Asian_Americans</entity>
+				<entity>PATIENT-2 | John_Sánchez</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id649" size="4">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>Albany,_Oregon | subdivisionName | Benton_County,_Oregon</otriple>
+				<otriple>Albany,_Oregon | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>Albany,_Oregon | isPartOf | Benton_County,_Oregon</mtriple>
+				<mtriple>Albany,_Oregon | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albany,_Oregon | country | United_States</striple>
+						<striple>Albany,_Oregon | isPartOf | Benton_County,_Oregon</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asian_Americans" number="1" tag="PATIENT-1" type="description">The Asian Americans</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Washington,_D.C." number="3" tag="PATIENT-2" type="name">Washington DC</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="pronoun">It</reference>
+					<reference entity="Albany,_Oregon" number="5" tag="AGENT-1" type="name">Albany</reference>
+					<reference entity="Benton_County,_Oregon" number="6" tag="PATIENT-3" type="name">Benton County in Oregon</reference>
+				</references>
+				<text>The Asian Americans are an ethnic group in the United States, which has the capital city of Washington DC. It is also the location of Albany, part of Benton County in Oregon.</text>
+				<template>PATIENT-1 are an ethnic group in BRIDGE-1 , which has the capital city of PATIENT-2 . BRIDGE-1 is also the location of AGENT-1 , part of PATIENT-3 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group in BRIDGE-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the capital city of PATIENT-2 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also DT[form=defined] the location of AGENT-1 , part of PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>Albany,_Oregon | country | United_States</striple>
+						<striple>Albany,_Oregon | isPartOf | Benton_County,_Oregon</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="BRIDGE-1" type="description">the U.S.</reference>
+					<reference entity="Washington,_D.C." number="2" tag="PATIENT-2" type="name">Washington D.C.</reference>
+					<reference entity="Albany,_Oregon" number="3" tag="AGENT-1" type="name">Albany</reference>
+					<reference entity="Benton_County,_Oregon" number="4" tag="PATIENT-3" type="name">Benton County , Oregon</reference>
+					<reference entity="Asian_Americans" number="5" tag="PATIENT-1" type="name">Asian Americans</reference>
+				</references>
+				<text>In the U.S., where the capital is Washington D.C., you'll find Albany in Benton County, Oregon and Asian Americans.</text>
+				<template>In BRIDGE-1 , where the capital is PATIENT-2 , you'll find AGENT-1 in PATIENT-3 and PATIENT-1 .</template>
+				<lexicalization>In BRIDGE-1 , where DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , you 'll VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] find AGENT-1 in PATIENT-3 and PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albany,_Oregon | isPartOf | Benton_County,_Oregon</striple>
+						<striple>Albany,_Oregon | country | United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albany,_Oregon" number="1" tag="AGENT-1" type="description">The city of Albany</reference>
+					<reference entity="Benton_County,_Oregon" number="2" tag="PATIENT-3" type="name">Benton County , Oregon</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Washington,_D.C." number="4" tag="PATIENT-2" type="name">Washington D.C.</reference>
+					<reference entity="Asian_Americans" number="5" tag="PATIENT-1" type="name">Asian Americans</reference>
+				</references>
+				<text>The city of Albany is part of Benton County, Oregon, in the United States, where Washington D.C. is the capital, and where Asian Americans are one of the ethnic groups.</text>
+				<template>AGENT-1 is part of PATIENT-3 , in BRIDGE-1 , where PATIENT-2 is the capital , and where PATIENT-1 are one of the ethnic groups .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-3 , in BRIDGE-1 , where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital , and where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be one of DT[form=defined] the ethnic groups .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albany,_Oregon</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Asian_Americans</entity>
+				<entity>PATIENT-2 | Washington,_D.C.</entity>
+				<entity>PATIENT-3 | Benton_County,_Oregon</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id650" size="4">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+				<otriple>United_States | leader | Barack_Obama</otriple>
+				<otriple>Albuquerque,_New_Mexico | leaderTitle | Mayor_of_Albuquerque</otriple>
+				<otriple>Albuquerque,_New_Mexico | country | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+				<mtriple>United_States | leader | Barack_Obama</mtriple>
+				<mtriple>Albuquerque,_New_Mexico | leaderTitle | Mayor_of_Albuquerque</mtriple>
+				<mtriple>Albuquerque,_New_Mexico | country | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | leader | Barack_Obama</striple>
+						<striple>Albuquerque,_New_Mexico | country | United_States</striple>
+						<striple>Albuquerque,_New_Mexico | leaderTitle | Mayor_of_Albuquerque</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barack_Obama" number="1" tag="PATIENT-2" type="name">Barack Obama</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Mayor_of_Albuquerque" number="3" tag="PATIENT-3" type="description">the mayor</reference>
+					<reference entity="Albuquerque,_New_Mexico" number="4" tag="AGENT-1" type="name">Albuquerque , New Mexico</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="5" tag="PATIENT-1" type="name">Native Americans</reference>
+				</references>
+				<text>Barack Obama led the United States, while the mayor is the leader of Albuquerque, New Mexico, home to many Native Americans.</text>
+				<template>PATIENT-2 led BRIDGE-1 , while PATIENT-3 is the leader of AGENT-1 , home to many PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] lead BRIDGE-1 , while PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader of AGENT-1 , home to many PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albuquerque,_New_Mexico</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Native_Americans_in_the_United_States</entity>
+				<entity>PATIENT-2 | Barack_Obama</entity>
+				<entity>PATIENT-3 | Mayor_of_Albuquerque</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id651" size="4">
+			<originaltripleset>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>Albany,_Georgia | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+				<otriple>Albany,_Georgia | subdivisionName | &quot;United States&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>Albany,_Georgia | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+				<mtriple>Albany,_Georgia | isPartOf | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albany,_Georgia | country | United_States</striple>
+						<striple>Albany,_Georgia | isPartOf | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Native_Americans_in_the_United_States" number="1" tag="PATIENT-2" type="name">Native Americans</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="English_language" number="3" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Albany,_Georgia" number="5" tag="AGENT-1" type="name">Albany , in Georgia</reference>
+				</references>
+				<text>Native Americans are an ethnic group in the United States, where English is the language. Also in the United States, is Albany, in Georgia.</text>
+				<template>PATIENT-2 are an ethnic group in BRIDGE-1 , where PATIENT-1 is the language . Also in BRIDGE-1 , is AGENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group in BRIDGE-1 , where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the language . Also in BRIDGE-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albany,_Georgia | country | United_States</striple>
+						<striple>Albany,_Georgia | isPartOf | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="English_language" number="1" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="3" tag="PATIENT-2" type="name">Native Americans</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">The US</reference>
+					<reference entity="Albany,_Georgia" number="5" tag="AGENT-1" type="name">Albany , which is located in Georgia</reference>
+				</references>
+				<text>English is spoken in the United States, where Native Americans are an ethnic group. The US is home to Albany, which is located in Georgia.</text>
+				<template>PATIENT-1 is spoken in BRIDGE-1 , where PATIENT-2 are an ethnic group . BRIDGE-1 is home to AGENT-1 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak in BRIDGE-1 , where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be home to AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albany,_Georgia | country | United_States</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+						<striple>Albany,_Georgia | isPartOf | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albany,_Georgia" number="1" tag="AGENT-1" type="name">Albany , Georgia</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="English_language" number="3" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-1" type="description">the United States</reference>
+				</references>
+				<text>Albany,Georgia is located in the United States where English is the official language.The Native Americans are an ethnic group within the United States.</text>
+				<template>AGENT-1 is located in BRIDGE-1 where PATIENT-1 is the official language . PATIENT-2 are an ethnic group within BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the official language . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group within BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albany,_Georgia</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-2 | Native_Americans_in_the_United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id652" size="4">
+			<originaltripleset>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>Angola,_Indiana | subdivisionName | Indiana</otriple>
+				<otriple>Angola,_Indiana | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>Angola,_Indiana | isPartOf | Indiana</mtriple>
+				<mtriple>Angola,_Indiana | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola,_Indiana | isPartOf | Indiana</striple>
+						<striple>Angola,_Indiana | country | United_States</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola,_Indiana" number="1" tag="AGENT-1" type="name">Angola</reference>
+					<reference entity="Indiana" number="2" tag="PATIENT-2" type="name">Indiana</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="name">U.S.</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Asian_Americans" number="5" tag="PATIENT-3" type="description">the Asian Americans</reference>
+					<reference entity="English_language" number="6" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="United_States" number="7" tag="BRIDGE-1" type="description">the United States</reference>
+				</references>
+				<text>Angola,Indiana (U.S.), is home to one of its ethnic groups, the Asian Americans. English is spoken in the United States.</text>
+				<template>AGENT-1 , PATIENT-2 (BRIDGE-1) , is home to one of BRIDGE-1 ethnic groups , PATIENT-3 . PATIENT-1 is spoken in BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 , PATIENT-2 ( BRIDGE-1 ) , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be home to one of BRIDGE-1 ethnic groups , PATIENT-3 . PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak in BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola,_Indiana | isPartOf | Indiana</striple>
+						<striple>Angola,_Indiana | country | United_States</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola,_Indiana" number="1" tag="AGENT-1" type="name">Angola</reference>
+					<reference entity="Indiana" number="2" tag="PATIENT-2" type="name">Indiana</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="English_language" number="4" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="Asian_Americans" number="5" tag="PATIENT-3" type="name">Asian Americans</reference>
+				</references>
+				<text>Angola, Indiana is in the United States, where English is the language spoken and Asian Americans are an ethnic group.</text>
+				<template>AGENT-1 , PATIENT-2 is in BRIDGE-1 , where PATIENT-1 is the language spoken and PATIENT-3 are an ethnic group .</template>
+				<lexicalization>AGENT-1 , PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the language VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak and PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola,_Indiana | isPartOf | Indiana</striple>
+						<striple>Angola,_Indiana | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+						<striple>United_States | language | English_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola,_Indiana" number="1" tag="AGENT-1" type="description">The city of Angola</reference>
+					<reference entity="Indiana" number="2" tag="PATIENT-2" type="name">Indiana</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Asian_Americans" number="4" tag="PATIENT-3" type="name">Some Asian Americans</reference>
+					<reference entity="English_language" number="5" tag="PATIENT-1" type="name">English</reference>
+				</references>
+				<text>The city of Angola, Indiana is located in the United States. Some Asian Americans live there and the language spoken is English.</text>
+				<template>AGENT-1 , PATIENT-2 is located in BRIDGE-1 . PATIENT-3 live there and the language spoken is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 . PATIENT-3 VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] live there and DT[form=defined] the language VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Angola,_Indiana</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-2 | Indiana</entity>
+				<entity>PATIENT-3 | Asian_Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="City" eid="Id653" size="4">
+			<originaltripleset>
+				<otriple>United_States | language | English_language</otriple>
+				<otriple>Angola,_Indiana | subdivisionName | Pleasant_Township,_Steuben_County,_Indiana</otriple>
+				<otriple>Angola,_Indiana | country | United_States</otriple>
+				<otriple>United_States | ethnicGroup | Asian_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | language | English_language</mtriple>
+				<mtriple>Angola,_Indiana | isPartOf | Pleasant_Township,_Steuben_County,_Indiana</mtriple>
+				<mtriple>Angola,_Indiana | country | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | Asian_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola,_Indiana | isPartOf | Pleasant_Township,_Steuben_County,_Indiana</striple>
+						<striple>Angola,_Indiana | country | United_States</striple>
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola,_Indiana" number="1" tag="AGENT-1" type="name">Angola , Indiana</reference>
+					<reference entity="Pleasant_Township,_Steuben_County,_Indiana" number="2" tag="PATIENT-2" type="name">Pleasant Township Steuben County</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the U.S.</reference>
+					<reference entity="English_language" number="4" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Asian_Americans" number="6" tag="PATIENT-3" type="name">Asian Americans</reference>
+				</references>
+				<text>Angola, Indiana, which is part of Pleasant Township Steuben County, is in the U.S. where English is spoken and among its ethnic groups are Asian Americans.</text>
+				<template>AGENT-1 , which is part of PATIENT-2 , is in BRIDGE-1 where PATIENT-1 is spoken and among BRIDGE-1 ethnic groups are PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 where PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak and among BRIDGE-1 ethnic groups VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Angola,_Indiana | isPartOf | Pleasant_Township,_Steuben_County,_Indiana</striple>
+						<striple>Angola,_Indiana | country | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Angola,_Indiana" number="1" tag="AGENT-1" type="name">Angola</reference>
+					<reference entity="Pleasant_Township,_Steuben_County,_Indiana" number="2" tag="PATIENT-2" type="name">Pleasant Township which is part of Steuben County</reference>
+					<reference entity="United_States" number="3" tag="BRIDGE-1" type="name">Indiana , in the United States</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">The country</reference>
+					<reference entity="English_language" number="5" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="Asian_Americans" number="6" tag="PATIENT-3" type="name">Asian Americans</reference>
+				</references>
+				<text>Angola is in Pleasant Township which is part of Steuben County, in Indiana, in the United States. The country where English is spoken, and where Asian Americans are one of the ethnic groups.</text>
+				<template>AGENT-1 is in PATIENT-2 , in BRIDGE-1 . BRIDGE-1 where PATIENT-1 is spoken , and where PATIENT-3 are one of the ethnic groups .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-2 , in BRIDGE-1 . BRIDGE-1 where PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak , and where PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be one of DT[form=defined] the ethnic groups .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | language | English_language</striple>
+						<striple>United_States | ethnicGroup | Asian_Americans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Angola,_Indiana | country | United_States</striple>
+						<striple>Angola,_Indiana | isPartOf | Pleasant_Township,_Steuben_County,_Indiana</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="English_language" number="1" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Asian_Americans" number="3" tag="PATIENT-3" type="name">Asian Americans</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="Angola,_Indiana" number="5" tag="AGENT-1" type="description">the town of Angola</reference>
+					<reference entity="Pleasant_Township,_Steuben_County,_Indiana" number="6" tag="PATIENT-2" type="name">Pleasant Township , Steuben County , Indiana</reference>
+				</references>
+				<text>English is the language of the United States, where there is an ethnic group called Asian Americans. Also part of the US is the town of Angola, which can be found in Pleasant Township, Steuben County, Indiana.</text>
+				<template>PATIENT-1 is the language of BRIDGE-1 , where there is an ethnic group called PATIENT-3 . Also part of BRIDGE-1 is AGENT-1 , which can be found in PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the language of BRIDGE-1 , where there VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a ethnic group VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-3 . Also part of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be AGENT-1 , which can VP[aspect=simple,tense=present,voice=passive,person=null,number=null] find in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Angola,_Indiana</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-2 | Pleasant_Township,_Steuben_County,_Indiana</entity>
+				<entity>PATIENT-3 | Asian_Americans</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

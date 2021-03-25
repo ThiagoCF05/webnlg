@@ -1,0 +1,2734 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Athlete" eid="Id1530" size="3">
+			<originaltripleset>
+				<otriple>Aaron_Hunt | team | VfL_Wolfsburg</otriple>
+				<otriple>Aaron_Hunt | youthclubs | Goslarer_SC_08</otriple>
+				<otriple>Aaron_Hunt | clubs | SV_Werder_Bremen</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_Hunt | club | VfL_Wolfsburg</mtriple>
+				<mtriple>Aaron_Hunt | youthclub | Goslarer_SC_08</mtriple>
+				<mtriple>Aaron_Hunt | club | SV_Werder_Bremen</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Hunt | club | VfL_Wolfsburg</striple>
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aaron_Hunt | youthclub | Goslarer_SC_08</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Hunt" number="1" tag="AGENT-1" type="name">Aaron Hunt</reference>
+					<reference entity="VfL_Wolfsburg" number="2" tag="PATIENT-1" type="name">Vfl Wolfsburg</reference>
+					<reference entity="SV_Werder_Bremen" number="3" tag="PATIENT-3" type="name">SV Werder Bremen</reference>
+					<reference entity="Aaron_Hunt" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Goslarer_SC_08" number="5" tag="PATIENT-2" type="name">Goslarer SC 08</reference>
+				</references>
+				<text>Aaron Hunt plays for Vfl Wolfsburg and SV Werder Bremen. He was a member of the Goslarer SC 08 youth team.</text>
+				<template>AGENT-1 plays for PATIENT-1 and PATIENT-3 . AGENT-1 was a member of the PATIENT-2 youth team .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 and PATIENT-3 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of DT[form=defined] the PATIENT-2 youth team .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Hunt | youthclub | Goslarer_SC_08</striple>
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen</striple>
+						<striple>Aaron_Hunt | club | VfL_Wolfsburg</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Hunt" number="1" tag="AGENT-1" type="name">Aaron Hunt</reference>
+					<reference entity="Goslarer_SC_08" number="2" tag="PATIENT-2" type="description">the club Goslarer SC 08</reference>
+					<reference entity="SV_Werder_Bremen" number="3" tag="PATIENT-3" type="name">SV Werder Bremen</reference>
+					<reference entity="VfL_Wolfsburg" number="4" tag="PATIENT-1" type="name">Vfl Wolfsburg</reference>
+				</references>
+				<text>Aaron Hunt represented the club Goslarer SC 08 at youth level and has since played for both SV Werder Bremen and Vfl Wolfsburg.</text>
+				<template>AGENT-1 represented PATIENT-2 at youth level and has since played for both PATIENT-3 and PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] represent PATIENT-2 at youth level and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have since VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] both PATIENT-3 and PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Hunt | club | VfL_Wolfsburg</striple>
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen</striple>
+						<striple>Aaron_Hunt | youthclub | Goslarer_SC_08</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Hunt" number="1" tag="AGENT-1" type="name">Aaron Hun 's</reference>
+					<reference entity="VfL_Wolfsburg" number="2" tag="PATIENT-1" type="name">VfL Wolfsburg</reference>
+					<reference entity="Aaron_Hunt" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="SV_Werder_Bremen" number="4" tag="PATIENT-3" type="name">SV Werder Bremen</reference>
+					<reference entity="Goslarer_SC_08" number="5" tag="PATIENT-2" type="name">Goslarer SC 08</reference>
+				</references>
+				<text>Aaron Hun's club is VfL Wolfsburg but he previously played for both SV Werder Bremen and Goslarer SC 08 youth team.</text>
+				<template>AGENT-1 club is PATIENT-1 but AGENT-1 previously played for both PATIENT-3 and PATIENT-2 youth team .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 but AGENT-1 previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] both PATIENT-3 and PATIENT-2 youth team .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Hunt</entity>
+				<entity>PATIENT-1 | VfL_Wolfsburg</entity>
+				<entity>PATIENT-2 | Goslarer_SC_08</entity>
+				<entity>PATIENT-3 | SV_Werder_Bremen</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1531" size="3">
+			<originaltripleset>
+				<otriple>Aaron_Hunt | team | VfL_Wolfsburg</otriple>
+				<otriple>VfL_Wolfsburg | manager | Dieter_Hecking</otriple>
+				<otriple>Aaron_Hunt | clubs | SV_Werder_Bremen_II</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_Hunt | club | VfL_Wolfsburg</mtriple>
+				<mtriple>VfL_Wolfsburg | manager | Dieter_Hecking</mtriple>
+				<mtriple>Aaron_Hunt | club | SV_Werder_Bremen_II</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Hunt | club | VfL_Wolfsburg</striple>
+						<striple>VfL_Wolfsburg | manager | Dieter_Hecking</striple>
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Hunt" number="1" tag="AGENT-1" type="name">Aaron Hunt 's</reference>
+					<reference entity="VfL_Wolfsburg" number="2" tag="BRIDGE-1" type="name">VfL Wolfsburg</reference>
+					<reference entity="Dieter_Hecking" number="3" tag="PATIENT-1" type="name">Dieter Hecking</reference>
+					<reference entity="Aaron_Hunt" number="4" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="SV_Werder_Bremen_II" number="5" tag="PATIENT-2" type="name">SV Werder Bremen II</reference>
+				</references>
+				<text>Aaron Hunt's club is VfL Wolfsburg who are managed by Dieter Hecking, but he previously played for SV Werder Bremen II.</text>
+				<template>AGENT-1 club is BRIDGE-1 who are managed by PATIENT-1 , but AGENT-1 previously played for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 who VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] manage by PATIENT-1 , but AGENT-1 previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen_II</striple>
+						<striple>Aaron_Hunt | club | VfL_Wolfsburg</striple>
+						<striple>VfL_Wolfsburg | manager | Dieter_Hecking</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Hunt" number="1" tag="AGENT-1" type="name">Aaron Hunt</reference>
+					<reference entity="SV_Werder_Bremen_II" number="2" tag="PATIENT-2" type="description">the club SV Werder Bremen II</reference>
+					<reference entity="VfL_Wolfsburg" number="3" tag="BRIDGE-1" type="name">VfL Wolfsburg</reference>
+					<reference entity="Dieter_Hecking" number="4" tag="PATIENT-1" type="name">Dieter Hecking</reference>
+				</references>
+				<text>Aaron Hunt plays for the club SV Werder Bremen II and also VfL Wolfsburg which is managed by Dieter Hecking.</text>
+				<template>AGENT-1 plays for PATIENT-2 and also BRIDGE-1 which is managed by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and also BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Hunt</entity>
+				<entity>BRIDGE-1 | VfL_Wolfsburg</entity>
+				<entity>PATIENT-1 | Dieter_Hecking</entity>
+				<entity>PATIENT-2 | SV_Werder_Bremen_II</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1532" size="3">
+			<originaltripleset>
+				<otriple>Abel_Hernández | youthclubs | Central_Español</otriple>
+				<otriple>Abel_Hernández | team | Hull_City_A.F.C.</otriple>
+				<otriple>Abel_Hernández | clubs | U.S._Città_di_Palermo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abel_Hernández | youthclub | Central_Español</mtriple>
+				<mtriple>Abel_Hernández | club | Hull_City_A.F.C.</mtriple>
+				<mtriple>Abel_Hernández | club | U.S._Città_di_Palermo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández 's</reference>
+					<reference entity="Hull_City_A.F.C." number="2" tag="PATIENT-2" type="name">Hull City AFC</reference>
+					<reference entity="U.S._Città_di_Palermo" number="3" tag="PATIENT-3" type="name">US Citta di Palermo</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Central_Español" number="5" tag="PATIENT-1" type="name">Central Espanol</reference>
+				</references>
+				<text>Abel Hernández's clubs are Hull City AFC and US Citta di Palermo. He previously played youth football for Central Espanol.</text>
+				<template>AGENT-1 clubs are PATIENT-2 and PATIENT-3 . AGENT-1 previously played youth football for PATIENT-1 .</template>
+				<lexicalization>AGENT-1 clubs VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-2 and PATIENT-3 . AGENT-1 previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play youth football for PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Central_Español" number="2" tag="PATIENT-1" type="name">Central Espanol</reference>
+					<reference entity="Abel_Hernández" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Hull_City_A.F.C." number="4" tag="PATIENT-2" type="name">Hull City AFC</reference>
+					<reference entity="Abel_Hernández" number="5" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="U.S._Città_di_Palermo" number="6" tag="PATIENT-3" type="name">US Citta di Palermo</reference>
+				</references>
+				<text>Abel Hernandez is a member of the Central Espanol youth team and he plays for Hull City AFC but his club is US Citta di Palermo.</text>
+				<template>AGENT-1 is a member of the PATIENT-1 youth team and AGENT-1 plays for PATIENT-2 but AGENT-1 club is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a member of DT[form=defined] the PATIENT-1 youth team and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 but AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez 's</reference>
+					<reference entity="U.S._Città_di_Palermo" number="2" tag="PATIENT-3" type="name">US Citta di Palermo</reference>
+					<reference entity="Abel_Hernández" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Central_Español" number="4" tag="PATIENT-1" type="name">Central Espanol</reference>
+					<reference entity="Hull_City_A.F.C." number="5" tag="PATIENT-2" type="name">Hull City AFC</reference>
+				</references>
+				<text>Abel Hernandez's club is US Citta di Palermo. He formerly played youth football for Central Espanol and now plays for Hull City AFC.</text>
+				<template>AGENT-1 club is PATIENT-3 . AGENT-1 formerly played youth football for PATIENT-1 and now plays for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 . AGENT-1 formerly VP[aspect=simple,tense=past,voice=active,person=null,number=null] play youth football for PATIENT-1 and now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>PATIENT-1 | Central_Español</entity>
+				<entity>PATIENT-2 | Hull_City_A.F.C.</entity>
+				<entity>PATIENT-3 | U.S._Città_di_Palermo</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1533" size="3">
+			<originaltripleset>
+				<otriple>Abel_Hernández | youthclubs | Central_Español</otriple>
+				<otriple>Abel_Hernández | team | U.S._Città_di_Palermo</otriple>
+				<otriple>Abel_Hernández | clubs | Peñarol</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abel_Hernández | youthclub | Central_Español</mtriple>
+				<mtriple>Abel_Hernández | club | U.S._Città_di_Palermo</mtriple>
+				<mtriple>Abel_Hernández | club | Peñarol</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Peñarol</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Central_Español" number="2" tag="PATIENT-1" type="name">Central Espanol</reference>
+					<reference entity="Abel_Hernández" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="U.S._Città_di_Palermo" number="4" tag="PATIENT-2" type="name">US Citta di Palermo</reference>
+					<reference entity="Peñarol" number="5" tag="PATIENT-3" type="name">Penarol</reference>
+				</references>
+				<text>Abel Hernandez played youth football for Central Espanol. He has since been associated with clubs US Citta di Palermo and Penarol.</text>
+				<template>AGENT-1 played youth football for PATIENT-1 . AGENT-1 has since been associated with clubs PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play youth football for PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have since VP[aspect=simple,tense=present,voice=active,person=null,number=null] associate with clubs PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Peñarol</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Central_Español" number="2" tag="PATIENT-1" type="name">Central Español</reference>
+					<reference entity="Abel_Hernández" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="U.S._Città_di_Palermo" number="4" tag="PATIENT-2" type="name">US Citta di Palermo</reference>
+					<reference entity="Peñarol" number="5" tag="PATIENT-3" type="name">Penarol</reference>
+				</references>
+				<text>Abel Hernández played football at youth level for Central Español. At senior level he has played for US Citta di Palermo and Penarol.</text>
+				<template>AGENT-1 played football at youth level for PATIENT-1 . At senior level AGENT-1 has played for PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play football at youth level for PATIENT-1 . At senior level AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Peñarol</striple>
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="U.S._Città_di_Palermo" number="2" tag="PATIENT-2" type="name">U.S. Città di Palermo</reference>
+					<reference entity="Peñarol" number="3" tag="PATIENT-3" type="name">Penarol</reference>
+					<reference entity="Central_Español" number="4" tag="PATIENT-1" type="name">Central Español</reference>
+				</references>
+				<text>Abel Hernández plays football for U.S. Città di Palermo, having previously played for Penarol and at youth level for Central Español.</text>
+				<template>AGENT-1 plays football for PATIENT-2 , having previously played for PATIENT-3 and at youth level for PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play football for PATIENT-2 , VP[aspect=progressive,tense=present,voice=active,person=null,number=null] have previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-3 and at youth level for PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>PATIENT-1 | Central_Español</entity>
+				<entity>PATIENT-2 | U.S._Città_di_Palermo</entity>
+				<entity>PATIENT-3 | Peñarol</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1534" size="3">
+			<originaltripleset>
+				<otriple>Adam_Maher | team | PSV_Eindhoven</otriple>
+				<otriple>Adam_Maher | placeOfBirth | Netherlands</otriple>
+				<otriple>Adam_Maher | clubs | AZ_Alkmaar</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adam_Maher | club | PSV_Eindhoven</mtriple>
+				<mtriple>Adam_Maher | birthPlace | Netherlands</mtriple>
+				<mtriple>Adam_Maher | club | AZ_Alkmaar</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | birthPlace | Netherlands</striple>
+						<striple>Adam_Maher | club | PSV_Eindhoven</striple>
+						<striple>Adam_Maher | club | AZ_Alkmaar</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Netherlands" number="1" tag="PATIENT-2" type="name">Netherlands</reference>
+					<reference entity="Adam_Maher" number="2" tag="AGENT-1" type="name">Adam Maher 's</reference>
+					<reference entity="PSV_Eindhoven" number="3" tag="PATIENT-1" type="name">PSV Eindhoven</reference>
+					<reference entity="AZ_Alkmaar" number="4" tag="PATIENT-3" type="name">AZ Alkmaar</reference>
+				</references>
+				<text>Netherlands born Adam Maher's former clubs include PSV Eindhoven and AZ Alkmaar.</text>
+				<template>PATIENT-2 born AGENT-1 former clubs include PATIENT-1 and PATIENT-3 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear AGENT-1 former clubs VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] include PATIENT-1 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | birthPlace | Netherlands</striple>
+						<striple>Adam_Maher | club | PSV_Eindhoven</striple>
+						<striple>Adam_Maher | club | AZ_Alkmaar</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Maher" number="1" tag="AGENT-1" type="name">Adam Maher</reference>
+					<reference entity="Netherlands" number="2" tag="PATIENT-2" type="description">the Netherlands</reference>
+					<reference entity="Adam_Maher" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="PSV_Eindhoven" number="4" tag="PATIENT-1" type="name">PSV Eindhoven</reference>
+					<reference entity="AZ_Alkmaar" number="5" tag="PATIENT-3" type="name">AZ Alkmaar</reference>
+				</references>
+				<text>Adam Maher was born in the Netherlands and his clubs are PSV Eindhoven and AZ Alkmaar.</text>
+				<template>AGENT-1 was born in PATIENT-2 and AGENT-1 clubs are PATIENT-1 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and AGENT-1 clubs VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-1 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Maher | birthPlace | Netherlands</striple>
+						<striple>Adam_Maher | club | AZ_Alkmaar</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adam_Maher | club | PSV_Eindhoven</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Maher" number="1" tag="AGENT-1" type="name">Adam Maher</reference>
+					<reference entity="Netherlands" number="2" tag="PATIENT-2" type="description">the Netherlands</reference>
+					<reference entity="AZ_Alkmaar" number="3" tag="PATIENT-3" type="name">AZ Alkmaar</reference>
+					<reference entity="Adam_Maher" number="4" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="PSV_Eindhoven" number="5" tag="PATIENT-1" type="name">PSV Eindhoven</reference>
+				</references>
+				<text>Adam Maher was born in the Netherlands and is connected to the AZ Alkmaar club. His current club is PSV Eindhoven.</text>
+				<template>AGENT-1 was born in PATIENT-2 and is connected to the PATIENT-3 club . AGENT-1 current club is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] connect to DT[form=defined] the PATIENT-3 club . AGENT-1 current club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_Maher</entity>
+				<entity>PATIENT-1 | PSV_Eindhoven</entity>
+				<entity>PATIENT-2 | Netherlands</entity>
+				<entity>PATIENT-3 | AZ_Alkmaar</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1535" size="3">
+			<originaltripleset>
+				<otriple>Akeem_Adams | team | United_Petrotrin_F.C.</otriple>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco</otriple>
+				<otriple>Akeem_Adams | clubs | W_Connection_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Adams | club | United_Petrotrin_F.C.</mtriple>
+				<mtriple>United_Petrotrin_F.C. | ground | Palo_Seco</mtriple>
+				<mtriple>Akeem_Adams | club | W_Connection_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | W_Connection_F.C.</striple>
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="W_Connection_F.C." number="2" tag="PATIENT-2" type="name">W Connection FC</reference>
+					<reference entity="United_Petrotrin_F.C." number="3" tag="BRIDGE-1" type="name">United Petrotrin F.C.</reference>
+					<reference entity="Palo_Seco" number="4" tag="PATIENT-1" type="name">Palo Seco</reference>
+				</references>
+				<text>Akeem Adams plays for W Connection FC , having previously played for United Petrotrin F.C., whose ground is Palo Seco.</text>
+				<template>AGENT-1 plays for PATIENT-2 , having previously played for BRIDGE-1 , whose ground is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 , VP[aspect=progressive,tense=present,voice=active,person=null,number=null] have previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 , whose ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | W_Connection_F.C.</striple>
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="W_Connection_F.C." number="2" tag="PATIENT-2" type="name">W Connection F.C .</reference>
+					<reference entity="United_Petrotrin_F.C." number="3" tag="BRIDGE-1" type="description">the United Petrotrin F.C . club .</reference>
+					<reference entity="Palo_Seco" number="4" tag="PATIENT-1" type="name">Palo Seco</reference>
+				</references>
+				<text>Akeem Adams played for W Connection F.C. and is a member of the United Petrotrin F.C. club. which play in Palo Seco.</text>
+				<template>AGENT-1 played for PATIENT-2 and is a member of BRIDGE-1 which play in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a member of BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] play in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | W_Connection_F.C.</striple>
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="W_Connection_F.C." number="2" tag="PATIENT-2" type="name">W Connection F.C .</reference>
+					<reference entity="United_Petrotrin_F.C." number="3" tag="BRIDGE-1" type="description">the United Petrotrin F.C.</reference>
+					<reference entity="Palo_Seco" number="4" tag="PATIENT-1" type="name">Palo Seco</reference>
+				</references>
+				<text>Akeem Adams played for W Connection F.C. and the United Petrotrin F.C., whose ground was Palo Seco.</text>
+				<template>AGENT-1 played for PATIENT-2 and BRIDGE-1 , whose ground was PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 and BRIDGE-1 , whose ground VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>BRIDGE-1 | United_Petrotrin_F.C.</entity>
+				<entity>PATIENT-1 | Palo_Seco</entity>
+				<entity>PATIENT-2 | W_Connection_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1536" size="3">
+			<originaltripleset>
+				<otriple>Akeem_Ayers | formerTeam | Los_Angeles_Rams</otriple>
+				<otriple>Akeem_Ayers | draftRound | &quot;2&quot;</otriple>
+				<otriple>Akeem_Ayers | draftPick | &quot;39&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Ayers | formerTeam | Los_Angeles_Rams</mtriple>
+				<mtriple>Akeem_Ayers | draftRound | &quot;2&quot;</mtriple>
+				<mtriple>Akeem_Ayers | draftPick | &quot;39&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | Los_Angeles_Rams</striple>
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+						<striple>Akeem_Ayers | draftRound | &quot;2&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Los_Angeles_Rams" number="1" tag="PATIENT-1" type="name">Los Angeles Rams</reference>
+					<reference entity="Akeem_Ayers" number="2" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="&quot;39&quot;" number="3" tag="PATIENT-3" type="name">39</reference>
+					<reference entity="&quot;2&quot;" number="4" tag="PATIENT-2" type="name">2</reference>
+				</references>
+				<text>Former Los Angeles Rams team member, Akeem Ayers, was number 39 in the draft pick, in draft round 2.</text>
+				<template>Former PATIENT-1 team member , AGENT-1 , was number PATIENT-3 in the draft pick , in draft round PATIENT-2 .</template>
+				<lexicalization>Former PATIENT-1 team member , AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be number PATIENT-3 in DT[form=defined] the draft pick , in draft round PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | Los_Angeles_Rams</striple>
+						<striple>Akeem_Ayers | draftRound | &quot;2&quot;</striple>
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="Los_Angeles_Rams" number="2" tag="PATIENT-1" type="description">the Los Angeles Rams</reference>
+					<reference entity="&quot;2&quot;" number="3" tag="PATIENT-2" type="name">2</reference>
+					<reference entity="Akeem_Ayers" number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="&quot;39&quot;" number="5" tag="PATIENT-3" type="name">39</reference>
+				</references>
+				<text>Akeem Ayers, whose former team was the Los Angeles Rams, was in draft round 2 and his draft pick number was 39.</text>
+				<template>AGENT-1 , whose former team was PATIENT-1 , was in draft round PATIENT-2 and AGENT-1 draft pick number was PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , whose former team VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be in draft round PATIENT-2 and AGENT-1 draft pick number VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Ayers</entity>
+				<entity>PATIENT-1 | Los_Angeles_Rams</entity>
+				<entity>PATIENT-2 | &quot;2&quot;</entity>
+				<entity>PATIENT-3 | &quot;39&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1537" size="3">
+			<originaltripleset>
+				<otriple>Akeem_Ayers | formerTeam | History_of_the_St._Louis_Rams</otriple>
+				<otriple>Akeem_Ayers | draftRound | &quot;2&quot;</otriple>
+				<otriple>Akeem_Ayers | draftPick | &quot;39&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Ayers | formerTeam | St._Louis_Rams</mtriple>
+				<mtriple>Akeem_Ayers | draftRound | &quot;2&quot;</mtriple>
+				<mtriple>Akeem_Ayers | draftPick | &quot;39&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | St._Louis_Rams</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+						<striple>Akeem_Ayers | draftRound | &quot;2&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="St._Louis_Rams" number="2" tag="PATIENT-1" type="description">the St. Louis Rams</reference>
+					<reference entity="Akeem_Ayers" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;39&quot;" number="4" tag="PATIENT-3" type="name">39</reference>
+					<reference entity="&quot;2&quot;" number="5" tag="PATIENT-2" type="name">2</reference>
+				</references>
+				<text>Akeem Ayers used to play for the St. Louis Rams. He was number 39 in the draft pick in draft round 2.</text>
+				<template>AGENT-1 used to play for PATIENT-1 . AGENT-1 was number PATIENT-3 in the draft pick in draft round PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] use to VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play for PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be number PATIENT-3 in DT[form=defined] the draft pick in draft round PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | St._Louis_Rams</striple>
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+						<striple>Akeem_Ayers | draftRound | &quot;2&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="St._Louis_Rams" number="2" tag="PATIENT-1" type="name">St Louis Rams</reference>
+					<reference entity="&quot;39&quot;" number="3" tag="PATIENT-3" type="name">39</reference>
+					<reference entity="&quot;2&quot;" number="4" tag="PATIENT-2" type="name">2</reference>
+				</references>
+				<text>Akeem Ayers, who formerly played for St Louis Rams, was number 39 in the draft pick and in draft round 2.</text>
+				<template>AGENT-1 , who formerly played for PATIENT-1 , was number PATIENT-3 in the draft pick and in draft round PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , who formerly VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be number PATIENT-3 in DT[form=defined] the draft pick and in draft round PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | St._Louis_Rams</striple>
+						<striple>Akeem_Ayers | draftPick | &quot;39&quot;</striple>
+						<striple>Akeem_Ayers | draftRound | &quot;2&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="St._Louis_Rams" number="1" tag="PATIENT-1" type="name">St Louis Rams</reference>
+					<reference entity="Akeem_Ayers" number="2" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="&quot;39&quot;" number="3" tag="PATIENT-3" type="name">39</reference>
+					<reference entity="&quot;2&quot;" number="4" tag="PATIENT-2" type="name">2</reference>
+				</references>
+				<text>St Louis Rams is the former team of Akeem Ayers, who was drat pick 39, in the draft round, 2.</text>
+				<template>PATIENT-1 is the former team of AGENT-1 , who was drat pick PATIENT-3 , in the draft round , PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the former team of AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be drat pick PATIENT-3 , in DT[form=defined] the draft round , PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Ayers</entity>
+				<entity>PATIENT-1 | St._Louis_Rams</entity>
+				<entity>PATIENT-2 | &quot;2&quot;</entity>
+				<entity>PATIENT-3 | &quot;39&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1538" size="3">
+			<originaltripleset>
+				<otriple>Akeem_Dent | debutTeam | Atlanta_Falcons</otriple>
+				<otriple>Akeem_Dent | dateOfBirth | &quot;1987-09-27&quot;^^xsd:date</otriple>
+				<otriple>Akeem_Dent | placeOfBirth | &quot;Atlanta, Georgia&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Dent | debutTeam | Atlanta_Falcons</mtriple>
+				<mtriple>Akeem_Dent | birthDate | 1987-09-27</mtriple>
+				<mtriple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="Akeem_Dent" number="2" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Atlanta_Falcons" number="3" tag="PATIENT-1" type="description">the Atlanta Falcons</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="4" tag="PATIENT-3" type="name">Atlanta , Georgia</reference>
+					<reference entity="1987-09-27" number="5" tag="PATIENT-2" type="name">27 September 1987</reference>
+				</references>
+				<text>Akeem Dent, who made his debut with the Atlanta Falcons, was born in Atlanta, Georgia on 27 September 1987.</text>
+				<template>AGENT-1 , who made AGENT-1 debut with PATIENT-1 , was born in PATIENT-3 on PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] make AGENT-1 debut with PATIENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 on PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="1987-09-27" number="2" tag="PATIENT-2" type="name">27 September 1987</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="3" tag="PATIENT-3" type="name">Atlanta , Georgia ,</reference>
+					<reference entity="Akeem_Dent" number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Atlanta_Falcons" number="5" tag="PATIENT-1" type="description">the Atlanta Falcons</reference>
+				</references>
+				<text>Akeem Dent, who was born on 27 September 1987 in Atlanta, Georgia, made his debut with the Atlanta Falcons.</text>
+				<template>AGENT-1 , who was born on PATIENT-2 in PATIENT-3 made AGENT-1 debut with PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 in PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] make AGENT-1 debut with PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="2" tag="PATIENT-3" type="name">Atlanta Georgia</reference>
+					<reference entity="1987-09-27" number="3" tag="PATIENT-2" type="name">27 September 1987</reference>
+					<reference entity="Akeem_Dent" number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Atlanta_Falcons" number="5" tag="PATIENT-1" type="description">the Atlanta Falcons</reference>
+				</references>
+				<text>Akeem Dent, who was born in Atlanta Georgia on 27 September 1987, made his debut with the Atlanta Falcons.</text>
+				<template>AGENT-1 , who was born in PATIENT-3 on PATIENT-2 , made AGENT-1 debut with PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 on PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] make AGENT-1 debut with PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Dent</entity>
+				<entity>PATIENT-1 | Atlanta_Falcons</entity>
+				<entity>PATIENT-2 | 1987-09-27</entity>
+				<entity>PATIENT-3 | &quot;Atlanta, Georgia&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1539" size="3">
+			<originaltripleset>
+				<otriple>Alaa_Abdul-Zahra | placeOfBirth | Iraq</otriple>
+				<otriple>Alaa_Abdul-Zahra | clubs | Shabab_Al-Ordon_Club</otriple>
+				<otriple>Alaa_Abdul-Zahra | team | Iraq_national_under-20_football_team</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alaa_Abdul-Zahra | birthPlace | Iraq</mtriple>
+				<mtriple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</mtriple>
+				<mtriple>Alaa_Abdul-Zahra | club | Iraq_national_under-20_football_team</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | birthPlace | Iraq</striple>
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+						<striple>Alaa_Abdul-Zahra | club | Iraq_national_under-20_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Iraq" number="2" tag="PATIENT-1" type="name">Iraq</reference>
+					<reference entity="Shabab_Al-Ordon_Club" number="3" tag="PATIENT-2" type="name">Shabab Al-Ordon Club</reference>
+					<reference entity="Iraq_national_under-20_football_team" number="4" tag="PATIENT-3" type="description">the Iraq national under 20 football team</reference>
+				</references>
+				<text>Alaa Abdul Zahra, born in Iraq, plays for Shabab Al-Ordon Club, and also for the Iraq national under 20 football team.</text>
+				<template>AGENT-1 , born in PATIENT-1 , plays for PATIENT-2 , and also for PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 , and also for PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | birthPlace | Iraq</striple>
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+						<striple>Alaa_Abdul-Zahra | club | Iraq_national_under-20_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Iraq" number="1" tag="PATIENT-1" type="name">Iraqi</reference>
+					<reference entity="Alaa_Abdul-Zahra" number="2" tag="AGENT-1" type="name">Alaa Abdul-Zahra</reference>
+					<reference entity="Shabab_Al-Ordon_Club" number="3" tag="PATIENT-2" type="name">Shabab Al-Ordon Club</reference>
+					<reference entity="Iraq_national_under-20_football_team" number="4" tag="PATIENT-3" type="description">the Iraq national under 20 football team</reference>
+				</references>
+				<text>Iraqi born, Alaa Abdul-Zahra, whose club is Shabab Al-Ordon Club, plays for the Iraq national under 20 football team.</text>
+				<template>PATIENT-1 born , AGENT-1 , whose club is PATIENT-2 , plays for PATIENT-3 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear , AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | birthPlace | Iraq</striple>
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+						<striple>Alaa_Abdul-Zahra | club | Iraq_national_under-20_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul-Zahra</reference>
+					<reference entity="Iraq" number="2" tag="PATIENT-1" type="name">Iraq</reference>
+					<reference entity="Shabab_Al-Ordon_Club" number="3" tag="PATIENT-2" type="name">Shabab Al-Ordon Club</reference>
+					<reference entity="Iraq_national_under-20_football_team" number="4" tag="PATIENT-3" type="description">the Iraq national under 20 football team</reference>
+				</references>
+				<text>Alaa Abdul-Zahra, who was born in Iraq, is a member of the club Shabab Al-Ordon Club and plays for the Iraq national under 20 football team.</text>
+				<template>AGENT-1 , who was born in PATIENT-1 , is a member of the club PATIENT-2 and plays for PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a member of DT[form=defined] the club PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alaa_Abdul-Zahra</entity>
+				<entity>PATIENT-1 | Iraq</entity>
+				<entity>PATIENT-2 | Shabab_Al-Ordon_Club</entity>
+				<entity>PATIENT-3 | Iraq_national_under-20_football_team</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1540" size="3">
+			<originaltripleset>
+				<otriple>Alaa_Abdul-Zahra | clubs | Al_Kharaitiyat_SC</otriple>
+				<otriple>Al_Kharaitiyat_SC | ground | Al_Khor</otriple>
+				<otriple>Alaa_Abdul-Zahra | team | Shabab_Al-Ordon_Club</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</mtriple>
+				<mtriple>Al_Kharaitiyat_SC | ground | Al_Khor</mtriple>
+				<mtriple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul-Zahra 's</reference>
+					<reference entity="Shabab_Al-Ordon_Club" number="2" tag="PATIENT-2" type="name">Shabab Al-Ordon Club</reference>
+					<reference entity="Alaa_Abdul-Zahra" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="4" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="5" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Al_Khor" number="6" tag="PATIENT-1" type="name">Al Khor</reference>
+				</references>
+				<text>Alaa Abdul-Zahra's club is Shabab Al-Ordon Club and he plays for Al Kharaitiyat SC at their home ground Al Khor.</text>
+				<template>AGENT-1 club is PATIENT-2 and AGENT-1 plays for BRIDGE-1 at BRIDGE-1 home ground PATIENT-1 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 at BRIDGE-1 home ground PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul-Zahra 's</reference>
+					<reference entity="Shabab_Al-Ordon_Club" number="2" tag="PATIENT-2" type="name">Shabab Al-Ordon</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="3" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Khor" number="4" tag="PATIENT-1" type="name">Al Khor</reference>
+				</references>
+				<text>Alaa Abdul-Zahra's clubs are Shabab Al-Ordon and also Al Kharaitiyat SC whose ground is Al Khor.</text>
+				<template>AGENT-1 clubs are PATIENT-2 and also BRIDGE-1 whose ground is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 clubs VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-2 and also BRIDGE-1 whose ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Shabab_Al-Ordon_Club" number="1" tag="PATIENT-2" type="name">Shabab Al-Ordon Club</reference>
+					<reference entity="Alaa_Abdul-Zahra" number="2" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="3" tag="BRIDGE-1" type="name">AL Kharaitiyat SC</reference>
+					<reference entity="Al_Khor" number="4" tag="PATIENT-1" type="name">Al Khor</reference>
+				</references>
+				<text>Shabab Al-Ordon Club is one of the clubs of Alaa Abdul Zahra, Another is, AL Kharaitiyat SC which is located in Al Khor.</text>
+				<template>PATIENT-2 is one of the clubs of AGENT-1 , Another is , BRIDGE-1 which is located in PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be one of DT[form=defined] the clubs of AGENT-1 , DT[form=defined] another VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be , BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alaa_Abdul-Zahra</entity>
+				<entity>BRIDGE-1 | Al_Kharaitiyat_SC</entity>
+				<entity>PATIENT-1 | Al_Khor</entity>
+				<entity>PATIENT-2 | Shabab_Al-Ordon_Club</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1541" size="3">
+			<originaltripleset>
+				<otriple>Alan_Martin_(footballer,_born_1989) | team | Hamilton_Academical_F.C.</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | dateOfBirth | &quot;1989-01-01&quot;^^xsd:date</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | clubs | Clyde_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</mtriple>
+				<mtriple>Alan_Martin_(footballer) | birthDate | 1989-01-01</mtriple>
+				<mtriple>Alan_Martin_(footballer) | club | Clyde_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Clyde_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Footballer , Alan Martin ,</reference>
+					<reference entity="1989-01-01" number="2" tag="PATIENT-2" type="name">01/01/1989</reference>
+					<reference entity="Alan_Martin_(footballer)" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Hamilton_Academical_F.C." number="4" tag="PATIENT-1" type="name">Hamilton Academical FC</reference>
+					<reference entity="Clyde_F.C." number="5" tag="PATIENT-3" type="name">Clyde FC club</reference>
+				</references>
+				<text>Footballer, Alan Martin, was born on 01/01/1989. He is a footballer for the clubs, Hamilton Academical FC and Clyde FC club.</text>
+				<template>AGENT-1 was born on PATIENT-2 . AGENT-1 is a footballer for the clubs , PATIENT-1 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a footballer for DT[form=defined] the clubs , PATIENT-1 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Clyde_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1989-01-01" number="1" tag="PATIENT-2" type="name">1 January 1989</reference>
+					<reference entity="Alan_Martin_(footballer)" number="2" tag="AGENT-1" type="name">Alan Martin</reference>
+					<reference entity="Hamilton_Academical_F.C." number="3" tag="PATIENT-1" type="name">Hamilton Academical FC</reference>
+					<reference entity="Clyde_F.C." number="4" tag="PATIENT-3" type="name">Clyde FC</reference>
+				</references>
+				<text>Born on 1 January 1989, Alan Martin currently plays for Hamilton Academical FC, having previously played with Clyde FC.</text>
+				<template>Born on PATIENT-2 , AGENT-1 currently plays for PATIENT-1 , having previously played with PATIENT-3 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear on PATIENT-2 , AGENT-1 currently VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 , VP[aspect=progressive,tense=present,voice=active,person=null,number=null] have previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play with PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Martin_(footballer) | club | Clyde_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Footballer , Alan Martin ,</reference>
+					<reference entity="1989-01-01" number="2" tag="PATIENT-2" type="name">01/01/1989</reference>
+					<reference entity="Alan_Martin_(footballer)" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Clyde_F.C." number="4" tag="PATIENT-3" type="name">Clyde F.C .</reference>
+					<reference entity="Hamilton_Academical_F.C." number="5" tag="PATIENT-1" type="name">Hamilton Academical FC</reference>
+				</references>
+				<text>Footballer, Alan Martin, was born on 01/01/1989. He played football for Clyde F.C. and plays for Hamilton Academical FC.</text>
+				<template>AGENT-1 was born on PATIENT-2 . AGENT-1 played football for PATIENT-3 and plays for PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play football for PATIENT-3 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Martin_(footballer)</entity>
+				<entity>PATIENT-1 | Hamilton_Academical_F.C.</entity>
+				<entity>PATIENT-2 | 1989-01-01</entity>
+				<entity>PATIENT-3 | Clyde_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1542" size="3">
+			<originaltripleset>
+				<otriple>Alan_Martin_(footballer,_born_1989) | clubs | Motherwell_F.C.</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | team | Accrington_Stanley_F.C.</otriple>
+				<otriple>Accrington_Stanley_F.C. | ground | Accrington</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Martin_(footballer) | club | Motherwell_F.C.</mtriple>
+				<mtriple>Alan_Martin_(footballer) | club | Accrington_Stanley_F.C.</mtriple>
+				<mtriple>Accrington_Stanley_F.C. | ground | Accrington</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | club | Motherwell_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Accrington_Stanley_F.C.</striple>
+						<striple>Accrington_Stanley_F.C. | ground | Accrington</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan Martin</reference>
+					<reference entity="Motherwell_F.C." number="2" tag="PATIENT-1" type="name">Motherwell FC</reference>
+					<reference entity="Accrington_Stanley_F.C." number="3" tag="BRIDGE-1" type="name">Accrington Stanley FC</reference>
+					<reference entity="Accrington_Stanley_F.C." number="4" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Accrington" number="5" tag="PATIENT-2" type="name">Accrington</reference>
+				</references>
+				<text>Alan Martin, whose club is Motherwell FC, played for Accrington Stanley FC who have their ground in Accrington.</text>
+				<template>AGENT-1 , whose club is PATIENT-1 , played for BRIDGE-1 who have BRIDGE-1 ground in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have BRIDGE-1 ground in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | club | Motherwell_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Accrington_Stanley_F.C.</striple>
+						<striple>Accrington_Stanley_F.C. | ground | Accrington</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan Martin 's</reference>
+					<reference entity="Motherwell_F.C." number="2" tag="PATIENT-1" type="name">Motherwell FC</reference>
+					<reference entity="Alan_Martin_(footballer)" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Accrington" number="4" tag="PATIENT-2" type="description">the Accrington</reference>
+					<reference entity="Accrington_Stanley_F.C." number="5" tag="BRIDGE-1" type="name">Accrington Stanley</reference>
+				</references>
+				<text>Alan Martin's football club is Motherwell FC and he has also played for the Accrington based club Accrington Stanley.</text>
+				<template>AGENT-1 football club is PATIENT-1 and AGENT-1 has also played for PATIENT-2 based club BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 football club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have also VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] base club BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Martin_(footballer)</entity>
+				<entity>BRIDGE-1 | Accrington_Stanley_F.C.</entity>
+				<entity>PATIENT-1 | Motherwell_F.C.</entity>
+				<entity>PATIENT-2 | Accrington</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1543" size="3">
+			<originaltripleset>
+				<otriple>Aleksander_Barkov,_Jr. | team | Florida_Panthers</otriple>
+				<otriple>Aleksander_Barkov,_Jr. | dateOfBirth | &quot;1995-09-02&quot;^^xsd:date</otriple>
+				<otriple>Aleksander_Barkov,_Jr. | placeOfBirth | &quot;Tampere, Finland&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</mtriple>
+				<mtriple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</mtriple>
+				<mtriple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov Jr</reference>
+					<reference entity="&quot;Tampere, Finland&quot;" number="2" tag="PATIENT-3" type="name">Tampere , Finland</reference>
+					<reference entity="1995-09-02" number="3" tag="PATIENT-2" type="name">1995-09-02</reference>
+					<reference entity="Aleksander_Barkov,_Jr." number="4" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Florida_Panthers" number="5" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Aleksander Barkov Jr was born in Tampere, Finland on 1995-09-02 and he plays for the Florida Panthers.</text>
+				<template>AGENT-1 was born in PATIENT-3 on PATIENT-2 and AGENT-1 plays for PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 on PATIENT-2 and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1995-09-02" number="1" tag="PATIENT-2" type="name">September 2</reference>
+					<reference entity="Aleksander_Barkov,_Jr." number="2" tag="AGENT-1" type="name">1995 , Aleksander Barkov Jr</reference>
+					<reference entity="&quot;Tampere, Finland&quot;" number="3" tag="PATIENT-3" type="name">Tampere , Finland ,</reference>
+					<reference entity="Florida_Panthers" number="4" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Born September 2, 1995, Aleksander Barkov Jr of Tampere, Finland, played for the Florida Panthers.</text>
+				<template>Born PATIENT-2 , AGENT-1 of PATIENT-3 played for PATIENT-1 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear PATIENT-2 , AGENT-1 of PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+						<striple>Aleksander_Barkov,_Jr. | club | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov Jr</reference>
+					<reference entity="1995-09-02" number="2" tag="PATIENT-2" type="name">2 September 1995</reference>
+					<reference entity="&quot;Tampere, Finland&quot;" number="3" tag="PATIENT-3" type="name">Tampere , Finland</reference>
+					<reference entity="Aleksander_Barkov,_Jr." number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Florida_Panthers" number="5" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Aleksander Barkov Jr was born on 2 September 1995 in Tampere, Finland and his club is the Florida Panthers.</text>
+				<template>AGENT-1 was born on PATIENT-2 in PATIENT-3 and AGENT-1 club is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 in PATIENT-3 and AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksander_Barkov,_Jr.</entity>
+				<entity>PATIENT-1 | Florida_Panthers</entity>
+				<entity>PATIENT-2 | 1995-09-02</entity>
+				<entity>PATIENT-3 | &quot;Tampere, Finland&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1544" size="3">
+			<originaltripleset>
+				<otriple>Aleksander_Barkov,_Jr. | draftTeam | Florida_Panthers</otriple>
+				<otriple>Aleksander_Barkov,_Jr. | dateOfBirth | &quot;1995-09-02&quot;^^xsd:date</otriple>
+				<otriple>Aleksander_Barkov,_Jr. | placeOfBirth | &quot;Tampere, Finland&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksander_Barkov,_Jr. | draftTeam | Florida_Panthers</mtriple>
+				<mtriple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</mtriple>
+				<mtriple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | draftTeam | Florida_Panthers</striple>
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov Jr</reference>
+					<reference entity="Florida_Panthers" number="2" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+					<reference entity="1995-09-02" number="3" tag="PATIENT-2" type="name">2 September 1995</reference>
+					<reference entity="&quot;Tampere, Finland&quot;" number="4" tag="PATIENT-3" type="name">Tampere , Finland</reference>
+				</references>
+				<text>Aleksander Barkov Jr, whose draft team was the Florida Panthers, was born on 2 September 1995 in Tampere, Finland.</text>
+				<template>AGENT-1 , whose draft team was PATIENT-1 , was born on PATIENT-2 in PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , whose draft team VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 in PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | draftTeam | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov Jr</reference>
+					<reference entity="&quot;Tampere, Finland&quot;" number="2" tag="PATIENT-3" type="name">Tampere , Finland</reference>
+					<reference entity="1995-09-02" number="3" tag="PATIENT-2" type="name">Sept. 2 , 1995</reference>
+					<reference entity="Aleksander_Barkov,_Jr." number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Florida_Panthers" number="5" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Aleksander Barkov Jr was born in Tampere, Finland on Sept. 2, 1995 and his draft team is the Florida Panthers.</text>
+				<template>AGENT-1 was born in PATIENT-3 on PATIENT-2 and AGENT-1 draft team is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 on PATIENT-2 and AGENT-1 draft team VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksander_Barkov,_Jr. | birthDate | 1995-09-02</striple>
+						<striple>Aleksander_Barkov,_Jr. | birthPlace | &quot;Tampere, Finland&quot;</striple>
+						<striple>Aleksander_Barkov,_Jr. | draftTeam | Florida_Panthers</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksander_Barkov,_Jr." number="1" tag="AGENT-1" type="name">Aleksander Barkov Jr</reference>
+					<reference entity="1995-09-02" number="2" tag="PATIENT-2" type="name">Sept. 2 , 1995</reference>
+					<reference entity="&quot;Tampere, Finland&quot;" number="3" tag="PATIENT-3" type="name">Tampere , Finland</reference>
+					<reference entity="Florida_Panthers" number="4" tag="PATIENT-1" type="description">the Florida Panthers</reference>
+				</references>
+				<text>Aleksander Barkov Jr was born Sept. 2, 1995 in Tampere, Finland and drafted with the Florida Panthers.</text>
+				<template>AGENT-1 was born PATIENT-2 in PATIENT-3 and drafted with PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-2 in PATIENT-3 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] draft with PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksander_Barkov,_Jr.</entity>
+				<entity>PATIENT-1 | Florida_Panthers</entity>
+				<entity>PATIENT-2 | 1995-09-02</entity>
+				<entity>PATIENT-3 | &quot;Tampere, Finland&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1545" size="3">
+			<originaltripleset>
+				<otriple>Aleksandr_Chumakov | deathPlace | Russia</otriple>
+				<otriple>Russia | leaderName | Vladimir_Putin</otriple>
+				<otriple>Aleksandr_Chumakov | placeOfBirth | Soviet_Union</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Chumakov | deathPlace | Russia</mtriple>
+				<mtriple>Russia | leaderName | Vladimir_Putin</mtriple>
+				<mtriple>Aleksandr_Chumakov | birthPlace | Soviet_Union</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | birthPlace | Soviet_Union</striple>
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+						<striple>Russia | leaderName | Vladimir_Putin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Soviet_Union" number="2" tag="PATIENT-2" type="description">the Soviet Union</reference>
+					<reference entity="Aleksandr_Chumakov" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Russia" number="4" tag="BRIDGE-1" type="name">Russia</reference>
+					<reference entity="Vladimir_Putin" number="5" tag="PATIENT-1" type="name">Vladimir Putin</reference>
+				</references>
+				<text>Aleksandr Chumakov was born in the Soviet Union and he died in Russia, where the leader is Vladimir Putin.</text>
+				<template>AGENT-1 was born in PATIENT-2 and AGENT-1 died in BRIDGE-1 , where the leader is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in BRIDGE-1 , where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | birthPlace | Soviet_Union</striple>
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Russia | leaderName | Vladimir_Putin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Soviet_Union" number="2" tag="PATIENT-2" type="description">the Soviet Union</reference>
+					<reference entity="Russia" number="3" tag="BRIDGE-1" type="name">Russia</reference>
+					<reference entity="Russia" number="4" tag="BRIDGE-1" type="name">Russia</reference>
+					<reference entity="Vladimir_Putin" number="5" tag="PATIENT-1" type="name">Vladimir Putin</reference>
+				</references>
+				<text>Aleksandr Chumakov was born in the Soviet Union and died there in Russia. The leader of Russia is Vladimir Putin.</text>
+				<template>AGENT-1 was born in PATIENT-2 and died there in BRIDGE-1 . The leader of BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] die there in BRIDGE-1 . DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | birthPlace | Soviet_Union</striple>
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+						<striple>Russia | leaderName | Vladimir_Putin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Soviet_Union" number="2" tag="PATIENT-2" type="description">the Soviet Union</reference>
+					<reference entity="Russia" number="3" tag="BRIDGE-1" type="name">Russia</reference>
+					<reference entity="Vladimir_Putin" number="4" tag="PATIENT-1" type="name">Vladimir Putin</reference>
+				</references>
+				<text>Aleksandr Chumakov was born in the Soviet Union and died in Russia, where the leader is Vladimir Putin.</text>
+				<template>AGENT-1 was born in PATIENT-2 and died in BRIDGE-1 , where the leader is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in BRIDGE-1 , where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | Russia</entity>
+				<entity>PATIENT-1 | Vladimir_Putin</entity>
+				<entity>PATIENT-2 | Soviet_Union</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1546" size="3">
+			<originaltripleset>
+				<otriple>Aleksandr_Prudnikov | dateOfBirth | &quot;1989-02-24&quot;^^xsd:date</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Kuban_Krasnodar</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Alania_Vladikavkaz</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Prudnikov | birthDate | 1989-02-24</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Alania_Vladikavkaz</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Alania_Vladikavkaz</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Footballer Aleksandr Prudnikov</reference>
+					<reference entity="1989-02-24" number="2" tag="PATIENT-1" type="name">February 24 , 1989</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="3" tag="PATIENT-2" type="name">FC Kuban Krasnodar</reference>
+					<reference entity="FC_Alania_Vladikavkaz" number="4" tag="PATIENT-3" type="name">Alania Vladikavkaz</reference>
+				</references>
+				<text>Footballer Aleksandr Prudnikov , (February 24, 1989), plays for FC Kuban Krasnodar and Alania Vladikavkaz.</text>
+				<template>AGENT-1 , (PATIENT-1) , plays for PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , ( PATIENT-1 ) , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Alania_Vladikavkaz</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1989-02-24" number="1" tag="PATIENT-1" type="name">24th February 1989</reference>
+					<reference entity="Aleksandr_Prudnikov" number="2" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Alania_Vladikavkaz" number="3" tag="PATIENT-3" type="name">FC Alania Vladikavkaz</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="4" tag="PATIENT-2" type="name">FC Kuban Krasnodar club</reference>
+				</references>
+				<text>Born on 24th February 1989, Aleksandr Prudnikov, plays for both, FC Alania Vladikavkaz and FC Kuban Krasnodar club.</text>
+				<template>Born on PATIENT-1 , AGENT-1 , plays for both , PATIENT-3 and PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear on PATIENT-1 , AGENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] both , PATIENT-3 and PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Alania_Vladikavkaz</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="1989-02-24" number="2" tag="PATIENT-1" type="name">24 February 1989</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="3" tag="PATIENT-2" type="name">FC Kuban Krasnodar</reference>
+					<reference entity="FC_Alania_Vladikavkaz" number="4" tag="PATIENT-3" type="name">FC Alania Vladikavkaz</reference>
+				</references>
+				<text>Aleksandr Prudnikov who was born on 24 February 1989 plays for FC Kuban Krasnodar and FC Alania Vladikavkaz.</text>
+				<template>AGENT-1 who was born on PATIENT-1 plays for PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>PATIENT-1 | 1989-02-24</entity>
+				<entity>PATIENT-2 | FC_Kuban_Krasnodar</entity>
+				<entity>PATIENT-3 | FC_Alania_Vladikavkaz</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1547" size="3">
+			<originaltripleset>
+				<otriple>Aleksandr_Prudnikov | dateOfBirth | &quot;1989-02-24&quot;^^xsd:date</otriple>
+				<otriple>Aleksandr_Prudnikov | team | Russia_national_football_B_team</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | &quot;→ Tom Tomsk&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Prudnikov | birthDate | 1989-02-24</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | Russia_national_football_B_team</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | club | Russia_national_football_B_team</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1989-02-24" number="1" tag="PATIENT-1" type="name">February 24th 1989</reference>
+					<reference entity="Aleksandr_Prudnikov" number="2" tag="AGENT-1" type="description">the footballer Aleksandr Prudnikov</reference>
+					<reference entity="Russia_national_football_B_team" number="3" tag="PATIENT-2" type="description">the Russia national B</reference>
+					<reference entity="FC_Tom_Tomsk" number="4" tag="PATIENT-3" type="name">FC Tom Tomsk</reference>
+				</references>
+				<text>Born on February 24th 1989, the footballer Aleksandr Prudnikov represented the Russia national B team and also played for FC Tom Tomsk.</text>
+				<template>Born on PATIENT-1 , AGENT-1 represented PATIENT-2 team and also played for PATIENT-3 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear on PATIENT-1 , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] represent PATIENT-2 team and also VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</striple>
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | club | Russia_national_football_B_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Tom_Tomsk" number="2" tag="PATIENT-3" type="name">FC Tom Tomsk</reference>
+					<reference entity="1989-02-24" number="3" tag="PATIENT-1" type="name">24th February 1989</reference>
+					<reference entity="Russia_national_football_B_team" number="4" tag="PATIENT-2" type="description">the Russia national football B team</reference>
+				</references>
+				<text>Aleksandr Prudnikov, whose club is FC Tom Tomsk, was born on 24th February 1989 and has played for the Russia national football B team.</text>
+				<template>AGENT-1 , whose club is PATIENT-3 , was born on PATIENT-1 and has played for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-1 and VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | club | Russia_national_football_B_team</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1989-02-24" number="1" tag="PATIENT-1" type="name">1989-02-24</reference>
+					<reference entity="Aleksandr_Prudnikov" number="2" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="Russia_national_football_B_team" number="3" tag="PATIENT-2" type="description">the Russia National Football B Team</reference>
+					<reference entity="FC_Tom_Tomsk" number="4" tag="PATIENT-3" type="name">FC Tom Tomsk</reference>
+				</references>
+				<text>Born, 1989-02-24, Aleksandr Prudnikov, belongs to the Russia National Football B Team and plays for FC Tom Tomsk.</text>
+				<template>Born , PATIENT-1 , AGENT-1 , belongs to PATIENT-2 and plays for PATIENT-3 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear , PATIENT-1 , AGENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] belong to PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>PATIENT-1 | 1989-02-24</entity>
+				<entity>PATIENT-2 | Russia_national_football_B_team</entity>
+				<entity>PATIENT-3 | FC_Tom_Tomsk</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1548" size="3">
+			<originaltripleset>
+				<otriple>Aleksandre_Guruli | team | Olympique_Lyonnais</otriple>
+				<otriple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</otriple>
+				<otriple>Aleksandre_Guruli | clubs | AZAL_PFK</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandre_Guruli | club | Olympique_Lyonnais</mtriple>
+				<mtriple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</mtriple>
+				<mtriple>Aleksandre_Guruli | club | AZAL_PFK</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandre_Guruli | club | AZAL_PFK</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli 's</reference>
+					<reference entity="Olympique_Lyonnais" number="2" tag="BRIDGE-1" type="name">Olympique Lyonnais</reference>
+					<reference entity="Parc_Olympique_Lyonnais" number="3" tag="PATIENT-1" type="description">the Parc Olympique Lyonnais stadium</reference>
+					<reference entity="Aleksandre_Guruli" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="AZAL_PFK" number="5" tag="PATIENT-2" type="name">AZAL PFK</reference>
+				</references>
+				<text>Aleksandre Guruli's club is Olympique Lyonnais, whose home ground is the Parc Olympique Lyonnais stadium. He also plays for AZAL PFK.</text>
+				<template>AGENT-1 club is BRIDGE-1 , whose home ground is PATIENT-1 . AGENT-1 also plays for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , whose home ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . AGENT-1 also VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | AZAL_PFK</striple>
+						<striple>Aleksandre_Guruli | club | Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AZAL_PFK" number="1" tag="PATIENT-2" type="name">AZAL PFK</reference>
+					<reference entity="Aleksandre_Guruli" number="2" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="Olympique_Lyonnais" number="3" tag="BRIDGE-1" type="name">Olympique Lyonnais</reference>
+					<reference entity="Parc_Olympique_Lyonnais" number="4" tag="PATIENT-1" type="description">the Parc Olympique Lyonnais stadium</reference>
+				</references>
+				<text>AZAL PFK player, Aleksandre Guruli, played for the Olympique Lyonnais club, the home ground of which, is the Parc Olympique Lyonnais stadium.</text>
+				<template>PATIENT-2 player , AGENT-1 , played for the BRIDGE-1 club , the home ground of which , is PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 player , AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] the BRIDGE-1 club , DT[form=defined] the home ground of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandre_Guruli</entity>
+				<entity>BRIDGE-1 | Olympique_Lyonnais</entity>
+				<entity>PATIENT-1 | Parc_Olympique_Lyonnais</entity>
+				<entity>PATIENT-2 | AZAL_PFK</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1549" size="3">
+			<originaltripleset>
+				<otriple>Aleksandre_Guruli | clubs | Olympique_Lyonnais</otriple>
+				<otriple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</otriple>
+				<otriple>Aleksandre_Guruli | team | US_Lesquin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandre_Guruli | club | Olympique_Lyonnais</mtriple>
+				<mtriple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</mtriple>
+				<mtriple>Aleksandre_Guruli | club | US_Lesquin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | US_Lesquin</striple>
+						<striple>Aleksandre_Guruli | club | Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="US_Lesquin" number="2" tag="PATIENT-2" type="name">US Lesquin</reference>
+					<reference entity="Aleksandre_Guruli" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Olympique_Lyonnais" number="4" tag="BRIDGE-1" type="name">Olympique Lyonnais</reference>
+					<reference entity="Olympique_Lyonnais" number="5" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Parc_Olympique_Lyonnais" number="6" tag="PATIENT-1" type="description">the Parc Olympique Lyonnais</reference>
+				</references>
+				<text>Aleksandre Guruli plays for US Lesquin but he use to play for the Olympique Lyonnais club who play their home games at the Parc Olympique Lyonnais.</text>
+				<template>AGENT-1 plays for PATIENT-2 but AGENT-1 use to play for the BRIDGE-1 club who play BRIDGE-1 home games at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 but AGENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] use to VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play for DT[form=defined] the BRIDGE-1 club who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] play BRIDGE-1 home games at PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | US_Lesquin</striple>
+						<striple>Aleksandre_Guruli | club | Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="US_Lesquin" number="2" tag="PATIENT-2" type="name">US Lesquin</reference>
+					<reference entity="Olympique_Lyonnais" number="3" tag="BRIDGE-1" type="name">Olympique Lyonnais</reference>
+					<reference entity="Olympique_Lyonnais" number="4" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Parc_Olympique_Lyonnais" number="5" tag="PATIENT-1" type="name">Parc Olympique Lyonnais stadium</reference>
+				</references>
+				<text>Aleksandre Guruli, whose club is US Lesquin, played for the Olympique Lyonnais club who have their home ground at Parc Olympique Lyonnais stadium.</text>
+				<template>AGENT-1 , whose club is PATIENT-2 , played for the BRIDGE-1 club who have BRIDGE-1 home ground at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] the BRIDGE-1 club who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have BRIDGE-1 home ground at PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | club | US_Lesquin</striple>
+						<striple>Aleksandre_Guruli | club | Olympique_Lyonnais</striple>
+						<striple>Olympique_Lyonnais | ground | Parc_Olympique_Lyonnais</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="US_Lesquin" number="2" tag="PATIENT-2" type="name">US Lesquin</reference>
+					<reference entity="Olympique_Lyonnais" number="3" tag="BRIDGE-1" type="description">the Olympique Lyonnais</reference>
+					<reference entity="Olympique_Lyonnais" number="4" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Parc_Olympique_Lyonnais" number="5" tag="PATIENT-1" type="description">the Parc Olympique Lyonnais stadium</reference>
+				</references>
+				<text>Aleksandre Guruli is in the US Lesquin Club and also the Olympique Lyonnais who have their home ground at the Parc Olympique Lyonnais stadium.</text>
+				<template>AGENT-1 is in the PATIENT-2 Club and also BRIDGE-1 who have BRIDGE-1 home ground at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the PATIENT-2 Club and also BRIDGE-1 who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have BRIDGE-1 home ground at PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandre_Guruli</entity>
+				<entity>BRIDGE-1 | Olympique_Lyonnais</entity>
+				<entity>PATIENT-1 | Parc_Olympique_Lyonnais</entity>
+				<entity>PATIENT-2 | US_Lesquin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1550" size="3">
+			<originaltripleset>
+				<otriple>Alessio_Romagnoli | clubs | A.C._Milan</otriple>
+				<otriple>A.C._Milan | manager | Siniša_Mihajlović</otriple>
+				<otriple>Alessio_Romagnoli | team | Italy_national_under-16_football_team</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alessio_Romagnoli | club | A.C._Milan</mtriple>
+				<mtriple>A.C._Milan | manager | Siniša_Mihajlović</mtriple>
+				<mtriple>Alessio_Romagnoli | club | Italy_national_under-16_football_team</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alessio_Romagnoli | club | Italy_national_under-16_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="A.C._Milan" number="2" tag="BRIDGE-1" type="name">A.C. Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="3" tag="PATIENT-1" type="name">Siniša Mihajlović</reference>
+					<reference entity="Alessio_Romagnoli" number="4" tag="AGENT-1" type="name">He 's</reference>
+					<reference entity="Italy_national_under-16_football_team" number="5" tag="PATIENT-2" type="description">the Italy national under 16 's football team</reference>
+				</references>
+				<text>Alessio Romagnoli plays in the club A.C. Milan whose manager is Siniša Mihajlović. He's alos in the Italy national under 16's football team.</text>
+				<template>AGENT-1 plays in the club BRIDGE-1 whose manager is PATIENT-1 . AGENT-1 alos in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play in DT[form=defined] the club BRIDGE-1 whose manager VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . AGENT-1 alos in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | Italy_national_under-16_football_team</striple>
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Footballer Alessio Romagnoli</reference>
+					<reference entity="Italy_national_under-16_football_team" number="2" tag="PATIENT-2" type="name">Italy at Under 16 level</reference>
+					<reference entity="A.C._Milan" number="3" tag="BRIDGE-1" type="name">C Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="4" tag="PATIENT-1" type="name">Siniša Mihajlović</reference>
+				</references>
+				<text>Footballer Alessio Romagnoli, who represented Italy at Under 16 level, plays for C Milan, where the manager is Siniša Mihajlović.</text>
+				<template>AGENT-1 , who represented PATIENT-2 , plays for BRIDGE-1 , where the manager is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] represent PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 , where DT[form=defined] the manager VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | Italy_national_under-16_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="Italy_national_under-16_football_team" number="2" tag="PATIENT-2" type="description">the Italy national under-16 football team</reference>
+					<reference entity="Alessio_Romagnoli" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="A.C._Milan" number="4" tag="BRIDGE-1" type="description">the club A.C. Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="5" tag="PATIENT-1" type="name">Siniša Mihajlović</reference>
+				</references>
+				<text>Alessio Romagnoli played for the Italy national under-16 football team. He plays for the club A.C. Milan which is managed by, Siniša Mihajlović.</text>
+				<template>AGENT-1 played for PATIENT-2 . AGENT-1 plays for BRIDGE-1 which is managed by , PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by , PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alessio_Romagnoli</entity>
+				<entity>BRIDGE-1 | A.C._Milan</entity>
+				<entity>PATIENT-1 | Siniša_Mihajlović</entity>
+				<entity>PATIENT-2 | Italy_national_under-16_football_team</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1551" size="3">
+			<originaltripleset>
+				<otriple>Alessio_Romagnoli | clubs | A.C._Milan</otriple>
+				<otriple>A.C._Milan | manager | Siniša_Mihajlović</otriple>
+				<otriple>Alessio_Romagnoli | team | U.C._Sampdoria</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alessio_Romagnoli | club | A.C._Milan</mtriple>
+				<mtriple>A.C._Milan | manager | Siniša_Mihajlović</mtriple>
+				<mtriple>Alessio_Romagnoli | club | U.C._Sampdoria</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="A.C._Milan" number="2" tag="BRIDGE-1" type="name">A.C. Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="3" tag="PATIENT-1" type="name">Siniša Mihajlović</reference>
+					<reference entity="U.C._Sampdoria" number="4" tag="PATIENT-2" type="name">UC Sampdoria</reference>
+				</references>
+				<text>Alessio Romagnoli plays for A.C. Milan, managed by Siniša Mihajlović and also played for UC Sampdoria.</text>
+				<template>AGENT-1 plays for BRIDGE-1 , managed by PATIENT-1 and also played for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] manage by PATIENT-1 and also VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="U.C._Sampdoria" number="2" tag="PATIENT-2" type="name">UC Sampdoria</reference>
+					<reference entity="A.C._Milan" number="3" tag="BRIDGE-1" type="name">A.C. Milan</reference>
+					<reference entity="Siniša_Mihajlović" number="4" tag="PATIENT-1" type="name">Siniša Mihajlović</reference>
+				</references>
+				<text>Alessio Romagnoli, who is connected to UC Sampdoria, plays for A.C. Milan which, is managed by, Siniša Mihajlović.</text>
+				<template>AGENT-1 , who is connected to PATIENT-2 , plays for BRIDGE-1 which , is managed by , PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] connect to PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 which , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by , PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.C._Milan | manager | Siniša_Mihajlović</striple>
+						<striple>Alessio_Romagnoli | club | A.C._Milan</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Siniša_Mihajlović" number="1" tag="PATIENT-1" type="name">Siniša Mihajlović</reference>
+					<reference entity="A.C._Milan" number="2" tag="BRIDGE-1" type="name">A.C. Milan</reference>
+					<reference entity="Alessio_Romagnoli" number="3" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="Alessio_Romagnoli" number="4" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="U.C._Sampdoria" number="5" tag="PATIENT-2" type="name">U.C</reference>
+				</references>
+				<text>Siniša Mihajlović is the manager for A.C. Milan, of which Alessio Romagnoli is a member. Alessio Romagnoli plays for the club U.C. Sampdoria.</text>
+				<template>PATIENT-1 is the manager for BRIDGE-1 , of which AGENT-1 is a member . AGENT-1 plays for the club PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager for BRIDGE-1 , of which AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a member . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the club PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alessio_Romagnoli</entity>
+				<entity>BRIDGE-1 | A.C._Milan</entity>
+				<entity>PATIENT-1 | Siniša_Mihajlović</entity>
+				<entity>PATIENT-2 | U.C._Sampdoria</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1552" size="3">
+			<originaltripleset>
+				<otriple>Alessio_Romagnoli | nationalteam | Italy_national_under-16_football_team</otriple>
+				<otriple>Italy_national_under-16_football_team | coach | Daniele_Zoratto</otriple>
+				<otriple>Alessio_Romagnoli | team | A.S._Roma</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alessio_Romagnoli | club | Italy_national_under-16_football_team</mtriple>
+				<mtriple>Italy_national_under-16_football_team | coach | Daniele_Zoratto</mtriple>
+				<mtriple>Alessio_Romagnoli | club | A.S._Roma</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | Italy_national_under-16_football_team</striple>
+						<striple>Italy_national_under-16_football_team | coach | Daniele_Zoratto</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alessio_Romagnoli | club | A.S._Roma</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="Daniele_Zoratto" number="2" tag="PATIENT-1" type="name">Daniele Zoratto</reference>
+					<reference entity="Italy_national_under-16_football_team" number="3" tag="BRIDGE-1" type="description">the Italy national under 16 football team</reference>
+					<reference entity="Alessio_Romagnoli" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="A.S._Roma" number="5" tag="PATIENT-2" type="name">A.S. Roma</reference>
+				</references>
+				<text>Alessio Romagnoli is coached by Daniele Zoratto in the Italy national under 16 football team. He plays for A.S. Roma.</text>
+				<template>AGENT-1 is coached by PATIENT-1 in BRIDGE-1 . AGENT-1 plays for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] coach by PATIENT-1 in BRIDGE-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | A.S._Roma</striple>
+						<striple>Alessio_Romagnoli | club | Italy_national_under-16_football_team</striple>
+						<striple>Italy_national_under-16_football_team | coach | Daniele_Zoratto</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="A.S._Roma" number="2" tag="PATIENT-2" type="name">A.S. Roma</reference>
+					<reference entity="Alessio_Romagnoli" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Italy_national_under-16_football_team" number="4" tag="BRIDGE-1" type="description">the Italian national under 16 football team</reference>
+					<reference entity="Daniele_Zoratto" number="5" tag="PATIENT-1" type="name">Daniele Zoratto</reference>
+				</references>
+				<text>Alessio Romagnoli plays for A.S. Roma and he use to play for the Italian national under 16 football team, which is coached by Daniele Zoratto.</text>
+				<template>AGENT-1 plays for PATIENT-2 and AGENT-1 use to play for BRIDGE-1 , which is coached by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] use to VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play for BRIDGE-1 , which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] coach by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | A.S._Roma</striple>
+						<striple>Alessio_Romagnoli | club | Italy_national_under-16_football_team</striple>
+						<striple>Italy_national_under-16_football_team | coach | Daniele_Zoratto</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="A.S._Roma" number="2" tag="PATIENT-2" type="name">A.S. Roma</reference>
+					<reference entity="Italy_national_under-16_football_team" number="3" tag="BRIDGE-1" type="description">the Italian national under 16 football team</reference>
+					<reference entity="Daniele_Zoratto" number="4" tag="PATIENT-1" type="name">Daniele Zoratto</reference>
+				</references>
+				<text>Alessio Romagnoli plays for A.S. Roma and previously for the Italian national under 16 football team coached by Daniele Zoratto.</text>
+				<template>AGENT-1 plays for PATIENT-2 and previously for BRIDGE-1 coached by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and previously for BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] coach by PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alessio_Romagnoli</entity>
+				<entity>BRIDGE-1 | Italy_national_under-16_football_team</entity>
+				<entity>PATIENT-1 | Daniele_Zoratto</entity>
+				<entity>PATIENT-2 | A.S._Roma</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1553" size="3">
+			<originaltripleset>
+				<otriple>Alessio_Romagnoli | team | Italy_national_under-17_football_team</otriple>
+				<otriple>Alessio_Romagnoli | clubs | &quot;→ Sampdoria&quot;@en</otriple>
+				<otriple>Alessio_Romagnoli | placeOfBirth | Italy</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alessio_Romagnoli | club | Italy_national_under-17_football_team</mtriple>
+				<mtriple>Alessio_Romagnoli | club | U.C._Sampdoria</mtriple>
+				<mtriple>Alessio_Romagnoli | birthPlace | Italy</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | birthPlace | Italy</striple>
+						<striple>Alessio_Romagnoli | club | Italy_national_under-17_football_team</striple>
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Italy" number="1" tag="PATIENT-3" type="name">Italian</reference>
+					<reference entity="Alessio_Romagnoli" number="2" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="Italy_national_under-17_football_team" number="3" tag="PATIENT-1" type="description">the Italian national under 17 football team</reference>
+					<reference entity="U.C._Sampdoria" number="4" tag="PATIENT-2" type="name">U.C</reference>
+				</references>
+				<text>Italian born Alessio Romagnoli is a member of the Italian national under 17 football team and plays for the club U.C. Sampdoria.</text>
+				<template>PATIENT-3 born AGENT-1 is a member of PATIENT-1 and plays for the club PATIENT-2 .</template>
+				<lexicalization>PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a member of PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the club PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+						<striple>Alessio_Romagnoli | club | Italy_national_under-17_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alessio_Romagnoli | birthPlace | Italy</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="U.C._Sampdoria" number="2" tag="PATIENT-2" type="name">U.C . Sampdoria</reference>
+					<reference entity="Italy_national_under-17_football_team" number="3" tag="PATIENT-1" type="name">club Italy national under 17 's</reference>
+					<reference entity="Alessio_Romagnoli" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Italy" number="5" tag="PATIENT-3" type="name">Italy</reference>
+				</references>
+				<text>Alessio Romagnoli played for the club U.C. Sampdoria, and is a member of club Italy national under 17's. He was born in Italy.</text>
+				<template>AGENT-1 played for the club PATIENT-2 , and is a member of PATIENT-1 . AGENT-1 was born in PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] the club PATIENT-2 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a member of PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alessio_Romagnoli | birthPlace | Italy</striple>
+						<striple>Alessio_Romagnoli | club | U.C._Sampdoria</striple>
+						<striple>Alessio_Romagnoli | club | Italy_national_under-17_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alessio_Romagnoli" number="1" tag="AGENT-1" type="name">Alessio Romagnoli</reference>
+					<reference entity="Italy" number="2" tag="PATIENT-3" type="name">italy</reference>
+					<reference entity="U.C._Sampdoria" number="3" tag="PATIENT-2" type="name">U. C. Sampdoria</reference>
+					<reference entity="Italy_national_under-17_football_team" number="4" tag="PATIENT-1" type="description">the Italian national under-17 football team</reference>
+				</references>
+				<text>Alessio Romagnoli who was born in italy plays for U. C. Sampdoria and the Italian national under-17 football team.</text>
+				<template>AGENT-1 who was born in PATIENT-3 plays for PATIENT-2 and PATIENT-1 .</template>
+				<lexicalization>AGENT-1 who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alessio_Romagnoli</entity>
+				<entity>PATIENT-1 | Italy_national_under-17_football_team</entity>
+				<entity>PATIENT-2 | U.C._Sampdoria</entity>
+				<entity>PATIENT-3 | Italy</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1554" size="3">
+			<originaltripleset>
+				<otriple>Alex_Plante | placeOfBirth | Brandon,_Manitoba</otriple>
+				<otriple>Alex_Plante | height | &quot;1.9304&quot;^^xsd:double</otriple>
+				<otriple>Alex_Plante | team | Anyang_Halla</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Plante | birthPlace | Brandon,_Manitoba</mtriple>
+				<mtriple>Alex_Plante | height | 1.9304</mtriple>
+				<mtriple>Alex_Plante | club | Anyang_Halla</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthPlace | Brandon,_Manitoba</striple>
+						<striple>Alex_Plante | height | 1.9304</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Brandon,_Manitoba" number="2" tag="PATIENT-1" type="name">Brandon , Manitoba</reference>
+					<reference entity="1.9304" number="3" tag="PATIENT-2" type="name">1.9304 m</reference>
+					<reference entity="Alex_Plante" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Anyang_Halla" number="5" tag="PATIENT-3" type="name">Anyang Halla</reference>
+				</references>
+				<text>Alex Plante was born in Brandon, Manitoba and is 1.9304 m high. He is in the Anyang Halla club.</text>
+				<template>AGENT-1 was born in PATIENT-1 and is PATIENT-2 high . AGENT-1 is in the PATIENT-3 club .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 high . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the PATIENT-3 club .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthPlace | Brandon,_Manitoba</striple>
+						<striple>Alex_Plante | height | 1.9304</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Brandon,_Manitoba" number="2" tag="PATIENT-1" type="name">Brandon , Manitoba</reference>
+					<reference entity="1.9304" number="3" tag="PATIENT-2" type="name">1.9304 m</reference>
+					<reference entity="Alex_Plante" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Anyang_Halla" number="5" tag="PATIENT-3" type="name">Anyang Halla</reference>
+				</references>
+				<text>Alex Plante was born in Brandon, Manitoba and is 1.9304 m tall. He plays for the Anyang Halla club.</text>
+				<template>AGENT-1 was born in PATIENT-1 and is PATIENT-2 tall . AGENT-1 plays for the PATIENT-3 club .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 tall . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the PATIENT-3 club .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Plante</entity>
+				<entity>PATIENT-1 | Brandon,_Manitoba</entity>
+				<entity>PATIENT-2 | 1.9304</entity>
+				<entity>PATIENT-3 | Anyang_Halla</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1555" size="3">
+			<originaltripleset>
+				<otriple>Alex_Plante | height | &quot;1.9304&quot;^^xsd:double</otriple>
+				<otriple>Alex_Plante | team | Anyang_Halla</otriple>
+				<otriple>Alex_Plante | placeOfBirth | Canada</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Plante | height | 1.9304</mtriple>
+				<mtriple>Alex_Plante | club | Anyang_Halla</mtriple>
+				<mtriple>Alex_Plante | birthPlace | Canada</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | height | 1.9304</striple>
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1.9304" number="1" tag="PATIENT-1" type="name">1.9304m</reference>
+					<reference entity="Alex_Plante" number="2" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Canada" number="3" tag="PATIENT-3" type="name">Canada</reference>
+					<reference entity="Anyang_Halla" number="4" tag="PATIENT-2" type="name">Anyang Halla</reference>
+				</references>
+				<text>1.9304m tall, Alex Plante, was born in Canada and has played for the club Anyang Halla.</text>
+				<template>PATIENT-1 tall , AGENT-1 , was born in PATIENT-3 and has played for the club PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 tall , AGENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 and VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the club PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+						<striple>Alex_Plante | height | 1.9304</striple>
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Canada" number="1" tag="PATIENT-3" type="name">Canada</reference>
+					<reference entity="Alex_Plante" number="2" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="1.9304" number="3" tag="PATIENT-1" type="name">1.9304 metres</reference>
+					<reference entity="Anyang_Halla" number="4" tag="PATIENT-2" type="name">Anyang Halla</reference>
+				</references>
+				<text>Born in Canada, Alex Plante is 1.9304 metres tall and has played for the club Anyang Halla.</text>
+				<template>Born in PATIENT-3 , AGENT-1 is PATIENT-1 tall and has played for the club PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-3 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 tall and VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the club PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+						<striple>Alex_Plante | height | 1.9304</striple>
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante 's</reference>
+					<reference entity="Anyang_Halla" number="2" tag="PATIENT-2" type="name">Anyang Halla</reference>
+					<reference entity="Alex_Plante" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="1.9304" number="4" tag="PATIENT-1" type="name">1.9304m</reference>
+					<reference entity="Canada" number="5" tag="PATIENT-3" type="name">Canada</reference>
+				</references>
+				<text>Alex Plante's club is Anyang Halla, he is 1.9304m in height and was born in Canada.</text>
+				<template>AGENT-1 club is PATIENT-2 , AGENT-1 is PATIENT-1 in height and was born in PATIENT-3 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 in height and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Plante</entity>
+				<entity>PATIENT-1 | 1.9304</entity>
+				<entity>PATIENT-2 | Anyang_Halla</entity>
+				<entity>PATIENT-3 | Canada</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1556" size="3">
+			<originaltripleset>
+				<otriple>Alex_Tyus | league | Euroleague</otriple>
+				<otriple>Alex_Tyus | team | Maccabi_Ashdod_B.C.</otriple>
+				<otriple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Tyus | league | Euroleague</mtriple>
+				<mtriple>Alex_Tyus | club | Maccabi_Ashdod_B.C.</mtriple>
+				<mtriple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | league | Euroleague</striple>
+						<striple>Alex_Tyus | club | Maccabi_Ashdod_B.C.</striple>
+						<striple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Euroleague" number="2" tag="PATIENT-1" type="description">the Euroleague</reference>
+					<reference entity="Maccabi_Ashdod_B.C." number="3" tag="BRIDGE-1" type="name">Maccabi Ashdod BC</reference>
+					<reference entity="Zvi_Sherf" number="4" tag="PATIENT-2" type="name">Zvi Sherf</reference>
+				</references>
+				<text>Alex Tyus plays in the Euroleague for the Maccabi Ashdod BC club whose coach is Zvi Sherf.</text>
+				<template>AGENT-1 plays in PATIENT-1 for the BRIDGE-1 club whose coach is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play in PATIENT-1 for DT[form=defined] the BRIDGE-1 club whose coach VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | club | Maccabi_Ashdod_B.C.</striple>
+						<striple>Alex_Tyus | league | Euroleague</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Maccabi_Ashdod_B.C." number="2" tag="BRIDGE-1" type="name">Maccabi Ashdod B.C .</reference>
+					<reference entity="Euroleague" number="3" tag="PATIENT-1" type="name">Euroleague</reference>
+					<reference entity="Maccabi_Ashdod_B.C." number="4" tag="BRIDGE-1" type="description">the Ashdod team</reference>
+					<reference entity="Zvi_Sherf" number="5" tag="PATIENT-2" type="name">Zvi Sherf</reference>
+				</references>
+				<text>Alex Tyus plays for Maccabi Ashdod B.C. in the Euroleague. The coach of the Ashdod team is Zvi Sherf.</text>
+				<template>AGENT-1 plays for BRIDGE-1 in the PATIENT-1 . The coach of BRIDGE-1 is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 in DT[form=defined] the PATIENT-1 . DT[form=defined] the coach of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | league | Euroleague</striple>
+						<striple>Alex_Tyus | club | Maccabi_Ashdod_B.C.</striple>
+						<striple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Euroleague" number="2" tag="PATIENT-1" type="description">the Euroleague</reference>
+					<reference entity="Maccabi_Ashdod_B.C." number="3" tag="BRIDGE-1" type="name">Maccabi Ashdod BC</reference>
+					<reference entity="Zvi_Sherf" number="4" tag="PATIENT-2" type="name">Zvi Sherf</reference>
+				</references>
+				<text>Alex Tyus plays in the Euroleague for Maccabi Ashdod BC whose coach is Zvi Sherf.</text>
+				<template>AGENT-1 plays in PATIENT-1 for BRIDGE-1 whose coach is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play in PATIENT-1 for BRIDGE-1 whose coach VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Tyus</entity>
+				<entity>BRIDGE-1 | Maccabi_Ashdod_B.C.</entity>
+				<entity>PATIENT-1 | Euroleague</entity>
+				<entity>PATIENT-2 | Zvi_Sherf</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1557" size="3">
+			<originaltripleset>
+				<otriple>Alex_Tyus | league | Turkish_Basketball_Super_League</otriple>
+				<otriple>Alex_Tyus | team | Maccabi_Ashdod_B.C.</otriple>
+				<otriple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Tyus | league | Turkish_Basketball_Super_League</mtriple>
+				<mtriple>Alex_Tyus | club | Maccabi_Ashdod_B.C.</mtriple>
+				<mtriple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | league | Turkish_Basketball_Super_League</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alex_Tyus | club | Maccabi_Ashdod_B.C.</striple>
+						<striple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Turkish_Basketball_Super_League" number="2" tag="PATIENT-1" type="description">the Turkish Basketball Super League</reference>
+					<reference entity="Alex_Tyus" number="3" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="Maccabi_Ashdod_B.C." number="4" tag="BRIDGE-1" type="name">Maccabi Ashdod BC</reference>
+					<reference entity="Zvi_Sherf" number="5" tag="PATIENT-2" type="name">Zvi Sherf</reference>
+				</references>
+				<text>The league Alex Tyus plays in is the Turkish Basketball Super League. His club is Maccabi Ashdod BC which is coached by, Zvi Sherf.</text>
+				<template>The league AGENT-1 plays in is PATIENT-1 . AGENT-1 club is BRIDGE-1 which is coached by , PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the league AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play in VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] coach by , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | club | Maccabi_Ashdod_B.C.</striple>
+						<striple>Maccabi_Ashdod_B.C. | coach | Zvi_Sherf</striple>
+						<striple>Alex_Tyus | league | Turkish_Basketball_Super_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="Maccabi_Ashdod_B.C." number="2" tag="BRIDGE-1" type="name">Maccabi Ashdod B.C</reference>
+					<reference entity="Zvi_Sherf" number="3" tag="PATIENT-2" type="name">Zvi Sherf</reference>
+					<reference entity="Turkish_Basketball_Super_League" number="4" tag="PATIENT-1" type="description">the Turkish Basketball Super League</reference>
+				</references>
+				<text>Alex Tyus plays for Maccabi Ashdod B.C who are coached by Zvi Sherf and are part of the Turkish Basketball Super League.</text>
+				<template>AGENT-1 plays for BRIDGE-1 who are coached by PATIENT-2 and are part of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 who VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] coach by PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be part of PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Tyus</entity>
+				<entity>BRIDGE-1 | Maccabi_Ashdod_B.C.</entity>
+				<entity>PATIENT-1 | Turkish_Basketball_Super_League</entity>
+				<entity>PATIENT-2 | Zvi_Sherf</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1558" size="3">
+			<originaltripleset>
+				<otriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Tom_Tomsk</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Spartak_Moscow</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Tom_Tomsk" number="2" tag="PATIENT-2" type="name">FC Tom Tomsk</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="FC_Spartak_Moscow" number="4" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Otkrytiye_Arena" number="5" tag="PATIENT-1" type="description">the Otkrytiye Arena</reference>
+				</references>
+				<text>Aleksandr Prudnikov plays for FC Tom Tomsk and his club is FC Spartak Moscow, whose grounds are the Otkrytiye Arena.</text>
+				<template>AGENT-1 plays for PATIENT-2 and AGENT-1 club is BRIDGE-1 , whose grounds are PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , whose grounds VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Tom_Tomsk</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Tom_Tomsk" number="2" tag="PATIENT-2" type="name">FC Tom Tomsk</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="FC_Spartak_Moscow" number="4" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="FC_Spartak_Moscow" number="5" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Otkrytiye_Arena" number="6" tag="PATIENT-1" type="description">the Otkrytiye Arena</reference>
+				</references>
+				<text>Aleksandr Prudnikov plays for FC Tom Tomsk and his club is FC Spartak Moscow, who have their home ground at the Otkrytiye Arena.</text>
+				<template>AGENT-1 plays for PATIENT-2 and AGENT-1 club is BRIDGE-1 , who have BRIDGE-1 home ground at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have BRIDGE-1 home ground at PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Spartak_Moscow</entity>
+				<entity>PATIENT-1 | Otkrytiye_Arena</entity>
+				<entity>PATIENT-2 | FC_Tom_Tomsk</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1559" size="3">
+			<originaltripleset>
+				<otriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</otriple>
+				<otriple>Aleksandr_Prudnikov | youthclubs | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | &quot;→ Anzhi Makhachkala&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</mtriple>
+				<mtriple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Anzhi_Makhachkala</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Anzhi_Makhachkala</striple>
+						<striple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov 's</reference>
+					<reference entity="FC_Anzhi_Makhachkala" number="2" tag="PATIENT-2" type="name">FC Anzhi Makhachkala</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="FC_Spartak_Moscow" number="4" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Otkrytiye_Arena" number="5" tag="PATIENT-1" type="description">the Otkrytiye Arena</reference>
+				</references>
+				<text>Aleksandr Prudnikov's club is FC Anzhi Makhachkala and he played youth football for FC Spartak Moscow whose grounds are the Otkrytiye Arena.</text>
+				<template>AGENT-1 club is PATIENT-2 and AGENT-1 played youth football for BRIDGE-1 whose grounds are PATIENT-1 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play youth football for BRIDGE-1 whose grounds VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+						<striple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Anzhi_Makhachkala</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Otkrytiye_Arena" number="1" tag="PATIENT-1" type="name">Otkrytiye Arena</reference>
+					<reference entity="FC_Spartak_Moscow" number="2" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="Aleksandr_Prudnikov" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Anzhi_Makhachkala" number="5" tag="PATIENT-2" type="name">FC Anzhi Makhachkala</reference>
+				</references>
+				<text>Otkrytiye Arena is the home ground of FC Spartak Moscow, where Aleksandr Prudnikov played youth football. He later represented FC Anzhi Makhachkala.</text>
+				<template>PATIENT-1 is the home ground of BRIDGE-1 , where AGENT-1 played youth football . AGENT-1 later represented PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the home ground of BRIDGE-1 , where AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play youth football . AGENT-1 later VP[aspect=simple,tense=past,voice=active,person=null,number=null] represent PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Anzhi_Makhachkala</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | youthclub | FC_Spartak_Moscow</striple>
+						<striple>FC_Spartak_Moscow | ground | Otkrytiye_Arena</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Anzhi_Makhachkala" number="2" tag="PATIENT-2" type="name">FC Anzhi Makhachkala</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="FC_Spartak_Moscow" number="4" tag="BRIDGE-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Otkrytiye_Arena" number="5" tag="PATIENT-1" type="name">Otkrytiye Arena</reference>
+				</references>
+				<text>Aleksandr Prudnikov plays for FC Anzhi Makhachkala. His youth football club was FC Spartak Moscow at Otkrytiye Arena.</text>
+				<template>AGENT-1 plays for PATIENT-2 . AGENT-1 youth football club was BRIDGE-1 at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 . AGENT-1 youth football club VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 at PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Spartak_Moscow</entity>
+				<entity>PATIENT-1 | Otkrytiye_Arena</entity>
+				<entity>PATIENT-2 | FC_Anzhi_Makhachkala</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1560" size="3">
+			<originaltripleset>
+				<otriple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</otriple>
+				<otriple>Aleksandr_Chumakov | clubs | FC_Torpedo_Moscow</otriple>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</mtriple>
+				<mtriple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</mtriple>
+				<mtriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov 's</reference>
+					<reference entity="FC_Torpedo_Moscow" number="2" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="FC_Torpedo_Moscow" number="3" tag="BRIDGE-1" type="description">The club</reference>
+					<reference entity="Valery_Petrakov" number="4" tag="PATIENT-2" type="name">Valery Petrakov</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="5" tag="PATIENT-1" type="description">the 2014–15 season in the Russian Premier League</reference>
+				</references>
+				<text>Aleksandr Chumakov's club was FC Torpedo Moscow. The club, which is managed by Valery Petrakov, played the 2014–15 season in the Russian Premier League.</text>
+				<template>AGENT-1 club was BRIDGE-1 . BRIDGE-1 , which is managed by PATIENT-2 , played PATIENT-1 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 . BRIDGE-1 , which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="2" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="3" tag="PATIENT-2" type="name">Valery Petrakov</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="4" tag="PATIENT-1" type="description">the 2014-15 Russian Premier league</reference>
+				</references>
+				<text>Aleksandr Chumakov plays for FC Torpedo Moscow who are managed by Valery Petrakov and played in the 2014-15 Russian Premier league.</text>
+				<template>AGENT-1 plays for BRIDGE-1 who are managed by PATIENT-2 and played in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 who VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] manage by PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] play in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov 's</reference>
+					<reference entity="FC_Torpedo_Moscow" number="2" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="3" tag="PATIENT-2" type="name">Valery Petrakov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="4" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="5" tag="PATIENT-1" type="description">the 2014-15 Russian Premier League</reference>
+				</references>
+				<text>Aleksandr Chumakov's club was FC Torpedo Moscow, the manager of which, is Valery Petrakov. FC Torpedo Moscow played in the 2014-15 Russian Premier League.</text>
+				<template>AGENT-1 club was BRIDGE-1 , the manager of which , is PATIENT-2 . BRIDGE-1 played in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 , DT[form=defined] the manager of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 . BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | FC_Torpedo_Moscow</entity>
+				<entity>PATIENT-1 | 2014–15_Russian_Premier_League</entity>
+				<entity>PATIENT-2 | Valery_Petrakov</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1561" size="3">
+			<originaltripleset>
+				<otriple>Hull_City_A.F.C. | manager | Steve_Bruce</otriple>
+				<otriple>Abel_Hernández | clubs | Hull_City_A.F.C.</otriple>
+				<otriple>Abel_Hernández | team | Uruguay_Olympic_football_team</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Hull_City_A.F.C. | manager | Steve_Bruce</mtriple>
+				<mtriple>Abel_Hernández | club | Hull_City_A.F.C.</mtriple>
+				<mtriple>Abel_Hernández | club | Uruguay_Olympic_football_team</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1"/>
+				</sortedtripleset>
+				<references>
+					<reference entity="Uruguay_Olympic_football_team" number="1" tag="PATIENT-2" type="name">Uruguay Olympic football team</reference>
+					<reference entity="Steve_Bruce" number="2" tag="PATIENT-1" type="name">Steve Bruce</reference>
+				</references>
+				<text>Abel Hernandez, who played for the Uruguay Olympic football team, plays for Hull City AFC under their manager Steve Bruce.</text>
+				<template>Abel Hernandez , who played for the PATIENT-2 , plays for Hull City AFC under their manager PATIENT-1 .</template>
+				<lexicalization>Abel Hernandez , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] the PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for Hull City AFC under their manager PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Uruguay_Olympic_football_team</striple>
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Hull_City_A.F.C. | manager | Steve_Bruce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Uruguay_Olympic_football_team" number="2" tag="PATIENT-2" type="description">the Uruguay Olympic football team</reference>
+					<reference entity="Abel_Hernández" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Hull_City_A.F.C." number="4" tag="BRIDGE-1" type="name">Hull City A.F.C .</reference>
+					<reference entity="Steve_Bruce" number="5" tag="PATIENT-1" type="name">Steve Bruce</reference>
+				</references>
+				<text>Abel Hernández plays for the Uruguay Olympic football team and his club is Hull City A.F.C. which is managed by Steve Bruce.</text>
+				<template>AGENT-1 plays for PATIENT-2 and AGENT-1 club is BRIDGE-1 which is managed by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Uruguay_Olympic_football_team</striple>
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Hull_City_A.F.C. | manager | Steve_Bruce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Uruguay_Olympic_football_team" number="2" tag="PATIENT-2" type="description">the Uruguay Olympic football team</reference>
+					<reference entity="Hull_City_A.F.C." number="3" tag="BRIDGE-1" type="name">Hull City AFC</reference>
+					<reference entity="Steve_Bruce" number="4" tag="PATIENT-1" type="name">Steve Bruce</reference>
+				</references>
+				<text>Abel Hernández plays for the Uruguay Olympic football team and also for Hull City AFC which is managed by Steve Bruce.</text>
+				<template>AGENT-1 plays for PATIENT-2 and also for BRIDGE-1 which is managed by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and also for BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Hull_City_A.F.C.</entity>
+				<entity>PATIENT-1 | Steve_Bruce</entity>
+				<entity>PATIENT-2 | Uruguay_Olympic_football_team</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1562" size="3">
+			<originaltripleset>
+				<otriple>Moscow | leaderName | Sergey_Sobyanin</otriple>
+				<otriple>Aleksandr_Chumakov | deathPlace | Russia</otriple>
+				<otriple>Aleksandr_Chumakov | placeOfBirth | Moscow</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Moscow | leaderName | Sergey_Sobyanin</mtriple>
+				<mtriple>Aleksandr_Chumakov | deathPlace | Russia</mtriple>
+				<mtriple>Aleksandr_Chumakov | birthPlace | Moscow</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | birthPlace | Moscow</striple>
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Moscow | leaderName | Sergey_Sobyanin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Moscow" number="2" tag="BRIDGE-1" type="name">Moscow</reference>
+					<reference entity="Russia" number="3" tag="PATIENT-2" type="name">Russia</reference>
+					<reference entity="Aleksandr_Chumakov" number="4" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Russia" number="5" tag="PATIENT-2" type="name">Russia</reference>
+					<reference entity="Moscow" number="6" tag="BRIDGE-1" type="name">Moscow</reference>
+					<reference entity="Sergey_Sobyanin" number="7" tag="PATIENT-1" type="name">Sergey Sobyanin</reference>
+				</references>
+				<text>Aleksandr Chumakov was born in Moscow, Russia and he died in Russia. The leader of Moscow is Sergey Sobyanin.</text>
+				<template>AGENT-1 was born in BRIDGE-1 , PATIENT-2 and AGENT-1 died in PATIENT-2 . The leader of BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 , PATIENT-2 and AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-2 . DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | birthPlace | Moscow</striple>
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Moscow | leaderName | Sergey_Sobyanin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Moscow" number="2" tag="BRIDGE-1" type="name">Moscow</reference>
+					<reference entity="Russia" number="3" tag="PATIENT-2" type="name">Russia</reference>
+					<reference entity="Sergey_Sobyanin" number="4" tag="PATIENT-1" type="name">Sergey Sobyanin</reference>
+					<reference entity="Moscow" number="5" tag="BRIDGE-1" type="name">Moscow 's</reference>
+				</references>
+				<text>Aleksandr Chumakov was born in Moscow and died in Russia. Sergey Sobyanin is Moscow's leader.</text>
+				<template>AGENT-1 was born in BRIDGE-1 and died in PATIENT-2 . PATIENT-1 is BRIDGE-1 leader .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 leader .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Moscow | leaderName | Sergey_Sobyanin</striple>
+						<striple>Aleksandr_Chumakov | birthPlace | Moscow</striple>
+						<striple>Aleksandr_Chumakov | deathPlace | Russia</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sergey_Sobyanin" number="1" tag="PATIENT-1" type="name">Sergey Sobyanin</reference>
+					<reference entity="Moscow" number="2" tag="BRIDGE-1" type="name">Moscow</reference>
+					<reference entity="Aleksandr_Chumakov" number="3" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Aleksandr_Chumakov" number="4" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Russia" number="5" tag="PATIENT-2" type="name">Russia</reference>
+				</references>
+				<text>Sergey Sobyanin is the leader of Moscow, which is where Aleksandr Chumakov was born, he died in Russia.</text>
+				<template>PATIENT-1 is the leader of BRIDGE-1 , which is where AGENT-1 was born , AGENT-1 died in PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader of BRIDGE-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be where AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | Moscow</entity>
+				<entity>PATIENT-1 | Sergey_Sobyanin</entity>
+				<entity>PATIENT-2 | Russia</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1563" size="3">
+			<originaltripleset>
+				<otriple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</otriple>
+				<otriple>Abner_(footballer) | team | Brazil_national_under-20_football_team</otriple>
+				<otriple>Abner_(footballer) | clubs | Real_Madrid_Castilla</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</mtriple>
+				<mtriple>Abner_(footballer) | club | Brazil_national_under-20_football_team</mtriple>
+				<mtriple>Abner_(footballer) | club | Real_Madrid_Castilla</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_(footballer) | club | Brazil_national_under-20_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abner_(footballer) | club | Real_Madrid_Castilla</striple>
+						<striple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_(footballer)" number="1" tag="AGENT-1" type="name">Footballer , Abner ,</reference>
+					<reference entity="Brazil_national_under-20_football_team" number="2" tag="PATIENT-2" type="description">the Brazilian national under 20 football team</reference>
+					<reference entity="Abner_(footballer)" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Real_Madrid_Castilla" number="4" tag="BRIDGE-1" type="description">the football club Real Madrid Castilla</reference>
+					<reference entity="Luis_Miguel_Ramis" number="5" tag="PATIENT-1" type="name">Luis Miguel Ramis</reference>
+				</references>
+				<text>Footballer, Abner, played for the Brazilian national under 20 football team. He also for the football club Real Madrid Castilla, the manager of which, is Luis Miguel Ramis.</text>
+				<template>AGENT-1 played for PATIENT-2 . AGENT-1 also for BRIDGE-1 , the manager of which , is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 . AGENT-1 also for BRIDGE-1 , DT[form=defined] the manager of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_(footballer) | club | Brazil_national_under-20_football_team</striple>
+						<striple>Abner_(footballer) | club | Real_Madrid_Castilla</striple>
+						<striple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_(footballer)" number="1" tag="AGENT-1" type="name">Abner</reference>
+					<reference entity="Brazil_national_under-20_football_team" number="2" tag="PATIENT-2" type="description">the Brazilian national under 20 football team</reference>
+					<reference entity="Real_Madrid_Castilla" number="3" tag="BRIDGE-1" type="name">Real Madrid Castilla</reference>
+					<reference entity="Luis_Miguel_Ramis" number="4" tag="PATIENT-1" type="name">Luis Miguel Ramis</reference>
+				</references>
+				<text>Abner plays football for the Brazilian national under 20 football team and also for Real Madrid Castilla who are managed by Luis Miguel Ramis.</text>
+				<template>AGENT-1 plays football for PATIENT-2 and also for BRIDGE-1 who are managed by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play football for PATIENT-2 and also for BRIDGE-1 who VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] manage by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_(footballer) | club | Brazil_national_under-20_football_team</striple>
+						<striple>Abner_(footballer) | club | Real_Madrid_Castilla</striple>
+						<striple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_(footballer)" number="1" tag="AGENT-1" type="name">Abner</reference>
+					<reference entity="Brazil_national_under-20_football_team" number="2" tag="PATIENT-2" type="description">the Brazil national under 20 team</reference>
+					<reference entity="Real_Madrid_Castilla" number="3" tag="BRIDGE-1" type="name">Real Madrid Castilla</reference>
+					<reference entity="Real_Madrid_Castilla" number="4" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Luis_Miguel_Ramis" number="5" tag="PATIENT-1" type="name">Luis Miguel Ramis</reference>
+				</references>
+				<text>Abner is a footballer who has represented the Brazil national under 20 team and plays for Real Madrid Castilla under their manager Luis Miguel Ramis.</text>
+				<template>AGENT-1 is a footballer who has represented PATIENT-2 and plays for BRIDGE-1 under BRIDGE-1 manager PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a footballer who VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] represent PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 under BRIDGE-1 manager PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abner_(footballer)</entity>
+				<entity>BRIDGE-1 | Real_Madrid_Castilla</entity>
+				<entity>PATIENT-1 | Luis_Miguel_Ramis</entity>
+				<entity>PATIENT-2 | Brazil_national_under-20_football_team</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1564" size="3">
+			<originaltripleset>
+				<otriple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</otriple>
+				<otriple>Abner_(footballer) | clubs | Real_Madrid_Castilla</otriple>
+				<otriple>Abner_(footballer) | team | C.D._FAS</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</mtriple>
+				<mtriple>Abner_(footballer) | club | Real_Madrid_Castilla</mtriple>
+				<mtriple>Abner_(footballer) | club | C.D._FAS</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_(footballer) | club | C.D._FAS</striple>
+						<striple>Abner_(footballer) | club | Real_Madrid_Castilla</striple>
+						<striple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_(footballer)" number="1" tag="AGENT-1" type="name">Footballer , Abner ,</reference>
+					<reference entity="C.D._FAS" number="2" tag="PATIENT-2" type="name">C.D . FAS .</reference>
+					<reference entity="Real_Madrid_Castilla" number="3" tag="BRIDGE-1" type="name">Real Madrid Castilla</reference>
+					<reference entity="Luis_Miguel_Ramis" number="4" tag="PATIENT-1" type="name">Luis Miguel Ramis</reference>
+				</references>
+				<text>Footballer, Abner, plays C.D. FAS. and Real Madrid Castilla, the manager of which, is Luis Miguel Ramis.</text>
+				<template>AGENT-1 plays PATIENT-2 and BRIDGE-1 , the manager of which , is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play PATIENT-2 and BRIDGE-1 , DT[form=defined] the manager of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_(footballer) | club | Real_Madrid_Castilla</striple>
+						<striple>Abner_(footballer) | club | C.D._FAS</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_(footballer)" number="1" tag="AGENT-1" type="name">Footballer , Abner</reference>
+					<reference entity="Real_Madrid_Castilla" number="2" tag="BRIDGE-1" type="name">Real Madrid Castilla</reference>
+					<reference entity="C.D._FAS" number="3" tag="PATIENT-2" type="name">C.D . FAS</reference>
+					<reference entity="Luis_Miguel_Ramis" number="4" tag="PATIENT-1" type="name">Luis Miguel Ramis</reference>
+					<reference entity="Real_Madrid_Castilla" number="5" tag="BRIDGE-1" type="description">the Real Madrid Castilla</reference>
+				</references>
+				<text>Footballer, Abner plays for the club, Real Madrid Castilla and belongs to C.D. FAS club. Luis Miguel Ramis manages the Real Madrid Castilla.</text>
+				<template>AGENT-1 plays for the club , BRIDGE-1 and belongs to PATIENT-2 club . PATIENT-1 manages BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the club , BRIDGE-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] belong to PATIENT-2 club . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] manage BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_(footballer) | club | C.D._FAS</striple>
+						<striple>Abner_(footballer) | club | Real_Madrid_Castilla</striple>
+						<striple>Real_Madrid_Castilla | manager | Luis_Miguel_Ramis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_(footballer)" number="1" tag="AGENT-1" type="description">The footballer Abner</reference>
+					<reference entity="C.D._FAS" number="2" tag="PATIENT-2" type="name">C.D . FAS</reference>
+					<reference entity="Real_Madrid_Castilla" number="3" tag="BRIDGE-1" type="name">Real Madrid Castilla</reference>
+					<reference entity="Luis_Miguel_Ramis" number="4" tag="PATIENT-1" type="name">Luis Miguel Ramis</reference>
+				</references>
+				<text>The footballer Abner has played for C.D. FAS and also Real Madrid Castilla, which is managed by Luis Miguel Ramis.</text>
+				<template>AGENT-1 has played for PATIENT-2 and also BRIDGE-1 , which is managed by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and also BRIDGE-1 , which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abner_(footballer)</entity>
+				<entity>BRIDGE-1 | Real_Madrid_Castilla</entity>
+				<entity>PATIENT-1 | Luis_Miguel_Ramis</entity>
+				<entity>PATIENT-2 | C.D._FAS</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1565" size="3">
+			<originaltripleset>
+				<otriple>St._Louis | isPartOf | Greater_St._Louis</otriple>
+				<otriple>Alex_Tyus | placeOfBirth | St._Louis</otriple>
+				<otriple>St._Louis | leaderName | Francis_G._Slay</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>St._Louis | isPartOf | Greater_St._Louis</mtriple>
+				<mtriple>Alex_Tyus | birthPlace | St._Louis</mtriple>
+				<mtriple>St._Louis | leaderName | Francis_G._Slay</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>St._Louis | isPartOf | Greater_St._Louis</striple>
+						<striple>St._Louis | leaderName | Francis_G._Slay</striple>
+						<striple>Alex_Tyus | birthPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="St._Louis" number="1" tag="BRIDGE-1" type="name">St Louis</reference>
+					<reference entity="Greater_St._Louis" number="2" tag="PATIENT-1" type="name">Greater St Louis</reference>
+					<reference entity="Francis_G._Slay" number="3" tag="PATIENT-2" type="name">Francis G Slay</reference>
+					<reference entity="Alex_Tyus" number="4" tag="AGENT-1" type="name">Alex Tyus</reference>
+				</references>
+				<text>St Louis, part of Greater St Louis, is led by Francis G Slay and is the birthplace of Alex Tyus.</text>
+				<template>BRIDGE-1 , part of PATIENT-1 , is led by PATIENT-2 and is the birthplace of AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 , part of PATIENT-1 , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the birthplace of AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | birthPlace | St._Louis</striple>
+						<striple>St._Louis | isPartOf | Greater_St._Louis</striple>
+						<striple>St._Louis | leaderName | Francis_G._Slay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="St._Louis" number="2" tag="BRIDGE-1" type="name">St Louis</reference>
+					<reference entity="Greater_St._Louis" number="3" tag="PATIENT-1" type="name">greater St. Louis</reference>
+					<reference entity="Francis_G._Slay" number="4" tag="PATIENT-2" type="name">Francis G. Slay</reference>
+				</references>
+				<text>Alex Tyus was born in St Louis, (part of greater St. Louis), where Francis G. Slay is the leader.</text>
+				<template>AGENT-1 was born in BRIDGE-1 , (part of PATIENT-1) , where PATIENT-2 is the leader .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 , ( part of PATIENT-1 ) , where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Tyus | birthPlace | St._Louis</striple>
+						<striple>St._Louis | isPartOf | Greater_St._Louis</striple>
+						<striple>St._Louis | leaderName | Francis_G._Slay</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Tyus" number="1" tag="AGENT-1" type="name">Alex Tyus</reference>
+					<reference entity="St._Louis" number="2" tag="BRIDGE-1" type="name">St Louis</reference>
+					<reference entity="Greater_St._Louis" number="3" tag="PATIENT-1" type="name">Greater St Louis</reference>
+					<reference entity="Francis_G._Slay" number="4" tag="PATIENT-2" type="name">Francis G. Slay</reference>
+				</references>
+				<text>Alex Tyus was born in St Louis, part of Greater St Louis, the leader of which, is Francis G. Slay.</text>
+				<template>AGENT-1 was born in BRIDGE-1 , part of PATIENT-1 , the leader of which , is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 , part of PATIENT-1 , DT[form=defined] the leader of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Tyus</entity>
+				<entity>BRIDGE-1 | St._Louis</entity>
+				<entity>PATIENT-1 | Greater_St._Louis</entity>
+				<entity>PATIENT-2 | Francis_G._Slay</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1566" size="3">
+			<originaltripleset>
+				<otriple>Tennessee_Titans | locationCity | Nashville,_Tennessee</otriple>
+				<otriple>Akeem_Ayers | formerTeam | New_England_Patriots</otriple>
+				<otriple>Akeem_Ayers | debutTeam | Tennessee_Titans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Tennessee_Titans | city | Nashville,_Tennessee</mtriple>
+				<mtriple>Akeem_Ayers | formerTeam | New_England_Patriots</mtriple>
+				<mtriple>Akeem_Ayers | debutTeam | Tennessee_Titans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | New_England_Patriots</striple>
+						<striple>Akeem_Ayers | debutTeam | Tennessee_Titans</striple>
+						<striple>Tennessee_Titans | city | Nashville,_Tennessee</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers 's</reference>
+					<reference entity="New_England_Patriots" number="2" tag="PATIENT-2" type="description">the New England Patriots</reference>
+					<reference entity="Akeem_Ayers" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Tennessee_Titans" number="4" tag="BRIDGE-1" type="description">the Tennessee Titans</reference>
+					<reference entity="Nashville,_Tennessee" number="5" tag="PATIENT-1" type="name">Nashville , Tennessee</reference>
+				</references>
+				<text>Akeem Ayers's former team is the New England Patriots and his debut team was the Tennessee Titans who are based in the city of Nashville, Tennessee.</text>
+				<template>AGENT-1 former team is PATIENT-2 and AGENT-1 debut team was BRIDGE-1 who are based in the city of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 former team VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and AGENT-1 debut team VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 who VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] base in DT[form=defined] the city of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | formerTeam | New_England_Patriots</striple>
+						<striple>Akeem_Ayers | debutTeam | Tennessee_Titans</striple>
+						<striple>Tennessee_Titans | city | Nashville,_Tennessee</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="New_England_Patriots" number="2" tag="PATIENT-2" type="description">the New England Patriots</reference>
+					<reference entity="Akeem_Ayers" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Tennessee_Titans" number="4" tag="BRIDGE-1" type="description">the American football team Tennessee Titans</reference>
+					<reference entity="Nashville,_Tennessee" number="5" tag="PATIENT-1" type="name">Nashville</reference>
+				</references>
+				<text>Akeem Ayers, whose former team is the New England Patriots, made his debut with the American football team Tennessee Titans based in the city of Nashville.</text>
+				<template>AGENT-1 , whose former team is PATIENT-2 , made AGENT-1 debut with BRIDGE-1 based in the city of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , whose former team VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] make AGENT-1 debut with BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] base in DT[form=defined] the city of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | debutTeam | Tennessee_Titans</striple>
+						<striple>Tennessee_Titans | city | Nashville,_Tennessee</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Ayers | formerTeam | New_England_Patriots</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers '</reference>
+					<reference entity="Tennessee_Titans" number="2" tag="BRIDGE-1" type="description">the Tennessee Titans</reference>
+					<reference entity="Nashville,_Tennessee" number="3" tag="PATIENT-1" type="name">Nashville , Tennessee</reference>
+					<reference entity="Akeem_Ayers" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="New_England_Patriots" number="5" tag="PATIENT-2" type="description">the New England Patriots</reference>
+				</references>
+				<text>Akeem Ayers' debut team was the Tennessee Titans, who are based in the city of Nashville, Tennessee. He later played for the New England Patriots.</text>
+				<template>AGENT-1 debut team was BRIDGE-1 , who are based in the city of PATIENT-1 . AGENT-1 later played for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 debut team VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 , who VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] base in DT[form=defined] the city of PATIENT-1 . AGENT-1 later VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Ayers</entity>
+				<entity>BRIDGE-1 | Tennessee_Titans</entity>
+				<entity>PATIENT-1 | Nashville,_Tennessee</entity>
+				<entity>PATIENT-2 | New_England_Patriots</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1567" size="3">
+			<originaltripleset>
+				<otriple>United_Petrotrin_F.C. | ground | Palo_Seco</otriple>
+				<otriple>Akeem_Adams | team | Trinidad_and_Tobago_national_under-20_football_team</otriple>
+				<otriple>Akeem_Adams | clubs | United_Petrotrin_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_Petrotrin_F.C. | ground | Palo_Seco</mtriple>
+				<mtriple>Akeem_Adams | club | Trinidad_and_Tobago_national_under-20_football_team</mtriple>
+				<mtriple>Akeem_Adams | club | United_Petrotrin_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Trinidad_and_Tobago_national_under-20_football_team</striple>
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="Trinidad_and_Tobago_national_under-20_football_team" number="2" tag="PATIENT-2" type="name">Trinidad and Tobago at under 20 level</reference>
+					<reference entity="United_Petrotrin_F.C." number="3" tag="BRIDGE-1" type="name">United Petrotrin FC</reference>
+					<reference entity="Palo_Seco" number="4" tag="PATIENT-1" type="name">Palo Seco</reference>
+				</references>
+				<text>Akeem Adams, who has represented Trinidad and Tobago at under 20 level, played for United Petrotrin FC, whose ground is Palo Seco.</text>
+				<template>AGENT-1 , who has represented PATIENT-2 , played for BRIDGE-1 , whose ground is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] represent PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 , whose ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | Trinidad_and_Tobago_national_under-20_football_team</striple>
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="Trinidad_and_Tobago_national_under-20_football_team" number="2" tag="PATIENT-2" type="description">the Trinidad and Tobago national under-20 football team</reference>
+					<reference entity="United_Petrotrin_F.C." number="3" tag="BRIDGE-1" type="name">United Petrotin FC</reference>
+					<reference entity="Palo_Seco" number="4" tag="PATIENT-1" type="name">Palo Seco</reference>
+				</references>
+				<text>Akeem Adams, who plays for the Trinidad and Tobago national under-20 football team previously played for United Petrotin FC whose ground is at Palo Seco.</text>
+				<template>AGENT-1 , who plays for PATIENT-2 previously played for BRIDGE-1 whose ground is at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 whose ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be at PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Adams | club | United_Petrotrin_F.C.</striple>
+						<striple>United_Petrotrin_F.C. | ground | Palo_Seco</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Adams | club | Trinidad_and_Tobago_national_under-20_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Adams" number="1" tag="AGENT-1" type="name">Akeem Adams</reference>
+					<reference entity="United_Petrotrin_F.C." number="2" tag="BRIDGE-1" type="name">United Petrotrin F.C.</reference>
+					<reference entity="United_Petrotrin_F.C." number="3" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Palo_Seco" number="4" tag="PATIENT-1" type="name">Palo Seco</reference>
+					<reference entity="Akeem_Adams" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Trinidad_and_Tobago_national_under-20_football_team" number="6" tag="PATIENT-2" type="description">the Trinidad and Tobago national under 20 team</reference>
+				</references>
+				<text>Akeem Adams played for United Petrotrin F.C., who play their home games at Palo Seco ground. He also played for the Trinidad and Tobago national under 20 team.</text>
+				<template>AGENT-1 played for BRIDGE-1 , who play BRIDGE-1 home games at PATIENT-1 ground . AGENT-1 also played for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 , who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] play BRIDGE-1 home games at PATIENT-1 ground . AGENT-1 also VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Adams</entity>
+				<entity>BRIDGE-1 | United_Petrotrin_F.C.</entity>
+				<entity>PATIENT-1 | Palo_Seco</entity>
+				<entity>PATIENT-2 | Trinidad_and_Tobago_national_under-20_football_team</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

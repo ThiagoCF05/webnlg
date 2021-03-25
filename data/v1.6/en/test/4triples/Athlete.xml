@@ -1,0 +1,2305 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Athlete" eid="Id1568" size="4">
+			<originaltripleset>
+				<otriple>Aaron_Hunt | team | SV_Werder_Bremen</otriple>
+				<otriple>SV_Werder_Bremen_II | manager | Alexander_Nouri</otriple>
+				<otriple>Aaron_Hunt | clubs | SV_Werder_Bremen_II</otriple>
+				<otriple>SV_Werder_Bremen_II | league | 3._Liga</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_Hunt | club | SV_Werder_Bremen</mtriple>
+				<mtriple>SV_Werder_Bremen_II | manager | Alexander_Nouri</mtriple>
+				<mtriple>Aaron_Hunt | club | SV_Werder_Bremen_II</mtriple>
+				<mtriple>SV_Werder_Bremen_II | league | 3._Liga</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen</striple>
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen_II</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>SV_Werder_Bremen_II | manager | Alexander_Nouri</striple>
+						<striple>SV_Werder_Bremen_II | league | 3._Liga</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Hunt" number="1" tag="AGENT-1" type="name">Aaron Hunt</reference>
+					<reference entity="SV_Werder_Bremen" number="2" tag="PATIENT-1" type="name">SV Werder Bremen</reference>
+					<reference entity="SV_Werder_Bremen_II" number="3" tag="BRIDGE-1" type="name">SV Werder Bremen II</reference>
+					<reference entity="SV_Werder_Bremen_II" number="4" tag="BRIDGE-1" type="description">The latter</reference>
+					<reference entity="Alexander_Nouri" number="5" tag="PATIENT-2" type="name">Alexander Nouri</reference>
+					<reference entity="3._Liga" number="6" tag="PATIENT-3" type="name">3 Liga</reference>
+				</references>
+				<text>Aaron Hunt played for SV Werder Bremen and SV Werder Bremen II. The latter is managed by Alexander Nouri and is in the league 3 Liga.</text>
+				<template>AGENT-1 played for PATIENT-1 and BRIDGE-1 . BRIDGE-1 is managed by PATIENT-2 and is in the league PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 and BRIDGE-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the league PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>SV_Werder_Bremen_II | manager | Alexander_Nouri</striple>
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen_II</striple>
+						<striple>SV_Werder_Bremen_II | league | 3._Liga</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alexander_Nouri" number="1" tag="PATIENT-2" type="name">Alexander Nouri</reference>
+					<reference entity="SV_Werder_Bremen" number="2" tag="PATIENT-1" type="name">SV Werder Bremen</reference>
+					<reference entity="Aaron_Hunt" number="3" tag="AGENT-1" type="name">Aaron Hunt</reference>
+					<reference entity="Aaron_Hunt" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="SV_Werder_Bremen_II" number="5" tag="BRIDGE-1" type="name">SV Werder Bremen II</reference>
+					<reference entity="3._Liga" number="6" tag="PATIENT-3" type="name">3 Liga</reference>
+				</references>
+				<text>Alexander Nouri is the manager of SV Werder Bremen, which Aaron Hunt plays for. He also plays for, SV Werder Bremen II which is in the league 3 Liga.</text>
+				<template>PATIENT-2 is the manager of PATIENT-1 , which AGENT-1 plays for . AGENT-1 also plays for , BRIDGE-1 which is in the league PATIENT-3 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of PATIENT-1 , which AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for . AGENT-1 also VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for , BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the league PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>SV_Werder_Bremen_II | manager | Alexander_Nouri</striple>
+						<striple>SV_Werder_Bremen_II | league | 3._Liga</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen</striple>
+						<striple>Aaron_Hunt | club | SV_Werder_Bremen_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="SV_Werder_Bremen" number="1" tag="PATIENT-1" type="name">SV Werder Bremen</reference>
+					<reference entity="Alexander_Nouri" number="2" tag="PATIENT-2" type="name">Alexander Nouri</reference>
+					<reference entity="SV_Werder_Bremen_II" number="3" tag="BRIDGE-1" type="name">SV Werder Bremen II</reference>
+					<reference entity="3._Liga" number="4" tag="PATIENT-3" type="name">3 Liga</reference>
+					<reference entity="Aaron_Hunt" number="5" tag="AGENT-1" type="name">Aaron Hunt</reference>
+				</references>
+				<text>SV Werder Bremen is managed by Alexander Nouri and SV Werder Bremen II are players in 3 Liga. Aaron Hunt plays for both clubs.</text>
+				<template>PATIENT-1 is managed by PATIENT-2 and BRIDGE-1 are players in PATIENT-3 . AGENT-1 plays for both clubs .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-2 and BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be players in PATIENT-3 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] both clubs .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Hunt</entity>
+				<entity>BRIDGE-1 | SV_Werder_Bremen_II</entity>
+				<entity>PATIENT-1 | SV_Werder_Bremen</entity>
+				<entity>PATIENT-2 | Alexander_Nouri</entity>
+				<entity>PATIENT-3 | 3._Liga</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1569" size="4">
+			<originaltripleset>
+				<otriple>Abel_Hernández | clubs | Peñarol</otriple>
+				<otriple>Abel_Hernández | youthclubs | Central_Español</otriple>
+				<otriple>Hull_City_A.F.C. | manager | Steve_Bruce</otriple>
+				<otriple>Abel_Hernández | team | Hull_City_A.F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abel_Hernández | club | Peñarol</mtriple>
+				<mtriple>Abel_Hernández | youthclub | Central_Español</mtriple>
+				<mtriple>Hull_City_A.F.C. | manager | Steve_Bruce</mtriple>
+				<mtriple>Abel_Hernández | club | Hull_City_A.F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Peñarol</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Hull_City_A.F.C. | manager | Steve_Bruce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Peñarol" number="2" tag="PATIENT-1" type="name">Abel Hernandezand club Penarol</reference>
+					<reference entity="Abel_Hernández" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Steve_Bruce" number="4" tag="PATIENT-3" type="name">Steve Bruce</reference>
+					<reference entity="Hull_City_A.F.C." number="5" tag="BRIDGE-1" type="name">Hull</reference>
+				</references>
+				<text>Abel Hernandez belongs to Abel Hernandezand club Penarol. He also plays for, Steve Bruce managed, Hull City A.F.C.</text>
+				<template>AGENT-1 belongs to PATIENT-1 . AGENT-1 also plays for , PATIENT-3 managed , BRIDGE-1</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] belong to PATIENT-1 . AGENT-1 also VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for , PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] manage , BRIDGE-1</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Peñarol</striple>
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Hull_City_A.F.C. | manager | Steve_Bruce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Peñarol" number="2" tag="PATIENT-1" type="name">Penarol</reference>
+					<reference entity="Central_Español" number="3" tag="PATIENT-2" type="name">Central Espanol</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="name">Abel Hernández 's</reference>
+					<reference entity="Hull_City_A.F.C." number="5" tag="BRIDGE-1" type="name">Hull City A.F.C .</reference>
+					<reference entity="Steve_Bruce" number="6" tag="PATIENT-3" type="name">Steve Bruce</reference>
+				</references>
+				<text>Abel Hernandez, who played for Penarol, was a member of the Central Espanol youth team. Abel Hernández's club is Hull City A.F.C. which is managed by, Steve Bruce.</text>
+				<template>AGENT-1 , who played for PATIENT-1 , was a member of the PATIENT-2 youth team . AGENT-1 club is BRIDGE-1 which is managed by , PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of DT[form=defined] the PATIENT-2 youth team . AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by , PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Peñarol</striple>
+						<striple>Abel_Hernández | youthclub | Central_Español</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Hull_City_A.F.C. | manager | Steve_Bruce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Peñarol" number="2" tag="PATIENT-1" type="name">Penarol</reference>
+					<reference entity="Central_Español" number="3" tag="PATIENT-2" type="name">Central Español</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Hull_City_A.F.C." number="5" tag="BRIDGE-1" type="name">Hull City A.F.C.</reference>
+					<reference entity="Steve_Bruce" number="6" tag="PATIENT-3" type="name">Steve Bruce</reference>
+				</references>
+				<text>Abel Hernandez, whose club is Penarol, played youth football for Central Español. his club is also Hull City A.F.C., the manager of which, is Steve Bruce.</text>
+				<template>AGENT-1 , whose club is PATIENT-1 , played youth football for PATIENT-2 . AGENT-1 club is also BRIDGE-1 , the manager of which , is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play youth football for PATIENT-2 . AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also BRIDGE-1 , DT[form=defined] the manager of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Hull_City_A.F.C.</entity>
+				<entity>PATIENT-1 | Peñarol</entity>
+				<entity>PATIENT-2 | Central_Español</entity>
+				<entity>PATIENT-3 | Steve_Bruce</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1570" size="4">
+			<originaltripleset>
+				<otriple>Abel_Hernández | youthclubs | Peñarol</otriple>
+				<otriple>Abel_Hernández | team | Central_Español</otriple>
+				<otriple>Peñarol | manager | Jorge_Orosmán_da_Silva</otriple>
+				<otriple>Abel_Hernández | clubs | U.S._Città_di_Palermo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abel_Hernández | youthclub | Peñarol</mtriple>
+				<mtriple>Abel_Hernández | club | Central_Español</mtriple>
+				<mtriple>Peñarol | manager | Jorge_Orosmán_da_Silva</mtriple>
+				<mtriple>Abel_Hernández | club | U.S._Città_di_Palermo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>Abel_Hernández | club | Central_Español</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="U.S._Città_di_Palermo" number="2" tag="PATIENT-3" type="description">the club , U.S. Città di Palermo</reference>
+					<reference entity="Central_Español" number="3" tag="PATIENT-1" type="name">Central Espanol</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Peñarol" number="5" tag="BRIDGE-1" type="name">Peñarol</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="6" tag="PATIENT-2" type="name">Jorge Orosmán da Silva</reference>
+				</references>
+				<text>Abel Hernández plays for the club, U.S. Città di Palermo and played for the Central Espanol club. He was a member of youth club Peñarol which is managed by, Jorge Orosmán da Silva.</text>
+				<template>AGENT-1 plays for PATIENT-3 and played for the PATIENT-1 club . AGENT-1 was a member of youth club BRIDGE-1 which is managed by , PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] the PATIENT-1 club . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of youth club BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Central_Español</striple>
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Peñarol" number="2" tag="BRIDGE-1" type="name">Peñarol</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="3" tag="PATIENT-2" type="name">Jorge Orosmán da Silva</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="name">Abel Hernandezalso</reference>
+					<reference entity="Central_Español" number="5" tag="PATIENT-1" type="name">Central Espanol</reference>
+					<reference entity="Abel_Hernández" number="6" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="U.S._Città_di_Palermo" number="7" tag="PATIENT-3" type="name">US Citta di Palermo</reference>
+				</references>
+				<text>Abel Hernández was a member of youth club Peñarol, managed by, Jorge Orosmán da Silva. Abel Hernandezalso played for the Central Espanol club and now his club is US Citta di Palermo.</text>
+				<template>AGENT-1 was a member of youth club BRIDGE-1 , managed by , PATIENT-2 . AGENT-1 played for the PATIENT-1 club and now AGENT-1 club is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of youth club BRIDGE-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] manage by , PATIENT-2 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] the PATIENT-1 club and now AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | Central_Español</striple>
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | manager | Jorge_Orosmán_da_Silva</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Central_Español" number="2" tag="PATIENT-1" type="name">Central Español</reference>
+					<reference entity="U.S._Città_di_Palermo" number="3" tag="PATIENT-3" type="name">U.S. Città di Palermo</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Abel_Hernández" number="5" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Peñarol" number="6" tag="BRIDGE-1" type="name">Peñarol</reference>
+					<reference entity="Jorge_Orosmán_da_Silva" number="7" tag="PATIENT-2" type="name">Jorge Orosmán da Silva</reference>
+				</references>
+				<text>Abel Hernández has played for Central Español and plays for the club, U.S. Città di Palermo. In his youth, he played for Peñarol, the manager of which, is Jorge Orosmán da Silva.</text>
+				<template>AGENT-1 has played for PATIENT-1 and plays for the club , PATIENT-3 . In AGENT-1 youth , AGENT-1 played for BRIDGE-1 , the manager of which , is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the club , PATIENT-3 . In AGENT-1 youth , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 , DT[form=defined] the manager of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Peñarol</entity>
+				<entity>PATIENT-1 | Central_Español</entity>
+				<entity>PATIENT-2 | Jorge_Orosmán_da_Silva</entity>
+				<entity>PATIENT-3 | U.S._Città_di_Palermo</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1571" size="4">
+			<originaltripleset>
+				<otriple>Abel_Hernández | youthclubs | Peñarol</otriple>
+				<otriple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</otriple>
+				<otriple>Abel_Hernández | clubs | U.S._Città_di_Palermo</otriple>
+				<otriple>U.S._Città_di_Palermo | league | Serie_A</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abel_Hernández | youthclub | Peñarol</mtriple>
+				<mtriple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</mtriple>
+				<mtriple>Abel_Hernández | club | U.S._Città_di_Palermo</mtriple>
+				<mtriple>U.S._Città_di_Palermo | league | Serie_A</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</striple>
+						<striple>U.S._Città_di_Palermo | league | Serie_A</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Peñarol" number="2" tag="PATIENT-1" type="name">Peñaro</reference>
+					<reference entity="U.S._Città_di_Palermo" number="3" tag="BRIDGE-1" type="name">U.S. Città di Palermo</reference>
+					<reference entity="U.S._Città_di_Palermo" number="4" tag="BRIDGE-1" type="description">The club</reference>
+					<reference entity="Giuseppe_Iachini" number="5" tag="PATIENT-2" type="name">Giuseppe Iachini</reference>
+					<reference entity="Serie_A" number="6" tag="PATIENT-3" type="name">Serie A</reference>
+				</references>
+				<text>Abel Hernández, who was a member of youth club Peñaro, plays for the club, U.S. Città di Palermo. The club is managed by Giuseppe Iachini and play in the Serie A league.</text>
+				<template>AGENT-1 , who was a member of youth club PATIENT-1 , plays for the club , BRIDGE-1 . BRIDGE-1 is managed by PATIENT-2 and play in the PATIENT-3 league .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of youth club PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the club , BRIDGE-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-2 and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play in DT[form=defined] the PATIENT-3 league .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>U.S._Città_di_Palermo | league | Serie_A</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Abel_Hernández" number="2" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Peñarol" number="3" tag="PATIENT-1" type="name">Peñarol</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="U.S._Città_di_Palermo" number="5" tag="BRIDGE-1" type="name">US Citta di Palermo</reference>
+					<reference entity="Serie_A" number="6" tag="PATIENT-3" type="description">the Serie A</reference>
+					<reference entity="Giuseppe_Iachini" number="7" tag="PATIENT-2" type="name">Giuseppe Iachini</reference>
+				</references>
+				<text>When he was younger, Abel Hernández played for Peñarol. He now plays for US Citta di Palermo in the Serie A. League and managed by Giuseppe Iachini.</text>
+				<template>When AGENT-1 was younger , AGENT-1 played for PATIENT-1 . AGENT-1 now plays for BRIDGE-1 in PATIENT-3 . League and managed by PATIENT-2 .</template>
+				<lexicalization>When AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be younger , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 . AGENT-1 now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 in PATIENT-3 . League and VP[aspect=simple,tense=past,voice=active,person=null,number=null] manage by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | club | U.S._Città_di_Palermo</striple>
+						<striple>U.S._Città_di_Palermo | manager | Giuseppe_Iachini</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>U.S._Città_di_Palermo | league | Serie_A</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Giuseppe_Iachini" number="2" tag="PATIENT-2" type="name">Giuseppe Iachini</reference>
+					<reference entity="U.S._Città_di_Palermo" number="3" tag="BRIDGE-1" type="name">U.S. Città di Palermo</reference>
+					<reference entity="Serie_A" number="4" tag="PATIENT-3" type="name">Serie A</reference>
+					<reference entity="Abel_Hernández" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Peñarol" number="6" tag="PATIENT-1" type="name">Peñarol</reference>
+				</references>
+				<text>Abel Hernández plays for, Giuseppe Iachini managed, U.S. Città di Palermo. in the Serie A league. He has played for Peñarol.</text>
+				<template>AGENT-1 plays for , PATIENT-2 managed , BRIDGE-1 . in the PATIENT-3 league . AGENT-1 has played for PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for , PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] manage , BRIDGE-1 . in DT[form=defined] the PATIENT-3 league . AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | U.S._Città_di_Palermo</entity>
+				<entity>PATIENT-1 | Peñarol</entity>
+				<entity>PATIENT-2 | Giuseppe_Iachini</entity>
+				<entity>PATIENT-3 | Serie_A</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1572" size="4">
+			<originaltripleset>
+				<otriple>Adam_McQuaid | placeOfBirth | Prince_Edward_Island</otriple>
+				<otriple>Adam_McQuaid | dateOfBirth | &quot;1986-10-12&quot;^^xsd:date</otriple>
+				<otriple>Adam_McQuaid | Person/weight | &quot;94.8024&quot;^^&lt;http://dbpedia.org/datatype/kilogram&gt;</otriple>
+				<otriple>Adam_McQuaid | birthYear | &quot;1986&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adam_McQuaid | birthPlace | Prince_Edward_Island</mtriple>
+				<mtriple>Adam_McQuaid | birthDate | 1986-10-12</mtriple>
+				<mtriple>Adam_McQuaid | weight | 94.8024 (kilograms)</mtriple>
+				<mtriple>Adam_McQuaid | birthYear | 1986</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | birthDate | 1986-10-12</striple>
+						<striple>Adam_McQuaid | birthYear | 1986</striple>
+						<striple>Adam_McQuaid | birthPlace | Prince_Edward_Island</striple>
+						<striple>Adam_McQuaid | weight | 94.8024 (kilograms)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_McQuaid" number="1" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="1986-10-12" number="2" tag="PATIENT-2" type="name">October 12th</reference>
+					<reference entity="1986" number="3" tag="PATIENT-4" type="name">1986</reference>
+					<reference entity="Prince_Edward_Island" number="4" tag="PATIENT-1" type="name">Prince Edward Island</reference>
+					<reference entity="94.8024 (kilograms)" number="5" tag="PATIENT-3" type="name">94.8024kg</reference>
+				</references>
+				<text>Adam McQuaid was born October 12th @ 1986 in Prince Edward Island and now weighs 94.8024kg.</text>
+				<template>AGENT-1 was born PATIENT-2 @ PATIENT-4 in PATIENT-1 and now weighs PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-2 PATIENT-4 in PATIENT-1 and now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] weigh PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | birthDate | 1986-10-12</striple>
+						<striple>Adam_McQuaid | birthYear | 1986</striple>
+						<striple>Adam_McQuaid | birthPlace | Prince_Edward_Island</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adam_McQuaid | weight | 94.8024 (kilograms)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_McQuaid" number="1" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="1986-10-12" number="2" tag="PATIENT-2" type="name">October 12th</reference>
+					<reference entity="1986" number="3" tag="PATIENT-4" type="name">1986</reference>
+					<reference entity="Prince_Edward_Island" number="4" tag="PATIENT-1" type="name">Prince Edward Island</reference>
+					<reference entity="Adam_McQuaid" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="94.8024 (kilograms)" number="6" tag="PATIENT-3" type="name">94.8024 kilograms</reference>
+				</references>
+				<text>Adam McQuaid was born October 12th @ 1986 on Prince Edward Island. He weighs 94.8024 kilograms.</text>
+				<template>AGENT-1 was born PATIENT-2 @ PATIENT-4 on PATIENT-1 . AGENT-1 weighs PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-2 PATIENT-4 on PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] weigh PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | birthDate | 1986-10-12</striple>
+						<striple>Adam_McQuaid | birthYear | 1986</striple>
+						<striple>Adam_McQuaid | birthPlace | Prince_Edward_Island</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adam_McQuaid | weight | 94.8024 (kilograms)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1986-10-12" number="1" tag="PATIENT-2" type="name">Oct 12</reference>
+					<reference entity="1986" number="2" tag="PATIENT-4" type="name">1986</reference>
+					<reference entity="Prince_Edward_Island" number="3" tag="PATIENT-1" type="name">P.E.I .</reference>
+					<reference entity="Adam_McQuaid" number="4" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="Adam_McQuaid" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="94.8024 (kilograms)" number="6" tag="PATIENT-3" type="name">94.8024 Kg</reference>
+				</references>
+				<text>Born on Oct 12, 1986 in P.E.I. is Adam McQuaid. He weighs 94.8024 Kg.</text>
+				<template>Born on PATIENT-2 , PATIENT-4 in PATIENT-1 is AGENT-1 . AGENT-1 weighs PATIENT-3 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear on PATIENT-2 , PATIENT-4 in PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be AGENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] weigh PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_McQuaid</entity>
+				<entity>PATIENT-1 | Prince_Edward_Island</entity>
+				<entity>PATIENT-2 | 1986-10-12</entity>
+				<entity>PATIENT-3 | 94.8024 (kilograms)</entity>
+				<entity>PATIENT-4 | 1986</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1573" size="4">
+			<originaltripleset>
+				<otriple>Adam_McQuaid | draftTeam | Columbus_Blue_Jackets</otriple>
+				<otriple>Boston_Bruins | generalManager | Don_Sweeney</otriple>
+				<otriple>Columbus_Blue_Jackets | city | Columbus,_Ohio</otriple>
+				<otriple>Adam_McQuaid | team | Boston_Bruins</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adam_McQuaid | draftTeam | Columbus_Blue_Jackets</mtriple>
+				<mtriple>Boston_Bruins | generalManager | Don_Sweeney</mtriple>
+				<mtriple>Columbus_Blue_Jackets | city | Columbus,_Ohio</mtriple>
+				<mtriple>Adam_McQuaid | club | Boston_Bruins</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | draftTeam | Columbus_Blue_Jackets</striple>
+						<striple>Columbus_Blue_Jackets | city | Columbus,_Ohio</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adam_McQuaid | club | Boston_Bruins</striple>
+						<striple>Boston_Bruins | generalManager | Don_Sweeney</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_McQuaid" number="1" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="Columbus_Blue_Jackets" number="2" tag="BRIDGE-1" type="name">Columbus Blue Jackets</reference>
+					<reference entity="Columbus,_Ohio" number="3" tag="PATIENT-2" type="name">Columbus , Ohio</reference>
+					<reference entity="Adam_McQuaid" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Boston_Bruins" number="5" tag="BRIDGE-2" type="description">the Boston Bruins</reference>
+					<reference entity="Don_Sweeney" number="6" tag="PATIENT-1" type="name">Don Sweeney</reference>
+				</references>
+				<text>Adam McQuaid was originally drafted to the Columbus Blue Jackets out of Columbus, Ohio. He nows plays with the Boston Bruins whose general manager is Don Sweeney.</text>
+				<template>AGENT-1 was originally drafted to the BRIDGE-1 out of PATIENT-2 . AGENT-1 nows plays with BRIDGE-2 whose general manager is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be originally VP[aspect=simple,tense=past,voice=active,person=null,number=null] draft to DT[form=defined] the BRIDGE-1 out of PATIENT-2 . AGENT-1 nows VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play with BRIDGE-2 whose general manager VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Boston_Bruins | generalManager | Don_Sweeney</striple>
+						<striple>Adam_McQuaid | club | Boston_Bruins</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adam_McQuaid | draftTeam | Columbus_Blue_Jackets</striple>
+						<striple>Columbus_Blue_Jackets | city | Columbus,_Ohio</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Don_Sweeney" number="1" tag="PATIENT-1" type="name">Don Sweeney</reference>
+					<reference entity="Boston_Bruins" number="2" tag="BRIDGE-2" type="description">the Boston Bruins</reference>
+					<reference entity="Adam_McQuaid" number="3" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="Adam_McQuaid" number="4" tag="AGENT-1" type="name">McQuaid</reference>
+					<reference entity="Columbus_Blue_Jackets" number="5" tag="BRIDGE-1" type="description">the Columbus Blue Jackets</reference>
+					<reference entity="Columbus,_Ohio" number="6" tag="PATIENT-2" type="name">Columbus , Ohio</reference>
+				</references>
+				<text>Don Sweeney is general manager for the Boston Bruins, the team Adam McQuaid played for. McQuaid was drafted to the Columbus Blue Jackets, from Columbus, Ohio.</text>
+				<template>PATIENT-1 is general manager for BRIDGE-2 , the team AGENT-1 played for . AGENT-1 was drafted to BRIDGE-1 , from PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be general manager for BRIDGE-2 , DT[form=defined] the team AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] draft to BRIDGE-1 , from PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_McQuaid | draftTeam | Columbus_Blue_Jackets</striple>
+						<striple>Columbus_Blue_Jackets | city | Columbus,_Ohio</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Adam_McQuaid | club | Boston_Bruins</striple>
+						<striple>Boston_Bruins | generalManager | Don_Sweeney</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_McQuaid" number="1" tag="AGENT-1" type="name">Adam McQuaid</reference>
+					<reference entity="Columbus_Blue_Jackets" number="2" tag="BRIDGE-1" type="description">the Columbus Blue Jackets</reference>
+					<reference entity="Columbus,_Ohio" number="3" tag="PATIENT-2" type="name">Columbus , Ohio</reference>
+					<reference entity="Adam_McQuaid" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Boston_Bruins" number="5" tag="BRIDGE-2" type="description">the Boston Bruins</reference>
+					<reference entity="Don_Sweeney" number="6" tag="PATIENT-1" type="name">Don Sweeney</reference>
+				</references>
+				<text>Adam McQuaid was drafted with the Columbus Blue Jackets in Columbus, Ohio. He played for the Boston Bruins whose manager is Don Sweeney.</text>
+				<template>AGENT-1 was drafted with BRIDGE-1 in PATIENT-2 . AGENT-1 played for BRIDGE-2 whose manager is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] draft with BRIDGE-1 in PATIENT-2 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-2 whose manager VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_McQuaid</entity>
+				<entity>BRIDGE-1 | Columbus_Blue_Jackets</entity>
+				<entity>BRIDGE-2 | Boston_Bruins</entity>
+				<entity>PATIENT-1 | Don_Sweeney</entity>
+				<entity>PATIENT-2 | Columbus,_Ohio</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1574" size="4">
+			<originaltripleset>
+				<otriple>Akeem_Ayers | formerTeam | History_of_the_St._Louis_Rams</otriple>
+				<otriple>Akeem_Ayers | dateOfBirth | &quot;1989-07-10&quot;^^xsd:date</otriple>
+				<otriple>Akeem_Ayers | debutTeam | Tennessee_Titans</otriple>
+				<otriple>Akeem_Ayers | birthYear | &quot;1989&quot;^^xsd:gYear</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Ayers | formerTeam | St._Louis_Rams</mtriple>
+				<mtriple>Akeem_Ayers | birthDate | 1989-07-10</mtriple>
+				<mtriple>Akeem_Ayers | debutTeam | Tennessee_Titans</mtriple>
+				<mtriple>Akeem_Ayers | birthYear | 1989</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | birthDate | 1989-07-10</striple>
+						<striple>Akeem_Ayers | birthYear | 1989</striple>
+						<striple>Akeem_Ayers | debutTeam | Tennessee_Titans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Ayers | formerTeam | St._Louis_Rams</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="1989-07-10" number="2" tag="PATIENT-2" type="name">July 10</reference>
+					<reference entity="1989" number="3" tag="PATIENT-4" type="name">1989</reference>
+					<reference entity="Tennessee_Titans" number="4" tag="PATIENT-3" type="description">the Tennessee Titans</reference>
+					<reference entity="Akeem_Ayers" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="St._Louis_Rams" number="6" tag="PATIENT-1" type="description">the St. Louis Rams</reference>
+				</references>
+				<text>Akeem Ayers was born July 10, 1989 and debuted with the Tennessee Titans. He has played for the St. Louis Rams.</text>
+				<template>AGENT-1 was born PATIENT-2 , PATIENT-4 and debuted with PATIENT-3 . AGENT-1 has played for PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-2 , PATIENT-4 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] debut with PATIENT-3 . AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | birthDate | 1989-07-10</striple>
+						<striple>Akeem_Ayers | birthYear | 1989</striple>
+						<striple>Akeem_Ayers | debutTeam | Tennessee_Titans</striple>
+						<striple>Akeem_Ayers | formerTeam | St._Louis_Rams</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="1989-07-10" number="2" tag="PATIENT-2" type="name">10th July</reference>
+					<reference entity="1989" number="3" tag="PATIENT-4" type="name">1989</reference>
+					<reference entity="Akeem_Ayers" number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Tennessee_Titans" number="5" tag="PATIENT-3" type="description">the Tennessee Titans</reference>
+					<reference entity="St._Louis_Rams" number="6" tag="PATIENT-1" type="description">the St. Louis Rams</reference>
+				</references>
+				<text>Akeem Ayers; was born on 10th July @ 1989, made his debut for the Tennessee Titans and used to play for the St. Louis Rams.</text>
+				<template>AGENT-1 ; was born on PATIENT-2 @ PATIENT-4 , made AGENT-1 debut for PATIENT-3 and used to play for PATIENT-1 .</template>
+				<lexicalization>AGENT-1 ; VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 PATIENT-4 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] make AGENT-1 debut for PATIENT-3 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] use to VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play for PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Ayers | birthDate | 1989-07-10</striple>
+						<striple>Akeem_Ayers | birthYear | 1989</striple>
+						<striple>Akeem_Ayers | debutTeam | Tennessee_Titans</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Ayers | formerTeam | St._Louis_Rams</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Ayers" number="1" tag="AGENT-1" type="name">Akeem Ayers</reference>
+					<reference entity="1989-07-10" number="2" tag="PATIENT-2" type="name">July 10th</reference>
+					<reference entity="1989" number="3" tag="PATIENT-4" type="name">1989</reference>
+					<reference entity="Tennessee_Titans" number="4" tag="PATIENT-3" type="description">the Tennessee Titans</reference>
+					<reference entity="Akeem_Ayers" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="St._Louis_Rams" number="6" tag="PATIENT-1" type="description">the St. Louis Rams</reference>
+				</references>
+				<text>Akeem Ayers was born July 10th, 1989 and debuted with the Tennessee Titans. He also played for the St. Louis Rams at one point.</text>
+				<template>AGENT-1 was born PATIENT-2 , PATIENT-4 and debuted with PATIENT-3 . AGENT-1 also played for PATIENT-1 at one point .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-2 , PATIENT-4 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] debut with PATIENT-3 . AGENT-1 also VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 at one point .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Ayers</entity>
+				<entity>PATIENT-1 | St._Louis_Rams</entity>
+				<entity>PATIENT-2 | 1989-07-10</entity>
+				<entity>PATIENT-3 | Tennessee_Titans</entity>
+				<entity>PATIENT-4 | 1989</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1575" size="4">
+			<originaltripleset>
+				<otriple>Akeem_Dent | birthYear | &quot;1987&quot;^^xsd:gYear</otriple>
+				<otriple>Akeem_Dent | formerTeam | Houston_Texans</otriple>
+				<otriple>Akeem_Dent | dateOfBirth | &quot;1987-09-27&quot;^^xsd:date</otriple>
+				<otriple>Akeem_Dent | placeOfBirth | &quot;Atlanta, Georgia&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Dent | birthYear | 1987</mtriple>
+				<mtriple>Akeem_Dent | formerTeam | Houston_Texans</mtriple>
+				<mtriple>Akeem_Dent | birthDate | 1987-09-27</mtriple>
+				<mtriple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+						<striple>Akeem_Dent | birthYear | 1987</striple>
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="Houston_Texans" number="2" tag="PATIENT-2" type="name">Houston Texans</reference>
+					<reference entity="1987-09-27" number="3" tag="PATIENT-3" type="name">27 September</reference>
+					<reference entity="1987" number="4" tag="PATIENT-1" type="name">1987</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="5" tag="PATIENT-4" type="name">Atlanta , Georgia</reference>
+				</references>
+				<text>Akeem Dent, who used to play for Houston Texans, was born on 27 September @ 1987 in Atlanta, Georgia.</text>
+				<template>AGENT-1 , who used to play for PATIENT-2 , was born on PATIENT-3 @ PATIENT-1 in PATIENT-4 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] use to VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play for PATIENT-2 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-3 PATIENT-1 in PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+						<striple>Akeem_Dent | birthYear | 1987</striple>
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="2" tag="PATIENT-4" type="name">Atlanta , Georgia</reference>
+					<reference entity="1987-09-27" number="3" tag="PATIENT-3" type="name">27th September</reference>
+					<reference entity="1987" number="4" tag="PATIENT-1" type="name">1987</reference>
+					<reference entity="Houston_Texans" number="5" tag="PATIENT-2" type="description">the Houston Texans</reference>
+				</references>
+				<text>Akeem Dent was born in Atlanta, Georgia on 27th September @ 1987 and played for the Houston Texans.</text>
+				<template>AGENT-1 was born in PATIENT-4 on PATIENT-3 @ PATIENT-1 and played for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-4 on PATIENT-3 PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Houston_Texans" number="1" tag="PATIENT-2" type="name">Houston Texans</reference>
+					<reference entity="Akeem_Dent" number="2" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="3" tag="PATIENT-4" type="name">Atlanta Georgia</reference>
+					<reference entity="1987-09-27" number="4" tag="PATIENT-3" type="name">09/27/1987</reference>
+				</references>
+				<text>Former Houston Texans player, Akeem Dent, was born in Atlanta Georgia, on 09/27/1987.</text>
+				<template>Former PATIENT-2 player , AGENT-1 , was born in PATIENT-4 , on PATIENT-3 .</template>
+				<lexicalization>Former PATIENT-2 player , AGENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-4 , on PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Dent</entity>
+				<entity>PATIENT-1 | 1987</entity>
+				<entity>PATIENT-2 | Houston_Texans</entity>
+				<entity>PATIENT-3 | 1987-09-27</entity>
+				<entity>PATIENT-4 | &quot;Atlanta, Georgia&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1576" size="4">
+			<originaltripleset>
+				<otriple>Akeem_Dent | debutTeam | Atlanta_Falcons</otriple>
+				<otriple>Akeem_Dent | formerTeam | Houston_Texans</otriple>
+				<otriple>Akeem_Dent | dateOfBirth | &quot;1987-09-27&quot;^^xsd:date</otriple>
+				<otriple>Akeem_Dent | placeOfBirth | &quot;Atlanta, Georgia&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akeem_Dent | debutTeam | Atlanta_Falcons</mtriple>
+				<mtriple>Akeem_Dent | formerTeam | Houston_Texans</mtriple>
+				<mtriple>Akeem_Dent | birthDate | 1987-09-27</mtriple>
+				<mtriple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="1987-09-27" number="2" tag="PATIENT-3" type="description">the 27th September 1987</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="3" tag="PATIENT-4" type="name">Atlanta , Georgia</reference>
+					<reference entity="Akeem_Dent" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Atlanta_Falcons" number="5" tag="PATIENT-1" type="description">the Atlanta Falcons</reference>
+					<reference entity="Akeem_Dent" number="6" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Houston_Texans" number="7" tag="PATIENT-2" type="description">the Houston Texans</reference>
+				</references>
+				<text>Akeem Dent was born on the 27th September 1987, in Atlanta, Georgia. He debuted with the Atlanta Falcons and his former team are the Houston Texans.</text>
+				<template>AGENT-1 was born on PATIENT-3 , in PATIENT-4 . AGENT-1 debuted with PATIENT-1 and AGENT-1 former team are PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-3 , in PATIENT-4 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] debut with PATIENT-1 and AGENT-1 former team VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="1987-09-27" number="2" tag="PATIENT-3" type="name">September 27 , 1987</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="3" tag="PATIENT-4" type="name">Atlanta , Georgia</reference>
+					<reference entity="Atlanta_Falcons" number="4" tag="PATIENT-1" type="description">the Atlanta Falcons</reference>
+					<reference entity="Akeem_Dent" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Houston_Texans" number="6" tag="PATIENT-2" type="description">the Houston Texans</reference>
+				</references>
+				<text>Akeem Dent, born September 27, 1987 in Atlanta, Georgia, on the Atlanta Falcons. He also played for the Houston Texans formerly.</text>
+				<template>AGENT-1 , born PATIENT-3 in PATIENT-4 , on PATIENT-1 . AGENT-1 also played for PATIENT-2 formerly .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear PATIENT-3 in PATIENT-4 , on PATIENT-1 . AGENT-1 also VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 formerly .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | birthPlace | &quot;Atlanta, Georgia&quot;</striple>
+						<striple>Akeem_Dent | birthDate | 1987-09-27</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="&quot;Atlanta, Georgia&quot;" number="2" tag="PATIENT-4" type="name">Atlanta , Georgia</reference>
+					<reference entity="1987-09-27" number="3" tag="PATIENT-3" type="description">the 27th of September , 1987</reference>
+					<reference entity="Akeem_Dent" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Atlanta_Falcons" number="5" tag="PATIENT-1" type="description">the Atlanta Falcons</reference>
+					<reference entity="Houston_Texans" number="6" tag="PATIENT-2" type="name">Houston Texans</reference>
+				</references>
+				<text>Akeem Dent was born in Atlanta, Georgia, on the 27th of September, 1987. He debuted with the Atlanta Falcons and used to play for Houston Texans.</text>
+				<template>AGENT-1 was born in PATIENT-4 , on PATIENT-3 . AGENT-1 debuted with PATIENT-1 and used to play for PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-4 , on PATIENT-3 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] debut with PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] use to VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Dent</entity>
+				<entity>PATIENT-1 | Atlanta_Falcons</entity>
+				<entity>PATIENT-2 | Houston_Texans</entity>
+				<entity>PATIENT-3 | 1987-09-27</entity>
+				<entity>PATIENT-4 | &quot;Atlanta, Georgia&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1577" size="4">
+			<originaltripleset>
+				<otriple>Al_Kharaitiyat_SC | ground | Al_Khor</otriple>
+				<otriple>Alaa_Abdul-Zahra | clubs | Al-Zawraa_SC</otriple>
+				<otriple>Alaa_Abdul-Zahra | team | Al_Kharaitiyat_SC</otriple>
+				<otriple>Al_Kharaitiyat_SC | manager | Amar_Osim</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Al_Kharaitiyat_SC | ground | Al_Khor</mtriple>
+				<mtriple>Alaa_Abdul-Zahra | club | Al-Zawraa_SC</mtriple>
+				<mtriple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</mtriple>
+				<mtriple>Al_Kharaitiyat_SC | manager | Amar_Osim</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="2" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="3" tag="BRIDGE-1" type="name">Al-Zawra ' a SC</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="4" tag="BRIDGE-1" type="name">Al Kharaitiyat SC .</reference>
+					<reference entity="Amar_Osim" number="5" tag="PATIENT-3" type="name">Amar Osim</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="6" tag="BRIDGE-1" type="name">their</reference>
+					<reference entity="Al_Khor" number="7" tag="PATIENT-1" type="name">Al Khor</reference>
+				</references>
+				<text>Alaa Abdul Zahra has played for Al Kharaitiyat SC and Al-Zawra'a SC. Al Kharaitiyat SC. are managed by Amar Osim and play their home games at Al Khor.</text>
+				<template>AGENT-1 has played for BRIDGE-1 and BRIDGE-1 . BRIDGE-1 are managed by PATIENT-3 and play BRIDGE-1 home games at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 and BRIDGE-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] manage by PATIENT-3 and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play BRIDGE-1 home games at PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al-Zawraa_SC</striple>
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al-Zawraa_SC" number="2" tag="PATIENT-2" type="name">Al-Zawra ' a SC</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="3" tag="BRIDGE-1" type="name">AL Kharaitiyat SC</reference>
+					<reference entity="Amar_Osim" number="4" tag="PATIENT-3" type="name">Amar Osim</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="5" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Khor" number="6" tag="PATIENT-1" type="name">Al Khor</reference>
+				</references>
+				<text>Alaa Abdul Zahra, whose club is Al-Zawra'a SC, is also a member of the club, AL Kharaitiyat SC @ Amar Osim is the manager of Al Kharaitiyat SC. which is located in Al Khor.</text>
+				<template>AGENT-1 , whose club is PATIENT-2 , is also a member of the club , BRIDGE-1 @ PATIENT-3 is the manager of BRIDGE-1 . which is located in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also DT[form=undefined] a member of DT[form=defined] the club , BRIDGE-1 PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of BRIDGE-1 . which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al-Zawraa_SC</striple>
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al-Zawraa_SC" number="2" tag="PATIENT-2" type="name">Al-Zawra ' a SC</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="3" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Khor" number="4" tag="PATIENT-1" type="name">Al Khor</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="5" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Amar_Osim" number="6" tag="PATIENT-3" type="name">Amar Osim</reference>
+				</references>
+				<text>Alaa Abdul Zahra, who played for the club Al-Zawra'a SC, plays for Al Kharaitiyat SC. Al Khor is the home ground of Al Kharaitiyat SC which is managed by, Amar Osim.</text>
+				<template>AGENT-1 , who played for the club PATIENT-2 , plays for BRIDGE-1 . PATIENT-1 is the home ground of BRIDGE-1 which is managed by , PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for DT[form=defined] the club PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the home ground of BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by , PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alaa_Abdul-Zahra</entity>
+				<entity>BRIDGE-1 | Al_Kharaitiyat_SC</entity>
+				<entity>PATIENT-1 | Al_Khor</entity>
+				<entity>PATIENT-2 | Al-Zawraa_SC</entity>
+				<entity>PATIENT-3 | Amar_Osim</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1578" size="4">
+			<originaltripleset>
+				<otriple>Alaa_Abdul-Zahra | clubs | Al_Kharaitiyat_SC</otriple>
+				<otriple>Al_Kharaitiyat_SC | ground | Al_Khor</otriple>
+				<otriple>Alaa_Abdul-Zahra | team | Iraq_national_under-23_football_team</otriple>
+				<otriple>Al_Kharaitiyat_SC | manager | Amar_Osim</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</mtriple>
+				<mtriple>Al_Kharaitiyat_SC | ground | Al_Khor</mtriple>
+				<mtriple>Alaa_Abdul-Zahra | club | Iraq_national_under-23_football_team</mtriple>
+				<mtriple>Al_Kharaitiyat_SC | manager | Amar_Osim</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Iraq_national_under-23_football_team</striple>
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Iraq_national_under-23_football_team" number="2" tag="PATIENT-2" type="description">the Iraq national under 23 football team</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="3" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Khor" number="4" tag="PATIENT-1" type="name">Al Khor</reference>
+					<reference entity="Amar_Osim" number="5" tag="PATIENT-3" type="name">Amar Osim</reference>
+				</references>
+				<text>Alaa Abdul Zahra, played for the Iraq national under 23 football team, plays for Al Kharaitiyat SC, located in Al Khor, and managed by, Amar Osim.</text>
+				<template>AGENT-1 , played for PATIENT-2 , plays for BRIDGE-1 , located in PATIENT-1 , and managed by , PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 , located in PATIENT-1 , and VP[aspect=simple,tense=past,voice=active,person=null,number=null] manage by , PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+						<striple>Alaa_Abdul-Zahra | club | Iraq_national_under-23_football_team</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="2" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Khor" number="3" tag="PATIENT-1" type="name">Al Khor</reference>
+					<reference entity="Iraq_national_under-23_football_team" number="4" tag="PATIENT-2" type="description">the Iraq national under 23 football team</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="5" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Amar_Osim" number="6" tag="PATIENT-3" type="name">Amar Osim</reference>
+				</references>
+				<text>Alaa Abdul Zahra plays for Al Kharaitiyat SC, in Al Khor, and for the Iraq national under 23 football team. Al Kharaitiyat SC is managed by Amar Osim.</text>
+				<template>AGENT-1 plays for BRIDGE-1 , in PATIENT-1 , and for PATIENT-2 . BRIDGE-1 is managed by PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 , in PATIENT-1 , and for PATIENT-2 . BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alaa_Abdul-Zahra | club | Iraq_national_under-23_football_team</striple>
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="2" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Al_Khor" number="4" tag="PATIENT-1" type="name">Al Khor</reference>
+					<reference entity="Alaa_Abdul-Zahra" number="5" tag="AGENT-1" type="name">Mr. Zahra</reference>
+					<reference entity="Iraq_national_under-23_football_team" number="6" tag="PATIENT-2" type="description">the Iraq national under 23 football team</reference>
+					<reference entity="Amar_Osim" number="7" tag="PATIENT-3" type="name">Amar Osim</reference>
+				</references>
+				<text>Alaa Abdul Zahra plays for Al Kharaitiyat SC that has its home land in Al Khor. Mr. Zahra is also part of the Iraq national under 23 football team which is managed by Amar Osim.</text>
+				<template>AGENT-1 plays for BRIDGE-1 that has BRIDGE-1 home land in PATIENT-1 . AGENT-1 is also part of PATIENT-2 which is managed by PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 that VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have BRIDGE-1 home land in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also part of PATIENT-2 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alaa_Abdul-Zahra</entity>
+				<entity>BRIDGE-1 | Al_Kharaitiyat_SC</entity>
+				<entity>PATIENT-1 | Al_Khor</entity>
+				<entity>PATIENT-2 | Iraq_national_under-23_football_team</entity>
+				<entity>PATIENT-3 | Amar_Osim</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1579" size="4">
+			<originaltripleset>
+				<otriple>Alaa_Abdul-Zahra | clubs | Al_Kharaitiyat_SC</otriple>
+				<otriple>Al_Kharaitiyat_SC | ground | Al_Khor</otriple>
+				<otriple>Alaa_Abdul-Zahra | team | Shabab_Al-Ordon_Club</otriple>
+				<otriple>Al_Kharaitiyat_SC | manager | Amar_Osim</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</mtriple>
+				<mtriple>Al_Kharaitiyat_SC | ground | Al_Khor</mtriple>
+				<mtriple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</mtriple>
+				<mtriple>Al_Kharaitiyat_SC | manager | Amar_Osim</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="2" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Khor" number="3" tag="PATIENT-1" type="name">Al Khor</reference>
+					<reference entity="Amar_Osim" number="4" tag="PATIENT-3" type="name">Amar Osim</reference>
+					<reference entity="Shabab_Al-Ordon_Club" number="5" tag="PATIENT-2" type="description">The Shabab Al-Ordon club</reference>
+					<reference entity="Alaa_Abdul-Zahra" number="6" tag="AGENT-1" type="name">Alaa Abdul-Zahra</reference>
+				</references>
+				<text>Alaa Abdul Zahra plays for Al Kharaitiyat SC which is located at Al Khor and managed by Amar Osim. The Shabab Al-Ordon club is associated with Alaa Abdul-Zahra.</text>
+				<template>AGENT-1 plays for BRIDGE-1 which is located at PATIENT-1 and managed by PATIENT-3 . PATIENT-2 is associated with AGENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located at PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] manage by PATIENT-3 . PATIENT-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] associate with AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul-Zahra</reference>
+					<reference entity="Shabab_Al-Ordon_Club" number="2" tag="PATIENT-2" type="name">Shabab Al-Ordon Club</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="3" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Al_Khor" number="4" tag="PATIENT-1" type="name">Al Khor</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="5" tag="BRIDGE-1" type="name">Al Kharaitiyat SC</reference>
+					<reference entity="Amar_Osim" number="6" tag="PATIENT-3" type="name">Amar Osim</reference>
+				</references>
+				<text>Alaa Abdul-Zahra, whose club is Shabab Al-Ordon Club, also plays for Al Kharaitiyat SC. which is located in Al Khor. The manager of Al Kharaitiyat SC is Amar Osim.</text>
+				<template>AGENT-1 , whose club is PATIENT-2 , also plays for BRIDGE-1 . which is located in PATIENT-1 . The manager of BRIDGE-1 is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , also VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 . which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 . DT[form=defined] the manager of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alaa_Abdul-Zahra | club | Al_Kharaitiyat_SC</striple>
+						<striple>Al_Kharaitiyat_SC | manager | Amar_Osim</striple>
+						<striple>Al_Kharaitiyat_SC | ground | Al_Khor</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alaa_Abdul-Zahra | club | Shabab_Al-Ordon_Club</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alaa_Abdul-Zahra" number="1" tag="AGENT-1" type="name">Alaa Abdul Zahra 's</reference>
+					<reference entity="Al_Kharaitiyat_SC" number="2" tag="BRIDGE-1" type="name">AL Kharaitiyat SC</reference>
+					<reference entity="Amar_Osim" number="3" tag="PATIENT-3" type="name">Amar Osim</reference>
+					<reference entity="Al_Khor" number="4" tag="PATIENT-1" type="name">Al Khor</reference>
+					<reference entity="Alaa_Abdul-Zahra" number="5" tag="AGENT-1" type="name">Alaa Abdul-Zahra</reference>
+					<reference entity="Shabab_Al-Ordon_Club" number="6" tag="PATIENT-2" type="name">Shabab Al-Ordon Club</reference>
+				</references>
+				<text>Alaa Abdul Zahra's club is AL Kharaitiyat SC which is managed by Amar Osim and is located in Al Khor. Another club of Alaa Abdul-Zahra, is Shabab Al-Ordon Club.</text>
+				<template>AGENT-1 club is BRIDGE-1 which is managed by PATIENT-3 and is located in PATIENT-1 . Another club of AGENT-1 , is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-3 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 . DT[form=defined] another club of AGENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alaa_Abdul-Zahra</entity>
+				<entity>BRIDGE-1 | Al_Kharaitiyat_SC</entity>
+				<entity>PATIENT-1 | Al_Khor</entity>
+				<entity>PATIENT-2 | Shabab_Al-Ordon_Club</entity>
+				<entity>PATIENT-3 | Amar_Osim</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1580" size="4">
+			<originaltripleset>
+				<otriple>Alan_Martin_(footballer,_born_1989) | team | Hamilton_Academical_F.C.</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | dateOfBirth | &quot;1989-01-01&quot;^^xsd:date</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | Person/height | &quot;185.42&quot;^^&lt;http://dbpedia.org/datatype/centimetre&gt;</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | clubs | Crewe_Alexandra_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</mtriple>
+				<mtriple>Alan_Martin_(footballer) | birthDate | 1989-01-01</mtriple>
+				<mtriple>Alan_Martin_(footballer) | height | 185.42 (centimetres)</mtriple>
+				<mtriple>Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | height | 185.42 (centimetres)</striple>
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan Martin is a footballer</reference>
+					<reference entity="185.42 (centimetres)" number="2" tag="PATIENT-3" type="name">185.42 cm</reference>
+					<reference entity="1989-01-01" number="3" tag="PATIENT-2" type="name">1 January 1989</reference>
+					<reference entity="Alan_Martin_(footballer)" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Hamilton_Academical_F.C." number="5" tag="PATIENT-1" type="name">Hamilton Academical FC</reference>
+					<reference entity="Crewe_Alexandra_F.C." number="6" tag="PATIENT-4" type="name">Crewe Alexandra FC</reference>
+				</references>
+				<text>Alan Martin is a footballer who is 185.42 cm in height and was born on 1 January 1989. He plays for both Hamilton Academical FC and Crewe Alexandra FC.</text>
+				<template>AGENT-1 who is PATIENT-3 in height and was born on PATIENT-2 . AGENT-1 plays for both PATIENT-1 and PATIENT-4 .</template>
+				<lexicalization>AGENT-1 who VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 in height and VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be on PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] both PATIENT-1 and PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Martin_(footballer) | height | 185.42 (centimetres)</striple>
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Footballer , Alan Martin ,</reference>
+					<reference entity="1989-01-01" number="2" tag="PATIENT-2" type="description">the 1st January 1989</reference>
+					<reference entity="Alan_Martin_(footballer)" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="185.42 (centimetres)" number="4" tag="PATIENT-3" type="name">185.42 cm</reference>
+					<reference entity="Hamilton_Academical_F.C." number="5" tag="PATIENT-1" type="description">the Hamilton Academical FC</reference>
+					<reference entity="Crewe_Alexandra_F.C." number="6" tag="PATIENT-4" type="name">Crewe Alexandra FC</reference>
+				</references>
+				<text>Footballer, Alan Martin, was born on the 1st January 1989. He is 185.42 cm tall and plays for both the Hamilton Academical FC and Crewe Alexandra FC.</text>
+				<template>AGENT-1 was born on PATIENT-2 . AGENT-1 is PATIENT-3 tall and plays for both PATIENT-1 and PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 tall and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] both PATIENT-1 and PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+						<striple>Alan_Martin_(footballer) | height | 185.42 (centimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Martin_(footballer) | club | Hamilton_Academical_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan Martin</reference>
+					<reference entity="1989-01-01" number="2" tag="PATIENT-2" type="description">the 1st January 1989</reference>
+					<reference entity="185.42 (centimetres)" number="3" tag="PATIENT-3" type="name">185.42 cm</reference>
+					<reference entity="Alan_Martin_(footballer)" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Hamilton_Academical_F.C." number="5" tag="PATIENT-1" type="name">Hamilton Academical F.C .</reference>
+					<reference entity="Crewe_Alexandra_F.C." number="6" tag="PATIENT-4" type="description">the Crewe Alexandra FC</reference>
+				</references>
+				<text>Alan Martin was born on the 1st January 1989 and is 185.42 cm tall. He played football for Hamilton Academical F.C. and is a footballer for the Crewe Alexandra FC.</text>
+				<template>AGENT-1 was born on PATIENT-2 and is PATIENT-3 tall . AGENT-1 played football for PATIENT-1 and is a footballer for PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 tall . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play football for PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a footballer for PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Martin_(footballer)</entity>
+				<entity>PATIENT-1 | Hamilton_Academical_F.C.</entity>
+				<entity>PATIENT-2 | 1989-01-01</entity>
+				<entity>PATIENT-3 | 185.42 (centimetres)</entity>
+				<entity>PATIENT-4 | Crewe_Alexandra_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1581" size="4">
+			<originaltripleset>
+				<otriple>Alan_Martin_(footballer,_born_1989) | team | Scotland_national_under-21_football_team</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | dateOfBirth | &quot;1989-01-01&quot;^^xsd:date</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | Person/height | &quot;185.42&quot;^^&lt;http://dbpedia.org/datatype/centimetre&gt;</otriple>
+				<otriple>Alan_Martin_(footballer,_born_1989) | clubs | Crewe_Alexandra_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Martin_(footballer) | club | Scotland_national_under-21_football_team</mtriple>
+				<mtriple>Alan_Martin_(footballer) | birthDate | 1989-01-01</mtriple>
+				<mtriple>Alan_Martin_(footballer) | height | 185.42 (centimetres)</mtriple>
+				<mtriple>Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | club | Scotland_national_under-21_football_team</striple>
+						<striple>Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+						<striple>Alan_Martin_(footballer) | height | 185.42 (centimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Footballer , Alan Martin</reference>
+					<reference entity="Scotland_national_under-21_football_team" number="2" tag="PATIENT-1" type="description">the Scotland national under-21 football team</reference>
+					<reference entity="Crewe_Alexandra_F.C." number="3" tag="PATIENT-4" type="name">Crewe Alexandra F.C</reference>
+					<reference entity="Alan_Martin_(footballer)" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="1989-01-01" number="5" tag="PATIENT-2" type="name">1st January 1989</reference>
+					<reference entity="185.42 (centimetres)" number="6" tag="PATIENT-3" type="name">185.42 centimetres</reference>
+				</references>
+				<text>Footballer, Alan Martin, who played for the Scotland national under-21 football team, plays for Crewe Alexandra F.C. He was born on the 1st January 1989 and is 185.42 centimetres tall.</text>
+				<template>AGENT-1 , who played for PATIENT-1 , plays for PATIENT-4 . AGENT-1 was born on the PATIENT-2 and is PATIENT-3 tall .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-4 . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on DT[form=defined] the PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 tall .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Martin_(footballer) | height | 185.42 (centimetres)</striple>
+						<striple>Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.</striple>
+						<striple>Alan_Martin_(footballer) | club | Scotland_national_under-21_football_team</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Martin_(footballer)" number="1" tag="AGENT-1" type="name">Alan martin</reference>
+					<reference entity="1989-01-01" number="2" tag="PATIENT-2" type="description">the 1st January 1989</reference>
+					<reference entity="Alan_Martin_(footballer)" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="185.42 (centimetres)" number="4" tag="PATIENT-3" type="name">185.42 cm</reference>
+					<reference entity="Crewe_Alexandra_F.C." number="5" tag="PATIENT-4" type="description">the Crewe Alexandra FC</reference>
+					<reference entity="Scotland_national_under-21_football_team" number="6" tag="PATIENT-1" type="description">the Scottish National under 21 football team</reference>
+				</references>
+				<text>Alan martin, was born on the 1st January 1989. He is 185.42 cm tall, a footballer for the Crewe Alexandra FC and plays in the Scottish National under 21 football team.</text>
+				<template>AGENT-1 , was born on PATIENT-2 . AGENT-1 is PATIENT-3 tall , a footballer for PATIENT-4 and plays in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 tall , DT[form=undefined] a footballer for PATIENT-4 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Martin_(footballer) | height | 185.42 (centimetres)</striple>
+						<striple>Alan_Martin_(footballer) | birthDate | 1989-01-01</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Martin_(footballer) | club | Scotland_national_under-21_football_team</striple>
+						<striple>Alan_Martin_(footballer) | club | Crewe_Alexandra_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="185.42 (centimetres)" number="1" tag="PATIENT-3" type="name">185,42 centimetres</reference>
+					<reference entity="Alan_Martin_(footballer)" number="2" tag="AGENT-1" type="name">Footballer , Alan Martin ,</reference>
+					<reference entity="1989-01-01" number="3" tag="PATIENT-2" type="name">January 1st 1989</reference>
+					<reference entity="Alan_Martin_(footballer)" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Scotland_national_under-21_football_team" number="5" tag="PATIENT-1" type="description">the Scotland national under-21 football team</reference>
+					<reference entity="Crewe_Alexandra_F.C." number="6" tag="PATIENT-4" type="description">the Crewe Alexandra FC</reference>
+				</references>
+				<text>At 185,42 centimetres tall, Footballer, Alan Martin, was born on January 1st 1989. He played for the Scotland national under-21 football team and is a footballer for the Crewe Alexandra FC.</text>
+				<template>At PATIENT-3 tall , AGENT-1 was born on PATIENT-2 . AGENT-1 played for PATIENT-1 and is a footballer for PATIENT-4 .</template>
+				<lexicalization>At PATIENT-3 tall , AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a footballer for PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Martin_(footballer)</entity>
+				<entity>PATIENT-1 | Scotland_national_under-21_football_team</entity>
+				<entity>PATIENT-2 | 1989-01-01</entity>
+				<entity>PATIENT-3 | 185.42 (centimetres)</entity>
+				<entity>PATIENT-4 | Crewe_Alexandra_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1582" size="4">
+			<originaltripleset>
+				<otriple>Aleksandr_Prudnikov | dateOfBirth | &quot;1989-02-24&quot;^^xsd:date</otriple>
+				<otriple>Aleksandr_Prudnikov | Person/height | &quot;185.0&quot;^^&lt;http://dbpedia.org/datatype/centimetre&gt;</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Kuban_Krasnodar</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Dynamo_Moscow</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Prudnikov | birthDate | 1989-02-24</mtriple>
+				<mtriple>Aleksandr_Prudnikov | height | 185.0 (centimetres)</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | height | 185.0 (centimetres)</striple>
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="185.0 (centimetres)" number="2" tag="PATIENT-2" type="name">185cm</reference>
+					<reference entity="1989-02-24" number="3" tag="PATIENT-1" type="name">24 February 1989</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="4" tag="PATIENT-3" type="name">FC Kuban Krasnodar</reference>
+					<reference entity="FC_Dynamo_Moscow" number="5" tag="PATIENT-4" type="name">FC Dynamo Moscow</reference>
+				</references>
+				<text>Aleksandr Prudnikov, who is 185cm tall and was born on 24 February 1989, plays for both FC Kuban Krasnodar and FC Dynamo Moscow.</text>
+				<template>AGENT-1 , who is PATIENT-2 tall and was born on PATIENT-1 , plays for both PATIENT-3 and PATIENT-4 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 tall and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] both PATIENT-3 and PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | height | 185.0 (centimetres)</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1989-02-24" number="1" tag="PATIENT-1" type="name">Feb. 24 , 1989</reference>
+					<reference entity="185.0 (centimetres)" number="2" tag="PATIENT-2" type="name">185 cm</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="4" tag="PATIENT-3" type="description">the FC Kuban Krasnodar</reference>
+					<reference entity="FC_Dynamo_Moscow" number="5" tag="PATIENT-4" type="description">the Dynamo Moscow FC</reference>
+				</references>
+				<text>Born on Feb. 24, 1989 and measuring 185 cm tall, Aleksandr Prudnikov plays for the FC Kuban Krasnodar and is part of the Dynamo Moscow FC.</text>
+				<template>Born on PATIENT-1 and measuring PATIENT-2 tall , AGENT-1 plays for PATIENT-3 and is part of PATIENT-4 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear on PATIENT-1 and VP[aspect=progressive,tense=present,voice=active,person=null,number=null] measure PATIENT-2 tall , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | height | 185.0 (centimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Dynamo_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="1989-02-24" number="2" tag="PATIENT-1" type="name">February 24 , 1989</reference>
+					<reference entity="185.0 (centimetres)" number="3" tag="PATIENT-2" type="name">185 cm</reference>
+					<reference entity="Aleksandr_Prudnikov" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Dynamo_Moscow" number="5" tag="PATIENT-4" type="name">FC Dynamo Moscow</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="6" tag="PATIENT-3" type="name">FC Kuban Krasnodar</reference>
+				</references>
+				<text>Aleksandr Prudnikov was born February 24, 1989 and is 185 cm tall. He plays for FC Dynamo Moscow and FC Kuban Krasnodar.</text>
+				<template>AGENT-1 was born PATIENT-1 and is PATIENT-2 tall . AGENT-1 plays for PATIENT-4 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 tall . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-4 and PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>PATIENT-1 | 1989-02-24</entity>
+				<entity>PATIENT-2 | 185.0 (centimetres)</entity>
+				<entity>PATIENT-3 | FC_Kuban_Krasnodar</entity>
+				<entity>PATIENT-4 | FC_Dynamo_Moscow</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1583" size="4">
+			<originaltripleset>
+				<otriple>Aleksandr_Prudnikov | team | FC_Spartak_Moscow</otriple>
+				<otriple>Aleksandr_Prudnikov | dateOfBirth | &quot;1989-02-24&quot;^^xsd:date</otriple>
+				<otriple>Aleksandr_Prudnikov | Person/height | &quot;185.0&quot;^^&lt;http://dbpedia.org/datatype/centimetre&gt;</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Rubin_Kazan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</mtriple>
+				<mtriple>Aleksandr_Prudnikov | birthDate | 1989-02-24</mtriple>
+				<mtriple>Aleksandr_Prudnikov | height | 185.0 (centimetres)</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Rubin_Kazan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | height | 185.0 (centimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Rubin_Kazan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="1989-02-24" number="2" tag="PATIENT-2" type="name">1989-02-24</reference>
+					<reference entity="185.0 (centimetres)" number="3" tag="PATIENT-3" type="name">185.0cm</reference>
+					<reference entity="Aleksandr_Prudnikov" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Spartak_Moscow" number="5" tag="PATIENT-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="FC_Rubin_Kazan" number="6" tag="PATIENT-4" type="name">FC Rubin Kazan</reference>
+				</references>
+				<text>Aleksandr Prudnikov was born 1989-02-24 and is now 185.0cm tall. He played for FC Spartak Moscow and plays for FC Rubin Kazan.</text>
+				<template>AGENT-1 was born PATIENT-2 and is now PATIENT-3 tall . AGENT-1 played for PATIENT-1 and plays for PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be now PATIENT-3 tall . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | height | 185.0 (centimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Rubin_Kazan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="1989-02-24" number="2" tag="PATIENT-2" type="name">24-02-1989</reference>
+					<reference entity="Aleksandr_Prudnikov" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="185.0 (centimetres)" number="4" tag="PATIENT-3" type="name">185cm</reference>
+					<reference entity="Aleksandr_Prudnikov" number="5" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="FC_Spartak_Moscow" number="6" tag="PATIENT-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="Aleksandr_Prudnikov" number="7" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="FC_Rubin_Kazan" number="8" tag="PATIENT-4" type="name">FC Rubin Kazan</reference>
+				</references>
+				<text>Aleksandr Prudnikov was born on 24-02-1989, he is now 185cm tall. His club is FC Spartak Moscow but he currently plays for FC Rubin Kazan.</text>
+				<template>AGENT-1 was born on PATIENT-2 , AGENT-1 is now PATIENT-3 tall . AGENT-1 club is PATIENT-1 but AGENT-1 currently plays for PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be now PATIENT-3 tall . AGENT-1 club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 but AGENT-1 currently VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | birthDate | 1989-02-24</striple>
+						<striple>Aleksandr_Prudnikov | height | 185.0 (centimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Spartak_Moscow</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Rubin_Kazan</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="1989-02-24" number="2" tag="PATIENT-2" type="name">February 24th , 1989</reference>
+					<reference entity="185.0 (centimetres)" number="3" tag="PATIENT-3" type="name">185 cm</reference>
+					<reference entity="Aleksandr_Prudnikov" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Spartak_Moscow" number="5" tag="PATIENT-1" type="name">FC Spartak Moscow</reference>
+					<reference entity="FC_Rubin_Kazan" number="6" tag="PATIENT-4" type="name">FC Rubin Kazan</reference>
+				</references>
+				<text>Aleksandr Prudnikov was born on February 24th, 1989 and is 185 cm tall. He once played for FC Spartak Moscow and FC Rubin Kazan.</text>
+				<template>AGENT-1 was born on PATIENT-2 and is PATIENT-3 tall . AGENT-1 once played for PATIENT-1 and PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 tall . AGENT-1 once VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-1 and PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>PATIENT-1 | FC_Spartak_Moscow</entity>
+				<entity>PATIENT-2 | 1989-02-24</entity>
+				<entity>PATIENT-3 | 185.0 (centimetres)</entity>
+				<entity>PATIENT-4 | FC_Rubin_Kazan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1584" size="4">
+			<originaltripleset>
+				<otriple>Aleksandre_Guruli | team | FC_Karpaty_Lviv</otriple>
+				<otriple>Aleksandre_Guruli | placeOfBirth | Batumi</otriple>
+				<otriple>Aleksandre_Guruli | Person/height | &quot;0.0&quot;^^&lt;http://dbpedia.org/datatype/centimetre&gt;</otriple>
+				<otriple>Aleksandre_Guruli | clubs | FC_Zestafoni</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</mtriple>
+				<mtriple>Aleksandre_Guruli | birthPlace | Batumi</mtriple>
+				<mtriple>Aleksandre_Guruli | height | 178.0 (centimetres)</mtriple>
+				<mtriple>Aleksandre_Guruli | club | FC_Zestafoni</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | birthPlace | Batumi</striple>
+						<striple>Aleksandre_Guruli | height | 178.0 (centimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandre_Guruli | club | FC_Zestafoni</striple>
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="Batumi" number="2" tag="PATIENT-2" type="name">Batumi</reference>
+					<reference entity="178.0 (centimetres)" number="3" tag="PATIENT-3" type="name">178.0 centimetres</reference>
+					<reference entity="Aleksandre_Guruli" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Zestafoni" number="5" tag="PATIENT-4" type="name">FC Zestafoni</reference>
+					<reference entity="FC_Karpaty_Lviv" number="6" tag="PATIENT-1" type="name">FC Karpaty Lviv</reference>
+				</references>
+				<text>Aleksandre Guruli, who was born in Batumi, is 178.0 centimetres tall. He is in the FC Zestafoni club and plays for FC Karpaty Lviv club.</text>
+				<template>AGENT-1 , who was born in PATIENT-2 , is PATIENT-3 tall . AGENT-1 is in the PATIENT-4 club and plays for PATIENT-1 club .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 tall . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the PATIENT-4 club and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 club .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | birthPlace | Batumi</striple>
+						<striple>Aleksandre_Guruli | height | 178.0 (centimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+						<striple>Aleksandre_Guruli | club | FC_Zestafoni</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="Batumi" number="2" tag="PATIENT-2" type="name">Batumi</reference>
+					<reference entity="Aleksandre_Guruli" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="178.0 (centimetres)" number="4" tag="PATIENT-3" type="name">1.78m</reference>
+					<reference entity="Aleksandre_Guruli" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Karpaty_Lviv" number="6" tag="PATIENT-1" type="name">FC Karpaty Lviv</reference>
+					<reference entity="FC_Zestafoni" number="7" tag="PATIENT-4" type="name">FC Zestafoni</reference>
+				</references>
+				<text>Aleksandre Guruli was born in Batumi and he is 1.78m tall. He has played for FC Karpaty Lviv and FC Zestafoni.</text>
+				<template>AGENT-1 was born in PATIENT-2 and AGENT-1 is PATIENT-3 tall . AGENT-1 has played for PATIENT-1 and PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 tall . AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-1 and PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandre_Guruli | birthPlace | Batumi</striple>
+						<striple>Aleksandre_Guruli | height | 178.0 (centimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandre_Guruli | club | FC_Zestafoni</striple>
+						<striple>Aleksandre_Guruli | club | FC_Karpaty_Lviv</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandre_Guruli" number="1" tag="AGENT-1" type="name">Aleksandre Guruli</reference>
+					<reference entity="Batumi" number="2" tag="PATIENT-2" type="name">Batumi</reference>
+					<reference entity="178.0 (centimetres)" number="3" tag="PATIENT-3" type="name">178cm</reference>
+					<reference entity="Aleksandre_Guruli" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Zestafoni" number="5" tag="PATIENT-4" type="name">FC Zestafoni</reference>
+					<reference entity="FC_Karpaty_Lviv" number="6" tag="PATIENT-1" type="name">FC Karpaty Lviv</reference>
+				</references>
+				<text>Aleksandre Guruli was born in Batumi and is 178cm tall. He has played for FC Zestafoni and FC Karpaty Lviv.</text>
+				<template>AGENT-1 was born in PATIENT-2 and is PATIENT-3 tall . AGENT-1 has played for PATIENT-4 and PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 tall . AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-4 and PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandre_Guruli</entity>
+				<entity>PATIENT-1 | FC_Karpaty_Lviv</entity>
+				<entity>PATIENT-2 | Batumi</entity>
+				<entity>PATIENT-3 | 178.0 (centimetres)</entity>
+				<entity>PATIENT-4 | FC_Zestafoni</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1585" size="4">
+			<originaltripleset>
+				<otriple>Alex_Plante | birthYear | &quot;1989&quot;^^xsd:gYear</otriple>
+				<otriple>Alex_Plante | team | Anyang_Halla</otriple>
+				<otriple>Alex_Plante | placeOfBirth | Canada</otriple>
+				<otriple>Alex_Plante | dateOfBirth | &quot;1989-05-09&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Plante | birthYear | 1989</mtriple>
+				<mtriple>Alex_Plante | club | Anyang_Halla</mtriple>
+				<mtriple>Alex_Plante | birthPlace | Canada</mtriple>
+				<mtriple>Alex_Plante | birthDate | 1989-05-09</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+						<striple>Alex_Plante | birthDate | 1989-05-09</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Canada" number="2" tag="PATIENT-3" type="name">Canada</reference>
+					<reference entity="1989-05-09" number="3" tag="PATIENT-4" type="name">09/05/1989</reference>
+					<reference entity="Alex_Plante" number="4" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="Anyang_Halla" number="5" tag="PATIENT-2" type="name">Anyang Halla</reference>
+				</references>
+				<text>Alex Plante was born in Canada, on 09/05/1989. His club is called Anyang Halla.</text>
+				<template>AGENT-1 was born in PATIENT-3 , on PATIENT-4 . AGENT-1 club is called PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 , on PATIENT-4 . AGENT-1 club VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] call PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+						<striple>Alex_Plante | birthDate | 1989-05-09</striple>
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Anyang_Halla" number="2" tag="PATIENT-2" type="name">Anyang Halla</reference>
+					<reference entity="1989-05-09" number="3" tag="PATIENT-4" type="name">1989-05-09</reference>
+					<reference entity="Canada" number="4" tag="PATIENT-3" type="name">Canada</reference>
+				</references>
+				<text>Alex Plante, who played for Anyang Halla, was born on 1989-05-09, in Canada.</text>
+				<template>AGENT-1 , who played for PATIENT-2 , was born on PATIENT-4 , in PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-2 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-4 , in PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+						<striple>Alex_Plante | birthDate | 1989-05-09</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Anyang_Halla" number="2" tag="PATIENT-2" type="name">Anyang Halla</reference>
+					<reference entity="Canada" number="3" tag="PATIENT-3" type="name">Canada</reference>
+					<reference entity="1989-05-09" number="4" tag="PATIENT-4" type="name">1989-05-09</reference>
+				</references>
+				<text>Alex Plante, whose club is Anyang Halla, was born in Canada, on 1989-05-09.</text>
+				<template>AGENT-1 , whose club is PATIENT-2 , was born in PATIENT-3 , on PATIENT-4 .</template>
+				<lexicalization>AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 , on PATIENT-4 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Plante</entity>
+				<entity>PATIENT-1 | 1989</entity>
+				<entity>PATIENT-2 | Anyang_Halla</entity>
+				<entity>PATIENT-3 | Canada</entity>
+				<entity>PATIENT-4 | 1989-05-09</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1586" size="4">
+			<originaltripleset>
+				<otriple>Alex_Plante | birthYear | &quot;1989&quot;^^xsd:gYear</otriple>
+				<otriple>Alex_Plante | height | &quot;1.9304&quot;^^xsd:double</otriple>
+				<otriple>Alex_Plante | team | Anyang_Halla</otriple>
+				<otriple>Alex_Plante | placeOfBirth | Canada</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alex_Plante | birthYear | 1989</mtriple>
+				<mtriple>Alex_Plante | height | 1.9304</mtriple>
+				<mtriple>Alex_Plante | club | Anyang_Halla</mtriple>
+				<mtriple>Alex_Plante | birthPlace | Canada</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | height | 1.9304</striple>
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+						<striple>Alex_Plante | birthYear | 1989</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1.9304" number="1" tag="PATIENT-2" type="name">1.9304 m</reference>
+					<reference entity="Alex_Plante" number="2" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Anyang_Halla" number="3" tag="PATIENT-3" type="name">Anyang Halla</reference>
+					<reference entity="Canada" number="4" tag="PATIENT-4" type="name">Canada</reference>
+					<reference entity="1989" number="5" tag="PATIENT-1" type="name">1989</reference>
+				</references>
+				<text>1.9304 m tall, Alex Plante, whose club is, Anyang Halla, was born in Canada, in 1989.</text>
+				<template>PATIENT-2 tall , AGENT-1 , whose club is , PATIENT-3 , was born in PATIENT-4 , in PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 tall , AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be , PATIENT-3 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-4 , in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | height | 1.9304</striple>
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+						<striple>Alex_Plante | birthYear | 1989</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1.9304" number="1" tag="PATIENT-2" type="name">1.9304m</reference>
+					<reference entity="Alex_Plante" number="2" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Anyang_Halla" number="3" tag="PATIENT-3" type="name">Anyang Halla</reference>
+					<reference entity="Canada" number="4" tag="PATIENT-4" type="name">Canada</reference>
+					<reference entity="1989" number="5" tag="PATIENT-1" type="name">1989</reference>
+				</references>
+				<text>1.9304m tall Alex Plante, whose club is Anyang Halla, was born in Canada, in 1989.</text>
+				<template>PATIENT-2 tall AGENT-1 , whose club is PATIENT-3 , was born in PATIENT-4 , in PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 tall AGENT-1 , whose club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-4 , in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alex_Plante | birthPlace | Canada</striple>
+						<striple>Alex_Plante | birthYear | 1989</striple>
+						<striple>Alex_Plante | height | 1.9304</striple>
+						<striple>Alex_Plante | club | Anyang_Halla</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alex_Plante" number="1" tag="AGENT-1" type="name">Alex Plante</reference>
+					<reference entity="Canada" number="2" tag="PATIENT-4" type="name">Canada</reference>
+					<reference entity="1989" number="3" tag="PATIENT-1" type="name">1989</reference>
+					<reference entity="1.9304" number="4" tag="PATIENT-2" type="name">1.9304m</reference>
+					<reference entity="Anyang_Halla" number="5" tag="PATIENT-3" type="name">Anyang Halla</reference>
+				</references>
+				<text>Alex Plante, born in Canada, 1989 is 1.9304m tall and played for Anyang Halla.</text>
+				<template>AGENT-1 , born in PATIENT-4 , PATIENT-1 is PATIENT-2 tall and played for PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-4 , PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 tall and VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alex_Plante</entity>
+				<entity>PATIENT-1 | 1989</entity>
+				<entity>PATIENT-2 | 1.9304</entity>
+				<entity>PATIENT-3 | Anyang_Halla</entity>
+				<entity>PATIENT-4 | Canada</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1587" size="4">
+			<originaltripleset>
+				<otriple>Canada | anthem | O_Canada</otriple>
+				<otriple>Canada | leaderName | Elizabeth_II</otriple>
+				<otriple>Aaron_Boogaard | placeOfBirth | Canada</otriple>
+				<otriple>Canada | language | Inuktitut</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Canada | anthem | O_Canada</mtriple>
+				<mtriple>Canada | leaderName | Elizabeth_II</mtriple>
+				<mtriple>Aaron_Boogaard | birthPlace | Canada</mtriple>
+				<mtriple>Canada | language | Inuktitut</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+						<striple>Canada | anthem | O_Canada</striple>
+						<striple>Canada | language | Inuktitut</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Boogaard" number="1" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Elizabeth_II" number="3" tag="PATIENT-2" type="name">Elizabeth II</reference>
+					<reference entity="O_Canada" number="4" tag="PATIENT-1" type="name">`` O Canada ''</reference>
+					<reference entity="Inuktitut" number="5" tag="PATIENT-3" type="name">Inuktitut</reference>
+				</references>
+				<text>Aaron Boogaard was born in Canada which is led by Elizabeth II, has a national anthem &quot;O Canada&quot; and uses the Inuktitut spoken language.</text>
+				<template>AGENT-1 was born in BRIDGE-1 which is led by PATIENT-2 , has a national anthem PATIENT-1 and uses the PATIENT-3 spoken language .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a national anthem PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use DT[form=defined] the PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak language .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Canada | language | Inuktitut</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Canada | anthem | O_Canada</striple>
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Boogaard" number="1" tag="AGENT-1" type="name">Aaron Boogaard 's</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Canada" number="3" tag="BRIDGE-1" type="description">The country</reference>
+					<reference entity="Inuktitut" number="4" tag="PATIENT-3" type="name">Inuktitut</reference>
+					<reference entity="Canada" number="5" tag="BRIDGE-1" type="pronoun">It</reference>
+					<reference entity="O_Canada" number="6" tag="PATIENT-1" type="name">O Canada</reference>
+					<reference entity="Elizabeth_II" number="7" tag="PATIENT-2" type="name">Elizabeth II</reference>
+				</references>
+				<text>Aaron Boogaard's birthplace is Canada. The country, where one of the languages spoken is Inuktitut. It is also where O Canada is the national anthem and the leader is Elizabeth II.</text>
+				<template>AGENT-1 birthplace is BRIDGE-1 . BRIDGE-1 , where one of the languages spoken is PATIENT-3 . BRIDGE-1 is also where PATIENT-1 is the national anthem and the leader is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 birthplace VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 . BRIDGE-1 , where one of DT[form=defined] the languages VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak PATIENT-3 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the national anthem and DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Canada | anthem | O_Canada</striple>
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Canada | language | Inuktitut</striple>
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Canada" number="1" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="O_Canada" number="2" tag="PATIENT-1" type="name">O Canada</reference>
+					<reference entity="Elizabeth_II" number="3" tag="PATIENT-2" type="name">Elizabeth II</reference>
+					<reference entity="Inuktitut" number="4" tag="PATIENT-3" type="name">Inuktitut</reference>
+					<reference entity="Canada" number="5" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Aaron_Boogaard" number="6" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+				</references>
+				<text>The national anthem of Canada is O Canada and the leader is, Elizabeth II. Inuktitut is a spoken language in Canada, the birthplace of, Aaron Boogaard.</text>
+				<template>The national anthem of BRIDGE-1 is PATIENT-1 and the leader is , PATIENT-2 . PATIENT-3 is a spoken language in BRIDGE-1 , the birthplace of , AGENT-1 .</template>
+				<lexicalization>DT[form=defined] the national anthem of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 and DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be , PATIENT-2 . PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak language in BRIDGE-1 , DT[form=defined] the birthplace of , AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Boogaard</entity>
+				<entity>BRIDGE-1 | Canada</entity>
+				<entity>PATIENT-1 | O_Canada</entity>
+				<entity>PATIENT-2 | Elizabeth_II</entity>
+				<entity>PATIENT-3 | Inuktitut</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1588" size="4">
+			<originaltripleset>
+				<otriple>Canada | anthem | O_Canada</otriple>
+				<otriple>Canada | leaderName | Elizabeth_II</otriple>
+				<otriple>Canada | ethnicGroup | Asian_Canadians</otriple>
+				<otriple>Aaron_Boogaard | placeOfBirth | Canada</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Canada | anthem | O_Canada</mtriple>
+				<mtriple>Canada | leaderName | Elizabeth_II</mtriple>
+				<mtriple>Canada | ethnicGroup | Asian_Canadians</mtriple>
+				<mtriple>Aaron_Boogaard | birthPlace | Canada</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+						<striple>Canada | anthem | O_Canada</striple>
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Canada | ethnicGroup | Asian_Canadians</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Boogaard" number="1" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="O_Canada" number="3" tag="PATIENT-1" type="name">O Canada</reference>
+					<reference entity="Canada" number="4" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Elizabeth_II" number="5" tag="PATIENT-2" type="name">Elizabeth II</reference>
+					<reference entity="Canada" number="6" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Asian_Canadians" number="7" tag="PATIENT-3" type="name">Asian Canadians</reference>
+				</references>
+				<text>Aaron Boogaard is from Canada whose national anthem is O Canada and its leader being Elizabeth II. One ethnic group in Canada are Asian Canadians.</text>
+				<template>AGENT-1 is from BRIDGE-1 whose national anthem is PATIENT-1 and BRIDGE-1 leader being PATIENT-2 . One ethnic group in BRIDGE-1 are PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be from BRIDGE-1 whose national anthem VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 and BRIDGE-1 leader VP[aspect=progressive,tense=present,voice=active,person=null,number=null] be PATIENT-2 . One ethnic group in BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Canada | anthem | O_Canada</striple>
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+						<striple>Canada | ethnicGroup | Asian_Canadians</striple>
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Canada" number="1" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="O_Canada" number="2" tag="PATIENT-1" type="name">O Canada</reference>
+					<reference entity="Elizabeth_II" number="3" tag="PATIENT-2" type="name">Elizabeth II</reference>
+					<reference entity="Canada" number="4" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Asian_Canadians" number="5" tag="PATIENT-3" type="name">Asian Canadians</reference>
+					<reference entity="Canada" number="6" tag="BRIDGE-1" type="pronoun">it</reference>
+					<reference entity="Aaron_Boogaard" number="7" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+				</references>
+				<text>The anthem of Canada is O Canada, the leader is Elizabeth II, one of the ethic groups in Canada are the Asian Canadians and it is the birthplace of Aaron Boogaard.</text>
+				<template>The anthem of BRIDGE-1 is PATIENT-1 , the leader is PATIENT-2 , one of the ethic groups in BRIDGE-1 are the PATIENT-3 and BRIDGE-1 is the birthplace of AGENT-1 .</template>
+				<lexicalization>DT[form=defined] the anthem of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 , one of DT[form=defined] the ethic groups in BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] the PATIENT-3 and BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the birthplace of AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Canada | anthem | O_Canada</striple>
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+						<striple>Canada | ethnicGroup | Asian_Canadians</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="O_Canada" number="1" tag="PATIENT-1" type="name">O Canada</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Aaron_Boogaard" number="3" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Elizabeth_II" number="4" tag="PATIENT-2" type="name">Elizabeth II</reference>
+					<reference entity="Canada" number="5" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Asian_Canadians" number="6" tag="PATIENT-3" type="name">Asian Canadians</reference>
+				</references>
+				<text>O Canada is the national anthem of Canada, where Aaron Boogaard was born. Elizabeth II is the leader of Canada, where one of the ethnic groups, is Asian Canadians.</text>
+				<template>PATIENT-1 is the national anthem of BRIDGE-1 , where AGENT-1 was born . PATIENT-2 is the leader of BRIDGE-1 , where one of the ethnic groups , is PATIENT-3 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the national anthem of BRIDGE-1 , where AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader of BRIDGE-1 , where one of DT[form=defined] the ethnic groups , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Boogaard</entity>
+				<entity>BRIDGE-1 | Canada</entity>
+				<entity>PATIENT-1 | O_Canada</entity>
+				<entity>PATIENT-2 | Elizabeth_II</entity>
+				<entity>PATIENT-3 | Asian_Canadians</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1589" size="4">
+			<originaltripleset>
+				<otriple>Canada | anthem | O_Canada</otriple>
+				<otriple>Canada | leaderName | Elizabeth_II</otriple>
+				<otriple>Canada | language | Slavey_language</otriple>
+				<otriple>Aaron_Boogaard | placeOfBirth | Canada</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Canada | anthem | O_Canada</mtriple>
+				<mtriple>Canada | leaderName | Elizabeth_II</mtriple>
+				<mtriple>Canada | language | Slavey_language</mtriple>
+				<mtriple>Aaron_Boogaard | birthPlace | Canada</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+						<striple>Canada | anthem | O_Canada</striple>
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Canada | language | Slavey_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Boogaard" number="1" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="O_Canada" number="3" tag="PATIENT-1" type="name">O Canada</reference>
+					<reference entity="Canada" number="4" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Elizabeth_II" number="5" tag="PATIENT-2" type="name">Elizabeth II</reference>
+					<reference entity="Slavey_language" number="6" tag="PATIENT-3" type="name">Slavey</reference>
+					<reference entity="Canada" number="7" tag="BRIDGE-1" type="name">Canada</reference>
+				</references>
+				<text>Aaron Boogaard was born in Canada whose national anthem is called O Canada and its leader is Elizabeth II. Slavey is spoken in Canada.</text>
+				<template>AGENT-1 was born in BRIDGE-1 whose national anthem is called PATIENT-1 and BRIDGE-1 leader is PATIENT-2 . PATIENT-3 is spoken in BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 whose national anthem VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] call PATIENT-1 and BRIDGE-1 leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 . PATIENT-3 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak in BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+						<striple>Canada | anthem | O_Canada</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+						<striple>Canada | language | Slavey_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elizabeth_II" number="1" tag="PATIENT-2" type="name">Elizabeth II</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada 's</reference>
+					<reference entity="O_Canada" number="3" tag="PATIENT-1" type="name">`` O Canada ''</reference>
+					<reference entity="Canada" number="4" tag="BRIDGE-1" type="pronoun">It</reference>
+					<reference entity="Aaron_Boogaard" number="5" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Slavey_language" number="6" tag="PATIENT-3" type="description">the Slavey language</reference>
+				</references>
+				<text>Elizabeth II is Canada's leader and the national anthem is &quot;O Canada&quot;. It is home to Aaron Boogaard and the Slavey language is spoken.</text>
+				<template>PATIENT-2 is BRIDGE-1 leader and the national anthem is PATIENT-1 . BRIDGE-1 is home to AGENT-1 and PATIENT-3 is spoken .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 leader and DT[form=defined] the national anthem VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be home to AGENT-1 and PATIENT-3 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_Boogaard | birthPlace | Canada</striple>
+						<striple>Canada | language | Slavey_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Canada | anthem | O_Canada</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Canada | leaderName | Elizabeth_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_Boogaard" number="1" tag="AGENT-1" type="name">Aaron Boogaard</reference>
+					<reference entity="Canada" number="2" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="Slavey_language" number="3" tag="PATIENT-3" type="description">the Slavey language</reference>
+					<reference entity="Canada" number="4" tag="BRIDGE-1" type="name">Canada</reference>
+					<reference entity="O_Canada" number="5" tag="PATIENT-1" type="name">O Canada</reference>
+					<reference entity="Elizabeth_II" number="6" tag="PATIENT-2" type="name">Elizabeth II</reference>
+				</references>
+				<text>Aaron Boogaard was born in Canada, where one of the languages is, the Slavey language. The national anthem of Canada is O Canada. and the leader is, Elizabeth II.</text>
+				<template>AGENT-1 was born in BRIDGE-1 , where one of the languages is , PATIENT-3 . The national anthem of BRIDGE-1 is PATIENT-1 . and the leader is , PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 , where one of DT[form=defined] the languages VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be , PATIENT-3 . DT[form=defined] the national anthem of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . and DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be , PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_Boogaard</entity>
+				<entity>BRIDGE-1 | Canada</entity>
+				<entity>PATIENT-1 | O_Canada</entity>
+				<entity>PATIENT-2 | Elizabeth_II</entity>
+				<entity>PATIENT-3 | Slavey_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1590" size="4">
+			<originaltripleset>
+				<otriple>FC_Terek_Grozny | ground | Grozny</otriple>
+				<otriple>Aleksandr_Prudnikov | team | FC_Terek_Grozny</otriple>
+				<otriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</otriple>
+				<otriple>Aleksandr_Prudnikov | clubs | FC_Kuban_Krasnodar</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Terek_Grozny | ground | Grozny</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</mtriple>
+				<mtriple>FC_Terek_Grozny | manager | Rashid_Rakhimov</mtriple>
+				<mtriple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="2" tag="PATIENT-3" type="name">FC Kuban Krasnodar</reference>
+					<reference entity="FC_Terek_Grozny" number="3" tag="BRIDGE-1" type="name">FC Terek Grozny</reference>
+					<reference entity="Rashid_Rakhimov" number="4" tag="PATIENT-2" type="name">Rashid Rakhimov</reference>
+					<reference entity="FC_Terek_Grozny" number="5" tag="BRIDGE-1" type="name">FC Terek Grozny</reference>
+					<reference entity="Grozny" number="6" tag="PATIENT-1" type="name">Grozny</reference>
+				</references>
+				<text>Aleksandr Prudnikov, who plays for FC Kuban Krasnodar, played for FC Terek Grozny. Rashid Rakhimov is the manager of FC Terek Grozny, the ground of which, is based at Grozny.</text>
+				<template>AGENT-1 , who plays for PATIENT-3 , played for BRIDGE-1 . PATIENT-2 is the manager of BRIDGE-1 , the ground of which , is based at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of BRIDGE-1 , DT[form=defined] the ground of which , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] base at PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="2" tag="PATIENT-3" type="name">FC Kuban Krasnodar</reference>
+					<reference entity="FC_Terek_Grozny" number="3" tag="BRIDGE-1" type="name">FC Terek Grozny</reference>
+					<reference entity="Rashid_Rakhimov" number="4" tag="PATIENT-2" type="name">Rashid Rakhimov</reference>
+					<reference entity="FC_Terek_Grozny" number="5" tag="BRIDGE-1" type="name">FC Terek Grozny</reference>
+					<reference entity="Grozny" number="6" tag="PATIENT-1" type="name">Grozny</reference>
+				</references>
+				<text>Aleksandr Prudnikov, who plays for FC Kuban Krasnodar, also plays for FC Terek Grozny. Rashid Rakhimov is the manager of FC Terek Grozny, the ground of which, is located in Grozny.</text>
+				<template>AGENT-1 , who plays for PATIENT-3 , also plays for BRIDGE-1 . PATIENT-2 is the manager of BRIDGE-1 , the ground of which , is located in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-3 , also VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of BRIDGE-1 , DT[form=defined] the ground of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Prudnikov | club | FC_Terek_Grozny</striple>
+						<striple>FC_Terek_Grozny | ground | Grozny</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Prudnikov | club | FC_Kuban_Krasnodar</striple>
+						<striple>FC_Terek_Grozny | manager | Rashid_Rakhimov</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Prudnikov" number="1" tag="AGENT-1" type="name">Aleksandr Prudnikov</reference>
+					<reference entity="FC_Terek_Grozny" number="2" tag="BRIDGE-1" type="name">FC Terek Grozny</reference>
+					<reference entity="Grozny" number="3" tag="PATIENT-1" type="name">Grozny</reference>
+					<reference entity="Aleksandr_Prudnikov" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="FC_Kuban_Krasnodar" number="5" tag="PATIENT-3" type="name">FC Kuban Krasnodar</reference>
+					<reference entity="Rashid_Rakhimov" number="6" tag="PATIENT-2" type="name">Rashid Rakhimov</reference>
+				</references>
+				<text>Aleksandr Prudnikov played for FC Terek Grozny whose local ground is in Grozny. He now plays for the FC Kuban Krasnodar club which is managed by Rashid Rakhimov.</text>
+				<template>AGENT-1 played for BRIDGE-1 whose local ground is in PATIENT-1 . AGENT-1 now plays for the PATIENT-3 club which is managed by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 whose local ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-1 . AGENT-1 now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for DT[form=defined] the PATIENT-3 club which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Prudnikov</entity>
+				<entity>BRIDGE-1 | FC_Terek_Grozny</entity>
+				<entity>PATIENT-1 | Grozny</entity>
+				<entity>PATIENT-2 | Rashid_Rakhimov</entity>
+				<entity>PATIENT-3 | FC_Kuban_Krasnodar</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1591" size="4">
+			<originaltripleset>
+				<otriple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</otriple>
+				<otriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</otriple>
+				<otriple>Aleksandr_Chumakov | team | FC_Torpedo_Moscow</otriple>
+				<otriple>FC_Torpedo_Moscow | chairman | Aleksandr_Tukmanov</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</mtriple>
+				<mtriple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</mtriple>
+				<mtriple>FC_Torpedo_Moscow | manager | Valery_Petrakov</mtriple>
+				<mtriple>FC_Torpedo_Moscow | chairman | Aleksandr_Tukmanov</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+						<striple>FC_Torpedo_Moscow | chairman | Aleksandr_Tukmanov</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Valery_Petrakov" number="1" tag="PATIENT-2" type="name">Valery Petrakov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="2" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="FC_Torpedo_Moscow" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="Aleksandr_Tukmanov" number="4" tag="PATIENT-3" type="name">Aleksandr Tukmanov</reference>
+					<reference entity="Aleksandr_Chumakov" number="5" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="6" tag="BRIDGE-1" type="description">the club</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="7" tag="PATIENT-1" type="description">the 2014-15 season in the Russian Premier League</reference>
+				</references>
+				<text>Valery Petrakov is the manager of FC Torpedo Moscow and its chairman is Aleksandr Tukmanov. Aleksandr Chumakov plays for the club which spent the 2014-15 season in the Russian Premier League.</text>
+				<template>PATIENT-2 is the manager of BRIDGE-1 and BRIDGE-1 chairman is PATIENT-3 . AGENT-1 plays for BRIDGE-1 which spent PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of BRIDGE-1 and BRIDGE-1 chairman VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 which VP[aspect=simple,tense=past,voice=active,person=null,number=null] spend PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | chairman | Aleksandr_Tukmanov</striple>
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+					</sentence>
+					<sentence ID="2"/>
+				</sortedtripleset>
+				<references>
+					<reference entity="FC_Torpedo_Moscow" number="1" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Aleksandr_Chumakov" number="2" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="Aleksandr_Tukmanov" number="3" tag="PATIENT-3" type="name">Aleksandr Tukmanov</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="4" tag="PATIENT-1" type="name">2014–15 season in the Russian Premier League</reference>
+					<reference entity="Aleksandr_Chumakov" number="5" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="6" tag="BRIDGE-1" type="description">the club</reference>
+				</references>
+				<text>FC Torpedo Moscow who are managed by Aleksandr Chumakov and whose chairman is Aleksandr Tukmanov, played the 2014–15 season in the Russian Premier League. Aleksandr Chumakov has played for the club.</text>
+				<template>BRIDGE-1 who are managed by AGENT-1 and whose chairman is PATIENT-3 , played the PATIENT-1 . AGENT-1 has played for BRIDGE-1 .</template>
+				<lexicalization>BRIDGE-1 who VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] manage by AGENT-1 and whose chairman VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] play DT[form=defined] the PATIENT-1 . AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksandr_Chumakov | club | FC_Torpedo_Moscow</striple>
+						<striple>FC_Torpedo_Moscow | manager | Valery_Petrakov</striple>
+						<striple>FC_Torpedo_Moscow | chairman | Aleksandr_Tukmanov</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>FC_Torpedo_Moscow | season | 2014–15_Russian_Premier_League</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksandr_Chumakov" number="1" tag="AGENT-1" type="name">Aleksandr Chumakov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="2" tag="BRIDGE-1" type="name">FC Torpedo Moscow</reference>
+					<reference entity="Valery_Petrakov" number="3" tag="PATIENT-2" type="name">Valery Petrakov</reference>
+					<reference entity="Aleksandr_Tukmanov" number="4" tag="PATIENT-3" type="name">Aleksandr Tukmanov</reference>
+					<reference entity="FC_Torpedo_Moscow" number="5" tag="BRIDGE-1" type="description">The FC Torpedo Moscow</reference>
+					<reference entity="2014–15_Russian_Premier_League" number="6" tag="PATIENT-1" type="name">Russian Premier League for the 2014-15</reference>
+				</references>
+				<text>Aleksandr Chumakov plays for is FC Torpedo Moscow who has a manager called Valery Petrakov and a chairman called Aleksandr Tukmanov. The FC Torpedo Moscow participated in the Russian Premier League for the 2014-15 season.</text>
+				<template>AGENT-1 plays for is BRIDGE-1 who has a manager called PATIENT-2 and a chairman called PATIENT-3 . BRIDGE-1 participated in the PATIENT-1 season .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 who VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a manager VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-2 and DT[form=undefined] a chairman VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-3 . BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] participate in DT[form=defined] the PATIENT-1 season .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksandr_Chumakov</entity>
+				<entity>BRIDGE-1 | FC_Torpedo_Moscow</entity>
+				<entity>PATIENT-1 | 2014–15_Russian_Premier_League</entity>
+				<entity>PATIENT-2 | Valery_Petrakov</entity>
+				<entity>PATIENT-3 | Aleksandr_Tukmanov</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1592" size="4">
+			<originaltripleset>
+				<otriple>Houston_Texans | city | Texas</otriple>
+				<otriple>Akeem_Dent | debutTeam | Atlanta_Falcons</otriple>
+				<otriple>Akeem_Dent | formerTeam | Houston_Texans</otriple>
+				<otriple>Houston_Texans | locationCity | Houston</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Houston_Texans | city | Texas</mtriple>
+				<mtriple>Akeem_Dent | debutTeam | Atlanta_Falcons</mtriple>
+				<mtriple>Akeem_Dent | formerTeam | Houston_Texans</mtriple>
+				<mtriple>Houston_Texans | city | Houston</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+						<striple>Houston_Texans | city | Houston</striple>
+						<striple>Houston_Texans | city | Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="Atlanta_Falcons" number="2" tag="PATIENT-2" type="description">the Atlanta Falcons</reference>
+					<reference entity="Houston" number="3" tag="PATIENT-3" type="name">Houston</reference>
+					<reference entity="Texas" number="4" tag="PATIENT-1" type="name">Texas</reference>
+					<reference entity="Houston_Texans" number="5" tag="BRIDGE-1" type="name">Houston Texans</reference>
+				</references>
+				<text>Akeem Dent debuted with the Atlanta Falcons and has played with Houston, Texas based, Houston Texans.</text>
+				<template>AGENT-1 debuted with PATIENT-2 and has played with PATIENT-3 , PATIENT-1 based , BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] debut with PATIENT-2 and VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play with PATIENT-3 , PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] base , BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+						<striple>Houston_Texans | city | Houston</striple>
+						<striple>Houston_Texans | city | Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akeem_Dent" number="1" tag="AGENT-1" type="name">Akeem Dent 's</reference>
+					<reference entity="Atlanta_Falcons" number="2" tag="PATIENT-2" type="description">the Atlanta Falcons</reference>
+					<reference entity="Akeem_Dent" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Houston_Texans" number="4" tag="BRIDGE-1" type="description">the Houston Texans</reference>
+					<reference entity="Houston" number="5" tag="PATIENT-3" type="name">Houston</reference>
+					<reference entity="Texas" number="6" tag="PATIENT-1" type="name">Texas</reference>
+				</references>
+				<text>Akeem Dent's first team were the Atlanta Falcons and his former team are the Houston Texans, which are based in the city of Houston and play in Texas.</text>
+				<template>AGENT-1 first team were PATIENT-2 and AGENT-1 former team are BRIDGE-1 , which are based in the city of PATIENT-3 and play in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 first team VP[aspect=simple,tense=past,voice=active,person=null,number=plural] be PATIENT-2 and AGENT-1 former team VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be BRIDGE-1 , which VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] base in DT[form=defined] the city of PATIENT-3 and VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] play in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Houston_Texans | city | Houston</striple>
+						<striple>Houston_Texans | city | Texas</striple>
+						<striple>Akeem_Dent | formerTeam | Houston_Texans</striple>
+						<striple>Akeem_Dent | debutTeam | Atlanta_Falcons</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Houston" number="1" tag="PATIENT-3" type="name">Houston</reference>
+					<reference entity="Texas" number="2" tag="PATIENT-1" type="name">Texas</reference>
+					<reference entity="Houston_Texans" number="3" tag="BRIDGE-1" type="name">Houston Texans</reference>
+					<reference entity="Akeem_Dent" number="4" tag="AGENT-1" type="name">Akeem Dent</reference>
+					<reference entity="Atlanta_Falcons" number="5" tag="PATIENT-2" type="description">the Atlanta Falcons</reference>
+				</references>
+				<text>Houston,Texas is the home of Houston Texans, the former club of Akeem Dent, who debuted with the Atlanta Falcons.</text>
+				<template>PATIENT-3 , PATIENT-1 is the home of BRIDGE-1 , the former club of AGENT-1 , who debuted with PATIENT-2 .</template>
+				<lexicalization>PATIENT-3 , PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the home of BRIDGE-1 , DT[form=defined] the former club of AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] debut with PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akeem_Dent</entity>
+				<entity>BRIDGE-1 | Houston_Texans</entity>
+				<entity>PATIENT-1 | Texas</entity>
+				<entity>PATIENT-2 | Atlanta_Falcons</entity>
+				<entity>PATIENT-3 | Houston</entity>
+			</entitymap>
+		</entry>
+		<entry category="Athlete" eid="Id1593" size="4">
+			<originaltripleset>
+				<otriple>Peñarol | league | Uruguayan_Primera_División</otriple>
+				<otriple>Abel_Hernández | youthclubs | Peñarol</otriple>
+				<otriple>Hull_City_A.F.C. | manager | Steve_Bruce</otriple>
+				<otriple>Abel_Hernández | clubs | Hull_City_A.F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Peñarol | league | Uruguayan_Primera_División</mtriple>
+				<mtriple>Abel_Hernández | youthclub | Peñarol</mtriple>
+				<mtriple>Hull_City_A.F.C. | manager | Steve_Bruce</mtriple>
+				<mtriple>Abel_Hernández | club | Hull_City_A.F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | league | Uruguayan_Primera_División</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Hull_City_A.F.C. | manager | Steve_Bruce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Abel_Hernández" number="2" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Peñarol" number="3" tag="BRIDGE-1" type="name">Peñarol</reference>
+					<reference entity="Uruguayan_Primera_División" number="4" tag="PATIENT-1" type="description">the Uruguayan Primera División</reference>
+					<reference entity="Abel_Hernández" number="5" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Hull_City_A.F.C." number="6" tag="BRIDGE-2" type="name">Hull City A.F.C .</reference>
+					<reference entity="Steve_Bruce" number="7" tag="PATIENT-2" type="name">Steve Bruce</reference>
+				</references>
+				<text>In his youth, Abel Hernández played for Peñarol, which play in the Uruguayan Primera División league. Abel Hernández now plays for Hull City A.F.C. which is managed by, Steve Bruce.</text>
+				<template>In AGENT-1 youth , AGENT-1 played for BRIDGE-1 , which play in PATIENT-1 league . AGENT-1 now plays for BRIDGE-2 which is managed by , PATIENT-2 .</template>
+				<lexicalization>In AGENT-1 youth , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for BRIDGE-1 , which VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] play in PATIENT-1 league . AGENT-1 now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-2 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | league | Uruguayan_Primera_División</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Hull_City_A.F.C. | manager | Steve_Bruce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernández</reference>
+					<reference entity="Peñarol" number="2" tag="BRIDGE-1" type="name">Peñarol</reference>
+					<reference entity="Uruguayan_Primera_División" number="3" tag="PATIENT-1" type="name">Uruguayan Primera División</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="Hull_City_A.F.C." number="5" tag="BRIDGE-2" type="name">Hull City A.F.C .</reference>
+					<reference entity="Steve_Bruce" number="6" tag="PATIENT-2" type="name">Steve Bruce</reference>
+				</references>
+				<text>Abel Hernández was a member of youth club Peñarol, that play in the Uruguayan Primera División league. His current club is Hull City A.F.C. which is managed by, Steve Bruce.</text>
+				<template>AGENT-1 was a member of youth club BRIDGE-1 , that play in the PATIENT-1 league . AGENT-1 current club is BRIDGE-2 which is managed by , PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of youth club BRIDGE-1 , that VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] play in DT[form=defined] the PATIENT-1 league . AGENT-1 current club VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manage by , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abel_Hernández | youthclub | Peñarol</striple>
+						<striple>Peñarol | league | Uruguayan_Primera_División</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abel_Hernández | club | Hull_City_A.F.C.</striple>
+						<striple>Hull_City_A.F.C. | manager | Steve_Bruce</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abel_Hernández" number="1" tag="AGENT-1" type="name">Abel Hernandez</reference>
+					<reference entity="Peñarol" number="2" tag="BRIDGE-1" type="name">Penarol 's</reference>
+					<reference entity="Uruguayan_Primera_División" number="3" tag="PATIENT-1" type="description">the Uruguayan Primera División</reference>
+					<reference entity="Abel_Hernández" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Hull_City_A.F.C." number="5" tag="BRIDGE-2" type="name">Hull City A.F.C.</reference>
+					<reference entity="Steve_Bruce" number="6" tag="PATIENT-2" type="name">Steve Bruce</reference>
+				</references>
+				<text>Abel Hernandez was a member of Penarol's youthclub which plays in the Uruguayan Primera División. He now plays for Hull City A.F.C., the manager of which, is Steve Bruce.</text>
+				<template>AGENT-1 was a member of BRIDGE-1 youthclub which plays in PATIENT-1 . AGENT-1 now plays for BRIDGE-2 , the manager of which , is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of BRIDGE-1 youthclub which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play in PATIENT-1 . AGENT-1 now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for BRIDGE-2 , DT[form=defined] the manager of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abel_Hernández</entity>
+				<entity>BRIDGE-1 | Peñarol</entity>
+				<entity>BRIDGE-2 | Hull_City_A.F.C.</entity>
+				<entity>PATIENT-1 | Uruguayan_Primera_División</entity>
+				<entity>PATIENT-2 | Steve_Bruce</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

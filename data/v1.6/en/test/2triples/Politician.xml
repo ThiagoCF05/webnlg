@@ -1,0 +1,2668 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Politician" eid="Id1204" size="2">
+			<originaltripleset>
+				<otriple>Aaron_S._Daggett | award | Purple_Heart</otriple>
+				<otriple>Aaron_S._Daggett | battles | Battle_of_Fredericksburg</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_S._Daggett | award | Purple_Heart</mtriple>
+				<mtriple>Aaron_S._Daggett | battles | Battle_of_Fredericksburg</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_S._Daggett | battles | Battle_of_Fredericksburg</striple>
+						<striple>Aaron_S._Daggett | award | Purple_Heart</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_S._Daggett" number="1" tag="AGENT-1" type="name">Aaron S. Daggett</reference>
+					<reference entity="Battle_of_Fredericksburg" number="2" tag="PATIENT-2" type="description">the Battle of Fredericksburg</reference>
+					<reference entity="Purple_Heart" number="3" tag="PATIENT-1" type="description">the Purple Heart</reference>
+				</references>
+				<text>Aaron S. Daggett fought in the Battle of Fredericksburg and received the Purple Heart.</text>
+				<template>AGENT-1 fought in PATIENT-2 and received PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] receive PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_S._Daggett | battles | Battle_of_Fredericksburg</striple>
+						<striple>Aaron_S._Daggett | award | Purple_Heart</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_S._Daggett" number="1" tag="AGENT-1" type="name">Aaron S Daggett</reference>
+					<reference entity="Battle_of_Fredericksburg" number="2" tag="PATIENT-2" type="description">the Battle of Fredericksburg</reference>
+					<reference entity="Aaron_S._Daggett" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Purple_Heart" number="4" tag="PATIENT-1" type="description">the Purple Heart</reference>
+				</references>
+				<text>Aaron S Daggett, fought in battles, most notably the Battle of Fredericksburg, he was awarded the Purple Heart.</text>
+				<template>AGENT-1 , fought in battles , most notably PATIENT-2 , AGENT-1 was awarded PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in battles , most notably PATIENT-2 , AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_S._Daggett | award | Purple_Heart</striple>
+						<striple>Aaron_S._Daggett | battles | Battle_of_Fredericksburg</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_S._Daggett" number="1" tag="AGENT-1" type="name">Aaron S Daggett</reference>
+					<reference entity="Purple_Heart" number="2" tag="PATIENT-1" type="description">the Purple Heart</reference>
+					<reference entity="Battle_of_Fredericksburg" number="3" tag="PATIENT-2" type="description">the Battle of Fredericksburg</reference>
+				</references>
+				<text>Aaron S Daggett was awarded the Purple Heart and fought in the Battle of Fredericksburg.</text>
+				<template>AGENT-1 was awarded PATIENT-1 and fought in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_S._Daggett</entity>
+				<entity>PATIENT-1 | Purple_Heart</entity>
+				<entity>PATIENT-2 | Battle_of_Fredericksburg</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1205" size="2">
+			<originaltripleset>
+				<otriple>Aaron_S._Daggett | battles | Battle_of_Gettysburg</otriple>
+				<otriple>Aaron_S._Daggett | award | Purple_Heart</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aaron_S._Daggett | battles | Battle_of_Gettysburg</mtriple>
+				<mtriple>Aaron_S._Daggett | award | Purple_Heart</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_S._Daggett | battles | Battle_of_Gettysburg</striple>
+						<striple>Aaron_S._Daggett | award | Purple_Heart</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_S._Daggett" number="1" tag="AGENT-1" type="name">Aaron S Daggett</reference>
+					<reference entity="Battle_of_Gettysburg" number="2" tag="PATIENT-1" type="description">the Battle of Gettysburg</reference>
+					<reference entity="Purple_Heart" number="3" tag="PATIENT-2" type="description">the Purple Heart</reference>
+				</references>
+				<text>Aaron S Daggett fought at the Battle of Gettysburg and was awarded the Purple Heart.</text>
+				<template>AGENT-1 fought at PATIENT-1 and was awarded PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight at PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_S._Daggett | battles | Battle_of_Gettysburg</striple>
+						<striple>Aaron_S._Daggett | award | Purple_Heart</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_S._Daggett" number="1" tag="AGENT-1" type="name">Aaron S. Daggett</reference>
+					<reference entity="Battle_of_Gettysburg" number="2" tag="PATIENT-1" type="description">the Battle of Gettysburg</reference>
+					<reference entity="Purple_Heart" number="3" tag="PATIENT-2" type="description">the Purple Heart</reference>
+				</references>
+				<text>Aaron S. Daggett fought in the Battle of Gettysburg and was awarded the Purple Heart.</text>
+				<template>AGENT-1 fought in PATIENT-1 and was awarded PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aaron_S._Daggett | battles | Battle_of_Gettysburg</striple>
+						<striple>Aaron_S._Daggett | award | Purple_Heart</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aaron_S._Daggett" number="1" tag="AGENT-1" type="name">Aaron S. Daggett</reference>
+					<reference entity="Battle_of_Gettysburg" number="2" tag="PATIENT-1" type="description">the Battle of Gettysburg</reference>
+					<reference entity="Purple_Heart" number="3" tag="PATIENT-2" type="description">the Purple Heart</reference>
+				</references>
+				<text>Aaron S. Daggett, who fought in the Battle of Gettysburg, was awarded the Purple Heart.</text>
+				<template>AGENT-1 , who fought in PATIENT-1 , was awarded PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aaron_S._Daggett</entity>
+				<entity>PATIENT-1 | Battle_of_Gettysburg</entity>
+				<entity>PATIENT-2 | Purple_Heart</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1206" size="2">
+			<originaltripleset>
+				<otriple>Abdul_Rahman_Yakub | deputy | Stephen_Yong_Kuet_Tze</otriple>
+				<otriple>Abdul_Taib_Mahmud | successor | Abdul_Rahman_Yakub</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abdul_Rahman_Yakub | hasDeputy | Stephen_Yong_Kuet_Tze</mtriple>
+				<mtriple>Abdul_Taib_Mahmud | successor | Abdul_Rahman_Yakub</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdul_Rahman_Yakub | hasDeputy | Stephen_Yong_Kuet_Tze</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abdul_Taib_Mahmud | successor | Abdul_Rahman_Yakub</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Stephen_Yong_Kuet_Tze" number="1" tag="PATIENT-1" type="name">Stephen Yong Kuet Tze</reference>
+					<reference entity="Abdul_Rahman_Yakub" number="2" tag="BRIDGE-1" type="name">Abdul Rahman Ya'kub 's</reference>
+					<reference entity="Abdul_Taib_Mahmud" number="3" tag="AGENT-1" type="name">Abdul Taib Mahmud</reference>
+					<reference entity="Abdul_Rahman_Yakub" number="4" tag="BRIDGE-1" type="name">Abdul Rahman Ya'kub 's</reference>
+				</references>
+				<text>Stephen Yong Kuet Tze is Abdul Rahman Ya'kub's deputy. Abdul Taib Mahmud was Abdul Rahman Ya'kub's successor.</text>
+				<template>PATIENT-1 is BRIDGE-1 deputy . AGENT-1 was BRIDGE-1 successor .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 deputy . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 successor .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdul_Taib_Mahmud | successor | Abdul_Rahman_Yakub</striple>
+						<striple>Abdul_Rahman_Yakub | hasDeputy | Stephen_Yong_Kuet_Tze</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdul_Rahman_Yakub" number="1" tag="BRIDGE-1" type="name">Abdul Rahman Ya'kub</reference>
+					<reference entity="Abdul_Taib_Mahmud" number="2" tag="AGENT-1" type="name">Abdul Taib Mahmud</reference>
+					<reference entity="Stephen_Yong_Kuet_Tze" number="3" tag="PATIENT-1" type="name">Stephen Yong Kuet Tze</reference>
+				</references>
+				<text>Abdul Rahman Ya'kub, who succeeded Abdul Taib Mahmud, has a deputy named Stephen Yong Kuet Tze.</text>
+				<template>BRIDGE-1 , who succeeded AGENT-1 , has a deputy named PATIENT-1 .</template>
+				<lexicalization>BRIDGE-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] succeed AGENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a deputy VP[aspect=simple,tense=past,voice=active,person=null,number=null] name PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdul_Taib_Mahmud | successor | Abdul_Rahman_Yakub</striple>
+						<striple>Abdul_Rahman_Yakub | hasDeputy | Stephen_Yong_Kuet_Tze</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdul_Taib_Mahmud" number="1" tag="AGENT-1" type="name">Abdul Taib Mahmud</reference>
+					<reference entity="Abdul_Rahman_Yakub" number="2" tag="BRIDGE-1" type="name">Abdul Rahman Ya'kub</reference>
+					<reference entity="Stephen_Yong_Kuet_Tze" number="3" tag="PATIENT-1" type="name">Stephen Yong Kuet Tze</reference>
+				</references>
+				<text>The successor of Abdul Taib Mahmud was Abdul Rahman Ya'kub, whose deputy is Stephen Yong Kuet Tze.</text>
+				<template>The successor of AGENT-1 was BRIDGE-1 , whose deputy is PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the successor of AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 , whose deputy VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abdul_Taib_Mahmud</entity>
+				<entity>BRIDGE-1 | Abdul_Rahman_Yakub</entity>
+				<entity>PATIENT-1 | Stephen_Yong_Kuet_Tze</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1207" size="2">
+			<originaltripleset>
+				<otriple>Abdul_Taib_Mahmud | party | Parti_Pesaka_Bumiputera_Bersatu</otriple>
+				<otriple>Abdul_Taib_Mahmud | birthPlace | Kingdom_of_Sarawak</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abdul_Taib_Mahmud | party | Parti_Pesaka_Bumiputera_Bersatu</mtriple>
+				<mtriple>Abdul_Taib_Mahmud | birthPlace | Kingdom_of_Sarawak</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdul_Taib_Mahmud | birthPlace | Kingdom_of_Sarawak</striple>
+						<striple>Abdul_Taib_Mahmud | party | Parti_Pesaka_Bumiputera_Bersatu</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdul_Taib_Mahmud" number="1" tag="AGENT-1" type="name">Abdul Taid Mahmud</reference>
+					<reference entity="Kingdom_of_Sarawak" number="2" tag="PATIENT-2" type="name">Sarawak</reference>
+					<reference entity="Parti_Pesaka_Bumiputera_Bersatu" number="3" tag="PATIENT-1" type="description">the Parti Pesaka Bumiputera Bersatu</reference>
+				</references>
+				<text>Abdul Taid Mahmud was born in Sarawak and is part of the Parti Pesaka Bumiputera Bersatu.</text>
+				<template>AGENT-1 was born in PATIENT-2 and is part of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdul_Taib_Mahmud | birthPlace | Kingdom_of_Sarawak</striple>
+						<striple>Abdul_Taib_Mahmud | party | Parti_Pesaka_Bumiputera_Bersatu</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdul_Taib_Mahmud" number="1" tag="AGENT-1" type="name">Abdul Taib Mahmud</reference>
+					<reference entity="Kingdom_of_Sarawak" number="2" tag="PATIENT-2" type="description">the Kingdom of Sarawak</reference>
+					<reference entity="Abdul_Taib_Mahmud" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Parti_Pesaka_Bumiputera_Bersatu" number="4" tag="PATIENT-1" type="description">the Parti Pesaka Bumiputera Bersatu</reference>
+				</references>
+				<text>Abdul Taib Mahmud was born in the Kingdom of Sarawak and his party is the Parti Pesaka Bumiputera Bersatu.</text>
+				<template>AGENT-1 was born in PATIENT-2 and AGENT-1 party is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and AGENT-1 party VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdul_Taib_Mahmud | birthPlace | Kingdom_of_Sarawak</striple>
+						<striple>Abdul_Taib_Mahmud | party | Parti_Pesaka_Bumiputera_Bersatu</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdul_Taib_Mahmud" number="1" tag="AGENT-1" type="name">Abdul Taib Mahmud</reference>
+					<reference entity="Kingdom_of_Sarawak" number="2" tag="PATIENT-2" type="name">Sarawak</reference>
+					<reference entity="Parti_Pesaka_Bumiputera_Bersatu" number="3" tag="PATIENT-1" type="description">the Parti Pesaka Bumiputera Bersatu</reference>
+				</references>
+				<text>Abdul Taib Mahmud, who was born in Sarawak, belongs to the Parti Pesaka Bumiputera Bersatu.</text>
+				<template>AGENT-1 , who was born in PATIENT-2 , belongs to PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] belong to PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abdul_Taib_Mahmud</entity>
+				<entity>PATIENT-1 | Parti_Pesaka_Bumiputera_Bersatu</entity>
+				<entity>PATIENT-2 | Kingdom_of_Sarawak</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1208" size="2">
+			<originaltripleset>
+				<otriple>Abdulsalami_Abubakar | birthPlace | Minna</otriple>
+				<otriple>Abdulsalami_Abubakar | almaMater | &quot;Technical Institute, Kaduna&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abdulsalami_Abubakar | birthPlace | Minna</mtriple>
+				<mtriple>Abdulsalami_Abubakar | almaMater | Technical_Institute,_Kaduna</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | birthPlace | Minna</striple>
+						<striple>Abdulsalami_Abubakar | almaMater | Technical_Institute,_Kaduna</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Minna" number="2" tag="PATIENT-1" type="name">Minna</reference>
+					<reference entity="Technical_Institute,_Kaduna" number="3" tag="PATIENT-2" type="description">the Technical Institute Kaduna</reference>
+				</references>
+				<text>Abdulsalami Abubakar, was born in Minna, and has the Technical Institute Kaduna, for an almar mater.</text>
+				<template>AGENT-1 , was born in PATIENT-1 , and has PATIENT-2 , for an almar mater .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 , for DT[form=undefined] a almar mater .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | birthPlace | Minna</striple>
+						<striple>Abdulsalami_Abubakar | almaMater | Technical_Institute,_Kaduna</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Minna" number="2" tag="PATIENT-1" type="name">Minna</reference>
+					<reference entity="Abdulsalami_Abubakar" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Technical_Institute,_Kaduna" number="4" tag="PATIENT-2" type="description">the Technical Institute Kaduna</reference>
+				</references>
+				<text>Abdulsalami Abubakar was born in Minna and he attended the Technical Institute Kaduna.</text>
+				<template>AGENT-1 was born in PATIENT-1 and AGENT-1 attended PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] attend PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | birthPlace | Minna</striple>
+						<striple>Abdulsalami_Abubakar | almaMater | Technical_Institute,_Kaduna</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Minna" number="2" tag="PATIENT-1" type="name">Minna</reference>
+					<reference entity="Technical_Institute,_Kaduna" number="3" tag="PATIENT-2" type="description">the Technical Institute in Kaduna</reference>
+				</references>
+				<text>Abdulsalami Abubakar was born in Minna and attended the Technical Institute in Kaduna.</text>
+				<template>AGENT-1 was born in PATIENT-1 and attended PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] attend PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abdulsalami_Abubakar</entity>
+				<entity>PATIENT-1 | Minna</entity>
+				<entity>PATIENT-2 | Technical_Institute,_Kaduna</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1209" size="2">
+			<originaltripleset>
+				<otriple>Abdulsalami_Abubakar | office | &quot;Chief of Defence Staff&quot;</otriple>
+				<otriple>Abdulsalami_Abubakar | birthPlace | Niger_State</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abdulsalami_Abubakar | office (workedAt, workedAs) | Chief_of_the_Defence_Staff_(Nigeria)</mtriple>
+				<mtriple>Abdulsalami_Abubakar | birthPlace | Niger_State</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | birthPlace | Niger_State</striple>
+						<striple>Abdulsalami_Abubakar | office (workedAt, workedAs) | Chief_of_the_Defence_Staff_(Nigeria)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Niger_State" number="2" tag="PATIENT-2" type="name">Niger State</reference>
+					<reference entity="Chief_of_the_Defence_Staff_(Nigeria)" number="3" tag="PATIENT-1" type="description">the Chief of the Defence Staff in Nigeria</reference>
+				</references>
+				<text>Abdulsalami Abubakar was born in Niger State and was the Chief of the Defence Staff in Nigeria.</text>
+				<template>AGENT-1 was born in PATIENT-2 and was PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | birthPlace | Niger_State</striple>
+						<striple>Abdulsalami_Abubakar | office (workedAt, workedAs) | Chief_of_the_Defence_Staff_(Nigeria)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Niger_State" number="2" tag="PATIENT-2" type="name">Niger State</reference>
+					<reference entity="Chief_of_the_Defence_Staff_(Nigeria)" number="3" tag="PATIENT-1" type="description">the Chief of the Defence Staff in Nigeria</reference>
+				</references>
+				<text>Abdulsalami Abubakar, who was born in Niger State, was the Chief of the Defence Staff in Nigeria.</text>
+				<template>AGENT-1 , who was born in PATIENT-2 , was PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abdulsalami_Abubakar</entity>
+				<entity>PATIENT-1 | Chief_of_the_Defence_Staff_(Nigeria)</entity>
+				<entity>PATIENT-2 | Niger_State</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1210" size="2">
+			<originaltripleset>
+				<otriple>Abdulsalami_Abubakar | successor | Al-Amin_Daggash</otriple>
+				<otriple>Abdulsalami_Abubakar | office | Chief_of_the_Defence_Staff_(Nigeria)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abdulsalami_Abubakar | office (workedAt, workedAs) | Chief_of_the_Defence_Staff_(Nigeria)</mtriple>
+				<mtriple>Abdulsalami_Abubakar | successor | Al-Amin_Daggash</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | successor | Al-Amin_Daggash</striple>
+						<striple>Abdulsalami_Abubakar | office (workedAt, workedAs) | Chief_of_the_Defence_Staff_(Nigeria)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al-Amin_Daggash" number="1" tag="PATIENT-2" type="name">Al-Amin Daggash</reference>
+					<reference entity="Chief_of_the_Defence_Staff_(Nigeria)" number="2" tag="PATIENT-1" type="name">Chief of the Defence Staff in Nigeria</reference>
+					<reference entity="Abdulsalami_Abubakar" number="3" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+				</references>
+				<text>Al-Amin Daggash was succeeded as Chief of the Defence Staff in Nigeria by Abdulsalami Abubakar.</text>
+				<template>PATIENT-2 was succeeded as PATIENT-1 by AGENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed as PATIENT-1 by AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | office (workedAt, workedAs) | Chief_of_the_Defence_Staff_(Nigeria)</striple>
+						<striple>Abdulsalami_Abubakar | successor | Al-Amin_Daggash</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Chief_of_the_Defence_Staff_(Nigeria)" number="2" tag="PATIENT-1" type="description">the Chief of the Defence Staff in Nigeria</reference>
+					<reference entity="Abdulsalami_Abubakar" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Al-Amin_Daggash" number="4" tag="PATIENT-2" type="name">Al-Amin Daggash</reference>
+				</references>
+				<text>Abdulsalami Abubakar was the Chief of the Defence Staff in Nigeria and he was succeeded by Al-Amin Daggash.</text>
+				<template>AGENT-1 was PATIENT-1 and AGENT-1 was succeeded by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 and AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | successor | Al-Amin_Daggash</striple>
+						<striple>Abdulsalami_Abubakar | office (workedAt, workedAs) | Chief_of_the_Defence_Staff_(Nigeria)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Al-Amin_Daggash" number="1" tag="PATIENT-2" type="name">Al-Amin Daggash</reference>
+					<reference entity="Abdulsalami_Abubakar" number="2" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Chief_of_the_Defence_Staff_(Nigeria)" number="3" tag="PATIENT-1" type="description">the Nigerian Chief of the Defence Staff</reference>
+				</references>
+				<text>Al-Amin Daggash was succeeded by Abdulsalami Abubakar, who worked as the Nigerian Chief of the Defence Staff.</text>
+				<template>PATIENT-2 was succeeded by AGENT-1 , who worked as PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abdulsalami_Abubakar</entity>
+				<entity>PATIENT-1 | Chief_of_the_Defence_Staff_(Nigeria)</entity>
+				<entity>PATIENT-2 | Al-Amin_Daggash</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1211" size="2">
+			<originaltripleset>
+				<otriple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</otriple>
+				<otriple>Abdulsalami_Abubakar | activeYearsEndDate | &quot;1999-05-29&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</mtriple>
+				<mtriple>Abdulsalami_Abubakar | activeYearsEndDate | 1999-05-29</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | activeYearsEndDate | 1999-05-29</striple>
+						<striple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Abdulsalami_Abubakar" number="2" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="1999-05-29" number="3" tag="PATIENT-2" type="name">1999-05-29</reference>
+					<reference entity="Olusegun_Obasanjo" number="4" tag="PATIENT-1" type="name">Olusegun Obasanjo</reference>
+				</references>
+				<text>Abdulsalami Abubakar, ended his career on 1999-05-29, and was succeeded by Olusegun Obasanjo.</text>
+				<template>AGENT-1 , ended AGENT-1 career on PATIENT-2 , and was succeeded by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] end AGENT-1 career on PATIENT-2 , and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | activeYearsEndDate | 1999-05-29</striple>
+						<striple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Abdulsalami_Abubakar" number="2" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="1999-05-29" number="3" tag="PATIENT-2" type="name">1999-05-29</reference>
+					<reference entity="Olusegun_Obasanjo" number="4" tag="PATIENT-1" type="name">Olusegun Obasanjo</reference>
+				</references>
+				<text>Abdulsalami Abubakar ended his career on 1999-05-29 and was succeeded by Olusegun Obasanjo.</text>
+				<template>AGENT-1 ended AGENT-1 career on PATIENT-2 and was succeeded by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] end AGENT-1 career on PATIENT-2 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</striple>
+						<striple>Abdulsalami_Abubakar | activeYearsEndDate | 1999-05-29</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Olusegun_Obasanjo" number="1" tag="PATIENT-1" type="name">Olusegun Obasanjo</reference>
+					<reference entity="Abdulsalami_Abubakar" number="2" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Abdulsalami_Abubakar" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="1999-05-29" number="4" tag="PATIENT-2" type="name">1999-05-29</reference>
+				</references>
+				<text>Olusegun Obasanjo was the successor to Abdulsalami Abubakar, who ended his career on 1999-05-29.</text>
+				<template>PATIENT-1 was the successor to AGENT-1 , who ended AGENT-1 career on PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=defined] the successor to AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] end AGENT-1 career on PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abdulsalami_Abubakar</entity>
+				<entity>PATIENT-1 | Olusegun_Obasanjo</entity>
+				<entity>PATIENT-2 | 1999-05-29</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1212" size="2">
+			<originaltripleset>
+				<otriple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</otriple>
+				<otriple>Abdulsalami_Abubakar | vicePresident | Mike_Akhigbe</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</mtriple>
+				<mtriple>Abdulsalami_Abubakar | inOfficeWhileVicePresident | Mike_Akhigbe</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | inOfficeWhileVicePresident | Mike_Akhigbe</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Mike_Akhigbe" number="2" tag="PATIENT-2" type="name">Mr. Mike Akhigbe</reference>
+					<reference entity="Olusegun_Obasanjo" number="3" tag="PATIENT-1" type="name">Olusegun Obasanjo</reference>
+					<reference entity="Abdulsalami_Abubakar" number="4" tag="AGENT-1" type="name">Mr. Abubaka</reference>
+				</references>
+				<text>Abdulsalami Abubakar was also in office while Mr. Mike Akhigbe was Vice President. Olusegun Obasanjo succeeded Mr. Abubaka.</text>
+				<template>AGENT-1 was also in office while PATIENT-2 was Vice President . PATIENT-1 succeeded AGENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be also in office while PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be Vice President . PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] succeed AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abdulsalami_Abubakar | inOfficeWhileVicePresident | Mike_Akhigbe</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Olusegun_Obasanjo" number="2" tag="PATIENT-1" type="name">Olusegun Obasanjo</reference>
+					<reference entity="Mike_Akhigbe" number="3" tag="PATIENT-2" type="name">Mike Akhigbe</reference>
+				</references>
+				<text>Abdulsalami Abubakar, who was succeeded by Olusegun Obasanjo. was in office while Mike Akhigbe was Vice President.</text>
+				<template>AGENT-1 , who was succeeded by PATIENT-1 . was in office while PATIENT-2 was Vice President .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-1 . VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be in office while PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be Vice President .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abdulsalami_Abubakar | successor | Olusegun_Obasanjo</striple>
+						<striple>Abdulsalami_Abubakar | inOfficeWhileVicePresident | Mike_Akhigbe</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abdulsalami_Abubakar" number="1" tag="AGENT-1" type="name">Abdulsalami Abubakar</reference>
+					<reference entity="Olusegun_Obasanjo" number="2" tag="PATIENT-1" type="name">Olusegun Obasanjo</reference>
+					<reference entity="Mike_Akhigbe" number="3" tag="PATIENT-2" type="name">Mike Akhigbe</reference>
+				</references>
+				<text>Abdulsalami Abubakar, whose successor was Olusegun Obasanjo was in office while Mike Akhigbe was the Vice President.</text>
+				<template>AGENT-1 , whose successor was PATIENT-1 was in office while PATIENT-2 was the Vice President .</template>
+				<lexicalization>AGENT-1 , whose successor VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be in office while PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=defined] the Vice President .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abdulsalami_Abubakar</entity>
+				<entity>PATIENT-1 | Olusegun_Obasanjo</entity>
+				<entity>PATIENT-2 | Mike_Akhigbe</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1213" size="2">
+			<originaltripleset>
+				<otriple>Abner_W._Sibal | battles | World_War_II</otriple>
+				<otriple>World_War_II | commander | Joseph_Stalin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abner_W._Sibal | battles | World_War_II</mtriple>
+				<mtriple>World_War_II | commander | Joseph_Stalin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+						<striple>Abner_W._Sibal | battles | World_War_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Joseph_Stalin" number="1" tag="PATIENT-1" type="name">Joseph Stalin</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Abner_W._Sibal" number="3" tag="AGENT-1" type="name">Abner W Sibal</reference>
+				</references>
+				<text>Joseph Stalin was a commander in World War II in which Abner W Sibal also fought.</text>
+				<template>PATIENT-1 was a commander in BRIDGE-1 in which AGENT-1 also fought .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander in BRIDGE-1 in which AGENT-1 also VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_W._Sibal | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_W._Sibal" number="1" tag="AGENT-1" type="name">Abner W. Sibal</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="World_War_II" number="3" tag="BRIDGE-1" type="demonstrative">that war</reference>
+					<reference entity="Joseph_Stalin" number="4" tag="PATIENT-1" type="name">Joseph Stalin</reference>
+				</references>
+				<text>Abner W. Sibal fought in World War II and the commander of Russian during that war was Joseph Stalin.</text>
+				<template>AGENT-1 fought in BRIDGE-1 and the commander of Russian during BRIDGE-1 was PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in BRIDGE-1 and DT[form=defined] the commander of Russian during BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_W._Sibal | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_W._Sibal" number="1" tag="AGENT-1" type="name">Abner W. Sibal</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">WWII</reference>
+					<reference entity="Joseph_Stalin" number="3" tag="PATIENT-1" type="name">Joseph Stalin</reference>
+				</references>
+				<text>Abner W. Sibal fought during WWII and the Russian commander was Joseph Stalin.</text>
+				<template>AGENT-1 fought during BRIDGE-1 and the Russian commander was PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight during BRIDGE-1 and DT[form=defined] the Russian commander VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abner_W._Sibal</entity>
+				<entity>BRIDGE-1 | World_War_II</entity>
+				<entity>PATIENT-1 | Joseph_Stalin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1214" size="2">
+			<originaltripleset>
+				<otriple>Abner_W._Sibal | militaryBranch | United_States_Army</otriple>
+				<otriple>United_States_Army | battles | Korean_War</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abner_W._Sibal | militaryBranch | United_States_Army</mtriple>
+				<mtriple>United_States_Army | battles | Korean_War</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_W._Sibal | militaryBranch | United_States_Army</striple>
+						<striple>United_States_Army | battles | Korean_War</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_W._Sibal" number="1" tag="AGENT-1" type="name">Abner W. Sibal</reference>
+					<reference entity="United_States_Army" number="2" tag="BRIDGE-1" type="description">the United States army</reference>
+					<reference entity="Korean_War" number="3" tag="PATIENT-1" type="description">the Korean War</reference>
+				</references>
+				<text>Abner W. Sibal serve in the United States army which took part in the Korean War.</text>
+				<template>AGENT-1 serve in BRIDGE-1 which took part in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] serve in BRIDGE-1 which VP[aspect=simple,tense=past,voice=active,person=null,number=null] take part in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abner_W._Sibal | militaryBranch | United_States_Army</striple>
+						<striple>United_States_Army | battles | Korean_War</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abner_W._Sibal" number="1" tag="AGENT-1" type="name">Abner W. Sibal</reference>
+					<reference entity="United_States_Army" number="2" tag="BRIDGE-1" type="description">the United States Army</reference>
+					<reference entity="Korean_War" number="3" tag="PATIENT-1" type="description">the Korean War</reference>
+				</references>
+				<text>Abner W. Sibal served in the United States Army, which fought in the Korean War.</text>
+				<template>AGENT-1 served in BRIDGE-1 , which fought in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] serve in BRIDGE-1 , which VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abner_W._Sibal</entity>
+				<entity>BRIDGE-1 | United_States_Army</entity>
+				<entity>PATIENT-1 | Korean_War</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1215" size="2">
+			<originaltripleset>
+				<otriple>Adam_Holloway | birthPlace | Kent</otriple>
+				<otriple>Adam_Holloway | almaMater | Magdalene_College,_Cambridge</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adam_Holloway | birthPlace | Kent</mtriple>
+				<mtriple>Adam_Holloway | almaMater | Magdalene_College,_Cambridge</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Holloway | almaMater | Magdalene_College,_Cambridge</striple>
+						<striple>Adam_Holloway | birthPlace | Kent</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Holloway" number="1" tag="AGENT-1" type="name">Adam Holloway</reference>
+					<reference entity="Magdalene_College,_Cambridge" number="2" tag="PATIENT-2" type="name">Magdalene College Cambridge</reference>
+					<reference entity="Kent" number="3" tag="PATIENT-1" type="name">Kent</reference>
+				</references>
+				<text>Adam Holloway went to school at Magdalene College Cambridge and was born in Kent.</text>
+				<template>AGENT-1 went to school at PATIENT-2 and was born in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] go to school at PATIENT-2 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Holloway | birthPlace | Kent</striple>
+						<striple>Adam_Holloway | almaMater | Magdalene_College,_Cambridge</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Holloway" number="1" tag="AGENT-1" type="name">Adam Holloway</reference>
+					<reference entity="Kent" number="2" tag="PATIENT-1" type="name">Kent</reference>
+					<reference entity="Magdalene_College,_Cambridge" number="3" tag="PATIENT-2" type="name">Magdalene College in Cambridge</reference>
+				</references>
+				<text>Adam Holloway was born in Kent and attended Magdalene College in Cambridge.</text>
+				<template>AGENT-1 was born in PATIENT-1 and attended PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] attend PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_Holloway</entity>
+				<entity>PATIENT-1 | Kent</entity>
+				<entity>PATIENT-2 | Magdalene_College,_Cambridge</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1216" size="2">
+			<originaltripleset>
+				<otriple>Adam_Holloway | residence | Gravesend</otriple>
+				<otriple>Adam_Holloway | birthPlace | Kent</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adam_Holloway | residence | Gravesend</mtriple>
+				<mtriple>Adam_Holloway | birthPlace | Kent</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Holloway | birthPlace | Kent</striple>
+						<striple>Adam_Holloway | residence | Gravesend</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kent" number="1" tag="PATIENT-2" type="name">Kent</reference>
+					<reference entity="Adam_Holloway" number="2" tag="AGENT-1" type="name">Adam Holloway</reference>
+					<reference entity="Gravesend" number="3" tag="PATIENT-1" type="name">Gravesend</reference>
+				</references>
+				<text>Born in Kent, Adam Holloway now lives in Gravesend.</text>
+				<template>Born in PATIENT-2 , AGENT-1 now lives in PATIENT-1 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-2 , AGENT-1 now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] live in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Holloway | birthPlace | Kent</striple>
+						<striple>Adam_Holloway | residence | Gravesend</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Holloway" number="1" tag="AGENT-1" type="name">Adam Holloway</reference>
+					<reference entity="Kent" number="2" tag="PATIENT-2" type="name">Kent</reference>
+					<reference entity="Gravesend" number="3" tag="PATIENT-1" type="name">Gravesend</reference>
+				</references>
+				<text>Adam Holloway was born in Kent and lives in Gravesend.</text>
+				<template>AGENT-1 was born in PATIENT-2 and lives in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] live in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Holloway | birthPlace | Kent</striple>
+						<striple>Adam_Holloway | residence | Gravesend</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Holloway" number="1" tag="AGENT-1" type="name">Adam Holloway</reference>
+					<reference entity="Kent" number="2" tag="PATIENT-2" type="name">Kent</reference>
+					<reference entity="Gravesend" number="3" tag="PATIENT-1" type="name">Gravesend</reference>
+				</references>
+				<text>Adam Holloway was born in Kent and lived in Gravesend.</text>
+				<template>AGENT-1 was born in PATIENT-2 and lived in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] live in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_Holloway</entity>
+				<entity>PATIENT-1 | Gravesend</entity>
+				<entity>PATIENT-2 | Kent</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1217" size="2">
+			<originaltripleset>
+				<otriple>Adam_Koc | battles | World_War_I</otriple>
+				<otriple>Adam_Koc | award | Virtuti_Militari</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adam_Koc | battles | World_War_I</mtriple>
+				<mtriple>Adam_Koc | award | Virtuti_Militari</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Koc | award | Virtuti_Militari</striple>
+						<striple>Adam_Koc | battles | World_War_I</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Koc" number="1" tag="AGENT-1" type="name">Adam Koc</reference>
+					<reference entity="Virtuti_Militari" number="2" tag="PATIENT-2" type="name">Virtuti Militari</reference>
+					<reference entity="World_War_I" number="3" tag="PATIENT-1" type="name">World War I</reference>
+				</references>
+				<text>Adam Koc, who won the Virtuti Militari award, fought in World War I.</text>
+				<template>AGENT-1 , who won the PATIENT-2 award , fought in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] win DT[form=defined] the PATIENT-2 award , VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Koc | battles | World_War_I</striple>
+						<striple>Adam_Koc | award | Virtuti_Militari</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Koc" number="1" tag="AGENT-1" type="name">Adam Koc</reference>
+					<reference entity="World_War_I" number="2" tag="PATIENT-1" type="name">WWI</reference>
+					<reference entity="Adam_Koc" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Virtuti_Militari" number="4" tag="PATIENT-2" type="name">Virtuti Militari</reference>
+				</references>
+				<text>Adam Koc fought in WWI and he was awarded the Virtuti Militari award.</text>
+				<template>AGENT-1 fought in PATIENT-1 and AGENT-1 was awarded the PATIENT-2 award .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 and AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award DT[form=defined] the PATIENT-2 award .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adam_Koc | battles | World_War_I</striple>
+						<striple>Adam_Koc | award | Virtuti_Militari</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adam_Koc" number="1" tag="AGENT-1" type="name">Adam Koc</reference>
+					<reference entity="World_War_I" number="2" tag="PATIENT-1" type="name">WW1</reference>
+					<reference entity="Virtuti_Militari" number="3" tag="PATIENT-2" type="name">Virtuti Militari</reference>
+				</references>
+				<text>Adam Koc fought in WW1 and received the Virtuti Militari award.</text>
+				<template>AGENT-1 fought in PATIENT-1 and received the PATIENT-2 award .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] receive DT[form=defined] the PATIENT-2 award .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adam_Koc</entity>
+				<entity>PATIENT-1 | World_War_I</entity>
+				<entity>PATIENT-2 | Virtuti_Militari</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1218" size="2">
+			<originaltripleset>
+				<otriple>Adonis_Georgiadis | birthPlace | Athens</otriple>
+				<otriple>Adonis_Georgiadis | office | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adonis_Georgiadis | birthPlace | Athens</mtriple>
+				<mtriple>Adonis_Georgiadis | office (workedAt, workedAs) | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adonis_Georgiadis | birthPlace | Athens</striple>
+						<striple>Adonis_Georgiadis | office (workedAt, workedAs) | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adonis_Georgiadis" number="1" tag="AGENT-1" type="name">Adonis Georgiadis</reference>
+					<reference entity="Athens" number="2" tag="PATIENT-1" type="name">Athens</reference>
+					<reference entity="&quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;" number="3" tag="PATIENT-2" type="description">the Deputy Parliamentary Spokesman of the Popular Orthodox Rally</reference>
+				</references>
+				<text>Adonis Georgiadis was born in Athens and has been the Deputy Parliamentary Spokesman of the Popular Orthodox Rally.</text>
+				<template>AGENT-1 was born in PATIENT-1 and has been PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adonis_Georgiadis | birthPlace | Athens</striple>
+						<striple>Adonis_Georgiadis | office (workedAt, workedAs) | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adonis_Georgiadis" number="1" tag="AGENT-1" type="name">Adonis Georgiadis</reference>
+					<reference entity="Athens" number="2" tag="PATIENT-1" type="name">Athens</reference>
+					<reference entity="&quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;" number="3" tag="PATIENT-2" type="description">the Deputy Parliamentary Spokesman for the Popular Orthodox Rally</reference>
+				</references>
+				<text>Adonis Georgiadis was born in Athens and worked as the Deputy Parliamentary Spokesman for the Popular Orthodox Rally.</text>
+				<template>AGENT-1 was born in PATIENT-1 and worked as PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adonis_Georgiadis | birthPlace | Athens</striple>
+						<striple>Adonis_Georgiadis | office (workedAt, workedAs) | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Athens" number="1" tag="PATIENT-1" type="name">Athens</reference>
+					<reference entity="Adonis_Georgiadis" number="2" tag="AGENT-1" type="name">Adonis Georgiadis</reference>
+					<reference entity="&quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;" number="3" tag="PATIENT-2" type="description">the Deputy Parliamentary Spokesman of Popular Orthodox Rally</reference>
+				</references>
+				<text>Bborn in Athens, Adonis Georgiadis, worked as the Deputy Parliamentary Spokesman of Popular Orthodox Rally.</text>
+				<template>Bborn in PATIENT-1 , AGENT-1 , worked as PATIENT-2 .</template>
+				<lexicalization>Bborn in PATIENT-1 , AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adonis_Georgiadis</entity>
+				<entity>PATIENT-1 | Athens</entity>
+				<entity>PATIENT-2 | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1219" size="2">
+			<originaltripleset>
+				<otriple>Adonis_Georgiadis | birthPlace | Greece</otriple>
+				<otriple>Adonis_Georgiadis | placeOfBirth | Athens</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adonis_Georgiadis | birthPlace | Greece</mtriple>
+				<mtriple>Adonis_Georgiadis | birthPlace | Athens</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adonis_Georgiadis | birthPlace | Athens</striple>
+						<striple>Adonis_Georgiadis | birthPlace | Greece</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adonis_Georgiadis" number="1" tag="AGENT-1" type="name">Adonis Georgiadis</reference>
+					<reference entity="Athens" number="2" tag="PATIENT-2" type="name">Athens</reference>
+					<reference entity="Greece" number="3" tag="PATIENT-1" type="name">Greece</reference>
+				</references>
+				<text>Adonis Georgiadis was born in Athens, Greece.</text>
+				<template>AGENT-1 was born in PATIENT-2 , PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 , PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adonis_Georgiadis | birthPlace | Athens</striple>
+						<striple>Adonis_Georgiadis | birthPlace | Greece</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adonis_Georgiadis" number="1" tag="AGENT-1" type="name">Adonis Georgiadis</reference>
+					<reference entity="Athens" number="2" tag="PATIENT-2" type="name">Athens</reference>
+					<reference entity="Greece" number="3" tag="PATIENT-1" type="name">Greece</reference>
+				</references>
+				<text>Adonis Georgiadis was born in Athens, in Greece.</text>
+				<template>AGENT-1 was born in PATIENT-2 , in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 , in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adonis_Georgiadis | birthPlace | Athens</striple>
+						<striple>Adonis_Georgiadis | birthPlace | Greece</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adonis_Georgiadis" number="1" tag="AGENT-1" type="name">Adonis Georgiadis</reference>
+					<reference entity="Athens" number="2" tag="PATIENT-2" type="name">Athens</reference>
+					<reference entity="Greece" number="3" tag="PATIENT-1" type="name">Greece</reference>
+				</references>
+				<text>Adonis Georgiadis was born in Athens in Greece.</text>
+				<template>AGENT-1 was born in PATIENT-2 in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adonis_Georgiadis</entity>
+				<entity>PATIENT-1 | Greece</entity>
+				<entity>PATIENT-2 | Athens</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1220" size="2">
+			<originaltripleset>
+				<otriple>Adonis_Georgiadis | birthPlace | Greece</otriple>
+				<otriple>Adonis_Georgiadis | office | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adonis_Georgiadis | birthPlace | Greece</mtriple>
+				<mtriple>Adonis_Georgiadis | office (workedAt, workedAs) | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adonis_Georgiadis | birthPlace | Greece</striple>
+						<striple>Adonis_Georgiadis | office (workedAt, workedAs) | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Greece" number="1" tag="PATIENT-1" type="name">Greece</reference>
+					<reference entity="Adonis_Georgiadis" number="2" tag="AGENT-1" type="name">Adonis Georgiadis</reference>
+					<reference entity="&quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;" number="3" tag="PATIENT-2" type="description">the Deputy Parliamentary Spokesman of Popular Orthodox Rally</reference>
+				</references>
+				<text>Born in Greece, Adonis Georgiadis, worked as the Deputy Parliamentary Spokesman of Popular Orthodox Rally.</text>
+				<template>Born in PATIENT-1 , AGENT-1 , worked as PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-1 , AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Adonis_Georgiadis | birthPlace | Greece</striple>
+						<striple>Adonis_Georgiadis | office (workedAt, workedAs) | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Greece" number="1" tag="PATIENT-1" type="name">Greek</reference>
+					<reference entity="Adonis_Georgiadis" number="2" tag="AGENT-1" type="name">Adonis Georgiadis</reference>
+					<reference entity="Adonis_Georgiadis" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;" number="4" tag="PATIENT-2" type="description">the Deputy Parliamentary Spokesman of Popular Orthodox Rally</reference>
+				</references>
+				<text>Greek born Adonis Georgiadis @ he has worked as the Deputy Parliamentary Spokesman of Popular Orthodox Rally.</text>
+				<template>PATIENT-1 born AGENT-1 @ AGENT-1 has worked as PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear AGENT-1 AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] work as PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adonis_Georgiadis</entity>
+				<entity>PATIENT-1 | Greece</entity>
+				<entity>PATIENT-2 | &quot;Deputy Parliamentary Spokesman of Popular Orthodox Rally&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1221" size="2">
+			<originaltripleset>
+				<otriple>Agnes_Kant | birthPlace | Hessisch_Oldendorf</otriple>
+				<otriple>Agnes_Kant | office | Parliamentary_group_leader</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Agnes_Kant | birthPlace | Hessisch_Oldendorf</mtriple>
+				<mtriple>Agnes_Kant | office (workedAt, workedAs) | Parliamentary_group_leader</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | birthPlace | Hessisch_Oldendorf</striple>
+						<striple>Agnes_Kant | office (workedAt, workedAs) | Parliamentary_group_leader</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant</reference>
+					<reference entity="Hessisch_Oldendorf" number="2" tag="PATIENT-1" type="name">Hessisch Oldendorf</reference>
+					<reference entity="Parliamentary_group_leader" number="3" tag="PATIENT-2" type="description">the Parliamentary group leader</reference>
+				</references>
+				<text>Agnes Kant, born in Hessisch Oldendorf, worked as the Parliamentary group leader.</text>
+				<template>AGENT-1 , born in PATIENT-1 , worked as PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | birthPlace | Hessisch_Oldendorf</striple>
+						<striple>Agnes_Kant | office (workedAt, workedAs) | Parliamentary_group_leader</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant</reference>
+					<reference entity="Hessisch_Oldendorf" number="2" tag="PATIENT-1" type="name">Hessisch Oldendorf</reference>
+					<reference entity="Parliamentary_group_leader" number="3" tag="PATIENT-2" type="description">a Parliamentary group leader</reference>
+				</references>
+				<text>Agnes Kant was born in Hessisch Oldendorf and was employed as a Parliamentary group leader.</text>
+				<template>AGENT-1 was born in PATIENT-1 and was employed as PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] employ as PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | birthPlace | Hessisch_Oldendorf</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Agnes_Kant | office (workedAt, workedAs) | Parliamentary_group_leader</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant</reference>
+					<reference entity="Hessisch_Oldendorf" number="2" tag="PATIENT-1" type="name">Hessisch Oldendorf</reference>
+					<reference entity="Agnes_Kant" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Parliamentary_group_leader" number="4" tag="PATIENT-2" type="description">a Parliamentary group leader</reference>
+				</references>
+				<text>Agnes Kant birthplace was in Hessisch Oldendorf. He was a Parliamentary group leader.</text>
+				<template>AGENT-1 birthplace was in PATIENT-1 . AGENT-1 was PATIENT-2 .</template>
+				<lexicalization>AGENT-1 birthplace VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agnes_Kant</entity>
+				<entity>PATIENT-1 | Hessisch_Oldendorf</entity>
+				<entity>PATIENT-2 | Parliamentary_group_leader</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1222" size="2">
+			<originaltripleset>
+				<otriple>Airey_Neave | award | Military_Cross</otriple>
+				<otriple>Airey_Neave | unit | Royal_Artillery</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airey_Neave | award | Military_Cross</mtriple>
+				<mtriple>Airey_Neave | unit | Royal_Artillery</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | unit | Royal_Artillery</striple>
+						<striple>Airey_Neave | award | Military_Cross</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Royal_Artillery" number="2" tag="PATIENT-2" type="name">Royal Artillery</reference>
+					<reference entity="Military_Cross" number="3" tag="PATIENT-1" type="description">the Military Cross</reference>
+				</references>
+				<text>Airey Neave served in the Royal Artillery Unit and was awarded the Military Cross.</text>
+				<template>AGENT-1 served in the PATIENT-2 Unit and was awarded PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] serve in DT[form=defined] the PATIENT-2 Unit and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | award | Military_Cross</striple>
+						<striple>Airey_Neave | unit | Royal_Artillery</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Military_Cross" number="2" tag="PATIENT-1" type="description">the Military Cross</reference>
+					<reference entity="Royal_Artillery" number="3" tag="PATIENT-2" type="description">the Royal Artillery</reference>
+				</references>
+				<text>Airey Neave received the Military Cross and served in the Royal Artillery.</text>
+				<template>AGENT-1 received PATIENT-1 and served in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] receive PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] serve in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | unit | Royal_Artillery</striple>
+						<striple>Airey_Neave | award | Military_Cross</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave 's</reference>
+					<reference entity="Royal_Artillery" number="2" tag="PATIENT-2" type="description">the Royal Artillery</reference>
+					<reference entity="Airey_Neave" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Military_Cross" number="4" tag="PATIENT-1" type="description">the Military Cross</reference>
+				</references>
+				<text>Airey Neave's unit was the Royal Artillery and he was awarded the Military Cross.</text>
+				<template>AGENT-1 unit was PATIENT-2 and AGENT-1 was awarded PATIENT-1 .</template>
+				<lexicalization>AGENT-1 unit VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-2 and AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airey_Neave</entity>
+				<entity>PATIENT-1 | Military_Cross</entity>
+				<entity>PATIENT-2 | Royal_Artillery</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1223" size="2">
+			<originaltripleset>
+				<otriple>Airey_Neave | battles | Battle_of_France</otriple>
+				<otriple>Airey_Neave | activeYearsStartDate | &quot;1974-03-04&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airey_Neave | battles | Battle_of_France</mtriple>
+				<mtriple>Airey_Neave | activeYearsStartDate | 1974-03-04</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | battles | Battle_of_France</striple>
+						<striple>Airey_Neave | activeYearsStartDate | 1974-03-04</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Battle_of_France" number="2" tag="PATIENT-1" type="description">the Battle of France</reference>
+					<reference entity="Airey_Neave" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="1974-03-04" number="4" tag="PATIENT-2" type="name">March 4th , 1974</reference>
+				</references>
+				<text>Airey Neave was part of the Battle of France but started his career on March 4th, 1974.</text>
+				<template>AGENT-1 was part of PATIENT-1 but started AGENT-1 career on PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be part of PATIENT-1 but VP[aspect=simple,tense=past,voice=active,person=null,number=null] start AGENT-1 career on PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | activeYearsStartDate | 1974-03-04</striple>
+						<striple>Airey_Neave | battles | Battle_of_France</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Airey_Neave" number="2" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="1974-03-04" number="3" tag="PATIENT-2" type="name">March 4th 1974</reference>
+					<reference entity="Battle_of_France" number="4" tag="PATIENT-1" type="description">the Battle of France</reference>
+				</references>
+				<text>Airey Neave, began his career on March 4th 1974, and fought in the Battle of France.</text>
+				<template>AGENT-1 , began AGENT-1 career on PATIENT-2 , and fought in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] begin AGENT-1 career on PATIENT-2 , and VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | activeYearsStartDate | 1974-03-04</striple>
+						<striple>Airey_Neave | battles | Battle_of_France</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Airey_Neave" number="2" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="1974-03-04" number="3" tag="PATIENT-2" type="name">March 4th 1974</reference>
+					<reference entity="Battle_of_France" number="4" tag="PATIENT-1" type="description">the Battle of France</reference>
+				</references>
+				<text>Airey Neave began his career on March 4th 1974 and was involved in the Battle of France.</text>
+				<template>AGENT-1 began AGENT-1 career on PATIENT-2 and was involved in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] begin AGENT-1 career on PATIENT-2 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] involve in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airey_Neave</entity>
+				<entity>PATIENT-1 | Battle_of_France</entity>
+				<entity>PATIENT-2 | 1974-03-04</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1224" size="2">
+			<originaltripleset>
+				<otriple>Airey_Neave | battles | Battle_of_France</otriple>
+				<otriple>Battle_of_France | commander | Hugo_Sperrle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airey_Neave | battles | Battle_of_France</mtriple>
+				<mtriple>Battle_of_France | commander | Hugo_Sperrle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | battles | Battle_of_France</striple>
+						<striple>Battle_of_France | commander | Hugo_Sperrle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Battle_of_France" number="2" tag="BRIDGE-1" type="description">the Battle of France</reference>
+					<reference entity="Hugo_Sperrle" number="3" tag="PATIENT-1" type="name">Hugo Sperrle</reference>
+				</references>
+				<text>Airey Neave was involved in the Battle of France in which Hugo Sperrle was a commander.</text>
+				<template>AGENT-1 was involved in BRIDGE-1 in which PATIENT-1 was a commander .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] involve in BRIDGE-1 in which PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | battles | Battle_of_France</striple>
+						<striple>Battle_of_France | commander | Hugo_Sperrle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Battle_of_France" number="2" tag="BRIDGE-1" type="description">the Battle of France</reference>
+					<reference entity="Hugo_Sperrle" number="3" tag="PATIENT-1" type="name">Hugo Sperrle</reference>
+				</references>
+				<text>Airey Neave fought in the Battle of France, the battle where Hugo Sperrle was the commander.</text>
+				<template>AGENT-1 fought in BRIDGE-1 , the battle where PATIENT-1 was the commander .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in BRIDGE-1 , DT[form=defined] the battle where PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=defined] the commander .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Battle_of_France | commander | Hugo_Sperrle</striple>
+						<striple>Airey_Neave | battles | Battle_of_France</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Hugo_Sperrle" number="1" tag="PATIENT-1" type="name">Hugo Sperrle</reference>
+					<reference entity="Battle_of_France" number="2" tag="BRIDGE-1" type="description">the Battle of France</reference>
+					<reference entity="Airey_Neave" number="3" tag="AGENT-1" type="name">Airey Neave</reference>
+				</references>
+				<text>Hugo Sperrle was a commander in the Battle of France in which Airey Neave was also involved.</text>
+				<template>PATIENT-1 was a commander in BRIDGE-1 in which AGENT-1 was also involved .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander in BRIDGE-1 in which AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be also VP[aspect=simple,tense=past,voice=active,person=null,number=null] involve .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airey_Neave</entity>
+				<entity>BRIDGE-1 | Battle_of_France</entity>
+				<entity>PATIENT-1 | Hugo_Sperrle</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1225" size="2">
+			<originaltripleset>
+				<otriple>Airey_Neave | battles | World_War_II</otriple>
+				<otriple>Airey_Neave | birthPlace | Knightsbridge</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airey_Neave | battles | World_War_II</mtriple>
+				<mtriple>Airey_Neave | birthPlace | Knightsbridge</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | birthPlace | Knightsbridge</striple>
+						<striple>Airey_Neave | battles | World_War_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Knightsbridge" number="2" tag="PATIENT-2" type="name">Kinightsbridge</reference>
+					<reference entity="World_War_II" number="3" tag="PATIENT-1" type="name">World War II</reference>
+				</references>
+				<text>Airey Neave, who was born in Kinightsbridge, fought in World War II.</text>
+				<template>AGENT-1 , who was born in PATIENT-2 , fought in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | birthPlace | Knightsbridge</striple>
+						<striple>Airey_Neave | battles | World_War_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Knightsbridge" number="1" tag="PATIENT-2" type="name">Kinightsbridge</reference>
+					<reference entity="Airey_Neave" number="2" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="World_War_II" number="3" tag="PATIENT-1" type="name">World War II</reference>
+				</references>
+				<text>Born in Kinightsbridge, Airey Neave fought in World War II.</text>
+				<template>Born in PATIENT-2 , AGENT-1 fought in PATIENT-1 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-2 , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | birthPlace | Knightsbridge</striple>
+						<striple>Airey_Neave | battles | World_War_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="Knightsbridge" number="2" tag="PATIENT-2" type="name">Knightsbridge</reference>
+					<reference entity="World_War_II" number="3" tag="PATIENT-1" type="name">World War II</reference>
+				</references>
+				<text>Airey Neave was born in Knightsbridge and fought in World War II.</text>
+				<template>AGENT-1 was born in PATIENT-2 and fought in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airey_Neave</entity>
+				<entity>PATIENT-1 | World_War_II</entity>
+				<entity>PATIENT-2 | Knightsbridge</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1226" size="2">
+			<originaltripleset>
+				<otriple>Airey_Neave | battles | World_War_II</otriple>
+				<otriple>World_War_II | commander | Franklin_D._Roosevelt</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airey_Neave | battles | World_War_II</mtriple>
+				<mtriple>World_War_II | commander | Franklin_D._Roosevelt</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Franklin_D._Roosevelt</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Franklin_D._Roosevelt" number="3" tag="PATIENT-1" type="name">Franklin D. Roosevelt</reference>
+				</references>
+				<text>Airey Neave fought in World War II where Franklin D. Roosevelt was a commander.</text>
+				<template>AGENT-1 fought in BRIDGE-1 where PATIENT-1 was a commander .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in BRIDGE-1 where PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>World_War_II | commander | Franklin_D._Roosevelt</striple>
+						<striple>Airey_Neave | battles | World_War_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Franklin_D._Roosevelt" number="1" tag="PATIENT-1" type="name">Franklin D Roosevelt</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Airey_Neave" number="3" tag="AGENT-1" type="name">Airey Neave</reference>
+				</references>
+				<text>Franklin D Roosevelt was a commander in World War II , in which Airey Neave fought.</text>
+				<template>PATIENT-1 was a commander in BRIDGE-1 , in which AGENT-1 fought .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander in BRIDGE-1 , in which AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Franklin_D._Roosevelt</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Franklin_D._Roosevelt" number="3" tag="PATIENT-1" type="name">Franklin D. Roosevelt</reference>
+				</references>
+				<text>Airey Neave fought in World War II where Franklin D. Roosevelt was a commander.</text>
+				<template>AGENT-1 fought in BRIDGE-1 where PATIENT-1 was a commander .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in BRIDGE-1 where PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airey_Neave</entity>
+				<entity>BRIDGE-1 | World_War_II</entity>
+				<entity>PATIENT-1 | Franklin_D._Roosevelt</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1227" size="2">
+			<originaltripleset>
+				<otriple>Airey_Neave | battles | World_War_II</otriple>
+				<otriple>World_War_II | commander | Joseph_Stalin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airey_Neave | battles | World_War_II</mtriple>
+				<mtriple>World_War_II | commander | Joseph_Stalin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Joseph_Stalin" number="3" tag="PATIENT-1" type="name">Joseph Stalin</reference>
+				</references>
+				<text>Airey Neave fought in World War II during which Joseph Stalin was a commander.</text>
+				<template>AGENT-1 fought in BRIDGE-1 during which PATIENT-1 was a commander .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in BRIDGE-1 during which PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+						<striple>Airey_Neave | battles | World_War_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Joseph_Stalin" number="1" tag="PATIENT-1" type="name">Joseph Stalin</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Airey_Neave" number="3" tag="AGENT-1" type="name">Airey Neave</reference>
+				</references>
+				<text>Joseph Stalin was a commander in World War II, the war Airey Neave was involved in.</text>
+				<template>PATIENT-1 was a commander in BRIDGE-1 , the war AGENT-1 was involved in .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander in BRIDGE-1 , DT[form=defined] the war AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] involve in .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Airey_Neave | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airey_Neave" number="1" tag="AGENT-1" type="name">Airey Neave</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Joseph_Stalin" number="3" tag="PATIENT-1" type="name">joseph Stalin</reference>
+				</references>
+				<text>Airey Neave fought in World War II, where one of the commanders was, joseph Stalin.</text>
+				<template>AGENT-1 fought in BRIDGE-1 , where one of the commanders was , PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in BRIDGE-1 , where one of DT[form=defined] the commanders VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be , PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airey_Neave</entity>
+				<entity>BRIDGE-1 | World_War_II</entity>
+				<entity>PATIENT-1 | Joseph_Stalin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1228" size="2">
+			<originaltripleset>
+				<otriple>Albert_B._White | deathYear | &quot;1941&quot;^^xsd:gYear</otriple>
+				<otriple>Albert_B._White | dateOfBirth | &quot;1856-09-22&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Albert_B._White | deathYear | 1941</mtriple>
+				<mtriple>Albert_B._White | birthDate | 1856-09-22</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | birthDate | 1856-09-22</striple>
+						<striple>Albert_B._White | deathYear | 1941</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_B._White" number="1" tag="AGENT-1" type="name">Albert B White</reference>
+					<reference entity="1856-09-22" number="2" tag="PATIENT-2" type="name">22nd September 1856</reference>
+					<reference entity="1941" number="3" tag="PATIENT-1" type="name">1941</reference>
+				</references>
+				<text>Albert B White was born on 22nd September 1856 and died in 1941.</text>
+				<template>AGENT-1 was born on PATIENT-2 and died in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | birthDate | 1856-09-22</striple>
+						<striple>Albert_B._White | deathYear | 1941</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_B._White" number="1" tag="AGENT-1" type="name">Albert B White</reference>
+					<reference entity="1856-09-22" number="2" tag="PATIENT-2" type="name">1856-09-22</reference>
+					<reference entity="1941" number="3" tag="PATIENT-1" type="name">1941</reference>
+				</references>
+				<text>Albert B White was born 1856-09-22 and died in 1941.</text>
+				<template>AGENT-1 was born PATIENT-2 and died in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | birthDate | 1856-09-22</striple>
+						<striple>Albert_B._White | deathYear | 1941</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_B._White" number="1" tag="AGENT-1" type="name">Albert B . White</reference>
+					<reference entity="1856-09-22" number="2" tag="PATIENT-2" type="name">22nd September 1856</reference>
+					<reference entity="1941" number="3" tag="PATIENT-1" type="name">1941</reference>
+				</references>
+				<text>Albert B. White was born on 22nd September 1856 and died in 1941.</text>
+				<template>AGENT-1 was born on PATIENT-2 and died in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear on PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albert_B._White</entity>
+				<entity>PATIENT-1 | 1941</entity>
+				<entity>PATIENT-2 | 1856-09-22</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1229" size="2">
+			<originaltripleset>
+				<otriple>Albert_B._White | profession | Politician</otriple>
+				<otriple>Albert_B._White | dateOfBirth | &quot;1856-09-22&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Albert_B._White | profession | Politician</mtriple>
+				<mtriple>Albert_B._White | birthDate | 1856-09-22</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | birthDate | 1856-09-22</striple>
+						<striple>Albert_B._White | profession | Politician</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1856-09-22" number="1" tag="PATIENT-2" type="name">22nd September</reference>
+					<reference entity="Albert_B._White" number="2" tag="AGENT-1" type="name">1856 , Albert B . White 's</reference>
+					<reference entity="Politician" number="3" tag="PATIENT-1" type="name">politician</reference>
+				</references>
+				<text>Born 22nd September, 1856, Albert B. White's profession was politician.</text>
+				<template>Born PATIENT-2 , AGENT-1 profession was PATIENT-1 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear PATIENT-2 , AGENT-1 profession VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | birthDate | 1856-09-22</striple>
+						<striple>Albert_B._White | profession | Politician</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_B._White" number="1" tag="AGENT-1" type="name">Albert B White</reference>
+					<reference entity="1856-09-22" number="2" tag="PATIENT-2" type="name">22nd September 1856</reference>
+					<reference entity="Politician" number="3" tag="PATIENT-1" type="name">politician</reference>
+				</references>
+				<text>Albert B White, born on 22nd September 1856, profession was politician.</text>
+				<template>AGENT-1 , born on PATIENT-2 , profession was PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear on PATIENT-2 , profession VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | birthDate | 1856-09-22</striple>
+						<striple>Albert_B._White | profession | Politician</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_B._White" number="1" tag="AGENT-1" type="name">Albert B White</reference>
+					<reference entity="1856-09-22" number="2" tag="PATIENT-2" type="name">1856-09-22</reference>
+					<reference entity="Politician" number="3" tag="PATIENT-1" type="name">politician</reference>
+				</references>
+				<text>Albert B White, born 1856-09-22, profession was politician.</text>
+				<template>AGENT-1 , born PATIENT-2 , profession was PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear PATIENT-2 , profession VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albert_B._White</entity>
+				<entity>PATIENT-1 | Politician</entity>
+				<entity>PATIENT-2 | 1856-09-22</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1230" size="2">
+			<originaltripleset>
+				<otriple>Albert_Jennings_Fountain | deathPlace | Doña_Ana_County,_New_Mexico</otriple>
+				<otriple>Albert_Jennings_Fountain | birthPlace | New_York_City</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Albert_Jennings_Fountain | deathPlace | Doña_Ana_County,_New_Mexico</mtriple>
+				<mtriple>Albert_Jennings_Fountain | birthPlace | New_York_City</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | birthPlace | New_York_City</striple>
+						<striple>Albert_Jennings_Fountain | deathPlace | Doña_Ana_County,_New_Mexico</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_Jennings_Fountain" number="1" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="New_York_City" number="2" tag="PATIENT-2" type="name">New York City</reference>
+					<reference entity="Doña_Ana_County,_New_Mexico" number="3" tag="PATIENT-1" type="name">Dona Ana County , New Mexico</reference>
+				</references>
+				<text>Albert Jennings Fountain was born in New York City an died in Dona Ana County, New Mexico.</text>
+				<template>AGENT-1 was born in PATIENT-2 an died in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 DT[form=undefined] a VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | birthPlace | New_York_City</striple>
+						<striple>Albert_Jennings_Fountain | deathPlace | Doña_Ana_County,_New_Mexico</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="New_York_City" number="1" tag="PATIENT-2" type="name">New York City</reference>
+					<reference entity="Albert_Jennings_Fountain" number="2" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="Doña_Ana_County,_New_Mexico" number="3" tag="PATIENT-1" type="name">Dona Ana County , New Mexico</reference>
+				</references>
+				<text>Born in New York City, Albert Jennings Fountain, died in Dona Ana County, New Mexico.</text>
+				<template>Born in PATIENT-2 , AGENT-1 , died in PATIENT-1 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-2 , AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | birthPlace | New_York_City</striple>
+						<striple>Albert_Jennings_Fountain | deathPlace | Doña_Ana_County,_New_Mexico</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_Jennings_Fountain" number="1" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="New_York_City" number="2" tag="PATIENT-2" type="name">New York City</reference>
+					<reference entity="Doña_Ana_County,_New_Mexico" number="3" tag="PATIENT-1" type="name">Dona Ana County , New Mexico</reference>
+				</references>
+				<text>Albert Jennings Fountain was born in New York City and died in Dona Ana County, New Mexico.</text>
+				<template>AGENT-1 was born in PATIENT-2 and died in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albert_Jennings_Fountain</entity>
+				<entity>PATIENT-1 | Doña_Ana_County,_New_Mexico</entity>
+				<entity>PATIENT-2 | New_York_City</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1231" size="2">
+			<originaltripleset>
+				<otriple>Albert_Jennings_Fountain | governor | Edmund_J._Davis</otriple>
+				<otriple>Albert_Jennings_Fountain | deathPlace | New_Mexico_Territory</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Albert_Jennings_Fountain | inOfficeWhileVicePresident | Edmund_J._Davis</mtriple>
+				<mtriple>Albert_Jennings_Fountain | deathPlace | New_Mexico_Territory</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | deathPlace | New_Mexico_Territory</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Albert_Jennings_Fountain | inOfficeWhileVicePresident | Edmund_J._Davis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_Jennings_Fountain" number="1" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="New_Mexico_Territory" number="2" tag="PATIENT-2" type="description">the New Mexico Territory</reference>
+					<reference entity="Albert_Jennings_Fountain" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Edmund_J._Davis" number="4" tag="PATIENT-1" type="name">Edmund J. Davis</reference>
+				</references>
+				<text>Albert Jennings Fountain passed away in the New Mexico Territory. He was in office while Edmund J. Davis was Vice President.</text>
+				<template>AGENT-1 passed away in PATIENT-2 . AGENT-1 was in office while PATIENT-1 was Vice President .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] pass away in PATIENT-2 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be in office while PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be Vice President .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | deathPlace | New_Mexico_Territory</striple>
+						<striple>Albert_Jennings_Fountain | inOfficeWhileVicePresident | Edmund_J._Davis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_Jennings_Fountain" number="1" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="New_Mexico_Territory" number="2" tag="PATIENT-2" type="description">the New Mexico territory</reference>
+					<reference entity="Edmund_J._Davis" number="3" tag="PATIENT-1" type="name">Edmund J. Davis</reference>
+				</references>
+				<text>Albert Jennings Fountain, who died in the New Mexico territory, was in office whilst Edmund J. Davis was Vice President.</text>
+				<template>AGENT-1 , who died in PATIENT-2 , was in office whilst PATIENT-1 was Vice President .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be in office whilst PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be Vice President .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | inOfficeWhileVicePresident | Edmund_J._Davis</striple>
+						<striple>Albert_Jennings_Fountain | deathPlace | New_Mexico_Territory</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_Jennings_Fountain" number="1" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="Edmund_J._Davis" number="2" tag="PATIENT-1" type="name">Edmund J. Davis</reference>
+					<reference entity="New_Mexico_Territory" number="3" tag="PATIENT-2" type="name">New Mexico Territory</reference>
+				</references>
+				<text>Albert Jennings Fountain, who was a politician while Vice President Edmund J. Davis was in office later died in New Mexico Territory.</text>
+				<template>AGENT-1 , who was a politician while Vice President PATIENT-1 was in office later died in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a politician while Vice President PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be in office later VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albert_Jennings_Fountain</entity>
+				<entity>PATIENT-1 | Edmund_J._Davis</entity>
+				<entity>PATIENT-2 | New_Mexico_Territory</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1232" size="2">
+			<originaltripleset>
+				<otriple>Albert_Jennings_Fountain | party | Republican_Party_(United_States)</otriple>
+				<otriple>Albert_Jennings_Fountain | birthPlace | New_York_City</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Albert_Jennings_Fountain | party | Republican_Party_(United_States)</mtriple>
+				<mtriple>Albert_Jennings_Fountain | birthPlace | New_York_City</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | birthPlace | New_York_City</striple>
+						<striple>Albert_Jennings_Fountain | party | Republican_Party_(United_States)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="New_York_City" number="1" tag="PATIENT-2" type="name">New York City</reference>
+					<reference entity="Albert_Jennings_Fountain" number="2" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="Republican_Party_(United_States)" number="3" tag="PATIENT-1" type="description">the Republican Party in the U.S.A</reference>
+				</references>
+				<text>New York City is the birthplace of Albert Jennings Fountain who is also a member of the Republican Party in the U.S.A.</text>
+				<template>PATIENT-2 is the birthplace of AGENT-1 who is also a member of PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the birthplace of AGENT-1 who VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be also DT[form=undefined] a member of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | birthPlace | New_York_City</striple>
+						<striple>Albert_Jennings_Fountain | party | Republican_Party_(United_States)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_Jennings_Fountain" number="1" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="New_York_City" number="2" tag="PATIENT-2" type="name">New York</reference>
+					<reference entity="Republican_Party_(United_States)" number="3" tag="PATIENT-1" type="description">the Republican Party</reference>
+				</references>
+				<text>Albert Jennings Fountain was born in New York and is a member of the Republican Party.</text>
+				<template>AGENT-1 was born in PATIENT-2 and is a member of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a member of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_Jennings_Fountain | birthPlace | New_York_City</striple>
+						<striple>Albert_Jennings_Fountain | party | Republican_Party_(United_States)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="New_York_City" number="1" tag="PATIENT-2" type="name">New York City</reference>
+					<reference entity="Albert_Jennings_Fountain" number="2" tag="AGENT-1" type="name">Albert Jennings Fountain</reference>
+					<reference entity="Republican_Party_(United_States)" number="3" tag="PATIENT-1" type="description">the Republican Party in the United States</reference>
+				</references>
+				<text>Born in New York City, Albert Jennings Fountain, was a member of the Republican Party in the United States.</text>
+				<template>Born in PATIENT-2 , AGENT-1 , was a member of PATIENT-1 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in PATIENT-2 , AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albert_Jennings_Fountain</entity>
+				<entity>PATIENT-1 | Republican_Party_(United_States)</entity>
+				<entity>PATIENT-2 | New_York_City</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1233" size="2">
+			<originaltripleset>
+				<otriple>Alberto_Teisaire | office | &quot;Provisional President of the Argentine Senate&quot;</otriple>
+				<otriple>Alberto_Teisaire | successor | Isaac_Rojas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alberto_Teisaire | office (workedAt, workedAs) | &quot;Provisional President of the Argentine Senate&quot;</mtriple>
+				<mtriple>Alberto_Teisaire | successor | Isaac_Rojas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alberto_Teisaire | office (workedAt, workedAs) | &quot;Provisional President of the Argentine Senate&quot;</striple>
+						<striple>Alberto_Teisaire | successor | Isaac_Rojas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alberto_Teisaire" number="1" tag="AGENT-1" type="name">Alberto Teisaire</reference>
+					<reference entity="&quot;Provisional President of the Argentine Senate&quot;" number="2" tag="PATIENT-1" type="description">the Provisional President of the Argentine Senate</reference>
+					<reference entity="Isaac_Rojas" number="3" tag="PATIENT-2" type="name">Isaac Rojas</reference>
+				</references>
+				<text>Alberto Teisaire worked as the Provisional President of the Argentine Senate and was succeded by Isaac Rojas.</text>
+				<template>AGENT-1 worked as PATIENT-1 and was succeded by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succede by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alberto_Teisaire | office (workedAt, workedAs) | &quot;Provisional President of the Argentine Senate&quot;</striple>
+						<striple>Alberto_Teisaire | successor | Isaac_Rojas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alberto_Teisaire" number="1" tag="AGENT-1" type="name">Alberto Teisaire</reference>
+					<reference entity="&quot;Provisional President of the Argentine Senate&quot;" number="2" tag="PATIENT-1" type="description">a Provisional President of the Argentine Senate</reference>
+					<reference entity="Isaac_Rojas" number="3" tag="PATIENT-2" type="name">Isaac Rojas</reference>
+				</references>
+				<text>Alberto Teisaire worked as a Provisional President of the Argentine Senate and was succeeded by Isaac Rojas.</text>
+				<template>AGENT-1 worked as PATIENT-1 and was succeeded by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alberto_Teisaire | successor | Isaac_Rojas</striple>
+						<striple>Alberto_Teisaire | office (workedAt, workedAs) | &quot;Provisional President of the Argentine Senate&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Isaac_Rojas" number="1" tag="PATIENT-2" type="name">Isaac Rojas</reference>
+					<reference entity="Alberto_Teisaire" number="2" tag="AGENT-1" type="name">Alberto Teisaire</reference>
+					<reference entity="&quot;Provisional President of the Argentine Senate&quot;" number="3" tag="PATIENT-1" type="description">a Provisional President of the Argentine Senate</reference>
+				</references>
+				<text>Isaac Rojas was the successor to Alberto Teisaire, who worked as a Provisional President of the Argentine Senate.</text>
+				<template>PATIENT-2 was the successor to AGENT-1 , who worked as PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=defined] the successor to AGENT-1 , who VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alberto_Teisaire</entity>
+				<entity>PATIENT-1 | &quot;Provisional President of the Argentine Senate&quot;</entity>
+				<entity>PATIENT-2 | Isaac_Rojas</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1234" size="2">
+			<originaltripleset>
+				<otriple>Alfons_Gorbach | placeOfBirth | Austria</otriple>
+				<otriple>Alfons_Gorbach | birthPlace | Austria-Hungary</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfons_Gorbach | birthPlace | Austria</mtriple>
+				<mtriple>Alfons_Gorbach | birthPlace | Austria-Hungary</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfons_Gorbach | birthPlace | Austria-Hungary</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfons_Gorbach" number="1" tag="AGENT-1" type="name">Alfons Gorbach 's</reference>
+					<reference entity="Austria-Hungary" number="2" tag="PATIENT-2" type="name">Austria-Hungary</reference>
+				</references>
+				<text>Alfons Gorbach's birthplace was Austria-Hungary.</text>
+				<template>AGENT-1 birthplace was PATIENT-2 .</template>
+				<lexicalization>AGENT-1 birthplace VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfons_Gorbach | birthPlace | Austria</striple>
+						<striple>Alfons_Gorbach | birthPlace | Austria-Hungary</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfons_Gorbach" number="1" tag="AGENT-1" type="name">Alfons Gorbach</reference>
+					<reference entity="Austria" number="2" tag="PATIENT-1" type="name">Austria</reference>
+					<reference entity="Austria-Hungary" number="3" tag="PATIENT-2" type="name">Austria- Hungary</reference>
+				</references>
+				<text>Alfons Gorbach was born in Austria and Austria- Hungary.</text>
+				<template>AGENT-1 was born in PATIENT-1 and PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfons_Gorbach | birthPlace | Austria-Hungary</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfons_Gorbach" number="1" tag="AGENT-1" type="name">Alfons Gorbach</reference>
+					<reference entity="Austria-Hungary" number="2" tag="PATIENT-2" type="name">Austria Hungary</reference>
+				</references>
+				<text>Alfons Gorbach was born in Austria Hungary.</text>
+				<template>AGENT-1 was born in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfons_Gorbach</entity>
+				<entity>PATIENT-1 | Austria</entity>
+				<entity>PATIENT-2 | Austria-Hungary</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1235" size="2">
+			<originaltripleset>
+				<otriple>Alfons_Gorbach | birthPlace | Tyrol_(state)</otriple>
+				<otriple>Alfons_Gorbach | placeOfBirth | Austria</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfons_Gorbach | birthPlace | Tyrol_(state)</mtriple>
+				<mtriple>Alfons_Gorbach | birthPlace | Austria</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfons_Gorbach | birthPlace | Tyrol_(state)</striple>
+						<striple>Alfons_Gorbach | birthPlace | Austria</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfons_Gorbach" number="1" tag="AGENT-1" type="name">Alfons Gorbach</reference>
+					<reference entity="Tyrol_(state)" number="2" tag="PATIENT-1" type="description">the state of Tyrol</reference>
+					<reference entity="Austria" number="3" tag="PATIENT-2" type="name">Austria</reference>
+				</references>
+				<text>Alfons Gorbach was born in the state of Tyrol, in Austria.</text>
+				<template>AGENT-1 was born in PATIENT-1 , in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 , in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfons_Gorbach | birthPlace | Tyrol_(state)</striple>
+						<striple>Alfons_Gorbach | birthPlace | Austria</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfons_Gorbach" number="1" tag="AGENT-1" type="name">Alfons Gorbach</reference>
+					<reference entity="Tyrol_(state)" number="2" tag="PATIENT-1" type="name">Tyrol state</reference>
+					<reference entity="Austria" number="3" tag="PATIENT-2" type="name">Austria</reference>
+				</references>
+				<text>Alfons Gorbach was born in Tyrol state in Austria.</text>
+				<template>AGENT-1 was born in PATIENT-1 in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfons_Gorbach | birthPlace | Tyrol_(state)</striple>
+						<striple>Alfons_Gorbach | birthPlace | Austria</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfons_Gorbach" number="1" tag="AGENT-1" type="name">Alfons Gorbach</reference>
+					<reference entity="Tyrol_(state)" number="2" tag="PATIENT-1" type="description">the state of Tyrol</reference>
+					<reference entity="Austria" number="3" tag="PATIENT-2" type="name">Austria</reference>
+				</references>
+				<text>Alfons Gorbach was born in the state of Tyrol in Austria.</text>
+				<template>AGENT-1 was born in PATIENT-1 in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfons_Gorbach</entity>
+				<entity>PATIENT-1 | Tyrol_(state)</entity>
+				<entity>PATIENT-2 | Austria</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1236" size="2">
+			<originaltripleset>
+				<otriple>Alfred_Moore_Scales | successor | James_W._Reid_(politician)</otriple>
+				<otriple>Alfred_Moore_Scales | office | &quot;Governor of North Carolina&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfred_Moore_Scales | office (workedAt, workedAs) | &quot;Governor of North Carolina&quot;</mtriple>
+				<mtriple>Alfred_Moore_Scales | successor | James_W._Reid_(politician)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_Moore_Scales | office (workedAt, workedAs) | &quot;Governor of North Carolina&quot;</striple>
+						<striple>Alfred_Moore_Scales | successor | James_W._Reid_(politician)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_Moore_Scales" number="1" tag="AGENT-1" type="name">Alfred Moore Scales</reference>
+					<reference entity="&quot;Governor of North Carolina&quot;" number="2" tag="PATIENT-1" type="name">Governor of North Carolina</reference>
+					<reference entity="James_W._Reid_(politician)" number="3" tag="PATIENT-2" type="name">James W Reid</reference>
+				</references>
+				<text>Alfred Moore Scales, Governor of North Carolina was succeeded by James W Reid.</text>
+				<template>AGENT-1 , PATIENT-1 was succeeded by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , PATIENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_Moore_Scales | office (workedAt, workedAs) | &quot;Governor of North Carolina&quot;</striple>
+						<striple>Alfred_Moore_Scales | successor | James_W._Reid_(politician)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_Moore_Scales" number="1" tag="AGENT-1" type="name">Alfred Moore Scales</reference>
+					<reference entity="&quot;Governor of North Carolina&quot;" number="2" tag="PATIENT-1" type="name">Governor of North Carolina</reference>
+					<reference entity="James_W._Reid_(politician)" number="3" tag="PATIENT-2" type="description">the politician James W Reid</reference>
+				</references>
+				<text>Alfred Moore Scales, was Governor of North Carolina, and was succeeded by the politician James W Reid.</text>
+				<template>AGENT-1 , was PATIENT-1 , and was succeeded by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 , and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_Moore_Scales | office (workedAt, workedAs) | &quot;Governor of North Carolina&quot;</striple>
+						<striple>Alfred_Moore_Scales | successor | James_W._Reid_(politician)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_Moore_Scales" number="1" tag="AGENT-1" type="name">Alfred Moore Scales</reference>
+					<reference entity="&quot;Governor of North Carolina&quot;" number="2" tag="PATIENT-1" type="name">Governor of North Carolina</reference>
+					<reference entity="James_W._Reid_(politician)" number="3" tag="PATIENT-2" type="name">James W. Reid</reference>
+				</references>
+				<text>Alfred Moore Scales was Governor of North Carolina and was succeeded by James W. Reid.</text>
+				<template>AGENT-1 was PATIENT-1 and was succeeded by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfred_Moore_Scales</entity>
+				<entity>PATIENT-1 | &quot;Governor of North Carolina&quot;</entity>
+				<entity>PATIENT-2 | James_W._Reid_(politician)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1237" size="2">
+			<originaltripleset>
+				<otriple>Alfred_Moore_Scales | successor | Daniel_Gould_Fowle</otriple>
+				<otriple>Daniel_Gould_Fowle | almaMater | Princeton_University</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfred_Moore_Scales | successor | Daniel_Gould_Fowle</mtriple>
+				<mtriple>Daniel_Gould_Fowle | almaMater | Princeton_University</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_Moore_Scales | successor | Daniel_Gould_Fowle</striple>
+						<striple>Daniel_Gould_Fowle | almaMater | Princeton_University</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_Moore_Scales" number="1" tag="AGENT-1" type="name">Alfred Moore Scales</reference>
+					<reference entity="Daniel_Gould_Fowle" number="2" tag="BRIDGE-1" type="name">Daniel Gould Fowle</reference>
+					<reference entity="Alfred_Moore_Scales" number="3" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Princeton_University" number="4" tag="PATIENT-1" type="name">Princeton University</reference>
+				</references>
+				<text>Alfred Moore Scales was succeeded by Daniel Gould Fowle, his alma mater is Princeton University.</text>
+				<template>AGENT-1 was succeeded by BRIDGE-1 , AGENT-1 alma mater is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by BRIDGE-1 , AGENT-1 alma mater VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Daniel_Gould_Fowle | almaMater | Princeton_University</striple>
+						<striple>Alfred_Moore_Scales | successor | Daniel_Gould_Fowle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Daniel_Gould_Fowle" number="1" tag="BRIDGE-1" type="name">Daniel Gould Fowle</reference>
+					<reference entity="Princeton_University" number="2" tag="PATIENT-1" type="name">Princeton University</reference>
+					<reference entity="Alfred_Moore_Scales" number="3" tag="AGENT-1" type="name">Alfred Moore Scales</reference>
+				</references>
+				<text>Daniel Gould Fowle, attended Princeton University, and suceeded Alfred Moore Scales.</text>
+				<template>BRIDGE-1 , attended PATIENT-1 , and suceeded AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] attend PATIENT-1 , and VP[aspect=simple,tense=past,voice=active,person=null,number=null] suceed AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Daniel_Gould_Fowle | almaMater | Princeton_University</striple>
+						<striple>Alfred_Moore_Scales | successor | Daniel_Gould_Fowle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Daniel_Gould_Fowle" number="1" tag="BRIDGE-1" type="name">Daniel Gould Fowle</reference>
+					<reference entity="Princeton_University" number="2" tag="PATIENT-1" type="name">Princeton University</reference>
+					<reference entity="Daniel_Gould_Fowle" number="3" tag="BRIDGE-1" type="pronoun">he</reference>
+					<reference entity="Alfred_Moore_Scales" number="4" tag="AGENT-1" type="name">Alfred Moore Scales</reference>
+				</references>
+				<text>Daniel Gould Fowle attended Princeton University and he succeeded Alfred Moore Scales.</text>
+				<template>BRIDGE-1 attended PATIENT-1 and BRIDGE-1 succeeded AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] attend PATIENT-1 and BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] succeed AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfred_Moore_Scales</entity>
+				<entity>BRIDGE-1 | Daniel_Gould_Fowle</entity>
+				<entity>PATIENT-1 | Princeton_University</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1238" size="2">
+			<originaltripleset>
+				<otriple>Alfred_N._Phillips | birthPlace | Connecticut</otriple>
+				<otriple>Alfred_N._Phillips | office | United_States_House_of_Representatives</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfred_N._Phillips | birthPlace | Connecticut</mtriple>
+				<mtriple>Alfred_N._Phillips | office (workedAt, workedAs) | United_States_House_of_Representatives</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_N._Phillips | office (workedAt, workedAs) | United_States_House_of_Representatives</striple>
+						<striple>Alfred_N._Phillips | birthPlace | Connecticut</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_N._Phillips" number="1" tag="AGENT-1" type="name">Alfred N. Phillips</reference>
+					<reference entity="United_States_House_of_Representatives" number="2" tag="PATIENT-2" type="description">the U.S. House of Representatives</reference>
+					<reference entity="Alfred_N._Phillips" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Connecticut" number="4" tag="PATIENT-1" type="name">Connecticut</reference>
+				</references>
+				<text>Alfred N. Phillips was part of the U.S. House of Representatives and he was born in Connecticut.</text>
+				<template>AGENT-1 was part of PATIENT-2 and AGENT-1 was born in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be part of PATIENT-2 and AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_N._Phillips | birthPlace | Connecticut</striple>
+						<striple>Alfred_N._Phillips | office (workedAt, workedAs) | United_States_House_of_Representatives</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_N._Phillips" number="1" tag="AGENT-1" type="name">Alfred N. Phillips</reference>
+					<reference entity="Connecticut" number="2" tag="PATIENT-1" type="name">Connecticut</reference>
+					<reference entity="United_States_House_of_Representatives" number="3" tag="PATIENT-2" type="description">the United States House of Representatives</reference>
+				</references>
+				<text>Alfred N. Phillips was born in Connecticut and worked at the United States House of Representatives.</text>
+				<template>AGENT-1 was born in PATIENT-1 and worked at PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] work at PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfred_N._Phillips</entity>
+				<entity>PATIENT-1 | Connecticut</entity>
+				<entity>PATIENT-2 | United_States_House_of_Representatives</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1239" size="2">
+			<originaltripleset>
+				<otriple>Alfred_N._Phillips | militaryBranch | United_States_Army</otriple>
+				<otriple>United_States_Army | battles | American_Civil_War</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfred_N._Phillips | militaryBranch | United_States_Army</mtriple>
+				<mtriple>United_States_Army | battles | American_Civil_War</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_N._Phillips | militaryBranch | United_States_Army</striple>
+						<striple>United_States_Army | battles | American_Civil_War</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_N._Phillips" number="1" tag="AGENT-1" type="name">Alfred N. Phillips</reference>
+					<reference entity="United_States_Army" number="2" tag="BRIDGE-1" type="description">the United States Army</reference>
+					<reference entity="American_Civil_War" number="3" tag="PATIENT-1" type="description">the American Civil War</reference>
+				</references>
+				<text>Alfred N. Phillips served in the United States Army which fought in the American Civil War.</text>
+				<template>AGENT-1 served in BRIDGE-1 which fought in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] serve in BRIDGE-1 which VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_N._Phillips | militaryBranch | United_States_Army</striple>
+						<striple>United_States_Army | battles | American_Civil_War</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_N._Phillips" number="1" tag="AGENT-1" type="name">Alfred N. Phillip</reference>
+					<reference entity="United_States_Army" number="2" tag="BRIDGE-1" type="description">the US Army</reference>
+					<reference entity="American_Civil_War" number="3" tag="PATIENT-1" type="description">the American Civil War</reference>
+				</references>
+				<text>Alfred N. Phillip was a member of the US Army that fought in the American Civil War.</text>
+				<template>AGENT-1 was a member of BRIDGE-1 that fought in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of BRIDGE-1 that VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfred_N._Phillips | militaryBranch | United_States_Army</striple>
+						<striple>United_States_Army | battles | American_Civil_War</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_N._Phillips" number="1" tag="AGENT-1" type="name">Alfred N. Phillips</reference>
+					<reference entity="United_States_Army" number="2" tag="BRIDGE-1" type="description">the United States , Army ,</reference>
+					<reference entity="American_Civil_War" number="3" tag="PATIENT-1" type="description">the American Civil War</reference>
+				</references>
+				<text>Alfred N. Phillips served in the United States, Army, which battled in the American Civil War.</text>
+				<template>AGENT-1 served in BRIDGE-1 which battled in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] serve in BRIDGE-1 which VP[aspect=simple,tense=past,voice=active,person=null,number=null] battle in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfred_N._Phillips</entity>
+				<entity>BRIDGE-1 | United_States_Army</entity>
+				<entity>PATIENT-1 | American_Civil_War</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1240" size="2">
+			<originaltripleset>
+				<otriple>Allan_Shivers | battles | World_War_II</otriple>
+				<otriple>World_War_II | commander | Joseph_Stalin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Allan_Shivers | battles | World_War_II</mtriple>
+				<mtriple>World_War_II | commander | Joseph_Stalin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Joseph_Stalin" number="3" tag="PATIENT-1" type="name">Joseph Stalin</reference>
+				</references>
+				<text>Allan Shivers fought during World War II in which Joseph Stalin was a commander.</text>
+				<template>AGENT-1 fought during BRIDGE-1 in which PATIENT-1 was a commander .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight during BRIDGE-1 in which PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a commander .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Joseph_Stalin" number="3" tag="PATIENT-1" type="name">Joseph Stalin</reference>
+				</references>
+				<text>Allan Shivers fought in World War II where Joseph Stalin was also a commander.</text>
+				<template>AGENT-1 fought in BRIDGE-1 where PATIENT-1 was also a commander .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight in BRIDGE-1 where PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be also DT[form=undefined] a commander .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | battles | World_War_II</striple>
+						<striple>World_War_II | commander | Joseph_Stalin</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="World_War_II" number="2" tag="BRIDGE-1" type="name">World War II</reference>
+					<reference entity="Joseph_Stalin" number="3" tag="PATIENT-1" type="name">Joseph Stalin</reference>
+				</references>
+				<text>Allan Shivers fought battles in World War II and the commander of Russia at the time was Joseph Stalin.</text>
+				<template>AGENT-1 fought battles in BRIDGE-1 and the commander of Russia at the time was PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] fight battles in BRIDGE-1 and DT[form=defined] the commander of Russia at DT[form=defined] the time VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allan_Shivers</entity>
+				<entity>BRIDGE-1 | World_War_II</entity>
+				<entity>PATIENT-1 | Joseph_Stalin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1241" size="2">
+			<originaltripleset>
+				<otriple>Allan_Shivers | office | &quot;Member of theTexas State SenatefromDistrict 4(Port Arthur)&quot;</otriple>
+				<otriple>Allan_Shivers | birthPlace | Lufkin,_Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Allan_Shivers | birthPlace | Lufkin,_Texas</mtriple>
+				<mtriple>Allan_Shivers | office (workedAt, workedAs) | &quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | birthPlace | Lufkin,_Texas</striple>
+						<striple>Allan_Shivers | office (workedAt, workedAs) | &quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="Lufkin,_Texas" number="2" tag="PATIENT-1" type="name">Lufkin , Texas</reference>
+					<reference entity="&quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;" number="3" tag="PATIENT-2" type="description">the Texas State Senate from District 4 ( Port Arthur )</reference>
+				</references>
+				<text>Allan Shivers was born in Lufkin, Texas and was a member of the Texas State Senate from District 4 (Port Arthur).</text>
+				<template>AGENT-1 was born in PATIENT-1 and was a member of PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | office (workedAt, workedAs) | &quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;</striple>
+						<striple>Allan_Shivers | birthPlace | Lufkin,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="&quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;" number="2" tag="PATIENT-2" type="description">the Texas State Senate from District 4 ( Port Arthur )</reference>
+					<reference entity="Lufkin,_Texas" number="3" tag="PATIENT-1" type="name">Lufkin , Texas</reference>
+				</references>
+				<text>Allan Shivers who worked as a member of the Texas State Senate from District 4 (Port Arthur), was born in Lufkin, Texas.</text>
+				<template>AGENT-1 who worked as a member of PATIENT-2 , was born in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 who VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as DT[form=undefined] a member of PATIENT-2 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | office (workedAt, workedAs) | &quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;</striple>
+						<striple>Allan_Shivers | birthPlace | Lufkin,_Texas</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="&quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;" number="2" tag="PATIENT-2" type="description">the Texas State Senate District 4 for Port Arthur</reference>
+					<reference entity="Lufkin,_Texas" number="3" tag="PATIENT-1" type="name">Lufkin Texas</reference>
+				</references>
+				<text>Allan Shivers was a member of the Texas State Senate District 4 for Port Arthur and was born in Lufkin Texas.</text>
+				<template>AGENT-1 was a member of PATIENT-2 and was born in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of PATIENT-2 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allan_Shivers</entity>
+				<entity>PATIENT-1 | Lufkin,_Texas</entity>
+				<entity>PATIENT-2 | &quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1242" size="2">
+			<originaltripleset>
+				<otriple>Allan_Shivers | office | &quot;Member of theTexas State SenatefromDistrict 4(Port Arthur)&quot;</otriple>
+				<otriple>Allan_Shivers | successor | Ben_Ramsey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Allan_Shivers | office (workedAt, workedAs) | &quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;</mtriple>
+				<mtriple>Allan_Shivers | successor | Ben_Ramsey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | office (workedAt, workedAs) | &quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Allan_Shivers | successor | Ben_Ramsey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="&quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;" number="2" tag="PATIENT-1" type="description">the Texas State Senate District 4 for Port Arthur</reference>
+					<reference entity="Ben_Ramsey" number="3" tag="PATIENT-2" type="name">Ben Ramsey</reference>
+					<reference entity="Allan_Shivers" number="4" tag="AGENT-1" type="pronoun">him</reference>
+				</references>
+				<text>Allan Shivers was part of the Texas State Senate District 4 for Port Arthur. Ben Ramsey succeeded him.</text>
+				<template>AGENT-1 was part of PATIENT-1 . PATIENT-2 succeeded AGENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be part of PATIENT-1 . PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] succeed AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | successor | Ben_Ramsey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="Ben_Ramsey" number="2" tag="PATIENT-2" type="description">the Texas State Senate from District 4 ( Port Arthur )</reference>
+					<reference entity="Allan_Shivers" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Ben_Ramsey" number="4" tag="PATIENT-2" type="name">Ben Ramsey</reference>
+				</references>
+				<text>Allan Shivers worked as a member of the Texas State Senate from District 4 (Port Arthur) @ he was succeed by Ben Ramsey.</text>
+				<template>AGENT-1 worked as a member of PATIENT-2 @ AGENT-1 was succeed by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as DT[form=undefined] a member of PATIENT-2 AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Allan_Shivers | successor | Ben_Ramsey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Allan_Shivers" number="1" tag="AGENT-1" type="name">Allan Shivers</reference>
+					<reference entity="Ben_Ramsey" number="2" tag="PATIENT-2" type="description">the Texas State Senate District 4 for Port Arthur</reference>
+					<reference entity="Ben_Ramsey" number="3" tag="PATIENT-2" type="name">Ben Ramsey</reference>
+					<reference entity="Allan_Shivers" number="4" tag="AGENT-1" type="pronoun">him</reference>
+				</references>
+				<text>Allan Shivers was a member of the Texas State Senate District 4 for Port Arthur and Ben Ramsey succeeded him.</text>
+				<template>AGENT-1 was a member of PATIENT-2 and PATIENT-2 succeeded AGENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a member of PATIENT-2 and PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] succeed AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Allan_Shivers</entity>
+				<entity>PATIENT-1 | &quot;Member of the Texas State Senate from District 4 (Port Arthur)&quot;</entity>
+				<entity>PATIENT-2 | Ben_Ramsey</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1243" size="2">
+			<originaltripleset>
+				<otriple>Alvah_Sabin | birthDate | &quot;1793-10-23&quot;^^xsd:date</otriple>
+				<otriple>Alvah_Sabin | office | Secretary_of_State_of_Vermont</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alvah_Sabin | birthDate | 1793-10-23</mtriple>
+				<mtriple>Alvah_Sabin | office (workedAt, workedAs) | Secretary_of_State_of_Vermont</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alvah_Sabin | birthDate | 1793-10-23</striple>
+						<striple>Alvah_Sabin | office (workedAt, workedAs) | Secretary_of_State_of_Vermont</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alvah_Sabin" number="1" tag="AGENT-1" type="name">Alvah Sabin</reference>
+					<reference entity="1793-10-23" number="2" tag="PATIENT-1" type="name">October 23 , 1793</reference>
+					<reference entity="Secretary_of_State_of_Vermont" number="3" tag="PATIENT-2" type="description">the secretary of the State of Vermont</reference>
+				</references>
+				<text>Alvah Sabin was born October 23, 1793 and worked as the secretary of the State of Vermont.</text>
+				<template>AGENT-1 was born PATIENT-1 and worked as PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alvah_Sabin | birthDate | 1793-10-23</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alvah_Sabin | office (workedAt, workedAs) | Secretary_of_State_of_Vermont</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alvah_Sabin" number="1" tag="AGENT-1" type="name">Alvah Sabin</reference>
+					<reference entity="1793-10-23" number="2" tag="PATIENT-1" type="name">October 23 , 1793</reference>
+					<reference entity="Alvah_Sabin" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Secretary_of_State_of_Vermont" number="4" tag="PATIENT-2" type="name">secretary of Vermont</reference>
+				</references>
+				<text>Alvah Sabin was born October 23, 1793. He worked as secretary of Vermont.</text>
+				<template>AGENT-1 was born PATIENT-1 . AGENT-1 worked as PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alvah_Sabin | birthDate | 1793-10-23</striple>
+						<striple>Alvah_Sabin | office (workedAt, workedAs) | Secretary_of_State_of_Vermont</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alvah_Sabin" number="1" tag="AGENT-1" type="name">Alvah Sabin</reference>
+					<reference entity="1793-10-23" number="2" tag="PATIENT-1" type="name">October 23 , 1793</reference>
+					<reference entity="Secretary_of_State_of_Vermont" number="3" tag="PATIENT-2" type="description">the Secretary of State of Vermont</reference>
+				</references>
+				<text>Alvah Sabin was born October 23, 1793 and worked as the Secretary of State of Vermont.</text>
+				<template>AGENT-1 was born PATIENT-1 and worked as PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] work as PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alvah_Sabin</entity>
+				<entity>PATIENT-1 | 1793-10-23</entity>
+				<entity>PATIENT-2 | Secretary_of_State_of_Vermont</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1244" size="2">
+			<originaltripleset>
+				<otriple>Netherlands | currency | Euro</otriple>
+				<otriple>Agnes_Kant | country | Netherlands</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Netherlands | currency | Euro</mtriple>
+				<mtriple>Agnes_Kant | country | Netherlands</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | country | Netherlands</striple>
+						<striple>Netherlands | currency | Euro</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant 's</reference>
+					<reference entity="Netherlands" number="2" tag="BRIDGE-1" type="description">the Netherlands</reference>
+					<reference entity="Euro" number="3" tag="PATIENT-1" type="description">the euro</reference>
+				</references>
+				<text>Agnes Kant's country is the Netherlands where the currency is the euro.</text>
+				<template>AGENT-1 country is BRIDGE-1 where the currency is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 country VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 where DT[form=defined] the currency VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | country | Netherlands</striple>
+						<striple>Netherlands | currency | Euro</striple>
+					</sentence>
+					<sentence ID="2"/>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant</reference>
+					<reference entity="Netherlands" number="2" tag="BRIDGE-1" type="name">Netherlands</reference>
+					<reference entity="Euro" number="3" tag="PATIENT-1" type="name">Euro</reference>
+				</references>
+				<text>Agnes Kant is a resident of Netherlands which uses the Euro as its currency..</text>
+				<template>AGENT-1 is a resident of BRIDGE-1 which uses the PATIENT-1 as BRIDGE-1 currency . .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a resident of BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use DT[form=defined] the PATIENT-1 as BRIDGE-1 currency . .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | country | Netherlands</striple>
+						<striple>Netherlands | currency | Euro</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant</reference>
+					<reference entity="Netherlands" number="2" tag="BRIDGE-1" type="description">the Netherlands</reference>
+					<reference entity="Euro" number="3" tag="PATIENT-1" type="description">the Euro</reference>
+				</references>
+				<text>Agnes Kant comes from the Netherlands where the currency is the Euro.</text>
+				<template>AGENT-1 comes from BRIDGE-1 where the currency is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] come from BRIDGE-1 where DT[form=defined] the currency VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agnes_Kant</entity>
+				<entity>BRIDGE-1 | Netherlands</entity>
+				<entity>PATIENT-1 | Euro</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1245" size="2">
+			<originaltripleset>
+				<otriple>Netherlands | leader | Mark_Rutte</otriple>
+				<otriple>Agnes_Kant | country | Netherlands</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Netherlands | leaderName | Mark_Rutte</mtriple>
+				<mtriple>Agnes_Kant | country | Netherlands</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | country | Netherlands</striple>
+						<striple>Netherlands | leaderName | Mark_Rutte</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant</reference>
+					<reference entity="Netherlands" number="2" tag="BRIDGE-1" type="description">The Netherlands</reference>
+					<reference entity="Mark_Rutte" number="3" tag="PATIENT-1" type="name">Mark Rutte</reference>
+				</references>
+				<text>Agnes Kant lives in The Netherlands whose leader is Mark Rutte.</text>
+				<template>AGENT-1 lives in BRIDGE-1 whose leader is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] live in BRIDGE-1 whose leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | country | Netherlands</striple>
+						<striple>Netherlands | leaderName | Mark_Rutte</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant</reference>
+					<reference entity="Netherlands" number="2" tag="BRIDGE-1" type="description">the Netherlands</reference>
+					<reference entity="Mark_Rutte" number="3" tag="PATIENT-1" type="name">Mark Rutte</reference>
+				</references>
+				<text>Agnes Kant is from the Netherlands, the leader of which, is Mark Rutte.</text>
+				<template>AGENT-1 is from BRIDGE-1 , the leader of which , is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be from BRIDGE-1 , DT[form=defined] the leader of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Agnes_Kant | country | Netherlands</striple>
+						<striple>Netherlands | leaderName | Mark_Rutte</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Agnes_Kant" number="1" tag="AGENT-1" type="name">Agnes Kant 's</reference>
+					<reference entity="Netherlands" number="2" tag="BRIDGE-1" type="description">the Netherlands</reference>
+					<reference entity="Mark_Rutte" number="3" tag="PATIENT-1" type="name">Mark Rutte</reference>
+				</references>
+				<text>Agnes Kant's country is the Netherlands, the leader of which, is Mark Rutte.</text>
+				<template>AGENT-1 country is BRIDGE-1 , the leader of which , is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 country VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , DT[form=defined] the leader of which , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Agnes_Kant</entity>
+				<entity>BRIDGE-1 | Netherlands</entity>
+				<entity>PATIENT-1 | Mark_Rutte</entity>
+			</entitymap>
+		</entry>
+		<entry category="Politician" eid="Id1246" size="2">
+			<originaltripleset>
+				<otriple>Parkersburg,_West_Virginia | country | United_States</otriple>
+				<otriple>Albert_B._White | placeOfDeath | Parkersburg,_West_Virginia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Parkersburg,_West_Virginia | country | United_States</mtriple>
+				<mtriple>Albert_B._White | deathPlace | Parkersburg,_West_Virginia</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | deathPlace | Parkersburg,_West_Virginia</striple>
+						<striple>Parkersburg,_West_Virginia | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_B._White" number="1" tag="AGENT-1" type="name">Albert B White</reference>
+					<reference entity="Parkersburg,_West_Virginia" number="2" tag="BRIDGE-1" type="name">Parkersburg , West Virginia ,</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Albert B White died in Parkersburg, West Virginia, which is part of the United States.</text>
+				<template>AGENT-1 died in BRIDGE-1 which is part of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be part of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | deathPlace | Parkersburg,_West_Virginia</striple>
+						<striple>Parkersburg,_West_Virginia | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_B._White" number="1" tag="AGENT-1" type="name">Albert B White</reference>
+					<reference entity="Parkersburg,_West_Virginia" number="2" tag="BRIDGE-1" type="name">Parkersburg , West Virginia ,</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Albert B White died at Parkersburg, West Virginia, in the United States.</text>
+				<template>AGENT-1 died at BRIDGE-1 in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] die at BRIDGE-1 in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Albert_B._White | deathPlace | Parkersburg,_West_Virginia</striple>
+						<striple>Parkersburg,_West_Virginia | country | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_B._White" number="1" tag="AGENT-1" type="name">Albert B . White</reference>
+					<reference entity="Parkersburg,_West_Virginia" number="2" tag="BRIDGE-1" type="name">Parkersburg , West Virginia</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>Albert B. White died in Parkersburg, West Virginia @ United States.</text>
+				<template>AGENT-1 died in BRIDGE-1 @ PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in BRIDGE-1 PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Albert_B._White</entity>
+				<entity>BRIDGE-1 | Parkersburg,_West_Virginia</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

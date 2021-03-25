@@ -1,0 +1,2899 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="MeanOfTransportation" eid="Id1490" size="3">
+			<originaltripleset>
+				<otriple>1955_Dodge | engine | 1955_Dodge__2</otriple>
+				<otriple>1955_Dodge | transmission | &quot;3-speed automatic&quot;</otriple>
+				<otriple>1955_Dodge | aka | &quot;Dodge Coronet&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1955_Dodge | engine | V8_engine</mtriple>
+				<mtriple>1955_Dodge | transmission | &quot;3-speed automatic&quot;</mtriple>
+				<mtriple>1955_Dodge | alternativeName | &quot;Dodge Coronet&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1955_Dodge | alternativeName | &quot;Dodge Coronet&quot;</striple>
+						<striple>1955_Dodge | engine | V8_engine</striple>
+						<striple>1955_Dodge | transmission | &quot;3-speed automatic&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1955_Dodge" number="1" tag="AGENT-1" type="description">The 1955 Dodge</reference>
+					<reference entity="&quot;Dodge Coronet&quot;" number="2" tag="PATIENT-3" type="name">Dodge coronet</reference>
+					<reference entity="V8_engine" number="3" tag="PATIENT-1" type="description">a V8 engine</reference>
+					<reference entity="&quot;3-speed automatic&quot;" number="4" tag="PATIENT-2" type="name">3-speed transmission</reference>
+				</references>
+				<text>The 1955 Dodge, with an alternative name of Dodge coronet, has a V8 engine and 3-speed transmission.</text>
+				<template>AGENT-1 , with an alternative name of PATIENT-3 , has PATIENT-1 and PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , with DT[form=undefined] a alternative name of PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-1 and PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1955_Dodge | alternativeName | &quot;Dodge Coronet&quot;</striple>
+						<striple>1955_Dodge | transmission | &quot;3-speed automatic&quot;</striple>
+						<striple>1955_Dodge | engine | V8_engine</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1955_Dodge" number="1" tag="AGENT-1" type="description">The 1955 Dodge</reference>
+					<reference entity="&quot;Dodge Coronet&quot;" number="2" tag="PATIENT-3" type="description">the Dodge Coronet</reference>
+					<reference entity="&quot;3-speed automatic&quot;" number="3" tag="PATIENT-2" type="name">3-speed automatic transmission</reference>
+					<reference entity="V8_engine" number="4" tag="PATIENT-1" type="name">V8 engine</reference>
+				</references>
+				<text>The 1955 Dodge, also named the Dodge Coronet, has a 3-speed automatic transmission and a V8 engine.</text>
+				<template>AGENT-1 , also named PATIENT-3 , has a PATIENT-2 and a PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , also VP[aspect=simple,tense=past,voice=active,person=null,number=null] name PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-2 and DT[form=undefined] a PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>1955_Dodge | alternativeName | &quot;Dodge Coronet&quot;</striple>
+						<striple>1955_Dodge | engine | V8_engine</striple>
+						<striple>1955_Dodge | transmission | &quot;3-speed automatic&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="1955_Dodge" number="1" tag="AGENT-1" type="description">The 1955 Dodge</reference>
+					<reference entity="&quot;Dodge Coronet&quot;" number="2" tag="PATIENT-3" type="name">Dodge Coronet</reference>
+					<reference entity="V8_engine" number="3" tag="PATIENT-1" type="description">a V8 engine</reference>
+					<reference entity="&quot;3-speed automatic&quot;" number="4" tag="PATIENT-2" type="name">3 speed automatic</reference>
+				</references>
+				<text>The 1955 Dodge, which has the alternative name of Dodge Coronet, has a V8 engine and uses a 3 speed automatic transmission.</text>
+				<template>AGENT-1 , which has the alternative name of PATIENT-3 , has PATIENT-1 and uses a PATIENT-2 transmission .</template>
+				<lexicalization>AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the alternative name of PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] use DT[form=undefined] a PATIENT-2 transmission .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1955_Dodge</entity>
+				<entity>PATIENT-1 | V8_engine</entity>
+				<entity>PATIENT-2 | &quot;3-speed automatic&quot;</entity>
+				<entity>PATIENT-3 | &quot;Dodge Coronet&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1491" size="3">
+			<originaltripleset>
+				<otriple>A-Rosa_Luna | shipClass | Cruise_ship</otriple>
+				<otriple>A-Rosa_Luna | MeanOfTransportation/length | &quot;125800.0&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+				<otriple>A-Rosa_Luna | orderDate | &quot;2004-01-22&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A-Rosa_Luna | shipClass | Cruise_ship</mtriple>
+				<mtriple>A-Rosa_Luna | length | 125800.0 (millimetres)</mtriple>
+				<mtriple>A-Rosa_Luna | shipOrdered | 2004-01-22</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A-Rosa_Luna | shipOrdered | 2004-01-22</striple>
+						<striple>A-Rosa_Luna | shipClass | Cruise_ship</striple>
+						<striple>A-Rosa_Luna | length | 125800.0 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="2004-01-22" number="1" tag="PATIENT-3" type="name">January 22nd</reference>
+					<reference entity="A-Rosa_Luna" number="2" tag="AGENT-1" type="name">2004 , the A-Rosa Luna</reference>
+					<reference entity="Cruise_ship" number="3" tag="PATIENT-1" type="description">a Cruise ship</reference>
+					<reference entity="125800.0 (millimetres)" number="4" tag="PATIENT-2" type="name">125.8 metres</reference>
+				</references>
+				<text>Ordered on January 22nd, 2004, the A-Rosa Luna, is classed as a Cruise ship and has a length of, 125.8 metres.</text>
+				<template>Ordered on PATIENT-3 , AGENT-1 , is classed as PATIENT-1 and has a length of , PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] order on PATIENT-3 , AGENT-1 , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] class as PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a length of , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A-Rosa_Luna | shipClass | Cruise_ship</striple>
+						<striple>A-Rosa_Luna | length | 125800.0 (millimetres)</striple>
+						<striple>A-Rosa_Luna | shipOrdered | 2004-01-22</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A-Rosa_Luna" number="1" tag="AGENT-1" type="name">A-Rosa-Luna</reference>
+					<reference entity="Cruise_ship" number="2" tag="PATIENT-1" type="description">a cruise ship</reference>
+					<reference entity="125800.0 (millimetres)" number="3" tag="PATIENT-2" type="name">125800.0 millimetres</reference>
+					<reference entity="2004-01-22" number="4" tag="PATIENT-3" type="name">January 22 , 2004</reference>
+				</references>
+				<text>A-Rosa-Luna, a cruise ship @ 125800.0 millimetres in length, was ordered on January 22, 2004.</text>
+				<template>AGENT-1 , PATIENT-1 @ PATIENT-2 in length , was ordered on PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , PATIENT-1 PATIENT-2 in length , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] order on PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A-Rosa_Luna</entity>
+				<entity>PATIENT-1 | Cruise_ship</entity>
+				<entity>PATIENT-2 | 125800.0 (millimetres)</entity>
+				<entity>PATIENT-3 | 2004-01-22</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1492" size="3">
+			<originaltripleset>
+				<otriple>A-Rosa_Luna | shipDisplacement | 1.85e+09</otriple>
+				<otriple>A-Rosa_Luna | topSpeed | &quot;24.0&quot;^^xsd:double</otriple>
+				<otriple>A-Rosa_Luna | MeanOfTransportation/length | &quot;125800.0&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A-Rosa_Luna | shipDisplacement | 1850.0 (tonnes)</mtriple>
+				<mtriple>A-Rosa_Luna | topSpeed | 24.0</mtriple>
+				<mtriple>A-Rosa_Luna | length | 125800.0 (millimetres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A-Rosa_Luna | topSpeed | 24.0</striple>
+						<striple>A-Rosa_Luna | length | 125800.0 (millimetres)</striple>
+						<striple>A-Rosa_Luna | shipDisplacement | 1850.0 (tonnes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="24.0" number="1" tag="PATIENT-2" type="name">24.0</reference>
+					<reference entity="A-Rosa_Luna" number="2" tag="AGENT-1" type="description">the ship A Rosa Luna</reference>
+					<reference entity="125800.0 (millimetres)" number="3" tag="PATIENT-3" type="name">125800.00 millimetres</reference>
+					<reference entity="1850.0 (tonnes)" number="4" tag="PATIENT-1" type="name">1850 tonnes</reference>
+				</references>
+				<text>With a top speed of 24.0, the ship A Rosa Luna is 125800.00 millimetres long and weighs 1850 tonnes.</text>
+				<template>With a top speed of PATIENT-2 , AGENT-1 is PATIENT-3 long and weighs PATIENT-1 .</template>
+				<lexicalization>With DT[form=undefined] a top speed of PATIENT-2 , AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 long and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] weigh PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A-Rosa_Luna | shipDisplacement | 1850.0 (tonnes)</striple>
+						<striple>A-Rosa_Luna | topSpeed | 24.0</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A-Rosa_Luna | length | 125800.0 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A-Rosa_Luna" number="1" tag="AGENT-1" type="name">A-Rosa Luna</reference>
+					<reference entity="1850.0 (tonnes)" number="2" tag="PATIENT-1" type="name">1850 tonnes</reference>
+					<reference entity="24.0" number="3" tag="PATIENT-2" type="name">24 km/h</reference>
+					<reference entity="A-Rosa_Luna" number="4" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="125800.0 (millimetres)" number="5" tag="PATIENT-3" type="name">125.8 metres</reference>
+				</references>
+				<text>A-Rosa Luna has a ship displacement of 1850 tonnes and a top speed of 24 km/h. Its length is 125.8 metres.</text>
+				<template>AGENT-1 has a ship displacement of PATIENT-1 and a top speed of PATIENT-2 . AGENT-1 length is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a ship displacement of PATIENT-1 and DT[form=undefined] a top speed of PATIENT-2 . AGENT-1 length VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A-Rosa_Luna | length | 125800.0 (millimetres)</striple>
+						<striple>A-Rosa_Luna | topSpeed | 24.0</striple>
+						<striple>A-Rosa_Luna | shipDisplacement | 1850.0 (tonnes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A-Rosa_Luna" number="1" tag="AGENT-1" type="description">The A-Rosa Luna</reference>
+					<reference entity="125800.0 (millimetres)" number="2" tag="PATIENT-3" type="name">125.8 metres</reference>
+					<reference entity="24.0" number="3" tag="PATIENT-2" type="name">24.0</reference>
+					<reference entity="1850.0 (tonnes)" number="4" tag="PATIENT-1" type="name">1850 tonnes</reference>
+				</references>
+				<text>The A-Rosa Luna which is 125.8 metres long has a top speed of 24.0 and weighs 1850 tonnes.</text>
+				<template>AGENT-1 which is PATIENT-3 long has a top speed of PATIENT-2 and weighs PATIENT-1 .</template>
+				<lexicalization>AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 long VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a top speed of PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] weigh PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A-Rosa_Luna</entity>
+				<entity>PATIENT-1 | 1850.0 (tonnes)</entity>
+				<entity>PATIENT-2 | 24.0</entity>
+				<entity>PATIENT-3 | 125800.0 (millimetres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1493" size="3">
+			<originaltripleset>
+				<otriple>AIDA_Cruises | location | Germany</otriple>
+				<otriple>AIDAstella | shipOperator | AIDA_Cruises</otriple>
+				<otriple>AIDAstella | owner | Costa_Crociere</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AIDA_Cruises | location | Germany</mtriple>
+				<mtriple>AIDAstella | operator | AIDA_Cruises</mtriple>
+				<mtriple>AIDAstella | owner | Costa_Crociere</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAstella | operator | AIDA_Cruises</striple>
+						<striple>AIDA_Cruises | location | Germany</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AIDAstella | owner | Costa_Crociere</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAstella" number="1" tag="AGENT-1" type="name">AIDAstella</reference>
+					<reference entity="Germany" number="2" tag="PATIENT-1" type="name">German</reference>
+					<reference entity="AIDA_Cruises" number="3" tag="BRIDGE-1" type="name">AIDA Cruises</reference>
+					<reference entity="AIDAstella" number="4" tag="AGENT-1" type="description">The AIDAstella</reference>
+					<reference entity="Costa_Crociere" number="5" tag="PATIENT-2" type="name">Costa Crociere</reference>
+				</references>
+				<text>The operator of AIDAstella is German baased AIDA Cruises. The AIDAstella is owned by Costa Crociere.</text>
+				<template>The operator of AGENT-1 is PATIENT-1 baased BRIDGE-1 . AGENT-1 is owned by PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the operator of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 baased BRIDGE-1 . AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] own by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAstella | owner | Costa_Crociere</striple>
+						<striple>AIDAstella | operator | AIDA_Cruises</striple>
+						<striple>AIDA_Cruises | location | Germany</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAstella" number="1" tag="AGENT-1" type="description">The AIDAstella</reference>
+					<reference entity="Costa_Crociere" number="2" tag="PATIENT-2" type="name">Cost Crociere</reference>
+					<reference entity="AIDAstella" number="3" tag="AGENT-1" type="name">it 's</reference>
+					<reference entity="Germany" number="4" tag="PATIENT-1" type="name">German</reference>
+					<reference entity="AIDA_Cruises" number="5" tag="BRIDGE-1" type="name">AIDA Cruises</reference>
+				</references>
+				<text>The AIDAstella is owned by Cost Crociere and it's operator is German based AIDA Cruises.</text>
+				<template>AGENT-1 is owned by PATIENT-2 and AGENT-1 operator is PATIENT-1 based BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] own by PATIENT-2 and AGENT-1 operator VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] base BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDA_Cruises | location | Germany</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AIDAstella | operator | AIDA_Cruises</striple>
+						<striple>AIDAstella | owner | Costa_Crociere</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDA_Cruises" number="1" tag="BRIDGE-1" type="name">AIDA Cruises</reference>
+					<reference entity="Germany" number="2" tag="PATIENT-1" type="name">Germany</reference>
+					<reference entity="Costa_Crociere" number="3" tag="PATIENT-2" type="name">Costa Crociere</reference>
+					<reference entity="AIDA_Cruises" number="4" tag="BRIDGE-1" type="pronoun">They</reference>
+					<reference entity="AIDAstella" number="5" tag="AGENT-1" type="description">the AIDAstella</reference>
+				</references>
+				<text>AIDA Cruises are based in Germany and owned by Costa Crociere. They operate the AIDAstella.</text>
+				<template>BRIDGE-1 are based in PATIENT-1 and owned by PATIENT-2 . BRIDGE-1 operate AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] base in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] own by PATIENT-2 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] operate AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIDAstella</entity>
+				<entity>BRIDGE-1 | AIDA_Cruises</entity>
+				<entity>PATIENT-1 | Germany</entity>
+				<entity>PATIENT-2 | Costa_Crociere</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1494" size="3">
+			<originaltripleset>
+				<otriple>AIDAstella | shipChristened | &quot;--03-16&quot;^^xsd:gMonthDay</otriple>
+				<otriple>AIDAstella | shipInService | &quot;2013-03-17&quot;^^xsd:date</otriple>
+				<otriple>AIDAstella | MeanOfTransportation/length | &quot;253260.0&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AIDAstella | christeningDate | 2013-03-16</mtriple>
+				<mtriple>AIDAstella | shipInService | 2013-03-17</mtriple>
+				<mtriple>AIDAstella | length | 253260.0 (millimetres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAstella | length | 253260.0 (millimetres)</striple>
+						<striple>AIDAstella | christeningDate | 2013-03-16</striple>
+						<striple>AIDAstella | shipInService | 2013-03-17</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAstella" number="1" tag="AGENT-1" type="description">The AIDAstella</reference>
+					<reference entity="253260.0 (millimetres)" number="2" tag="PATIENT-3" type="name">253260.0 millimetres</reference>
+					<reference entity="2013-03-16" number="3" tag="PATIENT-1" type="name">March 16 , 2013</reference>
+					<reference entity="2013-03-17" number="4" tag="PATIENT-2" type="description">the next day</reference>
+				</references>
+				<text>The AIDAstella, 253260.0 millimetres long, was christened on March 16, 2013 and put into service the next day.</text>
+				<template>AGENT-1 , PATIENT-3 long , was christened on PATIENT-1 and put into service PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , PATIENT-3 long , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] christen on PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] put into service PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAstella | christeningDate | 2013-03-16</striple>
+						<striple>AIDAstella | shipInService | 2013-03-17</striple>
+						<striple>AIDAstella | length | 253260.0 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAstella" number="1" tag="AGENT-1" type="description">The AIDAstella</reference>
+					<reference entity="2013-03-16" number="2" tag="PATIENT-1" type="description">the 16th of March , 2013</reference>
+					<reference entity="2013-03-17" number="3" tag="PATIENT-2" type="name">March 17 , 2013</reference>
+					<reference entity="253260.0 (millimetres)" number="4" tag="PATIENT-3" type="name">253260.0 millimetres</reference>
+				</references>
+				<text>The AIDAstella was christened on the 16th of March, 2013, put in service on March 17, 2013, and is 253260.0 millimetres in length.</text>
+				<template>AGENT-1 was christened on PATIENT-1 , put in service on PATIENT-2 , and is PATIENT-3 in length .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] christen on PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] put in service on PATIENT-2 , and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 in length .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAstella | christeningDate | 2013-03-16</striple>
+						<striple>AIDAstella | shipInService | 2013-03-17</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AIDAstella | length | 253260.0 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAstella" number="1" tag="AGENT-1" type="description">The AIDAstella</reference>
+					<reference entity="2013-03-16" number="2" tag="PATIENT-1" type="name">16th March 2013</reference>
+					<reference entity="2013-03-17" number="3" tag="PATIENT-2" type="name">17th</reference>
+					<reference entity="AIDAstella" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="253260.0 (millimetres)" number="5" tag="PATIENT-3" type="name">253.26m</reference>
+				</references>
+				<text>The AIDAstella was named on 16th March 2013 and launched on 17th. It is 253.26m long.</text>
+				<template>AGENT-1 was named on PATIENT-1 and launched on PATIENT-2 . AGENT-1 is PATIENT-3 long .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] name on PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] launch on PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 long .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIDAstella</entity>
+				<entity>PATIENT-1 | 2013-03-16</entity>
+				<entity>PATIENT-2 | 2013-03-17</entity>
+				<entity>PATIENT-3 | 253260.0 (millimetres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1495" size="3">
+			<originaltripleset>
+				<otriple>ALCO_RS-3 | builder | American_Locomotive_Company</otriple>
+				<otriple>ALCO_RS-3 | enginetype | Four-stroke_engine</otriple>
+				<otriple>ALCO_RS-3 | MeanOfTransportation/length | &quot;17068.8&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ALCO_RS-3 | builder | American_Locomotive_Company</mtriple>
+				<mtriple>ALCO_RS-3 | engine | Four-stroke_engine</mtriple>
+				<mtriple>ALCO_RS-3 | length | 17068.8 (millimetres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+						<striple>ALCO_RS-3 | engine | Four-stroke_engine</striple>
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="American_Locomotive_Company" number="1" tag="PATIENT-1" type="description">The American Locomotive Company</reference>
+					<reference entity="ALCO_RS-3" number="2" tag="AGENT-1" type="description">the ALCO RS-3</reference>
+					<reference entity="Four-stroke_engine" number="3" tag="PATIENT-2" type="name">4-stroke</reference>
+					<reference entity="17068.8 (millimetres)" number="4" tag="PATIENT-3" type="name">17068.8 millimeters</reference>
+				</references>
+				<text>The American Locomotive Company built the ALCO RS-3 which has a 4-stroke engine and is 17068.8 millimeters long.</text>
+				<template>PATIENT-1 built AGENT-1 which has a PATIENT-2 engine and is PATIENT-3 long .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] build AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-2 engine and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 long .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALCO_RS-3 | engine | Four-stroke_engine</striple>
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALCO_RS-3" number="1" tag="AGENT-1" type="description">The ALCO RS-3</reference>
+					<reference entity="Four-stroke_engine" number="2" tag="PATIENT-2" type="name">four-stroke</reference>
+					<reference entity="17068.8 (millimetres)" number="3" tag="PATIENT-3" type="name">17068.8 millimetres</reference>
+					<reference entity="American_Locomotive_Company" number="4" tag="PATIENT-1" type="description">the American Locomotive Company</reference>
+				</references>
+				<text>The ALCO RS-3 has a four-stroke engine, a length of 17068.8 millimetres and was built by the American Locomotive Company.</text>
+				<template>AGENT-1 has a PATIENT-2 engine , a length of PATIENT-3 and was built by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-2 engine , DT[form=undefined] a length of PATIENT-3 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] build by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+						<striple>ALCO_RS-3 | engine | Four-stroke_engine</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALCO_RS-3" number="1" tag="AGENT-1" type="description">The ALCO RS-3</reference>
+					<reference entity="American_Locomotive_Company" number="2" tag="PATIENT-1" type="description">the American Locomotive Company</reference>
+					<reference entity="17068.8 (millimetres)" number="3" tag="PATIENT-3" type="name">17068.8 mm</reference>
+					<reference entity="Four-stroke_engine" number="4" tag="PATIENT-2" type="name">four-stroke</reference>
+				</references>
+				<text>The ALCO RS-3, built by the American Locomotive Company, is 17068.8 mm long with a four-stroke engine.</text>
+				<template>AGENT-1 , built by PATIENT-1 , is PATIENT-3 long with a PATIENT-2 engine .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] build by PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 long with DT[form=undefined] a PATIENT-2 engine .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ALCO_RS-3</entity>
+				<entity>PATIENT-1 | American_Locomotive_Company</entity>
+				<entity>PATIENT-2 | Four-stroke_engine</entity>
+				<entity>PATIENT-3 | 17068.8 (millimetres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1496" size="3">
+			<originaltripleset>
+				<otriple>ALCO_RS-3 | builder | American_Locomotive_Company</otriple>
+				<otriple>ALCO_RS-3 | enginetype | V12_engine</otriple>
+				<otriple>ALCO_RS-3 | MeanOfTransportation/length | &quot;17068.8&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ALCO_RS-3 | builder | American_Locomotive_Company</mtriple>
+				<mtriple>ALCO_RS-3 | engine | V12_engine</mtriple>
+				<mtriple>ALCO_RS-3 | length | 17068.8 (millimetres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+						<striple>ALCO_RS-3 | engine | V12_engine</striple>
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALCO_RS-3" number="1" tag="AGENT-1" type="description">The ALCO RS-3</reference>
+					<reference entity="American_Locomotive_Company" number="2" tag="PATIENT-1" type="description">the American Locomotive Company</reference>
+					<reference entity="V12_engine" number="3" tag="PATIENT-2" type="description">a V12 engine</reference>
+					<reference entity="17068.8 (millimetres)" number="4" tag="PATIENT-3" type="name">17068.8 millimetres</reference>
+				</references>
+				<text>The ALCO RS-3, built by the American Locomotive Company, has a V12 engine and is 17068.8 millimetres.</text>
+				<template>AGENT-1 , built by PATIENT-1 , has PATIENT-2 and is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] build by PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+						<striple>ALCO_RS-3 | engine | V12_engine</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALCO_RS-3" number="1" tag="AGENT-1" type="description">The ALCO RS-3</reference>
+					<reference entity="American_Locomotive_Company" number="2" tag="PATIENT-1" type="description">the American Locomotive Company</reference>
+					<reference entity="ALCO_RS-3" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="17068.8 (millimetres)" number="4" tag="PATIENT-3" type="name">17068.8mm</reference>
+					<reference entity="V12_engine" number="5" tag="PATIENT-2" type="description">a V12 engine</reference>
+				</references>
+				<text>The ALCO RS-3 was built by the American Locomotive Company. It is 17068.8mm long and has a V12 engine.</text>
+				<template>AGENT-1 was built by PATIENT-1 . AGENT-1 is PATIENT-3 long and has PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] build by PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 long and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+						<striple>ALCO_RS-3 | engine | V12_engine</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="American_Locomotive_Company" number="1" tag="PATIENT-1" type="description">The American Locomotive Company</reference>
+					<reference entity="ALCO_RS-3" number="2" tag="AGENT-1" type="description">the ALCO RS-3</reference>
+					<reference entity="17068.8 (millimetres)" number="3" tag="PATIENT-3" type="name">17068.8mm</reference>
+					<reference entity="V12_engine" number="4" tag="PATIENT-2" type="description">a V12 engine</reference>
+				</references>
+				<text>The American Locomotive Company built the ALCO RS-3 which is 17068.8mm long and has a V12 engine.</text>
+				<template>PATIENT-1 built AGENT-1 which is PATIENT-3 long and has PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] build AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 long and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ALCO_RS-3</entity>
+				<entity>PATIENT-1 | American_Locomotive_Company</entity>
+				<entity>PATIENT-2 | V12_engine</entity>
+				<entity>PATIENT-3 | 17068.8 (millimetres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1497" size="3">
+			<originaltripleset>
+				<otriple>ALCO_RS-3 | builder | American_Locomotive_Company</otriple>
+				<otriple>ALCO_RS-3 | MeanOfTransportation/length | &quot;17068.8&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+				<otriple>American_Locomotive_Company | foundationPlace | Schenectady,_New_York</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ALCO_RS-3 | builder | American_Locomotive_Company</mtriple>
+				<mtriple>ALCO_RS-3 | length | 17068.8 (millimetres)</mtriple>
+				<mtriple>American_Locomotive_Company | foundationPlace | Schenectady,_New_York</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Locomotive_Company | foundationPlace | Schenectady,_New_York</striple>
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="American_Locomotive_Company" number="1" tag="BRIDGE-1" type="description">The American Locomotive Company</reference>
+					<reference entity="Schenectady,_New_York" number="2" tag="PATIENT-2" type="name">Schenectady , New York</reference>
+					<reference entity="ALCO_RS-3" number="3" tag="AGENT-1" type="description">the ALCO RS-3</reference>
+					<reference entity="17068.8 (millimetres)" number="4" tag="PATIENT-1" type="name">17068.8 mms</reference>
+				</references>
+				<text>The American Locomotive Company was founded in Schenectady, New York and built the ALCO RS-3 which is 17068.8 mms in length.</text>
+				<template>BRIDGE-1 was founded in PATIENT-2 and built AGENT-1 which is PATIENT-1 in length .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] build AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 in length .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Locomotive_Company | foundationPlace | Schenectady,_New_York</striple>
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="American_Locomotive_Company" number="1" tag="BRIDGE-1" type="description">The American Locomotive Company</reference>
+					<reference entity="Schenectady,_New_York" number="2" tag="PATIENT-2" type="name">Schenectady , New York ,</reference>
+					<reference entity="ALCO_RS-3" number="3" tag="AGENT-1" type="description">the ALCO RS-3</reference>
+					<reference entity="17068.8 (millimetres)" number="4" tag="PATIENT-1" type="name">17068.8 mm</reference>
+				</references>
+				<text>The American Locomotive Company, founded in Schenectady, New York, were the builders of the ALCO RS-3, which has a length of 17068.8 mm.</text>
+				<template>BRIDGE-1 , founded in PATIENT-2 were the builders of AGENT-1 , which has a length of PATIENT-1 .</template>
+				<lexicalization>BRIDGE-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] found in PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=plural] be DT[form=defined] the builders of AGENT-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a length of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Locomotive_Company | foundationPlace | Schenectady,_New_York</striple>
+						<striple>ALCO_RS-3 | builder | American_Locomotive_Company</striple>
+						<striple>ALCO_RS-3 | length | 17068.8 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="American_Locomotive_Company" number="1" tag="BRIDGE-1" type="description">The American Locomotive Company</reference>
+					<reference entity="Schenectady,_New_York" number="2" tag="PATIENT-2" type="name">Schenectady , New York</reference>
+					<reference entity="17068.8 (millimetres)" number="3" tag="PATIENT-1" type="description">the 17068.8 millimetre</reference>
+					<reference entity="ALCO_RS-3" number="4" tag="AGENT-1" type="name">ALCO RS-3</reference>
+				</references>
+				<text>The American Locomotive Company, founded in Schenectady, New York, built the 17068.8 millimetre @ ALCO RS-3.</text>
+				<template>BRIDGE-1 , founded in PATIENT-2 , built PATIENT-1 @ AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] found in PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] build PATIENT-1 AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ALCO_RS-3</entity>
+				<entity>BRIDGE-1 | American_Locomotive_Company</entity>
+				<entity>PATIENT-1 | 17068.8 (millimetres)</entity>
+				<entity>PATIENT-2 | Schenectady,_New_York</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1498" size="3">
+			<originaltripleset>
+				<otriple>ALV_X-1 | countryOrigin | United_States</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+				<otriple>United_States | demonym | Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ALV_X-1 | countryOrigin | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+				<mtriple>United_States | demonym | Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | demonym | Americans</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+						<striple>ALV_X-1 | countryOrigin | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-2" type="name">Americans</reference>
+					<reference entity="African_Americans" number="3" tag="PATIENT-1" type="name">African decent</reference>
+					<reference entity="ALV_X-1" number="4" tag="AGENT-1" type="description">the ALVX-1</reference>
+				</references>
+				<text>Originating in the United States and by Americans, some of African decent is the ALVX-1.</text>
+				<template>Originating in BRIDGE-1 and by PATIENT-2 , some of PATIENT-1 is AGENT-1 .</template>
+				<lexicalization>VP[aspect=progressive,tense=present,voice=active,person=null,number=null] originate in BRIDGE-1 and by PATIENT-2 , DT[form=defined] some of PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALV_X-1 | countryOrigin | United_States</striple>
+						<striple>United_States | demonym | Americans</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALV_X-1" number="1" tag="AGENT-1" type="name">ALVX-1</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="Americans" number="3" tag="PATIENT-2" type="name">Americans</reference>
+					<reference entity="African_Americans" number="4" tag="PATIENT-1" type="name">African Americans</reference>
+				</references>
+				<text>ALVX-1 comes from the US where Americans live and African Americans are an ethnic group.</text>
+				<template>AGENT-1 comes from BRIDGE-1 where PATIENT-2 live and PATIENT-1 are an ethnic group .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] come from BRIDGE-1 where PATIENT-2 live and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALV_X-1 | countryOrigin | United_States</striple>
+						<striple>United_States | demonym | Americans</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALV_X-1" number="1" tag="AGENT-1" type="description">the ALV X-1</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Americans" number="3" tag="PATIENT-2" type="name">Americans</reference>
+					<reference entity="African_Americans" number="4" tag="PATIENT-1" type="name">African Americans</reference>
+				</references>
+				<text>The country of origin of the ALV X-1 is the United States, home to Americans and where African Americans are an ethnic group.</text>
+				<template>The country of origin of AGENT-1 is BRIDGE-1 , home to PATIENT-2 and where PATIENT-1 are an ethnic group .</template>
+				<lexicalization>DT[form=defined] the country of origin of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , home to PATIENT-2 and where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ALV_X-1</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | African_Americans</entity>
+				<entity>PATIENT-2 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1499" size="3">
+			<originaltripleset>
+				<otriple>ALV_X-1 | countryOrigin | United_States</otriple>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ALV_X-1 | countryOrigin | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>ALV_X-1 | countryOrigin | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="BRIDGE-1" type="description">The United States</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="2" tag="PATIENT-1" type="name">Native Americans</reference>
+					<reference entity="Washington,_D.C." number="3" tag="PATIENT-2" type="name">Washington D.C.</reference>
+					<reference entity="ALV_X-1" number="4" tag="AGENT-1" type="description">the ALV X-1</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-1" type="description">the US</reference>
+				</references>
+				<text>The United States has an ethnic group called Native Americans, the capital is Washington D.C. and the ALV X-1 hails from the US.</text>
+				<template>BRIDGE-1 has an ethnic group called PATIENT-1 , the capital is PATIENT-2 and AGENT-1 hails from BRIDGE-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a ethnic group VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-1 , DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] hail from BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALV_X-1 | countryOrigin | United_States</striple>
+						<striple>United_States | capital | Washington,_D.C.</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALV_X-1" number="1" tag="AGENT-1" type="description">The ALV X-1</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Washington,_D.C." number="3" tag="PATIENT-2" type="name">Washington DC</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="4" tag="PATIENT-1" type="name">Native Americans</reference>
+				</references>
+				<text>The ALV X-1 originated in the United States, a country whose capital is Washington DC and has Native Americans as an ethnic group.</text>
+				<template>AGENT-1 originated in BRIDGE-1 , a country whose capital is PATIENT-2 and has PATIENT-1 as an ethnic group .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] originate in BRIDGE-1 , DT[form=undefined] a country whose capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-1 as DT[form=undefined] a ethnic group .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ALV_X-1</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Native_Americans_in_the_United_States</entity>
+				<entity>PATIENT-2 | Washington,_D.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1500" size="3">
+			<originaltripleset>
+				<otriple>ALV_X-1 | diameter | &quot;5.0&quot;^^&lt;http://dbpedia.org/datatype/foot&gt;</otriple>
+				<otriple>ALV_X-1 | rocketStages | &quot;2&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>ALV_X-1 | totalLaunches | &quot;1&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>ALV_X-1 | diameter | 1.524 (metres)</mtriple>
+				<mtriple>ALV_X-1 | rocketStages | 2</mtriple>
+				<mtriple>ALV_X-1 | totalLaunches | 1</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALV_X-1 | rocketStages | 2</striple>
+						<striple>ALV_X-1 | totalLaunches | 1</striple>
+						<striple>ALV_X-1 | diameter | 1.524 (metres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALV_X-1" number="1" tag="AGENT-1" type="description">The ALV X-1</reference>
+					<reference entity="2" number="2" tag="PATIENT-2" type="name">2</reference>
+					<reference entity="1" number="3" tag="PATIENT-3" type="name">one</reference>
+					<reference entity="1.524 (metres)" number="4" tag="PATIENT-1" type="name">1.524 m</reference>
+				</references>
+				<text>The ALV X-1, with 2 rocket stages and one launch, has a 1.524 m diameter.</text>
+				<template>AGENT-1 , with PATIENT-2 rocket stages and PATIENT-3 launch , has a PATIENT-1 diameter .</template>
+				<lexicalization>AGENT-1 , with PATIENT-2 rocket stages and PATIENT-3 launch , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-1 diameter .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALV_X-1 | diameter | 1.524 (metres)</striple>
+						<striple>ALV_X-1 | rocketStages | 2</striple>
+						<striple>ALV_X-1 | totalLaunches | 1</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALV_X-1" number="1" tag="AGENT-1" type="description">The ALV X-1 rocket</reference>
+					<reference entity="1.524 (metres)" number="2" tag="PATIENT-1" type="name">1.524 meters</reference>
+					<reference entity="2" number="3" tag="PATIENT-2" type="name">2</reference>
+					<reference entity="1" number="4" tag="PATIENT-3" type="name">one</reference>
+				</references>
+				<text>The ALV X-1 rocket which has a diameter of 1.524 meters and has 2 stages was launched one.</text>
+				<template>AGENT-1 which has a diameter of PATIENT-1 and has PATIENT-2 stages was launched PATIENT-3 .</template>
+				<lexicalization>AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a diameter of PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 stages VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ALV_X-1 | diameter | 1.524 (metres)</striple>
+						<striple>ALV_X-1 | rocketStages | 2</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>ALV_X-1 | totalLaunches | 1</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ALV_X-1" number="1" tag="AGENT-1" type="description">The ALV X-1</reference>
+					<reference entity="1.524 (metres)" number="2" tag="PATIENT-1" type="name">1.524 m</reference>
+					<reference entity="2" number="3" tag="PATIENT-2" type="name">2</reference>
+					<reference entity="ALV_X-1" number="4" tag="AGENT-1" type="name">It 's</reference>
+					<reference entity="1" number="5" tag="PATIENT-3" type="name">1</reference>
+				</references>
+				<text>The ALV X-1 has a diameter of 1.524 m and has 2 rocket stages. It's been launched 1 times.</text>
+				<template>AGENT-1 has a diameter of PATIENT-1 and has PATIENT-2 rocket stages . AGENT-1 been launched PATIENT-3 times .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a diameter of PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-2 rocket stages . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=null,number=null] launch PATIENT-3 times .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | ALV_X-1</entity>
+				<entity>PATIENT-1 | 1.524 (metres)</entity>
+				<entity>PATIENT-2 | 2</entity>
+				<entity>PATIENT-3 | 1</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1501" size="3">
+			<originaltripleset>
+				<otriple>Abarth_1000_GT_Coupé | productionEndYear | &quot;1958&quot;^^xsd:gYear</otriple>
+				<otriple>Abarth_1000_GT_Coupé | bodyStyle | Coupé</otriple>
+				<otriple>Abarth_1000_GT_Coupé | engine | Abarth_1000_GT_Coupé__1</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abarth_1000_GT_Coupé | productionEndYear | 1958</mtriple>
+				<mtriple>Abarth_1000_GT_Coupé | bodyStyle | Coupé</mtriple>
+				<mtriple>Abarth_1000_GT_Coupé | engine | Straight-four_engine</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abarth_1000_GT_Coupé | engine | Straight-four_engine</striple>
+						<striple>Abarth_1000_GT_Coupé | productionEndYear | 1958</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abarth_1000_GT_Coupé" number="1" tag="AGENT-1" type="description">The Abarth 1000 GT Coupe</reference>
+					<reference entity="Straight-four_engine" number="2" tag="PATIENT-3" type="name">straight-four</reference>
+					<reference entity="Abarth_1000_GT_Coupé" number="3" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="1958" number="4" tag="PATIENT-1" type="name">1958</reference>
+				</references>
+				<text>The Abarth 1000 GT Coupe, with a straight-four engine, had its final production in 1958.</text>
+				<template>AGENT-1 , with a PATIENT-3 engine , had AGENT-1 final production in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , with DT[form=undefined] a PATIENT-3 engine , VP[aspect=simple,tense=past,voice=active,person=null,number=null] have AGENT-1 final production in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abarth_1000_GT_Coupé | engine | Straight-four_engine</striple>
+						<striple>Abarth_1000_GT_Coupé | productionEndYear | 1958</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abarth_1000_GT_Coupé" number="1" tag="AGENT-1" type="description">The Abarth 1000 GT Coupé</reference>
+					<reference entity="Abarth_1000_GT_Coupé" number="2" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Straight-four_engine" number="3" tag="PATIENT-3" type="name">straight four</reference>
+					<reference entity="1958" number="4" tag="PATIENT-1" type="name">1958</reference>
+				</references>
+				<text>The Abarth 1000 GT Coupé, with its @ straight four engine, completed production in 1958.</text>
+				<template>AGENT-1 , with AGENT-1 @ PATIENT-3 engine , completed production in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , with AGENT-1 PATIENT-3 engine , VP[aspect=simple,tense=past,voice=active,person=null,number=null] complete production in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abarth_1000_GT_Coupé | engine | Straight-four_engine</striple>
+						<striple>Abarth_1000_GT_Coupé | bodyStyle | Coupé</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Abarth_1000_GT_Coupé | productionEndYear | 1958</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abarth_1000_GT_Coupé" number="1" tag="AGENT-1" type="description">The Abarth 1000 GT Coupé</reference>
+					<reference entity="Straight-four_engine" number="2" tag="PATIENT-3" type="name">straight-four</reference>
+					<reference entity="Coupé" number="3" tag="PATIENT-2" type="name">Coupé</reference>
+					<reference entity="Abarth_1000_GT_Coupé" number="4" tag="AGENT-1" type="demonstrative">this model</reference>
+					<reference entity="1958" number="5" tag="PATIENT-1" type="name">1958</reference>
+				</references>
+				<text>The Abarth 1000 GT Coupé has a straight-four engine and a Coupé body style. The last of this model, rolled off the production line in 1958.</text>
+				<template>AGENT-1 has a PATIENT-3 engine and a PATIENT-2 body style . The last of AGENT-1 , rolled off the production line in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-3 engine and DT[form=undefined] a PATIENT-2 body style . DT[form=defined] the last of AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] roll off DT[form=defined] the production line in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abarth_1000_GT_Coupé</entity>
+				<entity>PATIENT-1 | 1958</entity>
+				<entity>PATIENT-2 | Coupé</entity>
+				<entity>PATIENT-3 | Straight-four_engine</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1502" size="3">
+			<originaltripleset>
+				<otriple>Abarth_1000_GT_Coupé | wheelbase | &quot;2.16&quot;^^xsd:double</otriple>
+				<otriple>Abarth_1000_GT_Coupé | width | &quot;1.55&quot;^^xsd:double</otriple>
+				<otriple>Abarth_1000_GT_Coupé | bodyStyle | &quot;Two door coupé&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abarth_1000_GT_Coupé | wheelbase | 2160.0 (millimetres)</mtriple>
+				<mtriple>Abarth_1000_GT_Coupé | width | 1.55</mtriple>
+				<mtriple>Abarth_1000_GT_Coupé | bodyStyle | &quot;Two door coupé&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abarth_1000_GT_Coupé | bodyStyle | &quot;Two door coupé&quot;</striple>
+						<striple>Abarth_1000_GT_Coupé | wheelbase | 2160.0 (millimetres)</striple>
+						<striple>Abarth_1000_GT_Coupé | width | 1.55</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abarth_1000_GT_Coupé" number="1" tag="AGENT-1" type="description">The Abarth 1000 GT Coupé</reference>
+					<reference entity="&quot;Two door coupé&quot;" number="2" tag="PATIENT-3" type="description">a two door coupé</reference>
+					<reference entity="2160.0 (millimetres)" number="3" tag="PATIENT-1" type="name">2160 millimetres</reference>
+					<reference entity="1.55" number="4" tag="PATIENT-2" type="name">1.55 metres</reference>
+				</references>
+				<text>The Abarth 1000 GT Coupé is a two door coupé with a wheelbase of 2160 millimetres and a with of 1.55 metres.</text>
+				<template>AGENT-1 is PATIENT-3 with a wheelbase of PATIENT-1 and a with of PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 with DT[form=undefined] a wheelbase of PATIENT-1 and DT[form=undefined] a with of PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abarth_1000_GT_Coupé | bodyStyle | &quot;Two door coupé&quot;</striple>
+						<striple>Abarth_1000_GT_Coupé | width | 1.55</striple>
+						<striple>Abarth_1000_GT_Coupé | wheelbase | 2160.0 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abarth_1000_GT_Coupé" number="1" tag="AGENT-1" type="description">The Abarth 1000 Gt Coupe</reference>
+					<reference entity="&quot;Two door coupé&quot;" number="2" tag="PATIENT-3" type="description">a 2 door coupe</reference>
+					<reference entity="1.55" number="3" tag="PATIENT-2" type="name">1.55m</reference>
+					<reference entity="2160.0 (millimetres)" number="4" tag="PATIENT-1" type="name">2160mm</reference>
+				</references>
+				<text>The Abarth 1000 Gt Coupe is a 2 door coupe which is 1.55m wide with a wheelbase of 2160mm.</text>
+				<template>AGENT-1 is PATIENT-3 which is PATIENT-2 wide with a wheelbase of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 wide with DT[form=undefined] a wheelbase of PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Abarth_1000_GT_Coupé | width | 1.55</striple>
+						<striple>Abarth_1000_GT_Coupé | wheelbase | 2160.0 (millimetres)</striple>
+						<striple>Abarth_1000_GT_Coupé | bodyStyle | &quot;Two door coupé&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abarth_1000_GT_Coupé" number="1" tag="AGENT-1" type="description">The Abarth 1000 GT Coupé</reference>
+					<reference entity="1.55" number="2" tag="PATIENT-2" type="name">1.55 metres</reference>
+					<reference entity="2160.0 (millimetres)" number="3" tag="PATIENT-1" type="name">2160 millimetres</reference>
+					<reference entity="&quot;Two door coupé&quot;" number="4" tag="PATIENT-3" type="name">two door coupe</reference>
+				</references>
+				<text>The Abarth 1000 GT Coupé is 1.55 metres wide, has a wheelbase of 2160 millimetres, and the body style is two door coupe.</text>
+				<template>AGENT-1 is PATIENT-2 wide , has a wheelbase of PATIENT-1 , and the body style is PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 wide , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a wheelbase of PATIENT-1 , and DT[form=defined] the body style VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abarth_1000_GT_Coupé</entity>
+				<entity>PATIENT-1 | 2160.0 (millimetres)</entity>
+				<entity>PATIENT-2 | 1.55</entity>
+				<entity>PATIENT-3 | &quot;Two door coupé&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1503" size="3">
+			<originaltripleset>
+				<otriple>Aleksey_Chirikov_(icebreaker) | shipBeam | &quot;21.2&quot;^^xsd:double</otriple>
+				<otriple>Aleksey_Chirikov_(icebreaker) | builder | Helsinki</otriple>
+				<otriple>Aleksey_Chirikov_(icebreaker) | shipBuilder | Arctech_Helsinki_Shipyard</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aleksey_Chirikov_(icebreaker) | shipBeam | 21.2</mtriple>
+				<mtriple>Aleksey_Chirikov_(icebreaker) | builder | Helsinki</mtriple>
+				<mtriple>Aleksey_Chirikov_(icebreaker) | builder | Arctech_Helsinki_Shipyard</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksey_Chirikov_(icebreaker) | builder | Helsinki</striple>
+						<striple>Aleksey_Chirikov_(icebreaker) | builder | Arctech_Helsinki_Shipyard</striple>
+						<striple>Aleksey_Chirikov_(icebreaker) | shipBeam | 21.2</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksey_Chirikov_(icebreaker)" number="1" tag="AGENT-1" type="description">The icebreaker Aleksey Chirikov ship</reference>
+					<reference entity="Helsinki" number="2" tag="PATIENT-2" type="name">Helsinki</reference>
+					<reference entity="Arctech_Helsinki_Shipyard" number="3" tag="PATIENT-3" type="description">the Arctech Helsinki Shipyard</reference>
+					<reference entity="21.2" number="4" tag="PATIENT-1" type="name">21.2</reference>
+				</references>
+				<text>The icebreaker Aleksey Chirikov ship, built in Helsinki at the Arctech Helsinki Shipyard, has a 21.2 ship beam.</text>
+				<template>AGENT-1 , built in PATIENT-2 at PATIENT-3 , has a PATIENT-1 ship beam .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] build in PATIENT-2 at PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-1 ship beam .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksey_Chirikov_(icebreaker) | shipBeam | 21.2</striple>
+						<striple>Aleksey_Chirikov_(icebreaker) | builder | Arctech_Helsinki_Shipyard</striple>
+						<striple>Aleksey_Chirikov_(icebreaker) | builder | Helsinki</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aleksey_Chirikov_(icebreaker)" number="1" tag="AGENT-1" type="description">The icebreaker Aleksey Chirikov</reference>
+					<reference entity="21.2" number="2" tag="PATIENT-1" type="name">21.2</reference>
+					<reference entity="Arctech_Helsinki_Shipyard" number="3" tag="PATIENT-3" type="description">the Arctech Helsinki Shipyard</reference>
+					<reference entity="Helsinki" number="4" tag="PATIENT-2" type="name">Helsinki</reference>
+				</references>
+				<text>The icebreaker Aleksey Chirikov which has a ship beam of 21.2, was built at the Arctech Helsinki Shipyard, in Helsinki.</text>
+				<template>AGENT-1 which has a ship beam of PATIENT-1 , was built at PATIENT-3 , in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a ship beam of PATIENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] build at PATIENT-3 , in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aleksey_Chirikov_(icebreaker) | builder | Arctech_Helsinki_Shipyard</striple>
+						<striple>Aleksey_Chirikov_(icebreaker) | shipBeam | 21.2</striple>
+						<striple>Aleksey_Chirikov_(icebreaker) | builder | Helsinki</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arctech_Helsinki_Shipyard" number="1" tag="PATIENT-3" type="name">Arctech Helsinki Shipyard</reference>
+					<reference entity="Aleksey_Chirikov_(icebreaker)" number="2" tag="AGENT-1" type="description">the icebreaker , Aleksey Chirikov</reference>
+					<reference entity="21.2" number="3" tag="PATIENT-1" type="name">21.2 m</reference>
+					<reference entity="Helsinki" number="4" tag="PATIENT-2" type="name">Helsinki</reference>
+				</references>
+				<text>Arctech Helsinki Shipyard built the icebreaker, Aleksey Chirikov with a 21.2 m long shipbeam in Helsinki.</text>
+				<template>PATIENT-3 built AGENT-1 with a PATIENT-1 long shipbeam in PATIENT-2 .</template>
+				<lexicalization>PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] build AGENT-1 with DT[form=undefined] a PATIENT-1 long shipbeam in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aleksey_Chirikov_(icebreaker)</entity>
+				<entity>PATIENT-1 | 21.2</entity>
+				<entity>PATIENT-2 | Helsinki</entity>
+				<entity>PATIENT-3 | Arctech_Helsinki_Shipyard</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1504" size="3">
+			<originaltripleset>
+				<otriple>Alfa_Romeo_164 | assembly | Italy</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfa_Romeo_164 | assembly | Italy</mtriple>
+				<mtriple>Italy | capital | Rome</mtriple>
+				<mtriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alfa_Romeo_164 | assembly | Italy</striple>
+						<striple>Italy | capital | Rome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Fiat_Croma" number="1" tag="PATIENT-2" type="description">The Fiat Croma</reference>
+					<reference entity="Alfa_Romeo_164" number="2" tag="AGENT-1" type="description">the Alfa Romeo 164</reference>
+					<reference entity="Alfa_Romeo_164" number="3" tag="AGENT-1" type="description">The latter</reference>
+					<reference entity="Italy" number="4" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="5" tag="PATIENT-1" type="name">Rome</reference>
+				</references>
+				<text>The Fiat Croma and the Alfa Romeo 164 are both cars. The latter was built in Italy where the capital is Rome.</text>
+				<template>PATIENT-2 and AGENT-1 are both cars . AGENT-1 was built in BRIDGE-1 where the capital is PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] both cars . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] build in BRIDGE-1 where DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Italy</striple>
+						<striple>Italy | capital | Rome</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfa_Romeo_164" number="1" tag="AGENT-1" type="name">Alfa Romeo 164</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="3" tag="PATIENT-1" type="name">Rome</reference>
+					<reference entity="Fiat_Croma" number="4" tag="PATIENT-2" type="description">the Fiat Croma</reference>
+				</references>
+				<text>Alfa Romeo 164, asembled in Italy (capital:Rome), is a related mode of transportation as the Fiat Croma.</text>
+				<template>AGENT-1 , asembled in BRIDGE-1 (capital : PATIENT-1) , is a related mode of transportation as PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] asemble in BRIDGE-1 ( capital : PATIENT-1 ) , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a related mode of transportation as PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Italy</striple>
+						<striple>Italy | capital | Rome</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfa_Romeo_164" number="1" tag="AGENT-1" type="description">The Alfa Romeo 164</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="3" tag="PATIENT-1" type="name">Rome</reference>
+					<reference entity="Fiat_Croma" number="4" tag="PATIENT-2" type="description">the Fiat Croma</reference>
+				</references>
+				<text>The Alfa Romeo 164, assembled in Italy (capital:Rome) is a similar mode of transport as the Fiat Croma.</text>
+				<template>AGENT-1 , assembled in BRIDGE-1 (capital : PATIENT-1) is a similar mode of transport as PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] assemble in BRIDGE-1 ( capital : PATIENT-1 ) VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a similar mode of transport as PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfa_Romeo_164</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Rome</entity>
+				<entity>PATIENT-2 | Fiat_Croma</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1505" size="3">
+			<originaltripleset>
+				<otriple>Alfa_Romeo_164 | assembly | Italy</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Alfa_Romeo_164 | related | Lancia_Thema</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfa_Romeo_164 | assembly | Italy</mtriple>
+				<mtriple>Italy | capital | Rome</mtriple>
+				<mtriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Italy</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | capital | Rome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfa_Romeo_164" number="1" tag="AGENT-1" type="description">The Alfa Romeo 164</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Lancia_Thema" number="3" tag="PATIENT-2" type="description">the Lancia Thema</reference>
+					<reference entity="Italy" number="4" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="5" tag="PATIENT-1" type="name">Rome</reference>
+				</references>
+				<text>The Alfa Romeo 164, which was assembled in Italy, and the Lancia Thema are related types of transportation. The capital of Italy is Rome.</text>
+				<template>AGENT-1 , which was assembled in BRIDGE-1 , and PATIENT-2 are related types of transportation . The capital of BRIDGE-1 is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] assemble in BRIDGE-1 , and PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be related types of transportation . DT[form=defined] the capital of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alfa_Romeo_164 | assembly | Italy</striple>
+						<striple>Italy | capital | Rome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Lancia_Thema" number="1" tag="PATIENT-2" type="description">The Lancia Thema</reference>
+					<reference entity="Alfa_Romeo_164" number="2" tag="AGENT-1" type="description">the Alfa Romeo 164</reference>
+					<reference entity="Alfa_Romeo_164" number="3" tag="AGENT-1" type="description">The latter</reference>
+					<reference entity="Italy" number="4" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="5" tag="PATIENT-1" type="name">Rome</reference>
+				</references>
+				<text>The Lancia Thema and the Alfa Romeo 164 are related. The latter is built in Italy where the capital is Rome.</text>
+				<template>PATIENT-2 and AGENT-1 are related . AGENT-1 is built in BRIDGE-1 where the capital is PATIENT-1 .</template>
+				<lexicalization>PATIENT-2 and AGENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be related . AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] build in BRIDGE-1 where DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Italy</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | capital | Rome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfa_Romeo_164" number="1" tag="AGENT-1" type="description">The Alfa Romeo 164</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Lancia_Thema" number="3" tag="PATIENT-2" type="description">the Lancia Thema vehicle</reference>
+					<reference entity="Rome" number="4" tag="PATIENT-1" type="name">Rome</reference>
+					<reference entity="Italy" number="5" tag="BRIDGE-1" type="name">Italy</reference>
+				</references>
+				<text>The Alfa Romeo 164 was made in Italy and is related to the Lancia Thema vehicle. Rome is the capital of Italy.</text>
+				<template>AGENT-1 was made in BRIDGE-1 and is related to PATIENT-2 . PATIENT-1 is the capital of BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] make in BRIDGE-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be related to PATIENT-2 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital of BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfa_Romeo_164</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Rome</entity>
+				<entity>PATIENT-2 | Lancia_Thema</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1506" size="3">
+			<originaltripleset>
+				<otriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</otriple>
+				<otriple>Alfa_Romeo_164 | assembly | Arese</otriple>
+				<otriple>Alfa_Romeo_164 | related | Lancia_Thema</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</mtriple>
+				<mtriple>Alfa_Romeo_164 | assembly | Arese</mtriple>
+				<mtriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Arese</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfa_Romeo_164" number="1" tag="AGENT-1" type="description">The Alfa Romeo 164</reference>
+					<reference entity="Arese" number="2" tag="PATIENT-2" type="name">Arese</reference>
+					<reference entity="Fiat_Croma" number="3" tag="PATIENT-1" type="description">the Fiat Croma</reference>
+					<reference entity="Lancia_Thema" number="4" tag="PATIENT-3" type="description">the Lancia Thema</reference>
+				</references>
+				<text>The Alfa Romeo 164 was assembled in Arese and is a similar means of transport to the Fiat Croma and also related to the Lancia Thema.</text>
+				<template>AGENT-1 was assembled in PATIENT-2 and is a similar means of transport to PATIENT-1 and also related to PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] assemble in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a similar means of transport to PATIENT-1 and also related to PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Arese</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arese" number="1" tag="PATIENT-2" type="description">The Arese</reference>
+					<reference entity="Alfa_Romeo_164" number="2" tag="AGENT-1" type="name">Alfa Romeo 164</reference>
+					<reference entity="Fiat_Croma" number="3" tag="PATIENT-1" type="description">the Fiat Croma</reference>
+					<reference entity="Lancia_Thema" number="4" tag="PATIENT-3" type="description">the Lancia Thema</reference>
+				</references>
+				<text>The Arese assembled, Alfa Romeo 164 and the Fiat Croma as well as the Lancia Thema, are related types of transportation.</text>
+				<template>PATIENT-2 assembled , AGENT-1 and PATIENT-1 as well as PATIENT-3 , are related types of transportation .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] assemble , AGENT-1 and PATIENT-1 as well as PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be related types of transportation .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Arese</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Lancia_Thema</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arese" number="1" tag="PATIENT-2" type="description">The Arese</reference>
+					<reference entity="Alfa_Romeo_164" number="2" tag="AGENT-1" type="name">Alfa Romeo 164</reference>
+					<reference entity="Fiat_Croma" number="3" tag="PATIENT-1" type="description">the Fiat Croma</reference>
+					<reference entity="Lancia_Thema" number="4" tag="PATIENT-3" type="description">the Lancia Thema</reference>
+				</references>
+				<text>The Arese assembled Alfa Romeo 164, the Fiat Croma and the Lancia Thema are all related.</text>
+				<template>PATIENT-2 assembled AGENT-1 , PATIENT-1 and PATIENT-3 are all related .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] assemble AGENT-1 , PATIENT-1 and PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] all related .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfa_Romeo_164</entity>
+				<entity>PATIENT-1 | Fiat_Croma</entity>
+				<entity>PATIENT-2 | Arese</entity>
+				<entity>PATIENT-3 | Lancia_Thema</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1507" size="3">
+			<originaltripleset>
+				<otriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</otriple>
+				<otriple>Alfa_Romeo_164 | assembly | Milan</otriple>
+				<otriple>Alfa_Romeo_164 | related | Saab_9000</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</mtriple>
+				<mtriple>Alfa_Romeo_164 | assembly | Milan</mtriple>
+				<mtriple>Alfa_Romeo_164 | relatedMeanOfTransportation | Saab_9000</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Milan</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Saab_9000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfa_Romeo_164" number="1" tag="AGENT-1" type="description">The Alfa Romeo 164</reference>
+					<reference entity="Milan" number="2" tag="PATIENT-2" type="name">Milan</reference>
+					<reference entity="Fiat_Croma" number="3" tag="PATIENT-1" type="description">the , Fiat Croma</reference>
+					<reference entity="Saab_9000" number="4" tag="PATIENT-3" type="description">the Saab 9000</reference>
+				</references>
+				<text>The Alfa Romeo 164 was assembled in Milan and is a similar means of transport to the, Fiat Croma and the Saab 9000.</text>
+				<template>AGENT-1 was assembled in PATIENT-2 and is a similar means of transport to PATIENT-1 and PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] assemble in PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a similar means of transport to PATIENT-1 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Milan</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Saab_9000</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfa_Romeo_164" number="1" tag="AGENT-1" type="description">The Alfa Romeo 164</reference>
+					<reference entity="Milan" number="2" tag="PATIENT-2" type="name">Milan</reference>
+					<reference entity="Fiat_Croma" number="3" tag="PATIENT-1" type="description">the Fiat Croma</reference>
+					<reference entity="Saab_9000" number="4" tag="PATIENT-3" type="description">the Saab 9000</reference>
+				</references>
+				<text>The Alfa Romeo 164, made in Milan, along with the Fiat Croma and the Saab 9000 are related cars.</text>
+				<template>AGENT-1 , made in PATIENT-2 , along with PATIENT-1 and PATIENT-3 are related cars .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] make in PATIENT-2 , along with PATIENT-1 and PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be related cars .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alfa_Romeo_164 | assembly | Milan</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Saab_9000</striple>
+						<striple>Alfa_Romeo_164 | relatedMeanOfTransportation | Fiat_Croma</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfa_Romeo_164" number="1" tag="AGENT-1" type="description">The Alfa Romeo 164</reference>
+					<reference entity="Milan" number="2" tag="PATIENT-2" type="name">Milan</reference>
+					<reference entity="Saab_9000" number="3" tag="PATIENT-3" type="description">the Saab 9000</reference>
+					<reference entity="Fiat_Croma" number="4" tag="PATIENT-1" type="description">the Fiat Croma</reference>
+				</references>
+				<text>The Alfa Romeo 164, which was assembled in Milan, is a similar means of transport to the Saab 9000 and the Fiat Croma.</text>
+				<template>AGENT-1 , which was assembled in PATIENT-2 , is a similar means of transport to PATIENT-3 and PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] assemble in PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a similar means of transport to PATIENT-3 and PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alfa_Romeo_164</entity>
+				<entity>PATIENT-1 | Fiat_Croma</entity>
+				<entity>PATIENT-2 | Milan</entity>
+				<entity>PATIENT-3 | Saab_9000</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1508" size="3">
+			<originaltripleset>
+				<otriple>Alhambra_(1855) | shipBeam | &quot;8.3 m&quot;@en</otriple>
+				<otriple>Alhambra_(1855) | MeanOfTransportation/length | &quot;63800.0&quot;^^&lt;http://dbpedia.org/datatype/millimetre&gt;</otriple>
+				<otriple>Alhambra_(1855) | shipLaunch | &quot;1855-05-31&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alhambra | shipBeam | 8.3 m</mtriple>
+				<mtriple>Alhambra | length | 63800.0 (millimetres)</mtriple>
+				<mtriple>Alhambra | shipLaunch | 1855-05-31</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alhambra | shipLaunch | 1855-05-31</striple>
+						<striple>Alhambra | shipBeam | 8.3 m</striple>
+						<striple>Alhambra | length | 63800.0 (millimetres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alhambra" number="1" tag="AGENT-1" type="description">The ship Alhambra</reference>
+					<reference entity="1855-05-31" number="2" tag="PATIENT-3" type="description">the 31st May 1855</reference>
+					<reference entity="8.3 m" number="3" tag="PATIENT-1" type="name">8.3m</reference>
+					<reference entity="63800.0 (millimetres)" number="4" tag="PATIENT-2" type="name">63800.0 millimetres</reference>
+				</references>
+				<text>The ship Alhambra, launched on the 31st May 1855, has a ship beam of 8.3m and is 63800.0 millimetres long.</text>
+				<template>AGENT-1 , launched on PATIENT-3 , has a ship beam of PATIENT-1 and is PATIENT-2 long .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] launch on PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a ship beam of PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 long .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alhambra | shipBeam | 8.3 m</striple>
+						<striple>Alhambra | length | 63800.0 (millimetres)</striple>
+						<striple>Alhambra | shipLaunch | 1855-05-31</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alhambra" number="1" tag="AGENT-1" type="description">The Alhambra</reference>
+					<reference entity="8.3 m" number="2" tag="PATIENT-1" type="name">8.3m</reference>
+					<reference entity="63800.0 (millimetres)" number="3" tag="PATIENT-2" type="name">63800.0 millimetres</reference>
+					<reference entity="1855-05-31" number="4" tag="PATIENT-3" type="name">1855-05-31</reference>
+				</references>
+				<text>The Alhambra has a ship beam of 8.3m, is 63800.0 millimetres long, and was launched on 1855-05-31.</text>
+				<template>AGENT-1 has a ship beam of PATIENT-1 , is PATIENT-2 long , and was launched on PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a ship beam of PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 long , and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch on PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alhambra | shipBeam | 8.3 m</striple>
+						<striple>Alhambra | length | 63800.0 (millimetres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alhambra | shipLaunch | 1855-05-31</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alhambra" number="1" tag="AGENT-1" type="description">The Alhambra</reference>
+					<reference entity="8.3 m" number="2" tag="PATIENT-1" type="name">8.3m</reference>
+					<reference entity="63800.0 (millimetres)" number="3" tag="PATIENT-2" type="name">63800.0 millimetres</reference>
+					<reference entity="Alhambra" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="1855-05-31" number="5" tag="PATIENT-3" type="name">31st May 1855</reference>
+				</references>
+				<text>The Alhambra has a ship beam of 8.3m and was 63800.0 millimetres long. It was launched on 31st May 1855.</text>
+				<template>AGENT-1 has a ship beam of PATIENT-1 and was PATIENT-2 long . AGENT-1 was launched on PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a ship beam of PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-2 long . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch on PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alhambra</entity>
+				<entity>PATIENT-1 | 8.3 m</entity>
+				<entity>PATIENT-2 | 63800.0 (millimetres)</entity>
+				<entity>PATIENT-3 | 1855-05-31</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1509" size="3">
+			<originaltripleset>
+				<otriple>Alhambra_(1855) | shipBeam | &quot;8.3&quot;^^xsd:double</otriple>
+				<otriple>Alhambra_(1855) | shipLaunch | &quot;1855-05-31&quot;^^xsd:date</otriple>
+				<otriple>Alhambra_(1855) | status | &quot;Wrecked&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alhambra | shipBeam | 8.3 m</mtriple>
+				<mtriple>Alhambra | shipLaunch | 1855-05-31</mtriple>
+				<mtriple>Alhambra | status | &quot;Wrecked&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alhambra | shipBeam | 8.3 m</striple>
+						<striple>Alhambra | shipLaunch | 1855-05-31</striple>
+						<striple>Alhambra | status | &quot;Wrecked&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alhambra" number="1" tag="AGENT-1" type="description">The Alhambra</reference>
+					<reference entity="Alhambra" number="2" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="8.3 m" number="3" tag="PATIENT-1" type="name">8.3 m</reference>
+					<reference entity="1855-05-31" number="4" tag="PATIENT-2" type="name">5/31/1855</reference>
+					<reference entity="&quot;Wrecked&quot;" number="5" tag="PATIENT-3" type="name">wrecked</reference>
+				</references>
+				<text>The Alhambra, with its @ 8.3 m ship beam, launched 5/31/1855, was wrecked.</text>
+				<template>AGENT-1 , with AGENT-1 @ PATIENT-1 ship beam , launched PATIENT-2 , was PATIENT-3 .</template>
+				<lexicalization>AGENT-1 , with AGENT-1 PATIENT-1 ship beam , VP[aspect=simple,tense=past,voice=active,person=null,number=null] launch PATIENT-2 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alhambra | status | &quot;Wrecked&quot;</striple>
+						<striple>Alhambra | shipBeam | 8.3 m</striple>
+						<striple>Alhambra | shipLaunch | 1855-05-31</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alhambra" number="1" tag="AGENT-1" type="description">The Alhambra</reference>
+					<reference entity="&quot;Wrecked&quot;" number="2" tag="PATIENT-3" type="name">wrecked</reference>
+					<reference entity="8.3 m" number="3" tag="PATIENT-1" type="name">8.3 metres</reference>
+					<reference entity="1855-05-31" number="4" tag="PATIENT-2" type="name">31 May 1855</reference>
+				</references>
+				<text>The Alhambra, which was wrecked, had a ship beam of 8.3 metres and was launched on 31 May 1855.</text>
+				<template>AGENT-1 , which was PATIENT-3 , had a ship beam of PATIENT-1 and was launched on PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , which VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-3 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] have DT[form=undefined] a ship beam of PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch on PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alhambra | status | &quot;Wrecked&quot;</striple>
+						<striple>Alhambra | shipBeam | 8.3 m</striple>
+						<striple>Alhambra | shipLaunch | 1855-05-31</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Wrecked&quot;" number="1" tag="PATIENT-3" type="description">The wrecked</reference>
+					<reference entity="Alhambra" number="2" tag="AGENT-1" type="name">Alhambra</reference>
+					<reference entity="8.3 m" number="3" tag="PATIENT-1" type="name">8.3m</reference>
+					<reference entity="1855-05-31" number="4" tag="PATIENT-2" type="name">31st May 1855</reference>
+				</references>
+				<text>The wrecked @ Alhambra had a ship beam of 8.3m and was launched on 31st May 1855.</text>
+				<template>PATIENT-3 @ AGENT-1 had a ship beam of PATIENT-1 and was launched on PATIENT-2 .</template>
+				<lexicalization>PATIENT-3 AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] have DT[form=undefined] a ship beam of PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch on PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alhambra</entity>
+				<entity>PATIENT-1 | 8.3 m</entity>
+				<entity>PATIENT-2 | 1855-05-31</entity>
+				<entity>PATIENT-3 | &quot;Wrecked&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1510" size="3">
+			<originaltripleset>
+				<otriple>Alvis_Speed_25 | manufacturer | Alvis_Car_and_Engineering_Company</otriple>
+				<otriple>Alvis_Car_and_Engineering_Company | foundationPlace | Coventry</otriple>
+				<otriple>Alvis_Speed_25 | engine | &quot;Petrol&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alvis_Speed_25 | manufacturer | Alvis_Car_and_Engineering_Company</mtriple>
+				<mtriple>Alvis_Car_and_Engineering_Company | foundationPlace | Coventry</mtriple>
+				<mtriple>Alvis_Speed_25 | engine | &quot;Petrol&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alvis_Speed_25 | engine | &quot;Petrol&quot;</striple>
+						<striple>Alvis_Speed_25 | manufacturer | Alvis_Car_and_Engineering_Company</striple>
+						<striple>Alvis_Car_and_Engineering_Company | foundationPlace | Coventry</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alvis_Speed_25" number="1" tag="AGENT-1" type="description">The Alvis Speed 25</reference>
+					<reference entity="&quot;Petrol&quot;" number="2" tag="PATIENT-2" type="name">petrol</reference>
+					<reference entity="Alvis_Car_and_Engineering_Company" number="3" tag="BRIDGE-1" type="description">the Alvis Car and Engineering Company</reference>
+					<reference entity="Coventry" number="4" tag="PATIENT-1" type="name">Coventry</reference>
+				</references>
+				<text>The Alvis Speed 25 has a petrol engine and was manufactured by the Alvis Car and Engineering Company which was founded in Coventry.</text>
+				<template>AGENT-1 has a PATIENT-2 engine and was manufactured by BRIDGE-1 which was founded in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-2 engine and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] manufacture by BRIDGE-1 which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alvis_Car_and_Engineering_Company | foundationPlace | Coventry</striple>
+						<striple>Alvis_Speed_25 | manufacturer | Alvis_Car_and_Engineering_Company</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alvis_Speed_25 | engine | &quot;Petrol&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alvis_Car_and_Engineering_Company" number="1" tag="BRIDGE-1" type="name">Alvis Car and Engineering Company</reference>
+					<reference entity="Coventry" number="2" tag="PATIENT-1" type="name">Coventry</reference>
+					<reference entity="Alvis_Speed_25" number="3" tag="AGENT-1" type="description">the Alvis Speed 25</reference>
+					<reference entity="Alvis_Speed_25" number="4" tag="AGENT-1" type="name">Alvis Speed 25</reference>
+					<reference entity="&quot;Petrol&quot;" number="5" tag="PATIENT-2" type="name">petrol</reference>
+				</references>
+				<text>Alvis Car and Engineering Company was founded in Coventry and made the Alvis Speed 25. Alvis Speed 25 has a petrol engine.</text>
+				<template>BRIDGE-1 was founded in PATIENT-1 and made AGENT-1 . AGENT-1 has a PATIENT-2 engine .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] make AGENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-2 engine .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alvis_Car_and_Engineering_Company | foundationPlace | Coventry</striple>
+						<striple>Alvis_Speed_25 | manufacturer | Alvis_Car_and_Engineering_Company</striple>
+						<striple>Alvis_Speed_25 | engine | &quot;Petrol&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alvis_Car_and_Engineering_Company" number="1" tag="BRIDGE-1" type="description">The Alvis Car and Engineering Company</reference>
+					<reference entity="Coventry" number="2" tag="PATIENT-1" type="name">Coventry</reference>
+					<reference entity="Alvis_Speed_25" number="3" tag="AGENT-1" type="description">the Alvis Speed 25</reference>
+					<reference entity="&quot;Petrol&quot;" number="4" tag="PATIENT-2" type="name">petrol</reference>
+				</references>
+				<text>The Alvis Car and Engineering Company was founded in Coventry where the Alvis Speed 25 was manufactured with a petrol engine.</text>
+				<template>BRIDGE-1 was founded in PATIENT-1 where AGENT-1 was manufactured with a PATIENT-2 engine .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-1 where AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] manufacture with DT[form=undefined] a PATIENT-2 engine .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alvis_Speed_25</entity>
+				<entity>BRIDGE-1 | Alvis_Car_and_Engineering_Company</entity>
+				<entity>PATIENT-1 | Coventry</entity>
+				<entity>PATIENT-2 | &quot;Petrol&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1511" size="3">
+			<originaltripleset>
+				<otriple>American_Motors | fate | Eagle_(automobile)</otriple>
+				<otriple>AMC_Matador | manufacturer | American_Motors</otriple>
+				<otriple>American_Motors | keyPeople | Roy_D._Chapin,_Jr.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>American_Motors | fate | Eagle_(automobile)</mtriple>
+				<mtriple>AMC_Matador | manufacturer | American_Motors</mtriple>
+				<mtriple>American_Motors | keyPerson | Roy_D._Chapin,_Jr.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AMC_Matador | manufacturer | American_Motors</striple>
+						<striple>American_Motors | keyPerson | Roy_D._Chapin,_Jr.</striple>
+						<striple>American_Motors | fate | Eagle_(automobile)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AMC_Matador" number="1" tag="AGENT-1" type="name">AMC Matador</reference>
+					<reference entity="American_Motors" number="2" tag="BRIDGE-1" type="name">American Motors</reference>
+					<reference entity="Roy_D._Chapin,_Jr." number="3" tag="PATIENT-2" type="name">Roy D Chapin Jr</reference>
+					<reference entity="Eagle_(automobile)" number="4" tag="PATIENT-1" type="name">Eagle</reference>
+				</references>
+				<text>AMC Matador is manufactured by American Motors where Roy D Chapin Jr is a key person and was succeeded ny Eagle.</text>
+				<template>AGENT-1 is manufactured by BRIDGE-1 where PATIENT-2 is a key person and was succeeded ny PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manufacture by BRIDGE-1 where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a key person and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed ny PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AMC_Matador | manufacturer | American_Motors</striple>
+						<striple>American_Motors | keyPerson | Roy_D._Chapin,_Jr.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>American_Motors | fate | Eagle_(automobile)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AMC_Matador" number="1" tag="AGENT-1" type="description">The AMC Matador</reference>
+					<reference entity="American_Motors" number="2" tag="BRIDGE-1" type="name">American Motors</reference>
+					<reference entity="Roy_D._Chapin,_Jr." number="3" tag="PATIENT-2" type="name">Roy D Chapin</reference>
+					<reference entity="AMC_Matador" number="4" tag="AGENT-1" type="description">The AMC</reference>
+					<reference entity="Eagle_(automobile)" number="5" tag="PATIENT-1" type="description">the Eagle Co</reference>
+				</references>
+				<text>The AMC Matador is made by American Motors who has a key person called Roy D Chapin. The AMC was succeeded by the Eagle Co.</text>
+				<template>AGENT-1 is made by BRIDGE-1 who has a key person called PATIENT-2 . AGENT-1 was succeeded by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] make by BRIDGE-1 who VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a key person VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-2 . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>American_Motors | keyPerson | Roy_D._Chapin,_Jr.</striple>
+						<striple>American_Motors | fate | Eagle_(automobile)</striple>
+						<striple>AMC_Matador | manufacturer | American_Motors</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roy_D._Chapin,_Jr." number="1" tag="PATIENT-2" type="name">Roy D Chapin Jr</reference>
+					<reference entity="American_Motors" number="2" tag="BRIDGE-1" type="name">American Motors</reference>
+					<reference entity="Eagle_(automobile)" number="3" tag="PATIENT-1" type="name">Eagle</reference>
+					<reference entity="AMC_Matador" number="4" tag="AGENT-1" type="description">the AMC Matador</reference>
+				</references>
+				<text>Roy D Chapin Jr is a key person at American Motors, which was succeeded by Eagle and built the AMC Matador.</text>
+				<template>PATIENT-2 is a key person at BRIDGE-1 , which was succeeded by PATIENT-1 and built AGENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a key person at BRIDGE-1 , which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] succeed by PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] build AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AMC_Matador</entity>
+				<entity>BRIDGE-1 | American_Motors</entity>
+				<entity>PATIENT-1 | Eagle_(automobile)</entity>
+				<entity>PATIENT-2 | Roy_D._Chapin,_Jr.</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1512" size="3">
+			<originaltripleset>
+				<otriple>Antares_(rocket) | manufacturer | Yuzhnoye_Design_Office</otriple>
+				<otriple>Antares_(rocket) | comparable | Delta_II</otriple>
+				<otriple>Delta_II | countryOrigin | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Antares_(rocket) | manufacturer | Yuzhnoye_Design_Office</mtriple>
+				<mtriple>Antares_(rocket) | comparable | Delta_II</mtriple>
+				<mtriple>Delta_II | countryOrigin | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antares_(rocket) | manufacturer | Yuzhnoye_Design_Office</striple>
+						<striple>Antares_(rocket) | comparable | Delta_II</striple>
+						<striple>Delta_II | countryOrigin | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antares_(rocket)" number="1" tag="AGENT-1" type="description">The Antares rocket</reference>
+					<reference entity="Yuzhnoye_Design_Office" number="2" tag="PATIENT-1" type="description">the Yuzhnoye Design Office</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the US</reference>
+					<reference entity="Delta_II" number="4" tag="BRIDGE-1" type="name">Delta II</reference>
+				</references>
+				<text>The Antares rocket, manufactured at the Yuzhnoye Design Office, is comparable to the US @ Delta II.</text>
+				<template>AGENT-1 , manufactured at PATIENT-1 , is comparable to PATIENT-2 @ BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] manufacture at PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be comparable to PATIENT-2 BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antares_(rocket) | manufacturer | Yuzhnoye_Design_Office</striple>
+						<striple>Antares_(rocket) | comparable | Delta_II</striple>
+						<striple>Delta_II | countryOrigin | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antares_(rocket)" number="1" tag="AGENT-1" type="description">The Antares rocket</reference>
+					<reference entity="Yuzhnoye_Design_Office" number="2" tag="PATIENT-1" type="description">the Yuzhnoye Design Office</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="Delta_II" number="4" tag="BRIDGE-1" type="name">Delta II</reference>
+				</references>
+				<text>The Antares rocket, manufactured at the Yuzhnoye Design Office, is relative to the United States based, Delta II.</text>
+				<template>AGENT-1 , manufactured at PATIENT-1 , is relative to PATIENT-2 based , BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] manufacture at PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be relative to PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] base , BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Antares_(rocket)</entity>
+				<entity>BRIDGE-1 | Delta_II</entity>
+				<entity>PATIENT-1 | Yuzhnoye_Design_Office</entity>
+				<entity>PATIENT-2 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1513" size="3">
+			<originaltripleset>
+				<otriple>Antares_(rocket) | sites | Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</otriple>
+				<otriple>Antares_(rocket) | function | &quot;Medium expendable launch system&quot;@en</otriple>
+				<otriple>Antares_(rocket) | manufacturer | &quot;Yuzhnoye Design Bureau&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Antares_(rocket) | manufacturer | Yuzhnoye_Design_Office</mtriple>
+				<mtriple>Antares_(rocket) | launchSite | Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</mtriple>
+				<mtriple>Antares_(rocket) | function | &quot;Medium expendable launch system&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antares_(rocket) | function | &quot;Medium expendable launch system&quot;</striple>
+						<striple>Antares_(rocket) | manufacturer | Yuzhnoye_Design_Office</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antares_(rocket)" number="1" tag="AGENT-1" type="description">The Antares rocket</reference>
+					<reference entity="&quot;Medium expendable launch system&quot;" number="2" tag="PATIENT-3" type="description">a medium expendable launch system</reference>
+					<reference entity="Yuzhnoye_Design_Office" number="3" tag="PATIENT-1" type="description">the Yuzhnoye Design Office</reference>
+				</references>
+				<text>The Antares rocket is a medium expendable launch system built at the Yuzhnoye Design Office.</text>
+				<template>AGENT-1 is PATIENT-3 built at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] build at PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antares_(rocket) | function | &quot;Medium expendable launch system&quot;</striple>
+						<striple>Antares_(rocket) | manufacturer | Yuzhnoye_Design_Office</striple>
+						<striple>Antares_(rocket) | launchSite | Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antares_(rocket)" number="1" tag="AGENT-1" type="description">The Antares rocket</reference>
+					<reference entity="&quot;Medium expendable launch system&quot;" number="2" tag="PATIENT-3" type="description">a medium expendable launch system</reference>
+					<reference entity="Yuzhnoye_Design_Office" number="3" tag="PATIENT-1" type="description">the Yuzhnoye Design Office</reference>
+					<reference entity="Mid-Atlantic_Regional_Spaceport_Launch_Pad_0" number="4" tag="PATIENT-2" type="description">the Mid-Atlantic Regional Spaceport Launch Pad 0</reference>
+				</references>
+				<text>The Antares rocket function is a medium expendable launch system manufactured at the Yuzhnoye Design Office and launched at the Mid-Atlantic Regional Spaceport Launch Pad 0.</text>
+				<template>AGENT-1 function is PATIENT-3 manufactured at PATIENT-1 and launched at PATIENT-2 .</template>
+				<lexicalization>AGENT-1 function VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] manufacture at PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] launch at PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antares_(rocket) | function | &quot;Medium expendable launch system&quot;</striple>
+						<striple>Antares_(rocket) | manufacturer | Yuzhnoye_Design_Office</striple>
+						<striple>Antares_(rocket) | launchSite | Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antares_(rocket)" number="1" tag="AGENT-1" type="description">The Antares rocket</reference>
+					<reference entity="&quot;Medium expendable launch system&quot;" number="2" tag="PATIENT-3" type="description">a medium expendable launch system</reference>
+					<reference entity="Yuzhnoye_Design_Office" number="3" tag="PATIENT-1" type="description">the Yuzhnoye Design Office</reference>
+					<reference entity="Mid-Atlantic_Regional_Spaceport_Launch_Pad_0" number="4" tag="PATIENT-2" type="description">the Mid-Atlantic Regional Spaceport Launch Pad 0</reference>
+				</references>
+				<text>The Antares rocket function is a medium expendable launch system manufactured at the Yuzhnoye Design Office and was launched at the Mid-Atlantic Regional Spaceport Launch Pad 0.</text>
+				<template>AGENT-1 function is PATIENT-3 manufactured at PATIENT-1 and was launched at PATIENT-2 .</template>
+				<lexicalization>AGENT-1 function VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] manufacture at PATIENT-1 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch at PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Antares_(rocket)</entity>
+				<entity>PATIENT-1 | Yuzhnoye_Design_Office</entity>
+				<entity>PATIENT-2 | Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</entity>
+				<entity>PATIENT-3 | &quot;Medium expendable launch system&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1514" size="3">
+			<originaltripleset>
+				<otriple>Ariane_5 | manufacturer | Arianespace</otriple>
+				<otriple>ELA-3 | site | Guiana_Space_Centre</otriple>
+				<otriple>Ariane_5 | sites | ELA-3</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ariane_5 | manufacturer | Arianespace</mtriple>
+				<mtriple>ELA-3 | site | Guiana_Space_Centre</mtriple>
+				<mtriple>Ariane_5 | launchSite | ELA-3</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ariane_5 | launchSite | ELA-3</striple>
+						<striple>ELA-3 | site | Guiana_Space_Centre</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ariane_5 | manufacturer | Arianespace</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ariane_5" number="1" tag="AGENT-1" type="description">The Ariane 5</reference>
+					<reference entity="ELA-3" number="2" tag="BRIDGE-1" type="description">the ELA-3</reference>
+					<reference entity="Guiana_Space_Centre" number="3" tag="PATIENT-2" type="description">the Guiana Space Centre</reference>
+					<reference entity="Arianespace" number="4" tag="PATIENT-1" type="name">Arianespace</reference>
+					<reference entity="Ariane_5" number="5" tag="AGENT-1" type="description">the Ariane 5</reference>
+				</references>
+				<text>The Ariane 5 was launched at the ELA-3 at the Guiana Space Centre. Arianespace made the Ariane 5.</text>
+				<template>AGENT-1 was launched at BRIDGE-1 at PATIENT-2 . PATIENT-1 made AGENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch at BRIDGE-1 at PATIENT-2 . PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] make AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ariane_5 | manufacturer | Arianespace</striple>
+						<striple>Ariane_5 | launchSite | ELA-3</striple>
+						<striple>ELA-3 | site | Guiana_Space_Centre</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arianespace" number="1" tag="PATIENT-1" type="name">Arianespace</reference>
+					<reference entity="Ariane_5" number="2" tag="AGENT-1" type="name">Ariane 5</reference>
+					<reference entity="ELA-3" number="3" tag="BRIDGE-1" type="name">ELA-3</reference>
+					<reference entity="Guiana_Space_Centre" number="4" tag="PATIENT-2" type="description">the Guiana Space Centre</reference>
+				</references>
+				<text>Arianespace is the manufacturer of Ariane 5 which was launched from ELA-3 at the Guiana Space Centre.</text>
+				<template>PATIENT-1 is the manufacturer of AGENT-1 which was launched from BRIDGE-1 at PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manufacturer of AGENT-1 which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch from BRIDGE-1 at PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ariane_5 | manufacturer | Arianespace</striple>
+						<striple>Ariane_5 | launchSite | ELA-3</striple>
+						<striple>ELA-3 | site | Guiana_Space_Centre</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ariane_5" number="1" tag="AGENT-1" type="description">The Ariane 5</reference>
+					<reference entity="Arianespace" number="2" tag="PATIENT-1" type="name">Arianespace</reference>
+					<reference entity="ELA-3" number="3" tag="BRIDGE-1" type="name">ELA-3</reference>
+					<reference entity="Guiana_Space_Centre" number="4" tag="PATIENT-2" type="description">the Guiana Space Centre</reference>
+				</references>
+				<text>The Ariane 5 was manufactured by Arianespace and launched at ELA-3 which is located at the Guiana Space Centre.</text>
+				<template>AGENT-1 was manufactured by PATIENT-1 and launched at BRIDGE-1 which is located at PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] manufacture by PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] launch at BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located at PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ariane_5</entity>
+				<entity>BRIDGE-1 | ELA-3</entity>
+				<entity>PATIENT-1 | Arianespace</entity>
+				<entity>PATIENT-2 | Guiana_Space_Centre</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1515" size="3">
+			<originaltripleset>
+				<otriple>Aston_Martin_V8 | related | Aston_Martin_DBS</otriple>
+				<otriple>Aston_Martin_V8 | engine | Aston_Martin_V8__1</otriple>
+				<otriple>Aston_Martin_V8 | assembly | &quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</mtriple>
+				<mtriple>Aston_Martin_V8 | assembly | &quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;</mtriple>
+				<mtriple>Aston_Martin_V8 | engine | 5.3 (litres)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</striple>
+						<striple>Aston_Martin_V8 | engine | 5.3 (litres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aston_Martin_V8 | assembly | &quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aston_Martin_V8" number="1" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="Aston_Martin_DBS" number="2" tag="PATIENT-1" type="description">the DBS</reference>
+					<reference entity="5.3 (litres)" number="3" tag="PATIENT-3" type="name">5.3 litre</reference>
+					<reference entity="Aston_Martin_V8" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;" number="5" tag="PATIENT-2" type="name">Newport Pagnell , Buckinghamshire , England , UK</reference>
+				</references>
+				<text>The Aston Martin V8 is similar to the DBS and has a 5.3 litre engine. It is made in Newport Pagnell, Buckinghamshire, England, UK.</text>
+				<template>AGENT-1 is similar to PATIENT-1 and has a PATIENT-3 engine . AGENT-1 is made in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be similar to PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-3 engine . AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] make in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aston_Martin_V8 | assembly | &quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aston_Martin_V8 | engine | 5.3 (litres)</striple>
+						<striple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aston_Martin_V8" number="1" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="&quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;" number="2" tag="PATIENT-2" type="name">Newport Pagnell , Buckinghamshire , England , United Kingdom</reference>
+					<reference entity="Aston_Martin_V8" number="3" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="5.3 (litres)" number="4" tag="PATIENT-3" type="name">5.3 litres</reference>
+					<reference entity="Aston_Martin_DBS" number="5" tag="PATIENT-1" type="description">the Aston Martin DBS</reference>
+				</references>
+				<text>The Aston Martin V8 assembly took place in Newport Pagnell, Buckinghamshire, England, United Kingdom. The Aston Martin V8(has a engine volume of 5.3 litres) and the Aston Martin DBS are related means of transport.</text>
+				<template>AGENT-1 assembly took place in PATIENT-2 . AGENT-1 (has a engine volume of PATIENT-3) and PATIENT-1 are related means of transport .</template>
+				<lexicalization>AGENT-1 assembly VP[aspect=simple,tense=past,voice=active,person=null,number=null] take place in PATIENT-2 . AGENT-1 ( VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a engine volume of PATIENT-3 ) and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be related means of transport .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aston_Martin_V8 | engine | 5.3 (litres)</striple>
+						<striple>Aston_Martin_V8 | assembly | &quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aston_Martin_V8" number="1" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="5.3 (litres)" number="2" tag="PATIENT-3" type="name">5.3 litre</reference>
+					<reference entity="Aston_Martin_V8" number="3" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="&quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;" number="4" tag="PATIENT-2" type="name">Newport Pagnell , Buckinghamshire , England , United Kingdom</reference>
+					<reference entity="Aston_Martin_V8" number="5" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="Aston_Martin_DBS" number="6" tag="PATIENT-1" type="description">the Aston Martin DBS</reference>
+				</references>
+				<text>The Aston Martin V8 has a 5.3 litre engine and its assembly took place in Newport Pagnell, Buckinghamshire, England, United Kingdom. The Aston Martin V8 and the Aston Martin DBS are related means of transport.</text>
+				<template>AGENT-1 has a PATIENT-3 engine and AGENT-1 assembly took place in PATIENT-2 . AGENT-1 and PATIENT-1 are related means of transport .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-3 engine and AGENT-1 assembly VP[aspect=simple,tense=past,voice=active,person=null,number=null] take place in PATIENT-2 . AGENT-1 and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be related means of transport .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aston_Martin_V8</entity>
+				<entity>PATIENT-1 | Aston_Martin_DBS</entity>
+				<entity>PATIENT-2 | &quot;Newport Pagnell, Buckinghamshire, England, United Kingdom&quot;</entity>
+				<entity>PATIENT-3 | 5.3 (litres)</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1516" size="3">
+			<originaltripleset>
+				<otriple>Aston_Martin_V8 | related | Aston_Martin_DBS</otriple>
+				<otriple>Aston_Martin_V8 | engine | &quot;5.3&quot;^^xsd:double</otriple>
+				<otriple>Aston_Martin_V8 | assembly | United_Kingdom</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</mtriple>
+				<mtriple>Aston_Martin_V8 | engine | 5.3 (litres)</mtriple>
+				<mtriple>Aston_Martin_V8 | assembly | United_Kingdom</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aston_Martin_V8 | assembly | United_Kingdom</striple>
+						<striple>Aston_Martin_V8 | engine | 5.3 (litres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aston_Martin_V8" number="1" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="United_Kingdom" number="2" tag="PATIENT-3" type="description">the United Kingdom</reference>
+					<reference entity="5.3 (litres)" number="3" tag="PATIENT-2" type="name">5.3 litres</reference>
+					<reference entity="Aston_Martin_V8" number="4" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="Aston_Martin_DBS" number="5" tag="PATIENT-1" type="name">Aston Martin DBS</reference>
+				</references>
+				<text>The Aston Martin V8 is assembled in the United Kingdom and has an engine volume of 5.3 litres. The Aston Martin V8 and Aston Martin DBS are a related means of transport.</text>
+				<template>AGENT-1 is assembled in PATIENT-3 and has an engine volume of PATIENT-2 . AGENT-1 and PATIENT-1 are a related means of transport .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] assemble in PATIENT-3 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a engine volume of PATIENT-2 . AGENT-1 and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a related means of transport .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aston_Martin_V8 | assembly | United_Kingdom</striple>
+						<striple>Aston_Martin_V8 | engine | 5.3 (litres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aston_Martin_V8" number="1" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="Aston_Martin_DBS" number="2" tag="PATIENT-1" type="description">the Aston Martin DBS</reference>
+					<reference entity="Aston_Martin_V8" number="3" tag="AGENT-1" type="description">The V8 model</reference>
+					<reference entity="United_Kingdom" number="4" tag="PATIENT-3" type="description">the United kingdom</reference>
+					<reference entity="5.3 (litres)" number="5" tag="PATIENT-2" type="name">5.3 litre</reference>
+				</references>
+				<text>The Aston Martin V8 and the Aston Martin DBS are related means of transport. The V8 model is assembled in the United kingdom with a 5.3 litre engine.</text>
+				<template>AGENT-1 and PATIENT-1 are related means of transport . AGENT-1 is assembled in PATIENT-3 with a PATIENT-2 engine .</template>
+				<lexicalization>AGENT-1 and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be related means of transport . AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] assemble in PATIENT-3 with DT[form=undefined] a PATIENT-2 engine .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Aston_Martin_V8 | assembly | United_Kingdom</striple>
+						<striple>Aston_Martin_V8 | engine | 5.3 (litres)</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Aston_Martin_V8 | relatedMeanOfTransportation | Aston_Martin_DBS</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aston_Martin_V8" number="1" tag="AGENT-1" type="name">Aston Martin V8</reference>
+					<reference entity="United_Kingdom" number="2" tag="PATIENT-3" type="description">the United Kingdom</reference>
+					<reference entity="5.3 (litres)" number="3" tag="PATIENT-2" type="name">5.3 litres</reference>
+					<reference entity="Aston_Martin_V8" number="4" tag="AGENT-1" type="description">The Aston Martin V8</reference>
+					<reference entity="Aston_Martin_DBS" number="5" tag="PATIENT-1" type="name">Aston Martin DBS</reference>
+				</references>
+				<text>Aston Martin V8 was assembled in the United Kingdom and has an engine volume of, 5.3 litres. The Aston Martin V8 and Aston Martin DBS are a related means of transport.</text>
+				<template>AGENT-1 was assembled in PATIENT-3 and has an engine volume of , PATIENT-2 . AGENT-1 and PATIENT-1 are a related means of transport .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] assemble in PATIENT-3 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a engine volume of , PATIENT-2 . AGENT-1 and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a related means of transport .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aston_Martin_V8</entity>
+				<entity>PATIENT-1 | Aston_Martin_DBS</entity>
+				<entity>PATIENT-2 | 5.3 (litres)</entity>
+				<entity>PATIENT-3 | United_Kingdom</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1517" size="3">
+			<originaltripleset>
+				<otriple>Atlas_II | countryOrigin | United_States</otriple>
+				<otriple>Atlas_II | sites | Vandenberg_Air_Force_Base</otriple>
+				<otriple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlas_II | countryOrigin | United_States</mtriple>
+				<mtriple>Atlas_II | launchSite | Vandenberg_Air_Force_Base</mtriple>
+				<mtriple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</striple>
+						<striple>Atlas_II | launchSite | Vandenberg_Air_Force_Base</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="description">the US</reference>
+					<reference entity="Atlas_II" number="2" tag="AGENT-1" type="description">the Atlas II</reference>
+					<reference entity="Cape_Canaveral_Air_Force_Station" number="3" tag="PATIENT-3" type="name">Cape Canaveral Air Force Station</reference>
+					<reference entity="Vandenberg_Air_Force_Base" number="4" tag="PATIENT-2" type="name">Vandenberg Air Force Base</reference>
+				</references>
+				<text>Coming from the US, the Atlas II was launched from Cape Canaveral Air Force Station and Vandenberg Air Force Base.</text>
+				<template>Coming from PATIENT-1 , AGENT-1 was launched from PATIENT-3 and PATIENT-2 .</template>
+				<lexicalization>VP[aspect=progressive,tense=present,voice=active,person=null,number=null] come from PATIENT-1 , AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch from PATIENT-3 and PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>Atlas_II | launchSite | Vandenberg_Air_Force_Base</striple>
+						<striple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="description">The US</reference>
+					<reference entity="Atlas_II" number="2" tag="AGENT-1" type="name">Atlas II</reference>
+					<reference entity="Vandenberg_Air_Force_Base" number="3" tag="PATIENT-2" type="name">Vandenberg Air Force Base</reference>
+					<reference entity="Cape_Canaveral_Air_Force_Station" number="4" tag="PATIENT-3" type="name">Cape Canaveral</reference>
+				</references>
+				<text>The US @ Atlas II was launched from Vandenberg Air Force Base and Cape Canaveral.</text>
+				<template>PATIENT-1 @ AGENT-1 was launched from PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>PATIENT-1 AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch from PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>Atlas_II | launchSite | Vandenberg_Air_Force_Base</striple>
+						<striple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="description">the United States</reference>
+					<reference entity="Atlas_II" number="2" tag="AGENT-1" type="description">the Atlas II</reference>
+					<reference entity="Vandenberg_Air_Force_Base" number="3" tag="PATIENT-2" type="description">the Vandenberg Air Force Base</reference>
+					<reference entity="Cape_Canaveral_Air_Force_Station" number="4" tag="PATIENT-3" type="name">Cape Canaveral Air Force Station</reference>
+				</references>
+				<text>Originating from the United States, the Atlas II, was launched from both the Vandenberg Air Force Base and Cape Canaveral Air Force Station.</text>
+				<template>Originating from PATIENT-1 , AGENT-1 , was launched from both PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>VP[aspect=progressive,tense=present,voice=active,person=null,number=null] originate from PATIENT-1 , AGENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch from DT[form=defined] both PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlas_II</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Vandenberg_Air_Force_Base</entity>
+				<entity>PATIENT-3 | Cape_Canaveral_Air_Force_Station</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1518" size="3">
+			<originaltripleset>
+				<otriple>Atlas_II | countryOrigin | United_States</otriple>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+				<otriple>United_States | leaderTitle | President_of_the_United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlas_II | countryOrigin | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+				<mtriple>United_States | leaderTitle | President_of_the_United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlas_II" number="1" tag="AGENT-1" type="description">The Atlas II</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="3" tag="PATIENT-1" type="name">Native Americans</reference>
+					<reference entity="President_of_the_United_States" number="4" tag="PATIENT-2" type="description">the President</reference>
+				</references>
+				<text>The Atlas II comes from the US where Native Americans are an ethnic group and the leader is the President.</text>
+				<template>AGENT-1 comes from BRIDGE-1 where PATIENT-1 are an ethnic group and the leader is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] come from BRIDGE-1 where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group and DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlas_II" number="1" tag="AGENT-1" type="description">The Atlas II</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="3" tag="PATIENT-1" type="name">Native Americans</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="President_of_the_United_States" number="5" tag="PATIENT-2" type="name">President of the United States</reference>
+				</references>
+				<text>The Atlas II originated from the United States, where Native Americans are an ethnic group. The leader of the United States has the title President of the United States.</text>
+				<template>AGENT-1 originated from BRIDGE-1 , where PATIENT-1 are an ethnic group . The leader of BRIDGE-1 has the title PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] originate from BRIDGE-1 , where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group . DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=defined] the title PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>United_States | leaderTitle | President_of_the_United_States</striple>
+						<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlas_II" number="1" tag="AGENT-1" type="description">The Atlas II</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the U.S.</reference>
+					<reference entity="President_of_the_United_States" number="3" tag="PATIENT-2" type="description">the President</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="4" tag="PATIENT-1" type="name">Native Americans</reference>
+				</references>
+				<text>The Atlas II originated from the U.S. where the President is the leader and Native Americans are an ethnic group.</text>
+				<template>AGENT-1 originated from BRIDGE-1 where PATIENT-2 is the leader and PATIENT-1 are an ethnic group .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] originate from BRIDGE-1 where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlas_II</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Native_Americans_in_the_United_States</entity>
+				<entity>PATIENT-2 | President_of_the_United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1519" size="3">
+			<originaltripleset>
+				<otriple>Atlas_II | sites | Cape_Canaveral_Air_Force_Station</otriple>
+				<otriple>Atlas_II | countryOrigin | United_States</otriple>
+				<otriple>Atlas_II | launchSite | Spaceport_Florida_Launch_Complex_36</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</mtriple>
+				<mtriple>Atlas_II | countryOrigin | United_States</mtriple>
+				<mtriple>Atlas_II | launchSite | Spaceport_Florida_Launch_Complex_36</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</striple>
+						<striple>Atlas_II | launchSite | Spaceport_Florida_Launch_Complex_36</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlas_II" number="1" tag="AGENT-1" type="name">Atlas II</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="Cape_Canaveral_Air_Force_Station" number="3" tag="PATIENT-1" type="description">the Cape Canaveral Air Force Station</reference>
+					<reference entity="Spaceport_Florida_Launch_Complex_36" number="4" tag="PATIENT-3" type="name">Spaceport Florida Launch Complex 36</reference>
+				</references>
+				<text>Atlas II originates from the United States, and was launched from the Cape Canaveral Air Force Station in Spaceport Florida Launch Complex 36.</text>
+				<template>AGENT-1 originates from PATIENT-2 , and was launched from PATIENT-1 in PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] originate from PATIENT-2 , and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch from PATIENT-1 in PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>Atlas_II | launchSite | Spaceport_Florida_Launch_Complex_36</striple>
+						<striple>Atlas_II | launchSite | Cape_Canaveral_Air_Force_Station</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-2" type="description">the U.S</reference>
+					<reference entity="Atlas_II" number="2" tag="AGENT-1" type="description">the Atlas II</reference>
+					<reference entity="Spaceport_Florida_Launch_Complex_36" number="3" tag="PATIENT-3" type="description">the Spaceport Florida Launch Complex 36</reference>
+					<reference entity="Cape_Canaveral_Air_Force_Station" number="4" tag="PATIENT-1" type="description">the Cape Canaveral Air Force Station</reference>
+				</references>
+				<text>Originating from the U.S, the Atlas II was launched from the Spaceport Florida Launch Complex 36, from the Cape Canaveral Air Force Station.</text>
+				<template>Originating from PATIENT-2 , AGENT-1 was launched from PATIENT-3 , from PATIENT-1 .</template>
+				<lexicalization>VP[aspect=progressive,tense=present,voice=active,person=null,number=null] originate from PATIENT-2 , AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch from PATIENT-3 , from PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlas_II</entity>
+				<entity>PATIENT-1 | Cape_Canaveral_Air_Force_Station</entity>
+				<entity>PATIENT-2 | United_States</entity>
+				<entity>PATIENT-3 | Spaceport_Florida_Launch_Complex_36</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1520" size="3">
+			<originaltripleset>
+				<otriple>Audi_A1 | engine | Audi_A1__3</otriple>
+				<otriple>Audi_A1 | assembly | Audi_Brussels</otriple>
+				<otriple>Audi_A1 | bodyStyle | Hatchback</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Audi_A1 | engine | 1.2 (litres)</mtriple>
+				<mtriple>Audi_A1 | assembly | Audi_Brussels</mtriple>
+				<mtriple>Audi_A1 | bodyStyle | Hatchback</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Audi_A1 | bodyStyle | Hatchback</striple>
+						<striple>Audi_A1 | assembly | Audi_Brussels</striple>
+						<striple>Audi_A1 | engine | 1.2 (litres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Audi_A1" number="1" tag="AGENT-1" type="description">The Audi A1</reference>
+					<reference entity="Hatchback" number="2" tag="PATIENT-3" type="description">a hatchback</reference>
+					<reference entity="Audi_Brussels" number="3" tag="PATIENT-2" type="name">Audi Brussels</reference>
+					<reference entity="1.2 (litres)" number="4" tag="PATIENT-1" type="name">1.2 litre</reference>
+				</references>
+				<text>The Audi A1 is a hatchback assembled by Audi Brussels and has a 1.2 litre engine.</text>
+				<template>AGENT-1 is PATIENT-3 assembled by PATIENT-2 and has a PATIENT-1 engine .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 VP[aspect=simple,tense=past,voice=active,person=null,number=null] assemble by PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-1 engine .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Audi_A1 | bodyStyle | Hatchback</striple>
+						<striple>Audi_A1 | engine | 1.2 (litres)</striple>
+						<striple>Audi_A1 | assembly | Audi_Brussels</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Audi_A1" number="1" tag="AGENT-1" type="description">The Audi A1</reference>
+					<reference entity="Hatchback" number="2" tag="PATIENT-3" type="description">a hatchback</reference>
+					<reference entity="1.2 (litres)" number="3" tag="PATIENT-1" type="name">1.2 liter</reference>
+					<reference entity="Audi_Brussels" number="4" tag="PATIENT-2" type="name">Audi Brussels</reference>
+				</references>
+				<text>The Audi A1, a hatchback, has a 1.2 liter engine and is assembled by Audi Brussels.</text>
+				<template>AGENT-1 , PATIENT-3 , has a PATIENT-1 engine and is assembled by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , PATIENT-3 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have DT[form=undefined] a PATIENT-1 engine and VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] assemble by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Audi_A1 | assembly | Audi_Brussels</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Audi_A1 | bodyStyle | Hatchback</striple>
+						<striple>Audi_A1 | engine | 1.2 (litres)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Audi_A1" number="1" tag="AGENT-1" type="description">The Audi A1</reference>
+					<reference entity="Audi_Brussels" number="2" tag="PATIENT-2" type="name">Audi Brussels</reference>
+					<reference entity="Audi_A1" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Hatchback" number="4" tag="PATIENT-3" type="description">a hatchback</reference>
+					<reference entity="1.2 (litres)" number="5" tag="PATIENT-1" type="name">1.2 litre</reference>
+				</references>
+				<text>The Audi A1 is built at Audi Brussels. It is a hatchback with a 1.2 litre engine.</text>
+				<template>AGENT-1 is built at PATIENT-2 . AGENT-1 is PATIENT-3 with a PATIENT-1 engine .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] build at PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 with DT[form=undefined] a PATIENT-1 engine .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Audi_A1</entity>
+				<entity>PATIENT-1 | 1.2 (litres)</entity>
+				<entity>PATIENT-2 | Audi_Brussels</entity>
+				<entity>PATIENT-3 | Hatchback</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1521" size="3">
+			<originaltripleset>
+				<otriple>Audi_A1 | manufacturer | Audi</otriple>
+				<otriple>Audi_A1 | relatedMeanOfTransportation | SEAT_Ibiza</otriple>
+				<otriple>Audi_A1 | related | &quot;Volkswagen Polo Mk5&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Audi_A1 | manufacturer | Audi</mtriple>
+				<mtriple>Audi_A1 | relatedMeanOfTransportation | SEAT_Ibiza</mtriple>
+				<mtriple>Audi_A1 | relatedMeanOfTransportation | Volkswagen_Polo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Audi_A1 | manufacturer | Audi</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Audi_A1 | relatedMeanOfTransportation | SEAT_Ibiza</striple>
+						<striple>Audi_A1 | relatedMeanOfTransportation | Volkswagen_Polo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Audi_A1" number="1" tag="AGENT-1" type="description">The Audi A1</reference>
+					<reference entity="Audi" number="2" tag="PATIENT-1" type="name">Audi</reference>
+					<reference entity="Audi_A1" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="SEAT_Ibiza" number="4" tag="PATIENT-2" type="description">the Seat Ibiza</reference>
+					<reference entity="Volkswagen_Polo" number="5" tag="PATIENT-3" type="name">Volkswagen Polo</reference>
+				</references>
+				<text>The Audi A1 is manufactured by Audi. It is a similar means of transport as the Seat Ibiza and Volkswagen Polo since they are all cars.</text>
+				<template>AGENT-1 is manufactured by PATIENT-1 . AGENT-1 is a similar means of transport as PATIENT-2 and PATIENT-3 since they are all cars .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] manufacture by PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a similar means of transport as PATIENT-2 and PATIENT-3 since they VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] all cars .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Audi_A1 | manufacturer | Audi</striple>
+						<striple>Audi_A1 | relatedMeanOfTransportation | SEAT_Ibiza</striple>
+						<striple>Audi_A1 | relatedMeanOfTransportation | Volkswagen_Polo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Audi" number="1" tag="PATIENT-1" type="name">Audi 's</reference>
+					<reference entity="Audi_A1" number="2" tag="AGENT-1" type="name">A1</reference>
+					<reference entity="SEAT_Ibiza" number="3" tag="PATIENT-2" type="description">the Seat Ibiza</reference>
+					<reference entity="Volkswagen_Polo" number="4" tag="PATIENT-3" type="description">the VW Polo</reference>
+				</references>
+				<text>Audi's @ A1 is simiilar to the Seat Ibiza and the VW Polo.</text>
+				<template>PATIENT-1 @ AGENT-1 is simiilar to PATIENT-2 and PATIENT-3 .</template>
+				<lexicalization>PATIENT-1 AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be simiilar to PATIENT-2 and PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Audi_A1 | manufacturer | Audi</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Audi_A1 | relatedMeanOfTransportation | SEAT_Ibiza</striple>
+						<striple>Audi_A1 | relatedMeanOfTransportation | Volkswagen_Polo</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Audi" number="1" tag="PATIENT-1" type="name">Audi</reference>
+					<reference entity="Audi_A1" number="2" tag="AGENT-1" type="description">the Audi A1</reference>
+					<reference entity="Audi_A1" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="SEAT_Ibiza" number="4" tag="PATIENT-2" type="description">the Seat Ibiza</reference>
+					<reference entity="Volkswagen_Polo" number="5" tag="PATIENT-3" type="name">VW Polo</reference>
+				</references>
+				<text>Audi is the manufacturer of the Audi A1. It, the Seat Ibiza and VW Polo are all cars and therefore related modes of transportation.</text>
+				<template>PATIENT-1 is the manufacturer of AGENT-1 . AGENT-1 , PATIENT-2 and PATIENT-3 are all cars and therefore related modes of transportation .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manufacturer of AGENT-1 . AGENT-1 , PATIENT-2 and PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] all cars and therefore related modes of transportation .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Audi_A1</entity>
+				<entity>PATIENT-1 | Audi</entity>
+				<entity>PATIENT-2 | SEAT_Ibiza</entity>
+				<entity>PATIENT-3 | Volkswagen_Polo</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1522" size="3">
+			<originaltripleset>
+				<otriple>Caterpillar_Inc. | foundation | California</otriple>
+				<otriple>Caterpillar_Inc. | location | Peoria,_Illinois</otriple>
+				<otriple>AIDAluna | powerType | Caterpillar_Inc.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Caterpillar_Inc. | foundationPlace | California</mtriple>
+				<mtriple>Caterpillar_Inc. | location | Peoria,_Illinois</mtriple>
+				<mtriple>AIDAluna | powerType | Caterpillar_Inc.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAluna | powerType | Caterpillar_Inc.</striple>
+						<striple>Caterpillar_Inc. | foundationPlace | California</striple>
+						<striple>Caterpillar_Inc. | location | Peoria,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAluna" number="1" tag="AGENT-1" type="name">AIDAluna</reference>
+					<reference entity="Caterpillar_Inc." number="2" tag="BRIDGE-1" type="name">Caterpillar Inc.</reference>
+					<reference entity="California" number="3" tag="PATIENT-1" type="name">California</reference>
+					<reference entity="Peoria,_Illinois" number="4" tag="PATIENT-2" type="name">Peoria , Illinois</reference>
+				</references>
+				<text>AIDAluna is powered by Caterpillar Inc. which was founded in California and is located in Peoria, Illinois.</text>
+				<template>AGENT-1 is powered by BRIDGE-1 which was founded in PATIENT-1 and is located in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] power by BRIDGE-1 which VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Caterpillar_Inc. | foundationPlace | California</striple>
+						<striple>Caterpillar_Inc. | location | Peoria,_Illinois</striple>
+						<striple>AIDAluna | powerType | Caterpillar_Inc.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Caterpillar_Inc." number="1" tag="BRIDGE-1" type="name">Caterpillar Inc.</reference>
+					<reference entity="California" number="2" tag="PATIENT-1" type="name">California</reference>
+					<reference entity="Peoria,_Illinois" number="3" tag="PATIENT-2" type="name">Peoria , Illinois</reference>
+					<reference entity="AIDAluna" number="4" tag="AGENT-1" type="description">the AIDAluna</reference>
+				</references>
+				<text>Caterpillar Inc., founded in California and located in Peoria, Illinois, powers the AIDAluna.</text>
+				<template>BRIDGE-1 , founded in PATIENT-1 and located in PATIENT-2 , powers AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] found in PATIENT-1 and located in PATIENT-2 , powers AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAluna | powerType | Caterpillar_Inc.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Caterpillar_Inc. | foundationPlace | California</striple>
+						<striple>Caterpillar_Inc. | location | Peoria,_Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAluna" number="1" tag="AGENT-1" type="description">The AIDAluna</reference>
+					<reference entity="Caterpillar_Inc." number="2" tag="BRIDGE-1" type="name">Caterpillar Inc.</reference>
+					<reference entity="Caterpillar_Inc." number="3" tag="BRIDGE-1" type="name">Caterpillar Inc</reference>
+					<reference entity="California" number="4" tag="PATIENT-1" type="name">California</reference>
+					<reference entity="Peoria,_Illinois" number="5" tag="PATIENT-2" type="name">Peoria , Illinois</reference>
+				</references>
+				<text>The AIDAluna is powered by a Caterpillar Inc. engine. Caterpillar Inc was founded in California and is now located in Peoria, Illinois.</text>
+				<template>AGENT-1 is powered by a BRIDGE-1 engine . BRIDGE-1 was founded in PATIENT-1 and is now located in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] power by DT[form=undefined] a BRIDGE-1 engine . BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] found in PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be now located in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIDAluna</entity>
+				<entity>BRIDGE-1 | Caterpillar_Inc.</entity>
+				<entity>PATIENT-1 | California</entity>
+				<entity>PATIENT-2 | Peoria,_Illinois</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1523" size="3">
+			<originaltripleset>
+				<otriple>Caterpillar_Inc. | location | Illinois</otriple>
+				<otriple>AIDAluna | shipOwner | AIDA_Cruises</otriple>
+				<otriple>AIDAluna | powerType | Caterpillar_Inc.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Caterpillar_Inc. | location | Illinois</mtriple>
+				<mtriple>AIDAluna | owner | AIDA_Cruises</mtriple>
+				<mtriple>AIDAluna | powerType | Caterpillar_Inc.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Caterpillar_Inc. | location | Illinois</striple>
+						<striple>AIDAluna | powerType | Caterpillar_Inc.</striple>
+						<striple>AIDAluna | owner | AIDA_Cruises</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Caterpillar_Inc." number="1" tag="BRIDGE-1" type="name">Caterpillar Inc.</reference>
+					<reference entity="Illinois" number="2" tag="PATIENT-1" type="name">Illinois</reference>
+					<reference entity="AIDA_Cruises" number="3" tag="PATIENT-2" type="description">the AIDA Cruise</reference>
+					<reference entity="AIDAluna" number="4" tag="AGENT-1" type="name">AIDAluna</reference>
+				</references>
+				<text>Caterpillar Inc. of Illinois powers the AIDA Cruise owned, AIDAluna.</text>
+				<template>BRIDGE-1 of PATIENT-1 powers PATIENT-2 owned , AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 of PATIENT-1 powers PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] own , AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Caterpillar_Inc. | location | Illinois</striple>
+						<striple>AIDAluna | powerType | Caterpillar_Inc.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AIDAluna | owner | AIDA_Cruises</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Caterpillar_Inc." number="1" tag="BRIDGE-1" type="name">Caterpillar Inc.</reference>
+					<reference entity="Illinois" number="2" tag="PATIENT-1" type="name">Illinois</reference>
+					<reference entity="Caterpillar_Inc." number="3" tag="BRIDGE-1" type="pronoun">they</reference>
+					<reference entity="AIDAluna" number="4" tag="AGENT-1" type="description">the AIDAluna</reference>
+					<reference entity="AIDA_Cruises" number="5" tag="PATIENT-2" type="name">AIDACruises</reference>
+					<reference entity="AIDAluna" number="6" tag="AGENT-1" type="description">the AIDAluna</reference>
+				</references>
+				<text>Caterpillar Inc. is found in Illinois and they powered the AIDAluna. AIDACruises owns the AIDAluna.</text>
+				<template>BRIDGE-1 is found in PATIENT-1 and BRIDGE-1 powered AGENT-1 . PATIENT-2 owns AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] find in PATIENT-1 and BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] power AGENT-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] own AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAluna | owner | AIDA_Cruises</striple>
+						<striple>AIDAluna | powerType | Caterpillar_Inc.</striple>
+						<striple>Caterpillar_Inc. | location | Illinois</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDA_Cruises" number="1" tag="PATIENT-2" type="name">AIDA Cruises</reference>
+					<reference entity="AIDAluna" number="2" tag="AGENT-1" type="description">the AIDAluna</reference>
+					<reference entity="Illinois" number="3" tag="PATIENT-1" type="name">Illinois</reference>
+					<reference entity="Caterpillar_Inc." number="4" tag="BRIDGE-1" type="name">Caterpillar Inc</reference>
+				</references>
+				<text>AIDA Cruises owns the AIDAluna which is powered by an engine from Illinois based Caterpillar Inc.</text>
+				<template>PATIENT-2 owns AGENT-1 which is powered by an engine from PATIENT-1 based BRIDGE-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] own AGENT-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] power by DT[form=undefined] a engine from PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] base BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIDAluna</entity>
+				<entity>BRIDGE-1 | Caterpillar_Inc.</entity>
+				<entity>PATIENT-1 | Illinois</entity>
+				<entity>PATIENT-2 | AIDA_Cruises</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1524" size="3">
+			<originaltripleset>
+				<otriple>Costa_Crociere | location | Genoa</otriple>
+				<otriple>AIDAstella | shipOperator | AIDA_Cruises</otriple>
+				<otriple>AIDAstella | owner | Costa_Crociere</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Costa_Crociere | location | Genoa</mtriple>
+				<mtriple>AIDAstella | operator | AIDA_Cruises</mtriple>
+				<mtriple>AIDAstella | owner | Costa_Crociere</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAstella | owner | Costa_Crociere</striple>
+						<striple>Costa_Crociere | location | Genoa</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AIDAstella | operator | AIDA_Cruises</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Costa_Crociere" number="1" tag="BRIDGE-1" type="name">Costa Crociere</reference>
+					<reference entity="AIDAstella" number="2" tag="AGENT-1" type="description">the AIDAstella</reference>
+					<reference entity="Genoa" number="3" tag="PATIENT-1" type="name">Genoa</reference>
+					<reference entity="AIDAstella" number="4" tag="AGENT-1" type="name">AIDAstella</reference>
+					<reference entity="AIDA_Cruises" number="5" tag="PATIENT-2" type="name">AIDA Cruises</reference>
+				</references>
+				<text>Costa Crociere is the owner of the AIDAstella and are based in Genoa. The operator of AIDAstella is AIDA Cruises.</text>
+				<template>BRIDGE-1 is the owner of AGENT-1 and are based in PATIENT-1 . The operator of AGENT-1 is PATIENT-2 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the owner of AGENT-1 and VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] base in PATIENT-1 . DT[form=defined] the operator of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAstella | operator | AIDA_Cruises</striple>
+						<striple>AIDAstella | owner | Costa_Crociere</striple>
+						<striple>Costa_Crociere | location | Genoa</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAstella" number="1" tag="AGENT-1" type="description">The ship AIDAstella</reference>
+					<reference entity="AIDA_Cruises" number="2" tag="PATIENT-2" type="name">AIDA Cruises</reference>
+					<reference entity="Costa_Crociere" number="3" tag="BRIDGE-1" type="name">Costa Crociere</reference>
+					<reference entity="Genoa" number="4" tag="PATIENT-1" type="name">Genoa</reference>
+				</references>
+				<text>The ship AIDAstella is operated by AIDA Cruises which is owned by Costa Crociere is in Genoa.</text>
+				<template>AGENT-1 is operated by PATIENT-2 which is owned by BRIDGE-1 is in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-2 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] own by BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AIDAstella | operator | AIDA_Cruises</striple>
+						<striple>AIDAstella | owner | Costa_Crociere</striple>
+						<striple>Costa_Crociere | location | Genoa</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIDAstella" number="1" tag="AGENT-1" type="name">AIDAstella</reference>
+					<reference entity="AIDA_Cruises" number="2" tag="PATIENT-2" type="name">AIDA Cruises</reference>
+					<reference entity="Costa_Crociere" number="3" tag="BRIDGE-1" type="name">Costa Crociere</reference>
+					<reference entity="Genoa" number="4" tag="PATIENT-1" type="name">Genoa</reference>
+				</references>
+				<text>AIDAstella is operated by AIDA Cruises and owned by, Costa Crociere which is located in Genoa.</text>
+				<template>AGENT-1 is operated by PATIENT-2 and owned by , BRIDGE-1 which is located in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] operate by PATIENT-2 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] own by , BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIDAstella</entity>
+				<entity>BRIDGE-1 | Costa_Crociere</entity>
+				<entity>PATIENT-1 | Genoa</entity>
+				<entity>PATIENT-2 | AIDA_Cruises</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1525" size="3">
+			<originaltripleset>
+				<otriple>Delta_II | sites | Vandenberg_AFB_Space_Launch_Complex_2</otriple>
+				<otriple>Antares_(rocket) | comparable | Delta_II</otriple>
+				<otriple>Delta_II | countryOrigin | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Delta_II | launchSite | Vandenberg_AFB_Space_Launch_Complex_2</mtriple>
+				<mtriple>Antares_(rocket) | comparable | Delta_II</mtriple>
+				<mtriple>Delta_II | countryOrigin | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Delta_II | countryOrigin | United_States</striple>
+						<striple>Delta_II | launchSite | Vandenberg_AFB_Space_Launch_Complex_2</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Antares_(rocket) | comparable | Delta_II</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Delta_II" number="1" tag="BRIDGE-1" type="description">the Delta II</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="Delta_II" number="3" tag="BRIDGE-1" type="pronoun">it</reference>
+					<reference entity="Vandenberg_AFB_Space_Launch_Complex_2" number="4" tag="PATIENT-1" type="description">the Vandenberg AFB Space Launch Complex 2</reference>
+					<reference entity="Antares_(rocket)" number="5" tag="AGENT-1" type="description">The Antares rocket</reference>
+					<reference entity="Delta_II" number="6" tag="BRIDGE-1" type="description">the Delta II</reference>
+				</references>
+				<text>The origin of the Delta II is the United States and it was launched at the Vandenberg AFB Space Launch Complex 2. The Antares rocket is similar to the Delta II.</text>
+				<template>The origin of BRIDGE-1 is PATIENT-2 and BRIDGE-1 was launched at PATIENT-1 . AGENT-1 is similar to BRIDGE-1 .</template>
+				<lexicalization>DT[form=defined] the origin of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and BRIDGE-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch at PATIENT-1 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be similar to BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antares_(rocket) | comparable | Delta_II</striple>
+						<striple>Delta_II | countryOrigin | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Delta_II | launchSite | Vandenberg_AFB_Space_Launch_Complex_2</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Antares_(rocket)" number="1" tag="AGENT-1" type="description">The rocket Antares</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">the American</reference>
+					<reference entity="Delta_II" number="3" tag="BRIDGE-1" type="name">Delta II</reference>
+					<reference entity="Delta_II" number="4" tag="BRIDGE-1" type="description">the Delta II</reference>
+					<reference entity="Vandenberg_AFB_Space_Launch_Complex_2" number="5" tag="PATIENT-1" type="description">the Vandenberg AFB Space Launch Complex 2</reference>
+				</references>
+				<text>The rocket Antares is comparable to the American, Delta II. The launch site of the Delta II was at the Vandenberg AFB Space Launch Complex 2.</text>
+				<template>AGENT-1 is comparable to PATIENT-2 , BRIDGE-1 . The launch site of BRIDGE-1 was at PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be comparable to PATIENT-2 , BRIDGE-1 . DT[form=defined] the launch site of BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be at PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Antares_(rocket) | comparable | Delta_II</striple>
+						<striple>Delta_II | countryOrigin | United_States</striple>
+						<striple>Delta_II | launchSite | Vandenberg_AFB_Space_Launch_Complex_2</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Delta_II" number="1" tag="BRIDGE-1" type="description">The Delta II</reference>
+					<reference entity="Antares_(rocket)" number="2" tag="AGENT-1" type="description">the Antares rocket</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the United States</reference>
+					<reference entity="Vandenberg_AFB_Space_Launch_Complex_2" number="4" tag="PATIENT-1" type="name">Vandenberg AFB Space Launch Complex 2</reference>
+				</references>
+				<text>The Delta II which is similar to the Antares rocket is from the United States and was launched from Vandenberg AFB Space Launch Complex 2.</text>
+				<template>BRIDGE-1 which is similar to AGENT-1 is from PATIENT-2 and was launched from PATIENT-1 .</template>
+				<lexicalization>BRIDGE-1 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be similar to AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be from PATIENT-2 and VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch from PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Antares_(rocket)</entity>
+				<entity>BRIDGE-1 | Delta_II</entity>
+				<entity>PATIENT-1 | Vandenberg_AFB_Space_Launch_Complex_2</entity>
+				<entity>PATIENT-2 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1526" size="3">
+			<originaltripleset>
+				<otriple>Guiana_Space_Centre | headquarter | French_Guiana</otriple>
+				<otriple>ELA-3 | site | Guiana_Space_Centre</otriple>
+				<otriple>Ariane_5 | sites | ELA-3</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Guiana_Space_Centre | headquarter | French_Guiana</mtriple>
+				<mtriple>ELA-3 | site | Guiana_Space_Centre</mtriple>
+				<mtriple>Ariane_5 | launchSite | ELA-3</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>ELA-3 | site | Guiana_Space_Centre</striple>
+						<striple>Guiana_Space_Centre | headquarter | French_Guiana</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Ariane_5 | launchSite | ELA-3</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="ELA-3" number="1" tag="BRIDGE-2" type="description">The ELA-3</reference>
+					<reference entity="Guiana_Space_Centre" number="2" tag="BRIDGE-1" type="description">the Guiana Space Centre</reference>
+					<reference entity="French_Guiana" number="3" tag="PATIENT-1" type="name">French Guiana</reference>
+					<reference entity="Ariane_5" number="4" tag="AGENT-1" type="description">the Ariane 5</reference>
+				</references>
+				<text>The ELA-3 is found at the Guiana Space Centre whose HQ is in French Guiana. One craft launched there was the Ariane 5.</text>
+				<template>BRIDGE-2 is found at BRIDGE-1 whose HQ is in PATIENT-1 . One craft launched there was AGENT-1 .</template>
+				<lexicalization>BRIDGE-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] find at BRIDGE-1 whose HQ VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in PATIENT-1 . One craft VP[aspect=simple,tense=past,voice=active,person=null,number=null] launch there VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ariane_5 | launchSite | ELA-3</striple>
+						<striple>ELA-3 | site | Guiana_Space_Centre</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Guiana_Space_Centre | headquarter | French_Guiana</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ariane_5" number="1" tag="AGENT-1" type="description">The Ariane 5</reference>
+					<reference entity="ELA-3" number="2" tag="BRIDGE-2" type="name">ELA-3</reference>
+					<reference entity="Guiana_Space_Centre" number="3" tag="BRIDGE-1" type="description">the Guiana Space Centre</reference>
+					<reference entity="Guiana_Space_Centre" number="4" tag="BRIDGE-1" type="description">The Guiana Space Centre</reference>
+					<reference entity="Guiana_Space_Centre" number="5" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="French_Guiana" number="6" tag="PATIENT-1" type="name">French Guiana</reference>
+				</references>
+				<text>The Ariane 5 was launched at ELA-3 at the Guiana Space Centre. The Guiana Space Centre has its headquarters in French Guiana.</text>
+				<template>AGENT-1 was launched at BRIDGE-2 at BRIDGE-1 . BRIDGE-1 has BRIDGE-1 headquarters in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] launch at BRIDGE-2 at BRIDGE-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have BRIDGE-1 headquarters in PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ariane_5</entity>
+				<entity>BRIDGE-1 | Guiana_Space_Centre</entity>
+				<entity>BRIDGE-2 | ELA-3</entity>
+				<entity>PATIENT-1 | French_Guiana</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1527" size="3">
+			<originaltripleset>
+				<otriple>Guiana_Space_Centre | location | Kourou,_French_Guiana</otriple>
+				<otriple>ELA-3 | site | Guiana_Space_Centre</otriple>
+				<otriple>Ariane_5 | sites | ELA-3</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Guiana_Space_Centre | location | Kourou,_French_Guiana</mtriple>
+				<mtriple>ELA-3 | site | Guiana_Space_Centre</mtriple>
+				<mtriple>Ariane_5 | launchSite | ELA-3</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ariane_5 | launchSite | ELA-3</striple>
+						<striple>ELA-3 | site | Guiana_Space_Centre</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Guiana_Space_Centre | location | Kourou,_French_Guiana</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ariane_5" number="1" tag="AGENT-1" type="description">the Ariane</reference>
+					<reference entity="ELA-3" number="2" tag="BRIDGE-2" type="name">ELA-3</reference>
+					<reference entity="Guiana_Space_Centre" number="3" tag="BRIDGE-1" type="description">the Guiana Space Centre</reference>
+					<reference entity="Guiana_Space_Centre" number="4" tag="BRIDGE-1" type="description">The Guiana Space Centre</reference>
+					<reference entity="Kourou,_French_Guiana" number="5" tag="PATIENT-1" type="name">Kourou , French Guiana</reference>
+				</references>
+				<text>The launch site of the Ariane was ELA-3 launchpad, the site of which, is situated at the Guiana Space Centre. The Guiana Space Centre is located in Kourou,French Guiana.</text>
+				<template>The launch site of AGENT-1 was BRIDGE-2 launchpad , the site of which , is situated at BRIDGE-1 . BRIDGE-1 is located in PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the launch site of AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-2 launchpad , DT[form=defined] the site of which , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] situate at BRIDGE-1 . BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ariane_5 | launchSite | ELA-3</striple>
+						<striple>ELA-3 | site | Guiana_Space_Centre</striple>
+						<striple>Guiana_Space_Centre | location | Kourou,_French_Guiana</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ariane_5" number="1" tag="AGENT-1" type="description">the Ariane</reference>
+					<reference entity="ELA-3" number="2" tag="BRIDGE-2" type="name">ELA-3</reference>
+					<reference entity="Guiana_Space_Centre" number="3" tag="BRIDGE-1" type="description">the Guiana Space Centre</reference>
+					<reference entity="Kourou,_French_Guiana" number="4" tag="PATIENT-1" type="name">Kourou , French Guiana</reference>
+				</references>
+				<text>The launch site of the Ariane was ELA-3 at the Guiana Space Centre at Kourou, French Guiana.</text>
+				<template>The launch site of AGENT-1 was BRIDGE-2 at BRIDGE-1 at PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the launch site of AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-2 at BRIDGE-1 at PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Guiana_Space_Centre | location | Kourou,_French_Guiana</striple>
+						<striple>ELA-3 | site | Guiana_Space_Centre</striple>
+						<striple>Ariane_5 | launchSite | ELA-3</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Guiana_Space_Centre" number="1" tag="BRIDGE-1" type="description">The Guiana Space Centre</reference>
+					<reference entity="Kourou,_French_Guiana" number="2" tag="PATIENT-1" type="name">Kourou , French Guiana</reference>
+					<reference entity="ELA-3" number="3" tag="BRIDGE-2" type="name">ELA-3</reference>
+					<reference entity="Ariane_5" number="4" tag="AGENT-1" type="description">the Ariane 5</reference>
+				</references>
+				<text>The Guiana Space Centre, in Kourou, French Guiana, is the location of ELA-3, the launchsite of the Ariane 5.</text>
+				<template>BRIDGE-1 , in PATIENT-1 , is the location of BRIDGE-2 , the launchsite of AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 , in PATIENT-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the location of BRIDGE-2 , DT[form=defined] the launchsite of AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ariane_5</entity>
+				<entity>BRIDGE-1 | Guiana_Space_Centre</entity>
+				<entity>BRIDGE-2 | ELA-3</entity>
+				<entity>PATIENT-1 | Kourou,_French_Guiana</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1528" size="3">
+			<originaltripleset>
+				<otriple>Neptun_Werft | locationCity | Rostock</otriple>
+				<otriple>A-Rosa_Luna | builder | Neptun_Werft</otriple>
+				<otriple>Neptun_Werft | locationCountry | Germany</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Neptun_Werft | locationCity | Rostock</mtriple>
+				<mtriple>A-Rosa_Luna | builder | Neptun_Werft</mtriple>
+				<mtriple>Neptun_Werft | locationCountry | Germany</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A-Rosa_Luna | builder | Neptun_Werft</striple>
+						<striple>Neptun_Werft | locationCity | Rostock</striple>
+						<striple>Neptun_Werft | locationCountry | Germany</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A-Rosa_Luna" number="1" tag="AGENT-1" type="description">The A-Rosa</reference>
+					<reference entity="Neptun_Werft" number="2" tag="BRIDGE-1" type="name">Neptun Werft</reference>
+					<reference entity="Rostock" number="3" tag="PATIENT-1" type="name">Rostock</reference>
+					<reference entity="Germany" number="4" tag="PATIENT-2" type="name">Germany</reference>
+				</references>
+				<text>The A-Rosa was built by Neptun Werft which is headquartered in Rostock, Germany.</text>
+				<template>AGENT-1 was built by BRIDGE-1 which is headquartered in PATIENT-1 , PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] build by BRIDGE-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] headquarter in PATIENT-1 , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A-Rosa_Luna | builder | Neptun_Werft</striple>
+						<striple>Neptun_Werft | locationCity | Rostock</striple>
+						<striple>Neptun_Werft | locationCountry | Germany</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A-Rosa_Luna" number="1" tag="AGENT-1" type="description">the A-Rosa</reference>
+					<reference entity="Neptun_Werft" number="2" tag="BRIDGE-1" type="name">Neptun Werft</reference>
+					<reference entity="Rostock" number="3" tag="PATIENT-1" type="name">Rostock</reference>
+					<reference entity="Germany" number="4" tag="PATIENT-2" type="name">Germany</reference>
+				</references>
+				<text>The builder of the A-Rosa is Neptun Werft, which headquartered in Rostock, Germany.</text>
+				<template>The builder of AGENT-1 is BRIDGE-1 , which headquartered in PATIENT-1 , PATIENT-2 .</template>
+				<lexicalization>DT[form=defined] the builder of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , which VP[aspect=simple,tense=past,voice=active,person=null,number=null] headquarter in PATIENT-1 , PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Neptun_Werft | locationCity | Rostock</striple>
+						<striple>Neptun_Werft | locationCountry | Germany</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A-Rosa_Luna | builder | Neptun_Werft</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Neptun_Werft" number="1" tag="BRIDGE-1" type="name">Neptun Werft</reference>
+					<reference entity="Rostock" number="2" tag="PATIENT-1" type="name">Rostock</reference>
+					<reference entity="Germany" number="3" tag="PATIENT-2" type="name">Germany</reference>
+					<reference entity="Neptun_Werft" number="4" tag="BRIDGE-1" type="pronoun">They</reference>
+					<reference entity="A-Rosa_Luna" number="5" tag="AGENT-1" type="description">the A Rosa Luna</reference>
+				</references>
+				<text>Neptun Werft is headquartered in Rostock, Germany. They made the A Rosa Luna.</text>
+				<template>BRIDGE-1 is headquartered in PATIENT-1 , PATIENT-2 . BRIDGE-1 made AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] headquarter in PATIENT-1 , PATIENT-2 . BRIDGE-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] make AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A-Rosa_Luna</entity>
+				<entity>BRIDGE-1 | Neptun_Werft</entity>
+				<entity>PATIENT-1 | Rostock</entity>
+				<entity>PATIENT-2 | Germany</entity>
+			</entitymap>
+		</entry>
+		<entry category="MeanOfTransportation" eid="Id1529" size="3">
+			<originaltripleset>
+				<otriple>United_States | demonym | Americans</otriple>
+				<otriple>Atlas_II | countryOrigin | United_States</otriple>
+				<otriple>United_States | ethnicGroup | African_Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | demonym | Americans</mtriple>
+				<mtriple>Atlas_II | countryOrigin | United_States</mtriple>
+				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>United_States | demonym | Americans</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlas_II" number="1" tag="AGENT-1" type="description">The Atlas II</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Americans" number="3" tag="PATIENT-1" type="name">Americans</reference>
+					<reference entity="African_Americans" number="4" tag="PATIENT-2" type="name">African Americans</reference>
+				</references>
+				<text>The Atlas II originated in the United States, where the inhabitants are called Americans and where African Americans are one of the ethnic groups.</text>
+				<template>AGENT-1 originated in BRIDGE-1 , where the inhabitants are called PATIENT-1 and where PATIENT-2 are one of the ethnic groups .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] originate in BRIDGE-1 , where DT[form=defined] the inhabitants VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] call PATIENT-1 and where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be one of DT[form=defined] the ethnic groups .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>United_States | demonym | Americans</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlas_II" number="1" tag="AGENT-1" type="description">The Atlas II</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the U.S</reference>
+					<reference entity="Americans" number="3" tag="PATIENT-1" type="name">Americans</reference>
+					<reference entity="African_Americans" number="4" tag="PATIENT-2" type="name">African Americans</reference>
+				</references>
+				<text>The Atlas II originated from the U.S, where Americans live and one of the ethnic groups is African Americans.</text>
+				<template>AGENT-1 originated from BRIDGE-1 , where PATIENT-1 live and one of the ethnic groups is PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] originate from BRIDGE-1 , where PATIENT-1 live and one of DT[form=defined] the ethnic groups VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atlas_II | countryOrigin | United_States</striple>
+						<striple>United_States | demonym | Americans</striple>
+						<striple>United_States | ethnicGroup | African_Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atlas_II" number="1" tag="AGENT-1" type="name">Atlas II</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="Americans" number="3" tag="PATIENT-1" type="name">Americans</reference>
+					<reference entity="African_Americans" number="4" tag="PATIENT-2" type="name">African Americans</reference>
+				</references>
+				<text>Atlas II comes from the US, where Americans live and where African Americans are an ethnic group.</text>
+				<template>AGENT-1 comes from BRIDGE-1 , where PATIENT-1 live and where PATIENT-2 are an ethnic group .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] come from BRIDGE-1 , where PATIENT-1 live and where PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=undefined] a ethnic group .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atlas_II</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | African_Americans</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>
