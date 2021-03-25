@@ -1,0 +1,571 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id360" size="2">
+			<originaltripleset>
+				<otriple>April_ONeil | creators | Peter_Laird</otriple>
+				<otriple>Peter_Laird | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>April_ONeil | creator | Peter_Laird</mtriple>
+				<mtriple>Peter_Laird | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>April_ONeil | creator | Peter_Laird</striple>
+						<striple>Peter_Laird | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="April_ONeil" number="1" tag="AGENT-1" type="name">April O'Neil</reference>
+					<reference entity="Peter_Laird" number="2" tag="BRIDGE-1" type="name">Peter Laird</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the US</reference>
+				</references>
+				<text>April O'Neil was created by Peter Laird, from the US.</text>
+				<template>AGENT-1 was created by BRIDGE-1 , from PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by BRIDGE-1 , from PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>April_ONeil | creator | Peter_Laird</striple>
+						<striple>Peter_Laird | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="April_ONeil" number="1" tag="AGENT-1" type="description">The character , April O'Neil ,</reference>
+					<reference entity="Peter_Laird" number="2" tag="BRIDGE-1" type="name">Peter Laird</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>The character, April O'Neil, was created by Peter Laird, a United States national.</text>
+				<template>AGENT-1 was created by BRIDGE-1 , a PATIENT-1 national .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by BRIDGE-1 , DT[form=undefined] a PATIENT-1 national .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>April_ONeil | creator | Peter_Laird</striple>
+						<striple>Peter_Laird | nationality | United_States</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="April_ONeil" number="1" tag="AGENT-1" type="name">April O'Neil</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the American</reference>
+					<reference entity="Peter_Laird" number="3" tag="BRIDGE-1" type="name">Peter Laird</reference>
+				</references>
+				<text>April O'Neil was created by the American @ Peter Laird.</text>
+				<template>AGENT-1 was created by PATIENT-1 @ BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-1 BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | April_ONeil</entity>
+				<entity>BRIDGE-1 | Peter_Laird</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id361" size="2">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | starring | Jill_Shilling</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | starring | Jill_Shilling</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Jill_Shilling" number="2" tag="PATIENT-2" type="name">Jill Shilling</reference>
+					<reference entity="BBC" number="3" tag="PATIENT-1" type="description">the BBC</reference>
+				</references>
+				<text>Bananaman, starring Jill Shilling, is broadcasted by the BBC.</text>
+				<template>AGENT-1 , starring PATIENT-2 , is broadcasted by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=progressive,tense=present,voice=active,person=null,number=null] star PATIENT-2 , VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] broadcast by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | broadcastedBy | BBC</striple>
+						<striple>Bananaman | starring | Jill_Shilling</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
+					<reference entity="Jill_Shilling" number="3" tag="PATIENT-2" type="name">Jill Shilling</reference>
+				</references>
+				<text>Bananaman was broadcast by the BBC and starred Jill Shilling.</text>
+				<template>AGENT-1 was broadcast by PATIENT-1 and starred PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] broadcast by PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] star PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | Jill_Shilling</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id362" size="2">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Graeme_Garden</otriple>
+				<otriple>Bananaman | network | &quot;STV&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Graeme_Garden</mtriple>
+				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Graeme_Garden" number="1" tag="PATIENT-1" type="name">Graeme Garden</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;STV&quot;" number="3" tag="PATIENT-2" type="name">STV</reference>
+				</references>
+				<text>Graeme Garden stars in Bananaman, which is broadcast by STV.</text>
+				<template>PATIENT-1 stars in AGENT-1 , which is broadcast by PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 stars in AGENT-1 , which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] broadcast by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Graeme_Garden" number="2" tag="PATIENT-1" type="name">Graeme Garden</reference>
+					<reference entity="&quot;STV&quot;" number="3" tag="PATIENT-2" type="name">STV</reference>
+				</references>
+				<text>Bananaman stars Graeme Garden, and is broadcasted by STV.</text>
+				<template>AGENT-1 stars PATIENT-1 , and is broadcasted by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 stars PATIENT-1 , and VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] broadcast by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Graeme_Garden</striple>
+						<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Graeme_Garden" number="1" tag="PATIENT-1" type="name">Graeme Garden</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;STV&quot;" number="3" tag="PATIENT-2" type="name">STV</reference>
+				</references>
+				<text>Graeme Garden stars in Bananaman which is broadcasted by STV.</text>
+				<template>PATIENT-1 stars in AGENT-1 which is broadcasted by PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 stars in AGENT-1 which VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] broadcast by PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Graeme_Garden</entity>
+				<entity>PATIENT-2 | &quot;STV&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id363" size="2">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Tim_Brooke-Taylor | birthPlace | Derbyshire</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Tim_Brooke-Taylor</mtriple>
+				<mtriple>Tim_Brooke-Taylor | birthPlace | Derbyshire</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+						<striple>Tim_Brooke-Taylor | birthPlace | Derbyshire</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="BRIDGE-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Derbyshire" number="3" tag="PATIENT-1" type="name">Derbyshire</reference>
+				</references>
+				<text>Tim Brooke-Taylor, star of Bananaman was born in Derbyshire.</text>
+				<template>BRIDGE-1 , star of AGENT-1 was born in PATIENT-1 .</template>
+				<lexicalization>BRIDGE-1 , star of AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Tim_Brooke-Taylor | birthPlace | Derbyshire</striple>
+						<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="BRIDGE-1" type="name">Tim Brooke Taylor</reference>
+					<reference entity="Derbyshire" number="2" tag="PATIENT-1" type="name">Derbyshire</reference>
+					<reference entity="Bananaman" number="3" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>Tim Brooke Taylor, was born in Derbyshire, and starred in Bananaman.</text>
+				<template>BRIDGE-1 , was born in PATIENT-1 , and starred in AGENT-1 .</template>
+				<lexicalization>BRIDGE-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 , and VP[aspect=simple,tense=past,voice=active,person=null,number=null] star in AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>BRIDGE-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-1 | Derbyshire</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id364" size="2">
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Alan_Tudyk</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Alan_Tudyk</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
+						<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="BRIDGE-1" type="name">Big Hero 6</reference>
+					<reference entity="Alan_Tudyk" number="2" tag="PATIENT-1" type="name">Alan Tudyk</reference>
+					<reference entity="Baymax" number="3" tag="AGENT-1" type="name">Baymax 's</reference>
+				</references>
+				<text>Big Hero 6, starring Alan Tudyk, was Baymax's first film appearance.</text>
+				<template>BRIDGE-1 , starring PATIENT-1 , was AGENT-1 first film appearance .</template>
+				<lexicalization>BRIDGE-1 , VP[aspect=progressive,tense=present,voice=active,person=null,number=null] star PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be AGENT-1 first film appearance .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-1" type="description">the film Big Hero 6</reference>
+					<reference entity="Alan_Tudyk" number="3" tag="PATIENT-1" type="name">Alan Tudyk</reference>
+				</references>
+				<text>Baymax first appeared in the film Big Hero 6, starring Alan Tudyk.</text>
+				<template>AGENT-1 first appeared in BRIDGE-1 , starring PATIENT-1 .</template>
+				<lexicalization>AGENT-1 first VP[aspect=simple,tense=past,voice=active,person=null,number=null] appear in BRIDGE-1 , VP[aspect=progressive,tense=present,voice=active,person=null,number=null] star PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Alan_Tudyk</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id365" size="2">
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Scott_Adsit</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="description">the character Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-1" type="name">Big Hero 6</reference>
+					<reference entity="Scott_Adsit" number="3" tag="PATIENT-1" type="name">Scott Adsit</reference>
+				</references>
+				<text>The first appearance in a film for the character Baymax was Big Hero 6, the film that Scott Adsit starred in.</text>
+				<template>The first appearance in a film for AGENT-1 was BRIDGE-1 , the film that PATIENT-1 starred in .</template>
+				<lexicalization>DT[form=defined] the first appearance in DT[form=undefined] a film for AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 , DT[form=defined] the film that PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] star in .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="description">the character Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-1" type="name">Big Hero 6</reference>
+					<reference entity="Scott_Adsit" number="3" tag="PATIENT-1" type="name">Scott Adsit</reference>
+				</references>
+				<text>The first appearance in a film for the character Baymax was Big Hero 6 which starred Scott Adsit.</text>
+				<template>The first appearance in a film for AGENT-1 was BRIDGE-1 which starred PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the first appearance in DT[form=undefined] a film for AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be BRIDGE-1 which VP[aspect=simple,tense=past,voice=active,person=null,number=null] star PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-1" type="name">Big Hero 6</reference>
+					<reference entity="Scott_Adsit" number="3" tag="PATIENT-1" type="name">Scott Adsit</reference>
+				</references>
+				<text>Baymax first appeared in Big Hero 6, starring Scott Adsit.</text>
+				<template>AGENT-1 first appeared in BRIDGE-1 , starring PATIENT-1 .</template>
+				<lexicalization>AGENT-1 first VP[aspect=simple,tense=past,voice=active,person=null,number=null] appear in BRIDGE-1 , VP[aspect=progressive,tense=present,voice=active,person=null,number=null] star PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Scott_Adsit</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id366" size="2">
+			<originaltripleset>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-2" type="name">Steve T. Seagle</reference>
+					<reference entity="Big_Hero_6_(film)" number="3" tag="PATIENT-1" type="name">Big Hero 6</reference>
+				</references>
+				<text>Baymax, created by Steve T. Seagle, is a character in Big Hero 6.</text>
+				<template>AGENT-1 , created by PATIENT-2 , is a character in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] create by PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a character in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-2" type="name">Steven t Seagle</reference>
+					<reference entity="Big_Hero_6_(film)" number="3" tag="PATIENT-1" type="name">Big Hero 6</reference>
+				</references>
+				<text>Baymax was created by Steven t Seagle and is a character in Big Hero 6.</text>
+				<template>AGENT-1 was created by PATIENT-2 and is a character in PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a character in PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="name">Big Hero 6</reference>
+					<reference entity="Steven_T._Seagle" number="3" tag="PATIENT-2" type="name">Steven</reference>
+				</references>
+				<text>Baymax, a character in Big Hero 6, was created by Steven. T Seagle.</text>
+				<template>AGENT-1 , a character in PATIENT-1 , was created by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , DT[form=undefined] a character in PATIENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>PATIENT-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id367" size="2">
+			<originaltripleset>
+				<otriple>Ben_Urich | creators | Roger_McKenzie_(comics)</otriple>
+				<otriple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</mtriple>
+				<mtriple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</striple>
+						<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ben_Urich" number="1" tag="AGENT-1" type="description">The comic book character Ben Urich</reference>
+					<reference entity="&quot;Benjamin Urich&quot;" number="2" tag="PATIENT-2" type="name">Benjamin Urich</reference>
+					<reference entity="Roger_McKenzie_(comic_book_writer)" number="3" tag="PATIENT-1" type="name">Roger McKenzie</reference>
+				</references>
+				<text>The comic book character Ben Urich ( full name, Benjamin Urich ) was created by Roger McKenzie.</text>
+				<template>AGENT-1 ( full name , PATIENT-2 ) was created by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 ( full name , PATIENT-2 ) VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
+						<striple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roger_McKenzie_(comic_book_writer)" number="1" tag="PATIENT-1" type="name">Roger McKenzie</reference>
+					<reference entity="Ben_Urich" number="2" tag="AGENT-1" type="name">Ben Urich</reference>
+					<reference entity="&quot;Benjamin Urich&quot;" number="3" tag="PATIENT-2" type="name">Benjamin Urich</reference>
+				</references>
+				<text>Roger McKenzie is the comic book writer who created Ben Urich (full name Benjamin Urich).</text>
+				<template>PATIENT-1 is the comic book writer who created AGENT-1 (full name PATIENT-2) .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the comic book writer who VP[aspect=simple,tense=past,voice=active,person=null,number=null] create AGENT-1 ( full name PATIENT-2 ) .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
+						<striple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roger_McKenzie_(comic_book_writer)" number="1" tag="PATIENT-1" type="name">Roger McKenzie , the comic book writer ,</reference>
+					<reference entity="Ben_Urich" number="2" tag="AGENT-1" type="name">Ben Urich</reference>
+					<reference entity="&quot;Benjamin Urich&quot;" number="3" tag="PATIENT-2" type="name">Benjamin Urich</reference>
+				</references>
+				<text>Roger McKenzie, the comic book writer, is the creator of Ben Urich ( Benjamin Urich ).</text>
+				<template>PATIENT-1 is the creator of AGENT-1 ( PATIENT-2 ) .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the creator of AGENT-1 ( PATIENT-2 ) .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ben_Urich</entity>
+				<entity>PATIENT-1 | Roger_McKenzie_(comic_book_writer)</entity>
+				<entity>PATIENT-2 | &quot;Benjamin Urich&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id368" size="2">
+			<originaltripleset>
+				<otriple>Bibbo_Bibbowski | creators | Jerry_Ordway</otriple>
+				<otriple>Bibbo_Bibbowski | creator | Marv_Wolfman</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bibbo_Bibbowski | creator | Jerry_Ordway</mtriple>
+				<mtriple>Bibbo_Bibbowski | creator | Marv_Wolfman</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | creator | Jerry_Ordway</striple>
+						<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bibbo_Bibbowski" number="1" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+					<reference entity="Jerry_Ordway" number="2" tag="PATIENT-1" type="name">Jerry Ordway</reference>
+					<reference entity="Marv_Wolfman" number="3" tag="PATIENT-2" type="name">Marv Wolfman</reference>
+				</references>
+				<text>Bibbo Bibbowski was created by Jerry Ordway and Marv Wolfman.</text>
+				<template>AGENT-1 was created by PATIENT-1 and PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-1 and PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | creator | Jerry_Ordway</striple>
+						<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jerry_Ordway" number="1" tag="PATIENT-1" type="name">Jerry Ordway</reference>
+					<reference entity="Marv_Wolfman" number="2" tag="PATIENT-2" type="name">Marv Wolfman</reference>
+					<reference entity="Bibbo_Bibbowski" number="3" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+				</references>
+				<text>Jerry Ordway and Marv Wolfman are the creators of Bibbo Bibbowski.</text>
+				<template>PATIENT-1 and PATIENT-2 are the creators of AGENT-1 .</template>
+				<lexicalization>PATIENT-1 and PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] the creators of AGENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
+						<striple>Bibbo_Bibbowski | creator | Jerry_Ordway</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bibbo_Bibbowski" number="1" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+					<reference entity="Marv_Wolfman" number="2" tag="PATIENT-2" type="name">Marv Wolfman</reference>
+					<reference entity="Jerry_Ordway" number="3" tag="PATIENT-1" type="name">Jerry Ordway</reference>
+				</references>
+				<text>Bibbo Bibbowski is the creation of Marv Wolfman and Jerry Ordway.</text>
+				<template>AGENT-1 is the creation of PATIENT-2 and PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the creation of PATIENT-2 and PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bibbo_Bibbowski</entity>
+				<entity>PATIENT-1 | Jerry_Ordway</entity>
+				<entity>PATIENT-2 | Marv_Wolfman</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id369" size="2">
+			<originaltripleset>
+				<otriple>Bibbo_Bibbowski | creator | Marv_Wolfman</otriple>
+				<otriple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bibbo_Bibbowski | creator | Marv_Wolfman</mtriple>
+				<mtriple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</striple>
+						<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bibbo_Bibbowski" number="1" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+					<reference entity="&quot;Bo Bibbowski&quot;" number="2" tag="PATIENT-2" type="name">Bo Bibbowski</reference>
+					<reference entity="Marv_Wolfman" number="3" tag="PATIENT-1" type="name">Marv Wolfman</reference>
+				</references>
+				<text>Bibbo Bibbowski, often called Bo Bibbowski, was created by Marv Wolfman.</text>
+				<template>AGENT-1 , often called PATIENT-2 , was created by PATIENT-1 .</template>
+				<lexicalization>AGENT-1 , often VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-2 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
+						<striple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marv_Wolfman" number="1" tag="PATIENT-1" type="name">Marv Wolfman</reference>
+					<reference entity="Bibbo_Bibbowski" number="2" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+					<reference entity="&quot;Bo Bibbowski&quot;" number="3" tag="PATIENT-2" type="name">Bo Bibbowski</reference>
+				</references>
+				<text>Marv Wolfman was creator of Bibbo Bibbowski, often called Bo Bibbowski.</text>
+				<template>PATIENT-1 was creator of AGENT-1 , often called PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be creator of AGENT-1 , often VP[aspect=simple,tense=past,voice=active,person=null,number=null] call PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bibbo_Bibbowski</entity>
+				<entity>PATIENT-1 | Marv_Wolfman</entity>
+				<entity>PATIENT-2 | &quot;Bo Bibbowski&quot;</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

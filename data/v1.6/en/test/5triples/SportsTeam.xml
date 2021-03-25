@@ -1,0 +1,481 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="SportsTeam" eid="Id837" size="5">
+			<originaltripleset>
+				<otriple>A.C._Lumezzane | manager | Michele_Marcolini</otriple>
+				<otriple>A.C._Lumezzane | ground | Italy</otriple>
+				<otriple>Italy | leader | Pietro_Grasso</otriple>
+				<otriple>Michele_Marcolini | clubs | F.C._Bari_1908</otriple>
+				<otriple>Michele_Marcolini | team | Vicenza_Calcio</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.C._Lumezzane | manager | Michele_Marcolini</mtriple>
+				<mtriple>A.C._Lumezzane | ground | Italy</mtriple>
+				<mtriple>Italy | leader | Pietro_Grasso</mtriple>
+				<mtriple>Michele_Marcolini | club | F.C._Bari_1908</mtriple>
+				<mtriple>Michele_Marcolini | club | Vicenza_Calcio</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Italy | leader | Pietro_Grasso</striple>
+						<striple>A.C._Lumezzane | ground | Italy</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.C._Lumezzane | manager | Michele_Marcolini</striple>
+						<striple>Michele_Marcolini | club | Vicenza_Calcio</striple>
+						<striple>Michele_Marcolini | club | F.C._Bari_1908</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Italy" number="1" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Pietro_Grasso" number="2" tag="PATIENT-1" type="name">Pietro Grasso</reference>
+					<reference entity="A.C._Lumezzane" number="3" tag="AGENT-1" type="name">AC Lumezzane</reference>
+					<reference entity="A.C._Lumezzane" number="4" tag="AGENT-1" type="name">Their</reference>
+					<reference entity="Michele_Marcolini" number="5" tag="BRIDGE-2" type="name">Michele Marcolini</reference>
+					<reference entity="Vicenza_Calcio" number="6" tag="PATIENT-3" type="name">Vicenza Calcio</reference>
+					<reference entity="F.C._Bari_1908" number="7" tag="PATIENT-2" type="name">FC Bari 1908</reference>
+				</references>
+				<text>Italy is led by Pietro Grasso and is where AC Lumezzane play. Their manager is Michele Marcolini who is in the Vicenza Calcio club and plays for FC Bari 1908.</text>
+				<template>BRIDGE-1 is led by PATIENT-1 and is where AGENT-1 play . AGENT-1 manager is BRIDGE-2 who is in the PATIENT-3 club and plays for PATIENT-2 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] lead by PATIENT-1 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be where AGENT-1 play . AGENT-1 manager VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 who VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the PATIENT-3 club and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.C._Lumezzane | manager | Michele_Marcolini</striple>
+						<striple>Michele_Marcolini | club | F.C._Bari_1908</striple>
+						<striple>Michele_Marcolini | club | Vicenza_Calcio</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.C._Lumezzane | ground | Italy</striple>
+						<striple>Italy | leader | Pietro_Grasso</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.C._Lumezzane" number="1" tag="AGENT-1" type="name">A.C. Lumezzane</reference>
+					<reference entity="Michele_Marcolini" number="2" tag="BRIDGE-2" type="name">Michele Marcolini</reference>
+					<reference entity="F.C._Bari_1908" number="3" tag="PATIENT-2" type="name">F.C . Bari 1908</reference>
+					<reference entity="Vicenza_Calcio" number="4" tag="PATIENT-3" type="name">Vicenza Calcio</reference>
+					<reference entity="A.C._Lumezzane" number="5" tag="AGENT-1" type="name">A.C. Lumezzane 's</reference>
+					<reference entity="Italy" number="6" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Pietro_Grasso" number="7" tag="PATIENT-1" type="name">Pietro Grasso</reference>
+				</references>
+				<text>The manager of A.C. Lumezzane is Michele Marcolini who has played for F.C. Bari 1908 and Vicenza Calcio. A.C. Lumezzane's ground is in Italy where the leader is Pietro Grasso.</text>
+				<template>The manager of AGENT-1 is BRIDGE-2 who has played for PATIENT-2 and PATIENT-3 . AGENT-1 ground is in BRIDGE-1 where the leader is PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the manager of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-2 who VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] play for PATIENT-2 and PATIENT-3 . AGENT-1 ground VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.C._Lumezzane</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>BRIDGE-2 | Michele_Marcolini</entity>
+				<entity>PATIENT-1 | Pietro_Grasso</entity>
+				<entity>PATIENT-2 | F.C._Bari_1908</entity>
+				<entity>PATIENT-3 | Vicenza_Calcio</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id838" size="5">
+			<originaltripleset>
+				<otriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</otriple>
+				<otriple>Stuart_Parker_(footballer) | clubs | Chesterfield_F.C.</otriple>
+				<otriple>Stuart_Parker_(footballer) | team | Stockport_County_F.C.</otriple>
+				<otriple>A.F.C._Blackpool | ground | Blackpool</otriple>
+				<otriple>Blackpool | leaderName | Labour_Party_(UK)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</mtriple>
+				<mtriple>Stuart_Parker_(footballer) | club | Chesterfield_F.C.</mtriple>
+				<mtriple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</mtriple>
+				<mtriple>A.F.C._Blackpool | ground | Blackpool</mtriple>
+				<mtriple>Blackpool | leader | Labour_Party_(UK)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.F.C._Blackpool | ground | Blackpool</striple>
+						<striple>Blackpool | leader | Labour_Party_(UK)</striple>
+						<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
+						<striple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</striple>
+						<striple>Stuart_Parker_(footballer) | club | Chesterfield_F.C.</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.F.C._Blackpool" number="1" tag="AGENT-1" type="name">A.F.C . Blackpool</reference>
+					<reference entity="Blackpool" number="2" tag="BRIDGE-2" type="name">Blackpool</reference>
+					<reference entity="Labour_Party_(UK)" number="3" tag="PATIENT-3" type="name">Labour</reference>
+					<reference entity="A.F.C._Blackpool" number="4" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="Stuart_Parker_(footballer)" number="5" tag="BRIDGE-1" type="name">Stuart Parker</reference>
+					<reference entity="A.F.C._Blackpool" number="6" tag="AGENT-1" type="name">their</reference>
+					<reference entity="Stockport_County_F.C." number="7" tag="PATIENT-2" type="name">Stockport County F.C</reference>
+					<reference entity="Chesterfield_F.C." number="8" tag="PATIENT-1" type="name">Chesterfield football club</reference>
+				</references>
+				<text>A.F.C. Blackpool is in Blackpool, which council is Labour, it has had Stuart Parker as their manager, whose football club was Stockport County F.C and is attached to Chesterfield football club.</text>
+				<template>AGENT-1 is in BRIDGE-2 , which council is PATIENT-3 , AGENT-1 has had BRIDGE-1 as AGENT-1 manager , whose football club was PATIENT-2 and is attached to PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-2 , which council VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 , AGENT-1 VP[aspect=perfect,tense=present,voice=active,person=3rd,number=null] have BRIDGE-1 as AGENT-1 manager , whose football club VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-2 and VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] attach to PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
+				<entity>BRIDGE-1 | Stuart_Parker_(footballer)</entity>
+				<entity>BRIDGE-2 | Blackpool</entity>
+				<entity>PATIENT-1 | Chesterfield_F.C.</entity>
+				<entity>PATIENT-2 | Stockport_County_F.C.</entity>
+				<entity>PATIENT-3 | Labour_Party_(UK)</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id839" size="5">
+			<originaltripleset>
+				<otriple>A.S._Gubbio_1910 | league | Serie_D</otriple>
+				<otriple>Italy | leader | Sergio_Mattarella</otriple>
+				<otriple>A.S._Gubbio_1910 | ground | Italy</otriple>
+				<otriple>Italy | language | Italian_language</otriple>
+				<otriple>Serie_D | champions | S.S._Robur_Siena</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A.S._Gubbio_1910 | league | Serie_D</mtriple>
+				<mtriple>Italy | leader | Sergio_Mattarella</mtriple>
+				<mtriple>A.S._Gubbio_1910 | ground | Italy</mtriple>
+				<mtriple>Italy | language | Italian_language</mtriple>
+				<mtriple>Serie_D | champions | S.S._Robur_Siena</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Serie_D | champions | S.S._Robur_Siena</striple>
+						<striple>A.S._Gubbio_1910 | league | Serie_D</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+						<striple>Italy | language | Italian_language</striple>
+						<striple>Italy | leader | Sergio_Mattarella</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="S.S._Robur_Siena" number="1" tag="PATIENT-3" type="name">S.S. Robur Siena</reference>
+					<reference entity="Serie_D" number="2" tag="BRIDGE-2" type="name">Serie D.</reference>
+					<reference entity="A.S._Gubbio_1910" number="3" tag="AGENT-1" type="name">AS Gubbio 1910</reference>
+					<reference entity="A.S._Gubbio_1910" number="4" tag="AGENT-1" type="demonstrative">This latter team</reference>
+					<reference entity="A.S._Gubbio_1910" number="5" tag="AGENT-1" type="name">their</reference>
+					<reference entity="Italy" number="6" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Italian_language" number="7" tag="PATIENT-2" type="description">the Italian language</reference>
+					<reference entity="Sergio_Mattarella" number="8" tag="PATIENT-1" type="name">Sergio Mattarella</reference>
+				</references>
+				<text>S.S. Robur Siena are champions of Serie D. league in which AS Gubbio 1910 also play. This latter team has their ground in Italy where the Italian language is spoken and the leader is Sergio Mattarella.</text>
+				<template>PATIENT-3 are champions of BRIDGE-2 league in which AGENT-1 also play . AGENT-1 has AGENT-1 ground in BRIDGE-1 where PATIENT-2 is spoken and the leader is PATIENT-1 .</template>
+				<lexicalization>PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be champions of BRIDGE-2 league in which AGENT-1 also VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] play . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have AGENT-1 ground in BRIDGE-1 where PATIENT-2 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak and DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Gubbio_1910 | league | Serie_D</striple>
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Serie_D | champions | S.S._Robur_Siena</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Italy | leader | Sergio_Mattarella</striple>
+						<striple>Italy | language | Italian_language</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="name">A.S. Gubbio 1910</reference>
+					<reference entity="Serie_D" number="2" tag="BRIDGE-2" type="name">Serie D</reference>
+					<reference entity="Italy" number="3" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Serie_D" number="4" tag="BRIDGE-2" type="name">Serie D</reference>
+					<reference entity="S.S._Robur_Siena" number="5" tag="PATIENT-3" type="description">the S.S. Robur Siena</reference>
+					<reference entity="Sergio_Mattarella" number="6" tag="PATIENT-1" type="name">Sergio Mattarella</reference>
+					<reference entity="Italy" number="7" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Italian_language" number="8" tag="PATIENT-2" type="name">Italian</reference>
+				</references>
+				<text>A.S. Gubbio 1910 is in the Serie D league in Italy. Champions of Serie D are the S.S. Robur Siena. Sergio Mattarella leads Italy and Italian is the language spoken there.</text>
+				<template>AGENT-1 is in the BRIDGE-2 league in BRIDGE-1 . Champions of BRIDGE-2 are PATIENT-3 . PATIENT-1 leads BRIDGE-1 and PATIENT-2 is the language spoken there .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the BRIDGE-2 league in BRIDGE-1 . Champions of BRIDGE-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-3 . PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] lead BRIDGE-1 and PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the language VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak there .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Gubbio_1910</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>BRIDGE-2 | Serie_D</entity>
+				<entity>PATIENT-1 | Sergio_Mattarella</entity>
+				<entity>PATIENT-2 | Italian_language</entity>
+				<entity>PATIENT-3 | S.S._Robur_Siena</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id840" size="5">
+			<originaltripleset>
+				<otriple>AEK_Athens_F.C. | manager | Gus_Poyet</otriple>
+				<otriple>Gus_Poyet | team | Real_Zaragoza</otriple>
+				<otriple>Olympic_Stadium_(Athens) | location | Marousi</otriple>
+				<otriple>AEK_Athens_F.C. | ground | Olympic_Stadium_(Athens)</otriple>
+				<otriple>Gus_Poyet | clubs | Chelsea_F.C.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AEK_Athens_F.C. | manager | Gus_Poyet</mtriple>
+				<mtriple>Gus_Poyet | club | Real_Zaragoza</mtriple>
+				<mtriple>Olympic_Stadium_(Athens) | location | Marousi</mtriple>
+				<mtriple>AEK_Athens_F.C. | ground | Olympic_Stadium_(Athens)</mtriple>
+				<mtriple>Gus_Poyet | club | Chelsea_F.C.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Gus_Poyet | club | Real_Zaragoza</striple>
+						<striple>Gus_Poyet | club | Chelsea_F.C.</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>AEK_Athens_F.C. | manager | Gus_Poyet</striple>
+						<striple>AEK_Athens_F.C. | ground | Olympic_Stadium_(Athens)</striple>
+						<striple>Olympic_Stadium_(Athens) | location | Marousi</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gus_Poyet" number="1" tag="BRIDGE-1" type="name">Gus Poyet</reference>
+					<reference entity="Real_Zaragoza" number="2" tag="PATIENT-1" type="name">Real Zaragoza</reference>
+					<reference entity="Chelsea_F.C." number="3" tag="PATIENT-3" type="name">Chelsea FC</reference>
+					<reference entity="Gus_Poyet" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="AEK_Athens_F.C." number="5" tag="AGENT-1" type="name">AEK Athens</reference>
+					<reference entity="AEK_Athens_F.C." number="6" tag="AGENT-1" type="name">their</reference>
+					<reference entity="Olympic_Stadium_(Athens)" number="7" tag="BRIDGE-2" type="description">the Olympic Stadium ( Athens )</reference>
+					<reference entity="Marousi" number="8" tag="PATIENT-2" type="name">Marousi</reference>
+				</references>
+				<text>Gus Poyet is in the Real Zaragoza club and previously played for Chelsea FC. He now manages AEK Athens who have their home ground at the Olympic Stadium (Athens) at Marousi.</text>
+				<template>BRIDGE-1 is in the PATIENT-1 club and previously played for PATIENT-3 . BRIDGE-1 now manages AGENT-1 who have AGENT-1 home ground at BRIDGE-2 at PATIENT-2 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in DT[form=defined] the PATIENT-1 club and previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-3 . BRIDGE-1 now VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] manage AGENT-1 who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have AGENT-1 home ground at BRIDGE-2 at PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>AEK_Athens_F.C. | manager | Gus_Poyet</striple>
+						<striple>AEK_Athens_F.C. | ground | Olympic_Stadium_(Athens)</striple>
+						<striple>Olympic_Stadium_(Athens) | location | Marousi</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Gus_Poyet | club | Chelsea_F.C.</striple>
+						<striple>Gus_Poyet | club | Real_Zaragoza</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gus_Poyet" number="1" tag="BRIDGE-1" type="name">Gus Poyet</reference>
+					<reference entity="AEK_Athens_F.C." number="2" tag="AGENT-1" type="name">AEK Athens</reference>
+					<reference entity="AEK_Athens_F.C." number="3" tag="AGENT-1" type="name">their</reference>
+					<reference entity="Olympic_Stadium_(Athens)" number="4" tag="BRIDGE-2" type="description">the Olympic Stadium ( Athens )</reference>
+					<reference entity="Marousi" number="5" tag="PATIENT-2" type="name">Marousi</reference>
+					<reference entity="Gus_Poyet" number="6" tag="BRIDGE-1" type="pronoun">He</reference>
+					<reference entity="Chelsea_F.C." number="7" tag="PATIENT-3" type="name">Chelsea FC</reference>
+					<reference entity="Real_Zaragoza" number="8" tag="PATIENT-1" type="name">Real Zaragoza FC</reference>
+				</references>
+				<text>Gus Poyet is the manager of AEK Athens who play at their home ground of the Olympic Stadium (Athens) at Marousi. He previously played for Chelsea FC and is associated with Real Zaragoza FC.</text>
+				<template>BRIDGE-1 is the manager of AGENT-1 who play at AGENT-1 home ground of BRIDGE-2 at PATIENT-2 . BRIDGE-1 previously played for PATIENT-3 and is associated with PATIENT-1 .</template>
+				<lexicalization>BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the manager of AGENT-1 who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] play at AGENT-1 home ground of BRIDGE-2 at PATIENT-2 . BRIDGE-1 previously VP[aspect=simple,tense=past,voice=active,person=null,number=null] play for PATIENT-3 and VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] associate with PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AEK_Athens_F.C.</entity>
+				<entity>BRIDGE-1 | Gus_Poyet</entity>
+				<entity>BRIDGE-2 | Olympic_Stadium_(Athens)</entity>
+				<entity>PATIENT-1 | Real_Zaragoza</entity>
+				<entity>PATIENT-2 | Marousi</entity>
+				<entity>PATIENT-3 | Chelsea_F.C.</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id841" size="5">
+			<originaltripleset>
+				<otriple>Italy | leaderName | Pietro_Grasso</otriple>
+				<otriple>Italy | demonym | Italians</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>A.S._Gubbio_1910 | ground | Italy</otriple>
+				<otriple>Italy | language | Italian_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Italy | leader | Pietro_Grasso</mtriple>
+				<mtriple>Italy | demonym | Italians</mtriple>
+				<mtriple>Italy | capital | Rome</mtriple>
+				<mtriple>A.S._Gubbio_1910 | ground | Italy</mtriple>
+				<mtriple>Italy | language | Italian_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+						<striple>Italy | language | Italian_language</striple>
+						<striple>Italy | leader | Pietro_Grasso</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | demonym | Italians</striple>
+						<striple>Italy | capital | Rome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="name">AS Gubbio 1910</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Italian_language" number="3" tag="PATIENT-4" type="description">the Italian language</reference>
+					<reference entity="Pietro_Grasso" number="4" tag="PATIENT-1" type="name">Pietro Grasso</reference>
+					<reference entity="Italy" number="5" tag="BRIDGE-1" type="description">The country</reference>
+					<reference entity="Italians" number="6" tag="PATIENT-2" type="name">Italians</reference>
+					<reference entity="Rome" number="7" tag="PATIENT-3" type="name">Rome</reference>
+					<reference entity="Italy" number="8" tag="BRIDGE-1" type="name">their</reference>
+				</references>
+				<text>AS Gubbio 1910 is located in Italy where the Italian language is spoken and Pietro Grasso is the leader. The country is inhabited by Italians who have Rome as their capital city.</text>
+				<template>AGENT-1 is located in BRIDGE-1 where PATIENT-4 is spoken and PATIENT-1 is the leader . BRIDGE-1 is inhabited by PATIENT-2 who have PATIENT-3 as BRIDGE-1 capital city .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 where PATIENT-4 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] speak and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the leader . BRIDGE-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] inhabit by PATIENT-2 who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] have PATIENT-3 as BRIDGE-1 capital city .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+						<striple>Italy | capital | Rome</striple>
+						<striple>Italy | leader | Pietro_Grasso</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | demonym | Italians</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="name">A.S. Gubbio 1910</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="3" tag="PATIENT-3" type="name">Rome</reference>
+					<reference entity="Pietro_Grasso" number="4" tag="PATIENT-1" type="name">Pietro Grasso</reference>
+					<reference entity="Italy" number="5" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Italians" number="6" tag="PATIENT-2" type="name">Italian</reference>
+				</references>
+				<text>The ground of A.S. Gubbio 1910 is located in Italy, the capital of which is Rome, and the leader's name is Pietro Grasso. The people of Italy are Italian, as is the language spoken.</text>
+				<template>The ground of AGENT-1 is located in BRIDGE-1 , the capital of which is PATIENT-3 , and the leader's name is PATIENT-1 . The people of BRIDGE-1 are PATIENT-2 , as is the language spoken .</template>
+				<lexicalization>DT[form=defined] the ground of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , DT[form=defined] the capital of which VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 , and DT[form=defined] the leader 's name VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . DT[form=defined] the people of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be PATIENT-2 , as VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the language VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | demonym | Italians</striple>
+						<striple>Italy | capital | Rome</striple>
+						<striple>Italy | leader | Pietro_Grasso</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="name">A.S. Gubbio 1910</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Italy" number="3" tag="BRIDGE-1" type="demonstrative">this country</reference>
+					<reference entity="Italians" number="4" tag="PATIENT-2" type="name">Italian</reference>
+					<reference entity="Rome" number="5" tag="PATIENT-3" type="name">Rome</reference>
+					<reference entity="Italians" number="6" tag="PATIENT-2" type="name">Italians</reference>
+					<reference entity="Pietro_Grasso" number="7" tag="PATIENT-1" type="name">Pietro Grasso</reference>
+				</references>
+				<text>The ground of A.S. Gubbio 1910 is located in Italy. In this country; the language spoken is Italian, Rome is the capital, the inhabitants are called Italians, and the leader is Pietro Grasso.</text>
+				<template>The ground of AGENT-1 is located in BRIDGE-1 . In BRIDGE-1 ; the language spoken is PATIENT-2 , PATIENT-3 is the capital , the inhabitants are called PATIENT-2 , and the leader is PATIENT-1 .</template>
+				<lexicalization>DT[form=defined] the ground of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 . In BRIDGE-1 ; DT[form=defined] the language VP[aspect=simple,tense=past,voice=active,person=null,number=null] speak PATIENT-2 , PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital , DT[form=defined] the inhabitants VP[aspect=simple,tense=present,voice=passive,person=non-3rd,number=plural] call PATIENT-2 , and DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Gubbio_1910</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Pietro_Grasso</entity>
+				<entity>PATIENT-2 | Italians</entity>
+				<entity>PATIENT-3 | Rome</entity>
+				<entity>PATIENT-4 | Italian_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="SportsTeam" eid="Id842" size="5">
+			<originaltripleset>
+				<otriple>Italy | officialLanguage | Italian_language</otriple>
+				<otriple>Italy | demonym | Italians</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Italy | leader | Sergio_Mattarella</otriple>
+				<otriple>A.S._Gubbio_1910 | ground | Italy</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Italy | officialLanguage | Italian_language</mtriple>
+				<mtriple>Italy | demonym | Italians</mtriple>
+				<mtriple>Italy | capital | Rome</mtriple>
+				<mtriple>Italy | leader | Sergio_Mattarella</mtriple>
+				<mtriple>A.S._Gubbio_1910 | ground | Italy</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Italy | capital | Rome</striple>
+						<striple>Italy | officialLanguage | Italian_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | leader | Sergio_Mattarella</striple>
+						<striple>Italy | demonym | Italians</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rome" number="1" tag="PATIENT-3" type="name">Rome</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Italian_language" number="3" tag="PATIENT-1" type="name">Italian</reference>
+					<reference entity="Italy" number="4" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="Sergio_Mattarella" number="5" tag="PATIENT-4" type="name">Sergio Mattarella</reference>
+					<reference entity="Italy" number="6" tag="BRIDGE-1" type="pronoun">it</reference>
+					<reference entity="Italians" number="7" tag="PATIENT-2" type="name">Italians</reference>
+					<reference entity="A.S._Gubbio_1910" number="8" tag="AGENT-1" type="name">A.S. Gubbio 1910</reference>
+				</references>
+				<text>The capital of Rome is Italy whose language is Italian. The leader of the country is Sergio Mattarella and it is occupied by Italians. A.S. Gubbio 1910 is located there.</text>
+				<template>The capital of PATIENT-3 is BRIDGE-1 whose language is PATIENT-1 . The leader of BRIDGE-1 is PATIENT-4 and BRIDGE-1 is occupied by PATIENT-2 . AGENT-1 is located there .</template>
+				<lexicalization>DT[form=defined] the capital of PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 whose language VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 . DT[form=defined] the leader of BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 and BRIDGE-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be by PATIENT-2 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located there .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+						<striple>Italy | leader | Sergio_Mattarella</striple>
+						<striple>Italy | officialLanguage | Italian_language</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | demonym | Italians</striple>
+						<striple>Italy | capital | Rome</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="name">A.S. Gubbio 1910</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Sergio_Mattarella" number="3" tag="PATIENT-4" type="name">Sergio Mattarella</reference>
+					<reference entity="Italian_language" number="4" tag="PATIENT-1" type="name">Italian</reference>
+					<reference entity="Italians" number="5" tag="PATIENT-2" type="name">Italians</reference>
+					<reference entity="Italy" number="6" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="7" tag="PATIENT-3" type="name">Rome</reference>
+				</references>
+				<text>The ground of A.S. Gubbio 1910 is located in Italy, where the leader is Sergio Mattarella and Italian is the official language. Italians are the people who live in Italy, where the capital city is Rome.</text>
+				<template>The ground of AGENT-1 is located in BRIDGE-1 , where the leader is PATIENT-4 and PATIENT-1 is the official language . PATIENT-2 are the people who live in BRIDGE-1 , where the capital city is PATIENT-3 .</template>
+				<lexicalization>DT[form=defined] the ground of AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 and PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the official language . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=plural] be DT[form=defined] the people who VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] live in BRIDGE-1 , where DT[form=defined] the capital city VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-3 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Italy | demonym | Italians</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Italy | capital | Rome</striple>
+						<striple>Italy | leader | Sergio_Mattarella</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>A.S._Gubbio_1910 | ground | Italy</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Italians" number="1" tag="PATIENT-2" type="name">Italians</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Italians" number="3" tag="PATIENT-2" type="name">Italian</reference>
+					<reference entity="Rome" number="4" tag="PATIENT-3" type="name">Rome</reference>
+					<reference entity="Sergio_Mattarella" number="5" tag="PATIENT-4" type="name">Sergio Mattarella</reference>
+					<reference entity="Italy" number="6" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="A.S._Gubbio_1910" number="7" tag="AGENT-1" type="name">A.S. Gubbio 1910</reference>
+				</references>
+				<text>Italians inhabit Italy, where the official language is Italian. Rome is the capital and one of the leaders is Sergio Mattarella. Also in Italy, is the ground of A.S. Gubbio 1910.</text>
+				<template>PATIENT-2 inhabit BRIDGE-1 , where the official language is PATIENT-2 . PATIENT-3 is the capital and one of the leaders is PATIENT-4 . Also in BRIDGE-1 , is the ground of AGENT-1 .</template>
+				<lexicalization>PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=non-3rd,number=null] inhabit BRIDGE-1 , where DT[form=defined] the official language VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 . PATIENT-3 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the capital and one of DT[form=defined] the leaders VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-4 . Also in BRIDGE-1 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the ground of AGENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A.S._Gubbio_1910</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Italian_language</entity>
+				<entity>PATIENT-2 | Italians</entity>
+				<entity>PATIENT-3 | Rome</entity>
+				<entity>PATIENT-4 | Sergio_Mattarella</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

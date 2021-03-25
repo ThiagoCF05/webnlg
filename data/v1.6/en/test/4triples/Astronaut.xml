@@ -1,0 +1,553 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id724" size="4">
+			<originaltripleset>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+				<otriple>Alan_Bean | timeInSpace | &quot;100305.0&quot;^^&lt;http://dbpedia.org/datatype/minute&gt;</otriple>
+				<otriple>Alan_Bean | selection | 1963</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Bean | nationality | United_States</mtriple>
+				<mtriple>Alan_Bean | birthPlace | Wheeler,_Texas</mtriple>
+				<mtriple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</mtriple>
+				<mtriple>Alan_Bean | was selected by NASA | 1963</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+						<striple>Alan_Bean | nationality | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Bean | was selected by NASA | 1963</striple>
+						<striple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="Wheeler,_Texas" number="2" tag="PATIENT-2" type="name">Wheeler , Texas</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-1" type="description">the United States</reference>
+					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="1963" number="5" tag="PATIENT-4" type="name">1963</reference>
+					<reference entity="&quot;100305.0&quot;(minutes)" number="6" tag="PATIENT-3" type="name">100305.0 minutes</reference>
+				</references>
+				<text>Alan Bean was born in Wheeler, Texas in the United States. He was selected by NASA in 1963, and spent 100305.0 minutes in space.</text>
+				<template>AGENT-1 was born in PATIENT-2 in PATIENT-1 . AGENT-1 was selected by NASA in PATIENT-4 , and spent PATIENT-3 in space .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-2 in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] select by NASA in PATIENT-4 , and VP[aspect=simple,tense=past,voice=active,person=null,number=null] spend PATIENT-3 in space .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | Wheeler,_Texas</entity>
+				<entity>PATIENT-3 | &quot;100305.0&quot;(minutes)</entity>
+				<entity>PATIENT-4 | 1963</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id725" size="4">
+			<originaltripleset>
+				<otriple>Alan_Shepard | mission | Apollo_14</otriple>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Apollo_14 | operator | NASA</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | was a crew member of | Apollo_14</mtriple>
+				<mtriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</mtriple>
+				<mtriple>Apollo_14 | operator | NASA</mtriple>
+				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+						<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+						<striple>Apollo_14 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="BRIDGE-2" type="description">the Distinguished Service Medal ( United States Navy</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="3" tag="PATIENT-1" type="description">the Department of Commerce Gold Medal</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="NASA" number="5" tag="PATIENT-2" type="description">the NASA</reference>
+					<reference entity="Apollo_14" number="6" tag="BRIDGE-1" type="name">Apollo 14</reference>
+				</references>
+				<text>Alan Shepard was awarded the Distinguished Service Medal (United States Navy and the Department of Commerce Gold Medal. He was a crew member of the NASA operated Apollo 14 mission.</text>
+				<template>AGENT-1 was awarded BRIDGE-2 and PATIENT-1 . AGENT-1 was a crew member of PATIENT-2 operated BRIDGE-1 mission .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award BRIDGE-2 and PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a crew member of PATIENT-2 VP[aspect=simple,tense=past,voice=active,person=null,number=null] operate BRIDGE-1 mission .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Apollo_14</entity>
+				<entity>BRIDGE-2 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-2 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id726" size="4">
+			<originaltripleset>
+				<otriple>British_Hong_Kong | representative | Chris_Patten</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>Apollo_8 | crewMembers | Frank_Borman</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>British_Hong_Kong | representative | Chris_Patten</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+				<mtriple>William_Anders | birthPlace | British_Hong_Kong</mtriple>
+				<mtriple>Apollo_8 | crewMembers | Frank_Borman</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>British_Hong_Kong | representative | Chris_Patten</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="British_Hong_Kong" number="2" tag="BRIDGE-1" type="name">British Hong Kong</reference>
+					<reference entity="Chris_Patten" number="3" tag="PATIENT-1" type="name">Chris Patten</reference>
+					<reference entity="William_Anders" number="4" tag="AGENT-1" type="name">William</reference>
+					<reference entity="Apollo_8" number="5" tag="BRIDGE-2" type="name">Apollo 8</reference>
+					<reference entity="Frank_Borman" number="6" tag="PATIENT-2" type="name">Frank Borman</reference>
+				</references>
+				<text>William Anders was born in British Hong Kong, where Chris Patten is a representative. William was a crew member of Apollo 8, and served along Frank Borman.</text>
+				<template>AGENT-1 was born in BRIDGE-1 , where PATIENT-1 is a representative . AGENT-1 was a crew member of BRIDGE-2 , and served along PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in BRIDGE-1 , where PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a representative . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a crew member of BRIDGE-2 , and VP[aspect=simple,tense=past,voice=active,person=null,number=null] serve along PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>British_Hong_Kong | representative | Chris_Patten</striple>
+						<striple>Apollo_8 | crewMembers | Frank_Borman</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="British_Hong_Kong" number="1" tag="BRIDGE-1" type="name">Hong Kong</reference>
+					<reference entity="William_Anders" number="2" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="Apollo_8" number="3" tag="BRIDGE-2" type="name">Apollo 8</reference>
+					<reference entity="Chris_Patten" number="4" tag="PATIENT-1" type="name">Chris Patten</reference>
+					<reference entity="Apollo_8" number="5" tag="BRIDGE-2" type="name">Apollo 8</reference>
+					<reference entity="Frank_Borman" number="6" tag="PATIENT-2" type="name">Frank Borman</reference>
+				</references>
+				<text>Born in Hong Kong, William Anders was a crew member of Apollo 8 with representative Chris Patten and Apollo 8 member Frank Borman.</text>
+				<template>Born in BRIDGE-1 , AGENT-1 was a crew member of BRIDGE-2 with representative PATIENT-1 and BRIDGE-2 member PATIENT-2 .</template>
+				<lexicalization>VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear in BRIDGE-1 , AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a crew member of BRIDGE-2 with representative PATIENT-1 and BRIDGE-2 member PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | British_Hong_Kong</entity>
+				<entity>BRIDGE-2 | Apollo_8</entity>
+				<entity>PATIENT-1 | Chris_Patten</entity>
+				<entity>PATIENT-2 | Frank_Borman</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id727" size="4">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | status | &quot;Retired&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Apollo_11" number="3" tag="PATIENT-2" type="name">Apollo 11</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="4" tag="PATIENT-3" type="name">in 1963 graduated with a Sc . D. from MIT</reference>
+					<reference entity="&quot;Retired&quot;" number="5" tag="PATIENT-4" type="name">retired</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey, was part of Apollo 11 and in 1963 graduated with a Sc. D. from MIT and is now retired.</text>
+				<template>AGENT-1 was born in PATIENT-1 , was part of PATIENT-2 and PATIENT-3 and is now PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be part of PATIENT-2 and PATIENT-3 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be now PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="4" tag="PATIENT-3" type="description">an Sc.D in 1963 from Massachusetts Institute of Technology</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_11" number="6" tag="PATIENT-2" type="name">Apollo 11</reference>
+					<reference entity="&quot;Retired&quot;" number="7" tag="PATIENT-4" type="name">retired</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey. He obtained an Sc.D in 1963 from Massachusetts Institute of Technology. He was a crew member of Apollo 11 and has retired.</text>
+				<template>AGENT-1 was born in PATIENT-1 . AGENT-1 obtained PATIENT-3 . AGENT-1 was a crew member of PATIENT-2 and has PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] obtain PATIENT-3 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a crew member of PATIENT-2 and VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+						<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Retired&quot;" number="2" tag="PATIENT-4" type="name">retired</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="4" tag="PATIENT-3" type="name">from MIT ScD in 1963</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_11" number="6" tag="PATIENT-2" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin, now retired, was born in Glen Ridge, New Jersey and graduated from MIT ScD in 1963. He was a crew member of Apollo 11.</text>
+				<template>AGENT-1 , now PATIENT-4 , was born in PATIENT-1 and graduated PATIENT-3 . AGENT-1 was a crew member of PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , now PATIENT-4 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] graduate PATIENT-3 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a crew member of PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | Apollo_11</entity>
+				<entity>PATIENT-3 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-4 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id728" size="4">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | was selected by NASA | 1963</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | occupation | Fighter_pilot</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="1963" number="4" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Apollo_11" number="6" tag="PATIENT-3" type="name">Apollo 11</reference>
+					<reference entity="Fighter_pilot" number="7" tag="PATIENT-4" type="description">a Fighter pilot</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey. He Joined NASA in 1963 where he became a crew member of Apollo 11 as a Fighter pilot.</text>
+				<template>AGENT-1 was born in PATIENT-1 . AGENT-1 Joined NASA in PATIENT-2 where AGENT-1 became a crew member of PATIENT-3 as PATIENT-4 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] join NASA in PATIENT-2 where AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] become DT[form=undefined] a crew member of PATIENT-3 as PATIENT-4 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Fighter_pilot" number="4" tag="PATIENT-4" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_11" number="5" tag="PATIENT-3" type="name">Apollo 11</reference>
+					<reference entity="1963" number="6" tag="PATIENT-2" type="name">1963</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, New Jersey. He was a fighter pilot before being selected by NASA as a crew member of Apollo 11 in 1963.</text>
+				<template>AGENT-1 was born in PATIENT-1 . AGENT-1 was PATIENT-4 before being selected by NASA as a crew member of PATIENT-3 in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-4 before VP[aspect=simple,tense=present,voice=active,person=null,number=null] select by NASA as DT[form=undefined] a crew member of PATIENT-3 in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+						<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Fighter_pilot" number="4" tag="PATIENT-4" type="description">a fighter pilot</reference>
+					<reference entity="1963" number="5" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="Apollo_11" number="6" tag="PATIENT-3" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge New Jersey. He was a fighter pilot who was selected by NASA in 1963 to be a crew member of Apollo 11.</text>
+				<template>AGENT-1 was born in PATIENT-1 . AGENT-1 was PATIENT-4 who was selected by NASA in PATIENT-2 to be a crew member of PATIENT-3 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be PATIENT-4 who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] select by NASA in PATIENT-2 to VP[aspect=simple,tense=infinitive,voice=active,person=null,number=null] be DT[form=undefined] a crew member of PATIENT-3 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | 1963</entity>
+				<entity>PATIENT-3 | Apollo_11</entity>
+				<entity>PATIENT-4 | Fighter_pilot</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id729" size="4">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | awards | 20</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | awards | 20</mtriple>
+				<mtriple>Apollo_11 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Buzz_Aldrin | birthName | &quot;Edwin Eugene Aldrin Jr.&quot;</striple>
+						<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+						<striple>Apollo_11 | operator | NASA</striple>
+						<striple>Buzz_Aldrin | awards | 20</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Edwin Eugene Aldrin Jr.&quot;" number="2" tag="PATIENT-1" type="name">Edwin Eugene Aldrin Jr</reference>
+					<reference entity="NASA" number="3" tag="PATIENT-3" type="name">NASA 's</reference>
+					<reference entity="Apollo_11" number="4" tag="BRIDGE-1" type="name">Apollo 11</reference>
+					<reference entity="20" number="5" tag="PATIENT-2" type="name">20</reference>
+				</references>
+				<text>Buzz Aldrin (born as Edwin Eugene Aldrin Jr) was a crew member for NASA's @ Apollo 11 and had 20 awards.</text>
+				<template>AGENT-1 (born as PATIENT-1) was a crew member for PATIENT-3 @ BRIDGE-1 and had PATIENT-2 awards .</template>
+				<lexicalization>AGENT-1 ( VP[aspect=simple,tense=past,voice=active,person=null,number=null] bear as PATIENT-1 ) VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a crew member for PATIENT-3 BRIDGE-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] have PATIENT-2 awards .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>PATIENT-1 | &quot;Edwin Eugene Aldrin Jr.&quot;</entity>
+				<entity>PATIENT-2 | 20</entity>
+				<entity>PATIENT-3 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id730" size="4">
+			<originaltripleset>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+						<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+						<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+						<striple>Alan_Shepard | deathPlace | California</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="BRIDGE-1" type="description">the Distinguished Service Medal from the U.S. Navy</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="3" tag="PATIENT-1" type="description">the Department of Commerce Gold Medal</reference>
+					<reference entity="New_Hampshire" number="4" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="California" number="5" tag="PATIENT-2" type="name">California</reference>
+				</references>
+				<text>Alan Shepard, who was awarded the Distinguished Service Medal from the U.S. Navy, an award that is higher than the Department of Commerce Gold Medal, was born in New Hampshire and died in California.</text>
+				<template>AGENT-1 , who was awarded BRIDGE-1 , an award that is higher than PATIENT-1 , was born in PATIENT-3 and died in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 , who VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] award BRIDGE-1 , DT[form=undefined] a award that VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be higher than PATIENT-1 , VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-2 | California</entity>
+				<entity>PATIENT-3 | New_Hampshire</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id731" size="4">
+			<originaltripleset>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>California | senators | Dianne_Feinstein</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>California | senators | Dianne_Feinstein</mtriple>
+				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Alan_Shepard | deathPlace | California</striple>
+						<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+						<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>California | senators | Dianne_Feinstein</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="California" number="2" tag="BRIDGE-1" type="name">California</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="3" tag="BRIDGE-2" type="description">a medal and award for Distinguished Service in the United States Navy</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="4" tag="PATIENT-1" type="description">a gold medal for Department of Commerce</reference>
+					<reference entity="Dianne_Feinstein" number="5" tag="PATIENT-2" type="name">Dianne Feinstein</reference>
+					<reference entity="California" number="6" tag="BRIDGE-1" type="name">California</reference>
+				</references>
+				<text>Alan Shepard died in California, and had a medal and award for Distinguished Service in the United States Navy, and a gold medal for Department of Commerce. Dianne Feinstein is the Senator of California.</text>
+				<template>AGENT-1 died in BRIDGE-1 , and had BRIDGE-2 , and PATIENT-1 . PATIENT-2 is the Senator of BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in BRIDGE-1 , and VP[aspect=simple,tense=past,voice=active,person=null,number=null] have BRIDGE-2 , and PATIENT-1 . PATIENT-2 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=defined] the Senator of BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | California</entity>
+				<entity>BRIDGE-2 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-2 | Dianne_Feinstein</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id732" size="4">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>Elliot_See | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Elliot_See | nationality | United_States</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Elliot_See | birthPlace | Dallas</striple>
+						<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					</sentence>
+					<sentence ID="3">
+						<striple>Elliot_See | deathPlace | St._Louis</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-4" type="description">the United States</reference>
+					<reference entity="Elliot_See" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Dallas" number="4" tag="PATIENT-3" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="5" tag="PATIENT-1" type="description">the University of Texas in AUstin</reference>
+					<reference entity="Elliot_See" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="St._Louis" number="7" tag="PATIENT-2" type="name">St. Louis</reference>
+				</references>
+				<text>Elliot See was a national of the United States. He was born in Dallas and attended the University of Texas in AUstin. He died in St. Louis.</text>
+				<template>AGENT-1 was a national of PATIENT-4 . AGENT-1 was born in PATIENT-3 and attended PATIENT-1 . AGENT-1 died in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=singular] be DT[form=undefined] a national of PATIENT-4 . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] bear in PATIENT-3 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] attend PATIENT-1 . AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] die in PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | St._Louis</entity>
+				<entity>PATIENT-3 | Dallas</entity>
+				<entity>PATIENT-4 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id733" size="4">
+			<originaltripleset>
+				<otriple>William_Anders | occupation | Fighter_pilot</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+				<otriple>William_Anders | selection | 1963</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | occupation | Fighter_pilot</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+				<mtriple>Apollo_8 | operator | NASA</mtriple>
+				<mtriple>William_Anders | was selected by NASA | 1963</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>William_Anders | was selected by NASA | 1963</striple>
+						<striple>William_Anders | occupation | Fighter_pilot</striple>
+						<striple>William_Anders | was a crew member of | Apollo_8</striple>
+						<striple>Apollo_8 | operator | NASA</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="NASA" number="2" tag="PATIENT-2" type="name">NASA</reference>
+					<reference entity="1963" number="3" tag="PATIENT-3" type="name">1963</reference>
+					<reference entity="Fighter_pilot" number="4" tag="PATIENT-1" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_8" number="5" tag="BRIDGE-1" type="name">Apollo 8</reference>
+				</references>
+				<text>William Anders joined NASA in 1963 as a fighter pilot and became a crew member of Apollo 8.</text>
+				<template>AGENT-1 joined PATIENT-2 in PATIENT-3 as PATIENT-1 and became a crew member of BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=active,person=null,number=null] join PATIENT-2 in PATIENT-3 as PATIENT-1 and VP[aspect=simple,tense=past,voice=active,person=null,number=null] become DT[form=undefined] a crew member of BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | Apollo_8</entity>
+				<entity>PATIENT-1 | Fighter_pilot</entity>
+				<entity>PATIENT-2 | NASA</entity>
+				<entity>PATIENT-3 | 1963</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

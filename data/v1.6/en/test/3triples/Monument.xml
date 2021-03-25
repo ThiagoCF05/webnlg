@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Monument" eid="Id535" size="3">
+			<originaltripleset>
+				<otriple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;@en</otriple>
+				<otriple>Adams_County,_Pennsylvania | southeast | Carroll_County,_Maryland</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | region | Adams_County,_Pennsylvania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</mtriple>
+				<mtriple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</mtriple>
+				<mtriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</striple>
+						<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
+						<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;United States&quot;" number="1" tag="PATIENT-1" type="description">The United States</reference>
+					<reference entity="11th_Mississippi_Infantry_Monument" number="2" tag="AGENT-1" type="name">11th Mississippi Infantry Monument 's</reference>
+					<reference entity="Adams_County,_Pennsylvania" number="3" tag="BRIDGE-1" type="name">Adams County , Pennsylvania</reference>
+					<reference entity="Carroll_County,_Maryland" number="4" tag="PATIENT-2" type="name">Carroll County Maryland</reference>
+				</references>
+				<text>The United States @ 11th Mississippi Infantry Monument's location is Adams County, Pennsylvania, northwest of Carroll County Maryland.</text>
+				<template>PATIENT-1 @ AGENT-1 location is BRIDGE-1 , northwest of PATIENT-2 .</template>
+				<lexicalization>PATIENT-1 AGENT-1 location VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be BRIDGE-1 , northwest of PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
+				<entity>BRIDGE-1 | Adams_County,_Pennsylvania</entity>
+				<entity>PATIENT-1 | &quot;United States&quot;</entity>
+				<entity>PATIENT-2 | Carroll_County,_Maryland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id536" size="3">
+			<originaltripleset>
+				<otriple>Adams_County,_Pennsylvania | southeast | Carroll_County,_Maryland</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | region | Adams_County,_Pennsylvania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</mtriple>
+				<mtriple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</mtriple>
+				<mtriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</striple>
+						<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
+						<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="11th_Mississippi_Infantry_Monument" number="1" tag="AGENT-1" type="description">The 11th Mississippi Infantry Monument</reference>
+					<reference entity="Gettysburg,_Pennsylvania" number="2" tag="PATIENT-2" type="name">Gettysburg , Pennsylvania</reference>
+					<reference entity="Adams_County,_Pennsylvania" number="3" tag="BRIDGE-1" type="name">Adams County</reference>
+					<reference entity="Carroll_County,_Maryland" number="4" tag="PATIENT-1" type="name">Carroll County , Maryland</reference>
+					<reference entity="11th_Mississippi_Infantry_Monument" number="5" tag="AGENT-1" type="pronoun">its</reference>
+				</references>
+				<text>The 11th Mississippi Infantry Monument is located in Gettysburg, Pennsylvania, in Adams County, which has Carroll County, Maryland to its southeast.</text>
+				<template>AGENT-1 is located in PATIENT-2 , in BRIDGE-1 , which has PATIENT-1 to AGENT-1 southeast .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-2 , in BRIDGE-1 , which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] have PATIENT-1 to AGENT-1 southeast .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</striple>
+						<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
+						<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="11th_Mississippi_Infantry_Monument" number="1" tag="AGENT-1" type="description">The 11th Mississippi Infantry Monument</reference>
+					<reference entity="Gettysburg,_Pennsylvania" number="2" tag="PATIENT-2" type="name">Gettysburg</reference>
+					<reference entity="Adams_County,_Pennsylvania" number="3" tag="BRIDGE-1" type="name">Adams County , Pennsylvania</reference>
+					<reference entity="Carroll_County,_Maryland" number="4" tag="PATIENT-1" type="name">Carroll County Maryland</reference>
+				</references>
+				<text>The 11th Mississippi Infantry Monument is placed in the municipality of Gettysburg, Adams County, Pennsylvania, northwest of Carroll County Maryland.</text>
+				<template>AGENT-1 is placed in the municipality of PATIENT-2 , BRIDGE-1 , northwest of PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] place in DT[form=defined] the municipality of PATIENT-2 , BRIDGE-1 , northwest of PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
+				<entity>BRIDGE-1 | Adams_County,_Pennsylvania</entity>
+				<entity>PATIENT-1 | Carroll_County,_Maryland</entity>
+				<entity>PATIENT-2 | Gettysburg,_Pennsylvania</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id537" size="3">
+			<originaltripleset>
+				<otriple>Azerbaijan | capital | Baku</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Azerbaijan | capital | Baku</mtriple>
+				<mtriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</mtriple>
+				<mtriple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Azerbaijan | capital | Baku</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial</reference>
+					<reference entity="&quot;Türk Şehitleri Anıtı&quot;" number="2" tag="PATIENT-2" type="name">Türk Şehitleri Anıtı</reference>
+					<reference entity="Baku" number="3" tag="PATIENT-1" type="name">Baku</reference>
+					<reference entity="Azerbaijan" number="4" tag="BRIDGE-1" type="name">Azerbaijan</reference>
+				</references>
+				<text>The Baku Turkish Martyrs' Memorial, known locally as Türk Şehitleri Anıtı, is located in Baku, the capital city of Azerbaijan.</text>
+				<template>AGENT-1 , known locally as PATIENT-2 , is located in PATIENT-1 , the capital city of BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 , VP[aspect=simple,tense=past,voice=active,person=null,number=null] know locally as PATIENT-2 , VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in PATIENT-1 , DT[form=defined] the capital city of BRIDGE-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>BRIDGE-1 | Azerbaijan</entity>
+				<entity>PATIENT-1 | Baku</entity>
+				<entity>PATIENT-2 | &quot;Türk Şehitleri Anıtı&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id538" size="3">
+			<originaltripleset>
+				<otriple>Azerbaijan | leader | Artur_Rasizade</otriple>
+				<otriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</otriple>
+				<otriple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Azerbaijan | leader | Artur_Rasizade</mtriple>
+				<mtriple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</mtriple>
+				<mtriple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Azerbaijan | leader | Artur_Rasizade</striple>
+						<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial</reference>
+					<reference entity="Azerbaijan" number="2" tag="BRIDGE-1" type="name">Azerbaijan</reference>
+					<reference entity="Artur_Rasizade" number="3" tag="PATIENT-1" type="name">Artur Rasizade</reference>
+					<reference entity="National_Assembly_(Azerbaijan)" number="4" tag="PATIENT-2" type="description">the National Assembly</reference>
+				</references>
+				<text>The Baku Turkish Martyrs' Memorial is located in Azerbaijan, where the leader is Artur Rasizade, and legislature is based in the National Assembly.</text>
+				<template>AGENT-1 is located in BRIDGE-1 , where the leader is PATIENT-1 , and legislature is based in PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be located in BRIDGE-1 , where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , and legislature VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] base in PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Azerbaijan | leader | Artur_Rasizade</striple>
+						<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial</reference>
+					<reference entity="Azerbaijan" number="2" tag="BRIDGE-1" type="name">Azerbaijan</reference>
+					<reference entity="Artur_Rasizade" number="3" tag="PATIENT-1" type="name">Artur Rasizade</reference>
+					<reference entity="National_Assembly_(Azerbaijan)" number="4" tag="PATIENT-2" type="description">the National Assembly</reference>
+				</references>
+				<text>The Baku Turkish Martyrs' Memorial is in Azerbaijan, where the leader is Artur Rasizade, and the legislature is dictated by the National Assembly.</text>
+				<template>AGENT-1 is in BRIDGE-1 , where the leader is PATIENT-1 , and the legislature is dictated by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , and DT[form=defined] the legislature VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] dictate by PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+						<striple>Azerbaijan | leader | Artur_Rasizade</striple>
+						<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial</reference>
+					<reference entity="Azerbaijan" number="2" tag="BRIDGE-1" type="name">Azerbaijan</reference>
+					<reference entity="Artur_Rasizade" number="3" tag="PATIENT-1" type="name">Artur Rasizade</reference>
+					<reference entity="National_Assembly_(Azerbaijan)" number="4" tag="PATIENT-2" type="description">the National Assembly</reference>
+				</references>
+				<text>The Baku Turkish Martyrs' Memorial is in Azerbaijan, where the leader is Artur Rasizade, and legislature is dictated by the National Assembly.</text>
+				<template>AGENT-1 is in BRIDGE-1 , where the leader is PATIENT-1 , and legislature is dictated by PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be in BRIDGE-1 , where DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 , and legislature VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] dictate by PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>BRIDGE-1 | Azerbaijan</entity>
+				<entity>PATIENT-1 | Artur_Rasizade</entity>
+				<entity>PATIENT-2 | National_Assembly_(Azerbaijan)</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id539" size="3">
+			<originaltripleset>
+				<otriple>Turkey | leaderName | Ahmet_Davutoğlu</otriple>
+				<otriple>Turkey | capital | Ankara</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | location | Turkey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Turkey | leaderName | Ahmet_Davutoğlu</mtriple>
+				<mtriple>Turkey | capital | Ankara</mtriple>
+				<mtriple>Atatürk_Monument_(İzmir) | location | Turkey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+						<striple>Turkey | capital | Ankara</striple>
+						<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atatürk_Monument_(İzmir)" number="1" tag="AGENT-1" type="description">The Ataturk Monument ( Izmir )</reference>
+					<reference entity="Turkey" number="2" tag="BRIDGE-1" type="name">Turkey</reference>
+					<reference entity="Ankara" number="3" tag="PATIENT-2" type="name">Ankara</reference>
+					<reference entity="Ahmet_Davutoğlu" number="4" tag="PATIENT-1" type="name">Ahmet Davutoglu</reference>
+				</references>
+				<text>The Ataturk Monument (Izmir) can be found in Turkey, where the capital is Ankara and leader is Ahmet Davutoglu.</text>
+				<template>AGENT-1 can be found in BRIDGE-1 , where the capital is PATIENT-2 and leader is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 can VP[aspect=simple,tense=present,voice=passive,person=null,number=null] find in BRIDGE-1 , where DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+						<striple>Turkey | capital | Ankara</striple>
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ahmet_Davutoğlu" number="1" tag="PATIENT-1" type="name">Ahmet Davutoglu</reference>
+					<reference entity="Turkey" number="2" tag="BRIDGE-1" type="name">Turkey</reference>
+					<reference entity="Ankara" number="3" tag="PATIENT-2" type="name">Ankara</reference>
+					<reference entity="Atatürk_Monument_(İzmir)" number="4" tag="AGENT-1" type="description">the Ataturk Monument</reference>
+				</references>
+				<text>Ahmet Davutoglu is a leader from Turkey whose capital is Ankara and where the Ataturk Monument can be found in Izmir.</text>
+				<template>PATIENT-1 is a leader from BRIDGE-1 whose capital is PATIENT-2 and where AGENT-1 can be found in Izmir .</template>
+				<lexicalization>PATIENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a leader from BRIDGE-1 whose capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and where AGENT-1 can VP[aspect=simple,tense=present,voice=passive,person=null,number=null] find in Izmir .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+						<striple>Turkey | capital | Ankara</striple>
+						<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atatürk_Monument_(İzmir)" number="1" tag="AGENT-1" type="description">The Atatürk Monument ( İzmir )</reference>
+					<reference entity="Turkey" number="2" tag="BRIDGE-1" type="name">Turkey</reference>
+					<reference entity="Ankara" number="3" tag="PATIENT-2" type="name">Ankara</reference>
+					<reference entity="Ahmet_Davutoğlu" number="4" tag="PATIENT-1" type="name">Ahmet Davutoğlu</reference>
+				</references>
+				<text>The Atatürk Monument (İzmir) is found in Turkey, where the capital is Ankara and the leader is Ahmet Davutoğlu.</text>
+				<template>AGENT-1 is found in BRIDGE-1 , where the capital is PATIENT-2 and the leader is PATIENT-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=passive,person=3rd,number=singular] find in BRIDGE-1 , where DT[form=defined] the capital VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-2 and DT[form=defined] the leader VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be PATIENT-1 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atatürk_Monument_(İzmir)</entity>
+				<entity>BRIDGE-1 | Turkey</entity>
+				<entity>PATIENT-1 | Ahmet_Davutoğlu</entity>
+				<entity>PATIENT-2 | Ankara</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>

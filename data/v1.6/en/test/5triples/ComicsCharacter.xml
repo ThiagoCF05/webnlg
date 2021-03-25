@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id836" size="5">
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Alan_Tudyk</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Alan_Tudyk</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="Duncan_Rouleau" number="3" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="4" tag="PATIENT-3" type="name">Steven T. Seagle</reference>
+					<reference entity="Baymax" number="5" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="6" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Alan_Tudyk" number="7" tag="PATIENT-2" type="name">Alan Tudyk</reference>
+				</references>
+				<text>Baymax was created by American @ Duncan Rouleau and Steven T. Seagle. Baymax is a character in Big Hero 6 which stars Alan Tudyk.</text>
+				<template>AGENT-1 was created by PATIENT-1 @ BRIDGE-1 and PATIENT-3 . AGENT-1 is a character in BRIDGE-2 which stars PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-1 BRIDGE-1 and PATIENT-3 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a character in BRIDGE-2 which VP[aspect=simple,tense=present,voice=active,person=3rd,number=null] star PATIENT-2 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Alan_Tudyk" number="3" tag="PATIENT-2" type="name">Alan Tudyk</reference>
+					<reference entity="Baymax" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Steven_T._Seagle" number="5" tag="PATIENT-3" type="name">Steven T Seagle</reference>
+					<reference entity="Americans" number="6" tag="PATIENT-1" type="description">the American</reference>
+					<reference entity="Duncan_Rouleau" number="7" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+				</references>
+				<text>Baymax is a character who appeared in Big Hero 6 starring Alan Tudyk. It was created by Steven T Seagle and the American, Duncan Rouleau.</text>
+				<template>AGENT-1 is a character who appeared in BRIDGE-2 starring PATIENT-2 . AGENT-1 was created by PATIENT-3 and PATIENT-1 , BRIDGE-1 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a character who VP[aspect=simple,tense=past,voice=active,person=null,number=null] appear in BRIDGE-2 VP[aspect=progressive,tense=present,voice=active,person=null,number=null] star PATIENT-2 . AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-3 and PATIENT-1 , BRIDGE-1 .</lexicalization>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<sentence ID="1">
+						<striple>Baymax | creator | Duncan_Rouleau</striple>
+						<striple>Duncan_Rouleau | nationality | Americans</striple>
+						<striple>Baymax | creator | Steven_T._Seagle</striple>
+					</sentence>
+					<sentence ID="2">
+						<striple>Baymax | series | Big_Hero_6_(film)</striple>
+						<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
+					</sentence>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="Duncan_Rouleau" number="3" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="4" tag="PATIENT-3" type="name">Steven T. Seagle</reference>
+					<reference entity="Baymax" number="5" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="6" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Alan_Tudyk" number="7" tag="PATIENT-2" type="name">Alan Tudyk</reference>
+				</references>
+				<text>Baymax was created by American @ Duncan Rouleau and Steven T. Seagle. Baymax is a character in Big Hero 6 which starred Alan Tudyk.</text>
+				<template>AGENT-1 was created by PATIENT-1 @ BRIDGE-1 and PATIENT-3 . AGENT-1 is a character in BRIDGE-2 which starred PATIENT-2 .</template>
+				<lexicalization>AGENT-1 VP[aspect=simple,tense=past,voice=passive,person=null,number=singular] create by PATIENT-1 BRIDGE-1 and PATIENT-3 . AGENT-1 VP[aspect=simple,tense=present,voice=active,person=3rd,number=singular] be DT[form=undefined] a character in BRIDGE-2 which VP[aspect=simple,tense=past,voice=active,person=null,number=null] star PATIENT-2 .</lexicalization>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Alan_Tudyk</entity>
+				<entity>PATIENT-3 | Steven_T._Seagle</entity>
+			</entitymap>
+		</entry>
+	</entries>
+</benchmark>
