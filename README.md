@@ -10,6 +10,7 @@ corresponding textual realizations. This work aimed to provide intermediate repr
 
 Here are the changes per version:
 
+- [**v1.6**](data/v1.6): Correction related to entities and templates. Thanks to [Abelardo Vieira](https://github.com/abevieiramota) and [zhijing-jin](https://github.com/zhijing-jin) (March 25th, 2021)
 - [**v1.5**](data/v1.5): English Lexicalization templates, introduced in the EMNLP 2019 paper "Neural data-to-text generation: A comparison between pipeline and end-to-end architectures". (August 22th, 2019)
 - [**v1.4**](data/v1.4): full revision of the delexicalized templates. (April 1st, 2019)
 - [**v1.3**](data/v1.3): tokenization by [NLTK](https://www.nltk.org/), leading to a better extraction of references and discourse ordering information. (January 31st, 2019)
